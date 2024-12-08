@@ -46,24 +46,21 @@ impl std::ops::DerefMut for crate::VRUIControls::VRPointer {
 impl crate::VRUIControls::VRPointer {
     pub const kScrollMultiplier: f32 = 1f32;
     pub const kTriggerThreshold: f32 = 0.1f32;
-    pub fn HideCursors(
+    pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HideCursors", ())?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SelectRightController(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn CreateCursors(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectRightController", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("CreateCursors", ())?;
         Ok(__cordl_ret)
     }
     pub fn CreateLaserPointers(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -73,25 +70,24 @@ impl crate::VRUIControls::VRPointer {
         let __cordl_ret: bool = __cordl_object.invoke("CreateLaserPointers", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnApplicationFocus(
+    pub fn EnabledLastSelectedPointer(
         &mut self,
-        hasFocus: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnApplicationFocus", (hasFocus))?;
+            .invoke("EnabledLastSelectedPointer", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SelectLeftController(
+    pub fn HideCursors(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectLeftController", ())?;
+            .invoke("HideCursors", ())?;
         Ok(__cordl_ret)
     }
     pub fn HideLaserPointers(
@@ -104,35 +100,6 @@ impl crate::VRUIControls::VRPointer {
             .invoke("HideLaserPointers", ())?;
         Ok(__cordl_ret)
     }
-    pub fn RefreshLaserPointerAndLaserHit(
-        &mut self,
-        pointerData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshLaserPointerAndLaserHit", (pointerData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateCursors(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CreateCursors", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetupLaserPointer(
-        &mut self,
-        laserPointer: *mut crate::VRUIControls::VRLaserPointer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetupLaserPointer", (laserPointer))?;
-        Ok(__cordl_ret)
-    }
     pub fn HideLaserPointersAndCursors(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -143,14 +110,11 @@ impl crate::VRUIControls::VRPointer {
             .invoke("HideLaserPointersAndCursors", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_state(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    pub fn IsLeftControllerDown(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_state", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("IsLeftControllerDown", ())?;
         Ok(__cordl_ret)
     }
     pub fn IsRightControllerDown(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -158,6 +122,44 @@ impl crate::VRUIControls::VRPointer {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsRightControllerDown", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LateUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LateUpdate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnApplicationFocus(
+        &mut self,
+        hasFocus: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnApplicationFocus", (hasFocus))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDisable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDisable", ())?;
         Ok(__cordl_ret)
     }
     pub fn Process(
@@ -171,34 +173,46 @@ impl crate::VRUIControls::VRPointer {
             .invoke("Process", (pointerEventData))?;
         Ok(__cordl_ret)
     }
-    pub fn Awake(
+    pub fn RefreshLaserPointerAndLaserHit(
+        &mut self,
+        pointerData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RefreshLaserPointerAndLaserHit", (pointerData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectLeftController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
+            .invoke("SelectLeftController", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_lastSelectedVrController(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut VRController> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut VRController = __cordl_object
-            .invoke("get_lastSelectedVrController", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDisable(
+    pub fn SelectRightController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDisable", ())?;
+            .invoke("SelectRightController", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetupLaserPointer(
+        &mut self,
+        laserPointer: *mut crate::VRUIControls::VRLaserPointer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetupLaserPointer", (laserPointer))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -221,39 +235,25 @@ impl crate::VRUIControls::VRPointer {
             .invoke("get_cursorPosition", ())?;
         Ok(__cordl_ret)
     }
-    pub fn LateUpdate(
+    pub fn get_lastSelectedVrController(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut VRController> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LateUpdate", ())?;
+        let __cordl_ret: *mut VRController = __cordl_object
+            .invoke("get_lastSelectedVrController", ())?;
         Ok(__cordl_ret)
     }
-    pub fn IsLeftControllerDown(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsLeftControllerDown", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EnabledLastSelectedPointer(
+    pub fn get_state(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EnabledLastSelectedPointer", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_state", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "VRUIControls+VRPointer")]

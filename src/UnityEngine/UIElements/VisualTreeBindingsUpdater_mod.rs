@@ -45,60 +45,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualTreeBindingsUp
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeBindingsUpdater")]
 impl crate::UnityEngine::UIElements::VisualTreeBindingsUpdater {
-    pub fn StopTracking(
-        &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StopTracking", (ve))?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartTrackingRecursive(
-        &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartTrackingRecursive", (ve))?;
-        Ok(__cordl_ret)
-    }
-    pub fn StopTrackingRecursive(
-        &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StopTrackingRecursive", (ve))?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartTracking(
-        &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartTracking", (ve))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateBindings(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateBindings", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetBindingObjectFromElement(
         &mut self,
         ve: *mut crate::UnityEngine::UIElements::VisualElement,
@@ -110,21 +56,23 @@ impl crate::UnityEngine::UIElements::VisualTreeBindingsUpdater {
             .invoke("GetBindingObjectFromElement", (ve))?;
         Ok(__cordl_ret)
     }
-    pub fn get_temporaryObjectCache(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnHierarchyChange(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Object,
-            *mut crate::System::Object,
-        >,
-    > {
+        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        _cordl_type: crate::UnityEngine::UIElements::HierarchyChangeType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Object,
-            *mut crate::System::Object,
-        > = __cordl_object.invoke("get_temporaryObjectCache", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnHierarchyChange", (ve, _cordl_type))?;
         Ok(__cordl_ret)
     }
     pub fn OnVersionChanged(
@@ -139,16 +87,58 @@ impl crate::UnityEngine::UIElements::VisualTreeBindingsUpdater {
             .invoke("OnVersionChanged", (ve, versionChangeType))?;
         Ok(__cordl_ret)
     }
-    pub fn OnHierarchyChange(
+    pub fn PerformTrackingOperations(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-        _cordl_type: crate::UnityEngine::UIElements::HierarchyChangeType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnHierarchyChange", (ve, _cordl_type))?;
+            .invoke("PerformTrackingOperations", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartTracking(
+        &mut self,
+        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartTracking", (ve))?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartTrackingRecursive(
+        &mut self,
+        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartTrackingRecursive", (ve))?;
+        Ok(__cordl_ret)
+    }
+    pub fn StopTracking(
+        &mut self,
+        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StopTracking", (ve))?;
+        Ok(__cordl_ret)
+    }
+    pub fn StopTrackingRecursive(
+        &mut self,
+        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StopTrackingRecursive", (ve))?;
         Ok(__cordl_ret)
     }
     pub fn Update(
@@ -159,6 +149,16 @@ impl crate::UnityEngine::UIElements::VisualTreeBindingsUpdater {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateBindings(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateBindings", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -181,22 +181,22 @@ impl crate::UnityEngine::UIElements::VisualTreeBindingsUpdater {
             .invoke("get_profilerMarker", ())?;
         Ok(__cordl_ret)
     }
-    pub fn PerformTrackingOperations(
+    pub fn get_temporaryObjectCache(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Object,
+            *mut crate::System::Object,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PerformTrackingOperations", ())?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Object,
+            *mut crate::System::Object,
+        > = __cordl_object.invoke("get_temporaryObjectCache", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeBindingsUpdater")]

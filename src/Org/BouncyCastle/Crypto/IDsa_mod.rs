@@ -52,16 +52,6 @@ impl crate::Org::BouncyCastle::Crypto::IDsa {
             .invoke("Init", (forSigning, parameters))?;
         Ok(__cordl_ret)
     }
-    pub fn get_AlgorithmName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_AlgorithmName", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn VerifySignature(
         &mut self,
         message: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -79,6 +69,16 @@ impl crate::Org::BouncyCastle::Crypto::IDsa {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_AlgorithmName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_AlgorithmName", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IDsa")]

@@ -39,19 +39,12 @@ impl std::ops::DerefMut for GameplayModifierParamsSO {
 }
 #[cfg(feature = "GameplayModifierParamsSO")]
 impl GameplayModifierParamsSO {
-    pub fn get_multiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_multiplier", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isInBeta(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isInBeta", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -73,27 +66,21 @@ impl GameplayModifierParamsSO {
             .invoke("get_descriptionLocalizationKey", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_multiplierConditionallyValid(
+    pub fn get_icon(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_multiplierConditionallyValid", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
+            .invoke("get_icon", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_requiredBy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut GameplayModifierParamsSO>,
-    > {
+    pub fn get_isInBeta(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut GameplayModifierParamsSO,
-        > = __cordl_object.invoke("get_requiredBy", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isInBeta", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_modifierNameLocalizationKey(
@@ -104,6 +91,23 @@ impl GameplayModifierParamsSO {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_modifierNameLocalizationKey", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_multiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_multiplier", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_multiplierConditionallyValid(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_multiplierConditionallyValid", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_mutuallyExclusives(
@@ -119,6 +123,19 @@ impl GameplayModifierParamsSO {
         > = __cordl_object.invoke("get_mutuallyExclusives", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_requiredBy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut GameplayModifierParamsSO>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut GameplayModifierParamsSO,
+        > = __cordl_object.invoke("get_requiredBy", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_requires(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -131,23 +148,6 @@ impl GameplayModifierParamsSO {
             *mut GameplayModifierParamsSO,
         > = __cordl_object.invoke("get_requires", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_icon(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
-            .invoke("get_icon", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "GameplayModifierParamsSO")]

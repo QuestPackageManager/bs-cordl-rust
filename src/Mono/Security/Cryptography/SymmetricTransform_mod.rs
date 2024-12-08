@@ -36,40 +36,16 @@ impl std::ops::DerefMut for crate::Mono::Security::Cryptography::SymmetricTransf
 }
 #[cfg(feature = "Mono+Security+Cryptography+SymmetricTransform")]
 impl crate::Mono::Security::Cryptography::SymmetricTransform {
-    pub fn TransformFinalBlock(
+    pub fn CBC(
         &mut self,
-        inputBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        inputOffset: i32,
-        inputCount: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("TransformFinalBlock", (inputBuffer, inputOffset, inputCount))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ThrowBadPaddingException(
-        &mut self,
-        padding: crate::System::Security::Cryptography::PaddingMode,
-        length: i32,
-        position: i32,
+        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ThrowBadPaddingException", (padding, length, position))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Finalize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
+            .invoke("CBC", (input, output))?;
         Ok(__cordl_ret)
     }
     pub fn CFB(
@@ -82,6 +58,18 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CFB", (input, output))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CTS(
+        &mut self,
+        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CTS", (input, output))?;
         Ok(__cordl_ret)
     }
     pub fn CheckInput(
@@ -97,13 +85,6 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
             .invoke("CheckInput", (inputBuffer, inputOffset, inputCount))?;
         Ok(__cordl_ret)
     }
-    pub fn get_KeepLastBlock(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_KeepLastBlock", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Dispose(
         &mut self,
         disposing: bool,
@@ -115,14 +96,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn get_OutputBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_OutputBlockSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OFB(
+    pub fn ECB(
         &mut self,
         input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -131,38 +105,43 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OFB", (input, output))?;
+            .invoke("ECB", (input, output))?;
         Ok(__cordl_ret)
     }
-    pub fn get_InputBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn FinalDecrypt(
+        &mut self,
+        inputBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inputOffset: i32,
+        inputCount: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_InputBlockSize", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("FinalDecrypt", (inputBuffer, inputOffset, inputCount))?;
         Ok(__cordl_ret)
     }
-    pub fn CBC(
+    pub fn FinalEncrypt(
         &mut self,
-        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inputBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inputOffset: i32,
+        inputCount: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("FinalEncrypt", (inputBuffer, inputOffset, inputCount))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Finalize(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CBC", (input, output))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Transform(
-        &mut self,
-        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Transform", (input, output))?;
+            .invoke("Finalize", ())?;
         Ok(__cordl_ret)
     }
     pub fn InternalTransformBlock(
@@ -183,77 +162,27 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn FinalDecrypt(
-        &mut self,
-        inputBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        inputOffset: i32,
-        inputCount: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("FinalDecrypt", (inputBuffer, inputOffset, inputCount))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ECB(
-        &mut self,
-        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ECB", (input, output))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CTS(
-        &mut self,
-        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CTS", (input, output))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FinalEncrypt(
-        &mut self,
-        inputBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        inputOffset: i32,
-        inputCount: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("FinalEncrypt", (inputBuffer, inputOffset, inputCount))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CanTransformMultipleBlocks(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_CanTransformMultipleBlocks", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         symmAlgo: *mut crate::System::Security::Cryptography::SymmetricAlgorithm,
         encryption: bool,
         rgbIV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (symmAlgo, encryption, rgbIV))?;
+        Ok(__cordl_object)
+    }
+    pub fn OFB(
+        &mut self,
+        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (symmAlgo, encryption, rgbIV))?;
+            .invoke("OFB", (input, output))?;
         Ok(__cordl_ret)
     }
     pub fn Random(
@@ -267,6 +196,41 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Random", (buffer, start, length))?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IDisposable_Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("System.IDisposable.Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ThrowBadPaddingException(
+        &mut self,
+        padding: crate::System::Security::Cryptography::PaddingMode,
+        length: i32,
+        position: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ThrowBadPaddingException", (padding, length, position))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Transform(
+        &mut self,
+        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Transform", (input, output))?;
         Ok(__cordl_ret)
     }
     pub fn TransformBlock(
@@ -287,26 +251,62 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn System_IDisposable_Dispose(
+    pub fn TransformFinalBlock(
         &mut self,
+        inputBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inputOffset: i32,
+        inputCount: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("TransformFinalBlock", (inputBuffer, inputOffset, inputCount))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        symmAlgo: *mut crate::System::Security::Cryptography::SymmetricAlgorithm,
+        encryption: bool,
+        rgbIV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("System.IDisposable.Dispose", ())?;
+            .invoke(".ctor", (symmAlgo, encryption, rgbIV))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        symmAlgo: *mut crate::System::Security::Cryptography::SymmetricAlgorithm,
-        encryption: bool,
-        rgbIV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (symmAlgo, encryption, rgbIV))?;
-        Ok(__cordl_object)
+    pub fn get_CanTransformMultipleBlocks(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_CanTransformMultipleBlocks", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_InputBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_InputBlockSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_KeepLastBlock(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_KeepLastBlock", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_OutputBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_OutputBlockSize", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Mono+Security+Cryptography+SymmetricTransform")]

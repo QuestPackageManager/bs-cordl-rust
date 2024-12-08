@@ -36,14 +36,64 @@ impl std::ops::DerefMut for crate::System::Delegate {
 }
 #[cfg(feature = "System+Delegate")]
 impl crate::System::Delegate {
-    pub fn GetVirtualMethod_internal(
+    pub fn Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Reflection::MethodInfo = __cordl_object
-            .invoke("GetVirtualMethod_internal", ())?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("Clone", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CombineImpl(
+        &mut self,
+        d: *mut crate::System::Delegate,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Delegate> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Delegate = __cordl_object
+            .invoke("CombineImpl", (d))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DynamicInvoke(
+        &mut self,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("DynamicInvoke", (args))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DynamicInvokeImpl(
+        &mut self,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("DynamicInvokeImpl", (args))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetInvocationList(
@@ -59,25 +109,14 @@ impl crate::System::Delegate {
         > = __cordl_object.invoke("GetInvocationList", ())?;
         Ok(__cordl_ret)
     }
-    pub fn DynamicInvokeImpl(
-        &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("DynamicInvokeImpl", (args))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Method(
+    pub fn GetMethodImpl(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Reflection::MethodInfo = __cordl_object
-            .invoke("get_Method", ())?;
+            .invoke("GetMethodImpl", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetObjectData(
@@ -90,6 +129,16 @@ impl crate::System::Delegate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetObjectData", (info, context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetVirtualMethod_internal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Reflection::MethodInfo = __cordl_object
+            .invoke("GetVirtualMethod_internal", ())?;
         Ok(__cordl_ret)
     }
     pub fn InitializeDelegateData(
@@ -113,6 +162,16 @@ impl crate::System::Delegate {
             .invoke("RemoveImpl", (d))?;
         Ok(__cordl_ret)
     }
+    pub fn get_Method(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Reflection::MethodInfo = __cordl_object
+            .invoke("get_Method", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Target(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
@@ -121,65 +180,6 @@ impl crate::System::Delegate {
         );
         let __cordl_ret: *mut crate::System::Object = __cordl_object
             .invoke("get_Target", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetMethodImpl(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Reflection::MethodInfo = __cordl_object
-            .invoke("GetMethodImpl", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CombineImpl(
-        &mut self,
-        d: *mut crate::System::Delegate,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Delegate> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Delegate = __cordl_object
-            .invoke("CombineImpl", (d))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DynamicInvoke(
-        &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("DynamicInvoke", (args))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clone(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
 }

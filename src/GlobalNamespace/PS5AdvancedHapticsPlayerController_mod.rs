@@ -33,20 +33,20 @@ impl std::ops::DerefMut for PS5AdvancedHapticsPlayerController {
 }
 #[cfg(feature = "PS5AdvancedHapticsPlayerController")]
 impl PS5AdvancedHapticsPlayerController {
-    #[cfg(feature = "PS5AdvancedHapticsPlayerController+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::GlobalNamespace::PS5AdvancedHapticsPlayerController___c__DisplayClass6_0;
     #[cfg(feature = "PS5AdvancedHapticsPlayerController+__c__DisplayClass7_0")]
     pub type __c__DisplayClass7_0 = crate::GlobalNamespace::PS5AdvancedHapticsPlayerController___c__DisplayClass7_0;
-    pub fn PlayContinuousHapticPreset(
+    #[cfg(feature = "PS5AdvancedHapticsPlayerController+__c__DisplayClass6_0")]
+    pub type __c__DisplayClass6_0 = crate::GlobalNamespace::PS5AdvancedHapticsPlayerController___c__DisplayClass6_0;
+    pub fn CanPlayHapticPreset(
         &mut self,
-        node: crate::UnityEngine::XR::XRNode,
         hapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        node: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PlayContinuousHapticPreset", (node, hapticPreset))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("CanPlayHapticPreset", (hapticPreset, node))?;
         Ok(__cordl_ret)
     }
     pub fn Initialize(
@@ -59,6 +59,13 @@ impl PS5AdvancedHapticsPlayerController {
             .invoke("Initialize", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn OnHapticPlayFinishedCallback(
         &mut self,
         player: *mut HapticsAudioClipPlayer,
@@ -68,6 +75,18 @@ impl PS5AdvancedHapticsPlayerController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnHapticPlayFinishedCallback", (player))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PlayContinuousHapticPreset(
+        &mut self,
+        node: crate::UnityEngine::XR::XRNode,
+        hapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PlayContinuousHapticPreset", (node, hapticPreset))?;
         Ok(__cordl_ret)
     }
     pub fn PlayHapticFeedback(
@@ -103,25 +122,6 @@ impl PS5AdvancedHapticsPlayerController {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn CanPlayHapticPreset(
-        &mut self,
-        hapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-        node: crate::UnityEngine::XR::XRNode,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CanPlayHapticPreset", (hapticPreset, node))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PS5AdvancedHapticsPlayerController")]

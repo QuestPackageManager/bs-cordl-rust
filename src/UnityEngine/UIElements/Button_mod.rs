@@ -29,17 +29,6 @@ impl crate::UnityEngine::UIElements::Button {
     pub type UxmlFactory = crate::UnityEngine::UIElements::Button_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+Button+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::Button_UxmlTraits;
-    pub fn OnNavigationSubmit(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::NavigationSubmitEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnNavigationSubmit", (evt))?;
-        Ok(__cordl_ret)
-    }
     pub fn DoMeasure(
         &mut self,
         desiredWidth: f32,
@@ -54,25 +43,31 @@ impl crate::UnityEngine::UIElements::Button {
             .invoke("DoMeasure", (desiredWidth, widthMode, desiredHeight, heightMode))?;
         Ok(__cordl_ret)
     }
-    pub fn set_clickable(
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Action1(
+        clickEvent: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (clickEvent))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnNavigationSubmit(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::Clickable,
+        evt: *mut crate::UnityEngine::UIElements::NavigationSubmitEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_clickable", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_clickable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Clickable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Clickable = __cordl_object
-            .invoke("get_clickable", ())?;
+            .invoke("OnNavigationSubmit", (evt))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -96,21 +91,26 @@ impl crate::UnityEngine::UIElements::Button {
             .invoke(".ctor", (clickEvent))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_clickable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Clickable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::Clickable = __cordl_object
+            .invoke("get_clickable", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_Action1(
-        clickEvent: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (clickEvent))?;
-        Ok(__cordl_object)
+    pub fn set_clickable(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::Clickable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_clickable", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Button")]
@@ -154,6 +154,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Button_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+Button+UxmlFactory")]
 impl crate::UnityEngine::UIElements::Button_UxmlFactory {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -163,13 +170,6 @@ impl crate::UnityEngine::UIElements::Button_UxmlFactory {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Button+UxmlFactory")]
@@ -208,6 +208,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Button_UxmlTraits {
 }
 #[cfg(feature = "UnityEngine+UIElements+Button+UxmlTraits")]
 impl crate::UnityEngine::UIElements::Button_UxmlTraits {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -217,13 +224,6 @@ impl crate::UnityEngine::UIElements::Button_UxmlTraits {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Button+UxmlTraits")]

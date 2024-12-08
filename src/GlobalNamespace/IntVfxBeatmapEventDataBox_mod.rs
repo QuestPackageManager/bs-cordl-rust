@@ -28,19 +28,35 @@ impl std::ops::DerefMut for IntVfxBeatmapEventDataBox {
 }
 #[cfg(feature = "IntVfxBeatmapEventDataBox")]
 impl IntVfxBeatmapEventDataBox {
-    pub fn get_subtypeIdentifier(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_subtypeIdentifier", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_beatStep(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_beatStep", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        indexFilter: *mut IndexFilter,
+        beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+        beatDistributionParam: f32,
+        eventDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+        eventDistributionParam: f32,
+        eventDistributionShouldAffectFirstBaseEvent: bool,
+        eventDistributionEaseType: EaseType,
+        vfxBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut IntFxBaseData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    indexFilter,
+                    beatDistributionParamType,
+                    beatDistributionParam,
+                    eventDistributionParamType,
+                    eventDistributionParam,
+                    eventDistributionShouldAffectFirstBaseEvent,
+                    eventDistributionEaseType,
+                    vfxBaseDataList,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn Unpack(
         &mut self,
@@ -104,35 +120,19 @@ impl IntVfxBeatmapEventDataBox {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        indexFilter: *mut IndexFilter,
-        beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
-        beatDistributionParam: f32,
-        eventDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
-        eventDistributionParam: f32,
-        eventDistributionShouldAffectFirstBaseEvent: bool,
-        eventDistributionEaseType: EaseType,
-        vfxBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut IntFxBaseData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    indexFilter,
-                    beatDistributionParamType,
-                    beatDistributionParam,
-                    eventDistributionParamType,
-                    eventDistributionParam,
-                    eventDistributionShouldAffectFirstBaseEvent,
-                    eventDistributionEaseType,
-                    vfxBaseDataList,
-                ),
-            )?;
-        Ok(__cordl_object)
+    pub fn get_beatStep(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_beatStep", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_subtypeIdentifier(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_subtypeIdentifier", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "IntVfxBeatmapEventDataBox")]

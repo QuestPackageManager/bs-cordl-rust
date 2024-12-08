@@ -33,14 +33,14 @@ impl std::ops::DerefMut for crate::Mono::Security::Authenticode::AuthenticodeBas
 }
 #[cfg(feature = "Mono+Security+Authenticode+AuthenticodeBase")]
 impl crate::Mono::Security::Authenticode::AuthenticodeBase {
-    pub fn ReadFirstBlock(
+    pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadFirstBlock", ())?;
+            .invoke("Close", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetHash(
@@ -54,28 +54,32 @@ impl crate::Mono::Security::Authenticode::AuthenticodeBase {
             .invoke("GetHash", (hash))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn GetSecurityEntry(
         &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetSecurityEntry", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Open_Il2CppArray1(
+        &mut self,
+        rawdata: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessFirstBlock(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ProcessFirstBlock", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_PEOffset(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_PEOffset", ())?;
+            .invoke("Open", (rawdata))?;
         Ok(__cordl_ret)
     }
     pub fn Open_String0(
@@ -89,43 +93,39 @@ impl crate::Mono::Security::Authenticode::AuthenticodeBase {
             .invoke("Open", (filename))?;
         Ok(__cordl_ret)
     }
-    pub fn Open_Il2CppArray1(
-        &mut self,
-        rawdata: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn ProcessFirstBlock(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Open", (rawdata))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("ProcessFirstBlock", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Close(
+    pub fn ReadFirstBlock(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
+            .invoke("ReadFirstBlock", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetSecurityEntry(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetSecurityEntry", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_PEOffset(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_PEOffset", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Mono+Security+Authenticode+AuthenticodeBase")]

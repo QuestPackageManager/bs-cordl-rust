@@ -30,6 +30,17 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
 impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
     #[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
     pub type Page = crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page;
+    pub fn Allocate(
+        &mut self,
+        storage: *mut crate::UnityEngine::UIElements::UIR::BaseShaderInfoStorage,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::BMPAlloc> {
+        let __cordl_ret: crate::UnityEngine::UIElements::UIR::BMPAlloc = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Allocate",
+            (storage),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Construct(
         &mut self,
         pageHeight: i32,
@@ -40,6 +51,29 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
             self,
             "Construct",
             (pageHeight, entryWidth, entryHeight),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ForceFirstAlloc(
+        &mut self,
+        firstPageX: u16,
+        firstPageY: u16,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ForceFirstAlloc",
+            (firstPageX, firstPageY),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Free(
+        &mut self,
+        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Free",
+            (alloc),
         )?;
         Ok(__cordl_ret)
     }
@@ -56,37 +90,11 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Free(
-        &mut self,
-        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_entryHeight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Free",
-            (alloc),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Allocate(
-        &mut self,
-        storage: *mut crate::UnityEngine::UIElements::UIR::BaseShaderInfoStorage,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::BMPAlloc> {
-        let __cordl_ret: crate::UnityEngine::UIElements::UIR::BMPAlloc = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Allocate",
-            (storage),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ForceFirstAlloc(
-        &mut self,
-        firstPageX: u16,
-        firstPageY: u16,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ForceFirstAlloc",
-            (firstPageX, firstPageY),
+            "get_entryHeight",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -94,14 +102,6 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_entryWidth",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_entryHeight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_entryHeight",
             (),
         )?;
         Ok(__cordl_ret)

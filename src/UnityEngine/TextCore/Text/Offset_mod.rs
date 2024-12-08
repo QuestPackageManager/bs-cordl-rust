@@ -25,6 +25,25 @@ for crate::UnityEngine::TextCore::Text::Offset {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+Offset")]
 impl crate::UnityEngine::TextCore::Text::Offset {
+    pub fn Equals(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         left: f32,
@@ -39,29 +58,10 @@ impl crate::UnityEngine::TextCore::Text::Offset {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_top(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_bottom(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_top",
+            "get_bottom",
             (),
         )?;
         Ok(__cordl_ret)
@@ -82,10 +82,10 @@ impl crate::UnityEngine::TextCore::Text::Offset {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_bottom(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_top(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_bottom",
+            "get_top",
             (),
         )?;
         Ok(__cordl_ret)

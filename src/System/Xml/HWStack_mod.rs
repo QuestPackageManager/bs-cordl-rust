@@ -28,15 +28,15 @@ impl std::ops::DerefMut for crate::System::Xml::HWStack {
 }
 #[cfg(feature = "System+Xml+HWStack")]
 impl crate::System::Xml::HWStack {
-    pub fn get_Item(
+    pub fn AddToTop(
         &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        o: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_Item", (index))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddToTop", (o))?;
         Ok(__cordl_ret)
     }
     pub fn Clone(
@@ -49,24 +49,34 @@ impl crate::System::Xml::HWStack {
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object.invoke("Pop", ())?;
-        Ok(__cordl_ret)
+    pub fn New_Il2CppArray_i32_i32_i32_2(
+        stack: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        growthRate: i32,
+        used: i32,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stack, growthRate, used, _cordl_size))?;
+        Ok(__cordl_object)
     }
-    pub fn set_Item(
-        &mut self,
-        index: i32,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Item", (index, value))?;
-        Ok(__cordl_ret)
+    pub fn New_i32_0(GrowthRate: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (GrowthRate))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_i32_1(
+        GrowthRate: i32,
+        limit: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (GrowthRate, limit))?;
+        Ok(__cordl_object)
     }
     pub fn Peek(&mut self) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -75,11 +85,11 @@ impl crate::System::Xml::HWStack {
         let __cordl_ret: *mut crate::System::Object = __cordl_object.invoke("Peek", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Length", ())?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object.invoke("Pop", ())?;
         Ok(__cordl_ret)
     }
     pub fn Push(&mut self) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
@@ -87,6 +97,20 @@ impl crate::System::Xml::HWStack {
             self,
         );
         let __cordl_ret: *mut crate::System::Object = __cordl_object.invoke("Push", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppArray_i32_i32_i32_2(
+        &mut self,
+        stack: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        growthRate: i32,
+        used: i32,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stack, growthRate, used, _cordl_size))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_i32_0(
@@ -112,61 +136,35 @@ impl crate::System::Xml::HWStack {
             .invoke(".ctor", (GrowthRate, limit))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Il2CppArray_i32_i32_i32_2(
+    pub fn get_Item(
         &mut self,
-        stack: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-        growthRate: i32,
-        used: i32,
-        _cordl_size: i32,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_Item", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Length", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Item(
+        &mut self,
+        index: i32,
+        value: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stack, growthRate, used, _cordl_size))?;
+            .invoke("set_Item", (index, value))?;
         Ok(__cordl_ret)
-    }
-    pub fn AddToTop(
-        &mut self,
-        o: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddToTop", (o))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_i32_0(
-        GrowthRate: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (GrowthRate))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_i32_1(
-        GrowthRate: i32,
-        limit: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (GrowthRate, limit))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray_i32_i32_i32_2(
-        stack: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-        growthRate: i32,
-        used: i32,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stack, growthRate, used, _cordl_size))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+HWStack")]

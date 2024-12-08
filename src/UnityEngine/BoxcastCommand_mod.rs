@@ -27,22 +27,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::BoxcastC
 }
 #[cfg(feature = "UnityEngine+BoxcastCommand")]
 impl crate::UnityEngine::BoxcastCommand {
-    pub fn _ctor_Vector3_Quaternion_Vector3_QueryParameters_f32_0(
-        &mut self,
-        center: crate::UnityEngine::Vector3,
-        halfExtents: crate::UnityEngine::Vector3,
-        orientation: crate::UnityEngine::Quaternion,
-        direction: crate::UnityEngine::Vector3,
-        queryParameters: crate::UnityEngine::QueryParameters,
-        distance: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (center, halfExtents, orientation, direction, queryParameters, distance),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_PhysicsScene_Vector3_Quaternion_Vector3_QueryParameters_f32_1(
         &mut self,
         physicsScene: crate::UnityEngine::PhysicsScene,
@@ -65,22 +49,6 @@ impl crate::UnityEngine::BoxcastCommand {
                 queryParameters,
                 distance,
             ),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Vector3_Quaternion_Vector3_f32_i32_2(
-        &mut self,
-        center: crate::UnityEngine::Vector3,
-        halfExtents: crate::UnityEngine::Vector3,
-        orientation: crate::UnityEngine::Quaternion,
-        direction: crate::UnityEngine::Vector3,
-        distance: f32,
-        layerMask: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (center, halfExtents, orientation, direction, distance, layerMask),
         )?;
         Ok(__cordl_ret)
     }
@@ -109,14 +77,91 @@ impl crate::UnityEngine::BoxcastCommand {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_direction(
+    pub fn _ctor_Vector3_Quaternion_Vector3_QueryParameters_f32_0(
         &mut self,
-        value: crate::UnityEngine::Vector3,
+        center: crate::UnityEngine::Vector3,
+        halfExtents: crate::UnityEngine::Vector3,
+        orientation: crate::UnityEngine::Quaternion,
+        direction: crate::UnityEngine::Vector3,
+        queryParameters: crate::UnityEngine::QueryParameters,
+        distance: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_direction",
-            (value),
+            ".ctor",
+            (center, halfExtents, orientation, direction, queryParameters, distance),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Vector3_Quaternion_Vector3_f32_i32_2(
+        &mut self,
+        center: crate::UnityEngine::Vector3,
+        halfExtents: crate::UnityEngine::Vector3,
+        orientation: crate::UnityEngine::Quaternion,
+        direction: crate::UnityEngine::Vector3,
+        distance: f32,
+        layerMask: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (center, halfExtents, orientation, direction, distance, layerMask),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_center(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_center",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_direction(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_direction",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_distance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_distance",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_halfExtents(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_halfExtents",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_layerMask(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_layerMask",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_orientation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_ret: crate::UnityEngine::Quaternion = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_orientation",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -141,6 +186,28 @@ impl crate::UnityEngine::BoxcastCommand {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn set_direction(
+        &mut self,
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_direction",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_distance(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_distance",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_halfExtents(
         &mut self,
         value: crate::UnityEngine::Vector3,
@@ -148,6 +215,17 @@ impl crate::UnityEngine::BoxcastCommand {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_halfExtents",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_layerMask(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_layerMask",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -163,34 +241,6 @@ impl crate::UnityEngine::BoxcastCommand {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_direction(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_direction",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_layerMask(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_layerMask",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_halfExtents(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_halfExtents",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_physicsScene(
         &mut self,
         value: crate::UnityEngine::PhysicsScene,
@@ -198,56 +248,6 @@ impl crate::UnityEngine::BoxcastCommand {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_physicsScene",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_center(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_center",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_orientation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_ret: crate::UnityEngine::Quaternion = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_orientation",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_distance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_distance",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_layerMask(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_layerMask",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_distance(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_distance",
             (value),
         )?;
         Ok(__cordl_ret)

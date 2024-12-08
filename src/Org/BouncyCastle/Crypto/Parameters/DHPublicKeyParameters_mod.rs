@@ -28,6 +28,26 @@ for crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHPublicKeyParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters {
+    pub fn Equals_DHPublicKeyParameters1(
+        &mut self,
+        other: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object0(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -35,15 +55,26 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Y(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("get_Y", ())?;
-        Ok(__cordl_ret)
+    pub fn New_BigInteger_DHParameters0(
+        y: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (y, parameters))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_DerObjectIdentifier1(
+        y: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+        algorithmOid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (y, parameters, algorithmOid))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_BigInteger_DHParameters0(
         &mut self,
@@ -70,46 +101,15 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters {
             .invoke(".ctor", (y, parameters, algorithmOid))?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
+    pub fn get_Y(
         &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_Y", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Equals_DHPublicKeyParameters1(
-        &mut self,
-        other: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_BigInteger_DHParameters0(
-        y: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (y, parameters))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_DerObjectIdentifier1(
-        y: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
-        algorithmOid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (y, parameters, algorithmOid))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHPublicKeyParameters")]

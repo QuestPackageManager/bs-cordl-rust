@@ -22,41 +22,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for Vector3Serializable {
 }
 #[cfg(feature = "Vector3Serializable")]
 impl Vector3Serializable {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Vector3Serializable0(
+    pub fn Approximately(
         &mut self,
         other: Vector3Serializable,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
+            "Approximately",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetSize",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -71,25 +44,41 @@ impl Vector3Serializable {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Vector3_0(
+    pub fn Equals_Object1(
         &mut self,
-        v: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (v),
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_NetDataReader1(
+    pub fn Equals_Vector3Serializable0(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: Vector3Serializable,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (reader),
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetSize",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -104,17 +93,6 @@ impl Vector3Serializable {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Approximately(
-        &mut self,
-        other: Vector3Serializable,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Approximately",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -122,6 +100,28 @@ impl Vector3Serializable {
             self,
             "ToString",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_NetDataReader1(
+        &mut self,
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (reader),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Vector3_0(
+        &mut self,
+        v: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (v),
         )?;
         Ok(__cordl_ret)
     }

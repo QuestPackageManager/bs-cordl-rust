@@ -30,11 +30,12 @@ for crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<T> {
-    pub fn _ctor(
+    pub fn BeginInvoke(
         &mut self,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -42,8 +43,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (args, callback, object))?;
         Ok(__cordl_ret)
     }
     pub fn EndInvoke(
@@ -76,12 +77,21 @@ impl<
             .invoke("Invoke", (args))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInvoke(
-        &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-        callback: *mut crate::System::AsyncCallback,
+    pub fn New(
         object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult>
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -89,19 +99,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (args, callback, object))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+ObjectConstructor_1")]

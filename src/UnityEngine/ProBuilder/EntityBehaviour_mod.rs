@@ -25,16 +25,22 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::EntityBehaviour {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+EntityBehaviour")]
 impl crate::UnityEngine::ProBuilder::EntityBehaviour {
-    pub fn SetMaterial(
+    pub fn Initialize(
         &mut self,
-        material: *mut crate::UnityEngine::Material,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetMaterial", (material))?;
+            .invoke("Initialize", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnEnterPlayMode(
         &mut self,
@@ -44,16 +50,6 @@ impl crate::UnityEngine::ProBuilder::EntityBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnterPlayMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Initialize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Initialize", ())?;
         Ok(__cordl_ret)
     }
     pub fn OnSceneLoaded(
@@ -68,6 +64,17 @@ impl crate::UnityEngine::ProBuilder::EntityBehaviour {
             .invoke("OnSceneLoaded", (scene, mode))?;
         Ok(__cordl_ret)
     }
+    pub fn SetMaterial(
+        &mut self,
+        material: *mut crate::UnityEngine::Material,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetMaterial", (material))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -77,13 +84,6 @@ impl crate::UnityEngine::ProBuilder::EntityBehaviour {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+EntityBehaviour")]

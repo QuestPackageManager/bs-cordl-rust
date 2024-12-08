@@ -29,25 +29,45 @@ impl crate::Org::BouncyCastle::Cms::CmsTypedStream {
     pub const BufferSize: i32 = 32768i32;
     #[cfg(feature = "Org+BouncyCastle+Cms+CmsTypedStream+FullReaderStream")]
     pub type FullReaderStream = crate::Org::BouncyCastle::Cms::CmsTypedStream_FullReaderStream;
-    pub fn get_ContentStream(
+    pub fn Drain(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("get_ContentStream", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Drain", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_ContentType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_ContentType", ())?;
-        Ok(__cordl_ret)
+    pub fn New_Stream0(
+        inStream: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (inStream))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_Stream1(
+        oid: *mut crate::System::String,
+        inStream: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (oid, inStream))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_Stream_i32_2(
+        oid: *mut crate::System::String,
+        inStream: *mut crate::System::IO::Stream,
+        bufSize: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (oid, inStream, bufSize))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_Stream0(
         &mut self,
@@ -85,45 +105,25 @@ impl crate::Org::BouncyCastle::Cms::CmsTypedStream {
             .invoke(".ctor", (oid, inStream, bufSize))?;
         Ok(__cordl_ret)
     }
-    pub fn Drain(
+    pub fn get_ContentStream(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Drain", ())?;
+        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+            .invoke("get_ContentStream", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_Stream0(
-        inStream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (inStream))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_Stream1(
-        oid: *mut crate::System::String,
-        inStream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (oid, inStream))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_Stream_i32_2(
-        oid: *mut crate::System::String,
-        inStream: *mut crate::System::IO::Stream,
-        bufSize: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (oid, inStream, bufSize))?;
-        Ok(__cordl_object)
+    pub fn get_ContentType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_ContentType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsTypedStream")]
@@ -164,6 +164,15 @@ for crate::Org::BouncyCastle::Cms::CmsTypedStream_FullReaderStream {
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsTypedStream+FullReaderStream")]
 impl crate::Org::BouncyCastle::Cms::CmsTypedStream_FullReaderStream {
+    pub fn New(
+        input: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (input))?;
+        Ok(__cordl_object)
+    }
     pub fn Read(
         &mut self,
         buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -186,15 +195,6 @@ impl crate::Org::BouncyCastle::Cms::CmsTypedStream_FullReaderStream {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (input))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        input: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (input))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsTypedStream+FullReaderStream")]

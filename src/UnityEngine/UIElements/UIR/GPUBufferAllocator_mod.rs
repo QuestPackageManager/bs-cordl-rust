@@ -26,31 +26,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::GPUBufferAlloca
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+GPUBufferAllocator")]
 impl crate::UnityEngine::UIElements::UIR::GPUBufferAllocator {
-    pub fn _ctor(
-        &mut self,
-        maxSize: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (maxSize))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HighLowCollide(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HighLowCollide", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isEmpty", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Allocate(
         &mut self,
         _cordl_size: u32,
@@ -74,12 +49,37 @@ impl crate::UnityEngine::UIElements::UIR::GPUBufferAllocator {
             .invoke("Free", (alloc))?;
         Ok(__cordl_ret)
     }
-    pub fn New(maxSize: u32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn HighLowCollide(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("HighLowCollide", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(maxSize: u32) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (maxSize))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        maxSize: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (maxSize))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isEmpty", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+GPUBufferAllocator")]

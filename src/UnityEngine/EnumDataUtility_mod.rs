@@ -37,14 +37,14 @@ impl std::ops::DerefMut for crate::UnityEngine::EnumDataUtility {
 }
 #[cfg(feature = "UnityEngine+EnumDataUtility")]
 impl crate::UnityEngine::EnumDataUtility {
-    #[cfg(feature = "UnityEngine+EnumDataUtility+__c")]
-    pub type __c = crate::UnityEngine::EnumDataUtility___c;
-    #[cfg(feature = "UnityEngine+EnumDataUtility+__c__DisplayClass2_0")]
-    pub type __c__DisplayClass2_0 = crate::UnityEngine::EnumDataUtility___c__DisplayClass2_0;
     #[cfg(feature = "UnityEngine+EnumDataUtility+__c__DisplayClass8_0")]
     pub type __c__DisplayClass8_0 = crate::UnityEngine::EnumDataUtility___c__DisplayClass8_0;
+    #[cfg(feature = "UnityEngine+EnumDataUtility+__c__DisplayClass2_0")]
+    pub type __c__DisplayClass2_0 = crate::UnityEngine::EnumDataUtility___c__DisplayClass2_0;
     #[cfg(feature = "UnityEngine+EnumDataUtility+CachedType")]
     pub type CachedType = crate::UnityEngine::EnumDataUtility_CachedType;
+    #[cfg(feature = "UnityEngine+EnumDataUtility+__c")]
+    pub type __c = crate::UnityEngine::EnumDataUtility___c;
 }
 #[cfg(feature = "UnityEngine+EnumDataUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::EnumDataUtility {

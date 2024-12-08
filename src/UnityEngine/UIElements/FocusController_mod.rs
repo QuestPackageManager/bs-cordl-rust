@@ -35,6 +35,74 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::FocusController {
 impl crate::UnityEngine::UIElements::FocusController {
     #[cfg(feature = "UnityEngine+UIElements+FocusController+FocusedElement")]
     pub type FocusedElement = crate::UnityEngine::UIElements::FocusController_FocusedElement;
+    pub fn AboutToGrabFocus(
+        &mut self,
+        focusable: *mut crate::UnityEngine::UIElements::Focusable,
+        willTakeFocusFrom: *mut crate::UnityEngine::UIElements::Focusable,
+        direction: *mut crate::UnityEngine::UIElements::FocusChangeDirection,
+        dispatchMode: crate::UnityEngine::UIElements::DispatchMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "AboutToGrabFocus",
+                (focusable, willTakeFocusFrom, direction, dispatchMode),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn AboutToReleaseFocus(
+        &mut self,
+        focusable: *mut crate::UnityEngine::UIElements::Focusable,
+        willGiveFocusTo: *mut crate::UnityEngine::UIElements::Focusable,
+        direction: *mut crate::UnityEngine::UIElements::FocusChangeDirection,
+        dispatchMode: crate::UnityEngine::UIElements::DispatchMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "AboutToReleaseFocus",
+                (focusable, willGiveFocusTo, direction, dispatchMode),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Blur(
+        &mut self,
+        focusable: *mut crate::UnityEngine::UIElements::Focusable,
+        bIsFocusDelegated: bool,
+        dispatchMode: crate::UnityEngine::UIElements::DispatchMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Blur", (focusable, bIsFocusDelegated, dispatchMode))?;
+        Ok(__cordl_ret)
+    }
+    pub fn BlurLastFocusedElement(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BlurLastFocusedElement", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DoFocusChange(
+        &mut self,
+        f: *mut crate::UnityEngine::UIElements::Focusable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DoFocusChange", (f))?;
+        Ok(__cordl_ret)
+    }
     pub fn FocusNextInDirection(
         &mut self,
         direction: *mut crate::UnityEngine::UIElements::FocusChangeDirection,
@@ -46,79 +114,39 @@ impl crate::UnityEngine::UIElements::FocusController {
             .invoke("FocusNextInDirection", (direction))?;
         Ok(__cordl_ret)
     }
-    pub fn get_focusRing(
+    pub fn GetFocusableParentForPointerEvent(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::IFocusRing> {
+        target: *mut crate::UnityEngine::UIElements::Focusable,
+        effectiveTarget: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::UnityEngine::UIElements::Focusable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::IFocusRing = __cordl_object
-            .invoke("get_focusRing", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("GetFocusableParentForPointerEvent", (target, effectiveTarget))?;
         Ok(__cordl_ret)
     }
-    pub fn get_focusedElement(
+    pub fn GetLeafFocusedElement(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Focusable> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::UnityEngine::UIElements::Focusable = __cordl_object
-            .invoke("get_focusedElement", ())?;
+            .invoke("GetLeafFocusedElement", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SwitchFocus__cordl_bool_DispatchMode0(
+    pub fn GetRetargetedFocusedElement(
         &mut self,
-        newFocusedElement: *mut crate::UnityEngine::UIElements::Focusable,
-        bIsFocusDelegated: bool,
-        dispatchMode: crate::UnityEngine::UIElements::DispatchMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        retargetAgainst: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Focusable> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SwitchFocus",
-                (newFocusedElement, bIsFocusDelegated, dispatchMode),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SwitchFocus_FocusChangeDirection__cordl_bool_DispatchMode1(
-        &mut self,
-        newFocusedElement: *mut crate::UnityEngine::UIElements::Focusable,
-        direction: *mut crate::UnityEngine::UIElements::FocusChangeDirection,
-        bIsFocusDelegated: bool,
-        dispatchMode: crate::UnityEngine::UIElements::DispatchMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SwitchFocus",
-                (newFocusedElement, direction, bIsFocusDelegated, dispatchMode),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_imguiKeyboardControl(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_imguiKeyboardControl", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        focusRing: *mut crate::UnityEngine::UIElements::IFocusRing,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (focusRing))?;
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::Focusable = __cordl_object
+            .invoke("GetRetargetedFocusedElement", (retargetAgainst))?;
         Ok(__cordl_ret)
     }
     pub fn GrabFocus(
@@ -145,24 +173,6 @@ impl crate::UnityEngine::UIElements::FocusController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetRetargetedFocusedElement(
-        &mut self,
-        retargetAgainst: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Focusable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Focusable = __cordl_object
-            .invoke("GetRetargetedFocusedElement", (retargetAgainst))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_imguiKeyboardControl(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_imguiKeyboardControl", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn IsFocused(
         &mut self,
         f: *mut crate::UnityEngine::UIElements::Focusable,
@@ -171,95 +181,6 @@ impl crate::UnityEngine::UIElements::FocusController {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsFocused", (f))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_selectedTextElement(
-        &mut self,
-        value: *mut crate::UnityEngine::UIElements::TextElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_selectedTextElement", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetFocusToLastFocusedElement(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetFocusToLastFocusedElement", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReleaseFocus(
-        &mut self,
-        focusable: *mut crate::UnityEngine::UIElements::Focusable,
-        willGiveFocusTo: *mut crate::UnityEngine::UIElements::Focusable,
-        direction: *mut crate::UnityEngine::UIElements::FocusChangeDirection,
-        dispatchMode: crate::UnityEngine::UIElements::DispatchMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "ReleaseFocus",
-                (focusable, willGiveFocusTo, direction, dispatchMode),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AboutToGrabFocus(
-        &mut self,
-        focusable: *mut crate::UnityEngine::UIElements::Focusable,
-        willTakeFocusFrom: *mut crate::UnityEngine::UIElements::Focusable,
-        direction: *mut crate::UnityEngine::UIElements::FocusChangeDirection,
-        dispatchMode: crate::UnityEngine::UIElements::DispatchMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "AboutToGrabFocus",
-                (focusable, willTakeFocusFrom, direction, dispatchMode),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetLeafFocusedElement(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Focusable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Focusable = __cordl_object
-            .invoke("GetLeafFocusedElement", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetFocusableParentForPointerEvent(
-        &mut self,
-        target: *mut crate::UnityEngine::UIElements::Focusable,
-        effectiveTarget: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::Focusable,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("GetFocusableParentForPointerEvent", (target, effectiveTarget))?;
-        Ok(__cordl_ret)
-    }
-    pub fn BlurLastFocusedElement(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BlurLastFocusedElement", ())?;
         Ok(__cordl_ret)
     }
     pub fn IsLocalElement(
@@ -282,7 +203,37 @@ impl crate::UnityEngine::UIElements::FocusController {
         let __cordl_ret: bool = __cordl_object.invoke("IsPendingFocus", (f))?;
         Ok(__cordl_ret)
     }
-    pub fn AboutToReleaseFocus(
+    pub fn New(
+        focusRing: *mut crate::UnityEngine::UIElements::IFocusRing,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (focusRing))?;
+        Ok(__cordl_object)
+    }
+    pub fn ProcessPendingFocusChange(
+        &mut self,
+        f: *mut crate::UnityEngine::UIElements::Focusable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessPendingFocusChange", (f))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReevaluateFocus(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReevaluateFocus", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReleaseFocus(
         &mut self,
         focusable: *mut crate::UnityEngine::UIElements::Focusable,
         willGiveFocusTo: *mut crate::UnityEngine::UIElements::Focusable,
@@ -294,9 +245,19 @@ impl crate::UnityEngine::UIElements::FocusController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "AboutToReleaseFocus",
+                "ReleaseFocus",
                 (focusable, willGiveFocusTo, direction, dispatchMode),
             )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetFocusToLastFocusedElement(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetFocusToLastFocusedElement", ())?;
         Ok(__cordl_ret)
     }
     pub fn SwitchFocusOnEvent(
@@ -310,9 +271,10 @@ impl crate::UnityEngine::UIElements::FocusController {
             .invoke("SwitchFocusOnEvent", (e))?;
         Ok(__cordl_ret)
     }
-    pub fn Blur(
+    pub fn SwitchFocus_FocusChangeDirection__cordl_bool_DispatchMode1(
         &mut self,
-        focusable: *mut crate::UnityEngine::UIElements::Focusable,
+        newFocusedElement: *mut crate::UnityEngine::UIElements::Focusable,
+        direction: *mut crate::UnityEngine::UIElements::FocusChangeDirection,
         bIsFocusDelegated: bool,
         dispatchMode: crate::UnityEngine::UIElements::DispatchMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -320,17 +282,26 @@ impl crate::UnityEngine::UIElements::FocusController {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Blur", (focusable, bIsFocusDelegated, dispatchMode))?;
+            .invoke(
+                "SwitchFocus",
+                (newFocusedElement, direction, bIsFocusDelegated, dispatchMode),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn ReevaluateFocus(
+    pub fn SwitchFocus__cordl_bool_DispatchMode0(
         &mut self,
+        newFocusedElement: *mut crate::UnityEngine::UIElements::Focusable,
+        bIsFocusDelegated: bool,
+        dispatchMode: crate::UnityEngine::UIElements::DispatchMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReevaluateFocus", ())?;
+            .invoke(
+                "SwitchFocus",
+                (newFocusedElement, bIsFocusDelegated, dispatchMode),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn SyncIMGUIFocus(
@@ -353,36 +324,65 @@ impl crate::UnityEngine::UIElements::FocusController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessPendingFocusChange(
+    pub fn _ctor(
         &mut self,
-        f: *mut crate::UnityEngine::UIElements::Focusable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessPendingFocusChange", (f))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DoFocusChange(
-        &mut self,
-        f: *mut crate::UnityEngine::UIElements::Focusable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DoFocusChange", (f))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
         focusRing: *mut crate::UnityEngine::UIElements::IFocusRing,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (focusRing))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (focusRing))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_focusRing(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::IFocusRing> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::IFocusRing = __cordl_object
+            .invoke("get_focusRing", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_focusedElement(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Focusable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::Focusable = __cordl_object
+            .invoke("get_focusedElement", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_imguiKeyboardControl(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_imguiKeyboardControl", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_imguiKeyboardControl(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_imguiKeyboardControl", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_selectedTextElement(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::TextElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_selectedTextElement", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+FocusController")]

@@ -67,14 +67,25 @@ impl crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
         feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement+Flags"
     )]
     pub type Flags = crate::UnityEngine::InputSystem::DeviceRequirement_Flags;
-    pub fn set_isOR(
+    pub fn Equals_InputControlScheme_DeviceRequirement0(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_isOR",
-            (value),
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object1(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -82,6 +93,34 @@ impl crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_controlPath(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_controlPath",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isAND(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_isAND",
             (),
         )?;
         Ok(__cordl_ret)
@@ -94,12 +133,10 @@ impl crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_controlPath(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_isOptional(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_controlPath",
+            "get_isOptional",
             (),
         )?;
         Ok(__cordl_ret)
@@ -126,6 +163,17 @@ impl crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn set_isOR(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_isOR",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_isOptional(
         &mut self,
         value: bool,
@@ -134,54 +182,6 @@ impl crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
             self,
             "set_isOptional",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_InputControlScheme_DeviceRequirement0(
-        &mut self,
-        other: crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isOptional(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isOptional",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isAND(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isAND",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -216,6 +216,24 @@ for crate::UnityEngine::InputSystem::MatchResult_Enumerator {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
 impl crate::UnityEngine::InputSystem::MatchResult_Enumerator {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -232,24 +250,6 @@ impl crate::UnityEngine::InputSystem::MatchResult_Enumerator {
         let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.IEnumerator.get_Current",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
             (),
         )?;
         Ok(__cordl_ret)
@@ -311,48 +311,10 @@ for crate::UnityEngine::InputSystem::InputControlScheme {
 impl crate::UnityEngine::InputSystem::InputControlScheme {
     #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
     pub type MatchResult = crate::UnityEngine::InputSystem::InputControlScheme_MatchResult;
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement")]
-    pub type DeviceRequirement = crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement;
     #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+SchemeJson")]
     pub type SchemeJson = crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson;
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_name",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn PickDevicesFrom<TDevices>(
-        &mut self,
-        devices: TDevices,
-        favorDevice: *mut crate::UnityEngine::InputSystem::InputDevice,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlScheme_MatchResult,
-    >
-    where
-        TDevices: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme_MatchResult = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "PickDevicesFrom",
-            (devices, favorDevice),
-        )?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement")]
+    pub type DeviceRequirement = crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement;
     pub fn Equals_InputControlScheme0(
         &mut self,
         other: crate::UnityEngine::InputSystem::InputControlScheme,
@@ -372,6 +334,32 @@ impl crate::UnityEngine::InputSystem::InputControlScheme {
             self,
             "Equals",
             (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn PickDevicesFrom<TDevices>(
+        &mut self,
+        devices: TDevices,
+        favorDevice: *mut crate::UnityEngine::InputSystem::InputDevice,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlScheme_MatchResult,
+    >
+    where
+        TDevices: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme_MatchResult = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "PickDevicesFrom",
+            (devices, favorDevice),
         )?;
         Ok(__cordl_ret)
     }
@@ -398,6 +386,41 @@ impl crate::UnityEngine::InputSystem::InputControlScheme {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        name: *mut crate::System::String,
+        devices: *mut crate::System::Collections::Generic::IEnumerable_1<
+            crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement,
+        >,
+        bindingGroup: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (name, devices, bindingGroup),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_bindingGroup(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_bindingGroup",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_deviceRequirements(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -414,20 +437,12 @@ impl crate::UnityEngine::InputSystem::InputControlScheme {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_bindingGroup(
+    pub fn get_name(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_bindingGroup",
+            "get_name",
             (),
         )?;
         Ok(__cordl_ret)
@@ -440,21 +455,6 @@ impl crate::UnityEngine::InputSystem::InputControlScheme {
             self,
             "set_bindingGroup",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        name: *mut crate::System::String,
-        devices: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement,
-        >,
-        bindingGroup: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (name, devices, bindingGroup),
         )?;
         Ok(__cordl_ret)
     }
@@ -489,14 +489,6 @@ for crate::UnityEngine::InputSystem::MatchResult_Match {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Match")]
 impl crate::UnityEngine::InputSystem::MatchResult_Match {
-    pub fn get_requirementIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_requirementIndex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_control(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -521,6 +513,14 @@ impl crate::UnityEngine::InputSystem::MatchResult_Match {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_isOptional(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_isOptional",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_requirement(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -533,10 +533,10 @@ impl crate::UnityEngine::InputSystem::MatchResult_Match {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_isOptional(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_requirementIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_isOptional",
+            "get_requirementIndex",
             (),
         )?;
         Ok(__cordl_ret)
@@ -577,79 +577,18 @@ for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
 impl crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Match")]
-    pub type Match = crate::UnityEngine::InputSystem::MatchResult_Match;
     #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Result")]
     pub type Result = crate::UnityEngine::InputSystem::MatchResult_Result;
     #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
     pub type Enumerator = crate::UnityEngine::InputSystem::MatchResult_Enumerator;
-    pub fn get_Item(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::MatchResult_Match,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::MatchResult_Match = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_hasMissingOptionalDevices(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_hasMissingOptionalDevices",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isSuccessfulMatch(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isSuccessfulMatch",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_hasMissingRequiredDevices(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_hasMissingRequiredDevices",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Match")]
+    pub type Match = crate::UnityEngine::InputSystem::MatchResult_Match;
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Dispose",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_devices(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlList_1<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
-        >,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlList_1<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_devices", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_score(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_score",
             (),
         )?;
         Ok(__cordl_ret)
@@ -672,6 +611,67 @@ impl crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
         let __cordl_ret: *mut crate::System::Collections::IEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.IEnumerable.GetEnumerator",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::MatchResult_Match,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::MatchResult_Match = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_devices(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlList_1<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlList_1<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_devices", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hasMissingOptionalDevices(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_hasMissingOptionalDevices",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hasMissingRequiredDevices(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_hasMissingRequiredDevices",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isSuccessfulMatch(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_isSuccessfulMatch",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_score(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_score",
             (),
         )?;
         Ok(__cordl_ret)

@@ -30,15 +30,17 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ShaderVariantsSO_ShaderVaria
 impl crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
     #[cfg(feature = "ShaderVariantsSO+ShaderVariant+Variant")]
     pub type Variant = crate::GlobalNamespace::ShaderVariant_Variant;
-    pub fn get_shader(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Shader> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Shader = __cordl_object
-            .invoke("get_shader", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        shader: *mut crate::UnityEngine::Shader,
+        variants: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::ShaderVariant_Variant,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (shader, variants))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -52,6 +54,16 @@ impl crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (shader, variants))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_shader(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Shader> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Shader = __cordl_object
+            .invoke("get_shader", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_variants(
@@ -68,18 +80,6 @@ impl crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
             *mut crate::GlobalNamespace::ShaderVariant_Variant,
         > = __cordl_object.invoke("get_variants", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        shader: *mut crate::UnityEngine::Shader,
-        variants: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::ShaderVariant_Variant,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (shader, variants))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ShaderVariantsSO+ShaderVariant")]
@@ -135,6 +135,13 @@ impl ShaderVariantsSO {
             .invoke("Init", (shaderVariants))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -159,13 +166,6 @@ impl ShaderVariantsSO {
             *mut crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant,
         > = __cordl_object.invoke("get_shaderVariants", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ShaderVariantsSO")]
@@ -205,25 +205,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ShaderVariant_Variant {
 }
 #[cfg(feature = "ShaderVariantsSO+ShaderVariant+Variant")]
 impl crate::GlobalNamespace::ShaderVariant_Variant {
-    pub fn get_passType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::PassType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Rendering::PassType = __cordl_object
-            .invoke("get_passType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_keywords(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_keywords", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        passType: crate::UnityEngine::Rendering::PassType,
+        keywords: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (passType, keywords))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -237,15 +227,25 @@ impl crate::GlobalNamespace::ShaderVariant_Variant {
             .invoke(".ctor", (passType, keywords))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        passType: crate::UnityEngine::Rendering::PassType,
-        keywords: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (passType, keywords))?;
-        Ok(__cordl_object)
+    pub fn get_keywords(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_keywords", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_passType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::PassType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Rendering::PassType = __cordl_object
+            .invoke("get_passType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "ShaderVariantsSO+ShaderVariant+Variant")]

@@ -29,14 +29,52 @@ impl std::ops::DerefMut for Mirror {
 }
 #[cfg(feature = "Mirror")]
 impl Mirror {
-    pub fn get_noMirrorMaterial(
+    pub fn ChangeMirrorEnabledState(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Material> {
+        newIsEnabled: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Material = __cordl_object
-            .invoke("get_noMirrorMaterial", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ChangeMirrorEnabledState", (newIsEnabled))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnWillRenderObject(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnWillRenderObject", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_mirrorDidChangeEnabledStateEvent(
@@ -50,25 +88,31 @@ impl Mirror {
             .invoke("add_mirrorDidChangeEnabledStateEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_isEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isEnabled", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_isEnabled(
+    pub fn get_mirrorMaterial(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Material> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_isEnabled", (value))?;
+        let __cordl_ret: *mut crate::UnityEngine::Material = __cordl_object
+            .invoke("get_mirrorMaterial", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noMirrorMaterial(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Material> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Material = __cordl_object
+            .invoke("get_noMirrorMaterial", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_mirrorDidChangeEnabledStateEvent(
@@ -82,60 +126,16 @@ impl Mirror {
             .invoke("remove_mirrorDidChangeEnabledStateEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_mirrorMaterial(
+    pub fn set_isEnabled(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Material> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Material = __cordl_object
-            .invoke("get_mirrorMaterial", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnWillRenderObject(
-        &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnWillRenderObject", ())?;
+            .invoke("set_isEnabled", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn ChangeMirrorEnabledState(
-        &mut self,
-        newIsEnabled: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ChangeMirrorEnabledState", (newIsEnabled))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isEnabled", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mirror")]

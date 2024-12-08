@@ -39,27 +39,51 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
             .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_Manager(
+    pub fn DeInitXRSDK(
         &mut self,
-        value: *mut crate::UnityEngine::XR::Management::XRManagerSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Manager", (value))?;
+            .invoke("DeInitXRSDK", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Manager(
+    pub fn InitXRSDK(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::XR::Management::XRManagerSettings,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::XR::Management::XRManagerSettings = __cordl_object
-            .invoke("get_Manager", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitXRSDK", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
     pub fn StartXRSDK(
@@ -72,14 +96,14 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
             .invoke("StartXRSDK", ())?;
         Ok(__cordl_ret)
     }
-    pub fn DeInitXRSDK(
+    pub fn StopXRSDK(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DeInitXRSDK", ())?;
+            .invoke("StopXRSDK", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -104,26 +128,6 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
             .invoke("get_AssignedSettings", ())?;
         Ok(__cordl_ret)
     }
-    pub fn StopXRSDK(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StopXRSDK", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_InitManagerOnStart(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -131,32 +135,28 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         let __cordl_ret: bool = __cordl_object.invoke("get_InitManagerOnStart", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Start(
+    pub fn get_Manager(
         &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::XR::Management::XRManagerSettings,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::XR::Management::XRManagerSettings = __cordl_object
+            .invoke("get_Manager", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Manager(
+        &mut self,
+        value: *mut crate::UnityEngine::XR::Management::XRManagerSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
+            .invoke("set_Manager", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn InitXRSDK(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitXRSDK", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+XR+Management+XRGeneralSettings")]

@@ -67,10 +67,10 @@ impl std::ops::DerefMut for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
 }
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
 impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
-    #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters")]
-    pub type JobScheduleParameters = crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters;
     #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
     pub type PanicFunction_ = crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_;
+    #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters")]
+    pub type JobScheduleParameters = crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters;
 }
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
 impl quest_hook::libil2cpp::ObjectType
@@ -111,18 +111,6 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
 }
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
 impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -136,12 +124,24 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]

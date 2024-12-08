@@ -74,6 +74,28 @@ impl<
     TSerializable,
     TDeltaSerializable,
 > {
+    pub fn ClearBufferedStates(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearBufferedStates", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetSyncState(
         &mut self,
         i: i32,
@@ -97,68 +119,6 @@ impl<
         );
         let __cordl_ret: *mut MultiplayerSyncState_3<TStateTable, TType, TState> = __cordl_object
             .invoke("GetSyncState", (i))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_syncTime(&mut self) -> quest_hook::libil2cpp::Result<i64>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_syncTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_localState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut LocalMultiplayerSyncState_3<TStateTable, TType, TState>,
-    >
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut LocalMultiplayerSyncState_3<TStateTable, TType, TState> = __cordl_object
-            .invoke("get_localState", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_connectedPlayerCount(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_connectedPlayerCount", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetSyncStateForPlayer(
@@ -186,9 +146,12 @@ impl<
             .invoke("GetSyncStateForPlayer", (player))?;
         Ok(__cordl_ret)
     }
-    pub fn ClearBufferedStates(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_connectedPlayerCount(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -204,14 +167,51 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearBufferedStates", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_connectedPlayerCount", ())?;
         Ok(__cordl_ret)
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
+    pub fn get_localState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut LocalMultiplayerSyncState_3<TStateTable, TType, TState>,
+    >
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut LocalMultiplayerSyncState_3<TStateTable, TType, TState> = __cordl_object
+            .invoke("get_localState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_syncTime(&mut self) -> quest_hook::libil2cpp::Result<i64>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_syncTime", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "INodePoseSyncStateManager_5")]

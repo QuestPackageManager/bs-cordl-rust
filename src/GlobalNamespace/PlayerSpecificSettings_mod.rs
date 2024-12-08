@@ -43,52 +43,14 @@ impl std::ops::DerefMut for PlayerSpecificSettings {
 }
 #[cfg(feature = "PlayerSpecificSettings")]
 impl PlayerSpecificSettings {
-    pub fn get_automaticPlayerHeight(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_automaticPlayerHeight", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_autoRestart(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_autoRestart", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_arcVisibility(
+    pub fn AreValuesEqual(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<ArcVisibilityType> {
+        other: *mut PlayerSpecificSettings,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: ArcVisibilityType = __cordl_object
-            .invoke("get_arcVisibility", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_environmentEffectsFilterExpertPlusPreset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<EnvironmentEffectsFilterPreset> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: EnvironmentEffectsFilterPreset = __cordl_object
-            .invoke("get_environmentEffectsFilterExpertPlusPreset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_advancedHud(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_advancedHud", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_adaptiveSfx(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_adaptiveSfx", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("AreValuesEqual", (other))?;
         Ok(__cordl_ret)
     }
     pub fn CopyWith(
@@ -162,29 +124,64 @@ impl PlayerSpecificSettings {
             .invoke("GetEnvironmentEffectsFilterPreset", (difficulty))?;
         Ok(__cordl_ret)
     }
-    pub fn AreValuesEqual(
-        &mut self,
-        other: *mut PlayerSpecificSettings,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("AreValuesEqual", (other))?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn get_headsetHapticIntensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_headsetHapticIntensity", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sfxVolume(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_sfxVolume", ())?;
-        Ok(__cordl_ret)
+    pub fn New__cordl_bool_f32__cordl_bool_f32__cordl_bool__cordl_bool__cordl_bool__cordl_bool__cordl_bool_f32_NoteJumpDurationTypeSettings_f32_f32__cordl_bool__cordl_bool__cordl_bool_ArcVisibilityType_EnvironmentEffectsFilterPreset_EnvironmentEffectsFilterPreset_f32_1(
+        leftHanded: bool,
+        playerHeight: f32,
+        automaticPlayerHeight: bool,
+        sfxVolume: f32,
+        reduceDebris: bool,
+        noTextsAndHuds: bool,
+        noFailEffects: bool,
+        advancedHud: bool,
+        autoRestart: bool,
+        saberTrailIntensity: f32,
+        noteJumpDurationTypeSettings: NoteJumpDurationTypeSettings,
+        noteJumpFixedDuration: f32,
+        noteJumpStartBeatOffset: f32,
+        hideNoteSpawnEffect: bool,
+        adaptiveSfx: bool,
+        arcsHapticFeedback: bool,
+        arcsVisible: ArcVisibilityType,
+        environmentEffectsFilterDefaultPreset: EnvironmentEffectsFilterPreset,
+        environmentEffectsFilterExpertPlusPreset: EnvironmentEffectsFilterPreset,
+        headsetHapticIntensity: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    leftHanded,
+                    playerHeight,
+                    automaticPlayerHeight,
+                    sfxVolume,
+                    reduceDebris,
+                    noTextsAndHuds,
+                    noFailEffects,
+                    advancedHud,
+                    autoRestart,
+                    saberTrailIntensity,
+                    noteJumpDurationTypeSettings,
+                    noteJumpFixedDuration,
+                    noteJumpStartBeatOffset,
+                    hideNoteSpawnEffect,
+                    adaptiveSfx,
+                    arcsHapticFeedback,
+                    arcsVisible,
+                    environmentEffectsFilterDefaultPreset,
+                    environmentEffectsFilterExpertPlusPreset,
+                    headsetHapticIntensity,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_0(
         &mut self,
@@ -250,11 +247,97 @@ impl PlayerSpecificSettings {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_noteJumpStartBeatOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_adaptiveSfx(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_noteJumpStartBeatOffset", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_adaptiveSfx", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_advancedHud(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_advancedHud", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_arcVisibility(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<ArcVisibilityType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: ArcVisibilityType = __cordl_object
+            .invoke("get_arcVisibility", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_arcsHapticFeedback(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_arcsHapticFeedback", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_autoRestart(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_autoRestart", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_automaticPlayerHeight(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_automaticPlayerHeight", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_environmentEffectsFilterDefaultPreset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<EnvironmentEffectsFilterPreset> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: EnvironmentEffectsFilterPreset = __cordl_object
+            .invoke("get_environmentEffectsFilterDefaultPreset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_environmentEffectsFilterExpertPlusPreset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<EnvironmentEffectsFilterPreset> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: EnvironmentEffectsFilterPreset = __cordl_object
+            .invoke("get_environmentEffectsFilterExpertPlusPreset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_headsetHapticIntensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_headsetHapticIntensity", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hideNoteSpawnEffect(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_hideNoteSpawnEffect", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_leftHanded(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_leftHanded", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noFailEffects(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_noFailEffects", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_noTextsAndHuds(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -264,11 +347,35 @@ impl PlayerSpecificSettings {
         let __cordl_ret: bool = __cordl_object.invoke("get_noTextsAndHuds", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_hideNoteSpawnEffect(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_noteJumpDurationTypeSettings(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<NoteJumpDurationTypeSettings> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hideNoteSpawnEffect", ())?;
+        let __cordl_ret: NoteJumpDurationTypeSettings = __cordl_object
+            .invoke("get_noteJumpDurationTypeSettings", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noteJumpFixedDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_noteJumpFixedDuration", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noteJumpStartBeatOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_noteJumpStartBeatOffset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_playerHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_playerHeight", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_reduceDebris(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -285,119 +392,12 @@ impl PlayerSpecificSettings {
         let __cordl_ret: f32 = __cordl_object.invoke("get_saberTrailIntensity", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_environmentEffectsFilterDefaultPreset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<EnvironmentEffectsFilterPreset> {
+    pub fn get_sfxVolume(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: EnvironmentEffectsFilterPreset = __cordl_object
-            .invoke("get_environmentEffectsFilterDefaultPreset", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_sfxVolume", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_noFailEffects(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_noFailEffects", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_arcsHapticFeedback(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_arcsHapticFeedback", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_noteJumpFixedDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_noteJumpFixedDuration", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_leftHanded(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_leftHanded", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_noteJumpDurationTypeSettings(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<NoteJumpDurationTypeSettings> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: NoteJumpDurationTypeSettings = __cordl_object
-            .invoke("get_noteJumpDurationTypeSettings", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_playerHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_playerHeight", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New__cordl_bool_f32__cordl_bool_f32__cordl_bool__cordl_bool__cordl_bool__cordl_bool__cordl_bool_f32_NoteJumpDurationTypeSettings_f32_f32__cordl_bool__cordl_bool__cordl_bool_ArcVisibilityType_EnvironmentEffectsFilterPreset_EnvironmentEffectsFilterPreset_f32_1(
-        leftHanded: bool,
-        playerHeight: f32,
-        automaticPlayerHeight: bool,
-        sfxVolume: f32,
-        reduceDebris: bool,
-        noTextsAndHuds: bool,
-        noFailEffects: bool,
-        advancedHud: bool,
-        autoRestart: bool,
-        saberTrailIntensity: f32,
-        noteJumpDurationTypeSettings: NoteJumpDurationTypeSettings,
-        noteJumpFixedDuration: f32,
-        noteJumpStartBeatOffset: f32,
-        hideNoteSpawnEffect: bool,
-        adaptiveSfx: bool,
-        arcsHapticFeedback: bool,
-        arcsVisible: ArcVisibilityType,
-        environmentEffectsFilterDefaultPreset: EnvironmentEffectsFilterPreset,
-        environmentEffectsFilterExpertPlusPreset: EnvironmentEffectsFilterPreset,
-        headsetHapticIntensity: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    leftHanded,
-                    playerHeight,
-                    automaticPlayerHeight,
-                    sfxVolume,
-                    reduceDebris,
-                    noTextsAndHuds,
-                    noFailEffects,
-                    advancedHud,
-                    autoRestart,
-                    saberTrailIntensity,
-                    noteJumpDurationTypeSettings,
-                    noteJumpFixedDuration,
-                    noteJumpStartBeatOffset,
-                    hideNoteSpawnEffect,
-                    adaptiveSfx,
-                    arcsHapticFeedback,
-                    arcsVisible,
-                    environmentEffectsFilterDefaultPreset,
-                    environmentEffectsFilterExpertPlusPreset,
-                    headsetHapticIntensity,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PlayerSpecificSettings")]

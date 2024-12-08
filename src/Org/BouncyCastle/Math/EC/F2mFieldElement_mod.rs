@@ -44,11 +44,8 @@ impl crate::Org::BouncyCastle::Math::EC::F2mFieldElement {
             .invoke("Add", (b))?;
         Ok(__cordl_ret)
     }
-    pub fn MultiplyMinusProduct(
+    pub fn AddOne(
         &mut self,
-        b: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
     > {
@@ -56,21 +53,47 @@ impl crate::Org::BouncyCastle::Math::EC::F2mFieldElement {
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("MultiplyMinusProduct", (b, x, y))?;
+            .invoke("AddOne", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Representation(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn Divide(
+        &mut self,
+        b: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Representation", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
+            .invoke("Divide", (b))?;
         Ok(__cordl_ret)
     }
-    pub fn get_K1(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn Equals_F2mFieldElement1(
+        &mut self,
+        other: *mut crate::Org::BouncyCastle::Math::EC::F2mFieldElement,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_K1", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object0(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret)
     }
     pub fn Invert(
@@ -85,22 +108,22 @@ impl crate::Org::BouncyCastle::Math::EC::F2mFieldElement {
             .invoke("Invert", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TestBitZero(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TestBitZero", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsOne(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsOne", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SquareMinusProduct(
+    pub fn Multiply(
         &mut self,
+        b: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
+            .invoke("Multiply", (b))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MultiplyMinusProduct(
+        &mut self,
+        b: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
         x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
         y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
     ) -> quest_hook::libil2cpp::Result<
@@ -110,7 +133,7 @@ impl crate::Org::BouncyCastle::Math::EC::F2mFieldElement {
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("SquareMinusProduct", (x, y))?;
+            .invoke("MultiplyMinusProduct", (b, x, y))?;
         Ok(__cordl_ret)
     }
     pub fn MultiplyPlusProduct(
@@ -128,6 +151,53 @@ impl crate::Org::BouncyCastle::Math::EC::F2mFieldElement {
             .invoke("MultiplyPlusProduct", (b, x, y))?;
         Ok(__cordl_ret)
     }
+    pub fn Negate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
+            .invoke("Negate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_Il2CppArray_LongArray2(
+        m: i32,
+        ks: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        x: *mut crate::Org::BouncyCastle::Math::EC::LongArray,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (m, ks, x))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_BigInteger1(
+        m: i32,
+        k: i32,
+        x: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (m, k, x))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_i32_i32_BigInteger0(
+        m: i32,
+        k1: i32,
+        k2: i32,
+        k3: i32,
+        x: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (m, k1, k2, k3, x))?;
+        Ok(__cordl_object)
+    }
     pub fn Sqrt(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -140,30 +210,7 @@ impl crate::Org::BouncyCastle::Math::EC::F2mFieldElement {
             .invoke("Sqrt", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Divide(
-        &mut self,
-        b: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("Divide", (b))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_FieldName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_FieldName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddOne(
+    pub fn Square(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
@@ -172,7 +219,21 @@ impl crate::Org::BouncyCastle::Math::EC::F2mFieldElement {
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("AddOne", ())?;
+            .invoke("Square", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SquareMinusProduct(
+        &mut self,
+        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
+            .invoke("SquareMinusProduct", (x, y))?;
         Ok(__cordl_ret)
     }
     pub fn SquarePlusProduct(
@@ -189,33 +250,6 @@ impl crate::Org::BouncyCastle::Math::EC::F2mFieldElement {
             .invoke("SquarePlusProduct", (x, y))?;
         Ok(__cordl_ret)
     }
-    pub fn get_K2(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_K2", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object0(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_F2mFieldElement1(
-        &mut self,
-        other: *mut crate::Org::BouncyCastle::Math::EC::F2mFieldElement,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret)
-    }
     pub fn SquarePow(
         &mut self,
         pow: i32,
@@ -227,46 +261,6 @@ impl crate::Org::BouncyCastle::Math::EC::F2mFieldElement {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
             .invoke("SquarePow", (pow))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Square(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("Square", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_FieldSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_FieldSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsZero(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsZero", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_M(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_M", ())?;
         Ok(__cordl_ret)
     }
     pub fn Subtract(
@@ -282,6 +276,13 @@ impl crate::Org::BouncyCastle::Math::EC::F2mFieldElement {
             .invoke("Subtract", (b))?;
         Ok(__cordl_ret)
     }
+    pub fn TestBitZero(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TestBitZero", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn ToBigInteger(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
@@ -292,16 +293,30 @@ impl crate::Org::BouncyCastle::Math::EC::F2mFieldElement {
             .invoke("ToBigInteger", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Negate(
+    pub fn _ctor_Il2CppArray_LongArray2(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    > {
+        m: i32,
+        ks: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        x: *mut crate::Org::BouncyCastle::Math::EC::LongArray,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("Negate", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (m, ks, x))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_BigInteger1(
+        &mut self,
+        m: i32,
+        k: i32,
+        x: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (m, k, x))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_i32_i32_i32_BigInteger0(
@@ -319,30 +334,56 @@ impl crate::Org::BouncyCastle::Math::EC::F2mFieldElement {
             .invoke(".ctor", (m, k1, k2, k3, x))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_BigInteger1(
-        &mut self,
-        m: i32,
-        k: i32,
-        x: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_BitLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (m, k, x))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_BitLength", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Il2CppArray_LongArray2(
+    pub fn get_FieldName(
         &mut self,
-        m: i32,
-        ks: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        x: *mut crate::Org::BouncyCastle::Math::EC::LongArray,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (m, ks, x))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_FieldName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_FieldSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_FieldSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsOne(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsOne", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsZero(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsZero", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_K1(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_K1", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_K2(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_K2", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_K3(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -352,60 +393,19 @@ impl crate::Org::BouncyCastle::Math::EC::F2mFieldElement {
         let __cordl_ret: i32 = __cordl_object.invoke("get_K3", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_BitLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_M(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_BitLength", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_M", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Multiply(
-        &mut self,
-        b: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    > {
+    pub fn get_Representation(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("Multiply", (b))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Representation", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_i32_i32_i32_BigInteger0(
-        m: i32,
-        k1: i32,
-        k2: i32,
-        k3: i32,
-        x: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (m, k1, k2, k3, x))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_BigInteger1(
-        m: i32,
-        k: i32,
-        x: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (m, k, x))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray_LongArray2(
-        m: i32,
-        ks: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        x: *mut crate::Org::BouncyCastle::Math::EC::LongArray,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (m, ks, x))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+F2mFieldElement")]

@@ -27,16 +27,10 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+ICachable")]
 impl crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable {
-    pub fn set_Key(
-        &mut self,
-        value: *mut crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Key", (value))?;
-        Ok(__cordl_ret)
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
     }
     pub fn get_Key(
         &mut self,
@@ -50,10 +44,16 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable {
             .invoke("get_Key", ())?;
         Ok(__cordl_ret)
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
+    pub fn set_Key(
+        &mut self,
+        value: *mut crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Key", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+ICachable")]

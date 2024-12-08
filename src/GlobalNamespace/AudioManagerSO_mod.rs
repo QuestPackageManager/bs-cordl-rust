@@ -38,24 +38,6 @@ impl AudioManagerSO {
     pub const kMusicVolume: &'static str = "MusicVolume";
     pub const kPreferredSpatializerPluginName: &'static str = "Microsoft Spatializer";
     pub const kSfxVolume: &'static str = "SFXVolume";
-    pub fn get_sfxVolume(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_sfxVolume", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_musicPitch(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_musicPitch", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -64,6 +46,44 @@ impl AudioManagerSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sfxEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_sfxEnabled", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sfxLatency(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_sfxLatency", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sfxVolume(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_sfxVolume", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_mainVolume(
@@ -77,22 +97,15 @@ impl AudioManagerSO {
             .invoke("set_mainVolume", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_sfxLatency(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_sfxLatency", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_sfxEnabled(
+    pub fn set_musicPitch(
         &mut self,
-        value: bool,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_sfxEnabled", (value))?;
+            .invoke("set_musicPitch", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_musicSpeed(
@@ -106,21 +119,26 @@ impl AudioManagerSO {
             .invoke("set_musicSpeed", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_sfxEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_sfxEnabled", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn set_musicVolume(
         &mut self,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("set_musicVolume", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_sfxEnabled(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_sfxEnabled", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_sfxVolume(
@@ -133,24 +151,6 @@ impl AudioManagerSO {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_sfxVolume", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn set_musicVolume(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_musicVolume", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "AudioManagerSO")]

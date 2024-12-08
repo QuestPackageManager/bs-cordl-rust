@@ -25,12 +25,12 @@ for crate::OVR::OpenVR::IVRSpatialAnchors {
 }
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors")]
 impl crate::OVR::OpenVR::IVRSpatialAnchors {
-    #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_CreateSpatialAnchorFromDescriptor")]
-    pub type _CreateSpatialAnchorFromDescriptor = crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromDescriptor;
-    #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_CreateSpatialAnchorFromPose")]
-    pub type _CreateSpatialAnchorFromPose = crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromPose;
     #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_GetSpatialAnchorPose")]
     pub type _GetSpatialAnchorPose = crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorPose;
+    #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_CreateSpatialAnchorFromPose")]
+    pub type _CreateSpatialAnchorFromPose = crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromPose;
+    #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_CreateSpatialAnchorFromDescriptor")]
+    pub type _CreateSpatialAnchorFromDescriptor = crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromDescriptor;
     #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_GetSpatialAnchorDescriptor")]
     pub type _GetSpatialAnchorDescriptor = crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorDescriptor;
 }
@@ -63,42 +63,6 @@ for crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromDescriptor {
 }
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_CreateSpatialAnchorFromDescriptor")]
 impl crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromDescriptor {
-    pub fn Invoke(
-        &mut self,
-        pchDescriptor: *mut crate::System::String,
-        pHandleOut: quest_hook::libil2cpp::ByRefMut<u32>,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRSpatialAnchorError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRSpatialAnchorError = __cordl_object
-            .invoke("Invoke", (pchDescriptor, pHandleOut))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        pHandleOut: quest_hook::libil2cpp::ByRefMut<u32>,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRSpatialAnchorError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRSpatialAnchorError = __cordl_object
-            .invoke("EndInvoke", (pHandleOut, result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchDescriptor: *mut crate::System::String,
@@ -113,15 +77,51 @@ impl crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromDescriptor {
             .invoke("BeginInvoke", (pchDescriptor, pHandleOut, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        pHandleOut: quest_hook::libil2cpp::ByRefMut<u32>,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRSpatialAnchorError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRSpatialAnchorError = __cordl_object
+            .invoke("EndInvoke", (pHandleOut, result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        pchDescriptor: *mut crate::System::String,
+        pHandleOut: quest_hook::libil2cpp::ByRefMut<u32>,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRSpatialAnchorError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRSpatialAnchorError = __cordl_object
+            .invoke("Invoke", (pchDescriptor, pHandleOut))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_CreateSpatialAnchorFromDescriptor")]
@@ -163,32 +163,6 @@ for crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromPose {
 }
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_CreateSpatialAnchorFromPose")]
 impl crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromPose {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        unDeviceIndex: u32,
-        eOrigin: crate::OVR::OpenVR::ETrackingUniverseOrigin,
-        pPose: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::SpatialAnchorPose_t>,
-        pHandleOut: quest_hook::libil2cpp::ByRefMut<u32>,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRSpatialAnchorError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRSpatialAnchorError = __cordl_object
-            .invoke("Invoke", (unDeviceIndex, eOrigin, pPose, pHandleOut))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         unDeviceIndex: u32,
@@ -221,15 +195,41 @@ impl crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromPose {
             .invoke("EndInvoke", (pPose, pHandleOut, result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        unDeviceIndex: u32,
+        eOrigin: crate::OVR::OpenVR::ETrackingUniverseOrigin,
+        pPose: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::SpatialAnchorPose_t>,
+        pHandleOut: quest_hook::libil2cpp::ByRefMut<u32>,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRSpatialAnchorError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRSpatialAnchorError = __cordl_object
+            .invoke("Invoke", (unDeviceIndex, eOrigin, pPose, pHandleOut))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_CreateSpatialAnchorFromPose")]
@@ -271,6 +271,30 @@ for crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorDescriptor {
 }
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_GetSpatialAnchorDescriptor")]
 impl crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorDescriptor {
+    pub fn BeginInvoke(
+        &mut self,
+        unHandle: u32,
+        pchDescriptorOut: *mut crate::System::Text::StringBuilder,
+        punDescriptorBufferLenInOut: quest_hook::libil2cpp::ByRefMut<u32>,
+        callback: *mut crate::System::AsyncCallback,
+        object: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke(
+                "BeginInvoke",
+                (
+                    unHandle,
+                    pchDescriptorOut,
+                    punDescriptorBufferLenInOut,
+                    callback,
+                    object,
+                ),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn EndInvoke(
         &mut self,
         punDescriptorBufferLenInOut: quest_hook::libil2cpp::ByRefMut<u32>,
@@ -299,29 +323,15 @@ impl crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorDescriptor {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInvoke(
-        &mut self,
-        unHandle: u32,
-        pchDescriptorOut: *mut crate::System::Text::StringBuilder,
-        punDescriptorBufferLenInOut: quest_hook::libil2cpp::ByRefMut<u32>,
-        callback: *mut crate::System::AsyncCallback,
+    pub fn New(
         object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (
-                    unHandle,
-                    pchDescriptorOut,
-                    punDescriptorBufferLenInOut,
-                    callback,
-                    object,
-                ),
-            )?;
-        Ok(__cordl_ret)
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -334,16 +344,6 @@ impl crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorDescriptor {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_GetSpatialAnchorDescriptor")]
@@ -383,6 +383,23 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnc
 }
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_GetSpatialAnchorPose")]
 impl crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorPose {
+    pub fn BeginInvoke(
+        &mut self,
+        unHandle: u32,
+        eOrigin: crate::OVR::OpenVR::ETrackingUniverseOrigin,
+        pPoseOut: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::SpatialAnchorPose_t,
+        >,
+        callback: *mut crate::System::AsyncCallback,
+        object: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (unHandle, eOrigin, pPoseOut, callback, object))?;
+        Ok(__cordl_ret)
+    }
     pub fn EndInvoke(
         &mut self,
         pPoseOut: quest_hook::libil2cpp::ByRefMut<
@@ -412,6 +429,16 @@ impl crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorPose {
             .invoke("Invoke", (unHandle, eOrigin, pPoseOut))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -423,33 +450,6 @@ impl crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorPose {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn BeginInvoke(
-        &mut self,
-        unHandle: u32,
-        eOrigin: crate::OVR::OpenVR::ETrackingUniverseOrigin,
-        pPoseOut: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::SpatialAnchorPose_t,
-        >,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (unHandle, eOrigin, pPoseOut, callback, object))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_GetSpatialAnchorPose")]

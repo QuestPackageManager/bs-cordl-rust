@@ -25,55 +25,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crmf::PkiArchiveControl {
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+PkiArchiveControl")]
 impl crate::Org::BouncyCastle::Crmf::PkiArchiveControl {
-    pub fn _ctor(
-        &mut self,
-        pkiArchiveOptions: *mut crate::Org::BouncyCastle::Asn1::Crmf::PkiArchiveOptions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pkiArchiveOptions))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier = __cordl_object
-            .invoke("get_Type", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ArchiveType(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ArchiveType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Value(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable = __cordl_object
-            .invoke("get_Value", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_EnvelopedData(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_EnvelopedData", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetEnvelopedData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -88,12 +39,61 @@ impl crate::Org::BouncyCastle::Crmf::PkiArchiveControl {
     }
     pub fn New(
         pkiArchiveOptions: *mut crate::Org::BouncyCastle::Asn1::Crmf::PkiArchiveOptions,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pkiArchiveOptions))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        pkiArchiveOptions: *mut crate::Org::BouncyCastle::Asn1::Crmf::PkiArchiveOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (pkiArchiveOptions))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ArchiveType(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ArchiveType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_EnvelopedData(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_EnvelopedData", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier = __cordl_object
+            .invoke("get_Type", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable = __cordl_object
+            .invoke("get_Value", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+PkiArchiveControl")]

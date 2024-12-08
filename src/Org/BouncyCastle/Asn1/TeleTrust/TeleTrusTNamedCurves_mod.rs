@@ -49,6 +49,13 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP1
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -58,13 +65,6 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP1
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -118,16 +118,6 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP16
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP160t1Holder"
 )]
 impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP160t1Holder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -140,12 +130,22 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP1
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -211,6 +211,13 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP1
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -220,13 +227,6 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP1
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -280,16 +280,6 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP19
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP192t1Holder"
 )]
 impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP192t1Holder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -302,12 +292,22 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP1
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -373,6 +373,13 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP2
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -382,13 +389,6 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP2
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -454,6 +454,13 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP2
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -463,13 +470,6 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP2
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -523,16 +523,6 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP25
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP256r1Holder"
 )]
 impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP256r1Holder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -545,12 +535,22 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP2
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -604,16 +604,6 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP25
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP256t1Holder"
 )]
 impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP256t1Holder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -626,12 +616,22 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP2
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -697,6 +697,13 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP3
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -706,13 +713,6 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP3
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -766,16 +766,6 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP32
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP320t1Holder"
 )]
 impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP320t1Holder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -788,12 +778,22 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP3
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -847,16 +847,6 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP38
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP384r1Holder"
 )]
 impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP384r1Holder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -869,12 +859,22 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP3
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -928,16 +928,6 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP38
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP384t1Holder"
 )]
 impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP384t1Holder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -950,12 +940,22 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP3
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -1021,6 +1021,13 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP5
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1030,13 +1037,6 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP5
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -1090,16 +1090,6 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP51
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP512t1Holder"
 )]
 impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP512t1Holder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1112,12 +1102,22 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP5
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -1162,49 +1162,33 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves {
 #[cfg(feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves")]
 impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves {
     #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP384r1Holder"
-    )]
-    pub type BrainpoolP384r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP384r1Holder;
-    #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP320t1Holder"
-    )]
-    pub type BrainpoolP320t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP320t1Holder;
-    #[cfg(
         feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP512r1Holder"
     )]
     pub type BrainpoolP512r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP512r1Holder;
-    #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP256r1Holder"
-    )]
-    pub type BrainpoolP256r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP256r1Holder;
     #[cfg(
         feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP192t1Holder"
     )]
     pub type BrainpoolP192t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP192t1Holder;
     #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP384t1Holder"
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP320r1Holder"
     )]
-    pub type BrainpoolP384t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP384t1Holder;
+    pub type BrainpoolP320r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP320r1Holder;
     #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP512t1Holder"
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP320t1Holder"
     )]
-    pub type BrainpoolP512t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP512t1Holder;
+    pub type BrainpoolP320t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP320t1Holder;
     #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP160r1Holder"
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP384r1Holder"
     )]
-    pub type BrainpoolP160r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP160r1Holder;
+    pub type BrainpoolP384r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP384r1Holder;
+    #[cfg(
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP256r1Holder"
+    )]
+    pub type BrainpoolP256r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP256r1Holder;
     #[cfg(
         feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP160t1Holder"
     )]
     pub type BrainpoolP160t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP160t1Holder;
-    #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP192r1Holder"
-    )]
-    pub type BrainpoolP192r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP192r1Holder;
-    #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP224r1Holder"
-    )]
-    pub type BrainpoolP224r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP224r1Holder;
     #[cfg(
         feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP224t1Holder"
     )]
@@ -1214,9 +1198,32 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves {
     )]
     pub type BrainpoolP256t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP256t1Holder;
     #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP320r1Holder"
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP512t1Holder"
     )]
-    pub type BrainpoolP320r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP320r1Holder;
+    pub type BrainpoolP512t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP512t1Holder;
+    #[cfg(
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP160r1Holder"
+    )]
+    pub type BrainpoolP160r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP160r1Holder;
+    #[cfg(
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP224r1Holder"
+    )]
+    pub type BrainpoolP224r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP224r1Holder;
+    #[cfg(
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP192r1Holder"
+    )]
+    pub type BrainpoolP192r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP192r1Holder;
+    #[cfg(
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP384t1Holder"
+    )]
+    pub type BrainpoolP384t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP384t1Holder;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1226,13 +1233,6 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves")]

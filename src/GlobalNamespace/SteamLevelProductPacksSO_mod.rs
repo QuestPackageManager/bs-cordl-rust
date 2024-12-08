@@ -28,21 +28,6 @@ impl std::ops::DerefMut for SteamLevelProductPacksSO {
 }
 #[cfg(feature = "SteamLevelProductPacksSO")]
 impl SteamLevelProductPacksSO {
-    pub fn get_levelPackRedirectionData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData,
-        > = __cordl_object.invoke("get_levelPackRedirectionData", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ILevelPackProductDataContainer_SteamLevelProductCollectionModel_LevelPackProductData_SteamLevelProductCollectionModel_LevelProductData__SetLevelPackProductData(
         &mut self,
         newLevelPackProductData: *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
@@ -57,6 +42,23 @@ impl SteamLevelProductPacksSO {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_levelPackProductData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -69,22 +71,20 @@ impl SteamLevelProductPacksSO {
             .invoke("get_levelPackProductData", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn get_levelPackRedirectionData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData,
+        > = __cordl_object.invoke("get_levelPackRedirectionData", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SteamLevelProductPacksSO")]

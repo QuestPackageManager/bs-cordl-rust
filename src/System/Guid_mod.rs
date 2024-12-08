@@ -32,89 +32,53 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Guid {
 impl crate::System::Guid {
     #[cfg(feature = "System+Guid+GuidResult")]
     pub type GuidResult = crate::System::Guid_GuidResult;
+    #[cfg(feature = "System+Guid+GuidStyles")]
+    pub type GuidStyles = crate::System::Guid_GuidStyles;
     #[cfg(feature = "System+Guid+GuidParseThrowStyle")]
     pub type GuidParseThrowStyle = crate::System::Guid_GuidParseThrowStyle;
     #[cfg(feature = "System+Guid+ParseFailureKind")]
     pub type ParseFailureKind = crate::System::Guid_ParseFailureKind;
-    #[cfg(feature = "System+Guid+GuidStyles")]
-    pub type GuidStyles = crate::System::Guid_GuidStyles;
-    pub fn GetResult(
+    pub fn CompareTo_Guid1(
         &mut self,
-        me: u32,
-        them: u32,
+        value: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetResult",
-            (me, them),
+            "CompareTo",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Il2CppArray0(
+    pub fn CompareTo_Object0(
         &mut self,
-        b: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (b),
+            "CompareTo",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_ReadOnlySpan_1_1(
+    pub fn Equals_Guid1(
         &mut self,
-        b: crate::System::ReadOnlySpan_1<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        g: crate::System::Guid,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (b),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_i16_i16_Il2CppArray2(
-        &mut self,
-        a: i32,
-        b: i16,
-        c: i16,
-        d: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c, d),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_i16_i16_u8_u8_u8_u8_u8_u8_u8_u8_3(
-        &mut self,
-        a: i32,
-        b: i16,
-        c: i16,
-        d: u8,
-        e: u8,
-        f: u8,
-        g: u8,
-        h: u8,
-        i: u8,
-        j: u8,
-        k: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c, d, e, f, g, h, i, j, k),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String4(
-        &mut self,
-        g: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
+            "Equals",
             (g),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object0(
+        &mut self,
+        o: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (o),
         )?;
         Ok(__cordl_ret)
     }
@@ -126,13 +90,15 @@ impl crate::System::Guid {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToByteArray(
+    pub fn GetResult(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        me: u32,
+        them: u32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToByteArray",
-            (),
+            "GetResult",
+            (me, them),
         )?;
         Ok(__cordl_ret)
     }
@@ -150,25 +116,13 @@ impl crate::System::Guid {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
+    pub fn ToByteArray(
         &mut self,
-        o: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (o),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Guid1(
-        &mut self,
-        g: crate::System::Guid,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (g),
+            "ToByteArray",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -205,25 +159,16 @@ impl crate::System::Guid {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CompareTo_Object0(
+    pub fn TryFormat(
         &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        destination: crate::System::Span_1<char>,
+        charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
+        format: crate::System::ReadOnlySpan_1<char>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CompareTo",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CompareTo_Guid1(
-        &mut self,
-        value: crate::System::Guid,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CompareTo",
-            (value),
+            "TryFormat",
+            (destination, charsWritten, format),
         )?;
         Ok(__cordl_ret)
     }
@@ -238,16 +183,71 @@ impl crate::System::Guid {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn TryFormat(
+    pub fn _ctor_Il2CppArray0(
         &mut self,
-        destination: crate::System::Span_1<char>,
-        charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
-        format: crate::System::ReadOnlySpan_1<char>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        b: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "TryFormat",
-            (destination, charsWritten, format),
+            ".ctor",
+            (b),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_ReadOnlySpan_1_1(
+        &mut self,
+        b: crate::System::ReadOnlySpan_1<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (b),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_String4(
+        &mut self,
+        g: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (g),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_i16_i16_Il2CppArray2(
+        &mut self,
+        a: i32,
+        b: i16,
+        c: i16,
+        d: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (a, b, c, d),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_i16_i16_u8_u8_u8_u8_u8_u8_u8_u8_3(
+        &mut self,
+        a: i32,
+        b: i16,
+        c: i16,
+        d: u8,
+        e: u8,
+        f: u8,
+        g: u8,
+        h: u8,
+        i: u8,
+        j: u8,
+        k: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (a, b, c, d, e, f, g, h, i, j, k),
         )?;
         Ok(__cordl_ret)
     }
@@ -294,6 +294,16 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Guid_GuidResu
 }
 #[cfg(feature = "System+Guid+GuidResult")]
 impl crate::System::Guid_GuidResult {
+    pub fn GetGuidParseException(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
+        let __cordl_ret: *mut crate::System::Exception = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetGuidParseException",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Init(
         &mut self,
         canThrow: crate::System::Guid_GuidParseThrowStyle,
@@ -302,16 +312,6 @@ impl crate::System::Guid_GuidResult {
             self,
             "Init",
             (canThrow),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetGuidParseException(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
-        let __cordl_ret: *mut crate::System::Exception = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetGuidParseException",
-            (),
         )?;
         Ok(__cordl_ret)
     }

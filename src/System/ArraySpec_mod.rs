@@ -25,6 +25,27 @@ impl std::ops::DerefMut for crate::System::ArraySpec {
 }
 #[cfg(feature = "System+ArraySpec")]
 impl crate::System::ArraySpec {
+    pub fn Append(
+        &mut self,
+        sb: *mut crate::System::Text::StringBuilder,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Text::StringBuilder> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Text::StringBuilder = __cordl_object
+            .invoke("Append", (sb))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        dimensions: i32,
+        bound: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dimensions, bound))?;
+        Ok(__cordl_object)
+    }
     pub fn Resolve(
         &mut self,
         _cordl_type: *mut crate::System::Type,
@@ -57,27 +78,6 @@ impl crate::System::ArraySpec {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (dimensions, bound))?;
         Ok(__cordl_ret)
-    }
-    pub fn Append(
-        &mut self,
-        sb: *mut crate::System::Text::StringBuilder,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Text::StringBuilder> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Text::StringBuilder = __cordl_object
-            .invoke("Append", (sb))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        dimensions: i32,
-        bound: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dimensions, bound))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+ArraySpec")]

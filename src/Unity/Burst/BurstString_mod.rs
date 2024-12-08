@@ -54,26 +54,26 @@ impl crate::Unity::Burst::BurstString {
     pub const SingleNumberBufferLength: i32 = 10i32;
     pub const SinglePrecision: i32 = 9i32;
     pub const SinglePrecisionCustomFormat: i32 = 7i32;
-    #[cfg(feature = "Unity+Burst+BurstString+NumberBufferKind")]
-    pub type NumberBufferKind = crate::Unity::Burst::BurstString_NumberBufferKind;
-    #[cfg(feature = "Unity+Burst+BurstString+NumberFormatKind")]
-    pub type NumberFormatKind = crate::Unity::Burst::BurstString_NumberFormatKind;
-    #[cfg(feature = "Unity+Burst+BurstString+CutoffMode")]
-    pub type CutoffMode = crate::Unity::Burst::BurstString_CutoffMode;
-    #[cfg(feature = "Unity+Burst+BurstString+tFloatUnion32")]
-    pub type tFloatUnion32 = crate::Unity::Burst::BurstString_tFloatUnion32;
-    #[cfg(feature = "Unity+Burst+BurstString+FormatOptions")]
-    pub type FormatOptions = crate::Unity::Burst::BurstString_FormatOptions;
-    #[cfg(feature = "Unity+Burst+BurstString+PrintFloatFormat")]
-    pub type PrintFloatFormat = crate::Unity::Burst::BurstString_PrintFloatFormat;
-    #[cfg(feature = "Unity+Burst+BurstString+NumberBuffer")]
-    pub type NumberBuffer = crate::Unity::Burst::BurstString_NumberBuffer;
-    #[cfg(feature = "Unity+Burst+BurstString+tBigInt")]
-    pub type tBigInt = crate::Unity::Burst::BurstString_tBigInt;
-    #[cfg(feature = "Unity+Burst+BurstString+tFloatUnion64")]
-    pub type tFloatUnion64 = crate::Unity::Burst::BurstString_tFloatUnion64;
     #[cfg(feature = "Unity+Burst+BurstString+PreserveAttribute")]
     pub type PreserveAttribute = crate::Unity::Burst::BurstString_PreserveAttribute;
+    #[cfg(feature = "Unity+Burst+BurstString+tFloatUnion64")]
+    pub type tFloatUnion64 = crate::Unity::Burst::BurstString_tFloatUnion64;
+    #[cfg(feature = "Unity+Burst+BurstString+PrintFloatFormat")]
+    pub type PrintFloatFormat = crate::Unity::Burst::BurstString_PrintFloatFormat;
+    #[cfg(feature = "Unity+Burst+BurstString+NumberBufferKind")]
+    pub type NumberBufferKind = crate::Unity::Burst::BurstString_NumberBufferKind;
+    #[cfg(feature = "Unity+Burst+BurstString+NumberBuffer")]
+    pub type NumberBuffer = crate::Unity::Burst::BurstString_NumberBuffer;
+    #[cfg(feature = "Unity+Burst+BurstString+tFloatUnion32")]
+    pub type tFloatUnion32 = crate::Unity::Burst::BurstString_tFloatUnion32;
+    #[cfg(feature = "Unity+Burst+BurstString+tBigInt")]
+    pub type tBigInt = crate::Unity::Burst::BurstString_tBigInt;
+    #[cfg(feature = "Unity+Burst+BurstString+CutoffMode")]
+    pub type CutoffMode = crate::Unity::Burst::BurstString_CutoffMode;
+    #[cfg(feature = "Unity+Burst+BurstString+NumberFormatKind")]
+    pub type NumberFormatKind = crate::Unity::Burst::BurstString_NumberFormatKind;
+    #[cfg(feature = "Unity+Burst+BurstString+FormatOptions")]
+    pub type FormatOptions = crate::Unity::Burst::BurstString_FormatOptions;
 }
 #[cfg(feature = "Unity+Burst+BurstString")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstString {
@@ -124,24 +124,6 @@ for crate::Unity::Burst::BurstString_FormatOptions {
 }
 #[cfg(feature = "Unity+Burst+BurstString+FormatOptions")]
 impl crate::Unity::Burst::BurstString_FormatOptions {
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Uppercase(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Uppercase",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn EncodeToRaw(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -158,6 +140,16 @@ impl crate::Unity::Burst::BurstString_FormatOptions {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         kind: crate::Unity::Burst::BurstString_NumberFormatKind,
@@ -169,6 +161,14 @@ impl crate::Unity::Burst::BurstString_FormatOptions {
             self,
             ".ctor",
             (kind, alignAndSize, specifier, lowercase),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Uppercase(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Uppercase",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -279,6 +279,13 @@ impl std::ops::DerefMut for crate::Unity::Burst::BurstString_PreserveAttribute {
 }
 #[cfg(feature = "Unity+Burst+BurstString+PreserveAttribute")]
 impl crate::Unity::Burst::BurstString_PreserveAttribute {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -288,13 +295,6 @@ impl crate::Unity::Burst::BurstString_PreserveAttribute {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Burst+BurstString+PreserveAttribute")]
@@ -347,10 +347,18 @@ impl crate::Unity::Burst::BurstString_tBigInt {
     pub const c_BigInt_MaxBlocks: i32 = 35i32;
     #[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
     pub type _m_blocks_e__FixedBuffer = crate::Unity::Burst::tBigInt__m_blocks_e__FixedBuffer;
-    pub fn IsZero(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetBlock(&mut self, idx: i32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "IsZero",
+            "GetBlock",
+            (idx),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetLength",
             (),
         )?;
         Ok(__cordl_ret)
@@ -363,30 +371,11 @@ impl crate::Unity::Burst::BurstString_tBigInt {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn IsZero(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetLength",
+            "IsZero",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetU64(
-        &mut self,
-        val: u64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetU64",
-            (val),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetBlock(&mut self, idx: i32) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetBlock",
-            (idx),
         )?;
         Ok(__cordl_ret)
     }
@@ -397,6 +386,17 @@ impl crate::Unity::Burst::BurstString_tBigInt {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SetU32",
+            (val),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetU64(
+        &mut self,
+        val: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetU64",
             (val),
         )?;
         Ok(__cordl_ret)
@@ -436,14 +436,6 @@ for crate::Unity::Burst::BurstString_tFloatUnion32 {
 }
 #[cfg(feature = "Unity+Burst+BurstString+tFloatUnion32")]
 impl crate::Unity::Burst::BurstString_tFloatUnion32 {
-    pub fn IsNegative(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsNegative",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetExponent(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -456,6 +448,14 @@ impl crate::Unity::Burst::BurstString_tFloatUnion32 {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetMantissa",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsNegative(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsNegative",
             (),
         )?;
         Ok(__cordl_ret)

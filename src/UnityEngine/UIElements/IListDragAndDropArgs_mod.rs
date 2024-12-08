@@ -24,37 +24,16 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IListDragAndDropArgs
 }
 #[cfg(feature = "UnityEngine+UIElements+IListDragAndDropArgs")]
 impl crate::UnityEngine::UIElements::IListDragAndDropArgs {
-    pub fn get_insertAtIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_insertAtIndex", ())?;
-        Ok(__cordl_ret)
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
     }
     pub fn get_childIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_childIndex", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_parentId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_parentId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_dragAndDropPosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::DragAndDropPosition,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::DragAndDropPosition = __cordl_object
-            .invoke("get_dragAndDropPosition", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_dragAndDropData(
@@ -69,10 +48,31 @@ impl crate::UnityEngine::UIElements::IListDragAndDropArgs {
             .invoke("get_dragAndDropData", ())?;
         Ok(__cordl_ret)
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
+    pub fn get_dragAndDropPosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::DragAndDropPosition,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::DragAndDropPosition = __cordl_object
+            .invoke("get_dragAndDropPosition", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_insertAtIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_insertAtIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_parentId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_parentId", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IListDragAndDropArgs")]

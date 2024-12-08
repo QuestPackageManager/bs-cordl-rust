@@ -28,64 +28,47 @@ for crate::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction {
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction {
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrInt16"
-    )]
-    pub type ExclusiveOrInt16 = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrInt16;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrBoolean"
-    )]
-    pub type ExclusiveOrBoolean = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrBoolean;
-    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrByte"
     )]
     pub type ExclusiveOrByte = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrByte;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrUInt64"
-    )]
-    pub type ExclusiveOrUInt64 = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrUInt64;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrSByte"
-    )]
-    pub type ExclusiveOrSByte = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrSByte;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrInt64"
     )]
     pub type ExclusiveOrInt64 = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrInt64;
     #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrSByte"
+    )]
+    pub type ExclusiveOrSByte = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrSByte;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrInt16"
+    )]
+    pub type ExclusiveOrInt16 = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrInt16;
+    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrUInt16"
     )]
     pub type ExclusiveOrUInt16 = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrUInt16;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrUInt32"
+    )]
+    pub type ExclusiveOrUInt32 = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrUInt32;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrInt32"
     )]
     pub type ExclusiveOrInt32 = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrInt32;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrUInt32"
+        feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrUInt64"
     )]
-    pub type ExclusiveOrUInt32 = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrUInt32;
-    pub fn get_InstructionName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_InstructionName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ConsumedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
-        Ok(__cordl_ret)
+    pub type ExclusiveOrUInt64 = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrUInt64;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrBoolean"
+    )]
+    pub type ExclusiveOrBoolean = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrBoolean;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -97,12 +80,29 @@ impl crate::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_ConsumedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_InstructionName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_InstructionName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction")]

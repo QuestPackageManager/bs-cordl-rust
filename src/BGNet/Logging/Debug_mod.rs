@@ -63,6 +63,17 @@ impl std::ops::DerefMut for crate::BGNet::Logging::Debug_ILogger {
 }
 #[cfg(feature = "BGNet+Logging+Debug+ILogger")]
 impl crate::BGNet::Logging::Debug_ILogger {
+    pub fn LogError(
+        &mut self,
+        message: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LogError", (message))?;
+        Ok(__cordl_ret)
+    }
     pub fn LogException(
         &mut self,
         exception: *mut crate::System::Exception,
@@ -75,7 +86,7 @@ impl crate::BGNet::Logging::Debug_ILogger {
             .invoke("LogException", (exception, message))?;
         Ok(__cordl_ret)
     }
-    pub fn LogError(
+    pub fn LogInfo(
         &mut self,
         message: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -83,7 +94,7 @@ impl crate::BGNet::Logging::Debug_ILogger {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LogError", (message))?;
+            .invoke("LogInfo", (message))?;
         Ok(__cordl_ret)
     }
     pub fn LogWarning(
@@ -95,17 +106,6 @@ impl crate::BGNet::Logging::Debug_ILogger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LogWarning", (message))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LogInfo(
-        &mut self,
-        message: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LogInfo", (message))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(
@@ -151,6 +151,15 @@ impl std::ops::DerefMut for crate::BGNet::Logging::Debug_LoggerLinkedList {
 }
 #[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
 impl crate::BGNet::Logging::Debug_LoggerLinkedList {
+    pub fn New(
+        logger: *mut crate::BGNet::Logging::Debug_ILogger,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (logger))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         logger: *mut crate::BGNet::Logging::Debug_ILogger,
@@ -161,15 +170,6 @@ impl crate::BGNet::Logging::Debug_LoggerLinkedList {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (logger))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        logger: *mut crate::BGNet::Logging::Debug_ILogger,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (logger))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]

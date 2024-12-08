@@ -63,6 +63,59 @@ impl<
 > RemoteStateBuffer_3<TStateTable, TType, TState> {
     pub const kMaxDeltaQueueSize: i32 = 64i32;
     pub const kMaxStateQueueSize: i32 = 4i32;
+    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        _cordl_size: i32,
+        interpolator: *mut crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
+            TStateTable,
+            TType,
+            TState,
+        >,
+        smoother: *mut crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
+            TStateTable,
+            TType,
+            TState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_size, interpolator, smoother))?;
+        Ok(__cordl_object)
+    }
+    pub fn ProcessQueue(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessQueue", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn PushDelta(
         &mut self,
         baseId: SyncStateId,
@@ -105,24 +158,6 @@ impl<
             .invoke("PushState", (id, state, _cordl_time))?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessQueue(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessQueue", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         _cordl_size: i32,
@@ -151,41 +186,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_size, interpolator, smoother))?;
         Ok(__cordl_ret)
-    }
-    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        _cordl_size: i32,
-        interpolator: *mut crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
-            TStateTable,
-            TType,
-            TState,
-        >,
-        smoother: *mut crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
-            TStateTable,
-            TType,
-            TState,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_size, interpolator, smoother))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "RemoteStateBuffer_3")]

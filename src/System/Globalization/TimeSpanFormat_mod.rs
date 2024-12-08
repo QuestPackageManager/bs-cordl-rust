@@ -29,56 +29,6 @@ for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
 }
 #[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
 impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
-    pub fn get_SecondFractionSep(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_SecondFractionSep",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_HourMinuteSep(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_HourMinuteSep",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Start",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MinuteSecondSep(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_MinuteSecondSep",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_End(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_End",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Init(
         &mut self,
         format: crate::System::ReadOnlySpan_1<char>,
@@ -97,6 +47,56 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_DayHourSep",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_End(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_End",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HourMinuteSep(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_HourMinuteSep",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MinuteSecondSep(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_MinuteSecondSep",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SecondFractionSep(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_SecondFractionSep",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Start",
             (),
         )?;
         Ok(__cordl_ret)

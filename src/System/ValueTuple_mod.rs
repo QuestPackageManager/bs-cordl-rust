@@ -18,34 +18,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::ValueTuple {
 }
 #[cfg(feature = "System+ValueTuple")]
 impl crate::System::ValueTuple {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IStructuralComparable_CompareTo(
+    pub fn CompareTo(
         &mut self,
-        other: *mut crate::System::Object,
-        comparer: *mut crate::System::Collections::IComparer,
+        other: crate::System::ValueTuple,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.Collections.IStructuralComparable.CompareTo",
-            (other, comparer),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IValueTupleInternal_GetHashCode(
-        &mut self,
-        comparer: *mut crate::System::Collections::IEqualityComparer,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IValueTupleInternal.GetHashCode",
-            (comparer),
+            "CompareTo",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -71,14 +51,35 @@ impl crate::System::ValueTuple {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CompareTo(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IStructuralComparable_CompareTo(
         &mut self,
-        other: crate::System::ValueTuple,
+        other: *mut crate::System::Object,
+        comparer: *mut crate::System::Collections::IComparer,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CompareTo",
-            (other),
+            "System.Collections.IStructuralComparable.CompareTo",
+            (other, comparer),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IStructuralEquatable_Equals(
+        &mut self,
+        other: *mut crate::System::Object,
+        comparer: *mut crate::System::Collections::IEqualityComparer,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.IStructuralEquatable.Equals",
+            (other, comparer),
         )?;
         Ok(__cordl_ret)
     }
@@ -89,6 +90,28 @@ impl crate::System::ValueTuple {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.IStructuralEquatable.GetHashCode",
+            (comparer),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IComparable_CompareTo(
+        &mut self,
+        other: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IComparable.CompareTo",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IValueTupleInternal_GetHashCode(
+        &mut self,
+        comparer: *mut crate::System::Collections::IEqualityComparer,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IValueTupleInternal.GetHashCode",
             (comparer),
         )?;
         Ok(__cordl_ret)
@@ -110,29 +133,6 @@ impl crate::System::ValueTuple {
             self,
             "System.Runtime.CompilerServices.ITuple.get_Length",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IStructuralEquatable_Equals(
-        &mut self,
-        other: *mut crate::System::Object,
-        comparer: *mut crate::System::Collections::IEqualityComparer,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.IStructuralEquatable.Equals",
-            (other, comparer),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IComparable_CompareTo(
-        &mut self,
-        other: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IComparable.CompareTo",
-            (other),
         )?;
         Ok(__cordl_ret)
     }

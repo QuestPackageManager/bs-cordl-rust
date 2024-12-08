@@ -25,15 +25,29 @@ impl std::ops::DerefMut for crate::LiteNetLib::Layers::PacketLayerBase {
 }
 #[cfg(feature = "LiteNetLib+Layers+PacketLayerBase")]
 impl crate::LiteNetLib::Layers::PacketLayerBase {
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         extraPacketSizeForLayer: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (extraPacketSizeForLayer))?;
+        Ok(__cordl_object)
+    }
+    pub fn ProcessInboundPacket(
+        &mut self,
+        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
+        data: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        offset: quest_hook::libil2cpp::ByRefMut<i32>,
+        length: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (extraPacketSizeForLayer))?;
+            .invoke("ProcessInboundPacket", (remoteEndPoint, data, offset, length))?;
         Ok(__cordl_ret)
     }
     pub fn ProcessOutBoundPacket(
@@ -52,30 +66,16 @@ impl crate::LiteNetLib::Layers::PacketLayerBase {
             .invoke("ProcessOutBoundPacket", (remoteEndPoint, data, offset, length))?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessInboundPacket(
+    pub fn _ctor(
         &mut self,
-        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
-        data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
-        offset: quest_hook::libil2cpp::ByRefMut<i32>,
-        length: quest_hook::libil2cpp::ByRefMut<i32>,
+        extraPacketSizeForLayer: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessInboundPacket", (remoteEndPoint, data, offset, length))?;
+            .invoke(".ctor", (extraPacketSizeForLayer))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        extraPacketSizeForLayer: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (extraPacketSizeForLayer))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LiteNetLib+Layers+PacketLayerBase")]

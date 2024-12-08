@@ -31,28 +31,6 @@ for crate::UnityEngine::TextCore::Text::MeshInfo {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+MeshInfo")]
 impl crate::UnityEngine::TextCore::Text::MeshInfo {
-    pub fn _ctor(
-        &mut self,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (_cordl_size),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ResizeMeshInfo(
-        &mut self,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ResizeMeshInfo",
-            (_cordl_size),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Clear(
         &mut self,
         uploadChanges: bool,
@@ -71,6 +49,17 @@ impl crate::UnityEngine::TextCore::Text::MeshInfo {
             self,
             "ClearUnusedVertices",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ResizeMeshInfo(
+        &mut self,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ResizeMeshInfo",
+            (_cordl_size),
         )?;
         Ok(__cordl_ret)
     }
@@ -94,6 +83,17 @@ impl crate::UnityEngine::TextCore::Text::MeshInfo {
             self,
             "SwapVertexData",
             (src, dst),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (_cordl_size),
         )?;
         Ok(__cordl_ret)
     }

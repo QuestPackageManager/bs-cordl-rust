@@ -54,41 +54,18 @@ impl std::ops::DerefMut for MultiplayerLevelLoader {
 }
 #[cfg(feature = "MultiplayerLevelLoader")]
 impl MultiplayerLevelLoader {
-    #[cfg(feature = "MultiplayerLevelLoader+_LoadBeatmapLevelDataAsync_d__21")]
-    pub type _LoadBeatmapLevelDataAsync_d__21 = crate::GlobalNamespace::MultiplayerLevelLoader__LoadBeatmapLevelDataAsync_d__21;
     #[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
     pub type MultiplayerBeatmapLoaderState = crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState;
-    pub fn Tick(
+    #[cfg(feature = "MultiplayerLevelLoader+_LoadBeatmapLevelDataAsync_d__21")]
+    pub type _LoadBeatmapLevelDataAsync_d__21 = crate::GlobalNamespace::MultiplayerLevelLoader__LoadBeatmapLevelDataAsync_d__21;
+    pub fn ClearLoading(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Tick", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadLevel(
-        &mut self,
-        gameplaySetupData: *mut ILevelGameplaySetupData,
-        initialStartTime: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LoadLevel", (gameplaySetupData, initialStartTime))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_stillDownloadingSongEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_stillDownloadingSongEvent", (value))?;
+            .invoke("ClearLoading", ())?;
         Ok(__cordl_ret)
     }
     pub fn LoadBeatmapLevelDataAsync(
@@ -103,6 +80,46 @@ impl MultiplayerLevelLoader {
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
             LoadBeatmapLevelDataResult,
         > = __cordl_object.invoke("LoadBeatmapLevelDataAsync", (gameplaySetupData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadLevel(
+        &mut self,
+        gameplaySetupData: *mut ILevelGameplaySetupData,
+        initialStartTime: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LoadLevel", (gameplaySetupData, initialStartTime))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetNewStartTime(
+        &mut self,
+        newStartTime: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetNewStartTime", (newStartTime))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Tick(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Tick", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -129,6 +146,17 @@ impl MultiplayerLevelLoader {
             .invoke("add_countdownFinishedEvent", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn add_stillDownloadingSongEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_stillDownloadingSongEvent", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn remove_countdownFinishedEvent(
         &mut self,
         value: *mut crate::System::Action_2<
@@ -143,17 +171,6 @@ impl MultiplayerLevelLoader {
             .invoke("remove_countdownFinishedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn SetNewStartTime(
-        &mut self,
-        newStartTime: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNewStartTime", (newStartTime))?;
-        Ok(__cordl_ret)
-    }
     pub fn remove_stillDownloadingSongEvent(
         &mut self,
         value: *mut crate::System::Action,
@@ -164,23 +181,6 @@ impl MultiplayerLevelLoader {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_stillDownloadingSongEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn ClearLoading(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearLoading", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MultiplayerLevelLoader")]

@@ -27,6 +27,13 @@ for crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid {
 }
 #[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleMinusOneIsInvalid")]
 impl crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid {
+    pub fn New(ownsHandle: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ownsHandle))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         ownsHandle: bool,
@@ -44,13 +51,6 @@ impl crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid {
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsInvalid", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(ownsHandle: bool) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ownsHandle))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleMinusOneIsInvalid")]

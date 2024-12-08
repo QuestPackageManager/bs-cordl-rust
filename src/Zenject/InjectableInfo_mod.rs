@@ -30,6 +30,23 @@ impl std::ops::DerefMut for crate::Zenject::InjectableInfo {
 }
 #[cfg(feature = "Zenject+InjectableInfo")]
 impl crate::Zenject::InjectableInfo {
+    pub fn New(
+        optional: bool,
+        identifier: *mut crate::System::Object,
+        memberName: *mut crate::System::String,
+        memberType: *mut crate::System::Type,
+        defaultValue: *mut crate::System::Object,
+        sourceType: crate::Zenject::InjectSources,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (optional, identifier, memberName, memberType, defaultValue, sourceType),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         optional: bool,
@@ -48,23 +65,6 @@ impl crate::Zenject::InjectableInfo {
                 (optional, identifier, memberName, memberType, defaultValue, sourceType),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        optional: bool,
-        identifier: *mut crate::System::Object,
-        memberName: *mut crate::System::String,
-        memberType: *mut crate::System::Type,
-        defaultValue: *mut crate::System::Object,
-        sourceType: crate::Zenject::InjectSources,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (optional, identifier, memberName, memberType, defaultValue, sourceType),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+InjectableInfo")]

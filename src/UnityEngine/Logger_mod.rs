@@ -26,54 +26,65 @@ impl std::ops::DerefMut for crate::UnityEngine::Logger {
 }
 #[cfg(feature = "UnityEngine+Logger")]
 impl crate::UnityEngine::Logger {
-    pub fn _ctor(
+    pub fn IsLogTypeAllowed(
         &mut self,
-        logHandler: *mut crate::UnityEngine::ILogHandler,
+        logType: crate::UnityEngine::LogType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsLogTypeAllowed", (logType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LogError(
+        &mut self,
+        tag: *mut crate::System::String,
+        message: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (logHandler))?;
+            .invoke("LogError", (tag, message))?;
         Ok(__cordl_ret)
     }
-    pub fn set_logHandler(
+    pub fn LogException(
         &mut self,
-        value: *mut crate::UnityEngine::ILogHandler,
+        exception: *mut crate::System::Exception,
+        context: *mut crate::UnityEngine::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_logHandler", (value))?;
+            .invoke("LogException", (exception, context))?;
         Ok(__cordl_ret)
     }
-    pub fn get_logEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_logEnabled", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_logEnabled(
+    pub fn LogFormat_Object_String_Il2CppArray1(
         &mut self,
-        value: bool,
+        logType: crate::UnityEngine::LogType,
+        context: *mut crate::UnityEngine::Object,
+        format: *mut crate::System::String,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_logEnabled", (value))?;
+            .invoke("LogFormat", (logType, context, format, args))?;
         Ok(__cordl_ret)
     }
-    pub fn get_filterLogType(
+    pub fn LogFormat_String_Il2CppArray0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LogType> {
+        logType: crate::UnityEngine::LogType,
+        format: *mut crate::System::String,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::LogType = __cordl_object
-            .invoke("get_filterLogType", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LogFormat", (logType, format, args))?;
         Ok(__cordl_ret)
     }
     pub fn Log_LogType_Object0(
@@ -101,6 +112,43 @@ impl crate::UnityEngine::Logger {
             .invoke("Log", (logType, message, context))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        logHandler: *mut crate::UnityEngine::ILogHandler,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (logHandler))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        logHandler: *mut crate::UnityEngine::ILogHandler,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (logHandler))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_filterLogType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LogType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::LogType = __cordl_object
+            .invoke("get_filterLogType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_logEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_logEnabled", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_logHandler(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ILogHandler> {
@@ -122,75 +170,27 @@ impl crate::UnityEngine::Logger {
             .invoke("set_filterLogType", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn LogError(
+    pub fn set_logEnabled(
         &mut self,
-        tag: *mut crate::System::String,
-        message: *mut crate::System::Object,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LogError", (tag, message))?;
+            .invoke("set_logEnabled", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn LogException(
+    pub fn set_logHandler(
         &mut self,
-        exception: *mut crate::System::Exception,
-        context: *mut crate::UnityEngine::Object,
+        value: *mut crate::UnityEngine::ILogHandler,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LogException", (exception, context))?;
+            .invoke("set_logHandler", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn IsLogTypeAllowed(
-        &mut self,
-        logType: crate::UnityEngine::LogType,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsLogTypeAllowed", (logType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LogFormat_String_Il2CppArray0(
-        &mut self,
-        logType: crate::UnityEngine::LogType,
-        format: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LogFormat", (logType, format, args))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LogFormat_Object_String_Il2CppArray1(
-        &mut self,
-        logType: crate::UnityEngine::LogType,
-        context: *mut crate::UnityEngine::Object,
-        format: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LogFormat", (logType, context, format, args))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        logHandler: *mut crate::UnityEngine::ILogHandler,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (logHandler))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+Logger")]

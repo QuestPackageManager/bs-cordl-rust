@@ -39,12 +39,33 @@ for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationPara
     feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
 )]
 impl crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationParameters {
-    pub fn get_CountSmallPrimes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_CountSmallPrimes", ())?;
-        Ok(__cordl_ret)
+    pub fn New_SecureRandom_i32_i32_i32_0(
+        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        strength: i32,
+        certainty: i32,
+        countSmallPrimes: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (random, strength, certainty, countSmallPrimes))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool1(
+        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        strength: i32,
+        certainty: i32,
+        countSmallPrimes: i32,
+        debug: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (random, strength, certainty, countSmallPrimes, debug),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_SecureRandom_i32_i32_i32_0(
         &mut self,
@@ -82,40 +103,19 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationPar
         let __cordl_ret: i32 = __cordl_object.invoke("get_Certainty", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_CountSmallPrimes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_CountSmallPrimes", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_IsDebug(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsDebug", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_SecureRandom_i32_i32_i32_0(
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-        strength: i32,
-        certainty: i32,
-        countSmallPrimes: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (random, strength, certainty, countSmallPrimes))?;
-        Ok(__cordl_object)
-    }
-    pub fn New__cordl_bool1(
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-        strength: i32,
-        certainty: i32,
-        countSmallPrimes: i32,
-        debug: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (random, strength, certainty, countSmallPrimes, debug),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

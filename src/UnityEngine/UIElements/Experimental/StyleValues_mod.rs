@@ -23,221 +23,15 @@ for crate::UnityEngine::UIElements::Experimental::StyleValues {
 }
 #[cfg(feature = "UnityEngine+UIElements+Experimental+StyleValues")]
 impl crate::UnityEngine::UIElements::Experimental::StyleValues {
-    pub fn set_top(
+    pub fn SetValue_Color1(
         &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_top",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_color(
-        &mut self,
+        id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_color",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Values(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::StyleValueCollection,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::StyleValueCollection = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Values",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_borderLeftWidth(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_borderLeftWidth",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_unityBackgroundImageTintColor(
-        &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_unityBackgroundImageTintColor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_paddingTop(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_paddingTop",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_borderTopLeftRadius(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_borderTopLeftRadius",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_backgroundColor(
-        &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_backgroundColor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_marginTop(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_marginTop",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_paddingBottom(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_paddingBottom",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_borderTopRightRadius(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_borderTopRightRadius",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_right(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_right",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_height(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_height",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_borderRightWidth(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_borderRightWidth",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_left(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_left",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_borderTopWidth(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_borderTopWidth",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_marginBottom(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_marginBottom",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_width(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_width",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_bottom(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_bottom",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_borderBottomWidth(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_borderBottomWidth",
-            (value),
+            "SetValue",
+            (id, value),
         )?;
         Ok(__cordl_ret)
     }
@@ -253,25 +47,33 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetValue_Color1(
+    pub fn Values(
         &mut self,
-        id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::StyleValueCollection,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::StyleValueCollection = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Values",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_paddingTop(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_paddingTop",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_backgroundColor(
+        &mut self,
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetValue",
-            (id, value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_marginRight(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_marginRight",
+            "set_backgroundColor",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -287,17 +89,6 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_paddingTop(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_paddingTop",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_borderBottomRightRadius(
         &mut self,
         value: f32,
@@ -309,57 +100,13 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_flexGrow(
+    pub fn set_borderBottomWidth(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_flexGrow",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_marginLeft(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_marginLeft",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_flexShrink(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_flexShrink",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_paddingRight(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_paddingRight",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_opacity(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_opacity",
+            "set_borderBottomWidth",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -375,6 +122,193 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn set_borderLeftWidth(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_borderLeftWidth",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_borderRightWidth(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_borderRightWidth",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_borderTopLeftRadius(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_borderTopLeftRadius",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_borderTopRightRadius(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_borderTopRightRadius",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_borderTopWidth(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_borderTopWidth",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_bottom(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_bottom",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_color(
+        &mut self,
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_color",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_flexGrow(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_flexGrow",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_flexShrink(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_flexShrink",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_height(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_height",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_left(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_left",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_marginBottom(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_marginBottom",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_marginLeft(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_marginLeft",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_marginRight(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_marginRight",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_marginTop(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_marginTop",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_opacity(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_opacity",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_paddingBottom(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_paddingBottom",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_paddingLeft(
         &mut self,
         value: f32,
@@ -382,6 +316,72 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_paddingLeft",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_paddingRight(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_paddingRight",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_paddingTop(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_paddingTop",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_right(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_right",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_top(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_top",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_unityBackgroundImageTintColor(
+        &mut self,
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_unityBackgroundImageTintColor",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_width(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_width",
             (value),
         )?;
         Ok(__cordl_ret)

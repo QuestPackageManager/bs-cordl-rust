@@ -41,32 +41,6 @@ impl<
     TItem: quest_hook::libil2cpp::Type,
     TDistance: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::ProBuilder::KdTree::INearestNeighbourList_2<TItem, TDistance> {
-    pub fn RemoveFurtherest(&mut self) -> quest_hook::libil2cpp::Result<TItem>
-    where
-        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TDistance: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TItem = __cordl_object.invoke("RemoveFurtherest", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetFurtherest(&mut self) -> quest_hook::libil2cpp::Result<TItem>
-    where
-        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TDistance: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TItem = __cordl_object.invoke("GetFurtherest", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Add(
         &mut self,
         item: TItem,
@@ -84,7 +58,7 @@ impl<
         let __cordl_ret: bool = __cordl_object.invoke("Add", (item, distance))?;
         Ok(__cordl_ret)
     }
-    pub fn get_MaxCapacity(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    pub fn GetFurtherest(&mut self) -> quest_hook::libil2cpp::Result<TItem>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -94,8 +68,26 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_MaxCapacity", ())?;
+        let __cordl_ret: TItem = __cordl_object.invoke("GetFurtherest", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn RemoveFurtherest(&mut self) -> quest_hook::libil2cpp::Result<TItem>
+    where
+        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TDistance: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: TItem = __cordl_object.invoke("RemoveFurtherest", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -110,10 +102,18 @@ impl<
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
         Ok(__cordl_ret)
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
+    pub fn get_MaxCapacity(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TDistance: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_MaxCapacity", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+INearestNeighbourList_2")]

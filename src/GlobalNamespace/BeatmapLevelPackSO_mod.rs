@@ -30,6 +30,13 @@ impl std::ops::DerefMut for BeatmapLevelPackSO {
 }
 #[cfg(feature = "BeatmapLevelPackSO")]
 impl BeatmapLevelPackSO {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -40,14 +47,14 @@ impl BeatmapLevelPackSO {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_shortPackName(
+    pub fn get_beatmapLevelCollection(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelCollectionSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_shortPackName", ())?;
+        let __cordl_ret: *mut BeatmapLevelCollectionSO = __cordl_object
+            .invoke("get_beatmapLevelCollection", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_collectionName(
@@ -60,14 +67,14 @@ impl BeatmapLevelPackSO {
             .invoke("get_collectionName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_packName(
+    pub fn get_contentRating(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<PlayerSensitivityFlag> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_packName", ())?;
+        let __cordl_ret: PlayerSensitivityFlag = __cordl_object
+            .invoke("get_contentRating", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_coverImage(
@@ -90,24 +97,24 @@ impl BeatmapLevelPackSO {
             .invoke("get_packID", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_contentRating(
+    pub fn get_packName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<PlayerSensitivityFlag> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: PlayerSensitivityFlag = __cordl_object
-            .invoke("get_contentRating", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_packName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_beatmapLevelCollection(
+    pub fn get_shortPackName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelCollectionSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapLevelCollectionSO = __cordl_object
-            .invoke("get_beatmapLevelCollection", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_shortPackName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_smallCoverImage(
@@ -119,13 +126,6 @@ impl BeatmapLevelPackSO {
         let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
             .invoke("get_smallCoverImage", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapLevelPackSO")]

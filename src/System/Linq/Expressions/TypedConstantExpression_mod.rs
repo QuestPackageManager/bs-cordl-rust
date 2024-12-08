@@ -26,15 +26,15 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::TypedConstantExpre
 }
 #[cfg(feature = "System+Linq+Expressions+TypedConstantExpression")]
 impl crate::System::Linq::Expressions::TypedConstantExpression {
-    pub fn get_Type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_Type", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        value: *mut crate::System::Object,
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (value, _cordl_type))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -48,15 +48,15 @@ impl crate::System::Linq::Expressions::TypedConstantExpression {
             .invoke(".ctor", (value, _cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        value: *mut crate::System::Object,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (value, _cordl_type))?;
-        Ok(__cordl_object)
+    pub fn get_Type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_Type", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+TypedConstantExpression")]

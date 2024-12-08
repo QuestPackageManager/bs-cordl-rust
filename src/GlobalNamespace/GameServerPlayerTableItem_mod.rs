@@ -28,6 +28,21 @@ impl std::ops::DerefMut for GameServerPlayerTableItem {
 }
 #[cfg(feature = "GameServerPlayerTableItem")]
 impl GameServerPlayerTableItem {
+    pub fn New(
+        playerName: *mut crate::System::String,
+        suggestedLevel: *mut crate::System::String,
+        suggestedModifiers: *mut crate::System::String,
+        isReady: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (playerName, suggestedLevel, suggestedModifiers, isReady),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         playerName: *mut crate::System::String,
@@ -41,21 +56,6 @@ impl GameServerPlayerTableItem {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (playerName, suggestedLevel, suggestedModifiers, isReady))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        playerName: *mut crate::System::String,
-        suggestedLevel: *mut crate::System::String,
-        suggestedModifiers: *mut crate::System::String,
-        isReady: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (playerName, suggestedLevel, suggestedModifiers, isReady),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "GameServerPlayerTableItem")]

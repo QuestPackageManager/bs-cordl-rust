@@ -25,22 +25,6 @@ for crate::UnityEngine::UIElements::Spacing {
 }
 #[cfg(feature = "UnityEngine+UIElements+Spacing")]
 impl crate::UnityEngine::UIElements::Spacing {
-    pub fn get_vertical(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_vertical",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_horizontal(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_horizontal",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         left: f32,
@@ -52,6 +36,22 @@ impl crate::UnityEngine::UIElements::Spacing {
             self,
             ".ctor",
             (left, top, right, bottom),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_horizontal(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_horizontal",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_vertical(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_vertical",
+            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -26,6 +26,36 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Converters::XDocumentTypeWr
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XDocumentTypeWrapper")]
 impl crate::Newtonsoft::Json::Converters::XDocumentTypeWrapper {
+    pub fn New(
+        documentType: *mut crate::System::Xml::Linq::XDocumentType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (documentType))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        documentType: *mut crate::System::Xml::Linq::XDocumentType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (documentType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_InternalSubset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_InternalSubset", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_LocalName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -56,16 +86,6 @@ impl crate::Newtonsoft::Json::Converters::XDocumentTypeWrapper {
             .invoke("get_Public", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_InternalSubset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_InternalSubset", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_System(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -75,26 +95,6 @@ impl crate::Newtonsoft::Json::Converters::XDocumentTypeWrapper {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_System", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        documentType: *mut crate::System::Xml::Linq::XDocumentType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (documentType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        documentType: *mut crate::System::Xml::Linq::XDocumentType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (documentType))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XDocumentTypeWrapper")]

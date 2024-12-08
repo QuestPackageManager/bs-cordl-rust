@@ -45,17 +45,17 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
     #[cfg(
-        feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
+        feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+__c__DisplayClass5_0"
     )]
-    pub type AttributeValidationStrategy = crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeValidationStrategy;
+    pub type __c__DisplayClass5_0 = crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation___c__DisplayClass5_0;
     #[cfg(
         feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+__c__DisplayClass10_0"
     )]
     pub type __c__DisplayClass10_0 = crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation___c__DisplayClass10_0;
     #[cfg(
-        feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+__c__DisplayClass5_0"
+        feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
     )]
-    pub type __c__DisplayClass5_0 = crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation___c__DisplayClass5_0;
+    pub type AttributeValidationStrategy = crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeValidationStrategy;
     #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+__c")]
     pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation___c;
 }

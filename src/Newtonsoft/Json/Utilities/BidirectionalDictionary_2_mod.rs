@@ -51,22 +51,50 @@ impl<
     TFirst: quest_hook::libil2cpp::Type,
     TSecond: quest_hook::libil2cpp::Type,
 > crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<TFirst, TSecond> {
-    pub fn TryGetByFirst(
-        &mut self,
-        first: TFirst,
-        second: quest_hook::libil2cpp::ByRefMut<TSecond>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TFirst: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TSecond: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryGetByFirst", (first, second))?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IEqualityComparer_1_IEqualityComparer_1_1(
+        firstEqualityComparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
+            TFirst,
+        >,
+        secondEqualityComparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
+            TSecond,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (firstEqualityComparer, secondEqualityComparer))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IEqualityComparer_1_IEqualityComparer_1_String_String2(
+        firstEqualityComparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
+            TFirst,
+        >,
+        secondEqualityComparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
+            TSecond,
+        >,
+        duplicateFirstErrorMessage: *mut crate::System::String,
+        duplicateSecondErrorMessage: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    firstEqualityComparer,
+                    secondEqualityComparer,
+                    duplicateFirstErrorMessage,
+                    duplicateSecondErrorMessage,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn Set(
         &mut self,
@@ -84,6 +112,23 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Set", (first, second))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetByFirst(
+        &mut self,
+        first: TFirst,
+        second: quest_hook::libil2cpp::ByRefMut<TSecond>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TFirst: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TSecond: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryGetByFirst", (first, second))?;
         Ok(__cordl_ret)
     }
     pub fn TryGetBySecond(
@@ -173,51 +218,6 @@ impl<
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IEqualityComparer_1_IEqualityComparer_1_1(
-        firstEqualityComparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
-            TFirst,
-        >,
-        secondEqualityComparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
-            TSecond,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (firstEqualityComparer, secondEqualityComparer))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IEqualityComparer_1_IEqualityComparer_1_String_String2(
-        firstEqualityComparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
-            TFirst,
-        >,
-        secondEqualityComparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
-            TSecond,
-        >,
-        duplicateFirstErrorMessage: *mut crate::System::String,
-        duplicateSecondErrorMessage: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    firstEqualityComparer,
-                    secondEqualityComparer,
-                    duplicateFirstErrorMessage,
-                    duplicateSecondErrorMessage,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]

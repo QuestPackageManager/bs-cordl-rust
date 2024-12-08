@@ -22,6 +22,16 @@ for crate::Unity::Profiling::ProfilerCategory {
 }
 #[cfg(feature = "Unity+Profiling+ProfilerCategory")]
 impl crate::Unity::Profiling::ProfilerCategory {
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         category: u16,
@@ -30,16 +40,6 @@ impl crate::Unity::Profiling::ProfilerCategory {
             self,
             ".ctor",
             (category),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
         )?;
         Ok(__cordl_ret)
     }

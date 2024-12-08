@@ -26,44 +26,23 @@ impl std::ops::DerefMut for OVRBone {
 }
 #[cfg(feature = "OVRBone")]
 impl OVRBone {
-    pub fn set_Id(
-        &mut self,
-        value: crate::GlobalNamespace::OVRSkeleton_BoneId,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Id", (value))?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn set_ParentBoneIndex(
-        &mut self,
-        value: i16,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ParentBoneIndex", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Id(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRSkeleton_BoneId> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRSkeleton_BoneId = __cordl_object
-            .invoke("get_Id", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ParentBoneIndex(&mut self) -> quest_hook::libil2cpp::Result<i16> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i16 = __cordl_object.invoke("get_ParentBoneIndex", ())?;
-        Ok(__cordl_ret)
+    pub fn New_OVRSkeleton_BoneId_i16_Transform1(
+        id: crate::GlobalNamespace::OVRSkeleton_BoneId,
+        parentBoneIndex: i16,
+        trans: *mut crate::UnityEngine::Transform,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (id, parentBoneIndex, trans))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_0(
         &mut self,
@@ -88,6 +67,23 @@ impl OVRBone {
             .invoke(".ctor", (id, parentBoneIndex, trans))?;
         Ok(__cordl_ret)
     }
+    pub fn get_Id(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRSkeleton_BoneId> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::OVRSkeleton_BoneId = __cordl_object
+            .invoke("get_Id", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ParentBoneIndex(&mut self) -> quest_hook::libil2cpp::Result<i16> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i16 = __cordl_object.invoke("get_ParentBoneIndex", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Transform(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
@@ -96,6 +92,28 @@ impl OVRBone {
         );
         let __cordl_ret: *mut crate::UnityEngine::Transform = __cordl_object
             .invoke("get_Transform", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Id(
+        &mut self,
+        value: crate::GlobalNamespace::OVRSkeleton_BoneId,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Id", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ParentBoneIndex(
+        &mut self,
+        value: i16,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ParentBoneIndex", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_Transform(
@@ -108,24 +126,6 @@ impl OVRBone {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Transform", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_OVRSkeleton_BoneId_i16_Transform1(
-        id: crate::GlobalNamespace::OVRSkeleton_BoneId,
-        parentBoneIndex: i16,
-        trans: *mut crate::UnityEngine::Transform,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (id, parentBoneIndex, trans))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRBone")]

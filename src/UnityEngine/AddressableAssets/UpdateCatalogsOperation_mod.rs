@@ -47,12 +47,22 @@ for crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation {
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+UpdateCatalogsOperation")]
 impl crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation {
+    #[cfg(feature = "UnityEngine+AddressableAssets+UpdateCatalogsOperation+__c")]
+    pub type __c = crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation___c;
     #[cfg(
         feature = "UnityEngine+AddressableAssets+UpdateCatalogsOperation+__c__DisplayClass11_0"
     )]
     pub type __c__DisplayClass11_0 = crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation___c__DisplayClass11_0;
-    #[cfg(feature = "UnityEngine+AddressableAssets+UpdateCatalogsOperation+__c")]
-    pub type __c = crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation___c;
+    pub fn Destroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Destroy", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Execute(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -61,6 +71,51 @@ impl crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Execute", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDependencies(
+        &mut self,
+        dependencies: *mut crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetDependencies", (dependencies))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("InvokeWaitForCompletion", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        aa: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (aa))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnCleanCacheCompleted(
+        &mut self,
+        handle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            bool,
+        >,
+        catalogs: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnCleanCacheCompleted", (handle, catalogs))?;
         Ok(__cordl_ret)
     }
     pub fn Start(
@@ -86,52 +141,6 @@ impl crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation {
         > = __cordl_object.invoke("Start", (catalogIds, autoCleanBundleCache))?;
         Ok(__cordl_ret)
     }
-    pub fn Destroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Destroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("InvokeWaitForCompletion", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDependencies(
-        &mut self,
-        dependencies: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetDependencies", (dependencies))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnCleanCacheCompleted(
-        &mut self,
-        handle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            bool,
-        >,
-        catalogs: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCleanCacheCompleted", (handle, catalogs))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         aa: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
@@ -142,15 +151,6 @@ impl crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (aa))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        aa: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (aa))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+UpdateCatalogsOperation")]

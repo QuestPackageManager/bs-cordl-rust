@@ -30,6 +30,13 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty")]
 impl crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -49,13 +56,6 @@ impl crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty 
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty")]
@@ -100,6 +100,13 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
 impl crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -119,13 +126,6 @@ impl crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty 
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
@@ -170,6 +170,13 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty")]
 impl crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -189,13 +196,6 @@ impl crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty 
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty")]
@@ -240,15 +240,12 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionPropert
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty")]
 impl crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionProperty {
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Name", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -260,12 +257,15 @@ impl crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionProper
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_Name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Name", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty")]
@@ -310,16 +310,23 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag {
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag")]
 impl crate::Unity::Properties::Internal::SystemVersionPropertyBag {
-    #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty")]
-    pub type BuildProperty = crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty;
     #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty")]
     pub type MinorProperty = crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty;
-    #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
-    pub type MajorProperty = crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty;
+    #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty")]
+    pub type BuildProperty = crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty;
     #[cfg(
         feature = "Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty"
     )]
     pub type RevisionProperty = crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionProperty;
+    #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
+    pub type MajorProperty = crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -329,13 +336,6 @@ impl crate::Unity::Properties::Internal::SystemVersionPropertyBag {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag")]

@@ -55,77 +55,31 @@ impl MultiplayerController {
     pub const kSongTimeToSongStartSyncTimeOffsetMs: i64 = -600i64;
     #[cfg(feature = "MultiplayerController+__c")]
     pub type __c = crate::GlobalNamespace::MultiplayerController___c;
+    #[cfg(feature = "MultiplayerController+State")]
+    pub type State = crate::GlobalNamespace::MultiplayerController_State;
     #[cfg(feature = "MultiplayerController+_PerformSongStartSync_d__39")]
     pub type _PerformSongStartSync_d__39 = crate::GlobalNamespace::MultiplayerController__PerformSongStartSync_d__39;
     #[cfg(feature = "MultiplayerController+__c__DisplayClass45_0")]
     pub type __c__DisplayClass45_0 = crate::GlobalNamespace::MultiplayerController___c__DisplayClass45_0;
-    #[cfg(feature = "MultiplayerController+State")]
-    pub type State = crate::GlobalNamespace::MultiplayerController_State;
-    pub fn HandleSceneStartSyncControllerSyncStartDidFail(
+    pub fn ChangeState(
+        &mut self,
+        newState: crate::GlobalNamespace::MultiplayerController_State,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ChangeState", (newState))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateAndBindPlayersSpecificSettingsAtGameStartModel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSceneStartSyncControllerSyncStartDidFail", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCurrentSongTime(
-        &mut self,
-        songStartSyncTime: i64,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("GetCurrentSongTime", (songStartSyncTime))?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartSceneLoadSync(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartSceneLoadSync", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleSetMultiplayerGameState(
-        &mut self,
-        userId: *mut crate::System::String,
-        gameState: MultiplayerGameState,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSetMultiplayerGameState", (userId, gameState))?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartGameplay(
-        &mut self,
-        introAnimationStartSyncTime: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartGameplay", (introAnimationStartSyncTime))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_stateChangedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<
-            crate::GlobalNamespace::MultiplayerController_State,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_stateChangedEvent", (value))?;
+            .invoke("CreateAndBindPlayersSpecificSettingsAtGameStartModel", ())?;
         Ok(__cordl_ret)
     }
     pub fn EndGameplay(
@@ -143,73 +97,15 @@ impl MultiplayerController {
             .invoke("EndGameplay", (localPlayerResults, otherPlayerResults))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleSceneStartSyncControllerSyncStartDidReceiveTooLate(
+    pub fn GetCurrentSongTime(
         &mut self,
-        sessionGameId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        songStartSyncTime: i64,
+    ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleSceneStartSyncControllerSyncStartDidReceiveTooLate",
-                (sessionGameId),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleIsDisconnectedDuringLoading(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleIsDisconnectedDuringLoading", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateAndBindPlayersSpecificSettingsAtGameStartModel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CreateAndBindPlayersSpecificSettingsAtGameStartModel", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn PerformSongStartSync(
-        &mut self,
-        localPlayerSyncState: MultiplayerPlayerStartState,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("PerformSongStartSync", (localPlayerSyncState))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleSongStartSyncControllerSyncStartSuccess(
-        &mut self,
-        introAnimationStartSyncTime: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleSongStartSyncControllerSyncStartSuccess",
-                (introAnimationStartSyncTime),
-            )?;
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("GetCurrentSongTime", (songStartSyncTime))?;
         Ok(__cordl_ret)
     }
     pub fn GetSongStartSyncTime(
@@ -221,52 +117,6 @@ impl MultiplayerController {
         );
         let __cordl_ret: i64 = __cordl_object
             .invoke("GetSongStartSyncTime", (introAnimationStartSyncTime))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleSongStartSyncControllerSyncResume(
-        &mut self,
-        introAnimationStartSyncTime: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleSongStartSyncControllerSyncResume",
-                (introAnimationStartSyncTime),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_state(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::MultiplayerController_State,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::MultiplayerController_State = __cordl_object
-            .invoke("get_state", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleSongStartSyncControllerSyncStartFailed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSongStartSyncControllerSyncStartFailed", ())?;
         Ok(__cordl_ret)
     }
     pub fn HandleAllResultsCollected(
@@ -287,27 +137,25 @@ impl MultiplayerController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn OnDestroy(
+    pub fn HandleDidSwitchPlayerToInactive(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
+            .invoke("HandleDidSwitchPlayerToInactive", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_stateChangedEvent(
+    pub fn HandleDisconnected(
         &mut self,
-        value: *mut crate::System::Action_1<
-            crate::GlobalNamespace::MultiplayerController_State,
-        >,
+        disconnectedReason: DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_stateChangedEvent", (value))?;
+            .invoke("HandleDisconnected", (disconnectedReason))?;
         Ok(__cordl_ret)
     }
     pub fn HandleInitialGetGameStateFailed(
@@ -318,6 +166,16 @@ impl MultiplayerController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleInitialGetGameStateFailed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleIsDisconnectedDuringLoading(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleIsDisconnectedDuringLoading", ())?;
         Ok(__cordl_ret)
     }
     pub fn HandleOutroAnimationDidFinish(
@@ -341,15 +199,28 @@ impl MultiplayerController {
             .invoke("HandleRpcReturnToMenu", (userId))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleDisconnected(
+    pub fn HandleSceneStartSyncControllerSyncStartDidFail(
         &mut self,
-        disconnectedReason: DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleDisconnected", (disconnectedReason))?;
+            .invoke("HandleSceneStartSyncControllerSyncStartDidFail", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleSceneStartSyncControllerSyncStartDidReceiveTooLate(
+        &mut self,
+        sessionGameId: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleSceneStartSyncControllerSyncStartDidReceiveTooLate",
+                (sessionGameId),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn HandleSceneStartSyncControllerSyncStartDidSuccess(
@@ -366,33 +237,162 @@ impl MultiplayerController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HandleDidSwitchPlayerToInactive(
+    pub fn HandleSetMultiplayerGameState(
+        &mut self,
+        userId: *mut crate::System::String,
+        gameState: MultiplayerGameState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleSetMultiplayerGameState", (userId, gameState))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleSongStartSyncControllerSyncResume(
+        &mut self,
+        introAnimationStartSyncTime: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleSongStartSyncControllerSyncResume",
+                (introAnimationStartSyncTime),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleSongStartSyncControllerSyncStartFailed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleDidSwitchPlayerToInactive", ())?;
+            .invoke("HandleSongStartSyncControllerSyncStartFailed", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ChangeState(
+    pub fn HandleSongStartSyncControllerSyncStartSuccess(
         &mut self,
-        newState: crate::GlobalNamespace::MultiplayerController_State,
+        introAnimationStartSyncTime: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ChangeState", (newState))?;
+            .invoke(
+                "HandleSongStartSyncControllerSyncStartSuccess",
+                (introAnimationStartSyncTime),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn PerformSongStartSync(
+        &mut self,
+        localPlayerSyncState: MultiplayerPlayerStartState,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("PerformSongStartSync", (localPlayerSyncState))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartGameplay(
+        &mut self,
+        introAnimationStartSyncTime: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartGameplay", (introAnimationStartSyncTime))?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartSceneLoadSync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartSceneLoadSync", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_stateChangedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            crate::GlobalNamespace::MultiplayerController_State,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_stateChangedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_state(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::MultiplayerController_State,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::MultiplayerController_State = __cordl_object
+            .invoke("get_state", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_stateChangedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            crate::GlobalNamespace::MultiplayerController_State,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_stateChangedEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MultiplayerController")]

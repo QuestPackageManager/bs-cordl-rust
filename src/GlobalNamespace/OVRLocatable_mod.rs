@@ -22,44 +22,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for OVRLocatable {
 impl OVRLocatable {
     #[cfg(feature = "OVRLocatable+TrackingSpacePose")]
     pub type TrackingSpacePose = crate::GlobalNamespace::OVRLocatable_TrackingSpacePose;
-    pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Handle",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsEnabled",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-    > {
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Type",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_OVRLocatable0(
         &mut self,
         other: OVRLocatable,
@@ -82,34 +44,11 @@ impl OVRLocatable {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn IOVRAnchorComponent_OVRLocatable__get_Type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-    > {
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "IOVRAnchorComponent<OVRLocatable>.get_Type",
+            "GetHashCode",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsNull",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        anchor: OVRAnchor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (anchor),
         )?;
         Ok(__cordl_ret)
     }
@@ -121,6 +60,28 @@ impl OVRLocatable {
             self,
             "IOVRAnchorComponent<OVRLocatable>.FromAnchor",
             (anchor),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IOVRAnchorComponent_OVRLocatable__get_Handle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IOVRAnchorComponent<OVRLocatable>.get_Handle",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IOVRAnchorComponent_OVRLocatable__get_Type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IOVRAnchorComponent<OVRLocatable>.get_Type",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -136,10 +97,12 @@ impl OVRLocatable {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
+            "ToString",
             (),
         )?;
         Ok(__cordl_ret)
@@ -170,12 +133,49 @@ impl OVRLocatable {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn IOVRAnchorComponent_OVRLocatable__get_Handle(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<u64> {
+        anchor: OVRAnchor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (anchor),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "IOVRAnchorComponent<OVRLocatable>.get_Handle",
+            "get_Handle",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsEnabled",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsNull",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Type",
             (),
         )?;
         Ok(__cordl_ret)
@@ -211,51 +211,6 @@ for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
 }
 #[cfg(feature = "OVRLocatable+TrackingSpacePose")]
 impl crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
-    pub fn get_Rotation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<crate::UnityEngine::Quaternion>,
-    > {
-        let __cordl_ret: crate::System::Nullable_1<crate::UnityEngine::Quaternion> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Rotation",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Position(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<crate::UnityEngine::Vector3>,
-    > {
-        let __cordl_ret: crate::System::Nullable_1<crate::UnityEngine::Vector3> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Position",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsRotationTracked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsRotationTracked",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        position: crate::UnityEngine::Vector3,
-        rotation: crate::UnityEngine::Quaternion,
-        flags: crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (position, rotation, flags),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn ComputeWorldPosition(
         &mut self,
         camera: *mut crate::UnityEngine::Camera,
@@ -282,10 +237,55 @@ impl crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        flags: crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (position, rotation, flags),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_IsPositionTracked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_IsPositionTracked",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsRotationTracked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsRotationTracked",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Position(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<crate::UnityEngine::Vector3>,
+    > {
+        let __cordl_ret: crate::System::Nullable_1<crate::UnityEngine::Vector3> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Position",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Rotation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<crate::UnityEngine::Quaternion>,
+    > {
+        let __cordl_ret: crate::System::Nullable_1<crate::UnityEngine::Quaternion> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Rotation",
             (),
         )?;
         Ok(__cordl_ret)

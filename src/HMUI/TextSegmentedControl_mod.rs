@@ -35,16 +35,6 @@ impl std::ops::DerefMut for crate::HMUI::TextSegmentedControl {
 }
 #[cfg(feature = "HMUI+TextSegmentedControl")]
 impl crate::HMUI::TextSegmentedControl {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CellForCellNumber(
         &mut self,
         cellNumber: i32,
@@ -54,6 +44,20 @@ impl crate::HMUI::TextSegmentedControl {
         );
         let __cordl_ret: *mut crate::HMUI::SegmentedControlCell = __cordl_object
             .invoke("CellForCellNumber", (cellNumber))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetTexts(
@@ -69,19 +73,15 @@ impl crate::HMUI::TextSegmentedControl {
             .invoke("SetTexts", (texts))?;
         Ok(__cordl_ret)
     }
-    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HMUI+TextSegmentedControl")]

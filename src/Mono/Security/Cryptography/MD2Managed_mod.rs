@@ -29,17 +29,6 @@ impl std::ops::DerefMut for crate::Mono::Security::Cryptography::MD2Managed {
 }
 #[cfg(feature = "Mono+Security+Cryptography+MD2Managed")]
 impl crate::Mono::Security::Cryptography::MD2Managed {
-    pub fn Padding(
-        &mut self,
-        nLength: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("Padding", (nLength))?;
-        Ok(__cordl_ret)
-    }
     pub fn HashCore(
         &mut self,
         array: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -63,6 +52,16 @@ impl crate::Mono::Security::Cryptography::MD2Managed {
             .invoke("HashFinal", ())?;
         Ok(__cordl_ret)
     }
+    pub fn Initialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn MD2Transform(
         &mut self,
         state: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -77,14 +76,22 @@ impl crate::Mono::Security::Cryptography::MD2Managed {
             .invoke("MD2Transform", (state, checksum, block, index))?;
         Ok(__cordl_ret)
     }
-    pub fn Initialize(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Padding(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        nLength: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Initialize", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("Padding", (nLength))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -96,13 +103,6 @@ impl crate::Mono::Security::Cryptography::MD2Managed {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Security+Cryptography+MD2Managed")]

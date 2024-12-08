@@ -23,17 +23,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for BeatmapLevelSelectionMask {
 }
 #[cfg(feature = "BeatmapLevelSelectionMask")]
 impl BeatmapLevelSelectionMask {
-    pub fn Equals_Object0(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_BeatmapLevelSelectionMask1(
         &mut self,
         other: BeatmapLevelSelectionMask,
@@ -45,16 +34,14 @@ impl BeatmapLevelSelectionMask {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn Equals_Object0(
         &mut self,
-        difficulties: BeatmapDifficultyMask,
-        modifiers: GameplayModifierMask,
-        songPacks: SongPackMask,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (difficulties, modifiers, songPacks),
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -75,6 +62,19 @@ impl BeatmapLevelSelectionMask {
             self,
             "Serialize",
             (writer, version),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        difficulties: BeatmapDifficultyMask,
+        modifiers: GameplayModifierMask,
+        songPacks: SongPackMask,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (difficulties, modifiers, songPacks),
         )?;
         Ok(__cordl_ret)
     }

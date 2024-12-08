@@ -26,6 +26,25 @@ impl std::ops::DerefMut for ImageEffectController {
 impl ImageEffectController {
     #[cfg(feature = "ImageEffectController+RenderImageCallback")]
     pub type RenderImageCallback = crate::GlobalNamespace::ImageEffectController_RenderImageCallback;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnRenderImage(
+        &mut self,
+        src: *mut crate::UnityEngine::RenderTexture,
+        dest: *mut crate::UnityEngine::RenderTexture,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnRenderImage", (src, dest))?;
+        Ok(__cordl_ret)
+    }
     pub fn SetCallback(
         &mut self,
         renderImageCallback: *mut crate::GlobalNamespace::ImageEffectController_RenderImageCallback,
@@ -46,25 +65,6 @@ impl ImageEffectController {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn OnRenderImage(
-        &mut self,
-        src: *mut crate::UnityEngine::RenderTexture,
-        dest: *mut crate::UnityEngine::RenderTexture,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnRenderImage", (src, dest))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ImageEffectController")]
@@ -105,41 +105,6 @@ for crate::GlobalNamespace::ImageEffectController_RenderImageCallback {
 }
 #[cfg(feature = "ImageEffectController+RenderImageCallback")]
 impl crate::GlobalNamespace::ImageEffectController_RenderImageCallback {
-    pub fn Invoke(
-        &mut self,
-        src: *mut crate::UnityEngine::RenderTexture,
-        dest: *mut crate::UnityEngine::RenderTexture,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (src, dest))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         src: *mut crate::UnityEngine::RenderTexture,
@@ -154,15 +119,50 @@ impl crate::GlobalNamespace::ImageEffectController_RenderImageCallback {
             .invoke("BeginInvoke", (src, dest, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        src: *mut crate::UnityEngine::RenderTexture,
+        dest: *mut crate::UnityEngine::RenderTexture,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (src, dest))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "ImageEffectController+RenderImageCallback")]

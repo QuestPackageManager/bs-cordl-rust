@@ -27,15 +27,10 @@ for crate::System::Runtime::Remoting::Activation::IConstructionCallMessage {
 }
 #[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionCallMessage")]
 impl crate::System::Runtime::Remoting::Activation::IConstructionCallMessage {
-    pub fn get_ContextProperties(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IList> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IList = __cordl_object
-            .invoke("get_ContextProperties", ())?;
-        Ok(__cordl_ret)
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
     }
     pub fn get_ActivationType(
         &mut self,
@@ -45,19 +40,6 @@ impl crate::System::Runtime::Remoting::Activation::IConstructionCallMessage {
         );
         let __cordl_ret: *mut crate::System::Type = __cordl_object
             .invoke("get_ActivationType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CallSiteActivationAttributes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
-        > = __cordl_object.invoke("get_CallSiteActivationAttributes", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ActivationTypeName(
@@ -82,6 +64,29 @@ impl crate::System::Runtime::Remoting::Activation::IConstructionCallMessage {
             .invoke("get_Activator", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_CallSiteActivationAttributes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Object,
+        > = __cordl_object.invoke("get_CallSiteActivationAttributes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ContextProperties(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IList> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IList = __cordl_object
+            .invoke("get_ContextProperties", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_Activator(
         &mut self,
         value: *mut crate::System::Runtime::Remoting::Activation::IActivator,
@@ -92,11 +97,6 @@ impl crate::System::Runtime::Remoting::Activation::IConstructionCallMessage {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Activator", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionCallMessage")]

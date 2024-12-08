@@ -32,11 +32,11 @@ for crate::UnityEngine::UIElements::TreeData_1<T> {
 }
 #[cfg(feature = "UnityEngine+UIElements+TreeData_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<T> {
-    pub fn RefreshTree(
+    pub fn AddItemToParent(
         &mut self,
-        rootItems: *mut crate::System::Collections::Generic::IList_1<
-            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
-        >,
+        item: crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+        parentId: i32,
+        childIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -44,20 +44,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
     {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "RefreshTree",
-            (rootItems),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetParentId(&mut self, id: i32) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetParentId",
-            (id),
+            "AddItemToParent",
+            (item, parentId, childIndex),
         )?;
         Ok(__cordl_ret)
     }
@@ -76,6 +64,116 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
             self,
             "BuildTree",
             (items, isRoot),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDataForId(
+        &mut self,
+        id: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::UIElements::TreeViewItemData_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetDataForId",
+            (id),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetParentId(&mut self, id: i32) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetParentId",
+            (id),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HasAncestor(
+        &mut self,
+        childId: i32,
+        ancestorId: i32,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "HasAncestor",
+            (childId, ancestorId),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Move(
+        &mut self,
+        id: i32,
+        newParentId: i32,
+        childIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Move",
+            (id, newParentId, childIndex),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn RefreshTree(
+        &mut self,
+        rootItems: *mut crate::System::Collections::Generic::IList_1<
+            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "RefreshTree",
+            (rootItems),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveFromParent(
+        &mut self,
+        id: i32,
+        parentId: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "RemoveFromParent",
+            (id, parentId),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateParentTree(
+        &mut self,
+        current: crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "UpdateParentTree",
+            (current),
         )?;
         Ok(__cordl_ret)
     }
@@ -109,104 +207,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
             self,
             "get_rootItemIds",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn HasAncestor(
-        &mut self,
-        childId: i32,
-        ancestorId: i32,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "HasAncestor",
-            (childId, ancestorId),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDataForId(
-        &mut self,
-        id: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: crate::UnityEngine::UIElements::TreeViewItemData_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetDataForId",
-            (id),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveFromParent(
-        &mut self,
-        id: i32,
-        parentId: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "RemoveFromParent",
-            (id, parentId),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddItemToParent(
-        &mut self,
-        item: crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
-        parentId: i32,
-        childIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AddItemToParent",
-            (item, parentId, childIndex),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateParentTree(
-        &mut self,
-        current: crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "UpdateParentTree",
-            (current),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Move(
-        &mut self,
-        id: i32,
-        newParentId: i32,
-        childIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Move",
-            (id, newParentId, childIndex),
         )?;
         Ok(__cordl_ret)
     }

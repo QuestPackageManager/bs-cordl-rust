@@ -24,13 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::LODGroup {
 }
 #[cfg(feature = "UnityEngine+LODGroup")]
 impl crate::UnityEngine::LODGroup {
-    pub fn get_lodCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_lodCount", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetLODs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -63,6 +56,13 @@ impl crate::UnityEngine::LODGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetLODs", (lods))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_lodCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_lodCount", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_size(&mut self) -> quest_hook::libil2cpp::Result<f32> {

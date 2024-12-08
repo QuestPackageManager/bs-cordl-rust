@@ -24,6 +24,11 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::ITimelineClipAsset {
 }
 #[cfg(feature = "UnityEngine+Timeline+ITimelineClipAsset")]
 impl crate::UnityEngine::Timeline::ITimelineClipAsset {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_clipCaps(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::ClipCaps> {
@@ -33,11 +38,6 @@ impl crate::UnityEngine::Timeline::ITimelineClipAsset {
         let __cordl_ret: crate::UnityEngine::Timeline::ClipCaps = __cordl_object
             .invoke("get_clipCaps", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+ITimelineClipAsset")]

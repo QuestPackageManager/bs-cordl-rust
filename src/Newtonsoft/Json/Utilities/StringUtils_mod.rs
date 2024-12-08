@@ -39,11 +39,11 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::StringUtils {
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils")]
 impl crate::Newtonsoft::Json::Utilities::StringUtils {
-    pub const CarriageReturn: char = "\\r";
+    pub const CarriageReturn: char = '\r';
     pub const CarriageReturnLineFeed: &'static str = "\\r\\n";
     pub const Empty: &'static str = "";
-    pub const LineFeed: char = "\\n";
-    pub const Tab: char = "\\t";
+    pub const LineFeed: char = '\n';
+    pub const Tab: char = '\t';
     #[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
     pub type SeparatedCaseState = crate::Newtonsoft::Json::Utilities::StringUtils_SeparatedCaseState;
     #[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils+__c__DisplayClass14_0_1")]

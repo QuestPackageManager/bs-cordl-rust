@@ -26,16 +26,6 @@ impl std::ops::DerefMut for crate::System::ComponentModel::ProvidePropertyAttrib
 }
 #[cfg(feature = "System+ComponentModel+ProvidePropertyAttribute")]
 impl crate::System::ComponentModel::ProvidePropertyAttribute {
-    pub fn get_ReceiverTypeName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_ReceiverTypeName", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_PropertyName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -44,6 +34,16 @@ impl crate::System::ComponentModel::ProvidePropertyAttribute {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_PropertyName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ReceiverTypeName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_ReceiverTypeName", ())?;
         Ok(__cordl_ret)
     }
 }

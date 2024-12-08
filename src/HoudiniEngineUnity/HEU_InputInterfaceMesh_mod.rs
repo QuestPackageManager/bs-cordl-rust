@@ -39,6 +39,13 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMesh")]
 impl crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -48,13 +55,6 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMesh")]
@@ -100,6 +100,13 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMeshes {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMeshes")]
 impl crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMeshes {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -109,13 +116,6 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMeshes {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMeshes")]
@@ -154,33 +154,10 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh")]
 impl crate::HoudiniEngineUnity::HEU_InputInterfaceMesh {
-    #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMesh")]
-    pub type HEU_InputDataMesh = crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh;
     #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMeshes")]
     pub type HEU_InputDataMeshes = crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMeshes;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UploadData(
-        &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
-        inputNodeID: i32,
-        inputData: *mut crate::HoudiniEngineUnity::HEU_InputData,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("UploadData", (session, inputNodeID, inputData))?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMesh")]
+    pub type HEU_InputDataMesh = crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh;
     pub fn CreateInputNodeWithDataUpload(
         &mut self,
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
@@ -198,17 +175,6 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceMesh {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn IsThisInputObjectSupported(
-        &mut self,
-        inputObject: *mut crate::UnityEngine::GameObject,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsThisInputObjectSupported", (inputObject))?;
-        Ok(__cordl_ret)
-    }
     pub fn GenerateMeshDatasFromGameObject(
         &mut self,
         inputObject: *mut crate::UnityEngine::GameObject,
@@ -222,12 +188,46 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceMesh {
             .invoke("GenerateMeshDatasFromGameObject", (inputObject))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn IsThisInputObjectSupported(
+        &mut self,
+        inputObject: *mut crate::UnityEngine::GameObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsThisInputObjectSupported", (inputObject))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn UploadData(
+        &mut self,
+        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+        inputNodeID: i32,
+        inputData: *mut crate::HoudiniEngineUnity::HEU_InputData,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("UploadData", (session, inputNodeID, inputData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh")]

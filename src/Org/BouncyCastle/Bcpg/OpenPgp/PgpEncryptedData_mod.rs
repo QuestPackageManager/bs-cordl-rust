@@ -30,31 +30,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncrypte
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData {
     #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedData+TruncatedStream")]
     pub type TruncatedStream = crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData_TruncatedStream;
-    pub fn _ctor(
-        &mut self,
-        encData: *mut crate::Org::BouncyCastle::Bcpg::InputStreamPacket,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (encData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsIntegrityProtected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsIntegrityProtected", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Verify(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Verify", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetInputStream(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
@@ -65,14 +40,39 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData {
             .invoke("GetInputStream", ())?;
         Ok(__cordl_ret)
     }
+    pub fn IsIntegrityProtected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsIntegrityProtected", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         encData: *mut crate::Org::BouncyCastle::Bcpg::InputStreamPacket,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (encData))?;
         Ok(__cordl_object)
+    }
+    pub fn Verify(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Verify", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        encData: *mut crate::Org::BouncyCastle::Bcpg::InputStreamPacket,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (encData))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedData")]
@@ -121,16 +121,31 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData_TruncatedStream {
     pub const LookAheadBufLimit: i32 = 490i32;
     pub const LookAheadBufSize: i32 = 512i32;
     pub const LookAheadSize: i32 = 22i32;
-    pub fn _ctor(
-        &mut self,
-        inStr: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn FillBuffer(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (inStr))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("FillBuffer", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn GetLookAhead(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetLookAhead", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        inStr: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (inStr))?;
+        Ok(__cordl_object)
     }
     pub fn Read(
         &mut self,
@@ -151,31 +166,16 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData_TruncatedStream {
         let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
         Ok(__cordl_ret)
     }
-    pub fn FillBuffer(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("FillBuffer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetLookAhead(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        inStr: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetLookAhead", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (inStr))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        inStr: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (inStr))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedData+TruncatedStream")]

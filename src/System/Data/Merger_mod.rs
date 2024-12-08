@@ -41,17 +41,6 @@ impl crate::System::Data::Merger {
             .invoke("GetSrcKey", (src, dst))?;
         Ok(__cordl_ret)
     }
-    pub fn MergeRelation(
-        &mut self,
-        relation: *mut crate::System::Data::DataRelation,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MergeRelation", (relation))?;
-        Ok(__cordl_ret)
-    }
     pub fn MergeConstraints_DataSet0(
         &mut self,
         source: *mut crate::System::Data::DataSet,
@@ -72,40 +61,6 @@ impl crate::System::Data::Merger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MergeConstraints", (table))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MergeTable_DataTable0(
-        &mut self,
-        src: *mut crate::System::Data::DataTable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MergeTable", (src))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MergeTable_DataTable1(
-        &mut self,
-        src: *mut crate::System::Data::DataTable,
-        dst: *mut crate::System::Data::DataTable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MergeTable", (src, dst))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MergeSchema(
-        &mut self,
-        table: *mut crate::System::Data::DataTable,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataTable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::DataTable = __cordl_object
-            .invoke("MergeSchema", (table))?;
         Ok(__cordl_ret)
     }
     pub fn MergeDataSet(
@@ -131,6 +86,28 @@ impl crate::System::Data::Merger {
             .invoke("MergeExtendedProperties", (src, dst))?;
         Ok(__cordl_ret)
     }
+    pub fn MergeRelation(
+        &mut self,
+        relation: *mut crate::System::Data::DataRelation,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MergeRelation", (relation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MergeSchema(
+        &mut self,
+        table: *mut crate::System::Data::DataTable,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataTable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Data::DataTable = __cordl_object
+            .invoke("MergeSchema", (table))?;
+        Ok(__cordl_ret)
+    }
     pub fn MergeTableData(
         &mut self,
         src: *mut crate::System::Data::DataTable,
@@ -141,6 +118,51 @@ impl crate::System::Data::Merger {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MergeTableData", (src))?;
         Ok(__cordl_ret)
+    }
+    pub fn MergeTable_DataTable0(
+        &mut self,
+        src: *mut crate::System::Data::DataTable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MergeTable", (src))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MergeTable_DataTable1(
+        &mut self,
+        src: *mut crate::System::Data::DataTable,
+        dst: *mut crate::System::Data::DataTable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MergeTable", (src, dst))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_DataSet0(
+        dataSet: *mut crate::System::Data::DataSet,
+        preserveChanges: bool,
+        missingSchemaAction: crate::System::Data::MissingSchemaAction,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dataSet, preserveChanges, missingSchemaAction))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_DataTable1(
+        dataTable: *mut crate::System::Data::DataTable,
+        preserveChanges: bool,
+        missingSchemaAction: crate::System::Data::MissingSchemaAction,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dataTable, preserveChanges, missingSchemaAction))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_DataSet0(
         &mut self,
@@ -167,28 +189,6 @@ impl crate::System::Data::Merger {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (dataTable, preserveChanges, missingSchemaAction))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_DataSet0(
-        dataSet: *mut crate::System::Data::DataSet,
-        preserveChanges: bool,
-        missingSchemaAction: crate::System::Data::MissingSchemaAction,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dataSet, preserveChanges, missingSchemaAction))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_DataTable1(
-        dataTable: *mut crate::System::Data::DataTable,
-        preserveChanges: bool,
-        missingSchemaAction: crate::System::Data::MissingSchemaAction,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dataTable, preserveChanges, missingSchemaAction))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Data+Merger")]

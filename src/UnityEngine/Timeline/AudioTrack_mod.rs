@@ -27,32 +27,6 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::AudioTrack {
 impl crate::UnityEngine::Timeline::AudioTrack {
     #[cfg(feature = "UnityEngine+Timeline+AudioTrack+_get_outputs_d__4")]
     pub type _get_outputs_d__4 = crate::UnityEngine::Timeline::AudioTrack__get_outputs_d__4;
-    pub fn CreateClip(
-        &mut self,
-        clip: *mut crate::UnityEngine::AudioClip,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Timeline::TimelineClip> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Timeline::TimelineClip = __cordl_object
-            .invoke("CreateClip", (clip))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_outputs(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::UnityEngine::Playables::PlayableBinding,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::UnityEngine::Playables::PlayableBinding,
-        > = __cordl_object.invoke("get_outputs", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CompileClips(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
@@ -71,15 +45,23 @@ impl crate::UnityEngine::Timeline::AudioTrack {
             .invoke("CompileClips", (graph, go, timelineClips, tree))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn CreateClip(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        clip: *mut crate::UnityEngine::AudioClip,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Timeline::TimelineClip> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::Timeline::TimelineClip = __cordl_object
+            .invoke("CreateClip", (clip))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnValidate(
         &mut self,
@@ -91,12 +73,30 @@ impl crate::UnityEngine::Timeline::AudioTrack {
             .invoke("OnValidate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_outputs(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            crate::UnityEngine::Playables::PlayableBinding,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            crate::UnityEngine::Playables::PlayableBinding,
+        > = __cordl_object.invoke("get_outputs", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AudioTrack")]

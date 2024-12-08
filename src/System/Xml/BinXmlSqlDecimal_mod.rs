@@ -29,6 +29,16 @@ for crate::System::Xml::BinXmlSqlDecimal {
 }
 #[cfg(feature = "System+Xml+BinXmlSqlDecimal")]
 impl crate::System::Xml::BinXmlSqlDecimal {
+    pub fn ToDecimal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToDecimal",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -39,12 +49,12 @@ impl crate::System::Xml::BinXmlSqlDecimal {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToDecimal(
+    pub fn TrimTrailingZeros(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
-        let __cordl_ret: crate::System::Decimal = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToDecimal",
+            "TrimTrailingZeros",
             (),
         )?;
         Ok(__cordl_ret)
@@ -66,16 +76,6 @@ impl crate::System::Xml::BinXmlSqlDecimal {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_IsPositive",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TrimTrailingZeros(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "TrimTrailingZeros",
             (),
         )?;
         Ok(__cordl_ret)

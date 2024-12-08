@@ -60,10 +60,10 @@ impl std::ops::DerefMut for crate::Unity::XR::Oculus::NativeMethods {
 }
 #[cfg(feature = "Unity+XR+Oculus+NativeMethods")]
 impl crate::Unity::XR::Oculus::NativeMethods {
-    #[cfg(feature = "Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
-    pub type UserDefinedSettings = crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings;
     #[cfg(feature = "Unity+XR+Oculus+NativeMethods+Internal")]
     pub type Internal = crate::Unity::XR::Oculus::NativeMethods_Internal;
+    #[cfg(feature = "Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
+    pub type UserDefinedSettings = crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings;
 }
 #[cfg(feature = "Unity+XR+Oculus+NativeMethods")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::NativeMethods {

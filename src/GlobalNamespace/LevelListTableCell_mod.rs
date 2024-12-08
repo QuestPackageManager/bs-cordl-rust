@@ -43,10 +43,10 @@ impl std::ops::DerefMut for LevelListTableCell {
 }
 #[cfg(feature = "LevelListTableCell")]
 impl LevelListTableCell {
-    #[cfg(feature = "LevelListTableCell+_RefreshAvailabilityAsync_d__25")]
-    pub type _RefreshAvailabilityAsync_d__25 = crate::GlobalNamespace::LevelListTableCell__RefreshAvailabilityAsync_d__25;
     #[cfg(feature = "LevelListTableCell+_SetDataFromLevelAsync_d__20")]
     pub type _SetDataFromLevelAsync_d__20 = crate::GlobalNamespace::LevelListTableCell__SetDataFromLevelAsync_d__20;
+    #[cfg(feature = "LevelListTableCell+_RefreshAvailabilityAsync_d__25")]
+    pub type _RefreshAvailabilityAsync_d__25 = crate::GlobalNamespace::LevelListTableCell__RefreshAvailabilityAsync_d__25;
     pub fn CancelAsyncOperations(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,6 +55,57 @@ impl LevelListTableCell {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CancelAsyncOperations", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HighlightDidChange(
+        &mut self,
+        transitionType: crate::HMUI::SelectableCell_TransitionType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HighlightDidChange", (transitionType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn RefreshAvailabilityAsync(
+        &mut self,
+        entitlementModel: *mut IEntitlementModel,
+        levelID: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RefreshAvailabilityAsync", (entitlementModel, levelID))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RefreshVisuals(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RefreshVisuals", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectionDidChange(
+        &mut self,
+        transitionType: crate::HMUI::SelectableCell_TransitionType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectionDidChange", (transitionType))?;
         Ok(__cordl_ret)
     }
     pub fn SetDataFromLevelAsync(
@@ -84,50 +135,6 @@ impl LevelListTableCell {
             .invoke("WasPreparedForReuse", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SelectionDidChange(
-        &mut self,
-        transitionType: crate::HMUI::SelectableCell_TransitionType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectionDidChange", (transitionType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RefreshAvailabilityAsync(
-        &mut self,
-        entitlementModel: *mut IEntitlementModel,
-        levelID: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshAvailabilityAsync", (entitlementModel, levelID))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RefreshVisuals(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshVisuals", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HighlightDidChange(
-        &mut self,
-        transitionType: crate::HMUI::SelectableCell_TransitionType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HighlightDidChange", (transitionType))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -137,13 +144,6 @@ impl LevelListTableCell {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LevelListTableCell")]

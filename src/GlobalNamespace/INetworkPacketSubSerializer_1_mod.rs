@@ -27,6 +27,23 @@ for INetworkPacketSubSerializer_1<TData> {
 }
 #[cfg(feature = "INetworkPacketSubSerializer_1")]
 impl<TData: quest_hook::libil2cpp::Type> INetworkPacketSubSerializer_1<TData> {
+    pub fn Deserialize(
+        &mut self,
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        length: i32,
+        data: TData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Deserialize", (reader, length, data))?;
+        Ok(__cordl_ret)
+    }
     pub fn HandlesType(
         &mut self,
         _cordl_type: *mut crate::System::Type,
@@ -55,23 +72,6 @@ impl<TData: quest_hook::libil2cpp::Type> INetworkPacketSubSerializer_1<TData> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Serialize", (writer, packet))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Deserialize(
-        &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-        length: i32,
-        data: TData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Deserialize", (reader, length, data))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

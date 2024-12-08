@@ -27,17 +27,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JsonPath::QueryFilter
 impl crate::Newtonsoft::Json::Linq::JsonPath::QueryFilter {
     #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+QueryFilter+_ExecuteFilter_d__2")]
     pub type _ExecuteFilter_d__2 = crate::Newtonsoft::Json::Linq::JsonPath::QueryFilter__ExecuteFilter_d__2;
-    pub fn _ctor(
-        &mut self,
-        expression: *mut crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (expression))?;
-        Ok(__cordl_ret)
-    }
     pub fn ExecuteFilter(
         &mut self,
         root: *mut crate::Newtonsoft::Json::Linq::JToken,
@@ -60,12 +49,23 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::QueryFilter {
     }
     pub fn New(
         expression: *mut crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (expression))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        expression: *mut crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (expression))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+QueryFilter")]

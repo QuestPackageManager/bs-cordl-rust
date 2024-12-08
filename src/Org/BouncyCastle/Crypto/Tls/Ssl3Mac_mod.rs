@@ -29,16 +29,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::Ssl3Mac {
 impl crate::Org::BouncyCastle::Crypto::Tls::Ssl3Mac {
     pub const IPAD_BYTE: u8 = 54u8;
     pub const OPAD_BYTE: u8 = 92u8;
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn BlockUpdate(
         &mut self,
         input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -52,28 +42,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Ssl3Mac {
             .invoke("BlockUpdate", (input, inOff, len))?;
         Ok(__cordl_ret)
     }
-    pub fn Init(
-        &mut self,
-        parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (parameters))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (digest))?;
-        Ok(__cordl_ret)
-    }
     pub fn DoFinal(
         &mut self,
         output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -85,14 +53,41 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Ssl3Mac {
         let __cordl_ret: i32 = __cordl_object.invoke("DoFinal", (output, outOff))?;
         Ok(__cordl_ret)
     }
-    pub fn get_AlgorithmName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    pub fn GetMacSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_AlgorithmName", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetMacSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (parameters))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (digest))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
     pub fn Update(
@@ -106,21 +101,26 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Ssl3Mac {
             .invoke("Update", (input))?;
         Ok(__cordl_ret)
     }
-    pub fn GetMacSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn _ctor(
+        &mut self,
+        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetMacSize", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (digest))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (digest))?;
-        Ok(__cordl_object)
+    pub fn get_AlgorithmName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_AlgorithmName", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+Ssl3Mac")]

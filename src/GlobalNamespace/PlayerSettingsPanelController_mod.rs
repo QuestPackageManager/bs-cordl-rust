@@ -60,26 +60,6 @@ impl PlayerSettingsPanelController {
     pub const kDisabledSectionAlpha: f32 = 0.2f32;
     #[cfg(feature = "PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
     pub type PlayerSettingsPanelLayout = crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLayout;
-    pub fn get_playerSpecificSettings(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerSpecificSettings> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut PlayerSpecificSettings = __cordl_object
-            .invoke("get_playerSpecificSettings", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -88,123 +68,6 @@ impl PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Refresh(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Refresh", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleNoteJumpStartBeatOffsetPositionSelected(
-        &mut self,
-        idx: i32,
-        startBeatOffset: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleNoteJumpStartBeatOffsetPositionSelected",
-                (idx, startBeatOffset),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RefreshArcsWarning(
-        &mut self,
-        arcVisibilityType: ArcVisibilityType,
-        forceRebuild: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshArcsWarning", (arcVisibilityType, forceRebuild))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetSectionDisabled(
-        &mut self,
-        sectionCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-        disable: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSectionDisabled", (sectionCanvasGroup, disable))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDisable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleNoteJumpFixedDurationSettingsControllerValueDidChange(
-        &mut self,
-        formattedFloatListSettingsController: *mut FormattedFloatListSettingsController,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleNoteJumpFixedDurationSettingsControllerValueDidChange",
-                (formattedFloatListSettingsController, value),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _OnEnable_b__42_3(
-        &mut self,
-        on: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<OnEnable>b__42_3", (on))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _OnEnable_b__42_6(
-        &mut self,
-        on: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<OnEnable>b__42_6", (on))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _OnEnable_b__42_1(
-        &mut self,
-        on: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<OnEnable>b__42_1", (on))?;
         Ok(__cordl_ret)
     }
     pub fn HandleAdvancedHudToggleChanged(
@@ -218,43 +81,18 @@ impl PlayerSettingsPanelController {
             .invoke("HandleAdvancedHudToggleChanged", (on))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleNoteJumpDurationTypeSettingsDropdownDidSelectCellWithIdx(
+    pub fn HandleArcVisibilityDropdownDidSelectCellWithIdx(
         &mut self,
         idx: i32,
-        noteJumpDurationTypeSettings: NoteJumpDurationTypeSettings,
+        arcVisibilityType: ArcVisibilityType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "HandleNoteJumpDurationTypeSettingsDropdownDidSelectCellWithIdx",
-                (idx, noteJumpDurationTypeSettings),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetIsDirty(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetIsDirty", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLightReductionAmountSelected(
-        &mut self,
-        obj: i32,
-        environmentEffectsFilterPreset: EnvironmentEffectsFilterPreset,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleLightReductionAmountSelected",
-                (obj, environmentEffectsFilterPreset),
+                "HandleArcVisibilityDropdownDidSelectCellWithIdx",
+                (idx, arcVisibilityType),
             )?;
         Ok(__cordl_ret)
     }
@@ -273,9 +111,50 @@ impl PlayerSettingsPanelController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HandleSFXVolumeSettingsControllerValueDidChange(
+    pub fn HandleLightReductionAmountSelected(
         &mut self,
-        settingsController: *mut FormattedFloatListSettingsController,
+        obj: i32,
+        environmentEffectsFilterPreset: EnvironmentEffectsFilterPreset,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleLightReductionAmountSelected",
+                (obj, environmentEffectsFilterPreset),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleNoTextsAndHudsToggleChanged(
+        &mut self,
+        on: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleNoTextsAndHudsToggleChanged", (on))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleNoteJumpDurationTypeSettingsDropdownDidSelectCellWithIdx(
+        &mut self,
+        idx: i32,
+        noteJumpDurationTypeSettings: NoteJumpDurationTypeSettings,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleNoteJumpDurationTypeSettingsDropdownDidSelectCellWithIdx",
+                (idx, noteJumpDurationTypeSettings),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleNoteJumpFixedDurationSettingsControllerValueDidChange(
+        &mut self,
+        formattedFloatListSettingsController: *mut FormattedFloatListSettingsController,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -283,8 +162,23 @@ impl PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "HandleSFXVolumeSettingsControllerValueDidChange",
-                (settingsController, value),
+                "HandleNoteJumpFixedDurationSettingsControllerValueDidChange",
+                (formattedFloatListSettingsController, value),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleNoteJumpStartBeatOffsetPositionSelected(
+        &mut self,
+        idx: i32,
+        startBeatOffset: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleNoteJumpStartBeatOffsetPositionSelected",
+                (idx, startBeatOffset),
             )?;
         Ok(__cordl_ret)
     }
@@ -299,29 +193,18 @@ impl PlayerSettingsPanelController {
             .invoke("HandlePlayerHeightSettingsControllerValueDidChange", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn add_didChangePlayerSettingsEvent(
+    pub fn HandleSFXVolumeSettingsControllerValueDidChange(
         &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didChangePlayerSettingsEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleArcVisibilityDropdownDidSelectCellWithIdx(
-        &mut self,
-        idx: i32,
-        arcVisibilityType: ArcVisibilityType,
+        settingsController: *mut FormattedFloatListSettingsController,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "HandleArcVisibilityDropdownDidSelectCellWithIdx",
-                (idx, arcVisibilityType),
+                "HandleSFXVolumeSettingsControllerValueDidChange",
+                (settingsController, value),
             )?;
         Ok(__cordl_ret)
     }
@@ -340,68 +223,31 @@ impl PlayerSettingsPanelController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn RefreshNoteJumpUI(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
         &mut self,
-        noteJumpDurationTypeSettings: NoteJumpDurationTypeSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshNoteJumpUI", (noteJumpDurationTypeSettings))?;
+            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _OnEnable_b__42_0(
-        &mut self,
-        on: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<OnEnable>b__42_0", (on))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _OnEnable_b__42_7(
+    pub fn OnDisable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<OnEnable>b__42_7", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _OnEnable_b__42_5(
-        &mut self,
-        on: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<OnEnable>b__42_5", (on))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _OnEnable_b__42_8(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<OnEnable>b__42_8", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetLayout(
-        &mut self,
-        layout: crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLayout,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLayout", (layout))?;
+            .invoke("OnDisable", ())?;
         Ok(__cordl_ret)
     }
     pub fn OnEnable(
@@ -414,37 +260,37 @@ impl PlayerSettingsPanelController {
             .invoke("OnEnable", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didChangePlayerSettingsEvent(
+    pub fn Refresh(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didChangePlayerSettingsEvent", (value))?;
+            .invoke("Refresh", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _OnEnable_b__42_2(
+    pub fn RefreshArcsWarning(
         &mut self,
-        on: bool,
+        arcVisibilityType: ArcVisibilityType,
+        forceRebuild: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<OnEnable>b__42_2", (on))?;
+            .invoke("RefreshArcsWarning", (arcVisibilityType, forceRebuild))?;
         Ok(__cordl_ret)
     }
-    pub fn _OnEnable_b__42_4(
+    pub fn RefreshNoteJumpUI(
         &mut self,
-        on: bool,
+        noteJumpDurationTypeSettings: NoteJumpDurationTypeSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<OnEnable>b__42_4", (on))?;
+            .invoke("RefreshNoteJumpUI", (noteJumpDurationTypeSettings))?;
         Ok(__cordl_ret)
     }
     pub fn SetData(
@@ -458,15 +304,37 @@ impl PlayerSettingsPanelController {
             .invoke("SetData", (playerData))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleNoTextsAndHudsToggleChanged(
+    pub fn SetIsDirty(
         &mut self,
-        on: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNoTextsAndHudsToggleChanged", (on))?;
+            .invoke("SetIsDirty", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetLayout(
+        &mut self,
+        layout: crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLayout,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetLayout", (layout))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetSectionDisabled(
+        &mut self,
+        sectionCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
+        disable: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetSectionDisabled", (sectionCanvasGroup, disable))?;
         Ok(__cordl_ret)
     }
     pub fn UnsubscribeAllUICallbacks(
@@ -479,12 +347,144 @@ impl PlayerSettingsPanelController {
             .invoke("UnsubscribeAllUICallbacks", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _OnEnable_b__42_0(
+        &mut self,
+        on: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<OnEnable>b__42_0", (on))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _OnEnable_b__42_1(
+        &mut self,
+        on: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<OnEnable>b__42_1", (on))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _OnEnable_b__42_2(
+        &mut self,
+        on: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<OnEnable>b__42_2", (on))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _OnEnable_b__42_3(
+        &mut self,
+        on: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<OnEnable>b__42_3", (on))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _OnEnable_b__42_4(
+        &mut self,
+        on: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<OnEnable>b__42_4", (on))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _OnEnable_b__42_5(
+        &mut self,
+        on: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<OnEnable>b__42_5", (on))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _OnEnable_b__42_6(
+        &mut self,
+        on: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<OnEnable>b__42_6", (on))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _OnEnable_b__42_7(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<OnEnable>b__42_7", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _OnEnable_b__42_8(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<OnEnable>b__42_8", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didChangePlayerSettingsEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didChangePlayerSettingsEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_playerSpecificSettings(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut PlayerSpecificSettings> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut PlayerSpecificSettings = __cordl_object
+            .invoke("get_playerSpecificSettings", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didChangePlayerSettingsEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didChangePlayerSettingsEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PlayerSettingsPanelController")]

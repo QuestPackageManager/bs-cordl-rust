@@ -24,6 +24,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsECDsaSigne
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsECDsaSigner")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsECDsaSigner {
+    pub fn CreateDsaImpl(
+        &mut self,
+        hashAlgorithm: u8,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::IDsa> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IDsa = __cordl_object
+            .invoke("CreateDsaImpl", (hashAlgorithm))?;
+        Ok(__cordl_ret)
+    }
     pub fn IsValidPublicKey(
         &mut self,
         publicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -33,6 +44,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsECDsaSigner {
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsValidPublicKey", (publicKey))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -50,24 +68,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsECDsaSigner {
         );
         let __cordl_ret: u8 = __cordl_object.invoke("get_SignatureAlgorithm", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn CreateDsaImpl(
-        &mut self,
-        hashAlgorithm: u8,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::IDsa> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IDsa = __cordl_object
-            .invoke("CreateDsaImpl", (hashAlgorithm))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsECDsaSigner")]

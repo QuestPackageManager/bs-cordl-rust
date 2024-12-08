@@ -24,6 +24,25 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Pkcs::KeyDerivationF
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+KeyDerivationFunc")]
 impl crate::Org::BouncyCastle::Asn1::Pkcs::KeyDerivationFunc {
+    pub fn New_Asn1Sequence0(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_DerObjectIdentifier_Asn1Encodable1(
+        id: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        parameters: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (id, parameters))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_Asn1Sequence0(
         &mut self,
         seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
@@ -46,25 +65,6 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::KeyDerivationFunc {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (id, parameters))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_Asn1Sequence0(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_DerObjectIdentifier_Asn1Encodable1(
-        id: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        parameters: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (id, parameters))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+KeyDerivationFunc")]

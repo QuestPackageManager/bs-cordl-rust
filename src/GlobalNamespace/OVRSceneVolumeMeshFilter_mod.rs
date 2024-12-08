@@ -139,16 +139,16 @@ impl std::ops::DerefMut for OVRSceneVolumeMeshFilter {
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter")]
 impl OVRSceneVolumeMeshFilter {
-    #[cfg(feature = "OVRSceneVolumeMeshFilter+PopulateMeshDataJob")]
-    pub type PopulateMeshDataJob = crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob;
-    #[cfg(feature = "OVRSceneVolumeMeshFilter+_CreateVolumeMesh_d__7")]
-    pub type _CreateVolumeMesh_d__7 = crate::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7;
     #[cfg(feature = "OVRSceneVolumeMeshFilter+BakeMeshJob")]
     pub type BakeMeshJob = crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob;
-    #[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshCountsJob")]
-    pub type GetTriangleMeshCountsJob = crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob;
+    #[cfg(feature = "OVRSceneVolumeMeshFilter+PopulateMeshDataJob")]
+    pub type PopulateMeshDataJob = crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob;
     #[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshJob")]
     pub type GetTriangleMeshJob = crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob;
+    #[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshCountsJob")]
+    pub type GetTriangleMeshCountsJob = crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob;
+    #[cfg(feature = "OVRSceneVolumeMeshFilter+_CreateVolumeMesh_d__7")]
+    pub type _CreateVolumeMesh_d__7 = crate::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7;
     pub fn CreateVolumeMesh(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
@@ -159,15 +159,12 @@ impl OVRSceneVolumeMeshFilter {
             .invoke("CreateVolumeMesh", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Start(
         &mut self,
@@ -177,6 +174,16 @@ impl OVRSceneVolumeMeshFilter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -196,13 +203,6 @@ impl OVRSceneVolumeMeshFilter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_IsCompleted", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter")]

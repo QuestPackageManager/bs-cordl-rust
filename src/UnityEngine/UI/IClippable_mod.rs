@@ -24,16 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::IClippable {
 }
 #[cfg(feature = "UnityEngine+UI+IClippable")]
 impl crate::UnityEngine::UI::IClippable {
-    pub fn RecalculateClipping(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecalculateClipping", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Cull(
         &mut self,
         clipRect: crate::UnityEngine::Rect,
@@ -46,25 +36,14 @@ impl crate::UnityEngine::UI::IClippable {
             .invoke("Cull", (clipRect, validRect))?;
         Ok(__cordl_ret)
     }
-    pub fn SetClipSoftness(
+    pub fn RecalculateClipping(
         &mut self,
-        clipSoftness: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetClipSoftness", (clipSoftness))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_gameObject(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("get_gameObject", ())?;
+            .invoke("RecalculateClipping", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetClipRect(
@@ -79,6 +58,32 @@ impl crate::UnityEngine::UI::IClippable {
             .invoke("SetClipRect", (value, validRect))?;
         Ok(__cordl_ret)
     }
+    pub fn SetClipSoftness(
+        &mut self,
+        clipSoftness: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetClipSoftness", (clipSoftness))?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_gameObject(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("get_gameObject", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_rectTransform(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RectTransform> {
@@ -88,11 +93,6 @@ impl crate::UnityEngine::UI::IClippable {
         let __cordl_ret: *mut crate::UnityEngine::RectTransform = __cordl_object
             .invoke("get_rectTransform", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+IClippable")]

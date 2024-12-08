@@ -24,6 +24,11 @@ impl std::ops::DerefMut for crate::Unity::Properties::IConstructor {
 }
 #[cfg(feature = "Unity+Properties+IConstructor")]
 impl crate::Unity::Properties::IConstructor {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_InstantiationKind(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Properties::InstantiationKind> {
@@ -33,11 +38,6 @@ impl crate::Unity::Properties::IConstructor {
         let __cordl_ret: crate::Unity::Properties::InstantiationKind = __cordl_object
             .invoke("get_InstantiationKind", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "Unity+Properties+IConstructor")]

@@ -60,20 +60,52 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             .invoke("CreateObjectInfo", (si, memberData))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Type_ObjectReader_i32_BinaryAssemblyInfo0(
-        &mut self,
+    pub fn New_Il2CppArray_Il2CppArray_Il2CppArray_ObjectReader_i32_BinaryAssemblyInfo_SizedArray1(
+        objectName: *mut crate::System::String,
+        memberNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        binaryTypeEnumA: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
+        >,
+        typeInformationA: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Object,
+        >,
+        memberAssemIds: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        objectReader: *mut crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
+        objectId: i32,
+        assemblyInfo: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
+        assemIdToAssemblyTable: *mut crate::System::Runtime::Serialization::Formatters::Binary::SizedArray,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    objectName,
+                    memberNames,
+                    binaryTypeEnumA,
+                    typeInformationA,
+                    memberAssemIds,
+                    objectReader,
+                    objectId,
+                    assemblyInfo,
+                    assemIdToAssemblyTable,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Type_ObjectReader_i32_BinaryAssemblyInfo0(
         objectName: *mut crate::System::String,
         objectType: *mut crate::System::Type,
         memberNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
         objectReader: *mut crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
         objectId: i32,
         assemblyInfo: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
                 ".ctor",
                 (
                     objectName,
@@ -84,7 +116,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
                     assemblyInfo,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_object)
     }
     pub fn _ctor_Il2CppArray_Il2CppArray_Il2CppArray_ObjectReader_i32_BinaryAssemblyInfo_SizedArray1(
         &mut self,
@@ -122,18 +154,20 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New_Type_ObjectReader_i32_BinaryAssemblyInfo0(
+    pub fn _ctor_Type_ObjectReader_i32_BinaryAssemblyInfo0(
+        &mut self,
         objectName: *mut crate::System::String,
         objectType: *mut crate::System::Type,
         memberNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
         objectReader: *mut crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
         objectId: i32,
         assemblyInfo: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
                 ".ctor",
                 (
                     objectName,
@@ -144,41 +178,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
                     assemblyInfo,
                 ),
             )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray_Il2CppArray_Il2CppArray_ObjectReader_i32_BinaryAssemblyInfo_SizedArray1(
-        objectName: *mut crate::System::String,
-        memberNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        binaryTypeEnumA: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
-        >,
-        typeInformationA: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
-        >,
-        memberAssemIds: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        objectReader: *mut crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
-        objectId: i32,
-        assemblyInfo: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
-        assemIdToAssemblyTable: *mut crate::System::Runtime::Serialization::Formatters::Binary::SizedArray,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    objectName,
-                    memberNames,
-                    binaryTypeEnumA,
-                    typeInformationA,
-                    memberAssemIds,
-                    objectReader,
-                    objectId,
-                    assemblyInfo,
-                    assemIdToAssemblyTable,
-                ),
-            )?;
-        Ok(__cordl_object)
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectMap")]

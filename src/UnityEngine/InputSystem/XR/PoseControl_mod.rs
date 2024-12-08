@@ -34,6 +34,35 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XR::PoseControl {
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+PoseControl")]
 impl crate::UnityEngine::InputSystem::XR::PoseControl {
+    pub fn CalculateOptimizedControlDataType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = __cordl_object
+            .invoke("CalculateOptimizedControlDataType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn FinishSetup(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FinishSetup", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn ReadUnprocessedValueFromState(
         &mut self,
         statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -43,6 +72,28 @@ impl crate::UnityEngine::InputSystem::XR::PoseControl {
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::XR::PoseState = __cordl_object
             .invoke("ReadUnprocessedValueFromState", (statePtr))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteValueIntoState(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::XR::PoseState,
+        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteValueIntoState", (value, statePtr))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_angularVelocity(
@@ -57,26 +108,28 @@ impl crate::UnityEngine::InputSystem::XR::PoseControl {
             .invoke("get_angularVelocity", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_velocity(
+    pub fn get_isTracked(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_velocity", (value))?;
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
+            .invoke("get_isTracked", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_trackingState(
+    pub fn get_position(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::IntegerControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_trackingState", (value))?;
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control = __cordl_object
+            .invoke("get_position", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_rotation(
@@ -89,6 +142,30 @@ impl crate::UnityEngine::InputSystem::XR::PoseControl {
         );
         let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl = __cordl_object
             .invoke("get_rotation", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_trackingState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::IntegerControl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::IntegerControl = __cordl_object
+            .invoke("get_trackingState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_velocity(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control = __cordl_object
+            .invoke("get_velocity", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_angularVelocity(
@@ -113,62 +190,6 @@ impl crate::UnityEngine::InputSystem::XR::PoseControl {
             .invoke("set_isTracked", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FinishSetup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FinishSetup", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteValueIntoState(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::XR::PoseState,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteValueIntoState", (value, statePtr))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CalculateOptimizedControlDataType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::FourCC,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = __cordl_object
-            .invoke("CalculateOptimizedControlDataType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_trackingState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::IntegerControl,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::IntegerControl = __cordl_object
-            .invoke("get_trackingState", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_position(
         &mut self,
         value: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -178,30 +199,6 @@ impl crate::UnityEngine::InputSystem::XR::PoseControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_position", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_velocity(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control = __cordl_object
-            .invoke("get_velocity", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_position(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control = __cordl_object
-            .invoke("get_position", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_rotation(
@@ -215,24 +212,27 @@ impl crate::UnityEngine::InputSystem::XR::PoseControl {
             .invoke("set_rotation", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_isTracked(
+    pub fn set_trackingState(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    > {
+        value: *mut crate::UnityEngine::InputSystem::Controls::IntegerControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_isTracked", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_trackingState", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_velocity(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_velocity", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+PoseControl")]

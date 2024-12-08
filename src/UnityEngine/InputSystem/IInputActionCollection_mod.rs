@@ -24,48 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::IInputActionCollect
 }
 #[cfg(feature = "UnityEngine+InputSystem+IInputActionCollection")]
 impl crate::UnityEngine::InputSystem::IInputActionCollection {
-    pub fn Enable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Enable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_bindingMask(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputBinding>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Nullable_1<
-            crate::UnityEngine::InputSystem::InputBinding,
-        > = __cordl_object.invoke("get_bindingMask", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_devices(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<
-            crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
-            >,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Nullable_1<
-            crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
-            >,
-        > = __cordl_object.invoke("get_devices", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Contains(
         &mut self,
         action: *mut crate::UnityEngine::InputSystem::InputAction,
@@ -86,6 +44,34 @@ impl crate::UnityEngine::InputSystem::IInputActionCollection {
             .invoke("Disable", ())?;
         Ok(__cordl_ret)
     }
+    pub fn Enable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Enable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_bindingMask(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputBinding>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::InputBinding,
+        > = __cordl_object.invoke("get_bindingMask", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_controlSchemes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -99,6 +85,25 @@ impl crate::UnityEngine::InputSystem::IInputActionCollection {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             crate::UnityEngine::InputSystem::InputControlScheme,
         > = __cordl_object.invoke("get_controlSchemes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_devices(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+            >,
+        > = __cordl_object.invoke("get_devices", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_bindingMask(
@@ -126,11 +131,6 @@ impl crate::UnityEngine::InputSystem::IInputActionCollection {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_devices", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+IInputActionCollection")]

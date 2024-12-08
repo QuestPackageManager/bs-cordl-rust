@@ -29,14 +29,43 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::LightTranslationBase
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+LightTranslationBaseData")]
 impl crate::BeatmapSaveDataVersion3::LightTranslationBaseData {
-    pub fn get_usePreviousEventTranslationValue(
+    pub fn New(
+        beat: f32,
+        usePreviousEventTranslationValue: bool,
+        easeType: crate::BeatmapSaveDataCommon::EaseType,
+        translation: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (beat, usePreviousEventTranslationValue, easeType, translation),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        beat: f32,
+        usePreviousEventTranslationValue: bool,
+        easeType: crate::BeatmapSaveDataCommon::EaseType,
+        translation: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_usePreviousEventTranslationValue", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (beat, usePreviousEventTranslationValue, easeType, translation),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_beat(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_beat", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_easeType(
@@ -56,44 +85,15 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationBaseData {
         let __cordl_ret: f32 = __cordl_object.invoke("get_translation", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_beat(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_beat", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn get_usePreviousEventTranslationValue(
         &mut self,
-        beat: f32,
-        usePreviousEventTranslationValue: bool,
-        easeType: crate::BeatmapSaveDataCommon::EaseType,
-        translation: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (beat, usePreviousEventTranslationValue, easeType, translation),
-            )?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_usePreviousEventTranslationValue", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        beat: f32,
-        usePreviousEventTranslationValue: bool,
-        easeType: crate::BeatmapSaveDataCommon::EaseType,
-        translation: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (beat, usePreviousEventTranslationValue, easeType, translation),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+LightTranslationBaseData")]

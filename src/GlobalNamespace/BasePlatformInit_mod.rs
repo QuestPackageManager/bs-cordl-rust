@@ -29,6 +29,16 @@ impl BasePlatformInit {
     pub type _InitializeAsync_d__7 = crate::GlobalNamespace::BasePlatformInit__InitializeAsync_d__7;
     #[cfg(feature = "BasePlatformInit+_Initialize_d__5")]
     pub type _Initialize_d__5 = crate::GlobalNamespace::BasePlatformInit__Initialize_d__5;
+    pub fn Initialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn InitializeAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -53,16 +63,12 @@ impl BasePlatformInit {
             .invoke("InitializeInternalAsync", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_IsInitialized(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsInitialized", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -81,22 +87,16 @@ impl BasePlatformInit {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsInitialized", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Initialize(
+    pub fn set_IsInitialized(
         &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Initialize", ())?;
+            .invoke("set_IsInitialized", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BasePlatformInit")]

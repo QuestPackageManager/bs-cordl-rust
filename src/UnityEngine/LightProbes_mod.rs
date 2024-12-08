@@ -24,29 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::LightProbes {
 }
 #[cfg(feature = "UnityEngine+LightProbes")]
 impl crate::UnityEngine::LightProbes {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_bakedProbes(
-        &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Rendering::SphericalHarmonicsL2,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_bakedProbes", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetInterpolatedLightProbe(
         &mut self,
         position: crate::UnityEngine::Vector3,
@@ -58,6 +35,23 @@ impl crate::UnityEngine::LightProbes {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetInterpolatedLightProbe", (position, renderer, coefficients))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_bakedProbes(
@@ -75,17 +69,11 @@ impl crate::UnityEngine::LightProbes {
         > = __cordl_object.invoke("get_bakedProbes", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_positions(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-    > {
+    pub fn get_cellCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Vector3,
-        > = __cordl_object.invoke("get_positions", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_cellCount", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_coefficients(
@@ -105,6 +93,32 @@ impl crate::UnityEngine::LightProbes {
         let __cordl_ret: i32 = __cordl_object.invoke("get_count", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_positions(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::Vector3,
+        > = __cordl_object.invoke("get_positions", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_bakedProbes(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::Rendering::SphericalHarmonicsL2,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_bakedProbes", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_coefficients(
         &mut self,
         value: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
@@ -115,20 +129,6 @@ impl crate::UnityEngine::LightProbes {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_coefficients", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_cellCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_cellCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+LightProbes")]

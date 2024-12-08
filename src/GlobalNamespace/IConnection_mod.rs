@@ -23,21 +23,14 @@ impl std::ops::DerefMut for IConnection {
 }
 #[cfg(feature = "IConnection")]
 impl IConnection {
-    pub fn get_userId(
+    pub fn Disconnect(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_userId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isConnectionOwner(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isConnectionOwner", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Disconnect", ())?;
         Ok(__cordl_ret)
     }
     pub fn Send(
@@ -52,6 +45,28 @@ impl IConnection {
             .invoke("Send", (writer, deliveryMethod))?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_isConnectionOwner(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isConnectionOwner", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_userId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_userId", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_userName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -61,21 +76,6 @@ impl IConnection {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_userName", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Disconnect(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Disconnect", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IConnection")]

@@ -42,79 +42,6 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder+ControlBuilder"
     )]
     pub type ControlBuilder = crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder;
-    pub fn WithType<T>(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder = __cordl_object
-            .invoke("WithType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_extendsLayout(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_extendsLayout", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithName(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder = __cordl_object
-            .invoke("WithName", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithSizeInBytes(
-        &mut self,
-        sizeInBytes: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder = __cordl_object
-            .invoke("WithSizeInBytes", (sizeInBytes))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_updateBeforeRender(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<bool>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Nullable_1<bool> = __cordl_object
-            .invoke("get_updateBeforeRender", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_stateSizeInBytes(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_stateSizeInBytes", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn AddControl(
         &mut self,
         name: *mut crate::System::String,
@@ -126,6 +53,18 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = __cordl_object
             .invoke("AddControl", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Build(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout = __cordl_object
+            .invoke("Build", ())?;
         Ok(__cordl_ret)
     }
     pub fn Extend(
@@ -141,96 +80,24 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             .invoke("Extend", (baseLayoutName))?;
         Ok(__cordl_ret)
     }
-    pub fn set_stateFormat(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::Utilities::FourCC,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_stateFormat", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn set_updateBeforeRender(
+    pub fn WithDisplayName(
         &mut self,
-        value: crate::System::Nullable_1<bool>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        displayName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_updateBeforeRender", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_displayName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_displayName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_name(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_name", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_stateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_stateSizeInBytes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_type", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_displayName(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_displayName", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_type(
-        &mut self,
-        value: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_type", (value))?;
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder = __cordl_object
+            .invoke("WithDisplayName", (displayName))?;
         Ok(__cordl_ret)
     }
     pub fn WithFormat_FourCC0(
@@ -259,32 +126,9 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             .invoke("WithFormat", (format))?;
         Ok(__cordl_ret)
     }
-    pub fn Build(
+    pub fn WithName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout = __cordl_object
-            .invoke("Build", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_extendsLayout(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_extendsLayout", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithDisplayName(
-        &mut self,
-        displayName: *mut crate::System::String,
+        name: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
     > {
@@ -292,7 +136,46 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             self,
         );
         let __cordl_ret: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder = __cordl_object
-            .invoke("WithDisplayName", (displayName))?;
+            .invoke("WithName", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithSizeInBytes(
+        &mut self,
+        sizeInBytes: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder = __cordl_object
+            .invoke("WithSizeInBytes", (sizeInBytes))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithType<T>(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder = __cordl_object
+            .invoke("WithType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_controls(
@@ -310,16 +193,24 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         > = __cordl_object.invoke("get_controls", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_stateFormat(
+    pub fn get_displayName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::FourCC,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = __cordl_object
-            .invoke("get_stateFormat", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_displayName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_extendsLayout(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_extendsLayout", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_name(
@@ -332,12 +223,121 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             .invoke("get_name", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_stateFormat(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = __cordl_object
+            .invoke("get_stateFormat", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_stateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_stateSizeInBytes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_type", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_updateBeforeRender(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<bool>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Nullable_1<bool> = __cordl_object
+            .invoke("get_updateBeforeRender", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_displayName(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_displayName", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_extendsLayout(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_extendsLayout", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_name(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_name", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_stateFormat(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::Utilities::FourCC,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_stateFormat", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_stateSizeInBytes(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_stateSizeInBytes", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_type(
+        &mut self,
+        value: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_type", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_updateBeforeRender(
+        &mut self,
+        value: crate::System::Nullable_1<bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_updateBeforeRender", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder")]
@@ -499,6 +499,10 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
 impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
     pub const kBaseScoreForNonGeneratedLayouts: f32 = 1f32;
     #[cfg(
+        feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+LayoutMatcher"
+    )]
+    pub type LayoutMatcher = crate::UnityEngine::InputSystem::Layouts::Collection_LayoutMatcher;
+    #[cfg(
         feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+PrecompiledLayout"
     )]
     pub type PrecompiledLayout = crate::UnityEngine::InputSystem::Layouts::Collection_PrecompiledLayout;
@@ -506,10 +510,68 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+_GetBaseLayouts_d__24"
     )]
     pub type _GetBaseLayouts_d__24 = crate::UnityEngine::InputSystem::Layouts::Collection__GetBaseLayouts_d__24;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+LayoutMatcher"
-    )]
-    pub type LayoutMatcher = crate::UnityEngine::InputSystem::Layouts::Collection_LayoutMatcher;
+    pub fn AddMatcher(
+        &mut self,
+        layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        matcher: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AddMatcher",
+            (layout, matcher),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Allocate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Allocate",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ComputeDistanceInInheritanceHierarchy(
+        &mut self,
+        firstLayout: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        secondLayout: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        distance: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ComputeDistanceInInheritanceHierarchy",
+            (firstLayout, secondLayout, distance),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn FindLayoutThatIntroducesControl(
+        &mut self,
+        control: *mut crate::UnityEngine::InputSystem::InputControl,
+        cache: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "FindLayoutThatIntroducesControl",
+            (control, cache),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetBaseLayoutName(
+        &mut self,
+        layoutName: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetBaseLayoutName",
+            (layoutName),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn GetBaseLayouts(
         &mut self,
         layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -528,16 +590,27 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn TryFindLayoutForType(
+    pub fn GetControlTypeForLayout(
         &mut self,
-        layoutType: *mut crate::System::Type,
+        layoutName: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetControlTypeForLayout",
+            (layoutName),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetRootLayoutName(
+        &mut self,
+        layoutName: crate::UnityEngine::InputSystem::Utilities::InternedString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "TryFindLayoutForType",
-            (layoutType),
+            "GetRootLayoutName",
+            (layoutName),
         )?;
         Ok(__cordl_ret)
     }
@@ -564,15 +637,40 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn AddMatcher(
+    pub fn IsGeneratedLayout(
         &mut self,
         layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
-        matcher: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "AddMatcher",
-            (layout, matcher),
+            "IsGeneratedLayout",
+            (layout),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryFindLayoutForType(
+        &mut self,
+        layoutType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "TryFindLayoutForType",
+            (layoutType),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryFindMatchingLayout(
+        &mut self,
+        deviceDescription: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "TryFindMatchingLayout",
+            (deviceDescription),
         )?;
         Ok(__cordl_ret)
     }
@@ -593,31 +691,6 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn FindLayoutThatIntroducesControl(
-        &mut self,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
-        cache: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "FindLayoutThatIntroducesControl",
-            (control, cache),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetControlTypeForLayout(
-        &mut self,
-        layoutName: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetControlTypeForLayout",
-            (layoutName),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn TryLoadLayoutInternal(
         &mut self,
         name: crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -631,19 +704,6 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetRootLayoutName(
-        &mut self,
-        layoutName: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetRootLayoutName",
-            (layoutName),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn ValueTypeIsAssignableFrom(
         &mut self,
         layoutName: crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -653,66 +713,6 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
             self,
             "ValueTypeIsAssignableFrom",
             (layoutName, valueType),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryFindMatchingLayout(
-        &mut self,
-        deviceDescription: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "TryFindMatchingLayout",
-            (deviceDescription),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsGeneratedLayout(
-        &mut self,
-        layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsGeneratedLayout",
-            (layout),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetBaseLayoutName(
-        &mut self,
-        layoutName: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetBaseLayoutName",
-            (layoutName),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Allocate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Allocate",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ComputeDistanceInInheritanceHierarchy(
-        &mut self,
-        firstLayout: crate::UnityEngine::InputSystem::Utilities::InternedString,
-        secondLayout: crate::UnityEngine::InputSystem::Utilities::InternedString,
-        distance: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ComputeDistanceInInheritanceHierarchy",
-            (firstLayout, secondLayout, distance),
         )?;
         Ok(__cordl_ret)
     }
@@ -755,6 +755,45 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder {
         feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder+ControlBuilder+__c"
     )]
     pub type __c = crate::UnityEngine::InputSystem::Layouts::ControlBuilder___c;
+    pub fn AsArrayOfControlsWithSize(
+        &mut self,
+        arraySize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AsArrayOfControlsWithSize",
+            (arraySize),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn DontReset(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "DontReset",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsNoisy(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsNoisy",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn IsSynthetic(
         &mut self,
         value: bool,
@@ -794,58 +833,6 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn AsArrayOfControlsWithSize(
-        &mut self,
-        arraySize: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AsArrayOfControlsWithSize",
-            (arraySize),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithDisplayName(
-        &mut self,
-        displayName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithDisplayName",
-            (displayName),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn DontReset(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "DontReset",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithProcessors(
-        &mut self,
-        processors: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithProcessors",
-            (processors),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn WithByteOffset(
         &mut self,
         offset: u32,
@@ -859,98 +846,29 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn IsNoisy(
+    pub fn WithDefaultState(
         &mut self,
-        value: bool,
+        value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "IsNoisy",
+            "WithDefaultState",
             (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WithUsages_Il2CppArray0(
+    pub fn WithDisplayName(
         &mut self,
-        usages: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::InputSystem::Utilities::InternedString,
-        >,
+        displayName: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "WithUsages",
-            (usages),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithUsages_IEnumerable_1_1(
-        &mut self,
-        usages: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithUsages",
-            (usages),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithUsages_Il2CppArray2(
-        &mut self,
-        usages: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithUsages",
-            (usages),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithSizeInBits(
-        &mut self,
-        sizeInBits: u32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithSizeInBits",
-            (sizeInBits),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithParameters(
-        &mut self,
-        parameters: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithParameters",
-            (parameters),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithLayout(
-        &mut self,
-        layout: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithLayout",
-            (layout),
+            "WithDisplayName",
+            (displayName),
         )?;
         Ok(__cordl_ret)
     }
@@ -980,6 +898,45 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn WithLayout(
+        &mut self,
+        layout: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithLayout",
+            (layout),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithParameters(
+        &mut self,
+        parameters: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithParameters",
+            (parameters),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithProcessors(
+        &mut self,
+        processors: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithProcessors",
+            (processors),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn WithRange(
         &mut self,
         minValue: f32,
@@ -994,16 +951,59 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WithDefaultState(
+    pub fn WithSizeInBits(
         &mut self,
-        value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+        sizeInBits: u32,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "WithDefaultState",
-            (value),
+            "WithSizeInBits",
+            (sizeInBits),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithUsages_IEnumerable_1_1(
+        &mut self,
+        usages: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::String,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithUsages",
+            (usages),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithUsages_Il2CppArray0(
+        &mut self,
+        usages: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithUsages",
+            (usages),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithUsages_Il2CppArray2(
+        &mut self,
+        usages: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithUsages",
+            (usages),
         )?;
         Ok(__cordl_ret)
     }
@@ -1063,67 +1063,6 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem+Flags"
     )]
     pub type Flags = crate::UnityEngine::InputSystem::Layouts::ControlItem_Flags;
-    pub fn get_shortDisplayName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_shortDisplayName",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_useStateFrom(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_useStateFrom",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_processors(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_processors",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_dontReset(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_dontReset",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isArray(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isArray",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_maxValue(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_maxValue",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Merge(
         &mut self,
         other: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
@@ -1137,90 +1076,22 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_layout(
+    pub fn get_aliases(
         &mut self,
-        value: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_layout",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_parameters(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            crate::UnityEngine::InputSystem::Utilities::NamedValue,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_parameters",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_sizeInBits(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_sizeInBits",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_shortDisplayName(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_shortDisplayName",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_displayName(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_displayName",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_usages(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             crate::UnityEngine::InputSystem::Utilities::InternedString,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_usages",
-            (value),
-        )?;
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_aliases", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_displayName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_arraySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_displayName",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_offset(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_offset",
+            "get_arraySize",
             (),
         )?;
         Ok(__cordl_ret)
@@ -1229,56 +1100,6 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_bit",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_minValue(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_minValue",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isNoisy(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isNoisy",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_parameters(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            crate::UnityEngine::InputSystem::Utilities::NamedValue,
-        >,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            crate::UnityEngine::InputSystem::Utilities::NamedValue,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_parameters", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_isModifyingExistingControl(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_isModifyingExistingControl",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_arraySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_arraySize",
             (),
         )?;
         Ok(__cordl_ret)
@@ -1295,72 +1116,21 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_defaultState(
+    pub fn get_displayName(
         &mut self,
-        value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_defaultState",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_minValue(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_minValue",
+            "get_displayName",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_dontReset(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_dontReset(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_dontReset",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_name",
+            "get_dontReset",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_layout(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_layout",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_offset(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_offset",
-            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -1388,62 +1158,10 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_processors(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
-        >,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_processors", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sizeInBits(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_sizeInBits",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_maxValue(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_maxValue",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_isNoisy(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_isNoisy",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isModifyingExistingControl(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_isArray(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_isModifyingExistingControl",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isSynthetic(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isSynthetic",
+            "get_isArray",
             (),
         )?;
         Ok(__cordl_ret)
@@ -1458,62 +1176,131 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_isFirstDefinedInThisLayout(
+    pub fn get_isModifyingExistingControl(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_isFirstDefinedInThisLayout",
-            (value),
+            "get_isModifyingExistingControl",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_format(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::Utilities::FourCC,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_isNoisy(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_format",
-            (value),
+            "get_isNoisy",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_variants(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_isSynthetic(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_variants",
-            (value),
+            "get_isSynthetic",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_arraySize(
+    pub fn get_layout(
         &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_arraySize",
-            (value),
+            "get_layout",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_isSynthetic(
+    pub fn get_maxValue(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_isSynthetic",
-            (value),
+            "get_maxValue",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_aliases(
+    pub fn get_minValue(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_minValue",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_name",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_offset(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_offset",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_parameters(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::Utilities::NamedValue,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::Utilities::NamedValue,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_parameters", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_processors(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_processors", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_shortDisplayName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_shortDisplayName",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sizeInBits(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_sizeInBits",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_usages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
@@ -1522,7 +1309,17 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             crate::UnityEngine::InputSystem::Utilities::InternedString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_aliases", ())?;
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_usages", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_useStateFrom(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_useStateFrom",
+            (),
+        )?;
         Ok(__cordl_ret)
     }
     pub fn get_variants(
@@ -1534,28 +1331,6 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
             self,
             "get_variants",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_useStateFrom(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_useStateFrom",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_flags(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::Layouts::ControlItem_Flags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_flags",
-            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -1572,13 +1347,13 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_name(
+    pub fn set_arraySize(
         &mut self,
-        value: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_name",
+            "set_arraySize",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -1594,16 +1369,241 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_usages(
+    pub fn set_defaultState(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+        value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_defaultState",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_displayName(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_displayName",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_dontReset(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_dontReset",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_flags(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::Layouts::ControlItem_Flags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_flags",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_format(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::Utilities::FourCC,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_format",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_isFirstDefinedInThisLayout(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_isFirstDefinedInThisLayout",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_isModifyingExistingControl(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_isModifyingExistingControl",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_isNoisy(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_isNoisy",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_isSynthetic(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_isSynthetic",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_layout(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_layout",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_maxValue(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_maxValue",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_minValue(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_minValue",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_name(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_name",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_offset(
+        &mut self,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_offset",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_parameters(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::Utilities::NamedValue,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_parameters",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_processors(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_processors",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_shortDisplayName(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_shortDisplayName",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_sizeInBits(
+        &mut self,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_sizeInBits",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_usages(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             crate::UnityEngine::InputSystem::Utilities::InternedString,
         >,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            crate::UnityEngine::InputSystem::Utilities::InternedString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_usages", ())?;
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_usages",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_useStateFrom(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_useStateFrom",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_variants(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_variants",
+            (value),
+        )?;
         Ok(__cordl_ret)
     }
 }
@@ -1663,15 +1663,12 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJso
         feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItemJson+__c"
     )]
     pub type __c = crate::UnityEngine::InputSystem::Layouts::ControlItemJson___c;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ToLayout(
         &mut self,
@@ -1685,12 +1682,15 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJso
             .invoke("ToLayout", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItemJson")]
@@ -1703,6 +1703,22 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem+Flags")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ControlItem_Flags {
+    DontReset = 16i32,
+    IsFirstDefinedInThisLayout = 8i32,
+    IsNoisy = 2i32,
+    IsSynthetic = 4i32,
+    isModifyingExistingControl = 1i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem+Flags")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::Layouts::ControlItem_Flags =>
+    "UnityEngine.InputSystem.Layouts"."InputControlLayout/ControlItem/Flags"
+);
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Flags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -1719,22 +1735,6 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate
     ::UnityEngine::InputSystem::Layouts::InputControlLayout_Flags =>
     "UnityEngine.InputSystem.Layouts"."InputControlLayout/Flags"
-);
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem+Flags")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ControlItem_Flags {
-    DontReset = 16i32,
-    IsFirstDefinedInThisLayout = 8i32,
-    IsNoisy = 2i32,
-    IsSynthetic = 4i32,
-    isModifyingExistingControl = 1i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem+Flags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::Layouts::ControlItem_Flags =>
-    "UnityEngine.InputSystem.Layouts"."InputControlLayout/ControlItem/Flags"
 );
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout")]
 #[repr(C)]
@@ -1786,214 +1786,50 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout")]
 impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
     pub const VariantSeparator: &'static str = ";";
-    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Flags")]
-    pub type Flags = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Flags;
+    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJson")]
+    pub type LayoutJson = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson;
+    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection")]
+    pub type Collection = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+CacheRefInstance"
+    )]
+    pub type CacheRefInstance = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstance;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutNotFoundException"
+    )]
+    pub type LayoutNotFoundException = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFoundException;
+    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Cache")]
+    pub type Cache = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache;
     #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem")]
     pub type ControlItem = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem;
     #[cfg(
         feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItemJson"
     )]
     pub type ControlItemJson = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutNotFoundException"
-    )]
-    pub type LayoutNotFoundException = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFoundException;
     #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+__c")]
     pub type __c = crate::UnityEngine::InputSystem::Layouts::InputControlLayout___c;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+CacheRefInstance"
-    )]
-    pub type CacheRefInstance = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstance;
+    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder")]
+    pub type Builder = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder;
+    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Flags")]
+    pub type Flags = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Flags;
     #[cfg(
         feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJsonNameAndDescriptorOnly"
     )]
     pub type LayoutJsonNameAndDescriptorOnly = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJsonNameAndDescriptorOnly;
-    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJson")]
-    pub type LayoutJson = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson;
-    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Cache")]
-    pub type Cache = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache;
-    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection")]
-    pub type Collection = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection;
-    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder")]
-    pub type Builder = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder;
-    pub fn _MergeLayout_b__77_0(
+    pub fn FindControl(
         &mut self,
-        x: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("<MergeLayout>b__77_0", (x))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_appliedOverrides(
-        &mut self,
+        path: crate::UnityEngine::InputSystem::Utilities::InternedString,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::UnityEngine::InputSystem::Utilities::InternedString,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::UnityEngine::InputSystem::Utilities::InternedString,
-        > = __cordl_object.invoke("get_appliedOverrides", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isOverride(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isOverride", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        name: *mut crate::System::String,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name, _cordl_type))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_type", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_baseLayouts(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::UnityEngine::InputSystem::Utilities::InternedString,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::UnityEngine::InputSystem::Utilities::InternedString,
-        > = __cordl_object.invoke("get_baseLayouts", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToJson(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToJson", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isControlLayout(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isControlLayout", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MergeLayout(
-        &mut self,
-        other: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MergeLayout", (other))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_stateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_stateSizeInBytes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_isGenericTypeOfDevice(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_isGenericTypeOfDevice", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isGenericTypeOfDevice(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isGenericTypeOfDevice", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_controls(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+        crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+        let __cordl_ret: crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
-        > = __cordl_object.invoke("get_controls", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_isNoisy(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_isNoisy", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_commonUsages(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            crate::UnityEngine::InputSystem::Utilities::InternedString,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            crate::UnityEngine::InputSystem::Utilities::InternedString,
-        > = __cordl_object.invoke("get_commonUsages", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isNoisy(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isNoisy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetValueType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("GetValueType", ())?;
+        > = __cordl_object.invoke("FindControl", (path))?;
         Ok(__cordl_ret)
     }
     pub fn FindControlIncludingArrayElements(
@@ -2014,68 +1850,67 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
             .invoke("FindControlIncludingArrayElements", (path, arrayIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn get_stateFormat(
+    pub fn GetValueType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::FourCC,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = __cordl_object
-            .invoke("get_stateFormat", ())?;
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("GetValueType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_canRunInBackground(
+    pub fn MergeLayout(
         &mut self,
-        value: crate::System::Nullable_1<bool>,
+        other: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_canRunInBackground", (value))?;
+            .invoke("MergeLayout", (other))?;
         Ok(__cordl_ret)
     }
-    pub fn get_hideInUI(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hideInUI", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        name: *mut crate::System::String,
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, _cordl_type))?;
+        Ok(__cordl_object)
     }
-    pub fn FindControl(
+    pub fn ToJson(
         &mut self,
-        path: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<
-            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Nullable_1<
-            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
-        > = __cordl_object.invoke("FindControl", (path))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToJson", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_isDeviceLayout(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isDeviceLayout", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_hideInUI(
+    pub fn _MergeLayout_b__77_0(
         &mut self,
-        value: bool,
+        x: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("<MergeLayout>b__77_0", (x))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        name: *mut crate::System::String,
+        _cordl_type: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_hideInUI", (value))?;
+            .invoke(".ctor", (name, _cordl_type))?;
         Ok(__cordl_ret)
     }
     pub fn get_Item(
@@ -2091,11 +1926,34 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
             .invoke("get_Item", (path))?;
         Ok(__cordl_ret)
     }
-    pub fn get_updateBeforeRender(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_appliedOverrides(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_updateBeforeRender", ())?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+        > = __cordl_object.invoke("get_appliedOverrides", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_baseLayouts(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+        > = __cordl_object.invoke("get_baseLayouts", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_canRunInBackground(
@@ -2106,6 +1964,88 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         );
         let __cordl_ret: crate::System::Nullable_1<bool> = __cordl_object
             .invoke("get_canRunInBackground", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_commonUsages(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+        > = __cordl_object.invoke("get_commonUsages", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_controls(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+        > = __cordl_object.invoke("get_controls", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_displayName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_displayName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hideInUI(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_hideInUI", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isControlLayout(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isControlLayout", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isDeviceLayout(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isDeviceLayout", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isGenericTypeOfDevice(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isGenericTypeOfDevice", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isNoisy(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isNoisy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isOverride(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isOverride", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_name(
@@ -2120,14 +2060,40 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
             .invoke("get_name", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_displayName(
+    pub fn get_stateFormat(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_displayName", ())?;
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = __cordl_object
+            .invoke("get_stateFormat", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_stateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_stateSizeInBytes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_type", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_updateBeforeRender(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_updateBeforeRender", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_variants(
@@ -2142,6 +2108,50 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
             .invoke("get_variants", ())?;
         Ok(__cordl_ret)
     }
+    pub fn set_canRunInBackground(
+        &mut self,
+        value: crate::System::Nullable_1<bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_canRunInBackground", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_hideInUI(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_hideInUI", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_isGenericTypeOfDevice(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_isGenericTypeOfDevice", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_isNoisy(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_isNoisy", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_isOverride(
         &mut self,
         value: bool,
@@ -2152,16 +2162,6 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_isOverride", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        name: *mut crate::System::String,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, _cordl_type))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout")]
@@ -2346,6 +2346,52 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFoundE
     feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutNotFoundException"
 )]
 impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFoundException {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_SerializationInfo_StreamingContext4(
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (info, context))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String2(
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_Exception3(
+        message: *mut crate::System::String,
+        innerException: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (message, innerException))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_String1(
+        name: *mut crate::System::String,
+        message: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, message))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2356,16 +2402,16 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFound
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String1(
+    pub fn _ctor_SerializationInfo_StreamingContext4(
         &mut self,
-        name: *mut crate::System::String,
-        message: *mut crate::System::String,
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name, message))?;
+            .invoke(".ctor", (info, context))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_String2(
@@ -2391,16 +2437,16 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFound
             .invoke(".ctor", (message, innerException))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_SerializationInfo_StreamingContext4(
+    pub fn _ctor_String_String1(
         &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        context: crate::System::Runtime::Serialization::StreamingContext,
+        name: *mut crate::System::String,
+        message: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (info, context))?;
+            .invoke(".ctor", (name, message))?;
         Ok(__cordl_ret)
     }
     pub fn get_layout(
@@ -2412,52 +2458,6 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFound
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_layout", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_String1(
-        name: *mut crate::System::String,
-        message: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, message))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String2(
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_Exception3(
-        message: *mut crate::System::String,
-        innerException: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (message, innerException))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_SerializationInfo_StreamingContext4(
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

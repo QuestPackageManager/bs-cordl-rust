@@ -24,11 +24,21 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_normalizedStrin
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_normalizedString")]
 impl crate::System::Xml::Schema::Datatype_normalizedString {
-    pub fn get_HasValueFacets(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasValueFacets", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_BuiltInWhitespaceFacet(
@@ -41,6 +51,13 @@ impl crate::System::Xml::Schema::Datatype_normalizedString {
             .invoke("get_BuiltInWhitespaceFacet", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_HasValueFacets(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasValueFacets", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_TypeCode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::XmlTypeCode> {
@@ -50,23 +67,6 @@ impl crate::System::Xml::Schema::Datatype_normalizedString {
         let __cordl_ret: crate::System::Xml::Schema::XmlTypeCode = __cordl_object
             .invoke("get_TypeCode", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_normalizedString")]

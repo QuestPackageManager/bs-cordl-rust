@@ -26,6 +26,58 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsDheKeyExch
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDheKeyExchange")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsDheKeyExchange {
+    pub fn GenerateServerKeyExchange(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GenerateServerKeyExchange", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitVerifyer(
+        &mut self,
+        tlsSigner: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSigner,
+        algorithm: *mut crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
+        securityParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::ISigner> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ISigner = __cordl_object
+            .invoke("InitVerifyer", (tlsSigner, algorithm, securityParameters))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_DHParameters0(
+        keyExchange: i32,
+        supportedSignatureAlgorithms: *mut crate::System::Collections::IList,
+        dhParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (keyExchange, supportedSignatureAlgorithms, dhParameters),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_TlsDHVerifier_DHParameters1(
+        keyExchange: i32,
+        supportedSignatureAlgorithms: *mut crate::System::Collections::IList,
+        dhVerifier: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsDHVerifier,
+        dhParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (keyExchange, supportedSignatureAlgorithms, dhVerifier, dhParameters),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn ProcessServerCredentials(
         &mut self,
         serverCredentials: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
@@ -46,29 +98,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDheKeyExchange {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessServerKeyExchange", (input))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitVerifyer(
-        &mut self,
-        tlsSigner: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSigner,
-        algorithm: *mut crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
-        securityParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::ISigner> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ISigner = __cordl_object
-            .invoke("InitVerifyer", (tlsSigner, algorithm, securityParameters))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GenerateServerKeyExchange(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GenerateServerKeyExchange", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_DHParameters0(
@@ -100,35 +129,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDheKeyExchange {
                 (keyExchange, supportedSignatureAlgorithms, dhVerifier, dhParameters),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New_DHParameters0(
-        keyExchange: i32,
-        supportedSignatureAlgorithms: *mut crate::System::Collections::IList,
-        dhParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (keyExchange, supportedSignatureAlgorithms, dhParameters),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_TlsDHVerifier_DHParameters1(
-        keyExchange: i32,
-        supportedSignatureAlgorithms: *mut crate::System::Collections::IList,
-        dhVerifier: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsDHVerifier,
-        dhParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (keyExchange, supportedSignatureAlgorithms, dhVerifier, dhParameters),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDheKeyExchange")]

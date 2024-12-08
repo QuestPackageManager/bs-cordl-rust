@@ -27,6 +27,34 @@ impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColo
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+RandomizeAvatarColorMap")]
 impl crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColorMap {
+    pub fn New(
+        headTopPrimaryColorIndex: i32,
+        headTopSecondaryColorIndex: i32,
+        glassesColorIndex: i32,
+        facialHairColorIndex: i32,
+        handsColorIndex: i32,
+        clothesPrimaryColorIndex: i32,
+        clothesSecondaryColorIndex: i32,
+        clothesDetailColorIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    headTopPrimaryColorIndex,
+                    headTopSecondaryColorIndex,
+                    glassesColorIndex,
+                    facialHairColorIndex,
+                    handsColorIndex,
+                    clothesPrimaryColorIndex,
+                    clothesSecondaryColorIndex,
+                    clothesDetailColorIndex,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         headTopPrimaryColorIndex: i32,
@@ -57,13 +85,6 @@ impl crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColorMap {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_totalIndices(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_totalIndices", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_colorIndices(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
@@ -74,33 +95,12 @@ impl crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColorMap {
             .invoke("get_colorIndices", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        headTopPrimaryColorIndex: i32,
-        headTopSecondaryColorIndex: i32,
-        glassesColorIndex: i32,
-        facialHairColorIndex: i32,
-        handsColorIndex: i32,
-        clothesPrimaryColorIndex: i32,
-        clothesSecondaryColorIndex: i32,
-        clothesDetailColorIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    headTopPrimaryColorIndex,
-                    headTopSecondaryColorIndex,
-                    glassesColorIndex,
-                    facialHairColorIndex,
-                    handsColorIndex,
-                    clothesPrimaryColorIndex,
-                    clothesSecondaryColorIndex,
-                    clothesDetailColorIndex,
-                ),
-            )?;
-        Ok(__cordl_object)
+    pub fn get_totalIndices(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_totalIndices", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+RandomizeAvatarColorMap")]

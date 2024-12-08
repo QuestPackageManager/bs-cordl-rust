@@ -26,6 +26,21 @@ impl std::ops::DerefMut for FxBeatmapEventData {
 }
 #[cfg(feature = "FxBeatmapEventData")]
 impl FxBeatmapEventData {
+    pub fn New(
+        _cordl_time: f32,
+        groupId: i32,
+        elementId: i32,
+        usePreviousEventValue: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (_cordl_time, groupId, elementId, usePreviousEventValue),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         _cordl_time: f32,
@@ -39,21 +54,6 @@ impl FxBeatmapEventData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_time, groupId, elementId, usePreviousEventValue))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        _cordl_time: f32,
-        groupId: i32,
-        elementId: i32,
-        usePreviousEventValue: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (_cordl_time, groupId, elementId, usePreviousEventValue),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "FxBeatmapEventData")]

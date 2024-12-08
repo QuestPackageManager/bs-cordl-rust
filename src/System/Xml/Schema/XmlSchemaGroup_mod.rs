@@ -30,49 +30,6 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaGroup {
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaGroup")]
 impl crate::System::Xml::Schema::XmlSchemaGroup {
-    pub fn set_NameAttribute(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_NameAttribute", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Redefined(
-        &mut self,
-        value: *mut crate::System::Xml::Schema::XmlSchemaGroup,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Redefined", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_QualifiedName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlQualifiedName> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::XmlQualifiedName = __cordl_object
-            .invoke("get_QualifiedName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetQualifiedName(
-        &mut self,
-        value: *mut crate::System::Xml::XmlQualifiedName,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetQualifiedName", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Clone_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -98,25 +55,32 @@ impl crate::System::Xml::Schema::XmlSchemaGroup {
             .invoke("Clone", (parentSchema))?;
         Ok(__cordl_ret)
     }
-    pub fn set_SelfReferenceCount(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetQualifiedName(
         &mut self,
-        value: i32,
+        value: *mut crate::System::Xml::XmlQualifiedName,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_SelfReferenceCount", (value))?;
+            .invoke("SetQualifiedName", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_NameAttribute(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_NameAttribute", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_CanonicalParticle(
@@ -131,27 +95,6 @@ impl crate::System::Xml::Schema::XmlSchemaGroup {
             .invoke("get_CanonicalParticle", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_Particle(
-        &mut self,
-        value: *mut crate::System::Xml::Schema::XmlSchemaGroupBase,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Particle", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Name(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -162,15 +105,36 @@ impl crate::System::Xml::Schema::XmlSchemaGroup {
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_CanonicalParticle(
+    pub fn get_NameAttribute(
         &mut self,
-        value: *mut crate::System::Xml::Schema::XmlSchemaParticle,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_CanonicalParticle", (value))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_NameAttribute", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Particle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Xml::Schema::XmlSchemaGroupBase,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaGroupBase = __cordl_object
+            .invoke("get_Particle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_QualifiedName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlQualifiedName> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::XmlQualifiedName = __cordl_object
+            .invoke("get_QualifiedName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Redefined(
@@ -190,6 +154,17 @@ impl crate::System::Xml::Schema::XmlSchemaGroup {
         let __cordl_ret: i32 = __cordl_object.invoke("get_SelfReferenceCount", ())?;
         Ok(__cordl_ret)
     }
+    pub fn set_CanonicalParticle(
+        &mut self,
+        value: *mut crate::System::Xml::Schema::XmlSchemaParticle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_CanonicalParticle", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_Name(
         &mut self,
         value: *mut crate::System::String,
@@ -201,24 +176,49 @@ impl crate::System::Xml::Schema::XmlSchemaGroup {
             .invoke("set_Name", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Particle(
+    pub fn set_NameAttribute(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaGroupBase,
-    > {
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaGroupBase = __cordl_object
-            .invoke("get_Particle", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_NameAttribute", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_Particle(
+        &mut self,
+        value: *mut crate::System::Xml::Schema::XmlSchemaGroupBase,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Particle", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Redefined(
+        &mut self,
+        value: *mut crate::System::Xml::Schema::XmlSchemaGroup,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Redefined", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_SelfReferenceCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_SelfReferenceCount", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaGroup")]

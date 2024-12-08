@@ -24,35 +24,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractF2mPoint")]
 impl crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint {
-    pub fn Subtract(
-        &mut self,
-        b: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("Subtract", (b))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor__cordl_bool0(
-        &mut self,
-        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        withCompression: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (curve, x, y, withCompression))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Il2CppArray__cordl_bool1(
-        &mut self,
+    pub fn New_Il2CppArray__cordl_bool1(
         curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
         x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
         y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
@@ -60,63 +32,37 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint {
             *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
         >,
         withCompression: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (curve, x, y, zs, withCompression))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool0(
+        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
+        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        withCompression: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (curve, x, y, withCompression))?;
+        Ok(__cordl_object)
+    }
+    pub fn SatisfiesCurveEquation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (curve, x, y, zs, withCompression))?;
+        let __cordl_ret: bool = __cordl_object.invoke("SatisfiesCurveEquation", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ScaleYNegateX(
-        &mut self,
-        scale: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
+    pub fn SatisfiesOrder(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("ScaleYNegateX", (scale))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Tau(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint = __cordl_object
-            .invoke("Tau", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ScaleY(
-        &mut self,
-        scale: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("ScaleY", (scale))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TauPow(
-        &mut self,
-        pow: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint = __cordl_object
-            .invoke("TauPow", (pow))?;
+        let __cordl_ret: bool = __cordl_object.invoke("SatisfiesOrder", ())?;
         Ok(__cordl_ret)
     }
     pub fn ScaleX(
@@ -145,33 +91,72 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint {
             .invoke("ScaleXNegateY", (scale))?;
         Ok(__cordl_ret)
     }
-    pub fn SatisfiesCurveEquation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn ScaleY(
+        &mut self,
+        scale: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("SatisfiesCurveEquation", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("ScaleY", (scale))?;
         Ok(__cordl_ret)
     }
-    pub fn SatisfiesOrder(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn ScaleYNegateX(
+        &mut self,
+        scale: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("SatisfiesOrder", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("ScaleYNegateX", (scale))?;
         Ok(__cordl_ret)
     }
-    pub fn New__cordl_bool0(
-        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        withCompression: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (curve, x, y, withCompression))?;
-        Ok(__cordl_object)
+    pub fn Subtract(
+        &mut self,
+        b: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("Subtract", (b))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_Il2CppArray__cordl_bool1(
+    pub fn Tau(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint = __cordl_object
+            .invoke("Tau", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TauPow(
+        &mut self,
+        pow: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint = __cordl_object
+            .invoke("TauPow", (pow))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppArray__cordl_bool1(
+        &mut self,
         curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
         x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
         y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
@@ -179,12 +164,27 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint {
             *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
         >,
         withCompression: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (curve, x, y, zs, withCompression))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (curve, x, y, zs, withCompression))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor__cordl_bool0(
+        &mut self,
+        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
+        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        withCompression: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (curve, x, y, withCompression))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractF2mPoint")]

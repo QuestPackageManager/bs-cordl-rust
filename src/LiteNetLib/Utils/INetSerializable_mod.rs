@@ -24,17 +24,6 @@ impl std::ops::DerefMut for crate::LiteNetLib::Utils::INetSerializable {
 }
 #[cfg(feature = "LiteNetLib+Utils+INetSerializable")]
 impl crate::LiteNetLib::Utils::INetSerializable {
-    pub fn Serialize(
-        &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Serialize", (writer))?;
-        Ok(__cordl_ret)
-    }
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -44,6 +33,17 @@ impl crate::LiteNetLib::Utils::INetSerializable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Deserialize", (reader))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Serialize(
+        &mut self,
+        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Serialize", (writer))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

@@ -36,6 +36,35 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::PbeParameter {
             .invoke("GetSalt", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New_Asn1Sequence0(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray_i32_1(
+        salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        iterationCount: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (salt, iterationCount))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToAsn1Object(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("ToAsn1Object", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_Asn1Sequence0(
         &mut self,
         seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
@@ -68,35 +97,6 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::PbeParameter {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
             .invoke("get_IterationCount", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn ToAsn1Object(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_Asn1Sequence0(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray_i32_1(
-        salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        iterationCount: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (salt, iterationCount))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+PbeParameter")]

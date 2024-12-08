@@ -32,6 +32,17 @@ impl crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuatio
         feature = "System+Threading+Tasks+SynchronizationContextAwaitTaskContinuation+__c"
     )]
     pub type __c = crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuation___c;
+    pub fn New(
+        context: *mut crate::System::Threading::SynchronizationContext,
+        action: *mut crate::System::Action,
+        flowExecutionContext: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (context, action, flowExecutionContext))?;
+        Ok(__cordl_object)
+    }
     pub fn Run(
         &mut self,
         ignored: *mut crate::System::Threading::Tasks::Task,
@@ -56,17 +67,6 @@ impl crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuatio
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (context, action, flowExecutionContext))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        context: *mut crate::System::Threading::SynchronizationContext,
-        action: *mut crate::System::Action,
-        flowExecutionContext: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (context, action, flowExecutionContext))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Threading+Tasks+SynchronizationContextAwaitTaskContinuation")]

@@ -24,19 +24,12 @@ impl std::ops::DerefMut for LightGroupSubsystem {
 }
 #[cfg(feature = "LightGroupSubsystem")]
 impl LightGroupSubsystem {
-    pub fn get_groupId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_groupId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_lightGroup(&mut self) -> quest_hook::libil2cpp::Result<*mut LightGroup> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut LightGroup = __cordl_object.invoke("get_lightGroup", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnEnable(
         &mut self,
@@ -58,12 +51,19 @@ impl LightGroupSubsystem {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_groupId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_groupId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_lightGroup(&mut self) -> quest_hook::libil2cpp::Result<*mut LightGroup> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut LightGroup = __cordl_object.invoke("get_lightGroup", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LightGroupSubsystem")]

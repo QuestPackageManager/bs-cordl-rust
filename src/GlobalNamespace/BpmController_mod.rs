@@ -28,16 +28,14 @@ impl std::ops::DerefMut for BpmController {
 impl BpmController {
     #[cfg(feature = "BpmController+InitData")]
     pub type InitData = crate::GlobalNamespace::BpmController_InitData;
-    pub fn _ctor(
+    pub fn Dispose(
         &mut self,
-        initData: *mut crate::GlobalNamespace::BpmController_InitData,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (initData, beatmapCallbacksController))?;
+            .invoke("Dispose", ())?;
         Ok(__cordl_ret)
     }
     pub fn HandleBpmChangeBeatmapEvent(
@@ -51,21 +49,26 @@ impl BpmController {
             .invoke("HandleBpmChangeBeatmapEvent", (bpmChangeBeatmapEventData))?;
         Ok(__cordl_ret)
     }
-    pub fn get_oneBeatDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_oneBeatDuration", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        initData: *mut crate::GlobalNamespace::BpmController_InitData,
+        beatmapCallbacksController: *mut BeatmapCallbacksController,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (initData, beatmapCallbacksController))?;
+        Ok(__cordl_object)
     }
-    pub fn Dispose(
+    pub fn _ctor(
         &mut self,
+        initData: *mut crate::GlobalNamespace::BpmController_InitData,
+        beatmapCallbacksController: *mut BeatmapCallbacksController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+            .invoke(".ctor", (initData, beatmapCallbacksController))?;
         Ok(__cordl_ret)
     }
     pub fn get_currentBpm(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -75,15 +78,12 @@ impl BpmController {
         let __cordl_ret: f32 = __cordl_object.invoke("get_currentBpm", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        initData: *mut crate::GlobalNamespace::BpmController_InitData,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (initData, beatmapCallbacksController))?;
-        Ok(__cordl_object)
+    pub fn get_oneBeatDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_oneBeatDuration", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BpmController")]
@@ -122,6 +122,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BpmController_InitData {
 }
 #[cfg(feature = "BpmController+InitData")]
 impl crate::GlobalNamespace::BpmController_InitData {
+    pub fn New(startBpm: f32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (startBpm))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         startBpm: f32,
@@ -132,13 +139,6 @@ impl crate::GlobalNamespace::BpmController_InitData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (startBpm))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(startBpm: f32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (startBpm))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BpmController+InitData")]

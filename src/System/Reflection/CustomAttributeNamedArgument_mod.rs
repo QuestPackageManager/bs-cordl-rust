@@ -37,17 +37,33 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Type_String__cordl_bool_CustomAttributeTypedArgument0(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
         &mut self,
-        attributeType: *mut crate::System::Type,
-        memberName: *mut crate::System::String,
-        isField: bool,
-        typedValue: crate::System::Reflection::CustomAttributeTypedArgument,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_MemberInfo_CustomAttributeTypedArgument2(
+        &mut self,
+        memberInfo: *mut crate::System::Reflection::MemberInfo,
+        typedArgument: crate::System::Reflection::CustomAttributeTypedArgument,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
-            (attributeType, memberName, isField, typedValue),
+            (memberInfo, typedArgument),
         )?;
         Ok(__cordl_ret)
     }
@@ -63,15 +79,17 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_MemberInfo_CustomAttributeTypedArgument2(
+    pub fn _ctor_Type_String__cordl_bool_CustomAttributeTypedArgument0(
         &mut self,
-        memberInfo: *mut crate::System::Reflection::MemberInfo,
-        typedArgument: crate::System::Reflection::CustomAttributeTypedArgument,
+        attributeType: *mut crate::System::Type,
+        memberName: *mut crate::System::String,
+        isField: bool,
+        typedValue: crate::System::Reflection::CustomAttributeTypedArgument,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
-            (memberInfo, typedArgument),
+            (attributeType, memberName, isField, typedValue),
         )?;
         Ok(__cordl_ret)
     }
@@ -93,10 +111,12 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_MemberName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
+            "get_MemberName",
             (),
         )?;
         Ok(__cordl_ret)
@@ -109,26 +129,6 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
         let __cordl_ret: crate::System::Reflection::CustomAttributeTypedArgument = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_TypedValue",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MemberName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_MemberName",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
             (),
         )?;
         Ok(__cordl_ret)

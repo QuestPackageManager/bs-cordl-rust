@@ -27,26 +27,6 @@ impl std::ops::DerefMut for crate::Zenject::CopyNonLazyBinder {
 }
 #[cfg(feature = "Zenject+CopyNonLazyBinder")]
 impl crate::Zenject::CopyNonLazyBinder {
-    pub fn MoveIntoAllSubContainers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::NonLazyBinder> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::NonLazyBinder = __cordl_object
-            .invoke("MoveIntoAllSubContainers", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveIntoDirectSubContainers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::NonLazyBinder> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::NonLazyBinder = __cordl_object
-            .invoke("MoveIntoDirectSubContainers", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AddSecondaryCopyBindInfo(
         &mut self,
         bindInfo: *mut crate::Zenject::BindInfo,
@@ -56,17 +36,6 @@ impl crate::Zenject::CopyNonLazyBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddSecondaryCopyBindInfo", (bindInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetInheritanceMethod(
-        &mut self,
-        method: crate::Zenject::BindingInheritanceMethods,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetInheritanceMethod", (method))?;
         Ok(__cordl_ret)
     }
     pub fn CopyIntoAllSubContainers(
@@ -89,6 +58,46 @@ impl crate::Zenject::CopyNonLazyBinder {
             .invoke("CopyIntoDirectSubContainers", ())?;
         Ok(__cordl_ret)
     }
+    pub fn MoveIntoAllSubContainers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::NonLazyBinder> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::NonLazyBinder = __cordl_object
+            .invoke("MoveIntoAllSubContainers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveIntoDirectSubContainers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::NonLazyBinder> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::NonLazyBinder = __cordl_object
+            .invoke("MoveIntoDirectSubContainers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        bindInfo: *mut crate::Zenject::BindInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bindInfo))?;
+        Ok(__cordl_object)
+    }
+    pub fn SetInheritanceMethod(
+        &mut self,
+        method: crate::Zenject::BindingInheritanceMethods,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetInheritanceMethod", (method))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         bindInfo: *mut crate::Zenject::BindInfo,
@@ -99,15 +108,6 @@ impl crate::Zenject::CopyNonLazyBinder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bindInfo))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        bindInfo: *mut crate::Zenject::BindInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bindInfo))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+CopyNonLazyBinder")]

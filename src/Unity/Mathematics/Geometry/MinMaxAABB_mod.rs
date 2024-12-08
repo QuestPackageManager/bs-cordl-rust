@@ -23,14 +23,25 @@ for crate::Unity::Mathematics::Geometry::MinMaxAABB {
 }
 #[cfg(feature = "Unity+Mathematics+Geometry+MinMaxAABB")]
 impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
-    pub fn Expand(
+    pub fn Contains_MinMaxAABB1(
         &mut self,
-        signedDistance: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        aabb: crate::Unity::Mathematics::Geometry::MinMaxAABB,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Expand",
-            (signedDistance),
+            "Contains",
+            (aabb),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Contains_float3_0(
+        &mut self,
+        point: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Contains",
+            (point),
         )?;
         Ok(__cordl_ret)
     }
@@ -56,10 +67,45 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn Equals(
+        &mut self,
+        other: crate::Unity::Mathematics::Geometry::MinMaxAABB,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_IsValid",
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Expand(
+        &mut self,
+        signedDistance: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Expand",
+            (signedDistance),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Overlaps(
+        &mut self,
+        aabb: crate::Unity::Mathematics::Geometry::MinMaxAABB,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Overlaps",
+            (aabb),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
             (),
         )?;
         Ok(__cordl_ret)
@@ -76,20 +122,12 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_HalfExtents(
+    pub fn get_Center(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3> {
         let __cordl_ret: crate::Unity::Mathematics::float3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_HalfExtents",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SurfaceArea(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_SurfaceArea",
+            "get_Center",
             (),
         )?;
         Ok(__cordl_ret)
@@ -104,67 +142,29 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Center(
+    pub fn get_HalfExtents(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3> {
         let __cordl_ret: crate::Unity::Mathematics::float3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Center",
+            "get_HalfExtents",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals(
-        &mut self,
-        other: crate::Unity::Mathematics::Geometry::MinMaxAABB,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
+            "get_IsValid",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Overlaps(
-        &mut self,
-        aabb: crate::Unity::Mathematics::Geometry::MinMaxAABB,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_SurfaceArea(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Overlaps",
-            (aabb),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Contains_float3_0(
-        &mut self,
-        point: crate::Unity::Mathematics::float3,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Contains",
-            (point),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Contains_MinMaxAABB1(
-        &mut self,
-        aabb: crate::Unity::Mathematics::Geometry::MinMaxAABB,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Contains",
-            (aabb),
+            "get_SurfaceArea",
+            (),
         )?;
         Ok(__cordl_ret)
     }

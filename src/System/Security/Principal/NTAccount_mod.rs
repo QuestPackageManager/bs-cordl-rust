@@ -25,15 +25,14 @@ impl std::ops::DerefMut for crate::System::Security::Principal::NTAccount {
 }
 #[cfg(feature = "System+Security+Principal+NTAccount")]
 impl crate::System::Security::Principal::NTAccount {
-    pub fn _ctor(
+    pub fn Equals(
         &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        o: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name))?;
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (o))?;
         Ok(__cordl_ret)
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -42,6 +41,15 @@ impl crate::System::Security::Principal::NTAccount {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name))?;
+        Ok(__cordl_object)
     }
     pub fn ToString(
         &mut self,
@@ -66,6 +74,17 @@ impl crate::System::Security::Principal::NTAccount {
             .invoke("Translate", (targetType))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (name))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Value(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -75,25 +94,6 @@ impl crate::System::Security::Principal::NTAccount {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_Value", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        o: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (o))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Security+Principal+NTAccount")]

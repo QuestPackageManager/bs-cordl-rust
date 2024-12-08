@@ -24,45 +24,6 @@ impl std::ops::DerefMut for crate::Internal::Runtime::Augments::TaskTraceCallbac
 }
 #[cfg(feature = "Internal+Runtime+Augments+TaskTraceCallbacks")]
 impl crate::Internal::Runtime::Augments::TaskTraceCallbacks {
-    pub fn TaskWaitBegin_Synchronous(
-        &mut self,
-        OriginatingTaskSchedulerID: i32,
-        OriginatingTaskID: i32,
-        TaskID: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "TaskWaitBegin_Synchronous",
-                (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TaskWaitBegin_Asynchronous(
-        &mut self,
-        OriginatingTaskSchedulerID: i32,
-        OriginatingTaskID: i32,
-        TaskID: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "TaskWaitBegin_Asynchronous",
-                (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Enabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Enabled", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn TaskScheduled(
         &mut self,
         OriginatingTaskSchedulerID: i32,
@@ -87,6 +48,38 @@ impl crate::Internal::Runtime::Augments::TaskTraceCallbacks {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn TaskWaitBegin_Asynchronous(
+        &mut self,
+        OriginatingTaskSchedulerID: i32,
+        OriginatingTaskID: i32,
+        TaskID: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "TaskWaitBegin_Asynchronous",
+                (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn TaskWaitBegin_Synchronous(
+        &mut self,
+        OriginatingTaskSchedulerID: i32,
+        OriginatingTaskID: i32,
+        TaskID: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "TaskWaitBegin_Synchronous",
+                (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn TaskWaitEnd(
         &mut self,
         OriginatingTaskSchedulerID: i32,
@@ -101,6 +94,13 @@ impl crate::Internal::Runtime::Augments::TaskTraceCallbacks {
                 "TaskWaitEnd",
                 (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
             )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Enabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_Enabled", ())?;
         Ok(__cordl_ret)
     }
 }

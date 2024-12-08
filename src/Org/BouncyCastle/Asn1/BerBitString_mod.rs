@@ -24,16 +24,61 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::BerBitString {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerBitString")]
 impl crate::Org::BouncyCastle::Asn1::BerBitString {
-    pub fn _ctor_Il2CppArray_i32_0(
+    pub fn Encode(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        padBits: i32,
+        derOut: *mut crate::Org::BouncyCastle::Asn1::DerOutputStream,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (data, padBits))?;
+            .invoke("Encode", (derOut))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_Asn1Encodable3(
+        obj: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (obj))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray1(
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (data))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray_i32_0(
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        padBits: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (data, padBits))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_2(namedBits: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (namedBits))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_Asn1Encodable3(
+        &mut self,
+        obj: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (obj))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_Il2CppArray1(
@@ -47,6 +92,18 @@ impl crate::Org::BouncyCastle::Asn1::BerBitString {
             .invoke(".ctor", (data))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_Il2CppArray_i32_0(
+        &mut self,
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        padBits: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (data, padBits))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_i32_2(
         &mut self,
         namedBits: i32,
@@ -57,65 +114,6 @@ impl crate::Org::BouncyCastle::Asn1::BerBitString {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (namedBits))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor_Asn1Encodable3(
-        &mut self,
-        obj: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Encode(
-        &mut self,
-        derOut: *mut crate::Org::BouncyCastle::Asn1::DerOutputStream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Encode", (derOut))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_Il2CppArray_i32_0(
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        padBits: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (data, padBits))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray1(
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (data))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_2(
-        namedBits: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (namedBits))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Asn1Encodable3(
-        obj: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (obj))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerBitString")]

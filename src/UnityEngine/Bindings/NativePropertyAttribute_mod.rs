@@ -25,6 +25,45 @@ impl std::ops::DerefMut for crate::UnityEngine::Bindings::NativePropertyAttribut
 }
 #[cfg(feature = "UnityEngine+Bindings+NativePropertyAttribute")]
 impl crate::UnityEngine::Bindings::NativePropertyAttribute {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String1(
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String__cordl_bool_TargetType2(
+        name: *mut crate::System::String,
+        isFree: bool,
+        targetType: crate::UnityEngine::Bindings::TargetType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, isFree, targetType))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String__cordl_bool_TargetType__cordl_bool3(
+        name: *mut crate::System::String,
+        isFree: bool,
+        targetType: crate::UnityEngine::Bindings::TargetType,
+        isThreadSafe: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, isFree, targetType, isThreadSafe))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -83,45 +122,6 @@ impl crate::UnityEngine::Bindings::NativePropertyAttribute {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_TargetType", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String__cordl_bool_TargetType2(
-        name: *mut crate::System::String,
-        isFree: bool,
-        targetType: crate::UnityEngine::Bindings::TargetType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, isFree, targetType))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String__cordl_bool_TargetType__cordl_bool3(
-        name: *mut crate::System::String,
-        isFree: bool,
-        targetType: crate::UnityEngine::Bindings::TargetType,
-        isThreadSafe: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, isFree, targetType, isThreadSafe))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+Bindings+NativePropertyAttribute")]

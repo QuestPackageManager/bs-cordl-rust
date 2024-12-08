@@ -27,30 +27,36 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IO::SignerStream {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IO+SignerStream")]
 impl crate::Org::BouncyCastle::Crypto::IO::SignerStream {
-    pub fn SetLength(
+    pub fn Close(
         &mut self,
-        length: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLength", (length))?;
+            .invoke("Close", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_CanSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn Flush(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanSeek", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Flush", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanRead", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        stream: *mut crate::System::IO::Stream,
+        readSigner: *mut crate::Org::BouncyCastle::Crypto::ISigner,
+        writeSigner: *mut crate::Org::BouncyCastle::Crypto::ISigner,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream, readSigner, writeSigner))?;
+        Ok(__cordl_object)
     }
     pub fn Read(
         &mut self,
@@ -64,49 +70,11 @@ impl crate::Org::BouncyCastle::Crypto::IO::SignerStream {
         let __cordl_ret: i32 = __cordl_object.invoke("Read", (buffer, offset, count))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_Length", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Flush(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Flush", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_Position", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteSigner(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::ISigner> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ISigner = __cordl_object
-            .invoke("WriteSigner", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Position(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Position", (value))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
         Ok(__cordl_ret)
     }
     pub fn ReadSigner(
@@ -117,6 +85,28 @@ impl crate::Org::BouncyCastle::Crypto::IO::SignerStream {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ISigner = __cordl_object
             .invoke("ReadSigner", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Seek(
+        &mut self,
+        offset: i64,
+        origin: crate::System::IO::SeekOrigin,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("Seek", (offset, origin))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetLength(
+        &mut self,
+        length: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetLength", (length))?;
         Ok(__cordl_ret)
     }
     pub fn Write(
@@ -132,14 +122,25 @@ impl crate::Org::BouncyCastle::Crypto::IO::SignerStream {
             .invoke("Write", (buffer, offset, count))?;
         Ok(__cordl_ret)
     }
-    pub fn Close(
+    pub fn WriteByte(
         &mut self,
+        b: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
+            .invoke("WriteByte", (b))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteSigner(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::ISigner> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ISigner = __cordl_object
+            .invoke("WriteSigner", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -155,22 +156,18 @@ impl crate::Org::BouncyCastle::Crypto::IO::SignerStream {
             .invoke(".ctor", (stream, readSigner, writeSigner))?;
         Ok(__cordl_ret)
     }
-    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanRead", ())?;
         Ok(__cordl_ret)
     }
-    pub fn WriteByte(
-        &mut self,
-        b: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_CanSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteByte", (b))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanSeek", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_CanWrite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -180,27 +177,30 @@ impl crate::Org::BouncyCastle::Crypto::IO::SignerStream {
         let __cordl_ret: bool = __cordl_object.invoke("get_CanWrite", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Seek(
-        &mut self,
-        offset: i64,
-        origin: crate::System::IO::SeekOrigin,
-    ) -> quest_hook::libil2cpp::Result<i64> {
+    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i64 = __cordl_object.invoke("Seek", (offset, origin))?;
+        let __cordl_ret: i64 = __cordl_object.invoke("get_Length", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        stream: *mut crate::System::IO::Stream,
-        readSigner: *mut crate::Org::BouncyCastle::Crypto::ISigner,
-        writeSigner: *mut crate::Org::BouncyCastle::Crypto::ISigner,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream, readSigner, writeSigner))?;
-        Ok(__cordl_object)
+    pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_Position", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Position(
+        &mut self,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Position", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IO+SignerStream")]

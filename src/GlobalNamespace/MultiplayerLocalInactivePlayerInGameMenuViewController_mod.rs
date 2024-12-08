@@ -40,26 +40,6 @@ impl std::ops::DerefMut for MultiplayerLocalInactivePlayerInGameMenuViewControll
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerInGameMenuViewController")]
 impl MultiplayerLocalInactivePlayerInGameMenuViewController {
-    pub fn _HandleDisconnectPromptViewDidViewFinish_b__22_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<HandleDisconnectPromptViewDidViewFinish>b__22_0", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _HandleStateChanged_b__23_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<HandleStateChanged>b__23_1", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn DetailsToggleValueChanged(
         &mut self,
         isOn: bool,
@@ -69,17 +49,6 @@ impl MultiplayerLocalInactivePlayerInGameMenuViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DetailsToggleValueChanged", (isOn))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleStateChanged(
-        &mut self,
-        state: crate::GlobalNamespace::MultiplayerController_State,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleStateChanged", (state))?;
         Ok(__cordl_ret)
     }
     pub fn DisconnectButtonPressed(
@@ -102,6 +71,24 @@ impl MultiplayerLocalInactivePlayerInGameMenuViewController {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleDisconnectPromptViewDidViewFinish", (disconnect))?;
         Ok(__cordl_ret)
+    }
+    pub fn HandleStateChanged(
+        &mut self,
+        state: crate::GlobalNamespace::MultiplayerController_State,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleStateChanged", (state))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnDestroy(
         &mut self,
@@ -133,14 +120,24 @@ impl MultiplayerLocalInactivePlayerInGameMenuViewController {
             .invoke("OnEnable", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _HandleDisconnectPromptViewDidViewFinish_b__22_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<HandleDisconnectPromptViewDidViewFinish>b__22_0", ())?;
         Ok(__cordl_ret)
     }
     pub fn _HandleStateChanged_b__23_0(
@@ -154,22 +151,25 @@ impl MultiplayerLocalInactivePlayerInGameMenuViewController {
             .invoke("<HandleStateChanged>b__23_0", (val))?;
         Ok(__cordl_ret)
     }
-    pub fn Start(
+    pub fn _HandleStateChanged_b__23_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
+            .invoke("<HandleStateChanged>b__23_1", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerInGameMenuViewController")]

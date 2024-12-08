@@ -29,6 +29,24 @@ impl std::ops::DerefMut for BloomPrePassBackgroundColorsGradient {
 impl BloomPrePassBackgroundColorsGradient {
     #[cfg(feature = "BloomPrePassBackgroundColorsGradient+Element")]
     pub type Element = crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element;
+    pub fn EvaluateColor(
+        &mut self,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("EvaluateColor", (t))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn UpdatePixels(
         &mut self,
         pixels: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Color32>,
@@ -41,15 +59,14 @@ impl BloomPrePassBackgroundColorsGradient {
             .invoke("UpdatePixels", (pixels, numberOfPixels))?;
         Ok(__cordl_ret)
     }
-    pub fn EvaluateColor(
+    pub fn _ctor(
         &mut self,
-        t: f32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("EvaluateColor", (t))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_elements(
@@ -66,23 +83,6 @@ impl BloomPrePassBackgroundColorsGradient {
             *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element,
         > = __cordl_object.invoke("get_elements", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradient")]
@@ -126,6 +126,13 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element {
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradient+Element")]
 impl crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -135,13 +142,6 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradient+Element")]

@@ -50,6 +50,10 @@ impl MainFlowCoordinator {
     )]
     pub type _HandleMultiplayerDisclaimerDidFinishAction_d__29 = crate::GlobalNamespace::MainFlowCoordinator__HandleMultiplayerDisclaimerDidFinishAction_d__29;
     #[cfg(
+        feature = "MainFlowCoordinator+_ProcessMenuDestinationRequestAfterFrameCoroutine_d__43"
+    )]
+    pub type _ProcessMenuDestinationRequestAfterFrameCoroutine_d__43 = crate::GlobalNamespace::MainFlowCoordinator__ProcessMenuDestinationRequestAfterFrameCoroutine_d__43;
+    #[cfg(
         feature = "MainFlowCoordinator+_PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_d__42"
     )]
     pub type _PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_d__42 = crate::GlobalNamespace::MainFlowCoordinator__PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_d__42;
@@ -59,32 +63,15 @@ impl MainFlowCoordinator {
     pub type _HandleEditAvatarFlowCoordinatorHelperDidFinish_d__34 = crate::GlobalNamespace::MainFlowCoordinator__HandleEditAvatarFlowCoordinatorHelperDidFinish_d__34;
     #[cfg(feature = "MainFlowCoordinator+_ProcessMenuDestinationRequest_d__41")]
     pub type _ProcessMenuDestinationRequest_d__41 = crate::GlobalNamespace::MainFlowCoordinator__ProcessMenuDestinationRequest_d__41;
-    #[cfg(
-        feature = "MainFlowCoordinator+_ProcessMenuDestinationRequestAfterFrameCoroutine_d__43"
-    )]
-    pub type _ProcessMenuDestinationRequestAfterFrameCoroutine_d__43 = crate::GlobalNamespace::MainFlowCoordinator__ProcessMenuDestinationRequestAfterFrameCoroutine_d__43;
-    pub fn PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator(
+    pub fn BackButtonWasPressed(
         &mut self,
-        presentImmediately: bool,
+        topViewController: *mut crate::HMUI::ViewController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator",
-                (presentImmediately),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _HandleMainMenuViewControllerDidFinish_b__28_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<HandleMainMenuViewControllerDidFinish>b__28_0", ())?;
+            .invoke("BackButtonWasPressed", (topViewController))?;
         Ok(__cordl_ret)
     }
     pub fn DidActivate(
@@ -103,49 +90,6 @@ impl MainFlowCoordinator {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HandlePlayerOptionsViewControllerDidFinish(
-        &mut self,
-        viewController: *mut crate::HMUI::ViewController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandlePlayerOptionsViewControllerDidFinish", (viewController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleHelpFlowCoordinatorDidFinish(
-        &mut self,
-        helpFlowCoordinator: *mut HelpFlowCoordinator,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleHelpFlowCoordinatorDidFinish", (helpFlowCoordinator))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleMultiplayerDisclaimerDidFinishAction(
-        &mut self,
-        buttonNumber: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleMultiplayerDisclaimerDidFinishAction", (buttonNumber))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _PresentFlowCoordinatorOrAskForTutorial_b__27_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<PresentFlowCoordinatorOrAskForTutorial>b__27_1", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn DidDeactivate(
         &mut self,
         removedFromHierarchy: bool,
@@ -156,117 +100,6 @@ impl MainFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleOptionsViewControllerDidFinish(
-        &mut self,
-        optionsType: crate::GlobalNamespace::OptionsViewController_OptionsButton,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleOptionsViewControllerDidFinish", (optionsType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleSoloFreePlayFlowCoordinatorDidFinish(
-        &mut self,
-        flowCoordinator: *mut LevelSelectionFlowCoordinator,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSoloFreePlayFlowCoordinatorDidFinish", (flowCoordinator))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_b__42_0(
-        &mut self,
-        buttonNumber: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "<PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator>b__42_0",
-                (buttonNumber),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn PresentFlowCoordinatorOrAskForTutorial(
-        &mut self,
-        flowCoordinator: *mut crate::HMUI::FlowCoordinator,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PresentFlowCoordinatorOrAskForTutorial", (flowCoordinator))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessMenuDestinationRequest(
-        &mut self,
-        destination: *mut MenuDestination,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessMenuDestinationRequest", (destination))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleHowToPlayViewControllerDidFinish(
-        &mut self,
-        howToPlayOptions: crate::GlobalNamespace::HowToPlayViewController_HowToPlayOptions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleHowToPlayViewControllerDidFinish", (howToPlayOptions))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleMainMenuViewControllerPromoButtonWasPressed(
-        &mut self,
-        promoInfo: *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleMainMenuViewControllerPromoButtonWasPressed", (promoInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitialViewControllerWasPresented(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitialViewControllerWasPresented", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessMenuDestinationRequestAfterFrameCoroutine(
-        &mut self,
-        destination: *mut MenuDestination,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("ProcessMenuDestinationRequestAfterFrameCoroutine", (destination))?;
         Ok(__cordl_ret)
     }
     pub fn HandleCampaignFlowCoordinatorDidFinish(
@@ -295,30 +128,63 @@ impl MainFlowCoordinator {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HandleSettingsFlowCoordinatorDidFinish(
+    pub fn HandleHelpFlowCoordinatorDidFinish(
         &mut self,
-        settingsFlowCoordinator: *mut SettingsFlowCoordinator,
-        finishAction: crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction,
+        helpFlowCoordinator: *mut HelpFlowCoordinator,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleHelpFlowCoordinatorDidFinish", (helpFlowCoordinator))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleHowToPlayViewControllerDidFinish(
+        &mut self,
+        howToPlayOptions: crate::GlobalNamespace::HowToPlayViewController_HowToPlayOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleHowToPlayViewControllerDidFinish", (howToPlayOptions))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleMainMenuViewControllerDidFinish(
+        &mut self,
+        viewController: *mut MainMenuViewController,
+        subMenuType: crate::GlobalNamespace::MainMenuViewController_MenuButton,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "HandleSettingsFlowCoordinatorDidFinish",
-                (settingsFlowCoordinator, finishAction),
+                "HandleMainMenuViewControllerDidFinish",
+                (viewController, subMenuType),
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HandlePartyFreePlayFlowCoordinatorDidFinish(
+    pub fn HandleMainMenuViewControllerPromoButtonWasPressed(
         &mut self,
-        flowCoordinator: *mut LevelSelectionFlowCoordinator,
+        promoInfo: *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandlePartyFreePlayFlowCoordinatorDidFinish", (flowCoordinator))?;
+            .invoke("HandleMainMenuViewControllerPromoButtonWasPressed", (promoInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleMultiplayerDisclaimerDidFinishAction(
+        &mut self,
+        buttonNumber: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleMultiplayerDisclaimerDidFinishAction", (buttonNumber))?;
         Ok(__cordl_ret)
     }
     pub fn HandleMultiplayerModeSelectionFlowCoordinatorDidFinish(
@@ -335,26 +201,127 @@ impl MainFlowCoordinator {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn BackButtonWasPressed(
+    pub fn HandleOptionsViewControllerDidFinish(
         &mut self,
-        topViewController: *mut crate::HMUI::ViewController,
+        optionsType: crate::GlobalNamespace::OptionsViewController_OptionsButton,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BackButtonWasPressed", (topViewController))?;
+            .invoke("HandleOptionsViewControllerDidFinish", (optionsType))?;
         Ok(__cordl_ret)
     }
-    pub fn _PresentFlowCoordinatorOrAskForTutorial_b__27_0(
+    pub fn HandlePartyFreePlayFlowCoordinatorDidFinish(
         &mut self,
-        buttonNumber: i32,
+        flowCoordinator: *mut LevelSelectionFlowCoordinator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<PresentFlowCoordinatorOrAskForTutorial>b__27_0", (buttonNumber))?;
+            .invoke("HandlePartyFreePlayFlowCoordinatorDidFinish", (flowCoordinator))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandlePlayerOptionsViewControllerDidFinish(
+        &mut self,
+        viewController: *mut crate::HMUI::ViewController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandlePlayerOptionsViewControllerDidFinish", (viewController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleSettingsFlowCoordinatorDidFinish(
+        &mut self,
+        settingsFlowCoordinator: *mut SettingsFlowCoordinator,
+        finishAction: crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleSettingsFlowCoordinatorDidFinish",
+                (settingsFlowCoordinator, finishAction),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleSoloFreePlayFlowCoordinatorDidFinish(
+        &mut self,
+        flowCoordinator: *mut LevelSelectionFlowCoordinator,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleSoloFreePlayFlowCoordinatorDidFinish", (flowCoordinator))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitialViewControllerWasPresented(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitialViewControllerWasPresented", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn PresentFlowCoordinatorOrAskForTutorial(
+        &mut self,
+        flowCoordinator: *mut crate::HMUI::FlowCoordinator,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PresentFlowCoordinatorOrAskForTutorial", (flowCoordinator))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator(
+        &mut self,
+        presentImmediately: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator",
+                (presentImmediately),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessMenuDestinationRequest(
+        &mut self,
+        destination: *mut MenuDestination,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessMenuDestinationRequest", (destination))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessMenuDestinationRequestAfterFrameCoroutine(
+        &mut self,
+        destination: *mut MenuDestination,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("ProcessMenuDestinationRequestAfterFrameCoroutine", (destination))?;
         Ok(__cordl_ret)
     }
     pub fn TopViewControllerWillChange(
@@ -373,27 +340,60 @@ impl MainFlowCoordinator {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HandleMainMenuViewControllerDidFinish(
+    pub fn _HandleMainMenuViewControllerDidFinish_b__28_0(
         &mut self,
-        viewController: *mut MainMenuViewController,
-        subMenuType: crate::GlobalNamespace::MainMenuViewController_MenuButton,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<HandleMainMenuViewControllerDidFinish>b__28_0", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _PresentFlowCoordinatorOrAskForTutorial_b__27_0(
+        &mut self,
+        buttonNumber: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<PresentFlowCoordinatorOrAskForTutorial>b__27_0", (buttonNumber))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _PresentFlowCoordinatorOrAskForTutorial_b__27_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<PresentFlowCoordinatorOrAskForTutorial>b__27_1", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_b__42_0(
+        &mut self,
+        buttonNumber: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "HandleMainMenuViewControllerDidFinish",
-                (viewController, subMenuType),
+                "<PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator>b__42_0",
+                (buttonNumber),
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MainFlowCoordinator")]

@@ -50,26 +50,12 @@ impl BoxCuttableBySaber {
             .invoke("Cut", (saber, cutPoint, orientation, cutDirVec))?;
         Ok(__cordl_ret)
     }
-    pub fn get_colliderCenter(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_colliderCenter", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_colliderCenter(
-        &mut self,
-        value: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_colliderCenter", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn RefreshRadius(
         &mut self,
@@ -79,24 +65,6 @@ impl BoxCuttableBySaber {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshRadius", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_canBeCut(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_canBeCut", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_colliderSize(
-        &mut self,
-        value: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_colliderSize", (value))?;
         Ok(__cordl_ret)
     }
     pub fn SetColliderCenterAndSize(
@@ -111,15 +79,31 @@ impl BoxCuttableBySaber {
             .invoke("SetColliderCenterAndSize", (center, _cordl_size))?;
         Ok(__cordl_ret)
     }
-    pub fn set_canBeCut(
+    pub fn _ctor(
         &mut self,
-        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_canBeCut", (value))?;
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_canBeCut(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_canBeCut", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_colliderCenter(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_colliderCenter", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_colliderSize(
@@ -132,16 +116,6 @@ impl BoxCuttableBySaber {
             .invoke("get_colliderSize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_radius(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -149,12 +123,38 @@ impl BoxCuttableBySaber {
         let __cordl_ret: f32 = __cordl_object.invoke("get_radius", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_canBeCut(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_canBeCut", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_colliderCenter(
+        &mut self,
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_colliderCenter", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_colliderSize(
+        &mut self,
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_colliderSize", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BoxCuttableBySaber")]

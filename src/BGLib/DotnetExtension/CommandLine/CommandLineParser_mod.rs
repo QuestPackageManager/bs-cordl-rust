@@ -26,7 +26,7 @@ for crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
 }
 #[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParser")]
 impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
-    pub const kArgumentIdentifierPattern: &'static str = "^(?>\\\\w|-|_)+$";
+    pub const kArgumentIdentifierPattern: &'static str = "^(?>\\w|-|_)+$";
     #[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParser+__c")]
     pub type __c = crate::BGLib::DotnetExtension::CommandLine::CommandLineParser___c;
     #[cfg(

@@ -25,6 +25,17 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::Sources::IValueTask
 }
 #[cfg(feature = "System+Threading+Tasks+Sources+IValueTaskSource")]
 impl crate::System::Threading::Tasks::Sources::IValueTaskSource {
+    pub fn GetResult(
+        &mut self,
+        token: i16,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetResult", (token))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetStatus(
         &mut self,
         token: i16,
@@ -36,17 +47,6 @@ impl crate::System::Threading::Tasks::Sources::IValueTaskSource {
         );
         let __cordl_ret: crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus = __cordl_object
             .invoke("GetStatus", (token))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetResult(
-        &mut self,
-        token: i16,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetResult", (token))?;
         Ok(__cordl_ret)
     }
     pub fn OnCompleted(

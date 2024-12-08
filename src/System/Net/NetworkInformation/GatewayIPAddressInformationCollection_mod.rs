@@ -30,14 +30,15 @@ for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollectio
 }
 #[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]
 impl crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection {
-    pub fn _ctor(
+    pub fn Add(
         &mut self,
+        address: *mut crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("Add", (address))?;
         Ok(__cordl_ret)
     }
     pub fn Clear(
@@ -60,11 +61,18 @@ impl crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollecti
         let __cordl_ret: bool = __cordl_object.invoke("Contains", (address))?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn CopyTo(
+        &mut self,
+        array: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+        >,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsReadOnly", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CopyTo", (array, offset))?;
         Ok(__cordl_ret)
     }
     pub fn GetEnumerator(
@@ -82,13 +90,6 @@ impl crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollecti
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn InternalAdd(
         &mut self,
         address: *mut crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
@@ -98,6 +99,23 @@ impl crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollecti
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InternalAdd", (address))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Remove(
+        &mut self,
+        address: *mut crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Remove", (address))?;
         Ok(__cordl_ret)
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
@@ -110,47 +128,29 @@ impl crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollecti
             .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CopyTo(
+    pub fn _ctor(
         &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
-        >,
-        offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CopyTo", (array, offset))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Remove(
-        &mut self,
-        address: *mut crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Remove", (address))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Add(
-        &mut self,
-        address: *mut crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (address))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsReadOnly", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]

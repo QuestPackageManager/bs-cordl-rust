@@ -26,15 +26,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PackPromoInfoSO_LevelPromoIn
 }
 #[cfg(feature = "PackPromoInfoSO+LevelPromoInfo")]
 impl crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo {
-    pub fn get_levelID(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_levelID", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -46,6 +43,16 @@ impl crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_levelID(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_levelID", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_promoBannerInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut PromoBannerInfoSO> {
@@ -55,13 +62,6 @@ impl crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo {
         let __cordl_ret: *mut PromoBannerInfoSO = __cordl_object
             .invoke("get_promoBannerInfo", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PackPromoInfoSO+LevelPromoInfo")]
@@ -105,6 +105,23 @@ impl std::ops::DerefMut for PackPromoInfoSO {
 impl PackPromoInfoSO {
     #[cfg(feature = "PackPromoInfoSO+LevelPromoInfo")]
     pub type LevelPromoInfo = crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_levelPromoInfos(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -129,23 +146,6 @@ impl PackPromoInfoSO {
         let __cordl_ret: *mut PromoBannerInfoSO = __cordl_object
             .invoke("get_promoBannerInfo", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PackPromoInfoSO")]

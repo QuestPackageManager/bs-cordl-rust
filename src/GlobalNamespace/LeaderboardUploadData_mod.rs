@@ -36,6 +36,42 @@ impl std::ops::DerefMut for LeaderboardUploadData {
 }
 #[cfg(feature = "LeaderboardUploadData")]
 impl LeaderboardUploadData {
+    pub fn New(
+        playerName: *mut crate::System::String,
+        playerId: *mut crate::System::String,
+        score: *mut crate::System::String,
+        leaderboardId: *mut crate::System::String,
+        songName: *mut crate::System::String,
+        songSubName: *mut crate::System::String,
+        authorName: *mut crate::System::String,
+        bpm: *mut crate::System::String,
+        difficulty: *mut crate::System::String,
+        infoHash: *mut crate::System::String,
+        modifiers: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::System::String,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    playerName,
+                    playerId,
+                    score,
+                    leaderboardId,
+                    songName,
+                    songSubName,
+                    authorName,
+                    bpm,
+                    difficulty,
+                    infoHash,
+                    modifiers,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         playerName: *mut crate::System::String,
@@ -73,42 +109,6 @@ impl LeaderboardUploadData {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        playerName: *mut crate::System::String,
-        playerId: *mut crate::System::String,
-        score: *mut crate::System::String,
-        leaderboardId: *mut crate::System::String,
-        songName: *mut crate::System::String,
-        songSubName: *mut crate::System::String,
-        authorName: *mut crate::System::String,
-        bpm: *mut crate::System::String,
-        difficulty: *mut crate::System::String,
-        infoHash: *mut crate::System::String,
-        modifiers: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    playerName,
-                    playerId,
-                    score,
-                    leaderboardId,
-                    songName,
-                    songSubName,
-                    authorName,
-                    bpm,
-                    difficulty,
-                    infoHash,
-                    modifiers,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LeaderboardUploadData")]

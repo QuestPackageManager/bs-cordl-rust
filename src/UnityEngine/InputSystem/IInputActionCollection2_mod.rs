@@ -52,6 +52,11 @@ impl crate::UnityEngine::InputSystem::IInputActionCollection2 {
         let __cordl_ret: i32 = __cordl_object.invoke("FindBinding", (mask, action))?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_bindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -66,11 +71,6 @@ impl crate::UnityEngine::InputSystem::IInputActionCollection2 {
             crate::UnityEngine::InputSystem::InputBinding,
         > = __cordl_object.invoke("get_bindings", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+IInputActionCollection2")]

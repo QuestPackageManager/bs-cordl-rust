@@ -23,6 +23,17 @@ for crate::TMPro::TMP_GlyphAdjustmentRecord {
 }
 #[cfg(feature = "TMPro+TMP_GlyphAdjustmentRecord")]
 impl crate::TMPro::TMP_GlyphAdjustmentRecord {
+    pub fn _ctor_GlyphAdjustmentRecord1(
+        &mut self,
+        adjustmentRecord: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (adjustmentRecord),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_u32_TMP_GlyphValueRecord0(
         &mut self,
         glyphIndex: u32,
@@ -32,17 +43,6 @@ impl crate::TMPro::TMP_GlyphAdjustmentRecord {
             self,
             ".ctor",
             (glyphIndex, glyphValueRecord),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_GlyphAdjustmentRecord1(
-        &mut self,
-        adjustmentRecord: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (adjustmentRecord),
         )?;
         Ok(__cordl_ret)
     }

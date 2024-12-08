@@ -26,27 +26,32 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cms::TimeStampAndCrl
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+TimeStampAndCrl")]
 impl crate::Org::BouncyCastle::Asn1::Cms::TimeStampAndCrl {
-    pub fn get_TimeStampToken(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo = __cordl_object
-            .invoke("get_TimeStampToken", ())?;
-        Ok(__cordl_ret)
+    pub fn New_Asn1Sequence1(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
     }
-    pub fn _ctor_ContentInfo0(
-        &mut self,
+    pub fn New_ContentInfo0(
         timeStamp: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (timeStamp))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToAsn1Object(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (timeStamp))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_Asn1Sequence1(
@@ -60,14 +65,15 @@ impl crate::Org::BouncyCastle::Asn1::Cms::TimeStampAndCrl {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret)
     }
-    pub fn ToAsn1Object(
+    pub fn _ctor_ContentInfo0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+        timeStamp: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (timeStamp))?;
         Ok(__cordl_ret)
     }
     pub fn get_Crl(
@@ -82,23 +88,17 @@ impl crate::Org::BouncyCastle::Asn1::Cms::TimeStampAndCrl {
             .invoke("get_Crl", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_ContentInfo0(
-        timeStamp: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (timeStamp))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Asn1Sequence1(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
+    pub fn get_TimeStampToken(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo = __cordl_object
+            .invoke("get_TimeStampToken", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+TimeStampAndCrl")]

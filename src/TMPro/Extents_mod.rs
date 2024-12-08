@@ -21,6 +21,16 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::Extents {
 }
 #[cfg(feature = "TMPro+Extents")]
 impl crate::TMPro::Extents {
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         min: crate::UnityEngine::Vector2,
@@ -30,16 +40,6 @@ impl crate::TMPro::Extents {
             self,
             ".ctor",
             (min, max),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -28,23 +28,15 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::SignatureSubpacket {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+SignatureSubpacket")]
 impl crate::Org::BouncyCastle::Bcpg::SignatureSubpacket {
-    pub fn IsLongLength(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsLongLength", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SubpacketType(
+    pub fn Encode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
-    > {
+        os: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag = __cordl_object
-            .invoke("get_SubpacketType", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Encode", (os))?;
         Ok(__cordl_ret)
     }
     pub fn GetData(
@@ -57,23 +49,31 @@ impl crate::Org::BouncyCastle::Bcpg::SignatureSubpacket {
             .invoke("GetData", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Encode(
-        &mut self,
-        os: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Encode", (os))?;
-        Ok(__cordl_ret)
-    }
     pub fn IsCritical(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsCritical", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn IsLongLength(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsLongLength", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        _cordl_type: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
+        critical: bool,
+        isLongLength: bool,
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, critical, isLongLength, data))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -89,17 +89,17 @@ impl crate::Org::BouncyCastle::Bcpg::SignatureSubpacket {
             .invoke(".ctor", (_cordl_type, critical, isLongLength, data))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        _cordl_type: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
-        critical: bool,
-        isLongLength: bool,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, critical, isLongLength, data))?;
-        Ok(__cordl_object)
+    pub fn get_SubpacketType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag = __cordl_object
+            .invoke("get_SubpacketType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+SignatureSubpacket")]

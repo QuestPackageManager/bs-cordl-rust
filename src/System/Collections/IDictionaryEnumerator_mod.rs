@@ -24,14 +24,19 @@ impl std::ops::DerefMut for crate::System::Collections::IDictionaryEnumerator {
 }
 #[cfg(feature = "System+Collections+IDictionaryEnumerator")]
 impl crate::System::Collections::IDictionaryEnumerator {
-    pub fn get_Value(
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_Entry(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Collections::DictionaryEntry> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_Value", ())?;
+        let __cordl_ret: crate::System::Collections::DictionaryEntry = __cordl_object
+            .invoke("get_Entry", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Key(
@@ -44,20 +49,15 @@ impl crate::System::Collections::IDictionaryEnumerator {
             .invoke("get_Key", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Entry(
+    pub fn get_Value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Collections::DictionaryEntry> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Collections::DictionaryEntry = __cordl_object
-            .invoke("get_Entry", ())?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_Value", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "System+Collections+IDictionaryEnumerator")]

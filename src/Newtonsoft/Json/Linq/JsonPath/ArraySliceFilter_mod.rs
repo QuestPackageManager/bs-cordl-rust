@@ -52,15 +52,25 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
         > = __cordl_object.invoke("ExecuteFilter", (root, current, settings))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Step(
+    pub fn IsValid(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i32>> {
+        index: i32,
+        stopIndex: i32,
+        positiveStep: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Nullable_1<i32> = __cordl_object
-            .invoke("get_Step", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsValid", (index, stopIndex, positiveStep))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -92,15 +102,14 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
             .invoke("get_Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_Start(
+    pub fn get_Step(
         &mut self,
-        value: crate::System::Nullable_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Start", (value))?;
+        let __cordl_ret: crate::System::Nullable_1<i32> = __cordl_object
+            .invoke("get_Step", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_End(
@@ -114,17 +123,15 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
             .invoke("set_End", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn IsValid(
+    pub fn set_Start(
         &mut self,
-        index: i32,
-        stopIndex: i32,
-        positiveStep: bool,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        value: crate::System::Nullable_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsValid", (index, stopIndex, positiveStep))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Start", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_Step(
@@ -137,13 +144,6 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Step", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ArraySliceFilter")]

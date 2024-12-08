@@ -25,37 +25,40 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax")]
 impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
-    pub fn PreviousCompositeBinding(
+    pub fn Erase(
         &mut self,
-        compositeName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "PreviousCompositeBinding",
-            (compositeName),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Triggering(
-        &mut self,
-        action: *mut crate::UnityEngine::InputSystem::InputAction,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Triggering",
-            (action),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_bindingIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_bindingIndex",
+            "Erase",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn InsertPartBinding(
+        &mut self,
+        partName: *mut crate::System::String,
+        path: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "InsertPartBinding",
+            (partName, path),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Iterate(
+        &mut self,
+        next: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Iterate",
+            (next),
         )?;
         Ok(__cordl_ret)
     }
@@ -73,72 +76,28 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WithInteractions(
+    pub fn IteratePartBinding(
         &mut self,
-        interactions: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithInteractions",
-            (interactions),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithProcessors(
-        &mut self,
-        processors: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithProcessors",
-            (processors),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn PreviousPartBinding(
-        &mut self,
+        next: bool,
         partName: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "PreviousPartBinding",
-            (partName),
+            "IteratePartBinding",
+            (next, partName),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_valid",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithGroups(
+    pub fn NextBinding(
         &mut self,
-        groups: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "WithGroups",
-            (groups),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Erase(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Erase",
+            "NextBinding",
             (),
         )?;
         Ok(__cordl_ret)
@@ -169,16 +128,93 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WithInteraction_String0(
+    pub fn PreviousBinding(
         &mut self,
-        interaction: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "WithInteraction",
-            (interaction),
+            "PreviousBinding",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn PreviousCompositeBinding(
+        &mut self,
+        compositeName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "PreviousCompositeBinding",
+            (compositeName),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn PreviousPartBinding(
+        &mut self,
+        partName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "PreviousPartBinding",
+            (partName),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn To(
+        &mut self,
+        binding: crate::UnityEngine::InputSystem::InputBinding,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "To",
+            (binding),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Triggering(
+        &mut self,
+        action: *mut crate::UnityEngine::InputSystem::InputAction,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Triggering",
+            (action),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithGroup(
+        &mut self,
+        group: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithGroup",
+            (group),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithGroups(
+        &mut self,
+        groups: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithGroups",
+            (groups),
         )?;
         Ok(__cordl_ret)
     }
@@ -198,103 +234,29 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_binding(
+    pub fn WithInteraction_String0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::InputBinding> {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputBinding = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_binding",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithGroup(
-        &mut self,
-        group: *mut crate::System::String,
+        interaction: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "WithGroup",
-            (group),
+            "WithInteraction",
+            (interaction),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn NextBinding(
+    pub fn WithInteractions(
         &mut self,
+        interactions: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "NextBinding",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn PreviousBinding(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "PreviousBinding",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn To(
-        &mut self,
-        binding: crate::UnityEngine::InputSystem::InputBinding,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "To",
-            (binding),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        map: *mut crate::UnityEngine::InputSystem::InputActionMap,
-        bindingIndexInMap: i32,
-        action: *mut crate::UnityEngine::InputSystem::InputAction,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (map, bindingIndexInMap, action),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithPath(
-        &mut self,
-        path: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithPath",
-            (path),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IteratePartBinding(
-        &mut self,
-        next: bool,
-        partName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IteratePartBinding",
-            (next, partName),
+            "WithInteractions",
+            (interactions),
         )?;
         Ok(__cordl_ret)
     }
@@ -311,30 +273,32 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Iterate(
+    pub fn WithPath(
         &mut self,
-        next: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Iterate",
-            (next),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn InsertPartBinding(
-        &mut self,
-        partName: *mut crate::System::String,
         path: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "InsertPartBinding",
-            (partName, path),
+            "WithPath",
+            (path),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithProcessor_1<TProcessor>(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    >
+    where
+        TProcessor: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithProcessor",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -351,18 +315,54 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WithProcessor_1<TProcessor>(
+    pub fn WithProcessors(
         &mut self,
+        processors: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
-    >
-    where
-        TProcessor: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
+    > {
         let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "WithProcessor",
+            "WithProcessors",
+            (processors),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        map: *mut crate::UnityEngine::InputSystem::InputActionMap,
+        bindingIndexInMap: i32,
+        action: *mut crate::UnityEngine::InputSystem::InputAction,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (map, bindingIndexInMap, action),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_binding(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::InputBinding> {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputBinding = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_binding",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_bindingIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_bindingIndex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_valid",
             (),
         )?;
         Ok(__cordl_ret)
@@ -411,14 +411,6 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_bindingIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_bindingIndex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         map: *mut crate::UnityEngine::InputSystem::InputActionMap,
@@ -429,6 +421,14 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax
             self,
             ".ctor",
             (map, action, compositeIndex),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_bindingIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_bindingIndex",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -468,6 +468,73 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyn
     feature = "UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
 )]
 impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax {
+    pub fn AddDeviceEntry(
+        &mut self,
+        controlPath: *mut crate::System::String,
+        flags: crate::UnityEngine::InputSystem::DeviceRequirement_Flags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AddDeviceEntry",
+            (controlPath, flags),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn DeviceTypeToControlPath<TDevice>(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    where
+        TDevice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "DeviceTypeToControlPath",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Done(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlScheme,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Done",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn OrWithOptionalDevice_0<TDevice>(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax,
+    >
+    where
+        TDevice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "OrWithOptionalDevice",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn OrWithOptionalDevice_String1(
+        &mut self,
+        controlPath: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "OrWithOptionalDevice",
+            (controlPath),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn OrWithRequiredDevice_0<TDevice>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -497,6 +564,19 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSy
         )?;
         Ok(__cordl_ret)
     }
+    pub fn WithBindingGroup(
+        &mut self,
+        bindingGroup: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithBindingGroup",
+            (bindingGroup),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn WithOptionalDevice_0<TDevice>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -523,18 +603,6 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSy
             self,
             "WithOptionalDevice",
             (controlPath),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddDeviceEntry(
-        &mut self,
-        controlPath: *mut crate::System::String,
-        flags: crate::UnityEngine::InputSystem::DeviceRequirement_Flags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AddDeviceEntry",
-            (controlPath, flags),
         )?;
         Ok(__cordl_ret)
     }
@@ -590,74 +658,6 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSy
         )?;
         Ok(__cordl_ret)
     }
-    pub fn DeviceTypeToControlPath<TDevice>(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
-    where
-        TDevice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "DeviceTypeToControlPath",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn OrWithOptionalDevice_0<TDevice>(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax,
-    >
-    where
-        TDevice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "OrWithOptionalDevice",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn OrWithOptionalDevice_String1(
-        &mut self,
-        controlPath: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "OrWithOptionalDevice",
-            (controlPath),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithBindingGroup(
-        &mut self,
-        bindingGroup: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithBindingGroup",
-            (bindingGroup),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Done(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlScheme,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Done",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
 #[repr(C)]
@@ -686,20 +686,20 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputActionSetupExt
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
 impl crate::UnityEngine::InputSystem::InputActionSetupExtensions {
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
-    )]
-    pub type ControlSchemeSyntax = crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionSetupExtensions+__c__DisplayClass5_0"
-    )]
-    pub type __c__DisplayClass5_0 = crate::UnityEngine::InputSystem::InputActionSetupExtensions___c__DisplayClass5_0;
     #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax")]
     pub type BindingSyntax = crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax;
     #[cfg(
         feature = "UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax"
     )]
     pub type CompositeSyntax = crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputActionSetupExtensions+__c__DisplayClass5_0"
+    )]
+    pub type __c__DisplayClass5_0 = crate::UnityEngine::InputSystem::InputActionSetupExtensions___c__DisplayClass5_0;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
+    )]
+    pub type ControlSchemeSyntax = crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax;
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
 impl quest_hook::libil2cpp::ObjectType

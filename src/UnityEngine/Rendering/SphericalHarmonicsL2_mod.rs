@@ -48,14 +48,6 @@ for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
 }
 #[cfg(feature = "UnityEngine+Rendering+SphericalHarmonicsL2")]
 impl crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_Object0(
         &mut self,
         other: *mut crate::System::Object,
@@ -75,6 +67,14 @@ impl crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
             self,
             "Equals",
             (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }

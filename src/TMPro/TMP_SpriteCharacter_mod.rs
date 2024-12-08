@@ -26,6 +26,44 @@ impl std::ops::DerefMut for crate::TMPro::TMP_SpriteCharacter {
 }
 #[cfg(feature = "TMPro+TMP_SpriteCharacter")]
 impl crate::TMPro::TMP_SpriteCharacter {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_u32_TMP_SpriteAsset_TMP_SpriteGlyph2(
+        unicode: u32,
+        spriteAsset: *mut crate::TMPro::TMP_SpriteAsset,
+        glyph: *mut crate::TMPro::TMP_SpriteGlyph,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (unicode, spriteAsset, glyph))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_u32_TMP_SpriteGlyph1(
+        unicode: u32,
+        glyph: *mut crate::TMPro::TMP_SpriteGlyph,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (unicode, glyph))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_u32_u32_3(
+        unicode: u32,
+        glyphIndex: u32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (unicode, glyphIndex))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -34,18 +72,6 @@ impl crate::TMPro::TMP_SpriteCharacter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_u32_TMP_SpriteGlyph1(
-        &mut self,
-        unicode: u32,
-        glyph: *mut crate::TMPro::TMP_SpriteGlyph,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (unicode, glyph))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_u32_TMP_SpriteAsset_TMP_SpriteGlyph2(
@@ -61,6 +87,18 @@ impl crate::TMPro::TMP_SpriteCharacter {
             .invoke(".ctor", (unicode, spriteAsset, glyph))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_u32_TMP_SpriteGlyph1(
+        &mut self,
+        unicode: u32,
+        glyph: *mut crate::TMPro::TMP_SpriteGlyph,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (unicode, glyph))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_u32_u32_3(
         &mut self,
         unicode: u32,
@@ -71,17 +109,6 @@ impl crate::TMPro::TMP_SpriteCharacter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (unicode, glyphIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_name(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_name", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_hashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -101,43 +128,16 @@ impl crate::TMPro::TMP_SpriteCharacter {
             .invoke("get_name", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_u32_TMP_SpriteGlyph1(
-        unicode: u32,
-        glyph: *mut crate::TMPro::TMP_SpriteGlyph,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (unicode, glyph))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_u32_TMP_SpriteAsset_TMP_SpriteGlyph2(
-        unicode: u32,
-        spriteAsset: *mut crate::TMPro::TMP_SpriteAsset,
-        glyph: *mut crate::TMPro::TMP_SpriteGlyph,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (unicode, spriteAsset, glyph))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_u32_u32_3(
-        unicode: u32,
-        glyphIndex: u32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (unicode, glyphIndex))?;
-        Ok(__cordl_object)
+    pub fn set_name(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_name", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "TMPro+TMP_SpriteCharacter")]

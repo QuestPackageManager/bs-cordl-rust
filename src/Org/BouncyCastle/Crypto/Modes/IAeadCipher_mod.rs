@@ -24,34 +24,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+IAeadCipher")]
 impl crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher {
-    pub fn ProcessAadByte(
-        &mut self,
-        input: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessAadByte", (input))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetUpdateOutputSize(
-        &mut self,
-        len: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetUpdateOutputSize", (len))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetOutputSize(&mut self, len: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetOutputSize", (len))?;
-        Ok(__cordl_ret)
-    }
     pub fn DoFinal(
         &mut self,
         outBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -73,39 +45,21 @@ impl crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher {
             .invoke("GetMac", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_AlgorithmName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    pub fn GetOutputSize(&mut self, len: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_AlgorithmName", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetOutputSize", (len))?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessBytes(
+    pub fn GetUpdateOutputSize(
         &mut self,
-        inBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        inOff: i32,
         len: i32,
-        outBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        outOff: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("ProcessBytes", (inBytes, inOff, len, outBytes, outOff))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetUpdateOutputSize", (len))?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -118,6 +72,17 @@ impl crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (forEncryption, parameters))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessAadByte(
+        &mut self,
+        input: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessAadByte", (input))?;
         Ok(__cordl_ret)
     }
     pub fn ProcessAadBytes(
@@ -146,10 +111,45 @@ impl crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher {
             .invoke("ProcessByte", (input, outBytes, outOff))?;
         Ok(__cordl_ret)
     }
+    pub fn ProcessBytes(
+        &mut self,
+        inBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inOff: i32,
+        len: i32,
+        outBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        outOff: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("ProcessBytes", (inBytes, inOff, len, outBytes, outOff))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_AlgorithmName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_AlgorithmName", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+IAeadCipher")]

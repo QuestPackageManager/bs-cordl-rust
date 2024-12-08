@@ -32,6 +32,36 @@ impl KnucklesUnityXRHapticsHandler {
     pub const kRate: f32 = 0.0125f32;
     #[cfg(feature = "KnucklesUnityXRHapticsHandler+_HapticsCoroutine_d__9")]
     pub type _HapticsCoroutine_d__9 = crate::GlobalNamespace::KnucklesUnityXRHapticsHandler__HapticsCoroutine_d__9;
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HapticsCoroutine(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("HapticsCoroutine", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        node: crate::UnityEngine::XR::XRNode,
+        coroutineRunner: *mut crate::UnityEngine::MonoBehaviour,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (node, coroutineRunner))?;
+        Ok(__cordl_object)
+    }
     pub fn StopHaptics(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -65,36 +95,6 @@ impl KnucklesUnityXRHapticsHandler {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (node, coroutineRunner))?;
         Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HapticsCoroutine(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("HapticsCoroutine", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        node: crate::UnityEngine::XR::XRNode,
-        coroutineRunner: *mut crate::UnityEngine::MonoBehaviour,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (node, coroutineRunner))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "KnucklesUnityXRHapticsHandler")]

@@ -27,24 +27,6 @@ for crate::UnityEngine::ContactPairPoint {
 }
 #[cfg(feature = "UnityEngine+ContactPairPoint")]
 impl crate::UnityEngine::ContactPairPoint {
-    pub fn get_Separation(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Separation",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Position(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Position",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Impulse(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
@@ -61,6 +43,24 @@ impl crate::UnityEngine::ContactPairPoint {
         let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Normal",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Position(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Position",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Separation(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Separation",
             (),
         )?;
         Ok(__cordl_ret)

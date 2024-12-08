@@ -36,6 +36,16 @@ impl<
     pub type __c__DisplayClass7_0 = crate::Zenject::BindSignalToBinder_1___c__DisplayClass7_0<
         TSignal,
     >;
+    #[cfg(feature = "Zenject+BindSignalToBinder_1+__c__DisplayClass8_0_1")]
+    pub type __c__DisplayClass8_0_1<TObject: quest_hook::libil2cpp::Type> = crate::Zenject::BindSignalToBinder_1___c__DisplayClass8_0_1<
+        TSignal,
+        TObject,
+    >;
+    #[cfg(feature = "Zenject+BindSignalToBinder_1+__c__DisplayClass8_1_1")]
+    pub type __c__DisplayClass8_1_1<TObject: quest_hook::libil2cpp::Type> = crate::Zenject::BindSignalToBinder_1___c__DisplayClass8_1_1<
+        TSignal,
+        TObject,
+    >;
     #[cfg(feature = "Zenject+BindSignalToBinder_1+__c__DisplayClass9_0_1")]
     pub type __c__DisplayClass9_0_1<TObject: quest_hook::libil2cpp::Type> = crate::Zenject::BindSignalToBinder_1___c__DisplayClass9_0_1<
         TSignal,
@@ -45,54 +55,24 @@ impl<
     pub type __c__DisplayClass6_0 = crate::Zenject::BindSignalToBinder_1___c__DisplayClass6_0<
         TSignal,
     >;
-    #[cfg(feature = "Zenject+BindSignalToBinder_1+__c__DisplayClass8_0_1")]
-    pub type __c__DisplayClass8_0_1<TObject: quest_hook::libil2cpp::Type> = crate::Zenject::BindSignalToBinder_1___c__DisplayClass8_0_1<
-        TSignal,
-        TObject,
-    >;
     #[cfg(feature = "Zenject+BindSignalToBinder_1+__c__DisplayClass9_1_1")]
     pub type __c__DisplayClass9_1_1<TObject: quest_hook::libil2cpp::Type> = crate::Zenject::BindSignalToBinder_1___c__DisplayClass9_1_1<
         TSignal,
         TObject,
     >;
-    #[cfg(feature = "Zenject+BindSignalToBinder_1+__c__DisplayClass8_1_1")]
-    pub type __c__DisplayClass8_1_1<TObject: quest_hook::libil2cpp::Type> = crate::Zenject::BindSignalToBinder_1___c__DisplayClass8_1_1<
-        TSignal,
-        TObject,
-    >;
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         container: *mut crate::Zenject::DiContainer,
         signalBindInfo: *mut crate::Zenject::SignalBindingBindInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (container, signalBindInfo))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (container, signalBindInfo))?;
+        Ok(__cordl_object)
     }
-    pub fn get_SignalBindInfo(
+    pub fn ToMethod_Action1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SignalBindingBindInfo>
-    where
-        TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::SignalBindingBindInfo = __cordl_object
-            .invoke("get_SignalBindInfo", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToMethod_Action_1_0(
-        &mut self,
-        callback: *mut crate::System::Action_1<TSignal>,
+        callback: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SignalCopyBinder>
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -105,9 +85,9 @@ impl<
             .invoke("ToMethod", (callback))?;
         Ok(__cordl_ret)
     }
-    pub fn ToMethod_Action1(
+    pub fn ToMethod_Action_1_0(
         &mut self,
-        callback: *mut crate::System::Action,
+        callback: *mut crate::System::Action_1<TSignal>,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SignalCopyBinder>
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -180,15 +160,35 @@ impl<
             .invoke("ToMethod", (handlerGetter))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         container: *mut crate::Zenject::DiContainer,
         signalBindInfo: *mut crate::Zenject::SignalBindingBindInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (container, signalBindInfo))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (container, signalBindInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SignalBindInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SignalBindingBindInfo>
+    where
+        TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::SignalBindingBindInfo = __cordl_object
+            .invoke("get_SignalBindInfo", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+BindSignalToBinder_1")]

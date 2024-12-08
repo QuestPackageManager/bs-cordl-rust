@@ -27,23 +27,6 @@ for crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IInputStateChangeMonitor")]
 impl crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
-    pub fn NotifyTimerExpired(
-        &mut self,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
-        _cordl_time: f64,
-        monitorIndex: i64,
-        timerIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "NotifyTimerExpired",
-                (control, _cordl_time, monitorIndex, timerIndex),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn NotifyControlStateChanged(
         &mut self,
         control: *mut crate::UnityEngine::InputSystem::InputControl,
@@ -58,6 +41,23 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
             .invoke(
                 "NotifyControlStateChanged",
                 (control, _cordl_time, eventPtr, monitorIndex),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn NotifyTimerExpired(
+        &mut self,
+        control: *mut crate::UnityEngine::InputSystem::InputControl,
+        _cordl_time: f64,
+        monitorIndex: i64,
+        timerIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "NotifyTimerExpired",
+                (control, _cordl_time, monitorIndex, timerIndex),
             )?;
         Ok(__cordl_ret)
     }

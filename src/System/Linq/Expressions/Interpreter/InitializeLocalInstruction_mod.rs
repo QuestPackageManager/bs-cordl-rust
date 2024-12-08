@@ -28,37 +28,44 @@ for crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction {
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction {
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+MutableBox"
+        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ImmutableValue"
     )]
-    pub type MutableBox = crate::GlobalNamespace::InitializeLocalInstruction_MutableBox;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Parameter"
-    )]
-    pub type Parameter = crate::GlobalNamespace::InitializeLocalInstruction_Parameter;
+    pub type ImmutableValue = crate::GlobalNamespace::InitializeLocalInstruction_ImmutableValue;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ImmutableRefBox"
     )]
     pub type ImmutableRefBox = crate::GlobalNamespace::InitializeLocalInstruction_ImmutableRefBox;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+MutableValue"
+        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ParameterBox"
     )]
-    pub type MutableValue = crate::GlobalNamespace::InitializeLocalInstruction_MutableValue;
+    pub type ParameterBox = crate::GlobalNamespace::InitializeLocalInstruction_ParameterBox;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
     )]
     pub type Reference = crate::GlobalNamespace::InitializeLocalInstruction_Reference;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ParameterBox"
+        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+MutableValue"
     )]
-    pub type ParameterBox = crate::GlobalNamespace::InitializeLocalInstruction_ParameterBox;
+    pub type MutableValue = crate::GlobalNamespace::InitializeLocalInstruction_MutableValue;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ImmutableValue"
+        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+MutableBox"
     )]
-    pub type ImmutableValue = crate::GlobalNamespace::InitializeLocalInstruction_ImmutableValue;
+    pub type MutableBox = crate::GlobalNamespace::InitializeLocalInstruction_MutableBox;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ImmutableBox"
     )]
     pub type ImmutableBox = crate::GlobalNamespace::InitializeLocalInstruction_ImmutableBox;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Parameter"
+    )]
+    pub type Parameter = crate::GlobalNamespace::InitializeLocalInstruction_Parameter;
+    pub fn New(index: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (index))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         index: i32,
@@ -69,13 +76,6 @@ impl crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (index))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(index: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (index))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction")]

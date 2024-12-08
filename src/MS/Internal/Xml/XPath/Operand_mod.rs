@@ -26,6 +26,22 @@ impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::Operand {
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Operand")]
 impl crate::MS::Internal::Xml::XPath::Operand {
+    pub fn New_String0(
+        val: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (val))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_f64_1(val: f64) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (val))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_String0(
         &mut self,
         val: *mut crate::System::String,
@@ -69,22 +85,6 @@ impl crate::MS::Internal::Xml::XPath::Operand {
         let __cordl_ret: crate::MS::Internal::Xml::XPath::AstNode_AstType = __cordl_object
             .invoke("get_Type", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_String0(
-        val: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (val))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_f64_1(val: f64) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (val))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Operand")]

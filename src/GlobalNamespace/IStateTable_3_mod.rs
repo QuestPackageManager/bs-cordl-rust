@@ -43,26 +43,10 @@ impl<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > IStateTable_3<TStateTable, TType, TState> {
-    pub fn GetSize(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetState(
+    pub fn ApplyDelta(
         &mut self,
-        _cordl_type: TType,
-        state: TState,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+        delta: quest_hook::libil2cpp::ByRefMut<TStateTable>,
+    ) -> quest_hook::libil2cpp::Result<TStateTable>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -74,8 +58,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetState", (_cordl_type, state))?;
+        let __cordl_ret: TStateTable = __cordl_object.invoke("ApplyDelta", (delta))?;
         Ok(__cordl_ret)
     }
     pub fn GetDelta(
@@ -96,6 +79,21 @@ impl<
         let __cordl_ret: TStateTable = __cordl_object.invoke("GetDelta", (stateTable))?;
         Ok(__cordl_ret)
     }
+    pub fn GetSize(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetSize", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetState(
         &mut self,
         _cordl_type: TType,
@@ -114,10 +112,11 @@ impl<
         let __cordl_ret: TState = __cordl_object.invoke("GetState", (_cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn ApplyDelta(
+    pub fn SetState(
         &mut self,
-        delta: quest_hook::libil2cpp::ByRefMut<TStateTable>,
-    ) -> quest_hook::libil2cpp::Result<TStateTable>
+        _cordl_type: TType,
+        state: TState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -129,7 +128,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: TStateTable = __cordl_object.invoke("ApplyDelta", (delta))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetState", (_cordl_type, state))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

@@ -25,21 +25,14 @@ impl crate::UnityEngine::ProBuilder::Vector3Mask {
     pub const X: u8 = 1u8;
     pub const Y: u8 = 2u8;
     pub const Z: u8 = 4u8;
-    pub fn ToString(
+    pub fn Equals_Object1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_x(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_x",
-            (),
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -54,57 +47,20 @@ impl crate::UnityEngine::ProBuilder::Vector3Mask {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Item(
-        &mut self,
-        i: i32,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Item",
-            (i, value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_y(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_y",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_active(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_active",
+            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Item(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Item",
-            (i),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_z(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_z",
+            "ToString",
             (),
         )?;
         Ok(__cordl_ret)
@@ -132,11 +88,55 @@ impl crate::UnityEngine::ProBuilder::Vector3Mask {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_Item(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (i),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_active(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
+            "get_active",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_x(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_x",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_y(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_y",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_z(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_z",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Item(
+        &mut self,
+        i: i32,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_Item",
+            (i, value),
         )?;
         Ok(__cordl_ret)
     }

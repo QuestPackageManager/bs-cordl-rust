@@ -27,6 +27,13 @@ for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache")]
 impl crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -36,13 +43,6 @@ impl crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache")]
@@ -87,10 +87,17 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_InputNodeUICache {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache")]
 impl crate::HoudiniEngineUnity::HEU_InputNodeUICache {
-    #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache")]
-    pub type HEU_InputAssetUICache = crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache;
     #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache")]
     pub type HEU_InputObjectUICache = crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache")]
+    pub type HEU_InputAssetUICache = crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -100,13 +107,6 @@ impl crate::HoudiniEngineUnity::HEU_InputNodeUICache {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache")]
@@ -148,6 +148,13 @@ for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache")]
 impl crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -157,13 +164,6 @@ impl crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache")]

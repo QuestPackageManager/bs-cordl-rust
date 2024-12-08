@@ -40,40 +40,6 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureRead
     feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsAuthenticatedSecureReadable"
 )]
 impl crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureReadable {
-    pub fn _ctor(
-        &mut self,
-        algorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        readable: *mut crate::Org::BouncyCastle::Cms::CmsReadable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (algorithm, readable))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CryptoObject(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_CryptoObject", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Algorithm(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier = __cordl_object
-            .invoke("get_Algorithm", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetReadable(
         &mut self,
         sKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
@@ -88,12 +54,46 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureRea
     pub fn New(
         algorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         readable: *mut crate::Org::BouncyCastle::Cms::CmsReadable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (algorithm, readable))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        algorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        readable: *mut crate::Org::BouncyCastle::Cms::CmsReadable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (algorithm, readable))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Algorithm(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier = __cordl_object
+            .invoke("get_Algorithm", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CryptoObject(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_CryptoObject", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -135,13 +135,26 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper")]
 impl crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
     #[cfg(
-        feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsEnvelopedSecureReadable"
-    )]
-    pub type CmsEnvelopedSecureReadable = crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadable;
-    #[cfg(
         feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsAuthenticatedSecureReadable"
     )]
     pub type CmsAuthenticatedSecureReadable = crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureReadable;
+    #[cfg(
+        feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsEnvelopedSecureReadable"
+    )]
+    pub type CmsEnvelopedSecureReadable = crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadable;
+    pub fn CreateAsymmetricCipher(
+        &mut self,
+        encryptionOid: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::IBufferedCipher,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IBufferedCipher = __cordl_object
+            .invoke("CreateAsymmetricCipher", (encryptionOid))?;
+        Ok(__cordl_ret)
+    }
     pub fn CreateWrapper(
         &mut self,
         encryptionOid: *mut crate::System::String,
@@ -153,14 +166,15 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
             .invoke("CreateWrapper", (encryptionOid))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn GetAsymmetricEncryptionAlgName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        encryptionAlgOid: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetAsymmetricEncryptionAlgName", (encryptionAlgOid))?;
         Ok(__cordl_ret)
     }
     pub fn GetKeySize(
@@ -184,36 +198,22 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
             .invoke("GetRfc3211WrapperName", (oid))?;
         Ok(__cordl_ret)
     }
-    pub fn GetAsymmetricEncryptionAlgName(
-        &mut self,
-        encryptionAlgOid: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetAsymmetricEncryptionAlgName", (encryptionAlgOid))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateAsymmetricCipher(
-        &mut self,
-        encryptionOid: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::IBufferedCipher,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IBufferedCipher = __cordl_object
-            .invoke("CreateAsymmetricCipher", (encryptionOid))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper")]
@@ -269,14 +269,26 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadabl
             .invoke("GetReadable", (sKey))?;
         Ok(__cordl_ret)
     }
-    pub fn get_CryptoObject(
+    pub fn New(
+        algorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        readable: *mut crate::Org::BouncyCastle::Cms::CmsReadable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, readable))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        algorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        readable: *mut crate::Org::BouncyCastle::Cms::CmsReadable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_CryptoObject", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (algorithm, readable))?;
         Ok(__cordl_ret)
     }
     pub fn get_Algorithm(
@@ -291,27 +303,15 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadabl
             .invoke("get_Algorithm", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn get_CryptoObject(
         &mut self,
-        algorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        readable: *mut crate::Org::BouncyCastle::Cms::CmsReadable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (algorithm, readable))?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_CryptoObject", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        algorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        readable: *mut crate::Org::BouncyCastle::Cms::CmsReadable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, readable))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsEnvelopedSecureReadable")]

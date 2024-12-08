@@ -23,12 +23,45 @@ for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+PrimitiveValue")]
 impl crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
-    pub fn get_type(
+    pub fn ConvertTo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::TypeCode> {
-        let __cordl_ret: crate::System::TypeCode = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        _cordl_type: crate::System::TypeCode,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_type",
+            "ConvertTo",
+            (_cordl_type),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object1(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_PrimitiveValue0(
+        &mut self,
+        other: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)
@@ -43,44 +76,24 @@ impl crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToSingle(
+    pub fn ToBoolean(
         &mut self,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToSingle",
+            "ToBoolean",
             (provider),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToObject(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToObject",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString_IFormatProvider1(
+    pub fn ToByte(
         &mut self,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
+            "ToByte",
             (provider),
         )?;
         Ok(__cordl_ret)
@@ -96,89 +109,24 @@ impl crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToSByte(
+    pub fn ToDateTime(
         &mut self,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<i8> {
-        let __cordl_ret: i8 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToSByte",
+            "ToDateTime",
             (provider),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToType(
-        &mut self,
-        conversionType: *mut crate::System::Type,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToType",
-            (conversionType, provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_valuePtr(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_valuePtr",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isEmpty",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConvertTo(
-        &mut self,
-        _cordl_type: crate::System::TypeCode,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ConvertTo",
-            (_cordl_type),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_PrimitiveValue0(
-        &mut self,
-        other: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToBoolean(
+    pub fn ToDecimal(
         &mut self,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToBoolean",
+            "ToDecimal",
             (provider),
         )?;
         Ok(__cordl_ret)
@@ -191,14 +139,6 @@ impl crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
             self,
             "ToDouble",
             (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -224,14 +164,79 @@ impl crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToByte(
+    pub fn ToInt64(
         &mut self,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_ret: u8 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToByte",
+            "ToInt64",
             (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToObject(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToObject",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToSByte(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<i8> {
+        let __cordl_ret: i8 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToSByte",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToSingle(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToSingle",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString_IFormatProvider1(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToType(
+        &mut self,
+        conversionType: *mut crate::System::Type,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToType",
+            (conversionType, provider),
         )?;
         Ok(__cordl_ret)
     }
@@ -290,94 +295,6 @@ impl crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_u8_2(
-        &mut self,
-        value: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i8_3(
-        &mut self,
-        value: i8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i16_4(
-        &mut self,
-        value: i16,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_u16_5(
-        &mut self,
-        value: u16,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_6(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_u32_7(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i64_8(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_u64_9(
-        &mut self,
-        value: u64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_f32_10(
         &mut self,
         value: f32,
@@ -400,36 +317,119 @@ impl crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToDateTime(
+    pub fn _ctor_i16_4(
         &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: i16,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToDateTime",
-            (provider),
+            ".ctor",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToDecimal(
+    pub fn _ctor_i32_6(
         &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
-        let __cordl_ret: crate::System::Decimal = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToDecimal",
-            (provider),
+            ".ctor",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToInt64(
+    pub fn _ctor_i64_8(
         &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToInt64",
-            (provider),
+            ".ctor",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i8_3(
+        &mut self,
+        value: i8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_u16_5(
+        &mut self,
+        value: u16,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_u32_7(
+        &mut self,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_u64_9(
+        &mut self,
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_u8_2(
+        &mut self,
+        value: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_isEmpty",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TypeCode> {
+        let __cordl_ret: crate::System::TypeCode = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_type",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_valuePtr(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_valuePtr",
+            (),
         )?;
         Ok(__cordl_ret)
     }

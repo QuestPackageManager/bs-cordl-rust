@@ -58,49 +58,6 @@ impl<
     TType,
     TState,
 > {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        a: TState,
-        timeA: i64,
-        b: TState,
-        timeB: i64,
-        _cordl_time: i64,
-    ) -> quest_hook::libil2cpp::Result<TState>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TState = __cordl_object
-            .invoke("Invoke", (a, timeA, b, timeB, _cordl_time))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         a: TState,
@@ -144,15 +101,58 @@ impl<
         let __cordl_ret: TState = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        a: TState,
+        timeA: i64,
+        b: TState,
+        timeB: i64,
+        _cordl_time: i64,
+    ) -> quest_hook::libil2cpp::Result<TState>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: TState = __cordl_object
+            .invoke("Invoke", (a, timeA, b, timeB, _cordl_time))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "StateBuffer_3+InterpolationDelegate")]
@@ -262,26 +262,6 @@ impl<
         let __cordl_ret: TState = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         a: TState,
@@ -305,12 +285,32 @@ impl<
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "StateBuffer_3+SmoothingDelegate")]
@@ -408,7 +408,7 @@ impl<
         TType,
         TState,
     >;
-    pub fn GetPreviousIndex(&mut self, offset: i32) -> quest_hook::libil2cpp::Result<i32>
+    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -420,7 +420,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetPreviousIndex", (offset))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Clear", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetLatestState(
@@ -457,6 +458,80 @@ impl<
         let __cordl_ret: i64 = __cordl_object.invoke("GetLatestTime", ())?;
         Ok(__cordl_ret)
     }
+    pub fn GetPreviousIndex(&mut self, offset: i32) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetPreviousIndex", (offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetState(
+        &mut self,
+        _cordl_type: TType,
+        _cordl_time: i64,
+    ) -> quest_hook::libil2cpp::Result<TState>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: TState = __cordl_object
+            .invoke("GetState", (_cordl_type, _cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InsertState(
+        &mut self,
+        state: quest_hook::libil2cpp::ByRefMut<TStateTable>,
+        _cordl_time: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InsertState", (state, _cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        _cordl_size: i32,
+        interpolator: *mut crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
+            TStateTable,
+            TType,
+            TState,
+        >,
+        smoother: *mut crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
+            TStateTable,
+            TType,
+            TState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_size, interpolator, smoother))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         _cordl_size: i32,
@@ -485,81 +560,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_size, interpolator, smoother))?;
         Ok(__cordl_ret)
-    }
-    pub fn InsertState(
-        &mut self,
-        state: quest_hook::libil2cpp::ByRefMut<TStateTable>,
-        _cordl_time: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InsertState", (state, _cordl_time))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetState(
-        &mut self,
-        _cordl_type: TType,
-        _cordl_time: i64,
-    ) -> quest_hook::libil2cpp::Result<TState>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TState = __cordl_object
-            .invoke("GetState", (_cordl_type, _cordl_time))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        _cordl_size: i32,
-        interpolator: *mut crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
-            TStateTable,
-            TType,
-            TState,
-        >,
-        smoother: *mut crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
-            TStateTable,
-            TType,
-            TState,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_size, interpolator, smoother))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "StateBuffer_3")]
@@ -652,6 +652,31 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
+    pub fn IEquatableByReference_StateBuffer_TStateTable_TType_TState__TimestampedStateTable__Equals(
+        &mut self,
+        other: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+                TStateTable,
+                TType,
+                TState,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IEquatableByReference<StateBuffer<TStateTable,TType,TState>.TimestampedStateTable>.Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_SyncStateId_i64_TStateTable0(
         &mut self,
         id: SyncStateId,
@@ -690,31 +715,6 @@ impl<
             self,
             ".ctor",
             (_cordl_time, state),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IEquatableByReference_StateBuffer_TStateTable_TType_TState__TimestampedStateTable__Equals(
-        &mut self,
-        other: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
-                TStateTable,
-                TType,
-                TState,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IEquatableByReference<StateBuffer<TStateTable,TType,TState>.TimestampedStateTable>.Equals",
-            (other),
         )?;
         Ok(__cordl_ret)
     }

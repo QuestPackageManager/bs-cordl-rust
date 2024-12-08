@@ -26,17 +26,24 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Pkcs::Pfx {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+Pfx")]
 impl crate::Org::BouncyCastle::Asn1::Pkcs::Pfx {
-    pub fn get_AuthSafe(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo = __cordl_object
-            .invoke("get_AuthSafe", ())?;
-        Ok(__cordl_ret)
+    pub fn New_Asn1Sequence0(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_ContentInfo_MacData1(
+        contentInfo: *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+        macData: *mut crate::Org::BouncyCastle::Asn1::Pkcs::MacData,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (contentInfo, macData))?;
+        Ok(__cordl_object)
     }
     pub fn ToAsn1Object(
         &mut self,
@@ -71,6 +78,18 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::Pfx {
             .invoke(".ctor", (contentInfo, macData))?;
         Ok(__cordl_ret)
     }
+    pub fn get_AuthSafe(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo = __cordl_object
+            .invoke("get_AuthSafe", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_MacData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -82,25 +101,6 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::Pfx {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Pkcs::MacData = __cordl_object
             .invoke("get_MacData", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_Asn1Sequence0(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_ContentInfo_MacData1(
-        contentInfo: *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
-        macData: *mut crate::Org::BouncyCastle::Asn1::Pkcs::MacData,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (contentInfo, macData))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+Pfx")]

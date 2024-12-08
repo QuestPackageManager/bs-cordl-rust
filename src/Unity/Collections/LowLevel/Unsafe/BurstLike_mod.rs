@@ -24,12 +24,12 @@ impl std::ops::DerefMut for crate::Unity::Collections::LowLevel::Unsafe::BurstLi
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike")]
 impl crate::Unity::Collections::LowLevel::Unsafe::BurstLike {
+    #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
+    pub type SharedStatic = crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic;
     #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
     pub type SharedStatic_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<
         T,
     >;
-    #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
-    pub type SharedStatic = crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic;
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike")]
 impl quest_hook::libil2cpp::ObjectType
@@ -108,20 +108,6 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
-    pub fn get_Data(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Data",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -134,6 +120,20 @@ impl<
             self,
             ".ctor",
             (buffer),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Data(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Data",
+            (),
         )?;
         Ok(__cordl_ret)
     }

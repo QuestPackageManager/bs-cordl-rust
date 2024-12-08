@@ -41,6 +41,23 @@ impl<
         let __cordl_ret: TResult = __cordl_object.invoke("GetResult", (token))?;
         Ok(__cordl_ret)
     }
+    pub fn GetStatus(
+        &mut self,
+        token: i16,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus,
+    >
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus = __cordl_object
+            .invoke("GetStatus", (token))?;
+        Ok(__cordl_ret)
+    }
     pub fn OnCompleted(
         &mut self,
         continuation: *mut crate::System::Action_1<*mut crate::System::Object>,
@@ -57,23 +74,6 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnCompleted", (continuation, state, token, flags))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetStatus(
-        &mut self,
-        token: i16,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus,
-    >
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus = __cordl_object
-            .invoke("GetStatus", (token))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

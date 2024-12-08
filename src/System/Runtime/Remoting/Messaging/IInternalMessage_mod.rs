@@ -26,27 +26,10 @@ for crate::System::Runtime::Remoting::Messaging::IInternalMessage {
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+IInternalMessage")]
 impl crate::System::Runtime::Remoting::Messaging::IInternalMessage {
-    pub fn set_Uri(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Uri", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_TargetIdentity(
-        &mut self,
-        value: *mut crate::System::Runtime::Remoting::Identity,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_TargetIdentity", (value))?;
-        Ok(__cordl_ret)
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
     }
     pub fn get_TargetIdentity(
         &mut self,
@@ -68,10 +51,27 @@ impl crate::System::Runtime::Remoting::Messaging::IInternalMessage {
             .invoke("get_Uri", ())?;
         Ok(__cordl_ret)
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
+    pub fn set_TargetIdentity(
+        &mut self,
+        value: *mut crate::System::Runtime::Remoting::Identity,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_TargetIdentity", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Uri(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Uri", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+IInternalMessage")]

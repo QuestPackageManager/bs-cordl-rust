@@ -42,25 +42,21 @@ for crate::System::Globalization::TimeSpanParse_StringParser {
 }
 #[cfg(feature = "System+Globalization+TimeSpanParse+StringParser")]
 impl crate::System::Globalization::TimeSpanParse_StringParser {
+    pub fn NextChar(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "NextChar",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn NextNonDigit(&mut self) -> quest_hook::libil2cpp::Result<char> {
         let __cordl_ret: char = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "NextNonDigit",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryParse(
-        &mut self,
-        input: crate::System::ReadOnlySpan_1<char>,
-        result: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "TryParse",
-            (input, result),
         )?;
         Ok(__cordl_ret)
     }
@@ -93,16 +89,6 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn NextChar(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "NextChar",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn SkipBlanks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -110,6 +96,20 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
             self,
             "SkipBlanks",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryParse(
+        &mut self,
+        input: crate::System::ReadOnlySpan_1<char>,
+        result: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "TryParse",
+            (input, result),
         )?;
         Ok(__cordl_ret)
     }
@@ -157,20 +157,20 @@ impl std::ops::DerefMut for crate::System::Globalization::TimeSpanParse {
 impl crate::System::Globalization::TimeSpanParse {
     #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
     pub type TimeSpanTokenizer = crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer;
-    #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
-    pub type TimeSpanRawInfo = crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo;
-    #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
-    pub type TimeSpanStandardStyles = crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles;
     #[cfg(feature = "System+Globalization+TimeSpanParse+TTT")]
     pub type TTT = crate::System::Globalization::TimeSpanParse_TTT;
-    #[cfg(feature = "System+Globalization+TimeSpanParse+ParseFailureKind")]
-    pub type ParseFailureKind = crate::System::Globalization::TimeSpanParse_ParseFailureKind;
-    #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanResult")]
-    pub type TimeSpanResult = crate::System::Globalization::TimeSpanParse_TimeSpanResult;
     #[cfg(feature = "System+Globalization+TimeSpanParse+StringParser")]
     pub type StringParser = crate::System::Globalization::TimeSpanParse_StringParser;
     #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanToken")]
     pub type TimeSpanToken = crate::System::Globalization::TimeSpanParse_TimeSpanToken;
+    #[cfg(feature = "System+Globalization+TimeSpanParse+ParseFailureKind")]
+    pub type ParseFailureKind = crate::System::Globalization::TimeSpanParse_ParseFailureKind;
+    #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
+    pub type TimeSpanRawInfo = crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo;
+    #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanResult")]
+    pub type TimeSpanResult = crate::System::Globalization::TimeSpanParse_TimeSpanResult;
+    #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
+    pub type TimeSpanStandardStyles = crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles;
 }
 #[cfg(feature = "System+Globalization+TimeSpanParse")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpanParse {
@@ -226,26 +226,17 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
 }
 #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
 impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
-    pub fn get_NegativeInvariant(
+    pub fn AddNum(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-    > {
-        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        num: crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+        result: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_NegativeInvariant",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init(
-        &mut self,
-        dtfi: *mut crate::System::Globalization::DateTimeFormatInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Init",
-            (dtfi),
+            "AddNum",
+            (num, result),
         )?;
         Ok(__cordl_ret)
     }
@@ -263,93 +254,6 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_PositiveInvariant(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-    > {
-        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_PositiveInvariant",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn FullHMSFMatch(
-        &mut self,
-        pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "FullHMSFMatch",
-            (pattern),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddNum(
-        &mut self,
-        num: crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-        result: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AddNum",
-            (num, result),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn FullDMatch(
-        &mut self,
-        pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "FullDMatch",
-            (pattern),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_PositiveLocalized(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-    > {
-        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_PositiveLocalized",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn FullHMMatch(
-        &mut self,
-        pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "FullHMMatch",
-            (pattern),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessToken(
-        &mut self,
-        tok: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-        >,
-        result: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ProcessToken",
-            (tok, result),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn FullAppCompatMatch(
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
@@ -357,40 +261,6 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "FullAppCompatMatch",
-            (pattern),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_NegativeLocalized(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-    > {
-        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_NegativeLocalized",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn FullHMSMatch(
-        &mut self,
-        pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "FullHMSMatch",
-            (pattern),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn FullMatch(
-        &mut self,
-        pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "FullMatch",
             (pattern),
         )?;
         Ok(__cordl_ret)
@@ -417,6 +287,72 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn FullDMatch(
+        &mut self,
+        pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "FullDMatch",
+            (pattern),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn FullHMMatch(
+        &mut self,
+        pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "FullHMMatch",
+            (pattern),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn FullHMSFMatch(
+        &mut self,
+        pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "FullHMSFMatch",
+            (pattern),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn FullHMSMatch(
+        &mut self,
+        pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "FullHMSMatch",
+            (pattern),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn FullMatch(
+        &mut self,
+        pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "FullMatch",
+            (pattern),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        dtfi: *mut crate::System::Globalization::DateTimeFormatInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Init",
+            (dtfi),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn PartialAppCompatMatch(
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
@@ -425,6 +361,70 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
             self,
             "PartialAppCompatMatch",
             (pattern),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessToken(
+        &mut self,
+        tok: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+        >,
+        result: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ProcessToken",
+            (tok, result),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NegativeInvariant(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
+    > {
+        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_NegativeInvariant",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NegativeLocalized(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
+    > {
+        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_NegativeLocalized",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_PositiveInvariant(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
+    > {
+        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_PositiveInvariant",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_PositiveLocalized(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
+    > {
+        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_PositiveLocalized",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -544,6 +544,20 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_TimeSpanParse_TTT_i32_i32_ReadOnlySpan_1_3(
+        &mut self,
+        _cordl_type: crate::System::Globalization::TimeSpanParse_TTT,
+        number: i32,
+        leadingZeroes: i32,
+        separator: crate::System::ReadOnlySpan_1<char>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (_cordl_type, number, leadingZeroes, separator),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_i32_1(
         &mut self,
         number: i32,
@@ -564,20 +578,6 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
             self,
             ".ctor",
             (number, leadingZeroes),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_TimeSpanParse_TTT_i32_i32_ReadOnlySpan_1_3(
-        &mut self,
-        _cordl_type: crate::System::Globalization::TimeSpanParse_TTT,
-        number: i32,
-        leadingZeroes: i32,
-        separator: crate::System::ReadOnlySpan_1<char>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (_cordl_type, number, leadingZeroes, separator),
         )?;
         Ok(__cordl_ret)
     }
@@ -608,6 +608,16 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
 }
 #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
 impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
+    pub fn BackOne(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "BackOne",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn GetNextToken(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -616,14 +626,6 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
         let __cordl_ret: crate::System::Globalization::TimeSpanParse_TimeSpanToken = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetNextToken",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_EOL(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_EOL",
             (),
         )?;
         Ok(__cordl_ret)
@@ -651,12 +653,10 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn BackOne(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_EOL(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "BackOne",
+            "get_EOL",
             (),
         )?;
         Ok(__cordl_ret)

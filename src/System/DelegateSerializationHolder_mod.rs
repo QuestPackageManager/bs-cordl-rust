@@ -44,6 +44,16 @@ impl crate::System::DelegateSerializationHolder_DelegateEntry {
             .invoke("DeserializeDelegate", (info, index))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        del: *mut crate::System::Delegate,
+        targetLabel: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (del, targetLabel))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         del: *mut crate::System::Delegate,
@@ -55,16 +65,6 @@ impl crate::System::DelegateSerializationHolder_DelegateEntry {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (del, targetLabel))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        del: *mut crate::System::Delegate,
-        targetLabel: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (del, targetLabel))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+DelegateSerializationHolder+DelegateEntry")]
@@ -129,6 +129,16 @@ impl crate::System::DelegateSerializationHolder {
             .invoke("GetRealObject", (context))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        ctx: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (info, ctx))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
@@ -140,16 +150,6 @@ impl crate::System::DelegateSerializationHolder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (info, ctx))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        ctx: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (info, ctx))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+DelegateSerializationHolder")]

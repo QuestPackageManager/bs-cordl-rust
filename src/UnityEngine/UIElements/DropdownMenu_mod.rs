@@ -30,63 +30,19 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::DropdownMenu {
 impl crate::UnityEngine::UIElements::DropdownMenu {
     #[cfg(feature = "UnityEngine+UIElements+DropdownMenu+__c__DisplayClass4_0")]
     pub type __c__DisplayClass4_0 = crate::UnityEngine::UIElements::DropdownMenu___c__DisplayClass4_0;
-    pub fn PrepareForDisplay(
+    pub fn AppendAction_DropdownMenuAction_Status1(
         &mut self,
-        e: *mut crate::UnityEngine::UIElements::EventBase,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PrepareForDisplay", (e))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AppendSeparator(
-        &mut self,
-        subMenuPath: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AppendSeparator", (subMenuPath))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MenuItems(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::DropdownMenuItem,
+        actionName: *mut crate::System::String,
+        action: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::DropdownMenuAction,
         >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::DropdownMenuItem,
-        > = __cordl_object.invoke("MenuItems", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InsertSeparator(
-        &mut self,
-        subMenuPath: *mut crate::System::String,
-        atIndex: i32,
+        status: crate::UnityEngine::UIElements::DropdownMenuAction_Status,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InsertSeparator", (subMenuPath, atIndex))?;
+            .invoke("AppendAction", (actionName, action, status))?;
         Ok(__cordl_ret)
     }
     pub fn AppendAction_Func_2_Object0(
@@ -111,27 +67,71 @@ impl crate::UnityEngine::UIElements::DropdownMenu {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn AppendAction_DropdownMenuAction_Status1(
+    pub fn AppendSeparator(
         &mut self,
-        actionName: *mut crate::System::String,
-        action: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::UIElements::DropdownMenuAction,
-        >,
-        status: crate::UnityEngine::UIElements::DropdownMenuAction_Status,
+        subMenuPath: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AppendAction", (actionName, action, status))?;
+            .invoke("AppendSeparator", (subMenuPath))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn InsertSeparator(
+        &mut self,
+        subMenuPath: *mut crate::System::String,
+        atIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InsertSeparator", (subMenuPath, atIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MenuItems(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::DropdownMenuItem,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::DropdownMenuItem,
+        > = __cordl_object.invoke("MenuItems", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn PrepareForDisplay(
+        &mut self,
+        e: *mut crate::UnityEngine::UIElements::EventBase,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PrepareForDisplay", (e))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownMenu")]

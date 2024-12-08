@@ -36,13 +36,6 @@ impl StandaloneMonobehavior {
     pub type _DispatchAsync_d__21 = crate::GlobalNamespace::StandaloneMonobehavior__DispatchAsync_d__21;
     #[cfg(feature = "StandaloneMonobehavior+_RunAsyncCoroutine_d__25")]
     pub type _RunAsyncCoroutine_d__25 = crate::GlobalNamespace::StandaloneMonobehavior__RunAsyncCoroutine_d__25;
-    pub fn get_deltaTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_deltaTime", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -51,77 +44,6 @@ impl StandaloneMonobehavior {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RunAsyncCoroutine(
-        &mut self,
-        tcs: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("RunAsyncCoroutine", (tcs, cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isReady(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isReady", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_objectLifeTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_objectLifeTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_lastFrameTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_lastFrameTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetLastFrameTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetLastFrameTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnApplicationPause(
-        &mut self,
-        pauseStatus: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnApplicationPause", (pauseStatus))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Stop(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Stop", ())?;
         Ok(__cordl_ret)
     }
     pub fn Dispatch(
@@ -146,14 +68,39 @@ impl StandaloneMonobehavior {
             .invoke("DispatchAsync", (action))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn GetLastFrameTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("GetLastFrameTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnApplicationPause(
+        &mut self,
+        pauseStatus: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnApplicationPause", (pauseStatus))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn RunAsync(
@@ -168,21 +115,36 @@ impl StandaloneMonobehavior {
             .invoke("RunAsync", (runner, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn get_frameCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn RunAsyncCoroutine(
+        &mut self,
+        tcs: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_frameCount", ())?;
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("RunAsyncCoroutine", (tcs, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn OnDestroy(
+    pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
+            .invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Stop(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Stop", ())?;
         Ok(__cordl_ret)
     }
     pub fn Update(
@@ -195,12 +157,50 @@ impl StandaloneMonobehavior {
             .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_deltaTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_deltaTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_frameCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_frameCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isReady(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isReady", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_lastFrameTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_lastFrameTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_objectLifeTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_objectLifeTime", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "StandaloneMonobehavior")]

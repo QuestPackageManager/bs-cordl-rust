@@ -25,6 +25,18 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Parameters::CcmPar
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+CcmParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::CcmParameters {
+    pub fn New(
+        key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        macSize: i32,
+        nonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        associatedText: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (key, macSize, nonce, associatedText))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
@@ -38,18 +50,6 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::CcmParameters {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (key, macSize, nonce, associatedText))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-        macSize: i32,
-        nonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        associatedText: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (key, macSize, nonce, associatedText))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+CcmParameters")]

@@ -24,6 +24,17 @@ impl std::ops::DerefMut for crate::BGNet::Core::ITaskUtility {
 }
 #[cfg(feature = "BGNet+Core+ITaskUtility")]
 impl crate::BGNet::Core::ITaskUtility {
+    pub fn CancellationTokenWithDelay(
+        &mut self,
+        timeSpan: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::CancellationToken> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Threading::CancellationToken = __cordl_object
+            .invoke("CancellationTokenWithDelay", (timeSpan))?;
+        Ok(__cordl_ret)
+    }
     pub fn ContinueWith<T1, T2>(
         &mut self,
         task: *mut crate::System::Threading::Tasks::Task_1<T1>,
@@ -43,6 +54,18 @@ impl crate::BGNet::Core::ITaskUtility {
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<T2> = __cordl_object
             .invoke("ContinueWith", (task, continuation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Delay(
+        &mut self,
+        timeSpan: crate::System::TimeSpan,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("Delay", (timeSpan, cancellationToken))?;
         Ok(__cordl_ret)
     }
     pub fn Run_Action0(
@@ -108,29 +131,6 @@ impl crate::BGNet::Core::ITaskUtility {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("Wait", (task))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CancellationTokenWithDelay(
-        &mut self,
-        timeSpan: crate::System::TimeSpan,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::CancellationToken> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Threading::CancellationToken = __cordl_object
-            .invoke("CancellationTokenWithDelay", (timeSpan))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Delay(
-        &mut self,
-        timeSpan: crate::System::TimeSpan,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("Delay", (timeSpan, cancellationToken))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

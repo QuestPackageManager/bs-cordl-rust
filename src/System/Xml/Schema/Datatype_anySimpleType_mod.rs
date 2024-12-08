@@ -24,28 +24,15 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_anySimpleType {
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_anySimpleType")]
 impl crate::System::Xml::Schema::Datatype_anySimpleType {
-    pub fn get_ListValueType(
+    pub fn Compare(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        value1: *mut crate::System::Object,
+        value2: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_ListValueType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryParseValue(
-        &mut self,
-        s: *mut crate::System::String,
-        nameTable: *mut crate::System::Xml::XmlNameTable,
-        nsmgr: *mut crate::System::Xml::IXmlNamespaceResolver,
-        typedValue: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Exception = __cordl_object
-            .invoke("TryParseValue", (s, nameTable, nsmgr, typedValue))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("Compare", (value1, value2))?;
         Ok(__cordl_ret)
     }
     pub fn CreateValueConverter(
@@ -61,65 +48,25 @@ impl crate::System::Xml::Schema::Datatype_anySimpleType {
             .invoke("CreateValueConverter", (schemaType))?;
         Ok(__cordl_ret)
     }
-    pub fn get_TokenizedType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlTokenizedType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::XmlTokenizedType = __cordl_object
-            .invoke("get_TokenizedType", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn get_ValidRestrictionFlags(
+    pub fn TryParseValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::RestrictionFlags> {
+        s: *mut crate::System::String,
+        nameTable: *mut crate::System::Xml::XmlNameTable,
+        nsmgr: *mut crate::System::Xml::IXmlNamespaceResolver,
+        typedValue: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Xml::Schema::RestrictionFlags = __cordl_object
-            .invoke("get_ValidRestrictionFlags", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_FacetsChecker(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::FacetsChecker> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::FacetsChecker = __cordl_object
-            .invoke("get_FacetsChecker", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ValueType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_ValueType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_BuiltInWhitespaceFacet(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::XmlSchemaWhiteSpace> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::Schema::XmlSchemaWhiteSpace = __cordl_object
-            .invoke("get_BuiltInWhitespaceFacet", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Compare(
-        &mut self,
-        value1: *mut crate::System::Object,
-        value2: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Compare", (value1, value2))?;
+        let __cordl_ret: *mut crate::System::Exception = __cordl_object
+            .invoke("TryParseValue", (s, nameTable, nsmgr, typedValue))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -132,6 +79,46 @@ impl crate::System::Xml::Schema::Datatype_anySimpleType {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_BuiltInWhitespaceFacet(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::XmlSchemaWhiteSpace> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::Schema::XmlSchemaWhiteSpace = __cordl_object
+            .invoke("get_BuiltInWhitespaceFacet", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_FacetsChecker(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::FacetsChecker> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::FacetsChecker = __cordl_object
+            .invoke("get_FacetsChecker", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ListValueType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_ListValueType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TokenizedType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlTokenizedType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::XmlTokenizedType = __cordl_object
+            .invoke("get_TokenizedType", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_TypeCode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::XmlTypeCode> {
@@ -142,12 +129,25 @@ impl crate::System::Xml::Schema::Datatype_anySimpleType {
             .invoke("get_TypeCode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_ValidRestrictionFlags(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::RestrictionFlags> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::Schema::RestrictionFlags = __cordl_object
+            .invoke("get_ValidRestrictionFlags", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ValueType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_ValueType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_anySimpleType")]

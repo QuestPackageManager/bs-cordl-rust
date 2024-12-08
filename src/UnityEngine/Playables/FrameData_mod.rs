@@ -62,32 +62,21 @@ impl crate::UnityEngine::Playables::FrameData {
     pub type EvaluationType = crate::UnityEngine::Playables::FrameData_EvaluationType;
     #[cfg(feature = "UnityEngine+Playables+FrameData+Flags")]
     pub type Flags = crate::UnityEngine::Playables::FrameData_Flags;
-    pub fn get_evaluationType(
+    pub fn HasFlags(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Playables::FrameData_EvaluationType,
-    > {
-        let __cordl_ret: crate::UnityEngine::Playables::FrameData_EvaluationType = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_evaluationType",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_seekOccurred(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        flag: crate::UnityEngine::Playables::FrameData_Flags,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_seekOccurred",
-            (),
+            "HasFlags",
+            (flag),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_output(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableOutput> {
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_deltaTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_output",
+            "get_deltaTime",
             (),
         )?;
         Ok(__cordl_ret)
@@ -102,14 +91,41 @@ impl crate::UnityEngine::Playables::FrameData {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn HasFlags(
+    pub fn get_effectiveSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_effectiveSpeed",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_evaluationType(
         &mut self,
-        flag: crate::UnityEngine::Playables::FrameData_Flags,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::FrameData_EvaluationType,
+    > {
+        let __cordl_ret: crate::UnityEngine::Playables::FrameData_EvaluationType = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_evaluationType",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_output(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableOutput> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_output",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_seekOccurred(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "HasFlags",
-            (flag),
+            "get_seekOccurred",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -121,26 +137,10 @@ impl crate::UnityEngine::Playables::FrameData {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_effectiveSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_effectiveSpeed",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_timeLooped(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_timeLooped",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_deltaTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_deltaTime",
             (),
         )?;
         Ok(__cordl_ret)

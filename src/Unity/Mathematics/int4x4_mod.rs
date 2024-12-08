@@ -24,15 +24,26 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Mathematics::i
 }
 #[cfg(feature = "Unity+Mathematics+int4x4")]
 impl crate::Unity::Mathematics::int4x4 {
-    pub fn get_Item(
+    pub fn Equals_Object1(
         &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::int4>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Mathematics::int4,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Item", (index))?;
+        o: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (o),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_int4x4_0(
+        &mut self,
+        rhs: crate::Unity::Mathematics::int4x4,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (rhs),
+        )?;
         Ok(__cordl_ret)
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -43,17 +54,102 @@ impl crate::Unity::Mathematics::int4x4 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_int4_int4_int4_int4_0(
+    pub fn ToString_0(
         &mut self,
-        c0: crate::Unity::Mathematics::int4,
-        c1: crate::Unity::Mathematics::int4,
-        c2: crate::Unity::Mathematics::int4,
-        c3: crate::Unity::Mathematics::int4,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString_String_IFormatProvider1(
+        &mut self,
+        format: *mut crate::System::String,
+        formatProvider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (format, formatProvider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor__cordl_bool3(
+        &mut self,
+        v: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
-            (c0, c1, c2, c3),
+            (v),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_bool4x4_4(
+        &mut self,
+        v: crate::Unity::Mathematics::bool4x4,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (v),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_double4x4_10(
+        &mut self,
+        v: crate::Unity::Mathematics::double4x4,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (v),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_f32_7(
+        &mut self,
+        v: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (v),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_f64_9(
+        &mut self,
+        v: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (v),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_float4x4_8(
+        &mut self,
+        v: crate::Unity::Mathematics::float4x4,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (v),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_2(
+        &mut self,
+        v: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (v),
         )?;
         Ok(__cordl_ret)
     }
@@ -100,36 +196,17 @@ impl crate::Unity::Mathematics::int4x4 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_2(
+    pub fn _ctor_int4_int4_int4_int4_0(
         &mut self,
-        v: i32,
+        c0: crate::Unity::Mathematics::int4,
+        c1: crate::Unity::Mathematics::int4,
+        c2: crate::Unity::Mathematics::int4,
+        c3: crate::Unity::Mathematics::int4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
-            (v),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor__cordl_bool3(
-        &mut self,
-        v: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_bool4x4_4(
-        &mut self,
-        v: crate::Unity::Mathematics::bool4x4,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
+            (c0, c1, c2, c3),
         )?;
         Ok(__cordl_ret)
     }
@@ -155,92 +232,15 @@ impl crate::Unity::Mathematics::int4x4 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_f32_7(
+    pub fn get_Item(
         &mut self,
-        v: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_float4x4_8(
-        &mut self,
-        v: crate::Unity::Mathematics::float4x4,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_f64_9(
-        &mut self,
-        v: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_double4x4_10(
-        &mut self,
-        v: crate::Unity::Mathematics::double4x4,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString_String_IFormatProvider1(
-        &mut self,
-        format: *mut crate::System::String,
-        formatProvider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (format, formatProvider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_int4x4_0(
-        &mut self,
-        rhs: crate::Unity::Mathematics::int4x4,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (rhs),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        o: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (o),
-        )?;
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::int4>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Mathematics::int4,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Item", (index))?;
         Ok(__cordl_ret)
     }
 }

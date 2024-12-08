@@ -32,56 +32,101 @@ impl crate::UnityEngine::Bounds {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_max(
+    pub fn Contains(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        point: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_max",
-            (),
+            "Contains",
+            (point),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_size(
+    pub fn Encapsulate(
         &mut self,
-        value: crate::UnityEngine::Vector3,
+        point: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_size",
-            (value),
+            "Encapsulate",
+            (point),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn Equals_Bounds1(
         &mut self,
-        center: crate::UnityEngine::Vector3,
-        _cordl_size: crate::UnityEngine::Vector3,
+        other: crate::UnityEngine::Bounds,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object0(
+        &mut self,
+        other: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Expand(
+        &mut self,
+        amount: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (center, _cordl_size),
+            "Expand",
+            (amount),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_size(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_size",
+            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_extents(
+    pub fn IntersectRay(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        ray: crate::UnityEngine::Ray,
+        distance: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_extents",
-            (),
+            "IntersectRay",
+            (ray, distance),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Intersects(
+        &mut self,
+        bounds: crate::UnityEngine::Bounds,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Intersects",
+            (bounds),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetMinMax(
+        &mut self,
+        min: crate::UnityEngine::Vector3,
+        max: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetMinMax",
+            (min, max),
         )?;
         Ok(__cordl_ret)
     }
@@ -107,38 +152,76 @@ impl crate::UnityEngine::Bounds {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Contains(
+    pub fn _ctor(
         &mut self,
-        point: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Contains",
-            (point),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetMinMax(
-        &mut self,
-        min: crate::UnityEngine::Vector3,
-        max: crate::UnityEngine::Vector3,
+        center: crate::UnityEngine::Vector3,
+        _cordl_size: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetMinMax",
-            (min, max),
+            ".ctor",
+            (center, _cordl_size),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn IntersectRay(
+    pub fn get_center(
         &mut self,
-        ray: crate::UnityEngine::Ray,
-        distance: quest_hook::libil2cpp::ByRefMut<f32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "IntersectRay",
-            (ray, distance),
+            "get_center",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_extents(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_extents",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_max(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_max",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_min(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_min",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_size(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_size",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_center(
+        &mut self,
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_center",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -153,96 +236,13 @@ impl crate::UnityEngine::Bounds {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Intersects(
-        &mut self,
-        bounds: crate::UnityEngine::Bounds,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Intersects",
-            (bounds),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_min(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_min",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Encapsulate(
-        &mut self,
-        point: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Encapsulate",
-            (point),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_center(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_center",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object0(
-        &mut self,
-        other: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Bounds1(
-        &mut self,
-        other: crate::UnityEngine::Bounds,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Expand(
-        &mut self,
-        amount: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Expand",
-            (amount),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_center(
+    pub fn set_size(
         &mut self,
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_center",
+            "set_size",
             (value),
         )?;
         Ok(__cordl_ret)

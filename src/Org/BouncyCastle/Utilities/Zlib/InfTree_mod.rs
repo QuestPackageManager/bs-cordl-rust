@@ -43,6 +43,13 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
     pub const Z_VERSION_ERROR: i32 = -6i32;
     pub const fixed_bd: i32 = 5i32;
     pub const fixed_bl: i32 = 9i32;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -51,36 +58,6 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn inflate_trees_dynamic(
-        &mut self,
-        nl: i32,
-        nd: i32,
-        c: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        bl: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        bd: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        tl: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        td: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        hp: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        z: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("inflate_trees_dynamic", (nl, nd, c, bl, bd, tl, td, hp, z))?;
-        Ok(__cordl_ret)
-    }
-    pub fn initWorkArea(
-        &mut self,
-        vsize: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("initWorkArea", (vsize))?;
         Ok(__cordl_ret)
     }
     pub fn huft_build(
@@ -119,12 +96,35 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
             .invoke("inflate_trees_bits", (c, bb, tb, hp, z))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn inflate_trees_dynamic(
+        &mut self,
+        nl: i32,
+        nd: i32,
+        c: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        bl: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        bd: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        tl: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        td: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        hp: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        z: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("inflate_trees_dynamic", (nl, nd, c, bl, bd, tl, td, hp, z))?;
+        Ok(__cordl_ret)
+    }
+    pub fn initWorkArea(
+        &mut self,
+        vsize: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("initWorkArea", (vsize))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+InfTree")]

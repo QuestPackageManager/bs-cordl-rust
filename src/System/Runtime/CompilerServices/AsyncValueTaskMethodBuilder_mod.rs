@@ -43,14 +43,14 @@ impl crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetStateMachine(
+    pub fn SetException(
         &mut self,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+        exception: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetStateMachine",
-            (stateMachine),
+            "SetException",
+            (exception),
         )?;
         Ok(__cordl_ret)
     }
@@ -64,24 +64,14 @@ impl crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetException(
+    pub fn SetStateMachine(
         &mut self,
-        exception: *mut crate::System::Exception,
+        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetException",
-            (exception),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Task(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
-        let __cordl_ret: crate::System::Threading::Tasks::ValueTask = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Task",
-            (),
+            "SetStateMachine",
+            (stateMachine),
         )?;
         Ok(__cordl_ret)
     }
@@ -97,6 +87,16 @@ impl crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder {
             self,
             "Start",
             (stateMachine),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Task(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
+        let __cordl_ret: crate::System::Threading::Tasks::ValueTask = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Task",
+            (),
         )?;
         Ok(__cordl_ret)
     }

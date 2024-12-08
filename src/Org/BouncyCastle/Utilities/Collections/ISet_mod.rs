@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Utilities::Collections::IS
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+ISet")]
 impl crate::Org::BouncyCastle::Utilities::Collections::ISet {
-    pub fn Remove(
+    pub fn Add(
         &mut self,
         o: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -32,7 +32,7 @@ impl crate::Org::BouncyCastle::Utilities::Collections::ISet {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Remove", (o))?;
+            .invoke("Add", (o))?;
         Ok(__cordl_ret)
     }
     pub fn AddAll(
@@ -46,6 +46,16 @@ impl crate::Org::BouncyCastle::Utilities::Collections::ISet {
             .invoke("AddAll", (e))?;
         Ok(__cordl_ret)
     }
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Contains(
         &mut self,
         o: *mut crate::System::Object,
@@ -54,6 +64,17 @@ impl crate::Org::BouncyCastle::Utilities::Collections::ISet {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Contains", (o))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Remove(
+        &mut self,
+        o: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Remove", (o))?;
         Ok(__cordl_ret)
     }
     pub fn RemoveAll(
@@ -67,15 +88,16 @@ impl crate::Org::BouncyCastle::Utilities::Collections::ISet {
             .invoke("RemoveAll", (e))?;
         Ok(__cordl_ret)
     }
-    pub fn Add(
-        &mut self,
-        o: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (o))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsEmpty", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_IsFixedSize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -85,34 +107,12 @@ impl crate::Org::BouncyCastle::Utilities::Collections::ISet {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsFixedSize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsEmpty", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsReadOnly", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+ISet")]

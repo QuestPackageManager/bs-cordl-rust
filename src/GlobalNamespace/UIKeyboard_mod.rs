@@ -44,48 +44,51 @@ impl UIKeyboard {
             .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn add_textKeyWasPressedEvent(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _Awake_b__21_0(
         &mut self,
-        value: *mut crate::System::Action_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_textKeyWasPressedEvent", (value))?;
+            .invoke("<Awake>b__21_0", ())?;
         Ok(__cordl_ret)
     }
-    pub fn add_okButtonWasPressedEvent(
+    pub fn _Awake_b__21_1(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_okButtonWasPressedEvent", (value))?;
+            .invoke("<Awake>b__21_1", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_hideCancelButton(
+    pub fn _Awake_b__21_2(
         &mut self,
-        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_hideCancelButton", (value))?;
+            .invoke("<Awake>b__21_2", ())?;
         Ok(__cordl_ret)
     }
-    pub fn add_deleteButtonWasPressedEvent(
+    pub fn _Awake_b__21_3(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_deleteButtonWasPressedEvent", (value))?;
+            .invoke("<Awake>b__21_3", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -96,28 +99,6 @@ impl UIKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_deleteButtonWasPressedEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_deleteButtonWasPressedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_enableOkButtonInteractivity(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_enableOkButtonInteractivity", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_cancelButtonWasPressedEvent(
@@ -131,34 +112,59 @@ impl UIKeyboard {
             .invoke("add_cancelButtonWasPressedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _Awake_b__21_0(
+    pub fn add_deleteButtonWasPressedEvent(
         &mut self,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__21_0", ())?;
+            .invoke("add_deleteButtonWasPressedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _Awake_b__21_3(
+    pub fn add_okButtonWasPressedEvent(
         &mut self,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__21_3", ())?;
+            .invoke("add_okButtonWasPressedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _Awake_b__21_1(
+    pub fn add_textKeyWasPressedEvent(
         &mut self,
+        value: *mut crate::System::Action_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__21_1", ())?;
+            .invoke("add_textKeyWasPressedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_cancelButtonWasPressedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_cancelButtonWasPressedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_deleteButtonWasPressedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_deleteButtonWasPressedEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn remove_okButtonWasPressedEvent(
@@ -183,33 +189,27 @@ impl UIKeyboard {
             .invoke("remove_textKeyWasPressedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _Awake_b__21_2(
+    pub fn set_enableOkButtonInteractivity(
         &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__21_2", ())?;
+            .invoke("set_enableOkButtonInteractivity", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_cancelButtonWasPressedEvent(
+    pub fn set_hideCancelButton(
         &mut self,
-        value: *mut crate::System::Action,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_cancelButtonWasPressedEvent", (value))?;
+            .invoke("set_hideCancelButton", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UIKeyboard")]

@@ -23,25 +23,6 @@ for crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemIdentifier")]
 impl crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
-    pub fn _ctor(
-        &mut self,
-        avatarSystemTypeIdentifier: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (avatarSystemTypeIdentifier),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_AvatarSystemIdentifier0(
         &mut self,
         other: crate::BeatSaber::AvatarCore::AvatarSystemIdentifier,
@@ -61,6 +42,25 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
             self,
             "Equals",
             (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        avatarSystemTypeIdentifier: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (avatarSystemTypeIdentifier),
         )?;
         Ok(__cordl_ret)
     }

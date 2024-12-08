@@ -27,6 +27,26 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Utilities::IO::TeeOutputSt
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+TeeOutputStream")]
 impl crate::Org::BouncyCastle::Utilities::IO::TeeOutputStream {
+    pub fn Close(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Close", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        output: *mut crate::System::IO::Stream,
+        tee: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (output, tee))?;
+        Ok(__cordl_object)
+    }
     pub fn Write(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -40,28 +60,6 @@ impl crate::Org::BouncyCastle::Utilities::IO::TeeOutputStream {
             .invoke("Write", (buffer, offset, count))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        output: *mut crate::System::IO::Stream,
-        tee: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (output, tee))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Close(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn WriteByte(
         &mut self,
         b: u8,
@@ -73,15 +71,17 @@ impl crate::Org::BouncyCastle::Utilities::IO::TeeOutputStream {
             .invoke("WriteByte", (b))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         output: *mut crate::System::IO::Stream,
         tee: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (output, tee))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (output, tee))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+TeeOutputStream")]

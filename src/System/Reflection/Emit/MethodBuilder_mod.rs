@@ -34,6 +34,45 @@ impl crate::System::Reflection::Emit::MethodBuilder {
             .invoke("GetBaseDefinition", ())?;
         Ok(__cordl_ret)
     }
+    pub fn GetCustomAttributes_Type__cordl_bool1(
+        &mut self,
+        attributeType: *mut crate::System::Type,
+        inherit: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Object,
+        > = __cordl_object.invoke("GetCustomAttributes", (attributeType, inherit))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetCustomAttributes__cordl_bool0(
+        &mut self,
+        inherit: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Object,
+        > = __cordl_object.invoke("GetCustomAttributes", (inherit))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetMethodImplementationFlags(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Reflection::MethodImplAttributes> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Reflection::MethodImplAttributes = __cordl_object
+            .invoke("GetMethodImplementationFlags", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -47,16 +86,6 @@ impl crate::System::Reflection::Emit::MethodBuilder {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Reflection::ParameterInfo,
         > = __cordl_object.invoke("GetParameters", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MethodHandle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::RuntimeMethodHandle> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::RuntimeMethodHandle = __cordl_object
-            .invoke("get_MethodHandle", ())?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -74,24 +103,16 @@ impl crate::System::Reflection::Emit::MethodBuilder {
             .invoke("Invoke", (obj, invokeAttr, binder, parameters, culture))?;
         Ok(__cordl_ret)
     }
-    pub fn GetMethodImplementationFlags(
+    pub fn IsDefined(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Reflection::MethodImplAttributes> {
+        attributeType: *mut crate::System::Type,
+        inherit: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Reflection::MethodImplAttributes = __cordl_object
-            .invoke("GetMethodImplementationFlags", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_DeclaringType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_DeclaringType", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsDefined", (attributeType, inherit))?;
         Ok(__cordl_ret)
     }
     pub fn get_Attributes(
@@ -104,43 +125,24 @@ impl crate::System::Reflection::Emit::MethodBuilder {
             .invoke("get_Attributes", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_ReflectedType(
+    pub fn get_DeclaringType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_ReflectedType", ())?;
+            .invoke("get_DeclaringType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetCustomAttributes__cordl_bool0(
+    pub fn get_MethodHandle(
         &mut self,
-        inherit: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<crate::System::RuntimeMethodHandle> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
-        > = __cordl_object.invoke("GetCustomAttributes", (inherit))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCustomAttributes_Type__cordl_bool1(
-        &mut self,
-        attributeType: *mut crate::System::Type,
-        inherit: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
-        > = __cordl_object.invoke("GetCustomAttributes", (attributeType, inherit))?;
+        let __cordl_ret: crate::System::RuntimeMethodHandle = __cordl_object
+            .invoke("get_MethodHandle", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Name(
@@ -153,16 +155,14 @@ impl crate::System::Reflection::Emit::MethodBuilder {
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
-    pub fn IsDefined(
+    pub fn get_ReflectedType(
         &mut self,
-        attributeType: *mut crate::System::Type,
-        inherit: bool,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsDefined", (attributeType, inherit))?;
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_ReflectedType", ())?;
         Ok(__cordl_ret)
     }
 }

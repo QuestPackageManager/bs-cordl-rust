@@ -33,53 +33,27 @@ for crate::System::Security::Cryptography::RSACryptoServiceProvider {
 }
 #[cfg(feature = "System+Security+Cryptography+RSACryptoServiceProvider")]
 impl crate::System::Security::Cryptography::RSACryptoServiceProvider {
-    pub fn get_PublicOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_PublicOnly", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EncryptValue(
+    pub fn Common_CspParameters1(
         &mut self,
-        rgb: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("EncryptValue", (rgb))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ImportParameters(
-        &mut self,
-        parameters: crate::System::Security::Cryptography::RSAParameters,
+        p: *mut crate::System::Security::Cryptography::CspParameters,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ImportParameters", (parameters))?;
+            .invoke("Common", (p))?;
         Ok(__cordl_ret)
     }
-    pub fn VerifyHash(
+    pub fn Common_i32__cordl_bool0(
         &mut self,
-        rgbHash: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        str: *mut crate::System::String,
-        rgbSignature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        dwKeySize: i32,
+        parameters: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("VerifyHash", (rgbHash, str, rgbSignature))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_KeySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_KeySize", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Common", (dwKeySize, parameters))?;
         Ok(__cordl_ret)
     }
     pub fn Dispose(
@@ -93,26 +67,15 @@ impl crate::System::Security::Cryptography::RSACryptoServiceProvider {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn OnKeyGenerated(
+    pub fn EncryptValue(
         &mut self,
-        sender: *mut crate::System::Object,
-        e: *mut crate::System::EventArgs,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        rgb: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnKeyGenerated", (sender, e))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Finalize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("EncryptValue", (rgb))?;
         Ok(__cordl_ret)
     }
     pub fn ExportParameters(
@@ -128,27 +91,14 @@ impl crate::System::Security::Cryptography::RSACryptoServiceProvider {
             .invoke("ExportParameters", (includePrivateParameters))?;
         Ok(__cordl_ret)
     }
-    pub fn Common_i32__cordl_bool0(
+    pub fn Finalize(
         &mut self,
-        dwKeySize: i32,
-        parameters: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Common", (dwKeySize, parameters))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Common_CspParameters1(
-        &mut self,
-        p: *mut crate::System::Security::Cryptography::CspParameters,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Common", (p))?;
+            .invoke("Finalize", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetHashNameFromOID(
@@ -160,6 +110,75 @@ impl crate::System::Security::Cryptography::RSACryptoServiceProvider {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("GetHashNameFromOID", (oid))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ImportParameters(
+        &mut self,
+        parameters: crate::System::Security::Cryptography::RSAParameters,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ImportParameters", (parameters))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_CspParameters1(
+        parameters: *mut crate::System::Security::Cryptography::CspParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (parameters))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_2(dwKeySize: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dwKeySize))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_CspParameters3(
+        dwKeySize: i32,
+        parameters: *mut crate::System::Security::Cryptography::CspParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dwKeySize, parameters))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnKeyGenerated(
+        &mut self,
+        sender: *mut crate::System::Object,
+        e: *mut crate::System::EventArgs,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnKeyGenerated", (sender, e))?;
+        Ok(__cordl_ret)
+    }
+    pub fn VerifyHash(
+        &mut self,
+        rgbHash: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        str: *mut crate::System::String,
+        rgbSignature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("VerifyHash", (rgbHash, str, rgbSignature))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -206,40 +225,19 @@ impl crate::System::Security::Cryptography::RSACryptoServiceProvider {
             .invoke(".ctor", (dwKeySize, parameters))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_KeySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_KeySize", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_CspParameters1(
-        parameters: *mut crate::System::Security::Cryptography::CspParameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (parameters))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_2(
-        dwKeySize: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dwKeySize))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_CspParameters3(
-        dwKeySize: i32,
-        parameters: *mut crate::System::Security::Cryptography::CspParameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dwKeySize, parameters))?;
-        Ok(__cordl_object)
+    pub fn get_PublicOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_PublicOnly", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Security+Cryptography+RSACryptoServiceProvider")]

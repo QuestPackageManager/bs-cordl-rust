@@ -28,6 +28,40 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdmissionSyntax {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+AdmissionSyntax")]
 impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdmissionSyntax {
+    pub fn GetContentsOfAdmissions(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Admissions,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Admissions,
+        > = __cordl_object.invoke("GetContentsOfAdmissions", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_Asn1Sequence0(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_GeneralName_Asn1Sequence1(
+        admissionAuthority: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        contentsOfAdmissions: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (admissionAuthority, contentsOfAdmissions))?;
+        Ok(__cordl_object)
+    }
     pub fn ToAsn1Object(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
@@ -61,21 +95,6 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdmissionSyntax {
             .invoke(".ctor", (admissionAuthority, contentsOfAdmissions))?;
         Ok(__cordl_ret)
     }
-    pub fn GetContentsOfAdmissions(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Admissions,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Admissions,
-        > = __cordl_object.invoke("GetContentsOfAdmissions", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_AdmissionAuthority(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -87,25 +106,6 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdmissionSyntax {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName = __cordl_object
             .invoke("get_AdmissionAuthority", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_Asn1Sequence0(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_GeneralName_Asn1Sequence1(
-        admissionAuthority: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-        contentsOfAdmissions: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (admissionAuthority, contentsOfAdmissions))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+AdmissionSyntax")]

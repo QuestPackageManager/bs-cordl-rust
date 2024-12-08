@@ -26,41 +26,25 @@ for crate::System::Data::SqlTypes::SqlString {
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlString")]
 impl crate::System::Data::SqlTypes::SqlString {
-    pub fn get_Value(
+    pub fn CompareTo_Object0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Value",
-            (),
+            "CompareTo",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetCompareInfo(
+    pub fn CompareTo_SqlString1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: crate::System::Data::SqlTypes::SqlString,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetCompareInfo",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn FBinarySort(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "FBinarySort",
-            (),
+            "CompareTo",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -75,10 +59,10 @@ impl crate::System::Data::SqlTypes::SqlString {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn FBinarySort(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_IsNull",
+            "FBinarySort",
             (),
         )?;
         Ok(__cordl_ret)
@@ -91,52 +75,13 @@ impl crate::System::Data::SqlTypes::SqlString {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor__cordl_bool0(
+    pub fn SetCompareInfo(
         &mut self,
-        fNull: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (fNull),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_i32_SqlCompareOptions1(
-        &mut self,
-        data: *mut crate::System::String,
-        lcid: i32,
-        compareOptions: crate::System::Data::SqlTypes::SqlCompareOptions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (data, lcid, compareOptions),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String2(
-        &mut self,
-        data: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (data),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_SqlCompareOptions_String_CompareInfo3(
-        &mut self,
-        lcid: i32,
-        compareOptions: crate::System::Data::SqlTypes::SqlCompareOptions,
-        data: *mut crate::System::String,
-        cmpInfo: *mut crate::System::Globalization::CompareInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (lcid, compareOptions, data, cmpInfo),
+            "SetCompareInfo",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -172,25 +117,80 @@ impl crate::System::Data::SqlTypes::SqlString {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CompareTo_Object0(
+    pub fn ToString(
         &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CompareTo",
-            (value),
+            "ToString",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CompareTo_SqlString1(
+    pub fn _ctor_String2(
         &mut self,
-        value: crate::System::Data::SqlTypes::SqlString,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        data: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CompareTo",
-            (value),
+            ".ctor",
+            (data),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_String_i32_SqlCompareOptions1(
+        &mut self,
+        data: *mut crate::System::String,
+        lcid: i32,
+        compareOptions: crate::System::Data::SqlTypes::SqlCompareOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (data, lcid, compareOptions),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor__cordl_bool0(
+        &mut self,
+        fNull: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (fNull),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_SqlCompareOptions_String_CompareInfo3(
+        &mut self,
+        lcid: i32,
+        compareOptions: crate::System::Data::SqlTypes::SqlCompareOptions,
+        data: *mut crate::System::String,
+        cmpInfo: *mut crate::System::Globalization::CompareInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (lcid, compareOptions, data, cmpInfo),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsNull",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Value",
+            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -29,6 +29,18 @@ for crate::UnityEngine::UIElements::TreeViewItemData_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::TreeViewItemData_1<T> {
+    pub fn GetChildIndex(&mut self, itemId: i32) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetChildIndex",
+            (itemId),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn InsertChild(
         &mut self,
         child: crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
@@ -42,45 +54,6 @@ impl<
             self,
             "InsertChild",
             (child, index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_data(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_data",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReplaceChild(
-        &mut self,
-        newChild: crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReplaceChild",
-            (newChild),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_id",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -99,27 +72,18 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetChildIndex(&mut self, itemId: i32) -> quest_hook::libil2cpp::Result<i32>
+    pub fn ReplaceChild(
+        &mut self,
+        newChild: crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetChildIndex",
-            (itemId),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_hasChildren(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_hasChildren",
-            (),
+            "ReplaceChild",
+            (newChild),
         )?;
         Ok(__cordl_ret)
     }
@@ -137,6 +101,42 @@ impl<
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
             crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_children", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_data(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_data",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hasChildren(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_hasChildren",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_id",
+            (),
+        )?;
         Ok(__cordl_ret)
     }
 }

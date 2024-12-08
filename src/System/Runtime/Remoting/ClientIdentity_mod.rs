@@ -25,49 +25,6 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::ClientIdentity {
 }
 #[cfg(feature = "System+Runtime+Remoting+ClientIdentity")]
 impl crate::System::Runtime::Remoting::ClientIdentity {
-    pub fn get_ClientProxy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::MarshalByRefObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::MarshalByRefObject = __cordl_object
-            .invoke("get_ClientProxy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ClientProxy(
-        &mut self,
-        value: *mut crate::System::MarshalByRefObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ClientProxy", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TargetUri(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_TargetUri", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        objectUri: *mut crate::System::String,
-        objRef: *mut crate::System::Runtime::Remoting::ObjRef,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (objectUri, objRef))?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateObjRef(
         &mut self,
         requestedType: *mut crate::System::Type,
@@ -82,12 +39,55 @@ impl crate::System::Runtime::Remoting::ClientIdentity {
     pub fn New(
         objectUri: *mut crate::System::String,
         objRef: *mut crate::System::Runtime::Remoting::ObjRef,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (objectUri, objRef))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        objectUri: *mut crate::System::String,
+        objRef: *mut crate::System::Runtime::Remoting::ObjRef,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (objectUri, objRef))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ClientProxy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::MarshalByRefObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::MarshalByRefObject = __cordl_object
+            .invoke("get_ClientProxy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TargetUri(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_TargetUri", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ClientProxy(
+        &mut self,
+        value: *mut crate::System::MarshalByRefObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ClientProxy", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+ClientIdentity")]

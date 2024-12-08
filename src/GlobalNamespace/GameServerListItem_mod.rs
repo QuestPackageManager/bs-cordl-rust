@@ -27,6 +27,18 @@ impl std::ops::DerefMut for GameServerListItem {
 }
 #[cfg(feature = "GameServerListItem")]
 impl GameServerListItem {
+    pub fn New(
+        serverName: *mut crate::System::String,
+        capacity: i32,
+        occupied: i32,
+        password: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (serverName, capacity, occupied, password))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         serverName: *mut crate::System::String,
@@ -40,18 +52,6 @@ impl GameServerListItem {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (serverName, capacity, occupied, password))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        serverName: *mut crate::System::String,
-        capacity: i32,
-        occupied: i32,
-        password: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (serverName, capacity, occupied, password))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "GameServerListItem")]

@@ -27,6 +27,23 @@ impl std::ops::DerefMut for crate::Tayx::Graphy::Ram::G_RamMonitor {
 }
 #[cfg(feature = "Tayx+Graphy+Ram+G_RamMonitor")]
 impl crate::Tayx::Graphy::Ram::G_RamMonitor {
+    pub fn Init(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn Update(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -37,15 +54,21 @@ impl crate::Tayx::Graphy::Ram::G_RamMonitor {
             .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_MonoRam(
+    pub fn _ctor(
         &mut self,
-        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_MonoRam", (value))?;
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AllocatedRam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_AllocatedRam", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_MonoRam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -62,26 +85,6 @@ impl crate::Tayx::Graphy::Ram::G_RamMonitor {
         let __cordl_ret: f32 = __cordl_object.invoke("get_ReservedRam", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_AllocatedRam(
         &mut self,
         value: f32,
@@ -91,6 +94,17 @@ impl crate::Tayx::Graphy::Ram::G_RamMonitor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_AllocatedRam", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_MonoRam(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_MonoRam", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_ReservedRam(
@@ -103,20 +117,6 @@ impl crate::Tayx::Graphy::Ram::G_RamMonitor {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ReservedRam", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_AllocatedRam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_AllocatedRam", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Tayx+Graphy+Ram+G_RamMonitor")]

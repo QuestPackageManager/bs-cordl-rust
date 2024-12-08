@@ -27,6 +27,17 @@ impl std::ops::DerefMut for EnvironmentSceneSetupData {
 }
 #[cfg(feature = "EnvironmentSceneSetupData")]
 impl EnvironmentSceneSetupData {
+    pub fn New(
+        environmentInfo: *mut EnvironmentInfoSO,
+        beatmapLevel: *mut BeatmapLevel,
+        hideBranding: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (environmentInfo, beatmapLevel, hideBranding))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         environmentInfo: *mut EnvironmentInfoSO,
@@ -39,17 +50,6 @@ impl EnvironmentSceneSetupData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (environmentInfo, beatmapLevel, hideBranding))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        environmentInfo: *mut EnvironmentInfoSO,
-        beatmapLevel: *mut BeatmapLevel,
-        hideBranding: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (environmentInfo, beatmapLevel, hideBranding))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "EnvironmentSceneSetupData")]

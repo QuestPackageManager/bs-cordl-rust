@@ -42,6 +42,24 @@ impl crate::System::Security::Cryptography::ICryptoTransform {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn TransformFinalBlock(
+        &mut self,
+        inputBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inputOffset: i32,
+        inputCount: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("TransformFinalBlock", (inputBuffer, inputOffset, inputCount))?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_CanTransformMultipleBlocks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -59,30 +77,12 @@ impl crate::System::Security::Cryptography::ICryptoTransform {
         let __cordl_ret: i32 = __cordl_object.invoke("get_InputBlockSize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TransformFinalBlock(
-        &mut self,
-        inputBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        inputOffset: i32,
-        inputCount: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("TransformFinalBlock", (inputBuffer, inputOffset, inputCount))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_OutputBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_OutputBlockSize", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+ICryptoTransform")]

@@ -27,6 +27,13 @@ impl std::ops::DerefMut for crate::System::Diagnostics::Stopwatch {
 }
 #[cfg(feature = "System+Diagnostics+Stopwatch")]
 impl crate::System::Diagnostics::Stopwatch {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -35,13 +42,6 @@ impl crate::System::Diagnostics::Stopwatch {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsRunning(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsRunning", ())?;
         Ok(__cordl_ret)
     }
     pub fn Start(
@@ -64,11 +64,14 @@ impl crate::System::Diagnostics::Stopwatch {
             .invoke("Stop", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_ElapsedMilliseconds(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_ElapsedMilliseconds", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Elapsed(
@@ -81,14 +84,11 @@ impl crate::System::Diagnostics::Stopwatch {
             .invoke("get_Elapsed", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_ElapsedMilliseconds(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: i64 = __cordl_object.invoke("get_ElapsedMilliseconds", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ElapsedTicks(&mut self) -> quest_hook::libil2cpp::Result<i64> {
@@ -98,12 +98,12 @@ impl crate::System::Diagnostics::Stopwatch {
         let __cordl_ret: i64 = __cordl_object.invoke("get_ElapsedTicks", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_IsRunning(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsRunning", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Diagnostics+Stopwatch")]

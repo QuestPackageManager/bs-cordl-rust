@@ -26,22 +26,14 @@ impl std::ops::DerefMut for crate::UnityEngine::RectOffset {
 }
 #[cfg(feature = "UnityEngine+RectOffset")]
 impl crate::UnityEngine::RectOffset {
-    pub fn get_bottom(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_bottom", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_bottom(
+    pub fn Destroy(
         &mut self,
-        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_bottom", (value))?;
+            .invoke("Destroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn Finalize(
@@ -54,29 +46,55 @@ impl crate::UnityEngine::RectOffset {
             .invoke("Finalize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_horizontal(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_horizontal", ())?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn set_left(
+    pub fn New_Object_IntPtr1(
+        sourceStyle: *mut crate::System::Object,
+        source: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (sourceStyle, source))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_i32_i32_i32_2(
+        left: i32,
+        right: i32,
+        top: i32,
+        bottom: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (left, right, top, bottom))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToString_0(
         &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_left", (value))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_vertical(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn ToString_String_IFormatProvider1(
+        &mut self,
+        format: *mut crate::System::String,
+        formatProvider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_vertical", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", (format, formatProvider))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -115,26 +133,25 @@ impl crate::UnityEngine::RectOffset {
             .invoke(".ctor", (left, right, top, bottom))?;
         Ok(__cordl_ret)
     }
-    pub fn ToString_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    pub fn get_bottom(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_bottom", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ToString_String_IFormatProvider1(
-        &mut self,
-        format: *mut crate::System::String,
-        formatProvider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    pub fn get_horizontal(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", (format, formatProvider))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_horizontal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_left(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_left", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_right(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -142,6 +159,42 @@ impl crate::UnityEngine::RectOffset {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_right", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_top(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_top", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_vertical(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_vertical", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_bottom(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_bottom", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_left(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_left", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_right(
@@ -155,13 +208,6 @@ impl crate::UnityEngine::RectOffset {
             .invoke("set_right", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_top(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_top", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_top(
         &mut self,
         value: i32,
@@ -172,52 +218,6 @@ impl crate::UnityEngine::RectOffset {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_top", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn Destroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Destroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_left(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_left", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Object_IntPtr1(
-        sourceStyle: *mut crate::System::Object,
-        source: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (sourceStyle, source))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_i32_i32_i32_2(
-        left: i32,
-        right: i32,
-        top: i32,
-        bottom: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (left, right, top, bottom))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+RectOffset")]

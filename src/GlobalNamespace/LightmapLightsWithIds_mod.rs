@@ -33,40 +33,12 @@ for crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
 }
 #[cfg(feature = "LightmapLightsWithIds+LightIntensitiesWithId")]
 impl crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
-    pub fn get_bakeId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::LightConstants_BakeId> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::LightConstants_BakeId = __cordl_object
-            .invoke("get_bakeId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_weight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_weight", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_weight(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_weight", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_intensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_intensity", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn SetDataToShaders(
         &mut self,
@@ -90,6 +62,30 @@ impl crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_bakeId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::LightConstants_BakeId> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::LightConstants_BakeId = __cordl_object
+            .invoke("get_bakeId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_intensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_intensity", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_weight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_weight", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_intensity(
         &mut self,
         value: f32,
@@ -101,12 +97,16 @@ impl crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
             .invoke("set_intensity", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_weight(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_weight", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LightmapLightsWithIds+LightIntensitiesWithId")]
@@ -150,13 +150,6 @@ impl std::ops::DerefMut for LightmapLightsWithIds {
 impl LightmapLightsWithIds {
     #[cfg(feature = "LightmapLightsWithIds+LightIntensitiesWithId")]
     pub type LightIntensitiesWithId = crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId;
-    pub fn get_maxTotalIntensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_maxTotalIntensity", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetLightWithIds(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -172,6 +165,23 @@ impl LightmapLightsWithIds {
         > = __cordl_object.invoke("GetLightWithIds", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ProcessNewColorData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessNewColorData", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -180,6 +190,13 @@ impl LightmapLightsWithIds {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxTotalIntensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_maxTotalIntensity", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_maxTotalIntensity(
@@ -192,23 +209,6 @@ impl LightmapLightsWithIds {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_maxTotalIntensity", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn ProcessNewColorData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessNewColorData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LightmapLightsWithIds")]

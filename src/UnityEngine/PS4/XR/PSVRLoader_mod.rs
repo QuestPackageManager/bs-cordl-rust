@@ -24,6 +24,13 @@ impl std::ops::DerefMut for crate::UnityEngine::PS4::XR::PSVRLoader {
 }
 #[cfg(feature = "UnityEngine+PS4+XR+PSVRLoader")]
 impl crate::UnityEngine::PS4::XR::PSVRLoader {
+    pub fn Deinitialize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Deinitialize", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn DisableVRAndEnable2DReprojection(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -32,26 +39,6 @@ impl crate::UnityEngine::PS4::XR::PSVRLoader {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("DisableVRAndEnable2DReprojection", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_inputSubsystem(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::XR::XRInputSubsystem> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::XR::XRInputSubsystem = __cordl_object
-            .invoke("get_inputSubsystem", ())?;
         Ok(__cordl_ret)
     }
     pub fn EnableVRAndDisable2DReprojection(
@@ -71,6 +58,20 @@ impl crate::UnityEngine::PS4::XR::PSVRLoader {
         let __cordl_ret: bool = __cordl_object.invoke("Initialize", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Stop(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -78,11 +79,14 @@ impl crate::UnityEngine::PS4::XR::PSVRLoader {
         let __cordl_ret: bool = __cordl_object.invoke("Stop", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Start", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_displaySubsystem(
@@ -95,19 +99,15 @@ impl crate::UnityEngine::PS4::XR::PSVRLoader {
             .invoke("get_displaySubsystem", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Deinitialize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_inputSubsystem(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::XR::XRInputSubsystem> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Deinitialize", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::XR::XRInputSubsystem = __cordl_object
+            .invoke("get_inputSubsystem", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+PS4+XR+PSVRLoader")]

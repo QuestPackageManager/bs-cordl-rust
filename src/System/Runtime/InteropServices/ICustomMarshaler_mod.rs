@@ -25,22 +25,15 @@ impl std::ops::DerefMut for crate::System::Runtime::InteropServices::ICustomMars
 }
 #[cfg(feature = "System+Runtime+InteropServices+ICustomMarshaler")]
 impl crate::System::Runtime::InteropServices::ICustomMarshaler {
-    pub fn MarshalManagedToNative(
+    pub fn CleanUpManagedData(
         &mut self,
         ManagedObj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::IntPtr = __cordl_object
-            .invoke("MarshalManagedToNative", (ManagedObj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNativeDataSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetNativeDataSize", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CleanUpManagedData", (ManagedObj))?;
         Ok(__cordl_ret)
     }
     pub fn CleanUpNativeData(
@@ -54,15 +47,22 @@ impl crate::System::Runtime::InteropServices::ICustomMarshaler {
             .invoke("CleanUpNativeData", (pNativeData))?;
         Ok(__cordl_ret)
     }
-    pub fn CleanUpManagedData(
-        &mut self,
-        ManagedObj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn GetNativeDataSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CleanUpManagedData", (ManagedObj))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetNativeDataSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn MarshalManagedToNative(
+        &mut self,
+        ManagedObj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::IntPtr = __cordl_object
+            .invoke("MarshalManagedToNative", (ManagedObj))?;
         Ok(__cordl_ret)
     }
     pub fn MarshalNativeToManaged(

@@ -25,6 +25,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::LazyDerSequence {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+LazyDerSequence")]
 impl crate::Org::BouncyCastle::Asn1::LazyDerSequence {
+    pub fn Encode(
+        &mut self,
+        derOut: *mut crate::Org::BouncyCastle::Asn1::DerOutputStream,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Encode", (derOut))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
@@ -34,6 +45,15 @@ impl crate::Org::BouncyCastle::Asn1::LazyDerSequence {
         let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
             .invoke("GetEnumerator", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        encoded: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encoded))?;
+        Ok(__cordl_object)
     }
     pub fn Parse(
         &mut self,
@@ -45,15 +65,22 @@ impl crate::Org::BouncyCastle::Asn1::LazyDerSequence {
             .invoke("Parse", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Encode(
+    pub fn _ctor(
         &mut self,
-        derOut: *mut crate::Org::BouncyCastle::Asn1::DerOutputStream,
+        encoded: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Encode", (derOut))?;
+            .invoke(".ctor", (encoded))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Item(
@@ -68,33 +95,6 @@ impl crate::Org::BouncyCastle::Asn1::LazyDerSequence {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable = __cordl_object
             .invoke("get_Item", (index))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        encoded: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (encoded))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        encoded: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encoded))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+LazyDerSequence")]

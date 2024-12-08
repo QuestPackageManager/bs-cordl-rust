@@ -76,14 +76,49 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2InputStream {
     pub const RAND_PART_B_STATE: i32 = 3i32;
     pub const RAND_PART_C_STATE: i32 = 4i32;
     pub const START_BLOCK_STATE: i32 = 1i32;
-    pub fn SetupRandPartC(
+    pub fn BsFinishedWithStream(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetupRandPartC", ())?;
+            .invoke("BsFinishedWithStream", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn BsGetInt32(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("BsGetInt32", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn BsGetIntVS(&mut self, numBits: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("BsGetIntVS", (numBits))?;
+        Ok(__cordl_ret)
+    }
+    pub fn BsGetUChar(&mut self) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: char = __cordl_object.invoke("BsGetUChar", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn BsGetint(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("BsGetint", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn BsR(&mut self, n: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("BsR", (n))?;
         Ok(__cordl_ret)
     }
     pub fn BsSetStream(
@@ -95,6 +130,46 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2InputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BsSetStream", (f))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Complete(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Complete", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndBlock(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndBlock", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Flush(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Flush", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetAndMoveToFrontDecode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetAndMoveToFrontDecode", ())?;
         Ok(__cordl_ret)
     }
     pub fn HbCreateDecodeTables(
@@ -117,6 +192,45 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2InputStream {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn InitBlock(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitBlock", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Initialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn MakeMaps(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MakeMaps", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        zStream: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (zStream))?;
+        Ok(__cordl_object)
+    }
     pub fn Read(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -129,14 +243,11 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2InputStream {
         let __cordl_ret: i32 = __cordl_object.invoke("Read", (buffer, offset, count))?;
         Ok(__cordl_ret)
     }
-    pub fn SetupRandPartA(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetupRandPartA", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
         Ok(__cordl_ret)
     }
     pub fn RecvDecodingTables(
@@ -147,6 +258,109 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2InputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RecvDecodingTables", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Seek(
+        &mut self,
+        offset: i64,
+        origin: crate::System::IO::SeekOrigin,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("Seek", (offset, origin))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetDecompressStructureSizes(
+        &mut self,
+        newSize100k: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetDecompressStructureSizes", (newSize100k))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetLength(
+        &mut self,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetLength", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetupBlock(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetupBlock", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetupNoRandPartA(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetupNoRandPartA", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetupNoRandPartB(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetupNoRandPartB", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetupNoRandPartC(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetupNoRandPartC", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetupRandPartA(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetupRandPartA", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetupRandPartB(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetupRandPartB", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetupRandPartC(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetupRandPartC", ())?;
         Ok(__cordl_ret)
     }
     pub fn Write(
@@ -173,52 +387,32 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2InputStream {
             .invoke(".ctor", (zStream))?;
         Ok(__cordl_ret)
     }
-    pub fn BsFinishedWithStream(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BsFinishedWithStream", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanRead", ())?;
         Ok(__cordl_ret)
     }
-    pub fn MakeMaps(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_CanSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MakeMaps", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanSeek", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetupRandPartB(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_CanWrite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetupRandPartB", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanWrite", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetDecompressStructureSizes(
-        &mut self,
-        newSize100k: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetDecompressStructureSizes", (newSize100k))?;
-        Ok(__cordl_ret)
-    }
-    pub fn BsR(&mut self, n: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("BsR", (n))?;
+        let __cordl_ret: i64 = __cordl_object.invoke("get_Length", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i64> {
@@ -226,16 +420,6 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2InputStream {
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_Position", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Complete(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Complete", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Position(
@@ -248,190 +432,6 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2InputStream {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Position", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn EndBlock(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndBlock", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitBlock(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitBlock", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn BsGetint(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("BsGetint", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Initialize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Initialize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAndMoveToFrontDecode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetAndMoveToFrontDecode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn BsGetUChar(&mut self) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: char = __cordl_object.invoke("BsGetUChar", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CanWrite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanWrite", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetupBlock(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetupBlock", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Flush(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Flush", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetupNoRandPartB(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetupNoRandPartB", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetupNoRandPartA(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetupNoRandPartA", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetLength(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLength", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Seek(
-        &mut self,
-        offset: i64,
-        origin: crate::System::IO::SeekOrigin,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("Seek", (offset, origin))?;
-        Ok(__cordl_ret)
-    }
-    pub fn BsGetIntVS(&mut self, numBits: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("BsGetIntVS", (numBits))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetupNoRandPartC(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetupNoRandPartC", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CanSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanSeek", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_Length", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanRead", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn BsGetInt32(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("BsGetInt32", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        zStream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (zStream))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2InputStream")]

@@ -25,6 +25,15 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::EventCategoryAttribu
 }
 #[cfg(feature = "UnityEngine+UIElements+EventCategoryAttribute")]
 impl crate::UnityEngine::UIElements::EventCategoryAttribute {
+    pub fn New(
+        category: crate::UnityEngine::UIElements::EventCategory,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (category))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         category: crate::UnityEngine::UIElements::EventCategory,
@@ -35,15 +44,6 @@ impl crate::UnityEngine::UIElements::EventCategoryAttribute {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (category))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        category: crate::UnityEngine::UIElements::EventCategory,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (category))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EventCategoryAttribute")]

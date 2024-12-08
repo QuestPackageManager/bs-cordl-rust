@@ -27,6 +27,11 @@ for crate::Newtonsoft::Json::Linq::IJEnumerable_1<T> {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+IJEnumerable_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::Linq::IJEnumerable_1<T> {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_Item(
         &mut self,
         key: *mut crate::System::Object,
@@ -46,11 +51,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::Linq::IJEnumerable
             *mut crate::Newtonsoft::Json::Linq::JToken,
         > = __cordl_object.invoke("get_Item", (key))?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+IJEnumerable_1")]

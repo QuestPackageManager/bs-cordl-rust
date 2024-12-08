@@ -36,6 +36,15 @@ impl crate::Newtonsoft::Json::Converters::XmlElementWrapper {
             .invoke("GetPrefixOfNamespace", (namespaceUri))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        element: *mut crate::System::Xml::XmlElement,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (element))?;
+        Ok(__cordl_object)
+    }
     pub fn SetAttributeNode(
         &mut self,
         attribute: *mut crate::Newtonsoft::Json::Converters::IXmlNode,
@@ -64,15 +73,6 @@ impl crate::Newtonsoft::Json::Converters::XmlElementWrapper {
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsEmpty", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        element: *mut crate::System::Xml::XmlElement,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (element))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XmlElementWrapper")]

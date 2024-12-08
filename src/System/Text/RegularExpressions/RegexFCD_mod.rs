@@ -28,14 +28,54 @@ for crate::System::Text::RegularExpressions::RegexFCD {
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexFCD")]
 impl crate::System::Text::RegularExpressions::RegexFCD {
-    pub fn _ctor(
+    pub fn CalculateFC(
         &mut self,
-        intStack: crate::System::Span_1<i32>,
+        NodeType: i32,
+        node: *mut crate::System::Text::RegularExpressions::RegexNode,
+        CurIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (intStack),
+            "CalculateFC",
+            (NodeType, node, CurIndex),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn FCIsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "FCIsEmpty",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IntIsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IntIsEmpty",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn PopFC(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Text::RegularExpressions::RegexFC,
+    > {
+        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexFC = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "PopFC",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -44,6 +84,28 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             self,
             "PopInt",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn PushFC(
+        &mut self,
+        fc: *mut crate::System::Text::RegularExpressions::RegexFC,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "PushFC",
+            (fc),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn PushInt(
+        &mut self,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "PushInt",
+            (i),
         )?;
         Ok(__cordl_ret)
     }
@@ -60,68 +122,6 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn PopFC(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::RegexFC,
-    > {
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexFC = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "PopFC",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn FCIsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "FCIsEmpty",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn PushInt(
-        &mut self,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "PushInt",
-            (i),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CalculateFC(
-        &mut self,
-        NodeType: i32,
-        node: *mut crate::System::Text::RegularExpressions::RegexNode,
-        CurIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CalculateFC",
-            (NodeType, node, CurIndex),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IntIsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IntIsEmpty",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn SkipChild(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -129,17 +129,6 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             self,
             "SkipChild",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn PushFC(
-        &mut self,
-        fc: *mut crate::System::Text::RegularExpressions::RegexFC,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "PushFC",
-            (fc),
         )?;
         Ok(__cordl_ret)
     }
@@ -152,6 +141,17 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             self,
             "TopFC",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        intStack: crate::System::Span_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (intStack),
         )?;
         Ok(__cordl_ret)
     }

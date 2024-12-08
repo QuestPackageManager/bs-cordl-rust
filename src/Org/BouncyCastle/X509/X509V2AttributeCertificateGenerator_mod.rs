@@ -32,6 +32,43 @@ for crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificateGenerator")]
 impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
+    pub fn AddAttribute(
+        &mut self,
+        attribute: *mut crate::Org::BouncyCastle::X509::X509Attribute,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddAttribute", (attribute))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddExtension_Asn1Encodable0(
+        &mut self,
+        oid: *mut crate::System::String,
+        critical: bool,
+        extensionValue: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddExtension", (oid, critical, extensionValue))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddExtension_Il2CppArray1(
+        &mut self,
+        oid: *mut crate::System::String,
+        critical: bool,
+        extensionValue: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddExtension", (oid, critical, extensionValue))?;
+        Ok(__cordl_ret)
+    }
     pub fn Generate_AsymmetricKeyParameter0(
         &mut self,
         privateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -72,14 +109,32 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
             .invoke("Generate", (signatureCalculatorFactory))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetHolder(
+        &mut self,
+        holder: *mut crate::Org::BouncyCastle::X509::AttributeCertificateHolder,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetHolder", (holder))?;
         Ok(__cordl_ret)
     }
     pub fn SetIssuer(
@@ -93,54 +148,6 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
             .invoke("SetIssuer", (issuer))?;
         Ok(__cordl_ret)
     }
-    pub fn AddAttribute(
-        &mut self,
-        attribute: *mut crate::Org::BouncyCastle::X509::X509Attribute,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddAttribute", (attribute))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddExtension_Asn1Encodable0(
-        &mut self,
-        oid: *mut crate::System::String,
-        critical: bool,
-        extensionValue: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddExtension", (oid, critical, extensionValue))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddExtension_Il2CppArray1(
-        &mut self,
-        oid: *mut crate::System::String,
-        critical: bool,
-        extensionValue: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddExtension", (oid, critical, extensionValue))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetSerialNumber(
-        &mut self,
-        serialNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSerialNumber", (serialNumber))?;
-        Ok(__cordl_ret)
-    }
     pub fn SetIssuerUniqueId(
         &mut self,
         iui: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
@@ -150,26 +157,6 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetIssuerUniqueId", (iui))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SignatureAlgNames(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerable = __cordl_object
-            .invoke("get_SignatureAlgNames", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetNotAfter(
@@ -194,6 +181,17 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
             .invoke("SetNotBefore", (date))?;
         Ok(__cordl_ret)
     }
+    pub fn SetSerialNumber(
+        &mut self,
+        serialNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetSerialNumber", (serialNumber))?;
+        Ok(__cordl_ret)
+    }
     pub fn SetSignatureAlgorithm(
         &mut self,
         signatureAlgorithm: *mut crate::System::String,
@@ -205,23 +203,25 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
             .invoke("SetSignatureAlgorithm", (signatureAlgorithm))?;
         Ok(__cordl_ret)
     }
-    pub fn SetHolder(
+    pub fn _ctor(
         &mut self,
-        holder: *mut crate::Org::BouncyCastle::X509::AttributeCertificateHolder,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetHolder", (holder))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_SignatureAlgNames(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerable = __cordl_object
+            .invoke("get_SignatureAlgNames", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificateGenerator")]

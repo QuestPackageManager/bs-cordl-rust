@@ -23,6 +23,31 @@ impl std::ops::DerefMut for crate::UnityEngine::ILogger {
 }
 #[cfg(feature = "UnityEngine+ILogger")]
 impl crate::UnityEngine::ILogger {
+    pub fn LogError(
+        &mut self,
+        tag: *mut crate::System::String,
+        message: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LogError", (tag, message))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LogFormat(
+        &mut self,
+        logType: crate::UnityEngine::LogType,
+        format: *mut crate::System::String,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LogFormat", (logType, format, args))?;
+        Ok(__cordl_ret)
+    }
     pub fn Log_LogType_Object0(
         &mut self,
         logType: crate::UnityEngine::LogType,
@@ -48,36 +73,16 @@ impl crate::UnityEngine::ILogger {
             .invoke("Log", (logType, message, context))?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_logEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_logEnabled", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LogFormat(
-        &mut self,
-        logType: crate::UnityEngine::LogType,
-        format: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LogFormat", (logType, format, args))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LogError(
-        &mut self,
-        tag: *mut crate::System::String,
-        message: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LogError", (tag, message))?;
         Ok(__cordl_ret)
     }
     pub fn get_logHandler(
@@ -89,11 +94,6 @@ impl crate::UnityEngine::ILogger {
         let __cordl_ret: *mut crate::UnityEngine::ILogHandler = __cordl_object
             .invoke("get_logHandler", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "UnityEngine+ILogger")]

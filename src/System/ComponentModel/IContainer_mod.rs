@@ -24,18 +24,6 @@ impl std::ops::DerefMut for crate::System::ComponentModel::IContainer {
 }
 #[cfg(feature = "System+ComponentModel+IContainer")]
 impl crate::System::ComponentModel::IContainer {
-    pub fn get_Components(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::ComponentModel::ComponentCollection,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::ComponentModel::ComponentCollection = __cordl_object
-            .invoke("get_Components", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Remove(
         &mut self,
         component: *mut crate::System::ComponentModel::IComponent,
@@ -51,6 +39,18 @@ impl crate::System::ComponentModel::IContainer {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_Components(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::ComponentModel::ComponentCollection,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::ComponentModel::ComponentCollection = __cordl_object
+            .invoke("get_Components", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+ComponentModel+IContainer")]

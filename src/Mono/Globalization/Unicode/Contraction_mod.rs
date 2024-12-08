@@ -28,6 +28,18 @@ impl std::ops::DerefMut for crate::Mono::Globalization::Unicode::Contraction {
 }
 #[cfg(feature = "Mono+Globalization+Unicode+Contraction")]
 impl crate::Mono::Globalization::Unicode::Contraction {
+    pub fn New(
+        index: i32,
+        source: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        replacement: *mut crate::System::String,
+        sortkey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (index, source, replacement, sortkey))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         index: i32,
@@ -41,18 +53,6 @@ impl crate::Mono::Globalization::Unicode::Contraction {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (index, source, replacement, sortkey))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        index: i32,
-        source: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        replacement: *mut crate::System::String,
-        sortkey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (index, source, replacement, sortkey))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Globalization+Unicode+Contraction")]

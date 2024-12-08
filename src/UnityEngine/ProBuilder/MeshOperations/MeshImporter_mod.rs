@@ -36,6 +36,59 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshImporter {
 impl crate::UnityEngine::ProBuilder::MeshOperations::MeshImporter {
     #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshImporter+__c")]
     pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::MeshImporter___c;
+    pub fn Import_GameObject_MeshImportSettings0(
+        &mut self,
+        go: *mut crate::UnityEngine::GameObject,
+        importSettings: *mut crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Import", (go, importSettings))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Import_MeshImportSettings1(
+        &mut self,
+        importSettings: *mut crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Import", (importSettings))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_GameObject0(
+        gameObject: *mut crate::UnityEngine::GameObject,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (gameObject))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Mesh_Il2CppArray_ProBuilderMesh1(
+        sourceMesh: *mut crate::UnityEngine::Mesh,
+        sourceMaterials: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::Material,
+        >,
+        destination: *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (sourceMesh, sourceMaterials, destination))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_ProBuilderMesh2(
+        destination: *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (destination))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_GameObject0(
         &mut self,
         gameObject: *mut crate::UnityEngine::GameObject,
@@ -72,59 +125,6 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshImporter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (destination))?;
         Ok(__cordl_ret)
-    }
-    pub fn Import_GameObject_MeshImportSettings0(
-        &mut self,
-        go: *mut crate::UnityEngine::GameObject,
-        importSettings: *mut crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Import", (go, importSettings))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Import_MeshImportSettings1(
-        &mut self,
-        importSettings: *mut crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Import", (importSettings))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_GameObject0(
-        gameObject: *mut crate::UnityEngine::GameObject,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (gameObject))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Mesh_Il2CppArray_ProBuilderMesh1(
-        sourceMesh: *mut crate::UnityEngine::Mesh,
-        sourceMaterials: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Material,
-        >,
-        destination: *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (sourceMesh, sourceMaterials, destination))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_ProBuilderMesh2(
-        destination: *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (destination))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshImporter")]

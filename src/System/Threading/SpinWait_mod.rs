@@ -21,11 +21,24 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Threading::Sp
 }
 #[cfg(feature = "System+Threading+SpinWait")]
 impl crate::System::Threading::SpinWait {
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Count",
+            "Reset",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SpinOnceCore(
+        &mut self,
+        sleep1Threshold: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SpinOnceCore",
+            (sleep1Threshold),
         )?;
         Ok(__cordl_ret)
     }
@@ -50,31 +63,18 @@ impl crate::System::Threading::SpinWait {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_NextSpinWillYield(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_NextSpinWillYield",
+            "get_Count",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SpinOnceCore(
-        &mut self,
-        sleep1Threshold: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_NextSpinWillYield(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SpinOnceCore",
-            (sleep1Threshold),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Reset",
+            "get_NextSpinWillYield",
             (),
         )?;
         Ok(__cordl_ret)

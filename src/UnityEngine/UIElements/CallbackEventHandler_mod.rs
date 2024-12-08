@@ -28,28 +28,8 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::CallbackEventHandler
 impl crate::UnityEngine::UIElements::CallbackEventHandler {
     pub const ExecuteDefaultActionAtTargetName: &'static str = "ExecuteDefaultActionAtTarget";
     pub const ExecuteDefaultActionName: &'static str = "ExecuteDefaultAction";
-    pub fn HandleEventAtCurrentTargetAndPhase(
+    pub fn AddEventCategories<TEventType>(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleEventAtCurrentTargetAndPhase", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HasBubbleUpHandlers(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasBubbleUpHandlers", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnregisterCallback<TEventType>(
-        &mut self,
-        callback: *mut crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
-        useTrickleDown: crate::UnityEngine::UIElements::TrickleDown,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TEventType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -59,17 +39,10 @@ impl crate::UnityEngine::UIElements::CallbackEventHandler {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterCallback", (callback, useTrickleDown))?;
+            .invoke("AddEventCategories", ())?;
         Ok(__cordl_ret)
     }
-    pub fn HasTrickleDownHandlers(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasTrickleDownHandlers", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExecuteDefaultActionDisabledAtTarget(
+    pub fn ExecuteDefaultAction(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::EventBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -77,50 +50,7 @@ impl crate::UnityEngine::UIElements::CallbackEventHandler {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExecuteDefaultActionDisabledAtTarget", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExecuteDefaultActionDisabled(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExecuteDefaultActionDisabled", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnityEngine_UIElements_IEventHandler_HandleEvent(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnityEngine.UIElements.IEventHandler.HandleEvent", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleEvent(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleEvent", (evt))?;
+            .invoke("ExecuteDefaultAction", (evt))?;
         Ok(__cordl_ret)
     }
     pub fn ExecuteDefaultActionAtTarget(
@@ -134,6 +64,50 @@ impl crate::UnityEngine::UIElements::CallbackEventHandler {
             .invoke("ExecuteDefaultActionAtTarget", (evt))?;
         Ok(__cordl_ret)
     }
+    pub fn ExecuteDefaultActionDisabled(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::EventBase,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExecuteDefaultActionDisabled", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExecuteDefaultActionDisabledAtTarget(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::EventBase,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExecuteDefaultActionDisabledAtTarget", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleEvent(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::EventBase,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleEvent", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleEventAtCurrentTargetAndPhase(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::EventBase,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleEventAtCurrentTargetAndPhase", (evt))?;
+        Ok(__cordl_ret)
+    }
     pub fn HandleEventAtTargetAndDefaultPhase(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::EventBase,
@@ -145,7 +119,7 @@ impl crate::UnityEngine::UIElements::CallbackEventHandler {
             .invoke("HandleEventAtTargetAndDefaultPhase", (evt))?;
         Ok(__cordl_ret)
     }
-    pub fn ExecuteDefaultAction(
+    pub fn HandleEventAtTargetPhase(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::EventBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -153,7 +127,45 @@ impl crate::UnityEngine::UIElements::CallbackEventHandler {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExecuteDefaultAction", (evt))?;
+            .invoke("HandleEventAtTargetPhase", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HasBubbleUpHandlers(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("HasBubbleUpHandlers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HasTrickleDownHandlers(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("HasTrickleDownHandlers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn RegisterCallback_EventCallback_1_InvokePolicy_TrickleDown2<TEventType>(
+        &mut self,
+        callback: *mut crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
+        invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
+        useTrickleDown: crate::UnityEngine::UIElements::TrickleDown,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TEventType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterCallback", (callback, invokePolicy, useTrickleDown))?;
         Ok(__cordl_ret)
     }
     pub fn RegisterCallback_EventCallback_1_TrickleDown0<TEventType>(
@@ -197,21 +209,16 @@ impl crate::UnityEngine::UIElements::CallbackEventHandler {
             .invoke("RegisterCallback", (callback, userArgs, useTrickleDown))?;
         Ok(__cordl_ret)
     }
-    pub fn RegisterCallback_EventCallback_1_InvokePolicy_TrickleDown2<TEventType>(
+    pub fn SendEvent_DispatchMode1(
         &mut self,
-        callback: *mut crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
-        invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
-        useTrickleDown: crate::UnityEngine::UIElements::TrickleDown,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TEventType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
+        e: *mut crate::UnityEngine::UIElements::EventBase,
+        dispatchMode: crate::UnityEngine::UIElements::DispatchMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterCallback", (callback, invokePolicy, useTrickleDown))?;
+            .invoke("SendEvent", (e, dispatchMode))?;
         Ok(__cordl_ret)
     }
     pub fn SendEvent_EventBase0(
@@ -225,19 +232,7 @@ impl crate::UnityEngine::UIElements::CallbackEventHandler {
             .invoke("SendEvent", (e))?;
         Ok(__cordl_ret)
     }
-    pub fn SendEvent_DispatchMode1(
-        &mut self,
-        e: *mut crate::UnityEngine::UIElements::EventBase,
-        dispatchMode: crate::UnityEngine::UIElements::DispatchMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendEvent", (e, dispatchMode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleEventAtTargetPhase(
+    pub fn UnityEngine_UIElements_IEventHandler_HandleEvent(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::EventBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -245,11 +240,13 @@ impl crate::UnityEngine::UIElements::CallbackEventHandler {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleEventAtTargetPhase", (evt))?;
+            .invoke("UnityEngine.UIElements.IEventHandler.HandleEvent", (evt))?;
         Ok(__cordl_ret)
     }
-    pub fn AddEventCategories<TEventType>(
+    pub fn UnregisterCallback<TEventType>(
         &mut self,
+        callback: *mut crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
+        useTrickleDown: crate::UnityEngine::UIElements::TrickleDown,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TEventType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -259,15 +256,18 @@ impl crate::UnityEngine::UIElements::CallbackEventHandler {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddEventCategories", ())?;
+            .invoke("UnregisterCallback", (callback, useTrickleDown))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+CallbackEventHandler")]

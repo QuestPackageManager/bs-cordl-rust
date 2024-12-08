@@ -33,6 +33,17 @@ impl<
     pub type __c__DisplayClass5_0 = crate::Zenject::ConcreteBinderGeneric_1___c__DisplayClass5_0<
         TContract,
     >;
+    pub fn New(
+        bindContainer: *mut crate::Zenject::DiContainer,
+        bindInfo: *mut crate::Zenject::BindInfo,
+        bindStatement: *mut crate::Zenject::BindStatement,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bindContainer, bindInfo, bindStatement))?;
+        Ok(__cordl_object)
+    }
     pub fn ToSelf(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -67,9 +78,11 @@ impl<
             .invoke("To", ())?;
         Ok(__cordl_ret)
     }
-    pub fn To_Il2CppArray1(
+    pub fn To_Action_1_3(
         &mut self,
-        concreteTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        generator: *mut crate::System::Action_1<
+            *mut crate::Zenject::ConventionSelectTypesBinder,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::FromBinderNonGeneric>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -79,7 +92,7 @@ impl<
             self,
         );
         let __cordl_ret: *mut crate::Zenject::FromBinderNonGeneric = __cordl_object
-            .invoke("To", (concreteTypes))?;
+            .invoke("To", (generator))?;
         Ok(__cordl_ret)
     }
     pub fn To_IEnumerable_1_2(
@@ -99,11 +112,9 @@ impl<
             .invoke("To", (concreteTypes))?;
         Ok(__cordl_ret)
     }
-    pub fn To_Action_1_3(
+    pub fn To_Il2CppArray1(
         &mut self,
-        generator: *mut crate::System::Action_1<
-            *mut crate::Zenject::ConventionSelectTypesBinder,
-        >,
+        concreteTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::FromBinderNonGeneric>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -113,24 +124,7 @@ impl<
             self,
         );
         let __cordl_ret: *mut crate::Zenject::FromBinderNonGeneric = __cordl_object
-            .invoke("To", (generator))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        bindContainer: *mut crate::Zenject::DiContainer,
-        bindInfo: *mut crate::Zenject::BindInfo,
-        bindStatement: *mut crate::Zenject::BindStatement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bindContainer, bindInfo, bindStatement))?;
+            .invoke("To", (concreteTypes))?;
         Ok(__cordl_ret)
     }
     pub fn _ToSelf_b__1_0(
@@ -163,16 +157,22 @@ impl<
         let __cordl_ret: bool = __cordl_object.invoke("<To>b__5_0", (concreteType))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         bindContainer: *mut crate::Zenject::DiContainer,
         bindInfo: *mut crate::Zenject::BindInfo,
         bindStatement: *mut crate::Zenject::BindStatement,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bindContainer, bindInfo, bindStatement))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bindContainer, bindInfo, bindStatement))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+ConcreteBinderGeneric_1")]

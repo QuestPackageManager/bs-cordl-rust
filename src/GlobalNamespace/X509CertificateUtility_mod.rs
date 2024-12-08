@@ -37,6 +37,24 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
             .invoke("GetPassword", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New_Il2CppArray0(
+        password: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (password))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String1(
+        password: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (password))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_Il2CppArray0(
         &mut self,
         password: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -58,24 +76,6 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (password))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_Il2CppArray0(
-        password: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (password))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        password: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (password))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "X509CertificateUtility+PasswordFinder")]
@@ -118,17 +118,6 @@ for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvi
 }
 #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
 impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
-    pub fn _ctor(
-        &mut self,
-        privateKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (privateKey))?;
-        Ok(__cordl_ret)
-    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -138,6 +127,15 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        privateKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (privateKey))?;
+        Ok(__cordl_object)
     }
     pub fn SignData(
         &mut self,
@@ -152,14 +150,16 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
             .invoke("SignData", (data, offset, length))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         privateKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (privateKey))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (privateKey))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
@@ -197,14 +197,14 @@ impl std::ops::DerefMut for X509CertificateUtility {
 }
 #[cfg(feature = "X509CertificateUtility")]
 impl X509CertificateUtility {
-    #[cfg(feature = "X509CertificateUtility+PasswordFinder")]
-    pub type PasswordFinder = crate::GlobalNamespace::X509CertificateUtility_PasswordFinder;
-    #[cfg(feature = "X509CertificateUtility+_GetCertificateList_d__9")]
-    pub type _GetCertificateList_d__9 = crate::GlobalNamespace::X509CertificateUtility__GetCertificateList_d__9;
-    #[cfg(feature = "X509CertificateUtility+__c")]
-    pub type __c = crate::GlobalNamespace::X509CertificateUtility___c;
     #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
     pub type RSACertificateEncryptionProvider = crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider;
+    #[cfg(feature = "X509CertificateUtility+__c")]
+    pub type __c = crate::GlobalNamespace::X509CertificateUtility___c;
+    #[cfg(feature = "X509CertificateUtility+_GetCertificateList_d__9")]
+    pub type _GetCertificateList_d__9 = crate::GlobalNamespace::X509CertificateUtility__GetCertificateList_d__9;
+    #[cfg(feature = "X509CertificateUtility+PasswordFinder")]
+    pub type PasswordFinder = crate::GlobalNamespace::X509CertificateUtility_PasswordFinder;
 }
 #[cfg(feature = "X509CertificateUtility")]
 impl quest_hook::libil2cpp::ObjectType for X509CertificateUtility {

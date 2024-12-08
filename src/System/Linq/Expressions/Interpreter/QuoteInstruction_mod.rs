@@ -37,19 +37,6 @@ for crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQu
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+QuoteInstruction+ExpressionQuoter")]
 impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQuoter {
-    pub fn VisitParameter(
-        &mut self,
-        node: *mut crate::System::Linq::Expressions::ParameterExpression,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("VisitParameter", (node))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetBox(
         &mut self,
         variable: *mut crate::System::Linq::Expressions::ParameterExpression,
@@ -63,35 +50,18 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
             .invoke("GetBox", (variable))?;
         Ok(__cordl_ret)
     }
-    pub fn VisitLambda<T>(
-        &mut self,
-        node: *mut crate::System::Linq::Expressions::Expression_1<T>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Linq::Expressions::Expression>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("VisitLambda", (node))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         hoistedVariables: *mut crate::System::Collections::Generic::Dictionary_2<
             *mut crate::System::Linq::Expressions::ParameterExpression,
             *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
         >,
         frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (hoistedVariables, frame))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (hoistedVariables, frame))?;
+        Ok(__cordl_object)
     }
     pub fn VisitBlock(
         &mut self,
@@ -119,18 +89,48 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
             .invoke("VisitCatchBlock", (node))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn VisitLambda<T>(
+        &mut self,
+        node: *mut crate::System::Linq::Expressions::Expression_1<T>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Linq::Expressions::Expression>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
+            .invoke("VisitLambda", (node))?;
+        Ok(__cordl_ret)
+    }
+    pub fn VisitParameter(
+        &mut self,
+        node: *mut crate::System::Linq::Expressions::ParameterExpression,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::Expression,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
+            .invoke("VisitParameter", (node))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
         hoistedVariables: *mut crate::System::Collections::Generic::Dictionary_2<
             *mut crate::System::Linq::Expressions::ParameterExpression,
             *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
         >,
         frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (hoistedVariables, frame))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (hoistedVariables, frame))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+QuoteInstruction+ExpressionQuoter")]
@@ -181,14 +181,27 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
         feature = "System+Linq+Expressions+Interpreter+QuoteInstruction+ExpressionQuoter"
     )]
     pub type ExpressionQuoter = crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQuoter;
-    pub fn get_InstructionName(
+    pub fn New(
+        operand: *mut crate::System::Linq::Expressions::Expression,
+        hoistedVariables: *mut crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Linq::Expressions::ParameterExpression,
+            *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (operand, hoistedVariables))?;
+        Ok(__cordl_object)
+    }
+    pub fn Run(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_InstructionName", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("Run", (frame))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -206,14 +219,14 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
             .invoke(".ctor", (operand, hoistedVariables))?;
         Ok(__cordl_ret)
     }
-    pub fn Run(
+    pub fn get_InstructionName(
         &mut self,
-        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("Run", (frame))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_InstructionName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -222,19 +235,6 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        operand: *mut crate::System::Linq::Expressions::Expression,
-        hoistedVariables: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Linq::Expressions::ParameterExpression,
-            *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (operand, hoistedVariables))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+QuoteInstruction")]

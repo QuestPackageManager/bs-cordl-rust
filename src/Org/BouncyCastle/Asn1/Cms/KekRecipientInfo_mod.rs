@@ -28,6 +28,72 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cms::KekRecipientInf
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+KekRecipientInfo")]
 impl crate::Org::BouncyCastle::Asn1::Cms::KekRecipientInfo {
+    pub fn New_Asn1Sequence1(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_KekIdentifier_AlgorithmIdentifier_Asn1OctetString0(
+        kekID: *mut crate::Org::BouncyCastle::Asn1::Cms::KekIdentifier,
+        keyEncryptionAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        encryptedKey: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (kekID, keyEncryptionAlgorithm, encryptedKey))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToAsn1Object(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("ToAsn1Object", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Asn1Sequence1(
+        &mut self,
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (seq))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_KekIdentifier_AlgorithmIdentifier_Asn1OctetString0(
+        &mut self,
+        kekID: *mut crate::Org::BouncyCastle::Asn1::Cms::KekIdentifier,
+        keyEncryptionAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        encryptedKey: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (kekID, keyEncryptionAlgorithm, encryptedKey))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_EncryptedKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString = __cordl_object
+            .invoke("get_EncryptedKey", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_KekID(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -52,52 +118,6 @@ impl crate::Org::BouncyCastle::Asn1::Cms::KekRecipientInfo {
             .invoke("get_KeyEncryptionAlgorithm", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_EncryptedKey(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString = __cordl_object
-            .invoke("get_EncryptedKey", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToAsn1Object(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_KekIdentifier_AlgorithmIdentifier_Asn1OctetString0(
-        &mut self,
-        kekID: *mut crate::Org::BouncyCastle::Asn1::Cms::KekIdentifier,
-        keyEncryptionAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        encryptedKey: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (kekID, keyEncryptionAlgorithm, encryptedKey))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Asn1Sequence1(
-        &mut self,
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seq))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Version(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::DerInteger> {
@@ -107,26 +127,6 @@ impl crate::Org::BouncyCastle::Asn1::Cms::KekRecipientInfo {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
             .invoke("get_Version", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_KekIdentifier_AlgorithmIdentifier_Asn1OctetString0(
-        kekID: *mut crate::Org::BouncyCastle::Asn1::Cms::KekIdentifier,
-        keyEncryptionAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        encryptedKey: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (kekID, keyEncryptionAlgorithm, encryptedKey))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Asn1Sequence1(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+KekRecipientInfo")]

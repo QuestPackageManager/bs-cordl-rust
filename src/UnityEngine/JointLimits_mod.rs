@@ -27,43 +27,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::JointLim
 }
 #[cfg(feature = "UnityEngine+JointLimits")]
 impl crate::UnityEngine::JointLimits {
-    pub fn set_contactDistance(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_contactDistance",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_min(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_min",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_max(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_max",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_min(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_bounceMinVelocity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_min",
+            "get_bounceMinVelocity",
             (),
         )?;
         Ok(__cordl_ret)
@@ -76,18 +43,26 @@ impl crate::UnityEngine::JointLimits {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_bounceMinVelocity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_bounceMinVelocity",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_contactDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_contactDistance",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_max(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_max",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_min(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_min",
             (),
         )?;
         Ok(__cordl_ret)
@@ -114,11 +89,36 @@ impl crate::UnityEngine::JointLimits {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_max(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn set_contactDistance(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_max",
-            (),
+            "set_contactDistance",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_max(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_max",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_min(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_min",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

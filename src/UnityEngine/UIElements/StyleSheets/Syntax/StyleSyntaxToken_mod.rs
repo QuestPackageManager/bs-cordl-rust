@@ -25,17 +25,6 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxToken")]
 impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken {
-    pub fn _ctor_StyleSyntaxTokenType0(
-        &mut self,
-        t: crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (t),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_String1(
         &mut self,
         _cordl_type: crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType,
@@ -45,6 +34,17 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken {
             self,
             ".ctor",
             (_cordl_type, text),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_StyleSyntaxTokenType0(
+        &mut self,
+        t: crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (t),
         )?;
         Ok(__cordl_ret)
     }

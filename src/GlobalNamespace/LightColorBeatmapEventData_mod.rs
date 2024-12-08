@@ -33,14 +33,25 @@ impl std::ops::DerefMut for LightColorBeatmapEventData {
 }
 #[cfg(feature = "LightColorBeatmapEventData")]
 impl LightColorBeatmapEventData {
-    pub fn get_colorType(
+    pub fn CopyColorDataFrom(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<EnvironmentColorType> {
+        lightColorBeatmapEventData: *mut LightColorBeatmapEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: EnvironmentColorType = __cordl_object
-            .invoke("get_colorType", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CopyColorDataFrom", (lightColorBeatmapEventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DisableStrobe(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DisableStrobe", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetCopy(&mut self) -> quest_hook::libil2cpp::Result<*mut BeatmapDataItem> {
@@ -50,63 +61,47 @@ impl LightColorBeatmapEventData {
         let __cordl_ret: *mut BeatmapDataItem = __cordl_object.invoke("GetCopy", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_strobeBrightness(
+    pub fn GetDefault(
         &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut BeatmapEventData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_strobeBrightness", (value))?;
+        let __cordl_ret: *mut BeatmapEventData = __cordl_object
+            .invoke("GetDefault", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_colorType(
-        &mut self,
-        value: EnvironmentColorType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_colorType", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_brightness(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_brightness", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_strobeFade(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_strobeFade", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_strobeBeatFrequency(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_strobeBeatFrequency", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_strobeFade(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_strobeFade", (value))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        _cordl_time: f32,
+        groupId: i32,
+        elementId: i32,
+        usePreviousValue: bool,
+        easeType: EaseType,
+        colorType: EnvironmentColorType,
+        brightness: f32,
+        strobeBeatFrequency: i32,
+        strobeBrightness: f32,
+        strobeFade: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    _cordl_time,
+                    groupId,
+                    elementId,
+                    usePreviousValue,
+                    easeType,
+                    colorType,
+                    brightness,
+                    strobeBeatFrequency,
+                    strobeBrightness,
+                    strobeFade,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -142,14 +137,28 @@ impl LightColorBeatmapEventData {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetDefault(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapEventData> {
+    pub fn get_brightness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapEventData = __cordl_object
-            .invoke("GetDefault", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_brightness", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_colorType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<EnvironmentColorType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: EnvironmentColorType = __cordl_object
+            .invoke("get_colorType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_strobeBeatFrequency(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_strobeBeatFrequency", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_strobeBrightness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -157,6 +166,35 @@ impl LightColorBeatmapEventData {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_strobeBrightness", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_strobeFade(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_strobeFade", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_brightness(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_brightness", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_colorType(
+        &mut self,
+        value: EnvironmentColorType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_colorType", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_strobeBeatFrequency(
@@ -170,65 +208,27 @@ impl LightColorBeatmapEventData {
             .invoke("set_strobeBeatFrequency", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn CopyColorDataFrom(
+    pub fn set_strobeBrightness(
         &mut self,
-        lightColorBeatmapEventData: *mut LightColorBeatmapEventData,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CopyColorDataFrom", (lightColorBeatmapEventData))?;
+            .invoke("set_strobeBrightness", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn DisableStrobe(
+    pub fn set_strobeFade(
         &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DisableStrobe", ())?;
+            .invoke("set_strobeFade", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_brightness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_brightness", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        _cordl_time: f32,
-        groupId: i32,
-        elementId: i32,
-        usePreviousValue: bool,
-        easeType: EaseType,
-        colorType: EnvironmentColorType,
-        brightness: f32,
-        strobeBeatFrequency: i32,
-        strobeBrightness: f32,
-        strobeFade: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    _cordl_time,
-                    groupId,
-                    elementId,
-                    usePreviousValue,
-                    easeType,
-                    colorType,
-                    brightness,
-                    strobeBeatFrequency,
-                    strobeBrightness,
-                    strobeFade,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LightColorBeatmapEventData")]

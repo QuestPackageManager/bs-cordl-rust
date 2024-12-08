@@ -67,26 +67,6 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
 impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
-    pub fn Destroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Destroy",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateActiveFingers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "UpdateActiveFingers",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn AddFingers(
         &mut self,
         screen: *mut crate::UnityEngine::InputSystem::Touchscreen,
@@ -98,6 +78,16 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn Destroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Destroy",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn RemoveFingers(
         &mut self,
         screen: *mut crate::UnityEngine::InputSystem::Touchscreen,
@@ -106,6 +96,16 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
             self,
             "RemoveFingers",
             (screen),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateActiveFingers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "UpdateActiveFingers",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -193,56 +193,72 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
 impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
     #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
     pub type FingerAndTouchState = crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState;
+    #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
+    pub type GlobalState = crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState;
     #[cfg(
         feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState"
     )]
     pub type ExtraDataPerTouchState = crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState;
     #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+__c")]
     pub type __c = crate::UnityEngine::InputSystem::EnhancedTouch::Touch___c;
-    #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
-    pub type GlobalState = crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState;
-    pub fn get_startScreenPosition(
+    pub fn Equals_Object1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_startScreenPosition",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_valid",
-            (),
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_finger(
+    pub fn Equals_Touch0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_finger",
-            (),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_pressure(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_pressure",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_displayIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_displayIndex",
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        finger: *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
+        touchRecord: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<
+            crate::UnityEngine::InputSystem::LowLevel::TouchState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (finger, touchRecord),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_began(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_began",
             (),
         )?;
         Ok(__cordl_ret)
@@ -257,6 +273,14 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_displayIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_displayIndex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_ended(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -265,10 +289,46 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_isTap(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_extraData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_extraData", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_finger(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_finger",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_history(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_history",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_inProgress(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_isTap",
+            "get_inProgress",
             (),
         )?;
         Ok(__cordl_ret)
@@ -281,18 +341,70 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_updateStepCount(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_isTap(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_updateStepCount",
+            "get_isTap",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_uniqueId(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_phase(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::TouchPhase> {
+        let __cordl_ret: crate::UnityEngine::InputSystem::TouchPhase = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_uniqueId",
+            "get_phase",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_pressure(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_pressure",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_radius(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_radius",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_screen(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Touchscreen,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Touchscreen = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_screen",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_screenPosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_screenPosition",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_startScreenPosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_startScreenPosition",
             (),
         )?;
         Ok(__cordl_ret)
@@ -325,70 +437,10 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Touch0(
-        &mut self,
-        other: crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_extraData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_extraData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_inProgress(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_inProgress",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_began(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_began",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_screenPosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_screenPosition",
+            "get_time",
             (),
         )?;
         Ok(__cordl_ret)
@@ -401,78 +453,26 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_phase(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::TouchPhase> {
-        let __cordl_ret: crate::UnityEngine::InputSystem::TouchPhase = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_uniqueId(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_phase",
+            "get_uniqueId",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_radius(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_updateStepCount(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_radius",
+            "get_updateStepCount",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_screen(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Touchscreen,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Touchscreen = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_screen",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        finger: *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-        touchRecord: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<
-            crate::UnityEngine::InputSystem::LowLevel::TouchState,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (finger, touchRecord),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_time",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_history(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_history",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
+            "get_valid",
             (),
         )?;
         Ok(__cordl_ret)

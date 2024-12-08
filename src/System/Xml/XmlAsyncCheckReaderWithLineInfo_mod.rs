@@ -32,6 +32,15 @@ impl crate::System::Xml::XmlAsyncCheckReaderWithLineInfo {
         let __cordl_ret: bool = __cordl_object.invoke("HasLineInfo", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        reader: *mut crate::System::Xml::XmlReader,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (reader))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         reader: *mut crate::System::Xml::XmlReader,
@@ -43,13 +52,6 @@ impl crate::System::Xml::XmlAsyncCheckReaderWithLineInfo {
             .invoke(".ctor", (reader))?;
         Ok(__cordl_ret)
     }
-    pub fn get_LinePosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_LinePosition", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_LineNumber(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -57,14 +59,12 @@ impl crate::System::Xml::XmlAsyncCheckReaderWithLineInfo {
         let __cordl_ret: i32 = __cordl_object.invoke("get_LineNumber", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        reader: *mut crate::System::Xml::XmlReader,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (reader))?;
-        Ok(__cordl_object)
+    pub fn get_LinePosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_LinePosition", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfo")]

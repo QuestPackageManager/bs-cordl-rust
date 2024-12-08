@@ -214,57 +214,67 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::UIRenderDevice 
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice")]
 impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
+    #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
+    pub type DrawStatistics = crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics;
     #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
     pub type AllocToUpdate = crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate;
+    #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
+    pub type AllocToFree = crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree;
     #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+__c")]
     pub type __c = crate::UnityEngine::UIElements::UIR::UIRenderDevice___c;
     #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
     pub type DeviceToFree = crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree;
     #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
     pub type EvaluationState = crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState;
-    #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
-    pub type DrawStatistics = crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics;
-    #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
-    pub type AllocToFree = crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree;
-    pub fn Free(
+    pub fn ActiveUpdatesForMeshHandle(
         &mut self,
         mesh: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
+        > = __cordl_object.invoke("ActiveUpdatesForMeshHandle", (mesh))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AdvanceFrame(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Free", (mesh))?;
+            .invoke("AdvanceFrame", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ApplyDrawCommandState(
+    pub fn Allocate_MeshHandle_u32__cordl_bool1(
         &mut self,
-        cmd: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
-        textureSlot: i32,
-        newMat: *mut crate::UnityEngine::Material,
-        newMatDiffers: bool,
-        st: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState,
+        meshHandle: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+        vertexCount: u32,
+        indexCount: u32,
+        vertexData: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Collections::NativeSlice_1<
+                crate::UnityEngine::UIElements::Vertex,
+            >,
         >,
+        indexData: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Collections::NativeSlice_1<u16>,
+        >,
+        shortLived: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "ApplyDrawCommandState",
-                (cmd, textureSlot, newMat, newMatDiffers, st),
+                "Allocate",
+                (meshHandle, vertexCount, indexCount, vertexData, indexData, shortLived),
             )?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateFenceValue(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateFenceValue", ())?;
         Ok(__cordl_ret)
     }
     pub fn Allocate_u32_ByRefMut0(
@@ -293,9 +303,249 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn Allocate_MeshHandle_u32__cordl_bool1(
+    pub fn ApplyBatchState(
         &mut self,
-        meshHandle: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+        st: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState,
+        >,
+        allowMaterialChange: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ApplyBatchState", (st, allowMaterialChange))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ApplyDrawCommandState(
+        &mut self,
+        cmd: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+        textureSlot: i32,
+        newMat: *mut crate::UnityEngine::Material,
+        newMatDiffers: bool,
+        st: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "ApplyDrawCommandState",
+                (cmd, textureSlot, newMat, newMatDiffers, st),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn CompleteCreation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CompleteCreation", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose__cordl_bool1(
+        &mut self,
+        disposing: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", (disposing))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DrawRanges<I, T>(
+        &mut self,
+        ib: *mut crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<I>,
+        vb: *mut crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T>,
+        ranges: crate::Unity::Collections::NativeSlice_1<
+            crate::UnityEngine::UIElements::UIR::DrawBufferRange,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        I: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DrawRanges", (ib, vb, ranges))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EvaluateChain(
+        &mut self,
+        head: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+        initialMat: *mut crate::UnityEngine::Material,
+        defaultMat: *mut crate::UnityEngine::Material,
+        gradientSettings: *mut crate::UnityEngine::Texture,
+        shaderInfo: *mut crate::UnityEngine::Texture,
+        pixelsPerPoint: f32,
+        transforms: crate::Unity::Collections::NativeSlice_1<
+            crate::UnityEngine::UIElements::UIR::Transform3x4,
+        >,
+        clipRects: crate::Unity::Collections::NativeSlice_1<crate::UnityEngine::Vector4>,
+        stateMatProps: *mut crate::UnityEngine::MaterialPropertyBlock,
+        allowMaterialChange: bool,
+        immediateException: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Exception,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "EvaluateChain",
+                (
+                    head,
+                    initialMat,
+                    defaultMat,
+                    gradientSettings,
+                    shaderInfo,
+                    pixelsPerPoint,
+                    transforms,
+                    clipRects,
+                    stateMatProps,
+                    allowMaterialChange,
+                    immediateException,
+                ),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Free(
+        &mut self,
+        mesh: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Free", (mesh))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GatherDrawStatistics(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics = __cordl_object
+            .invoke("GatherDrawStatistics", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitVertexDeclaration(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitVertexDeclaration", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn KickRanges(
+        &mut self,
+        ranges: *mut quest_hook::libil2cpp::Il2CppObject,
+        rangesReady: quest_hook::libil2cpp::ByRefMut<i32>,
+        rangesStart: quest_hook::libil2cpp::ByRefMut<i32>,
+        rangesCount: i32,
+        curPage: *mut crate::UnityEngine::UIElements::UIR::Page,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "KickRanges",
+                (ranges, rangesReady, rangesStart, rangesCount, curPage),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn New__cordl_bool1(
+        initialVertexCapacity: u32,
+        initialIndexCapacity: u32,
+        mockDevice: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (initialVertexCapacity, initialIndexCapacity, mockDevice),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_u32_u32_0(
+        initialVertexCapacity: u32,
+        initialIndexCapacity: u32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (initialVertexCapacity, initialIndexCapacity))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnFrameRenderingBegin(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnFrameRenderingBegin", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn PruneUnusedPages(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PruneUnusedPages", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryAllocFromPage(
+        &mut self,
+        page: *mut crate::UnityEngine::UIElements::UIR::Page,
+        vertexCount: u32,
+        indexCount: u32,
+        va: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::UIR::Alloc>,
+        ia: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::UIR::Alloc>,
+        shortLived: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "TryAllocFromPage",
+                (page, vertexCount, indexCount, va, ia, shortLived),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateAfterGPUUsedData(
+        &mut self,
+        mesh: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
         vertexCount: u32,
         indexCount: u32,
         vertexData: quest_hook::libil2cpp::ByRefMut<
@@ -306,16 +556,51 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         indexData: quest_hook::libil2cpp::ByRefMut<
             crate::Unity::Collections::NativeSlice_1<u16>,
         >,
-        shortLived: bool,
+        indexOffset: quest_hook::libil2cpp::ByRefMut<u16>,
+        allocToUpdate: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
+        >,
+        copyBackIndices: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "Allocate",
-                (meshHandle, vertexCount, indexCount, vertexData, indexData, shortLived),
+                "UpdateAfterGPUUsedData",
+                (
+                    mesh,
+                    vertexCount,
+                    indexCount,
+                    vertexData,
+                    indexData,
+                    indexOffset,
+                    allocToUpdate,
+                    copyBackIndices,
+                ),
             )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateCopyBackIndices(
+        &mut self,
+        mesh: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+        copyBackIndices: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateCopyBackIndices", (mesh, copyBackIndices))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateFenceValue(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateFenceValue", ())?;
         Ok(__cordl_ret)
     }
     pub fn Update_ByRefMut0(
@@ -360,228 +645,6 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_maxVerticesPerPage(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("get_maxVerticesPerPage", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateCopyBackIndices(
-        &mut self,
-        mesh: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
-        copyBackIndices: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateCopyBackIndices", (mesh, copyBackIndices))?;
-        Ok(__cordl_ret)
-    }
-    pub fn KickRanges(
-        &mut self,
-        ranges: *mut quest_hook::libil2cpp::Il2CppObject,
-        rangesReady: quest_hook::libil2cpp::ByRefMut<i32>,
-        rangesStart: quest_hook::libil2cpp::ByRefMut<i32>,
-        rangesCount: i32,
-        curPage: *mut crate::UnityEngine::UIElements::UIR::Page,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "KickRanges",
-                (ranges, rangesReady, rangesStart, rangesCount, curPage),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn DrawRanges<I, T>(
-        &mut self,
-        ib: *mut crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<I>,
-        vb: *mut crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T>,
-        ranges: crate::Unity::Collections::NativeSlice_1<
-            crate::UnityEngine::UIElements::UIR::DrawBufferRange,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        I: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DrawRanges", (ib, vb, ranges))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AdvanceFrame(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AdvanceFrame", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateAfterGPUUsedData(
-        &mut self,
-        mesh: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
-        vertexCount: u32,
-        indexCount: u32,
-        vertexData: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeSlice_1<
-                crate::UnityEngine::UIElements::Vertex,
-            >,
-        >,
-        indexData: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeSlice_1<u16>,
-        >,
-        indexOffset: quest_hook::libil2cpp::ByRefMut<u16>,
-        allocToUpdate: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
-        >,
-        copyBackIndices: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "UpdateAfterGPUUsedData",
-                (
-                    mesh,
-                    vertexCount,
-                    indexCount,
-                    vertexData,
-                    indexData,
-                    indexOffset,
-                    allocToUpdate,
-                    copyBackIndices,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn PruneUnusedPages(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PruneUnusedPages", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryAllocFromPage(
-        &mut self,
-        page: *mut crate::UnityEngine::UIElements::UIR::Page,
-        vertexCount: u32,
-        indexCount: u32,
-        va: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::UIR::Alloc>,
-        ia: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::UIR::Alloc>,
-        shortLived: bool,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "TryAllocFromPage",
-                (page, vertexCount, indexCount, va, ia, shortLived),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn EvaluateChain(
-        &mut self,
-        head: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
-        initialMat: *mut crate::UnityEngine::Material,
-        defaultMat: *mut crate::UnityEngine::Material,
-        gradientSettings: *mut crate::UnityEngine::Texture,
-        shaderInfo: *mut crate::UnityEngine::Texture,
-        pixelsPerPoint: f32,
-        transforms: crate::Unity::Collections::NativeSlice_1<
-            crate::UnityEngine::UIElements::UIR::Transform3x4,
-        >,
-        clipRects: crate::Unity::Collections::NativeSlice_1<crate::UnityEngine::Vector4>,
-        stateMatProps: *mut crate::UnityEngine::MaterialPropertyBlock,
-        allowMaterialChange: bool,
-        immediateException: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Exception,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "EvaluateChain",
-                (
-                    head,
-                    initialMat,
-                    defaultMat,
-                    gradientSettings,
-                    shaderInfo,
-                    pixelsPerPoint,
-                    transforms,
-                    clipRects,
-                    stateMatProps,
-                    allowMaterialChange,
-                    immediateException,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GatherDrawStatistics(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics = __cordl_object
-            .invoke("GatherDrawStatistics", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ApplyBatchState(
-        &mut self,
-        st: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState,
-        >,
-        allowMaterialChange: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ApplyBatchState", (st, allowMaterialChange))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnFrameRenderingBegin(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnFrameRenderingBegin", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_breakBatches(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_breakBatches", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn WaitOnCpuFence(
         &mut self,
         fence: u32,
@@ -591,107 +654,6 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WaitOnCpuFence", (fence))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitVertexDeclaration(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitVertexDeclaration", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_disposed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_disposed(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_disposed", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_fullyCreated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_fullyCreated", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose__cordl_bool1(
-        &mut self,
-        disposing: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ActiveUpdatesForMeshHandle(
-        &mut self,
-        mesh: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
-        > = __cordl_object.invoke("ActiveUpdatesForMeshHandle", (mesh))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_breakBatches(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_breakBatches", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CompleteCreation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CompleteCreation", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_u32_u32_0(
-        &mut self,
-        initialVertexCapacity: u32,
-        initialIndexCapacity: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (initialVertexCapacity, initialIndexCapacity))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor__cordl_bool1(
@@ -707,29 +669,67 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
             .invoke(".ctor", (initialVertexCapacity, initialIndexCapacity, mockDevice))?;
         Ok(__cordl_ret)
     }
-    pub fn New_u32_u32_0(
+    pub fn _ctor_u32_u32_0(
+        &mut self,
         initialVertexCapacity: u32,
         initialIndexCapacity: u32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (initialVertexCapacity, initialIndexCapacity))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (initialVertexCapacity, initialIndexCapacity))?;
+        Ok(__cordl_ret)
     }
-    pub fn New__cordl_bool1(
-        initialVertexCapacity: u32,
-        initialIndexCapacity: u32,
-        mockDevice: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (initialVertexCapacity, initialIndexCapacity, mockDevice),
-            )?;
-        Ok(__cordl_object)
+    pub fn get_breakBatches(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_breakBatches", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_disposed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_fullyCreated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_fullyCreated", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxVerticesPerPage(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("get_maxVerticesPerPage", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_breakBatches(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_breakBatches", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_disposed(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_disposed", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice")]

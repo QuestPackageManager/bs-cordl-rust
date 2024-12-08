@@ -20,63 +20,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for OVRAnchorContainer {
 }
 #[cfg(feature = "OVRAnchorContainer")]
 impl OVRAnchorContainer {
-    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsNull",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsEnabled",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IOVRAnchorComponent_OVRAnchorContainer__SetEnabledAsync(
-        &mut self,
-        enabled: bool,
-        timeout: f64,
-    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
-        let __cordl_ret: OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IOVRAnchorComponent<OVRAnchorContainer>.SetEnabledAsync",
-            (enabled, timeout),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IOVRAnchorComponent_OVRAnchorContainer__get_Handle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IOVRAnchorComponent<OVRAnchorContainer>.get_Handle",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IOVRAnchorComponent_OVRAnchorContainer__FromAnchor(
-        &mut self,
-        anchor: OVRAnchor,
-    ) -> quest_hook::libil2cpp::Result<OVRAnchorContainer> {
-        let __cordl_ret: OVRAnchorContainer = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IOVRAnchorComponent<OVRAnchorContainer>.FromAnchor",
-            (anchor),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_OVRAnchorContainer0(
         &mut self,
         other: OVRAnchorContainer,
@@ -96,6 +39,58 @@ impl OVRAnchorContainer {
             self,
             "Equals",
             (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn FetchChildrenAsync(
+        &mut self,
+        anchors: *mut crate::System::Collections::Generic::List_1<OVRAnchor>,
+    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
+        let __cordl_ret: OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "FetchChildrenAsync",
+            (anchors),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IOVRAnchorComponent_OVRAnchorContainer__FromAnchor(
+        &mut self,
+        anchor: OVRAnchor,
+    ) -> quest_hook::libil2cpp::Result<OVRAnchorContainer> {
+        let __cordl_ret: OVRAnchorContainer = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IOVRAnchorComponent<OVRAnchorContainer>.FromAnchor",
+            (anchor),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IOVRAnchorComponent_OVRAnchorContainer__SetEnabledAsync(
+        &mut self,
+        enabled: bool,
+        timeout: f64,
+    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
+        let __cordl_ret: OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IOVRAnchorComponent<OVRAnchorContainer>.SetEnabledAsync",
+            (enabled, timeout),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IOVRAnchorComponent_OVRAnchorContainer__get_Handle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IOVRAnchorComponent<OVRAnchorContainer>.get_Handle",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -121,6 +116,41 @@ impl OVRAnchorContainer {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+        anchor: OVRAnchor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (anchor),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Handle",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsEnabled",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsNull",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Type(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -129,14 +159,6 @@ impl OVRAnchorContainer {
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Type",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Handle",
             (),
         )?;
         Ok(__cordl_ret)
@@ -150,28 +172,6 @@ impl OVRAnchorContainer {
             self,
             "get_Uuids",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        anchor: OVRAnchor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (anchor),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn FetchChildrenAsync(
-        &mut self,
-        anchors: *mut crate::System::Collections::Generic::List_1<OVRAnchor>,
-    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
-        let __cordl_ret: OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "FetchChildrenAsync",
-            (anchors),
         )?;
         Ok(__cordl_ret)
     }

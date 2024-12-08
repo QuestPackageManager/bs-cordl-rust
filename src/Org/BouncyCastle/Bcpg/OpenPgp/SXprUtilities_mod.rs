@@ -27,6 +27,17 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::SXprUtilities_MyS2k {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+SXprUtilities+MyS2k")]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::SXprUtilities_MyS2k {
+    pub fn New(
+        algorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
+        iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        iterationCount64: i64,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, iv, iterationCount64))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         algorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
@@ -46,17 +57,6 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::SXprUtilities_MyS2k {
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_IterationCount", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        algorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-        iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        iterationCount64: i64,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, iv, iterationCount64))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+SXprUtilities+MyS2k")]
@@ -97,6 +97,13 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::OpenPgp::SXprUtiliti
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::SXprUtilities {
     #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+SXprUtilities+MyS2k")]
     pub type MyS2k = crate::Org::BouncyCastle::Bcpg::OpenPgp::SXprUtilities_MyS2k;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -106,13 +113,6 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::SXprUtilities {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+SXprUtilities")]

@@ -30,6 +30,38 @@ for crate::Org::BouncyCastle::Crypto::Generators::Gost3410ParametersGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Gost3410ParametersGenerator")]
 impl crate::Org::BouncyCastle::Crypto::Generators::Gost3410ParametersGenerator {
+    pub fn GenerateParameters(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Parameters::Gost3410Parameters,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Parameters::Gost3410Parameters = __cordl_object
+            .invoke("GenerateParameters", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        _cordl_size: i32,
+        typeProcedure: i32,
+        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (_cordl_size, typeProcedure, random))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -38,18 +70,6 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Gost3410ParametersGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn procedure_C(
-        &mut self,
-        p: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        q: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("procedure_C", (p, q))?;
         Ok(__cordl_ret)
     }
     pub fn procedure_A(
@@ -68,16 +88,20 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Gost3410ParametersGenerator {
             .invoke("procedure_A", (x0, c, pq, _cordl_size))?;
         Ok(__cordl_ret)
     }
-    pub fn GenerateParameters(
+    pub fn procedure_Aa(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Parameters::Gost3410Parameters,
-    > {
+        x0: i64,
+        c: i64,
+        pq: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::BigInteger,
+        >,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Parameters::Gost3410Parameters = __cordl_object
-            .invoke("GenerateParameters", ())?;
+        let __cordl_ret: i64 = __cordl_object
+            .invoke("procedure_Aa", (x0, c, pq, _cordl_size))?;
         Ok(__cordl_ret)
     }
     pub fn procedure_B(
@@ -95,35 +119,6 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Gost3410ParametersGenerator {
             .invoke("procedure_B", (x0, c, pq))?;
         Ok(__cordl_ret)
     }
-    pub fn procedure_Aa(
-        &mut self,
-        x0: i64,
-        c: i64,
-        pq: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::BigInteger,
-        >,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object
-            .invoke("procedure_Aa", (x0, c, pq, _cordl_size))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init(
-        &mut self,
-        _cordl_size: i32,
-        typeProcedure: i32,
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (_cordl_size, typeProcedure, random))?;
-        Ok(__cordl_ret)
-    }
     pub fn procedure_Bb(
         &mut self,
         x0: i64,
@@ -139,12 +134,17 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Gost3410ParametersGenerator {
             .invoke("procedure_Bb", (x0, c, pq))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn procedure_C(
+        &mut self,
+        p: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        q: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("procedure_C", (p, q))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Gost3410ParametersGenerator")]

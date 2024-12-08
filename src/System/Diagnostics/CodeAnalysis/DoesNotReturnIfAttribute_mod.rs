@@ -28,6 +28,13 @@ for crate::System::Diagnostics::CodeAnalysis::DoesNotReturnIfAttribute {
 }
 #[cfg(feature = "System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]
 impl crate::System::Diagnostics::CodeAnalysis::DoesNotReturnIfAttribute {
+    pub fn New(parameterValue: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (parameterValue))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         parameterValue: bool,
@@ -45,15 +52,6 @@ impl crate::System::Diagnostics::CodeAnalysis::DoesNotReturnIfAttribute {
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_ParameterValue", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        parameterValue: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (parameterValue))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]

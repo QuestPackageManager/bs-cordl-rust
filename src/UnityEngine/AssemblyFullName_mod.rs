@@ -25,16 +25,6 @@ for crate::UnityEngine::AssemblyFullName {
 }
 #[cfg(feature = "UnityEngine+AssemblyFullName")]
 impl crate::UnityEngine::AssemblyFullName {
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals(
         &mut self,
         other: *mut crate::System::Object,
@@ -50,6 +40,16 @@ impl crate::UnityEngine::AssemblyFullName {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
             (),
         )?;
         Ok(__cordl_ret)

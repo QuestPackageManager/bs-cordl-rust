@@ -37,6 +37,52 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Poly2Tri::Polygon {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+Polygon")]
 impl crate::UnityEngine::ProBuilder::Poly2Tri::Polygon {
+    pub fn AddHole(
+        &mut self,
+        poly: *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddHole", (poly))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddPoint(
+        &mut self,
+        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddPoint", (p))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddPoints(
+        &mut self,
+        list: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddPoints", (list))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddSteinerPoint(
+        &mut self,
+        point: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddSteinerPoint", (point))?;
+        Ok(__cordl_ret)
+    }
     pub fn AddSteinerPoints(
         &mut self,
         points: *mut crate::System::Collections::Generic::List_1<
@@ -50,6 +96,30 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::Polygon {
             .invoke("AddSteinerPoints", (points))?;
         Ok(__cordl_ret)
     }
+    pub fn AddTriangle(
+        &mut self,
+        t: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddTriangle", (t))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddTriangles(
+        &mut self,
+        list: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddTriangles", (list))?;
+        Ok(__cordl_ret)
+    }
     pub fn ClearSteinerPoints(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -60,7 +130,73 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::Polygon {
             .invoke("ClearSteinerPoints", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AddPoint(
+    pub fn ClearTriangles(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearTriangles", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn InsertPointAfter(
+        &mut self,
+        point: *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+        newPoint: *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InsertPointAfter", (point, newPoint))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_IEnumerable_1_1(
+        points: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (points))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IList_1_0(
+        points: *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (points))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray2(
+        points: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (points))?;
+        Ok(__cordl_object)
+    }
+    pub fn Prepare(
+        &mut self,
+        tcx: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Prepare", (tcx))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemovePoint(
         &mut self,
         p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -68,7 +204,61 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::Polygon {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddPoint", (p))?;
+            .invoke("RemovePoint", (p))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_IEnumerable_1_1(
+        &mut self,
+        points: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (points))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_IList_1_0(
+        &mut self,
+        points: *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (points))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppArray2(
+        &mut self,
+        points: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (points))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Holes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
+        > = __cordl_object.invoke("get_Holes", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Points(
@@ -101,78 +291,6 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::Polygon {
         > = __cordl_object.invoke("get_Triangles", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ClearTriangles(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearTriangles", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddPoints(
-        &mut self,
-        list: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddPoints", (list))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InsertPointAfter(
-        &mut self,
-        point: *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
-        newPoint: *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InsertPointAfter", (point, newPoint))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Holes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
-        > = __cordl_object.invoke("get_Holes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddTriangle(
-        &mut self,
-        t: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddTriangle", (t))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Prepare(
-        &mut self,
-        tcx: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Prepare", (tcx))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_TriangulationMode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -184,124 +302,6 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::Polygon {
         let __cordl_ret: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationMode = __cordl_object
             .invoke("get_TriangulationMode", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn AddTriangles(
-        &mut self,
-        list: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddTriangles", (list))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemovePoint(
-        &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemovePoint", (p))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddHole(
-        &mut self,
-        poly: *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddHole", (poly))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_IList_1_0(
-        &mut self,
-        points: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (points))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_IEnumerable_1_1(
-        &mut self,
-        points: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (points))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Il2CppArray2(
-        &mut self,
-        points: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (points))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddSteinerPoint(
-        &mut self,
-        point: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddSteinerPoint", (point))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_IList_1_0(
-        points: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (points))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IEnumerable_1_1(
-        points: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (points))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray2(
-        points: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (points))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+Polygon")]

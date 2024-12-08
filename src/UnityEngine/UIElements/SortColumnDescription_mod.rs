@@ -31,14 +31,115 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::SortColumnDescriptio
 }
 #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription")]
 impl crate::UnityEngine::UIElements::SortColumnDescription {
-    #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription+UxmlObjectFactory_1")]
-    pub type UxmlObjectFactory_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::SortColumnDescription_UxmlObjectFactory_1<
-        T,
-    >;
     #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription+UxmlObjectTraits_1")]
     pub type UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::SortColumnDescription_UxmlObjectTraits_1<
         T,
     >;
+    #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription+UxmlObjectFactory_1")]
+    pub type UxmlObjectFactory_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::SortColumnDescription_UxmlObjectFactory_1<
+        T,
+    >;
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_SortDirection2(
+        columnName: *mut crate::System::String,
+        direction: crate::UnityEngine::UIElements::SortDirection,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (columnName, direction))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_SortDirection1(
+        columnIndex: i32,
+        direction: crate::UnityEngine::UIElements::SortDirection,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (columnIndex, direction))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_String_SortDirection2(
+        &mut self,
+        columnName: *mut crate::System::String,
+        direction: crate::UnityEngine::UIElements::SortDirection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (columnName, direction))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_SortDirection1(
+        &mut self,
+        columnIndex: i32,
+        direction: crate::UnityEngine::UIElements::SortDirection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (columnIndex, direction))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_changed(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::SortColumnDescription,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_changed", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_column(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Column> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::Column = __cordl_object
+            .invoke("get_column", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_columnIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_columnIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_columnName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_columnName", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_direction(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::SortDirection> {
@@ -73,26 +174,6 @@ impl crate::UnityEngine::UIElements::SortColumnDescription {
             .invoke("set_column", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_columnName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_columnName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_column(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Column> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Column = __cordl_object
-            .invoke("get_column", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_columnIndex(
         &mut self,
         value: i32,
@@ -115,13 +196,6 @@ impl crate::UnityEngine::UIElements::SortColumnDescription {
             .invoke("set_columnName", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_columnIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_columnIndex", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_direction(
         &mut self,
         value: crate::UnityEngine::UIElements::SortDirection,
@@ -132,80 +206,6 @@ impl crate::UnityEngine::UIElements::SortColumnDescription {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_direction", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn add_changed(
-        &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::UIElements::SortColumnDescription,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_changed", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_SortDirection1(
-        &mut self,
-        columnIndex: i32,
-        direction: crate::UnityEngine::UIElements::SortDirection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (columnIndex, direction))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_SortDirection2(
-        &mut self,
-        columnName: *mut crate::System::String,
-        direction: crate::UnityEngine::UIElements::SortDirection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (columnName, direction))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_SortDirection1(
-        columnIndex: i32,
-        direction: crate::UnityEngine::UIElements::SortDirection,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (columnIndex, direction))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_SortDirection2(
-        columnName: *mut crate::System::String,
-        direction: crate::UnityEngine::UIElements::SortDirection,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (columnName, direction))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription")]
@@ -256,6 +256,13 @@ for crate::UnityEngine::UIElements::SortColumnDescription_UxmlObjectFactory_1<T>
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::SortColumnDescription_UxmlObjectFactory_1<T> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -267,13 +274,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription+UxmlObjectFactory_1")]
@@ -340,6 +340,13 @@ impl<
             .invoke("Init", (obj, bag, cc))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -351,13 +358,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription+UxmlObjectTraits_1")]

@@ -27,30 +27,6 @@ impl std::ops::DerefMut for crate::Zenject::ConventionSelectTypesBinder {
 impl crate::Zenject::ConventionSelectTypesBinder {
     #[cfg(feature = "Zenject+ConventionSelectTypesBinder+__c")]
     pub type __c = crate::Zenject::ConventionSelectTypesBinder___c;
-    pub fn AllClasses(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::ConventionFilterTypesBinder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::ConventionFilterTypesBinder = __cordl_object
-            .invoke("AllClasses", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AllNonAbstractClasses(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::ConventionFilterTypesBinder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::ConventionFilterTypesBinder = __cordl_object
-            .invoke("AllNonAbstractClasses", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AllAbstractClasses(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -63,7 +39,7 @@ impl crate::Zenject::ConventionSelectTypesBinder {
             .invoke("AllAbstractClasses", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AllTypes(
+    pub fn AllClasses(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ConventionFilterTypesBinder,
@@ -72,7 +48,7 @@ impl crate::Zenject::ConventionSelectTypesBinder {
             self,
         );
         let __cordl_ret: *mut crate::Zenject::ConventionFilterTypesBinder = __cordl_object
-            .invoke("AllTypes", ())?;
+            .invoke("AllClasses", ())?;
         Ok(__cordl_ret)
     }
     pub fn AllInterfaces(
@@ -87,15 +63,28 @@ impl crate::Zenject::ConventionSelectTypesBinder {
             .invoke("AllInterfaces", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn AllNonAbstractClasses(
         &mut self,
-        bindInfo: *mut crate::Zenject::ConventionBindInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Zenject::ConventionFilterTypesBinder,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bindInfo))?;
+        let __cordl_ret: *mut crate::Zenject::ConventionFilterTypesBinder = __cordl_object
+            .invoke("AllNonAbstractClasses", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn AllTypes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Zenject::ConventionFilterTypesBinder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::ConventionFilterTypesBinder = __cordl_object
+            .invoke("AllTypes", ())?;
         Ok(__cordl_ret)
     }
     pub fn CreateNextBinder(
@@ -112,12 +101,23 @@ impl crate::Zenject::ConventionSelectTypesBinder {
     }
     pub fn New(
         bindInfo: *mut crate::Zenject::ConventionBindInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindInfo))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        bindInfo: *mut crate::Zenject::ConventionBindInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bindInfo))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+ConventionSelectTypesBinder")]

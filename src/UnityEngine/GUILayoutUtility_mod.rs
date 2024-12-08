@@ -66,15 +66,21 @@ impl std::ops::DerefMut for crate::UnityEngine::GUILayoutUtility_LayoutCache {
 }
 #[cfg(feature = "UnityEngine+GUILayoutUtility+LayoutCache")]
 impl crate::UnityEngine::GUILayoutUtility_LayoutCache {
-    pub fn set_id(
+    pub fn New(instanceID: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (instanceID))?;
+        Ok(__cordl_object)
+    }
+    pub fn ResetCursor(
         &mut self,
-        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_id", (value))?;
+            .invoke("ResetCursor", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -88,22 +94,16 @@ impl crate::UnityEngine::GUILayoutUtility_LayoutCache {
             .invoke(".ctor", (instanceID))?;
         Ok(__cordl_ret)
     }
-    pub fn ResetCursor(
+    pub fn set_id(
         &mut self,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetCursor", ())?;
+            .invoke("set_id", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(instanceID: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (instanceID))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+GUILayoutUtility+LayoutCache")]

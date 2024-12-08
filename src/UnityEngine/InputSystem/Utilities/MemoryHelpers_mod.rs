@@ -24,15 +24,16 @@ for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+MemoryHelpers+BitRegion")]
 impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
-    pub fn _ctor_u32_u32_0(
+    pub fn Overlap(
         &mut self,
-        bitOffset: u32,
-        sizeInBits: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (bitOffset, sizeInBits),
+            "Overlap",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -49,16 +50,15 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Overlap(
+    pub fn _ctor_u32_u32_0(
         &mut self,
-        other: crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        bitOffset: u32,
+        sizeInBits: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Overlap",
-            (other),
+            ".ctor",
+            (bitOffset, sizeInBits),
         )?;
         Ok(__cordl_ret)
     }

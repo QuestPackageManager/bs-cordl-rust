@@ -29,13 +29,6 @@ impl std::ops::DerefMut for crate::MS::Internal::Xml::Cache::XPathNodePageInfo {
 }
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathNodePageInfo")]
 impl crate::MS::Internal::Xml::Cache::XPathNodePageInfo {
-    pub fn get_NodeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_NodeCount", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_NextPage(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -49,6 +42,13 @@ impl crate::MS::Internal::Xml::Cache::XPathNodePageInfo {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
             crate::MS::Internal::Xml::Cache::XPathNode,
         > = __cordl_object.invoke("get_NextPage", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NodeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_NodeCount", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_PageNumber(&mut self) -> quest_hook::libil2cpp::Result<i32> {

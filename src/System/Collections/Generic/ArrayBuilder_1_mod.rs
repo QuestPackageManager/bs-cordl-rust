@@ -40,21 +40,6 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        capacity: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (capacity),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn UncheckedAdd(
         &mut self,
         item: T,
@@ -67,6 +52,21 @@ impl<
             self,
             "UncheckedAdd",
             (item),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        capacity: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (capacity),
         )?;
         Ok(__cordl_ret)
     }

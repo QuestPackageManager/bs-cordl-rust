@@ -39,6 +39,18 @@ for crate::UnityEngine::TextGenerationSettings {
 }
 #[cfg(feature = "UnityEngine+TextGenerationSettings")]
 impl crate::UnityEngine::TextGenerationSettings {
+    pub fn CompareColors(
+        &mut self,
+        left: crate::UnityEngine::Color,
+        right: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CompareColors",
+            (left, right),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn CompareVector2(
         &mut self,
         left: crate::UnityEngine::Vector2,
@@ -59,18 +71,6 @@ impl crate::UnityEngine::TextGenerationSettings {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CompareColors(
-        &mut self,
-        left: crate::UnityEngine::Color,
-        right: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CompareColors",
-            (left, right),
         )?;
         Ok(__cordl_ret)
     }

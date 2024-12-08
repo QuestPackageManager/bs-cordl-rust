@@ -26,12 +26,62 @@ impl QuaternionSerializable {
     pub const kOneOverSqrtTwo: f32 = 0.70710677f32;
     pub const kScale: f32 = 11584.53f32;
     pub const kSqrtTwo: f32 = 1.4142135f32;
-    pub fn ToString(
+    pub fn Approximately(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: QuaternionSerializable,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
+            "Approximately",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Deserialize(
+        &mut self,
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Deserialize",
+            (reader),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object1(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_QuaternionSerializable0(
+        &mut self,
+        other: QuaternionSerializable,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetSize",
             (),
         )?;
         Ok(__cordl_ret)
@@ -47,14 +97,13 @@ impl QuaternionSerializable {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Quaternion0(
+    pub fn ToString(
         &mut self,
-        q: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (q),
+            "ToString",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -69,63 +118,14 @@ impl QuaternionSerializable {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_QuaternionSerializable0(
+    pub fn _ctor_Quaternion0(
         &mut self,
-        other: QuaternionSerializable,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Deserialize(
-        &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        q: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Deserialize",
-            (reader),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Approximately(
-        &mut self,
-        other: QuaternionSerializable,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Approximately",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetSize",
-            (),
+            ".ctor",
+            (q),
         )?;
         Ok(__cordl_ret)
     }

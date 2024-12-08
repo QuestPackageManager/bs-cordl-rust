@@ -24,39 +24,6 @@ impl std::ops::DerefMut for IConnectedPlayerBeatmapObjectEventManager {
 }
 #[cfg(feature = "IConnectedPlayerBeatmapObjectEventManager")]
 impl IConnectedPlayerBeatmapObjectEventManager {
-    pub fn remove_connectedPlayerSliderWasSpawnedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut SliderSpawnInfoNetSerializable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_connectedPlayerSliderWasSpawnedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_connectedPlayerNoteWasSpawnedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut NoteSpawnInfoNetSerializable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_connectedPlayerNoteWasSpawnedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_connectedPlayerNoteWasCutEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut NoteCutInfoNetSerializable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_connectedPlayerNoteWasCutEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Pause(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -67,26 +34,14 @@ impl IConnectedPlayerBeatmapObjectEventManager {
             .invoke("Pause", ())?;
         Ok(__cordl_ret)
     }
-    pub fn add_connectedPlayerNoteWasSpawnedEvent(
+    pub fn Resume(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteSpawnInfoNetSerializable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_connectedPlayerNoteWasSpawnedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_connectedPlayerSliderWasSpawnedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut SliderSpawnInfoNetSerializable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_connectedPlayerSliderWasSpawnedEvent", (value))?;
+            .invoke("Resume", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_connectedPlayerNoteWasCutEvent(
@@ -100,15 +55,26 @@ impl IConnectedPlayerBeatmapObjectEventManager {
             .invoke("add_connectedPlayerNoteWasCutEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_connectedPlayerObstacleWasSpawnedEvent(
+    pub fn add_connectedPlayerNoteWasMissedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleSpawnInfoNetSerializable>,
+        value: *mut crate::System::Action_1<*mut NoteMissInfoNetSerializable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_connectedPlayerObstacleWasSpawnedEvent", (value))?;
+            .invoke("add_connectedPlayerNoteWasMissedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_connectedPlayerNoteWasSpawnedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut NoteSpawnInfoNetSerializable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_connectedPlayerNoteWasSpawnedEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_connectedPlayerObstacleWasSpawnedEvent(
@@ -122,25 +88,31 @@ impl IConnectedPlayerBeatmapObjectEventManager {
             .invoke("add_connectedPlayerObstacleWasSpawnedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn add_connectedPlayerNoteWasMissedEvent(
+    pub fn add_connectedPlayerSliderWasSpawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteMissInfoNetSerializable>,
+        value: *mut crate::System::Action_1<*mut SliderSpawnInfoNetSerializable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_connectedPlayerNoteWasMissedEvent", (value))?;
+            .invoke("add_connectedPlayerSliderWasSpawnedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Resume(
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn remove_connectedPlayerNoteWasCutEvent(
         &mut self,
+        value: *mut crate::System::Action_1<*mut NoteCutInfoNetSerializable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Resume", ())?;
+            .invoke("remove_connectedPlayerNoteWasCutEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn remove_connectedPlayerNoteWasMissedEvent(
@@ -154,10 +126,38 @@ impl IConnectedPlayerBeatmapObjectEventManager {
             .invoke("remove_connectedPlayerNoteWasMissedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
+    pub fn remove_connectedPlayerNoteWasSpawnedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut NoteSpawnInfoNetSerializable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_connectedPlayerNoteWasSpawnedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_connectedPlayerObstacleWasSpawnedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut ObstacleSpawnInfoNetSerializable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_connectedPlayerObstacleWasSpawnedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_connectedPlayerSliderWasSpawnedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut SliderSpawnInfoNetSerializable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_connectedPlayerSliderWasSpawnedEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "IConnectedPlayerBeatmapObjectEventManager")]

@@ -28,17 +28,6 @@ for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
 }
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
 impl crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
-    pub fn _ctor(
-        &mut self,
-        cultureConverter: *mut crate::System::ComponentModel::CultureInfoConverter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (cultureConverter))?;
-        Ok(__cordl_ret)
-    }
     pub fn Compare(
         &mut self,
         item1: *mut crate::System::Object,
@@ -52,12 +41,23 @@ impl crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
     }
     pub fn New(
         cultureConverter: *mut crate::System::ComponentModel::CultureInfoConverter,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (cultureConverter))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        cultureConverter: *mut crate::System::ComponentModel::CultureInfoConverter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (cultureConverter))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
@@ -98,21 +98,10 @@ impl std::ops::DerefMut for crate::System::ComponentModel::CultureInfoConverter 
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter")]
 impl crate::System::ComponentModel::CultureInfoConverter {
     pub const DefaultInvariantCultureString: &'static str = "(Default)";
-    #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
-    pub type CultureComparer = crate::System::ComponentModel::CultureInfoConverter_CultureComparer;
     #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureInfoMapper")]
     pub type CultureInfoMapper = crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper;
-    pub fn GetStandardValuesSupported(
-        &mut self,
-        context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("GetStandardValuesSupported", (context))?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
+    pub type CultureComparer = crate::System::ComponentModel::CultureInfoConverter_CultureComparer;
     pub fn CanConvertFrom(
         &mut self,
         context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
@@ -125,48 +114,29 @@ impl crate::System::ComponentModel::CultureInfoConverter {
             .invoke("CanConvertFrom", (context, sourceType))?;
         Ok(__cordl_ret)
     }
-    pub fn get_DefaultCultureString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_DefaultCultureString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetStandardValues(
+    pub fn CanConvertTo(
         &mut self,
         context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::ComponentModel::TypeConverter_StandardValuesCollection,
-    > {
+        destinationType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::ComponentModel::TypeConverter_StandardValuesCollection = __cordl_object
-            .invoke("GetStandardValues", (context))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("CanConvertTo", (context, destinationType))?;
         Ok(__cordl_ret)
     }
-    pub fn GetCultureName(
+    pub fn ConvertFrom(
         &mut self,
+        context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
         culture: *mut crate::System::Globalization::CultureInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetCultureName", (culture))?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("ConvertFrom", (context, culture, value))?;
         Ok(__cordl_ret)
     }
     pub fn ConvertTo(
@@ -183,6 +153,30 @@ impl crate::System::ComponentModel::CultureInfoConverter {
             .invoke("ConvertTo", (context, culture, value, destinationType))?;
         Ok(__cordl_ret)
     }
+    pub fn GetCultureName(
+        &mut self,
+        culture: *mut crate::System::Globalization::CultureInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetCultureName", (culture))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetStandardValues(
+        &mut self,
+        context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::ComponentModel::TypeConverter_StandardValuesCollection,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::ComponentModel::TypeConverter_StandardValuesCollection = __cordl_object
+            .invoke("GetStandardValues", (context))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetStandardValuesExclusive(
         &mut self,
         context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
@@ -194,37 +188,43 @@ impl crate::System::ComponentModel::CultureInfoConverter {
             .invoke("GetStandardValuesExclusive", (context))?;
         Ok(__cordl_ret)
     }
-    pub fn ConvertFrom(
+    pub fn GetStandardValuesSupported(
         &mut self,
         context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
-        culture: *mut crate::System::Globalization::CultureInfo,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("ConvertFrom", (context, culture, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CanConvertTo(
-        &mut self,
-        context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
-        destinationType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
-            .invoke("CanConvertTo", (context, destinationType))?;
+            .invoke("GetStandardValuesSupported", (context))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_DefaultCultureString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_DefaultCultureString", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter")]

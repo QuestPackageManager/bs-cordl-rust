@@ -33,6 +33,73 @@ for ValueDropdownController_1<T> {
 impl<T: quest_hook::libil2cpp::Type> ValueDropdownController_1<T> {
     #[cfg(feature = "ValueDropdownController_1+__c")]
     pub type __c = crate::GlobalNamespace::ValueDropdownController_1___c<T>;
+    pub fn GetIdxForValue(&mut self, value: T) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetIdxForValue", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNamedValues(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::System::Tuple_2<T, *mut crate::System::String>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::System::Tuple_2<T, *mut crate::System::String>,
+        > = __cordl_object.invoke("GetNamedValues", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSelectedItemValue(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("GetSelectedItemValue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleSimpleTextDropdownDidSelectCellWithIdx(
+        &mut self,
+        dropdownWithTableView: *mut crate::HMUI::DropdownWithTableView,
+        idx: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleSimpleTextDropdownDidSelectCellWithIdx",
+                (dropdownWithTableView, idx),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -62,10 +129,7 @@ impl<T: quest_hook::libil2cpp::Type> ValueDropdownController_1<T> {
             .invoke("SelectCellWithValue", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didSelectCellWithIdxEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<i32, T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -74,10 +138,10 @@ impl<T: quest_hook::libil2cpp::Type> ValueDropdownController_1<T> {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didSelectCellWithIdxEvent", (value))?;
+            .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetIdxForValue(&mut self, value: T) -> quest_hook::libil2cpp::Result<i32>
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -85,26 +149,8 @@ impl<T: quest_hook::libil2cpp::Type> ValueDropdownController_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetIdxForValue", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_namedValues(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Tuple_2<T, *mut crate::System::String>,
-        >,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Tuple_2<T, *mut crate::System::String>,
-        > = __cordl_object.invoke("get_namedValues", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_didSelectCellWithIdxEvent(
@@ -136,49 +182,7 @@ impl<T: quest_hook::libil2cpp::Type> ValueDropdownController_1<T> {
             .invoke("get_innerDropdown", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetSelectedItemValue(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("GetSelectedItemValue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleSimpleTextDropdownDidSelectCellWithIdx(
-        &mut self,
-        dropdownWithTableView: *mut crate::HMUI::DropdownWithTableView,
-        idx: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleSimpleTextDropdownDidSelectCellWithIdx",
-                (dropdownWithTableView, idx),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNamedValues(
+    pub fn get_namedValues(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
@@ -194,10 +198,13 @@ impl<T: quest_hook::libil2cpp::Type> ValueDropdownController_1<T> {
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Tuple_2<T, *mut crate::System::String>,
-        > = __cordl_object.invoke("GetNamedValues", ())?;
+        > = __cordl_object.invoke("get_namedValues", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn remove_didSelectCellWithIdxEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<i32, T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -206,15 +213,8 @@ impl<T: quest_hook::libil2cpp::Type> ValueDropdownController_1<T> {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("remove_didSelectCellWithIdxEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ValueDropdownController_1")]

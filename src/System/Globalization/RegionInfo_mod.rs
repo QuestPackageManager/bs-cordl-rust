@@ -34,38 +34,24 @@ impl std::ops::DerefMut for crate::System::Globalization::RegionInfo {
 }
 #[cfg(feature = "System+Globalization+RegionInfo")]
 impl crate::System::Globalization::RegionInfo {
-    pub fn get_ThreeLetterWindowsRegionName(
+    pub fn Equals(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_ThreeLetterWindowsRegionName", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Name(
+    pub fn GetByTerritory(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        ci: *mut crate::System::Globalization::CultureInfo,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Name", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_GeoId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_GeoId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsMetric(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsMetric", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("GetByTerritory", (ci))?;
         Ok(__cordl_ret)
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -75,36 +61,39 @@ impl crate::System::Globalization::RegionInfo {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_CurrencyNativeName(
+    pub fn New_CultureInfo2(
+        ci: *mut crate::System::Globalization::CultureInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ci))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String1(
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_0(culture: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (culture))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_CurrencyNativeName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_0(
-        &mut self,
-        culture: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (culture))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String1(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name))?;
+            .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_CultureInfo2(
@@ -118,74 +107,57 @@ impl crate::System::Globalization::RegionInfo {
             .invoke(".ctor", (ci))?;
         Ok(__cordl_ret)
     }
-    pub fn get_NativeName(
+    pub fn _ctor_String1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_NativeName", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn get_TwoLetterISORegionName(
+    pub fn _ctor_i32_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        culture: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_TwoLetterISORegionName", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (culture))?;
         Ok(__cordl_ret)
     }
-    pub fn get_ISOCurrencySymbol(
+    pub fn construct_internal_region_from_name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_ISOCurrencySymbol", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_EnglishName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_EnglishName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        value: *mut crate::System::Object,
+        name: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (value))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("construct_internal_region_from_name", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn get_ThreeLetterISORegionName(
+    pub fn get_CurrencyEnglishName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_ThreeLetterISORegionName", ())?;
+            .invoke("get_CurrencyEnglishName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetByTerritory(
+    pub fn get_CurrencyNativeName(
         &mut self,
-        ci: *mut crate::System::Globalization::CultureInfo,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("GetByTerritory", (ci))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_CurrencyNativeName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_CurrencySymbol(
@@ -208,61 +180,89 @@ impl crate::System::Globalization::RegionInfo {
             .invoke("get_DisplayName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn construct_internal_region_from_name(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("construct_internal_region_from_name", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
+    pub fn get_EnglishName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
+            .invoke("get_EnglishName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_CurrencyEnglishName(
+    pub fn get_GeoId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_GeoId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ISOCurrencySymbol(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_CurrencyEnglishName", ())?;
+            .invoke("get_ISOCurrencySymbol", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_i32_0(culture: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (culture))?;
-        Ok(__cordl_object)
+    pub fn get_IsMetric(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsMetric", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_String1(
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name))?;
-        Ok(__cordl_object)
+    pub fn get_Name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Name", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_CultureInfo2(
-        ci: *mut crate::System::Globalization::CultureInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ci))?;
-        Ok(__cordl_object)
+    pub fn get_NativeName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_NativeName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ThreeLetterISORegionName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_ThreeLetterISORegionName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ThreeLetterWindowsRegionName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_ThreeLetterWindowsRegionName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TwoLetterISORegionName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_TwoLetterISORegionName", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Globalization+RegionInfo")]

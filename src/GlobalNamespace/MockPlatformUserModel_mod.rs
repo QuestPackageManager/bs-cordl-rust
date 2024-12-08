@@ -24,16 +24,6 @@ impl std::ops::DerefMut for MockPlatformUserModel {
 }
 #[cfg(feature = "MockPlatformUserModel")]
 impl MockPlatformUserModel {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetUserAuthToken(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -45,16 +35,6 @@ impl MockPlatformUserModel {
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
             *mut PlatformUserAuthTokenData,
         > = __cordl_object.invoke("GetUserAuthToken", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CanXPlatformAccessTokenBeCached(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_CanXPlatformAccessTokenBeCached", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetUserFriendsUserIds(
@@ -75,6 +55,19 @@ impl MockPlatformUserModel {
                 *mut crate::System::String,
             >,
         > = __cordl_object.invoke("GetUserFriendsUserIds", (cached))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetUserInfo(
+        &mut self,
+        ctx: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<*mut UserInfo>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<*mut UserInfo> = __cordl_object
+            .invoke("GetUserInfo", (ctx))?;
         Ok(__cordl_ret)
     }
     pub fn GetUserNamesForUserIds(
@@ -99,16 +92,12 @@ impl MockPlatformUserModel {
         > = __cordl_object.invoke("GetUserNamesForUserIds", (userIds))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_platformUserInfoDidChangeEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut UserInfo>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_platformUserInfoDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn RequestXPlatformAccessToken(
         &mut self,
@@ -124,6 +113,16 @@ impl MockPlatformUserModel {
         > = __cordl_object.invoke("RequestXPlatformAccessToken", (cancellationToken))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn add_platformUserInfoDidChangeEvent(
         &mut self,
         value: *mut crate::System::Action_1<*mut UserInfo>,
@@ -135,25 +134,26 @@ impl MockPlatformUserModel {
             .invoke("add_platformUserInfoDidChangeEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn GetUserInfo(
+    pub fn get_CanXPlatformAccessTokenBeCached(
         &mut self,
-        ctx: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut UserInfo>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<*mut UserInfo> = __cordl_object
-            .invoke("GetUserInfo", (ctx))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_CanXPlatformAccessTokenBeCached", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn remove_platformUserInfoDidChangeEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut UserInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_platformUserInfoDidChangeEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MockPlatformUserModel")]

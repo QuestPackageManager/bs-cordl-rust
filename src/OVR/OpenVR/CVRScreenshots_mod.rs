@@ -25,20 +25,21 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::CVRScreenshots {
 }
 #[cfg(feature = "OVR+OpenVR+CVRScreenshots")]
 impl crate::OVR::OpenVR::CVRScreenshots {
-    pub fn RequestScreenshot(
+    pub fn GetScreenshotPropertyFilename(
         &mut self,
-        pOutScreenshotHandle: quest_hook::libil2cpp::ByRefMut<u32>,
-        _cordl_type: crate::OVR::OpenVR::EVRScreenshotType,
-        pchPreviewFilename: *mut crate::System::String,
-        pchVRFilename: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
+        screenshotHandle: u32,
+        filenameType: crate::OVR::OpenVR::EVRScreenshotPropertyFilenames,
+        pchFilename: *mut crate::System::Text::StringBuilder,
+        cchFilename: u32,
+        pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRScreenshotError>,
+    ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = __cordl_object
+        let __cordl_ret: u32 = __cordl_object
             .invoke(
-                "RequestScreenshot",
-                (pOutScreenshotHandle, _cordl_type, pchPreviewFilename, pchVRFilename),
+                "GetScreenshotPropertyFilename",
+                (screenshotHandle, filenameType, pchFilename, cchFilename, pError),
             )?;
         Ok(__cordl_ret)
     }
@@ -54,22 +55,6 @@ impl crate::OVR::OpenVR::CVRScreenshots {
             .invoke("GetScreenshotPropertyType", (screenshotHandle, pError))?;
         Ok(__cordl_ret)
     }
-    pub fn TakeStereoScreenshot(
-        &mut self,
-        pOutScreenshotHandle: quest_hook::libil2cpp::ByRefMut<u32>,
-        pchPreviewFilename: *mut crate::System::String,
-        pchVRFilename: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = __cordl_object
-            .invoke(
-                "TakeStereoScreenshot",
-                (pOutScreenshotHandle, pchPreviewFilename, pchVRFilename),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn HookScreenshot(
         &mut self,
         pSupportedTypes: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -83,27 +68,30 @@ impl crate::OVR::OpenVR::CVRScreenshots {
             .invoke("HookScreenshot", (pSupportedTypes))?;
         Ok(__cordl_ret)
     }
-    pub fn UpdateScreenshotProgress(
+    pub fn New(
+        pInterface: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (pInterface))?;
+        Ok(__cordl_object)
+    }
+    pub fn RequestScreenshot(
         &mut self,
-        screenshotHandle: u32,
-        flProgress: f32,
+        pOutScreenshotHandle: quest_hook::libil2cpp::ByRefMut<u32>,
+        _cordl_type: crate::OVR::OpenVR::EVRScreenshotType,
+        pchPreviewFilename: *mut crate::System::String,
+        pchVRFilename: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = __cordl_object
-            .invoke("UpdateScreenshotProgress", (screenshotHandle, flProgress))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pInterface))?;
+            .invoke(
+                "RequestScreenshot",
+                (pOutScreenshotHandle, _cordl_type, pchPreviewFilename, pchVRFilename),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn SubmitScreenshot(
@@ -128,32 +116,44 @@ impl crate::OVR::OpenVR::CVRScreenshots {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetScreenshotPropertyFilename(
+    pub fn TakeStereoScreenshot(
         &mut self,
-        screenshotHandle: u32,
-        filenameType: crate::OVR::OpenVR::EVRScreenshotPropertyFilenames,
-        pchFilename: *mut crate::System::Text::StringBuilder,
-        cchFilename: u32,
-        pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRScreenshotError>,
-    ) -> quest_hook::libil2cpp::Result<u32> {
+        pOutScreenshotHandle: quest_hook::libil2cpp::ByRefMut<u32>,
+        pchPreviewFilename: *mut crate::System::String,
+        pchVRFilename: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: u32 = __cordl_object
+        let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = __cordl_object
             .invoke(
-                "GetScreenshotPropertyFilename",
-                (screenshotHandle, filenameType, pchFilename, cchFilename, pError),
+                "TakeStereoScreenshot",
+                (pOutScreenshotHandle, pchPreviewFilename, pchVRFilename),
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn UpdateScreenshotProgress(
+        &mut self,
+        screenshotHandle: u32,
+        flProgress: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = __cordl_object
+            .invoke("UpdateScreenshotProgress", (screenshotHandle, flProgress))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
         pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (pInterface))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (pInterface))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRScreenshots")]

@@ -26,41 +26,6 @@ impl std::ops::DerefMut for OVRHapticsClip {
 }
 #[cfg(feature = "OVRHapticsClip")]
 impl OVRHapticsClip {
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Capacity(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Capacity", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Samples(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("get_Samples", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteSample(
-        &mut self,
-        sample: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteSample", (sample))?;
-        Ok(__cordl_ret)
-    }
     pub fn InitializeFromAudioFloatTrack(
         &mut self,
         sourceData: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
@@ -78,16 +43,49 @@ impl OVRHapticsClip {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn set_Count(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Count", (value))?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_AudioClip_i32_4(
+        audioClip: *mut crate::UnityEngine::AudioClip,
+        channel: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (audioClip, channel))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray_i32_2(
+        samples: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        samplesCount: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (samples, samplesCount))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_OVRHapticsClip_OVRHapticsClip3(
+        a: *mut OVRHapticsClip,
+        b: *mut OVRHapticsClip,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (a, b))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_1(capacity: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (capacity))?;
+        Ok(__cordl_object)
     }
     pub fn Reset(
         &mut self,
@@ -97,6 +95,17 @@ impl OVRHapticsClip {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteSample(
+        &mut self,
+        sample: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteSample", (sample))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -109,15 +118,16 @@ impl OVRHapticsClip {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_1(
+    pub fn _ctor_AudioClip_i32_4(
         &mut self,
-        capacity: i32,
+        audioClip: *mut crate::UnityEngine::AudioClip,
+        channel: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (capacity))?;
+            .invoke(".ctor", (audioClip, channel))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_Il2CppArray_i32_2(
@@ -144,27 +154,39 @@ impl OVRHapticsClip {
             .invoke(".ctor", (a, b))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_AudioClip_i32_4(
+    pub fn _ctor_i32_1(
         &mut self,
-        audioClip: *mut crate::UnityEngine::AudioClip,
-        channel: i32,
+        capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (audioClip, channel))?;
+            .invoke(".ctor", (capacity))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Samples(
-        &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_Capacity(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Samples", (value))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Capacity", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Samples(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("get_Samples", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Capacity(
@@ -178,49 +200,27 @@ impl OVRHapticsClip {
             .invoke("set_Capacity", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_Count(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Count", (value))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_i32_1(capacity: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (capacity))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray_i32_2(
-        samples: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        samplesCount: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (samples, samplesCount))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_OVRHapticsClip_OVRHapticsClip3(
-        a: *mut OVRHapticsClip,
-        b: *mut OVRHapticsClip,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (a, b))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_AudioClip_i32_4(
-        audioClip: *mut crate::UnityEngine::AudioClip,
-        channel: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (audioClip, channel))?;
-        Ok(__cordl_object)
+    pub fn set_Samples(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Samples", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRHapticsClip")]

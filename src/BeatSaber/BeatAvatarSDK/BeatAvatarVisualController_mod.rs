@@ -72,6 +72,37 @@ impl crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController {
             .invoke("DisableEditedPartHighlight", ())?;
         Ok(__cordl_ret)
     }
+    pub fn HighlightEditedPart(
+        &mut self,
+        editPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+        uvSegment: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HighlightEditedPart", (editPart, uvSegment))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetHandsHighlight(
+        &mut self,
+        highlighted: bool,
+        uvSegment: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetHandsHighlight", (highlighted, uvSegment))?;
+        Ok(__cordl_ret)
+    }
     pub fn SetLightColor(
         &mut self,
         color: crate::UnityEngine::Color,
@@ -93,16 +124,6 @@ impl crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController {
             .invoke("UpdateAvatarColors", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn UpdateAvatarVisual(
         &mut self,
         avatarData: *mut crate::BeatSaber::BeatAvatarSDK::AvatarData,
@@ -114,36 +135,15 @@ impl crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController {
             .invoke("UpdateAvatarVisual", (avatarData))?;
         Ok(__cordl_ret)
     }
-    pub fn SetHandsHighlight(
+    pub fn _ctor(
         &mut self,
-        highlighted: bool,
-        uvSegment: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetHandsHighlight", (highlighted, uvSegment))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn HighlightEditedPart(
-        &mut self,
-        editPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
-        uvSegment: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HighlightEditedPart", (editPart, uvSegment))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController")]
@@ -195,18 +195,6 @@ for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDeleg
     feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController+HighlighterDelegate"
 )]
 impl crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         highlighted: bool,
@@ -247,12 +235,24 @@ impl crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDele
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(

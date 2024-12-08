@@ -41,30 +41,6 @@ impl PlayerLobbyPermissionConfigurationNetSerializable {
             .invoke("Deserialize", (reader))?;
         Ok(__cordl_ret)
     }
-    pub fn get_userId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_userId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isServerOwner(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isServerOwner", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_hasKickVotePermission(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hasKickVotePermission", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Init(
         &mut self,
         userId: *mut crate::System::String,
@@ -92,6 +68,13 @@ impl PlayerLobbyPermissionConfigurationNetSerializable {
                 ),
             )?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Serialize(
         &mut self,
@@ -121,6 +104,13 @@ impl PlayerLobbyPermissionConfigurationNetSerializable {
         let __cordl_ret: bool = __cordl_object.invoke("get_hasInvitePermission", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_hasKickVotePermission(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_hasKickVotePermission", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_hasRecommendBeatmapsPermission(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -141,12 +131,22 @@ impl PlayerLobbyPermissionConfigurationNetSerializable {
             .invoke("get_hasRecommendGameplayModifiersPermission", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_isServerOwner(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isServerOwner", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_userId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_userId", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PlayerLobbyPermissionConfigurationNetSerializable")]

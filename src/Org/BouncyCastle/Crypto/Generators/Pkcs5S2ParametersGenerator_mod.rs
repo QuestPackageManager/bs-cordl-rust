@@ -29,6 +29,21 @@ for crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Pkcs5S2ParametersGenerator")]
 impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
+    pub fn F(
+        &mut self,
+        S: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        c: i32,
+        iBuf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        outBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        outOff: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("F", (S, c, iBuf, outBytes, outOff))?;
+        Ok(__cordl_ret)
+    }
     pub fn GenerateDerivedKey(
         &mut self,
         dkLen: i32,
@@ -39,6 +54,91 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
             .invoke("GenerateDerivedKey", (dkLen))?;
         Ok(__cordl_ret)
+    }
+    pub fn GenerateDerivedMacParameters(
+        &mut self,
+        keySize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters = __cordl_object
+            .invoke("GenerateDerivedMacParameters", (keySize))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GenerateDerivedParameters_String_i32_1(
+        &mut self,
+        algorithm: *mut crate::System::String,
+        keySize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters = __cordl_object
+            .invoke("GenerateDerivedParameters", (algorithm, keySize))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GenerateDerivedParameters_String_i32_i32_3(
+        &mut self,
+        algorithm: *mut crate::System::String,
+        keySize: i32,
+        ivSize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters = __cordl_object
+            .invoke("GenerateDerivedParameters", (algorithm, keySize, ivSize))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GenerateDerivedParameters_i32_0(
+        &mut self,
+        keySize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters = __cordl_object
+            .invoke("GenerateDerivedParameters", (keySize))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GenerateDerivedParameters_i32_i32_2(
+        &mut self,
+        keySize: i32,
+        ivSize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters = __cordl_object
+            .invoke("GenerateDerivedParameters", (keySize, ivSize))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IDigest1(
+        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (digest))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_0(
         &mut self,
@@ -60,106 +160,6 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (digest))?;
         Ok(__cordl_ret)
-    }
-    pub fn GenerateDerivedMacParameters(
-        &mut self,
-        keySize: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters = __cordl_object
-            .invoke("GenerateDerivedMacParameters", (keySize))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GenerateDerivedParameters_i32_0(
-        &mut self,
-        keySize: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters = __cordl_object
-            .invoke("GenerateDerivedParameters", (keySize))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GenerateDerivedParameters_String_i32_1(
-        &mut self,
-        algorithm: *mut crate::System::String,
-        keySize: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters = __cordl_object
-            .invoke("GenerateDerivedParameters", (algorithm, keySize))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GenerateDerivedParameters_i32_i32_2(
-        &mut self,
-        keySize: i32,
-        ivSize: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters = __cordl_object
-            .invoke("GenerateDerivedParameters", (keySize, ivSize))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GenerateDerivedParameters_String_i32_i32_3(
-        &mut self,
-        algorithm: *mut crate::System::String,
-        keySize: i32,
-        ivSize: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters = __cordl_object
-            .invoke("GenerateDerivedParameters", (algorithm, keySize, ivSize))?;
-        Ok(__cordl_ret)
-    }
-    pub fn F(
-        &mut self,
-        S: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        c: i32,
-        iBuf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        outBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        outOff: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("F", (S, c, iBuf, outBytes, outOff))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IDigest1(
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (digest))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Pkcs5S2ParametersGenerator")]

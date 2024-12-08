@@ -23,17 +23,6 @@ impl std::ops::DerefMut for ICoroutineStarter {
 }
 #[cfg(feature = "ICoroutineStarter")]
 impl ICoroutineStarter {
-    pub fn StopCoroutine(
-        &mut self,
-        routine: *mut crate::UnityEngine::Coroutine,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StopCoroutine", (routine))?;
-        Ok(__cordl_ret)
-    }
     pub fn StartCoroutine(
         &mut self,
         routine: *mut crate::System::Collections::IEnumerator,
@@ -43,6 +32,17 @@ impl ICoroutineStarter {
         );
         let __cordl_ret: *mut crate::UnityEngine::Coroutine = __cordl_object
             .invoke("StartCoroutine", (routine))?;
+        Ok(__cordl_ret)
+    }
+    pub fn StopCoroutine(
+        &mut self,
+        routine: *mut crate::UnityEngine::Coroutine,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StopCoroutine", (routine))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

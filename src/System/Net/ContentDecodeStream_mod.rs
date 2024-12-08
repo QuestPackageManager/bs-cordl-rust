@@ -27,6 +27,28 @@ impl std::ops::DerefMut for crate::System::Net::ContentDecodeStream {
 impl crate::System::Net::ContentDecodeStream {
     #[cfg(feature = "System+Net+ContentDecodeStream+Mode")]
     pub type Mode = crate::System::Net::ContentDecodeStream_Mode;
+    pub fn FinishReading(
+        &mut self,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("FinishReading", (cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        operation: *mut crate::System::Net::WebOperation,
+        decodeStream: *mut crate::System::IO::Stream,
+        originalInnerStream: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (operation, decodeStream, originalInnerStream))?;
+        Ok(__cordl_object)
+    }
     pub fn ProcessReadAsync(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -46,16 +68,6 @@ impl crate::System::Net::ContentDecodeStream {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_OriginalInnerStream(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("get_OriginalInnerStream", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         operation: *mut crate::System::Net::WebOperation,
@@ -69,27 +81,15 @@ impl crate::System::Net::ContentDecodeStream {
             .invoke(".ctor", (operation, decodeStream, originalInnerStream))?;
         Ok(__cordl_ret)
     }
-    pub fn FinishReading(
+    pub fn get_OriginalInnerStream(
         &mut self,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("FinishReading", (cancellationToken))?;
+        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+            .invoke("get_OriginalInnerStream", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        operation: *mut crate::System::Net::WebOperation,
-        decodeStream: *mut crate::System::IO::Stream,
-        originalInnerStream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (operation, decodeStream, originalInnerStream))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+ContentDecodeStream")]

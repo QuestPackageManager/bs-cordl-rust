@@ -36,20 +36,6 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals(
         &mut self,
         other: crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<
@@ -67,6 +53,20 @@ impl<
             self,
             "Equals",
             (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -117,20 +117,21 @@ impl<
         TKey,
         TValue,
     >;
-    pub fn _ctor(
+    pub fn TryAdd(
         &mut self,
-        limit: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+        id: TKey,
+        obj: TValue,
+    ) -> quest_hook::libil2cpp::Result<bool>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (limit),
+            "TryAdd",
+            (id, obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -152,21 +153,20 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn TryAdd(
+    pub fn _ctor(
         &mut self,
-        id: TKey,
-        obj: TValue,
-    ) -> quest_hook::libil2cpp::Result<bool>
+        limit: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "TryAdd",
-            (id, obj),
+            ".ctor",
+            (limit),
         )?;
         Ok(__cordl_ret)
     }

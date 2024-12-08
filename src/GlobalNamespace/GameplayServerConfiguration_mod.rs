@@ -26,6 +26,17 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for GameplayServerConfiguration 
 }
 #[cfg(feature = "GameplayServerConfiguration")]
 impl GameplayServerConfiguration {
+    pub fn CreateFromSerializedData(
+        &mut self,
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+    ) -> quest_hook::libil2cpp::Result<GameplayServerConfiguration> {
+        let __cordl_ret: GameplayServerConfiguration = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CreateFromSerializedData",
+            (reader),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_ByRefMut0(
         &mut self,
         other: quest_hook::libil2cpp::ByRefMut<GameplayServerConfiguration>,
@@ -59,14 +70,11 @@ impl GameplayServerConfiguration {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WithMaxPlayerCount(
-        &mut self,
-        maxPlayerCount: i32,
-    ) -> quest_hook::libil2cpp::Result<GameplayServerConfiguration> {
-        let __cordl_ret: GameplayServerConfiguration = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "WithMaxPlayerCount",
-            (maxPlayerCount),
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -81,14 +89,14 @@ impl GameplayServerConfiguration {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CreateFromSerializedData(
+    pub fn WithMaxPlayerCount(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        maxPlayerCount: i32,
     ) -> quest_hook::libil2cpp::Result<GameplayServerConfiguration> {
         let __cordl_ret: GameplayServerConfiguration = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CreateFromSerializedData",
-            (reader),
+            "WithMaxPlayerCount",
+            (maxPlayerCount),
         )?;
         Ok(__cordl_ret)
     }
@@ -112,14 +120,6 @@ impl GameplayServerConfiguration {
                 songSelectionMode,
                 gameplayServerControlSettings,
             ),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
         )?;
         Ok(__cordl_ret)
     }

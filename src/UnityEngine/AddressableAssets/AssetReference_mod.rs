@@ -28,16 +28,75 @@ impl std::ops::DerefMut for crate::UnityEngine::AddressableAssets::AssetReferenc
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReference")]
 impl crate::UnityEngine::AddressableAssets::AssetReference {
-    pub fn get_OperationHandle(
+    pub fn InstantiateAsync_Transform__cordl_bool1(
         &mut self,
+        parent: *mut crate::UnityEngine::Transform,
+        instantiateInWorldSpace: bool,
     ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            *mut crate::UnityEngine::GameObject,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle = __cordl_object
-            .invoke("get_OperationHandle", ())?;
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            *mut crate::UnityEngine::GameObject,
+        > = __cordl_object
+            .invoke("InstantiateAsync", (parent, instantiateInWorldSpace))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InstantiateAsync_Vector3_Quaternion_Transform0(
+        &mut self,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        parent: *mut crate::UnityEngine::Transform,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            *mut crate::UnityEngine::GameObject,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            *mut crate::UnityEngine::GameObject,
+        > = __cordl_object.invoke("InstantiateAsync", (position, rotation, parent))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Instantiate_Transform__cordl_bool1(
+        &mut self,
+        parent: *mut crate::UnityEngine::Transform,
+        instantiateInWorldSpace: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            *mut crate::UnityEngine::GameObject,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            *mut crate::UnityEngine::GameObject,
+        > = __cordl_object.invoke("Instantiate", (parent, instantiateInWorldSpace))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Instantiate_Vector3_Quaternion_Transform0(
+        &mut self,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        parent: *mut crate::UnityEngine::Transform,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            *mut crate::UnityEngine::GameObject,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            *mut crate::UnityEngine::GameObject,
+        > = __cordl_object.invoke("Instantiate", (position, rotation, parent))?;
         Ok(__cordl_ret)
     }
     pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -47,21 +106,42 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
         let __cordl_ret: bool = __cordl_object.invoke("IsValid", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsDone(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn LoadAsset<TObject>(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            TObject,
+        >,
+    >
+    where
+        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsDone", ())?;
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            TObject,
+        > = __cordl_object.invoke("LoadAsset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Asset(
+    pub fn LoadAssetAsync<TObject>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            TObject,
+        >,
+    >
+    where
+        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Object = __cordl_object
-            .invoke("get_Asset", ())?;
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            TObject,
+        > = __cordl_object.invoke("LoadAssetAsync", ())?;
         Ok(__cordl_ret)
     }
     pub fn LoadScene(
@@ -98,40 +178,48 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
             .invoke("LoadSceneAsync", (loadMode, activateOnLoad, priority))?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiateAsync_Vector3_Quaternion_Transform0(
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String1(
+        guid: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (guid))?;
+        Ok(__cordl_object)
+    }
+    pub fn ReleaseAsset(
         &mut self,
-        position: crate::UnityEngine::Vector3,
-        rotation: crate::UnityEngine::Quaternion,
-        parent: *mut crate::UnityEngine::Transform,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::GameObject,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::GameObject,
-        > = __cordl_object.invoke("InstantiateAsync", (position, rotation, parent))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReleaseAsset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiateAsync_Transform__cordl_bool1(
+    pub fn ReleaseInstance(
         &mut self,
-        parent: *mut crate::UnityEngine::Transform,
-        instantiateInWorldSpace: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::GameObject,
-        >,
-    > {
+        obj: *mut crate::UnityEngine::GameObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::GameObject,
-        > = __cordl_object
-            .invoke("InstantiateAsync", (parent, instantiateInWorldSpace))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReleaseInstance", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RuntimeKeyIsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("RuntimeKeyIsValid", ())?;
         Ok(__cordl_ret)
     }
     pub fn ToString(
@@ -144,126 +232,19 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Instantiate_Vector3_Quaternion_Transform0(
+    pub fn UnLoadScene(
         &mut self,
-        position: crate::UnityEngine::Vector3,
-        rotation: crate::UnityEngine::Quaternion,
-        parent: *mut crate::UnityEngine::Transform,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::GameObject,
+            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::GameObject,
-        > = __cordl_object.invoke("Instantiate", (position, rotation, parent))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Instantiate_Transform__cordl_bool1(
-        &mut self,
-        parent: *mut crate::UnityEngine::Transform,
-        instantiateInWorldSpace: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::GameObject,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::GameObject,
-        > = __cordl_object.invoke("Instantiate", (parent, instantiateInWorldSpace))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SubObjectName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_SubObjectName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_SubObjectName(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_SubObjectName", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RuntimeKeyIsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("RuntimeKeyIsValid", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadAsset<TObject>(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            TObject,
-        >,
-    >
-    where
-        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            TObject,
-        > = __cordl_object.invoke("LoadAsset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SubOjbectType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_SubOjbectType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadAssetAsync<TObject>(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            TObject,
-        >,
-    >
-    where
-        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            TObject,
-        > = __cordl_object.invoke("LoadAssetAsync", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReleaseInstance(
-        &mut self,
-        obj: *mut crate::UnityEngine::GameObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReleaseInstance", (obj))?;
+            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+        > = __cordl_object.invoke("UnLoadScene", ())?;
         Ok(__cordl_ret)
     }
     pub fn ValidateAsset_Object0(
@@ -284,31 +265,6 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (path))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_RuntimeKey(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_RuntimeKey", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnLoadScene(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
-        > = __cordl_object.invoke("UnLoadScene", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -332,14 +288,73 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
             .invoke(".ctor", (guid))?;
         Ok(__cordl_ret)
     }
-    pub fn ReleaseAsset(
+    pub fn get_Asset(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReleaseAsset", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::Object = __cordl_object
+            .invoke("get_Asset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AssetGUID(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_AssetGUID", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsDone(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsDone", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_OperationHandle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle = __cordl_object
+            .invoke("get_OperationHandle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RuntimeKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_RuntimeKey", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SubObjectName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_SubObjectName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SubOjbectType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_SubOjbectType", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_OperationHandle(
@@ -353,31 +368,16 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
             .invoke("set_OperationHandle", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_AssetGUID(
+    pub fn set_SubObjectName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_AssetGUID", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_SubObjectName", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        guid: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (guid))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReference")]

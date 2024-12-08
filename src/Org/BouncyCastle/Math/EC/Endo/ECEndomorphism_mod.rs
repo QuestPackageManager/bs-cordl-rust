@@ -25,6 +25,11 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorp
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+ECEndomorphism")]
 impl crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_HasEfficientPointMap(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -43,11 +48,6 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPointMap = __cordl_object
             .invoke("get_PointMap", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+ECEndomorphism")]

@@ -27,18 +27,6 @@ for crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter 
 }
 #[cfg(feature = "GameplayModifiersModelSO+GameplayModifierBoolGetter")]
 impl crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         gameplayModifiers: *mut GameplayModifiers,
@@ -52,16 +40,6 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter
             .invoke("BeginInvoke", (gameplayModifiers, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn Invoke(
-        &mut self,
-        gameplayModifiers: *mut GameplayModifiers,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Invoke", (gameplayModifiers))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -72,15 +50,37 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter
         let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        gameplayModifiers: *mut GameplayModifiers,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Invoke", (gameplayModifiers))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "GameplayModifiersModelSO+GameplayModifierBoolGetter")]
@@ -140,47 +140,19 @@ impl std::ops::DerefMut for GameplayModifiersModelSO {
 #[cfg(feature = "GameplayModifiersModelSO")]
 impl GameplayModifiersModelSO {
     pub const kMaxPossibleMultiplier: f32 = 1.21f32;
-    #[cfg(feature = "GameplayModifiersModelSO+GameplayModifierBoolGetter")]
-    pub type GameplayModifierBoolGetter = crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter;
     #[cfg(feature = "GameplayModifiersModelSO+__c")]
     pub type __c = crate::GlobalNamespace::GameplayModifiersModelSO___c;
-    pub fn GetModifierBoolValue(
-        &mut self,
-        gameplayModifiers: *mut GameplayModifiers,
-        gameplayModifierParams: *mut GameplayModifierParamsSO,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "GetModifierBoolValue",
-                (gameplayModifiers, gameplayModifierParams),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetGameplayModifierParams(
-        &mut self,
-        modifier: GameplayModifierMask,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifierParamsSO> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut GameplayModifierParamsSO = __cordl_object
-            .invoke("GetGameplayModifierParams", (modifier))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSongSpeedFromValueGetter(
+    #[cfg(feature = "GameplayModifiersModelSO+GameplayModifierBoolGetter")]
+    pub type GameplayModifierBoolGetter = crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter;
+    pub fn CreateGameplayModifiers(
         &mut self,
         valueGetter: *mut crate::System::Func_2<*mut GameplayModifierParamsSO, bool>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::GameplayModifiers_SongSpeed,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifiers> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::GlobalNamespace::GameplayModifiers_SongSpeed = __cordl_object
-            .invoke("GetSongSpeedFromValueGetter", (valueGetter))?;
+        let __cordl_ret: *mut GameplayModifiers = __cordl_object
+            .invoke("CreateGameplayModifiers", (valueGetter))?;
         Ok(__cordl_ret)
     }
     pub fn CreateModifierParamsList(
@@ -197,14 +169,61 @@ impl GameplayModifiersModelSO {
         > = __cordl_object.invoke("CreateModifierParamsList", (gameplayModifiers))?;
         Ok(__cordl_ret)
     }
-    pub fn OnEnable(
+    pub fn GetGameplayModifierParams(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        modifier: GameplayModifierMask,
+    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifierParamsSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
+        let __cordl_ret: *mut GameplayModifierParamsSO = __cordl_object
+            .invoke("GetGameplayModifierParams", (modifier))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetModifiedScoreForGameplayModifiers(
+        &mut self,
+        multipliedScore: i32,
+        modifierParams: *mut crate::System::Collections::Generic::List_1<
+            *mut GameplayModifierParamsSO,
+        >,
+        energy: f32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke(
+                "GetModifiedScoreForGameplayModifiers",
+                (multipliedScore, modifierParams, energy),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetModifierBoolValue(
+        &mut self,
+        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifierParams: *mut GameplayModifierParamsSO,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "GetModifierBoolValue",
+                (gameplayModifiers, gameplayModifierParams),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSongSpeedFromValueGetter(
+        &mut self,
+        valueGetter: *mut crate::System::Func_2<*mut GameplayModifierParamsSO, bool>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::GameplayModifiers_SongSpeed,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::GameplayModifiers_SongSpeed = __cordl_object
+            .invoke("GetSongSpeedFromValueGetter", (valueGetter))?;
         Ok(__cordl_ret)
     }
     pub fn GetTotalMultiplier(
@@ -219,34 +238,6 @@ impl GameplayModifiersModelSO {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("GetTotalMultiplier", (modifierParams, energy))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MaxModifiedScoreForMaxMultipliedScore_f32_0(
-        &mut self,
-        maxMultipliedScore: i32,
-        modifierParams: *mut crate::System::Collections::Generic::List_1<
-            *mut GameplayModifierParamsSO,
-        >,
-        energy: f32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke(
-                "MaxModifiedScoreForMaxMultipliedScore",
-                (maxMultipliedScore, modifierParams, energy),
-            )?;
         Ok(__cordl_ret)
     }
     pub fn MaxModifiedScoreForMaxMultipliedScore_GameplayModifiersModelSO_f32_1(
@@ -268,9 +259,9 @@ impl GameplayModifiersModelSO {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetModifiedScoreForGameplayModifiers(
+    pub fn MaxModifiedScoreForMaxMultipliedScore_f32_0(
         &mut self,
-        multipliedScore: i32,
+        maxMultipliedScore: i32,
         modifierParams: *mut crate::System::Collections::Generic::List_1<
             *mut GameplayModifierParamsSO,
         >,
@@ -281,9 +272,36 @@ impl GameplayModifiersModelSO {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke(
-                "GetModifiedScoreForGameplayModifiers",
-                (multipliedScore, modifierParams, energy),
+                "MaxModifiedScoreForMaxMultipliedScore",
+                (maxMultipliedScore, modifierParams, energy),
             )?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnEnable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnEnable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_gameplayModifierGetters(
@@ -302,24 +320,6 @@ impl GameplayModifiersModelSO {
             *mut crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
         > = __cordl_object.invoke("get_gameplayModifierGetters", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn CreateGameplayModifiers(
-        &mut self,
-        valueGetter: *mut crate::System::Func_2<*mut GameplayModifierParamsSO, bool>,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifiers> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut GameplayModifiers = __cordl_object
-            .invoke("CreateGameplayModifiers", (valueGetter))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "GameplayModifiersModelSO")]

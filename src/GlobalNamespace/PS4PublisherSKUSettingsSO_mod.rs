@@ -29,6 +29,13 @@ for crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
 }
 #[cfg(feature = "PS4PublisherSKUSettingsSO+PS4BuildVersion")]
 impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -37,16 +44,6 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_masterVersion(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_masterVersion", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_applicationVersion(
@@ -59,12 +56,15 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
             .invoke("get_applicationVersion", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_masterVersion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_masterVersion", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PS4PublisherSKUSettingsSO+PS4BuildVersion")]
@@ -111,19 +111,12 @@ impl std::ops::DerefMut for PS4PublisherSKUSettingsSO {
 impl PS4PublisherSKUSettingsSO {
     #[cfg(feature = "PS4PublisherSKUSettingsSO+PS4BuildVersion")]
     pub type PS4BuildVersion = crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion;
-    pub fn get_defaultAgeRestriction(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_defaultAgeRestriction", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_parentalLockLevel(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_parentalLockLevel", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -133,6 +126,16 @@ impl PS4PublisherSKUSettingsSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_applicationCategory(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<PS4ApplicationCategory> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: PS4ApplicationCategory = __cordl_object
+            .invoke("get_applicationCategory", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_buildVersion(
@@ -145,6 +148,13 @@ impl PS4PublisherSKUSettingsSO {
         );
         let __cordl_ret: *mut crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion = __cordl_object
             .invoke("get_buildVersion", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_defaultAgeRestriction(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_defaultAgeRestriction", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_latestBuildVersion(
@@ -169,22 +179,12 @@ impl PS4PublisherSKUSettingsSO {
             .invoke("get_npTitleFilenamePath", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_applicationCategory(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<PS4ApplicationCategory> {
+    pub fn get_parentalLockLevel(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: PS4ApplicationCategory = __cordl_object
-            .invoke("get_applicationCategory", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_parentalLockLevel", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PS4PublisherSKUSettingsSO")]

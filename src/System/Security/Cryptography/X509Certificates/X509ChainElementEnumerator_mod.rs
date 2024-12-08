@@ -38,6 +38,32 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainElementEnu
     feature = "System+Security+Cryptography+X509Certificates+X509ChainElementEnumerator"
 )]
 impl crate::System::Security::Cryptography::X509Certificates::X509ChainElementEnumerator {
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        enumerable: *mut crate::System::Collections::IEnumerable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (enumerable))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
@@ -46,25 +72,6 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainElementEn
         );
         let __cordl_ret: *mut crate::System::Object = __cordl_object
             .invoke("System.Collections.IEnumerator.get_Current", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Current(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509ChainElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainElement = __cordl_object
-            .invoke("get_Current", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -78,24 +85,17 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainElementEn
             .invoke(".ctor", (enumerable))?;
         Ok(__cordl_ret)
     }
-    pub fn Reset(
+    pub fn get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Security::Cryptography::X509Certificates::X509ChainElement,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
+        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainElement = __cordl_object
+            .invoke("get_Current", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        enumerable: *mut crate::System::Collections::IEnumerable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (enumerable))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

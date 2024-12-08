@@ -27,6 +27,17 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Models::Error {
 }
 #[cfg(feature = "Oculus+Platform+Models+Error")]
 impl crate::Oculus::Platform::Models::Error {
+    pub fn New(
+        code: i32,
+        message: *mut crate::System::String,
+        httpCode: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (code, message, httpCode))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         code: i32,
@@ -39,17 +50,6 @@ impl crate::Oculus::Platform::Models::Error {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (code, message, httpCode))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        code: i32,
-        message: *mut crate::System::String,
-        httpCode: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (code, message, httpCode))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Oculus+Platform+Models+Error")]

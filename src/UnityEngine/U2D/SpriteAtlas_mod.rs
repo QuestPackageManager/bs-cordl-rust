@@ -24,6 +24,16 @@ impl std::ops::DerefMut for crate::UnityEngine::U2D::SpriteAtlas {
 }
 #[cfg(feature = "UnityEngine+U2D+SpriteAtlas")]
 impl crate::UnityEngine::U2D::SpriteAtlas {
+    pub fn CanBindTo(
+        &mut self,
+        sprite: *mut crate::UnityEngine::Sprite,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("CanBindTo", (sprite))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetSprite(
         &mut self,
         name: *mut crate::System::String,
@@ -35,31 +45,14 @@ impl crate::UnityEngine::U2D::SpriteAtlas {
             .invoke("GetSprite", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn get_tag(
+    pub fn GetSpritesScripting(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        sprites: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Sprite>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_tag", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CanBindTo(
-        &mut self,
-        sprite: *mut crate::UnityEngine::Sprite,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CanBindTo", (sprite))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_spriteCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_spriteCount", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetSpritesScripting", (sprites))?;
         Ok(__cordl_ret)
     }
     pub fn GetSpritesWithNameScripting(
@@ -74,13 +67,6 @@ impl crate::UnityEngine::U2D::SpriteAtlas {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetSpritesWithNameScripting", (sprites, name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isVariant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isVariant", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetSprites_Il2CppArray0(
@@ -106,6 +92,13 @@ impl crate::UnityEngine::U2D::SpriteAtlas {
         let __cordl_ret: i32 = __cordl_object.invoke("GetSprites", (sprites, name))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -116,22 +109,29 @@ impl crate::UnityEngine::U2D::SpriteAtlas {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetSpritesScripting(
-        &mut self,
-        sprites: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Sprite>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_isVariant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetSpritesScripting", (sprites))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isVariant", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_spriteCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_spriteCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_tag(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_tag", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+U2D+SpriteAtlas")]

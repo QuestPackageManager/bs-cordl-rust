@@ -27,14 +27,57 @@ impl std::ops::DerefMut for crate::Zenject::ProviderBindingFinalizer {
 impl crate::Zenject::ProviderBindingFinalizer {
     #[cfg(feature = "Zenject+ProviderBindingFinalizer+__c")]
     pub type __c = crate::Zenject::ProviderBindingFinalizer___c;
-    pub fn get_BindInfo(
+    pub fn FinalizeBinding(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::BindInfo> {
+        container: *mut crate::Zenject::DiContainer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::BindInfo = __cordl_object
-            .invoke("get_BindInfo", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FinalizeBinding", (container))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetScope(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Zenject::ScopeTypes> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Zenject::ScopeTypes = __cordl_object
+            .invoke("GetScope", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        bindInfo: *mut crate::Zenject::BindInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bindInfo))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnFinalizeBinding(
+        &mut self,
+        container: *mut crate::Zenject::DiContainer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnFinalizeBinding", (container))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterProviderForAllContracts(
+        &mut self,
+        container: *mut crate::Zenject::DiContainer,
+        provider: *mut crate::Zenject::IProvider,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterProviderForAllContracts", (container, provider))?;
         Ok(__cordl_ret)
     }
     pub fn RegisterProviderPerContract(
@@ -51,6 +94,57 @@ impl crate::Zenject::ProviderBindingFinalizer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterProviderPerContract", (container, providerFunc))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterProvider_IProvider0<TContract>(
+        &mut self,
+        container: *mut crate::Zenject::DiContainer,
+        provider: *mut crate::Zenject::IProvider,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterProvider", (container, provider))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterProvider_Type_IProvider1(
+        &mut self,
+        container: *mut crate::Zenject::DiContainer,
+        contractType: *mut crate::System::Type,
+        provider: *mut crate::Zenject::IProvider,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterProvider", (container, contractType, provider))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterProvidersForAllContractsPerConcreteType(
+        &mut self,
+        container: *mut crate::Zenject::DiContainer,
+        concreteTypes: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::System::Type,
+        >,
+        providerFunc: *mut crate::System::Func_3<
+            *mut crate::Zenject::DiContainer,
+            *mut crate::System::Type,
+            *mut crate::Zenject::IProvider,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "RegisterProvidersForAllContractsPerConcreteType",
+                (container, concreteTypes, providerFunc),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn RegisterProvidersPerContractAndConcreteType(
@@ -87,51 +181,6 @@ impl crate::Zenject::ProviderBindingFinalizer {
             .invoke("ValidateBindTypes", (concreteType, contractType))?;
         Ok(__cordl_ret)
     }
-    pub fn RegisterProvidersForAllContractsPerConcreteType(
-        &mut self,
-        container: *mut crate::Zenject::DiContainer,
-        concreteTypes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Type,
-        >,
-        providerFunc: *mut crate::System::Func_3<
-            *mut crate::Zenject::DiContainer,
-            *mut crate::System::Type,
-            *mut crate::Zenject::IProvider,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "RegisterProvidersForAllContractsPerConcreteType",
-                (container, concreteTypes, providerFunc),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn FinalizeBinding(
-        &mut self,
-        container: *mut crate::Zenject::DiContainer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FinalizeBinding", (container))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterProviderForAllContracts(
-        &mut self,
-        container: *mut crate::Zenject::DiContainer,
-        provider: *mut crate::Zenject::IProvider,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterProviderForAllContracts", (container, provider))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         bindInfo: *mut crate::Zenject::BindInfo,
@@ -141,6 +190,16 @@ impl crate::Zenject::ProviderBindingFinalizer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bindInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_BindInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::BindInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::BindInfo = __cordl_object
+            .invoke("get_BindInfo", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_BindingInheritanceMethod(
@@ -153,16 +212,6 @@ impl crate::Zenject::ProviderBindingFinalizer {
             .invoke("get_BindingInheritanceMethod", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetScope(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Zenject::ScopeTypes> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Zenject::ScopeTypes = __cordl_object
-            .invoke("GetScope", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_BindInfo(
         &mut self,
         value: *mut crate::Zenject::BindInfo,
@@ -173,55 +222,6 @@ impl crate::Zenject::ProviderBindingFinalizer {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_BindInfo", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn OnFinalizeBinding(
-        &mut self,
-        container: *mut crate::Zenject::DiContainer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnFinalizeBinding", (container))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterProvider_IProvider0<TContract>(
-        &mut self,
-        container: *mut crate::Zenject::DiContainer,
-        provider: *mut crate::Zenject::IProvider,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterProvider", (container, provider))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterProvider_Type_IProvider1(
-        &mut self,
-        container: *mut crate::Zenject::DiContainer,
-        contractType: *mut crate::System::Type,
-        provider: *mut crate::Zenject::IProvider,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterProvider", (container, contractType, provider))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        bindInfo: *mut crate::Zenject::BindInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bindInfo))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+ProviderBindingFinalizer")]

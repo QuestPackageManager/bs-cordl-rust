@@ -27,6 +27,45 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPai
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+CertifiedKeyPair")]
 impl crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPair {
+    pub fn New_Asn1Sequence0(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_CertOrEncCert1(
+        certOrEncCert: *mut crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (certOrEncCert))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_CertOrEncCert_EncryptedValue_PkiPublicationInfo2(
+        certOrEncCert: *mut crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert,
+        privateKey: *mut crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
+        publicationInfo: *mut crate::Org::BouncyCastle::Asn1::Crmf::PkiPublicationInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (certOrEncCert, privateKey, publicationInfo))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToAsn1Object(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("ToAsn1Object", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_Asn1Sequence0(
         &mut self,
         seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
@@ -62,18 +101,6 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPair {
             .invoke(".ctor", (certOrEncCert, privateKey, publicationInfo))?;
         Ok(__cordl_ret)
     }
-    pub fn get_PrivateKey(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue = __cordl_object
-            .invoke("get_PrivateKey", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_CertOrEncCert(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -84,6 +111,18 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPair {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert = __cordl_object
             .invoke("get_CertOrEncCert", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_PrivateKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue = __cordl_object
+            .invoke("get_PrivateKey", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_PublicationInfo(
@@ -97,45 +136,6 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPair {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::PkiPublicationInfo = __cordl_object
             .invoke("get_PublicationInfo", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn ToAsn1Object(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_Asn1Sequence0(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_CertOrEncCert1(
-        certOrEncCert: *mut crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (certOrEncCert))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_CertOrEncCert_EncryptedValue_PkiPublicationInfo2(
-        certOrEncCert: *mut crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert,
-        privateKey: *mut crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
-        publicationInfo: *mut crate::Org::BouncyCastle::Asn1::Crmf::PkiPublicationInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (certOrEncCert, privateKey, publicationInfo))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+CertifiedKeyPair")]

@@ -39,11 +39,14 @@ impl crate::System::TimeSpan {
     pub const TicksPerMinute: i64 = 600000000i64;
     pub const TicksPerSecond: i64 = 10000000i64;
     pub const TicksPerTenthSecond: i64 = 1000000i64;
-    pub fn get_Seconds(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Add(
+        &mut self,
+        ts: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Seconds",
-            (),
+            "Add",
+            (ts),
         )?;
         Ok(__cordl_ret)
     }
@@ -69,61 +72,6 @@ impl crate::System::TimeSpan {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TotalDays(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_TotalDays",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i64_0(
-        &mut self,
-        ticks: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (ticks),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_i32_i32_1(
-        &mut self,
-        hours: i32,
-        minutes: i32,
-        seconds: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (hours, minutes, seconds),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_i32_i32_i32_i32_2(
-        &mut self,
-        days: i32,
-        hours: i32,
-        minutes: i32,
-        seconds: i32,
-        milliseconds: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (days, hours, minutes, seconds, milliseconds),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Duration(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
@@ -131,33 +79,6 @@ impl crate::System::TimeSpan {
             self,
             "Duration",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Hours(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Hours",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TotalHours(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_TotalHours",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Subtract(
-        &mut self,
-        ts: crate::System::TimeSpan,
-    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        let __cordl_ret: crate::System::TimeSpan = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Subtract",
-            (ts),
         )?;
         Ok(__cordl_ret)
     }
@@ -183,45 +104,29 @@ impl crate::System::TimeSpan {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Ticks(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Ticks",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TotalMilliseconds(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_TotalMilliseconds",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TotalSeconds(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_TotalSeconds",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Minutes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Minutes",
+            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Add(
+    pub fn Negate(&mut self) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Negate",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Subtract(
         &mut self,
         ts: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
         let __cordl_ret: crate::System::TimeSpan = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Add",
+            "Subtract",
             (ts),
         )?;
         Ok(__cordl_ret)
@@ -273,11 +178,42 @@ impl crate::System::TimeSpan {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_TotalMinutes(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn _ctor_i32_i32_i32_1(
+        &mut self,
+        hours: i32,
+        minutes: i32,
+        seconds: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_TotalMinutes",
-            (),
+            ".ctor",
+            (hours, minutes, seconds),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_i32_i32_i32_i32_2(
+        &mut self,
+        days: i32,
+        hours: i32,
+        minutes: i32,
+        seconds: i32,
+        milliseconds: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (days, hours, minutes, seconds, milliseconds),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i64_0(
+        &mut self,
+        ticks: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (ticks),
         )?;
         Ok(__cordl_ret)
     }
@@ -289,10 +225,74 @@ impl crate::System::TimeSpan {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Negate(&mut self) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        let __cordl_ret: crate::System::TimeSpan = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_Hours(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Negate",
+            "get_Hours",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Minutes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Minutes",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Seconds(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Seconds",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Ticks(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Ticks",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TotalDays(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_TotalDays",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TotalHours(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_TotalHours",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TotalMilliseconds(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_TotalMilliseconds",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TotalMinutes(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_TotalMinutes",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TotalSeconds(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_TotalSeconds",
             (),
         )?;
         Ok(__cordl_ret)

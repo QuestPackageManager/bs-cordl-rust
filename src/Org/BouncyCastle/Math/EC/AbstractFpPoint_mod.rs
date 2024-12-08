@@ -24,6 +24,33 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::AbstractFpPoint 
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractFpPoint")]
 impl crate::Org::BouncyCastle::Math::EC::AbstractFpPoint {
+    pub fn New_Il2CppArray__cordl_bool1(
+        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
+        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        zs: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        >,
+        withCompression: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (curve, x, y, zs, withCompression))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool0(
+        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
+        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        withCompression: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (curve, x, y, withCompression))?;
+        Ok(__cordl_object)
+    }
     pub fn SatisfiesCurveEquation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -44,27 +71,6 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractFpPoint {
             .invoke("Subtract", (b))?;
         Ok(__cordl_ret)
     }
-    pub fn get_CompressionYTilde(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CompressionYTilde", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor__cordl_bool0(
-        &mut self,
-        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        withCompression: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (curve, x, y, withCompression))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_Il2CppArray__cordl_bool1(
         &mut self,
         curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
@@ -82,32 +88,26 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractFpPoint {
             .invoke(".ctor", (curve, x, y, zs, withCompression))?;
         Ok(__cordl_ret)
     }
-    pub fn New__cordl_bool0(
+    pub fn _ctor__cordl_bool0(
+        &mut self,
         curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
         x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
         y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
         withCompression: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (curve, x, y, withCompression))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (curve, x, y, withCompression))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_Il2CppArray__cordl_bool1(
-        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        zs: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        >,
-        withCompression: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (curve, x, y, zs, withCompression))?;
-        Ok(__cordl_object)
+    pub fn get_CompressionYTilde(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CompressionYTilde", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractFpPoint")]

@@ -29,6 +29,46 @@ impl std::ops::DerefMut for crate::System::Net::Http::StreamContent {
 }
 #[cfg(feature = "System+Net+Http+StreamContent")]
 impl crate::System::Net::Http::StreamContent {
+    pub fn Dispose(
+        &mut self,
+        disposing: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", (disposing))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_CancellationToken2(
+        content: *mut crate::System::IO::Stream,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (content, cancellationToken))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Stream0(
+        content: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (content))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_1(
+        content: *mut crate::System::IO::Stream,
+        bufferSize: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (content, bufferSize))?;
+        Ok(__cordl_object)
+    }
     pub fn SerializeToStreamAsync(
         &mut self,
         stream: *mut crate::System::IO::Stream,
@@ -41,15 +81,26 @@ impl crate::System::Net::Http::StreamContent {
             .invoke("SerializeToStreamAsync", (stream, context))?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
+    pub fn TryComputeLength(
         &mut self,
-        disposing: bool,
+        length: quest_hook::libil2cpp::ByRefMut<i64>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryComputeLength", (length))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_CancellationToken2(
+        &mut self,
+        content: *mut crate::System::IO::Stream,
+        cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", (disposing))?;
+            .invoke(".ctor", (content, cancellationToken))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_Stream0(
@@ -74,57 +125,6 @@ impl crate::System::Net::Http::StreamContent {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (content, bufferSize))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor_CancellationToken2(
-        &mut self,
-        content: *mut crate::System::IO::Stream,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (content, cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryComputeLength(
-        &mut self,
-        length: quest_hook::libil2cpp::ByRefMut<i64>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryComputeLength", (length))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_Stream0(
-        content: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (content))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_1(
-        content: *mut crate::System::IO::Stream,
-        bufferSize: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (content, bufferSize))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_CancellationToken2(
-        content: *mut crate::System::IO::Stream,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (content, cancellationToken))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+Http+StreamContent")]

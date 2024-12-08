@@ -100,27 +100,13 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
     )]
     pub type _axis_e__FixedBuffer = crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__axis_e__FixedBuffer;
     #[cfg(
-        feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
-    )]
-    pub type _buttons_e__FixedBuffer = crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__buttons_e__FixedBuffer;
-    #[cfg(
         feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
     )]
     pub type Variants = crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants;
-    pub fn WithButton(
-        &mut self,
-        code: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidKeyCode,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithButton",
-            (code, value),
-        )?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(
+        feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
+    )]
+    pub type _buttons_e__FixedBuffer = crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__buttons_e__FixedBuffer;
     pub fn WithAxis(
         &mut self,
         axis: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidAxis,
@@ -132,6 +118,20 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
             self,
             "WithAxis",
             (axis, value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithButton(
+        &mut self,
+        code: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidKeyCode,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithButton",
+            (code, value),
         )?;
         Ok(__cordl_ret)
     }
@@ -191,6 +191,13 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
     pub const DPadButtons: &'static str = "DpadButtons";
     pub const Gamepad: &'static str = "Gamepad";
     pub const Joystick: &'static str = "Joystick";
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -200,13 +207,6 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

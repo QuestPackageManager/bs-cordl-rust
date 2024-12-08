@@ -43,18 +43,18 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ArraySegment_1<T> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_Generic_ICollection_T__Add(
+    pub fn Equals_ArraySegment_1_1(
         &mut self,
-        item: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+        obj: crate::System::ArraySegment_1<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.Collections.Generic.ICollection<T>.Add",
-            (item),
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -73,52 +73,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ArraySegment_1<T> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_ArraySegment_1_1(
-        &mut self,
-        obj: crate::System::ArraySegment_1<T>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_Generic_IList_T__set_Item(
-        &mut self,
-        index: i32,
-        value: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.Generic.IList<T>.set_Item",
-            (index, value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_Generic_IReadOnlyList_T__get_Item(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.Generic.IReadOnlyList<T>.get_Item",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::ArraySegment_1_Enumerator<T>>
@@ -130,6 +84,33 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ArraySegment_1<T> {
             self,
             "GetEnumerator",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_Generic_ICollection_T__Add(
+        &mut self,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.Generic.ICollection<T>.Add",
+            (item),
         )?;
         Ok(__cordl_ret)
     }
@@ -147,17 +128,18 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ArraySegment_1<T> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_IEnumerable_GetEnumerator(
+    pub fn System_Collections_Generic_ICollection_T__Contains(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.Collections.IEnumerable.GetEnumerator",
-            (),
+            "System.Collections.Generic.ICollection<T>.Contains",
+            (item),
         )?;
         Ok(__cordl_ret)
     }
@@ -173,6 +155,20 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ArraySegment_1<T> {
             self,
             "System.Collections.Generic.ICollection<T>.Remove",
             (item),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_Generic_ICollection_T__get_IsReadOnly(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.Generic.ICollection<T>.get_IsReadOnly",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -207,6 +203,22 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ArraySegment_1<T> {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn System_Collections_Generic_IList_T__Insert(
+        &mut self,
+        index: i32,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.Generic.IList<T>.Insert",
+            (index, item),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn System_Collections_Generic_IList_T__RemoveAt(
         &mut self,
         index: i32,
@@ -219,44 +231,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ArraySegment_1<T> {
             self,
             "System.Collections.Generic.IList<T>.RemoveAt",
             (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ThrowInvalidOperationIfDefault(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ThrowInvalidOperationIfDefault",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Offset(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Offset",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -275,16 +249,61 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ArraySegment_1<T> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_Generic_ICollection_T__get_IsReadOnly(
+    pub fn System_Collections_Generic_IList_T__set_Item(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool>
+        index: i32,
+        value: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.Collections.Generic.ICollection<T>.get_IsReadOnly",
+            "System.Collections.Generic.IList<T>.set_Item",
+            (index, value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_Generic_IReadOnlyList_T__get_Item(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.Generic.IReadOnlyList<T>.get_Item",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerable_GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.IEnumerable.GetEnumerator",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ThrowInvalidOperationIfDefault(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ThrowInvalidOperationIfDefault",
             (),
         )?;
         Ok(__cordl_ret)
@@ -321,34 +340,17 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ArraySegment_1<T> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_Generic_IList_T__Insert(
+    pub fn get_Array(
         &mut self,
-        index: i32,
-        item: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.Collections.Generic.IList<T>.Insert",
-            (index, item),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_Generic_ICollection_T__Contains(
-        &mut self,
-        item: T,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.Generic.ICollection<T>.Contains",
-            (item),
+            "get_Array",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -364,16 +366,14 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ArraySegment_1<T> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Array(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
+    pub fn get_Offset(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Array",
+            "get_Offset",
             (),
         )?;
         Ok(__cordl_ret)
@@ -407,18 +407,6 @@ for crate::System::ArraySegment_1_Enumerator<T> {
 }
 #[cfg(feature = "System+ArraySegment_1+Enumerator")]
 impl<T: quest_hook::libil2cpp::Type> crate::System::ArraySegment_1_Enumerator<T> {
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -433,14 +421,28 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ArraySegment_1_Enumerator<T>
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<T>
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Current",
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerator_Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.IEnumerator.Reset",
             (),
         )?;
         Ok(__cordl_ret)
@@ -474,16 +476,14 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ArraySegment_1_Enumerator<T>
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_IEnumerator_Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.Collections.IEnumerator.Reset",
+            "get_Current",
             (),
         )?;
         Ok(__cordl_ret)

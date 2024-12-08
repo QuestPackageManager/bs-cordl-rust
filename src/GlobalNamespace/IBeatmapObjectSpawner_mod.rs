@@ -23,36 +23,6 @@ impl std::ops::DerefMut for IBeatmapObjectSpawner {
 }
 #[cfg(feature = "IBeatmapObjectSpawner")]
 impl IBeatmapObjectSpawner {
-    pub fn ProcessSliderData(
-        &mut self,
-        sliderData: *mut SliderData,
-        sliderSpawnData: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
-        >,
-        rotation: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessSliderData", (sliderData, sliderSpawnData, rotation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessObstacleData(
-        &mut self,
-        obstacleData: *mut ObstacleData,
-        obstacleSpawnData: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
-        >,
-        rotation: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessObstacleData", (obstacleData, obstacleSpawnData, rotation))?;
-        Ok(__cordl_ret)
-    }
     pub fn ProcessNoteData(
         &mut self,
         noteData: *mut NoteData,
@@ -70,6 +40,36 @@ impl IBeatmapObjectSpawner {
                 "ProcessNoteData",
                 (noteData, noteSpawnData, rotation, forceIsFirstNoteBehaviour),
             )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessObstacleData(
+        &mut self,
+        obstacleData: *mut ObstacleData,
+        obstacleSpawnData: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
+        >,
+        rotation: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessObstacleData", (obstacleData, obstacleSpawnData, rotation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessSliderData(
+        &mut self,
+        sliderData: *mut SliderData,
+        sliderSpawnData: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
+        >,
+        rotation: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessSliderData", (sliderData, sliderSpawnData, rotation))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

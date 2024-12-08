@@ -22,11 +22,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::BoneWeig
 }
 #[cfg(feature = "UnityEngine+BoneWeight1")]
 impl crate::UnityEngine::BoneWeight1 {
-    pub fn get_boneIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Equals_BoneWeight1_1(
+        &mut self,
+        other: crate::UnityEngine::BoneWeight1,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_boneIndex",
-            (),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -41,14 +44,19 @@ impl crate::UnityEngine::BoneWeight1 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_BoneWeight1_1(
-        &mut self,
-        other: crate::UnityEngine::BoneWeight1,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_boneIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_boneIndex",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -56,14 +64,6 @@ impl crate::UnityEngine::BoneWeight1 {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_weight",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)

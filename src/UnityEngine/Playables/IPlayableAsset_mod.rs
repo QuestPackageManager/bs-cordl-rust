@@ -24,13 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::Playables::IPlayableAsset {
 }
 #[cfg(feature = "UnityEngine+Playables+IPlayableAsset")]
 impl crate::UnityEngine::Playables::IPlayableAsset {
-    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("get_duration", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreatePlayable(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
@@ -47,6 +40,13 @@ impl crate::UnityEngine::Playables::IPlayableAsset {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object.invoke("get_duration", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Playables+IPlayableAsset")]

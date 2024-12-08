@@ -28,6 +28,19 @@ for crate::System::Runtime::CompilerServices::DecimalConstantAttribute {
 }
 #[cfg(feature = "System+Runtime+CompilerServices+DecimalConstantAttribute")]
 impl crate::System::Runtime::CompilerServices::DecimalConstantAttribute {
+    pub fn New(
+        scale: u8,
+        sign: u8,
+        hi: u32,
+        mid: u32,
+        low: u32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (scale, sign, hi, mid, low))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         scale: u8,
@@ -52,19 +65,6 @@ impl crate::System::Runtime::CompilerServices::DecimalConstantAttribute {
         let __cordl_ret: crate::System::Decimal = __cordl_object
             .invoke("get_Value", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        scale: u8,
-        sign: u8,
-        hi: u32,
-        mid: u32,
-        low: u32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (scale, sign, hi, mid, low))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+DecimalConstantAttribute")]

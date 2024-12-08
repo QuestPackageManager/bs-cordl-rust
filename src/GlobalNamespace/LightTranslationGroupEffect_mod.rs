@@ -40,6 +40,46 @@ for crate::GlobalNamespace::LightTranslationGroupEffect_InitData {
 }
 #[cfg(feature = "LightTranslationGroupEffect+InitData")]
 impl crate::GlobalNamespace::LightTranslationGroupEffect_InitData {
+    pub fn New(
+        groupId: i32,
+        elementId: i32,
+        xMirrored: bool,
+        yMirrored: bool,
+        zMirrored: bool,
+        xTransform: *mut crate::UnityEngine::Transform,
+        yTransform: *mut crate::UnityEngine::Transform,
+        zTransform: *mut crate::UnityEngine::Transform,
+        xTranslationLimits: crate::UnityEngine::Vector2,
+        xDistributionLimits: crate::UnityEngine::Vector2,
+        yTranslationLimits: crate::UnityEngine::Vector2,
+        yDistributionLimits: crate::UnityEngine::Vector2,
+        zTranslationLimits: crate::UnityEngine::Vector2,
+        zDistributionLimits: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    groupId,
+                    elementId,
+                    xMirrored,
+                    yMirrored,
+                    zMirrored,
+                    xTransform,
+                    yTransform,
+                    zTransform,
+                    xTranslationLimits,
+                    xDistributionLimits,
+                    yTranslationLimits,
+                    yDistributionLimits,
+                    zTranslationLimits,
+                    zDistributionLimits,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         groupId: i32,
@@ -81,46 +121,6 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect_InitData {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        groupId: i32,
-        elementId: i32,
-        xMirrored: bool,
-        yMirrored: bool,
-        zMirrored: bool,
-        xTransform: *mut crate::UnityEngine::Transform,
-        yTransform: *mut crate::UnityEngine::Transform,
-        zTransform: *mut crate::UnityEngine::Transform,
-        xTranslationLimits: crate::UnityEngine::Vector2,
-        xDistributionLimits: crate::UnityEngine::Vector2,
-        yTranslationLimits: crate::UnityEngine::Vector2,
-        yDistributionLimits: crate::UnityEngine::Vector2,
-        zTranslationLimits: crate::UnityEngine::Vector2,
-        zDistributionLimits: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    groupId,
-                    elementId,
-                    xMirrored,
-                    yMirrored,
-                    zMirrored,
-                    xTransform,
-                    yTransform,
-                    zTransform,
-                    xTranslationLimits,
-                    xDistributionLimits,
-                    yTranslationLimits,
-                    yDistributionLimits,
-                    zTranslationLimits,
-                    zDistributionLimits,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LightTranslationGroupEffect+InitData")]
@@ -173,10 +173,10 @@ impl std::ops::DerefMut for LightTranslationGroupEffect {
 }
 #[cfg(feature = "LightTranslationGroupEffect")]
 impl LightTranslationGroupEffect {
-    #[cfg(feature = "LightTranslationGroupEffect+InitData")]
-    pub type InitData = crate::GlobalNamespace::LightTranslationGroupEffect_InitData;
     #[cfg(feature = "LightTranslationGroupEffect+__c__DisplayClass12_0")]
     pub type __c__DisplayClass12_0 = crate::GlobalNamespace::LightTranslationGroupEffect___c__DisplayClass12_0;
+    #[cfg(feature = "LightTranslationGroupEffect+InitData")]
+    pub type InitData = crate::GlobalNamespace::LightTranslationGroupEffect_InitData;
     pub fn Cleanup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -185,19 +185,6 @@ impl LightTranslationGroupEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Cleanup", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        initData: *mut crate::GlobalNamespace::LightTranslationGroupEffect_InitData,
-        tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (initData, tweeningManager, beatmapCallbacksController))?;
         Ok(__cordl_ret)
     }
     pub fn GetTranslationEventHandler(
@@ -221,6 +208,20 @@ impl LightTranslationGroupEffect {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        initData: *mut crate::GlobalNamespace::LightTranslationGroupEffect_InitData,
+        tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
+        beatmapCallbacksController: *mut BeatmapCallbacksController,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (initData, tweeningManager, beatmapCallbacksController),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn SetTranslation(
         &mut self,
         _: f32,
@@ -232,19 +233,18 @@ impl LightTranslationGroupEffect {
             .invoke("SetTranslation", (_))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         initData: *mut crate::GlobalNamespace::LightTranslationGroupEffect_InitData,
         tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
         beatmapCallbacksController: *mut BeatmapCallbacksController,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (initData, tweeningManager, beatmapCallbacksController),
-            )?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (initData, tweeningManager, beatmapCallbacksController))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LightTranslationGroupEffect")]

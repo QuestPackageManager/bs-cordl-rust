@@ -23,54 +23,42 @@ impl std::ops::DerefMut for IReadonlyBeatmapData {
 }
 #[cfg(feature = "IReadonlyBeatmapData")]
 impl IReadonlyBeatmapData {
-    pub fn add_beatmapEventDataWasRemovedEvent(
+    pub fn GetBeatmapDataItems<T>(
         &mut self,
-        value: *mut crate::System::Action_1<*mut BeatmapEventData>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        subtypeGroupIdentifier: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_beatmapEventDataWasRemovedEvent", (value))?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<T> = __cordl_object
+            .invoke("GetBeatmapDataItems", (subtypeGroupIdentifier))?;
         Ok(__cordl_ret)
     }
-    pub fn get_obstaclesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn GetCopy(&mut self) -> quest_hook::libil2cpp::Result<*mut BeatmapData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_obstaclesCount", ())?;
+        let __cordl_ret: *mut BeatmapData = __cordl_object.invoke("GetCopy", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_beatmapEventDataWasInsertedEvent(
+    pub fn GetFilteredCopy(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut BeatmapEventData,
-            *mut crate::System::Collections::Generic::LinkedListNode_1<
-                *mut BeatmapDataItem,
-            >,
+        processDataItem: *mut crate::System::Func_2<
+            *mut BeatmapDataItem,
+            *mut BeatmapDataItem,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut BeatmapData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_beatmapEventDataWasInsertedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_beatmapEventDataWillBeRemovedEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<
-            *mut BeatmapEventData,
-            *mut crate::System::Collections::Generic::LinkedListNode_1<
-                *mut BeatmapDataItem,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_beatmapEventDataWillBeRemovedEvent", (value))?;
+        let __cordl_ret: *mut BeatmapData = __cordl_object
+            .invoke("GetFilteredCopy", (processDataItem))?;
         Ok(__cordl_ret)
     }
     pub fn add_beatmapEventDataWasInsertedEvent(
@@ -89,11 +77,87 @@ impl IReadonlyBeatmapData {
             .invoke("add_beatmapEventDataWasInsertedEvent", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn add_beatmapEventDataWasRemovedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut BeatmapEventData>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_beatmapEventDataWasRemovedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_beatmapEventDataWillBeRemovedEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut BeatmapEventData,
+            *mut crate::System::Collections::Generic::LinkedListNode_1<
+                *mut BeatmapDataItem,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_beatmapEventDataWillBeRemovedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_allBeatmapDataItems(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::LinkedList_1<*mut BeatmapDataItem>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::LinkedList_1<
+            *mut BeatmapDataItem,
+        > = __cordl_object.invoke("get_allBeatmapDataItems", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_bombsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_bombsCount", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_cuttableNotesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_cuttableNotesCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_numberOfLines(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_numberOfLines", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_obstaclesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_obstaclesCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_spawnRotationEventsCount(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("get_spawnRotationEventsCount", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_specialBasicBeatmapEventKeywords(
@@ -111,72 +175,20 @@ impl IReadonlyBeatmapData {
         > = __cordl_object.invoke("get_specialBasicBeatmapEventKeywords", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetBeatmapDataItems<T>(
+    pub fn remove_beatmapEventDataWasInsertedEvent(
         &mut self,
-        subtypeGroupIdentifier: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<T>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<T> = __cordl_object
-            .invoke("GetBeatmapDataItems", (subtypeGroupIdentifier))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetFilteredCopy(
-        &mut self,
-        processDataItem: *mut crate::System::Func_2<
-            *mut BeatmapDataItem,
-            *mut BeatmapDataItem,
+        value: *mut crate::System::Action_2<
+            *mut BeatmapEventData,
+            *mut crate::System::Collections::Generic::LinkedListNode_1<
+                *mut BeatmapDataItem,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapData> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapData = __cordl_object
-            .invoke("GetFilteredCopy", (processDataItem))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_bombsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_bombsCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_numberOfLines(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_numberOfLines", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_allBeatmapDataItems(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::LinkedList_1<*mut BeatmapDataItem>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::LinkedList_1<
-            *mut BeatmapDataItem,
-        > = __cordl_object.invoke("get_allBeatmapDataItems", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_spawnRotationEventsCount(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("get_spawnRotationEventsCount", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_beatmapEventDataWasInsertedEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn remove_beatmapEventDataWasRemovedEvent(
@@ -188,13 +200,6 @@ impl IReadonlyBeatmapData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_beatmapEventDataWasRemovedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCopy(&mut self) -> quest_hook::libil2cpp::Result<*mut BeatmapData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut BeatmapData = __cordl_object.invoke("GetCopy", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_beatmapEventDataWillBeRemovedEvent(
@@ -212,11 +217,6 @@ impl IReadonlyBeatmapData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_beatmapEventDataWillBeRemovedEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IReadonlyBeatmapData")]

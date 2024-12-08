@@ -25,6 +25,30 @@ impl std::ops::DerefMut for crate::System::Security::AccessControl::AccessRule {
 }
 #[cfg(feature = "System+Security+AccessControl+AccessRule")]
 impl crate::System::Security::AccessControl::AccessRule {
+    pub fn New(
+        identity: *mut crate::System::Security::Principal::IdentityReference,
+        accessMask: i32,
+        isInherited: bool,
+        inheritanceFlags: crate::System::Security::AccessControl::InheritanceFlags,
+        propagationFlags: crate::System::Security::AccessControl::PropagationFlags,
+        _cordl_type: crate::System::Security::AccessControl::AccessControlType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    identity,
+                    accessMask,
+                    isInherited,
+                    inheritanceFlags,
+                    propagationFlags,
+                    _cordl_type,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         identity: *mut crate::System::Security::Principal::IdentityReference,
@@ -62,30 +86,6 @@ impl crate::System::Security::AccessControl::AccessRule {
         let __cordl_ret: crate::System::Security::AccessControl::AccessControlType = __cordl_object
             .invoke("get_AccessControlType", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        identity: *mut crate::System::Security::Principal::IdentityReference,
-        accessMask: i32,
-        isInherited: bool,
-        inheritanceFlags: crate::System::Security::AccessControl::InheritanceFlags,
-        propagationFlags: crate::System::Security::AccessControl::PropagationFlags,
-        _cordl_type: crate::System::Security::AccessControl::AccessControlType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    identity,
-                    accessMask,
-                    isInherited,
-                    inheritanceFlags,
-                    propagationFlags,
-                    _cordl_type,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Security+AccessControl+AccessRule")]

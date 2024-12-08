@@ -60,42 +60,12 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
         feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer"
     )]
     pub type __fileNameBuffer_e__FixedBuffer = crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuffer;
-    pub fn set_RootDirectory(
+    pub fn ToFileSystemInfo(
         &mut self,
-        value: crate::System::ReadOnlySpan_1<char>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::FileSystemInfo> {
+        let __cordl_ret: *mut crate::System::IO::FileSystemInfo = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_RootDirectory",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Directory(
-        &mut self,
-        value: crate::System::ReadOnlySpan_1<char>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Directory",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsDirectory(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsDirectory",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Directory(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Directory",
+            "ToFileSystemInfo",
             (),
         )?;
         Ok(__cordl_ret)
@@ -110,43 +80,32 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToFileSystemInfo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::FileSystemInfo> {
-        let __cordl_ret: *mut crate::System::IO::FileSystemInfo = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToFileSystemInfo",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_RootDirectory(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_RootDirectory",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_OriginalRootDirectory(
-        &mut self,
-        value: crate::System::ReadOnlySpan_1<char>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_OriginalRootDirectory",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn ToSpecifiedFullPath(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToSpecifiedFullPath",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Attributes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IO::FileAttributes> {
+        let __cordl_ret: crate::System::IO::FileAttributes = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Attributes",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Directory(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Directory",
             (),
         )?;
         Ok(__cordl_ret)
@@ -171,12 +130,10 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Attributes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IO::FileAttributes> {
-        let __cordl_ret: crate::System::IO::FileAttributes = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_IsDirectory(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Attributes",
+            "get_IsDirectory",
             (),
         )?;
         Ok(__cordl_ret)
@@ -188,6 +145,49 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
             self,
             "get_OriginalRootDirectory",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RootDirectory(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_RootDirectory",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Directory(
+        &mut self,
+        value: crate::System::ReadOnlySpan_1<char>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_Directory",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_OriginalRootDirectory(
+        &mut self,
+        value: crate::System::ReadOnlySpan_1<char>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_OriginalRootDirectory",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_RootDirectory(
+        &mut self,
+        value: crate::System::ReadOnlySpan_1<char>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_RootDirectory",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

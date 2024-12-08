@@ -24,16 +24,6 @@ impl std::ops::DerefMut for IServerSongPackProviderManager {
 }
 #[cfg(feature = "IServerSongPackProviderManager")]
 impl IServerSongPackProviderManager {
-    pub fn RefreshAsync(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("RefreshAsync", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetServerSongPackProvider(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut IServerSongPackProvider> {
@@ -42,6 +32,16 @@ impl IServerSongPackProviderManager {
         );
         let __cordl_ret: *mut IServerSongPackProvider = __cordl_object
             .invoke("GetServerSongPackProvider", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RefreshAsync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("RefreshAsync", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

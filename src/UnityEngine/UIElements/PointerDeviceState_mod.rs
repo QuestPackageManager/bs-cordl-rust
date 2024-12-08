@@ -37,10 +37,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::PointerDeviceState {
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerDeviceState")]
 impl crate::UnityEngine::UIElements::PointerDeviceState {
-    #[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
-    pub type PointerLocation = crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation;
     #[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
     pub type LocationFlag = crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag;
+    #[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
+    pub type PointerLocation = crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation;
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerDeviceState")]
 impl quest_hook::libil2cpp::ObjectType
@@ -79,18 +79,6 @@ for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
 impl crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
-    pub fn get_Flags(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag,
-    > {
-        let __cordl_ret: crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Flags",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn SetLocation(
         &mut self,
         position: crate::UnityEngine::Vector2,
@@ -103,14 +91,15 @@ impl crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_Position(
+    pub fn get_Flags(
         &mut self,
-        value: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_Position",
-            (value),
+            "get_Flags",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -120,6 +109,16 @@ impl crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
         let __cordl_ret: *mut crate::UnityEngine::UIElements::IPanel = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Panel",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Position(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Position",
             (),
         )?;
         Ok(__cordl_ret)
@@ -135,16 +134,6 @@ impl crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Position(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Position",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_Panel(
         &mut self,
         value: *mut crate::UnityEngine::UIElements::IPanel,
@@ -152,6 +141,17 @@ impl crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_Panel",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Position(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_Position",
             (value),
         )?;
         Ok(__cordl_ret)

@@ -28,6 +28,16 @@ impl std::ops::DerefMut for crate::UnityEngine::GUILayoutOption {
 impl crate::UnityEngine::GUILayoutOption {
     #[cfg(feature = "UnityEngine+GUILayoutOption+Type")]
     pub type Type = crate::UnityEngine::GUILayoutOption_Type;
+    pub fn New(
+        _cordl_type: crate::UnityEngine::GUILayoutOption_Type,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, value))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         _cordl_type: crate::UnityEngine::GUILayoutOption_Type,
@@ -39,16 +49,6 @@ impl crate::UnityEngine::GUILayoutOption {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_type, value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        _cordl_type: crate::UnityEngine::GUILayoutOption_Type,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, value))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+GUILayoutOption")]

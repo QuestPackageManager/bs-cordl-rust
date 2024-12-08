@@ -24,6 +24,31 @@ impl std::ops::DerefMut for crate::BGLib::JsonExtension::ColorConverter {
 }
 #[cfg(feature = "BGLib+JsonExtension+ColorConverter")]
 impl crate::BGLib::JsonExtension::ColorConverter {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ReadJson(
+        &mut self,
+        reader: *mut crate::Newtonsoft::Json::JsonReader,
+        objectType: *mut crate::System::Type,
+        existingValue: crate::UnityEngine::Color,
+        hasExistingValue: bool,
+        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke(
+                "ReadJson",
+                (reader, objectType, existingValue, hasExistingValue, serializer),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn WriteJson(
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
@@ -46,31 +71,6 @@ impl crate::BGLib::JsonExtension::ColorConverter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn ReadJson(
-        &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        objectType: *mut crate::System::Type,
-        existingValue: crate::UnityEngine::Color,
-        hasExistingValue: bool,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke(
-                "ReadJson",
-                (reader, objectType, existingValue, hasExistingValue, serializer),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BGLib+JsonExtension+ColorConverter")]

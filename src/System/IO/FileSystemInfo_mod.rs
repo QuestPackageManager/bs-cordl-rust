@@ -28,54 +28,14 @@ impl std::ops::DerefMut for crate::System::IO::FileSystemInfo {
 }
 #[cfg(feature = "System+IO+FileSystemInfo")]
 impl crate::System::IO::FileSystemInfo {
-    pub fn Refresh(
+    pub fn Delete(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Refresh", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_FullName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_FullName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Attributes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IO::FileAttributes> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::IO::FileAttributes = __cordl_object
-            .invoke("get_Attributes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_NormalizedPath(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_NormalizedPath", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Name", ())?;
+            .invoke("Delete", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetObjectData(
@@ -90,55 +50,52 @@ impl crate::System::IO::FileSystemInfo {
             .invoke("GetObjectData", (info, context))?;
         Ok(__cordl_ret)
     }
-    pub fn get_LastWriteTimeCore(
+    pub fn Init(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        fileStatus: quest_hook::libil2cpp::ByRefMut<crate::System::IO::FileStatus>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::DateTimeOffset = __cordl_object
-            .invoke("get_LastWriteTimeCore", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (fileStatus))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Exists(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Exists", ())?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn get_LengthCore(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_LengthCore", ())?;
-        Ok(__cordl_ret)
+    pub fn New_SerializationInfo_StreamingContext1(
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (info, context))?;
+        Ok(__cordl_object)
     }
-    pub fn get_LastWriteTimeUtc(
+    pub fn Refresh(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::DateTime = __cordl_object
-            .invoke("get_LastWriteTimeUtc", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Refresh", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_LastWriteTime(
+    pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::DateTime = __cordl_object
-            .invoke("get_LastWriteTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ExistsCore(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_ExistsCore", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -163,53 +120,96 @@ impl crate::System::IO::FileSystemInfo {
             .invoke(".ctor", (info, context))?;
         Ok(__cordl_ret)
     }
-    pub fn Init(
+    pub fn get_Attributes(
         &mut self,
-        fileStatus: quest_hook::libil2cpp::ByRefMut<crate::System::IO::FileStatus>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::IO::FileAttributes> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (fileStatus))?;
+        let __cordl_ret: crate::System::IO::FileAttributes = __cordl_object
+            .invoke("get_Attributes", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Delete(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_Exists(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Delete", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_Exists", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
+    pub fn get_ExistsCore(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_ExistsCore", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_FullName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
+            .invoke("get_FullName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_LastWriteTime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::DateTime = __cordl_object
+            .invoke("get_LastWriteTime", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_SerializationInfo_StreamingContext1(
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object)
+    pub fn get_LastWriteTimeCore(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::DateTimeOffset = __cordl_object
+            .invoke("get_LastWriteTimeCore", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LastWriteTimeUtc(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::DateTime = __cordl_object
+            .invoke("get_LastWriteTimeUtc", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LengthCore(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_LengthCore", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Name", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NormalizedPath(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_NormalizedPath", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+IO+FileSystemInfo")]

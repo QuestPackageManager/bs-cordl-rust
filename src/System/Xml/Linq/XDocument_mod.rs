@@ -25,6 +25,17 @@ impl std::ops::DerefMut for crate::System::Xml::Linq::XDocument {
 }
 #[cfg(feature = "System+Xml+Linq+XDocument")]
 impl crate::System::Xml::Linq::XDocument {
+    pub fn AddAttribute(
+        &mut self,
+        a: *mut crate::System::Xml::Linq::XAttribute,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddAttribute", (a))?;
+        Ok(__cordl_ret)
+    }
     pub fn AddAttributeSkipNotify(
         &mut self,
         a: *mut crate::System::Xml::Linq::XAttribute,
@@ -36,14 +47,14 @@ impl crate::System::Xml::Linq::XDocument {
             .invoke("AddAttributeSkipNotify", (a))?;
         Ok(__cordl_ret)
     }
-    pub fn get_NodeType(
+    pub fn CloneNode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Linq::XNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
-            .invoke("get_NodeType", ())?;
+        let __cordl_ret: *mut crate::System::Xml::Linq::XNode = __cordl_object
+            .invoke("CloneNode", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetFirstNode<T>(&mut self) -> quest_hook::libil2cpp::Result<T>
@@ -57,15 +68,33 @@ impl crate::System::Xml::Linq::XDocument {
         let __cordl_ret: T = __cordl_object.invoke("GetFirstNode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_Declaration(
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_XDocument1(
+        other: *mut crate::System::Xml::Linq::XDocument,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (other))?;
+        Ok(__cordl_object)
+    }
+    pub fn ValidateDocument(
         &mut self,
-        value: *mut crate::System::Xml::Linq::XDeclaration,
+        previous: *mut crate::System::Xml::Linq::XNode,
+        allowBefore: crate::System::Xml::XmlNodeType,
+        allowAfter: crate::System::Xml::XmlNodeType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Declaration", (value))?;
+            .invoke("ValidateDocument", (previous, allowBefore, allowAfter))?;
         Ok(__cordl_ret)
     }
     pub fn ValidateNode(
@@ -80,17 +109,26 @@ impl crate::System::Xml::Linq::XDocument {
             .invoke("ValidateNode", (node, previous))?;
         Ok(__cordl_ret)
     }
-    pub fn ValidateDocument(
+    pub fn ValidateString(
         &mut self,
-        previous: *mut crate::System::Xml::Linq::XNode,
-        allowBefore: crate::System::Xml::XmlNodeType,
-        allowAfter: crate::System::Xml::XmlNodeType,
+        s: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateDocument", (previous, allowBefore, allowAfter))?;
+            .invoke("ValidateString", (s))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteTo(
+        &mut self,
+        writer: *mut crate::System::Xml::XmlWriter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteTo", (writer))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -124,6 +162,16 @@ impl crate::System::Xml::Linq::XDocument {
             .invoke("get_Declaration", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_NodeType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
+            .invoke("get_NodeType", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Root(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Linq::XElement> {
@@ -134,64 +182,16 @@ impl crate::System::Xml::Linq::XDocument {
             .invoke("get_Root", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AddAttribute(
+    pub fn set_Declaration(
         &mut self,
-        a: *mut crate::System::Xml::Linq::XAttribute,
+        value: *mut crate::System::Xml::Linq::XDeclaration,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddAttribute", (a))?;
+            .invoke("set_Declaration", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn CloneNode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Linq::XNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Linq::XNode = __cordl_object
-            .invoke("CloneNode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteTo(
-        &mut self,
-        writer: *mut crate::System::Xml::XmlWriter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteTo", (writer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValidateString(
-        &mut self,
-        s: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateString", (s))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_XDocument1(
-        other: *mut crate::System::Xml::Linq::XDocument,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (other))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Linq+XDocument")]

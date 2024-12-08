@@ -27,6 +27,23 @@ for crate::System::Linq::Expressions::Interpreter::LoadLocalBoxedInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LoadLocalBoxedInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::LoadLocalBoxedInstruction {
+    pub fn New(index: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (index))?;
+        Ok(__cordl_object)
+    }
+    pub fn Run(
+        &mut self,
+        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Run", (frame))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         index: i32,
@@ -54,23 +71,6 @@ impl crate::System::Linq::Expressions::Interpreter::LoadLocalBoxedInstruction {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Run(
-        &mut self,
-        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Run", (frame))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(index: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (index))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LoadLocalBoxedInstruction")]

@@ -77,6 +77,33 @@ impl crate::UnityEngine::UIElements::UIR::TextureBlitter {
             .invoke("BeginBlit", (dst))?;
         Ok(__cordl_ret)
     }
+    pub fn BlitOneNow(
+        &mut self,
+        dst: *mut crate::UnityEngine::RenderTexture,
+        src: *mut crate::UnityEngine::Texture,
+        srcRect: crate::UnityEngine::RectInt,
+        dstPos: crate::UnityEngine::Vector2Int,
+        addBorder: bool,
+        tint: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BlitOneNow", (dst, src, srcRect, dstPos, addBorder, tint))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Commit(
+        &mut self,
+        dst: *mut crate::UnityEngine::RenderTexture,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Commit", (dst))?;
+        Ok(__cordl_ret)
+    }
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -98,17 +125,6 @@ impl crate::UnityEngine::UIElements::UIR::TextureBlitter {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn set_disposed(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_disposed", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn DoBlit(
         &mut self,
         blitInfos: *mut crate::System::Collections::Generic::IList_1<
@@ -123,39 +139,22 @@ impl crate::UnityEngine::UIElements::UIR::TextureBlitter {
             .invoke("DoBlit", (blitInfos, startIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_disposed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn BlitOneNow(
+    pub fn EndBlit(
         &mut self,
-        dst: *mut crate::UnityEngine::RenderTexture,
-        src: *mut crate::UnityEngine::Texture,
-        srcRect: crate::UnityEngine::RectInt,
-        dstPos: crate::UnityEngine::Vector2Int,
-        addBorder: bool,
-        tint: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BlitOneNow", (dst, src, srcRect, dstPos, addBorder, tint))?;
+            .invoke("EndBlit", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        capacity: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (capacity))?;
-        Ok(__cordl_ret)
+    pub fn New(capacity: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (capacity))?;
+        Ok(__cordl_object)
     }
     pub fn QueueBlit(
         &mut self,
@@ -172,33 +171,34 @@ impl crate::UnityEngine::UIElements::UIR::TextureBlitter {
             .invoke("QueueBlit", (src, srcRect, dstPos, addBorder, tint))?;
         Ok(__cordl_ret)
     }
-    pub fn Commit(
+    pub fn _ctor(
         &mut self,
-        dst: *mut crate::UnityEngine::RenderTexture,
+        capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Commit", (dst))?;
+            .invoke(".ctor", (capacity))?;
         Ok(__cordl_ret)
     }
-    pub fn EndBlit(
+    pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_disposed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_disposed(
         &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndBlit", ())?;
+            .invoke("set_disposed", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(capacity: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (capacity))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter")]

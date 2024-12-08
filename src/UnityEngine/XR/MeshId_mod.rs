@@ -22,21 +22,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::XR::Mesh
 }
 #[cfg(feature = "UnityEngine+XR+MeshId")]
 impl crate::UnityEngine::XR::MeshId {
-    pub fn ToString(
+    pub fn Equals_MeshId1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::XR::MeshId,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -51,14 +44,21 @@ impl crate::UnityEngine::XR::MeshId {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_MeshId1(
-        &mut self,
-        other: crate::UnityEngine::XR::MeshId,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
         )?;
         Ok(__cordl_ret)
     }

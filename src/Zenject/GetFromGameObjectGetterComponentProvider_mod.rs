@@ -31,16 +31,6 @@ impl std::ops::DerefMut for crate::Zenject::GetFromGameObjectGetterComponentProv
 }
 #[cfg(feature = "Zenject+GetFromGameObjectGetterComponentProvider")]
 impl crate::Zenject::GetFromGameObjectGetterComponentProvider {
-    pub fn get_TypeVariesBasedOnMemberType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_TypeVariesBasedOnMemberType", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: *mut crate::Zenject::InjectContext,
@@ -73,6 +63,20 @@ impl crate::Zenject::GetFromGameObjectGetterComponentProvider {
             .invoke("GetInstanceType", (context))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        componentType: *mut crate::System::Type,
+        gameObjectGetter: *mut crate::System::Func_2<
+            *mut crate::Zenject::InjectContext,
+            *mut crate::UnityEngine::GameObject,
+        >,
+        matchSingle: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (componentType, gameObjectGetter, matchSingle))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         componentType: *mut crate::System::Type,
@@ -96,19 +100,15 @@ impl crate::Zenject::GetFromGameObjectGetterComponentProvider {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsCached", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        componentType: *mut crate::System::Type,
-        gameObjectGetter: *mut crate::System::Func_2<
-            *mut crate::Zenject::InjectContext,
-            *mut crate::UnityEngine::GameObject,
-        >,
-        matchSingle: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (componentType, gameObjectGetter, matchSingle))?;
-        Ok(__cordl_object)
+    pub fn get_TypeVariesBasedOnMemberType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_TypeVariesBasedOnMemberType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+GetFromGameObjectGetterComponentProvider")]

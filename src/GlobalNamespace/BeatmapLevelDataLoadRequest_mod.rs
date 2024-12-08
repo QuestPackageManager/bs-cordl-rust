@@ -34,59 +34,6 @@ impl std::ops::DerefMut for BeatmapLevelDataLoadRequest {
 impl BeatmapLevelDataLoadRequest {
     #[cfg(feature = "BeatmapLevelDataLoadRequest+_LoadDataAsyncInternal_d__8")]
     pub type _LoadDataAsyncInternal_d__8 = crate::GlobalNamespace::BeatmapLevelDataLoadRequest__LoadDataAsyncInternal_d__8;
-    pub fn get_HasValidResult(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasValidResult", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ThrowIfExternalCancellationRequested(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ThrowIfExternalCancellationRequested", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        assetBundlePath: *mut crate::System::String,
-        levelDataAssetName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (assetBundlePath, levelDataAssetName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadDataAsyncInternal(
-        &mut self,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut IBeatmapLevelData>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut IBeatmapLevelData,
-        > = __cordl_object.invoke("LoadDataAsyncInternal", (cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnloadBundle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnloadBundle", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -111,6 +58,62 @@ impl BeatmapLevelDataLoadRequest {
         > = __cordl_object.invoke("LoadDataAsync", (externalCancellationToken))?;
         Ok(__cordl_ret)
     }
+    pub fn LoadDataAsyncInternal(
+        &mut self,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<*mut IBeatmapLevelData>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut IBeatmapLevelData,
+        > = __cordl_object.invoke("LoadDataAsyncInternal", (cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        assetBundlePath: *mut crate::System::String,
+        levelDataAssetName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (assetBundlePath, levelDataAssetName))?;
+        Ok(__cordl_object)
+    }
+    pub fn ThrowIfExternalCancellationRequested(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ThrowIfExternalCancellationRequested", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnloadBundle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnloadBundle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        assetBundlePath: *mut crate::System::String,
+        levelDataAssetName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (assetBundlePath, levelDataAssetName))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_HasFailed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -118,15 +121,12 @@ impl BeatmapLevelDataLoadRequest {
         let __cordl_ret: bool = __cordl_object.invoke("get_HasFailed", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        assetBundlePath: *mut crate::System::String,
-        levelDataAssetName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (assetBundlePath, levelDataAssetName))?;
-        Ok(__cordl_object)
+    pub fn get_HasValidResult(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasValidResult", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapLevelDataLoadRequest")]

@@ -27,33 +27,26 @@ for crate::System::Linq::Expressions::Interpreter::NegateInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::NegateInstruction {
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateInt64")]
-    pub type NegateInt64 = crate::GlobalNamespace::NegateInstruction_NegateInt64;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateDouble"
-    )]
-    pub type NegateDouble = crate::GlobalNamespace::NegateInstruction_NegateDouble;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateInt16")]
-    pub type NegateInt16 = crate::GlobalNamespace::NegateInstruction_NegateInt16;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateInt32")]
     pub type NegateInt32 = crate::GlobalNamespace::NegateInstruction_NegateInt32;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateSingle"
     )]
     pub type NegateSingle = crate::GlobalNamespace::NegateInstruction_NegateSingle;
-    pub fn get_ConsumedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
-        Ok(__cordl_ret)
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateInt16")]
+    pub type NegateInt16 = crate::GlobalNamespace::NegateInstruction_NegateInt16;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateDouble"
+    )]
+    pub type NegateDouble = crate::GlobalNamespace::NegateInstruction_NegateDouble;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateInt64")]
+    pub type NegateInt64 = crate::GlobalNamespace::NegateInstruction_NegateInt64;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -63,6 +56,13 @@ impl crate::System::Linq::Expressions::Interpreter::NegateInstruction {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ConsumedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_InstructionName(
@@ -75,12 +75,12 @@ impl crate::System::Linq::Expressions::Interpreter::NegateInstruction {
             .invoke("get_InstructionName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction")]

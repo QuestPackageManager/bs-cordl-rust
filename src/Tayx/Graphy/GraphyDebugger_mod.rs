@@ -98,11 +98,31 @@ impl std::ops::DerefMut for crate::Tayx::Graphy::GraphyDebugger_DebugPacket {
 }
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
 impl crate::Tayx::Graphy::GraphyDebugger_DebugPacket {
-    pub fn get_Check(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn Executed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Check", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Executed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -115,32 +135,12 @@ impl crate::Tayx::Graphy::GraphyDebugger_DebugPacket {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_Check(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_Check", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Executed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Executed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
@@ -207,36 +207,26 @@ impl std::ops::DerefMut for crate::Tayx::Graphy::GraphyDebugger {
 }
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger")]
 impl crate::Tayx::Graphy::GraphyDebugger {
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugVariable")]
-    pub type DebugVariable = crate::Tayx::Graphy::GraphyDebugger_DebugVariable;
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c__DisplayClass18_0")]
-    pub type __c__DisplayClass18_0 = crate::Tayx::Graphy::GraphyDebugger___c__DisplayClass18_0;
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c__DisplayClass21_0")]
-    pub type __c__DisplayClass21_0 = crate::Tayx::Graphy::GraphyDebugger___c__DisplayClass21_0;
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+ConditionEvaluation")]
-    pub type ConditionEvaluation = crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation;
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c__DisplayClass19_0")]
-    pub type __c__DisplayClass19_0 = crate::Tayx::Graphy::GraphyDebugger___c__DisplayClass19_0;
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+MessageType")]
-    pub type MessageType = crate::Tayx::Graphy::GraphyDebugger_MessageType;
     #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
     pub type DebugCondition = crate::Tayx::Graphy::GraphyDebugger_DebugCondition;
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugComparer")]
-    pub type DebugComparer = crate::Tayx::Graphy::GraphyDebugger_DebugComparer;
+    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c__DisplayClass19_0")]
+    pub type __c__DisplayClass19_0 = crate::Tayx::Graphy::GraphyDebugger___c__DisplayClass19_0;
     #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c")]
     pub type __c = crate::Tayx::Graphy::GraphyDebugger___c;
+    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+ConditionEvaluation")]
+    pub type ConditionEvaluation = crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation;
+    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugVariable")]
+    pub type DebugVariable = crate::Tayx::Graphy::GraphyDebugger_DebugVariable;
+    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c__DisplayClass21_0")]
+    pub type __c__DisplayClass21_0 = crate::Tayx::Graphy::GraphyDebugger___c__DisplayClass21_0;
+    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugComparer")]
+    pub type DebugComparer = crate::Tayx::Graphy::GraphyDebugger_DebugComparer;
+    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+MessageType")]
+    pub type MessageType = crate::Tayx::Graphy::GraphyDebugger_MessageType;
     #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
     pub type DebugPacket = crate::Tayx::Graphy::GraphyDebugger_DebugPacket;
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c__DisplayClass18_0")]
+    pub type __c__DisplayClass18_0 = crate::Tayx::Graphy::GraphyDebugger___c__DisplayClass18_0;
     pub fn AddCallbackToAllDebugPacketWithId(
         &mut self,
         callback: *mut crate::System::Action,
@@ -249,41 +239,16 @@ impl crate::Tayx::Graphy::GraphyDebugger {
             .invoke("AddCallbackToAllDebugPacketWithId", (callback, id))?;
         Ok(__cordl_ret)
     }
-    pub fn RemoveFirstDebugPacketWithId(
+    pub fn AddCallbackToFirstDebugPacketWithId(
         &mut self,
-        packetId: i32,
+        callback: *mut crate::System::Action,
+        id: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveFirstDebugPacketWithId", (packetId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAllDebugPacketsWithId(
-        &mut self,
-        packetId: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Tayx::Graphy::GraphyDebugger_DebugPacket,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Tayx::Graphy::GraphyDebugger_DebugPacket,
-        > = __cordl_object.invoke("GetAllDebugPacketsWithId", (packetId))?;
+            .invoke("AddCallbackToFirstDebugPacketWithId", (callback, id))?;
         Ok(__cordl_ret)
     }
     pub fn AddNewDebugPacket_GraphyDebugger_DebugPacket0(
@@ -323,34 +288,6 @@ impl crate::Tayx::Graphy::GraphyDebugger {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn AddNewDebugPacket_i32_List_1_GraphyDebugger_MessageType_String__cordl_bool_Action2(
-        &mut self,
-        newId: i32,
-        newDebugConditions: *mut crate::System::Collections::Generic::List_1<
-            crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
-        >,
-        newMessageType: crate::Tayx::Graphy::GraphyDebugger_MessageType,
-        newMessage: *mut crate::System::String,
-        newDebugBreak: bool,
-        newCallback: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "AddNewDebugPacket",
-                (
-                    newId,
-                    newDebugConditions,
-                    newMessageType,
-                    newMessage,
-                    newDebugBreak,
-                    newCallback,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn AddNewDebugPacket_i32_GraphyDebugger_DebugCondition_GraphyDebugger_MessageType_String__cordl_bool_List_1_3(
         &mut self,
         newId: i32,
@@ -375,6 +312,34 @@ impl crate::Tayx::Graphy::GraphyDebugger {
                     newMessage,
                     newDebugBreak,
                     newCallbacks,
+                ),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddNewDebugPacket_i32_List_1_GraphyDebugger_MessageType_String__cordl_bool_Action2(
+        &mut self,
+        newId: i32,
+        newDebugConditions: *mut crate::System::Collections::Generic::List_1<
+            crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
+        >,
+        newMessageType: crate::Tayx::Graphy::GraphyDebugger_MessageType,
+        newMessage: *mut crate::System::String,
+        newDebugBreak: bool,
+        newCallback: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "AddNewDebugPacket",
+                (
+                    newId,
+                    newDebugConditions,
+                    newMessageType,
+                    newMessage,
+                    newDebugBreak,
+                    newCallback,
                 ),
             )?;
         Ok(__cordl_ret)
@@ -409,52 +374,6 @@ impl crate::Tayx::Graphy::GraphyDebugger {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetFirstDebugPacketWithId(
-        &mut self,
-        packetId: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Tayx::Graphy::GraphyDebugger_DebugPacket,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Tayx::Graphy::GraphyDebugger_DebugPacket = __cordl_object
-            .invoke("GetFirstDebugPacketWithId", (packetId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveAllDebugPacketsWithId(
-        &mut self,
-        packetId: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveAllDebugPacketsWithId", (packetId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddCallbackToFirstDebugPacketWithId(
-        &mut self,
-        callback: *mut crate::System::Action,
-        id: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddCallbackToFirstDebugPacketWithId", (callback, id))?;
-        Ok(__cordl_ret)
-    }
     pub fn CheckDebugPackets(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -463,17 +382,6 @@ impl crate::Tayx::Graphy::GraphyDebugger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckDebugPackets", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRequestedValueFromDebugVariable(
-        &mut self,
-        debugVariable: crate::Tayx::Graphy::GraphyDebugger_DebugVariable,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("GetRequestedValueFromDebugVariable", (debugVariable))?;
         Ok(__cordl_ret)
     }
     pub fn CheckIfConditionIsMet(
@@ -498,12 +406,104 @@ impl crate::Tayx::Graphy::GraphyDebugger {
             .invoke("ExecuteOperationsInDebugPacket", (debugPacket))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn GetAllDebugPacketsWithId(
+        &mut self,
+        packetId: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::Tayx::Graphy::GraphyDebugger_DebugPacket,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::Tayx::Graphy::GraphyDebugger_DebugPacket,
+        > = __cordl_object.invoke("GetAllDebugPacketsWithId", (packetId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetFirstDebugPacketWithId(
+        &mut self,
+        packetId: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Tayx::Graphy::GraphyDebugger_DebugPacket,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Tayx::Graphy::GraphyDebugger_DebugPacket = __cordl_object
+            .invoke("GetFirstDebugPacketWithId", (packetId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetRequestedValueFromDebugVariable(
+        &mut self,
+        debugVariable: crate::Tayx::Graphy::GraphyDebugger_DebugVariable,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("GetRequestedValueFromDebugVariable", (debugVariable))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn RemoveAllDebugPacketsWithId(
+        &mut self,
+        packetId: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveAllDebugPacketsWithId", (packetId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveFirstDebugPacketWithId(
+        &mut self,
+        packetId: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveFirstDebugPacketWithId", (packetId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger")]

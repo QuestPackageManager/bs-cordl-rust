@@ -85,36 +85,67 @@ impl std::ops::DerefMut for DebugConsoleController {
 }
 #[cfg(feature = "DebugConsoleController")]
 impl DebugConsoleController {
+    #[cfg(feature = "DebugConsoleController+_ExecuteCommandsAsync_d__9")]
+    pub type _ExecuteCommandsAsync_d__9 = crate::GlobalNamespace::DebugConsoleController__ExecuteCommandsAsync_d__9;
     #[cfg(feature = "DebugConsoleController+ConsoleMessage")]
     pub type ConsoleMessage = crate::GlobalNamespace::DebugConsoleController_ConsoleMessage;
     #[cfg(feature = "DebugConsoleController+_ExecuteCommands_d__8")]
     pub type _ExecuteCommands_d__8 = crate::GlobalNamespace::DebugConsoleController__ExecuteCommands_d__8;
-    #[cfg(feature = "DebugConsoleController+_ExecuteCommandsAsync_d__9")]
-    pub type _ExecuteCommandsAsync_d__9 = crate::GlobalNamespace::DebugConsoleController__ExecuteCommandsAsync_d__9;
     #[cfg(feature = "DebugConsoleController+_TryExecuteCommand_d__11")]
     pub type _TryExecuteCommand_d__11 = crate::GlobalNamespace::DebugConsoleController__TryExecuteCommand_d__11;
-    pub fn IsCommandClass(
+    pub fn CheckCommand(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        command: *mut ConsoleCommandBase,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("IsCommandClass", (_cordl_type))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckCommand", (command))?;
         Ok(__cordl_ret)
     }
-    pub fn TryExecuteCommand(
+    pub fn CommandNotFoundMessage(
         &mut self,
-        commandText: *mut crate::System::String,
-        messages: *mut crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
-        >,
+        command: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::DebugConsoleController_ConsoleMessage = __cordl_object
+            .invoke("CommandNotFoundMessage", (command))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DisplayMessage(
+        &mut self,
+        message: crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DisplayMessage", (message))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExecuteCommands(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExecuteCommands", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExecuteCommandsAsync(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("TryExecuteCommand", (commandText, messages))?;
+            .invoke("ExecuteCommandsAsync", ())?;
         Ok(__cordl_ret)
     }
     pub fn FillDictOfCommands(
@@ -130,36 +161,28 @@ impl DebugConsoleController {
             .invoke("FillDictOfCommands", (commandInstances))?;
         Ok(__cordl_ret)
     }
-    pub fn DisplayMessage(
+    pub fn GetAllConsoleCommandInstances(
         &mut self,
-        message: crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<*mut ConsoleCommandBase>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DisplayMessage", (message))?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut ConsoleCommandBase,
+        > = __cordl_object.invoke("GetAllConsoleCommandInstances", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CheckCommand(
+    pub fn GetCommand(
         &mut self,
-        command: *mut ConsoleCommandBase,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        commandName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut ConsoleCommandBase> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckCommand", (command))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Tick(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Tick", ())?;
+        let __cordl_ret: *mut ConsoleCommandBase = __cordl_object
+            .invoke("GetCommand", (commandName))?;
         Ok(__cordl_ret)
     }
     pub fn GetCommands(
@@ -179,41 +202,6 @@ impl DebugConsoleController {
         > = __cordl_object.invoke("GetCommands", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CommandNotFoundMessage(
-        &mut self,
-        command: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::DebugConsoleController_ConsoleMessage = __cordl_object
-            .invoke("CommandNotFoundMessage", (command))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCommand(
-        &mut self,
-        commandName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut ConsoleCommandBase> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut ConsoleCommandBase = __cordl_object
-            .invoke("GetCommand", (commandName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn QueueNewInput(
-        &mut self,
-        input: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("QueueNewInput", (input))?;
-        Ok(__cordl_ret)
-    }
     pub fn Initialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -224,47 +212,32 @@ impl DebugConsoleController {
             .invoke("Initialize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetAllConsoleCommandInstances(
+    pub fn IsCommandClass(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<*mut ConsoleCommandBase>,
-    > {
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut ConsoleCommandBase,
-        > = __cordl_object.invoke("GetAllConsoleCommandInstances", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("IsCommandClass", (_cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn QueueNewInput(
         &mut self,
+        input: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExecuteCommandsAsync(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("ExecuteCommandsAsync", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExecuteCommands(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExecuteCommands", ())?;
+            .invoke("QueueNewInput", (input))?;
         Ok(__cordl_ret)
     }
     pub fn StripExtraWhitespace(
@@ -278,12 +251,39 @@ impl DebugConsoleController {
             .invoke("StripExtraWhitespace", (commandText))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn Tick(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Tick", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryExecuteCommand(
+        &mut self,
+        commandText: *mut crate::System::String,
+        messages: *mut crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("TryExecuteCommand", (commandText, messages))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "DebugConsoleController")]

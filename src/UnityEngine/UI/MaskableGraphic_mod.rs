@@ -26,6 +26,13 @@ for crate::UnityEngine::UI::MaskableGraphic_CullStateChangedEvent {
 }
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic+CullStateChangedEvent")]
 impl crate::UnityEngine::UI::MaskableGraphic_CullStateChangedEvent {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -35,13 +42,6 @@ impl crate::UnityEngine::UI::MaskableGraphic_CullStateChangedEvent {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic+CullStateChangedEvent")]
@@ -92,25 +92,104 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::MaskableGraphic {
 impl crate::UnityEngine::UI::MaskableGraphic {
     #[cfg(feature = "UnityEngine+UI+MaskableGraphic+CullStateChangedEvent")]
     pub type CullStateChangedEvent = crate::UnityEngine::UI::MaskableGraphic_CullStateChangedEvent;
-    pub fn UnityEngine_UI_IClippable_get_gameObject(
+    pub fn Cull(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("UnityEngine.UI.IClippable.get_gameObject", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateCull(
-        &mut self,
-        cull: bool,
+        clipRect: crate::UnityEngine::Rect,
+        validRect: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateCull", (cull))?;
+            .invoke("Cull", (clipRect, validRect))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetModifiedMaterial(
+        &mut self,
+        baseMaterial: *mut crate::UnityEngine::Material,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Material> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Material = __cordl_object
+            .invoke("GetModifiedMaterial", (baseMaterial))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnCanvasHierarchyChanged(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnCanvasHierarchyChanged", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDisable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDisable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnEnable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnEnable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnTransformParentChanged(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnTransformParentChanged", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ParentMaskStateChanged(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ParentMaskStateChanged", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RecalculateClipping(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RecalculateClipping", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RecalculateMasking(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RecalculateMasking", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetClipRect(
@@ -125,35 +204,25 @@ impl crate::UnityEngine::UI::MaskableGraphic {
             .invoke("SetClipRect", (clipRect, validRect))?;
         Ok(__cordl_ret)
     }
-    pub fn get_rootCanvasRect(
+    pub fn SetClipSoftness(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
-            .invoke("get_rootCanvasRect", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParentMaskStateChanged(
-        &mut self,
+        clipSoftness: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ParentMaskStateChanged", ())?;
+            .invoke("SetClipSoftness", (clipSoftness))?;
         Ok(__cordl_ret)
     }
-    pub fn set_isMaskingGraphic(
+    pub fn UnityEngine_UI_IClippable_get_gameObject(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_isMaskingGraphic", (value))?;
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("UnityEngine.UI.IClippable.get_gameObject", ())?;
         Ok(__cordl_ret)
     }
     pub fn UpdateClipParent(
@@ -166,25 +235,15 @@ impl crate::UnityEngine::UI::MaskableGraphic {
             .invoke("UpdateClipParent", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetModifiedMaterial(
+    pub fn UpdateCull(
         &mut self,
-        baseMaterial: *mut crate::UnityEngine::Material,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Material> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Material = __cordl_object
-            .invoke("GetModifiedMaterial", (baseMaterial))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RecalculateMasking(
-        &mut self,
+        cull: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecalculateMasking", ())?;
+            .invoke("UpdateCull", (cull))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -195,6 +254,20 @@ impl crate::UnityEngine::UI::MaskableGraphic {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isMaskingGraphic(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isMaskingGraphic", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maskable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_maskable", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_onCullStateChanged(
@@ -209,70 +282,25 @@ impl crate::UnityEngine::UI::MaskableGraphic {
             .invoke("get_onCullStateChanged", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_maskable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_rootCanvasRect(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_maskable", ())?;
+        let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
+            .invoke("get_rootCanvasRect", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnEnable(
+    pub fn set_isMaskingGraphic(
         &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RecalculateClipping(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecalculateClipping", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Cull(
-        &mut self,
-        clipRect: crate::UnityEngine::Rect,
-        validRect: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Cull", (clipRect, validRect))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isMaskingGraphic(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isMaskingGraphic", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDisable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnTransformParentChanged(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnTransformParentChanged", ())?;
+            .invoke("set_isMaskingGraphic", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_maskable(
@@ -296,34 +324,6 @@ impl crate::UnityEngine::UI::MaskableGraphic {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_onCullStateChanged", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn SetClipSoftness(
-        &mut self,
-        clipSoftness: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetClipSoftness", (clipSoftness))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnCanvasHierarchyChanged(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCanvasHierarchyChanged", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic")]

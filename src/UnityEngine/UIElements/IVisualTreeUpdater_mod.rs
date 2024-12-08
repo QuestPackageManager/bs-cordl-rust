@@ -24,17 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IVisualTreeUpdater {
 }
 #[cfg(feature = "UnityEngine+UIElements+IVisualTreeUpdater")]
 impl crate::UnityEngine::UIElements::IVisualTreeUpdater {
-    pub fn set_panel(
-        &mut self,
-        value: *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_panel", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn OnVersionChanged(
         &mut self,
         ve: *mut crate::UnityEngine::UIElements::VisualElement,
@@ -57,6 +46,11 @@ impl crate::UnityEngine::UIElements::IVisualTreeUpdater {
             .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_profilerMarker(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Profiling::ProfilerMarker> {
@@ -67,10 +61,16 @@ impl crate::UnityEngine::UIElements::IVisualTreeUpdater {
             .invoke("get_profilerMarker", ())?;
         Ok(__cordl_ret)
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
+    pub fn set_panel(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_panel", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IVisualTreeUpdater")]

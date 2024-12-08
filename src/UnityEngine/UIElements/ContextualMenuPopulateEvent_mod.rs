@@ -34,6 +34,16 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ContextualMenuPopula
 impl crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
     #[cfg(feature = "UnityEngine+UIElements+ContextualMenuPopulateEvent+__c")]
     pub type __c = crate::UnityEngine::UIElements::ContextualMenuPopulateEvent___c;
+    pub fn Init(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn LocalInit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -44,35 +54,32 @@ impl crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
             .invoke("LocalInit", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_triggerEvent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::EventBase> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::EventBase = __cordl_object
-            .invoke("get_triggerEvent", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn set_triggerEvent(
+    pub fn PostDispatch(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::EventBase,
+        panel: *mut crate::UnityEngine::UIElements::IPanel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_triggerEvent", (value))?;
+            .invoke("PostDispatch", (panel))?;
         Ok(__cordl_ret)
     }
-    pub fn Init(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_menu(
@@ -87,15 +94,14 @@ impl crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
             .invoke("get_menu", ())?;
         Ok(__cordl_ret)
     }
-    pub fn PostDispatch(
+    pub fn get_triggerEvent(
         &mut self,
-        panel: *mut crate::UnityEngine::UIElements::IPanel,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::EventBase> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PostDispatch", (panel))?;
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::EventBase = __cordl_object
+            .invoke("get_triggerEvent", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_menu(
@@ -109,22 +115,16 @@ impl crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
             .invoke("set_menu", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn set_triggerEvent(
         &mut self,
+        value: *mut crate::UnityEngine::UIElements::EventBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("set_triggerEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ContextualMenuPopulateEvent")]

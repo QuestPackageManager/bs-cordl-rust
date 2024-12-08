@@ -24,6 +24,16 @@ impl std::ops::DerefMut for crate::System::Net::Cache::RequestCacheProtocol {
 }
 #[cfg(feature = "System+Net+Cache+RequestCacheProtocol")]
 impl crate::System::Net::Cache::RequestCacheProtocol {
+    pub fn New(
+        arg1: *mut crate::System::Object,
+        arg2: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (arg1, arg2))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         arg1: *mut crate::System::Object,
@@ -35,16 +45,6 @@ impl crate::System::Net::Cache::RequestCacheProtocol {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (arg1, arg2))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        arg1: *mut crate::System::Object,
-        arg2: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (arg1, arg2))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+Cache+RequestCacheProtocol")]

@@ -34,16 +34,12 @@ impl crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
         feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater+State"
     )]
     pub type State = crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater_State;
-    pub fn ProcessNewChange(
-        &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessNewChange", (ve))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnHierarchyChange(
         &mut self,
@@ -69,16 +65,6 @@ impl crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
             .invoke("OnVersionChanged", (ve, versionChangeType))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ProcessAddOrMove(
         &mut self,
         ve: *mut crate::UnityEngine::UIElements::VisualElement,
@@ -90,14 +76,15 @@ impl crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
             .invoke("ProcessAddOrMove", (ve))?;
         Ok(__cordl_ret)
     }
-    pub fn Update(
+    pub fn ProcessNewChange(
         &mut self,
+        ve: *mut crate::UnityEngine::UIElements::VisualElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
+            .invoke("ProcessNewChange", (ve))?;
         Ok(__cordl_ret)
     }
     pub fn ProcessRemove(
@@ -111,12 +98,25 @@ impl crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
             .invoke("ProcessRemove", (ve))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater")]

@@ -29,6 +29,16 @@ for crate::System::Runtime::ConstrainedExecution::ReliabilityContractAttribute {
 }
 #[cfg(feature = "System+Runtime+ConstrainedExecution+ReliabilityContractAttribute")]
 impl crate::System::Runtime::ConstrainedExecution::ReliabilityContractAttribute {
+    pub fn New(
+        consistencyGuarantee: crate::System::Runtime::ConstrainedExecution::Consistency,
+        cer: crate::System::Runtime::ConstrainedExecution::Cer,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (consistencyGuarantee, cer))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         consistencyGuarantee: crate::System::Runtime::ConstrainedExecution::Consistency,
@@ -40,16 +50,6 @@ impl crate::System::Runtime::ConstrainedExecution::ReliabilityContractAttribute 
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (consistencyGuarantee, cer))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        consistencyGuarantee: crate::System::Runtime::ConstrainedExecution::Consistency,
-        cer: crate::System::Runtime::ConstrainedExecution::Cer,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (consistencyGuarantee, cer))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+ConstrainedExecution+ReliabilityContractAttribute")]

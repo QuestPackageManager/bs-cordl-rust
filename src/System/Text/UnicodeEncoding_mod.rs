@@ -26,6 +26,15 @@ impl std::ops::DerefMut for crate::System::Text::UnicodeEncoding_Decoder {
 }
 #[cfg(feature = "System+Text+UnicodeEncoding+Decoder")]
 impl crate::System::Text::UnicodeEncoding_Decoder {
+    pub fn New(
+        encoding: *mut crate::System::Text::UnicodeEncoding,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encoding))?;
+        Ok(__cordl_object)
+    }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,15 +62,6 @@ impl crate::System::Text::UnicodeEncoding_Decoder {
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasState", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        encoding: *mut crate::System::Text::UnicodeEncoding,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encoding))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Text+UnicodeEncoding+Decoder")]
@@ -104,96 +104,14 @@ impl std::ops::DerefMut for crate::System::Text::UnicodeEncoding {
 impl crate::System::Text::UnicodeEncoding {
     #[cfg(feature = "System+Text+UnicodeEncoding+Decoder")]
     pub type Decoder = crate::System::Text::UnicodeEncoding_Decoder;
-    pub fn _ctor_0(
+    pub fn Equals(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor__cordl_bool__cordl_bool1(
-        &mut self,
-        bigEndian: bool,
-        byteOrderMark: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bigEndian, byteOrderMark))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor__cordl_bool__cordl_bool__cordl_bool2(
-        &mut self,
-        bigEndian: bool,
-        byteOrderMark: bool,
-        throwOnInvalidBytes: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bigEndian, byteOrderMark, throwOnInvalidBytes))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetMaxByteCount(
-        &mut self,
-        charCount: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetMaxByteCount", (charCount))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCharCount_Il2CppArray_i32_0(
-        &mut self,
-        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        index: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetCharCount", (bytes, index, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCharCount_Il2CppObject1(
-        &mut self,
-        bytes: *mut quest_hook::libil2cpp::Il2CppObject,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetCharCount", (bytes, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCharCount_Il2CppObject_DecoderNLS2(
-        &mut self,
-        bytes: *mut quest_hook::libil2cpp::Il2CppObject,
-        count: i32,
-        baseDecoder: *mut crate::System::Text::DecoderNLS,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetCharCount", (bytes, count, baseDecoder))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetMaxCharCount(
-        &mut self,
-        byteCount: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetMaxCharCount", (byteCount))?;
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (value))?;
         Ok(__cordl_ret)
     }
     pub fn GetByteCount_Il2CppArray_i32_i32_0(
@@ -207,16 +125,6 @@ impl crate::System::Text::UnicodeEncoding {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetByteCount", (chars, index, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetByteCount_String1(
-        &mut self,
-        s: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetByteCount", (s))?;
         Ok(__cordl_ret)
     }
     pub fn GetByteCount_Il2CppObject_i32_2(
@@ -243,133 +151,14 @@ impl crate::System::Text::UnicodeEncoding {
             .invoke("GetByteCount", (chars, count, encoder))?;
         Ok(__cordl_ret)
     }
-    pub fn SetDefaultFallbacks(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetDefaultFallbacks", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetString(
-        &mut self,
-        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        index: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetString", (bytes, index, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDecoder(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Text::Decoder> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Text::Decoder = __cordl_object
-            .invoke("GetDecoder", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPreamble(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetPreamble", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEncoder(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Text::Encoder> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Text::Encoder = __cordl_object
-            .invoke("GetEncoder", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetChars_Il2CppArray_i32_Il2CppArray_i32_0(
-        &mut self,
-        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        byteIndex: i32,
-        byteCount: i32,
-        chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        charIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetChars", (bytes, byteIndex, byteCount, chars, charIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetChars_Il2CppObject_Il2CppObject_i32_1(
-        &mut self,
-        bytes: *mut quest_hook::libil2cpp::Il2CppObject,
-        byteCount: i32,
-        chars: *mut quest_hook::libil2cpp::Il2CppObject,
-        charCount: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetChars", (bytes, byteCount, chars, charCount))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetChars_Il2CppObject_Il2CppObject_i32_DecoderNLS2(
-        &mut self,
-        bytes: *mut quest_hook::libil2cpp::Il2CppObject,
-        byteCount: i32,
-        chars: *mut quest_hook::libil2cpp::Il2CppObject,
-        charCount: i32,
-        baseDecoder: *mut crate::System::Text::DecoderNLS,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetChars", (bytes, byteCount, chars, charCount, baseDecoder))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetBytes_String_i32_Il2CppArray_i32_0(
+    pub fn GetByteCount_String1(
         &mut self,
         s: *mut crate::System::String,
-        charIndex: i32,
-        charCount: i32,
-        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        byteIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetBytes", (s, charIndex, charCount, bytes, byteIndex))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetByteCount", (s))?;
         Ok(__cordl_ret)
     }
     pub fn GetBytes_Il2CppArray_i32_Il2CppArray_i32_1(
@@ -416,17 +205,173 @@ impl crate::System::Text::UnicodeEncoding {
             .invoke("GetBytes", (chars, charCount, bytes, byteCount, encoder))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Preamble(
+    pub fn GetBytes_String_i32_Il2CppArray_i32_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<u8>> {
+        s: *mut crate::System::String,
+        charIndex: i32,
+        charCount: i32,
+        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        byteIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = __cordl_object
-            .invoke("get_Preamble", ())?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetBytes", (s, charIndex, charCount, bytes, byteIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn GetCharCount_Il2CppArray_i32_0(
+        &mut self,
+        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        index: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetCharCount", (bytes, index, count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetCharCount_Il2CppObject1(
+        &mut self,
+        bytes: *mut quest_hook::libil2cpp::Il2CppObject,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetCharCount", (bytes, count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetCharCount_Il2CppObject_DecoderNLS2(
+        &mut self,
+        bytes: *mut quest_hook::libil2cpp::Il2CppObject,
+        count: i32,
+        baseDecoder: *mut crate::System::Text::DecoderNLS,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetCharCount", (bytes, count, baseDecoder))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetChars_Il2CppArray_i32_Il2CppArray_i32_0(
+        &mut self,
+        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        byteIndex: i32,
+        byteCount: i32,
+        chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        charIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetChars", (bytes, byteIndex, byteCount, chars, charIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetChars_Il2CppObject_Il2CppObject_i32_1(
+        &mut self,
+        bytes: *mut quest_hook::libil2cpp::Il2CppObject,
+        byteCount: i32,
+        chars: *mut quest_hook::libil2cpp::Il2CppObject,
+        charCount: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetChars", (bytes, byteCount, chars, charCount))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetChars_Il2CppObject_Il2CppObject_i32_DecoderNLS2(
+        &mut self,
+        bytes: *mut quest_hook::libil2cpp::Il2CppObject,
+        byteCount: i32,
+        chars: *mut quest_hook::libil2cpp::Il2CppObject,
+        charCount: i32,
+        baseDecoder: *mut crate::System::Text::DecoderNLS,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetChars", (bytes, byteCount, chars, charCount, baseDecoder))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDecoder(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Text::Decoder> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Text::Decoder = __cordl_object
+            .invoke("GetDecoder", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEncoder(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Text::Encoder> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Text::Encoder = __cordl_object
+            .invoke("GetEncoder", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetMaxByteCount(
+        &mut self,
+        charCount: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetMaxByteCount", (charCount))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetMaxCharCount(
+        &mut self,
+        byteCount: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetMaxCharCount", (byteCount))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPreamble(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetPreamble", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetString(
+        &mut self,
+        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        index: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetString", (bytes, index, count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -436,7 +381,7 @@ impl crate::System::Text::UnicodeEncoding {
     pub fn New__cordl_bool__cordl_bool1(
         bigEndian: bool,
         byteOrderMark: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -447,12 +392,67 @@ impl crate::System::Text::UnicodeEncoding {
         bigEndian: bool,
         byteOrderMark: bool,
         throwOnInvalidBytes: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bigEndian, byteOrderMark, throwOnInvalidBytes))?;
         Ok(__cordl_object)
+    }
+    pub fn SetDefaultFallbacks(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetDefaultFallbacks", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor__cordl_bool__cordl_bool1(
+        &mut self,
+        bigEndian: bool,
+        byteOrderMark: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bigEndian, byteOrderMark))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor__cordl_bool__cordl_bool__cordl_bool2(
+        &mut self,
+        bigEndian: bool,
+        byteOrderMark: bool,
+        throwOnInvalidBytes: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bigEndian, byteOrderMark, throwOnInvalidBytes))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Preamble(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = __cordl_object
+            .invoke("get_Preamble", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Text+UnicodeEncoding")]

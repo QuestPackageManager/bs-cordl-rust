@@ -39,59 +39,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Digests::LongDiges
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+LongDigest")]
 impl crate::Org::BouncyCastle::Crypto::Digests::LongDigest {
-    pub fn ProcessWord(
-        &mut self,
-        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        inOff: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessWord", (input, inOff))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessBlock(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessBlock", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Update(
-        &mut self,
-        input: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", (input))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AlgorithmName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_AlgorithmName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Finish(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finish", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AdjustByteCounts(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -100,6 +47,19 @@ impl crate::Org::BouncyCastle::Crypto::Digests::LongDigest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AdjustByteCounts", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn BlockUpdate(
+        &mut self,
+        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inOff: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BlockUpdate", (input, inOff, length))?;
         Ok(__cordl_ret)
     }
     pub fn Copy(
@@ -114,23 +74,15 @@ impl crate::Org::BouncyCastle::Crypto::Digests::LongDigest {
             .invoke("Copy", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessLength(
+    pub fn CopyIn(
         &mut self,
-        lowW: i64,
-        hiW: i64,
+        t: *mut crate::Org::BouncyCastle::Crypto::Digests::LongDigest,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessLength", (lowW, hiW))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetByteLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetByteLength", ())?;
+            .invoke("CopyIn", (t))?;
         Ok(__cordl_ret)
     }
     pub fn DoFinal(
@@ -144,15 +96,78 @@ impl crate::Org::BouncyCastle::Crypto::Digests::LongDigest {
         let __cordl_ret: i32 = __cordl_object.invoke("DoFinal", (output, outOff))?;
         Ok(__cordl_ret)
     }
-    pub fn CopyIn(
+    pub fn Finish(
         &mut self,
-        t: *mut crate::Org::BouncyCastle::Crypto::Digests::LongDigest,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CopyIn", (t))?;
+            .invoke("Finish", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetByteLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetByteLength", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDigestSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetDigestSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_LongDigest1(
+        t: *mut crate::Org::BouncyCastle::Crypto::Digests::LongDigest,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (t))?;
+        Ok(__cordl_object)
+    }
+    pub fn ProcessBlock(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessBlock", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessLength(
+        &mut self,
+        lowW: i64,
+        hiW: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessLength", (lowW, hiW))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessWord(
+        &mut self,
+        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inOff: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessWord", (input, inOff))?;
         Ok(__cordl_ret)
     }
     pub fn Reset_0(
@@ -176,17 +191,15 @@ impl crate::Org::BouncyCastle::Crypto::Digests::LongDigest {
             .invoke("Reset", (t))?;
         Ok(__cordl_ret)
     }
-    pub fn BlockUpdate(
+    pub fn Update(
         &mut self,
-        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        inOff: i32,
-        length: i32,
+        input: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BlockUpdate", (input, inOff, length))?;
+            .invoke("Update", (input))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -210,28 +223,15 @@ impl crate::Org::BouncyCastle::Crypto::Digests::LongDigest {
             .invoke(".ctor", (t))?;
         Ok(__cordl_ret)
     }
-    pub fn GetDigestSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_AlgorithmName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetDigestSize", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_AlgorithmName", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_LongDigest1(
-        t: *mut crate::Org::BouncyCastle::Crypto::Digests::LongDigest,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (t))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+LongDigest")]

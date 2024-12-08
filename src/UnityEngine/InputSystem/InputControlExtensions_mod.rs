@@ -23,137 +23,17 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
 impl crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
-    pub fn WithName(
+    pub fn At(
         &mut self,
-        name: *mut crate::System::String,
+        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+        index: i32,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "WithName",
-            (name),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithProcessor<TProcessor, TValue>(
-        &mut self,
-        processor: TProcessor,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
-    >
-    where
-        TProcessor: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithProcessor",
-            (processor),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsButton(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsButton",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_control(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::InputControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_control",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithUsages(
-        &mut self,
-        startIndex: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithUsages",
-            (startIndex, count),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithDefaultState(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithDefaultState",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_control(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputControl,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_control",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithDisplayName(
-        &mut self,
-        displayName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithDisplayName",
-            (displayName),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithShortDisplayName(
-        &mut self,
-        shortDisplayName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithShortDisplayName",
-            (shortDisplayName),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsNoisy(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsNoisy",
-            (value),
+            "At",
+            (device, index),
         )?;
         Ok(__cordl_ret)
     }
@@ -170,34 +50,6 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WithChildren(
-        &mut self,
-        startIndex: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithChildren",
-            (startIndex, count),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn At(
-        &mut self,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "At",
-            (device, index),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Finish(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -208,16 +60,42 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WithParent(
+    pub fn IsButton(
         &mut self,
-        parent: *mut crate::UnityEngine::InputSystem::InputControl,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "WithParent",
-            (parent),
+            "IsButton",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsNoisy(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsNoisy",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsSynthetic(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsSynthetic",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -235,16 +113,43 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WithStateBlock(
+    pub fn WithChildren(
         &mut self,
-        stateBlock: crate::UnityEngine::InputSystem::LowLevel::InputStateBlock,
+        startIndex: i32,
+        count: i32,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "WithStateBlock",
-            (stateBlock),
+            "WithChildren",
+            (startIndex, count),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithDefaultState(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithDefaultState",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithDisplayName(
+        &mut self,
+        displayName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithDisplayName",
+            (displayName),
         )?;
         Ok(__cordl_ret)
     }
@@ -275,15 +180,110 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn IsSynthetic(
+    pub fn WithName(
         &mut self,
-        value: bool,
+        name: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "IsSynthetic",
+            "WithName",
+            (name),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithParent(
+        &mut self,
+        parent: *mut crate::UnityEngine::InputSystem::InputControl,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithParent",
+            (parent),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithProcessor<TProcessor, TValue>(
+        &mut self,
+        processor: TProcessor,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
+    >
+    where
+        TProcessor: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithProcessor",
+            (processor),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithShortDisplayName(
+        &mut self,
+        shortDisplayName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithShortDisplayName",
+            (shortDisplayName),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithStateBlock(
+        &mut self,
+        stateBlock: crate::UnityEngine::InputSystem::LowLevel::InputStateBlock,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithStateBlock",
+            (stateBlock),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithUsages(
+        &mut self,
+        startIndex: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithUsages",
+            (startIndex, count),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_control(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputControl,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_control",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_control(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::InputControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_control",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -314,6 +314,164 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
 impl crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
+    pub fn Finish(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Finish",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsNoisy(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsNoisy",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithChildren(
+        &mut self,
+        startIndex: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithChildren",
+            (startIndex, count),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithControlAlias(
+        &mut self,
+        controlIndex: i32,
+        alias: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithControlAlias",
+            (controlIndex, alias),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithControlTree(
+        &mut self,
+        controlTreeNodes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        controlTreeIndicies: *mut quest_hook::libil2cpp::Il2CppArray<u16>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithControlTree",
+            (controlTreeNodes, controlTreeIndicies),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithControlUsage(
+        &mut self,
+        controlIndex: i32,
+        usage: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        control: *mut crate::UnityEngine::InputSystem::InputControl,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithControlUsage",
+            (controlIndex, usage, control),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithDisplayName(
+        &mut self,
+        displayName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithDisplayName",
+            (displayName),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithLayout(
+        &mut self,
+        layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithLayout",
+            (layout),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithName(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithName",
+            (name),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithShortDisplayName(
+        &mut self,
+        shortDisplayName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithShortDisplayName",
+            (shortDisplayName),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithStateBlock(
+        &mut self,
+        stateBlock: crate::UnityEngine::InputSystem::LowLevel::InputStateBlock,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithStateBlock",
+            (stateBlock),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithStateOffsetToControlIndexMap(
+        &mut self,
+        map: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithStateOffsetToControlIndexMap",
+            (map),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_device(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -334,164 +492,6 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
             self,
             "set_device",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithName(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithName",
-            (name),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithChildren(
-        &mut self,
-        startIndex: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithChildren",
-            (startIndex, count),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithLayout(
-        &mut self,
-        layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithLayout",
-            (layout),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithControlUsage(
-        &mut self,
-        controlIndex: i32,
-        usage: crate::UnityEngine::InputSystem::Utilities::InternedString,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithControlUsage",
-            (controlIndex, usage, control),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithControlAlias(
-        &mut self,
-        controlIndex: i32,
-        alias: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithControlAlias",
-            (controlIndex, alias),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithStateOffsetToControlIndexMap(
-        &mut self,
-        map: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithStateOffsetToControlIndexMap",
-            (map),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithControlTree(
-        &mut self,
-        controlTreeNodes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        controlTreeIndicies: *mut quest_hook::libil2cpp::Il2CppArray<u16>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithControlTree",
-            (controlTreeNodes, controlTreeIndicies),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsNoisy(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsNoisy",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithDisplayName(
-        &mut self,
-        displayName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithDisplayName",
-            (displayName),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithShortDisplayName(
-        &mut self,
-        shortDisplayName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithShortDisplayName",
-            (shortDisplayName),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Finish(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Finish",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithStateBlock(
-        &mut self,
-        stateBlock: crate::UnityEngine::InputSystem::LowLevel::InputStateBlock,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithStateBlock",
-            (stateBlock),
         )?;
         Ok(__cordl_ret)
     }
@@ -539,23 +539,23 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputControlExtensi
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
 impl crate::UnityEngine::InputSystem::InputControlExtensions {
     #[cfg(
+        feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+    )]
+    pub type InputEventControlEnumerator = crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator;
+    #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
+    pub type Enumerate = crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate;
+    #[cfg(
         feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
     )]
     pub type InputEventControlCollection = crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection;
+    #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
+    pub type DeviceBuilder = crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder;
     #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
     pub type ControlBuilder = crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder;
     #[cfg(
         feature = "UnityEngine+InputSystem+InputControlExtensions+_GetAllButtonPresses_d__43"
     )]
     pub type _GetAllButtonPresses_d__43 = crate::UnityEngine::InputSystem::InputControlExtensions__GetAllButtonPresses_d__43;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
-    )]
-    pub type InputEventControlEnumerator = crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator;
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
-    pub type DeviceBuilder = crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder;
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
-    pub type Enumerate = crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate;
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
 impl quest_hook::libil2cpp::ObjectType
@@ -631,6 +631,16 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCo
         )?;
         Ok(__cordl_ret)
     }
+    pub fn System_Collections_IEnumerable_GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.IEnumerable.GetEnumerator",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_eventPtr(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -639,16 +649,6 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCo
         let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_eventPtr",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerable_GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.IEnumerable.GetEnumerator",
             (),
         )?;
         Ok(__cordl_ret)
@@ -704,18 +704,18 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnu
     feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
 )]
 impl crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
-    pub fn CheckDefault(&mut self, numBits: u32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CheckDefault",
-            (numBits),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn CheckCurrent(&mut self, numBits: u32) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "CheckCurrent",
+            (numBits),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckDefault(&mut self, numBits: u32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CheckDefault",
             (numBits),
         )?;
         Ok(__cordl_ret)
@@ -726,6 +726,24 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEn
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Reset",
             (),
         )?;
         Ok(__cordl_ret)
@@ -762,24 +780,6 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEn
         let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Current",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Reset",
             (),
         )?;
         Ok(__cordl_ret)

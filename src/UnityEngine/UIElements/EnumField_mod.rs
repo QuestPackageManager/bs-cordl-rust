@@ -36,51 +36,29 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::EnumField {
 impl crate::UnityEngine::UIElements::EnumField {
     #[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::EnumField_UxmlTraits;
-    #[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlFactory")]
-    pub type UxmlFactory = crate::UnityEngine::UIElements::EnumField_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+EnumField+__c")]
     pub type __c = crate::UnityEngine::UIElements::EnumField___c;
-    pub fn OnNavigationSubmit(
+    #[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlFactory")]
+    pub type UxmlFactory = crate::UnityEngine::UIElements::EnumField_UxmlFactory;
+    pub fn ChangeValueFromMenu(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::NavigationSubmitEvent,
+        menuItem: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnNavigationSubmit", (evt))?;
+            .invoke("ChangeValueFromMenu", (menuItem))?;
         Ok(__cordl_ret)
     }
-    pub fn ShowMenu(
+    pub fn ContainsPointer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        pointerId: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ShowMenu", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_Enum1(
-        &mut self,
-        label: *mut crate::System::String,
-        defaultValue: *mut crate::System::Enum,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (label, defaultValue))?;
+        let __cordl_ret: bool = __cordl_object.invoke("ContainsPointer", (pointerId))?;
         Ok(__cordl_ret)
     }
     pub fn Init_Enum0(
@@ -106,62 +84,43 @@ impl crate::UnityEngine::UIElements::EnumField {
             .invoke("Init", (defaultValue, includeObsoleteValues))?;
         Ok(__cordl_ret)
     }
-    pub fn UpdateValueLabel(
+    pub fn Initialize(
         &mut self,
-        value: *mut crate::System::Enum,
+        defaultValue: *mut crate::System::Enum,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateValueLabel", (value))?;
+            .invoke("Initialize", (defaultValue))?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessPointerDown<T>(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerEventBase_1<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessPointerDown", (evt))?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn PopulateDataFromType(
+    pub fn New_String_Enum1(
+        label: *mut crate::System::String,
+        defaultValue: *mut crate::System::Enum,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (label, defaultValue))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnNavigationSubmit(
         &mut self,
-        enumType: *mut crate::System::Type,
+        evt: *mut crate::UnityEngine::UIElements::NavigationSubmitEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PopulateDataFromType", (enumType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetValueWithoutNotify(
-        &mut self,
-        newValue: *mut crate::System::Enum,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetValueWithoutNotify", (newValue))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ContainsPointer(
-        &mut self,
-        pointerId: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ContainsPointer", (pointerId))?;
+            .invoke("OnNavigationSubmit", (evt))?;
         Ok(__cordl_ret)
     }
     pub fn OnPointerDownEvent(
@@ -186,6 +145,53 @@ impl crate::UnityEngine::UIElements::EnumField {
             .invoke("OnPointerMoveEvent", (evt))?;
         Ok(__cordl_ret)
     }
+    pub fn PopulateDataFromType(
+        &mut self,
+        enumType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PopulateDataFromType", (enumType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessPointerDown<T>(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::PointerEventBase_1<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessPointerDown", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetValueWithoutNotify(
+        &mut self,
+        newValue: *mut crate::System::Enum,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetValueWithoutNotify", (newValue))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ShowMenu(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ShowMenu", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn UpdateMixedValueContent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -196,11 +202,15 @@ impl crate::UnityEngine::UIElements::EnumField {
             .invoke("UpdateMixedValueContent", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_includeObsoleteValues(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn UpdateValueLabel(
+        &mut self,
+        value: *mut crate::System::Enum,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_includeObsoleteValues", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateValueLabel", (value))?;
         Ok(__cordl_ret)
     }
     pub fn _ShowMenu_b__33_0(
@@ -214,44 +224,34 @@ impl crate::UnityEngine::UIElements::EnumField {
             .invoke("<ShowMenu>b__33_0", (contentView))?;
         Ok(__cordl_ret)
     }
-    pub fn ChangeValueFromMenu(
+    pub fn _ctor_0(
         &mut self,
-        menuItem: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ChangeValueFromMenu", (menuItem))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Initialize(
+    pub fn _ctor_String_Enum1(
         &mut self,
-        defaultValue: *mut crate::System::Enum,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Initialize", (defaultValue))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_Enum1(
         label: *mut crate::System::String,
         defaultValue: *mut crate::System::Enum,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (label, defaultValue))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (label, defaultValue))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_includeObsoleteValues(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_includeObsoleteValues", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EnumField")]
@@ -295,6 +295,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::EnumField_UxmlFactor
 }
 #[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlFactory")]
 impl crate::UnityEngine::UIElements::EnumField_UxmlFactory {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -304,13 +311,6 @@ impl crate::UnityEngine::UIElements::EnumField_UxmlFactory {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlFactory")]
@@ -371,6 +371,13 @@ impl crate::UnityEngine::UIElements::EnumField_UxmlTraits {
             .invoke("Init", (ve, bag, cc))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -380,13 +387,6 @@ impl crate::UnityEngine::UIElements::EnumField_UxmlTraits {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlTraits")]

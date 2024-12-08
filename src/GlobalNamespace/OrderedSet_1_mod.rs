@@ -32,6 +32,13 @@ for crate::GlobalNamespace::OrderedSet_1_Node<T> {
 }
 #[cfg(feature = "OrderedSet_1+Node")]
 impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1_Node<T> {
+    pub fn New(value: T, clearCount: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (value, clearCount))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         value: T,
@@ -47,16 +54,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1_Node<T
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (value, clearCount))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        value: T,
-        clearCount: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (value, clearCount))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OrderedSet_1+Node")]
@@ -104,15 +101,18 @@ impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for OrderedSet_1<T> {
 }
 #[cfg(feature = "OrderedSet_1")]
 impl<T: quest_hook::libil2cpp::Type> OrderedSet_1<T> {
-    #[cfg(feature = "OrderedSet_1+Node")]
-    pub type Node = crate::GlobalNamespace::OrderedSet_1_Node<T>;
-    #[cfg(feature = "OrderedSet_1+ProcessOrder")]
-    pub type ProcessOrder = crate::GlobalNamespace::OrderedSet_1_ProcessOrder;
     #[cfg(feature = "OrderedSet_1+_GetEnumerator_d__23")]
     pub type _GetEnumerator_d__23 = crate::GlobalNamespace::OrderedSet_1__GetEnumerator_d__23<
         T,
     >;
-    pub fn Contains(&mut self, item: T) -> quest_hook::libil2cpp::Result<bool>
+    #[cfg(feature = "OrderedSet_1+Node")]
+    pub type Node = crate::GlobalNamespace::OrderedSet_1_Node<T>;
+    #[cfg(feature = "OrderedSet_1+ProcessOrder")]
+    pub type ProcessOrder = crate::GlobalNamespace::OrderedSet_1_ProcessOrder;
+    pub fn Add(
+        &mut self,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -120,7 +120,23 @@ impl<T: quest_hook::libil2cpp::Type> OrderedSet_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Contains", (item))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Add", (item))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AppendNode(
+        &mut self,
+        node: *mut crate::GlobalNamespace::OrderedSet_1_Node<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AppendNode", (node))?;
         Ok(__cordl_ret)
     }
     pub fn AppendNodeUnchecked(
@@ -136,6 +152,29 @@ impl<T: quest_hook::libil2cpp::Type> OrderedSet_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AppendNodeUnchecked", (node))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Contains(&mut self, item: T) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Contains", (item))?;
         Ok(__cordl_ret)
     }
     pub fn GetEnumerator(
@@ -154,7 +193,7 @@ impl<T: quest_hook::libil2cpp::Type> OrderedSet_1<T> {
             .invoke("GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Remove(&mut self, item: T) -> quest_hook::libil2cpp::Result<bool>
+    pub fn GetFirstOrDefault(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -162,13 +201,22 @@ impl<T: quest_hook::libil2cpp::Type> OrderedSet_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Remove", (item))?;
+        let __cordl_ret: T = __cordl_object.invoke("GetFirstOrDefault", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         comparison: *mut crate::System::Comparison_1<T>,
         processOrder: crate::GlobalNamespace::OrderedSet_1_ProcessOrder<T>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (comparison, processOrder))?;
+        Ok(__cordl_object)
+    }
+    pub fn PrependNode(
+        &mut self,
+        node: *mut crate::GlobalNamespace::OrderedSet_1_Node<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -178,19 +226,7 @@ impl<T: quest_hook::libil2cpp::Type> OrderedSet_1<T> {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (comparison, processOrder))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
+            .invoke("PrependNode", (node))?;
         Ok(__cordl_ret)
     }
     pub fn PrependNodeUnchecked(
@@ -208,10 +244,7 @@ impl<T: quest_hook::libil2cpp::Type> OrderedSet_1<T> {
             .invoke("PrependNodeUnchecked", (node))?;
         Ok(__cordl_ret)
     }
-    pub fn UpdateSortedPosition_T0(
-        &mut self,
-        item: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn Remove(&mut self, item: T) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -219,79 +252,7 @@ impl<T: quest_hook::libil2cpp::Type> OrderedSet_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateSortedPosition", (item))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateSortedPosition_OrderedSet_1_Node1(
-        &mut self,
-        node: *mut crate::GlobalNamespace::OrderedSet_1_Node<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateSortedPosition", (node))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PrependNode(
-        &mut self,
-        node: *mut crate::GlobalNamespace::OrderedSet_1_Node<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PrependNode", (node))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Add(
-        &mut self,
-        item: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (item))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_count(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_count", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AppendNode(
-        &mut self,
-        node: *mut crate::GlobalNamespace::OrderedSet_1_Node<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AppendNode", (node))?;
+        let __cordl_ret: bool = __cordl_object.invoke("Remove", (item))?;
         Ok(__cordl_ret)
     }
     pub fn RemoveNode(
@@ -353,7 +314,10 @@ impl<T: quest_hook::libil2cpp::Type> OrderedSet_1<T> {
         let __cordl_ret: bool = __cordl_object.invoke("TryGetFirst", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn GetFirstOrDefault(&mut self) -> quest_hook::libil2cpp::Result<T>
+    pub fn UpdateSortedPosition_OrderedSet_1_Node1(
+        &mut self,
+        node: *mut crate::GlobalNamespace::OrderedSet_1_Node<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -361,18 +325,51 @@ impl<T: quest_hook::libil2cpp::Type> OrderedSet_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: T = __cordl_object.invoke("GetFirstOrDefault", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateSortedPosition", (node))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn UpdateSortedPosition_T0(
+        &mut self,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateSortedPosition", (item))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
         comparison: *mut crate::System::Comparison_1<T>,
         processOrder: crate::GlobalNamespace::OrderedSet_1_ProcessOrder<T>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (comparison, processOrder))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (comparison, processOrder))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_count(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_count", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OrderedSet_1")]

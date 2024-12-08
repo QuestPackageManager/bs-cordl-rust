@@ -24,12 +24,12 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Callback {
 }
 #[cfg(feature = "Oculus+Platform+Callback")]
 impl crate::Oculus::Platform::Callback {
+    #[cfg(feature = "Oculus+Platform+Callback+RequestCallback")]
+    pub type RequestCallback = crate::Oculus::Platform::Callback_RequestCallback;
     #[cfg(feature = "Oculus+Platform+Callback+RequestCallback_1")]
     pub type RequestCallback_1<T: quest_hook::libil2cpp::Type> = crate::Oculus::Platform::Callback_RequestCallback_1<
         T,
     >;
-    #[cfg(feature = "Oculus+Platform+Callback+RequestCallback")]
-    pub type RequestCallback = crate::Oculus::Platform::Callback_RequestCallback;
 }
 #[cfg(feature = "Oculus+Platform+Callback")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Callback {
@@ -67,6 +67,33 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Callback_RequestCallback {
 }
 #[cfg(feature = "Oculus+Platform+Callback+RequestCallback")]
 impl crate::Oculus::Platform::Callback_RequestCallback {
+    pub fn HandleMessage(
+        &mut self,
+        msg: *mut crate::Oculus::Platform::Message,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleMessage", (msg))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Message_Callback1(
+        callback: *mut crate::Oculus::Platform::Message_Callback,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (callback))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -87,33 +114,6 @@ impl crate::Oculus::Platform::Callback_RequestCallback {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (callback))?;
         Ok(__cordl_ret)
-    }
-    pub fn HandleMessage(
-        &mut self,
-        msg: *mut crate::Oculus::Platform::Message,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleMessage", (msg))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Message_Callback1(
-        callback: *mut crate::Oculus::Platform::Message_Callback,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (callback))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Oculus+Platform+Callback+RequestCallback")]
@@ -158,21 +158,6 @@ for crate::Oculus::Platform::Callback_RequestCallback_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::Oculus::Platform::Callback_RequestCallback_1<T> {
-    pub fn _ctor(
-        &mut self,
-        callback: *mut crate::Oculus::Platform::Message_1_Callback<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (callback))?;
-        Ok(__cordl_ret)
-    }
     pub fn HandleMessage(
         &mut self,
         msg: *mut crate::Oculus::Platform::Message,
@@ -190,12 +175,27 @@ impl<
     }
     pub fn New(
         callback: *mut crate::Oculus::Platform::Message_1_Callback<T>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (callback))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        callback: *mut crate::Oculus::Platform::Message_1_Callback<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (callback))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Oculus+Platform+Callback+RequestCallback_1")]

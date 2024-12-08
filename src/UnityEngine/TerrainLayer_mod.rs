@@ -24,70 +24,21 @@ impl std::ops::DerefMut for crate::UnityEngine::TerrainLayer {
 }
 #[cfg(feature = "UnityEngine+TerrainLayer")]
 impl crate::UnityEngine::TerrainLayer {
-    pub fn set_specular_Injected(
-        &mut self,
-        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_specular_Injected", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn set_diffuseRemapMax(
+    pub fn _ctor(
         &mut self,
-        value: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_diffuseRemapMax", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_specular(
-        &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_specular", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_diffuseRemapMin(
-        &mut self,
-        value: crate::UnityEngine::Vector4,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_diffuseRemapMin", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_maskMapRemapMin_Injected(
-        &mut self,
-        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_maskMapRemapMin_Injected", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_normalScale(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_normalScale", (value))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_diffuseTexture(
@@ -100,6 +51,23 @@ impl crate::UnityEngine::TerrainLayer {
             .invoke("get_diffuseTexture", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_maskMapTexture(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Texture2D = __cordl_object
+            .invoke("get_maskMapTexture", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_metallic(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_metallic", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_normalMapTexture(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
@@ -110,6 +78,13 @@ impl crate::UnityEngine::TerrainLayer {
             .invoke("get_normalMapTexture", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_smoothness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_smoothness", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_specular(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
@@ -118,16 +93,6 @@ impl crate::UnityEngine::TerrainLayer {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_specular", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_tileSize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_tileSize", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_specular_Injected(
@@ -141,69 +106,14 @@ impl crate::UnityEngine::TerrainLayer {
             .invoke("get_specular_Injected", (ret))?;
         Ok(__cordl_ret)
     }
-    pub fn get_maskMapTexture(
+    pub fn get_tileOffset(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Texture2D = __cordl_object
-            .invoke("get_maskMapTexture", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_smoothness(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_smoothness", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_normalMapTexture(
-        &mut self,
-        value: *mut crate::UnityEngine::Texture2D,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_normalMapTexture", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_maskMapRemapMax(
-        &mut self,
-        value: crate::UnityEngine::Vector4,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_maskMapRemapMax", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_tileSize_Injected(
-        &mut self,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("get_tileSize_Injected", (ret))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_tileSize_Injected(
-        &mut self,
-        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_tileSize_Injected", (value))?;
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_tileOffset", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_tileOffset_Injected(
@@ -217,36 +127,36 @@ impl crate::UnityEngine::TerrainLayer {
             .invoke("get_tileOffset_Injected", (ret))?;
         Ok(__cordl_ret)
     }
-    pub fn set_tileSize(
-        &mut self,
-        value: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_tileSize", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_tileOffset(
+    pub fn get_tileSize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_tileOffset", ())?;
+            .invoke("get_tileSize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_diffuseRemapMin_Injected(
+    pub fn get_tileSize_Injected(
         &mut self,
-        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_diffuseRemapMin_Injected", (value))?;
+            .invoke("get_tileSize_Injected", (ret))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_diffuseRemapMax(
+        &mut self,
+        value: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_diffuseRemapMax", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_diffuseRemapMax_Injected(
@@ -260,57 +170,7 @@ impl crate::UnityEngine::TerrainLayer {
             .invoke("set_diffuseRemapMax_Injected", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_maskMapTexture(
-        &mut self,
-        value: *mut crate::UnityEngine::Texture2D,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_maskMapTexture", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_smoothness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_smoothness", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_maskMapRemapMax_Injected(
-        &mut self,
-        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_maskMapRemapMax_Injected", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_metallic(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_metallic", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_maskMapRemapMin(
+    pub fn set_diffuseRemapMin(
         &mut self,
         value: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -318,18 +178,18 @@ impl crate::UnityEngine::TerrainLayer {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_maskMapRemapMin", (value))?;
+            .invoke("set_diffuseRemapMin", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_tileOffset(
+    pub fn set_diffuseRemapMin_Injected(
         &mut self,
-        value: crate::UnityEngine::Vector2,
+        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_tileOffset", (value))?;
+            .invoke("set_diffuseRemapMin_Injected", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_diffuseTexture(
@@ -343,11 +203,136 @@ impl crate::UnityEngine::TerrainLayer {
             .invoke("set_diffuseTexture", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_metallic(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn set_maskMapRemapMax(
+        &mut self,
+        value: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_metallic", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_maskMapRemapMax", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_maskMapRemapMax_Injected(
+        &mut self,
+        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_maskMapRemapMax_Injected", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_maskMapRemapMin(
+        &mut self,
+        value: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_maskMapRemapMin", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_maskMapRemapMin_Injected(
+        &mut self,
+        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_maskMapRemapMin_Injected", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_maskMapTexture(
+        &mut self,
+        value: *mut crate::UnityEngine::Texture2D,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_maskMapTexture", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_metallic(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_metallic", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_normalMapTexture(
+        &mut self,
+        value: *mut crate::UnityEngine::Texture2D,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_normalMapTexture", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_normalScale(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_normalScale", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_smoothness(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_smoothness", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_specular(
+        &mut self,
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_specular", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_specular_Injected(
+        &mut self,
+        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_specular_Injected", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_tileOffset(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_tileOffset", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_tileOffset_Injected(
@@ -361,12 +346,27 @@ impl crate::UnityEngine::TerrainLayer {
             .invoke("set_tileOffset_Injected", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_tileSize(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_tileSize", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_tileSize_Injected(
+        &mut self,
+        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_tileSize_Injected", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+TerrainLayer")]

@@ -28,8 +28,6 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
     pub type __c__23_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::ProBuilder::ArrayUtility___c__23_1<
         T,
     >;
-    #[cfg(feature = "UnityEngine+ProBuilder+ArrayUtility+SearchRange")]
-    pub type SearchRange = crate::UnityEngine::ProBuilder::ArrayUtility_SearchRange;
     #[cfg(feature = "UnityEngine+ProBuilder+ArrayUtility+__c__DisplayClass21_0_2")]
     pub type __c__DisplayClass21_0_2<
         TSource: quest_hook::libil2cpp::Type,
@@ -38,6 +36,8 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
         TSource,
         TKey,
     >;
+    #[cfg(feature = "UnityEngine+ProBuilder+ArrayUtility+SearchRange")]
+    pub type SearchRange = crate::UnityEngine::ProBuilder::ArrayUtility_SearchRange;
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ArrayUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::ArrayUtility {
@@ -74,6 +74,24 @@ for crate::UnityEngine::ProBuilder::ArrayUtility_SearchRange {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ArrayUtility+SearchRange")]
 impl crate::UnityEngine::ProBuilder::ArrayUtility_SearchRange {
+    pub fn Center(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Center",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -91,24 +109,6 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility_SearchRange {
             self,
             ".ctor",
             (begin, end),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Center(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Center",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -23,20 +23,19 @@ impl std::ops::DerefMut for IEntitlementModel {
 }
 #[cfg(feature = "IEntitlementModel")]
 impl IEntitlementModel {
-    pub fn GetPackEntitlementStatusAsync(
+    pub fn GetLevelDataVersionAsync(
         &mut self,
-        levelPackId: *mut crate::System::String,
+        levelId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<EntitlementStatus>,
+        *mut crate::System::Threading::Tasks::Task_1<BeatmapLevelDataVersion>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            EntitlementStatus,
-        > = __cordl_object
-            .invoke("GetPackEntitlementStatusAsync", (levelPackId, token))?;
+            BeatmapLevelDataVersion,
+        > = __cordl_object.invoke("GetLevelDataVersionAsync", (levelId, token))?;
         Ok(__cordl_ret)
     }
     pub fn GetLevelEntitlementStatusAsync(
@@ -54,19 +53,20 @@ impl IEntitlementModel {
         > = __cordl_object.invoke("GetLevelEntitlementStatusAsync", (levelId, token))?;
         Ok(__cordl_ret)
     }
-    pub fn GetLevelDataVersionAsync(
+    pub fn GetPackEntitlementStatusAsync(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelPackId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<BeatmapLevelDataVersion>,
+        *mut crate::System::Threading::Tasks::Task_1<EntitlementStatus>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            BeatmapLevelDataVersion,
-        > = __cordl_object.invoke("GetLevelDataVersionAsync", (levelId, token))?;
+            EntitlementStatus,
+        > = __cordl_object
+            .invoke("GetPackEntitlementStatusAsync", (levelPackId, token))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

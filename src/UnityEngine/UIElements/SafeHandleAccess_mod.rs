@@ -22,6 +22,14 @@ for crate::UnityEngine::UIElements::SafeHandleAccess {
 }
 #[cfg(feature = "UnityEngine+UIElements+SafeHandleAccess")]
 impl crate::UnityEngine::UIElements::SafeHandleAccess {
+    pub fn IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsNull",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         ptr: crate::System::IntPtr,
@@ -30,14 +38,6 @@ impl crate::UnityEngine::UIElements::SafeHandleAccess {
             self,
             ".ctor",
             (ptr),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsNull",
-            (),
         )?;
         Ok(__cordl_ret)
     }

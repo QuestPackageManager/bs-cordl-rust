@@ -26,17 +26,6 @@ impl std::ops::DerefMut for CompositeLogger {
 }
 #[cfg(feature = "CompositeLogger")]
 impl CompositeLogger {
-    pub fn _ctor(
-        &mut self,
-        loggers: *mut crate::System::Collections::Generic::List_1<*mut IBeatSaberLogger>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (loggers))?;
-        Ok(__cordl_ret)
-    }
     pub fn AddLogger(
         &mut self,
         logger: *mut IBeatSaberLogger,
@@ -46,17 +35,6 @@ impl CompositeLogger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddLogger", (logger))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LogError_String0(
-        &mut self,
-        message: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LogError", (message))?;
         Ok(__cordl_ret)
     }
     pub fn LogError_Object1(
@@ -71,7 +49,7 @@ impl CompositeLogger {
             .invoke("LogError", (message, context))?;
         Ok(__cordl_ret)
     }
-    pub fn LogWarning_String0(
+    pub fn LogError_String0(
         &mut self,
         message: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -79,19 +57,7 @@ impl CompositeLogger {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LogWarning", (message))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LogWarning_Object1(
-        &mut self,
-        message: *mut crate::System::String,
-        context: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LogWarning", (message, context))?;
+            .invoke("LogError", (message))?;
         Ok(__cordl_ret)
     }
     pub fn LogException_Exception0(
@@ -117,7 +83,19 @@ impl CompositeLogger {
             .invoke("LogException", (exception, context))?;
         Ok(__cordl_ret)
     }
-    pub fn Log_String0(
+    pub fn LogWarning_Object1(
+        &mut self,
+        message: *mut crate::System::String,
+        context: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LogWarning", (message, context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LogWarning_String0(
         &mut self,
         message: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -125,7 +103,7 @@ impl CompositeLogger {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Log", (message))?;
+            .invoke("LogWarning", (message))?;
         Ok(__cordl_ret)
     }
     pub fn Log_Object1(
@@ -140,14 +118,36 @@ impl CompositeLogger {
             .invoke("Log", (message, context))?;
         Ok(__cordl_ret)
     }
+    pub fn Log_String0(
+        &mut self,
+        message: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Log", (message))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         loggers: *mut crate::System::Collections::Generic::List_1<*mut IBeatSaberLogger>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (loggers))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        loggers: *mut crate::System::Collections::Generic::List_1<*mut IBeatSaberLogger>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (loggers))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "CompositeLogger")]

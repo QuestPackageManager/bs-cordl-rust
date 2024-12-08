@@ -20,47 +20,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for OVRSharable {
 }
 #[cfg(feature = "OVRSharable")]
 impl OVRSharable {
-    pub fn _ctor(
-        &mut self,
-        anchor: OVRAnchor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (anchor),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Handle",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetEnabledAsync(
-        &mut self,
-        enabled: bool,
-        timeout: f64,
-    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
-        let __cordl_ret: OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetEnabledAsync",
-            (enabled, timeout),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IOVRAnchorComponent_OVRSharable__get_Handle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IOVRAnchorComponent<OVRSharable>.get_Handle",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_OVRSharable0(
         &mut self,
         other: OVRSharable,
@@ -83,6 +42,14 @@ impl OVRSharable {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn IOVRAnchorComponent_OVRSharable__FromAnchor(
         &mut self,
         anchor: OVRAnchor,
@@ -94,18 +61,12 @@ impl OVRSharable {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn IOVRAnchorComponent_OVRSharable__get_Handle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_IsNull",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsEnabled",
+            "IOVRAnchorComponent<OVRSharable>.get_Handle",
             (),
         )?;
         Ok(__cordl_ret)
@@ -122,11 +83,15 @@ impl OVRSharable {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn SetEnabledAsync(
+        &mut self,
+        enabled: bool,
+        timeout: f64,
+    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
+        let __cordl_ret: OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
-            (),
+            "SetEnabledAsync",
+            (enabled, timeout),
         )?;
         Ok(__cordl_ret)
     }
@@ -136,6 +101,41 @@ impl OVRSharable {
         let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        anchor: OVRAnchor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (anchor),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Handle",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsEnabled",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsNull",
             (),
         )?;
         Ok(__cordl_ret)

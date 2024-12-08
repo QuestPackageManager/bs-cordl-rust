@@ -24,88 +24,6 @@ for crate::System::Threading::CancellationToken {
 impl crate::System::Threading::CancellationToken {
     #[cfg(feature = "System+Threading+CancellationToken+__c")]
     pub type __c = crate::System::Threading::CancellationToken___c;
-    pub fn ThrowOperationCanceledException(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ThrowOperationCanceledException",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ThrowIfCancellationRequested(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ThrowIfCancellationRequested",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CanBeCanceled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_CanBeCanceled",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalRegisterWithoutEC(
-        &mut self,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
-        state: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Threading::CancellationTokenRegistration,
-    > {
-        let __cordl_ret: crate::System::Threading::CancellationTokenRegistration = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "InternalRegisterWithoutEC",
-            (callback, state),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_CancellationTokenSource0(
-        &mut self,
-        source: *mut crate::System::Threading::CancellationTokenSource,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (source),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor__cordl_bool1(
-        &mut self,
-        canceled: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (canceled),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsCancellationRequested(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsCancellationRequested",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_CancellationToken0(
         &mut self,
         other: crate::System::Threading::CancellationToken,
@@ -125,6 +43,28 @@ impl crate::System::Threading::CancellationToken {
             self,
             "Equals",
             (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn InternalRegisterWithoutEC(
+        &mut self,
+        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
+        state: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Threading::CancellationTokenRegistration,
+    > {
+        let __cordl_ret: crate::System::Threading::CancellationTokenRegistration = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "InternalRegisterWithoutEC",
+            (callback, state),
         )?;
         Ok(__cordl_ret)
     }
@@ -168,6 +108,66 @@ impl crate::System::Threading::CancellationToken {
             self,
             "Register",
             (callback, state, useSynchronizationContext, useExecutionContext),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ThrowIfCancellationRequested(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ThrowIfCancellationRequested",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ThrowOperationCanceledException(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ThrowOperationCanceledException",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_CancellationTokenSource0(
+        &mut self,
+        source: *mut crate::System::Threading::CancellationTokenSource,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (source),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor__cordl_bool1(
+        &mut self,
+        canceled: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (canceled),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CanBeCanceled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_CanBeCanceled",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsCancellationRequested(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsCancellationRequested",
+            (),
         )?;
         Ok(__cordl_ret)
     }

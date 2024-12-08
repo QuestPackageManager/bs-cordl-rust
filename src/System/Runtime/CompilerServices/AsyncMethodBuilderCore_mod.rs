@@ -24,33 +24,20 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
 }
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore")]
 impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
-    #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+__c")]
-    pub type __c = crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore___c;
     #[cfg(
         feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+__c__DisplayClass5_0"
     )]
     pub type __c__DisplayClass5_0 = crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore___c__DisplayClass5_0;
     #[cfg(
-        feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+ContinuationWrapper"
-    )]
-    pub type ContinuationWrapper = crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_ContinuationWrapper;
-    #[cfg(
         feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+MoveNextRunner"
     )]
     pub type MoveNextRunner = crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner;
-    pub fn PostBoxInitialization(
-        &mut self,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
-        runner: *mut crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner,
-        builtTask: *mut crate::System::Threading::Tasks::Task,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "PostBoxInitialization",
-            (stateMachine, runner, builtTask),
-        )?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+__c")]
+    pub type __c = crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore___c;
+    #[cfg(
+        feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+ContinuationWrapper"
+    )]
+    pub type ContinuationWrapper = crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_ContinuationWrapper;
     pub fn GetCompletionAction(
         &mut self,
         taskForTracing: *mut crate::System::Threading::Tasks::Task,
@@ -65,17 +52,6 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetStateMachine(
-        &mut self,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetStateMachine",
-            (stateMachine),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn OutputAsyncCausalityEvents(
         &mut self,
         innerTask: *mut crate::System::Threading::Tasks::Task,
@@ -85,6 +61,30 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
             self,
             "OutputAsyncCausalityEvents",
             (innerTask, continuation),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn PostBoxInitialization(
+        &mut self,
+        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+        runner: *mut crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner,
+        builtTask: *mut crate::System::Threading::Tasks::Task,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "PostBoxInitialization",
+            (stateMachine, runner, builtTask),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetStateMachine(
+        &mut self,
+        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetStateMachine",
+            (stateMachine),
         )?;
         Ok(__cordl_ret)
     }
@@ -131,19 +131,6 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_Continuatio
     feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+ContinuationWrapper"
 )]
 impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_ContinuationWrapper {
-    pub fn _ctor(
-        &mut self,
-        continuation: *mut crate::System::Action,
-        invokeAction: *mut crate::System::Action,
-        innerTask: *mut crate::System::Threading::Tasks::Task,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (continuation, invokeAction, innerTask))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -158,12 +145,25 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_Continuati
         continuation: *mut crate::System::Action,
         invokeAction: *mut crate::System::Action,
         innerTask: *mut crate::System::Threading::Tasks::Task,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (continuation, invokeAction, innerTask))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        continuation: *mut crate::System::Action,
+        invokeAction: *mut crate::System::Action,
+        innerTask: *mut crate::System::Threading::Tasks::Task,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (continuation, invokeAction, innerTask))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -209,6 +209,23 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRun
 }
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+MoveNextRunner")]
 impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner {
+    pub fn New(
+        context: *mut crate::System::Threading::ExecutionContext,
+        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (context, stateMachine))?;
+        Ok(__cordl_object)
+    }
+    pub fn Run(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object.invoke("Run", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         context: *mut crate::System::Threading::ExecutionContext,
@@ -220,23 +237,6 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRu
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (context, stateMachine))?;
         Ok(__cordl_ret)
-    }
-    pub fn Run(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object.invoke("Run", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        context: *mut crate::System::Threading::ExecutionContext,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (context, stateMachine))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+MoveNextRunner")]

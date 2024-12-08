@@ -25,16 +25,29 @@ impl std::ops::DerefMut for BasicConnectionRequestHandler {
 }
 #[cfg(feature = "BasicConnectionRequestHandler")]
 impl BasicConnectionRequestHandler {
-    pub fn set_secret(
+    pub fn GetConnectionMessage(
         &mut self,
-        value: *mut crate::System::String,
+        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        userId: *mut crate::System::String,
+        userName: *mut crate::System::String,
+        isConnectionOwner: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_secret", (value))?;
+            .invoke(
+                "GetConnectionMessage",
+                (writer, userId, userName, isConnectionOwner),
+            )?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ValidateConnectionMessage(
         &mut self,
@@ -53,16 +66,6 @@ impl BasicConnectionRequestHandler {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_secret(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_secret", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -73,29 +76,26 @@ impl BasicConnectionRequestHandler {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetConnectionMessage(
+    pub fn get_secret(
         &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
-        isConnectionOwner: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_secret", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_secret(
+        &mut self,
+        value: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "GetConnectionMessage",
-                (writer, userId, userName, isConnectionOwner),
-            )?;
+            .invoke("set_secret", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BasicConnectionRequestHandler")]

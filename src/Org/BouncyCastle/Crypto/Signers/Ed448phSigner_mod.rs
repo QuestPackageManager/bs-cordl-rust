@@ -30,26 +30,27 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Signers::Ed448phSi
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed448phSigner")]
 impl crate::Org::BouncyCastle::Crypto::Signers::Ed448phSigner {
-    pub fn Update(
+    pub fn BlockUpdate(
         &mut self,
-        b: u8,
+        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        off: i32,
+        len: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", (b))?;
+            .invoke("BlockUpdate", (buf, off, len))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn GenerateSignature(
         &mut self,
-        context: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (context))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GenerateSignature", ())?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -64,6 +65,15 @@ impl crate::Org::BouncyCastle::Crypto::Signers::Ed448phSigner {
             .invoke("Init", (forSigning, parameters))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        context: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (context))?;
+        Ok(__cordl_object)
+    }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -74,37 +84,15 @@ impl crate::Org::BouncyCastle::Crypto::Signers::Ed448phSigner {
             .invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_AlgorithmName(
+    pub fn Update(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_AlgorithmName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GenerateSignature(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GenerateSignature", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn BlockUpdate(
-        &mut self,
-        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        off: i32,
-        len: i32,
+        b: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BlockUpdate", (buf, off, len))?;
+            .invoke("Update", (b))?;
         Ok(__cordl_ret)
     }
     pub fn VerifySignature(
@@ -117,14 +105,26 @@ impl crate::Org::BouncyCastle::Crypto::Signers::Ed448phSigner {
         let __cordl_ret: bool = __cordl_object.invoke("VerifySignature", (signature))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         context: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (context))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AlgorithmName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_AlgorithmName", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed448phSigner")]

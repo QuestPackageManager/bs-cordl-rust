@@ -22,14 +22,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::RangeInt
 }
 #[cfg(feature = "UnityEngine+RangeInt")]
 impl crate::UnityEngine::RangeInt {
-    pub fn get_end(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_end",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         start: i32,
@@ -39,6 +31,14 @@ impl crate::UnityEngine::RangeInt {
             self,
             ".ctor",
             (start, length),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_end(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_end",
+            (),
         )?;
         Ok(__cordl_ret)
     }

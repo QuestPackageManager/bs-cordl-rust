@@ -25,17 +25,6 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::Lifetime::LeaseSin
 }
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+LeaseSink")]
 impl crate::System::Runtime::Remoting::Lifetime::LeaseSink {
-    pub fn _ctor(
-        &mut self,
-        nextSink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (nextSink))?;
-        Ok(__cordl_ret)
-    }
     pub fn AsyncProcessMessage(
         &mut self,
         msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
@@ -48,6 +37,26 @@ impl crate::System::Runtime::Remoting::Lifetime::LeaseSink {
         );
         let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::IMessageCtrl = __cordl_object
             .invoke("AsyncProcessMessage", (msg, replySink))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        nextSink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (nextSink))?;
+        Ok(__cordl_object)
+    }
+    pub fn RenewLease(
+        &mut self,
+        msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RenewLease", (msg))?;
         Ok(__cordl_ret)
     }
     pub fn SyncProcessMessage(
@@ -63,25 +72,16 @@ impl crate::System::Runtime::Remoting::Lifetime::LeaseSink {
             .invoke("SyncProcessMessage", (msg))?;
         Ok(__cordl_ret)
     }
-    pub fn RenewLease(
+    pub fn _ctor(
         &mut self,
-        msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
+        nextSink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RenewLease", (msg))?;
+            .invoke(".ctor", (nextSink))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        nextSink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (nextSink))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+LeaseSink")]

@@ -43,43 +43,6 @@ impl<
     TObj: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
 > crate::Zenject::GetterProvider_2<TObj, TResult> {
-    pub fn _ctor(
-        &mut self,
-        identifier: *mut crate::System::Object,
-        method: *mut crate::System::Func_2<TObj, TResult>,
-        container: *mut crate::Zenject::DiContainer,
-        sourceType: crate::Zenject::InjectSources,
-        matchAll: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TObj: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (identifier, method, container, sourceType, matchAll))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TypeVariesBasedOnMemberType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TObj: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_TypeVariesBasedOnMemberType", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: *mut crate::Zenject::InjectContext,
@@ -105,19 +68,6 @@ impl<
                 "GetAllInstancesWithInjectSplit",
                 (context, args, injectAction, buffer),
             )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsCached(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TObj: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsCached", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetInstanceType(
@@ -160,7 +110,7 @@ impl<
         container: *mut crate::Zenject::DiContainer,
         sourceType: crate::Zenject::InjectSources,
         matchAll: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -169,6 +119,56 @@ impl<
                 (identifier, method, container, sourceType, matchAll),
             )?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        identifier: *mut crate::System::Object,
+        method: *mut crate::System::Func_2<TObj, TResult>,
+        container: *mut crate::Zenject::DiContainer,
+        sourceType: crate::Zenject::InjectSources,
+        matchAll: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TObj: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (identifier, method, container, sourceType, matchAll))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsCached(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TObj: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsCached", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TypeVariesBasedOnMemberType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TObj: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_TypeVariesBasedOnMemberType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+GetterProvider_2")]

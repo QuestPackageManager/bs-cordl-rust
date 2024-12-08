@@ -29,40 +29,6 @@ impl std::ops::DerefMut for crate::LiteNetLib::NetPacketPool {
 }
 #[cfg(feature = "LiteNetLib+NetPacketPool")]
 impl crate::LiteNetLib::NetPacketPool {
-    pub fn GetWithProperty_i32_0(
-        &mut self,
-        property: crate::LiteNetLib::PacketProperty,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::LiteNetLib::NetPacket> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::LiteNetLib::NetPacket = __cordl_object
-            .invoke("GetWithProperty", (property, _cordl_size))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetWithProperty_PacketProperty1(
-        &mut self,
-        property: crate::LiteNetLib::PacketProperty,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::LiteNetLib::NetPacket> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::LiteNetLib::NetPacket = __cordl_object
-            .invoke("GetWithProperty", (property))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Recycle(
-        &mut self,
-        packet: *mut crate::LiteNetLib::NetPacket,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Recycle", (packet))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetPacket(
         &mut self,
         _cordl_size: i32,
@@ -88,6 +54,47 @@ impl crate::LiteNetLib::NetPacketPool {
             .invoke("GetWithData", (property, data, start, length))?;
         Ok(__cordl_ret)
     }
+    pub fn GetWithProperty_PacketProperty1(
+        &mut self,
+        property: crate::LiteNetLib::PacketProperty,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::LiteNetLib::NetPacket> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::LiteNetLib::NetPacket = __cordl_object
+            .invoke("GetWithProperty", (property))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetWithProperty_i32_0(
+        &mut self,
+        property: crate::LiteNetLib::PacketProperty,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::LiteNetLib::NetPacket> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::LiteNetLib::NetPacket = __cordl_object
+            .invoke("GetWithProperty", (property, _cordl_size))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Recycle(
+        &mut self,
+        packet: *mut crate::LiteNetLib::NetPacket,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Recycle", (packet))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -97,13 +104,6 @@ impl crate::LiteNetLib::NetPacketPool {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LiteNetLib+NetPacketPool")]

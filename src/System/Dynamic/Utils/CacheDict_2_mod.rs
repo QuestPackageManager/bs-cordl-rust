@@ -44,6 +44,48 @@ impl<
 > crate::System::Dynamic::Utils::CacheDict_2<TKey, TValue> {
     #[cfg(feature = "System+Dynamic+Utils+CacheDict_2+Entry")]
     pub type Entry = crate::System::Dynamic::Utils::CacheDict_2_Entry<TKey, TValue>;
+    pub fn Add(
+        &mut self,
+        key: TKey,
+        value: TValue,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Add", (key, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(_cordl_size: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_size))?;
+        Ok(__cordl_object)
+    }
+    pub fn TryGetValue(
+        &mut self,
+        key: TKey,
+        value: quest_hook::libil2cpp::ByRefMut<TValue>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (key, value))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         _cordl_size: i32,
@@ -78,48 +120,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Item", (key, value))?;
         Ok(__cordl_ret)
-    }
-    pub fn TryGetValue(
-        &mut self,
-        key: TKey,
-        value: quest_hook::libil2cpp::ByRefMut<TValue>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (key, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Add(
-        &mut self,
-        key: TKey,
-        value: TValue,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (key, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(_cordl_size: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_size))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Dynamic+Utils+CacheDict_2")]
@@ -178,6 +178,17 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::System::Dynamic::Utils::CacheDict_2_Entry<TKey, TValue> {
+    pub fn New(
+        hash: i32,
+        key: TKey,
+        value: TValue,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (hash, key, value))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         hash: i32,
@@ -196,17 +207,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (hash, key, value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        hash: i32,
-        key: TKey,
-        value: TValue,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (hash, key, value))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Dynamic+Utils+CacheDict_2+Entry")]

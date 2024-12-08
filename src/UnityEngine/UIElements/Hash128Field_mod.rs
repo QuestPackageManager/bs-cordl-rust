@@ -31,19 +31,37 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Hash128Field {
 impl crate::UnityEngine::UIElements::Hash128Field {
     #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::Hash128Field_UxmlTraits;
-    #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlFactory")]
-    pub type UxmlFactory = crate::UnityEngine::UIElements::Hash128Field_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+Hash128Field+Hash128Input")]
     pub type Hash128Input = crate::UnityEngine::UIElements::Hash128Field_Hash128Input;
-    pub fn UpdateValueFromText(
+    #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlFactory")]
+    pub type UxmlFactory = crate::UnityEngine::UIElements::Hash128Field_UxmlFactory;
+    pub fn ExecuteDefaultAction(
         &mut self,
+        evt: *mut crate::UnityEngine::UIElements::EventBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateValueFromText", ())?;
+            .invoke("ExecuteDefaultAction", (evt))?;
         Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_i32_1(
+        label: *mut crate::System::String,
+        maxLength: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (label, maxLength))?;
+        Ok(__cordl_object)
     }
     pub fn SetValueWithoutNotify(
         &mut self,
@@ -65,6 +83,37 @@ impl crate::UnityEngine::UIElements::Hash128Field {
         );
         let __cordl_ret: crate::UnityEngine::Hash128 = __cordl_object
             .invoke("StringToValue", (str))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateTextFromValue(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateTextFromValue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateValueFromText(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateValueFromText", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValueToString(
+        &mut self,
+        value: crate::UnityEngine::Hash128,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ValueToString", (value))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -89,17 +138,6 @@ impl crate::UnityEngine::UIElements::Hash128Field {
             .invoke(".ctor", (label, maxLength))?;
         Ok(__cordl_ret)
     }
-    pub fn set_value(
-        &mut self,
-        value: crate::UnityEngine::Hash128,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_value", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_value(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Hash128> {
@@ -110,54 +148,16 @@ impl crate::UnityEngine::UIElements::Hash128Field {
             .invoke("get_value", ())?;
         Ok(__cordl_ret)
     }
-    pub fn UpdateTextFromValue(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateTextFromValue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValueToString(
+    pub fn set_value(
         &mut self,
         value: crate::UnityEngine::Hash128,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ValueToString", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExecuteDefaultAction(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExecuteDefaultAction", (evt))?;
+            .invoke("set_value", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_i32_1(
-        label: *mut crate::System::String,
-        maxLength: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (label, maxLength))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field")]
@@ -200,15 +200,19 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Hash128Field_Hash128
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+Hash128Input")]
 impl crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn AcceptCharacter(&mut self, c: char) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("AcceptCharacter", (c))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn StringToValue(
         &mut self,
@@ -221,6 +225,16 @@ impl crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
             .invoke("StringToValue", (str))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_allowedCharacters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -230,20 +244,6 @@ impl crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_allowedCharacters", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn AcceptCharacter(&mut self, c: char) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("AcceptCharacter", (c))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+Hash128Input")]
@@ -289,6 +289,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Hash128Field_UxmlFac
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlFactory")]
 impl crate::UnityEngine::UIElements::Hash128Field_UxmlFactory {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -298,13 +305,6 @@ impl crate::UnityEngine::UIElements::Hash128Field_UxmlFactory {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlFactory")]
@@ -349,6 +349,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Hash128Field_UxmlTra
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlTraits")]
 impl crate::UnityEngine::UIElements::Hash128Field_UxmlTraits {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -358,13 +365,6 @@ impl crate::UnityEngine::UIElements::Hash128Field_UxmlTraits {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlTraits")]

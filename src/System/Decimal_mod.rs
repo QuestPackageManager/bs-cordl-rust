@@ -21,22 +21,19 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::DecCalc_Buf12
 }
 #[cfg(feature = "System+Decimal+DecCalc+Buf12")]
 impl crate::System::DecCalc_Buf12 {
+    pub fn get_High64(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_High64",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Low64(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Low64",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Low64(
-        &mut self,
-        value: u64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Low64",
-            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -51,11 +48,14 @@ impl crate::System::DecCalc_Buf12 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_High64(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn set_Low64(
+        &mut self,
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_High64",
-            (),
+            "set_Low64",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -83,14 +83,11 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::DecCalc_Buf16
 }
 #[cfg(feature = "System+Decimal+DecCalc+Buf16")]
 impl crate::System::DecCalc_Buf16 {
-    pub fn set_Low64(
-        &mut self,
-        value: u64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_High64(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_Low64",
-            (value),
+            "get_High64",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -102,14 +99,6 @@ impl crate::System::DecCalc_Buf16 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_High64(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_High64",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_High64(
         &mut self,
         value: u64,
@@ -117,6 +106,17 @@ impl crate::System::DecCalc_Buf16 {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_High64",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Low64(
+        &mut self,
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_Low64",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -153,17 +153,6 @@ impl crate::System::DecCalc_Buf24 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_Mid64(
-        &mut self,
-        value: u64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Mid64",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_High64(
         &mut self,
         value: u64,
@@ -182,6 +171,17 @@ impl crate::System::DecCalc_Buf24 {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_Low64",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Mid64(
+        &mut self,
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_Mid64",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -210,20 +210,52 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Decimal_DecCa
 }
 #[cfg(feature = "System+Decimal+DecCalc")]
 impl crate::System::Decimal_DecCalc {
-    #[cfg(feature = "System+Decimal+DecCalc+Buf12")]
-    pub type Buf12 = crate::System::DecCalc_Buf12;
     #[cfg(feature = "System+Decimal+DecCalc+Buf16")]
     pub type Buf16 = crate::System::DecCalc_Buf16;
-    #[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
-    pub type PowerOvfl = crate::System::DecCalc_PowerOvfl;
     #[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
     pub type RoundingMode = crate::System::DecCalc_RoundingMode;
+    #[cfg(feature = "System+Decimal+DecCalc+Buf12")]
+    pub type Buf12 = crate::System::DecCalc_Buf12;
     #[cfg(feature = "System+Decimal+DecCalc+Buf24")]
     pub type Buf24 = crate::System::DecCalc_Buf24;
+    #[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
+    pub type PowerOvfl = crate::System::DecCalc_PowerOvfl;
+    pub fn get_High(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_High",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_IsNegative(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_IsNegative",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Low(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Low",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Low64(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Low64",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Mid(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Mid",
             (),
         )?;
         Ok(__cordl_ret)
@@ -239,22 +271,6 @@ impl crate::System::Decimal_DecCalc {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Low(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Low",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Mid(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Mid",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_Low(
         &mut self,
         value: u32,
@@ -262,25 +278,6 @@ impl crate::System::Decimal_DecCalc {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_Low",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Low64(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Low64",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Mid(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Mid",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -296,11 +293,14 @@ impl crate::System::Decimal_DecCalc {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_High(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn set_Mid(
+        &mut self,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_High",
-            (),
+            "set_Mid",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -332,25 +332,14 @@ impl crate::System::Decimal {
     pub const SignMask: i32 = -2147483648i32;
     #[cfg(feature = "System+Decimal+DecCalc")]
     pub type DecCalc = crate::System::Decimal_DecCalc;
-    pub fn System_IConvertible_ToInt32(
+    pub fn CompareTo_Decimal1(
         &mut self,
-        provider: *mut crate::System::IFormatProvider,
+        value: crate::System::Decimal,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.IConvertible.ToInt32",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToUInt16(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<u16> {
-        let __cordl_ret: u16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToUInt16",
-            (provider),
+            "CompareTo",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -365,25 +354,33 @@ impl crate::System::Decimal {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CompareTo_Decimal1(
+    pub fn Equals_Decimal1(
         &mut self,
         value: crate::System::Decimal,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CompareTo",
+            "Equals",
             (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_IConvertible_ToInt64(
+    pub fn Equals_Object0(
         &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.IConvertible.ToInt64",
-            (provider),
+            "Equals",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -397,27 +394,14 @@ impl crate::System::Decimal {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Low64(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Low64",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsNegative(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn System_IConvertible_ToBoolean(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_IsNegative",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_High(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_High",
-            (),
+            "System.IConvertible.ToBoolean",
+            (provider),
         )?;
         Ok(__cordl_ret)
     }
@@ -432,13 +416,35 @@ impl crate::System::Decimal {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_IConvertible_ToSingle(
+    pub fn System_IConvertible_ToChar(
         &mut self,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.IConvertible.ToSingle",
+            "System.IConvertible.ToChar",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToDateTime(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToDateTime",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToDecimal(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToDecimal",
             (provider),
         )?;
         Ok(__cordl_ret)
@@ -465,13 +471,24 @@ impl crate::System::Decimal {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_IConvertible_ToBoolean(
+    pub fn System_IConvertible_ToInt32(
         &mut self,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.IConvertible.ToBoolean",
+            "System.IConvertible.ToInt32",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToInt64(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToInt64",
             (provider),
         )?;
         Ok(__cordl_ret)
@@ -487,44 +504,37 @@ impl crate::System::Decimal {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_Runtime_Serialization_IDeserializationCallback_OnDeserialization(
+    pub fn System_IConvertible_ToSingle(
         &mut self,
-        sender: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.Runtime.Serialization.IDeserializationCallback.OnDeserialization",
-            (sender),
+            "System.IConvertible.ToSingle",
+            (provider),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
+    pub fn System_IConvertible_ToType(
         &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        _cordl_type: *mut crate::System::Type,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (value),
+            "System.IConvertible.ToType",
+            (_cordl_type, provider),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Decimal1(
+    pub fn System_IConvertible_ToUInt16(
         &mut self,
-        value: crate::System::Decimal,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_ret: u16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Mid(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Mid",
-            (),
+            "System.IConvertible.ToUInt16",
+            (provider),
         )?;
         Ok(__cordl_ret)
     }
@@ -539,129 +549,6 @@ impl crate::System::Decimal {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToDecimal(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
-        let __cordl_ret: crate::System::Decimal = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToDecimal",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_0(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_u32_1(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i64_2(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_u64_3(
-        &mut self,
-        value: u64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_f32_4(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_f64_5(
-        &mut self,
-        value: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Il2CppArray6(
-        &mut self,
-        bits: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (bits),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_i32_i32__cordl_bool_u8_7(
-        &mut self,
-        lo: i32,
-        mid: i32,
-        hi: i32,
-        isNegative: bool,
-        scale: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (lo, mid, hi, isNegative, scale),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_ByRefMut_i32_8(
-        &mut self,
-        d: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
-        flags: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (d, flags),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn System_IConvertible_ToUInt64(
         &mut self,
         provider: *mut crate::System::IFormatProvider,
@@ -670,6 +557,17 @@ impl crate::System::Decimal {
             self,
             "System.IConvertible.ToUInt64",
             (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Runtime_Serialization_IDeserializationCallback_OnDeserialization(
+        &mut self,
+        sender: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Runtime.Serialization.IDeserializationCallback.OnDeserialization",
+            (sender),
         )?;
         Ok(__cordl_ret)
     }
@@ -720,34 +618,123 @@ impl crate::System::Decimal {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_IConvertible_ToChar(
+    pub fn _ctor_ByRefMut_i32_8(
         &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        d: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+        flags: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.IConvertible.ToChar",
-            (provider),
+            ".ctor",
+            (d, flags),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Scale(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn _ctor_Il2CppArray6(
+        &mut self,
+        bits: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Scale",
+            ".ctor",
+            (bits),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_f32_4(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_f64_5(
+        &mut self,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_0(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_i32_i32__cordl_bool_u8_7(
+        &mut self,
+        lo: i32,
+        mid: i32,
+        hi: i32,
+        isNegative: bool,
+        scale: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (lo, mid, hi, isNegative, scale),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i64_2(
+        &mut self,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_u32_1(
+        &mut self,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_u64_3(
+        &mut self,
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_High(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_High",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_IConvertible_ToType(
-        &mut self,
-        _cordl_type: *mut crate::System::Type,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_IsNegative(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.IConvertible.ToType",
-            (_cordl_type, provider),
+            "get_IsNegative",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -759,14 +746,27 @@ impl crate::System::Decimal {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_IConvertible_ToDateTime(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_Low64(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.IConvertible.ToDateTime",
-            (provider),
+            "get_Low64",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Mid(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Mid",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Scale(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Scale",
+            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -32,17 +32,16 @@ for crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParameter
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SM2KeyExchangePrivateParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParameters {
-    pub fn get_EphemeralPublicPoint(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("get_EphemeralPublicPoint", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        initiator: bool,
+        staticPrivateKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+        ephemeralPrivateKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (initiator, staticPrivateKey, ephemeralPrivateKey))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -67,6 +66,18 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters = __cordl_object
             .invoke("get_EphemeralPrivateKey", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_EphemeralPublicPoint(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("get_EphemeralPublicPoint", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_IsInitiator(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -99,17 +110,6 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
             .invoke("get_StaticPublicPoint", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        initiator: bool,
-        staticPrivateKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
-        ephemeralPrivateKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (initiator, staticPrivateKey, ephemeralPrivateKey))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SM2KeyExchangePrivateParameters")]

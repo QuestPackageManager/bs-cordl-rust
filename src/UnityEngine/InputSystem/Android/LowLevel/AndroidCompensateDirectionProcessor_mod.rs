@@ -39,6 +39,13 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateDirecti
 impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateDirectionProcessor {
     pub const kAccelerationMultiplier: f32 = -0.10197162f32;
     pub const kSensorStandardGravity: f32 = 9.80665f32;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn Process(
         &mut self,
         vector: crate::UnityEngine::Vector3,
@@ -60,13 +67,6 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateDirect
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

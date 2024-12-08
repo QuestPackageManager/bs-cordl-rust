@@ -28,50 +28,6 @@ impl std::ops::DerefMut for CutoutAnimateEffect {
 impl CutoutAnimateEffect {
     #[cfg(feature = "CutoutAnimateEffect+_AnimateToCutoutCoroutine_d__7")]
     pub type _AnimateToCutoutCoroutine_d__7 = crate::GlobalNamespace::CutoutAnimateEffect__AnimateToCutoutCoroutine_d__7;
-    pub fn AnimateToCutoutCoroutine(
-        &mut self,
-        cutoutStart: f32,
-        cutoutEnd: f32,
-        duration: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("AnimateToCutoutCoroutine", (cutoutStart, cutoutEnd, duration))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ResetEffect(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetEffect", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetCutout(
-        &mut self,
-        cutout: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCutout", (cutout))?;
-        Ok(__cordl_ret)
-    }
     pub fn AnimateCutout(
         &mut self,
         cutoutStart: f32,
@@ -85,11 +41,55 @@ impl CutoutAnimateEffect {
             .invoke("AnimateCutout", (cutoutStart, cutoutEnd, duration))?;
         Ok(__cordl_ret)
     }
-    pub fn get_animating(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn AnimateToCutoutCoroutine(
+        &mut self,
+        cutoutStart: f32,
+        cutoutEnd: f32,
+        duration: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_animating", ())?;
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("AnimateToCutoutCoroutine", (cutoutStart, cutoutEnd, duration))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ResetEffect(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ResetEffect", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetCutout(
+        &mut self,
+        cutout: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetCutout", (cutout))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -102,6 +102,13 @@ impl CutoutAnimateEffect {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_animating(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_animating", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_animating(
         &mut self,
         value: bool,
@@ -112,13 +119,6 @@ impl CutoutAnimateEffect {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_animating", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "CutoutAnimateEffect")]

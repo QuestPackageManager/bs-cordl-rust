@@ -24,6 +24,17 @@ impl std::ops::DerefMut for crate::Zenject::IInstantiator {
 }
 #[cfg(feature = "Zenject+IInstantiator")]
 impl crate::Zenject::IInstantiator {
+    pub fn CreateEmptyGameObject(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("CreateEmptyGameObject", (name))?;
+        Ok(__cordl_ret)
+    }
     pub fn InstantiateComponentOnNewGameObject_0<T>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<T>
@@ -36,21 +47,6 @@ impl crate::Zenject::IInstantiator {
         );
         let __cordl_ret: T = __cordl_object
             .invoke("InstantiateComponentOnNewGameObject", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstantiateComponentOnNewGameObject_String1<T>(
-        &mut self,
-        gameObjectName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object
-            .invoke("InstantiateComponentOnNewGameObject", (gameObjectName))?;
         Ok(__cordl_ret)
     }
     pub fn InstantiateComponentOnNewGameObject_IEnumerable_1_2<T>(
@@ -70,6 +66,21 @@ impl crate::Zenject::IInstantiator {
             .invoke("InstantiateComponentOnNewGameObject", (extraArgs))?;
         Ok(__cordl_ret)
     }
+    pub fn InstantiateComponentOnNewGameObject_String1<T>(
+        &mut self,
+        gameObjectName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object
+            .invoke("InstantiateComponentOnNewGameObject", (gameObjectName))?;
+        Ok(__cordl_ret)
+    }
     pub fn InstantiateComponentOnNewGameObject_String_IEnumerable_1_3<T>(
         &mut self,
         gameObjectName: *mut crate::System::String,
@@ -86,57 +97,6 @@ impl crate::Zenject::IInstantiator {
         );
         let __cordl_ret: T = __cordl_object
             .invoke("InstantiateComponentOnNewGameObject", (gameObjectName, extraArgs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstantiatePrefabResource_String0(
-        &mut self,
-        resourcePath: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("InstantiatePrefabResource", (resourcePath))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstantiatePrefabResource_Transform1(
-        &mut self,
-        resourcePath: *mut crate::System::String,
-        parentTransform: *mut crate::UnityEngine::Transform,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("InstantiatePrefabResource", (resourcePath, parentTransform))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstantiatePrefabResource_Vector3_Quaternion_Transform2(
-        &mut self,
-        resourcePath: *mut crate::System::String,
-        position: crate::UnityEngine::Vector3,
-        rotation: crate::UnityEngine::Quaternion,
-        parentTransform: *mut crate::UnityEngine::Transform,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke(
-                "InstantiatePrefabResource",
-                (resourcePath, position, rotation, parentTransform),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateEmptyGameObject(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("CreateEmptyGameObject", (name))?;
         Ok(__cordl_ret)
     }
     pub fn InstantiateComponent_GameObject0<TContract>(
@@ -197,161 +157,6 @@ impl crate::Zenject::IInstantiator {
         );
         let __cordl_ret: *mut crate::UnityEngine::Component = __cordl_object
             .invoke("InstantiateComponent", (componentType, gameObject, extraArgs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstantiateScriptableObjectResource_String0<T>(
-        &mut self,
-        resourcePath: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object
-            .invoke("InstantiateScriptableObjectResource", (resourcePath))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstantiateScriptableObjectResource_String_IEnumerable_1_1<T>(
-        &mut self,
-        resourcePath: *mut crate::System::String,
-        extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
-        >,
-    ) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object
-            .invoke("InstantiateScriptableObjectResource", (resourcePath, extraArgs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstantiateScriptableObjectResource_Type_String2(
-        &mut self,
-        scriptableObjectType: *mut crate::System::Type,
-        resourcePath: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke(
-                "InstantiateScriptableObjectResource",
-                (scriptableObjectType, resourcePath),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstantiateScriptableObjectResource_Type_String_IEnumerable_1_3(
-        &mut self,
-        scriptableObjectType: *mut crate::System::Type,
-        resourcePath: *mut crate::System::String,
-        extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
-        >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke(
-                "InstantiateScriptableObjectResource",
-                (scriptableObjectType, resourcePath, extraArgs),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstantiatePrefab_Object0(
-        &mut self,
-        prefab: *mut crate::UnityEngine::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("InstantiatePrefab", (prefab))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstantiatePrefab_Transform1(
-        &mut self,
-        prefab: *mut crate::UnityEngine::Object,
-        parentTransform: *mut crate::UnityEngine::Transform,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("InstantiatePrefab", (prefab, parentTransform))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstantiatePrefab_Vector3_Quaternion_Transform2(
-        &mut self,
-        prefab: *mut crate::UnityEngine::Object,
-        position: crate::UnityEngine::Vector3,
-        rotation: crate::UnityEngine::Quaternion,
-        parentTransform: *mut crate::UnityEngine::Transform,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("InstantiatePrefab", (prefab, position, rotation, parentTransform))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Instantiate_0<T>(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("Instantiate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Instantiate_IEnumerable_1_1<T>(
-        &mut self,
-        extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
-        >,
-    ) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("Instantiate", (extraArgs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Instantiate_Type2(
-        &mut self,
-        concreteType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("Instantiate", (concreteType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Instantiate_Type_IEnumerable_1_3(
-        &mut self,
-        concreteType: *mut crate::System::Type,
-        extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
-        >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("Instantiate", (concreteType, extraArgs))?;
         Ok(__cordl_ret)
     }
     pub fn InstantiatePrefabForComponent_Object0<T>(
@@ -629,6 +434,201 @@ impl crate::Zenject::IInstantiator {
                 "InstantiatePrefabResourceForComponent",
                 (concreteType, resourcePath, parentTransform, extraArgs),
             )?;
+        Ok(__cordl_ret)
+    }
+    pub fn InstantiatePrefabResource_String0(
+        &mut self,
+        resourcePath: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("InstantiatePrefabResource", (resourcePath))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InstantiatePrefabResource_Transform1(
+        &mut self,
+        resourcePath: *mut crate::System::String,
+        parentTransform: *mut crate::UnityEngine::Transform,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("InstantiatePrefabResource", (resourcePath, parentTransform))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InstantiatePrefabResource_Vector3_Quaternion_Transform2(
+        &mut self,
+        resourcePath: *mut crate::System::String,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        parentTransform: *mut crate::UnityEngine::Transform,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke(
+                "InstantiatePrefabResource",
+                (resourcePath, position, rotation, parentTransform),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn InstantiatePrefab_Object0(
+        &mut self,
+        prefab: *mut crate::UnityEngine::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("InstantiatePrefab", (prefab))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InstantiatePrefab_Transform1(
+        &mut self,
+        prefab: *mut crate::UnityEngine::Object,
+        parentTransform: *mut crate::UnityEngine::Transform,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("InstantiatePrefab", (prefab, parentTransform))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InstantiatePrefab_Vector3_Quaternion_Transform2(
+        &mut self,
+        prefab: *mut crate::UnityEngine::Object,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        parentTransform: *mut crate::UnityEngine::Transform,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("InstantiatePrefab", (prefab, position, rotation, parentTransform))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InstantiateScriptableObjectResource_String0<T>(
+        &mut self,
+        resourcePath: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object
+            .invoke("InstantiateScriptableObjectResource", (resourcePath))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InstantiateScriptableObjectResource_String_IEnumerable_1_1<T>(
+        &mut self,
+        resourcePath: *mut crate::System::String,
+        extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::Object,
+        >,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object
+            .invoke("InstantiateScriptableObjectResource", (resourcePath, extraArgs))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InstantiateScriptableObjectResource_Type_String2(
+        &mut self,
+        scriptableObjectType: *mut crate::System::Type,
+        resourcePath: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke(
+                "InstantiateScriptableObjectResource",
+                (scriptableObjectType, resourcePath),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn InstantiateScriptableObjectResource_Type_String_IEnumerable_1_3(
+        &mut self,
+        scriptableObjectType: *mut crate::System::Type,
+        resourcePath: *mut crate::System::String,
+        extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::Object,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke(
+                "InstantiateScriptableObjectResource",
+                (scriptableObjectType, resourcePath, extraArgs),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Instantiate_0<T>(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("Instantiate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Instantiate_IEnumerable_1_1<T>(
+        &mut self,
+        extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::Object,
+        >,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("Instantiate", (extraArgs))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Instantiate_Type2(
+        &mut self,
+        concreteType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("Instantiate", (concreteType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Instantiate_Type_IEnumerable_1_3(
+        &mut self,
+        concreteType: *mut crate::System::Type,
+        extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::Object,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("Instantiate", (concreteType, extraArgs))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

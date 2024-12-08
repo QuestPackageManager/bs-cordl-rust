@@ -24,15 +24,23 @@ impl std::ops::DerefMut for NoTransitionToggleSelectableStateController {
 }
 #[cfg(feature = "NoTransitionToggleSelectableStateController")]
 impl NoTransitionToggleSelectableStateController {
-    pub fn _ctor(
+    pub fn HandleNoTransitionToggleSelectionStateDidChange(
         &mut self,
+        state: crate::HMUI::UISelectionState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("HandleNoTransitionToggleSelectionStateDidChange", (state))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnDisable(
         &mut self,
@@ -42,6 +50,16 @@ impl NoTransitionToggleSelectableStateController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnEnable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnEnable", ())?;
         Ok(__cordl_ret)
     }
     pub fn ResolveSelectionState(
@@ -56,33 +74,15 @@ impl NoTransitionToggleSelectableStateController {
             .invoke("ResolveSelectionState", (state, animated))?;
         Ok(__cordl_ret)
     }
-    pub fn OnEnable(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn HandleNoTransitionToggleSelectionStateDidChange(
-        &mut self,
-        state: crate::HMUI::UISelectionState,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNoTransitionToggleSelectionStateDidChange", (state))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "NoTransitionToggleSelectableStateController")]

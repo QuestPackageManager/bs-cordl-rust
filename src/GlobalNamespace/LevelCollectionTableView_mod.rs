@@ -53,14 +53,14 @@ impl std::ops::DerefMut for LevelCollectionTableView {
 }
 #[cfg(feature = "LevelCollectionTableView")]
 impl LevelCollectionTableView {
-    pub fn ClearSelection(
+    pub fn CancelAsyncOperations(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearSelection", ())?;
+            .invoke("CancelAsyncOperations", ())?;
         Ok(__cordl_ret)
     }
     pub fn CellForIdx(
@@ -75,16 +75,6 @@ impl LevelCollectionTableView {
             .invoke("CellForIdx", (tableView, row))?;
         Ok(__cordl_ret)
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -92,11 +82,24 @@ impl LevelCollectionTableView {
         let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn ClearSelection(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearSelection", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleAdditionalContentModelDidInvalidateData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleAdditionalContentModelDidInvalidateData", ())?;
         Ok(__cordl_ret)
     }
     pub fn HandleDidSelectRowEvent(
@@ -111,6 +114,16 @@ impl LevelCollectionTableView {
             .invoke("HandleDidSelectRowEvent", (tableView, row))?;
         Ok(__cordl_ret)
     }
+    pub fn Init_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Init_String_Sprite0(
         &mut self,
         headerText: *mut crate::System::String,
@@ -123,14 +136,48 @@ impl LevelCollectionTableView {
             .invoke("Init", (headerText, headerSprite))?;
         Ok(__cordl_ret)
     }
-    pub fn Init_1(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", ())?;
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDisable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDisable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnEnable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnEnable", ())?;
         Ok(__cordl_ret)
     }
     pub fn RefreshFavorites(
@@ -146,59 +193,14 @@ impl LevelCollectionTableView {
             .invoke("RefreshFavorites", (favoriteLevelIds))?;
         Ok(__cordl_ret)
     }
-    pub fn SelectLevelPackHeaderCell(
+    pub fn RefreshLevelsAvailability(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectLevelPackHeaderCell", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didSelectHeaderEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut LevelCollectionTableView>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didSelectHeaderEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDisable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didSelectLevelEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<
-            *mut LevelCollectionTableView,
-            *mut BeatmapLevel,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didSelectLevelEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleAdditionalContentModelDidInvalidateData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleAdditionalContentModelDidInvalidateData", ())?;
+            .invoke("RefreshLevelsAvailability", ())?;
         Ok(__cordl_ret)
     }
     pub fn SelectLevel(
@@ -212,24 +214,14 @@ impl LevelCollectionTableView {
             .invoke("SelectLevel", (beatmapLevel))?;
         Ok(__cordl_ret)
     }
-    pub fn CancelAsyncOperations(
+    pub fn SelectLevelPackHeaderCell(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CancelAsyncOperations", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("SelectLevelPackHeaderCell", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetData(
@@ -258,6 +250,27 @@ impl LevelCollectionTableView {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didSelectHeaderEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut LevelCollectionTableView>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didSelectHeaderEvent", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn add_didSelectLevelEvent(
         &mut self,
         value: *mut crate::System::Action_2<
@@ -283,32 +296,19 @@ impl LevelCollectionTableView {
             .invoke("remove_didSelectHeaderEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn RefreshLevelsAvailability(
+    pub fn remove_didSelectLevelEvent(
         &mut self,
+        value: *mut crate::System::Action_2<
+            *mut LevelCollectionTableView,
+            *mut BeatmapLevel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshLevelsAvailability", ())?;
+            .invoke("remove_didSelectLevelEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn OnEnable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LevelCollectionTableView")]

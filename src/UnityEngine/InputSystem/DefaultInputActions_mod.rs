@@ -47,91 +47,52 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::DefaultInputActions
 }
 #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions")]
 impl crate::UnityEngine::InputSystem::DefaultInputActions {
-    #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
-    type IUIActions = crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions;
-    #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IPlayerActions")]
-    type IPlayerActions = crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions;
-    #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
-    pub type PlayerActions = crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions;
     #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
     pub type UIActions = crate::UnityEngine::InputSystem::DefaultInputActions_UIActions;
-    pub fn set_bindingMask(
+    #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
+    pub type PlayerActions = crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions;
+    #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IPlayerActions")]
+    type IPlayerActions = crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions;
+    #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
+    type IUIActions = crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions;
+    pub fn Contains(
         &mut self,
-        value: crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputBinding>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        action: *mut crate::UnityEngine::InputSystem::InputAction,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_bindingMask", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("Contains", (action))?;
         Ok(__cordl_ret)
     }
-    pub fn get_controlSchemes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            crate::UnityEngine::InputSystem::InputControlScheme,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            crate::UnityEngine::InputSystem::InputControlScheme,
-        > = __cordl_object.invoke("get_controlSchemes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn Disable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("Disable", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_bindingMask(
+    pub fn Dispose(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputBinding>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Nullable_1<
-            crate::UnityEngine::InputSystem::InputBinding,
-        > = __cordl_object.invoke("get_bindingMask", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_devices(
-        &mut self,
-        value: crate::System::Nullable_1<
-            crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
-            >,
-        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_devices", (value))?;
+            .invoke("Dispose", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_bindings(
+    pub fn Enable(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::UnityEngine::InputSystem::InputBinding,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::UnityEngine::InputSystem::InputBinding,
-        > = __cordl_object.invoke("get_bindings", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Enable", ())?;
         Ok(__cordl_ret)
     }
     pub fn FindAction(
@@ -148,26 +109,18 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions {
             .invoke("FindAction", (actionNameOrId, throwIfNotFound))?;
         Ok(__cordl_ret)
     }
-    pub fn Disable(
+    pub fn FindBinding(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        bindingMask: crate::UnityEngine::InputSystem::InputBinding,
+        action: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::UnityEngine::InputSystem::InputAction,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Disable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_GamepadScheme(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlScheme,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme = __cordl_object
-            .invoke("get_GamepadScheme", ())?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("FindBinding", (bindingMask, action))?;
         Ok(__cordl_ret)
     }
     pub fn GetEnumerator(
@@ -185,6 +138,45 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions {
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn System_Collections_IEnumerable_GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_GamepadScheme(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlScheme,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme = __cordl_object
+            .invoke("get_GamepadScheme", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_JoystickScheme(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -197,14 +189,16 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions {
             .invoke("get_JoystickScheme", ())?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_IEnumerable_GetEnumerator(
+    pub fn get_KeyboardMouseScheme(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlScheme,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme = __cordl_object
+            .invoke("get_KeyboardMouseScheme", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Player(
@@ -217,6 +211,30 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions {
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions = __cordl_object
             .invoke("get_Player", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TouchScheme(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlScheme,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme = __cordl_object
+            .invoke("get_TouchScheme", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_UI(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::DefaultInputActions_UIActions,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::DefaultInputActions_UIActions = __cordl_object
+            .invoke("get_UI", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_XRScheme(
@@ -243,60 +261,47 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions {
             .invoke("get_asset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Contains(
-        &mut self,
-        action: *mut crate::UnityEngine::InputSystem::InputAction,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Contains", (action))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_KeyboardMouseScheme(
+    pub fn get_bindingMask(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlScheme,
+        crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputBinding>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme = __cordl_object
-            .invoke("get_KeyboardMouseScheme", ())?;
+        let __cordl_ret: crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::InputBinding,
+        > = __cordl_object.invoke("get_bindingMask", ())?;
         Ok(__cordl_ret)
     }
-    pub fn FindBinding(
+    pub fn get_bindings(
         &mut self,
-        bindingMask: crate::UnityEngine::InputSystem::InputBinding,
-        action: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::InputSystem::InputAction,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            crate::UnityEngine::InputSystem::InputBinding,
         >,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("FindBinding", (bindingMask, action))?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            crate::UnityEngine::InputSystem::InputBinding,
+        > = __cordl_object.invoke("get_bindings", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Enable(
+    pub fn get_controlSchemes(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::InputControlScheme,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Enable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::InputControlScheme,
+        > = __cordl_object.invoke("get_controlSchemes", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_devices(
@@ -318,36 +323,31 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions {
         > = __cordl_object.invoke("get_devices", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_UI(
+    pub fn set_bindingMask(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::DefaultInputActions_UIActions,
-    > {
+        value: crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputBinding>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::InputSystem::DefaultInputActions_UIActions = __cordl_object
-            .invoke("get_UI", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_bindingMask", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_TouchScheme(
+    pub fn set_devices(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlScheme,
-    > {
+        value: crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme = __cordl_object
-            .invoke("get_TouchScheme", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_devices", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions")]
@@ -389,17 +389,6 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions {
 }
 #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IPlayerActions")]
 impl crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions {
-    pub fn OnLook(
-        &mut self,
-        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnLook", (context))?;
-        Ok(__cordl_ret)
-    }
     pub fn OnFire(
         &mut self,
         context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
@@ -409,6 +398,17 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnFire", (context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnLook(
+        &mut self,
+        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnLook", (context))?;
         Ok(__cordl_ret)
     }
     pub fn OnMove(
@@ -478,7 +478,7 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
             .invoke("OnCancel", (context))?;
         Ok(__cordl_ret)
     }
-    pub fn OnPoint(
+    pub fn OnClick(
         &mut self,
         context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -486,10 +486,10 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPoint", (context))?;
+            .invoke("OnClick", (context))?;
         Ok(__cordl_ret)
     }
-    pub fn OnTrackedDeviceOrientation(
+    pub fn OnMiddleClick(
         &mut self,
         context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -497,18 +497,7 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnTrackedDeviceOrientation", (context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnSubmit(
-        &mut self,
-        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnSubmit", (context))?;
+            .invoke("OnMiddleClick", (context))?;
         Ok(__cordl_ret)
     }
     pub fn OnNavigate(
@@ -520,6 +509,17 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnNavigate", (context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPoint(
+        &mut self,
+        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPoint", (context))?;
         Ok(__cordl_ret)
     }
     pub fn OnRightClick(
@@ -544,7 +544,7 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
             .invoke("OnScrollWheel", (context))?;
         Ok(__cordl_ret)
     }
-    pub fn OnClick(
+    pub fn OnSubmit(
         &mut self,
         context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -552,10 +552,10 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnClick", (context))?;
+            .invoke("OnSubmit", (context))?;
         Ok(__cordl_ret)
     }
-    pub fn OnMiddleClick(
+    pub fn OnTrackedDeviceOrientation(
         &mut self,
         context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -563,7 +563,7 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnMiddleClick", (context))?;
+            .invoke("OnTrackedDeviceOrientation", (context))?;
         Ok(__cordl_ret)
     }
     pub fn OnTrackedDevicePosition(
@@ -618,22 +618,13 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
 }
 #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
 impl crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
-    pub fn get_enabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_enabled",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn Disable(
         &mut self,
-        wrapper: *mut crate::UnityEngine::InputSystem::DefaultInputActions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (wrapper),
+            "Disable",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -643,28 +634,6 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Enable",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Fire(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Fire",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Disable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Disable",
             (),
         )?;
         Ok(__cordl_ret)
@@ -692,6 +661,29 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+        wrapper: *mut crate::UnityEngine::InputSystem::DefaultInputActions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (wrapper),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Fire(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputAction,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Fire",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Look(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -712,6 +704,14 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
         let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Move",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_enabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_enabled",
             (),
         )?;
         Ok(__cordl_ret)
@@ -752,82 +752,12 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_RightClick(
+    pub fn Enable(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_RightClick",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Submit(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Submit",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ScrollWheel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_ScrollWheel",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TrackedDeviceOrientation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_TrackedDeviceOrientation",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Cancel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Cancel",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MiddleClick(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_MiddleClick",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_enabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_enabled",
+            "Enable",
             (),
         )?;
         Ok(__cordl_ret)
@@ -840,64 +770,6 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
         let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputActionMap = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Get",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Navigate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Navigate",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Click(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Click",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TrackedDevicePosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_TrackedDevicePosition",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Point(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Point",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Enable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Enable",
             (),
         )?;
         Ok(__cordl_ret)
@@ -921,6 +793,134 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
             self,
             ".ctor",
             (wrapper),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Cancel(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputAction,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Cancel",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Click(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputAction,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Click",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MiddleClick(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputAction,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_MiddleClick",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Navigate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputAction,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Navigate",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Point(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputAction,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Point",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RightClick(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputAction,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_RightClick",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ScrollWheel(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputAction,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_ScrollWheel",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Submit(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputAction,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Submit",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TrackedDeviceOrientation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputAction,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_TrackedDeviceOrientation",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TrackedDevicePosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputAction,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_TrackedDevicePosition",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_enabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_enabled",
+            (),
         )?;
         Ok(__cordl_ret)
     }

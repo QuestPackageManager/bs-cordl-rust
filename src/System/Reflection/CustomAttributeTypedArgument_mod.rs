@@ -23,20 +23,21 @@ for crate::System::Reflection::CustomAttributeTypedArgument {
 }
 #[cfg(feature = "System+Reflection+CustomAttributeTypedArgument")]
 impl crate::System::Reflection::CustomAttributeTypedArgument {
+    pub fn Equals(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ArgumentType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_ArgumentType",
             (),
         )?;
         Ok(__cordl_ret)
@@ -59,16 +60,6 @@ impl crate::System::Reflection::CustomAttributeTypedArgument {
             self,
             "ToString",
             (typed),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Value(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Value",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -95,14 +86,23 @@ impl crate::System::Reflection::CustomAttributeTypedArgument {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals(
+    pub fn get_ArgumentType(
         &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (obj),
+            "get_ArgumentType",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Value",
+            (),
         )?;
         Ok(__cordl_ret)
     }

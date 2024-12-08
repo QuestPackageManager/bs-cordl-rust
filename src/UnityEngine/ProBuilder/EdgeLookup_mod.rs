@@ -25,74 +25,6 @@ for crate::UnityEngine::ProBuilder::EdgeLookup {
 impl crate::UnityEngine::ProBuilder::EdgeLookup {
     #[cfg(feature = "UnityEngine+ProBuilder+EdgeLookup+__c__DisplayClass16_0")]
     pub type __c__DisplayClass16_0 = crate::UnityEngine::ProBuilder::EdgeLookup___c__DisplayClass16_0;
-    pub fn set_common(
-        &mut self,
-        value: crate::UnityEngine::ProBuilder::Edge,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_common",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_local(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
-        let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_local",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_common(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
-        let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_common",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Edge_Edge0(
-        &mut self,
-        common: crate::UnityEngine::ProBuilder::Edge,
-        local: crate::UnityEngine::ProBuilder::Edge,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (common, local),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_i32_i32_i32_1(
-        &mut self,
-        cx: i32,
-        cy: i32,
-        x: i32,
-        y: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (cx, cy, x, y),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_local(
-        &mut self,
-        value: crate::UnityEngine::ProBuilder::Edge,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_local",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_EdgeLookup0(
         &mut self,
         other: crate::UnityEngine::ProBuilder::EdgeLookup,
@@ -130,6 +62,74 @@ impl crate::UnityEngine::ProBuilder::EdgeLookup {
             self,
             "ToString",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Edge_Edge0(
+        &mut self,
+        common: crate::UnityEngine::ProBuilder::Edge,
+        local: crate::UnityEngine::ProBuilder::Edge,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (common, local),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_i32_i32_i32_1(
+        &mut self,
+        cx: i32,
+        cy: i32,
+        x: i32,
+        y: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (cx, cy, x, y),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_common(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_common",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_local(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_local",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_common(
+        &mut self,
+        value: crate::UnityEngine::ProBuilder::Edge,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_common",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_local(
+        &mut self,
+        value: crate::UnityEngine::ProBuilder::Edge,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_local",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

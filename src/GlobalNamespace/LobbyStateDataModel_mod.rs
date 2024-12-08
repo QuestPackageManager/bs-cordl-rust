@@ -35,101 +35,6 @@ impl std::ops::DerefMut for LobbyStateDataModel {
 }
 #[cfg(feature = "LobbyStateDataModel")]
 impl LobbyStateDataModel {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isConnected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isConnected", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_playerDisconnectedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_playerDisconnectedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleMultiplayerSessionManagerPlayerConnected(
-        &mut self,
-        player: *mut IConnectedPlayer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleMultiplayerSessionManagerPlayerConnected", (player))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_configuration(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<GameplayServerConfiguration> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: GameplayServerConfiguration = __cordl_object
-            .invoke("get_configuration", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_playerConnectedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_playerConnectedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_playerConnectedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_playerConnectedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_rawConnectedPlayers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<*mut IConnectedPlayer>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut IConnectedPlayer,
-        > = __cordl_object.invoke("get_rawConnectedPlayers", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_playerDisconnectedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_playerDisconnectedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Activate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -150,6 +55,16 @@ impl LobbyStateDataModel {
             .invoke("Deactivate", ())?;
         Ok(__cordl_ret)
     }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetPlayerById(
         &mut self,
         userId: *mut crate::System::String,
@@ -161,24 +76,15 @@ impl LobbyStateDataModel {
             .invoke("GetPlayerById", (userId))?;
         Ok(__cordl_ret)
     }
-    pub fn get_localPlayer(
+    pub fn HandleMultiplayerSessionManagerPlayerConnected(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
-            .invoke("get_localPlayer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
+        player: *mut IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+            .invoke("HandleMultiplayerSessionManagerPlayerConnected", (player))?;
         Ok(__cordl_ret)
     }
     pub fn HandleMultiplayerSessionManagerPlayerDisconnected(
@@ -190,6 +96,55 @@ impl LobbyStateDataModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleMultiplayerSessionManagerPlayerDisconnected", (player))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_playerConnectedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_playerConnectedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_playerDisconnectedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_playerDisconnectedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_configuration(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<GameplayServerConfiguration> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: GameplayServerConfiguration = __cordl_object
+            .invoke("get_configuration", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_connectedPlayers(
@@ -205,12 +160,57 @@ impl LobbyStateDataModel {
         > = __cordl_object.invoke("get_connectedPlayers", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_isConnected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isConnected", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_localPlayer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
+            .invoke("get_localPlayer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rawConnectedPlayers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IReadOnlyList_1<*mut IConnectedPlayer>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut IConnectedPlayer,
+        > = __cordl_object.invoke("get_rawConnectedPlayers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_playerConnectedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_playerConnectedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_playerDisconnectedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_playerDisconnectedEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LobbyStateDataModel")]

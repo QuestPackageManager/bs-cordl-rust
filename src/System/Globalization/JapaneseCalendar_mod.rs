@@ -25,35 +25,49 @@ impl std::ops::DerefMut for crate::System::Globalization::JapaneseCalendar {
 }
 #[cfg(feature = "System+Globalization+JapaneseCalendar")]
 impl crate::System::Globalization::JapaneseCalendar {
-    pub fn ToDateTime(
+    pub fn GetDayOfMonth(
+        &mut self,
+        _cordl_time: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetDayOfMonth", (_cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDayOfWeek(
+        &mut self,
+        _cordl_time: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DayOfWeek> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::DayOfWeek = __cordl_object
+            .invoke("GetDayOfWeek", (_cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDaysInMonth(
         &mut self,
         year: i32,
         month: i32,
-        day: i32,
-        hour: i32,
-        minute: i32,
-        second: i32,
-        millisecond: i32,
         era: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::DateTime = __cordl_object
-            .invoke(
-                "ToDateTime",
-                (year, month, day, hour, minute, second, millisecond, era),
-            )?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetDaysInMonth", (year, month, era))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn GetDaysInYear(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        year: i32,
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetDaysInYear", (year, era))?;
         Ok(__cordl_ret)
     }
     pub fn GetEra(
@@ -76,90 +90,6 @@ impl crate::System::Globalization::JapaneseCalendar {
         let __cordl_ret: i32 = __cordl_object.invoke("GetMonth", (_cordl_time))?;
         Ok(__cordl_ret)
     }
-    pub fn GetDaysInYear(
-        &mut self,
-        year: i32,
-        era: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetDaysInYear", (year, era))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ID", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToFourDigitYear(&mut self, year: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ToFourDigitYear", (year))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TwoDigitYearMax(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_TwoDigitYearMax", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsValidYear(
-        &mut self,
-        year: i32,
-        era: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsValidYear", (year, era))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MinSupportedDateTime(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::DateTime = __cordl_object
-            .invoke("get_MinSupportedDateTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDayOfWeek(
-        &mut self,
-        _cordl_time: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DayOfWeek> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::DayOfWeek = __cordl_object
-            .invoke("GetDayOfWeek", (_cordl_time))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDayOfMonth(
-        &mut self,
-        _cordl_time: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetDayOfMonth", (_cordl_time))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetYear(
-        &mut self,
-        _cordl_time: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetYear", (_cordl_time))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetMonthsInYear(
         &mut self,
         year: i32,
@@ -171,27 +101,14 @@ impl crate::System::Globalization::JapaneseCalendar {
         let __cordl_ret: i32 = __cordl_object.invoke("GetMonthsInYear", (year, era))?;
         Ok(__cordl_ret)
     }
-    pub fn get_MaxSupportedDateTime(
+    pub fn GetYear(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::DateTime = __cordl_object
-            .invoke("get_MaxSupportedDateTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDaysInMonth(
-        &mut self,
-        year: i32,
-        month: i32,
-        era: i32,
+        _cordl_time: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetDaysInMonth", (year, month, era))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetYear", (_cordl_time))?;
         Ok(__cordl_ret)
     }
     pub fn IsLeapYear(
@@ -205,15 +122,60 @@ impl crate::System::Globalization::JapaneseCalendar {
         let __cordl_ret: bool = __cordl_object.invoke("IsLeapYear", (year, era))?;
         Ok(__cordl_ret)
     }
-    pub fn set_TwoDigitYearMax(
+    pub fn IsValidYear(
         &mut self,
-        value: i32,
+        year: i32,
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsValidYear", (year, era))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ToDateTime(
+        &mut self,
+        year: i32,
+        month: i32,
+        day: i32,
+        hour: i32,
+        minute: i32,
+        second: i32,
+        millisecond: i32,
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::DateTime = __cordl_object
+            .invoke(
+                "ToDateTime",
+                (year, month, day, hour, minute, second, millisecond, era),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToFourDigitYear(&mut self, year: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("ToFourDigitYear", (year))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_TwoDigitYearMax", (value))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Eras(
@@ -226,12 +188,50 @@ impl crate::System::Globalization::JapaneseCalendar {
             .invoke("get_Eras", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_ID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ID", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MaxSupportedDateTime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::DateTime = __cordl_object
+            .invoke("get_MaxSupportedDateTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MinSupportedDateTime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::DateTime = __cordl_object
+            .invoke("get_MinSupportedDateTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TwoDigitYearMax(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_TwoDigitYearMax", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_TwoDigitYearMax(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_TwoDigitYearMax", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Globalization+JapaneseCalendar")]

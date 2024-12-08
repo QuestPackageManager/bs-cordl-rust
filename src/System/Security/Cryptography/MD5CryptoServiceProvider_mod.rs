@@ -32,14 +32,17 @@ for crate::System::Security::Cryptography::MD5CryptoServiceProvider {
 }
 #[cfg(feature = "System+Security+Cryptography+MD5CryptoServiceProvider")]
 impl crate::System::Security::Cryptography::MD5CryptoServiceProvider {
-    pub fn _ctor(
+    pub fn AddLength(
         &mut self,
+        length: u64,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        position: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("AddLength", (length, buffer, position))?;
         Ok(__cordl_ret)
     }
     pub fn Dispose(
@@ -53,27 +56,14 @@ impl crate::System::Security::Cryptography::MD5CryptoServiceProvider {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn HashFinal(
+    pub fn Finalize(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("HashFinal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddLength(
-        &mut self,
-        length: u64,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        position: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddLength", (length, buffer, position))?;
+            .invoke("Finalize", ())?;
         Ok(__cordl_ret)
     }
     pub fn HashCore(
@@ -89,6 +79,16 @@ impl crate::System::Security::Cryptography::MD5CryptoServiceProvider {
             .invoke("HashCore", (rgb, ibStart, cbSize))?;
         Ok(__cordl_ret)
     }
+    pub fn HashFinal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("HashFinal", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Initialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -99,15 +99,12 @@ impl crate::System::Security::Cryptography::MD5CryptoServiceProvider {
             .invoke("Initialize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Finalize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ProcessBlock(
         &mut self,
@@ -134,12 +131,15 @@ impl crate::System::Security::Cryptography::MD5CryptoServiceProvider {
             .invoke("ProcessFinalBlock", (inputBuffer, inputOffset, inputCount))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Security+Cryptography+MD5CryptoServiceProvider")]

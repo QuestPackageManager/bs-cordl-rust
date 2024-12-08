@@ -33,17 +33,39 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::LightRotationEventBo
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+LightRotationEventBox")]
 impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
-    pub fn get_rotationDistributionParamType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::BeatmapSaveDataCommon::DistributionParamType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::BeatmapSaveDataCommon::DistributionParamType = __cordl_object
-            .invoke("get_rotationDistributionParamType", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        indexFilter: *mut crate::BeatmapSaveDataVersion3::IndexFilter,
+        beatDistributionParam: f32,
+        beatDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
+        rotationDistributionParam: f32,
+        rotationDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
+        rotationDistributionShouldAffectFirstBaseEvent: bool,
+        rotationDistributionEaseType: crate::BeatmapSaveDataCommon::EaseType,
+        axis: crate::BeatmapSaveDataCommon::Axis,
+        flipRotation: bool,
+        lightRotationBaseDataList: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    indexFilter,
+                    beatDistributionParam,
+                    beatDistributionParamType,
+                    rotationDistributionParam,
+                    rotationDistributionParamType,
+                    rotationDistributionShouldAffectFirstBaseEvent,
+                    rotationDistributionEaseType,
+                    axis,
+                    flipRotation,
+                    lightRotationBaseDataList,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -81,23 +103,6 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_rotationDistributionParam(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("get_rotationDistributionParam", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_flipRotation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_flipRotation", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_axis(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::Axis> {
@@ -108,14 +113,11 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
             .invoke("get_axis", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_rotationDistributionShouldAffectFirstBaseEvent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_flipRotation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_rotationDistributionShouldAffectFirstBaseEvent", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_flipRotation", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_lightRotationBaseDataList(
@@ -143,39 +145,37 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
             .invoke("get_rotationDistributionEaseType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        indexFilter: *mut crate::BeatmapSaveDataVersion3::IndexFilter,
-        beatDistributionParam: f32,
-        beatDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
-        rotationDistributionParam: f32,
-        rotationDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
-        rotationDistributionShouldAffectFirstBaseEvent: bool,
-        rotationDistributionEaseType: crate::BeatmapSaveDataCommon::EaseType,
-        axis: crate::BeatmapSaveDataCommon::Axis,
-        flipRotation: bool,
-        lightRotationBaseDataList: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::LightRotationBaseData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    indexFilter,
-                    beatDistributionParam,
-                    beatDistributionParamType,
-                    rotationDistributionParam,
-                    rotationDistributionParamType,
-                    rotationDistributionShouldAffectFirstBaseEvent,
-                    rotationDistributionEaseType,
-                    axis,
-                    flipRotation,
-                    lightRotationBaseDataList,
-                ),
-            )?;
-        Ok(__cordl_object)
+    pub fn get_rotationDistributionParam(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("get_rotationDistributionParam", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rotationDistributionParamType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::BeatmapSaveDataCommon::DistributionParamType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::BeatmapSaveDataCommon::DistributionParamType = __cordl_object
+            .invoke("get_rotationDistributionParamType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rotationDistributionShouldAffectFirstBaseEvent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_rotationDistributionShouldAffectFirstBaseEvent", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+LightRotationEventBox")]

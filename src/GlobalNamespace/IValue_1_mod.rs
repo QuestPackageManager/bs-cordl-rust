@@ -24,6 +24,11 @@ impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for IValue_1<T> {
 }
 #[cfg(feature = "IValue_1")]
 impl<T: quest_hook::libil2cpp::Type> IValue_1<T> {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -49,11 +54,6 @@ impl<T: quest_hook::libil2cpp::Type> IValue_1<T> {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_value", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IValue_1")]

@@ -36,6 +36,101 @@ impl crate::Org::BouncyCastle::Security::SecureRandom {
             .invoke("GenerateSeed", (length))?;
         Ok(__cordl_ret)
     }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IRandomGenerator2(
+        generator: *mut crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (generator))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray1(
+        seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seed))?;
+        Ok(__cordl_object)
+    }
+    pub fn NextBytes_Il2CppArray0(
+        &mut self,
+        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("NextBytes", (buf))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NextBytes_i32_i32_1(
+        &mut self,
+        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        off: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("NextBytes", (buf, off, len))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NextDouble(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object.invoke("NextDouble", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn NextInt(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("NextInt", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn NextLong(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("NextLong", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Next_0(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Next", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Next_i32_1(&mut self, maxValue: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Next", (maxValue))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Next_i32_i32_2(
+        &mut self,
+        minValue: i32,
+        maxValue: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Next", (minValue, maxValue))?;
+        Ok(__cordl_ret)
+    }
     pub fn SetSeed_Il2CppArray0(
         &mut self,
         seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -68,17 +163,6 @@ impl crate::Org::BouncyCastle::Security::SecureRandom {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Il2CppArray1(
-        &mut self,
-        seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seed))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_IRandomGenerator2(
         &mut self,
         generator: *mut crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
@@ -90,100 +174,16 @@ impl crate::Org::BouncyCastle::Security::SecureRandom {
             .invoke(".ctor", (generator))?;
         Ok(__cordl_ret)
     }
-    pub fn Next_0(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Next", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Next_i32_1(&mut self, maxValue: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Next", (maxValue))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Next_i32_i32_2(
+    pub fn _ctor_Il2CppArray1(
         &mut self,
-        minValue: i32,
-        maxValue: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Next", (minValue, maxValue))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NextBytes_Il2CppArray0(
-        &mut self,
-        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NextBytes", (buf))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NextBytes_i32_i32_1(
-        &mut self,
-        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        off: i32,
-        len: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NextBytes", (buf, off, len))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NextLong(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("NextLong", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn NextDouble(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("NextDouble", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn NextInt(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("NextInt", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray1(
         seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seed))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IRandomGenerator2(
-        generator: *mut crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (generator))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (seed))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Security+SecureRandom")]

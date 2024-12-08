@@ -24,19 +24,14 @@ for crate::UnityEngine::UIElements::TransformOrigin {
 }
 #[cfg(feature = "UnityEngine+UIElements+TransformOrigin")]
 impl crate::UnityEngine::UIElements::TransformOrigin {
-    pub fn get_z(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Equals_Object1(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_z",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -51,25 +46,34 @@ impl crate::UnityEngine::UIElements::TransformOrigin {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (obj),
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_y(
+    pub fn ToString(
         &mut self,
-        value: crate::UnityEngine::UIElements::Length,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        x: crate::UnityEngine::UIElements::Length,
+        y: crate::UnityEngine::UIElements::Length,
+        z: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_y",
-            (value),
+            ".ctor",
+            (x, y, z),
         )?;
         Ok(__cordl_ret)
     }
@@ -93,6 +97,14 @@ impl crate::UnityEngine::UIElements::TransformOrigin {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_z(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_z",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_x(
         &mut self,
         value: crate::UnityEngine::UIElements::Length,
@@ -104,26 +116,14 @@ impl crate::UnityEngine::UIElements::TransformOrigin {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn set_y(
         &mut self,
-        x: crate::UnityEngine::UIElements::Length,
-        y: crate::UnityEngine::UIElements::Length,
-        z: f32,
+        value: crate::UnityEngine::UIElements::Length,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (x, y, z),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
+            "set_y",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

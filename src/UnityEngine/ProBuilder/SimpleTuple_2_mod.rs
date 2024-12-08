@@ -34,16 +34,18 @@ impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::ProBuilder::SimpleTuple_2<T1, T2> {
-    pub fn get_item1(&mut self) -> quest_hook::libil2cpp::Result<T1>
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
         T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T1 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_item1",
+            "ToString",
             (),
         )?;
         Ok(__cordl_ret)
@@ -66,6 +68,20 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_item1(&mut self) -> quest_hook::libil2cpp::Result<T1>
+    where
+        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T1 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_item1",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_item2(&mut self) -> quest_hook::libil2cpp::Result<T2>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -76,39 +92,6 @@ impl<
         let __cordl_ret: T2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_item2",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_item2(
-        &mut self,
-        value: T2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_item2",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
-    where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
             (),
         )?;
         Ok(__cordl_ret)
@@ -126,6 +109,23 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_item1",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_item2(
+        &mut self,
+        value: T2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_item2",
             (value),
         )?;
         Ok(__cordl_ret)

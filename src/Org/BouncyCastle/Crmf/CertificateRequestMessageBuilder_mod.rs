@@ -39,19 +39,6 @@ for crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+CertificateRequestMessageBuilder")]
 impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
-    pub fn SetProofOfPossessionAgreeMac(
-        &mut self,
-        macValue: *mut crate::Org::BouncyCastle::Asn1::Crmf::PKMacValue,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
-            .invoke("SetProofOfPossessionAgreeMac", (macValue))?;
-        Ok(__cordl_ret)
-    }
     pub fn AddControl(
         &mut self,
         control: *mut crate::Org::BouncyCastle::Crmf::IControl,
@@ -63,187 +50,6 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
             .invoke("AddControl", (control))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Build(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessage,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessage = __cordl_object
-            .invoke("Build", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetProofOfPossessionRaVerified(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
-            .invoke("SetProofOfPossessionRaVerified", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        certReqId: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (certReqId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetSerialNumber(
-        &mut self,
-        serialNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
-            .invoke("SetSerialNumber", (serialNumber))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetPublicKey(
-        &mut self,
-        publicKeyInfo: *mut crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
-            .invoke("SetPublicKey", (publicKeyInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetIssuer(
-        &mut self,
-        issuer: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
-            .invoke("SetIssuer", (issuer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetProofOfPossessionSignKeySigner(
-        &mut self,
-        popoSignatureFactory: *mut crate::Org::BouncyCastle::Crypto::ISignatureFactory,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
-            .invoke("SetProofOfPossessionSignKeySigner", (popoSignatureFactory))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetAuthInfoSender_X509Name0(
-        &mut self,
-        sender: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
-            .invoke("SetAuthInfoSender", (sender))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetAuthInfoSender_GeneralName1(
-        &mut self,
-        sender: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
-            .invoke("SetAuthInfoSender", (sender))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetValidity(
-        &mut self,
-        notBefore: *mut crate::Org::BouncyCastle::Asn1::X509::Time,
-        notAfter: *mut crate::Org::BouncyCastle::Asn1::X509::Time,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
-            .invoke("SetValidity", (notBefore, notAfter))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetAuthInfoPKMAC(
-        &mut self,
-        pkmacFactory: *mut crate::Org::BouncyCastle::Crmf::PKMacBuilder,
-        password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
-            .invoke("SetAuthInfoPKMAC", (pkmacFactory, password))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetProofOfPossessionSubsequentMessage_SubsequentMessage0(
-        &mut self,
-        msg: *mut crate::Org::BouncyCastle::Asn1::Crmf::SubsequentMessage,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
-            .invoke("SetProofOfPossessionSubsequentMessage", (msg))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetProofOfPossessionSubsequentMessage_i32_SubsequentMessage1(
-        &mut self,
-        _cordl_type: i32,
-        msg: *mut crate::Org::BouncyCastle::Asn1::Crmf::SubsequentMessage,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
-            .invoke("SetProofOfPossessionSubsequentMessage", (_cordl_type, msg))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetSubject(
-        &mut self,
-        subject: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
-            .invoke("SetSubject", (subject))?;
         Ok(__cordl_ret)
     }
     pub fn AddExtension_Asn1Encodable0(
@@ -276,14 +82,208 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             .invoke("AddExtension", (oid, critical, value))?;
         Ok(__cordl_ret)
     }
+    pub fn Build(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessage,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessage = __cordl_object
+            .invoke("Build", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         certReqId: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (certReqId))?;
         Ok(__cordl_object)
+    }
+    pub fn SetAuthInfoPKMAC(
+        &mut self,
+        pkmacFactory: *mut crate::Org::BouncyCastle::Crmf::PKMacBuilder,
+        password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
+            .invoke("SetAuthInfoPKMAC", (pkmacFactory, password))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetAuthInfoSender_GeneralName1(
+        &mut self,
+        sender: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
+            .invoke("SetAuthInfoSender", (sender))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetAuthInfoSender_X509Name0(
+        &mut self,
+        sender: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
+            .invoke("SetAuthInfoSender", (sender))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetIssuer(
+        &mut self,
+        issuer: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
+            .invoke("SetIssuer", (issuer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetProofOfPossessionAgreeMac(
+        &mut self,
+        macValue: *mut crate::Org::BouncyCastle::Asn1::Crmf::PKMacValue,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
+            .invoke("SetProofOfPossessionAgreeMac", (macValue))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetProofOfPossessionRaVerified(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
+            .invoke("SetProofOfPossessionRaVerified", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetProofOfPossessionSignKeySigner(
+        &mut self,
+        popoSignatureFactory: *mut crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
+            .invoke("SetProofOfPossessionSignKeySigner", (popoSignatureFactory))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetProofOfPossessionSubsequentMessage_SubsequentMessage0(
+        &mut self,
+        msg: *mut crate::Org::BouncyCastle::Asn1::Crmf::SubsequentMessage,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
+            .invoke("SetProofOfPossessionSubsequentMessage", (msg))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetProofOfPossessionSubsequentMessage_i32_SubsequentMessage1(
+        &mut self,
+        _cordl_type: i32,
+        msg: *mut crate::Org::BouncyCastle::Asn1::Crmf::SubsequentMessage,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
+            .invoke("SetProofOfPossessionSubsequentMessage", (_cordl_type, msg))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetPublicKey(
+        &mut self,
+        publicKeyInfo: *mut crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
+            .invoke("SetPublicKey", (publicKeyInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetSerialNumber(
+        &mut self,
+        serialNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
+            .invoke("SetSerialNumber", (serialNumber))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetSubject(
+        &mut self,
+        subject: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
+            .invoke("SetSubject", (subject))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetValidity(
+        &mut self,
+        notBefore: *mut crate::Org::BouncyCastle::Asn1::X509::Time,
+        notAfter: *mut crate::Org::BouncyCastle::Asn1::X509::Time,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder = __cordl_object
+            .invoke("SetValidity", (notBefore, notAfter))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        certReqId: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (certReqId))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+CertificateRequestMessageBuilder")]

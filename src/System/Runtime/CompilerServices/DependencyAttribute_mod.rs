@@ -28,6 +28,16 @@ for crate::System::Runtime::CompilerServices::DependencyAttribute {
 }
 #[cfg(feature = "System+Runtime+CompilerServices+DependencyAttribute")]
 impl crate::System::Runtime::CompilerServices::DependencyAttribute {
+    pub fn New(
+        dependentAssemblyArgument: *mut crate::System::String,
+        loadHintArgument: crate::System::Runtime::CompilerServices::LoadHint,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dependentAssemblyArgument, loadHintArgument))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         dependentAssemblyArgument: *mut crate::System::String,
@@ -39,16 +49,6 @@ impl crate::System::Runtime::CompilerServices::DependencyAttribute {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (dependentAssemblyArgument, loadHintArgument))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        dependentAssemblyArgument: *mut crate::System::String,
-        loadHintArgument: crate::System::Runtime::CompilerServices::LoadHint,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dependentAssemblyArgument, loadHintArgument))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+DependencyAttribute")]

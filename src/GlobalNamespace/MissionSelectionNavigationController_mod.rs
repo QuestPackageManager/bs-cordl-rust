@@ -31,18 +31,19 @@ impl std::ops::DerefMut for MissionSelectionNavigationController {
 impl MissionSelectionNavigationController {
     #[cfg(feature = "MissionSelectionNavigationController+__c__DisplayClass11_0")]
     pub type __c__DisplayClass11_0 = crate::GlobalNamespace::MissionSelectionNavigationController___c__DisplayClass11_0;
-    pub fn HandleMissionSelectionMapViewControllerDidSelectMissionLevel(
+    pub fn DidActivate(
         &mut self,
-        viewController: *mut MissionSelectionMapViewController,
-        _missionNode: *mut MissionNode,
+        firstActivation: bool,
+        addedToHierarchy: bool,
+        screenSystemEnabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "HandleMissionSelectionMapViewControllerDidSelectMissionLevel",
-                (viewController, _missionNode),
+                "DidActivate",
+                (firstActivation, addedToHierarchy, screenSystemEnabling),
             )?;
         Ok(__cordl_ret)
     }
@@ -72,31 +73,37 @@ impl MissionSelectionNavigationController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn DidActivate(
+    pub fn HandleMissionSelectionMapViewControllerDidSelectMissionLevel(
         &mut self,
-        firstActivation: bool,
-        addedToHierarchy: bool,
-        screenSystemEnabling: bool,
+        viewController: *mut MissionSelectionMapViewController,
+        _missionNode: *mut MissionNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "DidActivate",
-                (firstActivation, addedToHierarchy, screenSystemEnabling),
+                "HandleMissionSelectionMapViewControllerDidSelectMissionLevel",
+                (viewController, _missionNode),
             )?;
         Ok(__cordl_ret)
     }
-    pub fn add_didPressPlayButtonEvent(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn PresentMissionClearedIfNeeded(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MissionSelectionNavigationController>,
+        finishedCallback: *mut crate::System::Action_1<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didPressPlayButtonEvent", (value))?;
+            .invoke("PresentMissionClearedIfNeeded", (finishedCallback))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -109,15 +116,15 @@ impl MissionSelectionNavigationController {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn PresentMissionClearedIfNeeded(
+    pub fn add_didPressPlayButtonEvent(
         &mut self,
-        finishedCallback: *mut crate::System::Action_1<bool>,
+        value: *mut crate::System::Action_1<*mut MissionSelectionNavigationController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PresentMissionClearedIfNeeded", (finishedCallback))?;
+            .invoke("add_didPressPlayButtonEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_selectedMissionNode(
@@ -140,13 +147,6 @@ impl MissionSelectionNavigationController {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didPressPlayButtonEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MissionSelectionNavigationController")]

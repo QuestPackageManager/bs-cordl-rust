@@ -29,18 +29,6 @@ impl std::ops::DerefMut for crate::Unity::XR::OpenVR::HandedViveTracker {
 }
 #[cfg(feature = "Unity+XR+OpenVR+HandedViveTracker")]
 impl crate::Unity::XR::OpenVR::HandedViveTracker {
-    pub fn get_triggerPressed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_triggerPressed", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn FinishSetup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -49,6 +37,23 @@ impl crate::Unity::XR::OpenVR::HandedViveTracker {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FinishSetup", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_grip(
@@ -63,27 +68,6 @@ impl crate::Unity::XR::OpenVR::HandedViveTracker {
             .invoke("get_grip", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_grip(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_grip", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_gripPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -94,29 +78,6 @@ impl crate::Unity::XR::OpenVR::HandedViveTracker {
         );
         let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
             .invoke("get_gripPressed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_gripPressed(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_gripPressed", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_trackpadPressed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_trackpadPressed", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_primary(
@@ -131,7 +92,42 @@ impl crate::Unity::XR::OpenVR::HandedViveTracker {
             .invoke("get_primary", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_trackpadPressed(
+    pub fn get_trackpadPressed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
+            .invoke("get_trackpadPressed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_triggerPressed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
+            .invoke("get_triggerPressed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_grip(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_grip", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_gripPressed(
         &mut self,
         value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -139,7 +135,7 @@ impl crate::Unity::XR::OpenVR::HandedViveTracker {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_trackpadPressed", (value))?;
+            .invoke("set_gripPressed", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_primary(
@@ -153,6 +149,17 @@ impl crate::Unity::XR::OpenVR::HandedViveTracker {
             .invoke("set_primary", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn set_trackpadPressed(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_trackpadPressed", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_triggerPressed(
         &mut self,
         value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -163,13 +170,6 @@ impl crate::Unity::XR::OpenVR::HandedViveTracker {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_triggerPressed", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+XR+OpenVR+HandedViveTracker")]

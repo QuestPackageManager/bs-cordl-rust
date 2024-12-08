@@ -24,10 +24,10 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::TaskToApm {
 }
 #[cfg(feature = "System+Threading+Tasks+TaskToApm")]
 impl crate::System::Threading::Tasks::TaskToApm {
-    #[cfg(feature = "System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
-    pub type TaskWrapperAsyncResult = crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult;
     #[cfg(feature = "System+Threading+Tasks+TaskToApm+__c__DisplayClass3_0")]
     pub type __c__DisplayClass3_0 = crate::System::Threading::Tasks::TaskToApm___c__DisplayClass3_0;
+    #[cfg(feature = "System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
+    pub type TaskWrapperAsyncResult = crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult;
 }
 #[cfg(feature = "System+Threading+Tasks+TaskToApm")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Tasks::TaskToApm {
@@ -70,14 +70,25 @@ for crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult {
 }
 #[cfg(feature = "System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
 impl crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult {
-    pub fn System_IAsyncResult_get_CompletedSynchronously(
+    pub fn New(
+        task: *mut crate::System::Threading::Tasks::Task,
+        state: *mut crate::System::Object,
+        completedSynchronously: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (task, state, completedSynchronously))?;
+        Ok(__cordl_object)
+    }
+    pub fn System_IAsyncResult_get_AsyncState(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.IAsyncResult.get_CompletedSynchronously", ())?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("System.IAsyncResult.get_AsyncState", ())?;
         Ok(__cordl_ret)
     }
     pub fn System_IAsyncResult_get_AsyncWaitHandle(
@@ -88,6 +99,26 @@ impl crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult {
         );
         let __cordl_ret: *mut crate::System::Threading::WaitHandle = __cordl_object
             .invoke("System.IAsyncResult.get_AsyncWaitHandle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IAsyncResult_get_CompletedSynchronously(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.IAsyncResult.get_CompletedSynchronously", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IAsyncResult_get_IsCompleted(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.IAsyncResult.get_IsCompleted", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -102,37 +133,6 @@ impl crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (task, state, completedSynchronously))?;
         Ok(__cordl_ret)
-    }
-    pub fn System_IAsyncResult_get_IsCompleted(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.IAsyncResult.get_IsCompleted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IAsyncResult_get_AsyncState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("System.IAsyncResult.get_AsyncState", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        task: *mut crate::System::Threading::Tasks::Task,
-        state: *mut crate::System::Object,
-        completedSynchronously: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (task, state, completedSynchronously))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]

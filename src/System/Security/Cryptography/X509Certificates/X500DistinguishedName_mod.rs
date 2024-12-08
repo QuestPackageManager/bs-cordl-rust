@@ -29,16 +29,6 @@ for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNa
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedName")]
 impl crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName {
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Name", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Decode(
         &mut self,
         flag: crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNameFlags,
@@ -48,6 +38,16 @@ impl crate::System::Security::Cryptography::X509Certificates::X500DistinguishedN
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("Decode", (flag))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DecodeRawData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DecodeRawData", ())?;
         Ok(__cordl_ret)
     }
     pub fn Format(
@@ -61,6 +61,15 @@ impl crate::System::Security::Cryptography::X509Certificates::X500DistinguishedN
             .invoke("Format", (multiLine))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        encodedDistinguishedName: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encodedDistinguishedName))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         encodedDistinguishedName: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -72,24 +81,15 @@ impl crate::System::Security::Cryptography::X509Certificates::X500DistinguishedN
             .invoke(".ctor", (encodedDistinguishedName))?;
         Ok(__cordl_ret)
     }
-    pub fn DecodeRawData(
+    pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DecodeRawData", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Name", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        encodedDistinguishedName: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encodedDistinguishedName))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedName")]

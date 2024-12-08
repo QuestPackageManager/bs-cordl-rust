@@ -24,10 +24,10 @@ impl std::ops::DerefMut for crate::UnityEngine::TerrainUtils::TerrainUtility {
 }
 #[cfg(feature = "UnityEngine+TerrainUtils+TerrainUtility")]
 impl crate::UnityEngine::TerrainUtils::TerrainUtility {
-    #[cfg(feature = "UnityEngine+TerrainUtils+TerrainUtility+__c__DisplayClass2_0")]
-    pub type __c__DisplayClass2_0 = crate::UnityEngine::TerrainUtils::TerrainUtility___c__DisplayClass2_0;
     #[cfg(feature = "UnityEngine+TerrainUtils+TerrainUtility+__c__DisplayClass2_1")]
     pub type __c__DisplayClass2_1 = crate::UnityEngine::TerrainUtils::TerrainUtility___c__DisplayClass2_1;
+    #[cfg(feature = "UnityEngine+TerrainUtils+TerrainUtility+__c__DisplayClass2_0")]
+    pub type __c__DisplayClass2_0 = crate::UnityEngine::TerrainUtils::TerrainUtility___c__DisplayClass2_0;
 }
 #[cfg(feature = "UnityEngine+TerrainUtils+TerrainUtility")]
 impl quest_hook::libil2cpp::ObjectType

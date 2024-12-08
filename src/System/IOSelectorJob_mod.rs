@@ -27,18 +27,26 @@ impl std::ops::DerefMut for crate::System::IOSelectorJob {
 }
 #[cfg(feature = "System+IOSelectorJob")]
 impl crate::System::IOSelectorJob {
-    pub fn _ctor(
+    pub fn MarkDisposed(
         &mut self,
-        operation: crate::System::IOOperation,
-        callback: *mut crate::System::IOAsyncCallback,
-        state: *mut crate::System::IOAsyncResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (operation, callback, state))?;
+            .invoke("MarkDisposed", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        operation: crate::System::IOOperation,
+        callback: *mut crate::System::IOAsyncCallback,
+        state: *mut crate::System::IOAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (operation, callback, state))?;
+        Ok(__cordl_object)
     }
     pub fn System_Threading_IThreadPoolWorkItem_ExecuteWorkItem(
         &mut self,
@@ -48,16 +56,6 @@ impl crate::System::IOSelectorJob {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("System.Threading.IThreadPoolWorkItem.ExecuteWorkItem", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MarkDisposed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MarkDisposed", ())?;
         Ok(__cordl_ret)
     }
     pub fn System_Threading_IThreadPoolWorkItem_MarkAborted(
@@ -71,16 +69,18 @@ impl crate::System::IOSelectorJob {
             .invoke("System.Threading.IThreadPoolWorkItem.MarkAborted", (tae))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         operation: crate::System::IOOperation,
         callback: *mut crate::System::IOAsyncCallback,
         state: *mut crate::System::IOAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (operation, callback, state))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (operation, callback, state))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+IOSelectorJob")]

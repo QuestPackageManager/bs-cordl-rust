@@ -29,6 +29,13 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaAnnotation {
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaAnnotation")]
 impl crate::System::Xml::Schema::XmlSchemaAnnotation {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn SetUnhandledAttributes(
         &mut self,
         moreAttributes: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -42,6 +49,16 @@ impl crate::System::Xml::Schema::XmlSchemaAnnotation {
             .invoke("SetUnhandledAttributes", (moreAttributes))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Id(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -52,14 +69,14 @@ impl crate::System::Xml::Schema::XmlSchemaAnnotation {
             .invoke("get_Id", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn get_IdAttribute(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_IdAttribute", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Items(
@@ -85,16 +102,6 @@ impl crate::System::Xml::Schema::XmlSchemaAnnotation {
             .invoke("set_Id", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_IdAttribute(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_IdAttribute", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_IdAttribute(
         &mut self,
         value: *mut crate::System::String,
@@ -105,13 +112,6 @@ impl crate::System::Xml::Schema::XmlSchemaAnnotation {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_IdAttribute", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaAnnotation")]

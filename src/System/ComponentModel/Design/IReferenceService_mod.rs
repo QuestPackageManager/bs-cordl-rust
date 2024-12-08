@@ -25,18 +25,15 @@ impl std::ops::DerefMut for crate::System::ComponentModel::Design::IReferenceSer
 }
 #[cfg(feature = "System+ComponentModel+Design+IReferenceService")]
 impl crate::System::ComponentModel::Design::IReferenceService {
-    pub fn GetReferences(
+    pub fn GetName(
         &mut self,
-        baseType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    > {
+        reference: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
-        > = __cordl_object.invoke("GetReferences", (baseType))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetName", (reference))?;
         Ok(__cordl_ret)
     }
     pub fn GetReference(
@@ -50,15 +47,18 @@ impl crate::System::ComponentModel::Design::IReferenceService {
             .invoke("GetReference", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn GetName(
+    pub fn GetReferences(
         &mut self,
-        reference: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        baseType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetName", (reference))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Object,
+        > = __cordl_object.invoke("GetReferences", (baseType))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

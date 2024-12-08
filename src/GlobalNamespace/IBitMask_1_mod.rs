@@ -24,28 +24,6 @@ impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for IBitMask_1<T> {
 }
 #[cfg(feature = "IBitMask_1")]
 impl<T: quest_hook::libil2cpp::Type> IBitMask_1<T> {
-    pub fn SetBits(&mut self, offset: i32, bits: u64) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("SetBits", (offset, bits))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_bitCount(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_bitCount", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetBits(
         &mut self,
         offset: i32,
@@ -61,10 +39,32 @@ impl<T: quest_hook::libil2cpp::Type> IBitMask_1<T> {
         let __cordl_ret: u64 = __cordl_object.invoke("GetBits", (offset, count))?;
         Ok(__cordl_ret)
     }
+    pub fn SetBits(&mut self, offset: i32, bits: u64) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("SetBits", (offset, bits))?;
+        Ok(__cordl_ret)
+    }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_bitCount(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_bitCount", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "IBitMask_1")]

@@ -24,11 +24,44 @@ impl std::ops::DerefMut for crate::System::Collections::IList {
 }
 #[cfg(feature = "System+Collections+IList")]
 impl crate::System::Collections::IList {
-    pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn Add(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsReadOnly", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("Add", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Contains(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Contains", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IndexOf(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("IndexOf", (value))?;
         Ok(__cordl_ret)
     }
     pub fn Insert(
@@ -54,36 +87,34 @@ impl crate::System::Collections::IList {
             .invoke("Remove", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Item(
+    pub fn RemoveAt(
         &mut self,
         index: i32,
-        value: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Item", (index, value))?;
+            .invoke("RemoveAt", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn Contains(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_IsFixedSize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Contains", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsFixedSize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Add(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("Add", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsReadOnly", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Item(
@@ -97,48 +128,17 @@ impl crate::System::Collections::IList {
             .invoke("get_Item", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn RemoveAt(
+    pub fn set_Item(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveAt", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsFixedSize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsFixedSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IndexOf(
-        &mut self,
         value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("IndexOf", (value))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Item", (index, value))?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "System+Collections+IList")]

@@ -47,24 +47,11 @@ impl crate::UnityEngine::UIElements::Background {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_texture(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
-        let __cordl_ret: *mut crate::UnityEngine::Texture2D = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_texture",
+            "GetHashCode",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_texture(
-        &mut self,
-        value: *mut crate::UnityEngine::Texture2D,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_texture",
-            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -74,6 +61,16 @@ impl crate::UnityEngine::UIElements::Background {
         let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_renderTexture(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RenderTexture> {
+        let __cordl_ret: *mut crate::UnityEngine::RenderTexture = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_renderTexture",
             (),
         )?;
         Ok(__cordl_ret)
@@ -88,42 +85,12 @@ impl crate::UnityEngine::UIElements::Background {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_sprite(
+    pub fn get_texture(
         &mut self,
-        value: *mut crate::UnityEngine::Sprite,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
+        let __cordl_ret: *mut crate::UnityEngine::Texture2D = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_sprite",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_renderTexture(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RenderTexture> {
-        let __cordl_ret: *mut crate::UnityEngine::RenderTexture = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_renderTexture",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_vectorImage(
-        &mut self,
-        value: *mut crate::UnityEngine::UIElements::VectorImage,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_vectorImage",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
+            "get_texture",
             (),
         )?;
         Ok(__cordl_ret)
@@ -147,6 +114,39 @@ impl crate::UnityEngine::UIElements::Background {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_renderTexture",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_sprite(
+        &mut self,
+        value: *mut crate::UnityEngine::Sprite,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_sprite",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_texture(
+        &mut self,
+        value: *mut crate::UnityEngine::Texture2D,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_texture",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_vectorImage(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::VectorImage,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_vectorImage",
             (value),
         )?;
         Ok(__cordl_ret)

@@ -28,20 +28,37 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::HelpBox {
 }
 #[cfg(feature = "UnityEngine+UIElements+HelpBox")]
 impl crate::UnityEngine::UIElements::HelpBox {
-    #[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::HelpBox_UxmlTraits;
     #[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::HelpBox_UxmlFactory;
-    pub fn set_messageType(
+    #[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::HelpBox_UxmlTraits;
+    pub fn GetIconClass(
         &mut self,
-        value: crate::UnityEngine::UIElements::HelpBoxMessageType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        messageType: crate::UnityEngine::UIElements::HelpBoxMessageType,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_messageType", (value))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetIconClass", (messageType))?;
         Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_HelpBoxMessageType1(
+        text: *mut crate::System::String,
+        messageType: crate::UnityEngine::UIElements::HelpBoxMessageType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (text, messageType))?;
+        Ok(__cordl_object)
     }
     pub fn UpdateIcon(
         &mut self,
@@ -52,17 +69,6 @@ impl crate::UnityEngine::UIElements::HelpBox {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateIcon", (messageType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_text(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_text", (value))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -87,33 +93,27 @@ impl crate::UnityEngine::UIElements::HelpBox {
             .invoke(".ctor", (text, messageType))?;
         Ok(__cordl_ret)
     }
-    pub fn GetIconClass(
+    pub fn set_messageType(
         &mut self,
-        messageType: crate::UnityEngine::UIElements::HelpBoxMessageType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: crate::UnityEngine::UIElements::HelpBoxMessageType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetIconClass", (messageType))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_messageType", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_HelpBoxMessageType1(
-        text: *mut crate::System::String,
-        messageType: crate::UnityEngine::UIElements::HelpBoxMessageType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (text, messageType))?;
-        Ok(__cordl_object)
+    pub fn set_text(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_text", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+HelpBox")]
@@ -157,6 +157,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::HelpBox_UxmlFactory 
 }
 #[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlFactory")]
 impl crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -166,13 +173,6 @@ impl crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlFactory")]
@@ -228,6 +228,13 @@ impl crate::UnityEngine::UIElements::HelpBox_UxmlTraits {
             .invoke("Init", (ve, bag, cc))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -237,13 +244,6 @@ impl crate::UnityEngine::UIElements::HelpBox_UxmlTraits {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlTraits")]

@@ -32,83 +32,6 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Controls::Vector3Co
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+Vector3Control")]
 impl crate::UnityEngine::InputSystem::Controls::Vector3Control {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FinishSetup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FinishSetup", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_y(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
-            .invoke("get_y", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_x(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
-            .invoke("get_x", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadUnprocessedValueFromState(
-        &mut self,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("ReadUnprocessedValueFromState", (statePtr))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_y(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_y", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_x(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_x", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn CalculateOptimizedControlDataType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -121,16 +44,42 @@ impl crate::UnityEngine::InputSystem::Controls::Vector3Control {
             .invoke("CalculateOptimizedControlDataType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_z(
+    pub fn EvaluateMagnitude(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    > {
+        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
-            .invoke("get_z", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("EvaluateMagnitude", (statePtr))?;
+        Ok(__cordl_ret)
+    }
+    pub fn FinishSetup(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FinishSetup", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ReadUnprocessedValueFromState(
+        &mut self,
+        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("ReadUnprocessedValueFromState", (statePtr))?;
         Ok(__cordl_ret)
     }
     pub fn WriteValueIntoState(
@@ -145,6 +94,74 @@ impl crate::UnityEngine::InputSystem::Controls::Vector3Control {
             .invoke("WriteValueIntoState", (value, statePtr))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_x(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
+            .invoke("get_x", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_y(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
+            .invoke("get_y", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_z(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
+            .invoke("get_z", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_x(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_x", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_y(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_y", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_z(
         &mut self,
         value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
@@ -155,23 +172,6 @@ impl crate::UnityEngine::InputSystem::Controls::Vector3Control {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_z", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn EvaluateMagnitude(
-        &mut self,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("EvaluateMagnitude", (statePtr))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+Vector3Control")]

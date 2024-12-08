@@ -34,66 +34,22 @@ impl std::ops::DerefMut for MissionObjectiveChecker {
 impl MissionObjectiveChecker {
     #[cfg(feature = "MissionObjectiveChecker+Status")]
     pub type Status = crate::GlobalNamespace::MissionObjectiveChecker_Status;
-    pub fn add_statusDidChangeEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut MissionObjectiveChecker>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_statusDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_statusDidChangeEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut MissionObjectiveChecker>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_statusDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_disableChecking(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_disableChecking", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("Init", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_status(
-        &mut self,
-        value: crate::GlobalNamespace::MissionObjectiveChecker_Status,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_status", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_checkedValueDidChangeEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut MissionObjectiveChecker>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_checkedValueDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn SetCheckedMissionObjective(
         &mut self,
@@ -106,14 +62,36 @@ impl MissionObjectiveChecker {
             .invoke("SetCheckedMissionObjective", (missionObjective))?;
         Ok(__cordl_ret)
     }
-    pub fn get_missionObjectiveType(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MissionObjectiveTypeSO> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MissionObjectiveTypeSO = __cordl_object
-            .invoke("get_missionObjectiveType", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_checkedValueDidChangeEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut MissionObjectiveChecker>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_checkedValueDidChangeEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_statusDidChangeEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut MissionObjectiveChecker>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_statusDidChangeEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_checkedValue(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -123,14 +101,31 @@ impl MissionObjectiveChecker {
         let __cordl_ret: i32 = __cordl_object.invoke("get_checkedValue", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_disableChecking(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_disableChecking", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_missionObjective(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut MissionObjective> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut MissionObjective = __cordl_object
+            .invoke("get_missionObjective", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_missionObjectiveType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut MissionObjectiveTypeSO> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut MissionObjectiveTypeSO = __cordl_object
+            .invoke("get_missionObjectiveType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_status(
@@ -145,7 +140,7 @@ impl MissionObjectiveChecker {
             .invoke("get_status", ())?;
         Ok(__cordl_ret)
     }
-    pub fn add_checkedValueDidChangeEvent(
+    pub fn remove_checkedValueDidChangeEvent(
         &mut self,
         value: *mut crate::System::Action_1<*mut MissionObjectiveChecker>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -153,7 +148,18 @@ impl MissionObjectiveChecker {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_checkedValueDidChangeEvent", (value))?;
+            .invoke("remove_checkedValueDidChangeEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_statusDidChangeEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut MissionObjectiveChecker>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_statusDidChangeEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_checkedValue(
@@ -167,16 +173,6 @@ impl MissionObjectiveChecker {
             .invoke("set_checkedValue", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_missionObjective(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MissionObjective> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut MissionObjective = __cordl_object
-            .invoke("get_missionObjective", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_disableChecking(
         &mut self,
         value: bool,
@@ -188,12 +184,16 @@ impl MissionObjectiveChecker {
             .invoke("set_disableChecking", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_status(
+        &mut self,
+        value: crate::GlobalNamespace::MissionObjectiveChecker_Status,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_status", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MissionObjectiveChecker")]

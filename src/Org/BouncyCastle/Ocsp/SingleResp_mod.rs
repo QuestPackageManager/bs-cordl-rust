@@ -25,17 +25,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Ocsp::SingleResp {
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+SingleResp")]
 impl crate::Org::BouncyCastle::Ocsp::SingleResp {
-    pub fn _ctor(
-        &mut self,
-        resp: *mut crate::Org::BouncyCastle::Asn1::Ocsp::SingleResponse,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (resp))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetCertID(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -48,26 +37,14 @@ impl crate::Org::BouncyCastle::Ocsp::SingleResp {
             .invoke("GetCertID", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_ThisUpdate(
+    pub fn GetCertStatus(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::DateTime = __cordl_object
-            .invoke("get_ThisUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_NextUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Date::DateTimeObject = __cordl_object
-            .invoke("get_NextUpdate", ())?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("GetCertStatus", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetX509Extensions(
@@ -82,14 +59,36 @@ impl crate::Org::BouncyCastle::Ocsp::SingleResp {
             .invoke("GetX509Extensions", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetCertStatus(
+    pub fn New(
+        resp: *mut crate::Org::BouncyCastle::Asn1::Ocsp::SingleResponse,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (resp))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        resp: *mut crate::Org::BouncyCastle::Asn1::Ocsp::SingleResponse,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetCertStatus", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (resp))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NextUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Date::DateTimeObject = __cordl_object
+            .invoke("get_NextUpdate", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SingleExtensions(
@@ -104,14 +103,15 @@ impl crate::Org::BouncyCastle::Ocsp::SingleResp {
             .invoke("get_SingleExtensions", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        resp: *mut crate::Org::BouncyCastle::Asn1::Ocsp::SingleResponse,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (resp))?;
-        Ok(__cordl_object)
+    pub fn get_ThisUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::DateTime = __cordl_object
+            .invoke("get_ThisUpdate", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+SingleResp")]

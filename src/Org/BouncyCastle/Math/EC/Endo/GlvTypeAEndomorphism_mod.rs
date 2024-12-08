@@ -28,6 +28,32 @@ for crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeAEndomorphism {
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+GlvTypeAEndomorphism")]
 impl crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeAEndomorphism {
+    pub fn DecomposeScalar(
+        &mut self,
+        k: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::BigInteger,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::BigInteger,
+        > = __cordl_object.invoke("DecomposeScalar", (k))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
+        parameters: *mut crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeAParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (curve, parameters))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
@@ -47,22 +73,6 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeAEndomorphism {
         let __cordl_ret: bool = __cordl_object.invoke("get_HasEfficientPointMap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn DecomposeScalar(
-        &mut self,
-        k: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::BigInteger,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::BigInteger,
-        > = __cordl_object.invoke("DecomposeScalar", (k))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_PointMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -74,16 +84,6 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeAEndomorphism {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPointMap = __cordl_object
             .invoke("get_PointMap", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-        parameters: *mut crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeAParameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (curve, parameters))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+GlvTypeAEndomorphism")]

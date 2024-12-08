@@ -28,40 +28,26 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::CatchBlock {
 }
 #[cfg(feature = "System+Linq+Expressions+CatchBlock")]
 impl crate::System::Linq::Expressions::CatchBlock {
-    pub fn get_Body(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("get_Body", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         test: *mut crate::System::Type,
         variable: *mut crate::System::Linq::Expressions::ParameterExpression,
         body: *mut crate::System::Linq::Expressions::Expression,
         filter: *mut crate::System::Linq::Expressions::Expression,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (test, variable, body, filter))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (test, variable, body, filter))?;
+        Ok(__cordl_object)
     }
-    pub fn get_Test(
+    pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_Test", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn Update(
@@ -79,26 +65,30 @@ impl crate::System::Linq::Expressions::CatchBlock {
             .invoke("Update", (variable, filter, body))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Variable(
+    pub fn _ctor(
+        &mut self,
+        test: *mut crate::System::Type,
+        variable: *mut crate::System::Linq::Expressions::ParameterExpression,
+        body: *mut crate::System::Linq::Expressions::Expression,
+        filter: *mut crate::System::Linq::Expressions::Expression,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (test, variable, body, filter))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Body(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
+        *mut crate::System::Linq::Expressions::Expression,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::ParameterExpression = __cordl_object
-            .invoke("get_Variable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
+        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
+            .invoke("get_Body", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Filter(
@@ -113,17 +103,27 @@ impl crate::System::Linq::Expressions::CatchBlock {
             .invoke("get_Filter", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        test: *mut crate::System::Type,
-        variable: *mut crate::System::Linq::Expressions::ParameterExpression,
-        body: *mut crate::System::Linq::Expressions::Expression,
-        filter: *mut crate::System::Linq::Expressions::Expression,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (test, variable, body, filter))?;
-        Ok(__cordl_object)
+    pub fn get_Test(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_Test", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Variable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::ParameterExpression,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Linq::Expressions::ParameterExpression = __cordl_object
+            .invoke("get_Variable", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+CatchBlock")]

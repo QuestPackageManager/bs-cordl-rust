@@ -67,76 +67,103 @@ impl std::ops::DerefMut for crate::UnityEngine::TextSelectingUtilities {
 #[cfg(feature = "UnityEngine+TextSelectingUtilities")]
 impl crate::UnityEngine::TextSelectingUtilities {
     pub const kMoveDownHeight: i32 = 5i32;
-    pub const kNewLineChar: char = "\\n";
-    #[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
-    pub type CharacterType = crate::UnityEngine::TextSelectingUtilities_CharacterType;
+    pub const kNewLineChar: char = '\n';
     #[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
     pub type Direction = crate::UnityEngine::TextSelectingUtilities_Direction;
-    pub fn MoveRight(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    #[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
+    pub type CharacterType = crate::UnityEngine::TextSelectingUtilities_CharacterType;
+    pub fn ClampTextIndex(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveRight", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("ClampTextIndex", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn SelectRight(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectRight", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveParagraphForward(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveParagraphForward", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveGraphicalLineStart(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveGraphicalLineStart", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectWordRight(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectWordRight", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FindStartOfNextWord(&mut self, p: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("FindStartOfNextWord", (p))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsValidCodePointIndex(
+    pub fn ClassifyChar(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::TextSelectingUtilities_CharacterType,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("IsValidCodePointIndex", (index))?;
+        let __cordl_ret: crate::UnityEngine::TextSelectingUtilities_CharacterType = __cordl_object
+            .invoke("ClassifyChar", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearCursorPos(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearCursorPos", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Copy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Copy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DblClickSnap(
+        &mut self,
+        snapping: crate::UnityEngine::TextEditor_DblClickSnapping,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DblClickSnap", (snapping))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EnsureValidCodePointIndex(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("EnsureValidCodePointIndex", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExpandSelectGraphicalLineEnd(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExpandSelectGraphicalLineEnd", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExpandSelectGraphicalLineStart(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExpandSelectGraphicalLineStart", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn FindEndOfClassification(
+        &mut self,
+        p: i32,
+        dir: crate::UnityEngine::TextSelectingUtilities_Direction,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("FindEndOfClassification", (p, dir))?;
         Ok(__cordl_ret)
     }
     pub fn FindEndOfPreviousWord(
@@ -149,25 +176,121 @@ impl crate::UnityEngine::TextSelectingUtilities {
         let __cordl_ret: i32 = __cordl_object.invoke("FindEndOfPreviousWord", (p))?;
         Ok(__cordl_ret)
     }
-    pub fn MoveToEndOfPreviousWord(
+    pub fn FindNextSeperator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        startPos: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveToEndOfPreviousWord", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("FindNextSeperator", (startPos))?;
         Ok(__cordl_ret)
     }
-    pub fn OnFocus(
+    pub fn FindPrevSeperator(
         &mut self,
-        selectAll: bool,
+        startPos: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("FindPrevSeperator", (startPos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn FindStartOfNextWord(&mut self, p: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("FindStartOfNextWord", (p))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetGraphicalLineEnd(&mut self, p: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetGraphicalLineEnd", (p))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetGraphicalLineStart(
+        &mut self,
+        p: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetGraphicalLineStart", (p))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleKeyEvent(
+        &mut self,
+        e: *mut crate::UnityEngine::Event,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("HandleKeyEvent", (e))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IndexOfEndOfLine(
+        &mut self,
+        startIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("IndexOfEndOfLine", (startIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitKeyActions(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnFocus", (selectAll))?;
+            .invoke("InitKeyActions", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsValidCodePointIndex(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsValidCodePointIndex", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MouseDragSelectsWholeWords(
+        &mut self,
+        on: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MouseDragSelectsWholeWords", (on))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveCursorToPosition_Internal(
+        &mut self,
+        cursorPosition: crate::UnityEngine::Vector2,
+        shift: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MoveCursorToPosition_Internal", (cursorPosition, shift))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveDown(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MoveDown", ())?;
         Ok(__cordl_ret)
     }
     pub fn MoveGraphicalLineEnd(
@@ -180,75 +303,34 @@ impl crate::UnityEngine::TextSelectingUtilities {
             .invoke("MoveGraphicalLineEnd", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_selectedText(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_selectedText", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectCurrentParagraph(
+    pub fn MoveGraphicalLineStart(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectCurrentParagraph", ())?;
+            .invoke("MoveGraphicalLineStart", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SelectCurrentWord(
+    pub fn MoveLeft(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectCurrentWord", ())?;
+            .invoke("MoveLeft", ())?;
         Ok(__cordl_ret)
     }
-    pub fn MoveTextStart(
+    pub fn MoveLineEnd(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveTextStart", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectAll(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectAll", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetSelectIndexWithoutNotify(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSelectIndexWithoutNotify", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectTextEnd(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectTextEnd", ())?;
+            .invoke("MoveLineEnd", ())?;
         Ok(__cordl_ret)
     }
     pub fn MoveLineStart(
@@ -271,377 +353,24 @@ impl crate::UnityEngine::TextSelectingUtilities {
             .invoke("MoveParagraphBackward", ())?;
         Ok(__cordl_ret)
     }
-    pub fn MoveCursorToPosition_Internal(
-        &mut self,
-        cursorPosition: crate::UnityEngine::Vector2,
-        shift: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveCursorToPosition_Internal", (cursorPosition, shift))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveToStartOfNextWord(
+    pub fn MoveParagraphForward(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveToStartOfNextWord", ())?;
+            .invoke("MoveParagraphForward", ())?;
         Ok(__cordl_ret)
     }
-    pub fn FindEndOfClassification(
-        &mut self,
-        p: i32,
-        dir: crate::UnityEngine::TextSelectingUtilities_Direction,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("FindEndOfClassification", (p, dir))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_revealCursor(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_revealCursor", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        textHandle: *mut crate::UnityEngine::TextCore::Text::TextHandle,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (textHandle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectLeft(
+    pub fn MoveRight(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectLeft", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Copy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Copy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_selectIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_selectIndex", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectParagraphBackward(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectParagraphBackward", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveDown(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveDown", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveLineEnd(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveLineEnd", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectTextStart(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectTextStart", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveLeft(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveLeft", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetGraphicalLineEnd(&mut self, p: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetGraphicalLineEnd", (p))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClassifyChar(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::TextSelectingUtilities_CharacterType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::TextSelectingUtilities_CharacterType = __cordl_object
-            .invoke("ClassifyChar", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectGraphicalLineEnd(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectGraphicalLineEnd", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FindNextSeperator(
-        &mut self,
-        startPos: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("FindNextSeperator", (startPos))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PreviousCodePointIndex(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("PreviousCodePointIndex", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveUp(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveUp", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EnsureValidCodePointIndex(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("EnsureValidCodePointIndex", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectParagraphForward(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectParagraphForward", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_characterCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_characterCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_m_CharacterCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_m_CharacterCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectDown(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectDown", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DblClickSnap(
-        &mut self,
-        snapping: crate::UnityEngine::TextEditor_DblClickSnapping,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DblClickSnap", (snapping))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_selectIndex(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_selectIndex", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleKeyEvent(
-        &mut self,
-        e: *mut crate::UnityEngine::Event,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HandleKeyEvent", (e))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveWordLeft(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveWordLeft", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectGraphicalLineStart(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectGraphicalLineStart", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExpandSelectGraphicalLineEnd(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExpandSelectGraphicalLineEnd", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn NextCodePointIndex(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("NextCodePointIndex", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_m_TextElementInfos(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::TextCore::Text::TextElementInfo,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::TextCore::Text::TextElementInfo,
-        > = __cordl_object.invoke("get_m_TextElementInfos", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetCursorIndexWithoutNotify(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCursorIndexWithoutNotify", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_revealCursor(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_revealCursor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IndexOfEndOfLine(
-        &mut self,
-        startIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("IndexOfEndOfLine", (startIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExpandSelectGraphicalLineStart(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExpandSelectGraphicalLineStart", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectWordLeft(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectWordLeft", ())?;
+            .invoke("MoveRight", ())?;
         Ok(__cordl_ret)
     }
     pub fn MoveTextEnd(
@@ -654,49 +383,184 @@ impl crate::UnityEngine::TextSelectingUtilities {
             .invoke("MoveTextEnd", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_hasSelection(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hasSelection", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearCursorPos(
+    pub fn MoveTextStart(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearCursorPos", ())?;
+            .invoke("MoveTextStart", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_cursorIndex(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_cursorIndex", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClampTextIndex(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ClampTextIndex", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectToStartOfNextWord(
+    pub fn MoveToEndOfPreviousWord(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectToStartOfNextWord", ())?;
+            .invoke("MoveToEndOfPreviousWord", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveToStartOfNextWord(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MoveToStartOfNextWord", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveUp(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MoveUp", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveWordLeft(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MoveWordLeft", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveWordRight(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MoveWordRight", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        textHandle: *mut crate::UnityEngine::TextCore::Text::TextHandle,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (textHandle))?;
+        Ok(__cordl_object)
+    }
+    pub fn NextCodePointIndex(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("NextCodePointIndex", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnFocus(
+        &mut self,
+        selectAll: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnFocus", (selectAll))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PerformOperation(
+        &mut self,
+        operation: crate::UnityEngine::TextSelectOp,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("PerformOperation", (operation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PreviousCodePointIndex(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("PreviousCodePointIndex", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectAll(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectAll", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectCurrentParagraph(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectCurrentParagraph", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectCurrentWord(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectCurrentWord", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectDown(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectDown", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectGraphicalLineEnd(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectGraphicalLineEnd", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectGraphicalLineStart(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectGraphicalLineStart", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectLeft(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectLeft", ())?;
         Ok(__cordl_ret)
     }
     pub fn SelectNone(
@@ -709,14 +573,54 @@ impl crate::UnityEngine::TextSelectingUtilities {
             .invoke("SelectNone", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetGraphicalLineStart(
+    pub fn SelectParagraphBackward(
         &mut self,
-        p: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetGraphicalLineStart", (p))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectParagraphBackward", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectParagraphForward(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectParagraphForward", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectRight(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectRight", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectTextEnd(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectTextEnd", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectTextStart(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectTextStart", ())?;
         Ok(__cordl_ret)
     }
     pub fn SelectToEndOfPreviousWord(
@@ -740,62 +644,14 @@ impl crate::UnityEngine::TextSelectingUtilities {
             .invoke("SelectToPosition", (cursorPosition))?;
         Ok(__cordl_ret)
     }
-    pub fn MoveWordRight(
+    pub fn SelectToStartOfNextWord(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveWordRight", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_cursorIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_cursorIndex", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitKeyActions(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitKeyActions", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MouseDragSelectsWholeWords(
-        &mut self,
-        on: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MouseDragSelectsWholeWords", (on))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FindPrevSeperator(
-        &mut self,
-        startPos: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("FindPrevSeperator", (startPos))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PerformOperation(
-        &mut self,
-        operation: crate::UnityEngine::TextSelectOp,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("PerformOperation", (operation))?;
+            .invoke("SelectToStartOfNextWord", ())?;
         Ok(__cordl_ret)
     }
     pub fn SelectUp(
@@ -808,14 +664,158 @@ impl crate::UnityEngine::TextSelectingUtilities {
             .invoke("SelectUp", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn SelectWordLeft(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectWordLeft", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectWordRight(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectWordRight", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetCursorIndexWithoutNotify(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetCursorIndexWithoutNotify", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetSelectIndexWithoutNotify(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetSelectIndexWithoutNotify", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
         textHandle: *mut crate::UnityEngine::TextCore::Text::TextHandle,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (textHandle))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (textHandle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_characterCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_characterCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_cursorIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_cursorIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hasSelection(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_hasSelection", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_m_CharacterCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_m_CharacterCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_m_TextElementInfos(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::TextCore::Text::TextElementInfo,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::TextCore::Text::TextElementInfo,
+        > = __cordl_object.invoke("get_m_TextElementInfos", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_revealCursor(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_revealCursor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_selectIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_selectIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_selectedText(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_selectedText", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_cursorIndex(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_cursorIndex", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_revealCursor(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_revealCursor", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_selectIndex(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_selectIndex", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+TextSelectingUtilities")]

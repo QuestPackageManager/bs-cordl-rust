@@ -25,13 +25,6 @@ impl std::ops::DerefMut for crate::System::ComponentModel::DesignOnlyAttribute {
 }
 #[cfg(feature = "System+ComponentModel+DesignOnlyAttribute")]
 impl crate::System::ComponentModel::DesignOnlyAttribute {
-    pub fn IsDefaultAttribute(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsDefaultAttribute", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals(
         &mut self,
         obj: *mut crate::System::Object,
@@ -42,12 +35,26 @@ impl crate::System::ComponentModel::DesignOnlyAttribute {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsDesignOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsDesignOnly", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn IsDefaultAttribute(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsDefaultAttribute", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(isDesignOnly: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (isDesignOnly))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -60,19 +67,12 @@ impl crate::System::ComponentModel::DesignOnlyAttribute {
             .invoke(".ctor", (isDesignOnly))?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_IsDesignOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsDesignOnly", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(isDesignOnly: bool) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (isDesignOnly))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+ComponentModel+DesignOnlyAttribute")]

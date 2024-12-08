@@ -56,9 +56,21 @@ impl<
     TSource,
     TResult,
 > {
-    pub fn OnNext(
+    pub fn New(
+        observable: *mut crate::UnityEngine::InputSystem::LowLevel::SelectObservable_2<
+            TSource,
+            TResult,
+        >,
+        observer: *mut crate::System::IObserver_1<TResult>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (observable, observer))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnCompleted(
         &mut self,
-        evt: TSource,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -70,7 +82,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnNext", (evt))?;
+            .invoke("OnCompleted", ())?;
         Ok(__cordl_ret)
     }
     pub fn OnError(
@@ -88,6 +100,23 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnError", (error))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnNext(
+        &mut self,
+        evt: TSource,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnNext", (evt))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -110,35 +139,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (observable, observer))?;
         Ok(__cordl_ret)
-    }
-    pub fn OnCompleted(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCompleted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        observable: *mut crate::UnityEngine::InputSystem::LowLevel::SelectObservable_2<
-            TSource,
-            TResult,
-        >,
-        observer: *mut crate::System::IObserver_1<TResult>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (observable, observer))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+SelectObservable_2+Select")]
@@ -207,23 +207,15 @@ impl<
         TSource,
         TResult,
     >;
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         source: *mut crate::System::IObservable_1<TSource>,
         filter: *mut crate::System::Func_2<TSource, TResult>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (source, filter))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (source, filter))?;
+        Ok(__cordl_object)
     }
     pub fn Subscribe(
         &mut self,
@@ -242,15 +234,23 @@ impl<
             .invoke("Subscribe", (observer))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         source: *mut crate::System::IObservable_1<TSource>,
         filter: *mut crate::System::Func_2<TSource, TResult>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (source, filter))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (source, filter))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+SelectObservable_2")]

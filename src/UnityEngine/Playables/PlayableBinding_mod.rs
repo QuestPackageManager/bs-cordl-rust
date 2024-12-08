@@ -27,18 +27,6 @@ for crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod {
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
 impl crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
@@ -54,12 +42,24 @@ impl crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
@@ -101,16 +101,6 @@ for crate::UnityEngine::Playables::PlayableBinding {
 impl crate::UnityEngine::Playables::PlayableBinding {
     #[cfg(feature = "UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
     pub type CreateOutputMethod = crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod;
-    pub fn get_sourceObject(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
-        let __cordl_ret: *mut crate::UnityEngine::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_sourceObject",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateOutput(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
@@ -119,6 +109,16 @@ impl crate::UnityEngine::Playables::PlayableBinding {
             self,
             "CreateOutput",
             (graph),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sourceObject(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
+        let __cordl_ret: *mut crate::UnityEngine::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_sourceObject",
+            (),
         )?;
         Ok(__cordl_ret)
     }

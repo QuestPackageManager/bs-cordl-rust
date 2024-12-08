@@ -38,17 +38,6 @@ for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardB
 }
 #[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
 impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
-    pub fn _ctor(
-        &mut self,
-        keyboard: *mut OVRVirtualKeyboard,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (keyboard),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn RestoreTo(
         &mut self,
         keyboard: *mut OVRVirtualKeyboard,
@@ -56,6 +45,17 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboard
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "RestoreTo",
+            (keyboard),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        keyboard: *mut OVRVirtualKeyboard,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
             (keyboard),
         )?;
         Ok(__cordl_ret)
@@ -113,14 +113,14 @@ impl OVRVirtualKeyboardSampleControls {
             .invoke("DestroyKeyboard", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn HideKeyboard(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("HideKeyboard", ())?;
         Ok(__cordl_ret)
     }
     pub fn MoveKeyboard(
@@ -133,6 +133,16 @@ impl OVRVirtualKeyboardSampleControls {
             .invoke("MoveKeyboard", ())?;
         Ok(__cordl_ret)
     }
+    pub fn MoveKeyboardFar(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MoveKeyboardFar", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn MoveKeyboardNear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -143,14 +153,41 @@ impl OVRVirtualKeyboardSampleControls {
             .invoke("MoveKeyboardNear", ())?;
         Ok(__cordl_ret)
     }
-    pub fn UpdateButtonInteractable(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateButtonInteractable", ())?;
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnHideKeyboard(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnHideKeyboard", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ShowKeyboard(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ShowKeyboard", ())?;
         Ok(__cordl_ret)
     }
     pub fn Start(
@@ -173,62 +210,25 @@ impl OVRVirtualKeyboardSampleControls {
             .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ShowKeyboard(
+    pub fn UpdateButtonInteractable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ShowKeyboard", ())?;
+            .invoke("UpdateButtonInteractable", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnHideKeyboard(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnHideKeyboard", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn HideKeyboard(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HideKeyboard", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveKeyboardFar(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveKeyboardFar", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRVirtualKeyboardSampleControls")]

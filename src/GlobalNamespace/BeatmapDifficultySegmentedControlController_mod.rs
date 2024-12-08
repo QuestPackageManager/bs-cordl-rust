@@ -43,15 +43,38 @@ impl BeatmapDifficultySegmentedControlController {
             .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_selectedDifficulty(
+    pub fn GetClosestDifficultyIndex(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapDifficulty> {
+        searchDifficulty: BeatmapDifficulty,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapDifficulty = __cordl_object
-            .invoke("get_selectedDifficulty", ())?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetClosestDifficultyIndex", (searchDifficulty))?;
         Ok(__cordl_ret)
+    }
+    pub fn HandleDifficultySegmentedControlDidSelectCell(
+        &mut self,
+        segmentedControl: *mut crate::HMUI::SegmentedControl,
+        cellIdx: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleDifficultySegmentedControlDidSelectCell",
+                (segmentedControl, cellIdx),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnDestroy(
         &mut self,
@@ -81,19 +104,14 @@ impl BeatmapDifficultySegmentedControlController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HandleDifficultySegmentedControlDidSelectCell(
+    pub fn _ctor(
         &mut self,
-        segmentedControl: *mut crate::HMUI::SegmentedControl,
-        cellIdx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleDifficultySegmentedControlDidSelectCell",
-                (segmentedControl, cellIdx),
-            )?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_didSelectDifficultyEvent(
@@ -110,6 +128,16 @@ impl BeatmapDifficultySegmentedControlController {
             .invoke("add_didSelectDifficultyEvent", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn get_selectedDifficulty(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<BeatmapDifficulty> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: BeatmapDifficulty = __cordl_object
+            .invoke("get_selectedDifficulty", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn remove_didSelectDifficultyEvent(
         &mut self,
         value: *mut crate::System::Action_2<
@@ -123,34 +151,6 @@ impl BeatmapDifficultySegmentedControlController {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didSelectDifficultyEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetClosestDifficultyIndex(
-        &mut self,
-        searchDifficulty: BeatmapDifficulty,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetClosestDifficultyIndex", (searchDifficulty))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapDifficultySegmentedControlController")]

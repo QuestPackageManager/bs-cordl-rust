@@ -24,16 +24,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::ITraceWriter
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+ITraceWriter")]
 impl crate::Newtonsoft::Json::Serialization::ITraceWriter {
-    pub fn get_LevelFilter(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Diagnostics::TraceLevel> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Diagnostics::TraceLevel = __cordl_object
-            .invoke("get_LevelFilter", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Trace(
         &mut self,
         level: crate::System::Diagnostics::TraceLevel,
@@ -51,6 +41,16 @@ impl crate::Newtonsoft::Json::Serialization::ITraceWriter {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_LevelFilter(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Diagnostics::TraceLevel> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Diagnostics::TraceLevel = __cordl_object
+            .invoke("get_LevelFilter", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+ITraceWriter")]

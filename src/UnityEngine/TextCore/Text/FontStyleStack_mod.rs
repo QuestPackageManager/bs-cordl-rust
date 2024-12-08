@@ -31,17 +31,6 @@ for crate::UnityEngine::TextCore::Text::FontStyleStack {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+FontStyleStack")]
 impl crate::UnityEngine::TextCore::Text::FontStyleStack {
-    pub fn Remove(
-        &mut self,
-        style: crate::UnityEngine::TextCore::Text::FontStyles,
-    ) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_ret: u8 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Remove",
-            (style),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Add(
         &mut self,
         style: crate::UnityEngine::TextCore::Text::FontStyles,
@@ -60,6 +49,17 @@ impl crate::UnityEngine::TextCore::Text::FontStyleStack {
             self,
             "Clear",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Remove(
+        &mut self,
+        style: crate::UnityEngine::TextCore::Text::FontStyles,
+    ) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Remove",
+            (style),
         )?;
         Ok(__cordl_ret)
     }

@@ -33,14 +33,14 @@ impl crate::HMUI::HoverHintController {
     pub type _HideHintAfterDelay_d__11 = crate::HMUI::HoverHintController__HideHintAfterDelay_d__11;
     #[cfg(feature = "HMUI+HoverHintController+_ShowHintAfterDelay_d__10")]
     pub type _ShowHintAfterDelay_d__10 = crate::HMUI::HoverHintController__ShowHintAfterDelay_d__10;
-    pub fn _ctor(
+    pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
     pub fn HideHint(
@@ -53,14 +53,65 @@ impl crate::HMUI::HoverHintController {
             .invoke("HideHint", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Awake(
+    pub fn HideHintAfterDelay(
+        &mut self,
+        delay: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("HideHintAfterDelay", (delay))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HideHintInstant(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
+            .invoke("HideHintInstant", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnApplicationFocus(
+        &mut self,
+        hasFocus: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnApplicationFocus", (hasFocus))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetupAndShowHintPanel(
+        &mut self,
+        hoverHint: *mut crate::HMUI::HoverHint,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetupAndShowHintPanel", (hoverHint))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ShowHint(
+        &mut self,
+        hoverHint: *mut crate::HMUI::HoverHint,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ShowHint", (hoverHint))?;
         Ok(__cordl_ret)
     }
     pub fn ShowHintAfterDelay(
@@ -75,66 +126,15 @@ impl crate::HMUI::HoverHintController {
             .invoke("ShowHintAfterDelay", (hoverHint, delay))?;
         Ok(__cordl_ret)
     }
-    pub fn HideHintAfterDelay(
-        &mut self,
-        delay: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("HideHintAfterDelay", (delay))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ShowHint(
-        &mut self,
-        hoverHint: *mut crate::HMUI::HoverHint,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ShowHint", (hoverHint))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnApplicationFocus(
-        &mut self,
-        hasFocus: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnApplicationFocus", (hasFocus))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HideHintInstant(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HideHintInstant", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn SetupAndShowHintPanel(
-        &mut self,
-        hoverHint: *mut crate::HMUI::HoverHint,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetupAndShowHintPanel", (hoverHint))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HMUI+HoverHintController")]

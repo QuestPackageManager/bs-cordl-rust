@@ -22,54 +22,6 @@ for crate::System::Data::SqlTypes::SqlGuid {
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlGuid")]
 impl crate::System::Data::SqlTypes::SqlGuid {
-    pub fn Equals(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_Serialization_IXmlSerializable_ReadXml(
-        &mut self,
-        reader: *mut crate::System::Xml::XmlReader,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Xml.Serialization.IXmlSerializable.ReadXml",
-            (reader),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsNull",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
-        let __cordl_ret: crate::System::Guid = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Value",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn CompareTo_Object0(
         &mut self,
         value: *mut crate::System::Object,
@@ -92,25 +44,14 @@ impl crate::System::Data::SqlTypes::SqlGuid {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor__cordl_bool0(
+    pub fn Equals(
         &mut self,
-        fNull: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (fNull),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Guid1(
-        &mut self,
-        g: crate::System::Guid,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (g),
+            "Equals",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -132,6 +73,17 @@ impl crate::System::Data::SqlTypes::SqlGuid {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn System_Xml_Serialization_IXmlSerializable_ReadXml(
+        &mut self,
+        reader: *mut crate::System::Xml::XmlReader,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Xml.Serialization.IXmlSerializable.ReadXml",
+            (reader),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn System_Xml_Serialization_IXmlSerializable_WriteXml(
         &mut self,
         writer: *mut crate::System::Xml::XmlWriter,
@@ -140,6 +92,54 @@ impl crate::System::Data::SqlTypes::SqlGuid {
             self,
             "System.Xml.Serialization.IXmlSerializable.WriteXml",
             (writer),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Guid1(
+        &mut self,
+        g: crate::System::Guid,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (g),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor__cordl_bool0(
+        &mut self,
+        fNull: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (fNull),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsNull",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
+        let __cordl_ret: crate::System::Guid = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Value",
+            (),
         )?;
         Ok(__cordl_ret)
     }

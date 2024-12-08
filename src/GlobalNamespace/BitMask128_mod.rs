@@ -21,26 +21,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for BitMask128 {
 }
 #[cfg(feature = "BitMask128")]
 impl BitMask128 {
-    pub fn _ctor_u64_0(
+    pub fn CreateFromSerializedData(
         &mut self,
-        d0: u64,
-        d1: u64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+    ) -> quest_hook::libil2cpp::Result<BitMask128> {
+        let __cordl_ret: BitMask128 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (d0, d1),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_u64_1(
-        &mut self,
-        value: u64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
+            "CreateFromSerializedData",
+            (reader),
         )?;
         Ok(__cordl_ret)
     }
@@ -66,6 +54,26 @@ impl BitMask128 {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn GetBits(
+        &mut self,
+        offset: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetBits",
+            (offset, count),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Serialize(
         &mut self,
         writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
@@ -74,6 +82,18 @@ impl BitMask128 {
             self,
             "Serialize",
             (writer),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetBits(
+        &mut self,
+        offset: i32,
+        bits: u64,
+    ) -> quest_hook::libil2cpp::Result<BitMask128> {
+        let __cordl_ret: BitMask128 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetBits",
+            (offset, bits),
         )?;
         Ok(__cordl_ret)
     }
@@ -87,22 +107,26 @@ impl BitMask128 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CreateFromSerializedData(
+    pub fn _ctor_u64_0(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<BitMask128> {
-        let __cordl_ret: BitMask128 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        d0: u64,
+        d1: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CreateFromSerializedData",
-            (reader),
+            ".ctor",
+            (d0, d1),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn _ctor_u64_1(
+        &mut self,
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
-            (),
+            ".ctor",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -111,30 +135,6 @@ impl BitMask128 {
             self,
             "get_bitCount",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetBits(
-        &mut self,
-        offset: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetBits",
-            (offset, count),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetBits(
-        &mut self,
-        offset: i32,
-        bits: u64,
-    ) -> quest_hook::libil2cpp::Result<BitMask128> {
-        let __cordl_ret: BitMask128 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetBits",
-            (offset, bits),
         )?;
         Ok(__cordl_ret)
     }

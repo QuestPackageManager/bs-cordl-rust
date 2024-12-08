@@ -28,16 +28,25 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
 impl crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
     #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaWriter+__c")]
     pub type __c = crate::Newtonsoft::Json::Schema::JsonSchemaWriter___c;
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
         resolver: *mut crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (writer, resolver))?;
+        Ok(__cordl_object)
+    }
+    pub fn ReferenceOrWriteSchema(
+        &mut self,
+        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (writer, resolver))?;
+            .invoke("ReferenceOrWriteSchema", (schema))?;
         Ok(__cordl_ret)
     }
     pub fn WriteItems(
@@ -51,7 +60,20 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
             .invoke("WriteItems", (schema))?;
         Ok(__cordl_ret)
     }
-    pub fn ReferenceOrWriteSchema(
+    pub fn WritePropertyIfNotNull(
+        &mut self,
+        writer: *mut crate::Newtonsoft::Json::JsonWriter,
+        propertyName: *mut crate::System::String,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WritePropertyIfNotNull", (writer, propertyName, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteSchema(
         &mut self,
         schema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -59,7 +81,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReferenceOrWriteSchema", (schema))?;
+            .invoke("WriteSchema", (schema))?;
         Ok(__cordl_ret)
     }
     pub fn WriteSchemaDictionaryIfNotNull(
@@ -81,19 +103,6 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn WritePropertyIfNotNull(
-        &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        propertyName: *mut crate::System::String,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WritePropertyIfNotNull", (writer, propertyName, value))?;
-        Ok(__cordl_ret)
-    }
     pub fn WriteType(
         &mut self,
         propertyName: *mut crate::System::String,
@@ -107,26 +116,17 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
             .invoke("WriteType", (propertyName, writer, _cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn WriteSchema(
+    pub fn _ctor(
         &mut self,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        writer: *mut crate::Newtonsoft::Json::JsonWriter,
+        resolver: *mut crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteSchema", (schema))?;
+            .invoke(".ctor", (writer, resolver))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        resolver: *mut crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (writer, resolver))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaWriter")]

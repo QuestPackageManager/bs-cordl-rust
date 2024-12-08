@@ -29,16 +29,46 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Asn1StreamParser {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1StreamParser")]
 impl crate::Org::BouncyCastle::Asn1::Asn1StreamParser {
-    pub fn ReadTaggedObject(
+    pub fn New_Il2CppArray2(
+        encoding: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encoding))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Stream0(
+        inStream: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (inStream))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Stream_i32_1(
+        inStream: *mut crate::System::IO::Stream,
+        limit: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (inStream, limit))?;
+        Ok(__cordl_object)
+    }
+    pub fn ReadImplicit(
         &mut self,
         constructed: bool,
         tag: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ReadTaggedObject", (constructed, tag))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible = __cordl_object
+            .invoke("ReadImplicit", (constructed, tag))?;
         Ok(__cordl_ret)
     }
     pub fn ReadIndef(
@@ -54,6 +84,42 @@ impl crate::Org::BouncyCastle::Asn1::Asn1StreamParser {
             .invoke("ReadIndef", (tagValue))?;
         Ok(__cordl_ret)
     }
+    pub fn ReadObject(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible = __cordl_object
+            .invoke("ReadObject", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadTaggedObject(
+        &mut self,
+        constructed: bool,
+        tag: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("ReadTaggedObject", (constructed, tag))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadVector(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector = __cordl_object
+            .invoke("ReadVector", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Set00Check(
         &mut self,
         enabled: bool,
@@ -65,18 +131,15 @@ impl crate::Org::BouncyCastle::Asn1::Asn1StreamParser {
             .invoke("Set00Check", (enabled))?;
         Ok(__cordl_ret)
     }
-    pub fn ReadImplicit(
+    pub fn _ctor_Il2CppArray2(
         &mut self,
-        constructed: bool,
-        tag: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
-    > {
+        encoding: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible = __cordl_object
-            .invoke("ReadImplicit", (constructed, tag))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (encoding))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_Stream0(
@@ -101,69 +164,6 @@ impl crate::Org::BouncyCastle::Asn1::Asn1StreamParser {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (inStream, limit))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor_Il2CppArray2(
-        &mut self,
-        encoding: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (encoding))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadObject(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible = __cordl_object
-            .invoke("ReadObject", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadVector(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector = __cordl_object
-            .invoke("ReadVector", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_Stream0(
-        inStream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (inStream))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Stream_i32_1(
-        inStream: *mut crate::System::IO::Stream,
-        limit: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (inStream, limit))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray2(
-        encoding: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encoding))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1StreamParser")]

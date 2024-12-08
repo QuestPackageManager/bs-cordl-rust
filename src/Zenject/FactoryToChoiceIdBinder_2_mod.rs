@@ -38,24 +38,16 @@ impl<
     TParam1: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,
 > crate::Zenject::FactoryToChoiceIdBinder_2<TParam1, TContract> {
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         bindContainer: *mut crate::Zenject::DiContainer,
         bindInfo: *mut crate::Zenject::BindInfo,
         factoryBindInfo: *mut crate::Zenject::FactoryBindInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bindContainer, bindInfo, factoryBindInfo))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bindContainer, bindInfo, factoryBindInfo))?;
+        Ok(__cordl_object)
     }
     pub fn WithId(
         &mut self,
@@ -78,16 +70,24 @@ impl<
         > = __cordl_object.invoke("WithId", (identifier))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         bindContainer: *mut crate::Zenject::DiContainer,
         bindInfo: *mut crate::Zenject::BindInfo,
         factoryBindInfo: *mut crate::Zenject::FactoryBindInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bindContainer, bindInfo, factoryBindInfo))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bindContainer, bindInfo, factoryBindInfo))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+FactoryToChoiceIdBinder_2")]

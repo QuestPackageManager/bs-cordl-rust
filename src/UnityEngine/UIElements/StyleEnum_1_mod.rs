@@ -24,75 +24,18 @@ for crate::UnityEngine::UIElements::StyleEnum_1<T> {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleEnum_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1<T> {
-    pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_value",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_keyword(
+    pub fn Equals_Object1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleKeyword>
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleKeyword = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_keyword",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_T0(
-        &mut self,
-        v: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_StyleKeyword1(
-        &mut self,
-        keyword: crate::UnityEngine::UIElements::StyleKeyword,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (keyword),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_T_StyleKeyword2(
-        &mut self,
-        v: T,
-        keyword: crate::UnityEngine::UIElements::StyleKeyword,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v, keyword),
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -108,21 +51,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -148,6 +76,78 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1
         let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_StyleKeyword1(
+        &mut self,
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (keyword),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_T0(
+        &mut self,
+        v: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (v),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_T_StyleKeyword2(
+        &mut self,
+        v: T,
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (v, keyword),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_keyword(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleKeyword>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleKeyword = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_keyword",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_value",
             (),
         )?;
         Ok(__cordl_ret)

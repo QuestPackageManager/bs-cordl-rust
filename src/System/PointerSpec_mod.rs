@@ -24,17 +24,6 @@ impl std::ops::DerefMut for crate::System::PointerSpec {
 }
 #[cfg(feature = "System+PointerSpec")]
 impl crate::System::PointerSpec {
-    pub fn _ctor(
-        &mut self,
-        pointer_level: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pointer_level))?;
-        Ok(__cordl_ret)
-    }
     pub fn Append(
         &mut self,
         sb: *mut crate::System::Text::StringBuilder,
@@ -46,15 +35,12 @@ impl crate::System::PointerSpec {
             .invoke("Append", (sb))?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
+    pub fn New(pointer_level: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (pointer_level))?;
+        Ok(__cordl_object)
     }
     pub fn Resolve(
         &mut self,
@@ -67,12 +53,26 @@ impl crate::System::PointerSpec {
             .invoke("Resolve", (_cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn New(pointer_level: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (pointer_level))?;
-        Ok(__cordl_object)
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        pointer_level: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (pointer_level))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+PointerSpec")]

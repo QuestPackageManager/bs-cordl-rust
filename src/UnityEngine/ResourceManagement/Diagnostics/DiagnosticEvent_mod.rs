@@ -29,18 +29,12 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent")]
 impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
-    pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Serialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Value",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Stream(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Stream",
+            "Serialize",
             (),
         )?;
         Ok(__cordl_ret)
@@ -62,20 +56,22 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_ObjectId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_Dependencies(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_ObjectId",
+            "get_Dependencies",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Serialize(
+    pub fn get_DisplayName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Serialize",
+            "get_DisplayName",
             (),
         )?;
         Ok(__cordl_ret)
@@ -98,22 +94,26 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_DisplayName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_ObjectId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_DisplayName",
+            "get_ObjectId",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Dependencies(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_Stream(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Dependencies",
+            "get_Stream",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Value",
             (),
         )?;
         Ok(__cordl_ret)

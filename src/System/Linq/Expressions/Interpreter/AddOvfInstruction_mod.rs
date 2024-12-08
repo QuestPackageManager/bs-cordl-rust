@@ -27,30 +27,30 @@ for crate::System::Linq::Expressions::Interpreter::AddOvfInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::AddOvfInstruction {
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfInt16")]
-    pub type AddOvfInt16 = crate::GlobalNamespace::AddOvfInstruction_AddOvfInt16;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfInt64")]
     pub type AddOvfInt64 = crate::GlobalNamespace::AddOvfInstruction_AddOvfInt64;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfUInt32"
     )]
     pub type AddOvfUInt32 = crate::GlobalNamespace::AddOvfInstruction_AddOvfUInt32;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfInt32")]
-    pub type AddOvfInt32 = crate::GlobalNamespace::AddOvfInstruction_AddOvfInt32;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfUInt16"
-    )]
-    pub type AddOvfUInt16 = crate::GlobalNamespace::AddOvfInstruction_AddOvfUInt16;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfUInt64"
     )]
     pub type AddOvfUInt64 = crate::GlobalNamespace::AddOvfInstruction_AddOvfUInt64;
-    pub fn get_ConsumedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
-        Ok(__cordl_ret)
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfInt16")]
+    pub type AddOvfInt16 = crate::GlobalNamespace::AddOvfInstruction_AddOvfInt16;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfUInt16"
+    )]
+    pub type AddOvfUInt16 = crate::GlobalNamespace::AddOvfInstruction_AddOvfUInt16;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfInt32")]
+    pub type AddOvfInt32 = crate::GlobalNamespace::AddOvfInstruction_AddOvfInt32;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -62,11 +62,11 @@ impl crate::System::Linq::Expressions::Interpreter::AddOvfInstruction {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_ConsumedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_InstructionName(
@@ -79,12 +79,12 @@ impl crate::System::Linq::Expressions::Interpreter::AddOvfInstruction {
             .invoke("get_InstructionName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction")]

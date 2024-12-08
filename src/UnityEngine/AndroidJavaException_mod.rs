@@ -25,15 +25,15 @@ impl std::ops::DerefMut for crate::UnityEngine::AndroidJavaException {
 }
 #[cfg(feature = "UnityEngine+AndroidJavaException")]
 impl crate::UnityEngine::AndroidJavaException {
-    pub fn get_StackTrace(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_StackTrace", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        message: *mut crate::System::String,
+        javaStackTrace: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (message, javaStackTrace))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -47,15 +47,15 @@ impl crate::UnityEngine::AndroidJavaException {
             .invoke(".ctor", (message, javaStackTrace))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        message: *mut crate::System::String,
-        javaStackTrace: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (message, javaStackTrace))?;
-        Ok(__cordl_object)
+    pub fn get_StackTrace(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_StackTrace", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+AndroidJavaException")]

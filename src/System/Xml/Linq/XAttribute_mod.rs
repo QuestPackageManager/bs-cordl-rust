@@ -27,31 +27,55 @@ impl std::ops::DerefMut for crate::System::Xml::Linq::XAttribute {
 }
 #[cfg(feature = "System+Xml+Linq+XAttribute")]
 impl crate::System::Xml::Linq::XAttribute {
-    pub fn get_IsNamespaceDeclaration(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn GetPrefixOfNamespace(
+        &mut self,
+        ns: *mut crate::System::Xml::Linq::XNamespace,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsNamespaceDeclaration", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetPrefixOfNamespace", (ns))?;
         Ok(__cordl_ret)
     }
-    pub fn get_NodeType(
+    pub fn New_XAttribute1(
+        other: *mut crate::System::Xml::Linq::XAttribute,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (other))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_XName_Object0(
+        name: *mut crate::System::Xml::Linq::XName,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, value))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
-            .invoke("get_NodeType", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Name(
+    pub fn _ctor_XAttribute1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Linq::XName> {
+        other: *mut crate::System::Xml::Linq::XAttribute,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Linq::XName = __cordl_object
-            .invoke("get_Name", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (other))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_XName_Object0(
@@ -66,36 +90,31 @@ impl crate::System::Xml::Linq::XAttribute {
             .invoke(".ctor", (name, value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_XAttribute1(
-        &mut self,
-        other: *mut crate::System::Xml::Linq::XAttribute,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_IsNamespaceDeclaration(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (other))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsNamespaceDeclaration", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_Value(
+    pub fn get_Name(
         &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Linq::XName> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Value", (value))?;
+        let __cordl_ret: *mut crate::System::Xml::Linq::XName = __cordl_object
+            .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
+    pub fn get_NodeType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
+        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
+            .invoke("get_NodeType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Value(
@@ -108,35 +127,16 @@ impl crate::System::Xml::Linq::XAttribute {
             .invoke("get_Value", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetPrefixOfNamespace(
+    pub fn set_Value(
         &mut self,
-        ns: *mut crate::System::Xml::Linq::XNamespace,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetPrefixOfNamespace", (ns))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Value", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_XName_Object0(
-        name: *mut crate::System::Xml::Linq::XName,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, value))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_XAttribute1(
-        other: *mut crate::System::Xml::Linq::XAttribute,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (other))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Linq+XAttribute")]

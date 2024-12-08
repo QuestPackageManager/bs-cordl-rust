@@ -132,96 +132,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for OVRTriangleMesh {
 }
 #[cfg(feature = "OVRTriangleMesh")]
 impl OVRTriangleMesh {
-    #[cfg(feature = "OVRTriangleMesh+Triangle")]
-    pub type Triangle = crate::GlobalNamespace::OVRTriangleMesh_Triangle;
     #[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
     pub type GetMeshJob = crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob;
-    #[cfg(feature = "OVRTriangleMesh+NegateXJob")]
-    pub type NegateXJob = crate::GlobalNamespace::OVRTriangleMesh_NegateXJob;
     #[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
     pub type FlipTriangleWindingJob = crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob;
-    pub fn ScheduleGetMeshJob(
-        &mut self,
-        positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
-        indices: crate::Unity::Collections::NativeArray_1<i32>,
-        dependencies: crate::Unity::Jobs::JobHandle,
-    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        let __cordl_ret: crate::Unity::Jobs::JobHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ScheduleGetMeshJob",
-            (positions, indices, dependencies),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetCounts(
-        &mut self,
-        vertexCount: quest_hook::libil2cpp::ByRefMut<i32>,
-        triangleCount: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "TryGetCounts",
-            (vertexCount, triangleCount),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-    > {
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Type",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetMeshRawUntransformed(
-        &mut self,
-        positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
-        indices: crate::Unity::Collections::NativeArray_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "TryGetMeshRawUntransformed",
-            (positions, indices),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IOVRAnchorComponent_OVRTriangleMesh__FromAnchor(
-        &mut self,
-        anchor: OVRAnchor,
-    ) -> quest_hook::libil2cpp::Result<OVRTriangleMesh> {
-        let __cordl_ret: OVRTriangleMesh = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IOVRAnchorComponent<OVRTriangleMesh>.FromAnchor",
-            (anchor),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetMesh(
-        &mut self,
-        positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
-        indices: crate::Unity::Collections::NativeArray_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "TryGetMesh",
-            (positions, indices),
-        )?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "OVRTriangleMesh+Triangle")]
+    pub type Triangle = crate::GlobalNamespace::OVRTriangleMesh_Triangle;
+    #[cfg(feature = "OVRTriangleMesh+NegateXJob")]
+    pub type NegateXJob = crate::GlobalNamespace::OVRTriangleMesh_NegateXJob;
     pub fn Equals_OVRTriangleMesh0(
         &mut self,
         other: OVRTriangleMesh,
@@ -252,20 +170,35 @@ impl OVRTriangleMesh {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn IOVRAnchorComponent_OVRTriangleMesh__FromAnchor(
+        &mut self,
+        anchor: OVRAnchor,
+    ) -> quest_hook::libil2cpp::Result<OVRTriangleMesh> {
+        let __cordl_ret: OVRTriangleMesh = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IOVRAnchorComponent<OVRTriangleMesh>.FromAnchor",
+            (anchor),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IOVRAnchorComponent_OVRTriangleMesh__SetEnabledAsync(
+        &mut self,
+        enabled: bool,
+        timeout: f64,
+    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
+        let __cordl_ret: OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IOVRAnchorComponent<OVRTriangleMesh>.SetEnabledAsync",
+            (enabled, timeout),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn IOVRAnchorComponent_OVRTriangleMesh__get_Handle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "IOVRAnchorComponent<OVRTriangleMesh>.get_Handle",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Handle",
             (),
         )?;
         Ok(__cordl_ret)
@@ -282,6 +215,65 @@ impl OVRTriangleMesh {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn ScheduleGetMeshJob(
+        &mut self,
+        positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
+        indices: crate::Unity::Collections::NativeArray_1<i32>,
+        dependencies: crate::Unity::Jobs::JobHandle,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ScheduleGetMeshJob",
+            (positions, indices, dependencies),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetCounts(
+        &mut self,
+        vertexCount: quest_hook::libil2cpp::ByRefMut<i32>,
+        triangleCount: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "TryGetCounts",
+            (vertexCount, triangleCount),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetMesh(
+        &mut self,
+        positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
+        indices: crate::Unity::Collections::NativeArray_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "TryGetMesh",
+            (positions, indices),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetMeshRawUntransformed(
+        &mut self,
+        positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
+        indices: crate::Unity::Collections::NativeArray_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "TryGetMeshRawUntransformed",
+            (positions, indices),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         anchor: OVRAnchor,
@@ -290,6 +282,14 @@ impl OVRTriangleMesh {
             self,
             ".ctor",
             (anchor),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Handle",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -309,15 +309,15 @@ impl OVRTriangleMesh {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn IOVRAnchorComponent_OVRTriangleMesh__SetEnabledAsync(
+    pub fn get_Type(
         &mut self,
-        enabled: bool,
-        timeout: f64,
-    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
-        let __cordl_ret: OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "IOVRAnchorComponent<OVRTriangleMesh>.SetEnabledAsync",
-            (enabled, timeout),
+            "get_Type",
+            (),
         )?;
         Ok(__cordl_ret)
     }

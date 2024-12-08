@@ -80,47 +80,15 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
     )]
     pub type _HandleCancelButtonWasPressed_d__57 = crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController__HandleCancelButtonWasPressed_d__57;
     #[cfg(
+        feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController+__c__DisplayClass60_0"
+    )]
+    pub type __c__DisplayClass60_0 = crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController___c__DisplayClass60_0;
+    #[cfg(
         feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController+__c__DisplayClass62_0_1"
     )]
     pub type __c__DisplayClass62_0_1<T: quest_hook::libil2cpp::Type> = crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController___c__DisplayClass62_0_1<
         T,
     >;
-    #[cfg(
-        feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController+__c__DisplayClass60_0"
-    )]
-    pub type __c__DisplayClass60_0 = crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController___c__DisplayClass60_0;
-    pub fn _OneTimeInitialize_b__45_8(
-        &mut self,
-        color: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<OneTimeInitialize>b__45_8", (color))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleSkinColorDidChanged(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSkinColorDidChanged", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleRandomizeAllButtonWasPressed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleRandomizeAllButtonWasPressed", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateColorValuePairsForAvatarPartCollection(
         &mut self,
         colors: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -140,110 +108,20 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
             .invoke("CreateColorValuePairsForAvatarPartCollection", (colors))?;
         Ok(__cordl_ret)
     }
-    pub fn UpdateButtons(
+    pub fn DidActivate(
         &mut self,
+        firstActivation: bool,
+        addedToHierarchy: bool,
+        screenSystemEnabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateButtons", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _OneTimeInitialize_b__45_7(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("<OneTimeInitialize>b__45_7", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _OneTimeInitialize_b__45_10(
-        &mut self,
-        color: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<OneTimeInitialize>b__45_10", (color))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _OneTimeInitialize_b__45_12(
-        &mut self,
-        s: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<OneTimeInitialize>b__45_12", (s))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_randomizeAllButtonWasPressedEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_randomizeAllButtonWasPressedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_cancelButtonWasPressedEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_cancelButtonWasPressedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SaveColorChange(
-        &mut self,
-        avatarEditPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SaveColorChange", (avatarEditPart))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _OneTimeInitialize_b__45_3(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("<OneTimeInitialize>b__45_3", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _OneTimeInitialize_b__45_2(
-        &mut self,
-        color: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<OneTimeInitialize>b__45_2", (color))?;
+            .invoke(
+                "DidActivate",
+                (firstActivation, addedToHierarchy, screenSystemEnabling),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn EyesValuePickerHasChanged(
@@ -257,24 +135,75 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
             .invoke("EyesValuePickerHasChanged", (eyesId))?;
         Ok(__cordl_ret)
     }
-    pub fn _OneTimeInitialize_b__45_9(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("<OneTimeInitialize>b__45_9", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitHistory(
+    pub fn HandleApplyButtonWasPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitHistory", ())?;
+            .invoke("HandleApplyButtonWasPressed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleCancelButtonWasPressed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleCancelButtonWasPressed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleRandomizeAllButtonWasPressed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleRandomizeAllButtonWasPressed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleRandomizeColorsButtonWasPressed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleRandomizeColorsButtonWasPressed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleRandomizeModelsButtonWasPressed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleRandomizeModelsButtonWasPressed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleRedoButtonWasPressed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleRedoButtonWasPressed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleSkinColorDidChanged(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleSkinColorDidChanged", (value))?;
         Ok(__cordl_ret)
     }
     pub fn HandleUndoButtonWasPressed(
@@ -287,14 +216,73 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
             .invoke("HandleUndoButtonWasPressed", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Update(
+    pub fn InitHistory(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
+            .invoke("InitHistory", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OneTimeInitialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OneTimeInitialize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RefreshUi(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RefreshUi", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReportAllChangedAndUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReportAllChangedAndUpdate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SaveColorChange(
+        &mut self,
+        avatarEditPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SaveColorChange", (avatarEditPart))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Setup(
+        &mut self,
+        showAsCreateView: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Setup", (showAsCreateView))?;
         Ok(__cordl_ret)
     }
     pub fn SetupColorButton(
@@ -313,126 +301,6 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
                 "SetupColorButton",
                 (button, colorSetter, currentColorGetter, avatarEditPart, uvSegment),
             )?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_cancelButtonWasPressedEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_cancelButtonWasPressedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _OneTimeInitialize_b__45_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("<OneTimeInitialize>b__45_1", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleRandomizeModelsButtonWasPressed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleRandomizeModelsButtonWasPressed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RefreshUi(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshUi", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didChangedAvatarPartEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<crate::BeatSaber::BeatAvatarSDK::AvatarPart>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didChangedAvatarPartEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _OneTimeInitialize_b__45_4(
-        &mut self,
-        color: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<OneTimeInitialize>b__45_4", (color))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didRequestColorChangeEvent(
-        &mut self,
-        value: *mut crate::System::Action_4<
-            *mut crate::System::Action_1<crate::UnityEngine::Color>,
-            crate::UnityEngine::Color,
-            crate::BeatSaber::BeatAvatarSDK::AvatarPart,
-            i32,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didRequestColorChangeEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleRedoButtonWasPressed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleRedoButtonWasPressed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReportAllChangedAndUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReportAllChangedAndUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _OneTimeInitialize_b__45_5(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("<OneTimeInitialize>b__45_5", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _OneTimeInitialize_b__45_14(
-        &mut self,
-        s: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<OneTimeInitialize>b__45_14", (s))?;
         Ok(__cordl_ret)
     }
     pub fn SetupValuePicker<T>(
@@ -456,15 +324,24 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
             )?;
         Ok(__cordl_ret)
     }
-    pub fn add_okButtonWasPressedEvent(
+    pub fn Update(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_okButtonWasPressedEvent", (value))?;
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateButtons(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateButtons", ())?;
         Ok(__cordl_ret)
     }
     pub fn _OneTimeInitialize_b__45_0(
@@ -478,62 +355,110 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
             .invoke("<OneTimeInitialize>b__45_0", (color))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleRandomizeColorsButtonWasPressed(
+    pub fn _OneTimeInitialize_b__45_1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleRandomizeColorsButtonWasPressed", ())?;
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("<OneTimeInitialize>b__45_1", ())?;
         Ok(__cordl_ret)
     }
-    pub fn DidActivate(
+    pub fn _OneTimeInitialize_b__45_10(
         &mut self,
-        firstActivation: bool,
-        addedToHierarchy: bool,
-        screenSystemEnabling: bool,
+        color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "DidActivate",
-                (firstActivation, addedToHierarchy, screenSystemEnabling),
-            )?;
+            .invoke("<OneTimeInitialize>b__45_10", (color))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didChangedAvatarPartEvent(
+    pub fn _OneTimeInitialize_b__45_11(
         &mut self,
-        value: *mut crate::System::Action_1<crate::BeatSaber::BeatAvatarSDK::AvatarPart>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didChangedAvatarPartEvent", (value))?;
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("<OneTimeInitialize>b__45_11", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Setup(
+    pub fn _OneTimeInitialize_b__45_12(
         &mut self,
-        showAsCreateView: bool,
+        s: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Setup", (showAsCreateView))?;
+            .invoke("<OneTimeInitialize>b__45_12", (s))?;
         Ok(__cordl_ret)
     }
-    pub fn OneTimeInitialize(
+    pub fn _OneTimeInitialize_b__45_13(
         &mut self,
+        s: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OneTimeInitialize", ())?;
+            .invoke("<OneTimeInitialize>b__45_13", (s))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _OneTimeInitialize_b__45_14(
+        &mut self,
+        s: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<OneTimeInitialize>b__45_14", (s))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _OneTimeInitialize_b__45_2(
+        &mut self,
+        color: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<OneTimeInitialize>b__45_2", (color))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _OneTimeInitialize_b__45_3(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("<OneTimeInitialize>b__45_3", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _OneTimeInitialize_b__45_4(
+        &mut self,
+        color: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<OneTimeInitialize>b__45_4", (color))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _OneTimeInitialize_b__45_5(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("<OneTimeInitialize>b__45_5", ())?;
         Ok(__cordl_ret)
     }
     pub fn _OneTimeInitialize_b__45_6(
@@ -545,6 +470,129 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<OneTimeInitialize>b__45_6", (color))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _OneTimeInitialize_b__45_7(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("<OneTimeInitialize>b__45_7", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _OneTimeInitialize_b__45_8(
+        &mut self,
+        color: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<OneTimeInitialize>b__45_8", (color))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _OneTimeInitialize_b__45_9(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("<OneTimeInitialize>b__45_9", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_cancelButtonWasPressedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_cancelButtonWasPressedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didChangedAvatarPartEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<crate::BeatSaber::BeatAvatarSDK::AvatarPart>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didChangedAvatarPartEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didRequestColorChangeEvent(
+        &mut self,
+        value: *mut crate::System::Action_4<
+            *mut crate::System::Action_1<crate::UnityEngine::Color>,
+            crate::UnityEngine::Color,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+            i32,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didRequestColorChangeEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_okButtonWasPressedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_okButtonWasPressedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_randomizeAllButtonWasPressedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_randomizeAllButtonWasPressedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_cancelButtonWasPressedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_cancelButtonWasPressedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didChangedAvatarPartEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<crate::BeatSaber::BeatAvatarSDK::AvatarPart>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didChangedAvatarPartEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn remove_didRequestColorChangeEvent(
@@ -574,7 +622,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
             .invoke("remove_okButtonWasPressedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn add_randomizeAllButtonWasPressedEvent(
+    pub fn remove_randomizeAllButtonWasPressedEvent(
         &mut self,
         value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -582,56 +630,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_randomizeAllButtonWasPressedEvent", (value))?;
+            .invoke("remove_randomizeAllButtonWasPressedEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn _OneTimeInitialize_b__45_11(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("<OneTimeInitialize>b__45_11", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleApplyButtonWasPressed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleApplyButtonWasPressed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _OneTimeInitialize_b__45_13(
-        &mut self,
-        s: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<OneTimeInitialize>b__45_13", (s))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleCancelButtonWasPressed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleCancelButtonWasPressed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

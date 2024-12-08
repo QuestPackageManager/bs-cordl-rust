@@ -21,28 +21,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Ray2D {
 }
 #[cfg(feature = "UnityEngine+Ray2D")]
 impl crate::UnityEngine::Ray2D {
-    pub fn _ctor(
-        &mut self,
-        origin: crate::UnityEngine::Vector2,
-        direction: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (origin, direction),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_direction(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_direction",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetPoint(
         &mut self,
         distance: f32,
@@ -73,6 +51,28 @@ impl crate::UnityEngine::Ray2D {
             self,
             "ToString",
             (format, formatProvider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        origin: crate::UnityEngine::Vector2,
+        direction: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (origin, direction),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_direction(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_direction",
+            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -27,123 +27,14 @@ impl std::ops::DerefMut for crate::UnityEngine::SpriteRenderer {
 }
 #[cfg(feature = "UnityEngine+SpriteRenderer")]
 impl crate::UnityEngine::SpriteRenderer {
-    pub fn get_flipY(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_flipY", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_drawMode(
+    pub fn GetCurrentMeshData(
         &mut self,
-        value: crate::UnityEngine::SpriteDrawMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Mesh_MeshDataArray> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_drawMode", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_size(
-        &mut self,
-        value: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_size", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_tileMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SpriteTileMode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::SpriteTileMode = __cordl_object
-            .invoke("get_tileMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_color(
-        &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_color", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_spriteSortPoint(
-        &mut self,
-        value: crate::UnityEngine::SpriteSortPoint,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_spriteSortPoint", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_adaptiveModeThreshold(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_adaptiveModeThreshold", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_maskInteraction(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SpriteMaskInteraction> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::SpriteMaskInteraction = __cordl_object
-            .invoke("get_maskInteraction", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_flipX(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_flipX", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_maskInteraction(
-        &mut self,
-        value: crate::UnityEngine::SpriteMaskInteraction,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_maskInteraction", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSpriteBounds(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Bounds = __cordl_object
-            .invoke("GetSpriteBounds", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnregisterSpriteChangeCallback(
-        &mut self,
-        callback: *mut crate::UnityEngine::Events::UnityAction_1<
-            *mut crate::UnityEngine::SpriteRenderer,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterSpriteChangeCallback", (callback))?;
+        let __cordl_ret: crate::UnityEngine::Mesh_MeshDataArray = __cordl_object
+            .invoke("GetCurrentMeshData", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetCurrentMeshDataPtr(
@@ -156,122 +47,25 @@ impl crate::UnityEngine::SpriteRenderer {
             .invoke("GetCurrentMeshDataPtr", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_size(
+    pub fn GetSecondaryTextureProperties(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_size", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterSpriteChangeCallback(
-        &mut self,
-        callback: *mut crate::UnityEngine::Events::UnityAction_1<
-            *mut crate::UnityEngine::SpriteRenderer,
-        >,
+        mbp: *mut crate::UnityEngine::MaterialPropertyBlock,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterSpriteChangeCallback", (callback))?;
+            .invoke("GetSecondaryTextureProperties", (mbp))?;
         Ok(__cordl_ret)
     }
-    pub fn set_color_Injected(
+    pub fn GetSpriteBounds(
         &mut self,
-        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_color_Injected", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_tileMode(
-        &mut self,
-        value: crate::UnityEngine::SpriteTileMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_tileMode", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_color(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_color", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_drawMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SpriteDrawMode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::SpriteDrawMode = __cordl_object
-            .invoke("get_drawMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_flipX(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_flipX", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_color_Injected(
-        &mut self,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("get_color_Injected", (ret))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InvokeSpriteChanged(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InvokeSpriteChanged", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_size_Injected(
-        &mut self,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("get_size_Injected", (ret))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sprite(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
-            .invoke("get_sprite", ())?;
+        let __cordl_ret: crate::UnityEngine::Bounds = __cordl_object
+            .invoke("GetSpriteBounds", ())?;
         Ok(__cordl_ret)
     }
     pub fn Internal_GetSpriteBounds(
@@ -297,37 +91,157 @@ impl crate::UnityEngine::SpriteRenderer {
             .invoke("Internal_GetSpriteBounds_Injected", (mode, ret))?;
         Ok(__cordl_ret)
     }
-    pub fn set_adaptiveModeThreshold(
+    pub fn InvokeSpriteChanged(
         &mut self,
-        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_adaptiveModeThreshold", (value))?;
+            .invoke("InvokeSpriteChanged", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetSecondaryTextureProperties(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn RegisterSpriteChangeCallback(
         &mut self,
-        mbp: *mut crate::UnityEngine::MaterialPropertyBlock,
+        callback: *mut crate::UnityEngine::Events::UnityAction_1<
+            *mut crate::UnityEngine::SpriteRenderer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetSecondaryTextureProperties", (mbp))?;
+            .invoke("RegisterSpriteChangeCallback", (callback))?;
         Ok(__cordl_ret)
     }
-    pub fn set_size_Injected(
+    pub fn UnregisterSpriteChangeCallback(
         &mut self,
-        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        callback: *mut crate::UnityEngine::Events::UnityAction_1<
+            *mut crate::UnityEngine::SpriteRenderer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_size_Injected", (value))?;
+            .invoke("UnregisterSpriteChangeCallback", (callback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_adaptiveModeThreshold(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_adaptiveModeThreshold", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_color(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_color", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_color_Injected(
+        &mut self,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("get_color_Injected", (ret))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_drawMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SpriteDrawMode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::SpriteDrawMode = __cordl_object
+            .invoke("get_drawMode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_flipX(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_flipX", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_flipY(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_flipY", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maskInteraction(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SpriteMaskInteraction> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::SpriteMaskInteraction = __cordl_object
+            .invoke("get_maskInteraction", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_shouldSupportTiling(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_shouldSupportTiling", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_size(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_size", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_size_Injected(
+        &mut self,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("get_size_Injected", (ret))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sprite(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
+            .invoke("get_sprite", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_spriteSortPoint(
@@ -340,14 +254,69 @@ impl crate::UnityEngine::SpriteRenderer {
             .invoke("get_spriteSortPoint", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetCurrentMeshData(
+    pub fn get_tileMode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Mesh_MeshDataArray> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SpriteTileMode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Mesh_MeshDataArray = __cordl_object
-            .invoke("GetCurrentMeshData", ())?;
+        let __cordl_ret: crate::UnityEngine::SpriteTileMode = __cordl_object
+            .invoke("get_tileMode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_adaptiveModeThreshold(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_adaptiveModeThreshold", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_color(
+        &mut self,
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_color", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_color_Injected(
+        &mut self,
+        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_color_Injected", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_drawMode(
+        &mut self,
+        value: crate::UnityEngine::SpriteDrawMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_drawMode", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_flipX(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_flipX", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_flipY(
@@ -361,21 +330,37 @@ impl crate::UnityEngine::SpriteRenderer {
             .invoke("set_flipY", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn set_maskInteraction(
         &mut self,
+        value: crate::UnityEngine::SpriteMaskInteraction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("set_maskInteraction", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_shouldSupportTiling(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn set_size(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_shouldSupportTiling", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_size", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_size_Injected(
+        &mut self,
+        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_size_Injected", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_sprite(
@@ -389,12 +374,27 @@ impl crate::UnityEngine::SpriteRenderer {
             .invoke("set_sprite", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_spriteSortPoint(
+        &mut self,
+        value: crate::UnityEngine::SpriteSortPoint,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_spriteSortPoint", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_tileMode(
+        &mut self,
+        value: crate::UnityEngine::SpriteTileMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_tileMode", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+SpriteRenderer")]

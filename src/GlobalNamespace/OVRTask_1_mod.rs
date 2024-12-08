@@ -25,18 +25,15 @@ for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
 impl<
     TResult: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
-    pub fn _ctor(
-        &mut self,
-        task: OVRTask_1<TResult>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn GetResult(&mut self) -> quest_hook::libil2cpp::Result<TResult>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: TResult = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (task),
+            "GetResult",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -55,15 +52,18 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetResult(&mut self) -> quest_hook::libil2cpp::Result<TResult>
+    pub fn _ctor(
+        &mut self,
+        task: OVRTask_1<TResult>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: TResult = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetResult",
-            (),
+            ".ctor",
+            (task),
         )?;
         Ok(__cordl_ret)
     }
@@ -187,10 +187,9 @@ impl<
             .invoke("BeginInvoke", (guid, result, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn EndInvoke(
         &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
+        result: *mut crate::System::IAsyncResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -200,7 +199,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+            .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -219,9 +218,20 @@ impl<
             .invoke("Invoke", (guid, result))?;
         Ok(__cordl_ret)
     }
-    pub fn EndInvoke(
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
         &mut self,
-        result: *mut crate::System::IAsyncResult,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -231,18 +241,8 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (result))?;
+            .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRTask_1+CallbackInvoker")]
@@ -286,36 +286,6 @@ for crate::GlobalNamespace::OVRTask_1_CallbackRemover<TResult> {
 impl<
     TResult: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::OVRTask_1_CallbackRemover<TResult> {
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         guid: crate::System::Guid,
@@ -331,6 +301,20 @@ impl<
         );
         let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
             .invoke("BeginInvoke", (guid, callback, object))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -350,12 +334,28 @@ impl<
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRTask_1+CallbackRemover")]
@@ -404,6 +404,23 @@ impl<
     TResult: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::OVRTask_1_CallbackWithState_1<TResult, T> {
+    pub fn Invoke(
+        &mut self,
+        result: TResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Invoke",
+            (result),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         data: T,
@@ -419,23 +436,6 @@ impl<
             self,
             ".ctor",
             (data, delegate),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        result: TResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Invoke",
-            (result),
         )?;
         Ok(__cordl_ret)
     }
@@ -527,6 +527,23 @@ for crate::GlobalNamespace::OVRTask_1_InternalDataRemover<TResult> {
 impl<
     TResult: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::OVRTask_1_InternalDataRemover<TResult> {
+    pub fn BeginInvoke(
+        &mut self,
+        guid: crate::System::Guid,
+        callback: *mut crate::System::AsyncCallback,
+        object: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (guid, callback, object))?;
+        Ok(__cordl_ret)
+    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -555,6 +572,16 @@ impl<
         let __cordl_ret: bool = __cordl_object.invoke("Invoke", (guid))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -570,33 +597,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn BeginInvoke(
-        &mut self,
-        guid: crate::System::Guid,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (guid, callback, object))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRTask_1+InternalDataRemover")]
@@ -687,16 +687,24 @@ for OVRTask_1<TResult> {
 }
 #[cfg(feature = "OVRTask_1")]
 impl<TResult: quest_hook::libil2cpp::Type> OVRTask_1<TResult> {
+    #[cfg(feature = "OVRTask_1+Awaiter")]
+    pub type Awaiter = crate::GlobalNamespace::OVRTask_1_Awaiter<TResult>;
     #[cfg(feature = "OVRTask_1+CallbackInvoker")]
     pub type CallbackInvoker = crate::GlobalNamespace::OVRTask_1_CallbackInvoker<
         TResult,
     >;
+    #[cfg(feature = "OVRTask_1+Callback")]
+    pub type Callback = crate::GlobalNamespace::OVRTask_1_Callback<TResult>;
     #[cfg(feature = "OVRTask_1+CallbackRemover")]
     pub type CallbackRemover = crate::GlobalNamespace::OVRTask_1_CallbackRemover<
         TResult,
     >;
-    #[cfg(feature = "OVRTask_1+IncrementalResultSubscriber_1")]
-    pub type IncrementalResultSubscriber_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRTask_1_IncrementalResultSubscriber_1<
+    #[cfg(feature = "OVRTask_1+InternalDataRemover")]
+    pub type InternalDataRemover = crate::GlobalNamespace::OVRTask_1_InternalDataRemover<
+        TResult,
+    >;
+    #[cfg(feature = "OVRTask_1+CallbackWithState_1")]
+    pub type CallbackWithState_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRTask_1_CallbackWithState_1<
         TResult,
         T,
     >;
@@ -705,19 +713,25 @@ impl<TResult: quest_hook::libil2cpp::Type> OVRTask_1<TResult> {
         TResult,
         T,
     >;
-    #[cfg(feature = "OVRTask_1+InternalDataRemover")]
-    pub type InternalDataRemover = crate::GlobalNamespace::OVRTask_1_InternalDataRemover<
-        TResult,
-    >;
-    #[cfg(feature = "OVRTask_1+Callback")]
-    pub type Callback = crate::GlobalNamespace::OVRTask_1_Callback<TResult>;
-    #[cfg(feature = "OVRTask_1+Awaiter")]
-    pub type Awaiter = crate::GlobalNamespace::OVRTask_1_Awaiter<TResult>;
-    #[cfg(feature = "OVRTask_1+CallbackWithState_1")]
-    pub type CallbackWithState_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRTask_1_CallbackWithState_1<
+    #[cfg(feature = "OVRTask_1+IncrementalResultSubscriber_1")]
+    pub type IncrementalResultSubscriber_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRTask_1_IncrementalResultSubscriber_1<
         TResult,
         T,
     >;
+    pub fn AddToPending(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AddToPending",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn ContinueWith_Action_1_0(
         &mut self,
         onCompleted: *mut crate::System::Action_1<TResult>,
@@ -751,6 +765,20 @@ impl<TResult: quest_hook::libil2cpp::Type> OVRTask_1<TResult> {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_OVRTask_1_0(
         &mut self,
         other: OVRTask_1<TResult>,
@@ -781,18 +809,43 @@ impl<TResult: quest_hook::libil2cpp::Type> OVRTask_1<TResult> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetResult(
+    pub fn GetAwaiter(
         &mut self,
-        result: TResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRTask_1_Awaiter<TResult>,
+    >
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetResult",
-            (result),
+            "GetAwaiter",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetResult(&mut self) -> quest_hook::libil2cpp::Result<TResult>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TResult = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetResult",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -813,45 +866,20 @@ impl<TResult: quest_hook::libil2cpp::Type> OVRTask_1<TResult> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
+    pub fn SetIncrementalResultCallback<TIncrementalResult>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+        onIncrementalResultAvailable: *mut crate::System::Action_1<TIncrementalResult>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TIncrementalResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAwaiter(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRTask_1_Awaiter<TResult>,
-    >
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetAwaiter",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetResult(&mut self) -> quest_hook::libil2cpp::Result<TResult>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: TResult = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetResult",
-            (),
+            "SetIncrementalResultCallback",
+            (onIncrementalResultAvailable),
         )?;
         Ok(__cordl_ret)
     }
@@ -872,6 +900,35 @@ impl<TResult: quest_hook::libil2cpp::Type> OVRTask_1<TResult> {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn SetResult(
+        &mut self,
+        result: TResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetResult",
+            (result),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn TryGetInternalData<T>(
         &mut self,
         data: quest_hook::libil2cpp::ByRefMut<T>,
@@ -889,20 +946,49 @@ impl<TResult: quest_hook::libil2cpp::Type> OVRTask_1<TResult> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetIncrementalResultCallback<TIncrementalResult>(
+    pub fn ValidateDelegateAndThrow(
         &mut self,
-        onIncrementalResultAvailable: *mut crate::System::Action_1<TIncrementalResult>,
+        delegate: *mut crate::System::Object,
+        paramName: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TIncrementalResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetIncrementalResultCallback",
-            (onIncrementalResultAvailable),
+            "ValidateDelegateAndThrow",
+            (delegate, paramName),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WithContinuation(
+        &mut self,
+        continuation: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WithContinuation",
+            (continuation),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        id: crate::System::Guid,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (id),
         )?;
         Ok(__cordl_ret)
     }
@@ -926,92 +1012,6 @@ impl<TResult: quest_hook::libil2cpp::Type> OVRTask_1<TResult> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_IsPending",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValidateDelegateAndThrow(
-        &mut self,
-        delegate: *mut crate::System::Object,
-        paramName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ValidateDelegateAndThrow",
-            (delegate, paramName),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        id: crate::System::Guid,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (id),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddToPending(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AddToPending",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WithContinuation(
-        &mut self,
-        continuation: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithContinuation",
-            (continuation),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)

@@ -48,34 +48,39 @@ impl MultiplayerLevelSelectionFlowCoordinator {
             .invoke("ActionButtonWasPressed", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TransitionDidStart(
+    pub fn BackButtonWasPressed(
+        &mut self,
+        topViewController: *mut crate::HMUI::ViewController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BackButtonWasPressed", (topViewController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DismissViewControllersAndFinish(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionDidStart", ())?;
+            .invoke("DismissViewControllersAndFinish", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_showBackButtonForMainViewController(
+    pub fn HandleLobbyGameStateControllerGameStarted(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        levelGameplaySetupData: *mut ILevelGameplaySetupData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_showBackButtonForMainViewController", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_mainTitle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_mainTitle", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleLobbyGameStateControllerGameStarted",
+                (levelGameplaySetupData),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn HandleLobbyGameStateControllerLobbyDisconnected(
@@ -88,25 +93,28 @@ impl MultiplayerLevelSelectionFlowCoordinator {
             .invoke("HandleLobbyGameStateControllerLobbyDisconnected", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn LevelSelectionFlowCoordinatorTopViewControllerWillChange(
         &mut self,
+        oldViewController: *mut crate::HMUI::ViewController,
+        newViewController: *mut crate::HMUI::ViewController,
+        animationType: crate::HMUI::ViewController_AnimationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke(
+                "LevelSelectionFlowCoordinatorTopViewControllerWillChange",
+                (oldViewController, newViewController, animationType),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn get_actionButtonText(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_actionButtonText", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Setup(
         &mut self,
@@ -132,42 +140,34 @@ impl MultiplayerLevelSelectionFlowCoordinator {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_allowedBeatmapDifficultyMask(
+    pub fn TransitionDidFinish(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapDifficultyMask> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: BeatmapDifficultyMask = __cordl_object
-            .invoke("get_allowedBeatmapDifficultyMask", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_hidePracticeButton(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hidePracticeButton", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLobbyGameStateControllerGameStarted(
-        &mut self,
-        levelGameplaySetupData: *mut ILevelGameplaySetupData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleLobbyGameStateControllerGameStarted",
-                (levelGameplaySetupData),
-            )?;
+            .invoke("TransitionDidFinish", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_songPackMask(&mut self) -> quest_hook::libil2cpp::Result<SongPackMask> {
+    pub fn TransitionDidStart(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: SongPackMask = __cordl_object.invoke("get_songPackMask", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("TransitionDidStart", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_didFinishedEvent(
@@ -181,11 +181,37 @@ impl MultiplayerLevelSelectionFlowCoordinator {
             .invoke("add_didFinishedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_hidePacksIfOneOrNone(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn add_didSelectLevelEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hidePacksIfOneOrNone", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didSelectLevelEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_actionButtonText(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_actionButtonText", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_allowedBeatmapDifficultyMask(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<BeatmapDifficultyMask> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: BeatmapDifficultyMask = __cordl_object
+            .invoke("get_allowedBeatmapDifficultyMask", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_enableCustomLevels(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -195,20 +221,58 @@ impl MultiplayerLevelSelectionFlowCoordinator {
         let __cordl_ret: bool = __cordl_object.invoke("get_enableCustomLevels", ())?;
         Ok(__cordl_ret)
     }
-    pub fn LevelSelectionFlowCoordinatorTopViewControllerWillChange(
-        &mut self,
-        oldViewController: *mut crate::HMUI::ViewController,
-        newViewController: *mut crate::HMUI::ViewController,
-        animationType: crate::HMUI::ViewController_AnimationType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_hidePacksIfOneOrNone(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "LevelSelectionFlowCoordinatorTopViewControllerWillChange",
-                (oldViewController, newViewController, animationType),
-            )?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_hidePacksIfOneOrNone", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hidePracticeButton(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_hidePracticeButton", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_mainTitle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_mainTitle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_notAllowedCharacteristics(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapCharacteristicSO>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut BeatmapCharacteristicSO,
+        > = __cordl_object.invoke("get_notAllowedCharacteristics", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_showBackButtonForMainViewController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_showBackButtonForMainViewController", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_songPackMask(&mut self) -> quest_hook::libil2cpp::Result<SongPackMask> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: SongPackMask = __cordl_object.invoke("get_songPackMask", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_didFinishedEvent(
@@ -234,70 +298,6 @@ impl MultiplayerLevelSelectionFlowCoordinator {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didSelectLevelEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn TransitionDidFinish(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionDidFinish", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_notAllowedCharacteristics(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapCharacteristicSO>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut BeatmapCharacteristicSO,
-        > = __cordl_object.invoke("get_notAllowedCharacteristics", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DismissViewControllersAndFinish(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DismissViewControllersAndFinish", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn BackButtonWasPressed(
-        &mut self,
-        topViewController: *mut crate::HMUI::ViewController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BackButtonWasPressed", (topViewController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didSelectLevelEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didSelectLevelEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MultiplayerLevelSelectionFlowCoordinator")]

@@ -22,6 +22,17 @@ for crate::System::Collections::Specialized::BitVector32 {
 }
 #[cfg(feature = "System+Collections+Specialized+BitVector32")]
 impl crate::System::Collections::Specialized::BitVector32 {
+    pub fn Equals(
+        &mut self,
+        o: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (o),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -40,6 +51,14 @@ impl crate::System::Collections::Specialized::BitVector32 {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_Item(&mut self, bit: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (bit),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_Item(
         &mut self,
         bit: i32,
@@ -49,25 +68,6 @@ impl crate::System::Collections::Specialized::BitVector32 {
             self,
             "set_Item",
             (bit, value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item(&mut self, bit: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (bit),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        o: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (o),
         )?;
         Ok(__cordl_ret)
     }

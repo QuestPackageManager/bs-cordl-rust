@@ -43,16 +43,12 @@ impl crate::Org::BouncyCastle::Cms::KekRecipientInfoGenerator {
             .invoke("Generate", (contentEncryptionKey, random))?;
         Ok(__cordl_ret)
     }
-    pub fn set_KekIdentifier(
-        &mut self,
-        value: *mut crate::Org::BouncyCastle::Asn1::Cms::KekIdentifier,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_KekIdentifier", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -62,6 +58,17 @@ impl crate::Org::BouncyCastle::Cms::KekRecipientInfoGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_KekIdentifier(
+        &mut self,
+        value: *mut crate::Org::BouncyCastle::Asn1::Cms::KekIdentifier,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_KekIdentifier", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_KeyEncryptionKey(
@@ -85,13 +92,6 @@ impl crate::Org::BouncyCastle::Cms::KekRecipientInfoGenerator {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_KeyEncryptionKeyOID", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+KekRecipientInfoGenerator")]

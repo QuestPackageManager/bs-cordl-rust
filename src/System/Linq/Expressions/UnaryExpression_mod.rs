@@ -28,16 +28,6 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::UnaryExpression {
 }
 #[cfg(feature = "System+Linq+Expressions+UnaryExpression")]
 impl crate::System::Linq::Expressions::UnaryExpression {
-    pub fn get_Type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_Type", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Accept(
         &mut self,
         visitor: *mut crate::System::Linq::Expressions::ExpressionVisitor,
@@ -51,7 +41,32 @@ impl crate::System::Linq::Expressions::UnaryExpression {
             .invoke("Accept", (visitor))?;
         Ok(__cordl_ret)
     }
-    pub fn ReduceMember(
+    pub fn FunctionalOp(
+        &mut self,
+        operand: *mut crate::System::Linq::Expressions::Expression,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::UnaryExpression,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Linq::Expressions::UnaryExpression = __cordl_object
+            .invoke("FunctionalOp", (operand))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        nodeType: crate::System::Linq::Expressions::ExpressionType,
+        expression: *mut crate::System::Linq::Expressions::Expression,
+        _cordl_type: *mut crate::System::Type,
+        method: *mut crate::System::Reflection::MethodInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (nodeType, expression, _cordl_type, method))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reduce(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Linq::Expressions::Expression,
@@ -60,7 +75,7 @@ impl crate::System::Linq::Expressions::UnaryExpression {
             self,
         );
         let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("ReduceMember", ())?;
+            .invoke("Reduce", ())?;
         Ok(__cordl_ret)
     }
     pub fn ReduceIndex(
@@ -75,16 +90,41 @@ impl crate::System::Linq::Expressions::UnaryExpression {
             .invoke("ReduceIndex", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_NodeType(
+    pub fn ReduceMember(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::System::Linq::Expressions::ExpressionType,
+        *mut crate::System::Linq::Expressions::Expression,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Linq::Expressions::ExpressionType = __cordl_object
-            .invoke("get_NodeType", ())?;
+        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
+            .invoke("ReduceMember", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReduceVariable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::Expression,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
+            .invoke("ReduceVariable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Update(
+        &mut self,
+        operand: *mut crate::System::Linq::Expressions::Expression,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::UnaryExpression,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Linq::Expressions::UnaryExpression = __cordl_object
+            .invoke("Update", (operand))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -108,6 +148,27 @@ impl crate::System::Linq::Expressions::UnaryExpression {
         let __cordl_ret: bool = __cordl_object.invoke("get_CanReduce", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_IsLifted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsLifted", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsLiftedToNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsLiftedToNull", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsPrefix(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsPrefix", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Method(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
@@ -118,75 +179,16 @@ impl crate::System::Linq::Expressions::UnaryExpression {
             .invoke("get_Method", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Update(
+    pub fn get_NodeType(
         &mut self,
-        operand: *mut crate::System::Linq::Expressions::Expression,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::UnaryExpression,
+        crate::System::Linq::Expressions::ExpressionType,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::UnaryExpression = __cordl_object
-            .invoke("Update", (operand))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsLiftedToNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsLiftedToNull", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FunctionalOp(
-        &mut self,
-        operand: *mut crate::System::Linq::Expressions::Expression,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::UnaryExpression,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::UnaryExpression = __cordl_object
-            .invoke("FunctionalOp", (operand))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReduceVariable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("ReduceVariable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsPrefix(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsPrefix", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsLifted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsLifted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reduce(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("Reduce", ())?;
+        let __cordl_ret: crate::System::Linq::Expressions::ExpressionType = __cordl_object
+            .invoke("get_NodeType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Operand(
@@ -201,17 +203,15 @@ impl crate::System::Linq::Expressions::UnaryExpression {
             .invoke("get_Operand", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        nodeType: crate::System::Linq::Expressions::ExpressionType,
-        expression: *mut crate::System::Linq::Expressions::Expression,
-        _cordl_type: *mut crate::System::Type,
-        method: *mut crate::System::Reflection::MethodInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (nodeType, expression, _cordl_type, method))?;
-        Ok(__cordl_object)
+    pub fn get_Type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_Type", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+UnaryExpression")]

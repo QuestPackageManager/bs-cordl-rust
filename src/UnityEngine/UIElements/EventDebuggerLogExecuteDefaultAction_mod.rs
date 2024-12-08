@@ -21,6 +21,16 @@ for crate::UnityEngine::UIElements::EventDebuggerLogExecuteDefaultAction {
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDebuggerLogExecuteDefaultAction")]
 impl crate::UnityEngine::UIElements::EventDebuggerLogExecuteDefaultAction {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::EventBase,
@@ -29,16 +39,6 @@ impl crate::UnityEngine::UIElements::EventDebuggerLogExecuteDefaultAction {
             self,
             ".ctor",
             (evt),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
         )?;
         Ok(__cordl_ret)
     }

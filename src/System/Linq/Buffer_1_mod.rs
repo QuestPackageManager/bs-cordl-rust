@@ -24,6 +24,20 @@ for crate::System::Linq::Buffer_1<TElement> {
 }
 #[cfg(feature = "System+Linq+Buffer_1")]
 impl<TElement: quest_hook::libil2cpp::Type> crate::System::Linq::Buffer_1<TElement> {
+    pub fn ToArray(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<TElement>>
+    where
+        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<TElement> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToArray",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         source: *mut crate::System::Collections::Generic::IEnumerable_1<TElement>,
@@ -36,20 +50,6 @@ impl<TElement: quest_hook::libil2cpp::Type> crate::System::Linq::Buffer_1<TEleme
             self,
             ".ctor",
             (source),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToArray(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<TElement>>
-    where
-        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<TElement> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToArray",
-            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -29,15 +29,33 @@ impl std::ops::DerefMut for EditableModifiersSelectionView {
 }
 #[cfg(feature = "EditableModifiersSelectionView")]
 impl EditableModifiersSelectionView {
-    pub fn set_showClearButton(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetGameplayModifiers(
         &mut self,
-        value: bool,
+        gameplayModifiers: *mut GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_showClearButton", (value))?;
+            .invoke("SetGameplayModifiers", (gameplayModifiers))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetVisibility(
+        &mut self,
+        visible: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetVisibility", (visible))?;
         Ok(__cordl_ret)
     }
     pub fn Setup(
@@ -71,6 +89,30 @@ impl EditableModifiersSelectionView {
             .invoke("get_clearButton", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_editButton(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Button> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UI::Button = __cordl_object
+            .invoke("get_editButton", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_interactable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_interactable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_showClearButton(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_showClearButton", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_interactable(
         &mut self,
         value: bool,
@@ -82,58 +124,16 @@ impl EditableModifiersSelectionView {
             .invoke("set_interactable", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_showClearButton(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_showClearButton", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_editButton(
+    pub fn set_showClearButton(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Button> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UI::Button = __cordl_object
-            .invoke("get_editButton", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetVisibility(
-        &mut self,
-        visible: bool,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetVisibility", (visible))?;
+            .invoke("set_showClearButton", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_interactable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_interactable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetGameplayModifiers(
-        &mut self,
-        gameplayModifiers: *mut GameplayModifiers,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetGameplayModifiers", (gameplayModifiers))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "EditableModifiersSelectionView")]

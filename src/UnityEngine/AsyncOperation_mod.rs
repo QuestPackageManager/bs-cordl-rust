@@ -28,6 +28,16 @@ impl std::ops::DerefMut for crate::UnityEngine::AsyncOperation {
 }
 #[cfg(feature = "UnityEngine+AsyncOperation")]
 impl crate::UnityEngine::AsyncOperation {
+    pub fn Finalize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Finalize", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn InvokeCompletionEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -38,16 +48,12 @@ impl crate::UnityEngine::AsyncOperation {
             .invoke("InvokeCompletionEvent", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_allowSceneActivation(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_allowSceneActivation", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -57,6 +63,24 @@ impl crate::UnityEngine::AsyncOperation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_completed(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::UnityEngine::AsyncOperation>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_completed", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_allowSceneActivation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_allowSceneActivation", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_isDone(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -73,24 +97,6 @@ impl crate::UnityEngine::AsyncOperation {
         let __cordl_ret: f32 = __cordl_object.invoke("get_progress", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_allowSceneActivation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_allowSceneActivation", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_completed(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut crate::UnityEngine::AsyncOperation>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_completed", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn remove_completed(
         &mut self,
         value: *mut crate::System::Action_1<*mut crate::UnityEngine::AsyncOperation>,
@@ -102,14 +108,15 @@ impl crate::UnityEngine::AsyncOperation {
             .invoke("remove_completed", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Finalize(
+    pub fn set_allowSceneActivation(
         &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
+            .invoke("set_allowSceneActivation", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_priority(
@@ -122,13 +129,6 @@ impl crate::UnityEngine::AsyncOperation {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_priority", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+AsyncOperation")]

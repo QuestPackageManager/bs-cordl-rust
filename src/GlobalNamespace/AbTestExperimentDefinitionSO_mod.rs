@@ -32,41 +32,28 @@ impl std::ops::DerefMut for AbTestExperimentDefinitionSO {
 impl AbTestExperimentDefinitionSO {
     #[cfg(feature = "AbTestExperimentDefinitionSO+Group")]
     pub type Group = crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group;
-    pub fn _ctor(
+    pub fn AbSplit(
         &mut self,
+        userId: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group = __cordl_object
+            .invoke("AbSplit", (userId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ComputeCurrentUserTreatment(
+        &mut self,
+        userId: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnValidate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnValidate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_test1GroupSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_test1GroupSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_experimentName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_experimentName", ())?;
+            .invoke("ComputeCurrentUserTreatment", (userId))?;
         Ok(__cordl_ret)
     }
     pub fn ForceSetTreatmentGroup(
@@ -78,6 +65,33 @@ impl AbTestExperimentDefinitionSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ForceSetTreatmentGroup", (group))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnValidate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnValidate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_currentUserTreatmentGroup(
@@ -92,15 +106,21 @@ impl AbTestExperimentDefinitionSO {
             .invoke("get_currentUserTreatmentGroup", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ComputeCurrentUserTreatment(
+    pub fn get_experimentName(
         &mut self,
-        userId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ComputeCurrentUserTreatment", (userId))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_experimentName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_test1GroupSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_test1GroupSize", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_test2GroupSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -109,26 +129,6 @@ impl AbTestExperimentDefinitionSO {
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_test2GroupSize", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn AbSplit(
-        &mut self,
-        userId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group = __cordl_object
-            .invoke("AbSplit", (userId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "AbTestExperimentDefinitionSO")]

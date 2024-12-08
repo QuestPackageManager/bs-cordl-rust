@@ -37,6 +37,11 @@ impl crate::System::Runtime::Remoting::Channels::IChannelReceiver {
             .invoke("StartListening", (data))?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_ChannelData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
@@ -46,11 +51,6 @@ impl crate::System::Runtime::Remoting::Channels::IChannelReceiver {
         let __cordl_ret: *mut crate::System::Object = __cordl_object
             .invoke("get_ChannelData", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+IChannelReceiver")]

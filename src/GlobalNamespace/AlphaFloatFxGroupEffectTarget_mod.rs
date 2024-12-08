@@ -41,19 +41,6 @@ impl AlphaFloatFxGroupEffectTarget {
             .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TriggerValue(
-        &mut self,
-        groupId: i32,
-        elementId: i32,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TriggerValue", (groupId, elementId, value))?;
-        Ok(__cordl_ret)
-    }
     pub fn InitIfNeeded(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -62,6 +49,24 @@ impl AlphaFloatFxGroupEffectTarget {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitIfNeeded", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetColor(
+        &mut self,
+        color: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetColor", (color))?;
         Ok(__cordl_ret)
     }
     pub fn SetValue(
@@ -77,15 +82,17 @@ impl AlphaFloatFxGroupEffectTarget {
             .invoke("SetValue", (groupId, elementId, value))?;
         Ok(__cordl_ret)
     }
-    pub fn SetColor(
+    pub fn TriggerValue(
         &mut self,
-        color: crate::UnityEngine::Color,
+        groupId: i32,
+        elementId: i32,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColor", (color))?;
+            .invoke("TriggerValue", (groupId, elementId, value))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -97,13 +104,6 @@ impl AlphaFloatFxGroupEffectTarget {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "AlphaFloatFxGroupEffectTarget")]

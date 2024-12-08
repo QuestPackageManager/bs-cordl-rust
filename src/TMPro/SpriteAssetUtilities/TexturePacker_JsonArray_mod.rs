@@ -93,6 +93,13 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject
 }
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject")]
 impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -102,13 +109,6 @@ impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObjec
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject")]
@@ -224,18 +224,25 @@ impl std::ops::DerefMut for crate::TMPro::SpriteAssetUtilities::TexturePacker_Js
 }
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray")]
 impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray {
-    #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
-    pub type Frame = crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame;
     #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
     pub type Meta = crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta;
-    #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame")]
-    pub type SpriteFrame = crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame;
     #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize")]
     pub type SpriteSize = crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize;
+    #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame")]
+    pub type SpriteFrame = crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame;
     #[cfg(
         feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject"
     )]
     pub type SpriteDataObject = crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject;
+    #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
+    pub type Frame = crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -245,13 +252,6 @@ impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray")]

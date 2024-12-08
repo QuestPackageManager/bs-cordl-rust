@@ -72,64 +72,16 @@ impl std::ops::DerefMut for crate::Zenject::DisposableManager {
 impl crate::Zenject::DisposableManager {
     #[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
     pub type DisposableInfo = crate::Zenject::DisposableManager_DisposableInfo;
-    #[cfg(feature = "Zenject+DisposableManager+__c__DisplayClass4_1")]
-    pub type __c__DisplayClass4_1 = crate::Zenject::DisposableManager___c__DisplayClass4_1;
-    #[cfg(feature = "Zenject+DisposableManager+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::Zenject::DisposableManager___c__DisplayClass4_0;
     #[cfg(feature = "Zenject+DisposableManager+LateDisposableInfo")]
     pub type LateDisposableInfo = crate::Zenject::DisposableManager_LateDisposableInfo;
     #[cfg(feature = "Zenject+DisposableManager+__c")]
     pub type __c = crate::Zenject::DisposableManager___c;
+    #[cfg(feature = "Zenject+DisposableManager+__c__DisplayClass4_0")]
+    pub type __c__DisplayClass4_0 = crate::Zenject::DisposableManager___c__DisplayClass4_0;
+    #[cfg(feature = "Zenject+DisposableManager+__c__DisplayClass4_1")]
+    pub type __c__DisplayClass4_1 = crate::Zenject::DisposableManager___c__DisplayClass4_1;
     #[cfg(feature = "Zenject+DisposableManager+__c__DisplayClass9_0")]
     pub type __c__DisplayClass9_0 = crate::Zenject::DisposableManager___c__DisplayClass9_0;
-    pub fn _ctor(
-        &mut self,
-        disposables: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::IDisposable,
-        >,
-        priorities: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
-        >,
-        lateDisposables: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::ILateDisposable,
-        >,
-        latePriorities: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (disposables, priorities, lateDisposables, latePriorities),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Add_IDisposable0(
-        &mut self,
-        disposable: *mut crate::System::IDisposable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (disposable))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Add_i32_1(
-        &mut self,
-        disposable: *mut crate::System::IDisposable,
-        priority: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (disposable, priority))?;
-        Ok(__cordl_ret)
-    }
     pub fn AddLate_ILateDisposable0(
         &mut self,
         disposable: *mut crate::Zenject::ILateDisposable,
@@ -153,7 +105,7 @@ impl crate::Zenject::DisposableManager {
             .invoke("AddLate", (disposable, priority))?;
         Ok(__cordl_ret)
     }
-    pub fn Remove(
+    pub fn Add_IDisposable0(
         &mut self,
         disposable: *mut crate::System::IDisposable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -161,7 +113,19 @@ impl crate::Zenject::DisposableManager {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Remove", (disposable))?;
+            .invoke("Add", (disposable))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Add_i32_1(
+        &mut self,
+        disposable: *mut crate::System::IDisposable,
+        priority: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Add", (disposable, priority))?;
         Ok(__cordl_ret)
     }
     pub fn Dispose(
@@ -197,7 +161,7 @@ impl crate::Zenject::DisposableManager {
         latePriorities: *mut crate::System::Collections::Generic::List_1<
             *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
         >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -206,6 +170,42 @@ impl crate::Zenject::DisposableManager {
                 (disposables, priorities, lateDisposables, latePriorities),
             )?;
         Ok(__cordl_object)
+    }
+    pub fn Remove(
+        &mut self,
+        disposable: *mut crate::System::IDisposable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Remove", (disposable))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        disposables: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::System::IDisposable,
+        >,
+        priorities: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
+        >,
+        lateDisposables: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::ILateDisposable,
+        >,
+        latePriorities: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (disposables, priorities, lateDisposables, latePriorities),
+            )?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+DisposableManager")]
@@ -245,6 +245,16 @@ impl std::ops::DerefMut for crate::Zenject::DisposableManager_LateDisposableInfo
 }
 #[cfg(feature = "Zenject+DisposableManager+LateDisposableInfo")]
 impl crate::Zenject::DisposableManager_LateDisposableInfo {
+    pub fn New(
+        lateDisposable: *mut crate::Zenject::ILateDisposable,
+        priority: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (lateDisposable, priority))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         lateDisposable: *mut crate::Zenject::ILateDisposable,
@@ -256,16 +266,6 @@ impl crate::Zenject::DisposableManager_LateDisposableInfo {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (lateDisposable, priority))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        lateDisposable: *mut crate::Zenject::ILateDisposable,
-        priority: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (lateDisposable, priority))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+DisposableManager+LateDisposableInfo")]

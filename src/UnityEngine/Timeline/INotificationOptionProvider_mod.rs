@@ -25,6 +25,11 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::INotificationOptionPro
 }
 #[cfg(feature = "UnityEngine+Timeline+INotificationOptionProvider")]
 impl crate::UnityEngine::Timeline::INotificationOptionProvider {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_flags(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::NotificationFlags> {
@@ -34,11 +39,6 @@ impl crate::UnityEngine::Timeline::INotificationOptionProvider {
         let __cordl_ret: crate::UnityEngine::Timeline::NotificationFlags = __cordl_object
             .invoke("get_flags", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+INotificationOptionProvider")]

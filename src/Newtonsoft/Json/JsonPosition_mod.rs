@@ -25,6 +25,14 @@ for crate::Newtonsoft::Json::JsonPosition {
 }
 #[cfg(feature = "Newtonsoft+Json+JsonPosition")]
 impl crate::Newtonsoft::Json::JsonPosition {
+    pub fn CalculateLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CalculateLength",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn WriteTo(
         &mut self,
         sb: *mut crate::System::Text::StringBuilder,
@@ -48,14 +56,6 @@ impl crate::Newtonsoft::Json::JsonPosition {
             self,
             ".ctor",
             (_cordl_type),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CalculateLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CalculateLength",
-            (),
         )?;
         Ok(__cordl_ret)
     }

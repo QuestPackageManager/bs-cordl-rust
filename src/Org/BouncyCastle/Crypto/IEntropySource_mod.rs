@@ -24,20 +24,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IEntropySource {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IEntropySource")]
 impl crate::Org::BouncyCastle::Crypto::IEntropySource {
-    pub fn get_EntropySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_EntropySize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsPredictionResistant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsPredictionResistant", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetEntropy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
@@ -52,6 +38,20 @@ impl crate::Org::BouncyCastle::Crypto::IEntropySource {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_EntropySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_EntropySize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsPredictionResistant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsPredictionResistant", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IEntropySource")]

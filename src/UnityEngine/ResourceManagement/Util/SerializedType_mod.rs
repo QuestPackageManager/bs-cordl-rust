@@ -26,33 +26,13 @@ for crate::UnityEngine::ResourceManagement::Util::SerializedType {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+SerializedType")]
 impl crate::UnityEngine::ResourceManagement::Util::SerializedType {
-    pub fn set_Value(
+    pub fn ToString(
         &mut self,
-        value: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_Value",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ValueChanged(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_ValueChanged",
+            "ToString",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ValueChanged(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_ValueChanged",
-            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -62,6 +42,16 @@ impl crate::UnityEngine::ResourceManagement::Util::SerializedType {
         let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_AssemblyName",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ClassName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_ClassName",
             (),
         )?;
         Ok(__cordl_ret)
@@ -76,23 +66,33 @@ impl crate::UnityEngine::ResourceManagement::Util::SerializedType {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_ValueChanged(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
+            "get_ValueChanged",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_ClassName(
+    pub fn set_Value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_ClassName",
-            (),
+            "set_Value",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ValueChanged(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_ValueChanged",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

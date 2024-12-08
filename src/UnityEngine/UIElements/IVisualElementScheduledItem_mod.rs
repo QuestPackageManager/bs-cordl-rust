@@ -25,6 +25,40 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IVisualElementSchedu
 }
 #[cfg(feature = "UnityEngine+UIElements+IVisualElementScheduledItem")]
 impl crate::UnityEngine::UIElements::IVisualElementScheduledItem {
+    pub fn Every(
+        &mut self,
+        intervalMs: i64,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem = __cordl_object
+            .invoke("Every", (intervalMs))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExecuteLater(
+        &mut self,
+        delayMs: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExecuteLater", (delayMs))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Pause(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Pause", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Resume(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -46,40 +80,6 @@ impl crate::UnityEngine::UIElements::IVisualElementScheduledItem {
         );
         let __cordl_ret: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem = __cordl_object
             .invoke("StartingIn", (delayMs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Every(
-        &mut self,
-        intervalMs: i64,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem = __cordl_object
-            .invoke("Every", (intervalMs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Pause(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Pause", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExecuteLater(
-        &mut self,
-        delayMs: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExecuteLater", (delayMs))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

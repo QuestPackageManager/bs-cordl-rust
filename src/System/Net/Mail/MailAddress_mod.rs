@@ -38,6 +38,44 @@ impl crate::System::Net::Mail::MailAddress {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_String1(
+        address: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (address))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_Encoding2(
+        address: *mut crate::System::String,
+        displayName: *mut crate::System::String,
+        displayNameEncoding: *mut crate::System::Text::Encoding,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (address, displayName, displayNameEncoding))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_String0(
+        displayName: *mut crate::System::String,
+        userName: *mut crate::System::String,
+        domain: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (displayName, userName, domain))?;
+        Ok(__cordl_object)
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -46,26 +84,6 @@ impl crate::System::Net::Mail::MailAddress {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("ToString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_String0(
-        &mut self,
-        displayName: *mut crate::System::String,
-        userName: *mut crate::System::String,
-        domain: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (displayName, userName, domain))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_String1(
@@ -92,14 +110,17 @@ impl crate::System::Net::Mail::MailAddress {
             .invoke(".ctor", (address, displayName, displayNameEncoding))?;
         Ok(__cordl_ret)
     }
-    pub fn get_DisplayName(
+    pub fn _ctor_String_String0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        displayName: *mut crate::System::String,
+        userName: *mut crate::System::String,
+        domain: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_DisplayName", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (displayName, userName, domain))?;
         Ok(__cordl_ret)
     }
     pub fn get_Address(
@@ -112,6 +133,16 @@ impl crate::System::Net::Mail::MailAddress {
             .invoke("get_Address", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_DisplayName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_DisplayName", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_SmtpAddress(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -121,37 +152,6 @@ impl crate::System::Net::Mail::MailAddress {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_SmtpAddress", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_String_String0(
-        displayName: *mut crate::System::String,
-        userName: *mut crate::System::String,
-        domain: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (displayName, userName, domain))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        address: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (address))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_Encoding2(
-        address: *mut crate::System::String,
-        displayName: *mut crate::System::String,
-        displayNameEncoding: *mut crate::System::Text::Encoding,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (address, displayName, displayNameEncoding))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+Mail+MailAddress")]

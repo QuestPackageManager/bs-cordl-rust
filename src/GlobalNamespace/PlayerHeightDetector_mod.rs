@@ -26,6 +26,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerHeightDetector_InitDat
 }
 #[cfg(feature = "PlayerHeightDetector+InitData")]
 impl crate::GlobalNamespace::PlayerHeightDetector_InitData {
+    pub fn New(
+        headPosToPlayerHeightOffset: f32,
+        startPlayerHeight: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (headPosToPlayerHeightOffset, startPlayerHeight))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         headPosToPlayerHeightOffset: f32,
@@ -37,16 +47,6 @@ impl crate::GlobalNamespace::PlayerHeightDetector_InitData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (headPosToPlayerHeightOffset, startPlayerHeight))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        headPosToPlayerHeightOffset: f32,
-        startPlayerHeight: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (headPosToPlayerHeightOffset, startPlayerHeight))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PlayerHeightDetector+InitData")]
@@ -96,6 +96,34 @@ impl std::ops::DerefMut for PlayerHeightDetector {
 impl PlayerHeightDetector {
     #[cfg(feature = "PlayerHeightDetector+InitData")]
     pub type InitData = crate::GlobalNamespace::PlayerHeightDetector_InitData;
+    pub fn BeatmapObjectSpawnCallback(
+        &mut self,
+        obstacleData: *mut ObstacleData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BeatmapObjectSpawnCallback", (obstacleData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LateUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LateUpdate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -104,23 +132,6 @@ impl PlayerHeightDetector {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_playerHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_playerHeight", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn Start(
@@ -133,15 +144,14 @@ impl PlayerHeightDetector {
             .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn BeatmapObjectSpawnCallback(
+    pub fn _ctor(
         &mut self,
-        obstacleData: *mut ObstacleData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BeatmapObjectSpawnCallback", (obstacleData))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_playerHeightDidChangeEvent(
@@ -155,6 +165,13 @@ impl PlayerHeightDetector {
             .invoke("add_playerHeightDidChangeEvent", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn get_playerHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_playerHeight", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn remove_playerHeightDidChangeEvent(
         &mut self,
         value: *mut crate::System::Action_1<f32>,
@@ -165,23 +182,6 @@ impl PlayerHeightDetector {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_playerHeightDidChangeEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn LateUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LateUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PlayerHeightDetector")]

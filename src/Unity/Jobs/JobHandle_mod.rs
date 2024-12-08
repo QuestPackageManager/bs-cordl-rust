@@ -32,14 +32,6 @@ impl crate::Unity::Jobs::JobHandle {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsCompleted",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals(
         &mut self,
         other: crate::Unity::Jobs::JobHandle,
@@ -48,6 +40,14 @@ impl crate::Unity::Jobs::JobHandle {
             self,
             "Equals",
             (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsCompleted",
+            (),
         )?;
         Ok(__cordl_ret)
     }

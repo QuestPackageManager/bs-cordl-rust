@@ -34,20 +34,352 @@ impl std::ops::DerefMut for crate::LiteNetLib::EventBasedNetListener {
 impl crate::LiteNetLib::EventBasedNetListener {
     #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnDeliveryEvent")]
     pub type OnDeliveryEvent = crate::LiteNetLib::EventBasedNetListener_OnDeliveryEvent;
-    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkError")]
-    pub type OnNetworkError = crate::LiteNetLib::EventBasedNetListener_OnNetworkError;
     #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerDisconnected")]
     pub type OnPeerDisconnected = crate::LiteNetLib::EventBasedNetListener_OnPeerDisconnected;
+    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceive")]
+    pub type OnNetworkReceive = crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive;
+    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerConnected")]
+    pub type OnPeerConnected = crate::LiteNetLib::EventBasedNetListener_OnPeerConnected;
     #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnConnectionRequest")]
     pub type OnConnectionRequest = crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest;
     #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceiveUnconnected")]
     pub type OnNetworkReceiveUnconnected = crate::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected;
     #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkLatencyUpdate")]
     pub type OnNetworkLatencyUpdate = crate::LiteNetLib::EventBasedNetListener_OnNetworkLatencyUpdate;
-    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerConnected")]
-    pub type OnPeerConnected = crate::LiteNetLib::EventBasedNetListener_OnPeerConnected;
-    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceive")]
-    pub type OnNetworkReceive = crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive;
+    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkError")]
+    pub type OnNetworkError = crate::LiteNetLib::EventBasedNetListener_OnNetworkError;
+    pub fn ClearConnectionRequestEvent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearConnectionRequestEvent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearDeliveryEvent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearDeliveryEvent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearNetworkErrorEvent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearNetworkErrorEvent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearNetworkLatencyUpdateEvent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearNetworkLatencyUpdateEvent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearNetworkReceiveEvent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearNetworkReceiveEvent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearNetworkReceiveUnconnectedEvent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearNetworkReceiveUnconnectedEvent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearPeerConnectedEvent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearPeerConnectedEvent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearPeerDisconnectedEvent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearPeerDisconnectedEvent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LiteNetLib_IDeliveryEventListener_OnMessageDelivered(
+        &mut self,
+        peer: *mut crate::LiteNetLib::NetPeer,
+        userData: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "LiteNetLib.IDeliveryEventListener.OnMessageDelivered",
+                (peer, userData),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn LiteNetLib_INetEventListener_OnConnectionRequest(
+        &mut self,
+        request: *mut crate::LiteNetLib::ConnectionRequest,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LiteNetLib.INetEventListener.OnConnectionRequest", (request))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LiteNetLib_INetEventListener_OnNetworkError(
+        &mut self,
+        endPoint: *mut crate::System::Net::IPEndPoint,
+        socketErrorCode: crate::System::Net::Sockets::SocketError,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "LiteNetLib.INetEventListener.OnNetworkError",
+                (endPoint, socketErrorCode),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn LiteNetLib_INetEventListener_OnNetworkLatencyUpdate(
+        &mut self,
+        peer: *mut crate::LiteNetLib::NetPeer,
+        latency: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "LiteNetLib.INetEventListener.OnNetworkLatencyUpdate",
+                (peer, latency),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn LiteNetLib_INetEventListener_OnNetworkReceive(
+        &mut self,
+        peer: *mut crate::LiteNetLib::NetPeer,
+        reader: *mut crate::LiteNetLib::NetPacketReader,
+        deliveryMethod: crate::LiteNetLib::DeliveryMethod,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "LiteNetLib.INetEventListener.OnNetworkReceive",
+                (peer, reader, deliveryMethod),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn LiteNetLib_INetEventListener_OnNetworkReceiveUnconnected(
+        &mut self,
+        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
+        reader: *mut crate::LiteNetLib::NetPacketReader,
+        messageType: crate::LiteNetLib::UnconnectedMessageType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "LiteNetLib.INetEventListener.OnNetworkReceiveUnconnected",
+                (remoteEndPoint, reader, messageType),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn LiteNetLib_INetEventListener_OnPeerConnected(
+        &mut self,
+        peer: *mut crate::LiteNetLib::NetPeer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LiteNetLib.INetEventListener.OnPeerConnected", (peer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LiteNetLib_INetEventListener_OnPeerDisconnected(
+        &mut self,
+        peer: *mut crate::LiteNetLib::NetPeer,
+        disconnectInfo: crate::LiteNetLib::DisconnectInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "LiteNetLib.INetEventListener.OnPeerDisconnected",
+                (peer, disconnectInfo),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_ConnectionRequestEvent(
+        &mut self,
+        value: *mut crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_ConnectionRequestEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_DeliveryEvent(
+        &mut self,
+        value: *mut crate::LiteNetLib::EventBasedNetListener_OnDeliveryEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_DeliveryEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_NetworkErrorEvent(
+        &mut self,
+        value: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkError,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_NetworkErrorEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_NetworkLatencyUpdateEvent(
+        &mut self,
+        value: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkLatencyUpdate,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_NetworkLatencyUpdateEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_NetworkReceiveEvent(
+        &mut self,
+        value: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_NetworkReceiveEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_NetworkReceiveUnconnectedEvent(
+        &mut self,
+        value: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_NetworkReceiveUnconnectedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_PeerConnectedEvent(
+        &mut self,
+        value: *mut crate::LiteNetLib::EventBasedNetListener_OnPeerConnected,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_PeerConnectedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_PeerDisconnectedEvent(
+        &mut self,
+        value: *mut crate::LiteNetLib::EventBasedNetListener_OnPeerDisconnected,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_PeerDisconnectedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_ConnectionRequestEvent(
+        &mut self,
+        value: *mut crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_ConnectionRequestEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_DeliveryEvent(
+        &mut self,
+        value: *mut crate::LiteNetLib::EventBasedNetListener_OnDeliveryEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_DeliveryEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_NetworkErrorEvent(
+        &mut self,
+        value: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkError,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_NetworkErrorEvent", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn remove_NetworkLatencyUpdateEvent(
         &mut self,
         value: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkLatencyUpdate,
@@ -59,14 +391,15 @@ impl crate::LiteNetLib::EventBasedNetListener {
             .invoke("remove_NetworkLatencyUpdateEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ClearPeerConnectedEvent(
+    pub fn remove_NetworkReceiveEvent(
         &mut self,
+        value: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearPeerConnectedEvent", ())?;
+            .invoke("remove_NetworkReceiveEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn remove_NetworkReceiveUnconnectedEvent(
@@ -91,173 +424,6 @@ impl crate::LiteNetLib::EventBasedNetListener {
             .invoke("remove_PeerConnectedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_NetworkErrorEvent(
-        &mut self,
-        value: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkError,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_NetworkErrorEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LiteNetLib_INetEventListener_OnPeerConnected(
-        &mut self,
-        peer: *mut crate::LiteNetLib::NetPeer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LiteNetLib.INetEventListener.OnPeerConnected", (peer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LiteNetLib_INetEventListener_OnConnectionRequest(
-        &mut self,
-        request: *mut crate::LiteNetLib::ConnectionRequest,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LiteNetLib.INetEventListener.OnConnectionRequest", (request))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearConnectionRequestEvent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearConnectionRequestEvent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearNetworkReceiveUnconnectedEvent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearNetworkReceiveUnconnectedEvent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_NetworkReceiveEvent(
-        &mut self,
-        value: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_NetworkReceiveEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearDeliveryEvent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearDeliveryEvent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LiteNetLib_INetEventListener_OnPeerDisconnected(
-        &mut self,
-        peer: *mut crate::LiteNetLib::NetPeer,
-        disconnectInfo: crate::LiteNetLib::DisconnectInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "LiteNetLib.INetEventListener.OnPeerDisconnected",
-                (peer, disconnectInfo),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_NetworkReceiveEvent(
-        &mut self,
-        value: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_NetworkReceiveEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearNetworkLatencyUpdateEvent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearNetworkLatencyUpdateEvent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LiteNetLib_IDeliveryEventListener_OnMessageDelivered(
-        &mut self,
-        peer: *mut crate::LiteNetLib::NetPeer,
-        userData: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "LiteNetLib.IDeliveryEventListener.OnMessageDelivered",
-                (peer, userData),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearNetworkErrorEvent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearNetworkErrorEvent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearNetworkReceiveEvent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearNetworkReceiveEvent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_PeerConnectedEvent(
-        &mut self,
-        value: *mut crate::LiteNetLib::EventBasedNetListener_OnPeerConnected,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_PeerConnectedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_ConnectionRequestEvent(
-        &mut self,
-        value: *mut crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_ConnectionRequestEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn remove_PeerDisconnectedEvent(
         &mut self,
         value: *mut crate::LiteNetLib::EventBasedNetListener_OnPeerDisconnected,
@@ -268,172 +434,6 @@ impl crate::LiteNetLib::EventBasedNetListener {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_PeerDisconnectedEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn add_DeliveryEvent(
-        &mut self,
-        value: *mut crate::LiteNetLib::EventBasedNetListener_OnDeliveryEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_DeliveryEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_PeerDisconnectedEvent(
-        &mut self,
-        value: *mut crate::LiteNetLib::EventBasedNetListener_OnPeerDisconnected,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_PeerDisconnectedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_ConnectionRequestEvent(
-        &mut self,
-        value: *mut crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_ConnectionRequestEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_DeliveryEvent(
-        &mut self,
-        value: *mut crate::LiteNetLib::EventBasedNetListener_OnDeliveryEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_DeliveryEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LiteNetLib_INetEventListener_OnNetworkError(
-        &mut self,
-        endPoint: *mut crate::System::Net::IPEndPoint,
-        socketErrorCode: crate::System::Net::Sockets::SocketError,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "LiteNetLib.INetEventListener.OnNetworkError",
-                (endPoint, socketErrorCode),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn LiteNetLib_INetEventListener_OnNetworkReceive(
-        &mut self,
-        peer: *mut crate::LiteNetLib::NetPeer,
-        reader: *mut crate::LiteNetLib::NetPacketReader,
-        deliveryMethod: crate::LiteNetLib::DeliveryMethod,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "LiteNetLib.INetEventListener.OnNetworkReceive",
-                (peer, reader, deliveryMethod),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_NetworkLatencyUpdateEvent(
-        &mut self,
-        value: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkLatencyUpdate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_NetworkLatencyUpdateEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LiteNetLib_INetEventListener_OnNetworkReceiveUnconnected(
-        &mut self,
-        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
-        reader: *mut crate::LiteNetLib::NetPacketReader,
-        messageType: crate::LiteNetLib::UnconnectedMessageType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "LiteNetLib.INetEventListener.OnNetworkReceiveUnconnected",
-                (remoteEndPoint, reader, messageType),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_NetworkReceiveUnconnectedEvent(
-        &mut self,
-        value: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_NetworkReceiveUnconnectedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LiteNetLib_INetEventListener_OnNetworkLatencyUpdate(
-        &mut self,
-        peer: *mut crate::LiteNetLib::NetPeer,
-        latency: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "LiteNetLib.INetEventListener.OnNetworkLatencyUpdate",
-                (peer, latency),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_NetworkErrorEvent(
-        &mut self,
-        value: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkError,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_NetworkErrorEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearPeerDisconnectedEvent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearPeerDisconnectedEvent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener")]
@@ -473,17 +473,6 @@ for crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest {
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnConnectionRequest")]
 impl crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest {
-    pub fn Invoke(
-        &mut self,
-        request: *mut crate::LiteNetLib::ConnectionRequest,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (request))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         request: *mut crate::LiteNetLib::ConnectionRequest,
@@ -508,6 +497,27 @@ impl crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        request: *mut crate::LiteNetLib::ConnectionRequest,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (request))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -519,16 +529,6 @@ impl crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnConnectionRequest")]
@@ -568,41 +568,6 @@ impl std::ops::DerefMut for crate::LiteNetLib::EventBasedNetListener_OnDeliveryE
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnDeliveryEvent")]
 impl crate::LiteNetLib::EventBasedNetListener_OnDeliveryEvent {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        peer: *mut crate::LiteNetLib::NetPeer,
-        userData: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (peer, userData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         peer: *mut crate::LiteNetLib::NetPeer,
@@ -617,15 +582,50 @@ impl crate::LiteNetLib::EventBasedNetListener_OnDeliveryEvent {
             .invoke("BeginInvoke", (peer, userData, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        peer: *mut crate::LiteNetLib::NetPeer,
+        userData: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (peer, userData))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnDeliveryEvent")]
@@ -664,29 +664,6 @@ impl std::ops::DerefMut for crate::LiteNetLib::EventBasedNetListener_OnNetworkEr
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkError")]
 impl crate::LiteNetLib::EventBasedNetListener_OnNetworkError {
-    pub fn Invoke(
-        &mut self,
-        endPoint: *mut crate::System::Net::IPEndPoint,
-        socketError: crate::System::Net::Sockets::SocketError,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (endPoint, socketError))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         endPoint: *mut crate::System::Net::IPEndPoint,
@@ -701,6 +678,39 @@ impl crate::LiteNetLib::EventBasedNetListener_OnNetworkError {
             .invoke("BeginInvoke", (endPoint, socketError, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        endPoint: *mut crate::System::Net::IPEndPoint,
+        socketError: crate::System::Net::Sockets::SocketError,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (endPoint, socketError))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -712,16 +722,6 @@ impl crate::LiteNetLib::EventBasedNetListener_OnNetworkError {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkError")]
@@ -788,18 +788,6 @@ impl crate::LiteNetLib::EventBasedNetListener_OnNetworkLatencyUpdate {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         peer: *mut crate::LiteNetLib::NetPeer,
@@ -815,12 +803,24 @@ impl crate::LiteNetLib::EventBasedNetListener_OnNetworkLatencyUpdate {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkLatencyUpdate")]
@@ -860,42 +860,6 @@ impl std::ops::DerefMut for crate::LiteNetLib::EventBasedNetListener_OnNetworkRe
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceive")]
 impl crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        peer: *mut crate::LiteNetLib::NetPeer,
-        reader: *mut crate::LiteNetLib::NetPacketReader,
-        deliveryMethod: crate::LiteNetLib::DeliveryMethod,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (peer, reader, deliveryMethod))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         peer: *mut crate::LiteNetLib::NetPeer,
@@ -911,15 +875,51 @@ impl crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive {
             .invoke("BeginInvoke", (peer, reader, deliveryMethod, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        peer: *mut crate::LiteNetLib::NetPeer,
+        reader: *mut crate::LiteNetLib::NetPacketReader,
+        deliveryMethod: crate::LiteNetLib::DeliveryMethod,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (peer, reader, deliveryMethod))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceive")]
@@ -961,29 +961,6 @@ for crate::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected {
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceiveUnconnected")]
 impl crate::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         remoteEndPoint: *mut crate::System::Net::IPEndPoint,
@@ -1002,6 +979,17 @@ impl crate::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         remoteEndPoint: *mut crate::System::Net::IPEndPoint,
@@ -1018,12 +1006,24 @@ impl crate::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceiveUnconnected")]
@@ -1076,16 +1076,15 @@ impl crate::LiteNetLib::EventBasedNetListener_OnPeerConnected {
             .invoke("BeginInvoke", (peer, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn EndInvoke(
         &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
+        result: *mut crate::System::IAsyncResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+            .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -1099,26 +1098,27 @@ impl crate::LiteNetLib::EventBasedNetListener_OnPeerConnected {
             .invoke("Invoke", (peer))?;
         Ok(__cordl_ret)
     }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerConnected")]
@@ -1158,18 +1158,6 @@ impl std::ops::DerefMut for crate::LiteNetLib::EventBasedNetListener_OnPeerDisco
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerDisconnected")]
 impl crate::LiteNetLib::EventBasedNetListener_OnPeerDisconnected {
-    pub fn Invoke(
-        &mut self,
-        peer: *mut crate::LiteNetLib::NetPeer,
-        disconnectInfo: crate::LiteNetLib::DisconnectInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (peer, disconnectInfo))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         peer: *mut crate::LiteNetLib::NetPeer,
@@ -1184,18 +1172,6 @@ impl crate::LiteNetLib::EventBasedNetListener_OnPeerDisconnected {
             .invoke("BeginInvoke", (peer, disconnectInfo, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -1207,15 +1183,39 @@ impl crate::LiteNetLib::EventBasedNetListener_OnPeerDisconnected {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        peer: *mut crate::LiteNetLib::NetPeer,
+        disconnectInfo: crate::LiteNetLib::DisconnectInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (peer, disconnectInfo))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerDisconnected")]

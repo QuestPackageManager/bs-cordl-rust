@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingF
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+AdvancingFront")]
 impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
-    pub fn RemoveNode(
+    pub fn AddNode(
         &mut self,
         node: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -36,29 +36,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveNode", (node))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        head: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-        tail: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (head, tail))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
+            .invoke("AddNode", (node))?;
         Ok(__cordl_ret)
     }
     pub fn FindSearchNode(
@@ -113,7 +91,17 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
             .invoke("LocatePoint", (point))?;
         Ok(__cordl_ret)
     }
-    pub fn AddNode(
+    pub fn New(
+        head: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+        tail: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (head, tail))?;
+        Ok(__cordl_object)
+    }
+    pub fn RemoveNode(
         &mut self,
         node: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -121,18 +109,30 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddNode", (node))?;
+            .invoke("RemoveNode", (node))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
         head: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         tail: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (head, tail))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (head, tail))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+AdvancingFront")]

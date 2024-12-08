@@ -50,14 +50,6 @@ for crate::UnityEngine::ArticulationReducedSpace {
 impl crate::UnityEngine::ArticulationReducedSpace {
     #[cfg(feature = "UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
     pub type _x_e__FixedBuffer = crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer;
-    pub fn get_Item(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (i),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_f32_0(
         &mut self,
         a: f32,
@@ -91,6 +83,14 @@ impl crate::UnityEngine::ArticulationReducedSpace {
             self,
             ".ctor",
             (a, b, c),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (i),
         )?;
         Ok(__cordl_ret)
     }

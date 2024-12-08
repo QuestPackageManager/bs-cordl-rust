@@ -67,11 +67,17 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
     pub type __c__DisplayClass53_0 = crate::UnityEngine::UIElements::ColumnLayout___c__DisplayClass53_0;
     #[cfg(feature = "UnityEngine+UIElements+ColumnLayout+__c__DisplayClass54_0")]
     pub type __c__DisplayClass54_0 = crate::UnityEngine::UIElements::ColumnLayout___c__DisplayClass54_0;
-    pub fn get_layoutWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn BeginDragResize(
+        &mut self,
+        column: *mut crate::UnityEngine::UIElements::Column,
+        pos: f32,
+        previewMode: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_layoutWidth", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BeginDragResize", (column, pos, previewMode))?;
         Ok(__cordl_ret)
     }
     pub fn ClearCache(
@@ -84,67 +90,45 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             .invoke("ClearCache", ())?;
         Ok(__cordl_ret)
     }
-    pub fn UpdateCache(
+    pub fn Dirty(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateCache", ())?;
+            .invoke("Dirty", ())?;
         Ok(__cordl_ret)
     }
-    pub fn RecomputeToDesiredWidth_List_1_0(
+    pub fn DistributeExcess(
         &mut self,
-        columns: *mut crate::System::Collections::Generic::List_1<
+        stretchableColumns: *mut crate::System::Collections::Generic::List_1<
             *mut crate::UnityEngine::UIElements::Column,
         >,
-        distributedDelta: f32,
-        setDesiredWidthOnly: bool,
-        distributeOverflow: bool,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke(
-                "RecomputeToDesiredWidth",
-                (columns, distributedDelta, setDesiredWidthOnly, distributeOverflow),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RecomputeToDesiredWidth_Column1(
-        &mut self,
-        column: *mut crate::UnityEngine::UIElements::Column,
-        distributedDelta: f32,
-        setDesiredWidthOnly: bool,
-        distributeOverflow: bool,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke(
-                "RecomputeToDesiredWidth",
-                (column, distributedDelta, setDesiredWidthOnly, distributeOverflow),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RecomputeToMaxWidth(
-        &mut self,
-        columns: *mut crate::System::Collections::Generic::List_1<
+        fixedColumns: *mut crate::System::Collections::Generic::List_1<
             *mut crate::UnityEngine::UIElements::Column,
         >,
-        distributedDelta: f32,
-        setDesiredWidthOnly: bool,
-    ) -> quest_hook::libil2cpp::Result<f32> {
+        relativeWidthColumns: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
+        delta: quest_hook::libil2cpp::ByRefMut<f32>,
+        resizeToFit: bool,
+        dragResize: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "RecomputeToMaxWidth",
-                (columns, distributedDelta, setDesiredWidthOnly),
+                "DistributeExcess",
+                (
+                    stretchableColumns,
+                    fixedColumns,
+                    relativeWidthColumns,
+                    delta,
+                    resizeToFit,
+                    dragResize,
+                ),
             )?;
         Ok(__cordl_ret)
     }
@@ -180,76 +164,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_maxColumnsWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_maxColumnsWidth", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _DoLayout_b__49_1(
-        &mut self,
-        c1: *mut crate::UnityEngine::UIElements::Column,
-        c2: *mut crate::UnityEngine::UIElements::Column,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("<DoLayout>b__49_1", (c1, c2))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RequiresLayoutUpdate(
-        &mut self,
-        _cordl_type: crate::UnityEngine::UIElements::ColumnDataType,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("RequiresLayoutUpdate", (_cordl_type))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndDragResize(
-        &mut self,
-        column: *mut crate::UnityEngine::UIElements::Column,
-        cancelled: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndDragResize", (column, cancelled))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDesiredWidth(
-        &mut self,
-        c: *mut crate::UnityEngine::UIElements::Column,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetDesiredWidth", (c))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RecomputeToMinWidthProportionally(
-        &mut self,
-        columns: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::Column,
-        >,
-        distributedDelta: f32,
-        setDesiredWidthOnly: bool,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke(
-                "RecomputeToMinWidthProportionally",
-                (columns, distributedDelta, setDesiredWidthOnly),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ResizeToFit(
+    pub fn DoLayout(
         &mut self,
         width: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -257,49 +172,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResizeToFit", (width))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnColumnChanged(
-        &mut self,
-        column: *mut crate::UnityEngine::UIElements::Column,
-        _cordl_type: crate::UnityEngine::UIElements::ColumnDataType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnColumnChanged", (column, _cordl_type))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_hasStretchableColumns(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hasStretchableColumns", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dirty(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dirty", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn BeginDragResize(
-        &mut self,
-        column: *mut crate::UnityEngine::UIElements::Column,
-        pos: f32,
-        previewMode: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BeginDragResize", (column, pos, previewMode))?;
+            .invoke("DoLayout", (width))?;
         Ok(__cordl_ret)
     }
     pub fn DragResize(
@@ -314,65 +187,80 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             .invoke("DragResize", (column, pos))?;
         Ok(__cordl_ret)
     }
-    pub fn RecomputeToMinWidth(
+    pub fn EndDragResize(
         &mut self,
-        columns: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::Column,
-        >,
-        distributedDelta: f32,
-        setDesiredWidthOnly: bool,
+        column: *mut crate::UnityEngine::UIElements::Column,
+        cancelled: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndDragResize", (column, cancelled))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDesiredPosition(
+        &mut self,
+        column: *mut crate::UnityEngine::UIElements::Column,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke(
-                "RecomputeToMinWidth",
-                (columns, distributedDelta, setDesiredWidthOnly),
-            )?;
+        let __cordl_ret: f32 = __cordl_object.invoke("GetDesiredPosition", (column))?;
         Ok(__cordl_ret)
     }
-    pub fn ResizeColumn(
+    pub fn GetDesiredWidth(
+        &mut self,
+        c: *mut crate::UnityEngine::UIElements::Column,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("GetDesiredWidth", (c))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        columns: *mut crate::UnityEngine::UIElements::Columns,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (columns))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnColumnAdded(
         &mut self,
         column: *mut crate::UnityEngine::UIElements::Column,
-        width: f32,
-        setDesiredWidthOnly: bool,
+        index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResizeColumn", (column, width, setDesiredWidthOnly))?;
+            .invoke("OnColumnAdded", (column, index))?;
         Ok(__cordl_ret)
     }
-    pub fn add_layoutRequested(
+    pub fn OnColumnChanged(
         &mut self,
-        value: *mut crate::System::Action,
+        column: *mut crate::UnityEngine::UIElements::Column,
+        _cordl_type: crate::UnityEngine::UIElements::ColumnDataType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_layoutRequested", (value))?;
+            .invoke("OnColumnChanged", (column, _cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn _RecomputeToMaxWidthProportionally_b__53_0(
+    pub fn OnColumnRemoved(
         &mut self,
-        c1: *mut crate::UnityEngine::UIElements::Column,
-        c2: *mut crate::UnityEngine::UIElements::Column,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+        column: *mut crate::UnityEngine::UIElements::Column,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("<RecomputeToMaxWidthProportionally>b__53_0", (c1, c2))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_minColumnsWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_minColumnsWidth", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnColumnRemoved", (column))?;
         Ok(__cordl_ret)
     }
     pub fn OnColumnReordered(
@@ -388,58 +276,69 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             .invoke("OnColumnReordered", (column, from, to))?;
         Ok(__cordl_ret)
     }
-    pub fn OnColumnAdded(
+    pub fn OnColumnResized(
         &mut self,
         column: *mut crate::UnityEngine::UIElements::Column,
-        index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnColumnAdded", (column, index))?;
+            .invoke("OnColumnResized", (column))?;
         Ok(__cordl_ret)
     }
-    pub fn DoLayout(
+    pub fn RecomputeToDesiredWidth_Column1(
         &mut self,
-        width: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        column: *mut crate::UnityEngine::UIElements::Column,
+        distributedDelta: f32,
+        setDesiredWidthOnly: bool,
+        distributeOverflow: bool,
+    ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DoLayout", (width))?;
+        let __cordl_ret: f32 = __cordl_object
+            .invoke(
+                "RecomputeToDesiredWidth",
+                (column, distributedDelta, setDesiredWidthOnly, distributeOverflow),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn UpdateMinAndMaxColumnsWidth(
+    pub fn RecomputeToDesiredWidth_List_1_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        columns: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
+        distributedDelta: f32,
+        setDesiredWidthOnly: bool,
+        distributeOverflow: bool,
+    ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateMinAndMaxColumnsWidth", ())?;
+        let __cordl_ret: f32 = __cordl_object
+            .invoke(
+                "RecomputeToDesiredWidth",
+                (columns, distributedDelta, setDesiredWidthOnly, distributeOverflow),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn get_hasRelativeWidthColumns(
+    pub fn RecomputeToMaxWidth(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        columns: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
+        distributedDelta: f32,
+        setDesiredWidthOnly: bool,
+    ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_hasRelativeWidthColumns", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        columns: *mut crate::UnityEngine::UIElements::Columns,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (columns))?;
+        let __cordl_ret: f32 = __cordl_object
+            .invoke(
+                "RecomputeToMaxWidth",
+                (columns, distributedDelta, setDesiredWidthOnly),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn RecomputeToMaxWidthProportionally(
@@ -460,24 +359,75 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetDesiredPosition(
+    pub fn RecomputeToMinWidth(
         &mut self,
-        column: *mut crate::UnityEngine::UIElements::Column,
+        columns: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
+        distributedDelta: f32,
+        setDesiredWidthOnly: bool,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetDesiredPosition", (column))?;
+        let __cordl_ret: f32 = __cordl_object
+            .invoke(
+                "RecomputeToMinWidth",
+                (columns, distributedDelta, setDesiredWidthOnly),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn get_columns(
+    pub fn RecomputeToMinWidthProportionally(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Columns> {
+        columns: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
+        distributedDelta: f32,
+        setDesiredWidthOnly: bool,
+    ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Columns = __cordl_object
-            .invoke("get_columns", ())?;
+        let __cordl_ret: f32 = __cordl_object
+            .invoke(
+                "RecomputeToMinWidthProportionally",
+                (columns, distributedDelta, setDesiredWidthOnly),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn RequiresLayoutUpdate(
+        &mut self,
+        _cordl_type: crate::UnityEngine::UIElements::ColumnDataType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("RequiresLayoutUpdate", (_cordl_type))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ResizeColumn(
+        &mut self,
+        column: *mut crate::UnityEngine::UIElements::Column,
+        width: f32,
+        setDesiredWidthOnly: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ResizeColumn", (column, width, setDesiredWidthOnly))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ResizeToFit(
+        &mut self,
+        width: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ResizeToFit", (width))?;
         Ok(__cordl_ret)
     }
     pub fn StretchResizeColumns(
@@ -512,36 +462,24 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn DistributeExcess(
+    pub fn UpdateCache(
         &mut self,
-        stretchableColumns: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::Column,
-        >,
-        fixedColumns: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::Column,
-        >,
-        relativeWidthColumns: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::Column,
-        >,
-        delta: quest_hook::libil2cpp::ByRefMut<f32>,
-        resizeToFit: bool,
-        dragResize: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "DistributeExcess",
-                (
-                    stretchableColumns,
-                    fixedColumns,
-                    relativeWidthColumns,
-                    delta,
-                    resizeToFit,
-                    dragResize,
-                ),
-            )?;
+            .invoke("UpdateCache", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateMinAndMaxColumnsWidth(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateMinAndMaxColumnsWidth", ())?;
         Ok(__cordl_ret)
     }
     pub fn _DoLayout_b__49_0(
@@ -555,44 +493,27 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         let __cordl_ret: i32 = __cordl_object.invoke("<DoLayout>b__49_0", (c1, c2))?;
         Ok(__cordl_ret)
     }
-    pub fn OnColumnResized(
+    pub fn _DoLayout_b__49_1(
         &mut self,
-        column: *mut crate::UnityEngine::UIElements::Column,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        c1: *mut crate::UnityEngine::UIElements::Column,
+        c2: *mut crate::UnityEngine::UIElements::Column,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnColumnResized", (column))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("<DoLayout>b__49_1", (c1, c2))?;
         Ok(__cordl_ret)
     }
-    pub fn get_columnsWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_columnsWidth", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnColumnRemoved(
+    pub fn _RecomputeToMaxWidthProportionally_b__53_0(
         &mut self,
-        column: *mut crate::UnityEngine::UIElements::Column,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        c1: *mut crate::UnityEngine::UIElements::Column,
+        c2: *mut crate::UnityEngine::UIElements::Column,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnColumnRemoved", (column))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_layoutRequested(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_layoutRequested", (value))?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("<RecomputeToMaxWidthProportionally>b__53_0", (c1, c2))?;
         Ok(__cordl_ret)
     }
     pub fn _RecomputeToMinWidthProportionally_b__54_0(
@@ -607,14 +528,93 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             .invoke("<RecomputeToMinWidthProportionally>b__54_0", (c1, c2))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         columns: *mut crate::UnityEngine::UIElements::Columns,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (columns))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (columns))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_layoutRequested(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_layoutRequested", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_columns(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Columns> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::Columns = __cordl_object
+            .invoke("get_columns", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_columnsWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_columnsWidth", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hasRelativeWidthColumns(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_hasRelativeWidthColumns", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hasStretchableColumns(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_hasStretchableColumns", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_layoutWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_layoutWidth", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxColumnsWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_maxColumnsWidth", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_minColumnsWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_minColumnsWidth", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_layoutRequested(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_layoutRequested", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ColumnLayout")]

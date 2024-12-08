@@ -26,6 +26,25 @@ impl std::ops::DerefMut for SelectMultiplayerLobbyDestination {
 }
 #[cfg(feature = "SelectMultiplayerLobbyDestination")]
 impl SelectMultiplayerLobbyDestination {
+    pub fn New_String0(
+        lobbySecret: *mut crate::System::String,
+        lobbyCode: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (lobbySecret, lobbyCode))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String1(
+        lobbyCode: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (lobbyCode))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_String0(
         &mut self,
         lobbySecret: *mut crate::System::String,
@@ -48,25 +67,6 @@ impl SelectMultiplayerLobbyDestination {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (lobbyCode))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_String0(
-        lobbySecret: *mut crate::System::String,
-        lobbyCode: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (lobbySecret, lobbyCode))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        lobbyCode: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (lobbyCode))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SelectMultiplayerLobbyDestination")]

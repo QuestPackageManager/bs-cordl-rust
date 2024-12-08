@@ -29,50 +29,29 @@ for crate::TMPro::TMP_TextProcessingStack_1<T> {
 #[cfg(feature = "TMPro+TMP_TextProcessingStack_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> {
     pub const k_DefaultCapacity: i32 = 4i32;
-    pub fn get_current(&mut self) -> quest_hook::libil2cpp::Result<T>
+    pub fn Add(
+        &mut self,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_current",
-            (),
+            "Add",
+            (item),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Count",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_rolloverSize(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_rolloverSize",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Pop",
+            "Clear",
             (),
         )?;
         Ok(__cordl_ret)
@@ -89,6 +68,30 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
         )?;
         Ok(__cordl_ret)
     }
+    pub fn Peek(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Peek",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Pop",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn PreviousItem(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -101,6 +104,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
         )?;
         Ok(__cordl_ret)
     }
+    pub fn Push(
+        &mut self,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Push",
+            (item),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Remove(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -110,6 +128,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             self,
             "Remove",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetDefault(
+        &mut self,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetDefault",
+            (item),
         )?;
         Ok(__cordl_ret)
     }
@@ -159,14 +192,38 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Peek(&mut self) -> quest_hook::libil2cpp::Result<T>
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Count",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_current(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Peek",
+            "get_current",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rolloverSize(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_rolloverSize",
             (),
         )?;
         Ok(__cordl_ret)
@@ -183,63 +240,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             self,
             "set_rolloverSize",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Clear",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Add(
-        &mut self,
-        item: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Add",
-            (item),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Push(
-        &mut self,
-        item: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Push",
-            (item),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetDefault(
-        &mut self,
-        item: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetDefault",
-            (item),
         )?;
         Ok(__cordl_ret)
     }

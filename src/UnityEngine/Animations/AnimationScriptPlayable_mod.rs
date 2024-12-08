@@ -22,17 +22,6 @@ for crate::UnityEngine::Animations::AnimationScriptPlayable {
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationScriptPlayable")]
 impl crate::UnityEngine::Animations::AnimationScriptPlayable {
-    pub fn _ctor(
-        &mut self,
-        handle: crate::UnityEngine::Playables::PlayableHandle,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (handle),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals(
         &mut self,
         other: crate::UnityEngine::Animations::AnimationScriptPlayable,
@@ -51,6 +40,17 @@ impl crate::UnityEngine::Animations::AnimationScriptPlayable {
             self,
             "GetHandle",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        handle: crate::UnityEngine::Playables::PlayableHandle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (handle),
         )?;
         Ok(__cordl_ret)
     }

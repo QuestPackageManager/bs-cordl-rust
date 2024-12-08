@@ -38,20 +38,6 @@ impl crate::System::Dynamic::GetIndexBinder {
             .invoke("Bind", (target, args))?;
         Ok(__cordl_ret)
     }
-    pub fn FallbackGetIndex_DynamicMetaObject_Il2CppArray0(
-        &mut self,
-        target: *mut crate::System::Dynamic::DynamicMetaObject,
-        indexes: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Dynamic::DynamicMetaObject,
-        >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("FallbackGetIndex", (target, indexes))?;
-        Ok(__cordl_ret)
-    }
     pub fn FallbackGetIndex_DynamicMetaObject1(
         &mut self,
         target: *mut crate::System::Dynamic::DynamicMetaObject,
@@ -65,6 +51,20 @@ impl crate::System::Dynamic::GetIndexBinder {
         );
         let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
             .invoke("FallbackGetIndex", (target, indexes, errorSuggestion))?;
+        Ok(__cordl_ret)
+    }
+    pub fn FallbackGetIndex_DynamicMetaObject_Il2CppArray0(
+        &mut self,
+        target: *mut crate::System::Dynamic::DynamicMetaObject,
+        indexes: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Dynamic::DynamicMetaObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
+            .invoke("FallbackGetIndex", (target, indexes))?;
         Ok(__cordl_ret)
     }
 }

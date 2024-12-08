@@ -29,17 +29,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::DateTimeRawIn
 }
 #[cfg(feature = "System+DateTimeRawInfo")]
 impl crate::System::DateTimeRawInfo {
-    pub fn Init(
-        &mut self,
-        numberBuffer: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Init",
-            (numberBuffer),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn AddNumber(
         &mut self,
         value: i32,
@@ -56,6 +45,17 @@ impl crate::System::DateTimeRawInfo {
             self,
             "GetNumber",
             (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        numberBuffer: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Init",
+            (numberBuffer),
         )?;
         Ok(__cordl_ret)
     }

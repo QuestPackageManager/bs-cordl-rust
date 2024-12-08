@@ -24,6 +24,11 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::Channels::IChannel
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+IChannel")]
 impl crate::System::Runtime::Remoting::Channels::IChannel {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_ChannelName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -40,11 +45,6 @@ impl crate::System::Runtime::Remoting::Channels::IChannel {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ChannelPriority", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+IChannel")]

@@ -26,14 +26,37 @@ impl std::ops::DerefMut for crate::System::Xml::Linq::XObject {
 }
 #[cfg(feature = "System+Xml+Linq+XObject")]
 impl crate::System::Xml::Linq::XObject {
-    pub fn get_Parent(
+    pub fn AddAnnotation(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Linq::XElement> {
+        annotation: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Linq::XElement = __cordl_object
-            .invoke("get_Parent", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddAnnotation", (annotation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Annotation<T>(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("Annotation", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn AnnotationForSealedType(
+        &mut self,
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("AnnotationForSealedType", (_cordl_type))?;
         Ok(__cordl_ret)
     }
     pub fn GetSaveOptionsFromAnnotations(
@@ -46,16 +69,12 @@ impl crate::System::Xml::Linq::XObject {
             .invoke("GetSaveOptionsFromAnnotations", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetBaseUri(
-        &mut self,
-        baseUri: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetBaseUri", (baseUri))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn NotifyChanged(
         &mut self,
@@ -66,6 +85,28 @@ impl crate::System::Xml::Linq::XObject {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("NotifyChanged", (sender, e))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NotifyChanging(
+        &mut self,
+        sender: *mut crate::System::Object,
+        e: *mut crate::System::Xml::Linq::XObjectChangeEventArgs,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("NotifyChanging", (sender, e))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetBaseUri(
+        &mut self,
+        baseUri: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetBaseUri", (baseUri))?;
         Ok(__cordl_ret)
     }
     pub fn SetLineInfo(
@@ -80,25 +121,11 @@ impl crate::System::Xml::Linq::XObject {
             .invoke("SetLineInfo", (lineNumber, linePosition))?;
         Ok(__cordl_ret)
     }
-    pub fn AnnotationForSealedType(
-        &mut self,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    pub fn SkipNotify(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("AnnotationForSealedType", (_cordl_type))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_NodeType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
-            .invoke("get_NodeType", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("SkipNotify", ())?;
         Ok(__cordl_ret)
     }
     pub fn System_Xml_IXmlLineInfo_HasLineInfo(
@@ -111,22 +138,14 @@ impl crate::System::Xml::Linq::XObject {
             .invoke("System.Xml.IXmlLineInfo.HasLineInfo", ())?;
         Ok(__cordl_ret)
     }
-    pub fn NotifyChanging(
+    pub fn System_Xml_IXmlLineInfo_get_LineNumber(
         &mut self,
-        sender: *mut crate::System::Object,
-        e: *mut crate::System::Xml::Linq::XObjectChangeEventArgs,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("NotifyChanging", (sender, e))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SkipNotify(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("SkipNotify", ())?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("System.Xml.IXmlLineInfo.get_LineNumber", ())?;
         Ok(__cordl_ret)
     }
     pub fn System_Xml_IXmlLineInfo_get_LinePosition(
@@ -139,14 +158,14 @@ impl crate::System::Xml::Linq::XObject {
             .invoke("System.Xml.IXmlLineInfo.get_LinePosition", ())?;
         Ok(__cordl_ret)
     }
-    pub fn System_Xml_IXmlLineInfo_get_LineNumber(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("System.Xml.IXmlLineInfo.get_LineNumber", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_BaseUri(
@@ -166,44 +185,25 @@ impl crate::System::Xml::Linq::XObject {
         let __cordl_ret: bool = __cordl_object.invoke("get_HasBaseUri", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AddAnnotation(
+    pub fn get_NodeType(
         &mut self,
-        annotation: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddAnnotation", (annotation))?;
+        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
+            .invoke("get_NodeType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn get_Parent(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Linq::XElement> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::System::Xml::Linq::XElement = __cordl_object
+            .invoke("get_Parent", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Annotation<T>(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("Annotation", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Linq+XObject")]

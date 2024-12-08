@@ -28,23 +28,12 @@ for crate::GlobalNamespace::OVRHapticsOutput_ClipPlaybackTracker {
 }
 #[cfg(feature = "OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
 impl crate::GlobalNamespace::OVRHapticsOutput_ClipPlaybackTracker {
-    pub fn set_ReadCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ReadCount", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Clip(&mut self) -> quest_hook::libil2cpp::Result<*mut OVRHapticsClip> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut OVRHapticsClip = __cordl_object.invoke("get_Clip", ())?;
-        Ok(__cordl_ret)
+    pub fn New(clip: *mut OVRHapticsClip) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (clip))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -55,6 +44,13 @@ impl crate::GlobalNamespace::OVRHapticsOutput_ClipPlaybackTracker {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (clip))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Clip(&mut self) -> quest_hook::libil2cpp::Result<*mut OVRHapticsClip> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut OVRHapticsClip = __cordl_object.invoke("get_Clip", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ReadCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -75,14 +71,16 @@ impl crate::GlobalNamespace::OVRHapticsOutput_ClipPlaybackTracker {
             .invoke("set_Clip", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        clip: *mut OVRHapticsClip,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (clip))?;
-        Ok(__cordl_object)
+    pub fn set_ReadCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ReadCount", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
@@ -155,12 +153,12 @@ impl std::ops::DerefMut for OVRHaptics {
 }
 #[cfg(feature = "OVRHaptics")]
 impl OVRHaptics {
-    #[cfg(feature = "OVRHaptics+OVRHapticsChannel")]
-    pub type OVRHapticsChannel = crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel;
-    #[cfg(feature = "OVRHaptics+OVRHapticsOutput")]
-    pub type OVRHapticsOutput = crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput;
     #[cfg(feature = "OVRHaptics+Config")]
     pub type Config = crate::GlobalNamespace::OVRHaptics_Config;
+    #[cfg(feature = "OVRHaptics+OVRHapticsOutput")]
+    pub type OVRHapticsOutput = crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput;
+    #[cfg(feature = "OVRHaptics+OVRHapticsChannel")]
+    pub type OVRHapticsChannel = crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel;
 }
 #[cfg(feature = "OVRHaptics")]
 impl quest_hook::libil2cpp::ObjectType for OVRHaptics {
@@ -198,6 +196,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel
 }
 #[cfg(feature = "OVRHaptics+OVRHapticsChannel")]
 impl crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Mix(
         &mut self,
         clip: *mut OVRHapticsClip,
@@ -207,6 +215,24 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Mix", (clip))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(outputIndex: u32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (outputIndex))?;
+        Ok(__cordl_object)
+    }
+    pub fn Preempt(
+        &mut self,
+        clip: *mut OVRHapticsClip,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Preempt", (clip))?;
         Ok(__cordl_ret)
     }
     pub fn Queue(
@@ -220,27 +246,6 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
             .invoke("Queue", (clip))?;
         Ok(__cordl_ret)
     }
-    pub fn Preempt(
-        &mut self,
-        clip: *mut OVRHapticsClip,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Preempt", (clip))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         outputIndex: u32,
@@ -251,13 +256,6 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (outputIndex))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(outputIndex: u32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (outputIndex))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRHaptics+OVRHapticsChannel")]
@@ -310,17 +308,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput 
 impl crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
     #[cfg(feature = "OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
     pub type ClipPlaybackTracker = crate::GlobalNamespace::OVRHapticsOutput_ClipPlaybackTracker;
-    pub fn Preempt(
-        &mut self,
-        clip: *mut OVRHapticsClip,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Preempt", (clip))?;
-        Ok(__cordl_ret)
-    }
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -329,27 +316,6 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Process(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Process", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        controller: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (controller))?;
         Ok(__cordl_ret)
     }
     pub fn Mix(
@@ -363,6 +329,34 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
             .invoke("Mix", (clip))?;
         Ok(__cordl_ret)
     }
+    pub fn New(controller: u32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (controller))?;
+        Ok(__cordl_object)
+    }
+    pub fn Preempt(
+        &mut self,
+        clip: *mut OVRHapticsClip,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Preempt", (clip))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Process(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Process", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Queue(
         &mut self,
         clip: *mut OVRHapticsClip,
@@ -374,12 +368,16 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
             .invoke("Queue", (clip))?;
         Ok(__cordl_ret)
     }
-    pub fn New(controller: u32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (controller))?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+        controller: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (controller))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRHaptics+OVRHapticsOutput")]

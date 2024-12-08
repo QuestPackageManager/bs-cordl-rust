@@ -29,14 +29,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Agreement::DHAgree
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+DHAgreement")]
 impl crate::Org::BouncyCastle::Crypto::Agreement::DHAgreement {
-    pub fn _ctor(
+    pub fn CalculateAgreement(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        _cordl_pub: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters,
+        message: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("CalculateAgreement", (_cordl_pub, message))?;
         Ok(__cordl_ret)
     }
     pub fn CalculateMessage(
@@ -60,24 +62,22 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::DHAgreement {
             .invoke("Init", (parameters))?;
         Ok(__cordl_ret)
     }
-    pub fn CalculateAgreement(
-        &mut self,
-        _cordl_pub: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters,
-        message: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("CalculateAgreement", (_cordl_pub, message))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+DHAgreement")]

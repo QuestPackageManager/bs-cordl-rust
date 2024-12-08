@@ -23,16 +23,6 @@ for crate::System::Runtime::InteropServices::HandleRef {
 }
 #[cfg(feature = "System+Runtime+InteropServices+HandleRef")]
 impl crate::System::Runtime::InteropServices::HandleRef {
-    pub fn get_Handle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Handle",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         wrapper: *mut crate::System::Object,
@@ -42,6 +32,16 @@ impl crate::System::Runtime::InteropServices::HandleRef {
             self,
             ".ctor",
             (wrapper, handle),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Handle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Handle",
+            (),
         )?;
         Ok(__cordl_ret)
     }

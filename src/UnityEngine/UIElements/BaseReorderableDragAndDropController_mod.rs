@@ -30,44 +30,14 @@ for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
 impl crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
-    pub fn OnDrop(
+    pub fn CanStartDrag(
         &mut self,
-        args: *mut crate::UnityEngine::UIElements::IListDragAndDropArgs,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        itemIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDrop", (args))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_enableReordering(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_enableReordering", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleAutoExpand(
-        &mut self,
-        item: *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
-        pointerPosition: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleAutoExpand", (item, pointerPosition))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DragCleanup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DragCleanup", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("CanStartDrag", (itemIds))?;
         Ok(__cordl_ret)
     }
     pub fn CompareId(
@@ -81,16 +51,14 @@ impl crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
         let __cordl_ret: i32 = __cordl_object.invoke("CompareId", (id1, id2))?;
         Ok(__cordl_ret)
     }
-    pub fn SetupDragAndDrop(
+    pub fn DragCleanup(
         &mut self,
-        itemIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
-        skipText: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StartDragArgs> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::UIElements::StartDragArgs = __cordl_object
-            .invoke("SetupDragAndDrop", (itemIds, skipText))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DragCleanup", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetSortedSelectedIds(
@@ -105,36 +73,16 @@ impl crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
             .invoke("GetSortedSelectedIds", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_enableReordering(
+    pub fn HandleAutoExpand(
         &mut self,
-        value: bool,
+        item: *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+        pointerPosition: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_enableReordering", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CanStartDrag(
-        &mut self,
-        itemIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CanStartDrag", (itemIds))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        view: *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (view))?;
+            .invoke("HandleAutoExpand", (item, pointerPosition))?;
         Ok(__cordl_ret)
     }
     pub fn HandleDragAndDrop(
@@ -150,12 +98,64 @@ impl crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
     }
     pub fn New(
         view: *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (view))?;
         Ok(__cordl_object)
+    }
+    pub fn OnDrop(
+        &mut self,
+        args: *mut crate::UnityEngine::UIElements::IListDragAndDropArgs,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDrop", (args))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetupDragAndDrop(
+        &mut self,
+        itemIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+        skipText: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StartDragArgs> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::StartDragArgs = __cordl_object
+            .invoke("SetupDragAndDrop", (itemIds, skipText))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        view: *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (view))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_enableReordering(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_enableReordering", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_enableReordering(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_enableReordering", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]

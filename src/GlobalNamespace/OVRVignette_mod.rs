@@ -82,50 +82,28 @@ impl std::ops::DerefMut for OVRVignette {
 }
 #[cfg(feature = "OVRVignette")]
 impl OVRVignette {
-    #[cfg(feature = "OVRVignette+FalloffType")]
-    pub type FalloffType = crate::GlobalNamespace::OVRVignette_FalloffType;
     #[cfg(feature = "OVRVignette+MeshComplexityLevel")]
     pub type MeshComplexityLevel = crate::GlobalNamespace::OVRVignette_MeshComplexityLevel;
-    pub fn GetTanFovAndOffsetForStereoEye(
-        &mut self,
-        eye: crate::UnityEngine::Camera_StereoscopicEye,
-        tanFovX: quest_hook::libil2cpp::ByRefMut<f32>,
-        tanFovY: quest_hook::libil2cpp::ByRefMut<f32>,
-        offsetX: quest_hook::libil2cpp::ByRefMut<f32>,
-        offsetY: quest_hook::libil2cpp::ByRefMut<f32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "GetTanFovAndOffsetForStereoEye",
-                (eye, tanFovX, tanFovY, offsetX, offsetY),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    #[cfg(feature = "OVRVignette+FalloffType")]
+    pub type FalloffType = crate::GlobalNamespace::OVRVignette_FalloffType;
+    pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn VisibilityTest(
+    pub fn BuildMaterials(
         &mut self,
-        scaleX: f32,
-        scaleY: f32,
-        offsetX: f32,
-        offsetY: f32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("VisibilityTest", (scaleX, scaleY, offsetX, offsetY))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BuildMaterials", ())?;
         Ok(__cordl_ret)
     }
     pub fn BuildMeshes(
@@ -138,14 +116,14 @@ impl OVRVignette {
             .invoke("BuildMeshes", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Update(
+    pub fn DisableRenderers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
+            .invoke("DisableRenderers", ())?;
         Ok(__cordl_ret)
     }
     pub fn EnableRenderers(
@@ -175,24 +153,22 @@ impl OVRVignette {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn OnDisable(
+    pub fn GetTanFovAndOffsetForStereoEye(
         &mut self,
+        eye: crate::UnityEngine::Camera_StereoscopicEye,
+        tanFovX: quest_hook::libil2cpp::ByRefMut<f32>,
+        tanFovY: quest_hook::libil2cpp::ByRefMut<f32>,
+        offsetX: quest_hook::libil2cpp::ByRefMut<f32>,
+        offsetY: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
+            .invoke(
+                "GetTanFovAndOffsetForStereoEye",
+                (eye, tanFovX, tanFovY, offsetX, offsetY),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn GetTriangleCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -202,55 +178,12 @@ impl OVRVignette {
         let __cordl_ret: i32 = __cordl_object.invoke("GetTriangleCount", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnPreCull(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPreCull", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn BuildMaterials(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BuildMaterials", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnEnable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DisableRenderers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DisableRenderers", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPostRender(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPostRender", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnBeginCameraRendering(
         &mut self,
@@ -264,12 +197,79 @@ impl OVRVignette {
             .invoke("OnBeginCameraRendering", (context, camera))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn OnDisable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDisable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnEnable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnEnable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPostRender(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPostRender", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPreCull(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPreCull", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn VisibilityTest(
+        &mut self,
+        scaleX: f32,
+        scaleY: f32,
+        offsetX: f32,
+        offsetY: f32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("VisibilityTest", (scaleX, scaleY, offsetX, offsetY))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRVignette")]

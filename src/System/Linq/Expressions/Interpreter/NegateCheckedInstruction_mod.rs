@@ -28,17 +28,24 @@ for crate::System::Linq::Expressions::Interpreter::NegateCheckedInstruction {
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::NegateCheckedInstruction {
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt32"
-    )]
-    pub type NegateCheckedInt32 = crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt32;
-    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
     )]
     pub type NegateCheckedInt64 = crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt64;
     #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt32"
+    )]
+    pub type NegateCheckedInt32 = crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt32;
+    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt16"
     )]
     pub type NegateCheckedInt16 = crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt16;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -72,13 +79,6 @@ impl crate::System::Linq::Expressions::Interpreter::NegateCheckedInstruction {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction")]

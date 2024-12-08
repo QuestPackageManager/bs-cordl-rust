@@ -28,12 +28,15 @@ for crate::GlobalNamespace::RuntimeLightWithLightGroupIds_LightIntensitiesWithId
 }
 #[cfg(feature = "RuntimeLightWithLightGroupIds+LightIntensitiesWithId")]
 impl crate::GlobalNamespace::RuntimeLightWithLightGroupIds_LightIntensitiesWithId {
-    pub fn get_intensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_intensity", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        lightId: i32,
+        intensity: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (lightId, intensity))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -47,6 +50,13 @@ impl crate::GlobalNamespace::RuntimeLightWithLightGroupIds_LightIntensitiesWithI
             .invoke(".ctor", (lightId, intensity))?;
         Ok(__cordl_ret)
     }
+    pub fn get_intensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_intensity", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_intensity(
         &mut self,
         value: f32,
@@ -57,16 +67,6 @@ impl crate::GlobalNamespace::RuntimeLightWithLightGroupIds_LightIntensitiesWithI
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_intensity", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        lightId: i32,
-        intensity: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (lightId, intensity))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "RuntimeLightWithLightGroupIds+LightIntensitiesWithId")]
@@ -114,27 +114,6 @@ impl std::ops::DerefMut for RuntimeLightWithLightGroupIds {
 impl RuntimeLightWithLightGroupIds {
     #[cfg(feature = "RuntimeLightWithLightGroupIds+LightIntensitiesWithId")]
     pub type LightIntensitiesWithId = crate::GlobalNamespace::RuntimeLightWithLightGroupIds_LightIntensitiesWithId;
-    pub fn ColorWasSet(
-        &mut self,
-        color: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ColorWasSet", (color))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessNewColorData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessNewColorData", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -145,16 +124,15 @@ impl RuntimeLightWithLightGroupIds {
             .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessColor(
+    pub fn ColorWasSet(
         &mut self,
         color: crate::UnityEngine::Color,
-        intensity: f32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("ProcessColor", (color, intensity))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ColorWasSet", (color))?;
         Ok(__cordl_ret)
     }
     pub fn GetLightWithIds(
@@ -172,6 +150,35 @@ impl RuntimeLightWithLightGroupIds {
         > = __cordl_object.invoke("GetLightWithIds", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ProcessColor(
+        &mut self,
+        color: crate::UnityEngine::Color,
+        intensity: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("ProcessColor", (color, intensity))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessNewColorData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessNewColorData", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -181,13 +188,6 @@ impl RuntimeLightWithLightGroupIds {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "RuntimeLightWithLightGroupIds")]

@@ -44,6 +44,46 @@ impl NoteCutCoreEffectsSpawner {
     pub const kBurstSliderElementSparkleParticlesCount: i32 = 50i32;
     pub const kNormalNoteExplosionParticlesCount: i32 = 50i32;
     pub const kNormalNoteSparkleParticlesCount: i32 = 150i32;
+    pub fn HandleNoteWasCut(
+        &mut self,
+        noteController: *mut NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleNoteWasCut", (noteController, noteCutInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsArcHapticsCurrentlyActive(
+        &mut self,
+        colorType: ColorType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsArcHapticsCurrentlyActive", (colorType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn PlayHitChainNoteHapticEffect(
         &mut self,
         noteCutInfo: NoteCutInfo,
@@ -56,14 +96,16 @@ impl NoteCutCoreEffectsSpawner {
             .invoke("PlayHitChainNoteHapticEffect", (noteCutInfo, isChainHead))?;
         Ok(__cordl_ret)
     }
-    pub fn Start(
+    pub fn PlayHitNoteHapticEffect(
         &mut self,
+        noteCutInfo: NoteCutInfo,
+        noteData: *mut NoteData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
+            .invoke("PlayHitNoteHapticEffect", (noteCutInfo, noteData))?;
         Ok(__cordl_ret)
     }
     pub fn SpawnBombCutEffect(
@@ -76,16 +118,6 @@ impl NoteCutCoreEffectsSpawner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SpawnBombCutEffect", (noteCutInfo, noteController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn SpawnNoteCutEffect(
@@ -110,28 +142,14 @@ impl NoteCutCoreEffectsSpawner {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HandleNoteWasCut(
+    pub fn Start(
         &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNoteWasCut", (noteController, noteCutInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PlayHitNoteHapticEffect(
-        &mut self,
-        noteCutInfo: NoteCutInfo,
-        noteData: *mut NoteData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PlayHitNoteHapticEffect", (noteCutInfo, noteData))?;
+            .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -143,24 +161,6 @@ impl NoteCutCoreEffectsSpawner {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn IsArcHapticsCurrentlyActive(
-        &mut self,
-        colorType: ColorType,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsArcHapticsCurrentlyActive", (colorType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "NoteCutCoreEffectsSpawner")]

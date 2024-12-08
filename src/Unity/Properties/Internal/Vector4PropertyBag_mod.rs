@@ -28,14 +28,21 @@ impl std::ops::DerefMut for crate::Unity::Properties::Internal::Vector4PropertyB
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag")]
 impl crate::Unity::Properties::Internal::Vector4PropertyBag {
-    #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+ZProperty")]
-    pub type ZProperty = crate::Unity::Properties::Internal::Vector4PropertyBag_ZProperty;
     #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+XProperty")]
     pub type XProperty = crate::Unity::Properties::Internal::Vector4PropertyBag_XProperty;
     #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+YProperty")]
     pub type YProperty = crate::Unity::Properties::Internal::Vector4PropertyBag_YProperty;
+    #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+ZProperty")]
+    pub type ZProperty = crate::Unity::Properties::Internal::Vector4PropertyBag_ZProperty;
     #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+WProperty")]
     pub type WProperty = crate::Unity::Properties::Internal::Vector4PropertyBag_WProperty;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -45,13 +52,6 @@ impl crate::Unity::Properties::Internal::Vector4PropertyBag {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag")]
@@ -96,15 +96,12 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag_WProperty {
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+WProperty")]
 impl crate::Unity::Properties::Internal::Vector4PropertyBag_WProperty {
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Name", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -116,12 +113,15 @@ impl crate::Unity::Properties::Internal::Vector4PropertyBag_WProperty {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_Name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Name", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+WProperty")]
@@ -166,6 +166,13 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag_XProperty {
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+XProperty")]
 impl crate::Unity::Properties::Internal::Vector4PropertyBag_XProperty {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -185,13 +192,6 @@ impl crate::Unity::Properties::Internal::Vector4PropertyBag_XProperty {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+XProperty")]
@@ -236,15 +236,12 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag_YProperty {
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+YProperty")]
 impl crate::Unity::Properties::Internal::Vector4PropertyBag_YProperty {
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Name", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -256,12 +253,15 @@ impl crate::Unity::Properties::Internal::Vector4PropertyBag_YProperty {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_Name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Name", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+YProperty")]
@@ -306,6 +306,13 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag_ZProperty {
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+ZProperty")]
 impl crate::Unity::Properties::Internal::Vector4PropertyBag_ZProperty {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -325,13 +332,6 @@ impl crate::Unity::Properties::Internal::Vector4PropertyBag_ZProperty {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+ZProperty")]

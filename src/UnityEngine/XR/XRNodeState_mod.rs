@@ -41,14 +41,14 @@ impl crate::UnityEngine::XR::XRNodeState {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_tracked(
+    pub fn TryGetAngularAcceleration(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        angularAcceleration: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_tracked",
-            (value),
+            "TryGetAngularAcceleration",
+            (angularAcceleration),
         )?;
         Ok(__cordl_ret)
     }
@@ -63,24 +63,14 @@ impl crate::UnityEngine::XR::XRNodeState {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_nodeType(
+    pub fn TryGetPosition(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::XR::XRNode> {
-        let __cordl_ret: crate::UnityEngine::XR::XRNode = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_nodeType",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetAngularAcceleration(
-        &mut self,
-        angularAcceleration: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "TryGetAngularAcceleration",
-            (angularAcceleration),
+            "TryGetPosition",
+            (position),
         )?;
         Ok(__cordl_ret)
     }
@@ -95,17 +85,6 @@ impl crate::UnityEngine::XR::XRNodeState {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn TryGetPosition(
-        &mut self,
-        position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "TryGetPosition",
-            (position),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn TryGetVelocity(
         &mut self,
         velocity: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
@@ -117,25 +96,16 @@ impl crate::UnityEngine::XR::XRNodeState {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_nodeType(
+    pub fn TryGet_Quaternion1(
         &mut self,
-        value: crate::UnityEngine::XR::XRNode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        inValue: crate::UnityEngine::Quaternion,
+        availabilityFlag: crate::UnityEngine::XR::AvailableTrackingData,
+        outValue: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_nodeType",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_uniqueID(
-        &mut self,
-        value: u64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_uniqueID",
-            (value),
+            "TryGet",
+            (inValue, availabilityFlag, outValue),
         )?;
         Ok(__cordl_ret)
     }
@@ -152,16 +122,46 @@ impl crate::UnityEngine::XR::XRNodeState {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn TryGet_Quaternion1(
+    pub fn get_nodeType(
         &mut self,
-        inValue: crate::UnityEngine::Quaternion,
-        availabilityFlag: crate::UnityEngine::XR::AvailableTrackingData,
-        outValue: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::XR::XRNode> {
+        let __cordl_ret: crate::UnityEngine::XR::XRNode = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "TryGet",
-            (inValue, availabilityFlag, outValue),
+            "get_nodeType",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_nodeType(
+        &mut self,
+        value: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_nodeType",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_tracked(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_tracked",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_uniqueID(
+        &mut self,
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_uniqueID",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

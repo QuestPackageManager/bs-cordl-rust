@@ -31,6 +31,13 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
 }
 #[cfg(feature = "SpawnRotationChevronManager+DirectionData")]
 impl crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -40,13 +47,6 @@ impl crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SpawnRotationChevronManager+DirectionData")]
@@ -108,15 +108,11 @@ impl std::ops::DerefMut for SpawnRotationChevronManager {
 impl SpawnRotationChevronManager {
     #[cfg(feature = "SpawnRotationChevronManager+DirectionData")]
     pub type DirectionData = crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData;
-    pub fn HandleSpawnRotationBeatmapEvent(
-        &mut self,
-        beatmapEventData: *mut SpawnRotationBeatmapEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn ComputeAheadTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSpawnRotationBeatmapEvent", (beatmapEventData))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("ComputeAheadTime", ())?;
         Ok(__cordl_ret)
     }
     pub fn HandleBeatmapObjectCallback(
@@ -130,16 +126,6 @@ impl SpawnRotationChevronManager {
             .invoke("HandleBeatmapObjectCallback", (beatmapObjectData))?;
         Ok(__cordl_ret)
     }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn HandleBeatmapObjectSpawnControllerDidInit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -150,12 +136,23 @@ impl SpawnRotationChevronManager {
             .invoke("HandleBeatmapObjectSpawnControllerDidInit", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ComputeAheadTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn HandleSpawnRotationBeatmapEvent(
+        &mut self,
+        beatmapEventData: *mut SpawnRotationBeatmapEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("ComputeAheadTime", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleSpawnRotationBeatmapEvent", (beatmapEventData))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnDestroy(
         &mut self,
@@ -165,6 +162,16 @@ impl SpawnRotationChevronManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
     pub fn Update(
@@ -186,13 +193,6 @@ impl SpawnRotationChevronManager {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SpawnRotationChevronManager")]

@@ -25,33 +25,14 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Ocsp::RespData {
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+RespData")]
 impl crate::Org::BouncyCastle::Ocsp::RespData {
-    pub fn get_ProducedAt(
+    pub fn GetResponderId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Ocsp::RespID> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::DateTime = __cordl_object
-            .invoke("get_ProducedAt", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetX509Extensions(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions = __cordl_object
-            .invoke("GetX509Extensions", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Version(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Version", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Ocsp::RespID = __cordl_object
+            .invoke("GetResponderId", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetResponses(
@@ -69,7 +50,7 @@ impl crate::Org::BouncyCastle::Ocsp::RespData {
         > = __cordl_object.invoke("GetResponses", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_ResponseExtensions(
+    pub fn GetX509Extensions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
@@ -78,8 +59,17 @@ impl crate::Org::BouncyCastle::Ocsp::RespData {
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions = __cordl_object
-            .invoke("get_ResponseExtensions", ())?;
+            .invoke("GetX509Extensions", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        data: *mut crate::Org::BouncyCastle::Asn1::Ocsp::ResponseData,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (data))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -92,24 +82,34 @@ impl crate::Org::BouncyCastle::Ocsp::RespData {
             .invoke(".ctor", (data))?;
         Ok(__cordl_ret)
     }
-    pub fn GetResponderId(
+    pub fn get_ProducedAt(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Ocsp::RespID> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Ocsp::RespID = __cordl_object
-            .invoke("GetResponderId", ())?;
+        let __cordl_ret: crate::System::DateTime = __cordl_object
+            .invoke("get_ProducedAt", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        data: *mut crate::Org::BouncyCastle::Asn1::Ocsp::ResponseData,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (data))?;
-        Ok(__cordl_object)
+    pub fn get_ResponseExtensions(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions = __cordl_object
+            .invoke("get_ResponseExtensions", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Version(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Version", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+RespData")]

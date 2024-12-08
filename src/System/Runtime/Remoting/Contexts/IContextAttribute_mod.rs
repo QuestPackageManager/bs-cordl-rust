@@ -26,17 +26,6 @@ for crate::System::Runtime::Remoting::Contexts::IContextAttribute {
 }
 #[cfg(feature = "System+Runtime+Remoting+Contexts+IContextAttribute")]
 impl crate::System::Runtime::Remoting::Contexts::IContextAttribute {
-    pub fn IsContextOK(
-        &mut self,
-        ctx: *mut crate::System::Runtime::Remoting::Contexts::Context,
-        msg: *mut crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsContextOK", (ctx, msg))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetPropertiesForNewContext(
         &mut self,
         msg: *mut crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
@@ -46,6 +35,17 @@ impl crate::System::Runtime::Remoting::Contexts::IContextAttribute {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetPropertiesForNewContext", (msg))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsContextOK(
+        &mut self,
+        ctx: *mut crate::System::Runtime::Remoting::Contexts::Context,
+        msg: *mut crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsContextOK", (ctx, msg))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

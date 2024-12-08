@@ -27,12 +27,36 @@ impl std::ops::DerefMut for crate::Zenject::GuiRenderableManager {
 }
 #[cfg(feature = "Zenject+GuiRenderableManager")]
 impl crate::Zenject::GuiRenderableManager {
+    #[cfg(feature = "Zenject+GuiRenderableManager+__c")]
+    pub type __c = crate::Zenject::GuiRenderableManager___c;
     #[cfg(feature = "Zenject+GuiRenderableManager+__c__DisplayClass1_0")]
     pub type __c__DisplayClass1_0 = crate::Zenject::GuiRenderableManager___c__DisplayClass1_0;
     #[cfg(feature = "Zenject+GuiRenderableManager+RenderableInfo")]
     pub type RenderableInfo = crate::Zenject::GuiRenderableManager_RenderableInfo;
-    #[cfg(feature = "Zenject+GuiRenderableManager+__c")]
-    pub type __c = crate::Zenject::GuiRenderableManager___c;
+    pub fn New(
+        renderables: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::IGuiRenderable,
+        >,
+        priorities: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (renderables, priorities))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnGui(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnGui", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         renderables: *mut crate::System::Collections::Generic::List_1<
@@ -48,30 +72,6 @@ impl crate::Zenject::GuiRenderableManager {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (renderables, priorities))?;
         Ok(__cordl_ret)
-    }
-    pub fn OnGui(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnGui", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        renderables: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::IGuiRenderable,
-        >,
-        priorities: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (renderables, priorities))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+GuiRenderableManager")]
@@ -111,6 +111,16 @@ impl std::ops::DerefMut for crate::Zenject::GuiRenderableManager_RenderableInfo 
 }
 #[cfg(feature = "Zenject+GuiRenderableManager+RenderableInfo")]
 impl crate::Zenject::GuiRenderableManager_RenderableInfo {
+    pub fn New(
+        renderable: *mut crate::Zenject::IGuiRenderable,
+        priority: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (renderable, priority))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         renderable: *mut crate::Zenject::IGuiRenderable,
@@ -122,16 +132,6 @@ impl crate::Zenject::GuiRenderableManager_RenderableInfo {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (renderable, priority))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        renderable: *mut crate::Zenject::IGuiRenderable,
-        priority: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (renderable, priority))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+GuiRenderableManager+RenderableInfo")]

@@ -24,12 +24,12 @@ impl std::ops::DerefMut for crate::BGLib::UnityExtension::AssetBundleExtensions 
 }
 #[cfg(feature = "BGLib+UnityExtension+AssetBundleExtensions")]
 impl crate::BGLib::UnityExtension::AssetBundleExtensions {
-    #[cfg(feature = "BGLib+UnityExtension+AssetBundleExtensions+__c__DisplayClass2_0")]
-    pub type __c__DisplayClass2_0 = crate::BGLib::UnityExtension::AssetBundleExtensions___c__DisplayClass2_0;
     #[cfg(feature = "BGLib+UnityExtension+AssetBundleExtensions+_ExistsAsync_d__0")]
     pub type _ExistsAsync_d__0 = crate::BGLib::UnityExtension::AssetBundleExtensions__ExistsAsync_d__0;
     #[cfg(feature = "BGLib+UnityExtension+AssetBundleExtensions+__c__DisplayClass1_0")]
     pub type __c__DisplayClass1_0 = crate::BGLib::UnityExtension::AssetBundleExtensions___c__DisplayClass1_0;
+    #[cfg(feature = "BGLib+UnityExtension+AssetBundleExtensions+__c__DisplayClass2_0")]
+    pub type __c__DisplayClass2_0 = crate::BGLib::UnityExtension::AssetBundleExtensions___c__DisplayClass2_0;
 }
 #[cfg(feature = "BGLib+UnityExtension+AssetBundleExtensions")]
 impl quest_hook::libil2cpp::ObjectType

@@ -28,14 +28,33 @@ impl std::ops::DerefMut for AvatarColorBehaviour {
 }
 #[cfg(feature = "AvatarColorBehaviour")]
 impl AvatarColorBehaviour {
-    pub fn _ctor(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnGraphStart(
         &mut self,
+        playable: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("OnGraphStart", (playable))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPlayableDestroy(
+        &mut self,
+        playable: crate::UnityEngine::Playables::Playable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPlayableDestroy", (playable))?;
         Ok(__cordl_ret)
     }
     pub fn ProcessFrame(
@@ -51,34 +70,15 @@ impl AvatarColorBehaviour {
             .invoke("ProcessFrame", (playable, info, playerData))?;
         Ok(__cordl_ret)
     }
-    pub fn OnPlayableDestroy(
+    pub fn _ctor(
         &mut self,
-        playable: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPlayableDestroy", (playable))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn OnGraphStart(
-        &mut self,
-        playable: crate::UnityEngine::Playables::Playable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnGraphStart", (playable))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "AvatarColorBehaviour")]

@@ -28,23 +28,22 @@ impl std::ops::DerefMut for crate::System::Data::SqlTypes::SqlXml {
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlXml")]
 impl crate::System::Data::SqlTypes::SqlXml {
-    pub fn System_Xml_Serialization_IXmlSerializable_WriteXml(
+    pub fn CreateReader(
         &mut self,
-        writer: *mut crate::System::Xml::XmlWriter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlReader> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("System.Xml.Serialization.IXmlSerializable.WriteXml", (writer))?;
+        let __cordl_ret: *mut crate::System::Xml::XmlReader = __cordl_object
+            .invoke("CreateReader", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsNull", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn SetNull(
         &mut self,
@@ -77,14 +76,15 @@ impl crate::System::Data::SqlTypes::SqlXml {
             .invoke("System.Xml.Serialization.IXmlSerializable.ReadXml", (r))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateReader(
+    pub fn System_Xml_Serialization_IXmlSerializable_WriteXml(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlReader> {
+        writer: *mut crate::System::Xml::XmlWriter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::XmlReader = __cordl_object
-            .invoke("CreateReader", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("System.Xml.Serialization.IXmlSerializable.WriteXml", (writer))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -97,12 +97,12 @@ impl crate::System::Data::SqlTypes::SqlXml {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsNull", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlXml")]

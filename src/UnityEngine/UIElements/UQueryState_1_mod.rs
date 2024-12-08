@@ -31,6 +31,13 @@ for crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<T> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn OnRuleMatchedElement(
         &mut self,
         matcher: crate::UnityEngine::UIElements::RuleMatcher,
@@ -72,13 +79,6 @@ impl<
         let __cordl_ret: *mut crate::System::Action_1<T> = __cordl_object
             .invoke("get_callBack", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
@@ -122,45 +122,6 @@ for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
-    pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Current",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Reset",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        queryState: crate::UnityEngine::UIElements::UQueryState_1<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (queryState),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -187,6 +148,18 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
+    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Reset",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
@@ -197,6 +170,33 @@ impl<
         let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.IEnumerator.get_Current",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        queryState: crate::UnityEngine::UIElements::UQueryState_1<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (queryState),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Current",
             (),
         )?;
         Ok(__cordl_ret)
@@ -248,19 +248,12 @@ impl<
     T: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::UQueryState_1_ListQueryMatcher_1<T, TElement> {
-    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnRuleMatchedElement(
         &mut self,
@@ -280,6 +273,20 @@ impl<
             .invoke("OnRuleMatchedElement", (matcher, element))?;
         Ok(__cordl_ret)
     }
+    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -292,23 +299,6 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_matches(
-        &mut self,
-        value: *mut crate::System::Collections::Generic::List_1<TElement>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_matches", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_matches(
@@ -329,12 +319,22 @@ impl<
             .invoke("get_matches", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_matches(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::List_1<TElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_matches", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
@@ -378,10 +378,6 @@ for crate::UnityEngine::UIElements::UQueryState_1<T> {
 }
 #[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryState_1<T> {
-    #[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
-    pub type ActionQueryMatcher = crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<
-        T,
-    >;
     #[cfg(feature = "UnityEngine+UIElements+UQueryState_1+Enumerator")]
     pub type Enumerator = crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T>;
     #[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
@@ -389,6 +385,40 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryState
         T,
         TElement,
     >;
+    #[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
+    pub type ActionQueryMatcher = crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<
+        T,
+    >;
+    pub fn Equals_Object1(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_UQueryState_1_0(
+        &mut self,
+        other: crate::UnityEngine::UIElements::UQueryState_1<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn First(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -417,50 +447,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryState
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_IEnumerable_GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.IEnumerable.GetEnumerator",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_UQueryState_1_0(
-        &mut self,
-        other: crate::UnityEngine::UIElements::UQueryState_1<T>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -470,24 +456,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryState
             self,
             "GetHashCode",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        element: *mut crate::UnityEngine::UIElements::VisualElement,
-        matchers: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::RuleMatcher,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (element, matchers),
         )?;
         Ok(__cordl_ret)
     }
@@ -503,6 +471,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryState
             self,
             "RebuildOn",
             (element),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Single(
+        &mut self,
+        matcher: *mut crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Single",
+            (matcher),
         )?;
         Ok(__cordl_ret)
     }
@@ -522,18 +505,35 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryState
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Single(
+    pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
-        matcher: *mut crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher,
-    ) -> quest_hook::libil2cpp::Result<T>
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Single",
-            (matcher),
+            "System.Collections.IEnumerable.GetEnumerator",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        element: *mut crate::UnityEngine::UIElements::VisualElement,
+        matchers: *mut crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::RuleMatcher,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (element, matchers),
         )?;
         Ok(__cordl_ret)
     }

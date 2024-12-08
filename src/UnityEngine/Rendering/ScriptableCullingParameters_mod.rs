@@ -115,13 +115,46 @@ for crate::UnityEngine::Rendering::ScriptableCullingParameters {
 #[cfg(feature = "UnityEngine+Rendering+ScriptableCullingParameters")]
 impl crate::UnityEngine::Rendering::ScriptableCullingParameters {
     #[cfg(
-        feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_CullingPlanes_e__FixedBuffer"
-    )]
-    pub type _m_CullingPlanes_e__FixedBuffer = crate::UnityEngine::Rendering::ScriptableCullingParameters__m_CullingPlanes_e__FixedBuffer;
-    #[cfg(
         feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_LayerFarCullDistances_e__FixedBuffer"
     )]
     pub type _m_LayerFarCullDistances_e__FixedBuffer = crate::UnityEngine::Rendering::ScriptableCullingParameters__m_LayerFarCullDistances_e__FixedBuffer;
+    #[cfg(
+        feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_CullingPlanes_e__FixedBuffer"
+    )]
+    pub type _m_CullingPlanes_e__FixedBuffer = crate::UnityEngine::Rendering::ScriptableCullingParameters__m_CullingPlanes_e__FixedBuffer;
+    pub fn Equals_Object1(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_ScriptableCullingParameters0(
+        &mut self,
+        other: crate::UnityEngine::Rendering::ScriptableCullingParameters,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetCullingPlane(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Plane> {
+        let __cordl_ret: crate::UnityEngine::Plane = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetCullingPlane",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -146,39 +179,6 @@ impl crate::UnityEngine::Rendering::ScriptableCullingParameters {
             self,
             "get_cullingPlaneCount",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_ScriptableCullingParameters0(
-        &mut self,
-        other: crate::UnityEngine::Rendering::ScriptableCullingParameters,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCullingPlane(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Plane> {
-        let __cordl_ret: crate::UnityEngine::Plane = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetCullingPlane",
-            (index),
         )?;
         Ok(__cordl_ret)
     }

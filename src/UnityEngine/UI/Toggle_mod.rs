@@ -33,14 +33,61 @@ impl crate::UnityEngine::UI::Toggle {
     pub type ToggleTransition = crate::UnityEngine::UI::Toggle_ToggleTransition;
     #[cfg(feature = "UnityEngine+UI+Toggle+ToggleEvent")]
     pub type ToggleEvent = crate::UnityEngine::UI::Toggle_ToggleEvent;
-    pub fn OnEnable(
+    pub fn GraphicUpdateComplete(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
+            .invoke("GraphicUpdateComplete", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn InternalToggle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalToggle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LayoutComplete(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LayoutComplete", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDidApplyAnimationProperties(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDidApplyAnimationProperties", ())?;
         Ok(__cordl_ret)
     }
     pub fn OnDisable(
@@ -53,44 +100,14 @@ impl crate::UnityEngine::UI::Toggle {
             .invoke("OnDisable", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Set(
+    pub fn OnEnable(
         &mut self,
-        value: bool,
-        sendCallback: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Set", (value, sendCallback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnityEngine_UI_ICanvasElement_get_transform(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Transform = __cordl_object
-            .invoke("UnityEngine.UI.ICanvasElement.get_transform", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetIsOnWithoutNotify(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetIsOnWithoutNotify", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isOn(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isOn", ())?;
+            .invoke("OnEnable", ())?;
         Ok(__cordl_ret)
     }
     pub fn OnPointerClick(
@@ -115,34 +132,49 @@ impl crate::UnityEngine::UI::Toggle {
             .invoke("OnSubmit", (eventData))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn PlayEffect(
         &mut self,
+        instant: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("PlayEffect", (instant))?;
         Ok(__cordl_ret)
     }
-    pub fn GraphicUpdateComplete(
+    pub fn Rebuild(
         &mut self,
+        executing: crate::UnityEngine::UI::CanvasUpdate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GraphicUpdateComplete", ())?;
+            .invoke("Rebuild", (executing))?;
         Ok(__cordl_ret)
     }
-    pub fn OnDidApplyAnimationProperties(
+    pub fn Set(
         &mut self,
+        value: bool,
+        sendCallback: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDidApplyAnimationProperties", ())?;
+            .invoke("Set", (value, sendCallback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetIsOnWithoutNotify(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetIsOnWithoutNotify", (value))?;
         Ok(__cordl_ret)
     }
     pub fn SetToggleGroup(
@@ -157,35 +189,51 @@ impl crate::UnityEngine::UI::Toggle {
             .invoke("SetToggleGroup", (newGroup, setMemberValue))?;
         Ok(__cordl_ret)
     }
-    pub fn PlayEffect(
+    pub fn Start(
         &mut self,
-        instant: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PlayEffect", (instant))?;
+            .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnDestroy(
+    pub fn UnityEngine_UI_ICanvasElement_get_transform(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::Transform = __cordl_object
+            .invoke("UnityEngine.UI.ICanvasElement.get_transform", ())?;
         Ok(__cordl_ret)
     }
-    pub fn LayoutComplete(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LayoutComplete", ())?;
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_group(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::ToggleGroup> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UI::ToggleGroup = __cordl_object
+            .invoke("get_group", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isOn(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isOn", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_group(
@@ -199,37 +247,6 @@ impl crate::UnityEngine::UI::Toggle {
             .invoke("set_group", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_group(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::ToggleGroup> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UI::ToggleGroup = __cordl_object
-            .invoke("get_group", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Rebuild(
-        &mut self,
-        executing: crate::UnityEngine::UI::CanvasUpdate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Rebuild", (executing))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalToggle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalToggle", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_isOn(
         &mut self,
         value: bool,
@@ -240,23 +257,6 @@ impl crate::UnityEngine::UI::Toggle {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_isOn", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UI+Toggle")]
@@ -294,6 +294,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::Toggle_ToggleEvent {
 }
 #[cfg(feature = "UnityEngine+UI+Toggle+ToggleEvent")]
 impl crate::UnityEngine::UI::Toggle_ToggleEvent {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -303,13 +310,6 @@ impl crate::UnityEngine::UI::Toggle_ToggleEvent {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UI+Toggle+ToggleEvent")]

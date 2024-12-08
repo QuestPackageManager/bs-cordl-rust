@@ -25,18 +25,6 @@ impl std::ops::DerefMut for crate::System::Dynamic::BinaryOperationBinder {
 }
 #[cfg(feature = "System+Dynamic+BinaryOperationBinder")]
 impl crate::System::Dynamic::BinaryOperationBinder {
-    pub fn get_Operation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Linq::Expressions::ExpressionType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Linq::Expressions::ExpressionType = __cordl_object
-            .invoke("get_Operation", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Bind(
         &mut self,
         target: *mut crate::System::Dynamic::DynamicMetaObject,
@@ -51,6 +39,19 @@ impl crate::System::Dynamic::BinaryOperationBinder {
             .invoke("Bind", (target, args))?;
         Ok(__cordl_ret)
     }
+    pub fn FallbackBinaryOperation_DynamicMetaObject1(
+        &mut self,
+        target: *mut crate::System::Dynamic::DynamicMetaObject,
+        arg: *mut crate::System::Dynamic::DynamicMetaObject,
+        errorSuggestion: *mut crate::System::Dynamic::DynamicMetaObject,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
+            .invoke("FallbackBinaryOperation", (target, arg, errorSuggestion))?;
+        Ok(__cordl_ret)
+    }
     pub fn FallbackBinaryOperation_DynamicMetaObject_DynamicMetaObject0(
         &mut self,
         target: *mut crate::System::Dynamic::DynamicMetaObject,
@@ -63,17 +64,16 @@ impl crate::System::Dynamic::BinaryOperationBinder {
             .invoke("FallbackBinaryOperation", (target, arg))?;
         Ok(__cordl_ret)
     }
-    pub fn FallbackBinaryOperation_DynamicMetaObject1(
+    pub fn get_Operation(
         &mut self,
-        target: *mut crate::System::Dynamic::DynamicMetaObject,
-        arg: *mut crate::System::Dynamic::DynamicMetaObject,
-        errorSuggestion: *mut crate::System::Dynamic::DynamicMetaObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Linq::Expressions::ExpressionType,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("FallbackBinaryOperation", (target, arg, errorSuggestion))?;
+        let __cordl_ret: crate::System::Linq::Expressions::ExpressionType = __cordl_object
+            .invoke("get_Operation", ())?;
         Ok(__cordl_ret)
     }
 }

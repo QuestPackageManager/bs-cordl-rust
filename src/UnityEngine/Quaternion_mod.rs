@@ -25,15 +25,43 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Quaterni
 #[cfg(feature = "UnityEngine+Quaternion")]
 impl crate::UnityEngine::Quaternion {
     pub const kEpsilon: f32 = 0.000001f32;
-    pub fn set_Item(
+    pub fn Equals_Object0(
         &mut self,
-        index: i32,
-        value: f32,
+        other: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Quaternion1(
+        &mut self,
+        other: crate::UnityEngine::Quaternion,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Normalize(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_Item",
-            (index, value),
+            "Normalize",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -60,28 +88,6 @@ impl crate::UnityEngine::Quaternion {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        x: f32,
-        y: f32,
-        z: f32,
-        w: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (x, y, z, w),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn ToString_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -104,44 +110,25 @@ impl crate::UnityEngine::Quaternion {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object0(
+    pub fn _ctor(
         &mut self,
-        other: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Quaternion1(
-        &mut self,
-        other: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_eulerAngles(
-        &mut self,
-        value: crate::UnityEngine::Vector3,
+        x: f32,
+        y: f32,
+        z: f32,
+        w: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_eulerAngles",
-            (value),
+            ".ctor",
+            (x, y, z, w),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (index),
         )?;
         Ok(__cordl_ret)
     }
@@ -155,13 +142,26 @@ impl crate::UnityEngine::Quaternion {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Normalize(
+    pub fn set_Item(
         &mut self,
+        index: i32,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Normalize",
-            (),
+            "set_Item",
+            (index, value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_eulerAngles(
+        &mut self,
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_eulerAngles",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

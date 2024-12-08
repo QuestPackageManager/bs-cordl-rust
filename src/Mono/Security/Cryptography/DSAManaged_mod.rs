@@ -39,47 +39,15 @@ impl std::ops::DerefMut for crate::Mono::Security::Cryptography::DSAManaged {
 impl crate::Mono::Security::Cryptography::DSAManaged {
     #[cfg(feature = "Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler")]
     pub type KeyGeneratedEventHandler = crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler;
-    pub fn get_PublicOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_PublicOnly", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn VerifySignature(
+    pub fn Dispose(
         &mut self,
-        rgbHash: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        rgbSignature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("VerifySignature", (rgbHash, rgbSignature))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GenerateParams(
-        &mut self,
-        keyLength: i32,
+        disposing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateParams", (keyLength))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add(
-        &mut self,
-        a: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        b: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add", (a, b, value))?;
+            .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
     pub fn ExportParameters(
@@ -95,15 +63,45 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
             .invoke("ExportParameters", (includePrivateParameters))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn Finalize(
         &mut self,
-        dwKeySize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dwKeySize))?;
+            .invoke("Finalize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Generate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Generate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GenerateKeyPair(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GenerateKeyPair", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GenerateParams(
+        &mut self,
+        keyLength: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GenerateParams", (keyLength))?;
         Ok(__cordl_ret)
     }
     pub fn ImportParameters(
@@ -117,14 +115,58 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
             .invoke("ImportParameters", (parameters))?;
         Ok(__cordl_ret)
     }
-    pub fn GenerateKeyPair(
+    pub fn New(dwKeySize: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dwKeySize))?;
+        Ok(__cordl_object)
+    }
+    pub fn NormalizeArray(
         &mut self,
+        array: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("NormalizeArray", (array))?;
+        Ok(__cordl_ret)
+    }
+    pub fn VerifySignature(
+        &mut self,
+        rgbHash: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        rgbSignature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("VerifySignature", (rgbHash, rgbSignature))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        dwKeySize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateKeyPair", ())?;
+            .invoke(".ctor", (dwKeySize))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add(
+        &mut self,
+        a: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        b: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add", (a, b, value))?;
         Ok(__cordl_ret)
     }
     pub fn add_KeyGenerated(
@@ -138,15 +180,18 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
             .invoke("add_KeyGenerated", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
-        &mut self,
-        disposing: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_KeySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", (disposing))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_KeySize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_PublicOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_PublicOnly", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Random(
@@ -161,34 +206,6 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
             .invoke("get_Random", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_KeySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_KeySize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Finalize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn NormalizeArray(
-        &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("NormalizeArray", (array))?;
-        Ok(__cordl_ret)
-    }
     pub fn remove_KeyGenerated(
         &mut self,
         value: *mut crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler,
@@ -199,23 +216,6 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_KeyGenerated", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn Generate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Generate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(dwKeySize: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dwKeySize))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Security+Cryptography+DSAManaged")]
@@ -269,6 +269,16 @@ impl crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler {
             .invoke("Invoke", (sender, e))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -280,16 +290,6 @@ impl crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler")]

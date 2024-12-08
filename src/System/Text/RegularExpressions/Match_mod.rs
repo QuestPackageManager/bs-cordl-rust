@@ -35,49 +35,17 @@ impl std::ops::DerefMut for crate::System::Text::RegularExpressions::Match {
 }
 #[cfg(feature = "System+Text+RegularExpressions+Match")]
 impl crate::System::Text::RegularExpressions::Match {
-    pub fn GroupToStringImpl(
+    pub fn AddMatch(
         &mut self,
-        groupnum: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
+        cap: i32,
+        start: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = __cordl_object
-            .invoke("GroupToStringImpl", (groupnum))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NextMatch(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::Match,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::Match = __cordl_object
-            .invoke("NextMatch", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Groups(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::GroupCollection,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::GroupCollection = __cordl_object
-            .invoke("get_Groups", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LastGroupToStringImpl(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = __cordl_object
-            .invoke("LastGroupToStringImpl", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddMatch", (cap, start, len))?;
         Ok(__cordl_ret)
     }
     pub fn BalanceMatch(
@@ -91,6 +59,34 @@ impl crate::System::Text::RegularExpressions::Match {
             .invoke("BalanceMatch", (cap))?;
         Ok(__cordl_ret)
     }
+    pub fn GroupToStringImpl(
+        &mut self,
+        groupnum: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = __cordl_object
+            .invoke("GroupToStringImpl", (groupnum))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsMatched(&mut self, cap: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsMatched", (cap))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LastGroupToStringImpl(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = __cordl_object
+            .invoke("LastGroupToStringImpl", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn MatchIndex(&mut self, cap: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -98,15 +94,55 @@ impl crate::System::Text::RegularExpressions::Match {
         let __cordl_ret: i32 = __cordl_object.invoke("MatchIndex", (cap))?;
         Ok(__cordl_ret)
     }
-    pub fn Tidy(
+    pub fn MatchLength(&mut self, cap: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("MatchLength", (cap))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_1() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Regex_i32_String_i32_i32_i32_0(
+        regex: *mut crate::System::Text::RegularExpressions::Regex,
+        capcount: i32,
+        text: *mut crate::System::String,
+        begpos: i32,
+        len: i32,
+        startpos: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (regex, capcount, text, begpos, len, startpos))?;
+        Ok(__cordl_object)
+    }
+    pub fn NextMatch(
         &mut self,
-        textpos: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Text::RegularExpressions::Match,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Text::RegularExpressions::Match = __cordl_object
+            .invoke("NextMatch", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveMatch(
+        &mut self,
+        cap: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Tidy", (textpos))?;
+            .invoke("RemoveMatch", (cap))?;
         Ok(__cordl_ret)
     }
     pub fn Reset(
@@ -122,6 +158,27 @@ impl crate::System::Text::RegularExpressions::Match {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", (regex, text, textbeg, textend, textstart))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Tidy(
+        &mut self,
+        textpos: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Tidy", (textpos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_Regex_i32_String_i32_i32_i32_0(
@@ -140,74 +197,17 @@ impl crate::System::Text::RegularExpressions::Match {
             .invoke(".ctor", (regex, capcount, text, begpos, len, startpos))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_1(
+    pub fn get_Groups(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Text::RegularExpressions::GroupCollection,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::System::Text::RegularExpressions::GroupCollection = __cordl_object
+            .invoke("get_Groups", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn IsMatched(&mut self, cap: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsMatched", (cap))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveMatch(
-        &mut self,
-        cap: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveMatch", (cap))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MatchLength(&mut self, cap: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("MatchLength", (cap))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddMatch(
-        &mut self,
-        cap: i32,
-        start: i32,
-        len: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddMatch", (cap, start, len))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_Regex_i32_String_i32_i32_i32_0(
-        regex: *mut crate::System::Text::RegularExpressions::Regex,
-        capcount: i32,
-        text: *mut crate::System::String,
-        begpos: i32,
-        len: i32,
-        startpos: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (regex, capcount, text, begpos, len, startpos))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_1() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+Match")]

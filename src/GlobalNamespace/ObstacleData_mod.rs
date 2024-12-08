@@ -28,28 +28,6 @@ impl std::ops::DerefMut for ObstacleData {
 }
 #[cfg(feature = "ObstacleData")]
 impl ObstacleData {
-    pub fn set_lineLayer(
-        &mut self,
-        value: NoteLineLayer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_lineLayer", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateDuration(
-        &mut self,
-        duration: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateDuration", (duration))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetCopy(&mut self) -> quest_hook::libil2cpp::Result<*mut BeatmapDataItem> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -68,40 +46,32 @@ impl ObstacleData {
             .invoke("Mirror", (lineCount))?;
         Ok(__cordl_ret)
     }
-    pub fn set_lineIndex(
+    pub fn New(
+        _cordl_time: f32,
+        lineIndex: i32,
+        lineLayer: NoteLineLayer,
+        duration: f32,
+        width: i32,
+        height: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (_cordl_time, lineIndex, lineLayer, duration, width, height),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn UpdateDuration(
         &mut self,
-        value: i32,
+        duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_lineIndex", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_duration", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_height", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_duration(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_duration", (value))?;
+            .invoke("UpdateDuration", (duration))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -123,6 +93,20 @@ impl ObstacleData {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_duration", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_height", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_lineIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -137,22 +121,22 @@ impl ObstacleData {
         let __cordl_ret: NoteLineLayer = __cordl_object.invoke("get_lineLayer", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_width(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_width", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_width", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_duration(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_duration", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_height(
@@ -166,22 +150,38 @@ impl ObstacleData {
             .invoke("set_height", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        _cordl_time: f32,
-        lineIndex: i32,
-        lineLayer: NoteLineLayer,
-        duration: f32,
-        width: i32,
-        height: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (_cordl_time, lineIndex, lineLayer, duration, width, height),
-            )?;
-        Ok(__cordl_object)
+    pub fn set_lineIndex(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_lineIndex", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_lineLayer(
+        &mut self,
+        value: NoteLineLayer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_lineLayer", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_width(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_width", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "ObstacleData")]

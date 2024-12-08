@@ -35,6 +35,42 @@ impl std::ops::DerefMut for RunLevelMenuDestination {
 }
 #[cfg(feature = "RunLevelMenuDestination")]
 impl RunLevelMenuDestination {
+    pub fn New(
+        beatmapLevelPack: *mut BeatmapLevelPack,
+        beatmapLevel: *mut BeatmapLevel,
+        beatmapDifficulty: BeatmapDifficulty,
+        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+        gameplayModifiers: *mut GameplayModifiers,
+        practice: bool,
+        startSongTime: f32,
+        songSpeedMultiplier: f32,
+        overrideEnvironments: bool,
+        environmentType: *mut crate::System::String,
+        environmentName: *mut crate::System::String,
+        quitAppAfterRun: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    beatmapLevelPack,
+                    beatmapLevel,
+                    beatmapDifficulty,
+                    beatmapCharacteristic,
+                    gameplayModifiers,
+                    practice,
+                    startSongTime,
+                    songSpeedMultiplier,
+                    overrideEnvironments,
+                    environmentType,
+                    environmentName,
+                    quitAppAfterRun,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         beatmapLevelPack: *mut BeatmapLevelPack,
@@ -72,42 +108,6 @@ impl RunLevelMenuDestination {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        beatmapLevelPack: *mut BeatmapLevelPack,
-        beatmapLevel: *mut BeatmapLevel,
-        beatmapDifficulty: BeatmapDifficulty,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
-        gameplayModifiers: *mut GameplayModifiers,
-        practice: bool,
-        startSongTime: f32,
-        songSpeedMultiplier: f32,
-        overrideEnvironments: bool,
-        environmentType: *mut crate::System::String,
-        environmentName: *mut crate::System::String,
-        quitAppAfterRun: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    beatmapLevelPack,
-                    beatmapLevel,
-                    beatmapDifficulty,
-                    beatmapCharacteristic,
-                    gameplayModifiers,
-                    practice,
-                    startSongTime,
-                    songSpeedMultiplier,
-                    overrideEnvironments,
-                    environmentType,
-                    environmentName,
-                    quitAppAfterRun,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "RunLevelMenuDestination")]

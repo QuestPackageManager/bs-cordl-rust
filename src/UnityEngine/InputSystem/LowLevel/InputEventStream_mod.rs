@@ -33,12 +33,23 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventStream {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventStream")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputEventStream {
-    pub fn get_numEventsRetainedInBuffer(
+    pub fn Advance(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        leaveEventInBuffer: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_numEventsRetainedInBuffer",
+            "Advance",
+            (leaveEventInBuffer),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn CleanUpAfterException(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CleanUpAfterException",
             (),
         )?;
         Ok(__cordl_ret)
@@ -56,27 +67,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventStream {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Advance(
-        &mut self,
-        leaveEventInBuffer: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Advance",
-            (leaveEventInBuffer),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_currentEventPtr(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_currentEventPtr",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Peek(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
@@ -87,29 +77,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventStream {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_numBytesRetainedInBuffer(
+    pub fn Write(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        eventPtr: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_numBytesRetainedInBuffer",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isOpen(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isOpen",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_remainingEventCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_remainingEventCount",
-            (),
+            "Write",
+            (eventPtr),
         )?;
         Ok(__cordl_ret)
     }
@@ -127,24 +102,49 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventStream {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CleanUpAfterException(
+    pub fn get_currentEventPtr(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CleanUpAfterException",
+            "get_currentEventPtr",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Write(
-        &mut self,
-        eventPtr: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_isOpen(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Write",
-            (eventPtr),
+            "get_isOpen",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_numBytesRetainedInBuffer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_numBytesRetainedInBuffer",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_numEventsRetainedInBuffer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_numEventsRetainedInBuffer",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_remainingEventCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_remainingEventCount",
+            (),
         )?;
         Ok(__cordl_ret)
     }

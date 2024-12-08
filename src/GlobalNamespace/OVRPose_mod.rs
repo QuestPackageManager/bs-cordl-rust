@@ -21,6 +21,25 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for OVRPose {
 }
 #[cfg(feature = "OVRPose")]
 impl OVRPose {
+    pub fn Equals(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Inverse(&mut self) -> quest_hook::libil2cpp::Result<OVRPose> {
         let __cordl_ret: OVRPose = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -37,30 +56,13 @@ impl OVRPose {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn flipZ(&mut self) -> quest_hook::libil2cpp::Result<OVRPose> {
-        let __cordl_ret: OVRPose = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "flipZ",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
+    pub fn ToPosef(
         &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Posef> {
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Posef = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (obj),
+            "ToPosef",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -74,12 +76,10 @@ impl OVRPose {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToPosef(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Posef> {
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Posef = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn flipZ(&mut self) -> quest_hook::libil2cpp::Result<OVRPose> {
+        let __cordl_ret: OVRPose = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToPosef",
+            "flipZ",
             (),
         )?;
         Ok(__cordl_ret)

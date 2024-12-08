@@ -32,28 +32,6 @@ for crate::UnityEngine::ProBuilder::ObjectPool_1<T> {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ObjectPool_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::ProBuilder::ObjectPool_1<T> {
-    pub fn _ctor(
-        &mut self,
-        initialSize: i32,
-        desiredSize: i32,
-        constructor: *mut crate::System::Func_1<T>,
-        destructor: *mut crate::System::Action_1<T>,
-        lazyInitialization: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (initialSize, desiredSize, constructor, destructor, lazyInitialization),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn Dequeue(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -63,33 +41,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::ProBuilder::ObjectPool_
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("Dequeue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Enqueue(
-        &mut self,
-        obj: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Enqueue", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Empty(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Empty", ())?;
         Ok(__cordl_ret)
     }
     pub fn Dispose_0(
@@ -121,13 +72,40 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::ProBuilder::ObjectPool_
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
+    pub fn Empty(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Empty", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Enqueue(
+        &mut self,
+        obj: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Enqueue", (obj))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         initialSize: i32,
         desiredSize: i32,
         constructor: *mut crate::System::Func_1<T>,
         destructor: *mut crate::System::Action_1<T>,
         lazyInitialization: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -136,6 +114,28 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::ProBuilder::ObjectPool_
                 (initialSize, desiredSize, constructor, destructor, lazyInitialization),
             )?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        initialSize: i32,
+        desiredSize: i32,
+        constructor: *mut crate::System::Func_1<T>,
+        destructor: *mut crate::System::Action_1<T>,
+        lazyInitialization: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (initialSize, desiredSize, constructor, destructor, lazyInitialization),
+            )?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ObjectPool_1")]

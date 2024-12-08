@@ -45,6 +45,15 @@ impl crate::Zenject::DefaultGameObjectParentInstaller {
             .invoke("InstallBindings", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         name: *mut crate::System::String,
@@ -55,15 +64,6 @@ impl crate::Zenject::DefaultGameObjectParentInstaller {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (name))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller")]
@@ -116,6 +116,15 @@ impl crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroy
             .invoke("Dispose", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        gameObject: *mut crate::UnityEngine::GameObject,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (gameObject))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         gameObject: *mut crate::UnityEngine::GameObject,
@@ -126,15 +135,6 @@ impl crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroy
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (gameObject))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        gameObject: *mut crate::UnityEngine::GameObject,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (gameObject))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]

@@ -50,17 +50,27 @@ impl std::ops::DerefMut for crate::BeatSaber::TrackDefinitions::EventTrackDefini
 }
 #[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
 impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
-    #[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
-    pub type MarkerType = crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType;
     #[cfg(
         feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
     )]
     pub type DataTransformationType = crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType;
-    pub fn get_visible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    #[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
+    pub type MarkerType = crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_visible", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_dataTransformation(
@@ -75,13 +85,6 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
             .invoke("get_dataTransformation", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_needsFiltering(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_needsFiltering", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_markerType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -94,22 +97,19 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
             .invoke("get_markerType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_needsFiltering(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_needsFiltering", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_visible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_visible", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]

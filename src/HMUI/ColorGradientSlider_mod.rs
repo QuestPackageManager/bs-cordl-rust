@@ -37,26 +37,43 @@ impl std::ops::DerefMut for crate::HMUI::ColorGradientSlider {
 }
 #[cfg(feature = "HMUI+ColorGradientSlider")]
 impl crate::HMUI::ColorGradientSlider {
-    pub fn _ctor(
+    pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetColors(
+    pub fn HandleNormalizedValueDidChange(
         &mut self,
-        color0: crate::UnityEngine::Color,
-        color1: crate::UnityEngine::Color,
+        slider: *mut crate::HMUI::TextSlider,
+        normalizedValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColors", (color0, color1))?;
+            .invoke("HandleNormalizedValueDidChange", (slider, normalizedValue))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn OnPointerUp(
@@ -70,14 +87,16 @@ impl crate::HMUI::ColorGradientSlider {
             .invoke("OnPointerUp", (eventData))?;
         Ok(__cordl_ret)
     }
-    pub fn OnDestroy(
+    pub fn SetColors(
         &mut self,
+        color0: crate::UnityEngine::Color,
+        color1: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
+            .invoke("SetColors", (color0, color1))?;
         Ok(__cordl_ret)
     }
     pub fn TextForNormalizedValue(
@@ -101,29 +120,14 @@ impl crate::HMUI::ColorGradientSlider {
             .invoke("UpdateVisuals", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_colorDidChangeEvent(
-        &mut self,
-        value: *mut crate::System::Action_3<
-            *mut crate::HMUI::ColorGradientSlider,
-            crate::UnityEngine::Color,
-            ColorChangeUIEventType,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_colorDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Awake(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_colorDidChangeEvent(
@@ -141,24 +145,20 @@ impl crate::HMUI::ColorGradientSlider {
             .invoke("add_colorDidChangeEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleNormalizedValueDidChange(
+    pub fn remove_colorDidChangeEvent(
         &mut self,
-        slider: *mut crate::HMUI::TextSlider,
-        normalizedValue: f32,
+        value: *mut crate::System::Action_3<
+            *mut crate::HMUI::ColorGradientSlider,
+            crate::UnityEngine::Color,
+            ColorChangeUIEventType,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNormalizedValueDidChange", (slider, normalizedValue))?;
+            .invoke("remove_colorDidChangeEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HMUI+ColorGradientSlider")]

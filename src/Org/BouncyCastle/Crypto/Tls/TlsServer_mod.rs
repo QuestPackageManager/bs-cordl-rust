@@ -24,38 +24,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsServer {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsServer")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsServer {
-    pub fn GetNewSessionTicket(
+    pub fn GetCertificateRequest(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::NewSessionTicket,
+        *mut crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::NewSessionTicket = __cordl_object
-            .invoke("GetNewSessionTicket", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn NotifyOfferedCompressionMethods(
-        &mut self,
-        offeredCompressionMethods: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NotifyOfferedCompressionMethods", (offeredCompressionMethods))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NotifyFallback(
-        &mut self,
-        isFallback: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NotifyFallback", (isFallback))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest = __cordl_object
+            .invoke("GetCertificateRequest", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetCertificateStatus(
@@ -70,58 +48,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsServer {
             .invoke("GetCertificateStatus", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Init(
-        &mut self,
-        context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsServerContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetServerSupplementalData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IList> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IList = __cordl_object
-            .invoke("GetServerSupplementalData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCertificateRequest(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest = __cordl_object
-            .invoke("GetCertificateRequest", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetServerVersion(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion = __cordl_object
-            .invoke("GetServerVersion", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSelectedCipherSuite(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetSelectedCipherSuite", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetCredentials(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -132,39 +58,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsServer {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials = __cordl_object
             .invoke("GetCredentials", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessClientSupplementalData(
-        &mut self,
-        clientSupplementalData: *mut crate::System::Collections::IList,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessClientSupplementalData", (clientSupplementalData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NotifyClientVersion(
-        &mut self,
-        clientVersion: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NotifyClientVersion", (clientVersion))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessClientExtensions(
-        &mut self,
-        clientExtensions: *mut crate::System::Collections::IDictionary,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessClientExtensions", (clientExtensions))?;
         Ok(__cordl_ret)
     }
     pub fn GetKeyExchange(
@@ -179,26 +72,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsServer {
             .invoke("GetKeyExchange", ())?;
         Ok(__cordl_ret)
     }
-    pub fn NotifyClientCertificate(
+    pub fn GetNewSessionTicket(
         &mut self,
-        clientCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Tls::NewSessionTicket,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NotifyClientCertificate", (clientCertificate))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::NewSessionTicket = __cordl_object
+            .invoke("GetNewSessionTicket", ())?;
         Ok(__cordl_ret)
     }
-    pub fn NotifyOfferedCipherSuites(
-        &mut self,
-        offeredCipherSuites: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn GetSelectedCipherSuite(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NotifyOfferedCipherSuites", (offeredCipherSuites))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetSelectedCipherSuite", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetSelectedCompressionMethod(&mut self) -> quest_hook::libil2cpp::Result<u8> {
@@ -216,6 +106,116 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsServer {
         );
         let __cordl_ret: *mut crate::System::Collections::IDictionary = __cordl_object
             .invoke("GetServerExtensions", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetServerSupplementalData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IList> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IList = __cordl_object
+            .invoke("GetServerSupplementalData", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetServerVersion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion = __cordl_object
+            .invoke("GetServerVersion", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsServerContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NotifyClientCertificate(
+        &mut self,
+        clientCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("NotifyClientCertificate", (clientCertificate))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NotifyClientVersion(
+        &mut self,
+        clientVersion: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("NotifyClientVersion", (clientVersion))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NotifyFallback(
+        &mut self,
+        isFallback: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("NotifyFallback", (isFallback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NotifyOfferedCipherSuites(
+        &mut self,
+        offeredCipherSuites: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("NotifyOfferedCipherSuites", (offeredCipherSuites))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NotifyOfferedCompressionMethods(
+        &mut self,
+        offeredCompressionMethods: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("NotifyOfferedCompressionMethods", (offeredCompressionMethods))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessClientExtensions(
+        &mut self,
+        clientExtensions: *mut crate::System::Collections::IDictionary,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessClientExtensions", (clientExtensions))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessClientSupplementalData(
+        &mut self,
+        clientSupplementalData: *mut crate::System::Collections::IList,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessClientSupplementalData", (clientSupplementalData))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

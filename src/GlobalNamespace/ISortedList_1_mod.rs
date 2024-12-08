@@ -24,22 +24,10 @@ impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for ISortedList_1<T> {
 }
 #[cfg(feature = "ISortedList_1")]
 impl<T: quest_hook::libil2cpp::Type> ISortedList_1<T> {
-    pub fn get_count(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_count", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_items(
+    pub fn Insert_LinkedListNode_1_1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::LinkedList_1<T>,
-    >
+        newNode: *mut crate::System::Collections::Generic::LinkedListNode_1<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -47,8 +35,8 @@ impl<T: quest_hook::libil2cpp::Type> ISortedList_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::LinkedList_1<T> = __cordl_object
-            .invoke("get_items", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Insert", (newNode))?;
         Ok(__cordl_ret)
     }
     pub fn Insert_T0(
@@ -66,21 +54,6 @@ impl<T: quest_hook::libil2cpp::Type> ISortedList_1<T> {
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::LinkedListNode_1<T> = __cordl_object
             .invoke("Insert", (newItem))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Insert_LinkedListNode_1_1(
-        &mut self,
-        newNode: *mut crate::System::Collections::Generic::LinkedListNode_1<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Insert", (newNode))?;
         Ok(__cordl_ret)
     }
     pub fn Remove(
@@ -117,6 +90,33 @@ impl<T: quest_hook::libil2cpp::Type> ISortedList_1<T> {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_count(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_count", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_items(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::LinkedList_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::LinkedList_1<T> = __cordl_object
+            .invoke("get_items", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "ISortedList_1")]

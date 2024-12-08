@@ -25,15 +25,14 @@ impl std::ops::DerefMut for HealthWarningSceneSetupData {
 }
 #[cfg(feature = "HealthWarningSceneSetupData")]
 impl HealthWarningSceneSetupData {
-    pub fn get_nextScenesTransitionSetupData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut ScenesTransitionSetupDataSO> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut ScenesTransitionSetupDataSO = __cordl_object
-            .invoke("get_nextScenesTransitionSetupData", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        nextScenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (nextScenesTransitionSetupData))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -46,14 +45,15 @@ impl HealthWarningSceneSetupData {
             .invoke(".ctor", (nextScenesTransitionSetupData))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        nextScenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (nextScenesTransitionSetupData))?;
-        Ok(__cordl_object)
+    pub fn get_nextScenesTransitionSetupData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut ScenesTransitionSetupDataSO> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut ScenesTransitionSetupDataSO = __cordl_object
+            .invoke("get_nextScenesTransitionSetupData", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "HealthWarningSceneSetupData")]

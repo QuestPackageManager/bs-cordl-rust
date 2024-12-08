@@ -27,6 +27,15 @@ for crate::System::Runtime::Serialization::TypeLoadExceptionHolder {
 }
 #[cfg(feature = "System+Runtime+Serialization+TypeLoadExceptionHolder")]
 impl crate::System::Runtime::Serialization::TypeLoadExceptionHolder {
+    pub fn New(
+        typeName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (typeName))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         typeName: *mut crate::System::String,
@@ -47,15 +56,6 @@ impl crate::System::Runtime::Serialization::TypeLoadExceptionHolder {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_TypeName", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        typeName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (typeName))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+TypeLoadExceptionHolder")]

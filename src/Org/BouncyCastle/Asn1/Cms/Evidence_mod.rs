@@ -26,15 +26,32 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cms::Evidence {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Evidence")]
 impl crate::Org::BouncyCastle::Asn1::Cms::Evidence {
-    pub fn _ctor_TimeStampTokenEvidence0(
-        &mut self,
+    pub fn New_Asn1TaggedObject1(
+        tagged: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (tagged))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_TimeStampTokenEvidence0(
         tstEvidence: *mut crate::Org::BouncyCastle::Asn1::Cms::TimeStampTokenEvidence,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (tstEvidence))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToAsn1Object(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (tstEvidence))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_Asn1TaggedObject1(
@@ -48,14 +65,15 @@ impl crate::Org::BouncyCastle::Asn1::Cms::Evidence {
             .invoke(".ctor", (tagged))?;
         Ok(__cordl_ret)
     }
-    pub fn ToAsn1Object(
+    pub fn _ctor_TimeStampTokenEvidence0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+        tstEvidence: *mut crate::Org::BouncyCastle::Asn1::Cms::TimeStampTokenEvidence,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (tstEvidence))?;
         Ok(__cordl_ret)
     }
     pub fn get_TstEvidence(
@@ -69,24 +87,6 @@ impl crate::Org::BouncyCastle::Asn1::Cms::Evidence {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cms::TimeStampTokenEvidence = __cordl_object
             .invoke("get_TstEvidence", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_TimeStampTokenEvidence0(
-        tstEvidence: *mut crate::Org::BouncyCastle::Asn1::Cms::TimeStampTokenEvidence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (tstEvidence))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Asn1TaggedObject1(
-        tagged: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (tagged))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Evidence")]

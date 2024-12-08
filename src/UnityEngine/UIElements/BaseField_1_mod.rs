@@ -48,9 +48,8 @@ impl<
     pub type UxmlTraits = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         TValueType,
     >;
-    pub fn add_onValidateValue(
+    pub fn AlignLabel(
         &mut self,
-        value: *mut crate::System::Func_2<TValueType, TValueType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -60,12 +59,12 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_onValidateValue", (value))?;
+            .invoke("AlignLabel", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_label(
+    pub fn EndEditing(
         &mut self,
-        value: *mut crate::System::String,
+        e: *mut crate::UnityEngine::UIElements::EventBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -75,13 +74,13 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_label", (value))?;
+            .invoke("EndEditing", (e))?;
         Ok(__cordl_ret)
     }
-    pub fn set_rawValue(
+    pub fn EqualsCurrentValue(
         &mut self,
         value: TValueType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    ) -> quest_hook::libil2cpp::Result<bool>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -89,15 +88,12 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_rawValue", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("EqualsCurrentValue", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_visualInput(
+    pub fn GetTooltipRect(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-    >
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -105,53 +101,28 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
-            .invoke("get_visualInput", ())?;
+        let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
+            .invoke("GetTooltipRect", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_label(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_label", ())?;
-        Ok(__cordl_ret)
+    pub fn New_String0(
+        label: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (label))?;
+        Ok(__cordl_object)
     }
-    pub fn set_showMixedValue(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_showMixedValue", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDetachFromPanel(
-        &mut self,
-        e: *mut crate::UnityEngine::UIElements::DetachFromPanelEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDetachFromPanel", (e))?;
-        Ok(__cordl_ret)
+    pub fn New_VisualElement1(
+        label: *mut crate::System::String,
+        visualInput: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (label, visualInput))?;
+        Ok(__cordl_object)
     }
     pub fn OnAttachToPanel(
         &mut self,
@@ -181,6 +152,164 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnCustomStyleResolved", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDetachFromPanel(
+        &mut self,
+        e: *mut crate::UnityEngine::UIElements::DetachFromPanelEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDetachFromPanel", (e))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnInspectorFieldGeometryChanged(
+        &mut self,
+        e: *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnInspectorFieldGeometryChanged", (e))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnViewDataReady(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnViewDataReady", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterEditingCallbacks(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterEditingCallbacks", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetValueWithoutNotify(
+        &mut self,
+        newValue: TValueType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetValueWithoutNotify", (newValue))?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartEditing(
+        &mut self,
+        e: *mut crate::UnityEngine::UIElements::EventBase,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartEditing", (e))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnityEngine_UIElements_IEditableElement_get_editingEnded(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Action>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Action = __cordl_object
+            .invoke("UnityEngine.UIElements.IEditableElement.get_editingEnded", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnityEngine_UIElements_IEditableElement_get_editingStarted(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Action>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Action = __cordl_object
+            .invoke("UnityEngine.UIElements.IEditableElement.get_editingStarted", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnregisterEditingCallbacks(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnregisterEditingCallbacks", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateMixedValueContent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateMixedValueContent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidatedValue(
+        &mut self,
+        value: TValueType,
+    ) -> quest_hook::libil2cpp::Result<TValueType>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: TValueType = __cordl_object.invoke("ValidatedValue", (value))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_String0(
@@ -214,8 +343,9 @@ impl<
             .invoke(".ctor", (label, visualInput))?;
         Ok(__cordl_ret)
     }
-    pub fn RegisterEditingCallbacks(
+    pub fn add_onValidateValue(
         &mut self,
+        value: *mut crate::System::Func_2<TValueType, TValueType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -225,12 +355,12 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterEditingCallbacks", ())?;
+            .invoke("add_onValidateValue", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn UnregisterEditingCallbacks(
+    pub fn get_label(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -238,135 +368,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterEditingCallbacks", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnityEngine_UIElements_IEditableElement_get_editingStarted(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Action>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Action = __cordl_object
-            .invoke("UnityEngine.UIElements.IEditableElement.get_editingStarted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnityEngine_UIElements_IEditableElement_get_editingEnded(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Action>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Action = __cordl_object
-            .invoke("UnityEngine.UIElements.IEditableElement.get_editingEnded", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetValueWithoutNotify(
-        &mut self,
-        newValue: TValueType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetValueWithoutNotify", (newValue))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateMixedValueContent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateMixedValueContent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_showMixedValue(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_showMixedValue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartEditing(
-        &mut self,
-        e: *mut crate::UnityEngine::UIElements::EventBase,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartEditing", (e))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnViewDataReady(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnViewDataReady", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_value(
-        &mut self,
-        value: TValueType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_value", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndEditing(
-        &mut self,
-        e: *mut crate::UnityEngine::UIElements::EventBase,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndEditing", (e))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_label", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_labelElement(
@@ -383,9 +386,9 @@ impl<
             .invoke("get_labelElement", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetTooltipRect(
+    pub fn get_mixedValueLabel(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect>
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Label>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -393,8 +396,30 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
-            .invoke("GetTooltipRect", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::Label = __cordl_object
+            .invoke("get_mixedValueLabel", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rawValue(&mut self) -> quest_hook::libil2cpp::Result<TValueType>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: TValueType = __cordl_object.invoke("get_rawValue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_showMixedValue(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_showMixedValue", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<TValueType>
@@ -408,10 +433,11 @@ impl<
         let __cordl_ret: TValueType = __cordl_object.invoke("get_value", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_visualInput(
+    pub fn get_visualInput(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    >
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -419,22 +445,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_visualInput", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AlignLabel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AlignLabel", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
+            .invoke("get_visualInput", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_onValidateValue(
@@ -452,23 +464,9 @@ impl<
             .invoke("remove_onValidateValue", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn EqualsCurrentValue(
+    pub fn set_label(
         &mut self,
-        value: TValueType,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EqualsCurrentValue", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnInspectorFieldGeometryChanged(
-        &mut self,
-        e: *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
+        value: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -478,32 +476,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnInspectorFieldGeometryChanged", (e))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_rawValue(&mut self) -> quest_hook::libil2cpp::Result<TValueType>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TValueType = __cordl_object.invoke("get_rawValue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_mixedValueLabel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Label>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Label = __cordl_object
-            .invoke("get_mixedValueLabel", ())?;
+            .invoke("set_label", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_labelElement(
@@ -521,10 +494,10 @@ impl<
             .invoke("set_labelElement", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ValidatedValue(
+    pub fn set_rawValue(
         &mut self,
         value: TValueType,
-    ) -> quest_hook::libil2cpp::Result<TValueType>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -532,27 +505,54 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: TValueType = __cordl_object.invoke("ValidatedValue", (value))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_rawValue", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New_String0(
-        label: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (label))?;
-        Ok(__cordl_object)
+    pub fn set_showMixedValue(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_showMixedValue", (value))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_VisualElement1(
-        label: *mut crate::System::String,
-        visualInput: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (label, visualInput))?;
-        Ok(__cordl_object)
+    pub fn set_value(
+        &mut self,
+        value: TValueType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_value", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_visualInput(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_visualInput", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
@@ -597,18 +597,6 @@ for crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType> {
 impl<
     TValueType: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType> {
-    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Init(
         &mut self,
         ve: *mut crate::UnityEngine::UIElements::VisualElement,
@@ -626,12 +614,24 @@ impl<
             .invoke("Init", (ve, bag, cc))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseField_1+UxmlTraits")]

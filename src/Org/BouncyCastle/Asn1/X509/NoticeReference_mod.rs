@@ -41,6 +41,45 @@ impl crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
         > = __cordl_object.invoke("GetNoticeNumbers", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New_Asn1Sequence3(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_DisplayText_Asn1EncodableVector2(
+        organization: *mut crate::Org::BouncyCastle::Asn1::X509::DisplayText,
+        noticeNumbers: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (organization, noticeNumbers))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_Asn1EncodableVector1(
+        organization: *mut crate::System::String,
+        noticeNumbers: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (organization, noticeNumbers))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_IList0(
+        organization: *mut crate::System::String,
+        numbers: *mut crate::System::Collections::IList,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (organization, numbers))?;
+        Ok(__cordl_object)
+    }
     pub fn ToAsn1Object(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
@@ -51,28 +90,15 @@ impl crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
             .invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_IList0(
+    pub fn _ctor_Asn1Sequence3(
         &mut self,
-        organization: *mut crate::System::String,
-        numbers: *mut crate::System::Collections::IList,
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (organization, numbers))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_Asn1EncodableVector1(
-        &mut self,
-        organization: *mut crate::System::String,
-        noticeNumbers: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (organization, noticeNumbers))?;
+            .invoke(".ctor", (seq))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_DisplayText_Asn1EncodableVector2(
@@ -87,15 +113,28 @@ impl crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
             .invoke(".ctor", (organization, noticeNumbers))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Asn1Sequence3(
+    pub fn _ctor_String_Asn1EncodableVector1(
         &mut self,
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        organization: *mut crate::System::String,
+        noticeNumbers: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seq))?;
+            .invoke(".ctor", (organization, noticeNumbers))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_String_IList0(
+        &mut self,
+        organization: *mut crate::System::String,
+        numbers: *mut crate::System::Collections::IList,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (organization, numbers))?;
         Ok(__cordl_ret)
     }
     pub fn get_Organization(
@@ -109,45 +148,6 @@ impl crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::DisplayText = __cordl_object
             .invoke("get_Organization", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_String_IList0(
-        organization: *mut crate::System::String,
-        numbers: *mut crate::System::Collections::IList,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (organization, numbers))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_Asn1EncodableVector1(
-        organization: *mut crate::System::String,
-        noticeNumbers: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (organization, noticeNumbers))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_DisplayText_Asn1EncodableVector2(
-        organization: *mut crate::Org::BouncyCastle::Asn1::X509::DisplayText,
-        noticeNumbers: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (organization, noticeNumbers))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Asn1Sequence3(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+NoticeReference")]

@@ -24,16 +24,16 @@ impl std::ops::DerefMut for crate::System::ComponentModel::SingleConverter {
 }
 #[cfg(feature = "System+ComponentModel+SingleConverter")]
 impl crate::System::ComponentModel::SingleConverter {
-    pub fn ToString(
+    pub fn FromString_NumberFormatInfo1(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut crate::System::String,
         formatInfo: *mut crate::System::Globalization::NumberFormatInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", (value, formatInfo))?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("FromString", (value, formatInfo))?;
         Ok(__cordl_ret)
     }
     pub fn FromString_i32_0(
@@ -48,16 +48,23 @@ impl crate::System::ComponentModel::SingleConverter {
             .invoke("FromString", (value, radix))?;
         Ok(__cordl_ret)
     }
-    pub fn FromString_NumberFormatInfo1(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ToString(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut crate::System::Object,
         formatInfo: *mut crate::System::Globalization::NumberFormatInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("FromString", (value, formatInfo))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", (value, formatInfo))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -70,6 +77,13 @@ impl crate::System::ComponentModel::SingleConverter {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_AllowHex(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_AllowHex", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_TargetType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
@@ -79,20 +93,6 @@ impl crate::System::ComponentModel::SingleConverter {
         let __cordl_ret: *mut crate::System::Type = __cordl_object
             .invoke("get_TargetType", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_AllowHex(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_AllowHex", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+ComponentModel+SingleConverter")]

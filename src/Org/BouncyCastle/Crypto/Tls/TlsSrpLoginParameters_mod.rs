@@ -29,6 +29,17 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsSrpLoginParameters")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters {
+    pub fn New(
+        group: *mut crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
+        verifier: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (group, verifier, salt))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         group: *mut crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
@@ -40,16 +51,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (group, verifier, salt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Salt(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("get_Salt", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Group(
@@ -64,6 +65,16 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters {
             .invoke("get_Group", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_Salt(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("get_Salt", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Verifier(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
@@ -73,17 +84,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
             .invoke("get_Verifier", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        group: *mut crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
-        verifier: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (group, verifier, salt))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsSrpLoginParameters")]

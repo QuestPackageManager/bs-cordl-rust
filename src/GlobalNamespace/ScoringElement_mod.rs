@@ -27,6 +27,13 @@ for crate::GlobalNamespace::ScoringElement_Pool_1<T> {
 }
 #[cfg(feature = "ScoringElement+Pool_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ScoringElement_Pool_1<T> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn Reinitialize(
         &mut self,
         scoringElement: T,
@@ -53,13 +60,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ScoringElement_Pool
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ScoringElement+Pool_1")]
@@ -105,96 +105,43 @@ impl ScoringElement {
     pub type Pool_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::ScoringElement_Pool_1<
         T,
     >;
-    pub fn set_multiplier(
+    pub fn CompareTo(
         &mut self,
-        value: i32,
+        other: *mut ScoringElement,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (other))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Reinitialize(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_multiplier", (value))?;
+            .invoke("Reinitialize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_maxMultiplier(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_maxMultiplier", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_wouldBeCorrectCutBestPossibleMultiplierEventType(
+    pub fn SetMultipliers(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType = __cordl_object
-            .invoke("get_wouldBeCorrectCutBestPossibleMultiplierEventType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_multiplierEventType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType = __cordl_object
-            .invoke("get_multiplierEventType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_maxMultiplier(
-        &mut self,
-        value: i32,
+        multiplier: i32,
+        maxMultiplier: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_maxMultiplier", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_noteData(&mut self) -> quest_hook::libil2cpp::Result<*mut NoteData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut NoteData = __cordl_object.invoke("get_noteData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isFinished(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isFinished", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_isFinished(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_isFinished", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_executionOrder(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_executionOrder", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_maxPossibleCutScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_maxPossibleCutScore", ())?;
+            .invoke("SetMultipliers", (multiplier, maxMultiplier))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -214,14 +161,32 @@ impl ScoringElement {
         let __cordl_ret: i32 = __cordl_object.invoke("get_cutScore", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CompareTo(
-        &mut self,
-        other: *mut ScoringElement,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_executionOrder(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (other))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_executionOrder", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isFinished(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isFinished", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxMultiplier(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_maxMultiplier", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxPossibleCutScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_maxPossibleCutScore", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_multiplier(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -231,11 +196,75 @@ impl ScoringElement {
         let __cordl_ret: i32 = __cordl_object.invoke("get_multiplier", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_multiplierEventType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType = __cordl_object
+            .invoke("get_multiplierEventType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noteData(&mut self) -> quest_hook::libil2cpp::Result<*mut NoteData> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut NoteData = __cordl_object.invoke("get_noteData", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_time", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_wouldBeCorrectCutBestPossibleMultiplierEventType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType = __cordl_object
+            .invoke("get_wouldBeCorrectCutBestPossibleMultiplierEventType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_isFinished(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_isFinished", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_maxMultiplier(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_maxMultiplier", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_multiplier(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_multiplier", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_noteData(
@@ -248,35 +277,6 @@ impl ScoringElement {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_noteData", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn SetMultipliers(
-        &mut self,
-        multiplier: i32,
-        maxMultiplier: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetMultipliers", (multiplier, maxMultiplier))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reinitialize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reinitialize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ScoringElement")]

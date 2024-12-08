@@ -25,6 +25,15 @@ impl std::ops::DerefMut for crate::System::Xml::XmlRawWriterBase64Encoder {
 }
 #[cfg(feature = "System+Xml+XmlRawWriterBase64Encoder")]
 impl crate::System::Xml::XmlRawWriterBase64Encoder {
+    pub fn New(
+        rawWriter: *mut crate::System::Xml::XmlRawWriter,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (rawWriter))?;
+        Ok(__cordl_object)
+    }
     pub fn WriteChars(
         &mut self,
         chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
@@ -48,15 +57,6 @@ impl crate::System::Xml::XmlRawWriterBase64Encoder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (rawWriter))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        rawWriter: *mut crate::System::Xml::XmlRawWriter,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (rawWriter))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+XmlRawWriterBase64Encoder")]

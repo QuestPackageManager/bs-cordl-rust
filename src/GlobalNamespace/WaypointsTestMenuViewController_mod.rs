@@ -46,15 +46,34 @@ impl std::ops::DerefMut for WaypointsTestMenuViewController {
 impl WaypointsTestMenuViewController {
     #[cfg(feature = "WaypointsTestMenuViewController+_CheckBeatmaps_d__18")]
     pub type _CheckBeatmaps_d__18 = crate::GlobalNamespace::WaypointsTestMenuViewController__CheckBeatmaps_d__18;
-    pub fn _Start_b__16_1(
+    pub fn CheckBeatmaps(
         &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("CheckBeatmaps", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleMainGameSceneDidFinish(
+        &mut self,
+        data: *mut StandardLevelScenesTransitionSetupDataSO,
+        results: *mut LevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Start>b__16_1", ())?;
+            .invoke("HandleMainGameSceneDidFinish", (data, results))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnDestroy(
         &mut self,
@@ -76,14 +95,15 @@ impl WaypointsTestMenuViewController {
             .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CheckBeatmaps(
+    pub fn _HandleMainGameSceneDidFinish_b__19_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        container: *mut crate::Zenject::DiContainer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("CheckBeatmaps", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<HandleMainGameSceneDidFinish>b__19_0", (container))?;
         Ok(__cordl_ret)
     }
     pub fn _Start_b__16_0(
@@ -96,16 +116,14 @@ impl WaypointsTestMenuViewController {
             .invoke("<Start>b__16_0", ())?;
         Ok(__cordl_ret)
     }
-    pub fn HandleMainGameSceneDidFinish(
+    pub fn _Start_b__16_1(
         &mut self,
-        data: *mut StandardLevelScenesTransitionSetupDataSO,
-        results: *mut LevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleMainGameSceneDidFinish", (data, results))?;
+            .invoke("<Start>b__16_1", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -117,24 +135,6 @@ impl WaypointsTestMenuViewController {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn _HandleMainGameSceneDidFinish_b__19_0(
-        &mut self,
-        container: *mut crate::Zenject::DiContainer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<HandleMainGameSceneDidFinish>b__19_0", (container))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "WaypointsTestMenuViewController")]

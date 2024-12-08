@@ -31,28 +31,6 @@ impl BezierSpline {
     pub type ComputeControlPointsResults = crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults;
     #[cfg(feature = "BezierSpline+__c")]
     pub type __c = crate::GlobalNamespace::BezierSpline___c;
-    pub fn get_segments(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<BezierCurve>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<BezierCurve> = __cordl_object
-            .invoke("get_segments", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SortSourceData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SortSourceData", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AddArtificialStartAndFinishPoint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -61,6 +39,28 @@ impl BezierSpline {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddArtificialStartAndFinishPoint", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddPoint(
+        &mut self,
+        distance: f32,
+        point: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddPoint", (distance, point))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Clear", ())?;
         Ok(__cordl_ret)
     }
     pub fn ComputeControlPoints_0(
@@ -86,14 +86,21 @@ impl BezierSpline {
             .invoke("ComputeControlPoints", (k))?;
         Ok(__cordl_ret)
     }
-    pub fn Clear(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SortSourceData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
+            .invoke("SortSourceData", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -106,24 +113,17 @@ impl BezierSpline {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AddPoint(
+    pub fn get_segments(
         &mut self,
-        distance: f32,
-        point: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<BezierCurve>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddPoint", (distance, point))?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<BezierCurve> = __cordl_object
+            .invoke("get_segments", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BezierSpline")]

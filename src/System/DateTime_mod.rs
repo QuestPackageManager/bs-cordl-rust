@@ -61,43 +61,25 @@ impl crate::System::DateTime {
     pub const TicksPerMinute: i64 = 600000000i64;
     pub const TicksPerSecond: i64 = 10000000i64;
     pub const UnixEpochTicks: i64 = 621355968000000000i64;
-    pub fn get_Month(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn AddDays(
+        &mut self,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Month",
-            (),
+            "AddDays",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_IConvertible_ToDouble(
+    pub fn AddMilliseconds(
         &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.IConvertible.ToDouble",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToChar(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToChar",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_DayOfWeek(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DayOfWeek> {
-        let __cordl_ret: crate::System::DayOfWeek = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_DayOfWeek",
-            (),
+            "AddMilliseconds",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -112,40 +94,14 @@ impl crate::System::DateTime {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Subtract(
+    pub fn AddSeconds(
         &mut self,
-        value: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        let __cordl_ret: crate::System::TimeSpan = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Subtract",
+            "AddSeconds",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Ticks(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Ticks",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Kind(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeKind> {
-        let __cordl_ret: crate::System::DateTimeKind = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Kind",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_InternalTicks(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_InternalTicks",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -160,136 +116,6 @@ impl crate::System::DateTime {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn AddDays(
-        &mut self,
-        value: f64,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AddDays",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Millisecond(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Millisecond",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Second(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Second",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToBoolean(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToBoolean",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToLocalTime_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToLocalTime",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToLocalTime__cordl_bool1(
-        &mut self,
-        throwOnOverflow: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToLocalTime",
-            (throwOnOverflow),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToSByte(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<i8> {
-        let __cordl_ret: i8 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToSByte",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Minute(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Minute",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToInt64(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToInt64",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToType(
-        &mut self,
-        _cordl_type: *mut crate::System::Type,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToType",
-            (_cordl_type, provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToDateTime(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToDateTime",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsAmbiguousDaylightSavingTime(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsAmbiguousDaylightSavingTime",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToBinaryRaw(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToBinaryRaw",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn AddYears(
         &mut self,
         value: i32,
@@ -297,209 +123,6 @@ impl crate::System::DateTime {
         let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "AddYears",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object0(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_DateTime1(
-        &mut self,
-        value: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToSingle(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToSingle",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Year(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Year",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToUInt16(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<u16> {
-        let __cordl_ret: u16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToUInt16",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToDecimal(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
-        let __cordl_ret: crate::System::Decimal = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToDecimal",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToByte(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_ret: u8 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToByte",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDatePart_i32_0(
-        &mut self,
-        part: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetDatePart",
-            (part),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDatePart_ByRefMut_ByRefMut_ByRefMut1(
-        &mut self,
-        year: quest_hook::libil2cpp::ByRefMut<i32>,
-        month: quest_hook::libil2cpp::ByRefMut<i32>,
-        day: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetDatePart",
-            (year, month, day),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToUInt64(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToUInt64",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddSeconds(
-        &mut self,
-        value: f64,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AddSeconds",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToUniversalTime(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToUniversalTime",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CompareTo_Object0(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CompareTo",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CompareTo_DateTime1(
-        &mut self,
-        value: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CompareTo",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryFormat(
-        &mut self,
-        destination: crate::System::Span_1<char>,
-        charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
-        format: crate::System::ReadOnlySpan_1<char>,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "TryFormat",
-            (destination, charsWritten, format, provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TimeOfDay(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        let __cordl_ret: crate::System::TimeSpan = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_TimeOfDay",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_InternalKind(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_InternalKind",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddMilliseconds(
-        &mut self,
-        value: f64,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AddMilliseconds",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -527,32 +150,78 @@ impl crate::System::DateTime {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_Runtime_Serialization_ISerializable_GetObjectData(
+    pub fn CompareTo_DateTime1(
         &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        context: crate::System::Runtime::Serialization::StreamingContext,
+        value: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CompareTo",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn CompareTo_Object0(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CompareTo",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_DateTime1(
+        &mut self,
+        value: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object0(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDatePart_ByRefMut_ByRefMut_ByRefMut1(
+        &mut self,
+        year: quest_hook::libil2cpp::ByRefMut<i32>,
+        month: quest_hook::libil2cpp::ByRefMut<i32>,
+        day: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.Runtime.Serialization.ISerializable.GetObjectData",
-            (info, context),
+            "GetDatePart",
+            (year, month, day),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Date(
+    pub fn GetDatePart_i32_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Date",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Day(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        part: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Day",
+            "GetDatePart",
+            (part),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)
@@ -567,55 +236,90 @@ impl crate::System::DateTime {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Hour(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn IsAmbiguousDaylightSavingTime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Hour",
+            "IsAmbiguousDaylightSavingTime",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString_0(
+    pub fn Subtract(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
-            (),
+            "Subtract",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString_String1(
-        &mut self,
-        format: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (format),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString_IFormatProvider2(
+    pub fn System_IConvertible_ToBoolean(
         &mut self,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
+            "System.IConvertible.ToBoolean",
             (provider),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString_String_IFormatProvider3(
+    pub fn System_IConvertible_ToByte(
         &mut self,
-        format: *mut crate::System::String,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
-            (format, provider),
+            "System.IConvertible.ToByte",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToChar(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToChar",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToDateTime(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToDateTime",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToDecimal(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToDecimal",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToDouble(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToDouble",
+            (provider),
         )?;
         Ok(__cordl_ret)
     }
@@ -641,50 +345,202 @@ impl crate::System::DateTime {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i64_0(
+    pub fn System_IConvertible_ToInt64(
         &mut self,
-        ticks: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (ticks),
+            "System.IConvertible.ToInt64",
+            (provider),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_u64_1(
+    pub fn System_IConvertible_ToSByte(
         &mut self,
-        dateData: u64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<i8> {
+        let __cordl_ret: i8 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (dateData),
+            "System.IConvertible.ToSByte",
+            (provider),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i64_DateTimeKind2(
+    pub fn System_IConvertible_ToSingle(
         &mut self,
-        ticks: i64,
-        kind: crate::System::DateTimeKind,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (ticks, kind),
+            "System.IConvertible.ToSingle",
+            (provider),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i64_DateTimeKind__cordl_bool3(
+    pub fn System_IConvertible_ToType(
         &mut self,
-        ticks: i64,
-        kind: crate::System::DateTimeKind,
-        isAmbiguousDst: bool,
+        _cordl_type: *mut crate::System::Type,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToType",
+            (_cordl_type, provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToUInt16(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_ret: u16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToUInt16",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToUInt32(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToUInt32",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToUInt64(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToUInt64",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Runtime_Serialization_ISerializable_GetObjectData(
+        &mut self,
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Runtime.Serialization.ISerializable.GetObjectData",
+            (info, context),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToBinaryRaw(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToBinaryRaw",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToLocalTime_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToLocalTime",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToLocalTime__cordl_bool1(
+        &mut self,
+        throwOnOverflow: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToLocalTime",
+            (throwOnOverflow),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString_IFormatProvider2(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString_String1(
+        &mut self,
+        format: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (format),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString_String_IFormatProvider3(
+        &mut self,
+        format: *mut crate::System::String,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (format, provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToUniversalTime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToUniversalTime",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryFormat(
+        &mut self,
+        destination: crate::System::Span_1<char>,
+        charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
+        format: crate::System::ReadOnlySpan_1<char>,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "TryFormat",
+            (destination, charsWritten, format, provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_SerializationInfo_StreamingContext10(
+        &mut self,
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
-            (ticks, kind, isAmbiguousDst),
+            (info, context),
         )?;
         Ok(__cordl_ret)
     }
@@ -751,24 +607,6 @@ impl crate::System::DateTime {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_i32_i32_i32_i32_i32_i32_DateTimeKind8(
-        &mut self,
-        year: i32,
-        month: i32,
-        day: i32,
-        hour: i32,
-        minute: i32,
-        second: i32,
-        millisecond: i32,
-        kind: crate::System::DateTimeKind,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (year, month, day, hour, minute, second, millisecond, kind),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_i32_i32_i32_i32_i32_i32_i32_Calendar9(
         &mut self,
         year: i32,
@@ -787,26 +625,188 @@ impl crate::System::DateTime {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_SerializationInfo_StreamingContext10(
+    pub fn _ctor_i32_i32_i32_i32_i32_i32_i32_DateTimeKind8(
         &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        context: crate::System::Runtime::Serialization::StreamingContext,
+        year: i32,
+        month: i32,
+        day: i32,
+        hour: i32,
+        minute: i32,
+        second: i32,
+        millisecond: i32,
+        kind: crate::System::DateTimeKind,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
-            (info, context),
+            (year, month, day, hour, minute, second, millisecond, kind),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_IConvertible_ToUInt32(
+    pub fn _ctor_i64_0(
         &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        ticks: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.IConvertible.ToUInt32",
-            (provider),
+            ".ctor",
+            (ticks),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i64_DateTimeKind2(
+        &mut self,
+        ticks: i64,
+        kind: crate::System::DateTimeKind,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (ticks, kind),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i64_DateTimeKind__cordl_bool3(
+        &mut self,
+        ticks: i64,
+        kind: crate::System::DateTimeKind,
+        isAmbiguousDst: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (ticks, kind, isAmbiguousDst),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_u64_1(
+        &mut self,
+        dateData: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (dateData),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Date(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Date",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Day(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Day",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_DayOfWeek(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DayOfWeek> {
+        let __cordl_ret: crate::System::DayOfWeek = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_DayOfWeek",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Hour(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Hour",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_InternalKind(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_InternalKind",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_InternalTicks(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_InternalTicks",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Kind(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeKind> {
+        let __cordl_ret: crate::System::DateTimeKind = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Kind",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Millisecond(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Millisecond",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Minute(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Minute",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Month(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Month",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Second(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Second",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Ticks(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Ticks",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TimeOfDay(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_TimeOfDay",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Year(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Year",
+            (),
         )?;
         Ok(__cordl_ret)
     }

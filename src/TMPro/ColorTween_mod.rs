@@ -29,14 +29,6 @@ impl crate::TMPro::ColorTween {
     pub type ColorTweenMode = crate::TMPro::ColorTween_ColorTweenMode;
     #[cfg(feature = "TMPro+ColorTween+ColorTweenCallback")]
     pub type ColorTweenCallback = crate::TMPro::ColorTween_ColorTweenCallback;
-    pub fn GetIgnoreTimescale(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetIgnoreTimescale",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn AddOnChangedCallback(
         &mut self,
         callback: *mut crate::UnityEngine::Events::UnityAction_1<
@@ -50,21 +42,30 @@ impl crate::TMPro::ColorTween {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_startColor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_ret: crate::UnityEngine::Color = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_startColor",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetDuration",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetIgnoreTimescale(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetIgnoreTimescale",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn TweenValue(
+        &mut self,
+        floatPercentage: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "TweenValue",
+            (floatPercentage),
         )?;
         Ok(__cordl_ret)
     }
@@ -84,17 +85,6 @@ impl crate::TMPro::ColorTween {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_targetColor(
-        &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_targetColor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_ignoreTimeScale(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -103,25 +93,13 @@ impl crate::TMPro::ColorTween {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn TweenValue(
+    pub fn get_startColor(
         &mut self,
-        floatPercentage: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "TweenValue",
-            (floatPercentage),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ignoreTimeScale(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_ignoreTimeScale",
-            (value),
+            "get_startColor",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -135,13 +113,34 @@ impl crate::TMPro::ColorTween {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_tweenMode(
+    pub fn get_tweenMode(
         &mut self,
-        value: crate::TMPro::ColorTween_ColorTweenMode,
+    ) -> quest_hook::libil2cpp::Result<crate::TMPro::ColorTween_ColorTweenMode> {
+        let __cordl_ret: crate::TMPro::ColorTween_ColorTweenMode = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_tweenMode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_duration(
+        &mut self,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_tweenMode",
+            "set_duration",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ignoreTimeScale(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_ignoreTimeScale",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -157,24 +156,25 @@ impl crate::TMPro::ColorTween {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_duration(
+    pub fn set_targetColor(
         &mut self,
-        value: f32,
+        value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_duration",
+            "set_targetColor",
             (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_tweenMode(
+    pub fn set_tweenMode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::TMPro::ColorTween_ColorTweenMode> {
-        let __cordl_ret: crate::TMPro::ColorTween_ColorTweenMode = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: crate::TMPro::ColorTween_ColorTweenMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_tweenMode",
-            (),
+            "set_tweenMode",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -205,6 +205,13 @@ impl std::ops::DerefMut for crate::TMPro::ColorTween_ColorTweenCallback {
 }
 #[cfg(feature = "TMPro+ColorTween+ColorTweenCallback")]
 impl crate::TMPro::ColorTween_ColorTweenCallback {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -214,13 +221,6 @@ impl crate::TMPro::ColorTween_ColorTweenCallback {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "TMPro+ColorTween+ColorTweenCallback")]

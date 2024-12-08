@@ -27,6 +27,17 @@ impl std::ops::DerefMut for PlayersLobbyPermissionConfigurationNetSerializable {
 }
 #[cfg(feature = "PlayersLobbyPermissionConfigurationNetSerializable")]
 impl PlayersLobbyPermissionConfigurationNetSerializable {
+    pub fn Deserialize(
+        &mut self,
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Deserialize", (reader))?;
+        Ok(__cordl_ret)
+    }
     pub fn Init(
         &mut self,
         playersPermission: *mut crate::System::Collections::Generic::IEnumerable_1<
@@ -42,15 +53,12 @@ impl PlayersLobbyPermissionConfigurationNetSerializable {
             .invoke("Init", (playersPermission))?;
         Ok(__cordl_ret)
     }
-    pub fn Retain(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Retain", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Release(
         &mut self,
@@ -62,6 +70,16 @@ impl PlayersLobbyPermissionConfigurationNetSerializable {
             .invoke("Release", ())?;
         Ok(__cordl_ret)
     }
+    pub fn Retain(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Retain", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Serialize(
         &mut self,
         writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
@@ -71,6 +89,16 @@ impl PlayersLobbyPermissionConfigurationNetSerializable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Serialize", (writer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_playersPermission(
@@ -87,34 +115,6 @@ impl PlayersLobbyPermissionConfigurationNetSerializable {
             *mut PlayerLobbyPermissionConfigurationNetSerializable,
         > = __cordl_object.invoke("get_playersPermission", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Deserialize(
-        &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Deserialize", (reader))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PlayersLobbyPermissionConfigurationNetSerializable")]

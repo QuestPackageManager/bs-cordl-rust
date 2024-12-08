@@ -38,6 +38,15 @@ impl crate::Org::BouncyCastle::X509::Store::X509CollectionStoreParameters {
             .invoke("GetCollection", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        collection: *mut crate::System::Collections::ICollection,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (collection))?;
+        Ok(__cordl_object)
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -58,15 +67,6 @@ impl crate::Org::BouncyCastle::X509::Store::X509CollectionStoreParameters {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (collection))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        collection: *mut crate::System::Collections::ICollection,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (collection))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509CollectionStoreParameters")]

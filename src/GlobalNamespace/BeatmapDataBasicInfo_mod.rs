@@ -27,19 +27,20 @@ impl std::ops::DerefMut for BeatmapDataBasicInfo {
 }
 #[cfg(feature = "BeatmapDataBasicInfo")]
 impl BeatmapDataBasicInfo {
-    pub fn get_cuttableNotesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_cuttableNotesCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_obstaclesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_obstaclesCount", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        numberOfLines: i32,
+        cuttableNotesCount: i32,
+        obstaclesCount: i32,
+        bombsCount: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (numberOfLines, cuttableNotesCount, obstaclesCount, bombsCount),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -58,13 +59,6 @@ impl BeatmapDataBasicInfo {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_numberOfLines(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_numberOfLines", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_bombsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -72,20 +66,26 @@ impl BeatmapDataBasicInfo {
         let __cordl_ret: i32 = __cordl_object.invoke("get_bombsCount", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        numberOfLines: i32,
-        cuttableNotesCount: i32,
-        obstaclesCount: i32,
-        bombsCount: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (numberOfLines, cuttableNotesCount, obstaclesCount, bombsCount),
-            )?;
-        Ok(__cordl_object)
+    pub fn get_cuttableNotesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_cuttableNotesCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_numberOfLines(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_numberOfLines", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_obstaclesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_obstaclesCount", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapDataBasicInfo")]

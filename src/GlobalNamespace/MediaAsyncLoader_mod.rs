@@ -23,14 +23,14 @@ impl std::ops::DerefMut for MediaAsyncLoader {
 }
 #[cfg(feature = "MediaAsyncLoader")]
 impl MediaAsyncLoader {
+    #[cfg(feature = "MediaAsyncLoader+_LoadSpriteAsync_d__4")]
+    pub type _LoadSpriteAsync_d__4 = crate::GlobalNamespace::MediaAsyncLoader__LoadSpriteAsync_d__4;
     #[cfg(feature = "MediaAsyncLoader+_LoadWebpage_d__0")]
     pub type _LoadWebpage_d__0 = crate::GlobalNamespace::MediaAsyncLoader__LoadWebpage_d__0;
     #[cfg(feature = "MediaAsyncLoader+_LoadAudioClipAsync_d__2")]
     pub type _LoadAudioClipAsync_d__2 = crate::GlobalNamespace::MediaAsyncLoader__LoadAudioClipAsync_d__2;
     #[cfg(feature = "MediaAsyncLoader+_LoadTextureAsync_d__3")]
     pub type _LoadTextureAsync_d__3 = crate::GlobalNamespace::MediaAsyncLoader__LoadTextureAsync_d__3;
-    #[cfg(feature = "MediaAsyncLoader+_LoadSpriteAsync_d__4")]
-    pub type _LoadSpriteAsync_d__4 = crate::GlobalNamespace::MediaAsyncLoader__LoadSpriteAsync_d__4;
     pub fn LoadAudioClipFromFilePathAsync(
         &mut self,
         filePath: *mut crate::System::String,
@@ -45,6 +45,13 @@ impl MediaAsyncLoader {
         > = __cordl_object.invoke("LoadAudioClipFromFilePathAsync", (filePath))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -54,13 +61,6 @@ impl MediaAsyncLoader {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MediaAsyncLoader")]

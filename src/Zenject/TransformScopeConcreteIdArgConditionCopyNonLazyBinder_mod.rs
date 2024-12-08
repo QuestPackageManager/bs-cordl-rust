@@ -28,6 +28,16 @@ for crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
 }
 #[cfg(feature = "Zenject+TransformScopeConcreteIdArgConditionCopyNonLazyBinder")]
 impl crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
+    pub fn New(
+        bindInfo: *mut crate::Zenject::BindInfo,
+        gameObjectInfo: *mut crate::Zenject::GameObjectCreationParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bindInfo, gameObjectInfo))?;
+        Ok(__cordl_object)
+    }
     pub fn UnderTransformGroup(
         &mut self,
         transformGroupname: *mut crate::System::String,
@@ -39,42 +49,6 @@ impl crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
         );
         let __cordl_ret: *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
             .invoke("UnderTransformGroup", (transformGroupname))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_GameObjectInfo(
-        &mut self,
-        value: *mut crate::Zenject::GameObjectCreationParameters,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_GameObjectInfo", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_GameObjectInfo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::GameObjectCreationParameters,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::GameObjectCreationParameters = __cordl_object
-            .invoke("get_GameObjectInfo", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnderTransform_Transform0(
-        &mut self,
-        parent: *mut crate::UnityEngine::Transform,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("UnderTransform", (parent))?;
         Ok(__cordl_ret)
     }
     pub fn UnderTransform_Func_2_1(
@@ -93,6 +67,19 @@ impl crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
             .invoke("UnderTransform", (parentGetter))?;
         Ok(__cordl_ret)
     }
+    pub fn UnderTransform_Transform0(
+        &mut self,
+        parent: *mut crate::UnityEngine::Transform,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
+            .invoke("UnderTransform", (parent))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         bindInfo: *mut crate::Zenject::BindInfo,
@@ -105,15 +92,28 @@ impl crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
             .invoke(".ctor", (bindInfo, gameObjectInfo))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        bindInfo: *mut crate::Zenject::BindInfo,
-        gameObjectInfo: *mut crate::Zenject::GameObjectCreationParameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bindInfo, gameObjectInfo))?;
-        Ok(__cordl_object)
+    pub fn get_GameObjectInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Zenject::GameObjectCreationParameters,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::GameObjectCreationParameters = __cordl_object
+            .invoke("get_GameObjectInfo", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_GameObjectInfo(
+        &mut self,
+        value: *mut crate::Zenject::GameObjectCreationParameters,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_GameObjectInfo", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+TransformScopeConcreteIdArgConditionCopyNonLazyBinder")]

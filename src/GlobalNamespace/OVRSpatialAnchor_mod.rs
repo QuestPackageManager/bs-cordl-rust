@@ -144,14 +144,41 @@ for crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
 #[cfg(feature = "OVRSpatialAnchor+LoadOptions")]
 impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
     pub const MaxSupported: i32 = 1024i32;
-    pub fn set_StorageLocation(
+    pub fn ToQueryOptions(
         &mut self,
-        value: crate::GlobalNamespace::OVRSpace_StorageLocation,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRSpaceQuery_Options> {
+        let __cordl_ret: crate::GlobalNamespace::OVRSpaceQuery_Options = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_StorageLocation",
-            (value),
+            "ToQueryOptions",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MaxAnchorCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_MaxAnchorCount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_StorageLocation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRSpace_StorageLocation,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRSpace_StorageLocation = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_StorageLocation",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Timeout(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Timeout",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -165,22 +192,6 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Uuids", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Timeout(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Timeout",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MaxAnchorCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_MaxAnchorCount",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_MaxAnchorCount(
         &mut self,
         value: i32,
@@ -192,15 +203,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_StorageLocation(
+    pub fn set_StorageLocation(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRSpace_StorageLocation,
-    > {
-        let __cordl_ret: crate::GlobalNamespace::OVRSpace_StorageLocation = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: crate::GlobalNamespace::OVRSpace_StorageLocation,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_StorageLocation",
-            (),
+            "set_StorageLocation",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -225,16 +235,6 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
             self,
             "set_Uuids",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToQueryOptions(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRSpaceQuery_Options> {
-        let __cordl_ret: crate::GlobalNamespace::OVRSpaceQuery_Options = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToQueryOptions",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -315,80 +315,29 @@ impl std::ops::DerefMut for OVRSpatialAnchor {
 }
 #[cfg(feature = "OVRSpatialAnchor")]
 impl OVRSpatialAnchor {
-    #[cfg(feature = "OVRSpatialAnchor+MultiAnchorActionType")]
-    pub type MultiAnchorActionType = crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorActionType;
-    #[cfg(feature = "OVRSpatialAnchor+EraseOptions")]
-    pub type EraseOptions = crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions;
-    #[cfg(feature = "OVRSpatialAnchor+MultiAnchorDelegatePair")]
-    pub type MultiAnchorDelegatePair = crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair;
-    #[cfg(feature = "OVRSpatialAnchor+UnboundAnchor")]
-    pub type UnboundAnchor = crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor;
-    #[cfg(feature = "OVRSpatialAnchor+__c")]
-    pub type __c = crate::GlobalNamespace::OVRSpatialAnchor___c;
-    #[cfg(feature = "OVRSpatialAnchor+LoadOptions")]
-    pub type LoadOptions = crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions;
-    #[cfg(feature = "OVRSpatialAnchor+Development")]
-    pub type Development = crate::GlobalNamespace::OVRSpatialAnchor_Development;
-    #[cfg(feature = "OVRSpatialAnchor+SaveOptions")]
-    pub type SaveOptions = crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions;
-    #[cfg(feature = "OVRSpatialAnchor+OperationResult")]
-    pub type OperationResult = crate::GlobalNamespace::OVRSpatialAnchor_OperationResult;
     #[cfg(feature = "OVRSpatialAnchor+InvertedCapture_2")]
     pub type InvertedCapture_2<
         TResult: quest_hook::libil2cpp::Type,
         TCapture: quest_hook::libil2cpp::Type,
     > = crate::GlobalNamespace::OVRSpatialAnchor_InvertedCapture_2<TResult, TCapture>;
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LateUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LateUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ShareAsyncInternal(
-        &mut self,
-        users: *mut crate::System::Collections::Generic::List_1<OVRSpaceUser>,
-    ) -> quest_hook::libil2cpp::Result<
-        OVRTask_1<crate::GlobalNamespace::OVRSpatialAnchor_OperationResult>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: OVRTask_1<
-            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-        > = __cordl_object.invoke("ShareAsyncInternal", (users))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTrackingSpacePose(&mut self) -> quest_hook::libil2cpp::Result<OVRPose> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: OVRPose = __cordl_object.invoke("GetTrackingSpacePose", ())?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "OVRSpatialAnchor+OperationResult")]
+    pub type OperationResult = crate::GlobalNamespace::OVRSpatialAnchor_OperationResult;
+    #[cfg(feature = "OVRSpatialAnchor+UnboundAnchor")]
+    pub type UnboundAnchor = crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor;
+    #[cfg(feature = "OVRSpatialAnchor+SaveOptions")]
+    pub type SaveOptions = crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions;
+    #[cfg(feature = "OVRSpatialAnchor+MultiAnchorDelegatePair")]
+    pub type MultiAnchorDelegatePair = crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair;
+    #[cfg(feature = "OVRSpatialAnchor+MultiAnchorActionType")]
+    pub type MultiAnchorActionType = crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorActionType;
+    #[cfg(feature = "OVRSpatialAnchor+EraseOptions")]
+    pub type EraseOptions = crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions;
+    #[cfg(feature = "OVRSpatialAnchor+LoadOptions")]
+    pub type LoadOptions = crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions;
+    #[cfg(feature = "OVRSpatialAnchor+Development")]
+    pub type Development = crate::GlobalNamespace::OVRSpatialAnchor_Development;
+    #[cfg(feature = "OVRSpatialAnchor+__c")]
+    pub type __c = crate::GlobalNamespace::OVRSpatialAnchor___c;
     pub fn CreateSpatialAnchor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -397,192 +346,6 @@ impl OVRSpatialAnchor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateSpatialAnchor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Share_OVRSpaceUser_Action_1_0(
-        &mut self,
-        user: OVRSpaceUser,
-        onComplete: *mut crate::System::Action_1<
-            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Share", (user, onComplete))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Share_OVRSpaceUser_OVRSpaceUser_Action_1_1(
-        &mut self,
-        user1: OVRSpaceUser,
-        user2: OVRSpaceUser,
-        onComplete: *mut crate::System::Action_1<
-            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Share", (user1, user2, onComplete))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Share_OVRSpaceUser_OVRSpaceUser_OVRSpaceUser_Action_1_2(
-        &mut self,
-        user1: OVRSpaceUser,
-        user2: OVRSpaceUser,
-        user3: OVRSpaceUser,
-        onComplete: *mut crate::System::Action_1<
-            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Share", (user1, user2, user3, onComplete))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Share_OVRSpaceUser_OVRSpaceUser_OVRSpaceUser_OVRSpaceUser_Action_1_3(
-        &mut self,
-        user1: OVRSpaceUser,
-        user2: OVRSpaceUser,
-        user3: OVRSpaceUser,
-        user4: OVRSpaceUser,
-        onComplete: *mut crate::System::Action_1<
-            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Share", (user1, user2, user3, user4, onComplete))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Share_IEnumerable_1_Action_1_4(
-        &mut self,
-        users: *mut crate::System::Collections::Generic::IEnumerable_1<OVRSpaceUser>,
-        onComplete: *mut crate::System::Action_1<
-            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Share", (users, onComplete))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Uuid(&mut self) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Guid = __cordl_object.invoke("get_Uuid", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SaveAsync_0(&mut self) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: OVRTask_1<bool> = __cordl_object.invoke("SaveAsync", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SaveAsync_OVRSpatialAnchor_SaveOptions1(
-        &mut self,
-        saveOptions: crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions,
-    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: OVRTask_1<bool> = __cordl_object
-            .invoke("SaveAsync", (saveOptions))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateTransform(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateTransform", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Localized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Localized", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitializeFromExisting(
-        &mut self,
-        space: OVRSpace,
-        uuid: crate::System::Guid,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitializeFromExisting", (space, uuid))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetListToStoreTheShareRequest(
-        &mut self,
-        users: *mut crate::System::Collections::Generic::List_1<OVRSpaceUser>,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut OVRSpatialAnchor>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut OVRSpatialAnchor,
-        > = __cordl_object.invoke("GetListToStoreTheShareRequest", (users))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_OnLocalize(
-        &mut self,
-        value: *mut crate::System::Action_1<
-            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_OnLocalize", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitializeUnchecked(
-        &mut self,
-        space: OVRSpace,
-        uuid: crate::System::Guid,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitializeUnchecked", (space, uuid))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Space(&mut self) -> quest_hook::libil2cpp::Result<OVRSpace> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: OVRSpace = __cordl_object.invoke("get_Space", ())?;
         Ok(__cordl_ret)
     }
     pub fn EraseAsync_0(&mut self) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
@@ -603,36 +366,168 @@ impl OVRSpatialAnchor {
             .invoke("EraseAsync", (eraseOptions))?;
         Ok(__cordl_ret)
     }
-    pub fn Start(
+    pub fn Erase_Action_2_0(
         &mut self,
+        onComplete: *mut crate::System::Action_2<*mut OVRSpatialAnchor, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
+            .invoke("Erase", (onComplete))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Uuid(
+    pub fn Erase_OVRSpatialAnchor_EraseOptions_Action_2_1(
         &mut self,
-        value: crate::System::Guid,
+        eraseOptions: crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions,
+        onComplete: *mut crate::System::Action_2<*mut OVRSpatialAnchor, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Uuid", (value))?;
+            .invoke("Erase", (eraseOptions, onComplete))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Space(
+    pub fn GetListToStoreTheShareRequest(
         &mut self,
-        value: OVRSpace,
+        users: *mut crate::System::Collections::Generic::List_1<OVRSpaceUser>,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<*mut OVRSpatialAnchor>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut OVRSpatialAnchor,
+        > = __cordl_object.invoke("GetListToStoreTheShareRequest", (users))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetTrackingSpacePose(&mut self) -> quest_hook::libil2cpp::Result<OVRPose> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: OVRPose = __cordl_object.invoke("GetTrackingSpacePose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitializeFromExisting(
+        &mut self,
+        space: OVRSpace,
+        uuid: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Space", (value))?;
+            .invoke("InitializeFromExisting", (space, uuid))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitializeUnchecked(
+        &mut self,
+        space: OVRSpace,
+        uuid: crate::System::Guid,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitializeUnchecked", (space, uuid))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LateUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LateUpdate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SaveAsync_0(&mut self) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: OVRTask_1<bool> = __cordl_object.invoke("SaveAsync", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SaveAsync_OVRSpatialAnchor_SaveOptions1(
+        &mut self,
+        saveOptions: crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions,
+    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: OVRTask_1<bool> = __cordl_object
+            .invoke("SaveAsync", (saveOptions))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Save_Action_2_0(
+        &mut self,
+        onComplete: *mut crate::System::Action_2<*mut OVRSpatialAnchor, bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Save", (onComplete))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Save_OVRSpatialAnchor_SaveOptions_Action_2_1(
+        &mut self,
+        saveOptions: crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions,
+        onComplete: *mut crate::System::Action_2<*mut OVRSpatialAnchor, bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Save", (saveOptions, onComplete))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ShareAsyncInternal(
+        &mut self,
+        users: *mut crate::System::Collections::Generic::List_1<OVRSpaceUser>,
+    ) -> quest_hook::libil2cpp::Result<
+        OVRTask_1<crate::GlobalNamespace::OVRSpatialAnchor_OperationResult>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: OVRTask_1<
+            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+        > = __cordl_object.invoke("ShareAsyncInternal", (users))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ShareAsync_IEnumerable_1_4(
+        &mut self,
+        users: *mut crate::System::Collections::Generic::IEnumerable_1<OVRSpaceUser>,
+    ) -> quest_hook::libil2cpp::Result<
+        OVRTask_1<crate::GlobalNamespace::OVRSpatialAnchor_OperationResult>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: OVRTask_1<
+            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+        > = __cordl_object.invoke("ShareAsync", (users))?;
         Ok(__cordl_ret)
     }
     pub fn ShareAsync_OVRSpaceUser0(
@@ -697,18 +592,120 @@ impl OVRSpatialAnchor {
         > = __cordl_object.invoke("ShareAsync", (user1, user2, user3, user4))?;
         Ok(__cordl_ret)
     }
-    pub fn ShareAsync_IEnumerable_1_4(
+    pub fn Share_IEnumerable_1_Action_1_4(
         &mut self,
         users: *mut crate::System::Collections::Generic::IEnumerable_1<OVRSpaceUser>,
-    ) -> quest_hook::libil2cpp::Result<
-        OVRTask_1<crate::GlobalNamespace::OVRSpatialAnchor_OperationResult>,
-    > {
+        onComplete: *mut crate::System::Action_1<
+            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: OVRTask_1<
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Share", (users, onComplete))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Share_OVRSpaceUser_Action_1_0(
+        &mut self,
+        user: OVRSpaceUser,
+        onComplete: *mut crate::System::Action_1<
             crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-        > = __cordl_object.invoke("ShareAsync", (users))?;
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Share", (user, onComplete))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Share_OVRSpaceUser_OVRSpaceUser_Action_1_1(
+        &mut self,
+        user1: OVRSpaceUser,
+        user2: OVRSpaceUser,
+        onComplete: *mut crate::System::Action_1<
+            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Share", (user1, user2, onComplete))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Share_OVRSpaceUser_OVRSpaceUser_OVRSpaceUser_Action_1_2(
+        &mut self,
+        user1: OVRSpaceUser,
+        user2: OVRSpaceUser,
+        user3: OVRSpaceUser,
+        onComplete: *mut crate::System::Action_1<
+            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Share", (user1, user2, user3, onComplete))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Share_OVRSpaceUser_OVRSpaceUser_OVRSpaceUser_OVRSpaceUser_Action_1_3(
+        &mut self,
+        user1: OVRSpaceUser,
+        user2: OVRSpaceUser,
+        user3: OVRSpaceUser,
+        user4: OVRSpaceUser,
+        onComplete: *mut crate::System::Action_1<
+            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Share", (user1, user2, user3, user4, onComplete))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateTransform(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateTransform", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_OnLocalize(
@@ -724,59 +721,6 @@ impl OVRSpatialAnchor {
             .invoke("add_OnLocalize", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_PendingCreation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_PendingCreation", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Erase_Action_2_0(
-        &mut self,
-        onComplete: *mut crate::System::Action_2<*mut OVRSpatialAnchor, bool>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Erase", (onComplete))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Erase_OVRSpatialAnchor_EraseOptions_Action_2_1(
-        &mut self,
-        eraseOptions: crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions,
-        onComplete: *mut crate::System::Action_2<*mut OVRSpatialAnchor, bool>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Erase", (eraseOptions, onComplete))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Save_Action_2_0(
-        &mut self,
-        onComplete: *mut crate::System::Action_2<*mut OVRSpatialAnchor, bool>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Save", (onComplete))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Save_OVRSpatialAnchor_SaveOptions_Action_2_1(
-        &mut self,
-        saveOptions: crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions,
-        onComplete: *mut crate::System::Action_2<*mut OVRSpatialAnchor, bool>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Save", (saveOptions, onComplete))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Created(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -784,12 +728,68 @@ impl OVRSpatialAnchor {
         let __cordl_ret: bool = __cordl_object.invoke("get_Created", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_Localized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_Localized", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_PendingCreation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_PendingCreation", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Space(&mut self) -> quest_hook::libil2cpp::Result<OVRSpace> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: OVRSpace = __cordl_object.invoke("get_Space", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Uuid(&mut self) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Guid = __cordl_object.invoke("get_Uuid", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_OnLocalize(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_OnLocalize", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Space(
+        &mut self,
+        value: OVRSpace,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Space", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Uuid(
+        &mut self,
+        value: crate::System::Guid,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Uuid", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRSpatialAnchor")]
@@ -868,66 +868,6 @@ for crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
 }
 #[cfg(feature = "OVRSpatialAnchor+UnboundAnchor")]
 impl crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
-    pub fn get_Uuid(&mut self) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
-        let __cordl_ret: crate::System::Guid = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Uuid",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Pose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        let __cordl_ret: crate::UnityEngine::Pose = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Pose",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Localize(
-        &mut self,
-        onComplete: *mut crate::System::Action_2<
-            crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor,
-            bool,
-        >,
-        timeout: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Localize",
-            (onComplete, timeout),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Localizing(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Localizing",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Localized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Localized",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn LocalizeAsync(
-        &mut self,
-        timeout: f64,
-    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
-        let __cordl_ret: OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "LocalizeAsync",
-            (timeout),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn AddStorableAndShareableComponents(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -946,6 +886,32 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
             self,
             "BindTo",
             (spatialAnchor),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Localize(
+        &mut self,
+        onComplete: *mut crate::System::Action_2<
+            crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor,
+            bool,
+        >,
+        timeout: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Localize",
+            (onComplete, timeout),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn LocalizeAsync(
+        &mut self,
+        timeout: f64,
+    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
+        let __cordl_ret: OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "LocalizeAsync",
+            (timeout),
         )?;
         Ok(__cordl_ret)
     }
@@ -968,6 +934,40 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
             self,
             ".ctor",
             (space, uuid),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Localized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Localized",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Localizing(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Localizing",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Pose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_ret: crate::UnityEngine::Pose = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Pose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Uuid(&mut self) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
+        let __cordl_ret: crate::System::Guid = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Uuid",
+            (),
         )?;
         Ok(__cordl_ret)
     }

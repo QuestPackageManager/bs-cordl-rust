@@ -30,6 +30,23 @@ impl std::ops::DerefMut for crate::System::IO::EnumerationOptions {
 }
 #[cfg(feature = "System+IO+EnumerationOptions")]
 impl crate::System::IO::EnumerationOptions {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_AttributesToSkip(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::IO::FileAttributes> {
@@ -40,33 +57,31 @@ impl crate::System::IO::EnumerationOptions {
             .invoke("get_AttributesToSkip", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_AttributesToSkip(
-        &mut self,
-        value: crate::System::IO::FileAttributes,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_AttributesToSkip", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_RecurseSubdirectories(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_RecurseSubdirectories", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_IgnoreInaccessible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IgnoreInaccessible", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MatchCasing(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IO::MatchCasing> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::IO::MatchCasing = __cordl_object
+            .invoke("get_MatchCasing", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MatchType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IO::MatchType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::IO::MatchType = __cordl_object
+            .invoke("get_MatchType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_RecurseSubdirectories(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -86,45 +101,15 @@ impl crate::System::IO::EnumerationOptions {
             .invoke("get_ReturnSpecialDirectories", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn set_AttributesToSkip(
         &mut self,
+        value: crate::System::IO::FileAttributes,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_MatchType(
-        &mut self,
-        value: crate::System::IO::MatchType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_MatchType", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MatchType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IO::MatchType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::IO::MatchType = __cordl_object
-            .invoke("get_MatchType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MatchCasing(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IO::MatchCasing> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::IO::MatchCasing = __cordl_object
-            .invoke("get_MatchCasing", ())?;
+            .invoke("set_AttributesToSkip", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_IgnoreInaccessible(
@@ -138,12 +123,27 @@ impl crate::System::IO::EnumerationOptions {
             .invoke("set_IgnoreInaccessible", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_MatchType(
+        &mut self,
+        value: crate::System::IO::MatchType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_MatchType", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_RecurseSubdirectories(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_RecurseSubdirectories", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+IO+EnumerationOptions")]

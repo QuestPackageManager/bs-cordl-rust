@@ -31,6 +31,18 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo {
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectConstructorInfo")]
 impl crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo {
+    pub fn New(
+        constructorInfo: *mut crate::System::Reflection::ConstructorInfo,
+        parameters: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (constructorInfo, parameters))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         constructorInfo: *mut crate::System::Reflection::ConstructorInfo,
@@ -44,18 +56,6 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (constructorInfo, parameters))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        constructorInfo: *mut crate::System::Reflection::ConstructorInfo,
-        parameters: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (constructorInfo, parameters))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectConstructorInfo")]
@@ -98,6 +98,16 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo {
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectFieldInfo")]
 impl crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo {
+    pub fn New(
+        fieldInfo: *mut crate::System::Reflection::FieldInfo,
+        injectableInfo: *mut crate::Zenject::InjectableInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (fieldInfo, injectableInfo))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         fieldInfo: *mut crate::System::Reflection::FieldInfo,
@@ -109,16 +119,6 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (fieldInfo, injectableInfo))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        fieldInfo: *mut crate::System::Reflection::FieldInfo,
-        injectableInfo: *mut crate::Zenject::InjectableInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (fieldInfo, injectableInfo))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectFieldInfo")]
@@ -163,6 +163,18 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo {
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectMethodInfo")]
 impl crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo {
+    pub fn New(
+        methodInfo: *mut crate::System::Reflection::MethodInfo,
+        parameters: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (methodInfo, parameters))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         methodInfo: *mut crate::System::Reflection::MethodInfo,
@@ -176,18 +188,6 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (methodInfo, parameters))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        methodInfo: *mut crate::System::Reflection::MethodInfo,
-        parameters: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (methodInfo, parameters))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectMethodInfo")]
@@ -231,6 +231,16 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo {
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectParameterInfo")]
 impl crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo {
+    pub fn New(
+        parameterInfo: *mut crate::System::Reflection::ParameterInfo,
+        injectableInfo: *mut crate::Zenject::InjectableInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (parameterInfo, injectableInfo))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         parameterInfo: *mut crate::System::Reflection::ParameterInfo,
@@ -242,16 +252,6 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (parameterInfo, injectableInfo))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        parameterInfo: *mut crate::System::Reflection::ParameterInfo,
-        injectableInfo: *mut crate::Zenject::InjectableInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (parameterInfo, injectableInfo))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectParameterInfo")]
@@ -295,6 +295,16 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo {
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectPropertyInfo")]
 impl crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo {
+    pub fn New(
+        propertyInfo: *mut crate::System::Reflection::PropertyInfo,
+        injectableInfo: *mut crate::Zenject::InjectableInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (propertyInfo, injectableInfo))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         propertyInfo: *mut crate::System::Reflection::PropertyInfo,
@@ -306,16 +316,6 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (propertyInfo, injectableInfo))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        propertyInfo: *mut crate::System::Reflection::PropertyInfo,
-        injectableInfo: *mut crate::Zenject::InjectableInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (propertyInfo, injectableInfo))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectPropertyInfo")]
@@ -368,14 +368,44 @@ impl std::ops::DerefMut for crate::Zenject::Internal::ReflectionTypeInfo {
 impl crate::Zenject::Internal::ReflectionTypeInfo {
     #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectConstructorInfo")]
     pub type InjectConstructorInfo = crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo;
-    #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectFieldInfo")]
-    pub type InjectFieldInfo = crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo;
     #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectParameterInfo")]
     pub type InjectParameterInfo = crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo;
-    #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectPropertyInfo")]
-    pub type InjectPropertyInfo = crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo;
+    #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectFieldInfo")]
+    pub type InjectFieldInfo = crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo;
     #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectMethodInfo")]
     pub type InjectMethodInfo = crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo;
+    #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectPropertyInfo")]
+    pub type InjectPropertyInfo = crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo;
+    pub fn New(
+        _cordl_type: *mut crate::System::Type,
+        baseType: *mut crate::System::Type,
+        injectConstructor: *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo,
+        injectMethods: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+        >,
+        injectFields: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+        >,
+        injectProperties: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    _cordl_type,
+                    baseType,
+                    injectConstructor,
+                    injectMethods,
+                    injectFields,
+                    injectProperties,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         _cordl_type: *mut crate::System::Type,
@@ -407,36 +437,6 @@ impl crate::Zenject::Internal::ReflectionTypeInfo {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        _cordl_type: *mut crate::System::Type,
-        baseType: *mut crate::System::Type,
-        injectConstructor: *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo,
-        injectMethods: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
-        >,
-        injectFields: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
-        >,
-        injectProperties: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    _cordl_type,
-                    baseType,
-                    injectConstructor,
-                    injectMethods,
-                    injectFields,
-                    injectProperties,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo")]

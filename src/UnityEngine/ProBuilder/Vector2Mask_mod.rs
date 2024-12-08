@@ -24,22 +24,6 @@ for crate::UnityEngine::ProBuilder::Vector2Mask {
 impl crate::UnityEngine::ProBuilder::Vector2Mask {
     pub const X: u8 = 1u8;
     pub const Y: u8 = 2u8;
-    pub fn get_x(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_x",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_y(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_y",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_Vector3_f32_0(
         &mut self,
         v: crate::UnityEngine::Vector3,
@@ -60,6 +44,22 @@ impl crate::UnityEngine::ProBuilder::Vector2Mask {
             self,
             ".ctor",
             (mask),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_x(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_x",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_y(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_y",
+            (),
         )?;
         Ok(__cordl_ret)
     }

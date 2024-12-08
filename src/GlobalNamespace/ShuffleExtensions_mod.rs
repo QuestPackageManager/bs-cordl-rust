@@ -23,12 +23,12 @@ impl std::ops::DerefMut for ShuffleExtensions {
 }
 #[cfg(feature = "ShuffleExtensions")]
 impl ShuffleExtensions {
-    #[cfg(feature = "ShuffleExtensions+_PickRandomElementsWithTombstone_d__1_1")]
-    pub type _PickRandomElementsWithTombstone_d__1_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::ShuffleExtensions__PickRandomElementsWithTombstone_d__1_1<
-        T,
-    >;
     #[cfg(feature = "ShuffleExtensions+_TakeWithTombstone_d__2_1")]
     pub type _TakeWithTombstone_d__2_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::ShuffleExtensions__TakeWithTombstone_d__2_1<
+        T,
+    >;
+    #[cfg(feature = "ShuffleExtensions+_PickRandomElementsWithTombstone_d__1_1")]
+    pub type _PickRandomElementsWithTombstone_d__1_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::ShuffleExtensions__PickRandomElementsWithTombstone_d__1_1<
         T,
     >;
     #[cfg(feature = "ShuffleExtensions+_ZipSkipTombstone_d__3")]

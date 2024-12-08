@@ -26,6 +26,13 @@ impl std::ops::DerefMut for crate::UnityEngine::EventSystems::EventTrigger_Entry
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger+Entry")]
 impl crate::UnityEngine::EventSystems::EventTrigger_Entry {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -35,13 +42,6 @@ impl crate::UnityEngine::EventSystems::EventTrigger_Entry {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger+Entry")]
@@ -87,6 +87,25 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
     pub type Entry = crate::UnityEngine::EventSystems::EventTrigger_Entry;
     #[cfg(feature = "UnityEngine+EventSystems+EventTrigger+TriggerEvent")]
     pub type TriggerEvent = crate::UnityEngine::EventSystems::EventTrigger_TriggerEvent;
+    pub fn Execute(
+        &mut self,
+        id: crate::UnityEngine::EventSystems::EventTriggerType,
+        eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Execute", (id, eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn OnBeginDrag(
         &mut self,
         eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
@@ -98,57 +117,7 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
             .invoke("OnBeginDrag", (eventData))?;
         Ok(__cordl_ret)
     }
-    pub fn set_delegates(
-        &mut self,
-        value: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_delegates", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerEnter(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerEnter", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_triggers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
-        > = __cordl_object.invoke("get_triggers", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerExit(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerExit", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnUpdateSelected(
+    pub fn OnCancel(
         &mut self,
         eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -156,33 +125,18 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnUpdateSelected", (eventData))?;
+            .invoke("OnCancel", (eventData))?;
         Ok(__cordl_ret)
     }
-    pub fn get_delegates(
+    pub fn OnDeselect(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
-        > = __cordl_object.invoke("get_delegates", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerUp(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerUp", (eventData))?;
+            .invoke("OnDeselect", (eventData))?;
         Ok(__cordl_ret)
     }
     pub fn OnDrag(
@@ -207,7 +161,7 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
             .invoke("OnDrop", (eventData))?;
         Ok(__cordl_ret)
     }
-    pub fn OnPointerDown(
+    pub fn OnEndDrag(
         &mut self,
         eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -215,18 +169,7 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerDown", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDeselect(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDeselect", (eventData))?;
+            .invoke("OnEndDrag", (eventData))?;
         Ok(__cordl_ret)
     }
     pub fn OnInitializePotentialDrag(
@@ -238,6 +181,169 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnInitializePotentialDrag", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnMove(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::AxisEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnMove", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerClick(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerClick", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerDown(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerDown", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerEnter(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerEnter", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerExit(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerExit", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerUp(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerUp", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnScroll(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnScroll", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnSelect(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnSelect", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnSubmit(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnSubmit", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnUpdateSelected(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnUpdateSelected", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_delegates(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
+        > = __cordl_object.invoke("get_delegates", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_triggers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
+        > = __cordl_object.invoke("get_triggers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_delegates(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_delegates", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_triggers(
@@ -252,112 +358,6 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_triggers", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerClick(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerClick", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnSubmit(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnSubmit", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnCancel(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCancel", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnEndDrag(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEndDrag", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnSelect(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnSelect", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnScroll(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnScroll", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Execute(
-        &mut self,
-        id: crate::UnityEngine::EventSystems::EventTriggerType,
-        eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Execute", (id, eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnMove(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::AxisEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnMove", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
@@ -401,6 +401,13 @@ impl std::ops::DerefMut for crate::UnityEngine::EventSystems::EventTrigger_Trigg
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger+TriggerEvent")]
 impl crate::UnityEngine::EventSystems::EventTrigger_TriggerEvent {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -410,13 +417,6 @@ impl crate::UnityEngine::EventSystems::EventTrigger_TriggerEvent {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger+TriggerEvent")]

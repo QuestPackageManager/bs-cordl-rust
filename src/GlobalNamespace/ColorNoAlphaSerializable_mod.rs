@@ -21,17 +21,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for ColorNoAlphaSerializable {
 }
 #[cfg(feature = "ColorNoAlphaSerializable")]
 impl ColorNoAlphaSerializable {
-    pub fn Serialize(
-        &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Serialize",
-            (writer),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -65,22 +54,22 @@ impl ColorNoAlphaSerializable {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        color: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (color),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Serialize(
+        &mut self,
+        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Serialize",
+            (writer),
         )?;
         Ok(__cordl_ret)
     }
@@ -91,6 +80,17 @@ impl ColorNoAlphaSerializable {
             self,
             "ToString",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        color: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (color),
         )?;
         Ok(__cordl_ret)
     }

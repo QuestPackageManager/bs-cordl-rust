@@ -28,16 +28,6 @@ for crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
 }
 #[cfg(feature = "System+Xml+Serialization+XmlChoiceIdentifierAttribute")]
 impl crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
-    pub fn get_MemberName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_MemberName", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AddKeyHash(
         &mut self,
         sb: *mut crate::System::Text::StringBuilder,
@@ -47,6 +37,16 @@ impl crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddKeyHash", (sb))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MemberName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_MemberName", ())?;
         Ok(__cordl_ret)
     }
 }

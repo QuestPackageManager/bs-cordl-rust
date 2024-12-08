@@ -27,6 +27,62 @@ impl std::ops::DerefMut for crate::System::Data::DataColumnChangeEventArgs {
 }
 #[cfg(feature = "System+Data+DataColumnChangeEventArgs")]
 impl crate::System::Data::DataColumnChangeEventArgs {
+    pub fn InitializeColumnChangeEvent(
+        &mut self,
+        column: *mut crate::System::Data::DataColumn,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitializeColumnChangeEvent", (column, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_DataColumn_Object1(
+        row: *mut crate::System::Data::DataRow,
+        column: *mut crate::System::Data::DataColumn,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (row, column, value))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_DataRow0(
+        row: *mut crate::System::Data::DataRow,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (row))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_DataColumn_Object1(
+        &mut self,
+        row: *mut crate::System::Data::DataRow,
+        column: *mut crate::System::Data::DataColumn,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (row, column, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_DataRow0(
+        &mut self,
+        row: *mut crate::System::Data::DataRow,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (row))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_ProposedValue(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
@@ -47,62 +103,6 @@ impl crate::System::Data::DataColumnChangeEventArgs {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ProposedValue", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn InitializeColumnChangeEvent(
-        &mut self,
-        column: *mut crate::System::Data::DataColumn,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitializeColumnChangeEvent", (column, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_DataRow0(
-        &mut self,
-        row: *mut crate::System::Data::DataRow,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (row))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_DataColumn_Object1(
-        &mut self,
-        row: *mut crate::System::Data::DataRow,
-        column: *mut crate::System::Data::DataColumn,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (row, column, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_DataRow0(
-        row: *mut crate::System::Data::DataRow,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (row))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_DataColumn_Object1(
-        row: *mut crate::System::Data::DataRow,
-        column: *mut crate::System::Data::DataColumn,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (row, column, value))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Data+DataColumnChangeEventArgs")]

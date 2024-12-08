@@ -40,41 +40,6 @@ impl BezierSplineEvaluator {
             .invoke("Evaluate", (t))?;
         Ok(__cordl_ret)
     }
-    pub fn OffsetStartIndexToDistance(
-        &mut self,
-        _cordl_time: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OffsetStartIndexToDistance", (_cordl_time))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        spline: *mut BezierSpline,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (spline))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTimeValuesForSegment(
-        &mut self,
-        segmentIndex: i32,
-        t0Value: quest_hook::libil2cpp::ByRefMut<f32>,
-        t1Value: quest_hook::libil2cpp::ByRefMut<f32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetTimeValuesForSegment", (segmentIndex, t0Value, t1Value))?;
-        Ok(__cordl_ret)
-    }
     pub fn EvaluateFirstDerivation(
         &mut self,
         t: f32,
@@ -84,29 +49,6 @@ impl BezierSplineEvaluator {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("EvaluateFirstDerivation", (t))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OffsetSegmentAndGetT(
-        &mut self,
-        _cordl_time: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("OffsetSegmentAndGetT", (_cordl_time))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTForSegment(
-        &mut self,
-        segmentIndex: i32,
-        _cordl_time: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("GetTForSegment", (segmentIndex, _cordl_time))?;
         Ok(__cordl_ret)
     }
     pub fn EvaluatePosition(
@@ -131,14 +73,70 @@ impl BezierSplineEvaluator {
             .invoke("EvaluateSecondDerivation", (t))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        spline: *mut BezierSpline,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn GetTForSegment(
+        &mut self,
+        segmentIndex: i32,
+        _cordl_time: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("GetTForSegment", (segmentIndex, _cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetTimeValuesForSegment(
+        &mut self,
+        segmentIndex: i32,
+        t0Value: quest_hook::libil2cpp::ByRefMut<f32>,
+        t1Value: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetTimeValuesForSegment", (segmentIndex, t0Value, t1Value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(spline: *mut BezierSpline) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (spline))?;
         Ok(__cordl_object)
+    }
+    pub fn OffsetSegmentAndGetT(
+        &mut self,
+        _cordl_time: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("OffsetSegmentAndGetT", (_cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OffsetStartIndexToDistance(
+        &mut self,
+        _cordl_time: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OffsetStartIndexToDistance", (_cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        spline: *mut BezierSpline,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (spline))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BezierSplineEvaluator")]

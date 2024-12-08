@@ -49,30 +49,21 @@ impl std::ops::DerefMut for crate::BeatSaber::PerformancePresets::PerformancePre
 }
 #[cfg(feature = "BeatSaber+PerformancePresets+PerformancePreset")]
 impl crate::BeatSaber::PerformancePresets::PerformancePreset {
-    pub fn get_burnMarkTrails(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_burnMarkTrails", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn get_questSettings(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::BeatSaber::PerformancePresets::QuestPerformanceSettings,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::BeatSaber::PerformancePresets::QuestPerformanceSettings = __cordl_object
-            .invoke("get_questSettings", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_targetFramerate(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_targetFramerate", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_antiAliasingLevel(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -80,6 +71,46 @@ impl crate::BeatSaber::PerformancePresets::PerformancePreset {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_antiAliasingLevel", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_bloomPrePassTextureEffect(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::BeatSaber::PerformancePresets::BloomPrepassTextureEffectPreset,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::BeatSaber::PerformancePresets::BloomPrepassTextureEffectPreset = __cordl_object
+            .invoke("get_bloomPrePassTextureEffect", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_burnMarkTrails(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_burnMarkTrails", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_dataVersion(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("get_dataVersion", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_defaultAudioLatency(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_defaultAudioLatency", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_depthTexture(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_depthTexture", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_environmentOverrides(
@@ -97,66 +128,16 @@ impl crate::BeatSaber::PerformancePresets::PerformancePreset {
         > = __cordl_object.invoke("get_environmentOverrides", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn get_mainEffectGraphics(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::BeatSaber::PerformancePresets::MainEffectPreset,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_maxQueuedFrames(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_maxQueuedFrames", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_vrResolutionScale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_vrResolutionScale", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_renderViewportScale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_renderViewportScale", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_depthTexture(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_depthTexture", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_vSyncCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_vSyncCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_screenDisplacementEffects(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_screenDisplacementEffects", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_maxShockwaveParticles(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_maxShockwaveParticles", ())?;
+        let __cordl_ret: crate::BeatSaber::PerformancePresets::MainEffectPreset = __cordl_object
+            .invoke("get_mainEffectGraphics", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_maxNumberOfCutSoundEffects(
@@ -169,28 +150,28 @@ impl crate::BeatSaber::PerformancePresets::PerformancePreset {
             .invoke("get_maxNumberOfCutSoundEffects", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_smokeGraphics(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_maxQueuedFrames(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_smokeGraphics", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_maxQueuedFrames", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_presetNameLocalizationTag(
+    pub fn get_maxShockwaveParticles(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_maxShockwaveParticles", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_menuVRResolutionScaleMultiplier(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_presetNameLocalizationTag", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_defaultAudioLatency(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_defaultAudioLatency", ())?;
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("get_menuVRResolutionScaleMultiplier", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_mirrorGraphics(
@@ -203,18 +184,6 @@ impl crate::BeatSaber::PerformancePresets::PerformancePreset {
         );
         let __cordl_ret: crate::BeatSaber::PerformancePresets::MirrorQualityPreset = __cordl_object
             .invoke("get_mirrorGraphics", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_mainEffectGraphics(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::BeatSaber::PerformancePresets::MainEffectPreset,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::BeatSaber::PerformancePresets::MainEffectPreset = __cordl_object
-            .invoke("get_mainEffectGraphics", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_obstaclesQuality(
@@ -239,41 +208,72 @@ impl crate::BeatSaber::PerformancePresets::PerformancePreset {
             .invoke("get_presetName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_dataVersion(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+    pub fn get_presetNameLocalizationTag(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: u32 = __cordl_object.invoke("get_dataVersion", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_presetNameLocalizationTag", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_bloomPrePassTextureEffect(
+    pub fn get_questSettings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::BeatSaber::PerformancePresets::BloomPrepassTextureEffectPreset,
+        *mut crate::BeatSaber::PerformancePresets::QuestPerformanceSettings,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::BeatSaber::PerformancePresets::BloomPrepassTextureEffectPreset = __cordl_object
-            .invoke("get_bloomPrePassTextureEffect", ())?;
+        let __cordl_ret: *mut crate::BeatSaber::PerformancePresets::QuestPerformanceSettings = __cordl_object
+            .invoke("get_questSettings", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_menuVRResolutionScaleMultiplier(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_renderViewportScale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("get_menuVRResolutionScaleMultiplier", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_renderViewportScale", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_screenDisplacementEffects(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_screenDisplacementEffects", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_smokeGraphics(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_smokeGraphics", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_targetFramerate(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_targetFramerate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_vSyncCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_vSyncCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_vrResolutionScale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_vrResolutionScale", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatSaber+PerformancePresets+PerformancePreset")]

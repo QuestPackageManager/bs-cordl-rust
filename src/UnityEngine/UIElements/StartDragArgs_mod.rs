@@ -27,13 +27,15 @@ for crate::UnityEngine::UIElements::StartDragArgs {
 }
 #[cfg(feature = "UnityEngine+UIElements+StartDragArgs")]
 impl crate::UnityEngine::UIElements::StartDragArgs {
-    pub fn get_genericData(
+    pub fn SetGenericData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::Hashtable> {
-        let __cordl_ret: *mut crate::System::Collections::Hashtable = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        key: *mut crate::System::String,
+        data: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_genericData",
-            (),
+            "SetGenericData",
+            (key, data),
         )?;
         Ok(__cordl_ret)
     }
@@ -46,6 +48,42 @@ impl crate::UnityEngine::UIElements::StartDragArgs {
             self,
             ".ctor",
             (title, visualMode),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_genericData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::Hashtable> {
+        let __cordl_ret: *mut crate::System::Collections::Hashtable = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_genericData",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_title(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_title",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_unityObjectReferences(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::UnityEngine::Object,
+        >,
+    > {
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::UnityEngine::Object,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_unityObjectReferences",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -70,22 +108,6 @@ impl crate::UnityEngine::UIElements::StartDragArgs {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_unityObjectReferences(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::Object,
-        >,
-    > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::Object,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_unityObjectReferences",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_unityObjectReferences(
         &mut self,
         value: *mut crate::System::Collections::Generic::IEnumerable_1<
@@ -96,28 +118,6 @@ impl crate::UnityEngine::UIElements::StartDragArgs {
             self,
             "set_unityObjectReferences",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_title(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_title",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetGenericData(
-        &mut self,
-        key: *mut crate::System::String,
-        data: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetGenericData",
-            (key, data),
         )?;
         Ok(__cordl_ret)
     }

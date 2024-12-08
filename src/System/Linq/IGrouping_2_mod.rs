@@ -38,6 +38,11 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > crate::System::Linq::IGrouping_2<TKey, TElement> {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_Key(&mut self) -> quest_hook::libil2cpp::Result<TKey>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -50,11 +55,6 @@ impl<
         );
         let __cordl_ret: TKey = __cordl_object.invoke("get_Key", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "System+Linq+IGrouping_2")]

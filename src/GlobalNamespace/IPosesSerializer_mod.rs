@@ -23,16 +23,15 @@ impl std::ops::DerefMut for IPosesSerializer {
 }
 #[cfg(feature = "IPosesSerializer")]
 impl IPosesSerializer {
-    pub fn SaveToOldFormat(
+    pub fn LoadRecording(
         &mut self,
         path: *mut crate::System::String,
-        data: *mut PosesRecordingData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut PosesRecordingData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SaveToOldFormat", (path, data))?;
+        let __cordl_ret: *mut PosesRecordingData = __cordl_object
+            .invoke("LoadRecording", (path))?;
         Ok(__cordl_ret)
     }
     pub fn RecordingCanBeCreated(
@@ -55,17 +54,6 @@ impl IPosesSerializer {
         let __cordl_ret: bool = __cordl_object.invoke("RecordingExists", (path))?;
         Ok(__cordl_ret)
     }
-    pub fn LoadRecording(
-        &mut self,
-        path: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut PosesRecordingData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut PosesRecordingData = __cordl_object
-            .invoke("LoadRecording", (path))?;
-        Ok(__cordl_ret)
-    }
     pub fn SaveRecording(
         &mut self,
         path: *mut crate::System::String,
@@ -77,6 +65,18 @@ impl IPosesSerializer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SaveRecording", (path, data, saveToOldFormat))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SaveToOldFormat(
+        &mut self,
+        path: *mut crate::System::String,
+        data: *mut PosesRecordingData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SaveToOldFormat", (path, data))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

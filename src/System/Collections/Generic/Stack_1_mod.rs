@@ -28,6 +28,60 @@ for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Collections::Generic::Stack_1_Enumerator<T> {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerator_Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.IEnumerator.Reset",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerator_get_Current(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.IEnumerator.get_Current",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn ThrowEnumerationNotStartedOrEnded(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -69,60 +123,6 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerator_get_Current(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.IEnumerator.get_Current",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerator_Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.IEnumerator.Reset",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
 }
 #[cfg(feature = "System+Collections+Generic+Stack_1")]
 #[repr(C)]
@@ -160,6 +160,59 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Stack_
     pub const DefaultCapacity: i32 = 4i32;
     #[cfg(feature = "System+Collections+Generic+Stack_1+Enumerator")]
     pub type Enumerator = crate::System::Collections::Generic::Stack_1_Enumerator<T>;
+    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Contains(&mut self, item: T) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Contains", (item))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Collections::Generic::Stack_1_Enumerator<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Collections::Generic::Stack_1_Enumerator<T> = __cordl_object
+            .invoke("GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_1(capacity: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (capacity))?;
+        Ok(__cordl_object)
+    }
     pub fn Peek(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -171,7 +224,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Stack_
         let __cordl_ret: T = __cordl_object.invoke("Peek", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -179,24 +232,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Stack_
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
+        let __cordl_ret: T = __cordl_object.invoke("Pop", ())?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_ICollection_get_IsSynchronized(
+    pub fn Push(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Collections.ICollection.get_IsSynchronized", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -205,7 +247,22 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Stack_
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
+            .invoke("Push", (item))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PushWithResize(
+        &mut self,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PushWithResize", (item))?;
         Ok(__cordl_ret)
     }
     pub fn System_Collections_Generic_IEnumerable_T__GetEnumerator(
@@ -240,9 +297,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Stack_
             .invoke("System.Collections.ICollection.CopyTo", (array, arrayIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn ThrowForEmptyStack(
+    pub fn System_Collections_ICollection_get_IsSynchronized(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -250,44 +307,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Stack_
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ThrowForEmptyStack", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("Pop", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Contains(&mut self, item: T) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Contains", (item))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerable_GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Collections.ICollection.get_IsSynchronized", ())?;
         Ok(__cordl_ret)
     }
     pub fn System_Collections_ICollection_get_SyncRoot(
@@ -304,10 +325,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Stack_
             .invoke("System.Collections.ICollection.get_SyncRoot", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Push(
+    pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
-        item: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -315,13 +335,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Stack_
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Push", (item))?;
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
-    pub fn PushWithResize(
+    pub fn ThrowForEmptyStack(
         &mut self,
-        item: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -331,7 +350,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Stack_
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PushWithResize", (item))?;
+            .invoke("ThrowForEmptyStack", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -363,11 +382,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Stack_
             .invoke(".ctor", (capacity))?;
         Ok(__cordl_ret)
     }
-    pub fn GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Collections::Generic::Stack_1_Enumerator<T>,
-    >
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -375,23 +390,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Stack_
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Collections::Generic::Stack_1_Enumerator<T> = __cordl_object
-            .invoke("GetEnumerator", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_1(capacity: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (capacity))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Collections+Generic+Stack_1")]

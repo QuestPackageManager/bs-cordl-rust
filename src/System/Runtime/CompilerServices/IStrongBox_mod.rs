@@ -24,16 +24,10 @@ impl std::ops::DerefMut for crate::System::Runtime::CompilerServices::IStrongBox
 }
 #[cfg(feature = "System+Runtime+CompilerServices+IStrongBox")]
 impl crate::System::Runtime::CompilerServices::IStrongBox {
-    pub fn set_Value(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Value", (value))?;
-        Ok(__cordl_ret)
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
     }
     pub fn get_Value(
         &mut self,
@@ -45,10 +39,16 @@ impl crate::System::Runtime::CompilerServices::IStrongBox {
             .invoke("get_Value", ())?;
         Ok(__cordl_ret)
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
+    pub fn set_Value(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Value", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+IStrongBox")]

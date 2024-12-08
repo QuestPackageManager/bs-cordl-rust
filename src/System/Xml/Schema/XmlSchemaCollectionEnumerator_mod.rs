@@ -26,28 +26,21 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaCollectionEnume
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaCollectionEnumerator")]
 impl crate::System::Xml::Schema::XmlSchemaCollectionEnumerator {
-    pub fn get_CurrentNode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaCollectionNode,
-    > {
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaCollectionNode = __cordl_object
-            .invoke("get_CurrentNode", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         collection: *mut crate::System::Collections::Hashtable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (collection))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (collection))?;
+        Ok(__cordl_object)
     }
     pub fn System_Collections_IEnumerator_MoveNext(
         &mut self,
@@ -57,13 +50,6 @@ impl crate::System::Xml::Schema::XmlSchemaCollectionEnumerator {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("System.Collections.IEnumerator.MoveNext", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
         Ok(__cordl_ret)
     }
     pub fn System_Collections_IEnumerator_Reset(
@@ -86,6 +72,17 @@ impl crate::System::Xml::Schema::XmlSchemaCollectionEnumerator {
             .invoke("System.Collections.IEnumerator.get_Current", ())?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+        collection: *mut crate::System::Collections::Hashtable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (collection))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Current(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
@@ -96,14 +93,17 @@ impl crate::System::Xml::Schema::XmlSchemaCollectionEnumerator {
             .invoke("get_Current", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        collection: *mut crate::System::Collections::Hashtable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (collection))?;
-        Ok(__cordl_object)
+    pub fn get_CurrentNode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Xml::Schema::XmlSchemaCollectionNode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaCollectionNode = __cordl_object
+            .invoke("get_CurrentNode", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaCollectionEnumerator")]

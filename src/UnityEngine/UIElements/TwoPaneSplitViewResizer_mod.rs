@@ -28,33 +28,36 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::TwoPaneSplitViewResi
 }
 #[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitViewResizer")]
 impl crate::UnityEngine::UIElements::TwoPaneSplitViewResizer {
-    pub fn get_flexedPaneMinDimension(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn ApplyDelta(
+        &mut self,
+        delta: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_flexedPaneMinDimension", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ApplyDelta", (delta))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         splitView: *mut crate::UnityEngine::UIElements::TwoPaneSplitView,
         dir: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (splitView, dir))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (splitView, dir))?;
+        Ok(__cordl_object)
     }
-    pub fn RegisterCallbacksOnTarget(
+    pub fn OnPointerDown(
         &mut self,
+        e: *mut crate::UnityEngine::UIElements::PointerDownEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterCallbacksOnTarget", ())?;
+            .invoke("OnPointerDown", (e))?;
         Ok(__cordl_ret)
     }
     pub fn OnPointerMove(
@@ -79,6 +82,38 @@ impl crate::UnityEngine::UIElements::TwoPaneSplitViewResizer {
             .invoke("OnPointerUp", (e))?;
         Ok(__cordl_ret)
     }
+    pub fn RegisterCallbacksOnTarget(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterCallbacksOnTarget", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnregisterCallbacksFromTarget(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnregisterCallbacksFromTarget", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        splitView: *mut crate::UnityEngine::UIElements::TwoPaneSplitView,
+        dir: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (splitView, dir))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_fixedPane(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -96,6 +131,13 @@ impl crate::UnityEngine::UIElements::TwoPaneSplitViewResizer {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_fixedPaneMargins", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_fixedPaneMinDimension(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_fixedPaneMinDimension", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_flexedPane(
@@ -117,43 +159,11 @@ impl crate::UnityEngine::UIElements::TwoPaneSplitViewResizer {
         let __cordl_ret: f32 = __cordl_object.invoke("get_flexedPaneMargin", ())?;
         Ok(__cordl_ret)
     }
-    pub fn UnregisterCallbacksFromTarget(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_flexedPaneMinDimension(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterCallbacksFromTarget", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerDown(
-        &mut self,
-        e: *mut crate::UnityEngine::UIElements::PointerDownEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerDown", (e))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_fixedPaneMinDimension(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_fixedPaneMinDimension", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ApplyDelta(
-        &mut self,
-        delta: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ApplyDelta", (delta))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_flexedPaneMinDimension", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_orientation(
@@ -167,16 +177,6 @@ impl crate::UnityEngine::UIElements::TwoPaneSplitViewResizer {
         let __cordl_ret: crate::UnityEngine::UIElements::TwoPaneSplitViewOrientation = __cordl_object
             .invoke("get_orientation", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        splitView: *mut crate::UnityEngine::UIElements::TwoPaneSplitView,
-        dir: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (splitView, dir))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitViewResizer")]

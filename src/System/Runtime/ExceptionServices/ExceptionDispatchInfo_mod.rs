@@ -29,14 +29,23 @@ for crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo {
 }
 #[cfg(feature = "System+Runtime+ExceptionServices+ExceptionDispatchInfo")]
 impl crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo {
-    pub fn get_BinaryStackTraceArray(
+    pub fn New(
+        exception: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (exception))?;
+        Ok(__cordl_object)
+    }
+    pub fn Throw(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_BinaryStackTraceArray", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Throw", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -50,14 +59,14 @@ impl crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo {
             .invoke(".ctor", (exception))?;
         Ok(__cordl_ret)
     }
-    pub fn Throw(
+    pub fn get_BinaryStackTraceArray(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Throw", ())?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_BinaryStackTraceArray", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SourceException(
@@ -69,15 +78,6 @@ impl crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo {
         let __cordl_ret: *mut crate::System::Exception = __cordl_object
             .invoke("get_SourceException", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        exception: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (exception))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+ExceptionServices+ExceptionDispatchInfo")]

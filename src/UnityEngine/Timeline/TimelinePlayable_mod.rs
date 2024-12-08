@@ -41,19 +41,18 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimelinePlayable {
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelinePlayable")]
 impl crate::UnityEngine::Timeline::TimelinePlayable {
-    pub fn CreateTrackOutput(
+    pub fn CacheTrack(
         &mut self,
-        graph: crate::UnityEngine::Playables::PlayableGraph,
         track: *mut crate::UnityEngine::Timeline::TrackAsset,
-        go: *mut crate::UnityEngine::GameObject,
         playable: crate::UnityEngine::Playables::Playable,
         port: i32,
+        parent: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CreateTrackOutput", (graph, track, go, playable, port))?;
+            .invoke("CacheTrack", (track, playable, port, parent))?;
         Ok(__cordl_ret)
     }
     pub fn Compile(
@@ -97,52 +96,19 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn EvaluateWeightsForAnimationPlayableOutput(
+    pub fn CreateTrackOutput(
         &mut self,
+        graph: crate::UnityEngine::Playables::PlayableGraph,
         track: *mut crate::UnityEngine::Timeline::TrackAsset,
-        animOutput: crate::UnityEngine::Animations::AnimationPlayableOutput,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EvaluateWeightsForAnimationPlayableOutput", (track, animOutput))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EvaluateAnimationPreviewUpdateCallback(
-        &mut self,
-        track: *mut crate::UnityEngine::Timeline::TrackAsset,
-        animOutput: crate::UnityEngine::Animations::AnimationPlayableOutput,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EvaluateAnimationPreviewUpdateCallback", (track, animOutput))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Evaluate(
-        &mut self,
+        go: *mut crate::UnityEngine::GameObject,
         playable: crate::UnityEngine::Playables::Playable,
-        frameData: crate::UnityEngine::Playables::FrameData,
+        port: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Evaluate", (playable, frameData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PrepareFrame(
-        &mut self,
-        playable: crate::UnityEngine::Playables::Playable,
-        info: crate::UnityEngine::Playables::FrameData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PrepareFrame", (playable, info))?;
+            .invoke("CreateTrackOutput", (graph, track, go, playable, port))?;
         Ok(__cordl_ret)
     }
     pub fn CreateTrackPlayable(
@@ -163,18 +129,59 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn CacheTrack(
+    pub fn Evaluate(
         &mut self,
-        track: *mut crate::UnityEngine::Timeline::TrackAsset,
         playable: crate::UnityEngine::Playables::Playable,
-        port: i32,
-        parent: crate::UnityEngine::Playables::Playable,
+        frameData: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CacheTrack", (track, playable, port, parent))?;
+            .invoke("Evaluate", (playable, frameData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EvaluateAnimationPreviewUpdateCallback(
+        &mut self,
+        track: *mut crate::UnityEngine::Timeline::TrackAsset,
+        animOutput: crate::UnityEngine::Animations::AnimationPlayableOutput,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EvaluateAnimationPreviewUpdateCallback", (track, animOutput))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EvaluateWeightsForAnimationPlayableOutput(
+        &mut self,
+        track: *mut crate::UnityEngine::Timeline::TrackAsset,
+        animOutput: crate::UnityEngine::Animations::AnimationPlayableOutput,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EvaluateWeightsForAnimationPlayableOutput", (track, animOutput))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn PrepareFrame(
+        &mut self,
+        playable: crate::UnityEngine::Playables::Playable,
+        info: crate::UnityEngine::Playables::FrameData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PrepareFrame", (playable, info))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -186,13 +193,6 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelinePlayable")]

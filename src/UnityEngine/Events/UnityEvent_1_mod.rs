@@ -30,13 +30,10 @@ for crate::UnityEngine::Events::UnityEvent_1<T0> {
 }
 #[cfg(feature = "UnityEngine+Events+UnityEvent_1")]
 impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T0> {
-    pub fn GetDelegate(
+    pub fn AddListener(
         &mut self,
-        target: *mut crate::System::Object,
-        theFunction: *mut crate::System::Reflection::MethodInfo,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::Events::BaseInvokableCall,
-    >
+        call: *mut crate::UnityEngine::Events::UnityAction_1<T0>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -44,8 +41,8 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Events::BaseInvokableCall = __cordl_object
-            .invoke("GetDelegate", (target, theFunction))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddListener", (call))?;
         Ok(__cordl_ret)
     }
     pub fn FindMethod_Impl(
@@ -64,22 +61,13 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
             .invoke("FindMethod_Impl", (name, targetObjType))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveListener(
+    pub fn GetDelegate(
         &mut self,
-        call: *mut crate::UnityEngine::Events::UnityAction_1<T0>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+        target: *mut crate::System::Object,
+        theFunction: *mut crate::System::Reflection::MethodInfo,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::Events::BaseInvokableCall,
+    >
     where
         T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -87,8 +75,8 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveListener", (call))?;
+        let __cordl_ret: *mut crate::UnityEngine::Events::BaseInvokableCall = __cordl_object
+            .invoke("GetDelegate", (target, theFunction))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -106,7 +94,14 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
             .invoke("Invoke", (arg0))?;
         Ok(__cordl_ret)
     }
-    pub fn AddListener(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn RemoveListener(
         &mut self,
         call: *mut crate::UnityEngine::Events::UnityAction_1<T0>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -118,15 +113,20 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddListener", (call))?;
+            .invoke("RemoveListener", (call))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Events+UnityEvent_1")]

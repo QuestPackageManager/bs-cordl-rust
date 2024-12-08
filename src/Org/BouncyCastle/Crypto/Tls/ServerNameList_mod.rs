@@ -25,6 +25,26 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::ServerNameLis
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ServerNameList")]
 impl crate::Org::BouncyCastle::Crypto::Tls::ServerNameList {
+    pub fn Encode(
+        &mut self,
+        output: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Encode", (output))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        serverNameList: *mut crate::System::Collections::IList,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (serverNameList))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         serverNameList: *mut crate::System::Collections::IList,
@@ -45,26 +65,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::ServerNameList {
         let __cordl_ret: *mut crate::System::Collections::IList = __cordl_object
             .invoke("get_ServerNames", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Encode(
-        &mut self,
-        output: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Encode", (output))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        serverNameList: *mut crate::System::Collections::IList,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (serverNameList))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ServerNameList")]

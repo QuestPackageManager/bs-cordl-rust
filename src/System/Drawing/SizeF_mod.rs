@@ -22,14 +22,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Drawing::Size
 }
 #[cfg(feature = "System+Drawing+SizeF")]
 impl crate::System::Drawing::SizeF {
-    pub fn get_Width(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Width",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_Object0(
         &mut self,
         obj: *mut crate::System::Object,
@@ -52,14 +44,6 @@ impl crate::System::Drawing::SizeF {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Height(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Height",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -74,6 +58,22 @@ impl crate::System::Drawing::SizeF {
         let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Height(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Height",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Width(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Width",
             (),
         )?;
         Ok(__cordl_ret)

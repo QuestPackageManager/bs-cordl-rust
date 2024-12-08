@@ -169,17 +169,6 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::SchemaNames {
 impl crate::System::Xml::Schema::SchemaNames {
     #[cfg(feature = "System+Xml+Schema+SchemaNames+Token")]
     pub type Token = crate::System::Xml::Schema::SchemaNames_Token;
-    pub fn _ctor(
-        &mut self,
-        nameTable: *mut crate::System::Xml::XmlNameTable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (nameTable))?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateTokenToQNameTable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -188,29 +177,6 @@ impl crate::System::Xml::Schema::SchemaNames {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateTokenToQNameTable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsXSDRoot(
-        &mut self,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsXSDRoot", (localName, ns))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SchemaTypeFromRoot(
-        &mut self,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::SchemaType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::Schema::SchemaType = __cordl_object
-            .invoke("SchemaTypeFromRoot", (localName, ns))?;
         Ok(__cordl_ret)
     }
     pub fn IsXDRRoot(
@@ -224,14 +190,48 @@ impl crate::System::Xml::Schema::SchemaNames {
         let __cordl_ret: bool = __cordl_object.invoke("IsXDRRoot", (localName, ns))?;
         Ok(__cordl_ret)
     }
+    pub fn IsXSDRoot(
+        &mut self,
+        localName: *mut crate::System::String,
+        ns: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsXSDRoot", (localName, ns))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         nameTable: *mut crate::System::Xml::XmlNameTable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (nameTable))?;
         Ok(__cordl_object)
+    }
+    pub fn SchemaTypeFromRoot(
+        &mut self,
+        localName: *mut crate::System::String,
+        ns: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::SchemaType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::Schema::SchemaType = __cordl_object
+            .invoke("SchemaTypeFromRoot", (localName, ns))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        nameTable: *mut crate::System::Xml::XmlNameTable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (nameTable))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+SchemaNames")]

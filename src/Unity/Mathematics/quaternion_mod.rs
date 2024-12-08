@@ -22,56 +22,9 @@ for crate::Unity::Mathematics::quaternion {
 }
 #[cfg(feature = "Unity+Mathematics+quaternion")]
 impl crate::Unity::Mathematics::quaternion {
-    pub fn _ctor_f32_f32_f32_f32_0(
+    pub fn Equals_Object1(
         &mut self,
-        x: f32,
-        y: f32,
-        z: f32,
-        w: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (x, y, z, w),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_float4_1(
-        &mut self,
-        value: crate::Unity::Mathematics::float4,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_float3x3_2(
-        &mut self,
-        m: crate::Unity::Mathematics::float3x3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (m),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_float4x4_3(
-        &mut self,
-        m: crate::Unity::Mathematics::float4x4,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (m),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_quaternion0(
-        &mut self,
-        x: crate::Unity::Mathematics::quaternion,
+        x: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -80,9 +33,9 @@ impl crate::Unity::Mathematics::quaternion {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object1(
+    pub fn Equals_quaternion0(
         &mut self,
-        x: *mut crate::System::Object,
+        x: crate::Unity::Mathematics::quaternion,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -118,6 +71,53 @@ impl crate::Unity::Mathematics::quaternion {
             self,
             "ToString",
             (format, formatProvider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_f32_f32_f32_f32_0(
+        &mut self,
+        x: f32,
+        y: f32,
+        z: f32,
+        w: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (x, y, z, w),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_float3x3_2(
+        &mut self,
+        m: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (m),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_float4_1(
+        &mut self,
+        value: crate::Unity::Mathematics::float4,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_float4x4_3(
+        &mut self,
+        m: crate::Unity::Mathematics::float4x4,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (m),
         )?;
         Ok(__cordl_ret)
     }

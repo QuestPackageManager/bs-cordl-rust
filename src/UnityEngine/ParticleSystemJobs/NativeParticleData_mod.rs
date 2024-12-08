@@ -91,8 +91,8 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
 }
 #[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData")]
 impl crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
-    #[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
-    pub type Array4 = crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4;
     #[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
     pub type Array3 = crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3;
+    #[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
+    pub type Array4 = crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4;
 }

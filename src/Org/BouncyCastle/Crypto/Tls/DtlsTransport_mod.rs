@@ -25,6 +25,23 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsTransport")]
 impl crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport {
+    pub fn Close(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Close", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetReceiveLimit(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetReceiveLimit", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetSendLimit(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -32,18 +49,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport {
         let __cordl_ret: i32 = __cordl_object.invoke("GetSendLimit", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Send(
-        &mut self,
-        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        off: i32,
-        len: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Send", (buf, off, len))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        recordLayer: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (recordLayer))?;
+        Ok(__cordl_object)
     }
     pub fn Receive(
         &mut self,
@@ -59,11 +72,17 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport {
             .invoke("Receive", (buf, off, len, waitMillis))?;
         Ok(__cordl_ret)
     }
-    pub fn GetReceiveLimit(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn Send(
+        &mut self,
+        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        off: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetReceiveLimit", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Send", (buf, off, len))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -76,25 +95,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (recordLayer))?;
         Ok(__cordl_ret)
-    }
-    pub fn Close(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        recordLayer: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (recordLayer))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsTransport")]

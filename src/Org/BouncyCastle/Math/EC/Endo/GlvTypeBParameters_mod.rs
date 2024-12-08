@@ -29,40 +29,35 @@ for crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+GlvTypeBParameters")]
 impl crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBParameters {
-    pub fn get_Beta(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("get_Beta", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_G1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("get_G1", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_V2(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
+    pub fn New_Il2CppArray_Il2CppArray_BigInteger_BigInteger_i32_0(
+        beta: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        lambda: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        v1: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::Org::BouncyCastle::Math::BigInteger,
         >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+        v2: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::Org::BouncyCastle::Math::BigInteger,
-        > = __cordl_object.invoke("get_V2", ())?;
-        Ok(__cordl_ret)
+        >,
+        g1: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        g2: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        bits: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (beta, lambda, v1, v2, g1, g2, bits))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_ScalarSplitParameters1(
+        beta: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        lambda: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        splitParams: *mut crate::Org::BouncyCastle::Math::EC::Endo::ScalarSplitParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (beta, lambda, splitParams))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_Il2CppArray_Il2CppArray_BigInteger_BigInteger_i32_0(
         &mut self,
@@ -98,11 +93,41 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBParameters {
             .invoke(".ctor", (beta, lambda, splitParams))?;
         Ok(__cordl_ret)
     }
+    pub fn get_Beta(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_Beta", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Bits(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Bits", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_G1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_G1", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_G2(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_G2", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Lambda(
@@ -115,14 +140,16 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBParameters {
             .invoke("get_Lambda", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_G2(
+    pub fn get_SplitParams(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::Endo::ScalarSplitParameters,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("get_G2", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::Endo::ScalarSplitParameters = __cordl_object
+            .invoke("get_SplitParams", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_V1(
@@ -140,47 +167,20 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBParameters {
         > = __cordl_object.invoke("get_V1", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_SplitParams(
+    pub fn get_V2(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::Endo::ScalarSplitParameters,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::BigInteger,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::Endo::ScalarSplitParameters = __cordl_object
-            .invoke("get_SplitParams", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::BigInteger,
+        > = __cordl_object.invoke("get_V2", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_Il2CppArray_Il2CppArray_BigInteger_BigInteger_i32_0(
-        beta: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        lambda: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        v1: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::BigInteger,
-        >,
-        v2: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::BigInteger,
-        >,
-        g1: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        g2: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        bits: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (beta, lambda, v1, v2, g1, g2, bits))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_ScalarSplitParameters1(
-        beta: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        lambda: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        splitParams: *mut crate::Org::BouncyCastle::Math::EC::Endo::ScalarSplitParameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (beta, lambda, splitParams))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+GlvTypeBParameters")]

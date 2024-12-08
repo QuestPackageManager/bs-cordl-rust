@@ -26,6 +26,16 @@ impl std::ops::DerefMut for crate::HMUI::IconSegmentedControl_DataItem {
 }
 #[cfg(feature = "HMUI+IconSegmentedControl+DataItem")]
 impl crate::HMUI::IconSegmentedControl_DataItem {
+    pub fn New(
+        icon: *mut crate::UnityEngine::Sprite,
+        hintText: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (icon, hintText))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         icon: *mut crate::UnityEngine::Sprite,
@@ -46,17 +56,6 @@ impl crate::HMUI::IconSegmentedControl_DataItem {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_hintText", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_icon(
-        &mut self,
-        value: *mut crate::UnityEngine::Sprite,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_icon", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_icon(
@@ -80,15 +79,16 @@ impl crate::HMUI::IconSegmentedControl_DataItem {
             .invoke("set_hintText", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        icon: *mut crate::UnityEngine::Sprite,
-        hintText: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (icon, hintText))?;
-        Ok(__cordl_object)
+    pub fn set_icon(
+        &mut self,
+        value: *mut crate::UnityEngine::Sprite,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_icon", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "HMUI+IconSegmentedControl+DataItem")]
@@ -140,6 +140,17 @@ impl std::ops::DerefMut for crate::HMUI::IconSegmentedControl {
 impl crate::HMUI::IconSegmentedControl {
     #[cfg(feature = "HMUI+IconSegmentedControl+DataItem")]
     pub type DataItem = crate::HMUI::IconSegmentedControl_DataItem;
+    pub fn CellForCellNumber(
+        &mut self,
+        cellNumber: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::SegmentedControlCell> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::SegmentedControlCell = __cordl_object
+            .invoke("CellForCellNumber", (cellNumber))?;
+        Ok(__cordl_ret)
+    }
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -150,32 +161,18 @@ impl crate::HMUI::IconSegmentedControl {
             .invoke("Init", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CellForCellNumber(
-        &mut self,
-        cellNumber: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::SegmentedControlCell> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::SegmentedControlCell = __cordl_object
-            .invoke("CellForCellNumber", (cellNumber))?;
         Ok(__cordl_ret)
     }
     pub fn SetData(
@@ -191,12 +188,15 @@ impl crate::HMUI::IconSegmentedControl {
             .invoke("SetData", (dataItems))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "HMUI+IconSegmentedControl")]

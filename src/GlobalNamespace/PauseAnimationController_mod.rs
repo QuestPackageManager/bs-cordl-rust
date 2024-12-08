@@ -26,26 +26,32 @@ impl std::ops::DerefMut for PauseAnimationController {
 }
 #[cfg(feature = "PauseAnimationController")]
 impl PauseAnimationController {
-    pub fn StartResumeFromPauseAnimation(
+    pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartResumeFromPauseAnimation", ())?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_resumeFromPauseAnimationDidFinishEvent(
+    pub fn EnterPauseAnimationDidFinish(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_resumeFromPauseAnimationDidFinishEvent", (value))?;
+            .invoke("EnterPauseAnimationDidFinish", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ResumeFromPauseAnimationDidFinish(
         &mut self,
@@ -57,14 +63,24 @@ impl PauseAnimationController {
             .invoke("ResumeFromPauseAnimationDidFinish", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Awake(
+    pub fn StartEnterPauseAnimation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
+            .invoke("StartEnterPauseAnimation", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartResumeFromPauseAnimation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartResumeFromPauseAnimation", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -75,16 +91,6 @@ impl PauseAnimationController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartEnterPauseAnimation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartEnterPauseAnimation", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_resumeFromPauseAnimationDidFinishEvent(
@@ -98,22 +104,16 @@ impl PauseAnimationController {
             .invoke("add_resumeFromPauseAnimationDidFinishEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn EnterPauseAnimationDidFinish(
+    pub fn remove_resumeFromPauseAnimationDidFinishEvent(
         &mut self,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EnterPauseAnimationDidFinish", ())?;
+            .invoke("remove_resumeFromPauseAnimationDidFinishEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PauseAnimationController")]

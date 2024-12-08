@@ -26,33 +26,6 @@ impl std::ops::DerefMut for crate::System::ComponentModel::Component {
 }
 #[cfg(feature = "System+ComponentModel+Component")]
 impl crate::System::ComponentModel::Component {
-    pub fn get_Site(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::ComponentModel::ISite> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::ComponentModel::ISite = __cordl_object
-            .invoke("get_Site", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Finalize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CanRaiseEventsInternal(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanRaiseEventsInternal", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -74,12 +47,33 @@ impl crate::System::ComponentModel::Component {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn get_DesignMode(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn Finalize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_DesignMode", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Finalize", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn GetService(
+        &mut self,
+        service: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("GetService", (service))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ToString(
         &mut self,
@@ -101,17 +95,6 @@ impl crate::System::ComponentModel::Component {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetService(
-        &mut self,
-        service: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetService", (service))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_CanRaiseEvents(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -119,12 +102,29 @@ impl crate::System::ComponentModel::Component {
         let __cordl_ret: bool = __cordl_object.invoke("get_CanRaiseEvents", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_CanRaiseEventsInternal(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanRaiseEventsInternal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_DesignMode(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_DesignMode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Site(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::ComponentModel::ISite> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::ComponentModel::ISite = __cordl_object
+            .invoke("get_Site", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+ComponentModel+Component")]

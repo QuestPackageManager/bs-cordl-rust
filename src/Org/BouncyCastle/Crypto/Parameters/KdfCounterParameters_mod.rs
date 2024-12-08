@@ -31,14 +31,70 @@ for crate::Org::BouncyCastle::Crypto::Parameters::KdfCounterParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KdfCounterParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::KdfCounterParameters {
-    pub fn get_Ki(
+    pub fn New_Il2CppArray_i32_1(
+        ki: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        fixedInputDataCounterPrefix: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        fixedInputDataCounterSuffix: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        r: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (ki, fixedInputDataCounterPrefix, fixedInputDataCounterSuffix, r),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_0(
+        ki: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        fixedInputDataCounterSuffix: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        r: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ki, fixedInputDataCounterSuffix, r))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_Il2CppArray_i32_1(
+        &mut self,
+        ki: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        fixedInputDataCounterPrefix: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        fixedInputDataCounterSuffix: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        r: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (ki, fixedInputDataCounterPrefix, fixedInputDataCounterSuffix, r),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_0(
+        &mut self,
+        ki: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        fixedInputDataCounterSuffix: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        r: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (ki, fixedInputDataCounterSuffix, r))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_FixedInputData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("get_Ki", ())?;
+            .invoke("get_FixedInputData", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_FixedInputDataCounterPrefix(
@@ -61,78 +117,22 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::KdfCounterParameters {
             .invoke("get_FixedInputDataCounterSuffix", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_R(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_R", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_0(
-        &mut self,
-        ki: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        fixedInputDataCounterSuffix: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        r: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (ki, fixedInputDataCounterSuffix, r))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Il2CppArray_i32_1(
-        &mut self,
-        ki: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        fixedInputDataCounterPrefix: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        fixedInputDataCounterSuffix: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        r: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (ki, fixedInputDataCounterPrefix, fixedInputDataCounterSuffix, r),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_FixedInputData(
+    pub fn get_Ki(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("get_FixedInputData", ())?;
+            .invoke("get_Ki", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_i32_0(
-        ki: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        fixedInputDataCounterSuffix: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        r: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ki, fixedInputDataCounterSuffix, r))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray_i32_1(
-        ki: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        fixedInputDataCounterPrefix: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        fixedInputDataCounterSuffix: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        r: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (ki, fixedInputDataCounterPrefix, fixedInputDataCounterSuffix, r),
-            )?;
-        Ok(__cordl_object)
+    pub fn get_R(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_R", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KdfCounterParameters")]

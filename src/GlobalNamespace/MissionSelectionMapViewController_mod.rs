@@ -36,35 +36,20 @@ impl std::ops::DerefMut for MissionSelectionMapViewController {
 }
 #[cfg(feature = "MissionSelectionMapViewController")]
 impl MissionSelectionMapViewController {
+    #[cfg(feature = "MissionSelectionMapViewController+__c__DisplayClass16_0")]
+    pub type __c__DisplayClass16_0 = crate::GlobalNamespace::MissionSelectionMapViewController___c__DisplayClass16_0;
     #[cfg(
         feature = "MissionSelectionMapViewController+_SongPlayerCrossfadeToLevelAsync_d__16"
     )]
     pub type _SongPlayerCrossfadeToLevelAsync_d__16 = crate::GlobalNamespace::MissionSelectionMapViewController__SongPlayerCrossfadeToLevelAsync_d__16;
-    #[cfg(feature = "MissionSelectionMapViewController+__c__DisplayClass16_0")]
-    pub type __c__DisplayClass16_0 = crate::GlobalNamespace::MissionSelectionMapViewController___c__DisplayClass16_0;
-    pub fn SongPlayerCrossfadeToLevelAsync(
+    pub fn DeselectSelectedNode(
         &mut self,
-        level: *mut BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SongPlayerCrossfadeToLevelAsync", (level))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didSelectMissionLevelEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<
-            *mut MissionSelectionMapViewController,
-            *mut MissionNode,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didSelectMissionLevelEvent", (value))?;
+            .invoke("DeselectSelectedNode", ())?;
         Ok(__cordl_ret)
     }
     pub fn DidActivate(
@@ -81,16 +66,6 @@ impl MissionSelectionMapViewController {
                 "DidActivate",
                 (firstActivation, addedToHierarchy, screenSystemEnabling),
             )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_animatedUpdateIsRequired(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_animatedUpdateIsRequired", ())?;
         Ok(__cordl_ret)
     }
     pub fn DidDeactivate(
@@ -119,6 +94,35 @@ impl MissionSelectionMapViewController {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ShowMissionClearedAnimation(
+        &mut self,
+        finishCallback: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ShowMissionClearedAnimation", (finishCallback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SongPlayerCrossfadeToLevelAsync(
+        &mut self,
+        level: *mut BeatmapLevel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SongPlayerCrossfadeToLevelAsync", (level))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -127,6 +131,30 @@ impl MissionSelectionMapViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didSelectMissionLevelEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut MissionSelectionMapViewController,
+            *mut MissionNode,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didSelectMissionLevelEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_animatedUpdateIsRequired(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_animatedUpdateIsRequired", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_didSelectMissionLevelEvent(
@@ -142,34 +170,6 @@ impl MissionSelectionMapViewController {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didSelectMissionLevelEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn DeselectSelectedNode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DeselectSelectedNode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ShowMissionClearedAnimation(
-        &mut self,
-        finishCallback: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ShowMissionClearedAnimation", (finishCallback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MissionSelectionMapViewController")]

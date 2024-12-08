@@ -38,23 +38,6 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > IReferenceCountingCache_2<TKey, TValue> {
-    pub fn TryGet(
-        &mut self,
-        key: TKey,
-        result: quest_hook::libil2cpp::ByRefMut<TValue>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryGet", (key, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn AddReference(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<i32>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -66,19 +49,6 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("AddReference", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveReference(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<i32>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("RemoveReference", (key))?;
         Ok(__cordl_ret)
     }
     pub fn GetReferenceCount(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<i32>
@@ -109,6 +79,36 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Insert", (key, item))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveReference(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("RemoveReference", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGet(
+        &mut self,
+        key: TKey,
+        result: quest_hook::libil2cpp::ByRefMut<TValue>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryGet", (key, result))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

@@ -25,17 +25,14 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::ValidationEventArgs
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+ValidationEventArgs")]
 impl crate::Newtonsoft::Json::Schema::ValidationEventArgs {
-    pub fn get_Exception(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchemaException,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchemaException = __cordl_object
-            .invoke("get_Exception", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        ex: *mut crate::Newtonsoft::Json::Schema::JsonSchemaException,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ex))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -48,14 +45,16 @@ impl crate::Newtonsoft::Json::Schema::ValidationEventArgs {
             .invoke(".ctor", (ex))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Path(
+    pub fn get_Exception(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Newtonsoft::Json::Schema::JsonSchemaException,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Path", ())?;
+        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchemaException = __cordl_object
+            .invoke("get_Exception", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Message(
@@ -68,14 +67,15 @@ impl crate::Newtonsoft::Json::Schema::ValidationEventArgs {
             .invoke("get_Message", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        ex: *mut crate::Newtonsoft::Json::Schema::JsonSchemaException,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ex))?;
-        Ok(__cordl_object)
+    pub fn get_Path(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Path", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+ValidationEventArgs")]

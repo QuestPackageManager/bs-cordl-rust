@@ -26,19 +26,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Converters::BinaryConverter
 impl crate::Newtonsoft::Json::Converters::BinaryConverter {
     pub const BinaryToArrayName: &'static str = "ToArray";
     pub const BinaryTypeName: &'static str = "System.Data.Linq.Binary";
-    pub fn WriteJson(
-        &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteJson", (writer, value, serializer))?;
-        Ok(__cordl_ret)
-    }
     pub fn CanConvert(
         &mut self,
         objectType: *mut crate::System::Type,
@@ -60,6 +47,24 @@ impl crate::Newtonsoft::Json::Converters::BinaryConverter {
             .invoke("GetByteArray", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ReadByteArray(
+        &mut self,
+        reader: *mut crate::Newtonsoft::Json::JsonReader,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("ReadByteArray", (reader))?;
+        Ok(__cordl_ret)
+    }
     pub fn ReadJson(
         &mut self,
         reader: *mut crate::Newtonsoft::Json::JsonReader,
@@ -74,6 +79,19 @@ impl crate::Newtonsoft::Json::Converters::BinaryConverter {
             .invoke("ReadJson", (reader, objectType, existingValue, serializer))?;
         Ok(__cordl_ret)
     }
+    pub fn WriteJson(
+        &mut self,
+        writer: *mut crate::Newtonsoft::Json::JsonWriter,
+        value: *mut crate::System::Object,
+        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteJson", (writer, value, serializer))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -83,24 +101,6 @@ impl crate::Newtonsoft::Json::Converters::BinaryConverter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn ReadByteArray(
-        &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("ReadByteArray", (reader))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+BinaryConverter")]

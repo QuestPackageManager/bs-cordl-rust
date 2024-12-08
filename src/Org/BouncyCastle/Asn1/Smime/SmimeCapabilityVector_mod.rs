@@ -27,6 +27,18 @@ for crate::Org::BouncyCastle::Asn1::Smime::SmimeCapabilityVector {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Smime+SmimeCapabilityVector")]
 impl crate::Org::BouncyCastle::Asn1::Smime::SmimeCapabilityVector {
+    pub fn AddCapability_Asn1Encodable2(
+        &mut self,
+        capability: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        parameters: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddCapability", (capability, parameters))?;
+        Ok(__cordl_ret)
+    }
     pub fn AddCapability_DerObjectIdentifier0(
         &mut self,
         capability: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -50,17 +62,12 @@ impl crate::Org::BouncyCastle::Asn1::Smime::SmimeCapabilityVector {
             .invoke("AddCapability", (capability, value))?;
         Ok(__cordl_ret)
     }
-    pub fn AddCapability_Asn1Encodable2(
-        &mut self,
-        capability: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        parameters: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddCapability", (capability, parameters))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ToAsn1EncodableVector(
         &mut self,
@@ -83,13 +90,6 @@ impl crate::Org::BouncyCastle::Asn1::Smime::SmimeCapabilityVector {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Smime+SmimeCapabilityVector")]

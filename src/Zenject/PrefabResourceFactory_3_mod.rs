@@ -44,6 +44,34 @@ impl<
     P2: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
 > crate::Zenject::PrefabResourceFactory_3<P1, P2, T> {
+    pub fn Create(
+        &mut self,
+        prefabResourceName: *mut crate::System::String,
+        param: P1,
+        param2: P2,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        P1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        P2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object
+            .invoke("Create", (prefabResourceName, param, param2))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         P1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -77,34 +105,6 @@ impl<
         let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
             .invoke("get_Container", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Create(
-        &mut self,
-        prefabResourceName: *mut crate::System::String,
-        param: P1,
-        param2: P2,
-    ) -> quest_hook::libil2cpp::Result<T>
-    where
-        P1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        P2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object
-            .invoke("Create", (prefabResourceName, param, param2))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+PrefabResourceFactory_3")]

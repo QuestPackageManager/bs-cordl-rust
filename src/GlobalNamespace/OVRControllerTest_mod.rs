@@ -24,16 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BoolMonitor_BoolGenerator {
 }
 #[cfg(feature = "OVRControllerTest+BoolMonitor+BoolGenerator")]
 impl crate::GlobalNamespace::BoolMonitor_BoolGenerator {
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         callback: *mut crate::System::AsyncCallback,
@@ -46,12 +36,32 @@ impl crate::GlobalNamespace::BoolMonitor_BoolGenerator {
             .invoke("BeginInvoke", (callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Invoke", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -64,16 +74,6 @@ impl crate::GlobalNamespace::BoolMonitor_BoolGenerator {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRControllerTest+BoolMonitor+BoolGenerator")]
@@ -121,6 +121,38 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRControllerTest_BoolMonito
 impl crate::GlobalNamespace::OVRControllerTest_BoolMonitor {
     #[cfg(feature = "OVRControllerTest+BoolMonitor+BoolGenerator")]
     pub type BoolGenerator = crate::GlobalNamespace::BoolMonitor_BoolGenerator;
+    pub fn AppendToStringBuilder(
+        &mut self,
+        sb: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Text::StringBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AppendToStringBuilder", (sb))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        name: *mut crate::System::String,
+        generator: *mut crate::GlobalNamespace::BoolMonitor_BoolGenerator,
+        displayTimeout: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, generator, displayTimeout))?;
+        Ok(__cordl_object)
+    }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         name: *mut crate::System::String,
@@ -133,38 +165,6 @@ impl crate::GlobalNamespace::OVRControllerTest_BoolMonitor {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (name, generator, displayTimeout))?;
         Ok(__cordl_ret)
-    }
-    pub fn AppendToStringBuilder(
-        &mut self,
-        sb: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Text::StringBuilder>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AppendToStringBuilder", (sb))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        name: *mut crate::System::String,
-        generator: *mut crate::GlobalNamespace::BoolMonitor_BoolGenerator,
-        displayTimeout: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, generator, displayTimeout))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRControllerTest+BoolMonitor")]
@@ -207,10 +207,17 @@ impl std::ops::DerefMut for OVRControllerTest {
 }
 #[cfg(feature = "OVRControllerTest")]
 impl OVRControllerTest {
-    #[cfg(feature = "OVRControllerTest+BoolMonitor")]
-    pub type BoolMonitor = crate::GlobalNamespace::OVRControllerTest_BoolMonitor;
     #[cfg(feature = "OVRControllerTest+__c")]
     pub type __c = crate::GlobalNamespace::OVRControllerTest___c;
+    #[cfg(feature = "OVRControllerTest+BoolMonitor")]
+    pub type BoolMonitor = crate::GlobalNamespace::OVRControllerTest_BoolMonitor;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -240,13 +247,6 @@ impl OVRControllerTest {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRControllerTest")]

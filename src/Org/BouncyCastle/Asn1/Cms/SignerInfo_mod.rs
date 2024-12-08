@@ -31,50 +31,82 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cms::SignerInfo {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+SignerInfo")]
 impl crate::Org::BouncyCastle::Asn1::Cms::SignerInfo {
-    pub fn get_DigestAlgorithm(
+    pub fn New_Asn1Sequence2(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_SignerIdentifier_AlgorithmIdentifier_Asn1Set_AlgorithmIdentifier_Asn1OctetString_Asn1Set0(
+        sid: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
+        digAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        authenticatedAttributes: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
+        digEncryptionAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        encryptedDigest: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+        unauthenticatedAttributes: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    sid,
+                    digAlgorithm,
+                    authenticatedAttributes,
+                    digEncryptionAlgorithm,
+                    encryptedDigest,
+                    unauthenticatedAttributes,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_SignerIdentifier_AlgorithmIdentifier_Attributes_AlgorithmIdentifier_Asn1OctetString_Attributes1(
+        sid: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
+        digAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        authenticatedAttributes: *mut crate::Org::BouncyCastle::Asn1::Cms::Attributes,
+        digEncryptionAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        encryptedDigest: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+        unauthenticatedAttributes: *mut crate::Org::BouncyCastle::Asn1::Cms::Attributes,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    sid,
+                    digAlgorithm,
+                    authenticatedAttributes,
+                    digEncryptionAlgorithm,
+                    encryptedDigest,
+                    unauthenticatedAttributes,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn ToAsn1Object(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier = __cordl_object
-            .invoke("get_DigestAlgorithm", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_EncryptedDigest(
+    pub fn _ctor_Asn1Sequence2(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    > {
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString = __cordl_object
-            .invoke("get_EncryptedDigest", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AuthenticatedAttributes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Set> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Set = __cordl_object
-            .invoke("get_AuthenticatedAttributes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_DigestEncryptionAlgorithm(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier = __cordl_object
-            .invoke("get_DigestEncryptionAlgorithm", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (seq))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_SignerIdentifier_AlgorithmIdentifier_Asn1Set_AlgorithmIdentifier_Asn1OctetString_Asn1Set0(
@@ -129,15 +161,50 @@ impl crate::Org::BouncyCastle::Asn1::Cms::SignerInfo {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Asn1Sequence2(
+    pub fn get_AuthenticatedAttributes(
         &mut self,
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Set> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seq))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Set = __cordl_object
+            .invoke("get_AuthenticatedAttributes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_DigestAlgorithm(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier = __cordl_object
+            .invoke("get_DigestAlgorithm", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_DigestEncryptionAlgorithm(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier = __cordl_object
+            .invoke("get_DigestEncryptionAlgorithm", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_EncryptedDigest(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString = __cordl_object
+            .invoke("get_EncryptedDigest", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SignerID(
@@ -150,16 +217,6 @@ impl crate::Org::BouncyCastle::Asn1::Cms::SignerInfo {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier = __cordl_object
             .invoke("get_SignerID", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToAsn1Object(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_UnauthenticatedAttributes(
@@ -181,63 +238,6 @@ impl crate::Org::BouncyCastle::Asn1::Cms::SignerInfo {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
             .invoke("get_Version", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_SignerIdentifier_AlgorithmIdentifier_Asn1Set_AlgorithmIdentifier_Asn1OctetString_Asn1Set0(
-        sid: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
-        digAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        authenticatedAttributes: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-        digEncryptionAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        encryptedDigest: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-        unauthenticatedAttributes: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    sid,
-                    digAlgorithm,
-                    authenticatedAttributes,
-                    digEncryptionAlgorithm,
-                    encryptedDigest,
-                    unauthenticatedAttributes,
-                ),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_SignerIdentifier_AlgorithmIdentifier_Attributes_AlgorithmIdentifier_Asn1OctetString_Attributes1(
-        sid: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
-        digAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        authenticatedAttributes: *mut crate::Org::BouncyCastle::Asn1::Cms::Attributes,
-        digEncryptionAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        encryptedDigest: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-        unauthenticatedAttributes: *mut crate::Org::BouncyCastle::Asn1::Cms::Attributes,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    sid,
-                    digAlgorithm,
-                    authenticatedAttributes,
-                    digEncryptionAlgorithm,
-                    encryptedDigest,
-                    unauthenticatedAttributes,
-                ),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Asn1Sequence2(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+SignerInfo")]

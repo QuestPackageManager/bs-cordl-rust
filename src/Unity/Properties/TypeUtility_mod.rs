@@ -48,13 +48,6 @@ impl std::ops::DerefMut for crate::Unity::Properties::TypeUtility_ITypeConstruct
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor")]
 impl crate::Unity::Properties::TypeUtility_ITypeConstructor {
-    pub fn get_CanBeInstantiated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanBeInstantiated", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Instantiate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
@@ -69,6 +62,13 @@ impl crate::Unity::Properties::TypeUtility_ITypeConstructor {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_CanBeInstantiated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanBeInstantiated", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor")]
@@ -191,6 +191,13 @@ impl crate::Unity::Properties::TypeUtility_NonConstructable {
             .invoke("Instantiate", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn Unity_Properties_TypeUtility_ITypeConstructor_get_CanBeInstantiated(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -213,13 +220,6 @@ impl crate::Unity::Properties::TypeUtility_NonConstructable {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+NonConstructable")]
@@ -261,6 +261,13 @@ for crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
 impl crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn Visit<TContainer>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -284,13 +291,6 @@ impl crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
@@ -337,36 +337,12 @@ for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
-    pub fn Unity_Properties_TypeUtility_ITypeConstructor_get_CanBeInstantiated(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "Unity.Properties.TypeUtility.ITypeConstructor.get_CanBeInstantiated",
-                (),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetImplicitConstructor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetImplicitConstructor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn SetExplicitConstructor(
         &mut self,
@@ -381,6 +357,20 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetExplicitConstructor", (constructor))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetImplicitConstructor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetImplicitConstructor", ())?;
         Ok(__cordl_ret)
     }
     pub fn Unity_Properties_TypeUtility_ITypeConstructor_Instantiate(
@@ -411,6 +401,23 @@ impl<
             .invoke("Unity.Properties.TypeUtility.ITypeConstructor<T>.Instantiate", ())?;
         Ok(__cordl_ret)
     }
+    pub fn Unity_Properties_TypeUtility_ITypeConstructor_get_CanBeInstantiated(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "Unity.Properties.TypeUtility.ITypeConstructor.get_CanBeInstantiated",
+                (),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -422,13 +429,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
@@ -467,16 +467,12 @@ impl std::ops::DerefMut for crate::Unity::Properties::TypeUtility {
 }
 #[cfg(feature = "Unity+Properties+TypeUtility")]
 impl crate::Unity::Properties::TypeUtility {
-    #[cfg(feature = "Unity+Properties+TypeUtility+__c")]
-    pub type __c = crate::Unity::Properties::TypeUtility___c;
-    #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
-    pub type TypeConstructorVisitor = crate::Unity::Properties::TypeUtility_TypeConstructorVisitor;
-    #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
-    pub type TypeConstructor_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Properties::TypeUtility_TypeConstructor_1<
-        T,
-    >;
+    #[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor")]
+    type ITypeConstructor = crate::Unity::Properties::TypeUtility_ITypeConstructor;
     #[cfg(feature = "Unity+Properties+TypeUtility+NonConstructable")]
     pub type NonConstructable = crate::Unity::Properties::TypeUtility_NonConstructable;
+    #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
+    pub type TypeConstructorVisitor = crate::Unity::Properties::TypeUtility_TypeConstructorVisitor;
     #[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor_1")]
     type ITypeConstructor_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Properties::TypeUtility_ITypeConstructor_1<
         T,
@@ -485,8 +481,12 @@ impl crate::Unity::Properties::TypeUtility {
     pub type Cache_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Properties::TypeUtility_Cache_1<
         T,
     >;
-    #[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor")]
-    type ITypeConstructor = crate::Unity::Properties::TypeUtility_ITypeConstructor;
+    #[cfg(feature = "Unity+Properties+TypeUtility+__c")]
+    pub type __c = crate::Unity::Properties::TypeUtility___c;
+    #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
+    pub type TypeConstructor_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Properties::TypeUtility_TypeConstructor_1<
+        T,
+    >;
 }
 #[cfg(feature = "Unity+Properties+TypeUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::TypeUtility {

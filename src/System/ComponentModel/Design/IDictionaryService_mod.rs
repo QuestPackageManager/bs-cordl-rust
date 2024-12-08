@@ -25,6 +25,17 @@ impl std::ops::DerefMut for crate::System::ComponentModel::Design::IDictionarySe
 }
 #[cfg(feature = "System+ComponentModel+Design+IDictionaryService")]
 impl crate::System::ComponentModel::Design::IDictionaryService {
+    pub fn GetValue(
+        &mut self,
+        key: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("GetValue", (key))?;
+        Ok(__cordl_ret)
+    }
     pub fn SetValue(
         &mut self,
         key: *mut crate::System::Object,
@@ -35,17 +46,6 @@ impl crate::System::ComponentModel::Design::IDictionaryService {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetValue", (key, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetValue(
-        &mut self,
-        key: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetValue", (key))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

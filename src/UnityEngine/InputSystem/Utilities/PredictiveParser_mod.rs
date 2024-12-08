@@ -23,6 +23,17 @@ for crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+PredictiveParser")]
 impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
+    pub fn AcceptInt(
+        &mut self,
+        str: crate::System::ReadOnlySpan_1<char>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AcceptInt",
+            (str),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn AcceptSingleChar(
         &mut self,
         str: crate::System::ReadOnlySpan_1<char>,
@@ -31,18 +42,6 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "AcceptSingleChar",
-            (str, c),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExpectSingleChar(
-        &mut self,
-        str: crate::System::ReadOnlySpan_1<char>,
-        c: char,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ExpectSingleChar",
             (str, c),
         )?;
         Ok(__cordl_ret)
@@ -59,28 +58,6 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ExpectString(
-        &mut self,
-        str: crate::System::ReadOnlySpan_1<char>,
-    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ExpectString",
-            (str),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AcceptInt(
-        &mut self,
-        str: crate::System::ReadOnlySpan_1<char>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AcceptInt",
-            (str),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn ExpectInt(
         &mut self,
         str: crate::System::ReadOnlySpan_1<char>,
@@ -88,6 +65,29 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ExpectInt",
+            (str),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExpectSingleChar(
+        &mut self,
+        str: crate::System::ReadOnlySpan_1<char>,
+        c: char,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ExpectSingleChar",
+            (str, c),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExpectString(
+        &mut self,
+        str: crate::System::ReadOnlySpan_1<char>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ExpectString",
             (str),
         )?;
         Ok(__cordl_ret)

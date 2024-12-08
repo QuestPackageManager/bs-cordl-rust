@@ -25,91 +25,18 @@ impl std::ops::DerefMut for crate::System::Data::ConstNode {
 }
 #[cfg(feature = "System+Data+ConstNode")]
 impl crate::System::Data::ConstNode {
-    pub fn HasLocalAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasLocalAggregate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HasRemoteAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasRemoteAggregate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SmallestNumeric(
-        &mut self,
-        constant: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("SmallestNumeric", (constant))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsConstant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsConstant", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Optimize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::ExpressionNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::ExpressionNode = __cordl_object
-            .invoke("Optimize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_DataTable_ValueType_Object0(
+    pub fn Bind(
         &mut self,
         table: *mut crate::System::Data::DataTable,
-        _cordl_type: crate::System::Data::ValueType,
-        constant: *mut crate::System::Object,
+        list: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::System::Data::DataColumn,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (table, _cordl_type, constant))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor__cordl_bool1(
-        &mut self,
-        table: *mut crate::System::Data::DataTable,
-        _cordl_type: crate::System::Data::ValueType,
-        constant: *mut crate::System::Object,
-        fParseQuotes: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (table, _cordl_type, constant, fParseQuotes))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsTableConstant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsTableConstant", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SmallestDecimal(
-        &mut self,
-        constant: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("SmallestDecimal", (constant))?;
+            .invoke("Bind", (table, list))?;
         Ok(__cordl_ret)
     }
     pub fn Eval_0(
@@ -144,25 +71,39 @@ impl crate::System::Data::ConstNode {
             .invoke("Eval", (recordNos))?;
         Ok(__cordl_ret)
     }
-    pub fn Bind(
-        &mut self,
-        table: *mut crate::System::Data::DataTable,
-        list: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Data::DataColumn,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn HasLocalAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Bind", (table, list))?;
+        let __cordl_ret: bool = __cordl_object.invoke("HasLocalAggregate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HasRemoteAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("HasRemoteAggregate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsConstant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsConstant", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsTableConstant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsTableConstant", ())?;
         Ok(__cordl_ret)
     }
     pub fn New_DataTable_ValueType_Object0(
         table: *mut crate::System::Data::DataTable,
         _cordl_type: crate::System::Data::ValueType,
         constant: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -174,12 +115,71 @@ impl crate::System::Data::ConstNode {
         _cordl_type: crate::System::Data::ValueType,
         constant: *mut crate::System::Object,
         fParseQuotes: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (table, _cordl_type, constant, fParseQuotes))?;
         Ok(__cordl_object)
+    }
+    pub fn Optimize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::ExpressionNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Data::ExpressionNode = __cordl_object
+            .invoke("Optimize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SmallestDecimal(
+        &mut self,
+        constant: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("SmallestDecimal", (constant))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SmallestNumeric(
+        &mut self,
+        constant: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("SmallestNumeric", (constant))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_DataTable_ValueType_Object0(
+        &mut self,
+        table: *mut crate::System::Data::DataTable,
+        _cordl_type: crate::System::Data::ValueType,
+        constant: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (table, _cordl_type, constant))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor__cordl_bool1(
+        &mut self,
+        table: *mut crate::System::Data::DataTable,
+        _cordl_type: crate::System::Data::ValueType,
+        constant: *mut crate::System::Object,
+        fParseQuotes: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (table, _cordl_type, constant, fParseQuotes))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Data+ConstNode")]

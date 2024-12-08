@@ -25,15 +25,32 @@ impl std::ops::DerefMut for crate::System::Xml::XmlAsyncCheckReaderWithLineInfoN
 }
 #[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfoNS")]
 impl crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNS {
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         reader: *mut crate::System::Xml::XmlReader,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (reader))?;
+        Ok(__cordl_object)
+    }
+    pub fn System_Xml_IXmlNamespaceResolver_GetNamespacesInScope(
+        &mut self,
+        scope: crate::System::Xml::XmlNamespaceScope,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IDictionary_2<
+            *mut crate::System::String,
+            *mut crate::System::String,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (reader))?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::IDictionary_2<
+            *mut crate::System::String,
+            *mut crate::System::String,
+        > = __cordl_object
+            .invoke("System.Xml.IXmlNamespaceResolver.GetNamespacesInScope", (scope))?;
         Ok(__cordl_ret)
     }
     pub fn System_Xml_IXmlNamespaceResolver_LookupNamespace(
@@ -58,33 +75,16 @@ impl crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNS {
             .invoke("System.Xml.IXmlNamespaceResolver.LookupPrefix", (namespaceName))?;
         Ok(__cordl_ret)
     }
-    pub fn System_Xml_IXmlNamespaceResolver_GetNamespacesInScope(
+    pub fn _ctor(
         &mut self,
-        scope: crate::System::Xml::XmlNamespaceScope,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
-        >,
-    > {
+        reader: *mut crate::System::Xml::XmlReader,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
-        > = __cordl_object
-            .invoke("System.Xml.IXmlNamespaceResolver.GetNamespacesInScope", (scope))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (reader))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        reader: *mut crate::System::Xml::XmlReader,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (reader))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfoNS")]

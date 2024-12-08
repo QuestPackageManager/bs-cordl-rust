@@ -36,6 +36,24 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataParser {
             .invoke("GetContent", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New_Il2CppArray0(
+        compressedData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (compressedData))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Stream1(
+        compressedData: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (compressedData))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_Il2CppArray0(
         &mut self,
         compressedData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -57,24 +75,6 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataParser {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (compressedData))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_Il2CppArray0(
-        compressedData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (compressedData))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Stream1(
-        compressedData: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (compressedData))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsCompressedDataParser")]

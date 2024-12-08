@@ -37,6 +37,33 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<T>
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<T> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Trim(
+        &mut self,
+        tickCount: u32,
+        id: i32,
+        pressure: crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure<
+            T,
+        >,
+        bucketSize: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Trim", (tickCount, id, pressure, bucketSize))?;
+        Ok(__cordl_ret)
+    }
     pub fn TryPop(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
@@ -65,26 +92,6 @@ impl<
         let __cordl_ret: bool = __cordl_object.invoke("TryPush", (array))?;
         Ok(__cordl_ret)
     }
-    pub fn Trim(
-        &mut self,
-        tickCount: u32,
-        id: i32,
-        pressure: crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure<
-            T,
-        >,
-        bucketSize: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Trim", (tickCount, id, pressure, bucketSize))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -96,13 +103,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+LockedStack")]
@@ -180,6 +180,13 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedS
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<T> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn Trim(
         &mut self,
         tickCount: u32,
@@ -200,6 +207,20 @@ impl<
             .invoke("Trim", (tickCount, id, pressure, bucketSizes))?;
         Ok(__cordl_ret)
     }
+    pub fn TryPop(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = __cordl_object
+            .invoke("TryPop", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn TryPush(
         &mut self,
         array: *mut quest_hook::libil2cpp::Il2CppArray<T>,
@@ -215,20 +236,6 @@ impl<
             .invoke("TryPush", (array))?;
         Ok(__cordl_ret)
     }
-    pub fn TryPop(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = __cordl_object
-            .invoke("TryPop", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -240,13 +247,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -302,20 +302,89 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1<T> {
-    #[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+LockedStack")]
-    pub type LockedStack = crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<
-        T,
-    >;
-    #[cfg(
-        feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+MemoryPressure"
-    )]
-    pub type MemoryPressure = crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure;
     #[cfg(
         feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+PerCoreLockedStacks"
     )]
     pub type PerCoreLockedStacks = crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
         T,
     >;
+    #[cfg(
+        feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+MemoryPressure"
+    )]
+    pub type MemoryPressure = crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure;
+    #[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+LockedStack")]
+    pub type LockedStack = crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<
+        T,
+    >;
+    pub fn CreatePerCoreLockedStacks(
+        &mut self,
+        bucketIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
+            T,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
+            T,
+        > = __cordl_object.invoke("CreatePerCoreLockedStacks", (bucketIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Rent(
+        &mut self,
+        minimumLength: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = __cordl_object
+            .invoke("Rent", (minimumLength))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Return(
+        &mut self,
+        array: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        clearArray: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Return", (array, clearArray))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Trim(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Trim", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -338,75 +407,6 @@ impl<
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Id", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn CreatePerCoreLockedStacks(
-        &mut self,
-        bucketIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
-            T,
-        >,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
-            T,
-        > = __cordl_object.invoke("CreatePerCoreLockedStacks", (bucketIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Rent(
-        &mut self,
-        minimumLength: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = __cordl_object
-            .invoke("Rent", (minimumLength))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Trim(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Trim", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Return(
-        &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<T>,
-        clearArray: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Return", (array, clearArray))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1")]

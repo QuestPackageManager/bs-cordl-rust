@@ -26,41 +26,12 @@ for crate::System::Net::Http::Headers::Token {
 impl crate::System::Net::Http::Headers::Token {
     #[cfg(feature = "System+Net+Http+Headers+Token+Type")]
     pub type Type = crate::System::Net::Http::Headers::Token_Type;
-    pub fn set_EndPosition(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_EndPosition",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Kind(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Net::Http::Headers::Token_Type> {
-        let __cordl_ret: crate::System::Net::Http::Headers::Token_Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Kind",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_EndPosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_EndPosition",
             (),
         )?;
         Ok(__cordl_ret)
@@ -78,11 +49,40 @@ impl crate::System::Net::Http::Headers::Token {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_EndPosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_EndPosition",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Kind(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Net::Http::Headers::Token_Type> {
+        let __cordl_ret: crate::System::Net::Http::Headers::Token_Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Kind",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_StartPosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_StartPosition",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_EndPosition(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_EndPosition",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

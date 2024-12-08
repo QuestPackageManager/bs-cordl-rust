@@ -23,15 +23,14 @@ impl std::ops::DerefMut for IGamePause {
 }
 #[cfg(feature = "IGamePause")]
 impl IGamePause {
-    pub fn remove_willResumeEvent(
+    pub fn Pause(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_willResumeEvent", (value))?;
+            .invoke("Pause", ())?;
         Ok(__cordl_ret)
     }
     pub fn Resume(
@@ -42,6 +41,38 @@ impl IGamePause {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Resume", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn WillResume(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WillResume", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didPauseEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didPauseEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didResumeEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didResumeEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_willResumeEvent(
@@ -55,15 +86,10 @@ impl IGamePause {
             .invoke("add_willResumeEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Pause(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Pause", ())?;
-        Ok(__cordl_ret)
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
     }
     pub fn get_isPaused(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -83,17 +109,6 @@ impl IGamePause {
             .invoke("remove_didPauseEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn add_didResumeEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didResumeEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn remove_didResumeEvent(
         &mut self,
         value: *mut crate::System::Action,
@@ -105,7 +120,7 @@ impl IGamePause {
             .invoke("remove_didResumeEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn add_didPauseEvent(
+    pub fn remove_willResumeEvent(
         &mut self,
         value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -113,23 +128,8 @@ impl IGamePause {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didPauseEvent", (value))?;
+            .invoke("remove_willResumeEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn WillResume(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WillResume", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IGamePause")]

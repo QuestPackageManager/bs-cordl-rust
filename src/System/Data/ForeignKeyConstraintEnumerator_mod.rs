@@ -24,15 +24,14 @@ impl std::ops::DerefMut for crate::System::Data::ForeignKeyConstraintEnumerator 
 }
 #[cfg(feature = "System+Data+ForeignKeyConstraintEnumerator")]
 impl crate::System::Data::ForeignKeyConstraintEnumerator {
-    pub fn _ctor(
+    pub fn GetForeignKeyConstraint(
         &mut self,
-        dataSet: *mut crate::System::Data::DataSet,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::ForeignKeyConstraint> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dataSet))?;
+        let __cordl_ret: *mut crate::System::Data::ForeignKeyConstraint = __cordl_object
+            .invoke("GetForeignKeyConstraint", ())?;
         Ok(__cordl_ret)
     }
     pub fn IsValidCandidate(
@@ -45,24 +44,25 @@ impl crate::System::Data::ForeignKeyConstraintEnumerator {
         let __cordl_ret: bool = __cordl_object.invoke("IsValidCandidate", (constraint))?;
         Ok(__cordl_ret)
     }
-    pub fn GetForeignKeyConstraint(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::ForeignKeyConstraint> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::ForeignKeyConstraint = __cordl_object
-            .invoke("GetForeignKeyConstraint", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         dataSet: *mut crate::System::Data::DataSet,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (dataSet))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        dataSet: *mut crate::System::Data::DataSet,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (dataSet))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Data+ForeignKeyConstraintEnumerator")]

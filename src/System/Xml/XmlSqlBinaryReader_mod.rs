@@ -26,31 +26,6 @@ for crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
 impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
-    pub fn MatchNS(
-        &mut self,
-        localname: *mut crate::System::String,
-        namespaceUri: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MatchNS",
-            (localname, namespaceUri),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn MatchHashNS(
-        &mut self,
-        hash: i32,
-        localname: *mut crate::System::String,
-        namespaceUri: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MatchHashNS",
-            (hash, localname, namespaceUri),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn AdjustPosition(
         &mut self,
         adj: i32,
@@ -84,6 +59,31 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
             self,
             "GetLocalnameAndNamespaceUriAndHash",
             (hasher, localname, namespaceUri),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn MatchHashNS(
+        &mut self,
+        hash: i32,
+        localname: *mut crate::System::String,
+        namespaceUri: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MatchHashNS",
+            (hash, localname, namespaceUri),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn MatchNS(
+        &mut self,
+        localname: *mut crate::System::String,
+        namespaceUri: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MatchNS",
+            (localname, namespaceUri),
         )?;
         Ok(__cordl_ret)
     }
@@ -140,18 +140,6 @@ for crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
 impl crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
-    pub fn Set(
-        &mut self,
-        name: crate::System::Xml::XmlSqlBinaryReader_QName,
-        xmlspacePreserve: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Set",
-            (name, xmlspacePreserve),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -161,6 +149,18 @@ impl crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
             self,
             "Clear",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Set(
+        &mut self,
+        name: crate::System::Xml::XmlSqlBinaryReader_QName,
+        xmlspacePreserve: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Set",
+            (name, xmlspacePreserve),
         )?;
         Ok(__cordl_ret)
     }
@@ -197,6 +197,23 @@ impl std::ops::DerefMut for crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
 impl crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
+    pub fn New(
+        prefix: *mut crate::System::String,
+        nsuri: *mut crate::System::String,
+        nextInScope: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+        prevDecl: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+        scope: i32,
+        implied: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (prefix, nsuri, nextInScope, prevDecl, scope, implied),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         prefix: *mut crate::System::String,
@@ -212,23 +229,6 @@ impl crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (prefix, nsuri, nextInScope, prevDecl, scope, implied))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        prefix: *mut crate::System::String,
-        nsuri: *mut crate::System::String,
-        nextInScope: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
-        prevDecl: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
-        scope: i32,
-        implied: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (prefix, nsuri, nextInScope, prevDecl, scope, implied),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
@@ -270,6 +270,17 @@ impl std::ops::DerefMut for crate::System::Xml::XmlSqlBinaryReader_NestedBinXml 
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
 impl crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
+    pub fn New(
+        symbolTables: crate::System::Xml::XmlSqlBinaryReader_SymbolTables,
+        docState: i32,
+        next: *mut crate::System::Xml::XmlSqlBinaryReader_NestedBinXml,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (symbolTables, docState, next))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         symbolTables: crate::System::Xml::XmlSqlBinaryReader_SymbolTables,
@@ -282,17 +293,6 @@ impl crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (symbolTables, docState, next))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        symbolTables: crate::System::Xml::XmlSqlBinaryReader_SymbolTables,
-        docState: i32,
-        next: *mut crate::System::Xml::XmlSqlBinaryReader_NestedBinXml,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (symbolTables, docState, next))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
@@ -331,13 +331,55 @@ for crate::System::Xml::XmlSqlBinaryReader_QName {
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
 impl crate::System::Xml::XmlSqlBinaryReader_QName {
-    pub fn ToString(
+    pub fn CheckPrefixNS(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        prefix: *mut crate::System::String,
+        namespaceUri: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
+            "CheckPrefixNS",
+            (prefix, namespaceUri),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Clear",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals(
+        &mut self,
+        other: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNSHashCode(
+        &mut self,
+        hasher: *mut crate::System::Xml::SecureStringHasher,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetNSHashCode",
+            (hasher),
         )?;
         Ok(__cordl_ret)
     }
@@ -365,24 +407,25 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CheckPrefixNS(
+    pub fn Set(
         &mut self,
         prefix: *mut crate::System::String,
-        namespaceUri: *mut crate::System::String,
+        lname: *mut crate::System::String,
+        nsUri: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CheckPrefixNS",
-            (prefix, namespaceUri),
+            "Set",
+            (prefix, lname, nsUri),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Clear(
+    pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Clear",
+            "ToString",
             (),
         )?;
         Ok(__cordl_ret)
@@ -396,49 +439,6 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
-            (prefix, lname, nsUri),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNSHashCode(
-        &mut self,
-        hasher: *mut crate::System::Xml::SecureStringHasher,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetNSHashCode",
-            (hasher),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        other: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Set(
-        &mut self,
-        prefix: *mut crate::System::String,
-        lname: *mut crate::System::String,
-        nsUri: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Set",
             (prefix, lname, nsUri),
         )?;
         Ok(__cordl_ret)
@@ -585,38 +585,212 @@ impl std::ops::DerefMut for crate::System::Xml::XmlSqlBinaryReader {
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader")]
 impl crate::System::Xml::XmlSqlBinaryReader {
-    #[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
-    pub type QName = crate::System::Xml::XmlSqlBinaryReader_QName;
+    #[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
+    pub type AttrInfo = crate::System::Xml::XmlSqlBinaryReader_AttrInfo;
+    #[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
+    pub type SymbolTables = crate::System::Xml::XmlSqlBinaryReader_SymbolTables;
     #[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
     pub type NestedBinXml = crate::System::Xml::XmlSqlBinaryReader_NestedBinXml;
     #[cfg(feature = "System+Xml+XmlSqlBinaryReader+ScanState")]
     pub type ScanState = crate::System::Xml::XmlSqlBinaryReader_ScanState;
-    #[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
-    pub type AttrInfo = crate::System::Xml::XmlSqlBinaryReader_AttrInfo;
     #[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
     pub type ElemInfo = crate::System::Xml::XmlSqlBinaryReader_ElemInfo;
     #[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
     pub type NamespaceDecl = crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl;
-    #[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
-    pub type SymbolTables = crate::System::Xml::XmlSqlBinaryReader_SymbolTables;
-    pub fn ReadInit(
+    #[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
+    pub type QName = crate::System::Xml::XmlSqlBinaryReader_QName;
+    pub fn AddInitNamespace(
         &mut self,
-        skipXmlDecl: bool,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        prefix: *mut crate::System::String,
+        uri: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("ReadInit", (skipXmlDecl))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddInitNamespace", (prefix, uri))?;
         Ok(__cordl_ret)
     }
-    pub fn get_NamespaceURI(
+    pub fn AddName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddQName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddQName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CDATAValue(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_NamespaceURI", ())?;
+            .invoke("CDATAValue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckAllowContent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckAllowContent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckText(
+        &mut self,
+        attr: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
+            .invoke("CheckText", (attr))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckTextIsWS(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
+            .invoke("CheckTextIsWS", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckValueTokenBounds(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckValueTokenBounds", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearAttributes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearAttributes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Close(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Close", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Fill(
+        &mut self,
+        require: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Fill", (require))?;
+        Ok(__cordl_ret)
+    }
+    pub fn FillAllowEOF(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("FillAllowEOF", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Fill_(
+        &mut self,
+        require: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Fill_", (require))?;
+        Ok(__cordl_ret)
+    }
+    pub fn FinishCDATA(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FinishCDATA", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn FinishEndElement(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FinishEndElement", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GenerateImpliedXmlnsAttrs(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GenerateImpliedXmlnsAttrs", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GenerateTokenTypeMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GenerateTokenTypeMap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetAttributeText(
+        &mut self,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetAttributeText", (i))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetAttribute_String1(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetAttribute", (name))?;
         Ok(__cordl_ret)
     }
     pub fn GetAttribute_String_String0(
@@ -631,17 +805,6 @@ impl crate::System::Xml::XmlSqlBinaryReader {
             .invoke("GetAttribute", (name, ns))?;
         Ok(__cordl_ret)
     }
-    pub fn GetAttribute_String1(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetAttribute", (name))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetAttribute_i32_2(
         &mut self,
         i: i32,
@@ -653,14 +816,259 @@ impl crate::System::Xml::XmlSqlBinaryReader {
             .invoke("GetAttribute", (i))?;
         Ok(__cordl_ret)
     }
-    pub fn GenerateTokenTypeMap(
+    pub fn GetDouble(&mut self, offset: i32) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object.invoke("GetDouble", (offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetInt16(&mut self, pos: i32) -> quest_hook::libil2cpp::Result<i16> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i16 = __cordl_object.invoke("GetInt16", (pos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetInt32(&mut self, pos: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetInt32", (pos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetInt64(&mut self, pos: i32) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("GetInt64", (pos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSingle(&mut self, offset: i32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("GetSingle", (offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetString(
+        &mut self,
+        pos: i32,
+        cch: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetString", (pos, cch))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetStringAligned(
+        &mut self,
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        cch: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetStringAligned", (data, offset, cch))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetUInt16(&mut self, pos: i32) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u16 = __cordl_object.invoke("GetUInt16", (pos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetUInt32(&mut self, pos: i32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("GetUInt32", (pos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetUInt64(&mut self, pos: i32) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u64 = __cordl_object.invoke("GetUInt64", (pos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetValueType(
+        &mut self,
+        token: crate::System::Xml::BinXmlToken,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("GetValueType", (token))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetXsdKatmaiTokenLength(
+        &mut self,
+        token: crate::System::Xml::BinXmlToken,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetXsdKatmaiTokenLength", (token))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GrowAttributes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateTokenTypeMap", ())?;
+            .invoke("GrowAttributes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GrowElements(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GrowElements", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HashCheckForDuplicateAttributes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HashCheckForDuplicateAttributes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ImplReadCDATA(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ImplReadCDATA", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ImplReadComment(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ImplReadComment", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ImplReadData(
+        &mut self,
+        tokenType: crate::System::Xml::BinXmlToken,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ImplReadData", (tokenType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ImplReadDoctype(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ImplReadDoctype", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ImplReadElement(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ImplReadElement", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ImplReadEndElement(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ImplReadEndElement", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ImplReadEndNest(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ImplReadEndNest", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ImplReadNest(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ImplReadNest", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ImplReadPI(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ImplReadPI", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ImplReadXmlText(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ImplReadXmlText", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LocateAttribute_String0(
+        &mut self,
+        name: *mut crate::System::String,
+        ns: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("LocateAttribute", (name, ns))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LocateAttribute_String1(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("LocateAttribute", (name))?;
         Ok(__cordl_ret)
     }
     pub fn LookupNamespace(
@@ -674,29 +1082,32 @@ impl crate::System::Xml::XmlSqlBinaryReader {
             .invoke("LookupNamespace", (prefix))?;
         Ok(__cordl_ret)
     }
-    pub fn GetInt32(&mut self, pos: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetInt32", (pos))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ThrowUnexpectedToken(
+    pub fn MoveToAttribute_String0(
         &mut self,
-        token: crate::System::Xml::BinXmlToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Exception = __cordl_object
-            .invoke("ThrowUnexpectedToken", (token))?;
+        let __cordl_ret: bool = __cordl_object.invoke("MoveToAttribute", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn MoveToNextAttribute(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn MoveToAttribute_i32_1(
+        &mut self,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveToNextAttribute", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MoveToAttribute", (i))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveToElement(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("MoveToElement", ())?;
         Ok(__cordl_ret)
     }
     pub fn MoveToFirstAttribute(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -706,71 +1117,73 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         let __cordl_ret: bool = __cordl_object.invoke("MoveToFirstAttribute", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ValueAsULong(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+    pub fn MoveToNextAttribute(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: u64 = __cordl_object.invoke("ValueAsULong", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("MoveToNextAttribute", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetAttributeText(
+    pub fn NameFlush(
         &mut self,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetAttributeText", (i))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadQNameRef(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ReadQNameRef", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn PositionOnAttribute(
-        &mut self,
-        i: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PositionOnAttribute", (i))?;
+            .invoke("NameFlush", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_BaseURI(
+    pub fn New(
+        stream: *mut crate::System::IO::Stream,
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        len: i32,
+        baseUri: *mut crate::System::String,
+        closeInput: bool,
+        settings: *mut crate::System::Xml::XmlReaderSettings,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream, data, len, baseUri, closeInput, settings))?;
+        Ok(__cordl_object)
+    }
+    pub fn NextToken(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::BinXmlToken> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_BaseURI", ())?;
+        let __cordl_ret: crate::System::Xml::BinXmlToken = __cordl_object
+            .invoke("NextToken", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ReScanOverValue(
+    pub fn NextToken1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::BinXmlToken> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::BinXmlToken = __cordl_object
+            .invoke("NextToken1", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn NextToken2(
         &mut self,
         token: crate::System::Xml::BinXmlToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::BinXmlToken> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReScanOverValue", (token))?;
+        let __cordl_ret: crate::System::Xml::BinXmlToken = __cordl_object
+            .invoke("NextToken2", (token))?;
         Ok(__cordl_ret)
     }
-    pub fn ImplReadNest(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn ParseMB32_(&mut self, b: u8) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ImplReadNest", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("ParseMB32_", (b))?;
         Ok(__cordl_ret)
     }
     pub fn ParseMB32_0(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -787,56 +1200,87 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         let __cordl_ret: i32 = __cordl_object.invoke("ParseMB32", (pos))?;
         Ok(__cordl_ret)
     }
-    pub fn Close(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn ParseMB64(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("ParseMB64", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetString(
-        &mut self,
-        pos: i32,
-        cch: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetString", (pos, cch))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Value(
+    pub fn ParseText(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Value", ())?;
+            .invoke("ParseText", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Settings(
+    pub fn PeekNextToken(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlReaderSettings> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::BinXmlToken> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::XmlReaderSettings = __cordl_object
-            .invoke("get_Settings", ())?;
+        let __cordl_ret: crate::System::Xml::BinXmlToken = __cordl_object
+            .invoke("PeekNextToken", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CheckAllowContent(
+    pub fn PeekToken(
         &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::BinXmlToken> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::BinXmlToken = __cordl_object
+            .invoke("PeekToken", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn PopNamespaces(
+        &mut self,
+        firstInScopeChain: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckAllowContent", ())?;
+            .invoke("PopNamespaces", (firstInScopeChain))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PositionOnAttribute(
+        &mut self,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PositionOnAttribute", (i))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PushNamespace(
+        &mut self,
+        prefix: *mut crate::System::String,
+        ns: *mut crate::System::String,
+        implied: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PushNamespace", (prefix, ns, implied))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReScanOverValue(
+        &mut self,
+        token: crate::System::Xml::BinXmlToken,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReScanOverValue", (token))?;
         Ok(__cordl_ret)
     }
     pub fn Read(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -846,39 +1290,35 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         let __cordl_ret: bool = __cordl_object.invoke("Read", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ScanOverValue(
-        &mut self,
-        token: crate::System::Xml::BinXmlToken,
-        attr: bool,
-        checkChars: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
+    pub fn ReadAttributeValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
-            .invoke("ScanOverValue", (token, attr, checkChars))?;
+        let __cordl_ret: bool = __cordl_object.invoke("ReadAttributeValue", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AddInitNamespace(
-        &mut self,
-        prefix: *mut crate::System::String,
-        uri: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<u8> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddInitNamespace", (prefix, uri))?;
+        let __cordl_ret: u8 = __cordl_object.invoke("ReadByte", ())?;
         Ok(__cordl_ret)
     }
-    pub fn NameFlush(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn ReadDoc(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NameFlush", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("ReadDoc", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadInit(
+        &mut self,
+        skipXmlDecl: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ReadInit", (skipXmlDecl))?;
         Ok(__cordl_ret)
     }
     pub fn ReadNameRef(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -888,14 +1328,58 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         let __cordl_ret: i32 = __cordl_object.invoke("ReadNameRef", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_NodeType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
+    pub fn ReadQNameRef(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
-            .invoke("get_NodeType", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("ReadQNameRef", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadToken(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::BinXmlToken> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::BinXmlToken = __cordl_object
+            .invoke("ReadToken", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadUShort(&mut self) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u16 = __cordl_object.invoke("ReadUShort", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RescanNextToken(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::BinXmlToken> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::BinXmlToken = __cordl_object
+            .invoke("RescanNextToken", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ResolveEntity(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ResolveEntity", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ScanAttributes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ScanAttributes", ())?;
         Ok(__cordl_ret)
     }
     pub fn ScanOverAnyValue(
@@ -911,41 +1395,47 @@ impl crate::System::Xml::XmlSqlBinaryReader {
             .invoke("ScanOverAnyValue", (token, attr, checkChars))?;
         Ok(__cordl_ret)
     }
-    pub fn ParseMB64(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn ScanOverValue(
+        &mut self,
+        token: crate::System::Xml::BinXmlToken,
+        attr: bool,
+        checkChars: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("ParseMB64", ())?;
+        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
+            .invoke("ScanOverValue", (token, attr, checkChars))?;
         Ok(__cordl_ret)
     }
-    pub fn GrowElements(
+    pub fn ScanText(
+        &mut self,
+        start: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("ScanText", (start))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SimpleCheckForDuplicateAttributes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GrowElements", ())?;
+            .invoke("SimpleCheckForDuplicateAttributes", ())?;
         Ok(__cordl_ret)
     }
-    pub fn XmlDeclValue(
+    pub fn SkipExtn(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("XmlDeclValue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValueAsDecimal(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Decimal = __cordl_object
-            .invoke("ValueAsDecimal", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SkipExtn", ())?;
         Ok(__cordl_ret)
     }
     pub fn System_Xml_IXmlNamespaceResolver_GetNamespacesInScope(
@@ -967,71 +1457,6 @@ impl crate::System::Xml::XmlSqlBinaryReader {
             .invoke("System.Xml.IXmlNamespaceResolver.GetNamespacesInScope", (scope))?;
         Ok(__cordl_ret)
     }
-    pub fn ImplReadEndElement(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ImplReadEndElement", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_EOF(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_EOF", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadUShort(&mut self) -> quest_hook::libil2cpp::Result<u16> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u16 = __cordl_object.invoke("ReadUShort", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn NextToken2(
-        &mut self,
-        token: crate::System::Xml::BinXmlToken,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::BinXmlToken> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::BinXmlToken = __cordl_object
-            .invoke("NextToken2", (token))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddQName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddQName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn PushNamespace(
-        &mut self,
-        prefix: *mut crate::System::String,
-        ns: *mut crate::System::String,
-        implied: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PushNamespace", (prefix, ns, implied))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetInt64(&mut self, pos: i32) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("GetInt64", (pos))?;
-        Ok(__cordl_ret)
-    }
     pub fn System_Xml_IXmlNamespaceResolver_LookupPrefix(
         &mut self,
         namespaceName: *mut crate::System::String,
@@ -1043,231 +1468,26 @@ impl crate::System::Xml::XmlSqlBinaryReader {
             .invoke("System.Xml.IXmlNamespaceResolver.LookupPrefix", (namespaceName))?;
         Ok(__cordl_ret)
     }
-    pub fn GetUInt16(&mut self, pos: i32) -> quest_hook::libil2cpp::Result<u16> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u16 = __cordl_object.invoke("GetUInt16", (pos))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ReadState(
+    pub fn ThrowNotSupported(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::ReadState> {
+        res: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Xml::ReadState = __cordl_object
-            .invoke("get_ReadState", ())?;
+        let __cordl_ret: *mut crate::System::Exception = __cordl_object
+            .invoke("ThrowNotSupported", (res))?;
         Ok(__cordl_ret)
     }
-    pub fn ImplReadElement(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ImplReadElement", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn PeekToken(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::BinXmlToken> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::BinXmlToken = __cordl_object
-            .invoke("PeekToken", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseText(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ParseText", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadToken(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::BinXmlToken> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::BinXmlToken = __cordl_object
-            .invoke("ReadToken", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateFromTextReader_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateFromTextReader", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateFromTextReader__cordl_bool1(
-        &mut self,
-        needUpdate: bool,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("UpdateFromTextReader", (needUpdate))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NextToken1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::BinXmlToken> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::BinXmlToken = __cordl_object
-            .invoke("NextToken1", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetXsdKatmaiTokenLength(
+    pub fn ThrowUnexpectedToken(
         &mut self,
         token: crate::System::Xml::BinXmlToken,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetXsdKatmaiTokenLength", (token))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LocalName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_LocalName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FillAllowEOF(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("FillAllowEOF", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ImplReadCDATA(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ImplReadCDATA", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Fill(
-        &mut self,
-        require: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Fill", (require))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_XmlSpace(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlSpace> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::XmlSpace = __cordl_object
-            .invoke("get_XmlSpace", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn PeekNextToken(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::BinXmlToken> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::BinXmlToken = __cordl_object
-            .invoke("PeekNextToken", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HashCheckForDuplicateAttributes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HashCheckForDuplicateAttributes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetInt16(&mut self, pos: i32) -> quest_hook::libil2cpp::Result<i16> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i16 = __cordl_object.invoke("GetInt16", (pos))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RescanNextToken(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::BinXmlToken> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::BinXmlToken = __cordl_object
-            .invoke("RescanNextToken", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckTextIsWS(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
-            .invoke("CheckTextIsWS", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_NameTable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNameTable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::XmlNameTable = __cordl_object
-            .invoke("get_NameTable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn VerifyVersion(
-        &mut self,
-        requiredVersion: i32,
-        token: crate::System::Xml::BinXmlToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("VerifyVersion", (requiredVersion, token))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Fill_(
-        &mut self,
-        require: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Fill_", (require))?;
+        let __cordl_ret: *mut crate::System::Exception = __cordl_object
+            .invoke("ThrowUnexpectedToken", (token))?;
         Ok(__cordl_ret)
     }
     pub fn ThrowXmlException_String0(
@@ -1294,14 +1514,25 @@ impl crate::System::Xml::XmlSqlBinaryReader {
             .invoke("ThrowXmlException", (res, arg1, arg2))?;
         Ok(__cordl_ret)
     }
-    pub fn ScanAttributes(
+    pub fn UpdateFromTextReader_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ScanAttributes", ())?;
+            .invoke("UpdateFromTextReader", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateFromTextReader__cordl_bool1(
+        &mut self,
+        needUpdate: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("UpdateFromTextReader", (needUpdate))?;
         Ok(__cordl_ret)
     }
     pub fn ValueAsDateTimeString(
@@ -1314,14 +1545,28 @@ impl crate::System::Xml::XmlSqlBinaryReader {
             .invoke("ValueAsDateTimeString", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ClearAttributes(
+    pub fn ValueAsDecimal(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearAttributes", ())?;
+        let __cordl_ret: crate::System::Decimal = __cordl_object
+            .invoke("ValueAsDecimal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValueAsDouble(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object.invoke("ValueAsDouble", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValueAsLong(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("ValueAsLong", ())?;
         Ok(__cordl_ret)
     }
     pub fn ValueAsString(
@@ -1335,53 +1580,33 @@ impl crate::System::Xml::XmlSqlBinaryReader {
             .invoke("ValueAsString", (token))?;
         Ok(__cordl_ret)
     }
-    pub fn GetUInt32(&mut self, pos: i32) -> quest_hook::libil2cpp::Result<u32> {
+    pub fn ValueAsULong(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: u32 = __cordl_object.invoke("GetUInt32", (pos))?;
+        let __cordl_ret: u64 = __cordl_object.invoke("ValueAsULong", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_AttributeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_AttributeCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValueAsLong(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("ValueAsLong", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn PopNamespaces(
+    pub fn VerifyVersion(
         &mut self,
-        firstInScopeChain: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+        requiredVersion: i32,
+        token: crate::System::Xml::BinXmlToken,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PopNamespaces", (firstInScopeChain))?;
+            .invoke("VerifyVersion", (requiredVersion, token))?;
         Ok(__cordl_ret)
     }
-    pub fn ImplReadPI(
+    pub fn XmlDeclValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ImplReadPI", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDouble(&mut self, offset: i32) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("GetDouble", (offset))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("XmlDeclValue", ())?;
         Ok(__cordl_ret)
     }
     pub fn XsdKatmaiTimeScaleToValueLength(
@@ -1393,277 +1618,6 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("XsdKatmaiTimeScaleToValueLength", (scale))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Depth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Depth", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SkipExtn(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SkipExtn", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ImplReadData(
-        &mut self,
-        tokenType: crate::System::Xml::BinXmlToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ImplReadData", (tokenType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ImplReadDoctype(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ImplReadDoctype", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ResolveEntity(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResolveEntity", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckValueTokenBounds(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckValueTokenBounds", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn NextToken(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::BinXmlToken> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::BinXmlToken = __cordl_object
-            .invoke("NextToken", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u8 = __cordl_object.invoke("ReadByte", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FinishCDATA(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FinishCDATA", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetValueType(
-        &mut self,
-        token: crate::System::Xml::BinXmlToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("GetValueType", (token))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetUInt64(&mut self, pos: i32) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u64 = __cordl_object.invoke("GetUInt64", (pos))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GrowAttributes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GrowAttributes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LocateAttribute_String0(
-        &mut self,
-        name: *mut crate::System::String,
-        ns: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("LocateAttribute", (name, ns))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LocateAttribute_String1(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("LocateAttribute", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValueAsDouble(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("ValueAsDouble", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadAttributeValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ReadAttributeValue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ImplReadEndNest(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ImplReadEndNest", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveToElement(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveToElement", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseMB32_(&mut self, b: u8) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ParseMB32_", (b))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsEmptyElement(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsEmptyElement", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ValueType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_ValueType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Prefix(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Prefix", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_XmlLang(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_XmlLang", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FinishEndElement(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FinishEndElement", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetStringAligned(
-        &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        cch: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetStringAligned", (data, offset, cch))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveToAttribute_String0(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveToAttribute", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveToAttribute_i32_1(
-        &mut self,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveToAttribute", (i))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckText(
-        &mut self,
-        attr: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
-            .invoke("CheckText", (attr))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSingle(&mut self, offset: i32) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetSingle", (offset))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -1682,107 +1636,153 @@ impl crate::System::Xml::XmlSqlBinaryReader {
             .invoke(".ctor", (stream, data, len, baseUri, closeInput, settings))?;
         Ok(__cordl_ret)
     }
-    pub fn SimpleCheckForDuplicateAttributes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_AttributeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SimpleCheckForDuplicateAttributes", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_AttributeCount", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ScanText(
-        &mut self,
-        start: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ScanText", (start))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CDATAValue(
+    pub fn get_BaseURI(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("CDATAValue", ())?;
+            .invoke("get_BaseURI", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GenerateImpliedXmlnsAttrs(
+    pub fn get_Depth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Depth", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_EOF(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_EOF", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsEmptyElement(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsEmptyElement", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LocalName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateImpliedXmlnsAttrs", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_LocalName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ThrowNotSupported(
+    pub fn get_NameTable(
         &mut self,
-        res: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNameTable> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Exception = __cordl_object
-            .invoke("ThrowNotSupported", (res))?;
+        let __cordl_ret: *mut crate::System::Xml::XmlNameTable = __cordl_object
+            .invoke("get_NameTable", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ImplReadComment(
+    pub fn get_NamespaceURI(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ImplReadComment", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_NamespaceURI", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ReadDoc(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ReadDoc", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ImplReadXmlText(
+    pub fn get_NodeType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ImplReadXmlText", ())?;
+        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
+            .invoke("get_NodeType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        stream: *mut crate::System::IO::Stream,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        len: i32,
-        baseUri: *mut crate::System::String,
-        closeInput: bool,
-        settings: *mut crate::System::Xml::XmlReaderSettings,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream, data, len, baseUri, closeInput, settings))?;
-        Ok(__cordl_object)
+    pub fn get_Prefix(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Prefix", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ReadState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::ReadState> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::ReadState = __cordl_object
+            .invoke("get_ReadState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Settings(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlReaderSettings> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::XmlReaderSettings = __cordl_object
+            .invoke("get_Settings", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Value", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ValueType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_ValueType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_XmlLang(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_XmlLang", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_XmlSpace(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlSpace> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::XmlSpace = __cordl_object
+            .invoke("get_XmlSpace", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader")]

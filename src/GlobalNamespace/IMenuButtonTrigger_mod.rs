@@ -34,6 +34,11 @@ impl IMenuButtonTrigger {
             .invoke("add_menuButtonTriggeredEvent", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn remove_menuButtonTriggeredEvent(
         &mut self,
         value: *mut crate::System::Action,
@@ -44,11 +49,6 @@ impl IMenuButtonTrigger {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_menuButtonTriggeredEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IMenuButtonTrigger")]

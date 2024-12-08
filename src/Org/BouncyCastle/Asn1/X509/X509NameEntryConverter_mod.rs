@@ -26,16 +26,14 @@ for crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509NameEntryConverter")]
 impl crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter {
-    pub fn GetConvertedValue(
+    pub fn CanBePrintable(
         &mut self,
-        oid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+        str: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("GetConvertedValue", (oid, value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("CanBePrintable", (str))?;
         Ok(__cordl_ret)
     }
     pub fn ConvertHexEncoded(
@@ -50,6 +48,25 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter {
             .invoke("ConvertHexEncoded", (hexString, offset))?;
         Ok(__cordl_ret)
     }
+    pub fn GetConvertedValue(
+        &mut self,
+        oid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("GetConvertedValue", (oid, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -59,23 +76,6 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn CanBePrintable(
-        &mut self,
-        str: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CanBePrintable", (str))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509NameEntryConverter")]

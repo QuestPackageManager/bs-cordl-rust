@@ -54,9 +54,29 @@ impl SmallBufferPool {
             .invoke("GetBuffer", (length))?;
         Ok(__cordl_ret)
     }
-    pub fn ReleaseBuffer_Il2CppArray0(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ReleaseBufferInternal(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReleaseBufferInternal", (buffer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReleaseBuffer_ByRefMut1(
+        &mut self,
+        buffer: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -65,11 +85,9 @@ impl SmallBufferPool {
             .invoke("ReleaseBuffer", (buffer))?;
         Ok(__cordl_ret)
     }
-    pub fn ReleaseBuffer_ByRefMut1(
+    pub fn ReleaseBuffer_Il2CppArray0(
         &mut self,
-        buffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -87,24 +105,6 @@ impl SmallBufferPool {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn ReleaseBufferInternal(
-        &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReleaseBufferInternal", (buffer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SmallBufferPool")]

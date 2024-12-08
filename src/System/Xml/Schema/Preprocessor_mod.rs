@@ -42,40 +42,104 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::Preprocessor {
 }
 #[cfg(feature = "System+Xml+Schema+Preprocessor")]
 impl crate::System::Xml::Schema::Preprocessor {
-    pub fn PreprocessLocalAttribute(
+    pub fn BuildRefNamespaces(
         &mut self,
-        attribute: *mut crate::System::Xml::Schema::XmlSchemaAttribute,
+        schema: *mut crate::System::Xml::Schema::XmlSchema,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessLocalAttribute", (attribute))?;
+            .invoke("BuildRefNamespaces", (schema))?;
         Ok(__cordl_ret)
     }
-    pub fn PreprocessComplexType(
+    pub fn BuildSchemaList(
         &mut self,
-        complexType: *mut crate::System::Xml::Schema::XmlSchemaComplexType,
-        local: bool,
+        schema: *mut crate::System::Xml::Schema::XmlSchema,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessComplexType", (complexType, local))?;
+            .invoke("BuildSchemaList", (schema))?;
         Ok(__cordl_ret)
     }
-    pub fn PreprocessAttributes(
+    pub fn CheckRefinedAttributeGroup(
         &mut self,
-        attributes: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-        anyAttribute: *mut crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-        parent: *mut crate::System::Xml::Schema::XmlSchemaObject,
+        attributeGroup: *mut crate::System::Xml::Schema::XmlSchemaAttributeGroup,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessAttributes", (attributes, anyAttribute, parent))?;
+            .invoke("CheckRefinedAttributeGroup", (attributeGroup))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckRefinedComplexType(
+        &mut self,
+        ctype: *mut crate::System::Xml::Schema::XmlSchemaComplexType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckRefinedComplexType", (ctype))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckRefinedGroup(
+        &mut self,
+        group: *mut crate::System::Xml::Schema::XmlSchemaGroup,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckRefinedGroup", (group))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckRefinedSimpleType(
+        &mut self,
+        stype: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckRefinedSimpleType", (stype))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Cleanup(
+        &mut self,
+        schema: *mut crate::System::Xml::Schema::XmlSchema,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Cleanup", (schema))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CleanupRedefine(
+        &mut self,
+        include: *mut crate::System::Xml::Schema::XmlSchemaExternal,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CleanupRedefine", (include))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CopyIncludedComponents(
+        &mut self,
+        includedSchema: *mut crate::System::Xml::Schema::XmlSchema,
+        schema: *mut crate::System::Xml::Schema::XmlSchema,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CopyIncludedComponents", (includedSchema, schema))?;
         Ok(__cordl_ret)
     }
     pub fn CountGroupSelfReference(
@@ -91,16 +155,91 @@ impl crate::System::Xml::Schema::Preprocessor {
             .invoke("CountGroupSelfReference", (items, name, redefined))?;
         Ok(__cordl_ret)
     }
-    pub fn SetParent(
+    pub fn Execute(
         &mut self,
-        child: *mut crate::System::Xml::Schema::XmlSchemaObject,
-        parent: *mut crate::System::Xml::Schema::XmlSchemaObject,
+        schema: *mut crate::System::Xml::Schema::XmlSchema,
+        targetNamespace: *mut crate::System::String,
+        loadExternals: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("Execute", (schema, targetNamespace, loadExternals))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetChameleonSchema(
+        &mut self,
+        targetNamespace: *mut crate::System::String,
+        schema: *mut crate::System::Xml::Schema::XmlSchema,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchema = __cordl_object
+            .invoke("GetChameleonSchema", (targetNamespace, schema))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetIncludedSet(
+        &mut self,
+        schema: *mut crate::System::Xml::Schema::XmlSchema,
+        includesList: *mut crate::System::Collections::ArrayList,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetParent", (child, parent))?;
+            .invoke("GetIncludedSet", (schema, includesList))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSchemaEntity(
+        &mut self,
+        ruri: *mut crate::System::Uri,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("GetSchemaEntity", (ruri))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadExternals(
+        &mut self,
+        schema: *mut crate::System::Xml::Schema::XmlSchema,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LoadExternals", (schema))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        nameTable: *mut crate::System::Xml::XmlNameTable,
+        schemaNames: *mut crate::System::Xml::Schema::SchemaNames,
+        eventHandler: *mut crate::System::Xml::Schema::ValidationEventHandler,
+        compilationSettings: *mut crate::System::Xml::Schema::XmlSchemaCompilationSettings,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (nameTable, schemaNames, eventHandler, compilationSettings),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn ParseUri(
+        &mut self,
+        uri: *mut crate::System::String,
+        code: *mut crate::System::String,
+        sourceSchemaObject: *mut crate::System::Xml::Schema::XmlSchemaObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ParseUri", (uri, code, sourceSchemaObject))?;
         Ok(__cordl_ret)
     }
     pub fn Preprocess(
@@ -116,15 +255,84 @@ impl crate::System::Xml::Schema::Preprocessor {
             .invoke("Preprocess", (schema, targetNamespace, imports))?;
         Ok(__cordl_ret)
     }
-    pub fn PreprocessParticle(
+    pub fn PreprocessAnnotation_XmlSchemaAnnotation1(
         &mut self,
-        particle: *mut crate::System::Xml::Schema::XmlSchemaParticle,
+        annotation: *mut crate::System::Xml::Schema::XmlSchemaAnnotation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessParticle", (particle))?;
+            .invoke("PreprocessAnnotation", (annotation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PreprocessAnnotation_XmlSchemaObject0(
+        &mut self,
+        schemaObject: *mut crate::System::Xml::Schema::XmlSchemaObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PreprocessAnnotation", (schemaObject))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PreprocessAttribute(
+        &mut self,
+        attribute: *mut crate::System::Xml::Schema::XmlSchemaAttribute,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PreprocessAttribute", (attribute))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PreprocessAttributeContent(
+        &mut self,
+        attribute: *mut crate::System::Xml::Schema::XmlSchemaAttribute,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PreprocessAttributeContent", (attribute))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PreprocessAttributeGroup(
+        &mut self,
+        attributeGroup: *mut crate::System::Xml::Schema::XmlSchemaAttributeGroup,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PreprocessAttributeGroup", (attributeGroup))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PreprocessAttributes(
+        &mut self,
+        attributes: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        anyAttribute: *mut crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+        parent: *mut crate::System::Xml::Schema::XmlSchemaObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PreprocessAttributes", (attributes, anyAttribute, parent))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PreprocessComplexType(
+        &mut self,
+        complexType: *mut crate::System::Xml::Schema::XmlSchemaComplexType,
+        local: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PreprocessComplexType", (complexType, local))?;
         Ok(__cordl_ret)
     }
     pub fn PreprocessElement(
@@ -138,122 +346,7 @@ impl crate::System::Xml::Schema::Preprocessor {
             .invoke("PreprocessElement", (element))?;
         Ok(__cordl_ret)
     }
-    pub fn PreprocessRedefine(
-        &mut self,
-        redefineEntry: *mut crate::System::Xml::Schema::RedefineEntry,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessRedefine", (redefineEntry))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CopyIncludedComponents(
-        &mut self,
-        includedSchema: *mut crate::System::Xml::Schema::XmlSchema,
-        schema: *mut crate::System::Xml::Schema::XmlSchema,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CopyIncludedComponents", (includedSchema, schema))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValidateIdAttribute(
-        &mut self,
-        xso: *mut crate::System::Xml::Schema::XmlSchemaObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateIdAttribute", (xso))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValidateQNameAttribute(
-        &mut self,
-        xso: *mut crate::System::Xml::Schema::XmlSchemaObject,
-        attributeName: *mut crate::System::String,
-        value: *mut crate::System::Xml::XmlQualifiedName,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateQNameAttribute", (xso, attributeName, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Execute(
-        &mut self,
-        schema: *mut crate::System::Xml::Schema::XmlSchema,
-        targetNamespace: *mut crate::System::String,
-        loadExternals: bool,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("Execute", (schema, targetNamespace, loadExternals))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckRefinedGroup(
-        &mut self,
-        group: *mut crate::System::Xml::Schema::XmlSchemaGroup,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckRefinedGroup", (group))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PreprocessNotation(
-        &mut self,
-        notation: *mut crate::System::Xml::Schema::XmlSchemaNotation,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessNotation", (notation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckRefinedAttributeGroup(
-        &mut self,
-        attributeGroup: *mut crate::System::Xml::Schema::XmlSchemaAttributeGroup,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckRefinedAttributeGroup", (attributeGroup))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSchemaEntity(
-        &mut self,
-        ruri: *mut crate::System::Uri,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetSchemaEntity", (ruri))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckRefinedComplexType(
-        &mut self,
-        ctype: *mut crate::System::Xml::Schema::XmlSchemaComplexType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckRefinedComplexType", (ctype))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PreprocessLocalElement(
+    pub fn PreprocessElementContent(
         &mut self,
         element: *mut crate::System::Xml::Schema::XmlSchemaElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -261,62 +354,7 @@ impl crate::System::Xml::Schema::Preprocessor {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessLocalElement", (element))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_SchemaLocations(
-        &mut self,
-        value: *mut crate::System::Collections::Hashtable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_SchemaLocations", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ReaderSettings(
-        &mut self,
-        value: *mut crate::System::Xml::XmlReaderSettings,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ReaderSettings", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckRefinedSimpleType(
-        &mut self,
-        stype: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckRefinedSimpleType", (stype))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PreprocessIdentityConstraint(
-        &mut self,
-        constraint: *mut crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessIdentityConstraint", (constraint))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadExternals(
-        &mut self,
-        schema: *mut crate::System::Xml::Schema::XmlSchema,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LoadExternals", (schema))?;
+            .invoke("PreprocessElementContent", (element))?;
         Ok(__cordl_ret)
     }
     pub fn PreprocessGroup(
@@ -330,15 +368,70 @@ impl crate::System::Xml::Schema::Preprocessor {
             .invoke("PreprocessGroup", (group))?;
         Ok(__cordl_ret)
     }
-    pub fn BuildSchemaList(
+    pub fn PreprocessIdentityConstraint(
         &mut self,
-        schema: *mut crate::System::Xml::Schema::XmlSchema,
+        constraint: *mut crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BuildSchemaList", (schema))?;
+            .invoke("PreprocessIdentityConstraint", (constraint))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PreprocessLocalAttribute(
+        &mut self,
+        attribute: *mut crate::System::Xml::Schema::XmlSchemaAttribute,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PreprocessLocalAttribute", (attribute))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PreprocessLocalElement(
+        &mut self,
+        element: *mut crate::System::Xml::Schema::XmlSchemaElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PreprocessLocalElement", (element))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PreprocessNotation(
+        &mut self,
+        notation: *mut crate::System::Xml::Schema::XmlSchemaNotation,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PreprocessNotation", (notation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PreprocessParticle(
+        &mut self,
+        particle: *mut crate::System::Xml::Schema::XmlSchemaParticle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PreprocessParticle", (particle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PreprocessRedefine(
+        &mut self,
+        redefineEntry: *mut crate::System::Xml::Schema::RedefineEntry,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PreprocessRedefine", (redefineEntry))?;
         Ok(__cordl_ret)
     }
     pub fn PreprocessSimpleType(
@@ -353,38 +446,6 @@ impl crate::System::Xml::Schema::Preprocessor {
             .invoke("PreprocessSimpleType", (simpleType, local))?;
         Ok(__cordl_ret)
     }
-    pub fn get_RootSchema(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchema = __cordl_object
-            .invoke("get_RootSchema", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn PreprocessAttribute(
-        &mut self,
-        attribute: *mut crate::System::Xml::Schema::XmlSchemaAttribute,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessAttribute", (attribute))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_XmlResolver(
-        &mut self,
-        value: *mut crate::System::Xml::XmlResolver,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_XmlResolver", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn ResolveSchemaLocationUri(
         &mut self,
         enclosingSchema: *mut crate::System::Xml::Schema::XmlSchema,
@@ -397,26 +458,62 @@ impl crate::System::Xml::Schema::Preprocessor {
             .invoke("ResolveSchemaLocationUri", (enclosingSchema, location))?;
         Ok(__cordl_ret)
     }
-    pub fn PreprocessAnnotation_XmlSchemaObject0(
+    pub fn SetParent(
         &mut self,
-        schemaObject: *mut crate::System::Xml::Schema::XmlSchemaObject,
+        child: *mut crate::System::Xml::Schema::XmlSchemaObject,
+        parent: *mut crate::System::Xml::Schema::XmlSchemaObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessAnnotation", (schemaObject))?;
+            .invoke("SetParent", (child, parent))?;
         Ok(__cordl_ret)
     }
-    pub fn PreprocessAnnotation_XmlSchemaAnnotation1(
+    pub fn SetSchemaDefaults(
         &mut self,
-        annotation: *mut crate::System::Xml::Schema::XmlSchemaAnnotation,
+        schema: *mut crate::System::Xml::Schema::XmlSchema,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessAnnotation", (annotation))?;
+            .invoke("SetSchemaDefaults", (schema))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateIdAttribute(
+        &mut self,
+        xso: *mut crate::System::Xml::Schema::XmlSchemaObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidateIdAttribute", (xso))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateNameAttribute(
+        &mut self,
+        xso: *mut crate::System::Xml::Schema::XmlSchemaObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidateNameAttribute", (xso))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateQNameAttribute(
+        &mut self,
+        xso: *mut crate::System::Xml::Schema::XmlSchemaObject,
+        attributeName: *mut crate::System::String,
+        value: *mut crate::System::Xml::XmlQualifiedName,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidateQNameAttribute", (xso, attributeName, value))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -436,61 +533,14 @@ impl crate::System::Xml::Schema::Preprocessor {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn PreprocessAttributeContent(
+    pub fn get_RootSchema(
         &mut self,
-        attribute: *mut crate::System::Xml::Schema::XmlSchemaAttribute,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessAttributeContent", (attribute))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseUri(
-        &mut self,
-        uri: *mut crate::System::String,
-        code: *mut crate::System::String,
-        sourceSchemaObject: *mut crate::System::Xml::Schema::XmlSchemaObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ParseUri", (uri, code, sourceSchemaObject))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetSchemaDefaults(
-        &mut self,
-        schema: *mut crate::System::Xml::Schema::XmlSchema,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSchemaDefaults", (schema))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PreprocessElementContent(
-        &mut self,
-        element: *mut crate::System::Xml::Schema::XmlSchemaElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessElementContent", (element))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Cleanup(
-        &mut self,
-        schema: *mut crate::System::Xml::Schema::XmlSchema,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Cleanup", (schema))?;
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchema = __cordl_object
+            .invoke("get_RootSchema", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_ChameleonSchemas(
@@ -504,88 +554,38 @@ impl crate::System::Xml::Schema::Preprocessor {
             .invoke("set_ChameleonSchemas", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn PreprocessAttributeGroup(
+    pub fn set_ReaderSettings(
         &mut self,
-        attributeGroup: *mut crate::System::Xml::Schema::XmlSchemaAttributeGroup,
+        value: *mut crate::System::Xml::XmlReaderSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessAttributeGroup", (attributeGroup))?;
+            .invoke("set_ReaderSettings", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn GetChameleonSchema(
+    pub fn set_SchemaLocations(
         &mut self,
-        targetNamespace: *mut crate::System::String,
-        schema: *mut crate::System::Xml::Schema::XmlSchema,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchema = __cordl_object
-            .invoke("GetChameleonSchema", (targetNamespace, schema))?;
-        Ok(__cordl_ret)
-    }
-    pub fn BuildRefNamespaces(
-        &mut self,
-        schema: *mut crate::System::Xml::Schema::XmlSchema,
+        value: *mut crate::System::Collections::Hashtable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BuildRefNamespaces", (schema))?;
+            .invoke("set_SchemaLocations", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn GetIncludedSet(
+    pub fn set_XmlResolver(
         &mut self,
-        schema: *mut crate::System::Xml::Schema::XmlSchema,
-        includesList: *mut crate::System::Collections::ArrayList,
+        value: *mut crate::System::Xml::XmlResolver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetIncludedSet", (schema, includesList))?;
+            .invoke("set_XmlResolver", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn ValidateNameAttribute(
-        &mut self,
-        xso: *mut crate::System::Xml::Schema::XmlSchemaObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateNameAttribute", (xso))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CleanupRedefine(
-        &mut self,
-        include: *mut crate::System::Xml::Schema::XmlSchemaExternal,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CleanupRedefine", (include))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        nameTable: *mut crate::System::Xml::XmlNameTable,
-        schemaNames: *mut crate::System::Xml::Schema::SchemaNames,
-        eventHandler: *mut crate::System::Xml::Schema::ValidationEventHandler,
-        compilationSettings: *mut crate::System::Xml::Schema::XmlSchemaCompilationSettings,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (nameTable, schemaNames, eventHandler, compilationSettings),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+Preprocessor")]

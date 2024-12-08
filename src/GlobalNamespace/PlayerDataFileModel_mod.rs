@@ -31,6 +31,16 @@ impl PlayerDataFileModel {
     pub const kPlayerDataFileName: &'static str = "PlayerData.dat";
     #[cfg(feature = "PlayerDataFileModel+_LoadAsync_d__13")]
     pub type _LoadAsync_d__13 = crate::GlobalNamespace::PlayerDataFileModel__LoadAsync_d__13;
+    pub fn CreateDefaultOverrideEnvironmentSettings(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut OverrideEnvironmentSettings> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut OverrideEnvironmentSettings = __cordl_object
+            .invoke("CreateDefaultOverrideEnvironmentSettings", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn CreateDefaultPlayerData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut PlayerData> {
@@ -52,6 +62,24 @@ impl PlayerDataFileModel {
             .invoke("GetEnvironmentInfoBySerializedName", (environmentName))?;
         Ok(__cordl_ret)
     }
+    pub fn GetPlayerSaveData(
+        &mut self,
+        playerData: *mut PlayerData,
+    ) -> quest_hook::libil2cpp::Result<*mut PlayerSaveData> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut PlayerSaveData = __cordl_object
+            .invoke("GetPlayerSaveData", (playerData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Load(&mut self) -> quest_hook::libil2cpp::Result<*mut PlayerData> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut PlayerData = __cordl_object.invoke("Load", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn LoadAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -64,15 +92,48 @@ impl PlayerDataFileModel {
             .invoke("LoadAsync", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetPlayerSaveData(
+    pub fn LoadCorrectedSongPackMask(
         &mut self,
-        playerData: *mut PlayerData,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerSaveData> {
+        songMaskPackBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayerSaveData = __cordl_object
-            .invoke("GetPlayerSaveData", (playerData))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("LoadCorrectedSongPackMask", (songMaskPackBytes))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadFromCurrentVersion(
+        &mut self,
+        playerSaveData: *mut PlayerSaveData,
+    ) -> quest_hook::libil2cpp::Result<*mut PlayerData> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut PlayerData = __cordl_object
+            .invoke("LoadFromCurrentVersion", (playerSaveData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadFromJSONString(
+        &mut self,
+        jsonString: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut PlayerData> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut PlayerData = __cordl_object
+            .invoke("LoadFromJSONString", (jsonString))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadFromVersionV1_0_1(
+        &mut self,
+        playerDataModelSaveData: *mut PlayerSaveDataV1_0_1,
+    ) -> quest_hook::libil2cpp::Result<*mut PlayerData> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut PlayerData = __cordl_object
+            .invoke("LoadFromVersionV1_0_1", (playerDataModelSaveData))?;
         Ok(__cordl_ret)
     }
     pub fn LoadOrCreateFromJsonString(
@@ -84,6 +145,50 @@ impl PlayerDataFileModel {
         );
         let __cordl_ret: *mut PlayerData = __cordl_object
             .invoke("LoadOrCreateFromJsonString", (jsonString))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        playerDataFileManager: *mut PlayerDataFileManagerSO,
+        fileStorage: *mut IFileStorage,
+        beatmapCharacteristicCollection: *mut BeatmapCharacteristicCollection,
+        colorSchemesSettings: *mut ColorSchemesSettings,
+        environmentsListModel: *mut EnvironmentsListModel,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    playerDataFileManager,
+                    fileStorage,
+                    beatmapCharacteristicCollection,
+                    colorSchemesSettings,
+                    environmentsListModel,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn Save(
+        &mut self,
+        playerData: *mut PlayerData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Save", (playerData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SaveAsync(
+        &mut self,
+        playerData: *mut PlayerData,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("SaveAsync", (playerData))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -109,111 +214,6 @@ impl PlayerDataFileModel {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn Save(
-        &mut self,
-        playerData: *mut PlayerData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Save", (playerData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadFromJSONString(
-        &mut self,
-        jsonString: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut PlayerData = __cordl_object
-            .invoke("LoadFromJSONString", (jsonString))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadFromVersionV1_0_1(
-        &mut self,
-        playerDataModelSaveData: *mut PlayerSaveDataV1_0_1,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut PlayerData = __cordl_object
-            .invoke("LoadFromVersionV1_0_1", (playerDataModelSaveData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SaveAsync(
-        &mut self,
-        playerData: *mut PlayerData,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("SaveAsync", (playerData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Load(&mut self) -> quest_hook::libil2cpp::Result<*mut PlayerData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut PlayerData = __cordl_object.invoke("Load", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadFromCurrentVersion(
-        &mut self,
-        playerSaveData: *mut PlayerSaveData,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut PlayerData = __cordl_object
-            .invoke("LoadFromCurrentVersion", (playerSaveData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadCorrectedSongPackMask(
-        &mut self,
-        songMaskPackBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("LoadCorrectedSongPackMask", (songMaskPackBytes))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateDefaultOverrideEnvironmentSettings(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut OverrideEnvironmentSettings> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut OverrideEnvironmentSettings = __cordl_object
-            .invoke("CreateDefaultOverrideEnvironmentSettings", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        playerDataFileManager: *mut PlayerDataFileManagerSO,
-        fileStorage: *mut IFileStorage,
-        beatmapCharacteristicCollection: *mut BeatmapCharacteristicCollection,
-        colorSchemesSettings: *mut ColorSchemesSettings,
-        environmentsListModel: *mut EnvironmentsListModel,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    playerDataFileManager,
-                    fileStorage,
-                    beatmapCharacteristicCollection,
-                    colorSchemesSettings,
-                    environmentsListModel,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PlayerDataFileModel")]

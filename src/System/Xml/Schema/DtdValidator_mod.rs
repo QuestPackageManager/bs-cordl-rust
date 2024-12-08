@@ -32,43 +32,48 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::DtdValidator {
 impl crate::System::Xml::Schema::DtdValidator {
     #[cfg(feature = "System+Xml+Schema+DtdValidator+NamespaceManager")]
     pub type NamespaceManager = crate::System::Xml::Schema::DtdValidator_NamespaceManager;
-    pub fn GetEntity(
+    pub fn AddID(
         &mut self,
-        qname: *mut crate::System::Xml::XmlQualifiedName,
-        fParameterEntity: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::SchemaEntity> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::SchemaEntity = __cordl_object
-            .invoke("GetEntity", (qname, fParameterEntity))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Pop", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        reader: *mut crate::System::Xml::XmlValidatingReaderImpl,
-        eventHandling: *mut crate::System::Xml::IValidationEventHandling,
-        processIdentityConstraints: bool,
+        name: *mut crate::System::String,
+        node: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (reader, eventHandling, processIdentityConstraints))?;
+            .invoke("AddID", (name, node))?;
         Ok(__cordl_ret)
     }
-    pub fn MeetsStandAloneConstraint(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn CheckForwardRefs(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("MeetsStandAloneConstraint", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckForwardRefs", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckValue(
+        &mut self,
+        value: *mut crate::System::String,
+        attdef: *mut crate::System::Xml::Schema::SchemaAttDef,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckValue", (value, attdef))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CompleteValidation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CompleteValidation", ())?;
         Ok(__cordl_ret)
     }
     pub fn FindId(
@@ -82,14 +87,26 @@ impl crate::System::Xml::Schema::DtdValidator {
             .invoke("FindId", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn ValidateEndStartElement(
+    pub fn GenEntity(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        qname: *mut crate::System::Xml::XmlQualifiedName,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateEndStartElement", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("GenEntity", (qname))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEntity(
+        &mut self,
+        qname: *mut crate::System::Xml::XmlQualifiedName,
+        fParameterEntity: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::SchemaEntity> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::SchemaEntity = __cordl_object
+            .invoke("GetEntity", (qname, fParameterEntity))?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -102,103 +119,29 @@ impl crate::System::Xml::Schema::DtdValidator {
             .invoke("Init", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ValidateChildElement(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn MeetsStandAloneConstraint(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateChildElement", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("MeetsStandAloneConstraint", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AddID(
-        &mut self,
-        name: *mut crate::System::String,
-        node: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddID", (name, node))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        reader: *mut crate::System::Xml::XmlValidatingReaderImpl,
+        eventHandling: *mut crate::System::Xml::IValidationEventHandling,
+        processIdentityConstraints: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (reader, eventHandling, processIdentityConstraints))?;
+        Ok(__cordl_object)
     }
-    pub fn ValidateElement(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateElement", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_PreserveWhitespace(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_PreserveWhitespace", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GenEntity(
-        &mut self,
-        qname: *mut crate::System::Xml::XmlQualifiedName,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("GenEntity", (qname))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckForwardRefs(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckForwardRefs", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValidateStartElement(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateStartElement", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValidateEndElement(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateEndElement", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValidatePIComment(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidatePIComment", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Validate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Validate", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("Pop", ())?;
         Ok(__cordl_ret)
     }
     pub fn ProcessElement(
@@ -209,16 +152,6 @@ impl crate::System::Xml::Schema::DtdValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessElement", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CompleteValidation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CompleteValidation", ())?;
         Ok(__cordl_ret)
     }
     pub fn ProcessTokenizedType(
@@ -244,28 +177,95 @@ impl crate::System::Xml::Schema::DtdValidator {
             .invoke("Push", (elementName))?;
         Ok(__cordl_ret)
     }
-    pub fn CheckValue(
+    pub fn Validate(
         &mut self,
-        value: *mut crate::System::String,
-        attdef: *mut crate::System::Xml::Schema::SchemaAttDef,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckValue", (value, attdef))?;
+            .invoke("Validate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn ValidateChildElement(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidateChildElement", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateElement(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidateElement", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateEndElement(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidateEndElement", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateEndStartElement(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidateEndStartElement", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidatePIComment(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidatePIComment", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateStartElement(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidateStartElement", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
         reader: *mut crate::System::Xml::XmlValidatingReaderImpl,
         eventHandling: *mut crate::System::Xml::IValidationEventHandling,
         processIdentityConstraints: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (reader, eventHandling, processIdentityConstraints))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (reader, eventHandling, processIdentityConstraints))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_PreserveWhitespace(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_PreserveWhitespace", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+DtdValidator")]
@@ -315,6 +315,13 @@ impl crate::System::Xml::Schema::DtdValidator_NamespaceManager {
             .invoke("LookupNamespace", (prefix))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -324,13 +331,6 @@ impl crate::System::Xml::Schema::DtdValidator_NamespaceManager {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+DtdValidator+NamespaceManager")]

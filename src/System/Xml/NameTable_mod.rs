@@ -27,6 +27,17 @@ impl std::ops::DerefMut for crate::System::Xml::NameTable_Entry {
 }
 #[cfg(feature = "System+Xml+NameTable+Entry")]
 impl crate::System::Xml::NameTable_Entry {
+    pub fn New(
+        str: *mut crate::System::String,
+        hashCode: i32,
+        next: *mut crate::System::Xml::NameTable_Entry,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (str, hashCode, next))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         str: *mut crate::System::String,
@@ -39,17 +50,6 @@ impl crate::System::Xml::NameTable_Entry {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (str, hashCode, next))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        str: *mut crate::System::String,
-        hashCode: i32,
-        next: *mut crate::System::Xml::NameTable_Entry,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (str, hashCode, next))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+NameTable+Entry")]
@@ -95,37 +95,6 @@ impl std::ops::DerefMut for crate::System::Xml::NameTable {
 impl crate::System::Xml::NameTable {
     #[cfg(feature = "System+Xml+NameTable+Entry")]
     pub type Entry = crate::System::Xml::NameTable_Entry;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Grow(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Grow", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Get(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("Get", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn AddEntry(
         &mut self,
         str: *mut crate::System::String,
@@ -136,17 +105,6 @@ impl crate::System::Xml::NameTable {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("AddEntry", (str, hashCode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Add_String0(
-        &mut self,
-        key: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("Add", (key))?;
         Ok(__cordl_ret)
     }
     pub fn Add_Il2CppArray_i32_i32_1(
@@ -162,12 +120,54 @@ impl crate::System::Xml::NameTable {
             .invoke("Add", (key, start, len))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn Add_String0(
+        &mut self,
+        key: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("Add", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Get(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("Get", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Grow(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Grow", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+NameTable")]

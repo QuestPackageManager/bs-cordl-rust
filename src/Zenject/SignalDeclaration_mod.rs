@@ -30,6 +30,13 @@ impl std::ops::DerefMut for crate::Zenject::SignalDeclaration_Factory {
 }
 #[cfg(feature = "Zenject+SignalDeclaration+Factory")]
 impl crate::Zenject::SignalDeclaration_Factory {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -39,13 +46,6 @@ impl crate::Zenject::SignalDeclaration_Factory {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+SignalDeclaration+Factory")]
@@ -96,6 +96,38 @@ impl std::ops::DerefMut for crate::Zenject::SignalDeclaration {
 impl crate::Zenject::SignalDeclaration {
     #[cfg(feature = "Zenject+SignalDeclaration+Factory")]
     pub type Factory = crate::Zenject::SignalDeclaration_Factory;
+    pub fn Add(
+        &mut self,
+        subscription: *mut crate::Zenject::SignalSubscription,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Add", (subscription))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Fire(
+        &mut self,
+        signal: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Fire", (signal))?;
+        Ok(__cordl_ret)
+    }
     pub fn FireInternal(
         &mut self,
         subscriptions: *mut crate::System::Collections::Generic::List_1<
@@ -110,15 +142,35 @@ impl crate::Zenject::SignalDeclaration {
             .invoke("FireInternal", (subscriptions, signal))?;
         Ok(__cordl_ret)
     }
-    pub fn set_TickPriority(
+    pub fn New(
+        bindInfo: *mut crate::Zenject::SignalDeclarationBindInfo,
+        zenjectSettings: *mut crate::Zenject::ZenjectSettings,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bindInfo, zenjectSettings))?;
+        Ok(__cordl_object)
+    }
+    pub fn Remove(
         &mut self,
-        value: i32,
+        subscription: *mut crate::Zenject::SignalSubscription,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_TickPriority", (value))?;
+            .invoke("Remove", (subscription))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Tick(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Tick", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -133,45 +185,6 @@ impl crate::Zenject::SignalDeclaration {
             .invoke(".ctor", (bindInfo, zenjectSettings))?;
         Ok(__cordl_ret)
     }
-    pub fn Fire(
-        &mut self,
-        signal: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Fire", (signal))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Tick(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Tick", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Remove(
-        &mut self,
-        subscription: *mut crate::Zenject::SignalSubscription,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Remove", (subscription))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsAsync(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsAsync", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_BindingId(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Zenject::BindingId> {
@@ -182,15 +195,11 @@ impl crate::Zenject::SignalDeclaration {
             .invoke("get_BindingId", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Add(
-        &mut self,
-        subscription: *mut crate::Zenject::SignalSubscription,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_IsAsync(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (subscription))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsAsync", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_TickPriority(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -200,25 +209,16 @@ impl crate::Zenject::SignalDeclaration {
         let __cordl_ret: i32 = __cordl_object.invoke("get_TickPriority", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
+    pub fn set_TickPriority(
         &mut self,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+            .invoke("set_TickPriority", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        bindInfo: *mut crate::Zenject::SignalDeclarationBindInfo,
-        zenjectSettings: *mut crate::Zenject::ZenjectSettings,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bindInfo, zenjectSettings))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+SignalDeclaration")]

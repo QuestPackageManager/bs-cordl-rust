@@ -42,58 +42,53 @@ for crate::UnityEngine::TextCore::FaceInfo {
 }
 #[cfg(feature = "UnityEngine+TextCore+FaceInfo")]
 impl crate::UnityEngine::TextCore::FaceInfo {
-    pub fn set_scale(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_ascentLine(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_scale",
-            (value),
+            "get_ascentLine",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_styleName(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_baseline(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_styleName",
-            (value),
+            "get_baseline",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_superscriptOffset(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_capLine(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_superscriptOffset",
-            (value),
+            "get_capLine",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_subscriptSize(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_descentLine(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_subscriptSize",
-            (value),
+            "get_descentLine",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_strikethroughOffset(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_faceIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_strikethroughOffset",
-            (value),
+            "get_faceIndex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_familyName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_familyName",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -101,6 +96,30 @@ impl crate::UnityEngine::TextCore::FaceInfo {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_lineHeight",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_meanLine(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_meanLine",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_pointSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_pointSize",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_scale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_scale",
             (),
         )?;
         Ok(__cordl_ret)
@@ -113,33 +132,69 @@ impl crate::UnityEngine::TextCore::FaceInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_tabWidth(
+    pub fn get_styleName(
         &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_tabWidth",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ascentLine(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_ascentLine",
+            "get_styleName",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_subscriptOffset(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_subscriptOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_subscriptOffset",
-            (value),
+            "get_subscriptOffset",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_subscriptSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_subscriptSize",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_superscriptOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_superscriptOffset",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_superscriptSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_superscriptSize",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_tabWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_tabWidth",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_underlineOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_underlineOffset",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_underlineThickness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_underlineThickness",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -154,22 +209,6 @@ impl crate::UnityEngine::TextCore::FaceInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_descentLine(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_descentLine",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_superscriptOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_superscriptOffset",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_baseline(
         &mut self,
         value: f32,
@@ -181,19 +220,25 @@ impl crate::UnityEngine::TextCore::FaceInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_underlineOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn set_capLine(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_underlineOffset",
-            (),
+            "set_capLine",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_baseline(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn set_descentLine(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_baseline",
-            (),
+            "set_descentLine",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -208,21 +253,24 @@ impl crate::UnityEngine::TextCore::FaceInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_tabWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_tabWidth",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_descentLine(
+    pub fn set_lineHeight(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_descentLine",
+            "set_lineHeight",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_meanLine(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_meanLine",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -238,29 +286,24 @@ impl crate::UnityEngine::TextCore::FaceInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_faceIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_faceIndex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_capLine(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_capLine",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_underlineThickness(
+    pub fn set_scale(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_underlineThickness",
+            "set_scale",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_strikethroughOffset(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_strikethroughOffset",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -276,53 +319,47 @@ impl crate::UnityEngine::TextCore::FaceInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_familyName(
+    pub fn set_styleName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_familyName",
-            (),
+            "set_styleName",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_meanLine(
+    pub fn set_subscriptOffset(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_meanLine",
+            "set_subscriptOffset",
             (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_subscriptSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_subscriptSize",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_capLine(
+    pub fn set_subscriptSize(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_capLine",
+            "set_subscriptSize",
             (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_styleName(
+    pub fn set_superscriptOffset(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_styleName",
-            (),
+            "set_superscriptOffset",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -337,11 +374,14 @@ impl crate::UnityEngine::TextCore::FaceInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_subscriptOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn set_tabWidth(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_subscriptOffset",
-            (),
+            "set_tabWidth",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -356,54 +396,14 @@ impl crate::UnityEngine::TextCore::FaceInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_underlineThickness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_underlineThickness",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_lineHeight(
+    pub fn set_underlineThickness(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_lineHeight",
+            "set_underlineThickness",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_meanLine(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_meanLine",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_scale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_scale",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_pointSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_pointSize",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_superscriptSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_superscriptSize",
-            (),
         )?;
         Ok(__cordl_ret)
     }

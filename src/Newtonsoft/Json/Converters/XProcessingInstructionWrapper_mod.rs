@@ -27,28 +27,14 @@ for crate::Newtonsoft::Json::Converters::XProcessingInstructionWrapper {
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XProcessingInstructionWrapper")]
 impl crate::Newtonsoft::Json::Converters::XProcessingInstructionWrapper {
-    pub fn get_ProcessingInstruction(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Linq::XProcessingInstruction,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Linq::XProcessingInstruction = __cordl_object
-            .invoke("get_ProcessingInstruction", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Value(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Value", (value))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        processingInstruction: *mut crate::System::Xml::Linq::XProcessingInstruction,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (processingInstruction))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -71,6 +57,18 @@ impl crate::Newtonsoft::Json::Converters::XProcessingInstructionWrapper {
             .invoke("get_LocalName", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_ProcessingInstruction(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Xml::Linq::XProcessingInstruction,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Linq::XProcessingInstruction = __cordl_object
+            .invoke("get_ProcessingInstruction", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Value(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -81,14 +79,16 @@ impl crate::Newtonsoft::Json::Converters::XProcessingInstructionWrapper {
             .invoke("get_Value", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        processingInstruction: *mut crate::System::Xml::Linq::XProcessingInstruction,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (processingInstruction))?;
-        Ok(__cordl_object)
+    pub fn set_Value(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Value", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XProcessingInstructionWrapper")]

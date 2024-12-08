@@ -25,6 +25,28 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::DoubleLinkAxis {
 }
 #[cfg(feature = "System+Xml+Schema+DoubleLinkAxis")]
 impl crate::System::Xml::Schema::DoubleLinkAxis {
+    pub fn New(
+        axis: *mut crate::MS::Internal::Xml::XPath::Axis,
+        inputaxis: *mut crate::System::Xml::Schema::DoubleLinkAxis,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (axis, inputaxis))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        axis: *mut crate::MS::Internal::Xml::XPath::Axis,
+        inputaxis: *mut crate::System::Xml::Schema::DoubleLinkAxis,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (axis, inputaxis))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Next(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::Axis> {
@@ -45,28 +67,6 @@ impl crate::System::Xml::Schema::DoubleLinkAxis {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Next", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        axis: *mut crate::MS::Internal::Xml::XPath::Axis,
-        inputaxis: *mut crate::System::Xml::Schema::DoubleLinkAxis,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (axis, inputaxis))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        axis: *mut crate::MS::Internal::Xml::XPath::Axis,
-        inputaxis: *mut crate::System::Xml::Schema::DoubleLinkAxis,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (axis, inputaxis))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+DoubleLinkAxis")]

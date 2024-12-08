@@ -64,6 +64,132 @@ impl std::ops::DerefMut for crate::System::TermInfoDriver {
 }
 #[cfg(feature = "System+TermInfoDriver")]
 impl crate::System::TermInfoDriver {
+    pub fn AddStringMapping(
+        &mut self,
+        s: crate::System::TermInfoStrings,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddStringMapping", (s))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddToBuffer(
+        &mut self,
+        b: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddToBuffer", (b))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AdjustBuffer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AdjustBuffer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckWindowDimensions(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckWindowDimensions", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateKeyInfoFromInt(
+        &mut self,
+        n: i32,
+        alt: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ConsoleKeyInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::ConsoleKeyInfo = __cordl_object
+            .invoke("CreateKeyInfoFromInt", (n, alt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateKeyMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CreateKeyMap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Echo(
+        &mut self,
+        key: crate::System::ConsoleKeyInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Echo", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EchoFlush(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EchoFlush", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetCursorPosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetCursorPosition", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetKeyFromBuffer(
+        &mut self,
+        cooked: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("GetKeyFromBuffer", (cooked))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IncrementX(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("IncrementX", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn InitKeys(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -74,18 +200,11 @@ impl crate::System::TermInfoDriver {
             .invoke("InitKeys", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Read(
-        &mut self,
-        dest: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        >,
-        index: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn InputPending(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("Read", (dest, index, count))?;
+        let __cordl_ret: bool = __cordl_object.invoke("InputPending", ())?;
         Ok(__cordl_ret)
     }
     pub fn IsSpecialKey_ConsoleKeyInfo0(
@@ -108,11 +227,60 @@ impl crate::System::TermInfoDriver {
         let __cordl_ret: bool = __cordl_object.invoke("IsSpecialKey", (c))?;
         Ok(__cordl_ret)
     }
-    pub fn get_WindowWidth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn New(
+        term: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (term))?;
+        Ok(__cordl_object)
+    }
+    pub fn QueueEcho(
+        &mut self,
+        c: char,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_WindowWidth", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("QueueEcho", (c))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Read(
+        &mut self,
+        dest: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        >,
+        index: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Read", (dest, index, count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadKey(
+        &mut self,
+        intercept: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ConsoleKeyInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::ConsoleKeyInfo = __cordl_object
+            .invoke("ReadKey", (intercept))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadKeyInternal(
+        &mut self,
+        fresh: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ConsoleKeyInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::ConsoleKeyInfo = __cordl_object
+            .invoke("ReadKeyInternal", (fresh))?;
         Ok(__cordl_ret)
     }
     pub fn ReadLine(
@@ -123,6 +291,50 @@ impl crate::System::TermInfoDriver {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("ReadLine", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadToEnd(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ReadToEnd", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadUntilConditionInternal(
+        &mut self,
+        haltOnNewLine: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ReadUntilConditionInternal", (haltOnNewLine))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetCursorPosition(
+        &mut self,
+        left: i32,
+        top: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetCursorPosition", (left, top))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteConsole(
+        &mut self,
+        str: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteConsole", (str))?;
         Ok(__cordl_ret)
     }
     pub fn WriteSpecialKey_ConsoleKeyInfo0(
@@ -147,166 +359,6 @@ impl crate::System::TermInfoDriver {
             .invoke("WriteSpecialKey", (c))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateKeyInfoFromInt(
-        &mut self,
-        n: i32,
-        alt: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::System::ConsoleKeyInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::ConsoleKeyInfo = __cordl_object
-            .invoke("CreateKeyInfoFromInt", (n, alt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadKeyInternal(
-        &mut self,
-        fresh: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<crate::System::ConsoleKeyInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::ConsoleKeyInfo = __cordl_object
-            .invoke("ReadKeyInternal", (fresh))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InputPending(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("InputPending", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetKeyFromBuffer(
-        &mut self,
-        cooked: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetKeyFromBuffer", (cooked))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadKey(
-        &mut self,
-        intercept: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::System::ConsoleKeyInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::ConsoleKeyInfo = __cordl_object
-            .invoke("ReadKey", (intercept))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteConsole(
-        &mut self,
-        str: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteConsole", (str))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCursorPosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetCursorPosition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_WindowHeight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_WindowHeight", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Initialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Initialized", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Echo(
-        &mut self,
-        key: crate::System::ConsoleKeyInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Echo", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EchoFlush(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EchoFlush", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IncrementX(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("IncrementX", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckWindowDimensions(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckWindowDimensions", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadToEnd(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ReadToEnd", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetCursorPosition(
-        &mut self,
-        left: i32,
-        top: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCursorPosition", (left, top))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         term: *mut crate::System::String,
@@ -318,78 +370,26 @@ impl crate::System::TermInfoDriver {
             .invoke(".ctor", (term))?;
         Ok(__cordl_ret)
     }
-    pub fn ReadUntilConditionInternal(
-        &mut self,
-        haltOnNewLine: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    pub fn get_Initialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ReadUntilConditionInternal", (haltOnNewLine))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_Initialized", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AddStringMapping(
-        &mut self,
-        s: crate::System::TermInfoStrings,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_WindowHeight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddStringMapping", (s))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_WindowHeight", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AdjustBuffer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_WindowWidth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AdjustBuffer", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_WindowWidth", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn AddToBuffer(
-        &mut self,
-        b: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddToBuffer", (b))?;
-        Ok(__cordl_ret)
-    }
-    pub fn QueueEcho(
-        &mut self,
-        c: char,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("QueueEcho", (c))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateKeyMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CreateKeyMap", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        term: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (term))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+TermInfoDriver")]

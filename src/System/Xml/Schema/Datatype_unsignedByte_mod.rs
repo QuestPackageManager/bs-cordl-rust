@@ -35,15 +35,12 @@ impl crate::System::Xml::Schema::Datatype_unsignedByte {
         let __cordl_ret: i32 = __cordl_object.invoke("Compare", (value1, value2))?;
         Ok(__cordl_ret)
     }
-    pub fn get_ListValueType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_ListValueType", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn TryParseValue(
         &mut self,
@@ -69,6 +66,26 @@ impl crate::System::Xml::Schema::Datatype_unsignedByte {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_FacetsChecker(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::FacetsChecker> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::FacetsChecker = __cordl_object
+            .invoke("get_FacetsChecker", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ListValueType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_ListValueType", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_TypeCode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::XmlTypeCode> {
@@ -88,23 +105,6 @@ impl crate::System::Xml::Schema::Datatype_unsignedByte {
         let __cordl_ret: *mut crate::System::Type = __cordl_object
             .invoke("get_ValueType", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_FacetsChecker(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::FacetsChecker> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::FacetsChecker = __cordl_object
-            .invoke("get_FacetsChecker", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_unsignedByte")]

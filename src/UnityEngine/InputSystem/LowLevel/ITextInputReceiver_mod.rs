@@ -26,17 +26,6 @@ for crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+ITextInputReceiver")]
 impl crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver {
-    pub fn OnTextInput(
-        &mut self,
-        character: char,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnTextInput", (character))?;
-        Ok(__cordl_ret)
-    }
     pub fn OnIMECompositionChanged(
         &mut self,
         compositionString: crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
@@ -46,6 +35,17 @@ impl crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnIMECompositionChanged", (compositionString))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnTextInput(
+        &mut self,
+        character: char,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnTextInput", (character))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

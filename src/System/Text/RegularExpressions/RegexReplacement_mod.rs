@@ -35,40 +35,16 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
     pub const RightPortion: i32 = -2i32;
     pub const Specials: i32 = 4i32;
     pub const WholeString: i32 = -4i32;
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         rep: *mut crate::System::String,
         concat: *mut crate::System::Text::RegularExpressions::RegexNode,
         _caps: *mut crate::System::Collections::Hashtable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (rep, concat, _caps))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReplacementImplRTL(
-        &mut self,
-        al: *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
-        _cordl_match: *mut crate::System::Text::RegularExpressions::Match,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReplacementImplRTL", (al, _cordl_match))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Pattern(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Pattern", ())?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (rep, concat, _caps))?;
+        Ok(__cordl_object)
     }
     pub fn Replace(
         &mut self,
@@ -96,16 +72,40 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
             .invoke("ReplacementImpl", (sb, _cordl_match))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn ReplacementImplRTL(
+        &mut self,
+        al: *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
+        _cordl_match: *mut crate::System::Text::RegularExpressions::Match,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReplacementImplRTL", (al, _cordl_match))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
         rep: *mut crate::System::String,
         concat: *mut crate::System::Text::RegularExpressions::RegexNode,
         _caps: *mut crate::System::Collections::Hashtable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (rep, concat, _caps))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (rep, concat, _caps))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Pattern(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Pattern", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexReplacement")]

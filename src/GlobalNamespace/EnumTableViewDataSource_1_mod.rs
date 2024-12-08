@@ -30,6 +30,22 @@ for EnumTableViewDataSource_1<T> {
 #[cfg(feature = "EnumTableViewDataSource_1")]
 impl<T: quest_hook::libil2cpp::Type> EnumTableViewDataSource_1<T> {
     pub const kCellReuseIdentifier: &'static str = "Cell";
+    pub fn CellForIdx(
+        &mut self,
+        tableView: *mut crate::HMUI::TableView,
+        idx: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
+            .invoke("CellForIdx", (tableView, idx))?;
+        Ok(__cordl_ret)
+    }
     pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -52,34 +68,10 @@ impl<T: quest_hook::libil2cpp::Type> EnumTableViewDataSource_1<T> {
         let __cordl_ret: i32 = __cordl_object.invoke("GetIdForValue", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetValueForId(&mut self, id: i32) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("GetValueForId", (id))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CellForIdx(
+    pub fn GetLabelForId(
         &mut self,
-        tableView: *mut crate::HMUI::TableView,
-        idx: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell>
+        id: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -87,8 +79,8 @@ impl<T: quest_hook::libil2cpp::Type> EnumTableViewDataSource_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
-            .invoke("CellForIdx", (tableView, idx))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetLabelForId", (id))?;
         Ok(__cordl_ret)
     }
     pub fn GetLabelForValue(
@@ -106,6 +98,24 @@ impl<T: quest_hook::libil2cpp::Type> EnumTableViewDataSource_1<T> {
             .invoke("GetLabelForValue", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn GetValueForId(&mut self, id: i32) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("GetValueForId", (id))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -117,10 +127,7 @@ impl<T: quest_hook::libil2cpp::Type> EnumTableViewDataSource_1<T> {
         let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetLabelForId(
-        &mut self,
-        id: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -128,16 +135,9 @@ impl<T: quest_hook::libil2cpp::Type> EnumTableViewDataSource_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetLabelForId", (id))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "EnumTableViewDataSource_1")]

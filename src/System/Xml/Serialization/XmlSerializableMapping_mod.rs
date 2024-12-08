@@ -28,6 +28,23 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlSerializableMa
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializableMapping")]
 impl crate::System::Xml::Serialization::XmlSerializableMapping {
+    pub fn New(
+        root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
+        elementName: *mut crate::System::String,
+        ns: *mut crate::System::String,
+        typeData: *mut crate::System::Xml::Serialization::TypeData,
+        xmlType: *mut crate::System::String,
+        xmlTypeNamespace: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (root, elementName, ns, typeData, xmlType, xmlTypeNamespace),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
@@ -46,23 +63,6 @@ impl crate::System::Xml::Serialization::XmlSerializableMapping {
                 (root, elementName, ns, typeData, xmlType, xmlTypeNamespace),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        elementName: *mut crate::System::String,
-        ns: *mut crate::System::String,
-        typeData: *mut crate::System::Xml::Serialization::TypeData,
-        xmlType: *mut crate::System::String,
-        xmlTypeNamespace: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (root, elementName, ns, typeData, xmlType, xmlTypeNamespace),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializableMapping")]

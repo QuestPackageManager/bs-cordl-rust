@@ -27,10 +27,17 @@ impl std::ops::DerefMut for MenuEnvironmentManager {
 }
 #[cfg(feature = "MenuEnvironmentManager")]
 impl MenuEnvironmentManager {
-    #[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentType")]
-    pub type MenuEnvironmentType = crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType;
     #[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentObjects")]
     pub type MenuEnvironmentObjects = crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects;
+    #[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentType")]
+    pub type MenuEnvironmentType = crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn ShowEnvironmentType(
         &mut self,
         menuEnvironmentType: crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType,
@@ -40,16 +47,6 @@ impl MenuEnvironmentManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ShowEnvironmentType", (menuEnvironmentType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn Start(
@@ -62,12 +59,15 @@ impl MenuEnvironmentManager {
             .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MenuEnvironmentManager")]
@@ -110,6 +110,13 @@ for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects {
 }
 #[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentObjects")]
 impl crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -118,16 +125,6 @@ impl crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_wrapper(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("get_wrapper", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_menuEnvironmentType(
@@ -142,12 +139,15 @@ impl crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects {
             .invoke("get_menuEnvironmentType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_wrapper(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("get_wrapper", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentObjects")]

@@ -45,66 +45,15 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
     pub const kFormatUShort: i32 = 1431521364i32;
     pub const kFormatVector2: i32 = 1447379762i32;
     pub const kFormatVector3: i32 = 1447379763i32;
-    pub fn WriteInt(
+    pub fn CopyToFrom(
         &mut self,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
-        value: i32,
+        toStatePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        fromStatePtr: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "WriteInt",
-            (statePtr, value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sizeInBits(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_sizeInBits",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteDouble(
-        &mut self,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
-        value: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WriteDouble",
-            (statePtr, value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_effectiveBitOffset(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_effectiveBitOffset",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_format(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::Utilities::FourCC,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_format",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteFloat(
-        &mut self,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WriteFloat",
-            (statePtr, value),
+            "CopyToFrom",
+            (toStatePtr, fromStatePtr),
         )?;
         Ok(__cordl_ret)
     }
@@ -121,6 +70,39 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn ReadDouble(
+        &mut self,
+        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ReadDouble",
+            (statePtr),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadFloat(
+        &mut self,
+        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ReadFloat",
+            (statePtr),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadInt(
+        &mut self,
+        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ReadInt",
+            (statePtr),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Write(
         &mut self,
         statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -133,26 +115,39 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_format(
+    pub fn WriteDouble(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::FourCC,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_format",
-            (),
+            "WriteDouble",
+            (statePtr, value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ReadDouble(
+    pub fn WriteFloat(
         &mut self,
         statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ReadDouble",
-            (statePtr),
+            "WriteFloat",
+            (statePtr, value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteInt(
+        &mut self,
+        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WriteInt",
+            (statePtr, value),
         )?;
         Ok(__cordl_ret)
     }
@@ -172,17 +167,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_byteOffset(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_byteOffset",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_byteOffset(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -191,26 +175,11 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_sizeInBits(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_effectiveBitOffset(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_sizeInBits",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CopyToFrom(
-        &mut self,
-        toStatePtr: *mut quest_hook::libil2cpp::Il2CppObject,
-        fromStatePtr: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CopyToFrom",
-            (toStatePtr, fromStatePtr),
+            "get_effectiveBitOffset",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -222,14 +191,23 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ReadInt(
+    pub fn get_format(
         &mut self,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ReadInt",
-            (statePtr),
+            "get_format",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sizeInBits(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_sizeInBits",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -244,14 +222,36 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ReadFloat(
+    pub fn set_byteOffset(
         &mut self,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ReadFloat",
-            (statePtr),
+            "set_byteOffset",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_format(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::Utilities::FourCC,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_format",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_sizeInBits(
+        &mut self,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_sizeInBits",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

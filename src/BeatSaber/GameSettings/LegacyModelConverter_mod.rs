@@ -35,29 +35,6 @@ impl crate::BeatSaber::GameSettings::LegacyModelConverter {
         feature = "BeatSaber+GameSettings+LegacyModelConverter+_RequiresUpdateAsync_d__4"
     )]
     pub type _RequiresUpdateAsync_d__4 = crate::BeatSaber::GameSettings::LegacyModelConverter__RequiresUpdateAsync_d__4;
-    pub fn _ctor(
-        &mut self,
-        fileStorage: *mut IFileStorage,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (fileStorage))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RequiresUpdateAsync(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<bool>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<bool> = __cordl_object
-            .invoke("RequiresUpdateAsync", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AttemptConversionAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -81,12 +58,35 @@ impl crate::BeatSaber::GameSettings::LegacyModelConverter {
     }
     pub fn New(
         fileStorage: *mut IFileStorage,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (fileStorage))?;
         Ok(__cordl_object)
+    }
+    pub fn RequiresUpdateAsync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<bool>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<bool> = __cordl_object
+            .invoke("RequiresUpdateAsync", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        fileStorage: *mut IFileStorage,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (fileStorage))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatSaber+GameSettings+LegacyModelConverter")]

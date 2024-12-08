@@ -38,7 +38,10 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<T> {
-    pub fn get_count(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    pub fn GetById(
+        &mut self,
+        id: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -46,7 +49,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_count", ())?;
+        let __cordl_ret: T = __cordl_object.invoke("GetById", (id))?;
         Ok(__cordl_ret)
     }
     pub fn GetByIndex(&mut self, index: i32) -> quest_hook::libil2cpp::Result<T>
@@ -71,6 +74,40 @@ impl<
         let __cordl_ret: T = __cordl_object.invoke("GetDefault", ())?;
         Ok(__cordl_ret)
     }
+    pub fn GetIndexById(
+        &mut self,
+        id: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetIndexById", (id))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetRandom(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("GetRandom", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        parts: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (parts))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         parts: *mut quest_hook::libil2cpp::Il2CppArray<T>,
@@ -86,6 +123,17 @@ impl<
             .invoke(".ctor", (parts))?;
         Ok(__cordl_ret)
     }
+    pub fn get_count(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_count", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_parts(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
@@ -99,54 +147,6 @@ impl<
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = __cordl_object
             .invoke("get_parts", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetRandom(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("GetRandom", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetIndexById(
-        &mut self,
-        id: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetIndexById", (id))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetById(
-        &mut self,
-        id: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("GetById", (id))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        parts: *mut quest_hook::libil2cpp::Il2CppArray<T>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (parts))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPartCollection_1")]

@@ -20,11 +20,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Cache {
 }
 #[cfg(feature = "UnityEngine+Cache")]
 impl crate::UnityEngine::Cache {
-    pub fn get_handle(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Equals_Cache1(
+        &mut self,
+        other: crate::UnityEngine::Cache,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_handle",
-            (),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -39,40 +42,18 @@ impl crate::UnityEngine::Cache {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Cache1(
-        &mut self,
-        other: crate::UnityEngine::Cache,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_maximumAvailableStorageSpace(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_maximumAvailableStorageSpace",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_valid",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_handle(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_handle",
             (),
         )?;
         Ok(__cordl_ret)
@@ -87,6 +68,14 @@ impl crate::UnityEngine::Cache {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_valid",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_expirationDelay(
         &mut self,
         value: i32,
@@ -94,6 +83,17 @@ impl crate::UnityEngine::Cache {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_expirationDelay",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_maximumAvailableStorageSpace(
+        &mut self,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_maximumAvailableStorageSpace",
             (value),
         )?;
         Ok(__cordl_ret)

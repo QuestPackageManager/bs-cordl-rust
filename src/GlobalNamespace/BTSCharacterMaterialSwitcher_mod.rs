@@ -31,6 +31,13 @@ impl BTSCharacterMaterialSwitcher {
     pub type MaterialPairs = crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs;
     #[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
     pub type RendererMaterialsPairs = crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn SwapMaterials(
         &mut self,
         alternative: bool,
@@ -51,13 +58,6 @@ impl BTSCharacterMaterialSwitcher {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BTSCharacterMaterialSwitcher")]
@@ -101,6 +101,13 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
 }
 #[cfg(feature = "BTSCharacterMaterialSwitcher+MaterialPairs")]
 impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -110,13 +117,6 @@ impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BTSCharacterMaterialSwitcher+MaterialPairs")]
@@ -162,6 +162,26 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs 
 }
 #[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
 impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
+    pub fn New(
+        renderer: *mut crate::UnityEngine::Renderer,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (renderer))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        renderer: *mut crate::UnityEngine::Renderer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (renderer))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_materialPairs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -186,26 +206,6 @@ impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs
         let __cordl_ret: *mut crate::UnityEngine::Renderer = __cordl_object
             .invoke("get_renderer", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        renderer: *mut crate::UnityEngine::Renderer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (renderer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        renderer: *mut crate::UnityEngine::Renderer,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (renderer))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]

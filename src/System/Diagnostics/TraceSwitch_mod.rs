@@ -24,6 +24,16 @@ impl std::ops::DerefMut for crate::System::Diagnostics::TraceSwitch {
 }
 #[cfg(feature = "System+Diagnostics+TraceSwitch")]
 impl crate::System::Diagnostics::TraceSwitch {
+    pub fn New(
+        displayName: *mut crate::System::String,
+        description: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (displayName, description))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         displayName: *mut crate::System::String,
@@ -35,16 +45,6 @@ impl crate::System::Diagnostics::TraceSwitch {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (displayName, description))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        displayName: *mut crate::System::String,
-        description: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (displayName, description))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Diagnostics+TraceSwitch")]

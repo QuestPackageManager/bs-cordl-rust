@@ -27,18 +27,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Esf::OtherHashAlgAnd
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+OtherHashAlgAndValue")]
 impl crate::Org::BouncyCastle::Asn1::Esf::OtherHashAlgAndValue {
-    pub fn get_HashAlgorithm(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier = __cordl_object
-            .invoke("get_HashAlgorithm", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetHashValue(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
@@ -49,6 +37,35 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OtherHashAlgAndValue {
             .invoke("GetHashValue", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New_AlgorithmIdentifier_Asn1OctetString2(
+        hashAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        hashValue: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (hashAlgorithm, hashValue))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_AlgorithmIdentifier_Il2CppArray1(
+        hashAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        hashValue: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (hashAlgorithm, hashValue))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Asn1Sequence0(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
+    }
     pub fn ToAsn1Object(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
@@ -57,29 +74,6 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OtherHashAlgAndValue {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
             .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Asn1Sequence0(
-        &mut self,
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seq))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_AlgorithmIdentifier_Il2CppArray1(
-        &mut self,
-        hashAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        hashValue: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (hashAlgorithm, hashValue))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_AlgorithmIdentifier_Asn1OctetString2(
@@ -94,34 +88,40 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OtherHashAlgAndValue {
             .invoke(".ctor", (hashAlgorithm, hashValue))?;
         Ok(__cordl_ret)
     }
-    pub fn New_Asn1Sequence0(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_AlgorithmIdentifier_Il2CppArray1(
+    pub fn _ctor_AlgorithmIdentifier_Il2CppArray1(
+        &mut self,
         hashAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         hashValue: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (hashAlgorithm, hashValue))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (hashAlgorithm, hashValue))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_AlgorithmIdentifier_Asn1OctetString2(
-        hashAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        hashValue: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (hashAlgorithm, hashValue))?;
-        Ok(__cordl_object)
+    pub fn _ctor_Asn1Sequence0(
+        &mut self,
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (seq))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HashAlgorithm(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier = __cordl_object
+            .invoke("get_HashAlgorithm", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+OtherHashAlgAndValue")]

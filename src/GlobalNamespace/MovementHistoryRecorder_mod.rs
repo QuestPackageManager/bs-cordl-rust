@@ -27,15 +27,47 @@ impl std::ops::DerefMut for MovementHistoryRecorder {
 }
 #[cfg(feature = "MovementHistoryRecorder")]
 impl MovementHistoryRecorder {
-    pub fn get_averagingValueRecorer(
+    pub fn AddMovement(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut AveragingValueRecorder> {
+        distance: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut AveragingValueRecorder = __cordl_object
-            .invoke("get_averagingValueRecorer", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddMovement", (distance))?;
         Ok(__cordl_ret)
+    }
+    pub fn ManualUpdate(
+        &mut self,
+        deltaTime: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ManualUpdate", (deltaTime))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        averageWindowDuration: f32,
+        historyValuesPerSecond: f32,
+        increaseSpeed: f32,
+        decreaseSpeed: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    averageWindowDuration,
+                    historyValuesPerSecond,
+                    increaseSpeed,
+                    decreaseSpeed,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -59,47 +91,15 @@ impl MovementHistoryRecorder {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn ManualUpdate(
+    pub fn get_averagingValueRecorer(
         &mut self,
-        deltaTime: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut AveragingValueRecorder> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ManualUpdate", (deltaTime))?;
+        let __cordl_ret: *mut AveragingValueRecorder = __cordl_object
+            .invoke("get_averagingValueRecorer", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn AddMovement(
-        &mut self,
-        distance: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddMovement", (distance))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        averageWindowDuration: f32,
-        historyValuesPerSecond: f32,
-        increaseSpeed: f32,
-        decreaseSpeed: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    averageWindowDuration,
-                    historyValuesPerSecond,
-                    increaseSpeed,
-                    decreaseSpeed,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MovementHistoryRecorder")]

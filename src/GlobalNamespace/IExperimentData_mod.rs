@@ -23,6 +23,11 @@ impl std::ops::DerefMut for IExperimentData {
 }
 #[cfg(feature = "IExperimentData")]
 impl IExperimentData {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_experimentPlatformKey(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -32,11 +37,6 @@ impl IExperimentData {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_experimentPlatformKey", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IExperimentData")]

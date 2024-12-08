@@ -33,6 +33,38 @@ impl std::ops::DerefMut for crate::System::Data::DataTableCollection {
 }
 #[cfg(feature = "System+Data+DataTableCollection")]
 impl crate::System::Data::DataTableCollection {
+    pub fn Add(
+        &mut self,
+        table: *mut crate::System::Data::DataTable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Add", (table))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ArrayAdd(
+        &mut self,
+        table: *mut crate::System::Data::DataTable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ArrayAdd", (table))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AssignName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("AssignName", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn BaseAdd(
         &mut self,
         table: *mut crate::System::Data::DataTable,
@@ -42,6 +74,24 @@ impl crate::System::Data::DataTableCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BaseAdd", (table))?;
+        Ok(__cordl_ret)
+    }
+    pub fn BaseGroupSwitch(
+        &mut self,
+        oldArray: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Data::DataTable,
+        >,
+        oldLength: i32,
+        newArray: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Data::DataTable,
+        >,
+        newLength: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BaseGroupSwitch", (oldArray, oldLength, newArray, newLength))?;
         Ok(__cordl_ret)
     }
     pub fn BaseRemove(
@@ -55,14 +105,26 @@ impl crate::System::Data::DataTableCollection {
             .invoke("BaseRemove", (table))?;
         Ok(__cordl_ret)
     }
-    pub fn AssignName(
+    pub fn CanRemove(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        table: *mut crate::System::Data::DataTable,
+        fThrowException: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("AssignName", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("CanRemove", (table, fThrowException))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Clear", ())?;
         Ok(__cordl_ret)
     }
     pub fn Contains_String0(
@@ -101,58 +163,6 @@ impl crate::System::Data::DataTableCollection {
             .invoke("Contains", (name, caseSensitive))?;
         Ok(__cordl_ret)
     }
-    pub fn ReplaceFromInference(
-        &mut self,
-        tableList: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Data::DataTable,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReplaceFromInference", (tableList))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ObjectID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ObjectID", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Add(
-        &mut self,
-        table: *mut crate::System::Data::DataTable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (table))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnCollectionChanged(
-        &mut self,
-        ccevent: *mut crate::System::ComponentModel::CollectionChangeEventArgs,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCollectionChanged", (ccevent))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetTable(
         &mut self,
         name: *mut crate::System::String,
@@ -165,95 +175,6 @@ impl crate::System::Data::DataTableCollection {
             .invoke("GetTable", (name, ns))?;
         Ok(__cordl_ret)
     }
-    pub fn OnCollectionChanging(
-        &mut self,
-        ccevent: *mut crate::System::ComponentModel::CollectionChangeEventArgs,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCollectionChanging", (ccevent))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalIndexOf_String0(
-        &mut self,
-        tableName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("InternalIndexOf", (tableName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalIndexOf_String1(
-        &mut self,
-        tableName: *mut crate::System::String,
-        tableNamespace: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("InternalIndexOf", (tableName, tableNamespace))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Remove(
-        &mut self,
-        table: *mut crate::System::Data::DataTable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Remove", (table))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item_i32_0(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataTable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::DataTable = __cordl_object
-            .invoke("get_Item", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item_String1(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataTable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::DataTable = __cordl_object
-            .invoke("get_Item", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item_String_String2(
-        &mut self,
-        name: *mut crate::System::String,
-        tableNamespace: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataTable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::DataTable = __cordl_object
-            .invoke("get_Item", (name, tableNamespace))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnregisterName(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterName", (name))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetTableSmart(
         &mut self,
         name: *mut crate::System::String,
@@ -264,40 +185,6 @@ impl crate::System::Data::DataTableCollection {
         );
         let __cordl_ret: *mut crate::System::Data::DataTable = __cordl_object
             .invoke("GetTableSmart", (name, ns))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        dataSet: *mut crate::System::Data::DataSet,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dataSet))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MakeName(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("MakeName", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterName(
-        &mut self,
-        name: *mut crate::System::String,
-        tbNamespace: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterName", (name, tbNamespace))?;
         Ok(__cordl_ret)
     }
     pub fn IndexOf_DataTable0(
@@ -333,37 +220,83 @@ impl crate::System::Data::DataTableCollection {
             .invoke("IndexOf", (tableName, tableNamespace, chekforNull))?;
         Ok(__cordl_ret)
     }
-    pub fn BaseGroupSwitch(
+    pub fn InternalIndexOf_String0(
         &mut self,
-        oldArray: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Data::DataTable,
-        >,
-        oldLength: i32,
-        newArray: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Data::DataTable,
-        >,
-        newLength: i32,
+        tableName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("InternalIndexOf", (tableName))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InternalIndexOf_String1(
+        &mut self,
+        tableName: *mut crate::System::String,
+        tableNamespace: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("InternalIndexOf", (tableName, tableNamespace))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MakeName(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("MakeName", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        dataSet: *mut crate::System::Data::DataSet,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dataSet))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnCollectionChanged(
+        &mut self,
+        ccevent: *mut crate::System::ComponentModel::CollectionChangeEventArgs,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BaseGroupSwitch", (oldArray, oldLength, newArray, newLength))?;
+            .invoke("OnCollectionChanged", (ccevent))?;
         Ok(__cordl_ret)
     }
-    pub fn CanRemove(
+    pub fn OnCollectionChanging(
         &mut self,
-        table: *mut crate::System::Data::DataTable,
-        fThrowException: bool,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        ccevent: *mut crate::System::ComponentModel::CollectionChangeEventArgs,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CanRemove", (table, fThrowException))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnCollectionChanging", (ccevent))?;
         Ok(__cordl_ret)
     }
-    pub fn ArrayAdd(
+    pub fn RegisterName(
+        &mut self,
+        name: *mut crate::System::String,
+        tbNamespace: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterName", (name, tbNamespace))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Remove(
         &mut self,
         table: *mut crate::System::Data::DataTable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -371,7 +304,76 @@ impl crate::System::Data::DataTableCollection {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ArrayAdd", (table))?;
+            .invoke("Remove", (table))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReplaceFromInference(
+        &mut self,
+        tableList: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::System::Data::DataTable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReplaceFromInference", (tableList))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnregisterName(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnregisterName", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        dataSet: *mut crate::System::Data::DataSet,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (dataSet))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item_String1(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataTable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Data::DataTable = __cordl_object
+            .invoke("get_Item", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item_String_String2(
+        &mut self,
+        name: *mut crate::System::String,
+        tableNamespace: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataTable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Data::DataTable = __cordl_object
+            .invoke("get_Item", (name, tableNamespace))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item_i32_0(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataTable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Data::DataTable = __cordl_object
+            .invoke("get_Item", (index))?;
         Ok(__cordl_ret)
     }
     pub fn get_List(
@@ -384,14 +386,12 @@ impl crate::System::Data::DataTableCollection {
             .invoke("get_List", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        dataSet: *mut crate::System::Data::DataSet,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dataSet))?;
-        Ok(__cordl_object)
+    pub fn get_ObjectID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ObjectID", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Data+DataTableCollection")]

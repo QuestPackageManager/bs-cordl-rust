@@ -26,27 +26,15 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XsdSimpleValue {
 }
 #[cfg(feature = "System+Xml+Schema+XsdSimpleValue")]
 impl crate::System::Xml::Schema::XsdSimpleValue {
-    pub fn get_XmlType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaSimpleType = __cordl_object
-            .invoke("get_XmlType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TypedValue(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_TypedValue", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        st: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (st, value))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -60,15 +48,27 @@ impl crate::System::Xml::Schema::XsdSimpleValue {
             .invoke(".ctor", (st, value))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        st: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (st, value))?;
-        Ok(__cordl_object)
+    pub fn get_TypedValue(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_TypedValue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_XmlType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaSimpleType = __cordl_object
+            .invoke("get_XmlType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XsdSimpleValue")]

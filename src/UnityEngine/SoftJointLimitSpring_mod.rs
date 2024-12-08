@@ -23,14 +23,19 @@ for crate::UnityEngine::SoftJointLimitSpring {
 }
 #[cfg(feature = "UnityEngine+SoftJointLimitSpring")]
 impl crate::UnityEngine::SoftJointLimitSpring {
-    pub fn set_spring(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_damper(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_spring",
-            (value),
+            "get_damper",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_spring(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_spring",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -45,19 +50,14 @@ impl crate::UnityEngine::SoftJointLimitSpring {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_spring(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn set_spring(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_spring",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_damper(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_damper",
-            (),
+            "set_spring",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

@@ -35,20 +35,20 @@ impl crate::System::Resources::ResourceLocator {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_DataPosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_DataPosition",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Value(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Value",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_DataPosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_DataPosition",
             (),
         )?;
         Ok(__cordl_ret)

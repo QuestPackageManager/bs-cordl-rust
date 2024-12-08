@@ -33,10 +33,18 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Touch {
 }
 #[cfg(feature = "UnityEngine+Touch")]
 impl crate::UnityEngine::Touch {
-    pub fn get_maximumPossiblePressure(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_altitudeAngle(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_maximumPossiblePressure",
+            "get_altitudeAngle",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_azimuthAngle(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_azimuthAngle",
             (),
         )?;
         Ok(__cordl_ret)
@@ -51,10 +59,10 @@ impl crate::UnityEngine::Touch {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_radiusVariance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_deltaTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_radiusVariance",
+            "get_deltaTime",
             (),
         )?;
         Ok(__cordl_ret)
@@ -67,12 +75,10 @@ impl crate::UnityEngine::Touch {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_position(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_maximumPossiblePressure(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_position",
+            "get_maximumPossiblePressure",
             (),
         )?;
         Ok(__cordl_ret)
@@ -87,10 +93,46 @@ impl crate::UnityEngine::Touch {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_position(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_position",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_pressure(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_pressure",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_radius(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_radius",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_radiusVariance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_radiusVariance",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rawPosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_rawPosition",
             (),
         )?;
         Ok(__cordl_ret)
@@ -124,17 +166,6 @@ impl crate::UnityEngine::Touch {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_rawPosition(
-        &mut self,
-        value: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_rawPosition",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_position(
         &mut self,
         value: crate::UnityEngine::Vector2,
@@ -146,45 +177,14 @@ impl crate::UnityEngine::Touch {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_deltaTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_deltaTime",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_altitudeAngle(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_altitudeAngle",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_azimuthAngle(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_azimuthAngle",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_rawPosition(
+    pub fn set_rawPosition(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_rawPosition",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_pressure(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_pressure",
-            (),
+            "set_rawPosition",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

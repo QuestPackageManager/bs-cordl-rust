@@ -34,11 +34,19 @@ impl std::ops::DerefMut for crate::System::Xml::XPath::XPathDocument {
 }
 #[cfg(feature = "System+Xml+XPath+XPathDocument")]
 impl crate::System::Xml::XPath::XPathDocument {
-    pub fn get_HasLineInfo(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn GetXmlNamespaceNode(
+        &mut self,
+        pageXmlNmsp: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::MS::Internal::Xml::Cache::XPathNode,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasLineInfo", ())?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetXmlNamespaceNode", (pageXmlNmsp))?;
         Ok(__cordl_ret)
     }
     pub fn LookupNamespaces(
@@ -60,6 +68,13 @@ impl crate::System::Xml::XPath::XPathDocument {
             .invoke("LookupNamespaces", (pageElem, idxElem, pageNmsp))?;
         Ok(__cordl_ret)
     }
+    pub fn get_HasLineInfo(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasLineInfo", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_NameTable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNameTable> {
@@ -68,21 +83,6 @@ impl crate::System::Xml::XPath::XPathDocument {
         );
         let __cordl_ret: *mut crate::System::Xml::XmlNameTable = __cordl_object
             .invoke("get_NameTable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetXmlNamespaceNode(
-        &mut self,
-        pageXmlNmsp: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::MS::Internal::Xml::Cache::XPathNode,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetXmlNamespaceNode", (pageXmlNmsp))?;
         Ok(__cordl_ret)
     }
 }

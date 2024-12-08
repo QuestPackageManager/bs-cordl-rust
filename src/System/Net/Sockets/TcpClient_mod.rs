@@ -29,100 +29,6 @@ impl std::ops::DerefMut for crate::System::Net::Sockets::TcpClient {
 }
 #[cfg(feature = "System+Net+Sockets+TcpClient")]
 impl crate::System::Net::Sockets::TcpClient {
-    pub fn initialize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("initialize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Connected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Connected", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Finalize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose__cordl_bool0(
-        &mut self,
-        disposing: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Connect_String_i32_0(
-        &mut self,
-        hostname: *mut crate::System::String,
-        port: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Connect", (hostname, port))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Connect_IPEndPoint1(
-        &mut self,
-        remoteEP: *mut crate::System::Net::IPEndPoint,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Connect", (remoteEP))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConnectAsync(
-        &mut self,
-        host: *mut crate::System::String,
-        port: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("ConnectAsync", (host, port))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Client(
-        &mut self,
-        value: *mut crate::System::Net::Sockets::Socket,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Client", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginConnect(
         &mut self,
         host: *mut crate::System::String,
@@ -137,6 +43,72 @@ impl crate::System::Net::Sockets::TcpClient {
             .invoke("BeginConnect", (host, port, requestCallback, state))?;
         Ok(__cordl_ret)
     }
+    pub fn Close(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Close", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ConnectAsync(
+        &mut self,
+        host: *mut crate::System::String,
+        port: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("ConnectAsync", (host, port))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Connect_IPEndPoint1(
+        &mut self,
+        remoteEP: *mut crate::System::Net::IPEndPoint,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Connect", (remoteEP))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Connect_String_i32_0(
+        &mut self,
+        hostname: *mut crate::System::String,
+        port: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Connect", (hostname, port))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose__cordl_bool0(
+        &mut self,
+        disposing: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", (disposing))?;
+        Ok(__cordl_ret)
+    }
     pub fn EndConnect(
         &mut self,
         asyncResult: *mut crate::System::IAsyncResult,
@@ -148,6 +120,16 @@ impl crate::System::Net::Sockets::TcpClient {
             .invoke("EndConnect", (asyncResult))?;
         Ok(__cordl_ret)
     }
+    pub fn Finalize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Finalize", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetStream(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::Sockets::NetworkStream> {
@@ -157,6 +139,31 @@ impl crate::System::Net::Sockets::TcpClient {
         let __cordl_ret: *mut crate::System::Net::Sockets::NetworkStream = __cordl_object
             .invoke("GetStream", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_AddressFamily1(
+        family: crate::System::Net::Sockets::AddressFamily,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (family))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Socket2(
+        acceptedSocket: *mut crate::System::Net::Sockets::Socket,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (acceptedSocket))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_0(
         &mut self,
@@ -200,40 +207,33 @@ impl crate::System::Net::Sockets::TcpClient {
             .invoke("get_Client", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Close(
+    pub fn get_Connected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_Connected", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn initialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
+            .invoke("initialize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_AddressFamily1(
-        family: crate::System::Net::Sockets::AddressFamily,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (family))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Socket2(
-        acceptedSocket: *mut crate::System::Net::Sockets::Socket,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (acceptedSocket))?;
-        Ok(__cordl_object)
+    pub fn set_Client(
+        &mut self,
+        value: *mut crate::System::Net::Sockets::Socket,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Client", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+Sockets+TcpClient")]

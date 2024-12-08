@@ -42,6 +42,18 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection+__c__DisplayClass13_0"
     )]
     pub type __c__DisplayClass13_0 = crate::UnityEngine::Networking::PlayerConnection::PlayerConnection___c__DisplayClass13_0;
+    pub fn BlockUntilRecvMsg(
+        &mut self,
+        messageId: crate::System::Guid,
+        timeout: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("BlockUntilRecvMsg", (messageId, timeout))?;
+        Ok(__cordl_ret)
+    }
     pub fn DisconnectAll(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -50,92 +62,6 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DisconnectAll", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterConnection(
-        &mut self,
-        callback: *mut crate::UnityEngine::Events::UnityAction_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterConnection", (callback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnregisterConnection(
-        &mut self,
-        callback: *mut crate::UnityEngine::Events::UnityAction_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterConnection", (callback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Unregister(
-        &mut self,
-        messageId: crate::System::Guid,
-        callback: *mut crate::UnityEngine::Events::UnityAction_1<
-            *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Unregister", (messageId, callback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterDisconnection(
-        &mut self,
-        callback: *mut crate::UnityEngine::Events::UnityAction_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterDisconnection", (callback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isConnected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isConnected", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnregisterDisconnection(
-        &mut self,
-        callback: *mut crate::UnityEngine::Events::UnityAction_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterDisconnection", (callback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TrySend(
-        &mut self,
-        messageId: crate::System::Guid,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TrySend", (messageId, data))?;
         Ok(__cordl_ret)
     }
     pub fn GetConnectionNativeApi(
@@ -150,6 +76,13 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
             .invoke("GetConnectionNativeApi", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn OnEnable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -158,30 +91,6 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn BlockUntilRecvMsg(
-        &mut self,
-        messageId: crate::System::Guid,
-        timeout: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("BlockUntilRecvMsg", (messageId, timeout))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Send(
-        &mut self,
-        messageId: crate::System::Guid,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Send", (messageId, data))?;
         Ok(__cordl_ret)
     }
     pub fn Register(
@@ -198,12 +107,103 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
             .invoke("Register", (messageId, callback))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn RegisterConnection(
+        &mut self,
+        callback: *mut crate::UnityEngine::Events::UnityAction_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterConnection", (callback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterDisconnection(
+        &mut self,
+        callback: *mut crate::UnityEngine::Events::UnityAction_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterDisconnection", (callback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Send(
+        &mut self,
+        messageId: crate::System::Guid,
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Send", (messageId, data))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TrySend(
+        &mut self,
+        messageId: crate::System::Guid,
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TrySend", (messageId, data))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Unregister(
+        &mut self,
+        messageId: crate::System::Guid,
+        callback: *mut crate::UnityEngine::Events::UnityAction_1<
+            *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Unregister", (messageId, callback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnregisterConnection(
+        &mut self,
+        callback: *mut crate::UnityEngine::Events::UnityAction_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnregisterConnection", (callback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnregisterDisconnection(
+        &mut self,
+        callback: *mut crate::UnityEngine::Events::UnityAction_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnregisterDisconnection", (callback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isConnected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isConnected", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection")]

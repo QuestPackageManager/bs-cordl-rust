@@ -27,16 +27,6 @@ for crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+IBlockCipherPadding")]
 impl crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding {
-    pub fn get_PaddingName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_PaddingName", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AddPadding(
         &mut self,
         input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -73,6 +63,16 @@ impl crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_PaddingName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_PaddingName", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+IBlockCipherPadding")]

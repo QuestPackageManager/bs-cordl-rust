@@ -32,43 +32,22 @@ for crate::System::Net::WebCompletionSource_1_Result<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Net::WebCompletionSource_1_Result<T> {
-    pub fn get_Status(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Net::WebCompletionSource_1_Status<T>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Net::WebCompletionSource_1_Status<T> = __cordl_object
-            .invoke("get_Status", ())?;
-        Ok(__cordl_ret)
+    pub fn New_T0(argument: T) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (argument))?;
+        Ok(__cordl_object)
     }
-    pub fn get_Argument(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("get_Argument", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Success(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Success", ())?;
-        Ok(__cordl_ret)
+    pub fn New_WebCompletionSource_1_Status_ExceptionDispatchInfo1(
+        state: crate::System::Net::WebCompletionSource_1_Status<T>,
+        error: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (state, error))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_T0(
         &mut self,
@@ -101,6 +80,17 @@ impl<
             .invoke(".ctor", (state, error))?;
         Ok(__cordl_ret)
     }
+    pub fn get_Argument(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("get_Argument", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Error(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -117,22 +107,32 @@ impl<
             .invoke("get_Error", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_T0(argument: T) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (argument))?;
-        Ok(__cordl_object)
+    pub fn get_Status(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Net::WebCompletionSource_1_Status<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Net::WebCompletionSource_1_Status<T> = __cordl_object
+            .invoke("get_Status", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_WebCompletionSource_1_Status_ExceptionDispatchInfo1(
-        state: crate::System::Net::WebCompletionSource_1_Status<T>,
-        error: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (state, error))?;
-        Ok(__cordl_object)
+    pub fn get_Success(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_Success", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+WebCompletionSource_1+Result")]
@@ -200,20 +200,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Net::WebCompletionSource_1<T
     pub type Status = crate::System::Net::WebCompletionSource_1_Status;
     #[cfg(feature = "System+Net+WebCompletionSource_1+Result")]
     pub type Result = crate::System::Net::WebCompletionSource_1_Result<T>;
-    pub fn _ctor(
-        &mut self,
-        runAsync: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (runAsync))?;
-        Ok(__cordl_ret)
+    pub fn New(runAsync: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (runAsync))?;
+        Ok(__cordl_object)
     }
     pub fn ThrowOnError(
         &mut self,
@@ -227,6 +219,99 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Net::WebCompletionSource_1<T
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ThrowOnError", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TrySetCanceled_0(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TrySetCanceled", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TrySetCanceled_OperationCanceledException1(
+        &mut self,
+        error: *mut crate::System::OperationCanceledException,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TrySetCanceled", (error))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TrySetCompleted_1(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TrySetCompleted", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TrySetCompleted_T0(
+        &mut self,
+        argument: T,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TrySetCompleted", (argument))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TrySetException(
+        &mut self,
+        error: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TrySetException", (error))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WaitForCompletion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<T> = __cordl_object
+            .invoke("WaitForCompletion", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        runAsync: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (runAsync))?;
         Ok(__cordl_ret)
     }
     pub fn get_CurrentResult(
@@ -258,91 +343,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Net::WebCompletionSource_1<T
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
             .invoke("get_Task", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn TrySetCanceled_0(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TrySetCanceled", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TrySetCanceled_OperationCanceledException1(
-        &mut self,
-        error: *mut crate::System::OperationCanceledException,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TrySetCanceled", (error))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WaitForCompletion(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task_1<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<T> = __cordl_object
-            .invoke("WaitForCompletion", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TrySetException(
-        &mut self,
-        error: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TrySetException", (error))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TrySetCompleted_T0(
-        &mut self,
-        argument: T,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TrySetCompleted", (argument))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TrySetCompleted_1(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TrySetCompleted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(runAsync: bool) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (runAsync))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+WebCompletionSource_1")]

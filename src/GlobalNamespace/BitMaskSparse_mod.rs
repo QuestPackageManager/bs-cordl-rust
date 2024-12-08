@@ -27,40 +27,6 @@ impl std::ops::DerefMut for BitMaskSparse {
 impl BitMaskSparse {
     #[cfg(feature = "BitMaskSparse+__c")]
     pub type __c = crate::GlobalNamespace::BitMaskSparse___c;
-    pub fn Serialize(
-        &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Serialize", (writer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        bitCount: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bitCount))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetBits(
-        &mut self,
-        offset: i32,
-        bits: u64,
-    ) -> quest_hook::libil2cpp::Result<*mut BitMaskSparse> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut BitMaskSparse = __cordl_object
-            .invoke("SetBits", (offset, bits))?;
-        Ok(__cordl_ret)
-    }
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -93,6 +59,36 @@ impl BitMaskSparse {
         let __cordl_ret: u64 = __cordl_object.invoke("GetBits", (offset, count))?;
         Ok(__cordl_ret)
     }
+    pub fn New(bitCount: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bitCount))?;
+        Ok(__cordl_object)
+    }
+    pub fn Serialize(
+        &mut self,
+        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Serialize", (writer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetBits(
+        &mut self,
+        offset: i32,
+        bits: u64,
+    ) -> quest_hook::libil2cpp::Result<*mut BitMaskSparse> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut BitMaskSparse = __cordl_object
+            .invoke("SetBits", (offset, bits))?;
+        Ok(__cordl_ret)
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -103,19 +99,23 @@ impl BitMaskSparse {
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+        bitCount: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bitCount))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_bitCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_bitCount", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(bitCount: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bitCount))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BitMaskSparse")]

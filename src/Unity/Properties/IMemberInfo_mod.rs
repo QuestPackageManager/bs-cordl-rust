@@ -24,6 +24,26 @@ impl std::ops::DerefMut for crate::Unity::Properties::IMemberInfo {
 }
 #[cfg(feature = "Unity+Properties+IMemberInfo")]
 impl crate::Unity::Properties::IMemberInfo {
+    pub fn GetCustomAttributes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::Attribute,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::Attribute,
+        > = __cordl_object.invoke("GetCustomAttributes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -50,26 +70,6 @@ impl crate::Unity::Properties::IMemberInfo {
         let __cordl_ret: *mut crate::System::Type = __cordl_object
             .invoke("get_ValueType", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetCustomAttributes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Attribute,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Attribute,
-        > = __cordl_object.invoke("GetCustomAttributes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "Unity+Properties+IMemberInfo")]

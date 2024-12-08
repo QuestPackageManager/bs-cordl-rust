@@ -45,6 +45,15 @@ impl std::ops::DerefMut for SelectSubMenuDestination {
 impl SelectSubMenuDestination {
     #[cfg(feature = "SelectSubMenuDestination+Destination")]
     pub type Destination = crate::GlobalNamespace::SelectSubMenuDestination_Destination;
+    pub fn New(
+        menuDestination: crate::GlobalNamespace::SelectSubMenuDestination_Destination,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (menuDestination))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         menuDestination: crate::GlobalNamespace::SelectSubMenuDestination_Destination,
@@ -55,15 +64,6 @@ impl SelectSubMenuDestination {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (menuDestination))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        menuDestination: crate::GlobalNamespace::SelectSubMenuDestination_Destination,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (menuDestination))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SelectSubMenuDestination")]

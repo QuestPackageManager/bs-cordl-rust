@@ -27,12 +27,17 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::BasicEventData {
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+BasicEventData")]
 impl crate::BeatmapSaveDataVersion3::BasicEventData {
-    pub fn get_floatValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_floatValue", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        beat: f32,
+        eventType: crate::BeatmapSaveDataCommon::BeatmapEventType,
+        value: i32,
+        floatValue: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (beat, eventType, value, floatValue))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -58,24 +63,19 @@ impl crate::BeatmapSaveDataVersion3::BasicEventData {
             .invoke("get_eventType", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_floatValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_floatValue", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_value", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        beat: f32,
-        eventType: crate::BeatmapSaveDataCommon::BeatmapEventType,
-        value: i32,
-        floatValue: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (beat, eventType, value, floatValue))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+BasicEventData")]

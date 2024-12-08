@@ -33,66 +33,6 @@ impl crate::System::Data::DataRelationCollection {
     pub type DataTableRelationCollection = crate::GlobalNamespace::DataRelationCollection_DataTableRelationCollection;
     #[cfg(feature = "System+Data+DataRelationCollection+DataSetRelationCollection")]
     pub type DataSetRelationCollection = crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection;
-    pub fn get_ObjectID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ObjectID", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AssignName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("AssignName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalIndexOf(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("InternalIndexOf", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item_i32_0(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataRelation> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::DataRelation = __cordl_object
-            .invoke("get_Item", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item_String1(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataRelation> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::DataRelation = __cordl_object
-            .invoke("get_Item", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnCollectionChanged(
-        &mut self,
-        ccevent: *mut crate::System::ComponentModel::CollectionChangeEventArgs,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCollectionChanged", (ccevent))?;
-        Ok(__cordl_ret)
-    }
     pub fn Add(
         &mut self,
         relation: *mut crate::System::Data::DataRelation,
@@ -102,28 +42,6 @@ impl crate::System::Data::DataRelationCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Add", (relation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveCore(
-        &mut self,
-        relation: *mut crate::System::Data::DataRelation,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveCore", (relation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveAt(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveAt", (index))?;
         Ok(__cordl_ret)
     }
     pub fn AddCore(
@@ -137,47 +55,14 @@ impl crate::System::Data::DataRelationCollection {
             .invoke("AddCore", (relation))?;
         Ok(__cordl_ret)
     }
-    pub fn MakeName(
+    pub fn AssignName(
         &mut self,
-        index: i32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("MakeName", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Remove(
-        &mut self,
-        relation: *mut crate::System::Data::DataRelation,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Remove", (relation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDataSet(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataSet> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::DataSet = __cordl_object
-            .invoke("GetDataSet", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnregisterName(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterName", (name))?;
+            .invoke("AssignName", ())?;
         Ok(__cordl_ret)
     }
     pub fn Clear(
@@ -190,15 +75,63 @@ impl crate::System::Data::DataRelationCollection {
             .invoke("Clear", ())?;
         Ok(__cordl_ret)
     }
-    pub fn RegisterName(
+    pub fn Contains(
         &mut self,
         name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Contains", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDataSet(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataSet> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Data::DataSet = __cordl_object
+            .invoke("GetDataSet", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn InternalIndexOf(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("InternalIndexOf", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MakeName(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("MakeName", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnCollectionChanged(
+        &mut self,
+        ccevent: *mut crate::System::ComponentModel::CollectionChangeEventArgs,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterName", (name))?;
+            .invoke("OnCollectionChanged", (ccevent))?;
         Ok(__cordl_ret)
     }
     pub fn OnCollectionChanging(
@@ -212,25 +145,59 @@ impl crate::System::Data::DataRelationCollection {
             .invoke("OnCollectionChanging", (ccevent))?;
         Ok(__cordl_ret)
     }
-    pub fn add_CollectionChanged(
+    pub fn RegisterName(
         &mut self,
-        value: *mut crate::System::ComponentModel::CollectionChangeEventHandler,
+        name: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_CollectionChanged", (value))?;
+            .invoke("RegisterName", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn Contains(
+    pub fn Remove(
         &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        relation: *mut crate::System::Data::DataRelation,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Contains", (name))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Remove", (relation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveAt(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveAt", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveCore(
+        &mut self,
+        relation: *mut crate::System::Data::DataRelation,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveCore", (relation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnregisterName(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnregisterName", (name))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -243,6 +210,46 @@ impl crate::System::Data::DataRelationCollection {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn add_CollectionChanged(
+        &mut self,
+        value: *mut crate::System::ComponentModel::CollectionChangeEventHandler,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_CollectionChanged", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item_String1(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataRelation> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Data::DataRelation = __cordl_object
+            .invoke("get_Item", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item_i32_0(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataRelation> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Data::DataRelation = __cordl_object
+            .invoke("get_Item", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ObjectID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ObjectID", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn remove_CollectionChanged(
         &mut self,
         value: *mut crate::System::ComponentModel::CollectionChangeEventHandler,
@@ -253,13 +260,6 @@ impl crate::System::Data::DataRelationCollection {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_CollectionChanged", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Data+DataRelationCollection")]

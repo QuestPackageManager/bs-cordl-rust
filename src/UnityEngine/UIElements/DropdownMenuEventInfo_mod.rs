@@ -29,6 +29,15 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::DropdownMenuEventInf
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownMenuEventInfo")]
 impl crate::UnityEngine::UIElements::DropdownMenuEventInfo {
+    pub fn New(
+        e: *mut crate::UnityEngine::UIElements::EventBase,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (e))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         e: *mut crate::UnityEngine::UIElements::EventBase,
@@ -39,15 +48,6 @@ impl crate::UnityEngine::UIElements::DropdownMenuEventInfo {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (e))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        e: *mut crate::UnityEngine::UIElements::EventBase,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (e))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownMenuEventInfo")]

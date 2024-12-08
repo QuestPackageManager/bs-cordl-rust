@@ -50,64 +50,23 @@ impl SelectAvatarSystemViewController {
         feature = "SelectAvatarSystemViewController+_ReloadContinueButtonInteractability_d__31"
     )]
     pub type _ReloadContinueButtonInteractability_d__31 = crate::GlobalNamespace::SelectAvatarSystemViewController__ReloadContinueButtonInteractability_d__31;
-    pub fn add_didSetAvatarSystemPreferredEvent(
+    pub fn CellForIdx(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        tableView: *mut crate::HMUI::TableView,
+        idx: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didSetAvatarSystemPreferredEvent", (value))?;
+        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
+            .invoke("CellForIdx", (tableView, idx))?;
         Ok(__cordl_ret)
     }
-    pub fn set_continueButtonVisible(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_continueButtonVisible", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLoadedSelectionViewDidPressCreateButton(
-        &mut self,
-        avatarSystem: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleLoadedSelectionViewDidPressCreateButton", (avatarSystem))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didSetAvatarSystemPreferredEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didSetAvatarSystemPreferredEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DidDeactivate(
-        &mut self,
-        removedFromHierarchy: bool,
-        screenSystemDisabling: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
         Ok(__cordl_ret)
     }
     pub fn DidActivate(
@@ -126,41 +85,38 @@ impl SelectAvatarSystemViewController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn SetAllCellsActive(
+    pub fn DidDeactivate(
         &mut self,
-        active: bool,
+        removedFromHierarchy: bool,
+        screenSystemDisabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetAllCellsActive", (active))?;
+            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didRequestCreationOfAvatarEvent(
+    pub fn HandleLoadedSelectionViewDidPressCreateButton(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-        >,
+        avatarSystem: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didRequestCreationOfAvatarEvent", (value))?;
+            .invoke("HandleLoadedSelectionViewDidPressCreateButton", (avatarSystem))?;
         Ok(__cordl_ret)
     }
-    pub fn add_didRequestCreationOfAvatarEvent(
+    pub fn HandleLoadedSelectionViewDidPressEditButton(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-        >,
+        avatarSystem: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didRequestCreationOfAvatarEvent", (value))?;
+            .invoke("HandleLoadedSelectionViewDidPressEditButton", (avatarSystem))?;
         Ok(__cordl_ret)
     }
     pub fn HandleLoadedSelectionViewDidPressPreferredButton(
@@ -172,6 +128,20 @@ impl SelectAvatarSystemViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleLoadedSelectionViewDidPressPreferredButton", (avatarSystem))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
         Ok(__cordl_ret)
     }
     pub fn Prewarm(
@@ -188,71 +158,14 @@ impl SelectAvatarSystemViewController {
             .invoke("Prewarm", (avatarSystems, selectedAvatarSystem))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleLoadedSelectionViewDidPressEditButton(
-        &mut self,
-        avatarSystem: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleLoadedSelectionViewDidPressEditButton", (avatarSystem))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn ReloadContinueButtonInteractability(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _DidActivate_b__26_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<DidActivate>b__26_0", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didPressContinueButtonEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didPressContinueButtonEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didPressContinueButtonEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didPressContinueButtonEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_continueButtonVisible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_continueButtonVisible", ())?;
+            .invoke("ReloadContinueButtonInteractability", ())?;
         Ok(__cordl_ret)
     }
     pub fn ReloadCreateEditButtonOfAvatarSystem(
@@ -266,26 +179,15 @@ impl SelectAvatarSystemViewController {
             .invoke("ReloadCreateEditButtonOfAvatarSystem", (avatarSystem))?;
         Ok(__cordl_ret)
     }
-    pub fn ReloadContinueButtonInteractability(
+    pub fn SetAllCellsActive(
         &mut self,
+        active: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReloadContinueButtonInteractability", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CellForIdx(
-        &mut self,
-        tableView: *mut crate::HMUI::TableView,
-        idx: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
-            .invoke("CellForIdx", (tableView, idx))?;
+            .invoke("SetAllCellsActive", (active))?;
         Ok(__cordl_ret)
     }
     pub fn SetSelectedAvatarSystem(
@@ -299,14 +201,38 @@ impl SelectAvatarSystemViewController {
             .invoke("SetSelectedAvatarSystem", (selectedAvatarSystem))?;
         Ok(__cordl_ret)
     }
-    pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn _DidActivate_b__26_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<DidActivate>b__26_0", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didRequestEditOfAvatarEvent(
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didPressContinueButtonEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didPressContinueButtonEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didRequestCreationOfAvatarEvent(
         &mut self,
         value: *mut crate::System::Action_1<
             *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
@@ -316,7 +242,7 @@ impl SelectAvatarSystemViewController {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didRequestEditOfAvatarEvent", (value))?;
+            .invoke("add_didRequestCreationOfAvatarEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_didRequestEditOfAvatarEvent(
@@ -332,12 +258,86 @@ impl SelectAvatarSystemViewController {
             .invoke("add_didRequestEditOfAvatarEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn add_didSetAvatarSystemPreferredEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didSetAvatarSystemPreferredEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_continueButtonVisible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_continueButtonVisible", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didPressContinueButtonEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didPressContinueButtonEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didRequestCreationOfAvatarEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didRequestCreationOfAvatarEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didRequestEditOfAvatarEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didRequestEditOfAvatarEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didSetAvatarSystemPreferredEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didSetAvatarSystemPreferredEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_continueButtonVisible(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_continueButtonVisible", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "SelectAvatarSystemViewController")]

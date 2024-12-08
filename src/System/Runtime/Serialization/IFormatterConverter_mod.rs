@@ -25,16 +25,6 @@ impl std::ops::DerefMut for crate::System::Runtime::Serialization::IFormatterCon
 }
 #[cfg(feature = "System+Runtime+Serialization+IFormatterConverter")]
 impl crate::System::Runtime::Serialization::IFormatterConverter {
-    pub fn ToBoolean(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ToBoolean", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Convert(
         &mut self,
         value: *mut crate::System::Object,
@@ -47,6 +37,16 @@ impl crate::System::Runtime::Serialization::IFormatterConverter {
             .invoke("Convert", (value, _cordl_type))?;
         Ok(__cordl_ret)
     }
+    pub fn ToBoolean(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ToBoolean", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn ToInt32(
         &mut self,
         value: *mut crate::System::Object,
@@ -55,6 +55,16 @@ impl crate::System::Runtime::Serialization::IFormatterConverter {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("ToInt32", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToInt64(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("ToInt64", (value))?;
         Ok(__cordl_ret)
     }
     pub fn ToSingle(
@@ -76,16 +86,6 @@ impl crate::System::Runtime::Serialization::IFormatterConverter {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("ToString", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToInt64(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("ToInt64", (value))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

@@ -34,82 +34,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UnitySynchronizationContext {
 impl crate::UnityEngine::UnitySynchronizationContext {
     #[cfg(feature = "UnityEngine+UnitySynchronizationContext+WorkRequest")]
     pub type WorkRequest = crate::UnityEngine::UnitySynchronizationContext_WorkRequest;
-    pub fn OperationStarted(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OperationStarted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OperationCompleted(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OperationCompleted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Send(
-        &mut self,
-        callback: *mut crate::System::Threading::SendOrPostCallback,
-        state: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Send", (callback, state))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Post(
-        &mut self,
-        callback: *mut crate::System::Threading::SendOrPostCallback,
-        state: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Post", (callback, state))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HasPendingTasks(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasPendingTasks", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_0(
-        &mut self,
-        mainThreadID: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (mainThreadID))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_List_1_i32_1(
-        &mut self,
-        queue: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
-        >,
-        mainThreadID: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (queue, mainThreadID))?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateCopy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -132,26 +56,100 @@ impl crate::UnityEngine::UnitySynchronizationContext {
             .invoke("Exec", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_i32_0(
-        mainThreadID: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (mainThreadID))?;
-        Ok(__cordl_object)
+    pub fn HasPendingTasks(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("HasPendingTasks", ())?;
+        Ok(__cordl_ret)
     }
     pub fn New_List_1_i32_1(
         queue: *mut crate::System::Collections::Generic::List_1<
             crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
         >,
         mainThreadID: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (queue, mainThreadID))?;
         Ok(__cordl_object)
+    }
+    pub fn New_i32_0(mainThreadID: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (mainThreadID))?;
+        Ok(__cordl_object)
+    }
+    pub fn OperationCompleted(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OperationCompleted", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OperationStarted(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OperationStarted", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Post(
+        &mut self,
+        callback: *mut crate::System::Threading::SendOrPostCallback,
+        state: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Post", (callback, state))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Send(
+        &mut self,
+        callback: *mut crate::System::Threading::SendOrPostCallback,
+        state: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Send", (callback, state))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_List_1_i32_1(
+        &mut self,
+        queue: *mut crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
+        >,
+        mainThreadID: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (queue, mainThreadID))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_0(
+        &mut self,
+        mainThreadID: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (mainThreadID))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UnitySynchronizationContext")]
@@ -191,6 +189,16 @@ for crate::UnityEngine::UnitySynchronizationContext_WorkRequest {
 }
 #[cfg(feature = "UnityEngine+UnitySynchronizationContext+WorkRequest")]
 impl crate::UnityEngine::UnitySynchronizationContext_WorkRequest {
+    pub fn Invoke(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Invoke",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         callback: *mut crate::System::Threading::SendOrPostCallback,
@@ -201,16 +209,6 @@ impl crate::UnityEngine::UnitySynchronizationContext_WorkRequest {
             self,
             ".ctor",
             (callback, state, waitHandle),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Invoke",
-            (),
         )?;
         Ok(__cordl_ret)
     }

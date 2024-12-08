@@ -44,119 +44,18 @@ impl crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
     )]
     pub type __c__DisplayClass7_0 = crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime___c__DisplayClass7_0;
     #[cfg(
-        feature = "UnityEngine+InputSystem+LowLevel+NativeInputRuntime+__c__DisplayClass10_0"
-    )]
-    pub type __c__DisplayClass10_0 = crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime___c__DisplayClass10_0;
-    #[cfg(
         feature = "UnityEngine+InputSystem+LowLevel+NativeInputRuntime+__c__DisplayClass13_0"
     )]
     pub type __c__DisplayClass13_0 = crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime___c__DisplayClass13_0;
-    pub fn get_currentTimeForFixedUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object
-            .invoke("get_currentTimeForFixedUpdate", ())?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(
+        feature = "UnityEngine+InputSystem+LowLevel+NativeInputRuntime+__c__DisplayClass10_0"
+    )]
+    pub type __c__DisplayClass10_0 = crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime___c__DisplayClass10_0;
     pub fn AllocateDeviceId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("AllocateDeviceId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_onShutdown(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_onShutdown", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_pollingFrequency(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_pollingFrequency", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_onUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::LowLevel::InputUpdateDelegate,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::LowLevel::InputUpdateDelegate = __cordl_object
-            .invoke("get_onUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_onPlayerFocusChanged(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Action_1<bool>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Action_1<bool> = __cordl_object
-            .invoke("get_onPlayerFocusChanged", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_runInBackground(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_runInBackground", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_pollingFrequency(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_pollingFrequency", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_onDeviceDiscovered(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Action_2<i32, *mut crate::System::String>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Action_2<i32, *mut crate::System::String> = __cordl_object
-            .invoke("get_onDeviceDiscovered", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_currentTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("get_currentTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn DeviceCommand(
@@ -171,40 +70,12 @@ impl crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
             .invoke("DeviceCommand", (deviceId, commandPtr))?;
         Ok(__cordl_ret)
     }
-    pub fn get_isInBatchMode(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isInBatchMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isPlayerFocused(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isPlayerFocused", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_onUpdate(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::LowLevel::InputUpdateDelegate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_onUpdate", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_currentTimeOffsetToRealtimeSinceStartup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object
-            .invoke("get_currentTimeOffsetToRealtimeSinceStartup", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnFocusChanged(
         &mut self,
@@ -217,6 +88,16 @@ impl crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
             .invoke("OnFocusChanged", (focus))?;
         Ok(__cordl_ret)
     }
+    pub fn OnShutdown(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnShutdown", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn OnWantsToShutdown(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -224,14 +105,43 @@ impl crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
         let __cordl_ret: bool = __cordl_object.invoke("OnWantsToShutdown", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_onShutdown(
+    pub fn QueueEvent(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Action> {
+        ptr: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Action = __cordl_object
-            .invoke("get_onShutdown", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("QueueEvent", (ptr))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterAnalyticsEvent(
+        &mut self,
+        name: *mut crate::System::String,
+        maxPerHour: i32,
+        maxPropertiesPerEvent: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "RegisterAnalyticsEvent",
+                (name, maxPerHour, maxPropertiesPerEvent),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendAnalyticsEvent(
+        &mut self,
+        name: *mut crate::System::String,
+        data: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendAnalyticsEvent", (name, data))?;
         Ok(__cordl_ret)
     }
     pub fn Update(
@@ -243,6 +153,57 @@ impl crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", (updateType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_currentTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object.invoke("get_currentTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_currentTimeForFixedUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object
+            .invoke("get_currentTimeForFixedUpdate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_currentTimeOffsetToRealtimeSinceStartup(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object
+            .invoke("get_currentTimeOffsetToRealtimeSinceStartup", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isInBatchMode(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isInBatchMode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isPlayerFocused(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isPlayerFocused", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_onBeforeUpdate(
@@ -260,37 +221,26 @@ impl crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
         > = __cordl_object.invoke("get_onBeforeUpdate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_onPlayerFocusChanged(
+    pub fn get_onDeviceDiscovered(
         &mut self,
-        value: *mut crate::System::Action_1<bool>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Action_2<i32, *mut crate::System::String>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_onPlayerFocusChanged", (value))?;
+        let __cordl_ret: *mut crate::System::Action_2<i32, *mut crate::System::String> = __cordl_object
+            .invoke("get_onDeviceDiscovered", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_screenSize(
+    pub fn get_onPlayerFocusChanged(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Action_1<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_screenSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SendAnalyticsEvent(
-        &mut self,
-        name: *mut crate::System::String,
-        data: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendAnalyticsEvent", (name, data))?;
+        let __cordl_ret: *mut crate::System::Action_1<bool> = __cordl_object
+            .invoke("get_onPlayerFocusChanged", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_onShouldRunUpdate(
@@ -310,30 +260,33 @@ impl crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
         > = __cordl_object.invoke("get_onShouldRunUpdate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn RegisterAnalyticsEvent(
+    pub fn get_onShutdown(
         &mut self,
-        name: *mut crate::System::String,
-        maxPerHour: i32,
-        maxPropertiesPerEvent: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Action> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "RegisterAnalyticsEvent",
-                (name, maxPerHour, maxPropertiesPerEvent),
-            )?;
+        let __cordl_ret: *mut crate::System::Action = __cordl_object
+            .invoke("get_onShutdown", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnShutdown(
+    pub fn get_onUpdate(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::LowLevel::InputUpdateDelegate,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnShutdown", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::LowLevel::InputUpdateDelegate = __cordl_object
+            .invoke("get_onUpdate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_pollingFrequency(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_pollingFrequency", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_runInBackground(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -343,29 +296,31 @@ impl crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
         let __cordl_ret: bool = __cordl_object.invoke("get_runInBackground", ())?;
         Ok(__cordl_ret)
     }
-    pub fn QueueEvent(
+    pub fn get_screenOrientation(
         &mut self,
-        ptr: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ScreenOrientation> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("QueueEvent", (ptr))?;
+        let __cordl_ret: crate::UnityEngine::ScreenOrientation = __cordl_object
+            .invoke("get_screenOrientation", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_onShouldRunUpdate(
+    pub fn get_screenSize(
         &mut self,
-        value: *mut crate::System::Func_2<
-            crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-            bool,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_onShouldRunUpdate", (value))?;
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_screenSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_unscaledGameTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_unscaledGameTime", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_onBeforeUpdate(
@@ -392,29 +347,74 @@ impl crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
             .invoke("set_onDeviceDiscovered", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_unscaledGameTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_unscaledGameTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_screenOrientation(
+    pub fn set_onPlayerFocusChanged(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ScreenOrientation> {
+        value: *mut crate::System::Action_1<bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::ScreenOrientation = __cordl_object
-            .invoke("get_screenOrientation", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_onPlayerFocusChanged", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_onShouldRunUpdate(
+        &mut self,
+        value: *mut crate::System::Func_2<
+            crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+            bool,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_onShouldRunUpdate", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_onShutdown(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_onShutdown", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_onUpdate(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::LowLevel::InputUpdateDelegate,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_onUpdate", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_pollingFrequency(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_pollingFrequency", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_runInBackground(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_runInBackground", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+NativeInputRuntime")]

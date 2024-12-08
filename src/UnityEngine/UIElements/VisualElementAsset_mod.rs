@@ -36,11 +36,24 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElementAsset {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementAsset")]
 impl crate::UnityEngine::UIElements::VisualElementAsset {
-    pub fn get_skipClone(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn OnAfterDeserialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_skipClone", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnAfterDeserialize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnBeforeSerialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnBeforeSerialize", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_classes(
@@ -56,14 +69,18 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
         > = __cordl_object.invoke("get_classes", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnBeforeSerialize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_hasStylesheetPaths(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnBeforeSerialize", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_hasStylesheetPaths", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hasStylesheets(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_hasStylesheets", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ruleIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -71,6 +88,13 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ruleIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_skipClone(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_skipClone", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_stylesheetPaths(
@@ -84,30 +108,6 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
             *mut crate::System::String,
         > = __cordl_object.invoke("get_stylesheetPaths", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnAfterDeserialize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnAfterDeserialize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_hasStylesheetPaths(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hasStylesheetPaths", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_hasStylesheets(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hasStylesheets", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_stylesheets(

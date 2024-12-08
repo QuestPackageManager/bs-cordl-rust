@@ -26,6 +26,32 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::RaycastH
 }
 #[cfg(feature = "UnityEngine+RaycastHit2D")]
 impl crate::UnityEngine::RaycastHit2D {
+    pub fn get_collider(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Collider2D> {
+        let __cordl_ret: *mut crate::UnityEngine::Collider2D = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_collider",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_distance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_distance",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_fraction(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_fraction",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_normal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
@@ -42,32 +68,6 @@ impl crate::UnityEngine::RaycastHit2D {
         let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_point",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_fraction(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_fraction",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_distance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_distance",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_collider(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Collider2D> {
-        let __cordl_ret: *mut crate::UnityEngine::Collider2D = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_collider",
             (),
         )?;
         Ok(__cordl_ret)

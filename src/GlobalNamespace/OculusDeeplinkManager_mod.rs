@@ -47,27 +47,21 @@ impl OculusDeeplinkManager {
             .invoke("IsAtLeastOneFieldPopulated", (deeplink))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didReceiveDeeplinkEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut Deeplink>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didReceiveDeeplinkEvent", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn UpdateDeeplinkMessage(
+    pub fn OculusPlatformWasInitialized(
         &mut self,
-        joinIntent: *mut crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
-        launchDetails: *mut crate::Oculus::Platform::Models::LaunchDetails,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateDeeplinkMessage", (joinIntent, launchDetails))?;
+            .invoke("OculusPlatformWasInitialized", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetJoinIntentReceivedNotificationCallback(
@@ -83,14 +77,26 @@ impl OculusDeeplinkManager {
             .invoke("SetJoinIntentReceivedNotificationCallback", (message))?;
         Ok(__cordl_ret)
     }
-    pub fn OculusPlatformWasInitialized(
+    pub fn UpdateDeeplinkMessage(
+        &mut self,
+        joinIntent: *mut crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
+        launchDetails: *mut crate::Oculus::Platform::Models::LaunchDetails,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateDeeplinkMessage", (joinIntent, launchDetails))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OculusPlatformWasInitialized", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_didReceiveDeeplinkEvent(
@@ -114,22 +120,16 @@ impl OculusDeeplinkManager {
             .invoke("get_currentDeeplink", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn remove_didReceiveDeeplinkEvent(
         &mut self,
+        value: *mut crate::System::Action_1<*mut Deeplink>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("remove_didReceiveDeeplinkEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OculusDeeplinkManager")]

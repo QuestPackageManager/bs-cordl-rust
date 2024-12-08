@@ -26,6 +26,15 @@ impl std::ops::DerefMut for crate::System::Reflection::AssemblyDefaultAliasAttri
 }
 #[cfg(feature = "System+Reflection+AssemblyDefaultAliasAttribute")]
 impl crate::System::Reflection::AssemblyDefaultAliasAttribute {
+    pub fn New(
+        defaultAlias: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (defaultAlias))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         defaultAlias: *mut crate::System::String,
@@ -36,15 +45,6 @@ impl crate::System::Reflection::AssemblyDefaultAliasAttribute {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (defaultAlias))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        defaultAlias: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (defaultAlias))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Reflection+AssemblyDefaultAliasAttribute")]

@@ -23,23 +23,14 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBuffers+DoubleBuffers")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers {
-    pub fn SetBackBuffer(
+    pub fn GetBackBuffer(
         &mut self,
         deviceIndex: i32,
-        ptr: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetBackBuffer",
-            (deviceIndex, ptr),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_valid",
-            (),
+            "GetBackBuffer",
+            (deviceIndex),
         )?;
         Ok(__cordl_ret)
     }
@@ -54,14 +45,27 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers 
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetBackBuffer(
+    pub fn SetBackBuffer(
         &mut self,
         deviceIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        ptr: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetBackBuffer",
-            (deviceIndex),
+            "SetBackBuffer",
+            (deviceIndex, ptr),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetFrontBuffer(
+        &mut self,
+        deviceIndex: i32,
+        ptr: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetFrontBuffer",
+            (deviceIndex, ptr),
         )?;
         Ok(__cordl_ret)
     }
@@ -76,15 +80,11 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers 
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetFrontBuffer(
-        &mut self,
-        deviceIndex: i32,
-        ptr: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetFrontBuffer",
-            (deviceIndex, ptr),
+            "get_valid",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -122,21 +122,6 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
 impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
     #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBuffers+DoubleBuffers")]
     pub type DoubleBuffers = crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers;
-    pub fn MigrateAll(
-        &mut self,
-        devices: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
-        >,
-        deviceCount: i32,
-        oldBuffers: crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MigrateAll",
-            (devices, deviceCount, oldBuffers),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn AllocateAll(
         &mut self,
         devices: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -171,6 +156,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
             self,
             "GetDoubleBuffersFor",
             (updateType),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn MigrateAll(
+        &mut self,
+        devices: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        >,
+        deviceCount: i32,
+        oldBuffers: crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MigrateAll",
+            (devices, deviceCount, oldBuffers),
         )?;
         Ok(__cordl_ret)
     }

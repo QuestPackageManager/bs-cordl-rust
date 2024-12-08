@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::RecipientInformationS
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+RecipientInformationStore")]
 impl crate::Org::BouncyCastle::Cms::RecipientInformationStore {
-    pub fn get_Item(
+    pub fn GetFirstRecipient(
         &mut self,
         selector: *mut crate::Org::BouncyCastle::Cms::RecipientID,
     ) -> quest_hook::libil2cpp::Result<
@@ -37,7 +37,7 @@ impl crate::Org::BouncyCastle::Cms::RecipientInformationStore {
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Cms::RecipientInformation = __cordl_object
-            .invoke("get_Item", (selector))?;
+            .invoke("GetFirstRecipient", (selector))?;
         Ok(__cordl_ret)
     }
     pub fn GetRecipients_0(
@@ -61,6 +61,15 @@ impl crate::Org::BouncyCastle::Cms::RecipientInformationStore {
             .invoke("GetRecipients", (selector))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        recipientInfos: *mut crate::System::Collections::ICollection,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (recipientInfos))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         recipientInfos: *mut crate::System::Collections::ICollection,
@@ -72,7 +81,14 @@ impl crate::Org::BouncyCastle::Cms::RecipientInformationStore {
             .invoke(".ctor", (recipientInfos))?;
         Ok(__cordl_ret)
     }
-    pub fn GetFirstRecipient(
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(
         &mut self,
         selector: *mut crate::Org::BouncyCastle::Cms::RecipientID,
     ) -> quest_hook::libil2cpp::Result<
@@ -82,24 +98,8 @@ impl crate::Org::BouncyCastle::Cms::RecipientInformationStore {
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Cms::RecipientInformation = __cordl_object
-            .invoke("GetFirstRecipient", (selector))?;
+            .invoke("get_Item", (selector))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        recipientInfos: *mut crate::System::Collections::ICollection,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (recipientInfos))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+RecipientInformationStore")]

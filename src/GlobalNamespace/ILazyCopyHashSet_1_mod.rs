@@ -25,21 +25,6 @@ impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for ILazyCopyHashSet_1<T
 }
 #[cfg(feature = "ILazyCopyHashSet_1")]
 impl<T: quest_hook::libil2cpp::Type> ILazyCopyHashSet_1<T> {
-    pub fn Remove(
-        &mut self,
-        item: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Remove", (item))?;
-        Ok(__cordl_ret)
-    }
     pub fn Add(
         &mut self,
         item: T,
@@ -53,6 +38,21 @@ impl<T: quest_hook::libil2cpp::Type> ILazyCopyHashSet_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Add", (item))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Remove(
+        &mut self,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Remove", (item))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

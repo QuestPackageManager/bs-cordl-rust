@@ -39,16 +39,6 @@ impl std::ops::DerefMut for AnnotatedBeatmapLevelCollectionsGridViewAnimator {
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridViewAnimator")]
 impl AnnotatedBeatmapLevelCollectionsGridViewAnimator {
-    pub fn _AnimateClose_b__19_3(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<AnimateClose>b__19_3", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AnimateClose(
         &mut self,
         selectedColumn: i32,
@@ -62,25 +52,15 @@ impl AnnotatedBeatmapLevelCollectionsGridViewAnimator {
             .invoke("AnimateClose", (selectedColumn, selectedRow, animated))?;
         Ok(__cordl_ret)
     }
-    pub fn _AnimateClose_b__19_2(
+    pub fn AnimateOpen(
         &mut self,
-        pos: crate::UnityEngine::Vector2,
+        animated: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<AnimateClose>b__19_2", (pos))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("AnimateOpen", (animated))?;
         Ok(__cordl_ret)
     }
     pub fn DespawnAllActiveTweens(
@@ -98,6 +78,13 @@ impl AnnotatedBeatmapLevelCollectionsGridViewAnimator {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetContentXOffset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetContentYOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("GetContentYOffset", ())?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -118,23 +105,12 @@ impl AnnotatedBeatmapLevelCollectionsGridViewAnimator {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetContentYOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetContentYOffset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _AnimateOpen_b__18_2(
-        &mut self,
-        pos: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<AnimateOpen>b__18_2", (pos))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnDestroy(
         &mut self,
@@ -144,16 +120,6 @@ impl AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _AnimateOpen_b__18_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<AnimateOpen>b__18_1", ())?;
         Ok(__cordl_ret)
     }
     pub fn ScrollToRowIdxInstant(
@@ -179,17 +145,6 @@ impl AnnotatedBeatmapLevelCollectionsGridViewAnimator {
             .invoke("<AnimateClose>b__19_0", (_cordl_size))?;
         Ok(__cordl_ret)
     }
-    pub fn AnimateOpen(
-        &mut self,
-        animated: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AnimateOpen", (animated))?;
-        Ok(__cordl_ret)
-    }
     pub fn _AnimateClose_b__19_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -200,14 +155,25 @@ impl AnnotatedBeatmapLevelCollectionsGridViewAnimator {
             .invoke("<AnimateClose>b__19_1", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _AnimateOpen_b__18_3(
+    pub fn _AnimateClose_b__19_2(
+        &mut self,
+        pos: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<AnimateClose>b__19_2", (pos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _AnimateClose_b__19_3(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<AnimateOpen>b__18_3", ())?;
+            .invoke("<AnimateClose>b__19_3", ())?;
         Ok(__cordl_ret)
     }
     pub fn _AnimateOpen_b__18_0(
@@ -221,12 +187,46 @@ impl AnnotatedBeatmapLevelCollectionsGridViewAnimator {
             .invoke("<AnimateOpen>b__18_0", (_cordl_size))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _AnimateOpen_b__18_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<AnimateOpen>b__18_1", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _AnimateOpen_b__18_2(
+        &mut self,
+        pos: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<AnimateOpen>b__18_2", (pos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _AnimateOpen_b__18_3(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<AnimateOpen>b__18_3", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridViewAnimator")]

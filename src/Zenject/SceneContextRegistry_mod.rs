@@ -39,6 +39,57 @@ impl crate::Zenject::SceneContextRegistry {
             .invoke("Add", (context))?;
         Ok(__cordl_ret)
     }
+    pub fn GetContainerForScene(
+        &mut self,
+        scene: crate::UnityEngine::SceneManagement::Scene,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
+            .invoke("GetContainerForScene", (scene))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSceneContextForScene_Scene1(
+        &mut self,
+        scene: crate::UnityEngine::SceneManagement::Scene,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SceneContext> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::SceneContext = __cordl_object
+            .invoke("GetSceneContextForScene", (scene))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSceneContextForScene_String0(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SceneContext> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::SceneContext = __cordl_object
+            .invoke("GetSceneContextForScene", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Remove(
+        &mut self,
+        context: *mut crate::Zenject::SceneContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Remove", (context))?;
+        Ok(__cordl_ret)
+    }
     pub fn TryGetContainerForScene(
         &mut self,
         scene: crate::UnityEngine::SceneManagement::Scene,
@@ -50,6 +101,28 @@ impl crate::Zenject::SceneContextRegistry {
             .invoke("TryGetContainerForScene", (scene))?;
         Ok(__cordl_ret)
     }
+    pub fn TryGetSceneContextForScene_Scene1(
+        &mut self,
+        scene: crate::UnityEngine::SceneManagement::Scene,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SceneContext> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::SceneContext = __cordl_object
+            .invoke("TryGetSceneContextForScene", (scene))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetSceneContextForScene_String0(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SceneContext> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::SceneContext = __cordl_object
+            .invoke("TryGetSceneContextForScene", (name))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -58,17 +131,6 @@ impl crate::Zenject::SceneContextRegistry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Remove(
-        &mut self,
-        context: *mut crate::Zenject::SceneContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Remove", (context))?;
         Ok(__cordl_ret)
     }
     pub fn get_SceneContexts(
@@ -85,68 +147,6 @@ impl crate::Zenject::SceneContextRegistry {
             *mut crate::Zenject::SceneContext,
         > = __cordl_object.invoke("get_SceneContexts", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn TryGetSceneContextForScene_String0(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SceneContext> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::SceneContext = __cordl_object
-            .invoke("TryGetSceneContextForScene", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetSceneContextForScene_Scene1(
-        &mut self,
-        scene: crate::UnityEngine::SceneManagement::Scene,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SceneContext> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::SceneContext = __cordl_object
-            .invoke("TryGetSceneContextForScene", (scene))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSceneContextForScene_String0(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SceneContext> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::SceneContext = __cordl_object
-            .invoke("GetSceneContextForScene", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSceneContextForScene_Scene1(
-        &mut self,
-        scene: crate::UnityEngine::SceneManagement::Scene,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SceneContext> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::SceneContext = __cordl_object
-            .invoke("GetSceneContextForScene", (scene))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetContainerForScene(
-        &mut self,
-        scene: crate::UnityEngine::SceneManagement::Scene,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
-            .invoke("GetContainerForScene", (scene))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+SceneContextRegistry")]

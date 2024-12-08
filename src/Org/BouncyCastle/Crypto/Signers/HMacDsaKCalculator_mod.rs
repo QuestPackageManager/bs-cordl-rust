@@ -41,18 +41,6 @@ impl crate::Org::BouncyCastle::Crypto::Signers::HMacDsaKCalculator {
             .invoke("BitsToInt", (t))?;
         Ok(__cordl_ret)
     }
-    pub fn Init_SecureRandom0(
-        &mut self,
-        n: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (n, random))?;
-        Ok(__cordl_ret)
-    }
     pub fn Init_BigInteger_Il2CppArray1(
         &mut self,
         n: *mut crate::Org::BouncyCastle::Math::BigInteger,
@@ -66,16 +54,26 @@ impl crate::Org::BouncyCastle::Crypto::Signers::HMacDsaKCalculator {
             .invoke("Init", (n, d, message))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn Init_SecureRandom0(
         &mut self,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+        n: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (digest))?;
+            .invoke("Init", (n, random))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (digest))?;
+        Ok(__cordl_object)
     }
     pub fn NextK(
         &mut self,
@@ -87,21 +85,23 @@ impl crate::Org::BouncyCastle::Crypto::Signers::HMacDsaKCalculator {
             .invoke("NextK", ())?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (digest))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_IsDeterministic(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsDeterministic", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (digest))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+HMacDsaKCalculator")]

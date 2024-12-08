@@ -29,6 +29,21 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ScreenCaptureAfterDelay_Init
 }
 #[cfg(feature = "ScreenCaptureAfterDelay+InitData")]
 impl crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData {
+    pub fn New(
+        screenshotType: crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType,
+        screenCaptureTime: f32,
+        pixelsWidth: i32,
+        pixelsHeight: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (screenshotType, screenCaptureTime, pixelsWidth, pixelsHeight),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         screenshotType: crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType,
@@ -45,21 +60,6 @@ impl crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData {
                 (screenshotType, screenCaptureTime, pixelsWidth, pixelsHeight),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        screenshotType: crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType,
-        screenCaptureTime: f32,
-        pixelsWidth: i32,
-        pixelsHeight: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (screenshotType, screenCaptureTime, pixelsWidth, pixelsHeight),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ScreenCaptureAfterDelay+InitData")]
@@ -102,10 +102,10 @@ impl std::ops::DerefMut for ScreenCaptureAfterDelay {
 }
 #[cfg(feature = "ScreenCaptureAfterDelay")]
 impl ScreenCaptureAfterDelay {
-    #[cfg(feature = "ScreenCaptureAfterDelay+InitData")]
-    pub type InitData = crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData;
     #[cfg(feature = "ScreenCaptureAfterDelay+_Start_d__6")]
     pub type _Start_d__6 = crate::GlobalNamespace::ScreenCaptureAfterDelay__Start_d__6;
+    #[cfg(feature = "ScreenCaptureAfterDelay+InitData")]
+    pub type InitData = crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData;
     pub fn HandleMainEffectControllerAfterImageEffectEvent(
         &mut self,
         renderTexture: *mut crate::UnityEngine::RenderTexture,
@@ -115,6 +115,23 @@ impl ScreenCaptureAfterDelay {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleMainEffectControllerAfterImageEffectEvent", (renderTexture))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn Start(
@@ -136,23 +153,6 @@ impl ScreenCaptureAfterDelay {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ScreenCaptureAfterDelay")]

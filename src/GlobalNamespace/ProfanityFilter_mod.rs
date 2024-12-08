@@ -28,19 +28,6 @@ impl ProfanityFilter {
     pub type TrieNode = crate::GlobalNamespace::ProfanityFilter_TrieNode;
     #[cfg(feature = "ProfanityFilter+_GetLookalikeLetters_d__4")]
     pub type _GetLookalikeLetters_d__4 = crate::GlobalNamespace::ProfanityFilter__GetLookalikeLetters_d__4;
-    pub fn _ctor(
-        &mut self,
-        wordList: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (wordList))?;
-        Ok(__cordl_ret)
-    }
     pub fn IsProfane(
         &mut self,
         word: *mut crate::System::String,
@@ -55,12 +42,25 @@ impl ProfanityFilter {
         wordList: *mut crate::System::Collections::Generic::IEnumerable_1<
             *mut crate::System::String,
         >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (wordList))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        wordList: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::String,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (wordList))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "ProfanityFilter")]
@@ -126,6 +126,13 @@ impl crate::GlobalNamespace::ProfanityFilter_TrieNode {
         let __cordl_ret: bool = __cordl_object.invoke("IsMatch", (word, index))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -135,13 +142,6 @@ impl crate::GlobalNamespace::ProfanityFilter_TrieNode {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ProfanityFilter+TrieNode")]

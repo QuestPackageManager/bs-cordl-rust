@@ -35,6 +35,11 @@ impl crate::UnityEngine::UIElements::IBaseUxmlFactory {
         let __cordl_ret: bool = __cordl_object.invoke("AcceptsAttributeBag", (bag, cc))?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_uxmlQualifiedName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -54,11 +59,6 @@ impl crate::UnityEngine::UIElements::IBaseUxmlFactory {
         let __cordl_ret: *mut crate::System::Type = __cordl_object
             .invoke("get_uxmlType", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IBaseUxmlFactory")]

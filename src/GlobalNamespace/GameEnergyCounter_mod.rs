@@ -72,18 +72,52 @@ impl GameEnergyCounter {
             .invoke("HandleNoteWasMissed", (noteController))?;
         Ok(__cordl_ret)
     }
-    pub fn get_isInitialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn LateUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isInitialized", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LateUpdate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_batteryLives(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_batteryLives", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessEnergyChange(
+        &mut self,
+        energyChange: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessEnergyChange", (energyChange))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -96,15 +130,58 @@ impl GameEnergyCounter {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_energy(
+    pub fn add_didInitEvent(
         &mut self,
-        value: f32,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_energy", (value))?;
+            .invoke("add_didInitEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_gameEnergyDidChangeEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<f32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_gameEnergyDidChangeEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_gameEnergyDidReach0Event(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_gameEnergyDidReach0Event", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_batteryEnergy(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_batteryEnergy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_batteryLives(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_batteryLives", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_energy(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_energy", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_energyType(
@@ -126,58 +203,6 @@ impl GameEnergyCounter {
         let __cordl_ret: bool = __cordl_object.invoke("get_failOnSaberClash", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_instaFail(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_instaFail", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LateUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LateUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_gameEnergyDidReach0Event(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_gameEnergyDidReach0Event", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_instaFail(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -185,40 +210,11 @@ impl GameEnergyCounter {
         let __cordl_ret: bool = __cordl_object.invoke("get_instaFail", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessEnergyChange(
-        &mut self,
-        energyChange: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_isInitialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessEnergyChange", (energyChange))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_energy(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_energy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didInitEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didInitEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_batteryEnergy(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_batteryEnergy", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isInitialized", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_noFail(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -226,17 +222,6 @@ impl GameEnergyCounter {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_noFail", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_energyType(
-        &mut self,
-        value: crate::GlobalNamespace::GameplayModifiers_EnergyType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_energyType", (value))?;
         Ok(__cordl_ret)
     }
     pub fn remove_didInitEvent(
@@ -250,17 +235,6 @@ impl GameEnergyCounter {
             .invoke("remove_didInitEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_gameEnergyDidReach0Event(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_gameEnergyDidReach0Event", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn remove_gameEnergyDidChangeEvent(
         &mut self,
         value: *mut crate::System::Action_1<f32>,
@@ -272,26 +246,37 @@ impl GameEnergyCounter {
             .invoke("remove_gameEnergyDidChangeEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_noFail(
+    pub fn remove_gameEnergyDidReach0Event(
         &mut self,
-        value: bool,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_noFail", (value))?;
+            .invoke("remove_gameEnergyDidReach0Event", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn add_gameEnergyDidChangeEvent(
+    pub fn set_energy(
         &mut self,
-        value: *mut crate::System::Action_1<f32>,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_gameEnergyDidChangeEvent", (value))?;
+            .invoke("set_energy", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_energyType(
+        &mut self,
+        value: crate::GlobalNamespace::GameplayModifiers_EnergyType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_energyType", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_failOnSaberClash(
@@ -305,12 +290,27 @@ impl GameEnergyCounter {
             .invoke("set_failOnSaberClash", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_instaFail(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_instaFail", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_noFail(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_noFail", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "GameEnergyCounter")]
@@ -352,6 +352,18 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameEnergyCounter_InitData {
 }
 #[cfg(feature = "GameEnergyCounter+InitData")]
 impl crate::GlobalNamespace::GameEnergyCounter_InitData {
+    pub fn New(
+        energyType: crate::GlobalNamespace::GameplayModifiers_EnergyType,
+        noFail: bool,
+        instaFail: bool,
+        failOnSaberClash: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (energyType, noFail, instaFail, failOnSaberClash))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         energyType: crate::GlobalNamespace::GameplayModifiers_EnergyType,
@@ -365,18 +377,6 @@ impl crate::GlobalNamespace::GameEnergyCounter_InitData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (energyType, noFail, instaFail, failOnSaberClash))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        energyType: crate::GlobalNamespace::GameplayModifiers_EnergyType,
-        noFail: bool,
-        instaFail: bool,
-        failOnSaberClash: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (energyType, noFail, instaFail, failOnSaberClash))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "GameEnergyCounter+InitData")]

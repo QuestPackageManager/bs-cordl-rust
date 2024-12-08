@@ -36,16 +36,42 @@ impl std::ops::DerefMut for crate::Tweening::Tween {
 #[cfg(feature = "Tweening+Tween")]
 impl crate::Tweening::Tween {
     pub const kEpsilon: f32 = 0.001f32;
-    pub fn SetStartTimeAndEndTime(
+    pub fn Kill(
         &mut self,
-        startTime: f32,
-        endTime: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetStartTimeAndEndTime", (startTime, endTime))?;
+            .invoke("Kill", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Restart(
+        &mut self,
+        startTime: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Restart", (startTime))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Resume(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Resume", ())?;
         Ok(__cordl_ret)
     }
     pub fn Sample(
@@ -59,11 +85,27 @@ impl crate::Tweening::Tween {
             .invoke("Sample", (t))?;
         Ok(__cordl_ret)
     }
-    pub fn get_isKilled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn SetStartTimeAndEndTime(
+        &mut self,
+        startTime: f32,
+        endTime: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isKilled", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetStartTimeAndEndTime", (startTime, endTime))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Update(
+        &mut self,
+        currentTime: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", (currentTime))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -76,22 +118,11 @@ impl crate::Tweening::Tween {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_startTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_delay(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_startTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_duration(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_duration", (value))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_delay", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -101,11 +132,70 @@ impl crate::Tweening::Tween {
         let __cordl_ret: f32 = __cordl_object.invoke("get_duration", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_easeType(&mut self) -> quest_hook::libil2cpp::Result<EaseType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: EaseType = __cordl_object.invoke("get_easeType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isActive", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isComplete(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isComplete", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isKilled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isKilled", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isStarted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isStarted", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_loop(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_loop", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_progress(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_progress", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_startTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_startTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_updateAt(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Tweening::FrameParity> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Tweening::FrameParity = __cordl_object
+            .invoke("get_updateAt", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_delay(
@@ -119,21 +209,26 @@ impl crate::Tweening::Tween {
             .invoke("set_delay", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_isStarted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isStarted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Kill(
+    pub fn set_duration(
         &mut self,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Kill", ())?;
+            .invoke("set_duration", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_easeType(
+        &mut self,
+        value: EaseType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_easeType", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_loop(
@@ -157,101 +252,6 @@ impl crate::Tweening::Tween {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_updateAt", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_delay(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_delay", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_updateAt(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Tweening::FrameParity> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Tweening::FrameParity = __cordl_object
-            .invoke("get_updateAt", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Update(
-        &mut self,
-        currentTime: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", (currentTime))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_easeType(&mut self) -> quest_hook::libil2cpp::Result<EaseType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: EaseType = __cordl_object.invoke("get_easeType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isActive", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_progress(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_progress", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Restart(
-        &mut self,
-        startTime: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Restart", (startTime))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isComplete(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isComplete", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Resume(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Resume", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_easeType(
-        &mut self,
-        value: EaseType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_easeType", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Tweening+Tween")]

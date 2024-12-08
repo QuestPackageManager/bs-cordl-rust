@@ -27,6 +27,36 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cmp::PollRepContent 
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PollRepContent")]
 impl crate::Org::BouncyCastle::Asn1::Cmp::PollRepContent {
+    pub fn New_Asn1Sequence0(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_DerInteger_DerInteger1(
+        certReqId: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+        checkAfter: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (certReqId, checkAfter))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_DerInteger_DerInteger_PkiFreeText2(
+        certReqId: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+        checkAfter: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+        reason: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiFreeText,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (certReqId, checkAfter, reason))?;
+        Ok(__cordl_object)
+    }
     pub fn ToAsn1Object(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
@@ -35,16 +65,6 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PollRepContent {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
             .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CheckAfter(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::DerInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
-            .invoke("get_CheckAfter", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_Asn1Sequence0(
@@ -93,6 +113,16 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PollRepContent {
             .invoke("get_CertReqID", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_CheckAfter(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::DerInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
+            .invoke("get_CheckAfter", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Reason(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -104,36 +134,6 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PollRepContent {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiFreeText = __cordl_object
             .invoke("get_Reason", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_Asn1Sequence0(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_DerInteger_DerInteger1(
-        certReqId: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-        checkAfter: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (certReqId, checkAfter))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_DerInteger_DerInteger_PkiFreeText2(
-        certReqId: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-        checkAfter: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-        reason: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiFreeText,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (certReqId, checkAfter, reason))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PollRepContent")]

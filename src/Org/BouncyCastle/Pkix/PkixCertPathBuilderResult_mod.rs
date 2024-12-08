@@ -26,6 +26,31 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkix::PkixCertPathBuilderR
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathBuilderResult")]
 impl crate::Org::BouncyCastle::Pkix::PkixCertPathBuilderResult {
+    pub fn New(
+        certPath: *mut crate::Org::BouncyCastle::Pkix::PkixCertPath,
+        trustAnchor: *mut crate::Org::BouncyCastle::Pkix::TrustAnchor,
+        policyTree: *mut crate::Org::BouncyCastle::Pkix::PkixPolicyNode,
+        subjectPublicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (certPath, trustAnchor, policyTree, subjectPublicKey),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         certPath: *mut crate::Org::BouncyCastle::Pkix::PkixCertPath,
@@ -51,31 +76,6 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathBuilderResult {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Pkix::PkixCertPath = __cordl_object
             .invoke("get_CertPath", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        certPath: *mut crate::Org::BouncyCastle::Pkix::PkixCertPath,
-        trustAnchor: *mut crate::Org::BouncyCastle::Pkix::TrustAnchor,
-        policyTree: *mut crate::Org::BouncyCastle::Pkix::PkixPolicyNode,
-        subjectPublicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (certPath, trustAnchor, policyTree, subjectPublicKey),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathBuilderResult")]

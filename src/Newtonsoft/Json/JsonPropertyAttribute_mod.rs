@@ -58,142 +58,21 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonPropertyAttribute {
 }
 #[cfg(feature = "Newtonsoft+Json+JsonPropertyAttribute")]
 impl crate::Newtonsoft::Json::JsonPropertyAttribute {
-    pub fn get_ItemConverterParameters(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
-        > = __cordl_object.invoke("get_ItemConverterParameters", ())?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn get_NamingStrategyParameters(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
-        > = __cordl_object.invoke("get_NamingStrategyParameters", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_NullValueHandling(
-        &mut self,
-        value: crate::Newtonsoft::Json::NullValueHandling,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_NullValueHandling", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ReferenceLoopHandling(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::ReferenceLoopHandling> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Newtonsoft::Json::ReferenceLoopHandling = __cordl_object
-            .invoke("get_ReferenceLoopHandling", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ObjectCreationHandling(
-        &mut self,
-        value: crate::Newtonsoft::Json::ObjectCreationHandling,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ObjectCreationHandling", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ItemTypeNameHandling(
-        &mut self,
-        value: crate::Newtonsoft::Json::TypeNameHandling,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ItemTypeNameHandling", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ObjectCreationHandling(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::ObjectCreationHandling> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Newtonsoft::Json::ObjectCreationHandling = __cordl_object
-            .invoke("get_ObjectCreationHandling", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsReference(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsReference", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Order(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Order", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ItemConverterType(
-        &mut self,
-        value: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ItemConverterType", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_NamingStrategyType(
-        &mut self,
-        value: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_NamingStrategyType", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ItemReferenceLoopHandling(
-        &mut self,
-        value: crate::Newtonsoft::Json::ReferenceLoopHandling,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ItemReferenceLoopHandling", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ItemIsReference(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_ItemIsReference", ())?;
-        Ok(__cordl_ret)
+    pub fn New_String1(
+        propertyName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (propertyName))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_0(
         &mut self,
@@ -216,15 +95,34 @@ impl crate::Newtonsoft::Json::JsonPropertyAttribute {
             .invoke(".ctor", (propertyName))?;
         Ok(__cordl_ret)
     }
-    pub fn set_IsReference(
+    pub fn get_DefaultValueHandling(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::DefaultValueHandling> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsReference", (value))?;
+        let __cordl_ret: crate::Newtonsoft::Json::DefaultValueHandling = __cordl_object
+            .invoke("get_DefaultValueHandling", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsReference(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsReference", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ItemConverterParameters(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Object,
+        > = __cordl_object.invoke("get_ItemConverterParameters", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ItemConverterType(
@@ -237,67 +135,44 @@ impl crate::Newtonsoft::Json::JsonPropertyAttribute {
             .invoke("get_ItemConverterType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_PropertyName(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_ItemIsReference(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_PropertyName", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_ItemIsReference", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_NamingStrategyParameters(
+    pub fn get_ItemReferenceLoopHandling(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::ReferenceLoopHandling> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_NamingStrategyParameters", (value))?;
+        let __cordl_ret: crate::Newtonsoft::Json::ReferenceLoopHandling = __cordl_object
+            .invoke("get_ItemReferenceLoopHandling", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_NullValueHandling(
+    pub fn get_ItemTypeNameHandling(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::NullValueHandling> {
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::TypeNameHandling> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::Newtonsoft::Json::NullValueHandling = __cordl_object
-            .invoke("get_NullValueHandling", ())?;
+        let __cordl_ret: crate::Newtonsoft::Json::TypeNameHandling = __cordl_object
+            .invoke("get_ItemTypeNameHandling", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Required(
+    pub fn get_NamingStrategyParameters(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Required> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::Newtonsoft::Json::Required = __cordl_object
-            .invoke("get_Required", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ItemIsReference(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ItemIsReference", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_DefaultValueHandling(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::DefaultValueHandling> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Newtonsoft::Json::DefaultValueHandling = __cordl_object
-            .invoke("get_DefaultValueHandling", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Object,
+        > = __cordl_object.invoke("get_NamingStrategyParameters", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_NamingStrategyType(
@@ -310,15 +185,71 @@ impl crate::Newtonsoft::Json::JsonPropertyAttribute {
             .invoke("get_NamingStrategyType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_Required(
+    pub fn get_NullValueHandling(
         &mut self,
-        value: crate::Newtonsoft::Json::Required,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::NullValueHandling> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Required", (value))?;
+        let __cordl_ret: crate::Newtonsoft::Json::NullValueHandling = __cordl_object
+            .invoke("get_NullValueHandling", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ObjectCreationHandling(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::ObjectCreationHandling> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Newtonsoft::Json::ObjectCreationHandling = __cordl_object
+            .invoke("get_ObjectCreationHandling", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Order(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Order", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_PropertyName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_PropertyName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ReferenceLoopHandling(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::ReferenceLoopHandling> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Newtonsoft::Json::ReferenceLoopHandling = __cordl_object
+            .invoke("get_ReferenceLoopHandling", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Required(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Required> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Newtonsoft::Json::Required = __cordl_object
+            .invoke("get_Required", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TypeNameHandling(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::TypeNameHandling> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Newtonsoft::Json::TypeNameHandling = __cordl_object
+            .invoke("get_TypeNameHandling", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_DefaultValueHandling(
@@ -332,63 +263,15 @@ impl crate::Newtonsoft::Json::JsonPropertyAttribute {
             .invoke("set_DefaultValueHandling", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_ReferenceLoopHandling(
+    pub fn set_IsReference(
         &mut self,
-        value: crate::Newtonsoft::Json::ReferenceLoopHandling,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ReferenceLoopHandling", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Order(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Order", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TypeNameHandling(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::TypeNameHandling> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Newtonsoft::Json::TypeNameHandling = __cordl_object
-            .invoke("get_TypeNameHandling", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_TypeNameHandling(
-        &mut self,
-        value: crate::Newtonsoft::Json::TypeNameHandling,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_TypeNameHandling", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_PropertyName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_PropertyName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ItemReferenceLoopHandling(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::ReferenceLoopHandling> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Newtonsoft::Json::ReferenceLoopHandling = __cordl_object
-            .invoke("get_ItemReferenceLoopHandling", ())?;
+            .invoke("set_IsReference", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_ItemConverterParameters(
@@ -402,31 +285,148 @@ impl crate::Newtonsoft::Json::JsonPropertyAttribute {
             .invoke("set_ItemConverterParameters", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_ItemTypeNameHandling(
+    pub fn set_ItemConverterType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::TypeNameHandling> {
+        value: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::Newtonsoft::Json::TypeNameHandling = __cordl_object
-            .invoke("get_ItemTypeNameHandling", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ItemConverterType", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_ItemIsReference(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ItemIsReference", (value))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_String1(
-        propertyName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (propertyName))?;
-        Ok(__cordl_object)
+    pub fn set_ItemReferenceLoopHandling(
+        &mut self,
+        value: crate::Newtonsoft::Json::ReferenceLoopHandling,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ItemReferenceLoopHandling", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ItemTypeNameHandling(
+        &mut self,
+        value: crate::Newtonsoft::Json::TypeNameHandling,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ItemTypeNameHandling", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_NamingStrategyParameters(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_NamingStrategyParameters", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_NamingStrategyType(
+        &mut self,
+        value: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_NamingStrategyType", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_NullValueHandling(
+        &mut self,
+        value: crate::Newtonsoft::Json::NullValueHandling,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_NullValueHandling", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ObjectCreationHandling(
+        &mut self,
+        value: crate::Newtonsoft::Json::ObjectCreationHandling,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ObjectCreationHandling", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Order(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Order", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_PropertyName(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_PropertyName", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ReferenceLoopHandling(
+        &mut self,
+        value: crate::Newtonsoft::Json::ReferenceLoopHandling,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ReferenceLoopHandling", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Required(
+        &mut self,
+        value: crate::Newtonsoft::Json::Required,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Required", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_TypeNameHandling(
+        &mut self,
+        value: crate::Newtonsoft::Json::TypeNameHandling,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_TypeNameHandling", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+JsonPropertyAttribute")]

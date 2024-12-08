@@ -36,25 +36,15 @@ impl std::ops::DerefMut for PlatformAuthenticationTokenProvider {
 impl PlatformAuthenticationTokenProvider {
     pub const kXPlatformTokenRetryDelayLengthSeconds: i32 = 30i32;
     #[cfg(
-        feature = "PlatformAuthenticationTokenProvider+_RequestXPlatformAccessToken_d__19"
-    )]
-    pub type _RequestXPlatformAccessToken_d__19 = crate::GlobalNamespace::PlatformAuthenticationTokenProvider__RequestXPlatformAccessToken_d__19;
-    #[cfg(feature = "PlatformAuthenticationTokenProvider+_GetAuthenticationToken_d__16")]
-    pub type _GetAuthenticationToken_d__16 = crate::GlobalNamespace::PlatformAuthenticationTokenProvider__GetAuthenticationToken_d__16;
-    #[cfg(
         feature = "PlatformAuthenticationTokenProvider+_GetXPlatformAccessToken_d__18"
     )]
     pub type _GetXPlatformAccessToken_d__18 = crate::GlobalNamespace::PlatformAuthenticationTokenProvider__GetXPlatformAccessToken_d__18;
-    pub fn get_hashedUserId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_hashedUserId", ())?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "PlatformAuthenticationTokenProvider+_GetAuthenticationToken_d__16")]
+    pub type _GetAuthenticationToken_d__16 = crate::GlobalNamespace::PlatformAuthenticationTokenProvider__GetAuthenticationToken_d__16;
+    #[cfg(
+        feature = "PlatformAuthenticationTokenProvider+_RequestXPlatformAccessToken_d__19"
+    )]
+    pub type _RequestXPlatformAccessToken_d__19 = crate::GlobalNamespace::PlatformAuthenticationTokenProvider__RequestXPlatformAccessToken_d__19;
     pub fn GetAuthenticationToken(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -81,30 +71,6 @@ impl PlatformAuthenticationTokenProvider {
             .invoke("GetTokenPlatform", (tokenPlatformEnvironment))?;
         Ok(__cordl_ret)
     }
-    pub fn get_platform(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::AuthenticationToken_Platform,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken_Platform = __cordl_object
-            .invoke("get_platform", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        platformUserModel: *mut IPlatformUserModel,
-        userInfo: *mut UserInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (platformUserModel, userInfo))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetXPlatformAccessToken(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -121,15 +87,15 @@ impl PlatformAuthenticationTokenProvider {
             .invoke("GetXPlatformAccessToken", (cancellationToken, skipCache))?;
         Ok(__cordl_ret)
     }
-    pub fn get_userName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_userName", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        platformUserModel: *mut IPlatformUserModel,
+        userInfo: *mut UserInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (platformUserModel, userInfo))?;
+        Ok(__cordl_object)
     }
     pub fn RequestXPlatformAccessToken(
         &mut self,
@@ -145,15 +111,49 @@ impl PlatformAuthenticationTokenProvider {
         > = __cordl_object.invoke("RequestXPlatformAccessToken", (cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         platformUserModel: *mut IPlatformUserModel,
         userInfo: *mut UserInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (platformUserModel, userInfo))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (platformUserModel, userInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hashedUserId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_hashedUserId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_platform(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::AuthenticationToken_Platform,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken_Platform = __cordl_object
+            .invoke("get_platform", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_userName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_userName", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PlatformAuthenticationTokenProvider")]

@@ -29,6 +29,16 @@ for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
 }
 #[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
 impl crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
+    pub fn MoveNext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn SetStateMachine(
         &mut self,
         stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
@@ -37,16 +47,6 @@ impl crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
             self,
             "SetStateMachine",
             (stateMachine),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveNext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -78,6 +78,28 @@ for crate::System::Net::HttpWebRequest_AuthorizationState {
 }
 #[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
 impl crate::System::Net::HttpWebRequest_AuthorizationState {
+    pub fn CheckAuthorization(
+        &mut self,
+        response: *mut crate::System::Net::WebResponse,
+        code: crate::System::Net::HttpStatusCode,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CheckAuthorization",
+            (response, code),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Reset",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -100,6 +122,14 @@ impl crate::System::Net::HttpWebRequest_AuthorizationState {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsCompleted",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_IsNtlmAuthenticated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -116,36 +146,6 @@ impl crate::System::Net::HttpWebRequest_AuthorizationState {
         let __cordl_ret: crate::System::Net::HttpWebRequest_NtlmAuthState = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_NtlmAuthState",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckAuthorization(
-        &mut self,
-        response: *mut crate::System::Net::WebResponse,
-        code: crate::System::Net::HttpStatusCode,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CheckAuthorization",
-            (response, code),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsCompleted",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Reset",
             (),
         )?;
         Ok(__cordl_ret)
@@ -234,16 +234,8 @@ impl std::ops::DerefMut for crate::System::Net::HttpWebRequest {
 }
 #[cfg(feature = "System+Net+HttpWebRequest")]
 impl crate::System::Net::HttpWebRequest {
-    #[cfg(feature = "System+Net+HttpWebRequest+_GetResponseFromData_d__244")]
-    pub type _GetResponseFromData_d__244 = crate::System::Net::HttpWebRequest__GetResponseFromData_d__244;
     #[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
     pub type __GetRewriteHandler_b__271_0_d = crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d;
-    #[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
-    pub type AuthorizationState = crate::System::Net::HttpWebRequest_AuthorizationState;
-    #[cfg(feature = "System+Net+HttpWebRequest+_RunWithTimeoutWorker_d__241_1")]
-    pub type _RunWithTimeoutWorker_d__241_1<T: quest_hook::libil2cpp::Type> = crate::System::Net::HttpWebRequest__RunWithTimeoutWorker_d__241_1<
-        T,
-    >;
     #[cfg(feature = "System+Net+HttpWebRequest+_MyGetResponseAsync_d__243")]
     pub type _MyGetResponseAsync_d__243 = crate::System::Net::HttpWebRequest__MyGetResponseAsync_d__243;
     #[cfg(feature = "System+Net+HttpWebRequest+__c__241_1")]
@@ -252,388 +244,34 @@ impl crate::System::Net::HttpWebRequest {
     >;
     #[cfg(feature = "System+Net+HttpWebRequest+NtlmAuthState")]
     pub type NtlmAuthState = crate::System::Net::HttpWebRequest_NtlmAuthState;
-    pub fn _GetRewriteHandler_b__271_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Net::BufferOffsetSize,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Net::BufferOffsetSize,
-        > = __cordl_object.invoke("<GetRewriteHandler>b__271_0", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_RequestUri(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Uri = __cordl_object
-            .invoke("get_RequestUri", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_CookieContainer(
-        &mut self,
-        value: *mut crate::System::Net::CookieContainer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_CookieContainer", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_MaximumAutomaticRedirections(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_MaximumAutomaticRedirections", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_FinishedReading(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_FinishedReading", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ProtocolVersion(
-        &mut self,
-        value: *mut crate::System::Version,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ProtocolVersion", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetHostUri(
-        &mut self,
-        hostName: *mut crate::System::String,
-        hostUri: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Uri>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetHostUri", (hostName, hostUri))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ContentLength(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_ContentLength", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MyGetRequestStreamAsync(
-        &mut self,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::IO::Stream,
-        > = __cordl_object.invoke("MyGetRequestStreamAsync", (cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MethodWithBuffer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_MethodWithBuffer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_SendChunked(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_SendChunked", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Timeout(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Timeout", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRequestHeaders(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetRequestHeaders", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Credentials(
-        &mut self,
-        value: *mut crate::System::Net::ICredentials,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Credentials", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ServicePoint(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::ServicePoint> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::ServicePoint = __cordl_object
-            .invoke("get_ServicePoint", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ServerCertValidationCallback(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Net::ServerCertValidationCallback,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::ServerCertValidationCallback = __cordl_object
-            .invoke("get_ServerCertValidationCallback", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _RunWithTimeout_b__242_0<T>(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("<RunWithTimeout>b__242_0", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetResponse(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::WebResponse> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::WebResponse = __cordl_object
-            .invoke("GetResponse", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_KeepAlive(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_KeepAlive", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Address(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Uri = __cordl_object
-            .invoke("get_Address", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AuthUri(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Uri = __cordl_object
-            .invoke("get_AuthUri", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_InternalAllowBuffering(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_InternalAllowBuffering", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Host(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Host", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DoPreAuthenticate(
+    #[cfg(feature = "System+Net+HttpWebRequest+_RunWithTimeoutWorker_d__241_1")]
+    pub type _RunWithTimeoutWorker_d__241_1<T: quest_hook::libil2cpp::Type> = crate::System::Net::HttpWebRequest__RunWithTimeoutWorker_d__241_1<
+        T,
+    >;
+    #[cfg(feature = "System+Net+HttpWebRequest+_GetResponseFromData_d__244")]
+    pub type _GetResponseFromData_d__244 = crate::System::Net::HttpWebRequest__GetResponseFromData_d__244;
+    #[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
+    pub type AuthorizationState = crate::System::Net::HttpWebRequest_AuthorizationState;
+    pub fn Abort(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DoPreAuthenticate", ())?;
+            .invoke("Abort", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CheckAuthorization(
+    pub fn BeginGetRequestStream(
         &mut self,
-        response: *mut crate::System::Net::WebResponse,
-        code: crate::System::Net::HttpStatusCode,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        callback: *mut crate::System::AsyncCallback,
+        state: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CheckAuthorization", (response, code))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ServerCertificateValidationCallback(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::Security::RemoteCertificateValidationCallback = __cordl_object
-            .invoke("get_ServerCertificateValidationCallback", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndGetResponse(
-        &mut self,
-        asyncResult: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::WebResponse> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::WebResponse = __cordl_object
-            .invoke("EndGetResponse", (asyncResult))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AllowWriteStreamBuffering(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_AllowWriteStreamBuffering", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ThrowOnError(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ThrowOnError", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Proxy(
-        &mut self,
-        value: *mut crate::System::Net::IWebProxy,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Proxy", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ProtocolVersion(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Version> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Version = __cordl_object
-            .invoke("get_ProtocolVersion", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Runtime_Serialization_ISerializable_GetObjectData(
-        &mut self,
-        serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        streamingContext: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "System.Runtime.Serialization.ISerializable.GetObjectData",
-                (serializationInfo, streamingContext),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Headers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::WebHeaderCollection> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::WebHeaderCollection = __cordl_object
-            .invoke("get_Headers", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Timeout(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Timeout", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RewriteRedirectToGet(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RewriteRedirectToGet", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_AutomaticDecompression(
-        &mut self,
-        value: crate::System::Net::DecompressionMethods,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_AutomaticDecompression", (value))?;
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginGetRequestStream", (callback, state))?;
         Ok(__cordl_ret)
     }
     pub fn BeginGetResponse(
@@ -648,271 +286,16 @@ impl crate::System::Net::HttpWebRequest {
             .invoke("BeginGetResponse", (callback, state))?;
         Ok(__cordl_ret)
     }
-    pub fn GetServicePoint(
+    pub fn CheckAuthorization(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::ServicePoint> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::ServicePoint = __cordl_object
-            .invoke("GetServicePoint", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_KeepAlive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_KeepAlive", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Method(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Method", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TlsSettings(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Mono::Security::Interface::MonoTlsSettings,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Mono::Security::Interface::MonoTlsSettings = __cordl_object
-            .invoke("get_TlsSettings", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ReadWriteTimeout(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ReadWriteTimeout", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Aborted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Aborted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ServerCertificateValidationCallback(
-        &mut self,
-        value: *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ServerCertificateValidationCallback", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRewriteHandler(
-        &mut self,
-        response: *mut crate::System::Net::HttpWebResponse,
-        redirect: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::ValueTuple_2<
-            *mut crate::System::Threading::Tasks::Task_1<
-                *mut crate::System::Net::BufferOffsetSize,
-            >,
-            *mut crate::System::Net::WebException,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::ValueTuple_2<
-            *mut crate::System::Threading::Tasks::Task_1<
-                *mut crate::System::Net::BufferOffsetSize,
-            >,
-            *mut crate::System::Net::WebException,
-        > = __cordl_object.invoke("GetRewriteHandler", (response, redirect))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SendRequest(
-        &mut self,
-        redirecting: bool,
-        writeBuffer: *mut crate::System::Net::BufferOffsetSize,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::WebOperation> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::WebOperation = __cordl_object
-            .invoke("SendRequest", (redirecting, writeBuffer, cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Uri0(
-        &mut self,
-        uri: *mut crate::System::Uri,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (uri))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Uri_MobileTlsProvider_MonoTlsSettings1(
-        &mut self,
-        uri: *mut crate::System::Uri,
-        tlsProvider: *mut crate::Mono::Net::Security::MobileTlsProvider,
-        settings: *mut crate::Mono::Security::Interface::MonoTlsSettings,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (uri, tlsProvider, settings))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_SerializationInfo_StreamingContext2(
-        &mut self,
-        serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        streamingContext: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (serializationInfo, streamingContext))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_3(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Credentials(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::ICredentials> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::ICredentials = __cordl_object
-            .invoke("get_Credentials", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ExpectContinue(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ExpectContinue", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Abort(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Abort", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ServicePointNoLock(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::ServicePoint> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::ServicePoint = __cordl_object
-            .invoke("get_ServicePointNoLock", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TransferEncoding(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_TransferEncoding", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Redirect(
-        &mut self,
-        code: crate::System::Net::HttpStatusCode,
         response: *mut crate::System::Net::WebResponse,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Redirect", (code, response))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckRequestStarted(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckRequestStarted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Host(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Host", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ConnectionGroupName(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ConnectionGroupName", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ContentLength(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ContentLength", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_UseDefaultCredentials(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_UseDefaultCredentials", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_UnsafeAuthenticatedConnectionSharing(
-        &mut self,
+        code: crate::System::Net::HttpStatusCode,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
-            .invoke("get_UnsafeAuthenticatedConnectionSharing", ())?;
+            .invoke("CheckAuthorization", (response, code))?;
         Ok(__cordl_ret)
     }
     pub fn CheckFinalStatus(
@@ -941,20 +324,68 @@ impl crate::System::Net::HttpWebRequest {
         > = __cordl_object.invoke("CheckFinalStatus", (response))?;
         Ok(__cordl_ret)
     }
-    pub fn MyGetResponseAsync(
+    pub fn CheckRequestStarted(
         &mut self,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Net::HttpWebResponse,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Net::HttpWebResponse,
-        > = __cordl_object.invoke("MyGetResponseAsync", (cancellationToken))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckRequestStarted", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DoContinueDelegate(
+        &mut self,
+        statusCode: i32,
+        headers: *mut crate::System::Net::WebHeaderCollection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DoContinueDelegate", (statusCode, headers))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DoPreAuthenticate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DoPreAuthenticate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndGetRequestStream(
+        &mut self,
+        asyncResult: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+            .invoke("EndGetRequestStream", (asyncResult))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndGetResponse(
+        &mut self,
+        asyncResult: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::WebResponse> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::WebResponse = __cordl_object
+            .invoke("EndGetResponse", (asyncResult))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHeaders(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetHeaders", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetObjectData(
@@ -969,50 +400,37 @@ impl crate::System::Net::HttpWebRequest {
             .invoke("GetObjectData", (serializationInfo, streamingContext))?;
         Ok(__cordl_ret)
     }
-    pub fn set_AllowAutoRedirect(
+    pub fn GetRequestHeaders(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_AllowAutoRedirect", (value))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetRequestHeaders", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_ExpectContinue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_ExpectContinue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ProxyQuery(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_ProxyQuery", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Method(
+    pub fn GetRequestStreamAsync(
         &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Method", (value))?;
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::System::IO::Stream,
+        > = __cordl_object.invoke("GetRequestStreamAsync", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetHeaders(
+    pub fn GetResponse(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::WebResponse> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetHeaders", ())?;
+        let __cordl_ret: *mut crate::System::Net::WebResponse = __cordl_object
+            .invoke("GetResponse", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetResponseFromData(
@@ -1044,122 +462,37 @@ impl crate::System::Net::HttpWebRequest {
         > = __cordl_object.invoke("GetResponseFromData", (stream, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn set_InternalContentLength(
+    pub fn GetRewriteHandler(
         &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_InternalContentLength", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AutomaticDecompression(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Net::DecompressionMethods> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Net::DecompressionMethods = __cordl_object
-            .invoke("get_AutomaticDecompression", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Proxy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::IWebProxy> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::IWebProxy = __cordl_object
-            .invoke("get_Proxy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndGetRequestStream(
-        &mut self,
-        asyncResult: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("EndGetRequestStream", (asyncResult))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_AllowWriteStreamBuffering(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_AllowWriteStreamBuffering", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RunWithTimeout<T>(
-        &mut self,
-        func: *mut crate::System::Func_2<
-            crate::System::Threading::CancellationToken,
-            *mut crate::System::Threading::Tasks::Task_1<T>,
+        response: *mut crate::System::Net::HttpWebResponse,
+        redirect: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::ValueTuple_2<
+            *mut crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Net::BufferOffsetSize,
+            >,
+            *mut crate::System::Net::WebException,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task_1<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<T> = __cordl_object
-            .invoke("RunWithTimeout", (func))?;
-        Ok(__cordl_ret)
-    }
-    pub fn BeginGetRequestStream(
-        &mut self,
-        callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginGetRequestStream", (callback, state))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ResetAuthorization(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetAuthorization", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRequestStreamAsync(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::IO::Stream,
-        > = __cordl_object.invoke("GetRequestStreamAsync", ())?;
+        let __cordl_ret: crate::System::ValueTuple_2<
+            *mut crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Net::BufferOffsetSize,
+            >,
+            *mut crate::System::Net::WebException,
+        > = __cordl_object.invoke("GetRewriteHandler", (response, redirect))?;
         Ok(__cordl_ret)
     }
-    pub fn get_TlsProvider(
+    pub fn GetServicePoint(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Mono::Net::Security::MobileTlsProvider,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::ServicePoint> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Net::Security::MobileTlsProvider = __cordl_object
-            .invoke("get_TlsProvider", ())?;
+        let __cordl_ret: *mut crate::System::Net::ServicePoint = __cordl_object
+            .invoke("GetServicePoint", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetWebException(
@@ -1171,37 +504,6 @@ impl crate::System::Net::HttpWebRequest {
         );
         let __cordl_ret: *mut crate::System::Net::WebException = __cordl_object
             .invoke("GetWebException", (e))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DoContinueDelegate(
-        &mut self,
-        statusCode: i32,
-        headers: *mut crate::System::Net::WebHeaderCollection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DoContinueDelegate", (statusCode, headers))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ClientCertificates(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection = __cordl_object
-            .invoke("get_ClientCertificates", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SendChunked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_SendChunked", ())?;
         Ok(__cordl_ret)
     }
     pub fn HandleNtlmAuth(
@@ -1226,6 +528,682 @@ impl crate::System::Net::HttpWebRequest {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn MyGetRequestStreamAsync(
+        &mut self,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::System::IO::Stream,
+        > = __cordl_object.invoke("MyGetRequestStreamAsync", (cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MyGetResponseAsync(
+        &mut self,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::System::Net::HttpWebResponse,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::System::Net::HttpWebResponse,
+        > = __cordl_object.invoke("MyGetResponseAsync", (cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_3() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_SerializationInfo_StreamingContext2(
+        serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        streamingContext: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (serializationInfo, streamingContext))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Uri0(
+        uri: *mut crate::System::Uri,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (uri))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Uri_MobileTlsProvider_MonoTlsSettings1(
+        uri: *mut crate::System::Uri,
+        tlsProvider: *mut crate::Mono::Net::Security::MobileTlsProvider,
+        settings: *mut crate::Mono::Security::Interface::MonoTlsSettings,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (uri, tlsProvider, settings))?;
+        Ok(__cordl_object)
+    }
+    pub fn Redirect(
+        &mut self,
+        code: crate::System::Net::HttpStatusCode,
+        response: *mut crate::System::Net::WebResponse,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Redirect", (code, response))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ResetAuthorization(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ResetAuthorization", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RewriteRedirectToGet(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RewriteRedirectToGet", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RunWithTimeout<T>(
+        &mut self,
+        func: *mut crate::System::Func_2<
+            crate::System::Threading::CancellationToken,
+            *mut crate::System::Threading::Tasks::Task_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<T> = __cordl_object
+            .invoke("RunWithTimeout", (func))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendRequest(
+        &mut self,
+        redirecting: bool,
+        writeBuffer: *mut crate::System::Net::BufferOffsetSize,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::WebOperation> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::WebOperation = __cordl_object
+            .invoke("SendRequest", (redirecting, writeBuffer, cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Runtime_Serialization_ISerializable_GetObjectData(
+        &mut self,
+        serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        streamingContext: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "System.Runtime.Serialization.ISerializable.GetObjectData",
+                (serializationInfo, streamingContext),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetHostUri(
+        &mut self,
+        hostName: *mut crate::System::String,
+        hostUri: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Uri>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetHostUri", (hostName, hostUri))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _GetRewriteHandler_b__271_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::System::Net::BufferOffsetSize,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::System::Net::BufferOffsetSize,
+        > = __cordl_object.invoke("<GetRewriteHandler>b__271_0", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _RunWithTimeout_b__242_0<T>(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("<RunWithTimeout>b__242_0", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_3(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_SerializationInfo_StreamingContext2(
+        &mut self,
+        serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        streamingContext: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (serializationInfo, streamingContext))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Uri0(
+        &mut self,
+        uri: *mut crate::System::Uri,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (uri))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Uri_MobileTlsProvider_MonoTlsSettings1(
+        &mut self,
+        uri: *mut crate::System::Uri,
+        tlsProvider: *mut crate::Mono::Net::Security::MobileTlsProvider,
+        settings: *mut crate::Mono::Security::Interface::MonoTlsSettings,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (uri, tlsProvider, settings))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Aborted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_Aborted", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Address(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Uri = __cordl_object
+            .invoke("get_Address", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AllowWriteStreamBuffering(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_AllowWriteStreamBuffering", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AuthUri(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Uri = __cordl_object
+            .invoke("get_AuthUri", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AutomaticDecompression(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Net::DecompressionMethods> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Net::DecompressionMethods = __cordl_object
+            .invoke("get_AutomaticDecompression", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ClientCertificates(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection = __cordl_object
+            .invoke("get_ClientCertificates", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ContentLength(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_ContentLength", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Credentials(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::ICredentials> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::ICredentials = __cordl_object
+            .invoke("get_Credentials", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ExpectContinue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_ExpectContinue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Headers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::WebHeaderCollection> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::WebHeaderCollection = __cordl_object
+            .invoke("get_Headers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Host(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Host", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_InternalAllowBuffering(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_InternalAllowBuffering", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_KeepAlive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_KeepAlive", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Method(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Method", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MethodWithBuffer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_MethodWithBuffer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ProtocolVersion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Version> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Version = __cordl_object
+            .invoke("get_ProtocolVersion", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Proxy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::IWebProxy> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::IWebProxy = __cordl_object
+            .invoke("get_Proxy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ProxyQuery(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_ProxyQuery", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ReadWriteTimeout(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ReadWriteTimeout", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RequestUri(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Uri = __cordl_object
+            .invoke("get_RequestUri", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SendChunked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_SendChunked", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ServerCertValidationCallback(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Net::ServerCertValidationCallback,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::ServerCertValidationCallback = __cordl_object
+            .invoke("get_ServerCertValidationCallback", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ServerCertificateValidationCallback(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::Security::RemoteCertificateValidationCallback = __cordl_object
+            .invoke("get_ServerCertificateValidationCallback", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ServicePoint(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::ServicePoint> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::ServicePoint = __cordl_object
+            .invoke("get_ServicePoint", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ServicePointNoLock(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::ServicePoint> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::ServicePoint = __cordl_object
+            .invoke("get_ServicePointNoLock", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ThrowOnError(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_ThrowOnError", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Timeout(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Timeout", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TlsProvider(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Mono::Net::Security::MobileTlsProvider,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Mono::Net::Security::MobileTlsProvider = __cordl_object
+            .invoke("get_TlsProvider", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TlsSettings(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Mono::Security::Interface::MonoTlsSettings,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Mono::Security::Interface::MonoTlsSettings = __cordl_object
+            .invoke("get_TlsSettings", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TransferEncoding(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_TransferEncoding", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_UnsafeAuthenticatedConnectionSharing(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_UnsafeAuthenticatedConnectionSharing", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_UseDefaultCredentials(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_UseDefaultCredentials", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_AllowAutoRedirect(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_AllowAutoRedirect", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_AllowWriteStreamBuffering(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_AllowWriteStreamBuffering", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_AutomaticDecompression(
+        &mut self,
+        value: crate::System::Net::DecompressionMethods,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_AutomaticDecompression", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ConnectionGroupName(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ConnectionGroupName", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ContentLength(
+        &mut self,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ContentLength", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_CookieContainer(
+        &mut self,
+        value: *mut crate::System::Net::CookieContainer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_CookieContainer", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Credentials(
+        &mut self,
+        value: *mut crate::System::Net::ICredentials,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Credentials", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ExpectContinue(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ExpectContinue", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_FinishedReading(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_FinishedReading", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Host(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Host", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_InternalContentLength(
+        &mut self,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_InternalContentLength", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_KeepAlive(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_KeepAlive", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_MaximumAutomaticRedirections(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_MaximumAutomaticRedirections", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Method(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Method", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_PreAuthenticate(
         &mut self,
         value: bool,
@@ -1237,49 +1215,71 @@ impl crate::System::Net::HttpWebRequest {
             .invoke("set_PreAuthenticate", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_ThrowOnError(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn set_ProtocolVersion(
+        &mut self,
+        value: *mut crate::System::Version,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_ThrowOnError", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ProtocolVersion", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New_Uri0(
-        uri: *mut crate::System::Uri,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (uri))?;
-        Ok(__cordl_object)
+    pub fn set_Proxy(
+        &mut self,
+        value: *mut crate::System::Net::IWebProxy,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Proxy", (value))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_Uri_MobileTlsProvider_MonoTlsSettings1(
-        uri: *mut crate::System::Uri,
-        tlsProvider: *mut crate::Mono::Net::Security::MobileTlsProvider,
-        settings: *mut crate::Mono::Security::Interface::MonoTlsSettings,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (uri, tlsProvider, settings))?;
-        Ok(__cordl_object)
+    pub fn set_SendChunked(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_SendChunked", (value))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_SerializationInfo_StreamingContext2(
-        serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        streamingContext: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (serializationInfo, streamingContext))?;
-        Ok(__cordl_object)
+    pub fn set_ServerCertificateValidationCallback(
+        &mut self,
+        value: *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ServerCertificateValidationCallback", (value))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_3() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_ThrowOnError(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ThrowOnError", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Timeout(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Timeout", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+HttpWebRequest")]

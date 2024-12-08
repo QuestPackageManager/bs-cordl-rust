@@ -25,18 +25,18 @@ for crate::UnityEngine::UIElements::CustomStyleProperty_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::CustomStyleProperty_1<T> {
-    pub fn set_name(
+    pub fn Equals_CustomStyleProperty_1_1(
         &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+        other: crate::UnityEngine::UIElements::CustomStyleProperty_1<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_name",
-            (value),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -55,18 +55,15 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_CustomStyleProperty_1_1(
-        &mut self,
-        other: crate::UnityEngine::UIElements::CustomStyleProperty_1<T>,
-    ) -> quest_hook::libil2cpp::Result<bool>
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -99,15 +96,18 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    pub fn set_name(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
-            (),
+            "set_name",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

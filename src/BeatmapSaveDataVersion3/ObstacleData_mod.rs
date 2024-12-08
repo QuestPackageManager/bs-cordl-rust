@@ -29,6 +29,20 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::ObstacleData {
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+ObstacleData")]
 impl crate::BeatmapSaveDataVersion3::ObstacleData {
+    pub fn New(
+        beat: f32,
+        line: i32,
+        layer: i32,
+        duration: f32,
+        width: i32,
+        height: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (beat, line, layer, duration, width, height))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         beat: f32,
@@ -45,25 +59,11 @@ impl crate::BeatmapSaveDataVersion3::ObstacleData {
             .invoke(".ctor", (beat, line, layer, duration, width, height))?;
         Ok(__cordl_ret)
     }
-    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_width", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_duration", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_layer(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_layer", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -73,6 +73,13 @@ impl crate::BeatmapSaveDataVersion3::ObstacleData {
         let __cordl_ret: i32 = __cordl_object.invoke("get_height", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_layer(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_layer", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_line(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -80,19 +87,12 @@ impl crate::BeatmapSaveDataVersion3::ObstacleData {
         let __cordl_ret: i32 = __cordl_object.invoke("get_line", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        beat: f32,
-        line: i32,
-        layer: i32,
-        duration: f32,
-        width: i32,
-        height: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (beat, line, layer, duration, width, height))?;
-        Ok(__cordl_object)
+    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_width", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+ObstacleData")]

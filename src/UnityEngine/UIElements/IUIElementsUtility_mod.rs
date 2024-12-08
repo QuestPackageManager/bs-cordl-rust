@@ -31,6 +31,17 @@ impl crate::UnityEngine::UIElements::IUIElementsUtility {
         let __cordl_ret: bool = __cordl_object.invoke("CleanupRoots", ())?;
         Ok(__cordl_ret)
     }
+    pub fn EndContainerGUIFromException(
+        &mut self,
+        exception: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("EndContainerGUIFromException", (exception))?;
+        Ok(__cordl_ret)
+    }
     pub fn MakeCurrentIMGUIContainerDirty(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -39,13 +50,6 @@ impl crate::UnityEngine::UIElements::IUIElementsUtility {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("MakeCurrentIMGUIContainerDirty", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReleaseCapture(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ReleaseCapture", ())?;
         Ok(__cordl_ret)
     }
     pub fn ProcessEvent(
@@ -61,22 +65,18 @@ impl crate::UnityEngine::UIElements::IUIElementsUtility {
             .invoke("ProcessEvent", (instanceID, nativeEventPtr, eventHandled))?;
         Ok(__cordl_ret)
     }
+    pub fn ReleaseCapture(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ReleaseCapture", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn TakeCapture(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TakeCapture", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndContainerGUIFromException(
-        &mut self,
-        exception: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("EndContainerGUIFromException", (exception))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

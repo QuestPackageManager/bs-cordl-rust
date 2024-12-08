@@ -90,14 +90,28 @@ for crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDele
     feature = "UnityEngine+InputSystem+LowLevel+InputState+StateChangeMonitorDelegate"
 )]
 impl crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate {
-    pub fn _ctor(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn NotifyControlStateChanged(
         &mut self,
+        control: *mut crate::UnityEngine::InputSystem::InputControl,
+        _cordl_time: f64,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        monitorIndex: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke(
+                "NotifyControlStateChanged",
+                (control, _cordl_time, eventPtr, monitorIndex),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn NotifyTimerExpired(
@@ -117,29 +131,15 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDel
             )?;
         Ok(__cordl_ret)
     }
-    pub fn NotifyControlStateChanged(
+    pub fn _ctor(
         &mut self,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
-        _cordl_time: f64,
-        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        monitorIndex: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "NotifyControlStateChanged",
-                (control, _cordl_time, eventPtr, monitorIndex),
-            )?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

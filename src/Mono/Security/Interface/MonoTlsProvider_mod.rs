@@ -24,38 +24,12 @@ impl std::ops::DerefMut for crate::Mono::Security::Interface::MonoTlsProvider {
 }
 #[cfg(feature = "Mono+Security+Interface+MonoTlsProvider")]
 impl crate::Mono::Security::Interface::MonoTlsProvider {
-    pub fn get_SupportedProtocols(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Security::Authentication::SslProtocols,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Security::Authentication::SslProtocols = __cordl_object
-            .invoke("get_SupportedProtocols", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SupportsSslStream(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_SupportsSslStream", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SupportsMonoExtensions(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_SupportsMonoExtensions", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SupportsConnectionInfo(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_SupportsConnectionInfo", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -65,6 +39,13 @@ impl crate::Mono::Security::Interface::MonoTlsProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ID(&mut self) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Guid = __cordl_object.invoke("get_ID", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Name(
@@ -77,11 +58,16 @@ impl crate::Mono::Security::Interface::MonoTlsProvider {
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_ID(&mut self) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
+    pub fn get_SupportedProtocols(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Security::Authentication::SslProtocols,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Guid = __cordl_object.invoke("get_ID", ())?;
+        let __cordl_ret: crate::System::Security::Authentication::SslProtocols = __cordl_object
+            .invoke("get_SupportedProtocols", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SupportsCleanShutdown(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -91,12 +77,26 @@ impl crate::Mono::Security::Interface::MonoTlsProvider {
         let __cordl_ret: bool = __cordl_object.invoke("get_SupportsCleanShutdown", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_SupportsConnectionInfo(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_SupportsConnectionInfo", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SupportsMonoExtensions(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_SupportsMonoExtensions", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SupportsSslStream(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_SupportsSslStream", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Mono+Security+Interface+MonoTlsProvider")]

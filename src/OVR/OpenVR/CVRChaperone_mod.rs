@@ -25,36 +25,22 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::CVRChaperone {
 }
 #[cfg(feature = "OVR+OpenVR+CVRChaperone")]
 impl crate::OVR::OpenVR::CVRChaperone {
-    pub fn ReloadInfo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn AreBoundsVisible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReloadInfo", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("AreBoundsVisible", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetSceneColor(
+    pub fn ForceBoundsVisible(
         &mut self,
-        color: crate::OVR::OpenVR::HmdColor_t,
+        bForce: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSceneColor", (color))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pInterface))?;
+            .invoke("ForceBoundsVisible", (bForce))?;
         Ok(__cordl_ret)
     }
     pub fn GetBoundsColor(
@@ -93,6 +79,16 @@ impl crate::OVR::OpenVR::CVRChaperone {
             .invoke("GetCalibrationState", ())?;
         Ok(__cordl_ret)
     }
+    pub fn GetPlayAreaRect(
+        &mut self,
+        rect: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdQuad_t>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("GetPlayAreaRect", (rect))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetPlayAreaSize(
         &mut self,
         pSizeX: quest_hook::libil2cpp::ByRefMut<f32>,
@@ -105,42 +101,46 @@ impl crate::OVR::OpenVR::CVRChaperone {
             .invoke("GetPlayAreaSize", (pSizeX, pSizeZ))?;
         Ok(__cordl_ret)
     }
-    pub fn GetPlayAreaRect(
-        &mut self,
-        rect: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdQuad_t>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("GetPlayAreaRect", (rect))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ForceBoundsVisible(
-        &mut self,
-        bForce: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ForceBoundsVisible", (bForce))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AreBoundsVisible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("AreBoundsVisible", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pInterface))?;
         Ok(__cordl_object)
+    }
+    pub fn ReloadInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReloadInfo", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetSceneColor(
+        &mut self,
+        color: crate::OVR::OpenVR::HmdColor_t,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetSceneColor", (color))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        pInterface: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (pInterface))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRChaperone")]

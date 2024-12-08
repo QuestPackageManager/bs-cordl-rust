@@ -34,106 +34,6 @@ impl std::ops::DerefMut for crate::Mono::Net::Security::MobileTlsContext {
 }
 #[cfg(feature = "Mono+Net+Security+MobileTlsContext")]
 impl crate::Mono::Net::Security::MobileTlsContext {
-    pub fn get_Parent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Mono::Net::Security::MobileAuthenticatedStream,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Mono::Net::Security::MobileAuthenticatedStream = __cordl_object
-            .invoke("get_Parent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LocalClientCertificate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate = __cordl_object
-            .invoke("get_LocalClientCertificate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FinishHandshake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FinishHandshake", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ServerName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_ServerName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsAuthenticated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsAuthenticated", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Settings(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Mono::Security::Interface::MonoTlsSettings,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Mono::Security::Interface::MonoTlsSettings = __cordl_object
-            .invoke("get_Settings", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        parent: *mut crate::Mono::Net::Security::MobileAuthenticatedStream,
-        options: *mut crate::Mono::Net::Security::MonoSslAuthenticationOptions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (parent, options))?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartHandshake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartHandshake", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectClientCertificate(
-        &mut self,
-        acceptableIssuers: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate = __cordl_object
-            .invoke("SelectClientCertificate", (acceptableIssuers))?;
-        Ok(__cordl_ret)
-    }
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -165,16 +65,38 @@ impl crate::Mono::Net::Security::MobileTlsContext {
             .invoke("Finalize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_RemoteCertificate(
+    pub fn FinishHandshake(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2 = __cordl_object
-            .invoke("get_RemoteCertificate", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FinishHandshake", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        parent: *mut crate::Mono::Net::Security::MobileAuthenticatedStream,
+        options: *mut crate::Mono::Net::Security::MonoSslAuthenticationOptions,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (parent, options))?;
+        Ok(__cordl_object)
+    }
+    pub fn PendingRenegotiation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("PendingRenegotiation", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessHandshake(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ProcessHandshake", ())?;
         Ok(__cordl_ret)
     }
     pub fn Read(
@@ -190,6 +112,51 @@ impl crate::Mono::Net::Security::MobileTlsContext {
             .invoke("Read", (buffer, offset, count))?;
         Ok(__cordl_ret)
     }
+    pub fn Renegotiate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Renegotiate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectClientCertificate(
+        &mut self,
+        acceptableIssuers: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::String,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate = __cordl_object
+            .invoke("SelectClientCertificate", (acceptableIssuers))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Shutdown(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Shutdown", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartHandshake(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartHandshake", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn ValidateCertificate(
         &mut self,
         leaf: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
@@ -200,40 +167,6 @@ impl crate::Mono::Net::Security::MobileTlsContext {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ValidateCertificate", (leaf, chain))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TargetHost(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_TargetHost", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsServer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsServer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AskForClientCertificate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_AskForClientCertificate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessHandshake(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ProcessHandshake", ())?;
         Ok(__cordl_ret)
     }
     pub fn Write(
@@ -249,25 +182,26 @@ impl crate::Mono::Net::Security::MobileTlsContext {
             .invoke("Write", (buffer, offset, count))?;
         Ok(__cordl_ret)
     }
-    pub fn Renegotiate(
+    pub fn _ctor(
         &mut self,
+        parent: *mut crate::Mono::Net::Security::MobileAuthenticatedStream,
+        options: *mut crate::Mono::Net::Security::MonoSslAuthenticationOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Renegotiate", ())?;
+            .invoke(".ctor", (parent, options))?;
         Ok(__cordl_ret)
     }
-    pub fn set_LocalServerCertificate(
+    pub fn get_AskForClientCertificate(
         &mut self,
-        value: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_LocalServerCertificate", (value))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_AskForClientCertificate", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ClientCertificates(
@@ -282,6 +216,32 @@ impl crate::Mono::Net::Security::MobileTlsContext {
             .invoke("get_ClientCertificates", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_IsAuthenticated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsAuthenticated", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsServer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsServer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LocalClientCertificate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate = __cordl_object
+            .invoke("get_LocalClientCertificate", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_LocalServerCertificate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -294,32 +254,72 @@ impl crate::Mono::Net::Security::MobileTlsContext {
             .invoke("get_LocalServerCertificate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Shutdown(
+    pub fn get_Parent(
         &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Mono::Net::Security::MobileAuthenticatedStream,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Mono::Net::Security::MobileAuthenticatedStream = __cordl_object
+            .invoke("get_Parent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RemoteCertificate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2 = __cordl_object
+            .invoke("get_RemoteCertificate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ServerName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_ServerName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Settings(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Mono::Security::Interface::MonoTlsSettings,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Mono::Security::Interface::MonoTlsSettings = __cordl_object
+            .invoke("get_Settings", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TargetHost(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_TargetHost", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_LocalServerCertificate(
+        &mut self,
+        value: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Shutdown", ())?;
+            .invoke("set_LocalServerCertificate", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn PendingRenegotiation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("PendingRenegotiation", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        parent: *mut crate::Mono::Net::Security::MobileAuthenticatedStream,
-        options: *mut crate::Mono::Net::Security::MonoSslAuthenticationOptions,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (parent, options))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Net+Security+MobileTlsContext")]

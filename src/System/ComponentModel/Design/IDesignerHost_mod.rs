@@ -24,16 +24,6 @@ impl std::ops::DerefMut for crate::System::ComponentModel::Design::IDesignerHost
 }
 #[cfg(feature = "System+ComponentModel+Design+IDesignerHost")]
 impl crate::System::ComponentModel::Design::IDesignerHost {
-    pub fn get_RootComponent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::ComponentModel::IComponent> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::ComponentModel::IComponent = __cordl_object
-            .invoke("get_RootComponent", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetDesigner(
         &mut self,
         component: *mut crate::System::ComponentModel::IComponent,
@@ -51,6 +41,16 @@ impl crate::System::ComponentModel::Design::IDesignerHost {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_RootComponent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::ComponentModel::IComponent> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::ComponentModel::IComponent = __cordl_object
+            .invoke("get_RootComponent", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+ComponentModel+Design+IDesignerHost")]

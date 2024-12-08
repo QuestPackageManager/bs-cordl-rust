@@ -57,29 +57,35 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
     pub type PlayerJoinedEvent = crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent;
     #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent")]
     pub type PlayerLeftEvent = crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent;
-    pub fn get_playerLeftEvent(
+    pub fn CheckIfPlayerCanJoin(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent,
-    > {
+        playerIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent = __cordl_object
-            .invoke("get_playerLeftEvent", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("CheckIfPlayerCanJoin", (playerIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_onPlayerJoined(
+    pub fn DisableJoining(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::InputSystem::PlayerInput,
-        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_onPlayerJoined", (value))?;
+            .invoke("DisableJoining", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn EnableJoining(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EnableJoining", ())?;
         Ok(__cordl_ret)
     }
     pub fn IsDeviceUsableWithPlayerActions(
@@ -93,82 +99,36 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
             .invoke("IsDeviceUsableWithPlayerActions", (device))?;
         Ok(__cordl_ret)
     }
-    pub fn get_joinBehavior(
+    pub fn JoinPlayerFromAction(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::PlayerJoinBehavior,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::InputSystem::PlayerJoinBehavior = __cordl_object
-            .invoke("get_joinBehavior", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_notificationBehavior(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::PlayerNotifications,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::InputSystem::PlayerNotifications = __cordl_object
-            .invoke("get_notificationBehavior", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckIfPlayerCanJoin(
-        &mut self,
-        playerIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CheckIfPlayerCanJoin", (playerIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_onPlayerLeft(
-        &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::InputSystem::PlayerInput,
-        >,
+        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_onPlayerLeft", (value))?;
+            .invoke("JoinPlayerFromAction", (context))?;
         Ok(__cordl_ret)
     }
-    pub fn set_joinBehavior(
+    pub fn JoinPlayerFromActionIfNotAlreadyJoined(
         &mut self,
-        value: crate::UnityEngine::InputSystem::PlayerJoinBehavior,
+        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_joinBehavior", (value))?;
+            .invoke("JoinPlayerFromActionIfNotAlreadyJoined", (context))?;
         Ok(__cordl_ret)
     }
-    pub fn JoinPlayer_InputDevice0(
+    pub fn JoinPlayerFromUI(
         &mut self,
-        playerIndex: i32,
-        splitScreenIndex: i32,
-        controlScheme: *mut crate::System::String,
-        pairWithDevice: *mut crate::UnityEngine::InputSystem::InputDevice,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::PlayerInput,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::PlayerInput = __cordl_object
-            .invoke(
-                "JoinPlayer",
-                (playerIndex, splitScreenIndex, controlScheme, pairWithDevice),
-            )?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("JoinPlayerFromUI", ())?;
         Ok(__cordl_ret)
     }
     pub fn JoinPlayer_Il2CppArray1(
@@ -192,46 +152,31 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn JoinPlayerFromActionIfNotAlreadyJoined(
+    pub fn JoinPlayer_InputDevice0(
         &mut self,
-        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        playerIndex: i32,
+        splitScreenIndex: i32,
+        controlScheme: *mut crate::System::String,
+        pairWithDevice: *mut crate::UnityEngine::InputSystem::InputDevice,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::PlayerInput,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("JoinPlayerFromActionIfNotAlreadyJoined", (context))?;
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::PlayerInput = __cordl_object
+            .invoke(
+                "JoinPlayer",
+                (playerIndex, splitScreenIndex, controlScheme, pairWithDevice),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn OnDisable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_splitScreenArea(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
-            .invoke("get_splitScreenArea", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateSplitScreen(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateSplitScreen", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn NotifyPlayerJoined(
         &mut self,
@@ -244,16 +189,57 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
             .invoke("NotifyPlayerJoined", (player))?;
         Ok(__cordl_ret)
     }
-    pub fn get_playerJoinedEvent(
+    pub fn NotifyPlayerLeft(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent,
-    > {
+        player: *mut crate::UnityEngine::InputSystem::PlayerInput,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent = __cordl_object
-            .invoke("get_playerJoinedEvent", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("NotifyPlayerLeft", (player))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDisable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDisable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnEnable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnEnable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnUnpairedDeviceUsed(
+        &mut self,
+        control: *mut crate::UnityEngine::InputSystem::InputControl,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnUnpairedDeviceUsed", (control, eventPtr))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateSplitScreen(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateSplitScreen", ())?;
         Ok(__cordl_ret)
     }
     pub fn ValidateInputActionAsset(
@@ -266,35 +252,6 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
             .invoke("ValidateInputActionAsset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn JoinPlayerFromUI(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("JoinPlayerFromUI", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_splitScreen(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_splitScreen", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_joinAction(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionProperty,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionProperty = __cordl_object
-            .invoke("get_joinAction", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -303,44 +260,6 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_playerCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_playerCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_notificationBehavior(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::PlayerNotifications,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_notificationBehavior", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DisableJoining(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DisableJoining", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_fixedNumberOfSplitScreens(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("get_fixedNumberOfSplitScreens", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_onPlayerJoined(
@@ -356,81 +275,6 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
             .invoke("add_onPlayerJoined", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn EnableJoining(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EnableJoining", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnEnable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn NotifyPlayerLeft(
-        &mut self,
-        player: *mut crate::UnityEngine::InputSystem::PlayerInput,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NotifyPlayerLeft", (player))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnUnpairedDeviceUsed(
-        &mut self,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
-        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnUnpairedDeviceUsed", (control, eventPtr))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_maintainAspectRatioInSplitScreen(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_maintainAspectRatioInSplitScreen", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_joinAction(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::InputActionProperty,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_joinAction", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_splitScreen(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_splitScreen", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn add_onPlayerLeft(
         &mut self,
         value: *mut crate::System::Action_1<
@@ -444,11 +288,38 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
             .invoke("add_onPlayerLeft", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_maxPlayerCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_fixedNumberOfSplitScreens(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_maxPlayerCount", ())?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("get_fixedNumberOfSplitScreens", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_joinAction(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionProperty,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionProperty = __cordl_object
+            .invoke("get_joinAction", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_joinBehavior(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::PlayerJoinBehavior,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::PlayerJoinBehavior = __cordl_object
+            .invoke("get_joinBehavior", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_joiningEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -456,6 +327,152 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_joiningEnabled", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maintainAspectRatioInSplitScreen(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_maintainAspectRatioInSplitScreen", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxPlayerCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_maxPlayerCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_notificationBehavior(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::PlayerNotifications,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::PlayerNotifications = __cordl_object
+            .invoke("get_notificationBehavior", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_playerCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_playerCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_playerJoinedEvent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent = __cordl_object
+            .invoke("get_playerJoinedEvent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_playerLeftEvent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent = __cordl_object
+            .invoke("get_playerLeftEvent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_playerPrefab(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("get_playerPrefab", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_splitScreen(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_splitScreen", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_splitScreenArea(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
+            .invoke("get_splitScreenArea", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_onPlayerJoined(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::InputSystem::PlayerInput,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_onPlayerJoined", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_onPlayerLeft(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::InputSystem::PlayerInput,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_onPlayerLeft", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_joinAction(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::InputActionProperty,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_joinAction", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_joinBehavior(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::PlayerJoinBehavior,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_joinBehavior", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_notificationBehavior(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::PlayerNotifications,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_notificationBehavior", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_playerPrefab(
@@ -469,33 +486,16 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
             .invoke("set_playerPrefab", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn JoinPlayerFromAction(
+    pub fn set_splitScreen(
         &mut self,
-        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("JoinPlayerFromAction", (context))?;
+            .invoke("set_splitScreen", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_playerPrefab(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("get_playerPrefab", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager")]
@@ -541,6 +541,13 @@ for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent")]
 impl crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -550,13 +557,6 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent")]
@@ -602,6 +602,13 @@ for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent")]
 impl crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -611,13 +618,6 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent")]

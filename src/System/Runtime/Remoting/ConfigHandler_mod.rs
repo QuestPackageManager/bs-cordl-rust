@@ -32,6 +32,206 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::ConfigHandler {
 }
 #[cfg(feature = "System+Runtime+Remoting+ConfigHandler")]
 impl crate::System::Runtime::Remoting::ConfigHandler {
+    pub fn CheckPath(
+        &mut self,
+        path: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("CheckPath", (path))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExtractAssembly(
+        &mut self,
+        _cordl_type: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ExtractAssembly", (_cordl_type))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNotNull(
+        &mut self,
+        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetNotNull", (attrs, name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(onlyDelayedChannels: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (onlyDelayedChannels))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnChars(
+        &mut self,
+        ch: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnChars", (ch))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnEndElement(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnEndElement", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnEndParsing(
+        &mut self,
+        parser: *mut crate::Mono::Xml::SmallXmlParser,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnEndParsing", (parser))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnIgnorableWhitespace(
+        &mut self,
+        s: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnIgnorableWhitespace", (s))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnProcessingInstruction(
+        &mut self,
+        name: *mut crate::System::String,
+        text: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnProcessingInstruction", (name, text))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnStartElement(
+        &mut self,
+        name: *mut crate::System::String,
+        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnStartElement", (name, attrs))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnStartParsing(
+        &mut self,
+        parser: *mut crate::Mono::Xml::SmallXmlParser,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnStartParsing", (parser))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ParseElement(
+        &mut self,
+        name: *mut crate::System::String,
+        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ParseElement", (name, attrs))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ParseTime(
+        &mut self,
+        s: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::TimeSpan = __cordl_object
+            .invoke("ParseTime", (s))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadChannel(
+        &mut self,
+        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
+        isTemplate: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReadChannel", (attrs, isTemplate))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadClientActivated(
+        &mut self,
+        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReadClientActivated", (attrs))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadClientWellKnown(
+        &mut self,
+        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReadClientWellKnown", (attrs))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadCustomProviderData(
+        &mut self,
+        name: *mut crate::System::String,
+        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReadCustomProviderData", (name, attrs))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadInteropXml(
+        &mut self,
+        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
+        isElement: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReadInteropXml", (attrs, isElement))?;
+        Ok(__cordl_ret)
+    }
     pub fn ReadLifetine(
         &mut self,
         attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
@@ -41,6 +241,17 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadLifetine", (attrs))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadPreload(
+        &mut self,
+        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReadPreload", (attrs))?;
         Ok(__cordl_ret)
     }
     pub fn ReadProvider(
@@ -58,19 +269,7 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
             .invoke("ReadProvider", (name, attrs, isTemplate))?;
         Ok(__cordl_ret)
     }
-    pub fn GetNotNull(
-        &mut self,
-        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetNotNull", (attrs, name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadPreload(
+    pub fn ReadServiceActivated(
         &mut self,
         attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -78,30 +277,7 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadPreload", (attrs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnChars(
-        &mut self,
-        ch: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnChars", (ch))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseElement(
-        &mut self,
-        name: *mut crate::System::String,
-        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ParseElement", (name, attrs))?;
+            .invoke("ReadServiceActivated", (attrs))?;
         Ok(__cordl_ret)
     }
     pub fn ReadServiceWellKnown(
@@ -113,64 +289,6 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadServiceWellKnown", (attrs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnProcessingInstruction(
-        &mut self,
-        name: *mut crate::System::String,
-        text: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnProcessingInstruction", (name, text))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadInteropXml(
-        &mut self,
-        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
-        isElement: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadInteropXml", (attrs, isElement))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadChannel(
-        &mut self,
-        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
-        isTemplate: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadChannel", (attrs, isTemplate))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnIgnorableWhitespace(
-        &mut self,
-        s: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnIgnorableWhitespace", (s))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseTime(
-        &mut self,
-        s: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::TimeSpan = __cordl_object
-            .invoke("ParseTime", (s))?;
         Ok(__cordl_ret)
     }
     pub fn ValidatePath(
@@ -185,51 +303,6 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
             .invoke("ValidatePath", (element, paths))?;
         Ok(__cordl_ret)
     }
-    pub fn CheckPath(
-        &mut self,
-        path: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CheckPath", (path))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadCustomProviderData(
-        &mut self,
-        name: *mut crate::System::String,
-        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadCustomProviderData", (name, attrs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnEndParsing(
-        &mut self,
-        parser: *mut crate::Mono::Xml::SmallXmlParser,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEndParsing", (parser))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnStartElement(
-        &mut self,
-        name: *mut crate::System::String,
-        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStartElement", (name, attrs))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         onlyDelayedChannels: bool,
@@ -240,81 +313,6 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (onlyDelayedChannels))?;
         Ok(__cordl_ret)
-    }
-    pub fn OnEndElement(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEndElement", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnStartParsing(
-        &mut self,
-        parser: *mut crate::Mono::Xml::SmallXmlParser,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStartParsing", (parser))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExtractAssembly(
-        &mut self,
-        _cordl_type: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ExtractAssembly", (_cordl_type))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadClientWellKnown(
-        &mut self,
-        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadClientWellKnown", (attrs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadServiceActivated(
-        &mut self,
-        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadServiceActivated", (attrs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadClientActivated(
-        &mut self,
-        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadClientActivated", (attrs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        onlyDelayedChannels: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (onlyDelayedChannels))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+ConfigHandler")]

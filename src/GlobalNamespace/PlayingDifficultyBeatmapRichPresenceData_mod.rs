@@ -28,15 +28,15 @@ impl std::ops::DerefMut for PlayingDifficultyBeatmapRichPresenceData {
 }
 #[cfg(feature = "PlayingDifficultyBeatmapRichPresenceData")]
 impl PlayingDifficultyBeatmapRichPresenceData {
-    pub fn get_apiName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_apiName", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapLevel: *mut BeatmapLevel,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (beatmapKey, beatmapLevel))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -50,6 +50,16 @@ impl PlayingDifficultyBeatmapRichPresenceData {
             .invoke(".ctor", (beatmapKey, beatmapLevel))?;
         Ok(__cordl_ret)
     }
+    pub fn get_apiName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_apiName", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_localizedDescription(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -59,16 +69,6 @@ impl PlayingDifficultyBeatmapRichPresenceData {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_localizedDescription", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        beatmapLevel: *mut BeatmapLevel,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (beatmapKey, beatmapLevel))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PlayingDifficultyBeatmapRichPresenceData")]

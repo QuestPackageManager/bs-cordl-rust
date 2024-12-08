@@ -22,11 +22,14 @@ for crate::UnityEngine::Rendering::LocalKeywordSpace {
 }
 #[cfg(feature = "UnityEngine+Rendering+LocalKeywordSpace")]
 impl crate::UnityEngine::Rendering::LocalKeywordSpace {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Equals_LocalKeywordSpace1(
+        &mut self,
+        rhs: crate::UnityEngine::Rendering::LocalKeywordSpace,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
-            (),
+            "Equals",
+            (rhs),
         )?;
         Ok(__cordl_ret)
     }
@@ -41,14 +44,11 @@ impl crate::UnityEngine::Rendering::LocalKeywordSpace {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_LocalKeywordSpace1(
-        &mut self,
-        rhs: crate::UnityEngine::Rendering::LocalKeywordSpace,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (rhs),
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -44,6 +44,18 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::IntervalTree::IntervalTree_2<TKey, TValue> {
+    #[cfg(feature = "IntervalTree+IntervalTree_2+__c")]
+    pub type __c = crate::IntervalTree::IntervalTree_2___c<TKey, TValue>;
+    #[cfg(feature = "IntervalTree+IntervalTree_2+__c__DisplayClass20_0")]
+    pub type __c__DisplayClass20_0 = crate::IntervalTree::IntervalTree_2___c__DisplayClass20_0<
+        TKey,
+        TValue,
+    >;
+    #[cfg(feature = "IntervalTree+IntervalTree_2+__c__DisplayClass19_0")]
+    pub type __c__DisplayClass19_0 = crate::IntervalTree::IntervalTree_2___c__DisplayClass19_0<
+        TKey,
+        TValue,
+    >;
     #[cfg(feature = "IntervalTree+IntervalTree_2+__c__DisplayClass23_0")]
     pub type __c__DisplayClass23_0 = crate::IntervalTree::IntervalTree_2___c__DisplayClass23_0<
         TKey,
@@ -54,18 +66,39 @@ impl<
         TKey,
         TValue,
     >;
-    #[cfg(feature = "IntervalTree+IntervalTree_2+__c__DisplayClass19_0")]
-    pub type __c__DisplayClass19_0 = crate::IntervalTree::IntervalTree_2___c__DisplayClass19_0<
-        TKey,
-        TValue,
-    >;
-    #[cfg(feature = "IntervalTree+IntervalTree_2+__c")]
-    pub type __c = crate::IntervalTree::IntervalTree_2___c<TKey, TValue>;
-    #[cfg(feature = "IntervalTree+IntervalTree_2+__c__DisplayClass20_0")]
-    pub type __c__DisplayClass20_0 = crate::IntervalTree::IntervalTree_2___c__DisplayClass20_0<
-        TKey,
-        TValue,
-    >;
+    pub fn Add(
+        &mut self,
+        from: TKey,
+        to: TKey,
+        value: TValue,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Add", (from, to, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetClosestNextValueTo(
         &mut self,
         key: TKey,
@@ -80,6 +113,79 @@ impl<
             self,
         );
         let __cordl_ret: TValue = __cordl_object.invoke("GetClosestNextValueTo", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetClosestPrevValueTo(
+        &mut self,
+        key: TKey,
+    ) -> quest_hook::libil2cpp::Result<TValue>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: TValue = __cordl_object.invoke("GetClosestPrevValueTo", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerator_1<
+            crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+        >,
+    >
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
+            crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+        > = __cordl_object.invoke("GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IComparer_1_1(
+        comparer: *mut crate::System::Collections::Generic::IComparer_1<TKey>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (comparer))?;
+        Ok(__cordl_object)
+    }
+    pub fn QueryWithCount(
+        &mut self,
+        from: TKey,
+        to: TKey,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<TValue>,
+    >
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<TValue> = __cordl_object
+            .invoke("QueryWithCount", (from, to))?;
         Ok(__cordl_ret)
     }
     pub fn Query_TKey0(
@@ -123,9 +229,8 @@ impl<
         > = __cordl_object.invoke("Query", (from, to))?;
         Ok(__cordl_ret)
     }
-    pub fn Remove_TValue0(
+    pub fn Rebuild(
         &mut self,
-        value: TValue,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -137,7 +242,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Remove", (value))?;
+            .invoke("Rebuild", ())?;
         Ok(__cordl_ret)
     }
     pub fn Remove_IEnumerable_1_1(
@@ -157,7 +262,10 @@ impl<
             .invoke("Remove", (items))?;
         Ok(__cordl_ret)
     }
-    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn Remove_TValue0(
+        &mut self,
+        value: TValue,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -168,10 +276,12 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
+            .invoke("Remove", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Max(&mut self) -> quest_hook::libil2cpp::Result<TKey>
+    pub fn System_Collections_IEnumerable_GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -181,7 +291,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: TKey = __cordl_object.invoke("get_Max", ())?;
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -217,13 +328,7 @@ impl<
             .invoke(".ctor", (comparer))?;
         Ok(__cordl_ret)
     }
-    pub fn QueryWithCount(
-        &mut self,
-        from: TKey,
-        to: TKey,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<TValue>,
-    >
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -233,17 +338,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<TValue> = __cordl_object
-            .invoke("QueryWithCount", (from, to))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
-        >,
-    >
+    pub fn get_Max(&mut self) -> quest_hook::libil2cpp::Result<TKey>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -253,9 +351,20 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
-        > = __cordl_object.invoke("GetEnumerator", ())?;
+        let __cordl_ret: TKey = __cordl_object.invoke("get_Max", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Min(&mut self) -> quest_hook::libil2cpp::Result<TKey>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: TKey = __cordl_object.invoke("get_Min", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Values(
@@ -276,115 +385,6 @@ impl<
             TValue,
         > = __cordl_object.invoke("get_Values", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Rebuild(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Rebuild", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Min(&mut self) -> quest_hook::libil2cpp::Result<TKey>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TKey = __cordl_object.invoke("get_Min", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetClosestPrevValueTo(
-        &mut self,
-        key: TKey,
-    ) -> quest_hook::libil2cpp::Result<TValue>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TValue = __cordl_object.invoke("GetClosestPrevValueTo", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Add(
-        &mut self,
-        from: TKey,
-        to: TKey,
-        value: TValue,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (from, to, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerable_GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IComparer_1_1(
-        comparer: *mut crate::System::Collections::Generic::IComparer_1<TKey>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (comparer))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "IntervalTree+IntervalTree_2")]

@@ -31,6 +31,32 @@ impl std::ops::DerefMut for BeatmapLevelsEntitlementModel {
 }
 #[cfg(feature = "BeatmapLevelsEntitlementModel")]
 impl BeatmapLevelsEntitlementModel {
+    pub fn AddAlwaysOwnedPack(
+        &mut self,
+        pack: *mut PackDefinitionSO,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddAlwaysOwnedPack", (pack))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetLevelDataVersionAsync(
+        &mut self,
+        levelId: *mut crate::System::String,
+        token: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<BeatmapLevelDataVersion>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            BeatmapLevelDataVersion,
+        > = __cordl_object.invoke("GetLevelDataVersionAsync", (levelId, token))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetLevelEntitlementStatusAsync(
         &mut self,
         levelId: *mut crate::System::String,
@@ -44,17 +70,6 @@ impl BeatmapLevelsEntitlementModel {
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
             EntitlementStatus,
         > = __cordl_object.invoke("GetLevelEntitlementStatusAsync", (levelId, token))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddAlwaysOwnedPack(
-        &mut self,
-        pack: *mut PackDefinitionSO,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddAlwaysOwnedPack", (pack))?;
         Ok(__cordl_ret)
     }
     pub fn GetPackEntitlementStatusAsync(
@@ -73,6 +88,15 @@ impl BeatmapLevelsEntitlementModel {
             .invoke("GetPackEntitlementStatusAsync", (levelPackId, token))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        additionalContentEntitlementModel: *mut IAdditionalContentEntitlementModel,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (additionalContentEntitlementModel))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         additionalContentEntitlementModel: *mut IAdditionalContentEntitlementModel,
@@ -83,30 +107,6 @@ impl BeatmapLevelsEntitlementModel {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (additionalContentEntitlementModel))?;
         Ok(__cordl_ret)
-    }
-    pub fn GetLevelDataVersionAsync(
-        &mut self,
-        levelId: *mut crate::System::String,
-        token: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<BeatmapLevelDataVersion>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            BeatmapLevelDataVersion,
-        > = __cordl_object.invoke("GetLevelDataVersionAsync", (levelId, token))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        additionalContentEntitlementModel: *mut IAdditionalContentEntitlementModel,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (additionalContentEntitlementModel))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapLevelsEntitlementModel")]

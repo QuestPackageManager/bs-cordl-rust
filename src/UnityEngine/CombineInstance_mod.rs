@@ -46,17 +46,6 @@ impl crate::UnityEngine::CombineInstance {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_transform(
-        &mut self,
-        value: crate::UnityEngine::Matrix4x4,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_transform",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_subMeshIndex(
         &mut self,
         value: i32,
@@ -64,6 +53,17 @@ impl crate::UnityEngine::CombineInstance {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_subMeshIndex",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_transform(
+        &mut self,
+        value: crate::UnityEngine::Matrix4x4,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_transform",
             (value),
         )?;
         Ok(__cordl_ret)

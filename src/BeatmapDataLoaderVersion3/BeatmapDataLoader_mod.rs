@@ -39,6 +39,16 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BasicEventConverter {
             .invoke("Convert", (basicEventSaveData))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        bpmTimeProcessor: *mut BpmTimeProcessor,
+        specialEventsFilter: *mut crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bpmTimeProcessor, specialEventsFilter))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         bpmTimeProcessor: *mut BpmTimeProcessor,
@@ -50,16 +60,6 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BasicEventConverter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bpmTimeProcessor, specialEventsFilter))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        bpmTimeProcessor: *mut BpmTimeProcessor,
-        specialEventsFilter: *mut crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bpmTimeProcessor, specialEventsFilter))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BasicEventConverter")]
@@ -109,6 +109,15 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverte
         let __cordl_ret: f32 = __cordl_object.invoke("BeatToTime", (beat))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        bpmTimeProcessor: *mut BpmTimeProcessor,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bpmTimeProcessor))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         bpmTimeProcessor: *mut BpmTimeProcessor,
@@ -119,15 +128,6 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverte
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bpmTimeProcessor))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bpmTimeProcessor))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BeatmapDataItemConverter")]
@@ -168,50 +168,6 @@ impl std::ops::DerefMut for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader 
 impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader {
     pub const kDefaultNumberOfLines: i32 = 4i32;
     #[cfg(
-        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+RotationEventConverter"
-    )]
-    pub type RotationEventConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_RotationEventConverter;
-    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BurstSliderConverter")]
-    pub type BurstSliderConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BurstSliderConverter;
-    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+WaypointConverter")]
-    pub type WaypointConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_WaypointConverter;
-    #[cfg(
-        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxEventBoxConverter"
-    )]
-    pub type IntVfxEventBoxConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxEventBoxConverter;
-    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader___c__DisplayClass4_0;
-    #[cfg(
-        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BeatmapDataItemConverter"
-    )]
-    pub type BeatmapDataItemConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
-    #[cfg(
-        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColoBaseDataConvertor"
-    )]
-    pub type LightColoBaseDataConvertor = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColoBaseDataConvertor;
-    #[cfg(
-        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxBaseDataConvertor"
-    )]
-    pub type IntVfxBaseDataConvertor = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxBaseDataConvertor;
-    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ObstacleConverter")]
-    pub type ObstacleConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ObstacleConverter;
-    #[cfg(
-        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColorEventBoxConverter"
-    )]
-    pub type LightColorEventBoxConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColorEventBoxConverter;
-    #[cfg(
-        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationEventBoxConverter"
-    )]
-    pub type LightTranslationEventBoxConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationEventBoxConverter;
-    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorNoteConverter")]
-    pub type ColorNoteConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorNoteConverter;
-    #[cfg(
-        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationBaseDataConvertor"
-    )]
-    pub type LightTranslationBaseDataConvertor = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationBaseDataConvertor;
-    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BombNoteConverter")]
-    pub type BombNoteConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BombNoteConverter;
-    #[cfg(
         feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxBaseDataConvertor"
     )]
     pub type FloatVfxBaseDataConvertor = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxBaseDataConvertor;
@@ -219,30 +175,81 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader {
         feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationBaseDataConvertor"
     )]
     pub type LightRotationBaseDataConvertor = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationBaseDataConvertor;
+    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+__c__DisplayClass4_0")]
+    pub type __c__DisplayClass4_0 = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader___c__DisplayClass4_0;
     #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BpmEventConverter")]
     pub type BpmEventConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BpmEventConverter;
     #[cfg(
-        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxEventBoxConverter"
+        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxBaseDataConvertor"
     )]
-    pub type FloatVfxEventBoxConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxEventBoxConverter;
-    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SliderConverter")]
-    pub type SliderConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SliderConverter;
-    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SpecialEventsFilter")]
-    pub type SpecialEventsFilter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter;
-    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+__c__DisplayClass3_0")]
-    pub type __c__DisplayClass3_0 = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader___c__DisplayClass3_0;
+    pub type IntVfxBaseDataConvertor = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxBaseDataConvertor;
+    #[cfg(
+        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BeatmapDataItemConverter"
+    )]
+    pub type BeatmapDataItemConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
+    #[cfg(
+        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColorEventBoxConverter"
+    )]
+    pub type LightColorEventBoxConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColorEventBoxConverter;
+    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ObstacleConverter")]
+    pub type ObstacleConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ObstacleConverter;
+    #[cfg(
+        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+RotationEventConverter"
+    )]
+    pub type RotationEventConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_RotationEventConverter;
+    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BombNoteConverter")]
+    pub type BombNoteConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BombNoteConverter;
+    #[cfg(
+        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorBoostEventConverter"
+    )]
+    pub type ColorBoostEventConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorBoostEventConverter;
+    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BasicEventConverter")]
+    pub type BasicEventConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BasicEventConverter;
+    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorNoteConverter")]
+    pub type ColorNoteConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorNoteConverter;
+    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+WaypointConverter")]
+    pub type WaypointConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_WaypointConverter;
+    #[cfg(
+        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColoBaseDataConvertor"
+    )]
+    pub type LightColoBaseDataConvertor = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColoBaseDataConvertor;
+    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IndexFilterConverter")]
+    pub type IndexFilterConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IndexFilterConverter;
     #[cfg(
         feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationEventBoxConverter"
     )]
     pub type LightRotationEventBoxConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationEventBoxConverter;
     #[cfg(
-        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorBoostEventConverter"
+        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationBaseDataConvertor"
     )]
-    pub type ColorBoostEventConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorBoostEventConverter;
-    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IndexFilterConverter")]
-    pub type IndexFilterConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IndexFilterConverter;
-    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BasicEventConverter")]
-    pub type BasicEventConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BasicEventConverter;
+    pub type LightTranslationBaseDataConvertor = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationBaseDataConvertor;
+    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SliderConverter")]
+    pub type SliderConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SliderConverter;
+    #[cfg(
+        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationEventBoxConverter"
+    )]
+    pub type LightTranslationEventBoxConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationEventBoxConverter;
+    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BurstSliderConverter")]
+    pub type BurstSliderConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BurstSliderConverter;
+    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SpecialEventsFilter")]
+    pub type SpecialEventsFilter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter;
+    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+__c__DisplayClass3_0")]
+    pub type __c__DisplayClass3_0 = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader___c__DisplayClass3_0;
+    #[cfg(
+        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxEventBoxConverter"
+    )]
+    pub type IntVfxEventBoxConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxEventBoxConverter;
+    #[cfg(
+        feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxEventBoxConverter"
+    )]
+    pub type FloatVfxEventBoxConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxEventBoxConverter;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -252,13 +259,6 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader")]
@@ -311,6 +311,15 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BombNoteConverter {
             .invoke("Convert", (bombNoteSaveData))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        bpmTimeProcessor: *mut BpmTimeProcessor,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bpmTimeProcessor))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         bpmTimeProcessor: *mut BpmTimeProcessor,
@@ -321,15 +330,6 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BombNoteConverter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bpmTimeProcessor))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bpmTimeProcessor))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BombNoteConverter")]
@@ -382,6 +382,15 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BpmEventConverter {
             .invoke("Convert", (bpmChangeEventSaveData))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        bpmTimeProcessor: *mut BpmTimeProcessor,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bpmTimeProcessor))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         bpmTimeProcessor: *mut BpmTimeProcessor,
@@ -392,15 +401,6 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BpmEventConverter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bpmTimeProcessor))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bpmTimeProcessor))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BpmEventConverter")]
@@ -442,17 +442,6 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BurstSliderConverter {
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BurstSliderConverter")]
 impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BurstSliderConverter {
-    pub fn _ctor(
-        &mut self,
-        bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bpmTimeProcessor))?;
-        Ok(__cordl_ret)
-    }
     pub fn Convert(
         &mut self,
         sliderSaveData: *mut crate::BeatmapSaveDataVersion3::BurstSliderData,
@@ -466,12 +455,23 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BurstSliderConverter {
     }
     pub fn New(
         bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bpmTimeProcessor))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        bpmTimeProcessor: *mut BpmTimeProcessor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bpmTimeProcessor))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BurstSliderConverter")]
@@ -513,17 +513,6 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorBoostEventConverter
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorBoostEventConverter")]
 impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorBoostEventConverter {
-    pub fn _ctor(
-        &mut self,
-        bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bpmTimeProcessor))?;
-        Ok(__cordl_ret)
-    }
     pub fn Convert(
         &mut self,
         colorBoostEventSaveData: *mut crate::BeatmapSaveDataVersion3::ColorBoostEventData,
@@ -537,12 +526,23 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorBoostEventConverte
     }
     pub fn New(
         bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bpmTimeProcessor))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        bpmTimeProcessor: *mut BpmTimeProcessor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bpmTimeProcessor))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorBoostEventConverter")]
@@ -595,6 +595,15 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorNoteConverter {
             .invoke("Convert", (colorNoteSaveData))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        bpmTimeProcessor: *mut BpmTimeProcessor,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bpmTimeProcessor))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         bpmTimeProcessor: *mut BpmTimeProcessor,
@@ -605,15 +614,6 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorNoteConverter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bpmTimeProcessor))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bpmTimeProcessor))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorNoteConverter")]
@@ -707,6 +707,15 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxEventBoxConvert
             .invoke("Convert", (saveData, lightGroup))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        fxEventsCollection: *mut crate::BeatmapSaveDataVersion3::FxEventsCollection,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (fxEventsCollection))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         fxEventsCollection: *mut crate::BeatmapSaveDataVersion3::FxEventsCollection,
@@ -717,15 +726,6 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxEventBoxConvert
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (fxEventsCollection))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        fxEventsCollection: *mut crate::BeatmapSaveDataVersion3::FxEventsCollection,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (fxEventsCollection))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxEventBoxConverter")]
@@ -846,17 +846,6 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxEventBoxConverter 
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxEventBoxConverter")]
 impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxEventBoxConverter {
-    pub fn _ctor(
-        &mut self,
-        fxEventsCollection: *mut crate::BeatmapSaveDataVersion3::FxEventsCollection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (fxEventsCollection))?;
-        Ok(__cordl_ret)
-    }
     pub fn Convert(
         &mut self,
         saveData: *mut crate::BeatmapSaveDataVersion3::FxEventBox,
@@ -871,12 +860,23 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxEventBoxConverter
     }
     pub fn New(
         fxEventsCollection: *mut crate::BeatmapSaveDataVersion3::FxEventsCollection,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (fxEventsCollection))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        fxEventsCollection: *mut crate::BeatmapSaveDataVersion3::FxEventsCollection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (fxEventsCollection))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxEventBoxConverter")]
@@ -979,6 +979,13 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColorEventBoxConver
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColorEventBoxConverter"
 )]
 impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColorEventBoxConverter {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -988,13 +995,6 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColorEventBoxConve
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -1099,6 +1099,13 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationEventBoxCon
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationEventBoxConverter"
 )]
 impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationEventBoxConverter {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1108,13 +1115,6 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationEventBoxCo
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -1219,6 +1219,13 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationEventBox
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationEventBoxConverter"
 )]
 impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationEventBoxConverter {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1228,13 +1235,6 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationEventBo
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -1278,17 +1278,6 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ObstacleConverter {
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ObstacleConverter")]
 impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ObstacleConverter {
-    pub fn _ctor(
-        &mut self,
-        bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bpmTimeProcessor))?;
-        Ok(__cordl_ret)
-    }
     pub fn Convert(
         &mut self,
         obstacleSaveData: *mut crate::BeatmapSaveDataVersion3::ObstacleData,
@@ -1302,12 +1291,23 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ObstacleConverter {
     }
     pub fn New(
         bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bpmTimeProcessor))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        bpmTimeProcessor: *mut BpmTimeProcessor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bpmTimeProcessor))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ObstacleConverter")]
@@ -1349,17 +1349,6 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_RotationEventConverter {
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+RotationEventConverter")]
 impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_RotationEventConverter {
-    pub fn _ctor(
-        &mut self,
-        bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bpmTimeProcessor))?;
-        Ok(__cordl_ret)
-    }
     pub fn Convert(
         &mut self,
         rotationEventSaveData: *mut crate::BeatmapSaveDataVersion3::RotationEventData,
@@ -1373,12 +1362,23 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_RotationEventConverter 
     }
     pub fn New(
         bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bpmTimeProcessor))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        bpmTimeProcessor: *mut BpmTimeProcessor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bpmTimeProcessor))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+RotationEventConverter")]
@@ -1431,6 +1431,15 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SliderConverter {
             .invoke("Convert", (sliderSaveData))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        bpmTimeProcessor: *mut BpmTimeProcessor,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bpmTimeProcessor))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         bpmTimeProcessor: *mut BpmTimeProcessor,
@@ -1441,15 +1450,6 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SliderConverter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bpmTimeProcessor))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bpmTimeProcessor))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SliderConverter")]
@@ -1494,18 +1494,6 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter {
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SpecialEventsFilter")]
 impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter {
-    pub fn _ctor(
-        &mut self,
-        basicEventTypesWithKeywords: *mut crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
-        environmentKeywords: *mut EnvironmentKeywords,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (basicEventTypesWithKeywords, environmentKeywords))?;
-        Ok(__cordl_ret)
-    }
     pub fn IsEventValid(
         &mut self,
         basicBeatmapEventType: crate::BeatmapSaveDataCommon::BeatmapEventType,
@@ -1520,12 +1508,24 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter {
     pub fn New(
         basicEventTypesWithKeywords: *mut crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
         environmentKeywords: *mut EnvironmentKeywords,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (basicEventTypesWithKeywords, environmentKeywords))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        basicEventTypesWithKeywords: *mut crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
+        environmentKeywords: *mut EnvironmentKeywords,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (basicEventTypesWithKeywords, environmentKeywords))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SpecialEventsFilter")]
@@ -1567,17 +1567,6 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_WaypointConverter {
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+WaypointConverter")]
 impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_WaypointConverter {
-    pub fn _ctor(
-        &mut self,
-        bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bpmTimeProcessor))?;
-        Ok(__cordl_ret)
-    }
     pub fn Convert(
         &mut self,
         waypointSaveData: *mut crate::BeatmapSaveDataVersion3::WaypointData,
@@ -1591,12 +1580,23 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_WaypointConverter {
     }
     pub fn New(
         bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bpmTimeProcessor))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        bpmTimeProcessor: *mut BpmTimeProcessor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bpmTimeProcessor))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+WaypointConverter")]

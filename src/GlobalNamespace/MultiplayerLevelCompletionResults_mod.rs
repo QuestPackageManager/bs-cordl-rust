@@ -31,16 +31,57 @@ impl MultiplayerLevelCompletionResults {
     pub type MultiplayerPlayerLevelEndReason = crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason;
     #[cfg(feature = "MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState")]
     pub type MultiplayerPlayerLevelEndState = crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState;
-    pub fn get_playerLevelEndReason(
+    pub fn CompareTo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason,
-    > {
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason = __cordl_object
-            .invoke("get_playerLevelEndReason", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateFromSerializedData(
+        &mut self,
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+    ) -> quest_hook::libil2cpp::Result<*mut MultiplayerLevelCompletionResults> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut MultiplayerLevelCompletionResults = __cordl_object
+            .invoke("CreateFromSerializedData", (reader))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState_MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason_LevelCompletionResults1(
+        playerLevelEndState: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState,
+        playerLevelEndReason: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason,
+        levelCompletionResults: *mut LevelCompletionResults,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (playerLevelEndState, playerLevelEndReason, levelCompletionResults),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn Serialize(
+        &mut self,
+        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Serialize", (writer))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -69,6 +110,13 @@ impl MultiplayerLevelCompletionResults {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn get_failedOrGivenUp(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_failedOrGivenUp", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_hasAnyResults(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -76,25 +124,26 @@ impl MultiplayerLevelCompletionResults {
         let __cordl_ret: bool = __cordl_object.invoke("get_hasAnyResults", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CompareTo(
+    pub fn get_levelCompletionResults(
         &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<*mut LevelCompletionResults> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (obj))?;
+        let __cordl_ret: *mut LevelCompletionResults = __cordl_object
+            .invoke("get_levelCompletionResults", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Serialize(
+    pub fn get_playerLevelEndReason(
         &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Serialize", (writer))?;
+        let __cordl_ret: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason = __cordl_object
+            .invoke("get_playerLevelEndReason", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_playerLevelEndState(
@@ -108,55 +157,6 @@ impl MultiplayerLevelCompletionResults {
         let __cordl_ret: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState = __cordl_object
             .invoke("get_playerLevelEndState", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn CreateFromSerializedData(
-        &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<*mut MultiplayerLevelCompletionResults> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut MultiplayerLevelCompletionResults = __cordl_object
-            .invoke("CreateFromSerializedData", (reader))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_failedOrGivenUp(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_failedOrGivenUp", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_levelCompletionResults(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut LevelCompletionResults> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut LevelCompletionResults = __cordl_object
-            .invoke("get_levelCompletionResults", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState_MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason_LevelCompletionResults1(
-        playerLevelEndState: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState,
-        playerLevelEndReason: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason,
-        levelCompletionResults: *mut LevelCompletionResults,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (playerLevelEndState, playerLevelEndReason, levelCompletionResults),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MultiplayerLevelCompletionResults")]

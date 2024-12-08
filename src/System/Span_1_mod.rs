@@ -24,17 +24,60 @@ for crate::System::Span_1<T> {
 }
 #[cfg(feature = "System+Span_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::System::Span_1<T> {
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
+            "Clear",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn CopyTo(
+        &mut self,
+        destination: crate::System::Span_1<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CopyTo",
+            (destination),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Fill(
+        &mut self,
+        value: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Fill",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -50,15 +93,107 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Span_1<T> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn GetPinnableReference(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetPinnableReference",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Slice_i32_0(
+        &mut self,
+        start: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Span_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::Span_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Slice",
+            (start),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Slice_i32_1(
+        &mut self,
+        start: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Span_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::Span_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Slice",
+            (start, length),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToArray(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToArray",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryCopyTo(
+        &mut self,
+        destination: crate::System::Span_1<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "TryCopyTo",
+            (destination),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_ByRefMut_i32_3(
+        &mut self,
+        ptr: quest_hook::libil2cpp::ByRefMut<T>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Clear",
-            (),
+            ".ctor",
+            (ptr, length),
         )?;
         Ok(__cordl_ret)
     }
@@ -110,65 +245,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Span_1<T> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_ByRefMut_i32_3(
-        &mut self,
-        ptr: quest_hook::libil2cpp::ByRefMut<T>,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (ptr, length),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToArray(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToArray",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Fill(
-        &mut self,
-        value: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Fill",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPinnableReference(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetPinnableReference",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Item(
         &mut self,
         index: i32,
@@ -184,67 +260,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Span_1<T> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CopyTo(
-        &mut self,
-        destination: crate::System::Span_1<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CopyTo",
-            (destination),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Slice_i32_0(
-        &mut self,
-        start: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Span_1<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: crate::System::Span_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Slice",
-            (start),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Slice_i32_1(
-        &mut self,
-        start: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Span_1<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: crate::System::Span_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Slice",
-            (start, length),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -254,21 +269,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Span_1<T> {
             self,
             "get_Length",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryCopyTo(
-        &mut self,
-        destination: crate::System::Span_1<T>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "TryCopyTo",
-            (destination),
         )?;
         Ok(__cordl_ret)
     }

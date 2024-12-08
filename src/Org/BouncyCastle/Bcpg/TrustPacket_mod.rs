@@ -36,6 +36,32 @@ impl crate::Org::BouncyCastle::Bcpg::TrustPacket {
             .invoke("Encode", (bcpgOut))?;
         Ok(__cordl_ret)
     }
+    pub fn GetLevelAndTrustAmount(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetLevelAndTrustAmount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_BcpgInputStream0(
+        bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bcpgIn))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_1(trustCode: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (trustCode))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_BcpgInputStream0(
         &mut self,
         bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
@@ -57,34 +83,6 @@ impl crate::Org::BouncyCastle::Bcpg::TrustPacket {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (trustCode))?;
         Ok(__cordl_ret)
-    }
-    pub fn GetLevelAndTrustAmount(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetLevelAndTrustAmount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_BcpgInputStream0(
-        bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bcpgIn))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_1(
-        trustCode: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (trustCode))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+TrustPacket")]

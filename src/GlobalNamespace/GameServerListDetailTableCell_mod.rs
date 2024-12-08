@@ -27,14 +27,21 @@ impl std::ops::DerefMut for GameServerListDetailTableCell {
 }
 #[cfg(feature = "GameServerListDetailTableCell")]
 impl GameServerListDetailTableCell {
-    pub fn _ctor(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
     pub fn _Start_b__5_0(
@@ -47,15 +54,14 @@ impl GameServerListDetailTableCell {
             .invoke("<Start>b__5_0", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_joinServerButtonWasPressedEvent(
+    pub fn _ctor(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_joinServerButtonWasPressedEvent", (value))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_joinServerButtonWasPressedEvent(
@@ -69,22 +75,16 @@ impl GameServerListDetailTableCell {
             .invoke("add_joinServerButtonWasPressedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Start(
+    pub fn remove_joinServerButtonWasPressedEvent(
         &mut self,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
+            .invoke("remove_joinServerButtonWasPressedEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "GameServerListDetailTableCell")]

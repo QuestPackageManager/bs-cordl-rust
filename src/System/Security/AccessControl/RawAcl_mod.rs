@@ -28,6 +28,25 @@ impl std::ops::DerefMut for crate::System::Security::AccessControl::RawAcl {
 }
 #[cfg(feature = "System+Security+AccessControl+RawAcl")]
 impl crate::System::Security::AccessControl::RawAcl {
+    pub fn InsertAce(
+        &mut self,
+        index: i32,
+        ace: *mut crate::System::Security::AccessControl::GenericAce,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InsertAce", (index, ace))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(revision: u8, capacity: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (revision, capacity))?;
+        Ok(__cordl_object)
+    }
     pub fn RemoveAce(
         &mut self,
         index: i32,
@@ -39,23 +58,23 @@ impl crate::System::Security::AccessControl::RawAcl {
             .invoke("RemoveAce", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Item(
+    pub fn _ctor(
         &mut self,
-        index: i32,
-        value: *mut crate::System::Security::AccessControl::GenericAce,
+        revision: u8,
+        capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Item", (index, value))?;
+            .invoke(".ctor", (revision, capacity))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Item(
@@ -71,39 +90,17 @@ impl crate::System::Security::AccessControl::RawAcl {
             .invoke("get_Item", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn InsertAce(
+    pub fn set_Item(
         &mut self,
         index: i32,
-        ace: *mut crate::System::Security::AccessControl::GenericAce,
+        value: *mut crate::System::Security::AccessControl::GenericAce,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InsertAce", (index, ace))?;
+            .invoke("set_Item", (index, value))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        revision: u8,
-        capacity: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (revision, capacity))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        revision: u8,
-        capacity: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (revision, capacity))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Security+AccessControl+RawAcl")]

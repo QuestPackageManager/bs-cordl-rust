@@ -27,14 +27,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::HashCode {
 }
 #[cfg(feature = "System+HashCode")]
 impl crate::System::HashCode {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Add_T0<T>(
         &mut self,
         value: T,
@@ -69,6 +61,14 @@ impl crate::System::HashCode {
             self,
             "Equals",
             (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -24,6 +24,16 @@ impl std::ops::DerefMut for crate::Microsoft::Win32::SafeHandles::SafeFileHandle
 }
 #[cfg(feature = "Microsoft+Win32+SafeHandles+SafeFileHandle")]
 impl crate::Microsoft::Win32::SafeHandles::SafeFileHandle {
+    pub fn New(
+        preexistingHandle: crate::System::IntPtr,
+        ownsHandle: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (preexistingHandle, ownsHandle))?;
+        Ok(__cordl_object)
+    }
     pub fn ReleaseHandle(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,16 +52,6 @@ impl crate::Microsoft::Win32::SafeHandles::SafeFileHandle {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (preexistingHandle, ownsHandle))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        preexistingHandle: crate::System::IntPtr,
-        ownsHandle: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (preexistingHandle, ownsHandle))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Microsoft+Win32+SafeHandles+SafeFileHandle")]

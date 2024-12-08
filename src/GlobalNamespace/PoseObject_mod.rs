@@ -25,6 +25,16 @@ impl std::ops::DerefMut for PoseObject {
 }
 #[cfg(feature = "PoseObject")]
 impl PoseObject {
+    pub fn New(
+        transform: *mut crate::UnityEngine::Transform,
+        poseObjectId: *mut PoseObjectIdSO,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (transform, poseObjectId))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         transform: *mut crate::UnityEngine::Transform,
@@ -37,16 +47,6 @@ impl PoseObject {
             .invoke(".ctor", (transform, poseObjectId))?;
         Ok(__cordl_ret)
     }
-    pub fn get_objectTransform(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Transform = __cordl_object
-            .invoke("get_objectTransform", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_id(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -57,15 +57,15 @@ impl PoseObject {
             .invoke("get_id", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        transform: *mut crate::UnityEngine::Transform,
-        poseObjectId: *mut PoseObjectIdSO,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (transform, poseObjectId))?;
-        Ok(__cordl_object)
+    pub fn get_objectTransform(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Transform = __cordl_object
+            .invoke("get_objectTransform", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PoseObject")]

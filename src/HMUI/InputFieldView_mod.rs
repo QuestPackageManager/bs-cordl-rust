@@ -28,6 +28,13 @@ impl std::ops::DerefMut for crate::HMUI::InputFieldView_InputFieldChanged {
 }
 #[cfg(feature = "HMUI+InputFieldView+InputFieldChanged")]
 impl crate::HMUI::InputFieldView_InputFieldChanged {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -37,13 +44,6 @@ impl crate::HMUI::InputFieldView_InputFieldChanged {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HMUI+InputFieldView+InputFieldChanged")]
@@ -101,103 +101,62 @@ impl std::ops::DerefMut for crate::HMUI::InputFieldView {
 #[cfg(feature = "HMUI+InputFieldView")]
 impl crate::HMUI::InputFieldView {
     pub const kBlinkingRate: f32 = 0.4f32;
+    #[cfg(feature = "HMUI+InputFieldView+SelectionState")]
+    pub type SelectionState = crate::HMUI::InputFieldView_SelectionState;
     #[cfg(feature = "HMUI+InputFieldView+InputFieldChanged")]
     pub type InputFieldChanged = crate::HMUI::InputFieldView_InputFieldChanged;
     #[cfg(feature = "HMUI+InputFieldView+_BlinkingCaretCoroutine_d__43")]
     pub type _BlinkingCaretCoroutine_d__43 = crate::HMUI::InputFieldView__BlinkingCaretCoroutine_d__43;
-    #[cfg(feature = "HMUI+InputFieldView+SelectionState")]
-    pub type SelectionState = crate::HMUI::InputFieldView_SelectionState;
-    pub fn add_selectionStateDidChangeEvent(
+    pub fn ActivateKeyboard(
         &mut self,
-        value: *mut crate::System::Action_1<crate::HMUI::InputFieldView_SelectionState>,
+        keyboard: *mut crate::HMUI::UIKeyboard,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_selectionStateDidChangeEvent", (value))?;
+            .invoke("ActivateKeyboard", (keyboard))?;
         Ok(__cordl_ret)
     }
-    pub fn get_useGlobalKeyboard(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_useGlobalKeyboard", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_onValueChanged(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::HMUI::InputFieldView_InputFieldChanged,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::InputFieldView_InputFieldChanged = __cordl_object
-            .invoke("get_onValueChanged", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_text(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_text", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateCaretPosition(
+    pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateCaretPosition", ())?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_onValueChanged(
+    pub fn BlinkingCaretCoroutine(
         &mut self,
-        value: *mut crate::HMUI::InputFieldView_InputFieldChanged,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_onValueChanged", (value))?;
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("BlinkingCaretCoroutine", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_selectionStateDidChangeEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<crate::HMUI::InputFieldView_SelectionState>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_selectionStateDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
+    pub fn ClearInput(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
+            .invoke("ClearInput", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DeactivateKeyboard(
+        &mut self,
+        keyboard: *mut crate::HMUI::UIKeyboard,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DeactivateKeyboard", (keyboard))?;
         Ok(__cordl_ret)
     }
     pub fn DoStateTransition(
@@ -212,57 +171,14 @@ impl crate::HMUI::InputFieldView {
             .invoke("DoStateTransition", (state, instant))?;
         Ok(__cordl_ret)
     }
-    pub fn DeactivateKeyboard(
-        &mut self,
-        keyboard: *mut crate::HMUI::UIKeyboard,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DeactivateKeyboard", (keyboard))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetText(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetText", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_keyboardPositionOffset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_keyboardPositionOffset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearInput(
+    pub fn KeyboardDeletePressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearInput", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ActivateKeyboard(
-        &mut self,
-        keyboard: *mut crate::HMUI::UIKeyboard,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ActivateKeyboard", (keyboard))?;
+            .invoke("KeyboardDeletePressed", ())?;
         Ok(__cordl_ret)
     }
     pub fn KeyboardKeyPressed(
@@ -276,24 +192,42 @@ impl crate::HMUI::InputFieldView {
             .invoke("KeyboardKeyPressed", (letter))?;
         Ok(__cordl_ret)
     }
-    pub fn BlinkingCaretCoroutine(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("BlinkingCaretCoroutine", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_selectionState(
+    pub fn SetText(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::HMUI::InputFieldView_SelectionState> {
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::HMUI::InputFieldView_SelectionState = __cordl_object
-            .invoke("get_selectionState", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetText", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateCaretPosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateCaretPosition", ())?;
         Ok(__cordl_ret)
     }
     pub fn UpdateClearButton(
@@ -306,6 +240,16 @@ impl crate::HMUI::InputFieldView {
             .invoke("UpdateClearButton", ())?;
         Ok(__cordl_ret)
     }
+    pub fn UpdatePlaceholder(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdatePlaceholder", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _Awake_b__34_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -314,6 +258,59 @@ impl crate::HMUI::InputFieldView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__34_0", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_selectionStateDidChangeEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<crate::HMUI::InputFieldView_SelectionState>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_selectionStateDidChangeEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_keyboardPositionOffset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_keyboardPositionOffset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_onValueChanged(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::HMUI::InputFieldView_InputFieldChanged,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::InputFieldView_InputFieldChanged = __cordl_object
+            .invoke("get_onValueChanged", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_selectionState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::HMUI::InputFieldView_SelectionState> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::HMUI::InputFieldView_SelectionState = __cordl_object
+            .invoke("get_selectionState", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_text(
@@ -326,42 +323,45 @@ impl crate::HMUI::InputFieldView {
             .invoke("get_text", ())?;
         Ok(__cordl_ret)
     }
-    pub fn KeyboardDeletePressed(
+    pub fn get_useGlobalKeyboard(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_useGlobalKeyboard", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_selectionStateDidChangeEvent(
         &mut self,
+        value: *mut crate::System::Action_1<crate::HMUI::InputFieldView_SelectionState>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("KeyboardDeletePressed", ())?;
+            .invoke("remove_selectionStateDidChangeEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn UpdatePlaceholder(
+    pub fn set_onValueChanged(
         &mut self,
+        value: *mut crate::HMUI::InputFieldView_InputFieldChanged,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdatePlaceholder", ())?;
+            .invoke("set_onValueChanged", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Awake(
+    pub fn set_text(
         &mut self,
+        value: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
+            .invoke("set_text", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HMUI+InputFieldView")]

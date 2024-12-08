@@ -22,14 +22,6 @@ for crate::UnityEngine::Rendering::BatchPackedCullingViewID {
 }
 #[cfg(feature = "UnityEngine+Rendering+BatchPackedCullingViewID")]
 impl crate::UnityEngine::Rendering::BatchPackedCullingViewID {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_BatchPackedCullingViewID0(
         &mut self,
         other: crate::UnityEngine::Rendering::BatchPackedCullingViewID,
@@ -49,6 +41,14 @@ impl crate::UnityEngine::Rendering::BatchPackedCullingViewID {
             self,
             "Equals",
             (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }

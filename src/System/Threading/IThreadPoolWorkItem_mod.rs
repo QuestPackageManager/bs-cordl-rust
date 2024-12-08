@@ -24,6 +24,16 @@ impl std::ops::DerefMut for crate::System::Threading::IThreadPoolWorkItem {
 }
 #[cfg(feature = "System+Threading+IThreadPoolWorkItem")]
 impl crate::System::Threading::IThreadPoolWorkItem {
+    pub fn ExecuteWorkItem(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExecuteWorkItem", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn MarkAborted(
         &mut self,
         tae: *mut crate::System::Threading::ThreadAbortException,
@@ -33,16 +43,6 @@ impl crate::System::Threading::IThreadPoolWorkItem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkAborted", (tae))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExecuteWorkItem(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExecuteWorkItem", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

@@ -32,6 +32,32 @@ for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<TValue> {
 impl<
     TValue: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<TValue> {
+    pub fn New(
+        observable: *mut crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<
+            TValue,
+        >,
+        observer: *mut crate::System::IObserver_1<TValue>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (observable, observer))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnCompleted(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnCompleted", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn OnError(
         &mut self,
         error: *mut crate::System::Exception,
@@ -47,8 +73,9 @@ impl<
             .invoke("OnError", (error))?;
         Ok(__cordl_ret)
     }
-    pub fn OnCompleted(
+    pub fn OnNext(
         &mut self,
+        evt: TValue,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -58,7 +85,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCompleted", ())?;
+            .invoke("OnNext", (evt))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -78,33 +105,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (observable, observer))?;
         Ok(__cordl_ret)
-    }
-    pub fn OnNext(
-        &mut self,
-        evt: TValue,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnNext", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        observable: *mut crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<
-            TValue,
-        >,
-        observer: *mut crate::System::IObserver_1<TValue>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (observable, observer))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1+Take")]
@@ -155,6 +155,16 @@ impl<
     pub type Take = crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<
         TValue,
     >;
+    pub fn New(
+        source: *mut crate::System::IObservable_1<TValue>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (source, count))?;
+        Ok(__cordl_object)
+    }
     pub fn Subscribe(
         &mut self,
         observer: *mut crate::System::IObserver_1<TValue>,
@@ -185,16 +195,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (source, count))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        source: *mut crate::System::IObservable_1<TValue>,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (source, count))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1")]

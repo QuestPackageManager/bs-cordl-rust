@@ -26,17 +26,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::NoThrowSetBinder
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowSetBinderMember")]
 impl crate::Newtonsoft::Json::Utilities::NoThrowSetBinderMember {
-    pub fn _ctor(
-        &mut self,
-        innerBinder: *mut crate::System::Dynamic::SetMemberBinder,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (innerBinder))?;
-        Ok(__cordl_ret)
-    }
     pub fn FallbackSetMember(
         &mut self,
         target: *mut crate::System::Dynamic::DynamicMetaObject,
@@ -52,12 +41,23 @@ impl crate::Newtonsoft::Json::Utilities::NoThrowSetBinderMember {
     }
     pub fn New(
         innerBinder: *mut crate::System::Dynamic::SetMemberBinder,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (innerBinder))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        innerBinder: *mut crate::System::Dynamic::SetMemberBinder,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (innerBinder))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowSetBinderMember")]

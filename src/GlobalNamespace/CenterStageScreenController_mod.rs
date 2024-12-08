@@ -35,70 +35,6 @@ impl std::ops::DerefMut for CenterStageScreenController {
 }
 #[cfg(feature = "CenterStageScreenController")]
 impl CenterStageScreenController {
-    pub fn ShowCountdown(
-        &mut self,
-        countdownEndTime: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ShowCountdown", (countdownEndTime))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Hide(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Hide", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_countdownShown(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_countdownShown", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Show(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Show", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HideCountdown(
-        &mut self,
-        instant: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HideCountdown", (instant))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ShowLobbyColorPreset(
-        &mut self,
-        animated: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ShowLobbyColorPreset", (animated))?;
-        Ok(__cordl_ret)
-    }
     pub fn HandleLobbyGameStateControllerSelectedLevelGameplaySetupDataChanged(
         &mut self,
         levelGameplaySetupData: *mut ILevelGameplaySetupData,
@@ -113,16 +49,33 @@ impl CenterStageScreenController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn Setup(
+    pub fn Hide(
         &mut self,
-        showModifiers: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Setup", (showModifiers))?;
+            .invoke("Hide", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn HideCountdown(
+        &mut self,
+        instant: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HideCountdown", (instant))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn SetCountdownEndTime(
         &mut self,
@@ -135,6 +88,49 @@ impl CenterStageScreenController {
             .invoke("SetCountdownEndTime", (countdownEndTime))?;
         Ok(__cordl_ret)
     }
+    pub fn SetNextGameplaySetupData(
+        &mut self,
+        levelGameplaySetupData: *mut ILevelGameplaySetupData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetNextGameplaySetupData", (levelGameplaySetupData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Setup(
+        &mut self,
+        showModifiers: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Setup", (showModifiers))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Show(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Show", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ShowCountdown(
+        &mut self,
+        countdownEndTime: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ShowCountdown", (countdownEndTime))?;
+        Ok(__cordl_ret)
+    }
     pub fn ShowCountdownColorPreset(
         &mut self,
         animated: bool,
@@ -144,6 +140,17 @@ impl CenterStageScreenController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ShowCountdownColorPreset", (animated))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ShowLobbyColorPreset(
+        &mut self,
+        animated: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ShowLobbyColorPreset", (animated))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -163,23 +170,16 @@ impl CenterStageScreenController {
         let __cordl_ret: bool = __cordl_object.invoke("get_countdownShown", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetNextGameplaySetupData(
+    pub fn set_countdownShown(
         &mut self,
-        levelGameplaySetupData: *mut ILevelGameplaySetupData,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNextGameplaySetupData", (levelGameplaySetupData))?;
+            .invoke("set_countdownShown", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "CenterStageScreenController")]

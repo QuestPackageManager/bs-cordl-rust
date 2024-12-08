@@ -25,73 +25,94 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::CVRSystem {
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem")]
 impl crate::OVR::OpenVR::CVRSystem {
+    #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
+    pub type _GetControllerStatePacked = crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked;
+    #[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
+    pub type _PollNextEventPacked = crate::OVR::OpenVR::CVRSystem__PollNextEventPacked;
     #[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
     pub type GetControllerStateUnion = crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion;
     #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
     pub type _GetControllerStateWithPosePacked = crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked;
-    #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
-    pub type _GetControllerStatePacked = crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked;
-    #[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
-    pub type GetControllerStateWithPoseUnion = crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion;
     #[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
     pub type PollNextEventUnion = crate::OVR::OpenVR::CVRSystem_PollNextEventUnion;
-    #[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
-    pub type _PollNextEventPacked = crate::OVR::OpenVR::CVRSystem__PollNextEventPacked;
-    pub fn GetTrackedDeviceClass(
+    #[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
+    pub type GetControllerStateWithPoseUnion = crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion;
+    pub fn AcknowledgeQuit_Exiting(
         &mut self,
-        unDeviceIndex: u32,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::ETrackedDeviceClass> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::OVR::OpenVR::ETrackedDeviceClass = __cordl_object
-            .invoke("GetTrackedDeviceClass", (unDeviceIndex))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AcknowledgeQuit_Exiting", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetDisplayVisibility(
+    pub fn AcknowledgeQuit_UserPrompt(
         &mut self,
-        bIsVisibleOnDesktop: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AcknowledgeQuit_UserPrompt", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ApplyTransform(
+        &mut self,
+        pOutputPose: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::TrackedDevicePose_t,
+        >,
+        pTrackedDevicePose: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::TrackedDevicePose_t,
+        >,
+        pTransform: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ApplyTransform", (pOutputPose, pTrackedDevicePose, pTransform))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ComputeDistortion(
+        &mut self,
+        eEye: crate::OVR::OpenVR::EVREye,
+        fU: f32,
+        fV: f32,
+        pDistortionCoordinates: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::DistortionCoordinates_t,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
-            .invoke("SetDisplayVisibility", (bIsVisibleOnDesktop))?;
+            .invoke("ComputeDistortion", (eEye, fU, fV, pDistortionCoordinates))?;
         Ok(__cordl_ret)
     }
-    pub fn GetOutputDevice(
+    pub fn DriverDebugRequest(
         &mut self,
-        pnDevice: quest_hook::libil2cpp::ByRefMut<u64>,
-        textureType: crate::OVR::OpenVR::ETextureType,
-        pInstance: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        unDeviceIndex: u32,
+        pchRequest: *mut crate::System::String,
+        pchResponseBuffer: *mut crate::System::Text::StringBuilder,
+        unResponseBufferSize: u32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetOutputDevice", (pnDevice, textureType, pInstance))?;
+        let __cordl_ret: u32 = __cordl_object
+            .invoke(
+                "DriverDebugRequest",
+                (unDeviceIndex, pchRequest, pchResponseBuffer, unResponseBufferSize),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn GetProjectionRaw(
-        &mut self,
-        eEye: crate::OVR::OpenVR::EVREye,
-        pfLeft: quest_hook::libil2cpp::ByRefMut<f32>,
-        pfRight: quest_hook::libil2cpp::ByRefMut<f32>,
-        pfTop: quest_hook::libil2cpp::ByRefMut<f32>,
-        pfBottom: quest_hook::libil2cpp::ByRefMut<f32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetProjectionRaw", (eEye, pfLeft, pfRight, pfTop, pfBottom))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetStringTrackedDeviceProperty(
+    pub fn GetArrayTrackedDeviceProperty(
         &mut self,
         unDeviceIndex: u32,
         prop: crate::OVR::OpenVR::ETrackedDeviceProperty,
-        pchValue: *mut crate::System::Text::StringBuilder,
+        propType: u32,
+        pBuffer: crate::System::IntPtr,
         unBufferSize: u32,
         pError: quest_hook::libil2cpp::ByRefMut<
             crate::OVR::OpenVR::ETrackedPropertyError,
@@ -102,21 +123,75 @@ impl crate::OVR::OpenVR::CVRSystem {
         );
         let __cordl_ret: u32 = __cordl_object
             .invoke(
-                "GetStringTrackedDeviceProperty",
-                (unDeviceIndex, prop, pchValue, unBufferSize, pError),
+                "GetArrayTrackedDeviceProperty",
+                (unDeviceIndex, prop, propType, pBuffer, unBufferSize, pError),
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHiddenAreaMesh(
+    pub fn GetBoolTrackedDeviceProperty(
         &mut self,
-        eEye: crate::OVR::OpenVR::EVREye,
-        _cordl_type: crate::OVR::OpenVR::EHiddenAreaMeshType,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::HiddenAreaMesh_t> {
+        unDeviceIndex: u32,
+        prop: crate::OVR::OpenVR::ETrackedDeviceProperty,
+        pError: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::ETrackedPropertyError,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::OVR::OpenVR::HiddenAreaMesh_t = __cordl_object
-            .invoke("GetHiddenAreaMesh", (eEye, _cordl_type))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("GetBoolTrackedDeviceProperty", (unDeviceIndex, prop, pError))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetButtonIdNameFromEnum(
+        &mut self,
+        eButtonId: crate::OVR::OpenVR::EVRButtonId,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetButtonIdNameFromEnum", (eButtonId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetControllerAxisTypeNameFromEnum(
+        &mut self,
+        eAxisType: crate::OVR::OpenVR::EVRControllerAxisType,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetControllerAxisTypeNameFromEnum", (eAxisType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetControllerRoleForTrackedDeviceIndex(
+        &mut self,
+        unDeviceIndex: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::ETrackedControllerRole> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::ETrackedControllerRole = __cordl_object
+            .invoke("GetControllerRoleForTrackedDeviceIndex", (unDeviceIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetControllerState(
+        &mut self,
+        unControllerDeviceIndex: u32,
+        pControllerState: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::VRControllerState_t,
+        >,
+        unControllerStateSize: u32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "GetControllerState",
+                (unControllerDeviceIndex, pControllerState, unControllerStateSize),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn GetControllerStateWithPose(
@@ -147,82 +222,6 @@ impl crate::OVR::OpenVR::CVRSystem {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetDeviceToAbsoluteTrackingPose(
-        &mut self,
-        eOrigin: crate::OVR::OpenVR::ETrackingUniverseOrigin,
-        fPredictedSecondsToPhotonsFromNow: f32,
-        pTrackedDevicePoseArray: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::OVR::OpenVR::TrackedDevicePose_t,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "GetDeviceToAbsoluteTrackingPose",
-                (eOrigin, fPredictedSecondsToPhotonsFromNow, pTrackedDevicePoseArray),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPropErrorNameFromEnum(
-        &mut self,
-        error: crate::OVR::OpenVR::ETrackedPropertyError,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetPropErrorNameFromEnum", (error))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PollNextEvent(
-        &mut self,
-        pEvent: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VREvent_t>,
-        uncbVREvent: u32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("PollNextEvent", (pEvent, uncbVREvent))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ApplyTransform(
-        &mut self,
-        pOutputPose: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::TrackedDevicePose_t,
-        >,
-        pTrackedDevicePose: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::TrackedDevicePose_t,
-        >,
-        pTransform: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ApplyTransform", (pOutputPose, pTrackedDevicePose, pTransform))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetControllerState(
-        &mut self,
-        unControllerDeviceIndex: u32,
-        pControllerState: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::VRControllerState_t,
-        >,
-        unControllerStateSize: u32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "GetControllerState",
-                (unControllerDeviceIndex, pControllerState, unControllerStateSize),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetD3D9AdapterIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -241,197 +240,21 @@ impl crate::OVR::OpenVR::CVRSystem {
             .invoke("GetDXGIOutputInfo", (pnAdapterIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn GetDeviceToAbsoluteTrackingPose(
         &mut self,
-        pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pInterface))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TriggerHapticPulse(
-        &mut self,
-        unControllerDeviceIndex: u32,
-        unAxisId: u32,
-        usDurationMicroSec: u16,
+        eOrigin: crate::OVR::OpenVR::ETrackingUniverseOrigin,
+        fPredictedSecondsToPhotonsFromNow: f32,
+        pTrackedDevicePoseArray: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::OVR::OpenVR::TrackedDevicePose_t,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "TriggerHapticPulse",
-                (unControllerDeviceIndex, unAxisId, usDurationMicroSec),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsInputAvailable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsInputAvailable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DriverDebugRequest(
-        &mut self,
-        unDeviceIndex: u32,
-        pchRequest: *mut crate::System::String,
-        pchResponseBuffer: *mut crate::System::Text::StringBuilder,
-        unResponseBufferSize: u32,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke(
-                "DriverDebugRequest",
-                (unDeviceIndex, pchRequest, pchResponseBuffer, unResponseBufferSize),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetInt32TrackedDeviceProperty(
-        &mut self,
-        unDeviceIndex: u32,
-        prop: crate::OVR::OpenVR::ETrackedDeviceProperty,
-        pError: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::ETrackedPropertyError,
-        >,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetInt32TrackedDeviceProperty", (unDeviceIndex, prop, pError))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetControllerRoleForTrackedDeviceIndex(
-        &mut self,
-        unDeviceIndex: u32,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::ETrackedControllerRole> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::ETrackedControllerRole = __cordl_object
-            .invoke("GetControllerRoleForTrackedDeviceIndex", (unDeviceIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetBoolTrackedDeviceProperty(
-        &mut self,
-        unDeviceIndex: u32,
-        prop: crate::OVR::OpenVR::ETrackedDeviceProperty,
-        pError: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::ETrackedPropertyError,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("GetBoolTrackedDeviceProperty", (unDeviceIndex, prop, pError))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AcknowledgeQuit_Exiting(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AcknowledgeQuit_Exiting", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEyeToHeadTransform(
-        &mut self,
-        eEye: crate::OVR::OpenVR::EVREye,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::HmdMatrix34_t> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::HmdMatrix34_t = __cordl_object
-            .invoke("GetEyeToHeadTransform", (eEye))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetUint64TrackedDeviceProperty(
-        &mut self,
-        unDeviceIndex: u32,
-        prop: crate::OVR::OpenVR::ETrackedDeviceProperty,
-        pError: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::ETrackedPropertyError,
-        >,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u64 = __cordl_object
-            .invoke("GetUint64TrackedDeviceProperty", (unDeviceIndex, prop, pError))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ResetSeatedZeroPose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetSeatedZeroPose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTimeSinceLastVsync(
-        &mut self,
-        pfSecondsSinceLastVsync: quest_hook::libil2cpp::ByRefMut<f32>,
-        pulFrameCounter: quest_hook::libil2cpp::ByRefMut<u64>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "GetTimeSinceLastVsync",
-                (pfSecondsSinceLastVsync, pulFrameCounter),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AcknowledgeQuit_UserPrompt(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AcknowledgeQuit_UserPrompt", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRawZeroPoseToStandingAbsoluteTrackingPose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::HmdMatrix34_t> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::HmdMatrix34_t = __cordl_object
-            .invoke("GetRawZeroPoseToStandingAbsoluteTrackingPose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetArrayTrackedDeviceProperty(
-        &mut self,
-        unDeviceIndex: u32,
-        prop: crate::OVR::OpenVR::ETrackedDeviceProperty,
-        propType: u32,
-        pBuffer: crate::System::IntPtr,
-        unBufferSize: u32,
-        pError: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::ETrackedPropertyError,
-        >,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke(
-                "GetArrayTrackedDeviceProperty",
-                (unDeviceIndex, prop, propType, pBuffer, unBufferSize, pError),
+                "GetDeviceToAbsoluteTrackingPose",
+                (eOrigin, fPredictedSecondsToPhotonsFromNow, pTrackedDevicePoseArray),
             )?;
         Ok(__cordl_ret)
     }
@@ -446,114 +269,15 @@ impl crate::OVR::OpenVR::CVRSystem {
             .invoke("GetEventTypeNameFromEnum", (eType))?;
         Ok(__cordl_ret)
     }
-    pub fn GetMatrix34TrackedDeviceProperty(
+    pub fn GetEyeToHeadTransform(
         &mut self,
-        unDeviceIndex: u32,
-        prop: crate::OVR::OpenVR::ETrackedDeviceProperty,
-        pError: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::ETrackedPropertyError,
-        >,
+        eEye: crate::OVR::OpenVR::EVREye,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::HmdMatrix34_t> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::HmdMatrix34_t = __cordl_object
-            .invoke("GetMatrix34TrackedDeviceProperty", (unDeviceIndex, prop, pError))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ShouldApplicationReduceRenderingWork(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("ShouldApplicationReduceRenderingWork", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTrackedDeviceActivityLevel(
-        &mut self,
-        unDeviceId: u32,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EDeviceActivityLevel> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EDeviceActivityLevel = __cordl_object
-            .invoke("GetTrackedDeviceActivityLevel", (unDeviceId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetButtonIdNameFromEnum(
-        &mut self,
-        eButtonId: crate::OVR::OpenVR::EVRButtonId,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetButtonIdNameFromEnum", (eButtonId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetControllerAxisTypeNameFromEnum(
-        &mut self,
-        eAxisType: crate::OVR::OpenVR::EVRControllerAxisType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetControllerAxisTypeNameFromEnum", (eAxisType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetProjectionMatrix(
-        &mut self,
-        eEye: crate::OVR::OpenVR::EVREye,
-        fNearZ: f32,
-        fFarZ: f32,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::HmdMatrix44_t> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::HmdMatrix44_t = __cordl_object
-            .invoke("GetProjectionMatrix", (eEye, fNearZ, fFarZ))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsSteamVRDrawingControllers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsSteamVRDrawingControllers", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTrackedDeviceIndexForControllerRole(
-        &mut self,
-        unDeviceType: crate::OVR::OpenVR::ETrackedControllerRole,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke("GetTrackedDeviceIndexForControllerRole", (unDeviceType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PerformFirmwareUpdate(
-        &mut self,
-        unDeviceIndex: u32,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRFirmwareError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRFirmwareError = __cordl_object
-            .invoke("PerformFirmwareUpdate", (unDeviceIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ShouldApplicationPause(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ShouldApplicationPause", ())?;
+            .invoke("GetEyeToHeadTransform", (eEye))?;
         Ok(__cordl_ret)
     }
     pub fn GetFloatTrackedDeviceProperty(
@@ -571,77 +295,108 @@ impl crate::OVR::OpenVR::CVRSystem {
             .invoke("GetFloatTrackedDeviceProperty", (unDeviceIndex, prop, pError))?;
         Ok(__cordl_ret)
     }
-    pub fn IsDisplayOnDesktop(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsDisplayOnDesktop", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSortedTrackedDeviceIndicesOfClass(
-        &mut self,
-        eTrackedDeviceClass: crate::OVR::OpenVR::ETrackedDeviceClass,
-        punTrackedDeviceIndexArray: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-        unRelativeToTrackedDeviceIndex: u32,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke(
-                "GetSortedTrackedDeviceIndicesOfClass",
-                (
-                    eTrackedDeviceClass,
-                    punTrackedDeviceIndexArray,
-                    unRelativeToTrackedDeviceIndex,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsTrackedDeviceConnected(
-        &mut self,
-        unDeviceIndex: u32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsTrackedDeviceConnected", (unDeviceIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PollNextEventWithPose(
-        &mut self,
-        eOrigin: crate::OVR::OpenVR::ETrackingUniverseOrigin,
-        pEvent: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VREvent_t>,
-        uncbVREvent: u32,
-        pTrackedDevicePose: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::TrackedDevicePose_t,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "PollNextEventWithPose",
-                (eOrigin, pEvent, uncbVREvent, pTrackedDevicePose),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ComputeDistortion(
+    pub fn GetHiddenAreaMesh(
         &mut self,
         eEye: crate::OVR::OpenVR::EVREye,
-        fU: f32,
-        fV: f32,
-        pDistortionCoordinates: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::DistortionCoordinates_t,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        _cordl_type: crate::OVR::OpenVR::EHiddenAreaMeshType,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::HiddenAreaMesh_t> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("ComputeDistortion", (eEye, fU, fV, pDistortionCoordinates))?;
+        let __cordl_ret: crate::OVR::OpenVR::HiddenAreaMesh_t = __cordl_object
+            .invoke("GetHiddenAreaMesh", (eEye, _cordl_type))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetInt32TrackedDeviceProperty(
+        &mut self,
+        unDeviceIndex: u32,
+        prop: crate::OVR::OpenVR::ETrackedDeviceProperty,
+        pError: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::ETrackedPropertyError,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetInt32TrackedDeviceProperty", (unDeviceIndex, prop, pError))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetMatrix34TrackedDeviceProperty(
+        &mut self,
+        unDeviceIndex: u32,
+        prop: crate::OVR::OpenVR::ETrackedDeviceProperty,
+        pError: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::ETrackedPropertyError,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::HmdMatrix34_t> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::HmdMatrix34_t = __cordl_object
+            .invoke("GetMatrix34TrackedDeviceProperty", (unDeviceIndex, prop, pError))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetOutputDevice(
+        &mut self,
+        pnDevice: quest_hook::libil2cpp::ByRefMut<u64>,
+        textureType: crate::OVR::OpenVR::ETextureType,
+        pInstance: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetOutputDevice", (pnDevice, textureType, pInstance))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetProjectionMatrix(
+        &mut self,
+        eEye: crate::OVR::OpenVR::EVREye,
+        fNearZ: f32,
+        fFarZ: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::HmdMatrix44_t> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::HmdMatrix44_t = __cordl_object
+            .invoke("GetProjectionMatrix", (eEye, fNearZ, fFarZ))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetProjectionRaw(
+        &mut self,
+        eEye: crate::OVR::OpenVR::EVREye,
+        pfLeft: quest_hook::libil2cpp::ByRefMut<f32>,
+        pfRight: quest_hook::libil2cpp::ByRefMut<f32>,
+        pfTop: quest_hook::libil2cpp::ByRefMut<f32>,
+        pfBottom: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetProjectionRaw", (eEye, pfLeft, pfRight, pfTop, pfBottom))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPropErrorNameFromEnum(
+        &mut self,
+        error: crate::OVR::OpenVR::ETrackedPropertyError,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetPropErrorNameFromEnum", (error))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetRawZeroPoseToStandingAbsoluteTrackingPose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::HmdMatrix34_t> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::HmdMatrix34_t = __cordl_object
+            .invoke("GetRawZeroPoseToStandingAbsoluteTrackingPose", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetRecommendedRenderTargetSize(
@@ -666,14 +421,259 @@ impl crate::OVR::OpenVR::CVRSystem {
             .invoke("GetSeatedZeroPoseToStandingAbsoluteTrackingPose", ())?;
         Ok(__cordl_ret)
     }
+    pub fn GetSortedTrackedDeviceIndicesOfClass(
+        &mut self,
+        eTrackedDeviceClass: crate::OVR::OpenVR::ETrackedDeviceClass,
+        punTrackedDeviceIndexArray: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+        unRelativeToTrackedDeviceIndex: u32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object
+            .invoke(
+                "GetSortedTrackedDeviceIndicesOfClass",
+                (
+                    eTrackedDeviceClass,
+                    punTrackedDeviceIndexArray,
+                    unRelativeToTrackedDeviceIndex,
+                ),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetStringTrackedDeviceProperty(
+        &mut self,
+        unDeviceIndex: u32,
+        prop: crate::OVR::OpenVR::ETrackedDeviceProperty,
+        pchValue: *mut crate::System::Text::StringBuilder,
+        unBufferSize: u32,
+        pError: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::ETrackedPropertyError,
+        >,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object
+            .invoke(
+                "GetStringTrackedDeviceProperty",
+                (unDeviceIndex, prop, pchValue, unBufferSize, pError),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetTimeSinceLastVsync(
+        &mut self,
+        pfSecondsSinceLastVsync: quest_hook::libil2cpp::ByRefMut<f32>,
+        pulFrameCounter: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "GetTimeSinceLastVsync",
+                (pfSecondsSinceLastVsync, pulFrameCounter),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetTrackedDeviceActivityLevel(
+        &mut self,
+        unDeviceId: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EDeviceActivityLevel> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EDeviceActivityLevel = __cordl_object
+            .invoke("GetTrackedDeviceActivityLevel", (unDeviceId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetTrackedDeviceClass(
+        &mut self,
+        unDeviceIndex: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::ETrackedDeviceClass> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::ETrackedDeviceClass = __cordl_object
+            .invoke("GetTrackedDeviceClass", (unDeviceIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetTrackedDeviceIndexForControllerRole(
+        &mut self,
+        unDeviceType: crate::OVR::OpenVR::ETrackedControllerRole,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object
+            .invoke("GetTrackedDeviceIndexForControllerRole", (unDeviceType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetUint64TrackedDeviceProperty(
+        &mut self,
+        unDeviceIndex: u32,
+        prop: crate::OVR::OpenVR::ETrackedDeviceProperty,
+        pError: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::ETrackedPropertyError,
+        >,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u64 = __cordl_object
+            .invoke("GetUint64TrackedDeviceProperty", (unDeviceIndex, prop, pError))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsDisplayOnDesktop(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsDisplayOnDesktop", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsInputAvailable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsInputAvailable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsSteamVRDrawingControllers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsSteamVRDrawingControllers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsTrackedDeviceConnected(
+        &mut self,
+        unDeviceIndex: u32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsTrackedDeviceConnected", (unDeviceIndex))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pInterface))?;
         Ok(__cordl_object)
+    }
+    pub fn PerformFirmwareUpdate(
+        &mut self,
+        unDeviceIndex: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRFirmwareError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRFirmwareError = __cordl_object
+            .invoke("PerformFirmwareUpdate", (unDeviceIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PollNextEvent(
+        &mut self,
+        pEvent: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VREvent_t>,
+        uncbVREvent: u32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("PollNextEvent", (pEvent, uncbVREvent))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PollNextEventWithPose(
+        &mut self,
+        eOrigin: crate::OVR::OpenVR::ETrackingUniverseOrigin,
+        pEvent: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VREvent_t>,
+        uncbVREvent: u32,
+        pTrackedDevicePose: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::TrackedDevicePose_t,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "PollNextEventWithPose",
+                (eOrigin, pEvent, uncbVREvent, pTrackedDevicePose),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ResetSeatedZeroPose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ResetSeatedZeroPose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetDisplayVisibility(
+        &mut self,
+        bIsVisibleOnDesktop: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("SetDisplayVisibility", (bIsVisibleOnDesktop))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ShouldApplicationPause(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ShouldApplicationPause", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ShouldApplicationReduceRenderingWork(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("ShouldApplicationReduceRenderingWork", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TriggerHapticPulse(
+        &mut self,
+        unControllerDeviceIndex: u32,
+        unAxisId: u32,
+        usDurationMicroSec: u16,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "TriggerHapticPulse",
+                (unControllerDeviceIndex, unAxisId, usDurationMicroSec),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        pInterface: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (pInterface))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem")]
@@ -784,32 +784,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::CVRSystem__GetControllerStatePac
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
 impl crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
-    pub fn EndInvoke(
-        &mut self,
-        pControllerState: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::VRControllerState_t_Packed,
-        >,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("EndInvoke", (pControllerState, result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         unControllerDeviceIndex: u32,
@@ -836,6 +810,20 @@ impl crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        pControllerState: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::VRControllerState_t_Packed,
+        >,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("EndInvoke", (pControllerState, result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         unControllerDeviceIndex: u32,
@@ -857,12 +845,24 @@ impl crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
@@ -904,46 +904,6 @@ for crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
 impl crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        eOrigin: crate::OVR::OpenVR::ETrackingUniverseOrigin,
-        unControllerDeviceIndex: u32,
-        pControllerState: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::VRControllerState_t_Packed,
-        >,
-        unControllerStateSize: u32,
-        pTrackedDevicePose: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::TrackedDevicePose_t,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "Invoke",
-                (
-                    eOrigin,
-                    unControllerDeviceIndex,
-                    pControllerState,
-                    unControllerStateSize,
-                    pTrackedDevicePose,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         eOrigin: crate::OVR::OpenVR::ETrackingUniverseOrigin,
@@ -993,15 +953,55 @@ impl crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
             .invoke("EndInvoke", (pControllerState, pTrackedDevicePose, result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        eOrigin: crate::OVR::OpenVR::ETrackingUniverseOrigin,
+        unControllerDeviceIndex: u32,
+        pControllerState: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::VRControllerState_t_Packed,
+        >,
+        unControllerStateSize: u32,
+        pTrackedDevicePose: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::TrackedDevicePose_t,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "Invoke",
+                (
+                    eOrigin,
+                    unControllerDeviceIndex,
+                    pControllerState,
+                    unControllerStateSize,
+                    pTrackedDevicePose,
+                ),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
@@ -1040,6 +1040,20 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
 impl crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
+    pub fn BeginInvoke(
+        &mut self,
+        pEvent: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VREvent_t_Packed>,
+        uncbVREvent: u32,
+        callback: *mut crate::System::AsyncCallback,
+        object: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (pEvent, uncbVREvent, callback, object))?;
+        Ok(__cordl_ret)
+    }
     pub fn EndInvoke(
         &mut self,
         pEvent: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VREvent_t_Packed>,
@@ -1062,19 +1076,15 @@ impl crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
         let __cordl_ret: bool = __cordl_object.invoke("Invoke", (pEvent, uncbVREvent))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInvoke(
-        &mut self,
-        pEvent: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VREvent_t_Packed>,
-        uncbVREvent: u32,
-        callback: *mut crate::System::AsyncCallback,
+    pub fn New(
         object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (pEvent, uncbVREvent, callback, object))?;
-        Ok(__cordl_ret)
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -1087,16 +1097,6 @@ impl crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]

@@ -33,6 +33,88 @@ impl std::ops::DerefMut for MultiplayerSpectatingSpotManager {
 impl MultiplayerSpectatingSpotManager {
     #[cfg(feature = "MultiplayerSpectatingSpotManager+__c")]
     pub type __c = crate::GlobalNamespace::MultiplayerSpectatingSpotManager___c;
+    pub fn GetAdjacentSpot(
+        &mut self,
+        spectatingSpot: *mut IMultiplayerSpectatingSpot,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut IMultiplayerSpectatingSpot> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut IMultiplayerSpectatingSpot = __cordl_object
+            .invoke("GetAdjacentSpot", (spectatingSpot, offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetIndexBySpot(
+        &mut self,
+        spectatingSpot: *mut IMultiplayerSpectatingSpot,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetIndexBySpot", (spectatingSpot))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn RegisterSpectatingSpot(
+        &mut self,
+        spectatingSpot: *mut IMultiplayerSpectatingSpot,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterSpectatingSpot", (spectatingSpot))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SpotOnHasBeenRemoved(
+        &mut self,
+        spectatingSpot: *mut IMultiplayerSpectatingSpot,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SpotOnHasBeenRemoved", (spectatingSpot))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateIndexBySpotDictionary(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateIndexBySpotDictionary", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_defaultSpot(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut IMultiplayerSpectatingSpot> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut IMultiplayerSpectatingSpot = __cordl_object
+            .invoke("get_defaultSpot", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_spectatingSpots(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -47,88 +129,6 @@ impl MultiplayerSpectatingSpotManager {
             *mut IMultiplayerSpectatingSpot,
         > = __cordl_object.invoke("get_spectatingSpots", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn RegisterSpectatingSpot(
-        &mut self,
-        spectatingSpot: *mut IMultiplayerSpectatingSpot,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterSpectatingSpot", (spectatingSpot))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetIndexBySpot(
-        &mut self,
-        spectatingSpot: *mut IMultiplayerSpectatingSpot,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetIndexBySpot", (spectatingSpot))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SpotOnHasBeenRemoved(
-        &mut self,
-        spectatingSpot: *mut IMultiplayerSpectatingSpot,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SpotOnHasBeenRemoved", (spectatingSpot))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_defaultSpot(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IMultiplayerSpectatingSpot> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut IMultiplayerSpectatingSpot = __cordl_object
-            .invoke("get_defaultSpot", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateIndexBySpotDictionary(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateIndexBySpotDictionary", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAdjacentSpot(
-        &mut self,
-        spectatingSpot: *mut IMultiplayerSpectatingSpot,
-        offset: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut IMultiplayerSpectatingSpot> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut IMultiplayerSpectatingSpot = __cordl_object
-            .invoke("GetAdjacentSpot", (spectatingSpot, offset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MultiplayerSpectatingSpotManager")]

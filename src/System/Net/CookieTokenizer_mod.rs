@@ -36,77 +36,6 @@ impl std::ops::DerefMut for crate::System::Net::CookieTokenizer {
 impl crate::System::Net::CookieTokenizer {
     #[cfg(feature = "System+Net+CookieTokenizer+RecognizedAttribute")]
     pub type RecognizedAttribute = crate::System::Net::CookieTokenizer_RecognizedAttribute;
-    pub fn set_Name(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Name", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Value(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Value", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        tokenStream: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (tokenStream))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Token(
-        &mut self,
-        value: crate::System::Net::CookieToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Token", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Name", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Eof(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Eof", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_EndOfCookie(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_EndOfCookie", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Extract(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -117,16 +46,26 @@ impl crate::System::Net::CookieTokenizer {
             .invoke("Extract", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_Quoted(
+    pub fn FindNext(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        ignoreComma: bool,
+        ignoreEquals: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Net::CookieToken> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Quoted", (value))?;
+        let __cordl_ret: crate::System::Net::CookieToken = __cordl_object
+            .invoke("FindNext", (ignoreComma, ignoreEquals))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        tokenStream: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (tokenStream))?;
+        Ok(__cordl_object)
     }
     pub fn Next(
         &mut self,
@@ -150,6 +89,52 @@ impl crate::System::Net::CookieTokenizer {
             .invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
+    pub fn TokenFromName(
+        &mut self,
+        parseResponseCookies: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Net::CookieToken> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Net::CookieToken = __cordl_object
+            .invoke("TokenFromName", (parseResponseCookies))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        tokenStream: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (tokenStream))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_EndOfCookie(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_EndOfCookie", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Eof(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_Eof", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Name", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Quoted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -167,6 +152,60 @@ impl crate::System::Net::CookieTokenizer {
             .invoke("get_Token", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_Value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Value", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_EndOfCookie(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_EndOfCookie", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Name(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Name", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Quoted(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Quoted", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Token(
+        &mut self,
+        value: crate::System::Net::CookieToken,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Token", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_Value(
         &mut self,
         value: *mut crate::System::String,
@@ -177,45 +216,6 @@ impl crate::System::Net::CookieTokenizer {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Value", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_EndOfCookie(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_EndOfCookie", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FindNext(
-        &mut self,
-        ignoreComma: bool,
-        ignoreEquals: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Net::CookieToken> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Net::CookieToken = __cordl_object
-            .invoke("FindNext", (ignoreComma, ignoreEquals))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TokenFromName(
-        &mut self,
-        parseResponseCookies: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Net::CookieToken> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Net::CookieToken = __cordl_object
-            .invoke("TokenFromName", (parseResponseCookies))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        tokenStream: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (tokenStream))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+CookieTokenizer")]
@@ -263,16 +263,6 @@ impl crate::System::Net::CookieTokenizer_RecognizedAttribute {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Token(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Net::CookieToken> {
-        let __cordl_ret: crate::System::Net::CookieToken = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Token",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         name: *mut crate::System::String,
@@ -282,6 +272,16 @@ impl crate::System::Net::CookieTokenizer_RecognizedAttribute {
             self,
             ".ctor",
             (name, token),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Token(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Net::CookieToken> {
+        let __cordl_ret: crate::System::Net::CookieToken = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Token",
+            (),
         )?;
         Ok(__cordl_ret)
     }

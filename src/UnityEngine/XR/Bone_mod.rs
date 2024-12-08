@@ -21,6 +21,17 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::XR::Bone
 }
 #[cfg(feature = "UnityEngine+XR+Bone")]
 impl crate::UnityEngine::XR::Bone {
+    pub fn Equals_Bone1(
+        &mut self,
+        other: crate::UnityEngine::XR::Bone,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_Object0(
         &mut self,
         obj: *mut crate::System::Object,
@@ -32,14 +43,11 @@ impl crate::UnityEngine::XR::Bone {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Bone1(
-        &mut self,
-        other: crate::UnityEngine::XR::Bone,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -55,14 +63,6 @@ impl crate::UnityEngine::XR::Bone {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_featureIndex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)

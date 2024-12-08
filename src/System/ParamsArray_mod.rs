@@ -23,22 +23,25 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::ParamsArray {
 }
 #[cfg(feature = "System+ParamsArray")]
 impl crate::System::ParamsArray {
-    pub fn get_Item(
+    pub fn GetAtSlow(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Item",
+            "GetAtSlow",
             (index),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn _ctor_Il2CppArray3(
+        &mut self,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Length",
-            (),
+            ".ctor",
+            (args),
         )?;
         Ok(__cordl_ret)
     }
@@ -78,25 +81,22 @@ impl crate::System::ParamsArray {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Il2CppArray3(
-        &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (args),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAtSlow(
+    pub fn get_Item(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetAtSlow",
+            "get_Item",
             (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Length",
+            (),
         )?;
         Ok(__cordl_ret)
     }

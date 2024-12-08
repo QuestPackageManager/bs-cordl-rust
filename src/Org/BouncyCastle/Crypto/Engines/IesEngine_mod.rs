@@ -33,6 +33,20 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Engines::IesEngine
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+IesEngine")]
 impl crate::Org::BouncyCastle::Crypto::Engines::IesEngine {
+    pub fn DecryptBlock(
+        &mut self,
+        in_enc: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inOff: i32,
+        inLen: i32,
+        z: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("DecryptBlock", (in_enc, inOff, inLen, z))?;
+        Ok(__cordl_ret)
+    }
     pub fn EncryptBlock(
         &mut self,
         input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -59,60 +73,6 @@ impl crate::Org::BouncyCastle::Crypto::Engines::IesEngine {
             .invoke("GenerateKdfBytes", (kParam, length))?;
         Ok(__cordl_ret)
     }
-    pub fn DecryptBlock(
-        &mut self,
-        in_enc: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        inOff: i32,
-        inLen: i32,
-        z: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("DecryptBlock", (in_enc, inOff, inLen, z))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_IBasicAgreement_IDerivationFunction_IMac0(
-        &mut self,
-        agree: *mut crate::Org::BouncyCastle::Crypto::IBasicAgreement,
-        kdf: *mut crate::Org::BouncyCastle::Crypto::IDerivationFunction,
-        mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (agree, kdf, mac))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_BufferedBlockCipher1(
-        &mut self,
-        agree: *mut crate::Org::BouncyCastle::Crypto::IBasicAgreement,
-        kdf: *mut crate::Org::BouncyCastle::Crypto::IDerivationFunction,
-        mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
-        cipher: *mut crate::Org::BouncyCastle::Crypto::BufferedBlockCipher,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (agree, kdf, mac, cipher))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessBlock(
-        &mut self,
-        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        inOff: i32,
-        inLen: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("ProcessBlock", (input, inOff, inLen))?;
-        Ok(__cordl_ret)
-    }
     pub fn Init(
         &mut self,
         forEncryption: bool,
@@ -130,28 +90,68 @@ impl crate::Org::BouncyCastle::Crypto::Engines::IesEngine {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn New_BufferedBlockCipher1(
+        agree: *mut crate::Org::BouncyCastle::Crypto::IBasicAgreement,
+        kdf: *mut crate::Org::BouncyCastle::Crypto::IDerivationFunction,
+        mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
+        cipher: *mut crate::Org::BouncyCastle::Crypto::BufferedBlockCipher,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (agree, kdf, mac, cipher))?;
+        Ok(__cordl_object)
+    }
     pub fn New_IBasicAgreement_IDerivationFunction_IMac0(
         agree: *mut crate::Org::BouncyCastle::Crypto::IBasicAgreement,
         kdf: *mut crate::Org::BouncyCastle::Crypto::IDerivationFunction,
         mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (agree, kdf, mac))?;
         Ok(__cordl_object)
     }
-    pub fn New_BufferedBlockCipher1(
+    pub fn ProcessBlock(
+        &mut self,
+        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inOff: i32,
+        inLen: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("ProcessBlock", (input, inOff, inLen))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_BufferedBlockCipher1(
+        &mut self,
         agree: *mut crate::Org::BouncyCastle::Crypto::IBasicAgreement,
         kdf: *mut crate::Org::BouncyCastle::Crypto::IDerivationFunction,
         mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
         cipher: *mut crate::Org::BouncyCastle::Crypto::BufferedBlockCipher,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (agree, kdf, mac, cipher))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (agree, kdf, mac, cipher))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_IBasicAgreement_IDerivationFunction_IMac0(
+        &mut self,
+        agree: *mut crate::Org::BouncyCastle::Crypto::IBasicAgreement,
+        kdf: *mut crate::Org::BouncyCastle::Crypto::IDerivationFunction,
+        mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (agree, kdf, mac))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+IesEngine")]

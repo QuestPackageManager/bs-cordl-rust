@@ -34,24 +34,11 @@ impl crate::System::Runtime::Serialization::StreamingContext {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Context(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Context",
+            "GetHashCode",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_StreamingContextStates0(
-        &mut self,
-        state: crate::System::Runtime::Serialization::StreamingContextStates,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (state),
         )?;
         Ok(__cordl_ret)
     }
@@ -67,10 +54,23 @@ impl crate::System::Runtime::Serialization::StreamingContext {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn _ctor_StreamingContextStates0(
+        &mut self,
+        state: crate::System::Runtime::Serialization::StreamingContextStates,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
+            ".ctor",
+            (state),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Context(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Context",
             (),
         )?;
         Ok(__cordl_ret)

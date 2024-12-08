@@ -23,48 +23,48 @@ impl std::ops::DerefMut for crate::Mono::Unity::UnityTls {
 }
 #[cfg(feature = "Mono+Unity+UnityTls")]
 impl crate::Mono::Unity::UnityTls {
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
-    pub type unitytls_tlsctx_write_callback = crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
-    pub type unitytls_tlsctx = crate::Mono::Unity::UnityTls_unitytls_tlsctx;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
-    pub type unitytls_tlsctx_read_callback = crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_ciphersuite")]
-    pub type unitytls_ciphersuite = crate::Mono::Unity::UnityTls_unitytls_ciphersuite;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_result")]
-    pub type unitytls_x509verify_result = crate::Mono::Unity::UnityTls_unitytls_x509verify_result;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
-    pub type unitytls_x509list_ref = crate::Mono::Unity::UnityTls_unitytls_x509list_ref;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
-    pub type unitytls_tlsctx_callbacks = crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
-    pub type unitytls_key_ref = crate::Mono::Unity::UnityTls_unitytls_key_ref;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
-    pub type unitytls_interface_struct = crate::Mono::Unity::UnityTls_unitytls_interface_struct;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_error_code")]
-    pub type unitytls_error_code = crate::Mono::Unity::UnityTls_unitytls_error_code;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
-    pub type unitytls_x509_ref = crate::Mono::Unity::UnityTls_unitytls_x509_ref;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
-    pub type unitytls_tlsctx_trace_callback = crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
-    pub type unitytls_errorstate = crate::Mono::Unity::UnityTls_unitytls_errorstate;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
-    pub type unitytls_tlsctx_certificate_callback = crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_protocol")]
-    pub type unitytls_protocol = crate::Mono::Unity::UnityTls_unitytls_protocol;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
-    pub type unitytls_x509list = crate::Mono::Unity::UnityTls_unitytls_x509list;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_callback")]
-    pub type unitytls_x509verify_callback = crate::Mono::Unity::UnityTls_unitytls_x509verify_callback;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
-    pub type unitytls_tlsctx_protocolrange = crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
-    pub type unitytls_tlsctx_x509verify_callback = crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
-    pub type unitytls_key = crate::Mono::Unity::UnityTls_unitytls_key;
     #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
     pub type unitytls_x509name = crate::Mono::Unity::UnityTls_unitytls_x509name;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
+    pub type unitytls_tlsctx_write_callback = crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_error_code")]
+    pub type unitytls_error_code = crate::Mono::Unity::UnityTls_unitytls_error_code;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
+    pub type unitytls_tlsctx_x509verify_callback = crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_ciphersuite")]
+    pub type unitytls_ciphersuite = crate::Mono::Unity::UnityTls_unitytls_ciphersuite;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
+    pub type unitytls_x509list = crate::Mono::Unity::UnityTls_unitytls_x509list;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
+    pub type unitytls_tlsctx_read_callback = crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_result")]
+    pub type unitytls_x509verify_result = crate::Mono::Unity::UnityTls_unitytls_x509verify_result;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
+    pub type unitytls_x509_ref = crate::Mono::Unity::UnityTls_unitytls_x509_ref;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
+    pub type unitytls_tlsctx_certificate_callback = crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_callback")]
+    pub type unitytls_x509verify_callback = crate::Mono::Unity::UnityTls_unitytls_x509verify_callback;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
+    pub type unitytls_tlsctx_trace_callback = crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
+    pub type unitytls_x509list_ref = crate::Mono::Unity::UnityTls_unitytls_x509list_ref;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_protocol")]
+    pub type unitytls_protocol = crate::Mono::Unity::UnityTls_unitytls_protocol;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
+    pub type unitytls_errorstate = crate::Mono::Unity::UnityTls_unitytls_errorstate;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
+    pub type unitytls_tlsctx_protocolrange = crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
+    pub type unitytls_tlsctx_callbacks = crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
+    pub type unitytls_interface_struct = crate::Mono::Unity::UnityTls_unitytls_interface_struct;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
+    pub type unitytls_key = crate::Mono::Unity::UnityTls_unitytls_key;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
+    pub type unitytls_tlsctx = crate::Mono::Unity::UnityTls_unitytls_tlsctx;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
+    pub type unitytls_key_ref = crate::Mono::Unity::UnityTls_unitytls_key_ref;
 }
 #[cfg(feature = "Mono+Unity+UnityTls")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Unity::UnityTls {
@@ -178,18 +178,6 @@ for crate::Mono::Unity::unitytls_interface_struct_unitytls_errorstate_create_t {
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
 )]
 impl crate::Mono::Unity::unitytls_interface_struct_unitytls_errorstate_create_t {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -205,12 +193,24 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_errorstate_create_t 
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -264,18 +264,6 @@ for crate::Mono::Unity::unitytls_interface_struct_unitytls_errorstate_raise_erro
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
 )]
 impl crate::Mono::Unity::unitytls_interface_struct_unitytls_errorstate_raise_error_t {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         errorState: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -291,12 +279,24 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_errorstate_raise_err
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -371,115 +371,111 @@ impl std::ops::DerefMut for crate::Mono::Unity::UnityTls_unitytls_interface_stru
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
 impl crate::Mono::Unity::UnityTls_unitytls_interface_struct {
     #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t"
-    )]
-    pub type unitytls_tlsctx_read_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_read_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t"
-    )]
-    pub type unitytls_key_get_ref_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_key_get_ref_t;
-    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t")]
-    pub type unitytls_key_free_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_key_free_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
-    )]
-    pub type unitytls_key_parse_pem_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_key_parse_pem_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
-    )]
-    pub type unitytls_x509list_append_der_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_append_der_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
-    )]
-    pub type unitytls_tlsctx_process_handshake_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_process_handshake_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
-    )]
-    pub type unitytls_key_parse_der_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_key_parse_der_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
-    )]
-    pub type unitytls_x509_export_der_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_x509_export_der_t;
-    #[cfg(
         feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
     )]
     pub type unitytls_tlsctx_create_client_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_create_client_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
-    )]
-    pub type unitytls_tlsctx_set_supported_ciphersuites_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_supported_ciphersuites_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
-    )]
-    pub type unitytls_tlsctx_set_certificate_callback_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_certificate_callback_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
-    )]
-    pub type unitytls_x509list_get_ref_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_get_ref_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
-    )]
-    pub type unitytls_tlsctx_server_require_client_authentication_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_server_require_client_authentication_t;
     #[cfg(
         feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
     )]
     pub type unitytls_x509verify_explicit_ca_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_x509verify_explicit_ca_t;
     #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
     )]
-    pub type unitytls_x509list_get_x509_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_get_x509_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
-    )]
-    pub type unitytls_tlsctx_set_x509verify_callback_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_x509verify_callback_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
-    )]
-    pub type unitytls_tlsctx_create_server_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_create_server_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
-    )]
-    pub type unitytls_tlsctx_get_protocol_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_get_protocol_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
-    )]
-    pub type unitytls_x509list_free_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_free_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t"
-    )]
-    pub type unitytls_tlsctx_write_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_write_t;
+    pub type unitytls_x509verify_default_ca_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_x509verify_default_ca_t;
     #[cfg(
         feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
     )]
     pub type unitytls_tlsctx_notify_close_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_notify_close_t;
     #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
+    )]
+    pub type unitytls_x509_export_der_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_x509_export_der_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
+    )]
+    pub type unitytls_tlsctx_server_require_client_authentication_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_server_require_client_authentication_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
+    )]
+    pub type unitytls_key_parse_der_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_key_parse_der_t;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t")]
+    pub type unitytls_key_free_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_key_free_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
+    )]
+    pub type unitytls_x509list_append_der_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_append_der_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
+    )]
+    pub type unitytls_tlsctx_create_server_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_create_server_t;
+    #[cfg(
         feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
     )]
     pub type unitytls_random_generate_bytes_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_random_generate_bytes_t;
     #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
     )]
-    pub type unitytls_x509verify_default_ca_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_x509verify_default_ca_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
-    )]
-    pub type unitytls_errorstate_raise_error_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_errorstate_raise_error_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
-    )]
-    pub type unitytls_x509list_append_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_append_t;
-    #[cfg(
-        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
-    )]
-    pub type unitytls_tlsctx_set_trace_callback_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_trace_callback_t;
+    pub type unitytls_x509list_get_x509_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_get_x509_t;
     #[cfg(
         feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
     )]
     pub type unitytls_tlsctx_get_ciphersuite_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_get_ciphersuite_t;
     #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
+    )]
+    pub type unitytls_tlsctx_set_trace_callback_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_trace_callback_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t"
+    )]
+    pub type unitytls_tlsctx_read_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_read_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
+    )]
+    pub type unitytls_tlsctx_process_handshake_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_process_handshake_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t"
+    )]
+    pub type unitytls_tlsctx_write_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_write_t;
+    #[cfg(
         feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t"
     )]
     pub type unitytls_tlsctx_free_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_free_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
+    )]
+    pub type unitytls_errorstate_raise_error_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_errorstate_raise_error_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
+    )]
+    pub type unitytls_tlsctx_set_supported_ciphersuites_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_supported_ciphersuites_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
+    )]
+    pub type unitytls_tlsctx_get_protocol_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_get_protocol_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
+    )]
+    pub type unitytls_tlsctx_set_x509verify_callback_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_x509verify_callback_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
+    )]
+    pub type unitytls_x509list_get_ref_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_get_ref_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
+    )]
+    pub type unitytls_key_parse_pem_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_key_parse_pem_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t"
+    )]
+    pub type unitytls_key_get_ref_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_key_get_ref_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
+    )]
+    pub type unitytls_x509list_free_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_free_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
+    )]
+    pub type unitytls_tlsctx_set_certificate_callback_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_certificate_callback_t;
     #[cfg(
         feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
     )]
@@ -488,6 +484,17 @@ impl crate::Mono::Unity::UnityTls_unitytls_interface_struct {
         feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
     )]
     pub type unitytls_x509list_create_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_create_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
+    )]
+    pub type unitytls_x509list_append_t = crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_append_t;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -497,13 +504,6 @@ impl crate::Mono::Unity::UnityTls_unitytls_interface_struct {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
@@ -578,6 +578,16 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_key_free_t {
             .invoke("Invoke", (key))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -589,16 +599,6 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_key_free_t {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t")]
@@ -640,18 +640,6 @@ for crate::Mono::Unity::unitytls_interface_struct_unitytls_key_get_ref_t {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t")]
 impl crate::Mono::Unity::unitytls_interface_struct_unitytls_key_get_ref_t {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         key: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -667,12 +655,24 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_key_get_ref_t {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t")]
@@ -724,18 +724,6 @@ for crate::Mono::Unity::unitytls_interface_struct_unitytls_key_parse_der_t {
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
 )]
 impl crate::Mono::Unity::unitytls_interface_struct_unitytls_key_parse_der_t {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -754,12 +742,24 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_key_parse_der_t {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -813,18 +813,6 @@ for crate::Mono::Unity::unitytls_interface_struct_unitytls_key_parse_pem_t {
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
 )]
 impl crate::Mono::Unity::unitytls_interface_struct_unitytls_key_parse_pem_t {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -843,12 +831,24 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_key_parse_pem_t {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -940,18 +940,6 @@ for crate::Mono::Unity::unitytls_interface_struct_unitytls_random_generate_bytes
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
 )]
 impl crate::Mono::Unity::unitytls_interface_struct_unitytls_random_generate_bytes_t {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -968,12 +956,24 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_random_generate_byte
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -1065,18 +1065,6 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
 impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         userData: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -1102,12 +1090,24 @@ impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
@@ -1174,6 +1174,16 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_create_client
             .invoke("Invoke", (supportedProtocols, callbacks, cn, cnLen, errorState))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -1185,16 +1195,6 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_create_client
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -1272,6 +1272,16 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_create_server
             )?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -1283,16 +1293,6 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_create_server
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -1336,18 +1336,6 @@ for crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_free_t {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t")]
 impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_free_t {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         ctx: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -1362,12 +1350,24 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_free_t {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t")]
@@ -1433,6 +1433,16 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_get_ciphersui
             .invoke("Invoke", (ctx, errorState))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -1444,16 +1454,6 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_get_ciphersui
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -1519,6 +1519,16 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_get_protocol_
             .invoke("Invoke", (ctx, errorState))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -1530,16 +1540,6 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_get_protocol_
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -1605,6 +1605,16 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_notify_close_
             .invoke("Invoke", (ctx, errorState))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -1616,16 +1626,6 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_notify_close_
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -1693,6 +1693,16 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_process_hands
             .invoke("Invoke", (ctx, errorState))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -1704,16 +1714,6 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_process_hands
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -1795,6 +1795,16 @@ impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
             .invoke("Invoke", (userData, buffer, bufferLen, errorState))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -1806,16 +1816,6 @@ impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
@@ -1871,6 +1871,16 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_read_t {
             .invoke("Invoke", (ctx, buffer, bufferLen, errorState))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -1882,16 +1892,6 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_read_t {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t")]
@@ -1944,18 +1944,6 @@ for crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_server_require
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
 )]
 impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_server_require_client_authentication_t {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         ctx: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -1972,12 +1960,24 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_server_requir
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -2032,18 +2032,6 @@ for crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_certificat
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
 )]
 impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_certificate_callback_t {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         ctx: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -2061,12 +2049,24 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_certifica
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -2121,18 +2121,6 @@ for crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_supported_
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
 )]
 impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_supported_ciphersuites_t {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         ctx: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -2153,12 +2141,24 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_supported
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -2213,18 +2213,6 @@ for crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_trace_call
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
 )]
 impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_trace_callback_t {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         ctx: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -2242,12 +2230,24 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_trace_cal
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -2316,6 +2316,16 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_x509verif
             .invoke("Invoke", (ctx, cb, userData, errorState))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -2327,16 +2337,6 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_set_x509verif
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -2392,6 +2392,16 @@ impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
             .invoke("Invoke", (userData, ctx, traceMessage, traceMessageLen))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -2403,16 +2413,6 @@ impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
@@ -2466,6 +2466,16 @@ impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
             .invoke("Invoke", (userData, data, bufferLen, errorState))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -2477,16 +2487,6 @@ impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
@@ -2528,18 +2528,6 @@ for crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_write_t {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t")]
 impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_write_t {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         ctx: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -2557,12 +2545,24 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_tlsctx_write_t {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t")]
@@ -2619,6 +2619,16 @@ impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
             .invoke("Invoke", (userData, chain, errorState))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -2630,16 +2640,6 @@ impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
@@ -2705,6 +2705,16 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509_export_der_t {
             .invoke("Invoke", (cert, buffer, bufferLen, errorState))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -2716,16 +2726,6 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509_export_der_t {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -2839,6 +2839,16 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_append_der_
             .invoke("Invoke", (list, buffer, bufferLen, errorState))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -2850,16 +2860,6 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_append_der_
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -2913,18 +2913,6 @@ for crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_append_t {
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
 )]
 impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_append_t {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         list: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -2941,12 +2929,24 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_append_t {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -3000,18 +3000,6 @@ for crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_create_t {
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
 )]
 impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_create_t {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         errorState: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -3026,12 +3014,24 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_create_t {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -3096,6 +3096,16 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_free_t {
             .invoke("Invoke", (list))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -3107,16 +3117,6 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_free_t {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -3170,18 +3170,6 @@ for crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_get_ref_t {
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
 )]
 impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_get_ref_t {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         list: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -3199,12 +3187,24 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_get_ref_t {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -3258,18 +3258,6 @@ for crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_get_x509_t {
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
 )]
 impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_get_x509_t {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         list: crate::Mono::Unity::UnityTls_unitytls_x509list_ref,
@@ -3286,12 +3274,24 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509list_get_x509_t 
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -3395,6 +3395,16 @@ impl crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
             .invoke("Invoke", (userData, cert, result, errorState))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -3406,16 +3416,6 @@ impl crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_callback")]
@@ -3485,6 +3485,16 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509verify_default_c
             .invoke("Invoke", (chain, cn, cnLen, cb, userData, errorState))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -3496,16 +3506,6 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509verify_default_c
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -3578,6 +3578,16 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509verify_explicit_
             .invoke("Invoke", (chain, trustCA, cn, cnLen, cb, userData, errorState))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -3589,16 +3599,6 @@ impl crate::Mono::Unity::unitytls_interface_struct_unitytls_x509verify_explicit_
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

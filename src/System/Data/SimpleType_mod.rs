@@ -38,6 +38,81 @@ impl std::ops::DerefMut for crate::System::Data::SimpleType {
 }
 #[cfg(feature = "System+Data+SimpleType")]
 impl crate::System::Data::SimpleType {
+    pub fn CanHaveMaxLength(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("CanHaveMaxLength", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ConvertToAnnonymousSimpleType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConvertToAnnonymousSimpleType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HasConflictingDefinition(
+        &mut self,
+        otherSimpleType: *mut crate::System::Data::SimpleType,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("HasConflictingDefinition", (otherSimpleType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsPlainString(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsPlainString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadTypeValues(
+        &mut self,
+        node: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LoadTypeValues", (node))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_String0(
+        baseType: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (baseType))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_XmlSchemaSimpleType1(
+        node: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (node))?;
+        Ok(__cordl_object)
+    }
+    pub fn QualifiedName(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("QualifiedName", (name))?;
+        Ok(__cordl_ret)
+    }
     pub fn System_Runtime_Serialization_ISerializable_GetObjectData(
         &mut self,
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
@@ -53,59 +128,17 @@ impl crate::System::Data::SimpleType {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_BaseType(
+    pub fn ToNode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        dc: *mut crate::System::Xml::XmlDocument,
+        prefixes: *mut crate::System::Collections::Hashtable,
+        inRemoting: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_BaseType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConvertToAnnonymousSimpleType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConvertToAnnonymousSimpleType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn QualifiedName(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("QualifiedName", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Name", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Length", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MaxLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_MaxLength", ())?;
+        let __cordl_ret: *mut crate::System::Xml::XmlNode = __cordl_object
+            .invoke("ToNode", (dc, prefixes, inRemoting))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_String0(
@@ -130,52 +163,48 @@ impl crate::System::Data::SimpleType {
             .invoke(".ctor", (node))?;
         Ok(__cordl_ret)
     }
-    pub fn get_XmlBaseType(
+    pub fn get_BaseSimpleType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlQualifiedName> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::SimpleType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::XmlQualifiedName = __cordl_object
-            .invoke("get_XmlBaseType", ())?;
+        let __cordl_ret: *mut crate::System::Data::SimpleType = __cordl_object
+            .invoke("get_BaseSimpleType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn IsPlainString(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsPlainString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToNode(
+    pub fn get_BaseType(
         &mut self,
-        dc: *mut crate::System::Xml::XmlDocument,
-        prefixes: *mut crate::System::Collections::Hashtable,
-        inRemoting: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNode> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::XmlNode = __cordl_object
-            .invoke("ToNode", (dc, prefixes, inRemoting))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_BaseType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CanHaveMaxLength(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("CanHaveMaxLength", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Length", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_MaxLength(
+    pub fn get_MaxLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_MaxLength", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Name(
         &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_MaxLength", (value))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Namespace(
@@ -198,55 +227,26 @@ impl crate::System::Data::SimpleType {
             .invoke("get_SimpleTypeQualifiedName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn HasConflictingDefinition(
+    pub fn get_XmlBaseType(
         &mut self,
-        otherSimpleType: *mut crate::System::Data::SimpleType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlQualifiedName> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("HasConflictingDefinition", (otherSimpleType))?;
+        let __cordl_ret: *mut crate::System::Xml::XmlQualifiedName = __cordl_object
+            .invoke("get_XmlBaseType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn LoadTypeValues(
+    pub fn set_MaxLength(
         &mut self,
-        node: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LoadTypeValues", (node))?;
+            .invoke("set_MaxLength", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_BaseSimpleType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::SimpleType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::SimpleType = __cordl_object
-            .invoke("get_BaseSimpleType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_String0(
-        baseType: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (baseType))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_XmlSchemaSimpleType1(
-        node: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (node))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Data+SimpleType")]

@@ -36,37 +36,14 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::CanvasUpdateRegistry {
 #[cfg(feature = "UnityEngine+UI+CanvasUpdateRegistry")]
 impl crate::UnityEngine::UI::CanvasUpdateRegistry {
     pub const m_CullingUpdateProfilerString: &'static str = "ClipperRegistry.Cull";
-    pub fn InternalUnRegisterCanvasElementForGraphicRebuild(
+    pub fn CleanInvalidItems(
         &mut self,
-        element: *mut crate::UnityEngine::UI::ICanvasElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalUnRegisterCanvasElementForGraphicRebuild", (element))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalDisableCanvasElementForLayoutRebuild(
-        &mut self,
-        element: *mut crate::UnityEngine::UI::ICanvasElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalDisableCanvasElementForLayoutRebuild", (element))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ObjectValidForUpdate(
-        &mut self,
-        element: *mut crate::UnityEngine::UI::ICanvasElement,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("ObjectValidForUpdate", (element))?;
+            .invoke("CleanInvalidItems", ())?;
         Ok(__cordl_ret)
     }
     pub fn InternalDisableCanvasElementForGraphicRebuild(
@@ -80,6 +57,17 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
             .invoke("InternalDisableCanvasElementForGraphicRebuild", (element))?;
         Ok(__cordl_ret)
     }
+    pub fn InternalDisableCanvasElementForLayoutRebuild(
+        &mut self,
+        element: *mut crate::UnityEngine::UI::ICanvasElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalDisableCanvasElementForLayoutRebuild", (element))?;
+        Ok(__cordl_ret)
+    }
     pub fn InternalRegisterCanvasElementForGraphicRebuild(
         &mut self,
         element: *mut crate::UnityEngine::UI::ICanvasElement,
@@ -91,14 +79,55 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
             .invoke("InternalRegisterCanvasElementForGraphicRebuild", (element))?;
         Ok(__cordl_ret)
     }
-    pub fn CleanInvalidItems(
+    pub fn InternalRegisterCanvasElementForLayoutRebuild(
         &mut self,
+        element: *mut crate::UnityEngine::UI::ICanvasElement,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("InternalRegisterCanvasElementForLayoutRebuild", (element))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InternalUnRegisterCanvasElementForGraphicRebuild(
+        &mut self,
+        element: *mut crate::UnityEngine::UI::ICanvasElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CleanInvalidItems", ())?;
+            .invoke("InternalUnRegisterCanvasElementForGraphicRebuild", (element))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InternalUnRegisterCanvasElementForLayoutRebuild(
+        &mut self,
+        element: *mut crate::UnityEngine::UI::ICanvasElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalUnRegisterCanvasElementForLayoutRebuild", (element))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ObjectValidForUpdate(
+        &mut self,
+        element: *mut crate::UnityEngine::UI::ICanvasElement,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("ObjectValidForUpdate", (element))?;
         Ok(__cordl_ret)
     }
     pub fn PerformUpdate(
@@ -120,35 +149,6 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn InternalRegisterCanvasElementForLayoutRebuild(
-        &mut self,
-        element: *mut crate::UnityEngine::UI::ICanvasElement,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("InternalRegisterCanvasElementForLayoutRebuild", (element))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalUnRegisterCanvasElementForLayoutRebuild(
-        &mut self,
-        element: *mut crate::UnityEngine::UI::ICanvasElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalUnRegisterCanvasElementForLayoutRebuild", (element))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UI+CanvasUpdateRegistry")]

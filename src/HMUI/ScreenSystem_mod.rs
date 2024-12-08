@@ -33,77 +33,6 @@ impl std::ops::DerefMut for crate::HMUI::ScreenSystem {
 }
 #[cfg(feature = "HMUI+ScreenSystem")]
 impl crate::HMUI::ScreenSystem {
-    pub fn get_leftScreen(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::Screen> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::Screen = __cordl_object
-            .invoke("get_leftScreen", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_bottomScreen(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::Screen> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::Screen = __cordl_object
-            .invoke("get_bottomScreen", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_mainScreen(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::Screen> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::Screen = __cordl_object
-            .invoke("get_mainScreen", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_titleViewController(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TitleViewController> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::TitleViewController = __cordl_object
-            .invoke("get_titleViewController", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_rightScreen(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::Screen> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::Screen = __cordl_object
-            .invoke("get_rightScreen", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_backButtonWasPressedEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_backButtonWasPressedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -113,6 +42,13 @@ impl crate::HMUI::ScreenSystem {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnDestroy(
         &mut self,
@@ -146,6 +82,16 @@ impl crate::HMUI::ScreenSystem {
             .invoke("<Awake>b__24_0", ())?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn add_backButtonWasPressedEvent(
         &mut self,
         value: *mut crate::System::Action,
@@ -155,6 +101,56 @@ impl crate::HMUI::ScreenSystem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_backButtonWasPressedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_bottomScreen(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::Screen> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::Screen = __cordl_object
+            .invoke("get_bottomScreen", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_leftScreen(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::Screen> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::Screen = __cordl_object
+            .invoke("get_leftScreen", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_mainScreen(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::Screen> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::Screen = __cordl_object
+            .invoke("get_mainScreen", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rightScreen(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::Screen> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::Screen = __cordl_object
+            .invoke("get_rightScreen", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_titleViewController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TitleViewController> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::TitleViewController = __cordl_object
+            .invoke("get_titleViewController", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_topScreen(
@@ -167,12 +163,16 @@ impl crate::HMUI::ScreenSystem {
             .invoke("get_topScreen", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn remove_backButtonWasPressedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_backButtonWasPressedEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "HMUI+ScreenSystem")]

@@ -24,22 +24,6 @@ impl std::ops::DerefMut for crate::SFB::IStandaloneFileBrowser {
 }
 #[cfg(feature = "SFB+IStandaloneFileBrowser")]
 impl crate::SFB::IStandaloneFileBrowser {
-    pub fn OpenFolderPanel(
-        &mut self,
-        title: *mut crate::System::String,
-        directory: *mut crate::System::String,
-        multiselect: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
-        > = __cordl_object.invoke("OpenFolderPanel", (title, directory, multiselect))?;
-        Ok(__cordl_ret)
-    }
     pub fn OpenFilePanel(
         &mut self,
         title: *mut crate::System::String,
@@ -78,18 +62,20 @@ impl crate::SFB::IStandaloneFileBrowser {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn SaveFilePanel(
+    pub fn OpenFolderPanel(
         &mut self,
         title: *mut crate::System::String,
         directory: *mut crate::System::String,
-        defaultName: *mut crate::System::String,
-        extensions: *mut quest_hook::libil2cpp::Il2CppArray<crate::SFB::ExtensionFilter>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        multiselect: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("SaveFilePanel", (title, directory, defaultName, extensions))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::String,
+        > = __cordl_object.invoke("OpenFolderPanel", (title, directory, multiselect))?;
         Ok(__cordl_ret)
     }
     pub fn OpenFolderPanelAsync(
@@ -106,6 +92,20 @@ impl crate::SFB::IStandaloneFileBrowser {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OpenFolderPanelAsync", (title, directory, multiselect, cb))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SaveFilePanel(
+        &mut self,
+        title: *mut crate::System::String,
+        directory: *mut crate::System::String,
+        defaultName: *mut crate::System::String,
+        extensions: *mut quest_hook::libil2cpp::Il2CppArray<crate::SFB::ExtensionFilter>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("SaveFilePanel", (title, directory, defaultName, extensions))?;
         Ok(__cordl_ret)
     }
     pub fn SaveFilePanelAsync(

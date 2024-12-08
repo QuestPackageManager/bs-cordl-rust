@@ -35,16 +35,17 @@ impl crate::System::Diagnostics::StackTrace {
     pub const prefix: &'static str = "  at ";
     #[cfg(feature = "System+Diagnostics+StackTrace+TraceFormat")]
     pub type TraceFormat = crate::System::Diagnostics::StackTrace_TraceFormat;
-    pub fn init_frames(
+    pub fn AddFrames(
         &mut self,
-        skipFrames: i32,
-        fNeedFileInfo: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        sb: *mut crate::System::Text::StringBuilder,
+        separator: bool,
+        isAsync: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("init_frames", (skipFrames, fNeedFileInfo))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("AddFrames", (sb, separator, isAsync))?;
         Ok(__cordl_ret)
     }
     pub fn GetFrame(
@@ -76,6 +77,60 @@ impl crate::System::Diagnostics::StackTrace {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Exception__cordl_bool4(
+        e: *mut crate::System::Exception,
+        fNeedFileInfo: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (e, fNeedFileInfo))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Exception_i32__cordl_bool5(
+        e: *mut crate::System::Exception,
+        skipFrames: i32,
+        fNeedFileInfo: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (e, skipFrames, fNeedFileInfo))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool1(
+        fNeedFileInfo: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (fNeedFileInfo))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_2(skipFrames: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (skipFrames))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32__cordl_bool3(
+        skipFrames: i32,
+        fNeedFileInfo: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (skipFrames, fNeedFileInfo))?;
+        Ok(__cordl_object)
+    }
     pub fn ToString_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -105,6 +160,31 @@ impl crate::System::Diagnostics::StackTrace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Exception__cordl_bool4(
+        &mut self,
+        e: *mut crate::System::Exception,
+        fNeedFileInfo: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (e, fNeedFileInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Exception_i32__cordl_bool5(
+        &mut self,
+        e: *mut crate::System::Exception,
+        skipFrames: i32,
+        fNeedFileInfo: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (e, skipFrames, fNeedFileInfo))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor__cordl_bool1(
@@ -141,31 +221,6 @@ impl crate::System::Diagnostics::StackTrace {
             .invoke(".ctor", (skipFrames, fNeedFileInfo))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Exception__cordl_bool4(
-        &mut self,
-        e: *mut crate::System::Exception,
-        fNeedFileInfo: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (e, fNeedFileInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Exception_i32__cordl_bool5(
-        &mut self,
-        e: *mut crate::System::Exception,
-        skipFrames: i32,
-        fNeedFileInfo: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (e, skipFrames, fNeedFileInfo))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_FrameCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -173,74 +228,17 @@ impl crate::System::Diagnostics::StackTrace {
         let __cordl_ret: i32 = __cordl_object.invoke("get_FrameCount", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AddFrames(
+    pub fn init_frames(
         &mut self,
-        sb: *mut crate::System::Text::StringBuilder,
-        separator: bool,
-        isAsync: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        skipFrames: i32,
+        fNeedFileInfo: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("AddFrames", (sb, separator, isAsync))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("init_frames", (skipFrames, fNeedFileInfo))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New__cordl_bool1(
-        fNeedFileInfo: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (fNeedFileInfo))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_2(
-        skipFrames: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (skipFrames))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32__cordl_bool3(
-        skipFrames: i32,
-        fNeedFileInfo: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (skipFrames, fNeedFileInfo))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Exception__cordl_bool4(
-        e: *mut crate::System::Exception,
-        fNeedFileInfo: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (e, fNeedFileInfo))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Exception_i32__cordl_bool5(
-        e: *mut crate::System::Exception,
-        skipFrames: i32,
-        fNeedFileInfo: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (e, skipFrames, fNeedFileInfo))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Diagnostics+StackTrace")]

@@ -51,13 +51,6 @@ impl<
     TParam3: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,
 > crate::Zenject::FactoryFromBinder_4<TParam1, TParam2, TParam3, TContract> {
-    #[cfg(feature = "Zenject+FactoryFromBinder_4+__c__DisplayClass1_0")]
-    pub type __c__DisplayClass1_0 = crate::Zenject::FactoryFromBinder_4___c__DisplayClass1_0<
-        TParam1,
-        TParam2,
-        TParam3,
-        TContract,
-    >;
     #[cfg(feature = "Zenject+FactoryFromBinder_4+__c__2_1")]
     pub type __c__2_1<TSubFactory: quest_hook::libil2cpp::Type> = crate::Zenject::FactoryFromBinder_4___c__2_1<
         TParam1,
@@ -65,6 +58,13 @@ impl<
         TParam3,
         TContract,
         TSubFactory,
+    >;
+    #[cfg(feature = "Zenject+FactoryFromBinder_4+__c__DisplayClass1_0")]
+    pub type __c__DisplayClass1_0 = crate::Zenject::FactoryFromBinder_4___c__DisplayClass1_0<
+        TParam1,
+        TParam2,
+        TParam3,
+        TContract,
     >;
     pub fn FromFactory<TSubFactory>(
         &mut self,
@@ -178,6 +178,17 @@ impl<
         > = __cordl_object.invoke("FromSubContainerResolve", (subIdentifier))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        container: *mut crate::Zenject::DiContainer,
+        bindInfo: *mut crate::Zenject::BindInfo,
+        factoryBindInfo: *mut crate::Zenject::FactoryBindInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (container, bindInfo, factoryBindInfo))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         container: *mut crate::Zenject::DiContainer,
@@ -200,17 +211,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (container, bindInfo, factoryBindInfo))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        container: *mut crate::Zenject::DiContainer,
-        bindInfo: *mut crate::Zenject::BindInfo,
-        factoryBindInfo: *mut crate::Zenject::FactoryBindInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (container, bindInfo, factoryBindInfo))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+FactoryFromBinder_4")]

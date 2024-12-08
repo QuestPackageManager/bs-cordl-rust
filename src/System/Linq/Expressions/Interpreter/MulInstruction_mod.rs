@@ -26,34 +26,44 @@ for crate::System::Linq::Expressions::Interpreter::MulInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::MulInstruction {
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulUInt16")]
-    pub type MulUInt16 = crate::GlobalNamespace::MulInstruction_MulUInt16;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulDouble")]
     pub type MulDouble = crate::GlobalNamespace::MulInstruction_MulDouble;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulInt64")]
-    pub type MulInt64 = crate::GlobalNamespace::MulInstruction_MulInt64;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulUInt32")]
-    pub type MulUInt32 = crate::GlobalNamespace::MulInstruction_MulUInt32;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulUInt64")]
     pub type MulUInt64 = crate::GlobalNamespace::MulInstruction_MulUInt64;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulInt16")]
     pub type MulInt16 = crate::GlobalNamespace::MulInstruction_MulInt16;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulSingle")]
-    pub type MulSingle = crate::GlobalNamespace::MulInstruction_MulSingle;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulInt32")]
     pub type MulInt32 = crate::GlobalNamespace::MulInstruction_MulInt32;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulInt64")]
+    pub type MulInt64 = crate::GlobalNamespace::MulInstruction_MulInt64;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulUInt32")]
+    pub type MulUInt32 = crate::GlobalNamespace::MulInstruction_MulUInt32;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulSingle")]
+    pub type MulSingle = crate::GlobalNamespace::MulInstruction_MulSingle;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulUInt16")]
+    pub type MulUInt16 = crate::GlobalNamespace::MulInstruction_MulUInt16;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_ConsumedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_InstructionName(
@@ -66,22 +76,12 @@ impl crate::System::Linq::Expressions::Interpreter::MulInstruction {
             .invoke("get_InstructionName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction")]

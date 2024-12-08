@@ -40,6 +40,17 @@ impl crate::Zenject::SubContainerCreatorByNewGameObjectMethod {
             .invoke("AddInstallers", (args, context))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        container: *mut crate::Zenject::DiContainer,
+        gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
+        installerMethod: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (container, gameObjectBindInfo, installerMethod))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         container: *mut crate::Zenject::DiContainer,
@@ -52,17 +63,6 @@ impl crate::Zenject::SubContainerCreatorByNewGameObjectMethod {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (container, gameObjectBindInfo, installerMethod))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        container: *mut crate::Zenject::DiContainer,
-        gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
-        installerMethod: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (container, gameObjectBindInfo, installerMethod))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectMethod")]

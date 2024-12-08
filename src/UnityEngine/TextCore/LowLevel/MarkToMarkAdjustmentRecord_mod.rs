@@ -26,22 +26,14 @@ for crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkToMarkAdjustmentRecord")]
 impl crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
-    pub fn get_combiningMarkPositionAdjustment(
+    pub fn get_baseMarkGlyphAnchorPoint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment,
+        crate::UnityEngine::TextCore::LowLevel::GlyphAnchorPoint,
     > {
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::GlyphAnchorPoint = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_combiningMarkPositionAdjustment",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_combiningMarkGlyphID(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_combiningMarkGlyphID",
+            "get_baseMarkGlyphAnchorPoint",
             (),
         )?;
         Ok(__cordl_ret)
@@ -54,14 +46,22 @@ impl crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_baseMarkGlyphAnchorPoint(
+    pub fn get_combiningMarkGlyphID(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_combiningMarkGlyphID",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_combiningMarkPositionAdjustment(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::TextCore::LowLevel::GlyphAnchorPoint,
+        crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment,
     > {
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::GlyphAnchorPoint = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_baseMarkGlyphAnchorPoint",
+            "get_combiningMarkPositionAdjustment",
             (),
         )?;
         Ok(__cordl_ret)

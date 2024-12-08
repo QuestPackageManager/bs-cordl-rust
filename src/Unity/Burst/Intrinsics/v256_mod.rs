@@ -22,89 +22,148 @@ for crate::Unity::Burst::Intrinsics::v256 {
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+v256")]
 impl crate::Unity::Burst::Intrinsics::v256 {
-    pub fn _ctor_u8_0(
+    pub fn _ctor_f32_12(
         &mut self,
-        b: u8,
+        f: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
-            (b),
+            (f),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_1(
+    pub fn _ctor_f32_f32_f32_f32_f32_f32_f32_f32_13(
         &mut self,
-        a: u8,
-        b: u8,
-        c: u8,
-        d: u8,
-        e: u8,
-        f: u8,
-        g: u8,
-        h: u8,
-        i: u8,
-        j: u8,
-        k: u8,
-        l: u8,
-        m: u8,
-        n: u8,
-        o: u8,
-        p: u8,
-        q: u8,
-        r: u8,
-        s: u8,
-        t: u8,
-        u: u8,
-        v: u8,
-        w: u8,
-        x: u8,
-        y: u8,
-        z: u8,
-        A: u8,
-        B: u8,
-        C: u8,
-        D: u8,
-        E: u8,
-        F: u8,
+        a: f32,
+        b: f32,
+        c: f32,
+        d: f32,
+        e: f32,
+        f: f32,
+        g: f32,
+        h: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
-            (
-                a,
-                b,
-                c,
-                d,
-                e,
-                f,
-                g,
-                h,
-                i,
-                j,
-                k,
-                l,
-                m,
-                n,
-                o,
-                p,
-                q,
-                r,
-                s,
-                t,
-                u,
-                v,
-                w,
-                x,
-                y,
-                z,
-                A,
-                B,
-                C,
-                D,
-                E,
-                F,
-            ),
+            (a, b, c, d, e, f, g, h),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_f64_14(
+        &mut self,
+        f: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (f),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_f64_f64_f64_f64_15(
+        &mut self,
+        a: f64,
+        b: f64,
+        c: f64,
+        d: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (a, b, c, d),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i16_4(
+        &mut self,
+        v: i16,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (v),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_5(
+        &mut self,
+        a: i16,
+        b: i16,
+        c: i16,
+        d: i16,
+        e: i16,
+        f: i16,
+        g: i16,
+        h: i16,
+        i: i16,
+        j: i16,
+        k: i16,
+        l: i16,
+        m: i16,
+        n: i16,
+        o: i16,
+        p: i16,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_8(
+        &mut self,
+        v: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (v),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_i32_i32_i32_i32_i32_i32_i32_9(
+        &mut self,
+        a: i32,
+        b: i32,
+        c: i32,
+        d: i32,
+        e: i32,
+        f: i32,
+        g: i32,
+        h: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (a, b, c, d, e, f, g, h),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i64_16(
+        &mut self,
+        f: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (f),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i64_i64_i64_i64_17(
+        &mut self,
+        a: i64,
+        b: i64,
+        c: i64,
+        d: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (a, b, c, d),
         )?;
         Ok(__cordl_ret)
     }
@@ -194,43 +253,6 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i16_4(
-        &mut self,
-        v: i16,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_5(
-        &mut self,
-        a: i16,
-        b: i16,
-        c: i16,
-        d: i16,
-        e: i16,
-        f: i16,
-        g: i16,
-        h: i16,
-        i: i16,
-        j: i16,
-        k: i16,
-        l: i16,
-        m: i16,
-        n: i16,
-        o: i16,
-        p: i16,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_u16_6(
         &mut self,
         v: u16,
@@ -268,35 +290,6 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_8(
-        &mut self,
-        v: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_i32_i32_i32_i32_i32_i32_i32_9(
-        &mut self,
-        a: i32,
-        b: i32,
-        c: i32,
-        d: i32,
-        e: i32,
-        f: i32,
-        g: i32,
-        h: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c, d, e, f, g, h),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_u32_10(
         &mut self,
         v: u32,
@@ -326,85 +319,6 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_f32_12(
-        &mut self,
-        f: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (f),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_f32_f32_f32_f32_f32_f32_f32_f32_13(
-        &mut self,
-        a: f32,
-        b: f32,
-        c: f32,
-        d: f32,
-        e: f32,
-        f: f32,
-        g: f32,
-        h: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c, d, e, f, g, h),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_f64_14(
-        &mut self,
-        f: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (f),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_f64_f64_f64_f64_15(
-        &mut self,
-        a: f64,
-        b: f64,
-        c: f64,
-        d: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c, d),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i64_16(
-        &mut self,
-        f: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (f),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i64_i64_i64_i64_17(
-        &mut self,
-        a: i64,
-        b: i64,
-        c: i64,
-        d: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c, d),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_u64_18(
         &mut self,
         f: u64,
@@ -427,6 +341,92 @@ impl crate::Unity::Burst::Intrinsics::v256 {
             self,
             ".ctor",
             (a, b, c, d),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_u8_0(
+        &mut self,
+        b: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (b),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_1(
+        &mut self,
+        a: u8,
+        b: u8,
+        c: u8,
+        d: u8,
+        e: u8,
+        f: u8,
+        g: u8,
+        h: u8,
+        i: u8,
+        j: u8,
+        k: u8,
+        l: u8,
+        m: u8,
+        n: u8,
+        o: u8,
+        p: u8,
+        q: u8,
+        r: u8,
+        s: u8,
+        t: u8,
+        u: u8,
+        v: u8,
+        w: u8,
+        x: u8,
+        y: u8,
+        z: u8,
+        A: u8,
+        B: u8,
+        C: u8,
+        D: u8,
+        E: u8,
+        F: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (
+                a,
+                b,
+                c,
+                d,
+                e,
+                f,
+                g,
+                h,
+                i,
+                j,
+                k,
+                l,
+                m,
+                n,
+                o,
+                p,
+                q,
+                r,
+                s,
+                t,
+                u,
+                v,
+                w,
+                x,
+                y,
+                z,
+                A,
+                B,
+                C,
+                D,
+                E,
+                F,
+            ),
         )?;
         Ok(__cordl_ret)
     }

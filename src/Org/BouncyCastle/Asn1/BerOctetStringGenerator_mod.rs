@@ -28,6 +28,58 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator {
         feature = "Org+BouncyCastle+Asn1+BerOctetStringGenerator+BufferedBerOctetStream"
     )]
     pub type BufferedBerOctetStream = crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator_BufferedBerOctetStream;
+    pub fn GetOctetOutputStream_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+            .invoke("GetOctetOutputStream", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetOctetOutputStream_Il2CppArray2(
+        &mut self,
+        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+            .invoke("GetOctetOutputStream", (buf))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetOctetOutputStream_i32_1(
+        &mut self,
+        bufSize: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+            .invoke("GetOctetOutputStream", (bufSize))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_Stream0(
+        outStream: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (outStream))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32__cordl_bool1(
+        outStream: *mut crate::System::IO::Stream,
+        tagNo: i32,
+        isExplicit: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (outStream, tagNo, isExplicit))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_Stream0(
         &mut self,
         outStream: *mut crate::System::IO::Stream,
@@ -51,58 +103,6 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (outStream, tagNo, isExplicit))?;
         Ok(__cordl_ret)
-    }
-    pub fn GetOctetOutputStream_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("GetOctetOutputStream", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetOctetOutputStream_i32_1(
-        &mut self,
-        bufSize: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("GetOctetOutputStream", (bufSize))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetOctetOutputStream_Il2CppArray2(
-        &mut self,
-        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("GetOctetOutputStream", (buf))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_Stream0(
-        outStream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (outStream))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32__cordl_bool1(
-        outStream: *mut crate::System::IO::Stream,
-        tagNo: i32,
-        isExplicit: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (outStream, tagNo, isExplicit))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetStringGenerator")]
@@ -148,42 +148,6 @@ for crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator_BufferedBerOctetStre
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetStringGenerator+BufferedBerOctetStream")]
 impl crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator_BufferedBerOctetStream {
-    pub fn Write(
-        &mut self,
-        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        len: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (buf, offset, len))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        _cordl_gen: *mut crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator,
-        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_gen, buf))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteByte(
-        &mut self,
-        b: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteByte", (b))?;
-        Ok(__cordl_ret)
-    }
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -197,12 +161,48 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator_BufferedBerOctetStr
     pub fn New(
         _cordl_gen: *mut crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator,
         buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_gen, buf))?;
         Ok(__cordl_object)
+    }
+    pub fn Write(
+        &mut self,
+        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Write", (buf, offset, len))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteByte(
+        &mut self,
+        b: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteByte", (b))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        _cordl_gen: *mut crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator,
+        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_gen, buf))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetStringGenerator+BufferedBerOctetStream")]

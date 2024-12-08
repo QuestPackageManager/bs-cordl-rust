@@ -62,23 +62,6 @@ impl crate::Zenject::ZenjectSceneLoader {
             .invoke("LoadSceneAsync", (sceneName, loadMode, extraBindings))?;
         Ok(__cordl_ret)
     }
-    pub fn LoadSceneAsync_String_LoadSceneMode_Action_1_LoadSceneRelationship3(
-        &mut self,
-        sceneName: *mut crate::System::String,
-        loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
-        extraBindings: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
-        containerMode: crate::Zenject::LoadSceneRelationship,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AsyncOperation> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::AsyncOperation = __cordl_object
-            .invoke(
-                "LoadSceneAsync",
-                (sceneName, loadMode, extraBindings, containerMode),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn LoadSceneAsync_String_LoadSceneMode_Action_1_Action_1_LoadSceneRelationship_Action_1_4(
         &mut self,
         sceneName: *mut crate::System::String,
@@ -104,6 +87,23 @@ impl crate::Zenject::ZenjectSceneLoader {
                     containerMode,
                     extraBindingsLate,
                 ),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadSceneAsync_String_LoadSceneMode_Action_1_LoadSceneRelationship3(
+        &mut self,
+        sceneName: *mut crate::System::String,
+        loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
+        extraBindings: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        containerMode: crate::Zenject::LoadSceneRelationship,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AsyncOperation> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::AsyncOperation = __cordl_object
+            .invoke(
+                "LoadSceneAsync",
+                (sceneName, loadMode, extraBindings, containerMode),
             )?;
         Ok(__cordl_ret)
     }
@@ -178,18 +178,6 @@ impl crate::Zenject::ZenjectSceneLoader {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        sceneRoot: *mut crate::Zenject::SceneContext,
-        projectKernel: *mut crate::Zenject::ProjectKernel,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (sceneRoot, projectKernel))?;
-        Ok(__cordl_ret)
-    }
     pub fn LoadSceneFromAddressablesAsync(
         &mut self,
         sceneName: *mut crate::System::String,
@@ -224,34 +212,6 @@ impl crate::Zenject::ZenjectSceneLoader {
                     extraBindings,
                     containerMode,
                     extraBindingsLate,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn PrepareForLoadScene(
-        &mut self,
-        loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
-        extraBindingsEarly: *mut crate::System::Action_1<
-            *mut crate::Zenject::DiContainer,
-        >,
-        extraBindings: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
-        extraBindingsLate: *mut crate::System::Action_1<
-            *mut crate::Zenject::DiContainer,
-        >,
-        containerMode: crate::Zenject::LoadSceneRelationship,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "PrepareForLoadScene",
-                (
-                    loadMode,
-                    extraBindingsEarly,
-                    extraBindings,
-                    extraBindingsLate,
-                    containerMode,
                 ),
             )?;
         Ok(__cordl_ret)
@@ -395,12 +355,52 @@ impl crate::Zenject::ZenjectSceneLoader {
     pub fn New(
         sceneRoot: *mut crate::Zenject::SceneContext,
         projectKernel: *mut crate::Zenject::ProjectKernel,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (sceneRoot, projectKernel))?;
         Ok(__cordl_object)
+    }
+    pub fn PrepareForLoadScene(
+        &mut self,
+        loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
+        extraBindingsEarly: *mut crate::System::Action_1<
+            *mut crate::Zenject::DiContainer,
+        >,
+        extraBindings: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        extraBindingsLate: *mut crate::System::Action_1<
+            *mut crate::Zenject::DiContainer,
+        >,
+        containerMode: crate::Zenject::LoadSceneRelationship,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "PrepareForLoadScene",
+                (
+                    loadMode,
+                    extraBindingsEarly,
+                    extraBindings,
+                    extraBindingsLate,
+                    containerMode,
+                ),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        sceneRoot: *mut crate::Zenject::SceneContext,
+        projectKernel: *mut crate::Zenject::ProjectKernel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (sceneRoot, projectKernel))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+ZenjectSceneLoader")]

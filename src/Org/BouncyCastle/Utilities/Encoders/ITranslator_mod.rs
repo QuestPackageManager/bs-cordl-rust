@@ -55,18 +55,18 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::ITranslator {
             .invoke("Encode", (input, inOff, length, outBytes, outOff))?;
         Ok(__cordl_ret)
     }
-    pub fn GetEncodedBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetEncodedBlockSize", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetDecodedBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetDecodedBlockSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEncodedBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetEncodedBlockSize", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

@@ -24,43 +24,14 @@ impl std::ops::DerefMut for crate::UnityEngine::CapsuleCollider {
 }
 #[cfg(feature = "UnityEngine+CapsuleCollider")]
 impl crate::UnityEngine::CapsuleCollider {
-    pub fn get_center(
+    pub fn CalculateTransform(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_center", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_direction(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_direction", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_direction(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_direction", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_height(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_height", (value))?;
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 = __cordl_object
+            .invoke("CalculateTransform", ())?;
         Ok(__cordl_ret)
     }
     pub fn CalculateTransform_Injected(
@@ -74,22 +45,84 @@ impl crate::UnityEngine::CapsuleCollider {
             .invoke("CalculateTransform_Injected", (ret))?;
         Ok(__cordl_ret)
     }
-    pub fn get_radius(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn GetGlobalExtents(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_radius", ())?;
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("GetGlobalExtents", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_radius(
+    pub fn GetGlobalExtents_Injected(
         &mut self,
-        value: f32,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_radius", (value))?;
+            .invoke("GetGlobalExtents_Injected", (ret))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_center(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_center", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_center_Injected(
+        &mut self,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("get_center_Injected", (ret))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_direction(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_direction", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_height", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_radius(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_radius", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_center(
@@ -114,71 +147,38 @@ impl crate::UnityEngine::CapsuleCollider {
             .invoke("set_center_Injected", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn GetGlobalExtents(
+    pub fn set_direction(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("GetGlobalExtents", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("set_direction", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_height", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_center_Injected(
+    pub fn set_height(
         &mut self,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("get_center_Injected", (ret))?;
+            .invoke("set_height", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn GetGlobalExtents_Injected(
+    pub fn set_radius(
         &mut self,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetGlobalExtents_Injected", (ret))?;
+            .invoke("set_radius", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn CalculateTransform(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Matrix4x4 = __cordl_object
-            .invoke("CalculateTransform", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+CapsuleCollider")]

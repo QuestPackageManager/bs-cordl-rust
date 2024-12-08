@@ -32,15 +32,17 @@ impl std::ops::DerefMut for MultiplayerCenterTextAnimator {
 }
 #[cfg(feature = "MultiplayerCenterTextAnimator")]
 impl MultiplayerCenterTextAnimator {
-    pub fn _Awake_b__8_1(
+    pub fn AnimateEnabled(
         &mut self,
-        val: f32,
+        isEnabled: bool,
+        duration: f32,
+        easeType: EaseType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__8_1", (val))?;
+            .invoke("AnimateEnabled", (isEnabled, duration, easeType))?;
         Ok(__cordl_ret)
     }
     pub fn AnimateFontSize(
@@ -56,26 +58,6 @@ impl MultiplayerCenterTextAnimator {
             .invoke("AnimateFontSize", (fontSize, duration, easeType))?;
         Ok(__cordl_ret)
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AnimatePositionOffsetSize(
         &mut self,
         offset: crate::UnityEngine::Vector3,
@@ -89,24 +71,77 @@ impl MultiplayerCenterTextAnimator {
             .invoke("AnimatePositionOffsetSize", (offset, duration, easeType))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn AnimateTextColor(
         &mut self,
+        color: crate::UnityEngine::Color,
+        duration: f32,
+        easeType: EaseType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("AnimateTextColor", (color, duration, easeType))?;
         Ok(__cordl_ret)
     }
-    pub fn _Awake_b__8_5(
+    pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__8_5", ())?;
+            .invoke("Awake", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetText(
+        &mut self,
+        text: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetText", (text))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _Awake_b__8_0(
+        &mut self,
+        val: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<Awake>b__8_0", (val))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _Awake_b__8_1(
+        &mut self,
+        val: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<Awake>b__8_1", (val))?;
         Ok(__cordl_ret)
     }
     pub fn _Awake_b__8_2(
@@ -142,60 +177,25 @@ impl MultiplayerCenterTextAnimator {
             .invoke("<Awake>b__8_4", (val))?;
         Ok(__cordl_ret)
     }
-    pub fn AnimateTextColor(
+    pub fn _Awake_b__8_5(
         &mut self,
-        color: crate::UnityEngine::Color,
-        duration: f32,
-        easeType: EaseType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AnimateTextColor", (color, duration, easeType))?;
+            .invoke("<Awake>b__8_5", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetText(
+    pub fn _ctor(
         &mut self,
-        text: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetText", (text))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn AnimateEnabled(
-        &mut self,
-        isEnabled: bool,
-        duration: f32,
-        easeType: EaseType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AnimateEnabled", (isEnabled, duration, easeType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _Awake_b__8_0(
-        &mut self,
-        val: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__8_0", (val))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MultiplayerCenterTextAnimator")]

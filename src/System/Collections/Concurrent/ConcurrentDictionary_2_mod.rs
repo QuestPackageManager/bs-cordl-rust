@@ -55,10 +55,8 @@ impl<
 > crate::System::Collections::Concurrent::ConcurrentDictionary_2<TKey, TValue> {
     pub const DefaultCapacity: i32 = 31i32;
     pub const MaxLockNumber: i32 = 1024i32;
-    #[cfg(
-        feature = "System+Collections+Concurrent+ConcurrentDictionary_2+_GetEnumerator_d__35"
-    )]
-    pub type _GetEnumerator_d__35 = crate::System::Collections::Concurrent::ConcurrentDictionary_2__GetEnumerator_d__35<
+    #[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2+Tables")]
+    pub type Tables = crate::System::Collections::Concurrent::ConcurrentDictionary_2_Tables<
         TKey,
         TValue,
     >;
@@ -69,8 +67,10 @@ impl<
         TKey,
         TValue,
     >;
-    #[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2+Tables")]
-    pub type Tables = crate::System::Collections::Concurrent::ConcurrentDictionary_2_Tables<
+    #[cfg(
+        feature = "System+Collections+Concurrent+ConcurrentDictionary_2+_GetEnumerator_d__35"
+    )]
+    pub type _GetEnumerator_d__35 = crate::System::Collections::Concurrent::ConcurrentDictionary_2__GetEnumerator_d__35<
         TKey,
         TValue,
     >;
@@ -79,9 +79,10 @@ impl<
         TKey,
         TValue,
     >;
-    pub fn System_Collections_IDictionary_get_Values(
+    pub fn AcquireAllLocks(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection>
+        locksAcquired: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -91,14 +92,16 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
-            .invoke("System.Collections.IDictionary.get_Values", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AcquireAllLocks", (locksAcquired))?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_TKey_TValue___Contains(
+    pub fn AcquireLocks(
         &mut self,
-        keyValuePair: crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    ) -> quest_hook::libil2cpp::Result<bool>
+        fromInclusive: i32,
+        toExclusive: i32,
+        locksAcquired: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -108,16 +111,11 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains",
-                (keyValuePair),
-            )?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AcquireLocks", (fromInclusive, toExclusive, locksAcquired))?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_ICollection_get_IsSynchronized(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool>
+    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -127,17 +125,11 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Collections.ICollection.get_IsSynchronized", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Clear", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TryRemoveInternal(
-        &mut self,
-        key: TKey,
-        value: quest_hook::libil2cpp::ByRefMut<TValue>,
-        matchValue: bool,
-        oldValue: TValue,
-    ) -> quest_hook::libil2cpp::Result<bool>
+    pub fn ContainsKey(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<bool>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -147,8 +139,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryRemoveInternal", (key, value, matchValue, oldValue))?;
+        let __cordl_ret: bool = __cordl_object.invoke("ContainsKey", (key))?;
         Ok(__cordl_ret)
     }
     pub fn CopyToEntries(
@@ -171,168 +162,6 @@ impl<
             .invoke("CopyToEntries", (array, index))?;
         Ok(__cordl_ret)
     }
-    pub fn AcquireLocks(
-        &mut self,
-        fromInclusive: i32,
-        toExclusive: i32,
-        locksAcquired: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AcquireLocks", (fromInclusive, toExclusive, locksAcquired))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryAddInternal(
-        &mut self,
-        key: TKey,
-        hashcode: i32,
-        value: TValue,
-        updateIfExists: bool,
-        acquireLock: bool,
-        resultingValue: quest_hook::libil2cpp::ByRefMut<TValue>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "TryAddInternal",
-                (key, hashcode, value, updateIfExists, acquireLock, resultingValue),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCountInternal(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetCountInternal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ContainsKey(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ContainsKey", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToArray(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-        >,
-    >
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-        > = __cordl_object.invoke("ToArray", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Item(
-        &mut self,
-        key: TKey,
-        value: TValue,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Item", (key, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_Generic_IDictionary_TKey_TValue__Add(
-        &mut self,
-        key: TKey,
-        value: TValue,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "System.Collections.Generic.IDictionary<TKey,TValue>.Add",
-                (key, value),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Values(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::ICollection_1<TValue>,
-    >
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::ICollection_1<
-            TValue,
-        > = __cordl_object.invoke("get_Values", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CopyToObjects(
         &mut self,
         array: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
@@ -351,207 +180,7 @@ impl<
             .invoke("CopyToObjects", (array, index))?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_Generic_IReadOnlyDictionary_TKey_TValue__get_Keys(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<TKey>,
-    >
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<TKey> = __cordl_object
-            .invoke(
-                "System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.get_Keys",
-                (),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitializeFromCollection(
-        &mut self,
-        collection: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitializeFromCollection", (collection))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_TKey_TValue___get_IsReadOnly(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly",
-                (),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_TKey_TValue___Remove(
-        &mut self,
-        keyValuePair: crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove",
-                (keyValuePair),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IDictionary_Remove(
-        &mut self,
-        key: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("System.Collections.IDictionary.Remove", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IDictionary_Contains(
-        &mut self,
-        key: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Collections.IDictionary.Contains", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IDictionary_get_Item(
-        &mut self,
-        key: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("System.Collections.IDictionary.get_Item", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<TValue>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TValue = __cordl_object.invoke("get_Item", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_Generic_IReadOnlyDictionary_TKey_TValue__get_Values(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<TValue>,
-    >
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            TValue,
-        > = __cordl_object
-            .invoke(
-                "System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.get_Values",
-                (),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnSerialized(
-        &mut self,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnSerialized", (context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDeserialized(
-        &mut self,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDeserialized", (context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_TKey_TValue___CopyTo(
+    pub fn CopyToPairs(
         &mut self,
         array: *mut quest_hook::libil2cpp::Il2CppArray<
             crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
@@ -568,16 +197,47 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo",
-                (array, index),
-            )?;
+            .invoke("CopyToPairs", (array, index))?;
         Ok(__cordl_ret)
     }
-    pub fn GetValues(
+    pub fn GetCountInternal(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetCountInternal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<TValue>,
+        *mut crate::System::Collections::Generic::IEnumerator_1<
+            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+        >,
+    >
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
+            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+        > = __cordl_object.invoke("GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetKeys(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<TKey>,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -589,110 +249,8 @@ impl<
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            TValue,
-        > = __cordl_object.invoke("GetValues", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetValueInternal(
-        &mut self,
-        key: TKey,
-        hashcode: i32,
-        value: quest_hook::libil2cpp::ByRefMut<TValue>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetValueInternal", (key, hashcode, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_TKey_TValue___Add(
-        &mut self,
-        keyValuePair: crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add",
-                (keyValuePair),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IDictionary_get_IsReadOnly(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Collections.IDictionary.get_IsReadOnly", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IDictionary_get_Keys(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
-            .invoke("System.Collections.IDictionary.get_Keys", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetValue(
-        &mut self,
-        key: TKey,
-        value: quest_hook::libil2cpp::ByRefMut<TValue>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (key, value))?;
+            TKey,
+        > = __cordl_object.invoke("GetKeys", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetOrAdd_Func_2_0(
@@ -730,6 +288,25 @@ impl<
         let __cordl_ret: TValue = __cordl_object.invoke("GetOrAdd", (key, value))?;
         Ok(__cordl_ret)
     }
+    pub fn GetValues(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<TValue>,
+    >
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            TValue,
+        > = __cordl_object.invoke("GetValues", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GrowTable(
         &mut self,
         tables: *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2_Tables<
@@ -750,9 +327,11 @@ impl<
             .invoke("GrowTable", (tables))?;
         Ok(__cordl_ret)
     }
-    pub fn AcquireAllLocks(
+    pub fn InitializeFromCollection(
         &mut self,
-        locksAcquired: quest_hook::libil2cpp::ByRefMut<i32>,
+        collection: *mut crate::System::Collections::Generic::IEnumerable_1<
+            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -764,7 +343,89 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AcquireAllLocks", (locksAcquired))?;
+            .invoke("InitializeFromCollection", (collection))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IEqualityComparer_1_1(
+        comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (comparer))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_i32__cordl_bool_IEqualityComparer_1_2(
+        concurrencyLevel: i32,
+        capacity: i32,
+        growLockArray: bool,
+        comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (concurrencyLevel, capacity, growLockArray, comparer),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDeserialized(
+        &mut self,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDeserialized", (context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnSerialized(
+        &mut self,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnSerialized", (context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnSerializing(
+        &mut self,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnSerializing", (context))?;
         Ok(__cordl_ret)
     }
     pub fn ReleaseLocks(
@@ -783,6 +444,129 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReleaseLocks", (fromInclusive, toExclusive))?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_TKey_TValue___Add(
+        &mut self,
+        keyValuePair: crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add",
+                (keyValuePair),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_TKey_TValue___Contains(
+        &mut self,
+        keyValuePair: crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains",
+                (keyValuePair),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_TKey_TValue___CopyTo(
+        &mut self,
+        array: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+        >,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo",
+                (array, index),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_TKey_TValue___Remove(
+        &mut self,
+        keyValuePair: crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove",
+                (keyValuePair),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_TKey_TValue___get_IsReadOnly(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly",
+                (),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_Generic_IDictionary_TKey_TValue__Add(
+        &mut self,
+        key: TKey,
+        value: TValue,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "System.Collections.Generic.IDictionary<TKey,TValue>.Add",
+                (key, value),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn System_Collections_Generic_IDictionary_TKey_TValue__Remove(
@@ -805,27 +589,10 @@ impl<
             )?;
         Ok(__cordl_ret)
     }
-    pub fn TryAdd(
-        &mut self,
-        key: TKey,
-        value: TValue,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryAdd", (key, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Keys(
+    pub fn System_Collections_Generic_IReadOnlyDictionary_TKey_TValue__get_Keys(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::ICollection_1<TKey>,
+        *mut crate::System::Collections::Generic::IEnumerable_1<TKey>,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -836,30 +603,17 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::ICollection_1<TKey> = __cordl_object
-            .invoke("get_Keys", ())?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<TKey> = __cordl_object
+            .invoke(
+                "System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.get_Keys",
+                (),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_ICollection_get_SyncRoot(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("System.Collections.ICollection.get_SyncRoot", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetKeys(
+    pub fn System_Collections_Generic_IReadOnlyDictionary_TKey_TValue__get_Values(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<TKey>,
+        *mut crate::System::Collections::Generic::IEnumerable_1<TValue>,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -870,9 +624,13 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            TKey,
-        > = __cordl_object.invoke("GetKeys", ())?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            TValue,
+        > = __cordl_object
+            .invoke(
+                "System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.get_Values",
+                (),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn System_Collections_ICollection_CopyTo(
@@ -893,9 +651,42 @@ impl<
             .invoke("System.Collections.ICollection.CopyTo", (array, index))?;
         Ok(__cordl_ret)
     }
-    pub fn OnSerializing(
+    pub fn System_Collections_ICollection_get_IsSynchronized(
         &mut self,
-        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Collections.ICollection.get_IsSynchronized", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_ICollection_get_SyncRoot(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("System.Collections.ICollection.get_SyncRoot", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IDictionary_Add(
+        &mut self,
+        key: *mut crate::System::Object,
+        value: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -907,7 +698,24 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnSerializing", (context))?;
+            .invoke("System.Collections.IDictionary.Add", (key, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IDictionary_Contains(
+        &mut self,
+        key: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Collections.IDictionary.Contains", (key))?;
         Ok(__cordl_ret)
     }
     pub fn System_Collections_IDictionary_GetEnumerator(
@@ -928,6 +736,104 @@ impl<
             .invoke("System.Collections.IDictionary.GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
+    pub fn System_Collections_IDictionary_Remove(
+        &mut self,
+        key: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("System.Collections.IDictionary.Remove", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IDictionary_get_IsFixedSize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Collections.IDictionary.get_IsFixedSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IDictionary_get_IsReadOnly(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Collections.IDictionary.get_IsReadOnly", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IDictionary_get_Item(
+        &mut self,
+        key: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("System.Collections.IDictionary.get_Item", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IDictionary_get_Keys(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
+            .invoke("System.Collections.IDictionary.get_Keys", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IDictionary_get_Values(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
+            .invoke("System.Collections.IDictionary.get_Values", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn System_Collections_IDictionary_set_Item(
         &mut self,
         key: *mut crate::System::Object,
@@ -944,6 +850,158 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("System.Collections.IDictionary.set_Item", (key, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerable_GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToArray(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+        >,
+    >
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+        > = __cordl_object.invoke("ToArray", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryAdd(
+        &mut self,
+        key: TKey,
+        value: TValue,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryAdd", (key, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryAddInternal(
+        &mut self,
+        key: TKey,
+        hashcode: i32,
+        value: TValue,
+        updateIfExists: bool,
+        acquireLock: bool,
+        resultingValue: quest_hook::libil2cpp::ByRefMut<TValue>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "TryAddInternal",
+                (key, hashcode, value, updateIfExists, acquireLock, resultingValue),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetValue(
+        &mut self,
+        key: TKey,
+        value: quest_hook::libil2cpp::ByRefMut<TValue>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (key, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetValueInternal(
+        &mut self,
+        key: TKey,
+        hashcode: i32,
+        value: quest_hook::libil2cpp::ByRefMut<TValue>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetValueInternal", (key, hashcode, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryRemove(
+        &mut self,
+        key: TKey,
+        value: quest_hook::libil2cpp::ByRefMut<TValue>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryRemove", (key, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryRemoveInternal(
+        &mut self,
+        key: TKey,
+        value: quest_hook::libil2cpp::ByRefMut<TValue>,
+        matchValue: bool,
+        oldValue: TValue,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryRemoveInternal", (key, value, matchValue, oldValue))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -999,13 +1057,7 @@ impl<
             .invoke(".ctor", (concurrencyLevel, capacity, growLockArray, comparer))?;
         Ok(__cordl_ret)
     }
-    pub fn CopyToPairs(
-        &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-        >,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1015,13 +1067,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CopyToPairs", (array, index))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_IDictionary_get_IsFixedSize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool>
+    pub fn get_Item(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<TValue>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1031,32 +1080,13 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Collections.IDictionary.get_IsFixedSize", ())?;
+        let __cordl_ret: TValue = __cordl_object.invoke("get_Item", (key))?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_IEnumerable_GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEnumerator(
+    pub fn get_Keys(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-        >,
+        *mut crate::System::Collections::Generic::ICollection_1<TKey>,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1067,15 +1097,33 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-        > = __cordl_object.invoke("GetEnumerator", ())?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::ICollection_1<TKey> = __cordl_object
+            .invoke("get_Keys", ())?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_IDictionary_Add(
+    pub fn get_Values(
         &mut self,
-        key: *mut crate::System::Object,
-        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::ICollection_1<TValue>,
+    >
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::ICollection_1<
+            TValue,
+        > = __cordl_object.invoke("get_Values", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Item(
+        &mut self,
+        key: TKey,
+        value: TValue,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1087,56 +1135,8 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("System.Collections.IDictionary.Add", (key, value))?;
+            .invoke("set_Item", (key, value))?;
         Ok(__cordl_ret)
-    }
-    pub fn TryRemove(
-        &mut self,
-        key: TKey,
-        value: quest_hook::libil2cpp::ByRefMut<TValue>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryRemove", (key, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IEqualityComparer_1_1(
-        comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (comparer))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_i32__cordl_bool_IEqualityComparer_1_2(
-        concurrencyLevel: i32,
-        capacity: i32,
-        growLockArray: bool,
-        comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (concurrencyLevel, capacity, growLockArray, comparer),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2")]
@@ -1218,6 +1218,45 @@ impl<
     TKey,
     TValue,
 > {
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        dictionary: *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2<
+            TKey,
+            TValue,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dictionary))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         dictionary: *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2<
@@ -1238,19 +1277,6 @@ impl<
             .invoke(".ctor", (dictionary))?;
         Ok(__cordl_ret)
     }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Current(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
@@ -1265,36 +1291,6 @@ impl<
         );
         let __cordl_ret: *mut crate::System::Object = __cordl_object
             .invoke("get_Current", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Value(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_Value", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Entry(
@@ -1329,17 +1325,21 @@ impl<
             .invoke("get_Key", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        dictionary: *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2<
-            TKey,
-            TValue,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dictionary))?;
-        Ok(__cordl_object)
+    pub fn get_Value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_Value", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -1410,6 +1410,21 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<TKey, TValue> {
+    pub fn New(
+        key: TKey,
+        value: TValue,
+        hashcode: i32,
+        next: *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<
+            TKey,
+            TValue,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (key, value, hashcode, next))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         key: TKey,
@@ -1432,21 +1447,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (key, value, hashcode, next))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        key: TKey,
-        value: TValue,
-        hashcode: i32,
-        next: *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<
-            TKey,
-            TValue,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (key, value, hashcode, next))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2+Node")]
@@ -1513,6 +1513,22 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::System::Collections::Concurrent::ConcurrentDictionary_2_Tables<TKey, TValue> {
+    pub fn New(
+        buckets: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<
+                TKey,
+                TValue,
+            >,
+        >,
+        locks: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        countPerLock: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (buckets, locks, countPerLock))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         buckets: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -1536,22 +1552,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (buckets, locks, countPerLock))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        buckets: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<
-                TKey,
-                TValue,
-            >,
-        >,
-        locks: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-        countPerLock: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (buckets, locks, countPerLock))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2+Tables")]

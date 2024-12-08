@@ -24,13 +24,6 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::IParameterProvider
 }
 #[cfg(feature = "System+Linq+Expressions+IParameterProvider")]
 impl crate::System::Linq::Expressions::IParameterProvider {
-    pub fn get_ParameterCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ParameterCount", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetParameter(
         &mut self,
         index: i32,
@@ -48,6 +41,13 @@ impl crate::System::Linq::Expressions::IParameterProvider {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_ParameterCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ParameterCount", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+IParameterProvider")]

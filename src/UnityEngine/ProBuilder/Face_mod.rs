@@ -36,87 +36,14 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Face {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Face")]
 impl crate::UnityEngine::ProBuilder::Face {
-    pub fn set_submeshIndex(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_submeshIndex", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ShiftIndexesToZero(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ShiftIndexesToZero", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_textureGroup(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_textureGroup", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SmallestIndexValue(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("SmallestIndexValue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_indexesInternal(
-        &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_indexesInternal", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_uv(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ProBuilder::AutoUnwrapSettings = __cordl_object
-            .invoke("get_uv", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_uv(
-        &mut self,
-        value: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_uv", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_distinctIndexesInternal(
+    pub fn CacheDistinctIndexes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
-            .invoke("get_distinctIndexesInternal", ())?;
+            .invoke("CacheDistinctIndexes", ())?;
         Ok(__cordl_ret)
     }
     pub fn CacheEdges(
@@ -132,55 +59,16 @@ impl crate::UnityEngine::ProBuilder::Face {
         > = __cordl_object.invoke("CacheEdges", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CacheDistinctIndexes(
+    pub fn Contains(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
+        a: i32,
+        b: i32,
+        c: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
-            .invoke("CacheDistinctIndexes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_manualUV(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_manualUV", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_edgesInternal(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::ProBuilder::Edge,
-        > = __cordl_object.invoke("get_edgesInternal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_smoothingGroup(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_smoothingGroup", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reverse(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reverse", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("Contains", (a, b, c))?;
         Ok(__cordl_ret)
     }
     pub fn CopyFrom(
@@ -194,23 +82,165 @@ impl crate::UnityEngine::ProBuilder::Face {
             .invoke("CopyFrom", (other))?;
         Ok(__cordl_ret)
     }
-    pub fn get_smoothingGroup(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn InvalidateCache(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_smoothingGroup", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InvalidateCache", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Contains(
+    pub fn IsQuad(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsQuad", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Face4(
+        other: *mut crate::UnityEngine::ProBuilder::Face,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (other))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IEnumerable_1_1(
+        indices: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (indices))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IEnumerable_1_i32_AutoUnwrapSettings_i32_i32_i32__cordl_bool3(
+        triangles: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+        submeshIndex: i32,
+        u: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+        smoothing: i32,
+        texture: i32,
+        element: i32,
+        manualUVs: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (triangles, submeshIndex, u, smoothing, texture, element, manualUVs),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray_Material_AutoUnwrapSettings_i32_i32_i32__cordl_bool2(
+        triangles: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        m: *mut crate::UnityEngine::Material,
+        u: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+        smoothing: i32,
+        texture: i32,
+        element: i32,
+        manualUVs: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (triangles, m, u, smoothing, texture, element, manualUVs),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn Reverse(
         &mut self,
-        a: i32,
-        b: i32,
-        c: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reverse", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetIndexes(
+        &mut self,
+        indices: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetIndexes", (indices))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ShiftIndexes(
+        &mut self,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ShiftIndexes", (offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ShiftIndexesToZero(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ShiftIndexesToZero", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SmallestIndexValue(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("SmallestIndexValue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToQuad(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
+            .invoke("ToQuad", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetNextEdge(
+        &mut self,
+        source: crate::UnityEngine::ProBuilder::Edge,
+        index: i32,
+        nextEdge: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::ProBuilder::Edge>,
+        nextIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Contains", (a, b, c))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetNextEdge", (source, index, nextEdge, nextIndex))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -223,6 +253,17 @@ impl crate::UnityEngine::ProBuilder::Face {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_Face4(
+        &mut self,
+        other: *mut crate::UnityEngine::ProBuilder::Face,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (other))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_IEnumerable_1_1(
         &mut self,
         indices: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
@@ -232,23 +273,6 @@ impl crate::UnityEngine::ProBuilder::Face {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (indices))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Il2CppArray_Material_AutoUnwrapSettings_i32_i32_i32__cordl_bool2(
-        &mut self,
-        triangles: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        m: *mut crate::UnityEngine::Material,
-        u: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
-        smoothing: i32,
-        texture: i32,
-        element: i32,
-        manualUVs: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (triangles, m, u, smoothing, texture, element, manualUVs))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_IEnumerable_1_i32_AutoUnwrapSettings_i32_i32_i32__cordl_bool3(
@@ -271,39 +295,79 @@ impl crate::UnityEngine::ProBuilder::Face {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Face4(
+    pub fn _ctor_Il2CppArray_Material_AutoUnwrapSettings_i32_i32_i32__cordl_bool2(
         &mut self,
-        other: *mut crate::UnityEngine::ProBuilder::Face,
+        triangles: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        m: *mut crate::UnityEngine::Material,
+        u: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+        smoothing: i32,
+        texture: i32,
+        element: i32,
+        manualUVs: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (other))?;
+            .invoke(".ctor", (triangles, m, u, smoothing, texture, element, manualUVs))?;
         Ok(__cordl_ret)
     }
-    pub fn TryGetNextEdge(
-        &mut self,
-        source: crate::UnityEngine::ProBuilder::Edge,
-        index: i32,
-        nextEdge: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::ProBuilder::Edge>,
-        nextIndex: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_Item(&mut self, i: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetNextEdge", (source, index, nextEdge, nextIndex))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Item", (i))?;
         Ok(__cordl_ret)
     }
-    pub fn get_material(
+    pub fn get_distinctIndexes(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Material> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<i32>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Material = __cordl_object
-            .invoke("get_material", ())?;
+        let __cordl_ret: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            i32,
+        > = __cordl_object.invoke("get_distinctIndexes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_distinctIndexesInternal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
+            .invoke("get_distinctIndexesInternal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_edges(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            crate::UnityEngine::ProBuilder::Edge,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            crate::UnityEngine::ProBuilder::Edge,
+        > = __cordl_object.invoke("get_edges", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_edgesInternal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::ProBuilder::Edge,
+        > = __cordl_object.invoke("get_edgesInternal", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_indexes(
@@ -329,53 +393,65 @@ impl crate::UnityEngine::ProBuilder::Face {
             .invoke("get_indexesInternal", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    pub fn get_manualUV(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_manualUV", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetIndexes(
+    pub fn get_material(
         &mut self,
-        indices: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Material> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Material = __cordl_object
+            .invoke("get_material", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_smoothingGroup(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_smoothingGroup", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_submeshIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_submeshIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_textureGroup(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_textureGroup", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_uv(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ProBuilder::AutoUnwrapSettings = __cordl_object
+            .invoke("get_uv", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_indexesInternal(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetIndexes", (indices))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_edges(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            crate::UnityEngine::ProBuilder::Edge,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            crate::UnityEngine::ProBuilder::Edge,
-        > = __cordl_object.invoke("get_edges", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_distinctIndexes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<i32>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            i32,
-        > = __cordl_object.invoke("get_distinctIndexes", ())?;
+            .invoke("set_indexesInternal", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_manualUV(
@@ -400,125 +476,49 @@ impl crate::UnityEngine::ProBuilder::Face {
             .invoke("set_material", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Item(&mut self, i: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Item", (i))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToQuad(
+    pub fn set_smoothingGroup(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
-            .invoke("ToQuad", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_submeshIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_submeshIndex", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InvalidateCache(
-        &mut self,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InvalidateCache", ())?;
+            .invoke("set_smoothingGroup", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn IsQuad(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsQuad", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_textureGroup(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_textureGroup", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ShiftIndexes(
+    pub fn set_submeshIndex(
         &mut self,
-        offset: i32,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ShiftIndexes", (offset))?;
+            .invoke("set_submeshIndex", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_textureGroup(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_textureGroup", (value))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_IEnumerable_1_1(
-        indices: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (indices))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray_Material_AutoUnwrapSettings_i32_i32_i32__cordl_bool2(
-        triangles: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        m: *mut crate::UnityEngine::Material,
-        u: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
-        smoothing: i32,
-        texture: i32,
-        element: i32,
-        manualUVs: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (triangles, m, u, smoothing, texture, element, manualUVs),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IEnumerable_1_i32_AutoUnwrapSettings_i32_i32_i32__cordl_bool3(
-        triangles: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
-        submeshIndex: i32,
-        u: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
-        smoothing: i32,
-        texture: i32,
-        element: i32,
-        manualUVs: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (triangles, submeshIndex, u, smoothing, texture, element, manualUVs),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Face4(
-        other: *mut crate::UnityEngine::ProBuilder::Face,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (other))?;
-        Ok(__cordl_object)
+    pub fn set_uv(
+        &mut self,
+        value: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_uv", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Face")]

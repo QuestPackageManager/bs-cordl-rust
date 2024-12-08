@@ -27,32 +27,6 @@ for crate::System::Threading::SparselyPopulatedArrayAddInfo_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Threading::SparselyPopulatedArrayAddInfo_1<T> {
-    pub fn get_Source(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<
-            T,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Source", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Index(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Index",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         source: *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
@@ -67,6 +41,32 @@ impl<
             ".ctor",
             (source, index),
         )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Index(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Index",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Source(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<
+            T,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Source", ())?;
         Ok(__cordl_ret)
     }
 }

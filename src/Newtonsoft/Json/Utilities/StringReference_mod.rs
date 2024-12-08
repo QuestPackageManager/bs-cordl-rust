@@ -24,18 +24,12 @@ for crate::Newtonsoft::Json::Utilities::StringReference {
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+StringReference")]
 impl crate::Newtonsoft::Json::Utilities::StringReference {
-    pub fn get_Item(&mut self, i: i32) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Item",
-            (i),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Length",
+            "ToString",
             (),
         )?;
         Ok(__cordl_ret)
@@ -53,22 +47,28 @@ impl crate::Newtonsoft::Json::Utilities::StringReference {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Chars(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<char>> {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Chars",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(&mut self, i: i32) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (i),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Length",
             (),
         )?;
         Ok(__cordl_ret)

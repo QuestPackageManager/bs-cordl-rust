@@ -31,6 +31,32 @@ impl std::ops::DerefMut for NoteExecutionRating {
 impl NoteExecutionRating {
     #[cfg(feature = "NoteExecutionRating+Rating")]
     pub type Rating = crate::GlobalNamespace::NoteExecutionRating_Rating;
+    pub fn New(
+        _cordl_time: f32,
+        scoringType: crate::GlobalNamespace::NoteData_ScoringType,
+        rating: crate::GlobalNamespace::NoteExecutionRating_Rating,
+        cutScore: i32,
+        beforeCutScore: i32,
+        centerDistanceCutScore: i32,
+        afterCutScore: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    _cordl_time,
+                    scoringType,
+                    rating,
+                    cutScore,
+                    beforeCutScore,
+                    centerDistanceCutScore,
+                    afterCutScore,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         _cordl_time: f32,
@@ -58,32 +84,6 @@ impl NoteExecutionRating {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        _cordl_time: f32,
-        scoringType: crate::GlobalNamespace::NoteData_ScoringType,
-        rating: crate::GlobalNamespace::NoteExecutionRating_Rating,
-        cutScore: i32,
-        beforeCutScore: i32,
-        centerDistanceCutScore: i32,
-        afterCutScore: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    _cordl_time,
-                    scoringType,
-                    rating,
-                    cutScore,
-                    beforeCutScore,
-                    centerDistanceCutScore,
-                    afterCutScore,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "NoteExecutionRating")]

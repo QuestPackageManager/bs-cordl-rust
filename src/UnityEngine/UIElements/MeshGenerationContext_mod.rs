@@ -42,22 +42,14 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MeshGenerationContex
 impl crate::UnityEngine::UIElements::MeshGenerationContext {
     #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
     pub type MeshFlags = crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags;
-    pub fn get_painter2D(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Painter2D> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Painter2D = __cordl_object
-            .invoke("get_painter2D", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_hasPainter2D(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hasPainter2D", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        painter: *mut crate::UnityEngine::UIElements::IStylePainter,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (painter))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -70,14 +62,22 @@ impl crate::UnityEngine::UIElements::MeshGenerationContext {
             .invoke(".ctor", (painter))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        painter: *mut crate::UnityEngine::UIElements::IStylePainter,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (painter))?;
-        Ok(__cordl_object)
+    pub fn get_hasPainter2D(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_hasPainter2D", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_painter2D(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Painter2D> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::Painter2D = __cordl_object
+            .invoke("get_painter2D", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext")]

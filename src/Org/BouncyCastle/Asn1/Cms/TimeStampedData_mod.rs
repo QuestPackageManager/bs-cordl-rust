@@ -29,17 +29,26 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cms::TimeStampedData
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+TimeStampedData")]
 impl crate::Org::BouncyCastle::Asn1::Cms::TimeStampedData {
-    pub fn get_DataUri(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::DerIA5String,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerIA5String = __cordl_object
-            .invoke("get_DataUri", ())?;
-        Ok(__cordl_ret)
+    pub fn New_Asn1Sequence1(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_DerIA5String_MetaData_Asn1OctetString_Evidence0(
+        dataUri: *mut crate::Org::BouncyCastle::Asn1::DerIA5String,
+        metaData: *mut crate::Org::BouncyCastle::Asn1::Cms::MetaData,
+        content: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+        temporalEvidence: *mut crate::Org::BouncyCastle::Asn1::Cms::Evidence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dataUri, metaData, content, temporalEvidence))?;
+        Ok(__cordl_object)
     }
     pub fn ToAsn1Object(
         &mut self,
@@ -51,40 +60,15 @@ impl crate::Org::BouncyCastle::Asn1::Cms::TimeStampedData {
             .invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_TemporalEvidence(
+    pub fn _ctor_Asn1Sequence1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Cms::Evidence,
-    > {
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cms::Evidence = __cordl_object
-            .invoke("get_TemporalEvidence", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MetaData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Cms::MetaData,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cms::MetaData = __cordl_object
-            .invoke("get_MetaData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Content(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString = __cordl_object
-            .invoke("get_Content", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (seq))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_DerIA5String_MetaData_Asn1OctetString_Evidence0(
@@ -101,37 +85,53 @@ impl crate::Org::BouncyCastle::Asn1::Cms::TimeStampedData {
             .invoke(".ctor", (dataUri, metaData, content, temporalEvidence))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Asn1Sequence1(
+    pub fn get_Content(
         &mut self,
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seq))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString = __cordl_object
+            .invoke("get_Content", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_DerIA5String_MetaData_Asn1OctetString_Evidence0(
-        dataUri: *mut crate::Org::BouncyCastle::Asn1::DerIA5String,
-        metaData: *mut crate::Org::BouncyCastle::Asn1::Cms::MetaData,
-        content: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-        temporalEvidence: *mut crate::Org::BouncyCastle::Asn1::Cms::Evidence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dataUri, metaData, content, temporalEvidence))?;
-        Ok(__cordl_object)
+    pub fn get_DataUri(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::DerIA5String,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerIA5String = __cordl_object
+            .invoke("get_DataUri", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_Asn1Sequence1(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
+    pub fn get_MetaData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Cms::MetaData,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cms::MetaData = __cordl_object
+            .invoke("get_MetaData", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TemporalEvidence(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Cms::Evidence,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cms::Evidence = __cordl_object
+            .invoke("get_TemporalEvidence", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+TimeStampedData")]

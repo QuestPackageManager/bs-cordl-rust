@@ -32,59 +32,26 @@ for crate::System::Text::RegularExpressions::RegexWriter {
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexWriter")]
 impl crate::System::Text::RegularExpressions::RegexWriter {
-    pub fn _ctor(
+    pub fn Dispose(
         &mut self,
-        emittedSpan: crate::System::Span_1<i32>,
-        intStackSpan: crate::System::Span_1<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (emittedSpan, intStackSpan),
+            "Dispose",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn StringCode(
+    pub fn EmitFragment(
         &mut self,
-        str: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "StringCode",
-            (str),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegexCodeFromRegexTree(
-        &mut self,
-        tree: *mut crate::System::Text::RegularExpressions::RegexTree,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::RegexCode,
-    > {
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexCode = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "RegexCodeFromRegexTree",
-            (tree),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn MapCapnum(&mut self, capnum: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MapCapnum",
-            (capnum),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn PatchJump(
-        &mut self,
-        offset: i32,
-        jumpDest: i32,
+        nodetype: i32,
+        node: *mut crate::System::Text::RegularExpressions::RegexNode,
+        curIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "PatchJump",
-            (offset, jumpDest),
+            "EmitFragment",
+            (nodetype, node, curIndex),
         )?;
         Ok(__cordl_ret)
     }
@@ -124,26 +91,59 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn MapCapnum(&mut self, capnum: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Dispose",
-            (),
+            "MapCapnum",
+            (capnum),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn EmitFragment(
+    pub fn PatchJump(
         &mut self,
-        nodetype: i32,
-        node: *mut crate::System::Text::RegularExpressions::RegexNode,
-        curIndex: i32,
+        offset: i32,
+        jumpDest: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "EmitFragment",
-            (nodetype, node, curIndex),
+            "PatchJump",
+            (offset, jumpDest),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegexCodeFromRegexTree(
+        &mut self,
+        tree: *mut crate::System::Text::RegularExpressions::RegexTree,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Text::RegularExpressions::RegexCode,
+    > {
+        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexCode = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "RegexCodeFromRegexTree",
+            (tree),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn StringCode(
+        &mut self,
+        str: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "StringCode",
+            (str),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        emittedSpan: crate::System::Span_1<i32>,
+        intStackSpan: crate::System::Span_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (emittedSpan, intStackSpan),
         )?;
         Ok(__cordl_ret)
     }

@@ -26,15 +26,14 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OculusTestExperiment_Experim
 }
 #[cfg(feature = "OculusTestExperiment+ExperimentData")]
 impl crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
-    pub fn get_experimentPlatformKey(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_experimentPlatformKey", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        experimentPlatformKey: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (experimentPlatformKey))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -47,14 +46,15 @@ impl crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
             .invoke(".ctor", (experimentPlatformKey))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        experimentPlatformKey: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (experimentPlatformKey))?;
-        Ok(__cordl_object)
+    pub fn get_experimentPlatformKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_experimentPlatformKey", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OculusTestExperiment+ExperimentData")]
@@ -94,10 +94,10 @@ impl std::ops::DerefMut for OculusTestExperiment {
 #[cfg(feature = "OculusTestExperiment")]
 impl OculusTestExperiment {
     pub const kIsInTest1Key: &'static str = "beatsaber_experiments:test_parameter";
-    #[cfg(feature = "OculusTestExperiment+_Init_d__3")]
-    pub type _Init_d__3 = crate::GlobalNamespace::OculusTestExperiment__Init_d__3;
     #[cfg(feature = "OculusTestExperiment+ExperimentData")]
     pub type ExperimentData = crate::GlobalNamespace::OculusTestExperiment_ExperimentData;
+    #[cfg(feature = "OculusTestExperiment+_Init_d__3")]
+    pub type _Init_d__3 = crate::GlobalNamespace::OculusTestExperiment__Init_d__3;
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -108,6 +108,13 @@ impl OculusTestExperiment {
             .invoke("Init", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -117,13 +124,6 @@ impl OculusTestExperiment {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OculusTestExperiment")]

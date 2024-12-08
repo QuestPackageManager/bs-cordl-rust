@@ -37,60 +37,6 @@ impl std::ops::DerefMut for crate::MS::Internal::Xml::Cache::XPathNodeInfoAtom {
 }
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathNodeInfoAtom")]
 impl crate::MS::Internal::Xml::Cache::XPathNodeInfoAtom {
-    pub fn get_LinePositionBase(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_LinePositionBase", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SiblingPage(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::MS::Internal::Xml::Cache::XPathNode,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::MS::Internal::Xml::Cache::XPathNode,
-        > = __cordl_object.invoke("get_SiblingPage", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LineNumberBase(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_LineNumberBase", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ParentPage(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::MS::Internal::Xml::Cache::XPathNode,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::MS::Internal::Xml::Cache::XPathNode,
-        > = __cordl_object.invoke("get_ParentPage", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LocalName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_LocalName", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Document(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XPath::XPathDocument> {
@@ -101,14 +47,28 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeInfoAtom {
             .invoke("get_Document", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Prefix(
+    pub fn get_LineNumberBase(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_LineNumberBase", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LinePositionBase(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_LinePositionBase", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LocalName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Prefix", ())?;
+            .invoke("get_LocalName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_NamespaceUri(
@@ -131,6 +91,46 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeInfoAtom {
         );
         let __cordl_ret: *mut crate::MS::Internal::Xml::Cache::XPathNodePageInfo = __cordl_object
             .invoke("get_PageInfo", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ParentPage(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::MS::Internal::Xml::Cache::XPathNode,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::MS::Internal::Xml::Cache::XPathNode,
+        > = __cordl_object.invoke("get_ParentPage", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Prefix(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Prefix", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SiblingPage(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::MS::Internal::Xml::Cache::XPathNode,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::MS::Internal::Xml::Cache::XPathNode,
+        > = __cordl_object.invoke("get_SiblingPage", ())?;
         Ok(__cordl_ret)
     }
 }

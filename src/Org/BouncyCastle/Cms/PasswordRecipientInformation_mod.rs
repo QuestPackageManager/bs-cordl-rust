@@ -26,6 +26,29 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::PasswordRecipientInfo
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+PasswordRecipientInformation")]
 impl crate::Org::BouncyCastle::Cms::PasswordRecipientInformation {
+    pub fn GetContentStream(
+        &mut self,
+        key: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Cms::CmsTypedStream,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Cms::CmsTypedStream = __cordl_object
+            .invoke("GetContentStream", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        info: *mut crate::Org::BouncyCastle::Asn1::Cms::PasswordRecipientInfo,
+        secureReadable: *mut crate::Org::BouncyCastle::Cms::CmsSecureReadable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (info, secureReadable))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         info: *mut crate::Org::BouncyCastle::Asn1::Cms::PasswordRecipientInfo,
@@ -49,29 +72,6 @@ impl crate::Org::BouncyCastle::Cms::PasswordRecipientInformation {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier = __cordl_object
             .invoke("get_KeyDerivationAlgorithm", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetContentStream(
-        &mut self,
-        key: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cms::CmsTypedStream,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cms::CmsTypedStream = __cordl_object
-            .invoke("GetContentStream", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        info: *mut crate::Org::BouncyCastle::Asn1::Cms::PasswordRecipientInfo,
-        secureReadable: *mut crate::Org::BouncyCastle::Cms::CmsSecureReadable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (info, secureReadable))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+PasswordRecipientInformation")]

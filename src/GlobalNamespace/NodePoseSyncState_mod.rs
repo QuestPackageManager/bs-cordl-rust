@@ -38,92 +38,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for NodePoseSyncState {
 impl NodePoseSyncState {
     #[cfg(feature = "NodePoseSyncState+NodePose")]
     pub type NodePose = crate::GlobalNamespace::NodePoseSyncState_NodePose;
-    pub fn IStateTable_NodePoseSyncState_NodePoseSyncState_NodePose_PoseSerializable__GetDelta(
-        &mut self,
-        stateTable: quest_hook::libil2cpp::ByRefMut<NodePoseSyncState>,
-    ) -> quest_hook::libil2cpp::Result<NodePoseSyncState> {
-        let __cordl_ret: NodePoseSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IStateTable<NodePoseSyncState,NodePoseSyncState.NodePose,PoseSerializable>.GetDelta",
-            (stateTable),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IStateTable_NodePoseSyncState_NodePoseSyncState_NodePose_PoseSerializable__ApplyDelta(
-        &mut self,
-        delta: quest_hook::libil2cpp::ByRefMut<NodePoseSyncState>,
-    ) -> quest_hook::libil2cpp::Result<NodePoseSyncState> {
-        let __cordl_ret: NodePoseSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IStateTable<NodePoseSyncState,NodePoseSyncState.NodePose,PoseSerializable>.ApplyDelta",
-            (delta),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        other: quest_hook::libil2cpp::ByRefMut<NodePoseSyncState>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetSize",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IEquatableByReference_NodePoseSyncState__Equals(
-        &mut self,
-        other: quest_hook::libil2cpp::ByRefMut<NodePoseSyncState>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IEquatableByReference<NodePoseSyncState>.Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetState(
-        &mut self,
-        nodePose: crate::GlobalNamespace::NodePoseSyncState_NodePose,
-        pose: PoseSerializable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetState",
-            (nodePose, pose),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Serialize(
-        &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Serialize",
-            (writer),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetState(
-        &mut self,
-        nodePose: crate::GlobalNamespace::NodePoseSyncState_NodePose,
-    ) -> quest_hook::libil2cpp::Result<PoseSerializable> {
-        let __cordl_ret: PoseSerializable = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetState",
-            (nodePose),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn ApplyDelta(
         &mut self,
         delta: quest_hook::libil2cpp::ByRefMut<NodePoseSyncState>,
@@ -146,6 +60,17 @@ impl NodePoseSyncState {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn Equals(
+        &mut self,
+        other: quest_hook::libil2cpp::ByRefMut<NodePoseSyncState>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn GetDelta(
         &mut self,
         latest: quest_hook::libil2cpp::ByRefMut<NodePoseSyncState>,
@@ -154,6 +79,81 @@ impl NodePoseSyncState {
             self,
             "GetDelta",
             (latest),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetSize",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetState(
+        &mut self,
+        nodePose: crate::GlobalNamespace::NodePoseSyncState_NodePose,
+    ) -> quest_hook::libil2cpp::Result<PoseSerializable> {
+        let __cordl_ret: PoseSerializable = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetState",
+            (nodePose),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IEquatableByReference_NodePoseSyncState__Equals(
+        &mut self,
+        other: quest_hook::libil2cpp::ByRefMut<NodePoseSyncState>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IEquatableByReference<NodePoseSyncState>.Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IStateTable_NodePoseSyncState_NodePoseSyncState_NodePose_PoseSerializable__ApplyDelta(
+        &mut self,
+        delta: quest_hook::libil2cpp::ByRefMut<NodePoseSyncState>,
+    ) -> quest_hook::libil2cpp::Result<NodePoseSyncState> {
+        let __cordl_ret: NodePoseSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IStateTable<NodePoseSyncState,NodePoseSyncState.NodePose,PoseSerializable>.ApplyDelta",
+            (delta),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IStateTable_NodePoseSyncState_NodePoseSyncState_NodePose_PoseSerializable__GetDelta(
+        &mut self,
+        stateTable: quest_hook::libil2cpp::ByRefMut<NodePoseSyncState>,
+    ) -> quest_hook::libil2cpp::Result<NodePoseSyncState> {
+        let __cordl_ret: NodePoseSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IStateTable<NodePoseSyncState,NodePoseSyncState.NodePose,PoseSerializable>.GetDelta",
+            (stateTable),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Serialize(
+        &mut self,
+        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Serialize",
+            (writer),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetState(
+        &mut self,
+        nodePose: crate::GlobalNamespace::NodePoseSyncState_NodePose,
+        pose: PoseSerializable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetState",
+            (nodePose, pose),
         )?;
         Ok(__cordl_ret)
     }

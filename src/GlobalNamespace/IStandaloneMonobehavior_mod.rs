@@ -34,6 +34,17 @@ impl IStandaloneMonobehavior {
             .invoke("Dispatch", (action))?;
         Ok(__cordl_ret)
     }
+    pub fn DispatchAsync(
+        &mut self,
+        action: *mut crate::System::Func_1<*mut crate::System::Threading::Tasks::Task>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("DispatchAsync", (action))?;
+        Ok(__cordl_ret)
+    }
     pub fn RunAsync(
         &mut self,
         runner: *mut IStandaloneThreadRunner,
@@ -54,17 +65,6 @@ impl IStandaloneMonobehavior {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Stop", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DispatchAsync(
-        &mut self,
-        action: *mut crate::System::Func_1<*mut crate::System::Threading::Tasks::Task>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("DispatchAsync", (action))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

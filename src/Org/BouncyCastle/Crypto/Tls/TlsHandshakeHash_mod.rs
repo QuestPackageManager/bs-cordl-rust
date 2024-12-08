@@ -24,15 +24,48 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeH
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsHandshakeHash")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash {
-    pub fn TrackHashAlgorithm(
+    pub fn ForkPrfHash(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::IDigest> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IDigest = __cordl_object
+            .invoke("ForkPrfHash", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetFinalHash(
         &mut self,
         hashAlgorithm: u8,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetFinalHash", (hashAlgorithm))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TrackHashAlgorithm", (hashAlgorithm))?;
+            .invoke("Init", (context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NotifyPrfDetermined(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash = __cordl_object
+            .invoke("NotifyPrfDetermined", ())?;
         Ok(__cordl_ret)
     }
     pub fn SealHashAlgorithms(
@@ -57,48 +90,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash {
             .invoke("StopTracking", ())?;
         Ok(__cordl_ret)
     }
-    pub fn NotifyPrfDetermined(
+    pub fn TrackHashAlgorithm(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash = __cordl_object
-            .invoke("NotifyPrfDetermined", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init(
-        &mut self,
-        context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+        hashAlgorithm: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ForkPrfHash(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::IDigest> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IDigest = __cordl_object
-            .invoke("ForkPrfHash", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetFinalHash(
-        &mut self,
-        hashAlgorithm: u8,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetFinalHash", (hashAlgorithm))?;
+            .invoke("TrackHashAlgorithm", (hashAlgorithm))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

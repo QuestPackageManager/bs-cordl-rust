@@ -55,6 +55,15 @@ impl crate::UnityEngine::ExpressionEvaluator_Expression {
             .invoke("Evaluate", (value, index, count))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        expression: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (expression))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         expression: *mut crate::System::String,
@@ -65,15 +74,6 @@ impl crate::UnityEngine::ExpressionEvaluator_Expression {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (expression))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        expression: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (expression))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+Expression")]
@@ -112,18 +112,18 @@ impl std::ops::DerefMut for crate::UnityEngine::ExpressionEvaluator {
 }
 #[cfg(feature = "UnityEngine+ExpressionEvaluator")]
 impl crate::UnityEngine::ExpressionEvaluator {
-    #[cfg(feature = "UnityEngine+ExpressionEvaluator+Expression")]
-    pub type Expression = crate::UnityEngine::ExpressionEvaluator_Expression;
-    #[cfg(feature = "UnityEngine+ExpressionEvaluator+Op")]
-    pub type Op = crate::UnityEngine::ExpressionEvaluator_Op;
     #[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
     pub type PcgRandom = crate::UnityEngine::ExpressionEvaluator_PcgRandom;
+    #[cfg(feature = "UnityEngine+ExpressionEvaluator+Op")]
+    pub type Op = crate::UnityEngine::ExpressionEvaluator_Op;
     #[cfg(feature = "UnityEngine+ExpressionEvaluator+Operator")]
     pub type Operator = crate::UnityEngine::ExpressionEvaluator_Operator;
     #[cfg(feature = "UnityEngine+ExpressionEvaluator+__c")]
     pub type __c = crate::UnityEngine::ExpressionEvaluator___c;
     #[cfg(feature = "UnityEngine+ExpressionEvaluator+Associativity")]
     pub type Associativity = crate::UnityEngine::ExpressionEvaluator_Associativity;
+    #[cfg(feature = "UnityEngine+ExpressionEvaluator+Expression")]
+    pub type Expression = crate::UnityEngine::ExpressionEvaluator_Expression;
 }
 #[cfg(feature = "UnityEngine+ExpressionEvaluator")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ExpressionEvaluator {
@@ -190,6 +190,18 @@ impl std::ops::DerefMut for crate::UnityEngine::ExpressionEvaluator_Operator {
 }
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+Operator")]
 impl crate::UnityEngine::ExpressionEvaluator_Operator {
+    pub fn New(
+        op: crate::UnityEngine::ExpressionEvaluator_Op,
+        precedence: i32,
+        inputs: i32,
+        associativity: crate::UnityEngine::ExpressionEvaluator_Associativity,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (op, precedence, inputs, associativity))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         op: crate::UnityEngine::ExpressionEvaluator_Op,
@@ -203,18 +215,6 @@ impl crate::UnityEngine::ExpressionEvaluator_Operator {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (op, precedence, inputs, associativity))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        op: crate::UnityEngine::ExpressionEvaluator_Op,
-        precedence: i32,
-        inputs: i32,
-        associativity: crate::UnityEngine::ExpressionEvaluator_Associativity,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (op, precedence, inputs, associativity))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+Operator")]
@@ -252,15 +252,11 @@ for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
 }
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
 impl crate::UnityEngine::ExpressionEvaluator_PcgRandom {
-    pub fn _ctor(
-        &mut self,
-        state: u64,
-        sequence: u64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetUInt(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (state, sequence),
+            "GetUInt",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -274,11 +270,15 @@ impl crate::UnityEngine::ExpressionEvaluator_PcgRandom {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetUInt(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn _ctor(
+        &mut self,
+        state: u64,
+        sequence: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetUInt",
-            (),
+            ".ctor",
+            (state, sequence),
         )?;
         Ok(__cordl_ret)
     }

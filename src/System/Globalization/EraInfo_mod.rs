@@ -32,8 +32,7 @@ impl std::ops::DerefMut for crate::System::Globalization::EraInfo {
 }
 #[cfg(feature = "System+Globalization+EraInfo")]
 impl crate::System::Globalization::EraInfo {
-    pub fn _ctor_i32_i32_i32_i32_i32_i32_i32_0(
-        &mut self,
+    pub fn New_String_String_String1(
         era: i32,
         startYear: i32,
         startMonth: i32,
@@ -41,12 +40,43 @@ impl crate::System::Globalization::EraInfo {
         yearOffset: i32,
         minEraYear: i32,
         maxEraYear: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
+        eraName: *mut crate::System::String,
+        abbrevEraName: *mut crate::System::String,
+        englishEraName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    era,
+                    startYear,
+                    startMonth,
+                    startDay,
+                    yearOffset,
+                    minEraYear,
+                    maxEraYear,
+                    eraName,
+                    abbrevEraName,
+                    englishEraName,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_i32_i32_i32_i32_i32_i32_0(
+        era: i32,
+        startYear: i32,
+        startMonth: i32,
+        startDay: i32,
+        yearOffset: i32,
+        minEraYear: i32,
+        maxEraYear: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
                 ".ctor",
                 (
                     era,
@@ -58,7 +88,7 @@ impl crate::System::Globalization::EraInfo {
                     maxEraYear,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_object)
     }
     pub fn _ctor_String_String_String1(
         &mut self,
@@ -94,7 +124,8 @@ impl crate::System::Globalization::EraInfo {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New_i32_i32_i32_i32_i32_i32_i32_0(
+    pub fn _ctor_i32_i32_i32_i32_i32_i32_i32_0(
+        &mut self,
         era: i32,
         startYear: i32,
         startMonth: i32,
@@ -102,11 +133,12 @@ impl crate::System::Globalization::EraInfo {
         yearOffset: i32,
         minEraYear: i32,
         maxEraYear: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
                 ".ctor",
                 (
                     era,
@@ -118,39 +150,7 @@ impl crate::System::Globalization::EraInfo {
                     maxEraYear,
                 ),
             )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_String_String1(
-        era: i32,
-        startYear: i32,
-        startMonth: i32,
-        startDay: i32,
-        yearOffset: i32,
-        minEraYear: i32,
-        maxEraYear: i32,
-        eraName: *mut crate::System::String,
-        abbrevEraName: *mut crate::System::String,
-        englishEraName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    era,
-                    startYear,
-                    startMonth,
-                    startDay,
-                    yearOffset,
-                    minEraYear,
-                    maxEraYear,
-                    eraName,
-                    abbrevEraName,
-                    englishEraName,
-                ),
-            )?;
-        Ok(__cordl_object)
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Globalization+EraInfo")]

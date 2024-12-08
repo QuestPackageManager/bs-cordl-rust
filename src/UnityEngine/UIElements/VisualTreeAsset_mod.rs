@@ -26,16 +26,6 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
 impl crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
-    pub fn get_type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_type",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         path: *mut crate::System::String,
@@ -46,6 +36,16 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
             self,
             ".ctor",
             (path, _cordl_type, asset),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_type",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -171,16 +171,6 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
 impl crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Compare(
         &mut self,
         x: crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
@@ -192,12 +182,22 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
         let __cordl_ret: i32 = __cordl_object.invoke("Compare", (x, y))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
@@ -303,33 +303,58 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualTreeAsset {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset")]
 impl crate::UnityEngine::UIElements::VisualTreeAsset {
+    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
+    pub type SlotUsageEntry = crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry;
+    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
+    pub type UsingEntryComparer = crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer;
+    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
+    pub type UsingEntry = crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry;
+    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+_get_stylesheets_d__23")]
+    pub type _get_stylesheets_d__23 = crate::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__23;
+    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
+    pub type AssetEntry = crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry;
+    #[cfg(
+        feature = "UnityEngine+UIElements+VisualTreeAsset+_get_templateDependencies_d__19"
+    )]
+    pub type _get_templateDependencies_d__19 = crate::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__19;
+    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+__c__DisplayClass65_0")]
+    pub type __c__DisplayClass65_0 = crate::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass65_0;
     #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
     pub type SlotDefinition = crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition;
     #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
     pub type UxmlObjectEntry = crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry;
     #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+__c__DisplayClass61_0")]
     pub type __c__DisplayClass61_0 = crate::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass61_0;
-    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
-    pub type SlotUsageEntry = crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry;
-    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
-    pub type AssetEntry = crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry;
-    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
-    pub type UsingEntry = crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry;
-    #[cfg(
-        feature = "UnityEngine+UIElements+VisualTreeAsset+_get_templateDependencies_d__19"
-    )]
-    pub type _get_templateDependencies_d__19 = crate::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__19;
-    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
-    pub type UsingEntryComparer = crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer;
-    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+__c__DisplayClass65_0")]
-    pub type __c__DisplayClass65_0 = crate::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass65_0;
-    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+_get_stylesheets_d__23")]
-    pub type _get_stylesheets_d__23 = crate::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__23;
-    pub fn GetNextChildSerialNumber(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn AssetEntryExists(
+        &mut self,
+        path: *mut crate::System::String,
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetNextChildSerialNumber", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("AssetEntryExists", (path, _cordl_type))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CloneSetupRecursively(
+        &mut self,
+        root: *mut crate::UnityEngine::UIElements::VisualElementAsset,
+        idToChildren: *mut crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UIElements::VisualElementAsset,
+            >,
+        >,
+        context: crate::UnityEngine::UIElements::CreationContext,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
+            .invoke("CloneSetupRecursively", (root, idToChildren, context))?;
         Ok(__cordl_ret)
     }
     pub fn CloneTree_0(
@@ -399,126 +424,6 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
             .invoke("CloneTree", (target, slotInsertionPoints, attributeOverrides))?;
         Ok(__cordl_ret)
     }
-    pub fn get_contentContainerId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_contentContainerId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_importedWithWarnings(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_importedWithWarnings", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_contentHash(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_contentHash", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_templateAssets(
-        &mut self,
-        value: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::TemplateAsset,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_templateAssets", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetUxmlObjectFactory(
-        &mut self,
-        uxmlObjectAsset: *mut crate::UnityEngine::UIElements::UxmlObjectAsset,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::IBaseUxmlObjectFactory = __cordl_object
-            .invoke("GetUxmlObjectFactory", (uxmlObjectAsset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_slots(
-        &mut self,
-        value: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_slots", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_visualElementAssets(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::VisualElementAsset,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::VisualElementAsset,
-        > = __cordl_object.invoke("get_visualElementAssets", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_templateDependencies(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::UIElements::VisualTreeAsset,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::UIElements::VisualTreeAsset,
-        > = __cordl_object.invoke("get_templateDependencies", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CloneSetupRecursively(
-        &mut self,
-        root: *mut crate::UnityEngine::UIElements::VisualElementAsset,
-        idToChildren: *mut crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::VisualElementAsset,
-            >,
-        >,
-        context: crate::UnityEngine::UIElements::CreationContext,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
-            .invoke("CloneSetupRecursively", (root, idToChildren, context))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetAsset<T>(
         &mut self,
         path: *mut crate::System::String,
@@ -531,6 +436,13 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("GetAsset", (path))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNextChildSerialNumber(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetNextChildSerialNumber", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetUxmlObjectEntry(
@@ -546,17 +458,35 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
             .invoke("GetUxmlObjectEntry", (id))?;
         Ok(__cordl_ret)
     }
-    pub fn RegisterAssetEntry(
+    pub fn GetUxmlObjectFactory(
         &mut self,
-        path: *mut crate::System::String,
-        _cordl_type: *mut crate::System::Type,
-        asset: *mut crate::UnityEngine::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        uxmlObjectAsset: *mut crate::UnityEngine::UIElements::UxmlObjectAsset,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterAssetEntry", (path, _cordl_type, asset))?;
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::IBaseUxmlObjectFactory = __cordl_object
+            .invoke("GetUxmlObjectFactory", (uxmlObjectAsset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetUxmlObjects<T>(
+        &mut self,
+        asset: *mut crate::UnityEngine::UIElements::IUxmlAttributes,
+        cc: crate::UnityEngine::UIElements::CreationContext,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<T> = __cordl_object
+            .invoke("GetUxmlObjects", (asset, cc))?;
         Ok(__cordl_ret)
     }
     pub fn Instantiate_0(
@@ -584,30 +514,35 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
             .invoke("Instantiate", (bindingPath))?;
         Ok(__cordl_ret)
     }
-    pub fn set_importedWithErrors(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn RegisterAssetEntry(
         &mut self,
-        value: bool,
+        path: *mut crate::System::String,
+        _cordl_type: *mut crate::System::Type,
+        asset: *mut crate::UnityEngine::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_importedWithErrors", (value))?;
+            .invoke("RegisterAssetEntry", (path, _cordl_type, asset))?;
         Ok(__cordl_ret)
     }
-    pub fn get_templateAssets(
+    pub fn RegisterUxmlObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::TemplateAsset,
-        >,
-    > {
+        uxmlObjectAsset: *mut crate::UnityEngine::UIElements::UxmlObjectAsset,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::TemplateAsset,
-        > = __cordl_object.invoke("get_templateAssets", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterUxmlObject", (uxmlObjectAsset))?;
         Ok(__cordl_ret)
     }
     pub fn ResolveTemplate(
@@ -623,16 +558,54 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
             .invoke("ResolveTemplate", (templateName))?;
         Ok(__cordl_ret)
     }
-    pub fn get_uxmlObjectIds(
+    pub fn TryGetSlotInsertionPoint(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<i32>,
-    > {
+        insertionPointId: i32,
+        slotName: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<i32> = __cordl_object
-            .invoke("get_uxmlObjectIds", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetSlotInsertionPoint", (insertionPointId, slotName))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_contentContainerId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_contentContainerId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_contentHash(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_contentHash", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_importedWithErrors(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_importedWithErrors", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_importedWithWarnings(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_importedWithWarnings", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_slots(
@@ -650,47 +623,6 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         > = __cordl_object.invoke("get_slots", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TryGetSlotInsertionPoint(
-        &mut self,
-        insertionPointId: i32,
-        slotName: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetSlotInsertionPoint", (insertionPointId, slotName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_importedWithErrors(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_importedWithErrors", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_contentContainerId(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_contentContainerId", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterUxmlObject(
-        &mut self,
-        uxmlObjectAsset: *mut crate::UnityEngine::UIElements::UxmlObjectAsset,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterUxmlObject", (uxmlObjectAsset))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_stylesheets(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -706,28 +638,34 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         > = __cordl_object.invoke("get_stylesheets", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_visualElementAssets(
+    pub fn get_templateAssets(
         &mut self,
-        value: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::VisualElementAsset,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::TemplateAsset,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_visualElementAssets", (value))?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::TemplateAsset,
+        > = __cordl_object.invoke("get_templateAssets", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_importedWithWarnings(
+    pub fn get_templateDependencies(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::UnityEngine::UIElements::VisualTreeAsset,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_importedWithWarnings", (value))?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::UnityEngine::UIElements::VisualTreeAsset,
+        > = __cordl_object.invoke("get_templateDependencies", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_uxmlObjectEntries(
@@ -745,22 +683,42 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         > = __cordl_object.invoke("get_uxmlObjectEntries", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetUxmlObjects<T>(
+    pub fn get_uxmlObjectIds(
         &mut self,
-        asset: *mut crate::UnityEngine::UIElements::IUxmlAttributes,
-        cc: crate::UnityEngine::UIElements::CreationContext,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<T>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
+        *mut crate::System::Collections::Generic::List_1<i32>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<T> = __cordl_object
-            .invoke("GetUxmlObjects", (asset, cc))?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<i32> = __cordl_object
+            .invoke("get_uxmlObjectIds", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_visualElementAssets(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::VisualElementAsset,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::VisualElementAsset,
+        > = __cordl_object.invoke("get_visualElementAssets", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_contentContainerId(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_contentContainerId", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_contentHash(
@@ -774,24 +732,66 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
             .invoke("set_contentHash", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn AssetEntryExists(
+    pub fn set_importedWithErrors(
         &mut self,
-        path: *mut crate::System::String,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("AssetEntryExists", (path, _cordl_type))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_importedWithErrors", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_importedWithWarnings(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_importedWithWarnings", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_slots(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_slots", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_templateAssets(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::TemplateAsset,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_templateAssets", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_visualElementAssets(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::VisualElementAsset,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_visualElementAssets", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset")]

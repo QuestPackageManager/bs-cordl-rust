@@ -31,6 +31,44 @@ impl crate::Org::BouncyCastle::Asn1::X509::DisplayText {
     pub const ContentTypeUtf8String: i32 = 2i32;
     pub const ContentTypeVisibleString: i32 = 3i32;
     pub const DisplayTextMaximumSize: i32 = 200i32;
+    pub fn GetString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_IAsn1String2(
+        contents: *mut crate::Org::BouncyCastle::Asn1::IAsn1String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (contents))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String1(
+        text: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (text))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_String0(
+        _cordl_type: i32,
+        text: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, text))?;
+        Ok(__cordl_object)
+    }
     pub fn ToAsn1Object(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
@@ -39,29 +77,6 @@ impl crate::Org::BouncyCastle::Asn1::X509::DisplayText {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
             .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_String0(
-        &mut self,
-        _cordl_type: i32,
-        text: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_type, text))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String1(
-        &mut self,
-        text: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (text))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_IAsn1String2(
@@ -75,43 +90,28 @@ impl crate::Org::BouncyCastle::Asn1::X509::DisplayText {
             .invoke(".ctor", (contents))?;
         Ok(__cordl_ret)
     }
-    pub fn GetString(
+    pub fn _ctor_String1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        text: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetString", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (text))?;
         Ok(__cordl_ret)
     }
-    pub fn New_i32_String0(
+    pub fn _ctor_i32_String0(
+        &mut self,
         _cordl_type: i32,
         text: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, text))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        text: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (text))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IAsn1String2(
-        contents: *mut crate::Org::BouncyCastle::Asn1::IAsn1String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (contents))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_type, text))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+DisplayText")]

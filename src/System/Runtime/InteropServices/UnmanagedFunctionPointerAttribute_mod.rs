@@ -28,6 +28,15 @@ for crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute {
 }
 #[cfg(feature = "System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute")]
 impl crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute {
+    pub fn New(
+        callingConvention: crate::System::Runtime::InteropServices::CallingConvention,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (callingConvention))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         callingConvention: crate::System::Runtime::InteropServices::CallingConvention,
@@ -50,15 +59,6 @@ impl crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute 
         let __cordl_ret: crate::System::Runtime::InteropServices::CallingConvention = __cordl_object
             .invoke("get_CallingConvention", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        callingConvention: crate::System::Runtime::InteropServices::CallingConvention,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (callingConvention))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute")]

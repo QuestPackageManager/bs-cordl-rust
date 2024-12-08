@@ -28,6 +28,23 @@ for crate::System::Linq::Expressions::Interpreter::LocalVariable {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LocalVariable")]
 impl crate::System::Linq::Expressions::Interpreter::LocalVariable {
+    pub fn New(index: i32, closure: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (index, closure))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         index: i32,
@@ -40,21 +57,18 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariable {
             .invoke(".ctor", (index, closure))?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_InClosure(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_InClosure", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsBoxed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsBoxed", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_IsBoxed(
@@ -67,23 +81,6 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariable {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_IsBoxed", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_IsBoxed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsBoxed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        index: i32,
-        closure: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (index, closure))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LocalVariable")]

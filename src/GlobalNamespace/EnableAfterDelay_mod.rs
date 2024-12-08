@@ -26,6 +26,13 @@ impl std::ops::DerefMut for EnableAfterDelay {
 impl EnableAfterDelay {
     #[cfg(feature = "EnableAfterDelay+_Start_d__1")]
     pub type _Start_d__1 = crate::GlobalNamespace::EnableAfterDelay__Start_d__1;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
@@ -45,13 +52,6 @@ impl EnableAfterDelay {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "EnableAfterDelay")]

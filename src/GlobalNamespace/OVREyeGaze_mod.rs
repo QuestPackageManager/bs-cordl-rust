@@ -59,10 +59,10 @@ impl std::ops::DerefMut for OVREyeGaze {
 }
 #[cfg(feature = "OVREyeGaze")]
 impl OVREyeGaze {
-    #[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
-    pub type EyeTrackingMode = crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode;
     #[cfg(feature = "OVREyeGaze+EyeId")]
     pub type EyeId = crate::GlobalNamespace::OVREyeGaze_EyeId;
+    #[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
+    pub type EyeTrackingMode = crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -73,24 +73,32 @@ impl OVREyeGaze {
             .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Start(
+    pub fn CalculateEyeRotation(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        eyeRotation: crate::UnityEngine::Quaternion,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
+        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
+            .invoke("CalculateEyeRotation", (eyeRotation))?;
         Ok(__cordl_ret)
     }
-    pub fn OnEnable(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
+            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn OnDisable(
@@ -101,6 +109,16 @@ impl OVREyeGaze {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnEnable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnEnable", ())?;
         Ok(__cordl_ret)
     }
     pub fn OnPermissionGranted(
@@ -114,32 +132,24 @@ impl OVREyeGaze {
             .invoke("OnPermissionGranted", (permissionId))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Confidence(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_Confidence", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Confidence(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Confidence", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
+    pub fn PrepareHeadDirection(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
+            .invoke("PrepareHeadDirection", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
     pub fn StartEyeTracking(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -159,17 +169,6 @@ impl OVREyeGaze {
             .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CalculateEyeRotation(
-        &mut self,
-        eyeRotation: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("CalculateEyeRotation", (eyeRotation))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -180,6 +179,13 @@ impl OVREyeGaze {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_Confidence(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_Confidence", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_EyeTrackingEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -187,22 +193,16 @@ impl OVREyeGaze {
         let __cordl_ret: bool = __cordl_object.invoke("get_EyeTrackingEnabled", ())?;
         Ok(__cordl_ret)
     }
-    pub fn PrepareHeadDirection(
+    pub fn set_Confidence(
         &mut self,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PrepareHeadDirection", ())?;
+            .invoke("set_Confidence", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVREyeGaze")]

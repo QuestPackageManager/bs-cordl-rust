@@ -27,6 +27,17 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_UnityMaterialInfo {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_UnityMaterialInfo")]
 impl crate::HoudiniEngineUnity::HEU_UnityMaterialInfo {
+    pub fn New(
+        unityMaterialPath: *mut crate::System::String,
+        substancePath: *mut crate::System::String,
+        substanceIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (unityMaterialPath, substancePath, substanceIndex))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         unityMaterialPath: *mut crate::System::String,
@@ -39,17 +50,6 @@ impl crate::HoudiniEngineUnity::HEU_UnityMaterialInfo {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (unityMaterialPath, substancePath, substanceIndex))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        unityMaterialPath: *mut crate::System::String,
-        substancePath: *mut crate::System::String,
-        substanceIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (unityMaterialPath, substancePath, substanceIndex))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_UnityMaterialInfo")]

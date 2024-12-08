@@ -27,59 +27,18 @@ impl std::ops::DerefMut for crate::System::Globalization::IdnMapping {
 }
 #[cfg(feature = "System+Globalization+IdnMapping")]
 impl crate::System::Globalization::IdnMapping {
-    pub fn VerifyLength(
+    pub fn Convert(
         &mut self,
-        s: *mut crate::System::String,
-        offset: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("VerifyLength", (s, offset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn VerifyProhibitedCharacters(
-        &mut self,
-        s: *mut crate::System::String,
-        offset: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("VerifyProhibitedCharacters", (s, offset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToAscii(
-        &mut self,
-        s: *mut crate::System::String,
-        offset: i32,
+        input: *mut crate::System::String,
+        index: i32,
+        count: i32,
+        toAscii: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToAscii", (s, offset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NamePrep(
-        &mut self,
-        s: *mut crate::System::String,
-        offset: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("NamePrep", (s, offset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+            .invoke("Convert", (input, index, count, toAscii))?;
         Ok(__cordl_ret)
     }
     pub fn Equals(
@@ -90,42 +49,6 @@ impl crate::System::Globalization::IdnMapping {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetUnicode_String0(
-        &mut self,
-        ascii: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetUnicode", (ascii))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetUnicode_i32_i32_1(
-        &mut self,
-        ascii: *mut crate::System::String,
-        index: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetUnicode", (ascii, index, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToUnicode(
-        &mut self,
-        s: *mut crate::System::String,
-        offset: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToUnicode", (s, offset))?;
         Ok(__cordl_ret)
     }
     pub fn GetAscii_String0(
@@ -152,28 +75,102 @@ impl crate::System::Globalization::IdnMapping {
             .invoke("GetAscii", (unicode, index, count))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Convert(
+    pub fn GetUnicode_String0(
         &mut self,
-        input: *mut crate::System::String,
-        index: i32,
-        count: i32,
-        toAscii: bool,
+        ascii: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("Convert", (input, index, count, toAscii))?;
+            .invoke("GetUnicode", (ascii))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetUnicode_i32_i32_1(
+        &mut self,
+        ascii: *mut crate::System::String,
+        index: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetUnicode", (ascii, index, count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NamePrep(
+        &mut self,
+        s: *mut crate::System::String,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("NamePrep", (s, offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ToAscii(
+        &mut self,
+        s: *mut crate::System::String,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToAscii", (s, offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToUnicode(
+        &mut self,
+        s: *mut crate::System::String,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToUnicode", (s, offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn VerifyLength(
+        &mut self,
+        s: *mut crate::System::String,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("VerifyLength", (s, offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn VerifyProhibitedCharacters(
+        &mut self,
+        s: *mut crate::System::String,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("VerifyProhibitedCharacters", (s, offset))?;
         Ok(__cordl_ret)
     }
     pub fn VerifyStd3AsciiRules(
@@ -188,12 +185,15 @@ impl crate::System::Globalization::IdnMapping {
             .invoke("VerifyStd3AsciiRules", (s, offset))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Globalization+IdnMapping")]

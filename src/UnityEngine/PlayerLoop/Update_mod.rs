@@ -113,10 +113,10 @@ for crate::UnityEngine::PlayerLoop::Update {
 impl crate::UnityEngine::PlayerLoop::Update {
     #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunDelayedTasks")]
     pub type ScriptRunDelayedTasks = crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks;
-    #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunBehaviourUpdate")]
-    pub type ScriptRunBehaviourUpdate = crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate;
     #[cfg(feature = "UnityEngine+PlayerLoop+Update+DirectorUpdate")]
     pub type DirectorUpdate = crate::UnityEngine::PlayerLoop::Update_DirectorUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunBehaviourUpdate")]
+    pub type ScriptRunBehaviourUpdate = crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate;
     #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate")]
     pub type ScriptRunDelayedDynamicFrameRate = crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate;
 }

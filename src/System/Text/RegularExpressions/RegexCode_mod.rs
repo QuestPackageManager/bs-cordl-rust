@@ -83,6 +83,40 @@ impl crate::System::Text::RegularExpressions::RegexCode {
     pub const Start: i32 = 19i32;
     pub const Stop: i32 = 40i32;
     pub const Testref: i32 = 37i32;
+    pub fn New(
+        codes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        stringlist: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::System::String,
+        >,
+        trackcount: i32,
+        caps: *mut crate::System::Collections::Hashtable,
+        capsize: i32,
+        bmPrefix: *mut crate::System::Text::RegularExpressions::RegexBoyerMoore,
+        fcPrefix: crate::System::Nullable_1<
+            crate::System::Text::RegularExpressions::RegexPrefix,
+        >,
+        anchors: i32,
+        rightToLeft: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    codes,
+                    stringlist,
+                    trackcount,
+                    caps,
+                    capsize,
+                    bmPrefix,
+                    fcPrefix,
+                    anchors,
+                    rightToLeft,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         codes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -118,40 +152,6 @@ impl crate::System::Text::RegularExpressions::RegexCode {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        codes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        stringlist: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
-        >,
-        trackcount: i32,
-        caps: *mut crate::System::Collections::Hashtable,
-        capsize: i32,
-        bmPrefix: *mut crate::System::Text::RegularExpressions::RegexBoyerMoore,
-        fcPrefix: crate::System::Nullable_1<
-            crate::System::Text::RegularExpressions::RegexPrefix,
-        >,
-        anchors: i32,
-        rightToLeft: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    codes,
-                    stringlist,
-                    trackcount,
-                    caps,
-                    capsize,
-                    bmPrefix,
-                    fcPrefix,
-                    anchors,
-                    rightToLeft,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCode")]

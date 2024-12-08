@@ -34,6 +34,23 @@ for crate::System::Net::Security::SslClientAuthenticationOptions {
 }
 #[cfg(feature = "System+Net+Security+SslClientAuthenticationOptions")]
 impl crate::System::Net::Security::SslClientAuthenticationOptions {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_ClientCertificates(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -44,62 +61,6 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
         );
         let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection = __cordl_object
             .invoke("get_ClientCertificates", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_TargetHost(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_TargetHost", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ClientCertificates(
-        &mut self,
-        value: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ClientCertificates", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_LocalCertificateSelectionCallback(
-        &mut self,
-        value: *mut crate::System::Net::Security::LocalCertificateSelectionCallback,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_LocalCertificateSelectionCallback", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LocalCertificateSelectionCallback(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Net::Security::LocalCertificateSelectionCallback,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::Security::LocalCertificateSelectionCallback = __cordl_object
-            .invoke("get_LocalCertificateSelectionCallback", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_CertificateRevocationCheckMode(
-        &mut self,
-        value: crate::System::Security::Cryptography::X509Certificates::X509RevocationMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_CertificateRevocationCheckMode", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_EnabledSslProtocols(
@@ -114,6 +75,18 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             .invoke("get_EnabledSslProtocols", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_LocalCertificateSelectionCallback(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Net::Security::LocalCertificateSelectionCallback,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::Security::LocalCertificateSelectionCallback = __cordl_object
+            .invoke("get_LocalCertificateSelectionCallback", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_RemoteCertificateValidationCallback(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -124,6 +97,38 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
         );
         let __cordl_ret: *mut crate::System::Net::Security::RemoteCertificateValidationCallback = __cordl_object
             .invoke("get_RemoteCertificateValidationCallback", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TargetHost(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_TargetHost", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_CertificateRevocationCheckMode(
+        &mut self,
+        value: crate::System::Security::Cryptography::X509Certificates::X509RevocationMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_CertificateRevocationCheckMode", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ClientCertificates(
+        &mut self,
+        value: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ClientCertificates", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_EnabledSslProtocols(
@@ -137,16 +142,6 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             .invoke("set_EnabledSslProtocols", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_TargetHost(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_TargetHost", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_EncryptionPolicy(
         &mut self,
         value: crate::System::Net::Security::EncryptionPolicy,
@@ -158,22 +153,27 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             .invoke("set_EncryptionPolicy", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn set_LocalCertificateSelectionCallback(
         &mut self,
+        value: *mut crate::System::Net::Security::LocalCertificateSelectionCallback,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("set_LocalCertificateSelectionCallback", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_TargetHost(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_TargetHost", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+Security+SslClientAuthenticationOptions")]

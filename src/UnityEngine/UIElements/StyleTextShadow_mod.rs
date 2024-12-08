@@ -23,13 +23,14 @@ for crate::UnityEngine::UIElements::StyleTextShadow {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleTextShadow")]
 impl crate::UnityEngine::UIElements::StyleTextShadow {
-    pub fn get_keyword(
+    pub fn Equals_Object1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleKeyword> {
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleKeyword = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_keyword",
-            (),
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -41,17 +42,6 @@ impl crate::UnityEngine::UIElements::StyleTextShadow {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -69,16 +59,6 @@ impl crate::UnityEngine::UIElements::StyleTextShadow {
         let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_value(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TextShadow> {
-        let __cordl_ret: crate::UnityEngine::UIElements::TextShadow = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_value",
             (),
         )?;
         Ok(__cordl_ret)
@@ -103,6 +83,26 @@ impl crate::UnityEngine::UIElements::StyleTextShadow {
             self,
             ".ctor",
             (v, keyword),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_keyword(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleKeyword> {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleKeyword = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_keyword",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TextShadow> {
+        let __cordl_ret: crate::UnityEngine::UIElements::TextShadow = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_value",
+            (),
         )?;
         Ok(__cordl_ret)
     }

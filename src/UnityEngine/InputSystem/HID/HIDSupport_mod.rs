@@ -24,6 +24,17 @@ for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
 impl crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
+    pub fn _ctor_HID_GenericDesktop1(
+        &mut self,
+        usage: crate::UnityEngine::InputSystem::HID::HID_GenericDesktop,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (usage),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_HID_UsagePage_i32_0(
         &mut self,
         page: crate::UnityEngine::InputSystem::HID::HID_UsagePage,
@@ -33,17 +44,6 @@ impl crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
             self,
             ".ctor",
             (page, usage),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_HID_GenericDesktop1(
-        &mut self,
-        usage: crate::UnityEngine::InputSystem::HID::HID_GenericDesktop,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (usage),
         )?;
         Ok(__cordl_ret)
     }

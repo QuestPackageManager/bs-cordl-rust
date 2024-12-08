@@ -24,14 +24,28 @@ impl std::ops::DerefMut for SliderInteractionEffect {
 }
 #[cfg(feature = "SliderInteractionEffect")]
 impl SliderInteractionEffect {
-    pub fn Start(
+    pub fn EndEffect(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
+            .invoke("EndEffect", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleAllSliderWereRemovedFromActiveSliders(
+        &mut self,
+        sliderInteractionManager: *mut SliderInteractionManager,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleAllSliderWereRemovedFromActiveSliders",
+                (sliderInteractionManager),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn HandleSliderWasAddedToActiveSliders(
@@ -49,15 +63,12 @@ impl SliderInteractionEffect {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnDestroy(
         &mut self,
@@ -69,28 +80,14 @@ impl SliderInteractionEffect {
             .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_colorType(&mut self) -> quest_hook::libil2cpp::Result<ColorType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: ColorType = __cordl_object.invoke("get_colorType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndEffect(
+    pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndEffect", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_saberInteractionParam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_saberInteractionParam", ())?;
+            .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
     pub fn StartEffect(
@@ -104,26 +101,29 @@ impl SliderInteractionEffect {
             .invoke("StartEffect", (saberInteractionParam))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleAllSliderWereRemovedFromActiveSliders(
+    pub fn _ctor(
         &mut self,
-        sliderInteractionManager: *mut SliderInteractionManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleAllSliderWereRemovedFromActiveSliders",
-                (sliderInteractionManager),
-            )?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_colorType(&mut self) -> quest_hook::libil2cpp::Result<ColorType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: ColorType = __cordl_object.invoke("get_colorType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_saberInteractionParam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_saberInteractionParam", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "SliderInteractionEffect")]

@@ -23,35 +23,6 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventPtr")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_stateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_stateSizeInBytes",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_handled(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_handled",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_InputEventPtr0(
         &mut self,
         other: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
@@ -74,21 +45,75 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_time(
-        &mut self,
-        value: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_time",
-            (value),
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn IsA<TOtherEvent>(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TOtherEvent: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_valid",
+            "IsA",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Next(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Next",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToPointer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToPointer",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        eventPtr: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (eventPtr),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_data(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_data",
             (),
         )?;
         Ok(__cordl_ret)
@@ -109,17 +134,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        eventPtr: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (eventPtr),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -136,56 +150,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_stateOffset(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_stateOffset",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsA<TOtherEvent>(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TOtherEvent: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsA",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToPointer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToPointer",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_time",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_sizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_sizeInBytes",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)
@@ -202,26 +170,27 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Next(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_stateOffset(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Next",
+            "get_stateOffset",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_internalTime(
-        &mut self,
-        value: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_stateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_internalTime",
-            (value),
+            "get_stateSizeInBytes",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_time",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -237,6 +206,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_valid",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_deviceId(
         &mut self,
         value: i32,
@@ -248,13 +225,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_data(
+    pub fn set_handled(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_data",
-            (),
+            "set_handled",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -265,6 +243,28 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_id",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_internalTime(
+        &mut self,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_internalTime",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_time(
+        &mut self,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_time",
             (value),
         )?;
         Ok(__cordl_ret)

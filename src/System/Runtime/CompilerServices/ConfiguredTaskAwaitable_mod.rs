@@ -27,18 +27,6 @@ impl crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable {
         feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable+ConfiguredTaskAwaiter"
     )]
     pub type ConfiguredTaskAwaiter = crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter;
-    pub fn _ctor(
-        &mut self,
-        task: *mut crate::System::Threading::Tasks::Task,
-        continueOnCapturedContext: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (task, continueOnCapturedContext),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetAwaiter(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -48,6 +36,18 @@ impl crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable {
             self,
             "GetAwaiter",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        task: *mut crate::System::Threading::Tasks::Task,
+        continueOnCapturedContext: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (task, continueOnCapturedContext),
         )?;
         Ok(__cordl_ret)
     }
@@ -86,15 +86,13 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_Configured
     feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable+ConfiguredTaskAwaiter"
 )]
 impl crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter {
-    pub fn _ctor(
+    pub fn GetResult(
         &mut self,
-        task: *mut crate::System::Threading::Tasks::Task,
-        continueOnCapturedContext: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (task, continueOnCapturedContext),
+            "GetResult",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -109,24 +107,6 @@ impl crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_Configure
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetResult(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetResult",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsCompleted",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn UnsafeOnCompleted(
         &mut self,
         continuation: *mut crate::System::Action,
@@ -135,6 +115,26 @@ impl crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_Configure
             self,
             "UnsafeOnCompleted",
             (continuation),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        task: *mut crate::System::Threading::Tasks::Task,
+        continueOnCapturedContext: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (task, continueOnCapturedContext),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsCompleted",
+            (),
         )?;
         Ok(__cordl_ret)
     }

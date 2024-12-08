@@ -27,17 +27,6 @@ for crate::HoudiniEngineUnity::TransformData {
 }
 #[cfg(feature = "HoudiniEngineUnity+TransformData")]
 impl crate::HoudiniEngineUnity::TransformData {
-    pub fn _ctor(
-        &mut self,
-        other: *mut crate::UnityEngine::Transform,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn CopyTo(
         &mut self,
         other: *mut crate::UnityEngine::Transform,
@@ -59,6 +48,17 @@ impl crate::HoudiniEngineUnity::TransformData {
             self,
             "CopyToLocal",
             (other, copyParent),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        other: *mut crate::UnityEngine::Transform,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (other),
         )?;
         Ok(__cordl_ret)
     }

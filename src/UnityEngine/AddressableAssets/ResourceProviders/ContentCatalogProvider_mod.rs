@@ -50,11 +50,107 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_Bundled
     feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp+BundledCatalog"
 )]
 impl crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_BundledCatalog {
+    pub fn Finalize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Finalize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadCatalogFromBundleAsync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LoadCatalogFromBundleAsync", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadTextAssetRequestComplete(
+        &mut self,
+        op: *mut crate::UnityEngine::AsyncOperation,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LoadTextAssetRequestComplete", (op))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        bundlePath: *mut crate::System::String,
+        webRequestTimeout: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bundlePath, webRequestTimeout))?;
+        Ok(__cordl_object)
+    }
+    pub fn Unload(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Unload", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn WaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("WaitForCompletion", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn WebRequestOperationCompleted(
+        &mut self,
+        op: *mut crate::UnityEngine::AsyncOperation,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WebRequestOperationCompleted", (op))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _LoadCatalogFromBundleAsync_b__19_0(
+        &mut self,
+        loadOp: *mut crate::UnityEngine::AsyncOperation,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<LoadCatalogFromBundleAsync>b__19_0", (loadOp))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _LoadCatalogFromBundleAsync_b__19_1(
+        &mut self,
+        asyncOp: *mut crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<LoadCatalogFromBundleAsync>b__19_1", (asyncOp))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        bundlePath: *mut crate::System::String,
+        webRequestTimeout: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bundlePath, webRequestTimeout))?;
         Ok(__cordl_ret)
     }
     pub fn add_OnLoaded(
@@ -70,93 +166,18 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_Bundle
             .invoke("add_OnLoaded", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_OpIsSuccess(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_OpIsSuccess", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadCatalogFromBundleAsync(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LoadCatalogFromBundleAsync", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Finalize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _LoadCatalogFromBundleAsync_b__19_1(
-        &mut self,
-        asyncOp: *mut crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<LoadCatalogFromBundleAsync>b__19_1", (asyncOp))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Unload(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Unload", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        bundlePath: *mut crate::System::String,
-        webRequestTimeout: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bundlePath, webRequestTimeout))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadTextAssetRequestComplete(
-        &mut self,
-        op: *mut crate::UnityEngine::AsyncOperation,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LoadTextAssetRequestComplete", (op))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _LoadCatalogFromBundleAsync_b__19_0(
-        &mut self,
-        loadOp: *mut crate::UnityEngine::AsyncOperation,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<LoadCatalogFromBundleAsync>b__19_0", (loadOp))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_OpInProgress(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_OpInProgress", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_OpIsSuccess(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_OpIsSuccess", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_OnLoaded(
@@ -171,27 +192,6 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_Bundle
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_OnLoaded", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn WebRequestOperationCompleted(
-        &mut self,
-        op: *mut crate::UnityEngine::AsyncOperation,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WebRequestOperationCompleted", (op))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        bundlePath: *mut crate::System::String,
-        webRequestTimeout: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bundlePath, webRequestTimeout))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -260,16 +260,14 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
         feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
     )]
     pub type InternalOp = crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp;
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         resourceManagerInstance: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (resourceManagerInstance))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (resourceManagerInstance))?;
+        Ok(__cordl_object)
     }
     pub fn Provide(
         &mut self,
@@ -294,14 +292,16 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
             .invoke("Release", (location, obj))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         resourceManagerInstance: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (resourceManagerInstance))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (resourceManagerInstance))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -404,43 +404,6 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
             .invoke("CanLoadCatalogFromBundle", (idToLoad, location))?;
         Ok(__cordl_ret)
     }
-    pub fn Start(
-        &mut self,
-        providerInterface: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
-        disableCatalogUpdateOnStart: bool,
-        isLocalCatalogInBundle: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "Start",
-                (providerInterface, disableCatalogUpdateOnStart, isLocalCatalogInBundle),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Release(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Release", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnCatalogLoaded(
-        &mut self,
-        ccd: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCatalogLoaded", (ccd))?;
-        Ok(__cordl_ret)
-    }
     pub fn CatalogLoadOpCompleteCallback(
         &mut self,
         op: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
@@ -452,28 +415,6 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CatalogLoadOpCompleteCallback", (op))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _LoadCatalog_b__14_0(
-        &mut self,
-        ccd: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<LoadCatalog>b__14_0", (ccd))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTransformedInternalId(
-        &mut self,
-        loc: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetTransformedInternalId", (loc))?;
         Ok(__cordl_ret)
     }
     pub fn DetermineIdToLoad(
@@ -494,6 +435,17 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
             )?;
         Ok(__cordl_ret)
     }
+    pub fn GetTransformedInternalId(
+        &mut self,
+        loc: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetTransformedInternalId", (loc))?;
+        Ok(__cordl_ret)
+    }
     pub fn LoadCatalog(
         &mut self,
         idToLoad: *mut crate::System::String,
@@ -506,11 +458,66 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
             .invoke("LoadCatalog", (idToLoad, loadCatalogFromLocalBundle))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnCatalogLoaded(
+        &mut self,
+        ccd: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnCatalogLoaded", (ccd))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Release(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Release", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Start(
+        &mut self,
+        providerInterface: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
+        disableCatalogUpdateOnStart: bool,
+        isLocalCatalogInBundle: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "Start",
+                (providerInterface, disableCatalogUpdateOnStart, isLocalCatalogInBundle),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn WaitForCompletionCallback(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("WaitForCompletionCallback", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _LoadCatalog_b__14_0(
+        &mut self,
+        ccd: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<LoadCatalog>b__14_0", (ccd))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -522,13 +529,6 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

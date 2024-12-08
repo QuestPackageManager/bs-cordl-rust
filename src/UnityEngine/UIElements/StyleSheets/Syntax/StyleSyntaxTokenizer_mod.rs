@@ -31,7 +31,7 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxTokenizer")]
 impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer {
-    pub fn get_current(
+    pub fn MoveNext(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken,
@@ -40,18 +40,15 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer {
             self,
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken = __cordl_object
-            .invoke("get_current", ())?;
+            .invoke("MoveNext", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn PeekNext(
         &mut self,
@@ -76,7 +73,17 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer {
             .invoke("Tokenize", (syntax))?;
         Ok(__cordl_ret)
     }
-    pub fn MoveNext(
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_current(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken,
@@ -85,15 +92,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer {
             self,
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken = __cordl_object
-            .invoke("MoveNext", ())?;
+            .invoke("get_current", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxTokenizer")]

@@ -32,8 +32,6 @@ impl std::ops::DerefMut for MockPlayerInstance {
 }
 #[cfg(feature = "MockPlayerInstance")]
 impl MockPlayerInstance {
-    #[cfg(feature = "MockPlayerInstance+_Stop_d__21")]
-    pub type _Stop_d__21 = crate::GlobalNamespace::MockPlayerInstance__Stop_d__21;
     #[cfg(feature = "MockPlayerInstance+_DisposeAsync_d__22")]
     pub type _DisposeAsync_d__22 = crate::GlobalNamespace::MockPlayerInstance__DisposeAsync_d__22;
     #[cfg(feature = "MockPlayerInstance+_RunAsync_d__18")]
@@ -42,6 +40,8 @@ impl MockPlayerInstance {
     pub type __c__DisplayClass17_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::MockPlayerInstance___c__DisplayClass17_0_1<
         T,
     >;
+    #[cfg(feature = "MockPlayerInstance+_Stop_d__21")]
+    pub type _Stop_d__21 = crate::GlobalNamespace::MockPlayerInstance__Stop_d__21;
     pub fn ConnectToServer<T>(
         &mut self,
         connectionInitParams: *mut IConnectionInitParams_1<T>,
@@ -57,51 +57,15 @@ impl MockPlayerInstance {
             .invoke("ConnectToServer", (connectionInitParams))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn Dispatch(
         &mut self,
-        timeProvider: *mut crate::BGNet::Core::ITimeProvider,
-        taskUtility: *mut crate::BGNet::Core::ITaskUtility,
-        beatmapDataProvider: *mut IMockBeatmapDataProvider,
-        connectionManager: *mut IConnectionManager,
+        action: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (timeProvider, taskUtility, beatmapDataProvider, connectionManager),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_userName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_userName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Stop(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Stop", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+            .invoke("Dispatch", (action))?;
         Ok(__cordl_ret)
     }
     pub fn DispatchAsync(
@@ -115,6 +79,41 @@ impl MockPlayerInstance {
             .invoke("DispatchAsync", (action))?;
         Ok(__cordl_ret)
     }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DisposeAsync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("DisposeAsync", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        timeProvider: *mut crate::BGNet::Core::ITimeProvider,
+        taskUtility: *mut crate::BGNet::Core::ITaskUtility,
+        beatmapDataProvider: *mut IMockBeatmapDataProvider,
+        connectionManager: *mut IConnectionManager,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (timeProvider, taskUtility, beatmapDataProvider, connectionManager),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn RunAsync(
         &mut self,
         runner: *mut IStandaloneThreadRunner,
@@ -127,46 +126,24 @@ impl MockPlayerInstance {
             .invoke("RunAsync", (runner, token))?;
         Ok(__cordl_ret)
     }
-    pub fn get_id(
+    pub fn Stop(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_id", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn __ctor_b__15_1(
-        &mut self,
-        r: DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<.ctor>b__15_1", (r))?;
+            .invoke("Stop", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_userId(
+    pub fn Tick(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_userId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispatch(
-        &mut self,
-        action: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispatch", (action))?;
+            .invoke("Tick", ())?;
         Ok(__cordl_ret)
     }
     pub fn _DisposeAsync_b__22_0(
@@ -190,40 +167,63 @@ impl MockPlayerInstance {
             .invoke("<.ctor>b__15_0", (r))?;
         Ok(__cordl_ret)
     }
-    pub fn Tick(
+    pub fn __ctor_b__15_1(
         &mut self,
+        r: DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Tick", ())?;
+            .invoke("<.ctor>b__15_1", (r))?;
         Ok(__cordl_ret)
     }
-    pub fn DisposeAsync(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("DisposeAsync", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
         timeProvider: *mut crate::BGNet::Core::ITimeProvider,
         taskUtility: *mut crate::BGNet::Core::ITaskUtility,
         beatmapDataProvider: *mut IMockBeatmapDataProvider,
         connectionManager: *mut IConnectionManager,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
                 ".ctor",
                 (timeProvider, taskUtility, beatmapDataProvider, connectionManager),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_ret)
+    }
+    pub fn get_id(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_id", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_userId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_userId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_userName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_userName", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MockPlayerInstance")]

@@ -27,6 +27,13 @@ for crate::GlobalNamespace::StandardLevelFailedController_InitData {
 }
 #[cfg(feature = "StandardLevelFailedController+InitData")]
 impl crate::GlobalNamespace::StandardLevelFailedController_InitData {
+    pub fn New(autoRestart: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (autoRestart))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         autoRestart: bool,
@@ -37,13 +44,6 @@ impl crate::GlobalNamespace::StandardLevelFailedController_InitData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (autoRestart))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(autoRestart: bool) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (autoRestart))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "StandardLevelFailedController+InitData")]
@@ -95,6 +95,16 @@ impl StandardLevelFailedController {
     pub type _LevelFailedCoroutine_d__13 = crate::GlobalNamespace::StandardLevelFailedController__LevelFailedCoroutine_d__13;
     #[cfg(feature = "StandardLevelFailedController+InitData")]
     pub type InitData = crate::GlobalNamespace::StandardLevelFailedController_InitData;
+    pub fn HandleLevelFailed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleLevelFailed", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn LevelFailedCoroutine(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
@@ -103,6 +113,23 @@ impl StandardLevelFailedController {
         );
         let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
             .invoke("LevelFailedCoroutine", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn Start(
@@ -124,33 +151,6 @@ impl StandardLevelFailedController {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLevelFailed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleLevelFailed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "StandardLevelFailedController")]

@@ -26,6 +26,22 @@ impl std::ops::DerefMut for crate::System::Security::Cryptography::OidEnumerator
 }
 #[cfg(feature = "System+Security+Cryptography+OidEnumerator")]
 impl crate::System::Security::Cryptography::OidEnumerator {
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        oids: *mut crate::System::Security::Cryptography::OidCollection,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (oids))?;
+        Ok(__cordl_object)
+    }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -36,13 +52,6 @@ impl crate::System::Security::Cryptography::OidEnumerator {
             .invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
@@ -51,16 +60,6 @@ impl crate::System::Security::Cryptography::OidEnumerator {
         );
         let __cordl_ret: *mut crate::System::Object = __cordl_object
             .invoke("System.Collections.IEnumerator.get_Current", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Current(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Security::Cryptography::Oid> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::Oid = __cordl_object
-            .invoke("get_Current", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -74,14 +73,15 @@ impl crate::System::Security::Cryptography::OidEnumerator {
             .invoke(".ctor", (oids))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        oids: *mut crate::System::Security::Cryptography::OidCollection,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (oids))?;
-        Ok(__cordl_object)
+    pub fn get_Current(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Security::Cryptography::Oid> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Security::Cryptography::Oid = __cordl_object
+            .invoke("get_Current", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Security+Cryptography+OidEnumerator")]

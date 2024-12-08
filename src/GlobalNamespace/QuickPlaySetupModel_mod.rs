@@ -28,6 +28,13 @@ for crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB {
 }
 #[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
 impl crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -37,13 +44,6 @@ impl crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
@@ -87,10 +87,10 @@ impl std::ops::DerefMut for QuickPlaySetupModel {
 impl QuickPlaySetupModel {
     pub const kRequestCacheTimeoutMinutes: i32 = 5i32;
     pub const kRequestTimeoutSeconds: i32 = 60i32;
-    #[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
-    pub type QuickPlaySetupDataFB = crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB;
     #[cfg(feature = "QuickPlaySetupModel+_GetQuickPlaySetupInternal_d__10")]
     pub type _GetQuickPlaySetupInternal_d__10 = crate::GlobalNamespace::QuickPlaySetupModel__GetQuickPlaySetupInternal_d__10;
+    #[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
+    pub type QuickPlaySetupDataFB = crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB;
     pub fn GetQuickPlaySetupAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -104,6 +104,53 @@ impl QuickPlaySetupModel {
             *mut QuickPlaySetupData,
         > = __cordl_object.invoke("GetQuickPlaySetupAsync", (cancellationToken))?;
         Ok(__cordl_ret)
+    }
+    pub fn GetQuickPlaySetupInternal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<*mut QuickPlaySetupData>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut QuickPlaySetupData,
+        > = __cordl_object.invoke("GetQuickPlaySetupInternal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsQuickPlaySetupTaskValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsQuickPlaySetupTaskValid", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsUrlValid(
+        &mut self,
+        url: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsUrlValid", (url))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn StartRequest(
         &mut self,
@@ -124,53 +171,6 @@ impl QuickPlaySetupModel {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn IsQuickPlaySetupTaskValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsQuickPlaySetupTaskValid", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetQuickPlaySetupInternal(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut QuickPlaySetupData>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut QuickPlaySetupData,
-        > = __cordl_object.invoke("GetQuickPlaySetupInternal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsUrlValid(
-        &mut self,
-        url: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsUrlValid", (url))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "QuickPlaySetupModel")]

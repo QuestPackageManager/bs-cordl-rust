@@ -28,15 +28,14 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Joystick {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Joystick")]
 impl crate::UnityEngine::InputSystem::Joystick {
-    pub fn set_trigger(
+    pub fn FinishSetup(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_trigger", (value))?;
+            .invoke("FinishSetup", ())?;
         Ok(__cordl_ret)
     }
     pub fn MakeCurrent(
@@ -49,6 +48,23 @@ impl crate::UnityEngine::InputSystem::Joystick {
             .invoke("MakeCurrent", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnAdded(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnAdded", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn OnRemoved(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -59,29 +75,6 @@ impl crate::UnityEngine::InputSystem::Joystick {
             .invoke("OnRemoved", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_stick(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::StickControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_stick", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_stick(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::StickControl,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::StickControl = __cordl_object
-            .invoke("get_stick", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -90,50 +83,6 @@ impl crate::UnityEngine::InputSystem::Joystick {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_hatswitch(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_hatswitch", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FinishSetup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FinishSetup", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_twist(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
-            .invoke("get_twist", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_twist(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_twist", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_hatswitch(
@@ -148,6 +97,18 @@ impl crate::UnityEngine::InputSystem::Joystick {
             .invoke("get_hatswitch", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_stick(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::StickControl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::StickControl = __cordl_object
+            .invoke("get_stick", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_trigger(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -160,22 +121,61 @@ impl crate::UnityEngine::InputSystem::Joystick {
             .invoke("get_trigger", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnAdded(
+    pub fn get_twist(
         &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
+            .invoke("get_twist", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_hatswitch(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnAdded", ())?;
+            .invoke("set_hatswitch", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_stick(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::StickControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_stick", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_trigger(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_trigger", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_twist(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_twist", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Joystick")]

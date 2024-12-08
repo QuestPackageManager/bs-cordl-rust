@@ -31,17 +31,17 @@ for crate::System::Net::NetworkInformation::UnixIPInterfaceProperties {
 }
 #[cfg(feature = "System+Net+NetworkInformation+UnixIPInterfaceProperties")]
 impl crate::System::Net::NetworkInformation::UnixIPInterfaceProperties {
-    pub fn get_UnicastAddresses(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection = __cordl_object
-            .invoke("get_UnicastAddresses", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        iface: *mut crate::System::Net::NetworkInformation::UnixNetworkInterface,
+        addresses: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::System::Net::IPAddress,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (iface, addresses))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -57,17 +57,17 @@ impl crate::System::Net::NetworkInformation::UnixIPInterfaceProperties {
             .invoke(".ctor", (iface, addresses))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        iface: *mut crate::System::Net::NetworkInformation::UnixNetworkInterface,
-        addresses: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Net::IPAddress,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (iface, addresses))?;
-        Ok(__cordl_object)
+    pub fn get_UnicastAddresses(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection = __cordl_object
+            .invoke("get_UnicastAddresses", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+NetworkInformation+UnixIPInterfaceProperties")]

@@ -28,6 +28,18 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::WellKnownServiceTy
 }
 #[cfg(feature = "System+Runtime+Remoting+WellKnownServiceTypeEntry")]
 impl crate::System::Runtime::Remoting::WellKnownServiceTypeEntry {
+    pub fn New(
+        typeName: *mut crate::System::String,
+        assemblyName: *mut crate::System::String,
+        objectUri: *mut crate::System::String,
+        mode: crate::System::Runtime::Remoting::WellKnownObjectMode,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (typeName, assemblyName, objectUri, mode))?;
+        Ok(__cordl_object)
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -36,28 +48,6 @@ impl crate::System::Runtime::Remoting::WellKnownServiceTypeEntry {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("ToString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ObjectType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_ObjectType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Mode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Runtime::Remoting::WellKnownObjectMode,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Runtime::Remoting::WellKnownObjectMode = __cordl_object
-            .invoke("get_Mode", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -74,6 +64,28 @@ impl crate::System::Runtime::Remoting::WellKnownServiceTypeEntry {
             .invoke(".ctor", (typeName, assemblyName, objectUri, mode))?;
         Ok(__cordl_ret)
     }
+    pub fn get_Mode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::Remoting::WellKnownObjectMode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Runtime::Remoting::WellKnownObjectMode = __cordl_object
+            .invoke("get_Mode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ObjectType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_ObjectType", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_ObjectUri(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -83,18 +95,6 @@ impl crate::System::Runtime::Remoting::WellKnownServiceTypeEntry {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_ObjectUri", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        typeName: *mut crate::System::String,
-        assemblyName: *mut crate::System::String,
-        objectUri: *mut crate::System::String,
-        mode: crate::System::Runtime::Remoting::WellKnownObjectMode,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (typeName, assemblyName, objectUri, mode))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+WellKnownServiceTypeEntry")]

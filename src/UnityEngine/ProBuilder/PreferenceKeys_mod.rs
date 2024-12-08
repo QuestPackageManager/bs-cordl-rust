@@ -24,12 +24,12 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::PreferenceKeys {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+PreferenceKeys")]
 impl crate::UnityEngine::ProBuilder::PreferenceKeys {
-    pub const CMD_ALT: char = "\\u{2387}";
-    pub const CMD_DELETE: char = "\\u{232b}";
-    pub const CMD_OPTION: char = "\\u{2325}";
-    pub const CMD_SHIFT: char = "\\u{21e7}";
-    pub const CMD_SUPER: char = "\\u{2318}";
-    pub const DEGREE_SYMBOL: char = "\\u{b0}";
+    pub const CMD_ALT: char = '\u{2387}';
+    pub const CMD_DELETE: char = '\u{232b}';
+    pub const CMD_OPTION: char = '\u{2325}';
+    pub const CMD_SHIFT: char = '\u{21e7}';
+    pub const CMD_SUPER: char = '\u{2318}';
+    pub const DEGREE_SYMBOL: char = '\u{b0}';
     pub const defaultUnwrapParameters: &'static str = "pbDefaultUnwrapParameters";
     pub const k_MaxPointDistanceFromControl: f32 = 20f32;
     pub const menuActions: i32 = 300i32;

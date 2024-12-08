@@ -35,6 +35,54 @@ for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
 }
 #[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
 impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
+    pub fn FinishSetup(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FinishSetup", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn MakeCurrent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MakeCurrent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnRemoved(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnRemoved", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetLightBarColor(
+        &mut self,
+        color: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetLightBarColor", (color))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -43,30 +91,6 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_R1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_R1", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_R3(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_R3", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_L1(
@@ -81,17 +105,6 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
             .invoke("get_L1", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_L3(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_L3", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_L2(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -102,105 +115,6 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         );
         let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
             .invoke("get_L2", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetLightBarColor(
-        &mut self,
-        color: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLightBarColor", (color))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_L1(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_L1", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FinishSetup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FinishSetup", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_L2(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_L2", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_R1(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_R1", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_optionsButton(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_optionsButton", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_touchpadButton(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_touchpadButton", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_optionsButton(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_optionsButton", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_R2(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_R2", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_L3(
@@ -215,27 +129,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
             .invoke("get_L3", ())?;
         Ok(__cordl_ret)
     }
-    pub fn MakeCurrent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MakeCurrent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnRemoved(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnRemoved", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_touchpadButton(
+    pub fn get_R1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -244,30 +138,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
             self,
         );
         let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_touchpadButton", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_shareButton(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_shareButton", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_shareButton(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_shareButton", (value))?;
+            .invoke("get_R1", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_R2(
@@ -282,6 +153,109 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
             .invoke("get_R2", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_R3(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
+            .invoke("get_R3", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_optionsButton(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
+            .invoke("get_optionsButton", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_shareButton(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
+            .invoke("get_shareButton", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_touchpadButton(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
+            .invoke("get_touchpadButton", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_L1(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_L1", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_L2(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_L2", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_L3(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_L3", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_R1(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_R1", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_R2(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_R2", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_R3(
         &mut self,
         value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -293,12 +267,38 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
             .invoke("set_R3", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_optionsButton(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_optionsButton", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_shareButton(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_shareButton", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_touchpadButton(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_touchpadButton", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]

@@ -28,19 +28,16 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::ContactP
 #[cfg(feature = "UnityEngine+ContactPair")]
 impl crate::UnityEngine::ContactPair {
     pub const c_InvalidFaceIndex: u32 = 33554943u32;
-    pub fn get_ContactCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn CopyToNativeArray(
+        &mut self,
+        buffer: crate::Unity::Collections::NativeArray_1<
+            crate::UnityEngine::ContactPairPoint,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_ContactCount",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_HasRemovedCollider(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_HasRemovedCollider",
-            (),
+            "CopyToNativeArray",
+            (buffer),
         )?;
         Ok(__cordl_ret)
     }
@@ -58,37 +55,6 @@ impl crate::UnityEngine::ContactPair {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetContactPoint_Internal(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetContactPoint_Internal",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_OtherCollider(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Collider> {
-        let __cordl_ret: *mut crate::UnityEngine::Collider = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_OtherCollider",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Collider(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Collider> {
-        let __cordl_ret: *mut crate::UnityEngine::Collider = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Collider",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn ExtractContactsArray(
         &mut self,
         managedContainer: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -100,19 +66,6 @@ impl crate::UnityEngine::ContactPair {
             self,
             "ExtractContactsArray",
             (managedContainer, flipped),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CopyToNativeArray(
-        &mut self,
-        buffer: crate::Unity::Collections::NativeArray_1<
-            crate::UnityEngine::ContactPairPoint,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CopyToNativeArray",
-            (buffer),
         )?;
         Ok(__cordl_ret)
     }
@@ -131,10 +84,76 @@ impl crate::UnityEngine::ContactPair {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn GetContactPointFaceIndex(
+        &mut self,
+        contactIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetContactPointFaceIndex",
+            (contactIndex),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetContactPoint_Internal(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetContactPoint_Internal",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Collider(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Collider> {
+        let __cordl_ret: *mut crate::UnityEngine::Collider = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Collider",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_ColliderInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_ColliderInstanceID",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ContactCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_ContactCount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HasRemovedCollider(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_HasRemovedCollider",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ImpulseSum(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_ImpulseSum",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsCollisionEnter(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsCollisionEnter",
             (),
         )?;
         Ok(__cordl_ret)
@@ -155,21 +174,12 @@ impl crate::UnityEngine::ContactPair {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetContactPointFaceIndex(
+    pub fn get_OtherCollider(
         &mut self,
-        contactIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Collider> {
+        let __cordl_ret: *mut crate::UnityEngine::Collider = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetContactPointFaceIndex",
-            (contactIndex),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsCollisionEnter(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsCollisionEnter",
+            "get_OtherCollider",
             (),
         )?;
         Ok(__cordl_ret)
@@ -178,16 +188,6 @@ impl crate::UnityEngine::ContactPair {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_OtherColliderInstanceID",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ImpulseSum(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_ImpulseSum",
             (),
         )?;
         Ok(__cordl_ret)

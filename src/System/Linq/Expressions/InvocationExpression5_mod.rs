@@ -29,46 +29,6 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::InvocationExpressi
 }
 #[cfg(feature = "System+Linq+Expressions+InvocationExpression5")]
 impl crate::System::Linq::Expressions::InvocationExpression5 {
-    pub fn _ctor(
-        &mut self,
-        lambda: *mut crate::System::Linq::Expressions::Expression,
-        returnType: *mut crate::System::Type,
-        arg0: *mut crate::System::Linq::Expressions::Expression,
-        arg1: *mut crate::System::Linq::Expressions::Expression,
-        arg2: *mut crate::System::Linq::Expressions::Expression,
-        arg3: *mut crate::System::Linq::Expressions::Expression,
-        arg4: *mut crate::System::Linq::Expressions::Expression,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (lambda, returnType, arg0, arg1, arg2, arg3, arg4))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Rewrite(
-        &mut self,
-        lambda: *mut crate::System::Linq::Expressions::Expression,
-        arguments: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Linq::Expressions::Expression,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::InvocationExpression,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::InvocationExpression = __cordl_object
-            .invoke("Rewrite", (lambda, arguments))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ArgumentCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ArgumentCount", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetArgument(
         &mut self,
         index: i32,
@@ -90,12 +50,52 @@ impl crate::System::Linq::Expressions::InvocationExpression5 {
         arg2: *mut crate::System::Linq::Expressions::Expression,
         arg3: *mut crate::System::Linq::Expressions::Expression,
         arg4: *mut crate::System::Linq::Expressions::Expression,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (lambda, returnType, arg0, arg1, arg2, arg3, arg4))?;
         Ok(__cordl_object)
+    }
+    pub fn Rewrite(
+        &mut self,
+        lambda: *mut crate::System::Linq::Expressions::Expression,
+        arguments: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Linq::Expressions::Expression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::InvocationExpression,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Linq::Expressions::InvocationExpression = __cordl_object
+            .invoke("Rewrite", (lambda, arguments))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        lambda: *mut crate::System::Linq::Expressions::Expression,
+        returnType: *mut crate::System::Type,
+        arg0: *mut crate::System::Linq::Expressions::Expression,
+        arg1: *mut crate::System::Linq::Expressions::Expression,
+        arg2: *mut crate::System::Linq::Expressions::Expression,
+        arg3: *mut crate::System::Linq::Expressions::Expression,
+        arg4: *mut crate::System::Linq::Expressions::Expression,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (lambda, returnType, arg0, arg1, arg2, arg3, arg4))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ArgumentCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ArgumentCount", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+InvocationExpression5")]

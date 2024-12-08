@@ -38,6 +38,17 @@ impl std::ops::DerefMut for BeatmapLevelsRepository {
 }
 #[cfg(feature = "BeatmapLevelsRepository")]
 impl BeatmapLevelsRepository {
+    pub fn GetBeatmapLevelById(
+        &mut self,
+        levelId: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevel> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut BeatmapLevel = __cordl_object
+            .invoke("GetBeatmapLevelById", (levelId))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetBeatmapLevelPackByBeatmapLevelId(
         &mut self,
         levelId: *mut crate::System::String,
@@ -60,18 +71,16 @@ impl BeatmapLevelsRepository {
             .invoke("GetBeatmapLevelPackByPackId", (packId))?;
         Ok(__cordl_ret)
     }
-    pub fn get_beatmapLevelPacks(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<*mut BeatmapLevelPack>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
+    pub fn New(
+        beatmapLevelPacks: *mut crate::System::Collections::Generic::IEnumerable_1<
             *mut BeatmapLevelPack,
-        > = __cordl_object.invoke("get_beatmapLevelPacks", ())?;
-        Ok(__cordl_ret)
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (beatmapLevelPacks))?;
+        Ok(__cordl_object)
     }
     pub fn TryGetBeatmapLevelById(
         &mut self,
@@ -83,17 +92,6 @@ impl BeatmapLevelsRepository {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetBeatmapLevelById", (levelId, beatmapLevel))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetBeatmapLevelById(
-        &mut self,
-        levelId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevel> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut BeatmapLevel = __cordl_object
-            .invoke("GetBeatmapLevelById", (levelId))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -109,16 +107,18 @@ impl BeatmapLevelsRepository {
             .invoke(".ctor", (beatmapLevelPacks))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        beatmapLevelPacks: *mut crate::System::Collections::Generic::IEnumerable_1<
+    pub fn get_beatmapLevelPacks(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IReadOnlyList_1<*mut BeatmapLevelPack>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut BeatmapLevelPack,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (beatmapLevelPacks))?;
-        Ok(__cordl_object)
+        > = __cordl_object.invoke("get_beatmapLevelPacks", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapLevelsRepository")]

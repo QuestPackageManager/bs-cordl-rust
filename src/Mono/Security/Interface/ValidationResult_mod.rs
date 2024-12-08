@@ -30,6 +30,20 @@ impl std::ops::DerefMut for crate::Mono::Security::Interface::ValidationResult {
 }
 #[cfg(feature = "Mono+Security+Interface+ValidationResult")]
 impl crate::Mono::Security::Interface::ValidationResult {
+    pub fn New(
+        trusted: bool,
+        user_denied: bool,
+        error_code: i32,
+        policy_errors: crate::System::Nullable_1<
+            crate::Mono::Security::Interface::MonoSslPolicyErrors,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (trusted, user_denied, error_code, policy_errors))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         trusted: bool,
@@ -59,20 +73,6 @@ impl crate::Mono::Security::Interface::ValidationResult {
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_UserDenied", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        trusted: bool,
-        user_denied: bool,
-        error_code: i32,
-        policy_errors: crate::System::Nullable_1<
-            crate::Mono::Security::Interface::MonoSslPolicyErrors,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (trusted, user_denied, error_code, policy_errors))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Security+Interface+ValidationResult")]

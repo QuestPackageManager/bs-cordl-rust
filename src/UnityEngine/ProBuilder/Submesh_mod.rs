@@ -27,27 +27,47 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Submesh {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Submesh")]
 impl crate::UnityEngine::ProBuilder::Submesh {
-    pub fn set_submeshIndex(
+    pub fn New_Mesh_i32_1(
+        mesh: *mut crate::UnityEngine::Mesh,
+        subMeshIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (mesh, subMeshIndex))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_MeshTopology_IEnumerable_1_0(
+        submeshIndex: i32,
+        topology: crate::UnityEngine::MeshTopology,
+        indexes: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (submeshIndex, topology, indexes))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToString(
         &mut self,
-        value: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Mesh_i32_1(
+        &mut self,
+        mesh: *mut crate::UnityEngine::Mesh,
+        subMeshIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_submeshIndex", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_indexes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<i32> = __cordl_object
-            .invoke("get_indexes", ())?;
+            .invoke(".ctor", (mesh, subMeshIndex))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_i32_MeshTopology_IEnumerable_1_0(
@@ -63,16 +83,33 @@ impl crate::UnityEngine::ProBuilder::Submesh {
             .invoke(".ctor", (submeshIndex, topology, indexes))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Mesh_i32_1(
+    pub fn get_indexes(
         &mut self,
-        mesh: *mut crate::UnityEngine::Mesh,
-        subMeshIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (mesh, subMeshIndex))?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<i32> = __cordl_object
+            .invoke("get_indexes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_submeshIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_submeshIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_topology(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::MeshTopology> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::MeshTopology = __cordl_object
+            .invoke("get_topology", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_indexes(
@@ -86,14 +123,15 @@ impl crate::UnityEngine::ProBuilder::Submesh {
             .invoke("set_indexes", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_topology(
+    pub fn set_submeshIndex(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::MeshTopology> {
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::MeshTopology = __cordl_object
-            .invoke("get_topology", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_submeshIndex", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_topology(
@@ -106,44 +144,6 @@ impl crate::UnityEngine::ProBuilder::Submesh {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_topology", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_submeshIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_submeshIndex", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_i32_MeshTopology_IEnumerable_1_0(
-        submeshIndex: i32,
-        topology: crate::UnityEngine::MeshTopology,
-        indexes: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (submeshIndex, topology, indexes))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Mesh_i32_1(
-        mesh: *mut crate::UnityEngine::Mesh,
-        subMeshIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (mesh, subMeshIndex))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Submesh")]

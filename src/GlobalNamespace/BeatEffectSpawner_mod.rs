@@ -34,15 +34,15 @@ impl std::ops::DerefMut for BeatEffectSpawner {
 impl BeatEffectSpawner {
     #[cfg(feature = "BeatEffectSpawner+InitData")]
     pub type InitData = crate::GlobalNamespace::BeatEffectSpawner_InitData;
-    pub fn Init(
+    pub fn HandleBeatEffectDidFinish(
         &mut self,
-        beatEffectPool: *mut crate::GlobalNamespace::BeatEffect_Pool,
+        beatEffect: *mut BeatEffect,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (beatEffectPool))?;
+            .invoke("HandleBeatEffectDidFinish", (beatEffect))?;
         Ok(__cordl_ret)
     }
     pub fn HandleNoteDidStartJump(
@@ -56,26 +56,23 @@ impl BeatEffectSpawner {
             .invoke("HandleNoteDidStartJump", (noteController))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleBeatEffectDidFinish(
+    pub fn Init(
         &mut self,
-        beatEffect: *mut BeatEffect,
+        beatEffectPool: *mut crate::GlobalNamespace::BeatEffect_Pool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleBeatEffectDidFinish", (beatEffect))?;
+            .invoke("Init", (beatEffectPool))?;
         Ok(__cordl_ret)
     }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnDestroy(
         &mut self,
@@ -85,16 +82,6 @@ impl BeatEffectSpawner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn Start(
@@ -107,12 +94,25 @@ impl BeatEffectSpawner {
             .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatEffectSpawner")]
@@ -151,6 +151,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatEffectSpawner_InitData {
 }
 #[cfg(feature = "BeatEffectSpawner+InitData")]
 impl crate::GlobalNamespace::BeatEffectSpawner_InitData {
+    pub fn New(hideNoteSpawnEffect: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (hideNoteSpawnEffect))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         hideNoteSpawnEffect: bool,
@@ -161,15 +168,6 @@ impl crate::GlobalNamespace::BeatEffectSpawner_InitData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (hideNoteSpawnEffect))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        hideNoteSpawnEffect: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (hideNoteSpawnEffect))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatEffectSpawner+InitData")]

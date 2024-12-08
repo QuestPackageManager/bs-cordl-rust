@@ -26,25 +26,18 @@ for crate::UnityEngine::ClosestPointCommand {
 }
 #[cfg(feature = "UnityEngine+ClosestPointCommand")]
 impl crate::UnityEngine::ClosestPointCommand {
-    pub fn set_point(
+    pub fn _ctor_Collider1(
         &mut self,
-        value: crate::UnityEngine::Vector3,
+        point: crate::UnityEngine::Vector3,
+        collider: *mut crate::UnityEngine::Collider,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        scale: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_point",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_colliderInstanceID(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_colliderInstanceID",
-            (value),
+            ".ctor",
+            (point, collider, position, rotation, scale),
         )?;
         Ok(__cordl_ret)
     }
@@ -63,36 +56,20 @@ impl crate::UnityEngine::ClosestPointCommand {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Collider1(
-        &mut self,
-        point: crate::UnityEngine::Vector3,
-        collider: *mut crate::UnityEngine::Collider,
-        position: crate::UnityEngine::Vector3,
-        rotation: crate::UnityEngine::Quaternion,
-        scale: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (point, collider, position, rotation, scale),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_position(
-        &mut self,
-        value: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_position",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_colliderInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_colliderInstanceID",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_point(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_point",
             (),
         )?;
         Ok(__cordl_ret)
@@ -104,17 +81,6 @@ impl crate::UnityEngine::ClosestPointCommand {
             self,
             "get_position",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_rotation(
-        &mut self,
-        value: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_rotation",
-            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -138,6 +104,50 @@ impl crate::UnityEngine::ClosestPointCommand {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn set_colliderInstanceID(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_colliderInstanceID",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_point(
+        &mut self,
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_point",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_position(
+        &mut self,
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_position",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_rotation(
+        &mut self,
+        value: crate::UnityEngine::Quaternion,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_rotation",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_scale(
         &mut self,
         value: crate::UnityEngine::Vector3,
@@ -146,16 +156,6 @@ impl crate::UnityEngine::ClosestPointCommand {
             self,
             "set_scale",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_point(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_point",
-            (),
         )?;
         Ok(__cordl_ret)
     }

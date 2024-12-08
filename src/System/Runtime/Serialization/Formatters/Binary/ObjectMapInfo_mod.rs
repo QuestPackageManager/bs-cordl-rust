@@ -31,6 +31,18 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectMapInfo {
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectMapInfo")]
 impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMapInfo {
+    pub fn New(
+        objectId: i32,
+        numMembers: i32,
+        memberNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        memberTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (objectId, numMembers, memberNames, memberTypes))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         objectId: i32,
@@ -57,18 +69,6 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMapInfo {
         let __cordl_ret: bool = __cordl_object
             .invoke("isCompatible", (numMembers, memberNames, memberTypes))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        objectId: i32,
-        numMembers: i32,
-        memberNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        memberTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (objectId, numMembers, memberNames, memberTypes))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectMapInfo")]

@@ -24,52 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IPanel {
 }
 #[cfg(feature = "UnityEngine+UIElements+IPanel")]
 impl crate::UnityEngine::UIElements::IPanel {
-    pub fn get_dispatcher(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::EventDispatcher,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::EventDispatcher = __cordl_object
-            .invoke("get_dispatcher", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_contextType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::ContextType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::ContextType = __cordl_object
-            .invoke("get_contextType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_visualTree(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
-            .invoke("get_visualTree", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_focusController(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::FocusController,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::FocusController = __cordl_object
-            .invoke("get_focusController", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Pick(
         &mut self,
         point: crate::UnityEngine::Vector2,
@@ -87,6 +41,52 @@ impl crate::UnityEngine::UIElements::IPanel {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_contextType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::ContextType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::ContextType = __cordl_object
+            .invoke("get_contextType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_dispatcher(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::EventDispatcher,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::EventDispatcher = __cordl_object
+            .invoke("get_dispatcher", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_focusController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::FocusController,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::FocusController = __cordl_object
+            .invoke("get_focusController", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_visualTree(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
+            .invoke("get_visualTree", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IPanel")]

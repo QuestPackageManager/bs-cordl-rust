@@ -32,28 +32,21 @@ for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
 }
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarSystemSettings")]
 impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
-    pub fn get_avatarResultsPrefab(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject = __cordl_object
-            .invoke("get_avatarResultsPrefab", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn get_avatarHologramPrefab(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject = __cordl_object
-            .invoke("get_avatarHologramPrefab", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_avatarEditorPrefab(
@@ -68,18 +61,6 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
             .invoke("get_avatarEditorPrefab", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_avatarSelectionViewPrefab(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject = __cordl_object
-            .invoke("get_avatarSelectionViewPrefab", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_avatarForUnityEditorPrefab(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -90,16 +71,6 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
         );
         let __cordl_ret: *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject = __cordl_object
             .invoke("get_avatarForUnityEditorPrefab", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_avatarGameplayPrefab(
@@ -114,12 +85,41 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
             .invoke("get_avatarGameplayPrefab", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_avatarHologramPrefab(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject = __cordl_object
+            .invoke("get_avatarHologramPrefab", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_avatarResultsPrefab(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject = __cordl_object
+            .invoke("get_avatarResultsPrefab", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_avatarSelectionViewPrefab(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject = __cordl_object
+            .invoke("get_avatarSelectionViewPrefab", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarSystemSettings")]

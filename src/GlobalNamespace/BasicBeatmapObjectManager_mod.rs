@@ -41,29 +41,37 @@ impl std::ops::DerefMut for BasicBeatmapObjectManager {
 impl BasicBeatmapObjectManager {
     #[cfg(feature = "BasicBeatmapObjectManager+InitData")]
     pub type InitData = crate::GlobalNamespace::BasicBeatmapObjectManager_InitData;
-    pub fn _ctor(
+    pub fn DespawnInternal_NoteController1(
         &mut self,
+        noteController: *mut NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("DespawnInternal", (noteController))?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessObstacleData(
+    pub fn DespawnInternal_ObstacleController0(
         &mut self,
-        obstacleData: *mut ObstacleData,
-        obstacleSpawnData: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
-        >,
-        rotation: f32,
+        obstacleController: *mut ObstacleController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessObstacleData", (obstacleData, obstacleSpawnData, rotation))?;
+            .invoke("DespawnInternal", (obstacleController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DespawnInternal_SliderController2(
+        &mut self,
+        sliderNoteController: *mut SliderController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DespawnInternal", (sliderNoteController))?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -94,51 +102,12 @@ impl BasicBeatmapObjectManager {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_activeObstacleControllers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut ObstacleController>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut ObstacleController,
-        > = __cordl_object.invoke("get_activeObstacleControllers", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DespawnInternal_ObstacleController0(
-        &mut self,
-        obstacleController: *mut ObstacleController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DespawnInternal", (obstacleController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DespawnInternal_NoteController1(
-        &mut self,
-        noteController: *mut NoteController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DespawnInternal", (noteController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DespawnInternal_SliderController2(
-        &mut self,
-        sliderNoteController: *mut SliderController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DespawnInternal", (sliderNoteController))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ProcessNoteData(
         &mut self,
@@ -159,6 +128,21 @@ impl BasicBeatmapObjectManager {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn ProcessObstacleData(
+        &mut self,
+        obstacleData: *mut ObstacleData,
+        obstacleSpawnData: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
+        >,
+        rotation: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessObstacleData", (obstacleData, obstacleSpawnData, rotation))?;
+        Ok(__cordl_ret)
+    }
     pub fn ProcessSliderData(
         &mut self,
         sliderData: *mut SliderData,
@@ -174,12 +158,28 @@ impl BasicBeatmapObjectManager {
             .invoke("ProcessSliderData", (sliderData, sliderSpawnData, rotation))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_activeObstacleControllers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<*mut ObstacleController>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut ObstacleController,
+        > = __cordl_object.invoke("get_activeObstacleControllers", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BasicBeatmapObjectManager")]
@@ -222,6 +222,21 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BasicBeatmapObjectManager_In
 }
 #[cfg(feature = "BasicBeatmapObjectManager+InitData")]
 impl crate::GlobalNamespace::BasicBeatmapObjectManager_InitData {
+    pub fn New(
+        disappearingArrows: bool,
+        ghostNotes: bool,
+        cutAngleTolerance: f32,
+        notesUniformScale: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (disappearingArrows, ghostNotes, cutAngleTolerance, notesUniformScale),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         disappearingArrows: bool,
@@ -238,21 +253,6 @@ impl crate::GlobalNamespace::BasicBeatmapObjectManager_InitData {
                 (disappearingArrows, ghostNotes, cutAngleTolerance, notesUniformScale),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        disappearingArrows: bool,
-        ghostNotes: bool,
-        cutAngleTolerance: f32,
-        notesUniformScale: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (disappearingArrows, ghostNotes, cutAngleTolerance, notesUniformScale),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BasicBeatmapObjectManager+InitData")]

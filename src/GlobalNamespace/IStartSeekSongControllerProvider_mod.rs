@@ -24,6 +24,11 @@ impl std::ops::DerefMut for IStartSeekSongControllerProvider {
 }
 #[cfg(feature = "IStartSeekSongControllerProvider")]
 impl IStartSeekSongControllerProvider {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_songController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut IStartSeekSongController> {
@@ -33,11 +38,6 @@ impl IStartSeekSongControllerProvider {
         let __cordl_ret: *mut IStartSeekSongController = __cordl_object
             .invoke("get_songController", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IStartSeekSongControllerProvider")]

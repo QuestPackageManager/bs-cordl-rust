@@ -37,6 +37,22 @@ impl crate::Mono::Unity::UnityTlsStream {
             .invoke("CreateContext", (options))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        innerStream: *mut crate::System::IO::Stream,
+        leaveInnerStreamOpen: bool,
+        owner: *mut crate::System::Net::Security::SslStream,
+        settings: *mut crate::Mono::Security::Interface::MonoTlsSettings,
+        provider: *mut crate::Mono::Net::Security::MobileTlsProvider,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (innerStream, leaveInnerStreamOpen, owner, settings, provider),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         innerStream: *mut crate::System::IO::Stream,
@@ -54,22 +70,6 @@ impl crate::Mono::Unity::UnityTlsStream {
                 (innerStream, leaveInnerStreamOpen, owner, settings, provider),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        innerStream: *mut crate::System::IO::Stream,
-        leaveInnerStreamOpen: bool,
-        owner: *mut crate::System::Net::Security::SslStream,
-        settings: *mut crate::Mono::Security::Interface::MonoTlsSettings,
-        provider: *mut crate::Mono::Net::Security::MobileTlsProvider,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (innerStream, leaveInnerStreamOpen, owner, settings, provider),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTlsStream")]

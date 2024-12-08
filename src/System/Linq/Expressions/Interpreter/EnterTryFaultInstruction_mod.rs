@@ -28,16 +28,12 @@ for crate::System::Linq::Expressions::Interpreter::EnterTryFaultInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+EnterTryFaultInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::EnterTryFaultInstruction {
-    pub fn SetTryHandler(
-        &mut self,
-        tryHandler: *mut crate::System::Linq::Expressions::Interpreter::TryFaultHandler,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTryHandler", (tryHandler))?;
-        Ok(__cordl_ret)
+    pub fn New(targetIndex: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (targetIndex))?;
+        Ok(__cordl_object)
     }
     pub fn Run(
         &mut self,
@@ -49,6 +45,17 @@ impl crate::System::Linq::Expressions::Interpreter::EnterTryFaultInstruction {
         let __cordl_ret: i32 = __cordl_object.invoke("Run", (frame))?;
         Ok(__cordl_ret)
     }
+    pub fn SetTryHandler(
+        &mut self,
+        tryHandler: *mut crate::System::Linq::Expressions::Interpreter::TryFaultHandler,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetTryHandler", (tryHandler))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         targetIndex: i32,
@@ -58,6 +65,18 @@ impl crate::System::Linq::Expressions::Interpreter::EnterTryFaultInstruction {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (targetIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Handler(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::Interpreter::TryFaultHandler,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Linq::Expressions::Interpreter::TryFaultHandler = __cordl_object
+            .invoke("get_Handler", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_InstructionName(
@@ -76,25 +95,6 @@ impl crate::System::Linq::Expressions::Interpreter::EnterTryFaultInstruction {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedContinuations", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_Handler(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Interpreter::TryFaultHandler,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Interpreter::TryFaultHandler = __cordl_object
-            .invoke("get_Handler", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(targetIndex: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (targetIndex))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+EnterTryFaultInstruction")]

@@ -49,29 +49,6 @@ impl std::ops::DerefMut for crate::HMUI::ViewController_DidActivateDelegate {
 }
 #[cfg(feature = "HMUI+ViewController+DidActivateDelegate")]
 impl crate::HMUI::ViewController_DidActivateDelegate {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         firstActivation: bool,
@@ -96,6 +73,17 @@ impl crate::HMUI::ViewController_DidActivateDelegate {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         firstActivation: bool,
@@ -115,12 +103,24 @@ impl crate::HMUI::ViewController_DidActivateDelegate {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "HMUI+ViewController+DidActivateDelegate")]
@@ -176,18 +176,6 @@ impl crate::HMUI::ViewController_DidDeactivateDelegate {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -214,12 +202,24 @@ impl crate::HMUI::ViewController_DidDeactivateDelegate {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "HMUI+ViewController+DidDeactivateDelegate")]
@@ -274,210 +274,18 @@ impl crate::HMUI::ViewController {
     pub const kTransitionMoveOffset: f32 = 2f32;
     #[cfg(feature = "HMUI+ViewController+_ReplaceViewControllerCoroutine_d__60")]
     pub type _ReplaceViewControllerCoroutine_d__60 = crate::HMUI::ViewController__ReplaceViewControllerCoroutine_d__60;
-    #[cfg(feature = "HMUI+ViewController+DidDeactivateDelegate")]
-    pub type DidDeactivateDelegate = crate::HMUI::ViewController_DidDeactivateDelegate;
-    #[cfg(feature = "HMUI+ViewController+AnimationDirection")]
-    pub type AnimationDirection = crate::HMUI::ViewController_AnimationDirection;
-    #[cfg(feature = "HMUI+ViewController+_DismissViewControllerCoroutine_d__62")]
-    pub type _DismissViewControllerCoroutine_d__62 = crate::HMUI::ViewController__DismissViewControllerCoroutine_d__62;
     #[cfg(feature = "HMUI+ViewController+AnimationType")]
     pub type AnimationType = crate::HMUI::ViewController_AnimationType;
+    #[cfg(feature = "HMUI+ViewController+_DismissViewControllerCoroutine_d__62")]
+    pub type _DismissViewControllerCoroutine_d__62 = crate::HMUI::ViewController__DismissViewControllerCoroutine_d__62;
+    #[cfg(feature = "HMUI+ViewController+AnimationDirection")]
+    pub type AnimationDirection = crate::HMUI::ViewController_AnimationDirection;
+    #[cfg(feature = "HMUI+ViewController+DidDeactivateDelegate")]
+    pub type DidDeactivateDelegate = crate::HMUI::ViewController_DidDeactivateDelegate;
     #[cfg(feature = "HMUI+ViewController+DidActivateDelegate")]
     pub type DidActivateDelegate = crate::HMUI::ViewController_DidActivateDelegate;
     #[cfg(feature = "HMUI+ViewController+_PresentViewControllerCoroutine_d__58")]
     pub type _PresentViewControllerCoroutine_d__58 = crate::HMUI::ViewController__PresentViewControllerCoroutine_d__58;
-    pub fn get_graphicRaycaster(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::EventSystems::BaseRaycaster,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::EventSystems::BaseRaycaster = __cordl_object
-            .invoke("get_graphicRaycaster", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_isInTransition(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_isInTransition", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didActivateEvent(
-        &mut self,
-        value: *mut crate::HMUI::ViewController_DidActivateDelegate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didActivateEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn __DismissViewController(
-        &mut self,
-        finishedCallback: *mut crate::System::Action,
-        animationDirection: crate::HMUI::ViewController_AnimationDirection,
-        immediately: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "__DismissViewController",
-                (finishedCallback, animationDirection, immediately),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_buttonBinder(
-        &mut self,
-        value: *mut crate::HMUI::ButtonBinder,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_buttonBinder", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didActivateEvent(
-        &mut self,
-        value: *mut crate::HMUI::ViewController_DidActivateDelegate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didActivateEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn __PresentViewController(
-        &mut self,
-        viewController: *mut crate::HMUI::ViewController,
-        finishedCallback: *mut crate::System::Action,
-        animationDirection: crate::HMUI::ViewController_AnimationDirection,
-        immediately: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "__PresentViewController",
-                (viewController, finishedCallback, animationDirection, immediately),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn PresentViewControllerCoroutine(
-        &mut self,
-        newViewController: *mut crate::HMUI::ViewController,
-        finishedCallback: *mut crate::System::Action,
-        animationDirection: crate::HMUI::ViewController_AnimationDirection,
-        immediately: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke(
-                "PresentViewControllerCoroutine",
-                (newViewController, finishedCallback, animationDirection, immediately),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didDeactivateEvent(
-        &mut self,
-        value: *mut crate::HMUI::ViewController_DidDeactivateDelegate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didDeactivateEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isActivated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isActivated", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn __ResetViewController(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("__ResetViewController", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_childViewController(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::ViewController> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::ViewController = __cordl_object
-            .invoke("get_childViewController", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn __ReplaceViewController(
-        &mut self,
-        viewController: *mut crate::HMUI::ViewController,
-        finishedCallback: *mut crate::System::Action,
-        animationType: crate::HMUI::ViewController_AnimationType,
-        animationDirection: crate::HMUI::ViewController_AnimationDirection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "__ReplaceViewController",
-                (viewController, finishedCallback, animationType, animationDirection),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didDeactivateEvent(
-        &mut self,
-        value: *mut crate::HMUI::ViewController_DidDeactivateDelegate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didDeactivateEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn DeactivateGameObject(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -486,32 +294,6 @@ impl crate::HMUI::ViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DeactivateGameObject", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn __Deactivate(
-        &mut self,
-        removedFromHierarchy: bool,
-        deactivateGameObject: bool,
-        screenSystemDisabling: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "__Deactivate",
-                (removedFromHierarchy, deactivateGameObject, screenSystemDisabling),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_canvasGroup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::CanvasGroup> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::CanvasGroup = __cordl_object
-            .invoke("get_canvasGroup", ())?;
         Ok(__cordl_ret)
     }
     pub fn DidActivate(
@@ -527,40 +309,6 @@ impl crate::HMUI::ViewController {
             .invoke(
                 "DidActivate",
                 (firstActivation, addedToHierarchy, screenSystemEnabling),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isInViewControllerHierarchy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_isInViewControllerHierarchy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isInTransition(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isInTransition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReplaceViewControllerCoroutine(
-        &mut self,
-        newViewController: *mut crate::HMUI::ViewController,
-        finishedCallback: *mut crate::System::Action,
-        animationType: crate::HMUI::ViewController_AnimationType,
-        animationDirection: crate::HMUI::ViewController_AnimationDirection,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke(
-                "ReplaceViewControllerCoroutine",
-                (newViewController, finishedCallback, animationType, animationDirection),
             )?;
         Ok(__cordl_ret)
     }
@@ -603,6 +351,220 @@ impl crate::HMUI::ViewController {
             .invoke("IsViewControllerInHierarchy", (viewController))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn PresentViewControllerCoroutine(
+        &mut self,
+        newViewController: *mut crate::HMUI::ViewController,
+        finishedCallback: *mut crate::System::Action,
+        animationDirection: crate::HMUI::ViewController_AnimationDirection,
+        immediately: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke(
+                "PresentViewControllerCoroutine",
+                (newViewController, finishedCallback, animationDirection, immediately),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReplaceViewControllerCoroutine(
+        &mut self,
+        newViewController: *mut crate::HMUI::ViewController,
+        finishedCallback: *mut crate::System::Action,
+        animationType: crate::HMUI::ViewController_AnimationType,
+        animationDirection: crate::HMUI::ViewController_AnimationDirection,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke(
+                "ReplaceViewControllerCoroutine",
+                (newViewController, finishedCallback, animationType, animationDirection),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn __Activate(
+        &mut self,
+        addedToHierarchy: bool,
+        screenSystemEnabling: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("__Activate", (addedToHierarchy, screenSystemEnabling))?;
+        Ok(__cordl_ret)
+    }
+    pub fn __Deactivate(
+        &mut self,
+        removedFromHierarchy: bool,
+        deactivateGameObject: bool,
+        screenSystemDisabling: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "__Deactivate",
+                (removedFromHierarchy, deactivateGameObject, screenSystemDisabling),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn __DismissViewController(
+        &mut self,
+        finishedCallback: *mut crate::System::Action,
+        animationDirection: crate::HMUI::ViewController_AnimationDirection,
+        immediately: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "__DismissViewController",
+                (finishedCallback, animationDirection, immediately),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn __Init(
+        &mut self,
+        screen: *mut crate::HMUI::Screen,
+        parentViewController: *mut crate::HMUI::ViewController,
+        containerViewController: *mut crate::HMUI::ContainerViewController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("__Init", (screen, parentViewController, containerViewController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn __PresentViewController(
+        &mut self,
+        viewController: *mut crate::HMUI::ViewController,
+        finishedCallback: *mut crate::System::Action,
+        animationDirection: crate::HMUI::ViewController_AnimationDirection,
+        immediately: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "__PresentViewController",
+                (viewController, finishedCallback, animationDirection, immediately),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn __ReplaceViewController(
+        &mut self,
+        viewController: *mut crate::HMUI::ViewController,
+        finishedCallback: *mut crate::System::Action,
+        animationType: crate::HMUI::ViewController_AnimationType,
+        animationDirection: crate::HMUI::ViewController_AnimationDirection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "__ReplaceViewController",
+                (viewController, finishedCallback, animationType, animationDirection),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn __ResetViewController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("__ResetViewController", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didActivateEvent(
+        &mut self,
+        value: *mut crate::HMUI::ViewController_DidActivateDelegate,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didActivateEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didDeactivateEvent(
+        &mut self,
+        value: *mut crate::HMUI::ViewController_DidDeactivateDelegate,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didDeactivateEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_buttonBinder(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::ButtonBinder> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::ButtonBinder = __cordl_object
+            .invoke("get_buttonBinder", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_canvasGroup(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::CanvasGroup> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::CanvasGroup = __cordl_object
+            .invoke("get_canvasGroup", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_childViewController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::ViewController> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::ViewController = __cordl_object
+            .invoke("get_childViewController", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_containerViewController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::ContainerViewController> {
@@ -611,6 +573,59 @@ impl crate::HMUI::ViewController {
         );
         let __cordl_ret: *mut crate::HMUI::ContainerViewController = __cordl_object
             .invoke("get_containerViewController", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_enableUserInteractions(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_enableUserInteractions", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_graphicRaycaster(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::EventSystems::BaseRaycaster,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::EventSystems::BaseRaycaster = __cordl_object
+            .invoke("get_graphicRaycaster", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isActivated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isActivated", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isInTransition(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isInTransition", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isInViewControllerHierarchy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_isInViewControllerHierarchy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_parentViewController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::ViewController> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::ViewController = __cordl_object
+            .invoke("get_parentViewController", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_rectTransform(
@@ -640,34 +655,37 @@ impl crate::HMUI::ViewController {
         let __cordl_ret: bool = __cordl_object.invoke("get_wasActivatedBefore", ())?;
         Ok(__cordl_ret)
     }
-    pub fn __Init(
+    pub fn remove_didActivateEvent(
         &mut self,
-        screen: *mut crate::HMUI::Screen,
-        parentViewController: *mut crate::HMUI::ViewController,
-        containerViewController: *mut crate::HMUI::ContainerViewController,
+        value: *mut crate::HMUI::ViewController_DidActivateDelegate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("__Init", (screen, parentViewController, containerViewController))?;
+            .invoke("remove_didActivateEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_buttonBinder(
+    pub fn remove_didDeactivateEvent(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::ButtonBinder> {
+        value: *mut crate::HMUI::ViewController_DidDeactivateDelegate,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::HMUI::ButtonBinder = __cordl_object
-            .invoke("get_buttonBinder", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didDeactivateEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_enableUserInteractions(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn set_buttonBinder(
+        &mut self,
+        value: *mut crate::HMUI::ButtonBinder,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_enableUserInteractions", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_buttonBinder", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_enableUserInteractions(
@@ -681,34 +699,16 @@ impl crate::HMUI::ViewController {
             .invoke("set_enableUserInteractions", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn __Activate(
+    pub fn set_isInTransition(
         &mut self,
-        addedToHierarchy: bool,
-        screenSystemEnabling: bool,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("__Activate", (addedToHierarchy, screenSystemEnabling))?;
+            .invoke("set_isInTransition", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_parentViewController(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::ViewController> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::ViewController = __cordl_object
-            .invoke("get_parentViewController", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HMUI+ViewController")]

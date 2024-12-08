@@ -95,25 +95,11 @@ for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
 }
 #[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
 impl crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
-    pub fn set_IsDataHighConfidence(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_IsDataHighConfidence(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_IsDataHighConfidence",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ShouldUseSystemGestureMaterial(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_ShouldUseSystemGestureMaterial",
-            (value),
+            "get_IsDataHighConfidence",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -122,6 +108,27 @@ impl crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
             self,
             "get_IsDataValid",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ShouldUseSystemGestureMaterial(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_ShouldUseSystemGestureMaterial",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IsDataHighConfidence(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_IsDataHighConfidence",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -136,21 +143,14 @@ impl crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_ShouldUseSystemGestureMaterial(
+    pub fn set_ShouldUseSystemGestureMaterial(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_ShouldUseSystemGestureMaterial",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsDataHighConfidence(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsDataHighConfidence",
-            (),
+            "set_ShouldUseSystemGestureMaterial",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -192,14 +192,24 @@ impl std::ops::DerefMut for OVRMeshRenderer {
 }
 #[cfg(feature = "OVRMeshRenderer")]
 impl OVRMeshRenderer {
-    #[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
-    pub type MeshRendererData = crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData;
     #[cfg(feature = "OVRMeshRenderer+ConfidenceBehavior")]
     pub type ConfidenceBehavior = crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior;
-    #[cfg(feature = "OVRMeshRenderer+IOVRMeshRendererDataProvider")]
-    type IOVRMeshRendererDataProvider = crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider;
     #[cfg(feature = "OVRMeshRenderer+SystemGestureBehavior")]
     pub type SystemGestureBehavior = crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior;
+    #[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
+    pub type MeshRendererData = crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData;
+    #[cfg(feature = "OVRMeshRenderer+IOVRMeshRendererDataProvider")]
+    type IOVRMeshRendererDataProvider = crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider;
+    pub fn Awake(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Awake", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Initialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -210,65 +220,18 @@ impl OVRMeshRenderer {
             .invoke("Initialize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsDataValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsDataValid", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsInitialized(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsInitialized", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsDataHighConfidence(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsDataHighConfidence", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsDataValid(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsDataValid", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsDataHighConfidence(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsDataHighConfidence", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ShouldInitialize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ShouldInitialize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsInitialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsInitialized", ())?;
         Ok(__cordl_ret)
     }
     pub fn Start(
@@ -291,6 +254,37 @@ impl OVRMeshRenderer {
             .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsDataHighConfidence(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsDataHighConfidence", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsDataValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsDataValid", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsInitialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsInitialized", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_ShouldUseSystemGestureMaterial(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -301,24 +295,37 @@ impl OVRMeshRenderer {
             .invoke("get_ShouldUseSystemGestureMaterial", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Awake(
+    pub fn set_IsDataHighConfidence(
         &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
+            .invoke("set_IsDataHighConfidence", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn set_IsDataValid(
         &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("set_IsDataValid", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IsInitialized(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsInitialized", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_ShouldUseSystemGestureMaterial(
@@ -331,13 +338,6 @@ impl OVRMeshRenderer {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ShouldUseSystemGestureMaterial", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRMeshRenderer")]

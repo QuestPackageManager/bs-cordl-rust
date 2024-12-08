@@ -30,6 +30,21 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SliderIntensityEffect_FadeEl
 }
 #[cfg(feature = "SliderIntensityEffect+FadeElement")]
 impl crate::GlobalNamespace::SliderIntensityEffect_FadeElement {
+    pub fn New(
+        easeType: EaseType,
+        startIntensity: f32,
+        endIntensity: f32,
+        startCallback: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (easeType, startIntensity, endIntensity, startCallback),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         easeType: EaseType,
@@ -43,21 +58,6 @@ impl crate::GlobalNamespace::SliderIntensityEffect_FadeElement {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (easeType, startIntensity, endIntensity, startCallback))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        easeType: EaseType,
-        startIntensity: f32,
-        endIntensity: f32,
-        startCallback: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (easeType, startIntensity, endIntensity, startCallback),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SliderIntensityEffect+FadeElement")]
@@ -98,6 +98,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SliderIntensityEffect_InitDa
 }
 #[cfg(feature = "SliderIntensityEffect+InitData")]
 impl crate::GlobalNamespace::SliderIntensityEffect_InitData {
+    pub fn New(
+        arcVisibilityType: ArcVisibilityType,
+        hapticFeedbackEnabled: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (arcVisibilityType, hapticFeedbackEnabled))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         arcVisibilityType: ArcVisibilityType,
@@ -109,16 +119,6 @@ impl crate::GlobalNamespace::SliderIntensityEffect_InitData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (arcVisibilityType, hapticFeedbackEnabled))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        arcVisibilityType: ArcVisibilityType,
-        hapticFeedbackEnabled: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (arcVisibilityType, hapticFeedbackEnabled))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SliderIntensityEffect+InitData")]
@@ -160,18 +160,6 @@ for crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate {
 }
 #[cfg(feature = "SliderIntensityEffect+IntensityCalculationDelegate")]
 impl crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate {
-    pub fn Invoke(
-        &mut self,
-        timeSinceLastSection: f32,
-        timeSinceHeadNoteJump: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("Invoke", (timeSinceLastSection, timeSinceHeadNoteJump))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         timeSinceLastSection: f32,
@@ -189,6 +177,38 @@ impl crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate 
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        timeSinceLastSection: f32,
+        timeSinceHeadNoteJump: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("Invoke", (timeSinceLastSection, timeSinceHeadNoteJump))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -200,26 +220,6 @@ impl crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate 
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SliderIntensityEffect+IntensityCalculationDelegate")]
@@ -283,30 +283,22 @@ impl std::ops::DerefMut for SliderIntensityEffect {
 }
 #[cfg(feature = "SliderIntensityEffect")]
 impl SliderIntensityEffect {
-    #[cfg(feature = "SliderIntensityEffect+_ProcessEffectCoroutine_d__32")]
-    pub type _ProcessEffectCoroutine_d__32 = crate::GlobalNamespace::SliderIntensityEffect__ProcessEffectCoroutine_d__32;
     #[cfg(feature = "SliderIntensityEffect+InitData")]
     pub type InitData = crate::GlobalNamespace::SliderIntensityEffect_InitData;
-    #[cfg(feature = "SliderIntensityEffect+IntensityCalculationDelegate")]
-    pub type IntensityCalculationDelegate = crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate;
     #[cfg(feature = "SliderIntensityEffect+FadeElement")]
     pub type FadeElement = crate::GlobalNamespace::SliderIntensityEffect_FadeElement;
-    pub fn add_fadeInDidStartEvent(
+    #[cfg(feature = "SliderIntensityEffect+IntensityCalculationDelegate")]
+    pub type IntensityCalculationDelegate = crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate;
+    #[cfg(feature = "SliderIntensityEffect+_ProcessEffectCoroutine_d__32")]
+    pub type _ProcessEffectCoroutine_d__32 = crate::GlobalNamespace::SliderIntensityEffect__ProcessEffectCoroutine_d__32;
+    pub fn Awake(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_fadeInDidStartEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_intensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_intensity", ())?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -322,44 +314,6 @@ impl SliderIntensityEffect {
             .invoke("Init", (sliderDuration, halfJumpDuration, startVisible))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_fadeInDidStartEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_fadeInDidStartEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_colorIntensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_colorIntensity", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _Awake_b__29_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__29_0", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ManualUpdate(
         &mut self,
         timeSinceHeadNoteJump: f32,
@@ -371,25 +325,12 @@ impl SliderIntensityEffect {
             .invoke("ManualUpdate", (timeSinceHeadNoteJump))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartFlashEffect(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartFlashEffect", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ProcessEffectCoroutine(
         &mut self,
@@ -404,14 +345,14 @@ impl SliderIntensityEffect {
             .invoke("ProcessEffectCoroutine", (fadeElements))?;
         Ok(__cordl_ret)
     }
-    pub fn StartIntensityFadeInEffect(
+    pub fn StartFlashEffect(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartIntensityFadeInEffect", ())?;
+            .invoke("StartFlashEffect", ())?;
         Ok(__cordl_ret)
     }
     pub fn StartIntensityDipEffect(
@@ -424,6 +365,26 @@ impl SliderIntensityEffect {
             .invoke("StartIntensityDipEffect", ())?;
         Ok(__cordl_ret)
     }
+    pub fn StartIntensityFadeInEffect(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartIntensityFadeInEffect", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _Awake_b__29_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<Awake>b__29_0", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _Awake_b__29_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -434,12 +395,51 @@ impl SliderIntensityEffect {
             .invoke("<Awake>b__29_1", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_fadeInDidStartEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_fadeInDidStartEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_colorIntensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_colorIntensity", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_intensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_intensity", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_fadeInDidStartEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_fadeInDidStartEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "SliderIntensityEffect")]

@@ -24,6 +24,11 @@ impl std::ops::DerefMut for INoteVisualModifierTypeProvider {
 }
 #[cfg(feature = "INoteVisualModifierTypeProvider")]
 impl INoteVisualModifierTypeProvider {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_noteVisualModifierType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<NoteVisualModifierType> {
@@ -33,11 +38,6 @@ impl INoteVisualModifierTypeProvider {
         let __cordl_ret: NoteVisualModifierType = __cordl_object
             .invoke("get_noteVisualModifierType", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "INoteVisualModifierTypeProvider")]

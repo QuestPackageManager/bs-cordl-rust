@@ -35,10 +35,12 @@ for crate::UnityEngine::UIElements::InheritedData {
 }
 #[cfg(feature = "UnityEngine+UIElements+InheritedData")]
 impl crate::UnityEngine::UIElements::InheritedData {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Copy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::InheritedData> {
+        let __cordl_ret: crate::UnityEngine::UIElements::InheritedData = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
+            "Copy",
             (),
         )?;
         Ok(__cordl_ret)
@@ -53,16 +55,6 @@ impl crate::UnityEngine::UIElements::InheritedData {
             self,
             "CopyFrom",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Copy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::InheritedData> {
-        let __cordl_ret: crate::UnityEngine::UIElements::InheritedData = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Copy",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -85,6 +77,14 @@ impl crate::UnityEngine::UIElements::InheritedData {
             self,
             "Equals",
             (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -29,40 +29,23 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cmp::RevAnnContent {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+RevAnnContent")]
 impl crate::Org::BouncyCastle::Asn1::Cmp::RevAnnContent {
-    pub fn get_WillBeRevokedAt(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime = __cordl_object
-            .invoke("get_WillBeRevokedAt", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
     }
-    pub fn get_Status(
+    pub fn ToAsn1Object(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusEncodable,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusEncodable = __cordl_object
-            .invoke("get_Status", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CertID(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Crmf::CertId,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertId = __cordl_object
-            .invoke("get_CertID", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -88,6 +71,18 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::RevAnnContent {
             .invoke("get_BadSinceDate", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_CertID(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Crmf::CertId,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertId = __cordl_object
+            .invoke("get_CertID", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_CrlDetails(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -100,24 +95,29 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::RevAnnContent {
             .invoke("get_CrlDetails", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ToAsn1Object(
+    pub fn get_Status(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusEncodable,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusEncodable = __cordl_object
+            .invoke("get_Status", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
+    pub fn get_WillBeRevokedAt(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime = __cordl_object
+            .invoke("get_WillBeRevokedAt", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+RevAnnContent")]

@@ -27,23 +27,50 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Engines::SeedEngin
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+SeedEngine")]
 impl crate::Org::BouncyCastle::Crypto::Engines::SeedEngine {
     pub const BlockSize: i32 = 16i32;
-    pub fn get_IsPartialBlockOkay(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsPartialBlockOkay", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn bytesToLong(
+    pub fn F(
         &mut self,
-        src: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        srcOff: i32,
+        ki0: i32,
+        ki1: i32,
+        r: i64,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i64 = __cordl_object.invoke("bytesToLong", (src, srcOff))?;
+        let __cordl_ret: i64 = __cordl_object.invoke("F", (ki0, ki1, r))?;
         Ok(__cordl_ret)
+    }
+    pub fn G(&mut self, x: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("G", (x))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetBlockSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        forEncryption: bool,
+        parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (forEncryption, parameters))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ProcessBlock(
         &mut self,
@@ -59,21 +86,35 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SeedEngine {
             .invoke("ProcessBlock", (inBuf, inOff, outBuf, outOff))?;
         Ok(__cordl_ret)
     }
-    pub fn get_AlgorithmName(
+    pub fn Reset(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_AlgorithmName", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn extractW1(&mut self, lVal: i64) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("extractW1", (lVal))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn bytesToLong(
+        &mut self,
+        src: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        srcOff: i32,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("bytesToLong", (src, srcOff))?;
         Ok(__cordl_ret)
     }
     pub fn createWorkingKey(
@@ -87,35 +128,6 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SeedEngine {
             .invoke("createWorkingKey", (inKey))?;
         Ok(__cordl_ret)
     }
-    pub fn Init(
-        &mut self,
-        forEncryption: bool,
-        parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (forEncryption, parameters))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetBlockSize", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn extractW0(&mut self, lVal: i64) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -123,11 +135,28 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SeedEngine {
         let __cordl_ret: i32 = __cordl_object.invoke("extractW0", (lVal))?;
         Ok(__cordl_ret)
     }
-    pub fn rotateRight8(&mut self, x: i64) -> quest_hook::libil2cpp::Result<i64> {
+    pub fn extractW1(&mut self, lVal: i64) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i64 = __cordl_object.invoke("rotateRight8", (x))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("extractW1", (lVal))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AlgorithmName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_AlgorithmName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsPartialBlockOkay(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsPartialBlockOkay", ())?;
         Ok(__cordl_ret)
     }
     pub fn longToBytes(
@@ -169,35 +198,6 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SeedEngine {
         let __cordl_ret: i32 = __cordl_object.invoke("phaseCalc2", (r0, ki0, r1, ki1))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn G(&mut self, x: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("G", (x))?;
-        Ok(__cordl_ret)
-    }
-    pub fn F(
-        &mut self,
-        ki0: i32,
-        ki1: i32,
-        r: i64,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("F", (ki0, ki1, r))?;
-        Ok(__cordl_ret)
-    }
     pub fn rotateLeft8(&mut self, x: i64) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -205,12 +205,12 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SeedEngine {
         let __cordl_ret: i64 = __cordl_object.invoke("rotateLeft8", (x))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn rotateRight8(&mut self, x: i64) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("rotateRight8", (x))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+SeedEngine")]

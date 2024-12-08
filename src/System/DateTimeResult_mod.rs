@@ -49,15 +49,47 @@ impl crate::System::DateTimeResult {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetFailure_ParseFailureKind_String0(
+    pub fn SetBadDateTimeFailure(
         &mut self,
-        failure: crate::System::ParseFailureKind,
-        failureMessageID: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetFailure",
-            (failure, failureMessageID),
+            "SetBadDateTimeFailure",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetBadFormatSpecifierFailure_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetBadFormatSpecifierFailure",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetBadFormatSpecifierFailure_ReadOnlySpan_1_1(
+        &mut self,
+        failedFormatSpecifier: crate::System::ReadOnlySpan_1<char>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetBadFormatSpecifierFailure",
+            (failedFormatSpecifier),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetDate(
+        &mut self,
+        year: i32,
+        month: i32,
+        day: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetDate",
+            (year, month, day),
         )?;
         Ok(__cordl_ret)
     }
@@ -93,47 +125,15 @@ impl crate::System::DateTimeResult {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetDate(
+    pub fn SetFailure_ParseFailureKind_String0(
         &mut self,
-        year: i32,
-        month: i32,
-        day: i32,
+        failure: crate::System::ParseFailureKind,
+        failureMessageID: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetDate",
-            (year, month, day),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetBadDateTimeFailure(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetBadDateTimeFailure",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetBadFormatSpecifierFailure_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetBadFormatSpecifierFailure",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetBadFormatSpecifierFailure_ReadOnlySpan_1_1(
-        &mut self,
-        failedFormatSpecifier: crate::System::ReadOnlySpan_1<char>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetBadFormatSpecifierFailure",
-            (failedFormatSpecifier),
+            "SetFailure",
+            (failure, failureMessageID),
         )?;
         Ok(__cordl_ret)
     }

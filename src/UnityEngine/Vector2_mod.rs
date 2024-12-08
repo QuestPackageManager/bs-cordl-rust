@@ -45,59 +45,10 @@ impl crate::UnityEngine::Vector2 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Scale(
-        &mut self,
-        scale: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Scale",
-            (scale),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_normalized(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_normalized",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        x: f32,
-        y: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (x, y),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_magnitude(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_magnitude",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sqrMagnitude(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_sqrMagnitude",
             (),
         )?;
         Ok(__cordl_ret)
@@ -109,6 +60,17 @@ impl crate::UnityEngine::Vector2 {
             self,
             "Normalize",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Scale(
+        &mut self,
+        scale: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Scale",
+            (scale),
         )?;
         Ok(__cordl_ret)
     }
@@ -145,6 +107,52 @@ impl crate::UnityEngine::Vector2 {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+        x: f32,
+        y: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (x, y),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_magnitude(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_magnitude",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_normalized(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_normalized",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sqrMagnitude(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_sqrMagnitude",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_Item(
         &mut self,
         index: i32,
@@ -154,14 +162,6 @@ impl crate::UnityEngine::Vector2 {
             self,
             "set_Item",
             (index, value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (index),
         )?;
         Ok(__cordl_ret)
     }

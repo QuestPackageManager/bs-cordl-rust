@@ -54,6 +54,15 @@ impl crate::System::Text::InternalDecoderBestFitFallback {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        encoding: *mut crate::System::Text::Encoding,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encoding))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         encoding: *mut crate::System::Text::Encoding,
@@ -71,15 +80,6 @@ impl crate::System::Text::InternalDecoderBestFitFallback {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_MaxCharCount", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        encoding: *mut crate::System::Text::Encoding,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encoding))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Text+InternalDecoderBestFitFallback")]

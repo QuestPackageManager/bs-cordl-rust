@@ -28,21 +28,13 @@ for crate::System::Linq::Expressions::Interpreter::DecrementInstruction {
 #[cfg(feature = "System+Linq+Expressions+Interpreter+DecrementInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::DecrementInstruction {
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementUInt16"
+        feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementUInt64"
     )]
-    pub type DecrementUInt16 = crate::GlobalNamespace::DecrementInstruction_DecrementUInt16;
+    pub type DecrementUInt64 = crate::GlobalNamespace::DecrementInstruction_DecrementUInt64;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementInt32"
     )]
     pub type DecrementInt32 = crate::GlobalNamespace::DecrementInstruction_DecrementInt32;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementSingle"
-    )]
-    pub type DecrementSingle = crate::GlobalNamespace::DecrementInstruction_DecrementSingle;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementDouble"
-    )]
-    pub type DecrementDouble = crate::GlobalNamespace::DecrementInstruction_DecrementDouble;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementInt64"
     )]
@@ -52,13 +44,28 @@ impl crate::System::Linq::Expressions::Interpreter::DecrementInstruction {
     )]
     pub type DecrementUInt32 = crate::GlobalNamespace::DecrementInstruction_DecrementUInt32;
     #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementSingle"
+    )]
+    pub type DecrementSingle = crate::GlobalNamespace::DecrementInstruction_DecrementSingle;
+    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementInt16"
     )]
     pub type DecrementInt16 = crate::GlobalNamespace::DecrementInstruction_DecrementInt16;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementUInt64"
+        feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementDouble"
     )]
-    pub type DecrementUInt64 = crate::GlobalNamespace::DecrementInstruction_DecrementUInt64;
+    pub type DecrementDouble = crate::GlobalNamespace::DecrementInstruction_DecrementDouble;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementUInt16"
+    )]
+    pub type DecrementUInt16 = crate::GlobalNamespace::DecrementInstruction_DecrementUInt16;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -76,13 +83,6 @@ impl crate::System::Linq::Expressions::Interpreter::DecrementInstruction {
         let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_InstructionName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -93,12 +93,12 @@ impl crate::System::Linq::Expressions::Interpreter::DecrementInstruction {
             .invoke("get_InstructionName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+DecrementInstruction")]

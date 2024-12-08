@@ -60,16 +60,6 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetValueOrDefault(
         &mut self,
         option: crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
@@ -78,6 +68,16 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult {
             self,
             "GetValueOrDefault",
             (option),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
         )?;
         Ok(__cordl_ret)
     }

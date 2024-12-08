@@ -36,6 +36,22 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::StaticTree {
     pub const L_CODES: i32 = 286i32;
     pub const MAX_BITS: i32 = 15i32;
     pub const MAX_BL_BITS: i32 = 7i32;
+    pub fn New(
+        static_tree: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
+        extra_bits: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        extra_base: i32,
+        elems: i32,
+        max_length: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (static_tree, extra_bits, extra_base, elems, max_length),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         static_tree: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
@@ -50,22 +66,6 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::StaticTree {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (static_tree, extra_bits, extra_base, elems, max_length))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        static_tree: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
-        extra_bits: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        extra_base: i32,
-        elems: i32,
-        max_length: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (static_tree, extra_bits, extra_base, elems, max_length),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+StaticTree")]

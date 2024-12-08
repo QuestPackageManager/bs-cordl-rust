@@ -53,6 +53,40 @@ impl crate::UnityEngine::InputSystem::LowLevel::StateEvent {
         feature = "UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer"
     )]
     pub type _stateData_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::StateEvent__stateData_e__FixedBuffer;
+    pub fn GetState<TState>(&mut self) -> quest_hook::libil2cpp::Result<TState>
+    where
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TState = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetState",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToEventPtr(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToEventPtr",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_state(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_state",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_stateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -69,40 +103,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::StateEvent {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_typeStatic",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetState<TState>(&mut self) -> quest_hook::libil2cpp::Result<TState>
-    where
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: TState = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetState",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_state(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_state",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToEventPtr(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToEventPtr",
             (),
         )?;
         Ok(__cordl_ret)

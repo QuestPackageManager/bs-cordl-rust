@@ -30,6 +30,30 @@ impl std::ops::DerefMut for StandardGameplaySceneSetupData {
 }
 #[cfg(feature = "StandardGameplaySceneSetupData")]
 impl StandardGameplaySceneSetupData {
+    pub fn New(
+        autoRestart: bool,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapLevel: *mut BeatmapLevel,
+        backButtonText: *mut crate::System::String,
+        gameplayModifiers: *mut GameplayModifiers,
+        startPaused: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    autoRestart,
+                    beatmapKey,
+                    beatmapLevel,
+                    backButtonText,
+                    gameplayModifiers,
+                    startPaused,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         autoRestart: bool,
@@ -55,30 +79,6 @@ impl StandardGameplaySceneSetupData {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        autoRestart: bool,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        beatmapLevel: *mut BeatmapLevel,
-        backButtonText: *mut crate::System::String,
-        gameplayModifiers: *mut GameplayModifiers,
-        startPaused: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    autoRestart,
-                    beatmapKey,
-                    beatmapLevel,
-                    backButtonText,
-                    gameplayModifiers,
-                    startPaused,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "StandardGameplaySceneSetupData")]

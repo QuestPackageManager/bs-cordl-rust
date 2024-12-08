@@ -32,39 +32,27 @@ impl std::ops::DerefMut for crate::System::Data::RecordManager {
 }
 #[cfg(feature = "System+Data+RecordManager")]
 impl crate::System::Data::RecordManager {
-    pub fn NewRecordBase(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("NewRecordBase", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LastFreeRecord(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_LastFreeRecord", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ImportRecord(
+    pub fn Clear(
         &mut self,
-        src: *mut crate::System::Data::DataTable,
-        record: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ImportRecord", (src, record))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GrowRecordCapacity(
-        &mut self,
+        clearAll: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GrowRecordCapacity", ())?;
+            .invoke("Clear", (clearAll))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CopyRecord(
+        &mut self,
+        src: *mut crate::System::Data::DataTable,
+        record: i32,
+        copy: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("CopyRecord", (src, record, copy))?;
         Ok(__cordl_ret)
     }
     pub fn FreeRecord(
@@ -78,16 +66,41 @@ impl crate::System::Data::RecordManager {
             .invoke("FreeRecord", (record))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Item(
+    pub fn GrowRecordCapacity(
         &mut self,
-        record: i32,
-        value: *mut crate::System::Data::DataRow,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Item", (record, value))?;
+            .invoke("GrowRecordCapacity", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ImportRecord(
+        &mut self,
+        src: *mut crate::System::Data::DataTable,
+        record: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("ImportRecord", (src, record))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        table: *mut crate::System::Data::DataTable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (table))?;
+        Ok(__cordl_object)
+    }
+    pub fn NewRecordBase(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("NewRecordBase", ())?;
         Ok(__cordl_ret)
     }
     pub fn NormalizedMinimumCapacity(
@@ -99,53 +112,6 @@ impl crate::System::Data::RecordManager {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("NormalizedMinimumCapacity", (capacity))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(
-        &mut self,
-        clearAll: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", (clearAll))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        table: *mut crate::System::Data::DataTable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (table))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_RecordCapacity(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_RecordCapacity", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_RecordCapacity(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_RecordCapacity", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MinimumCapacity(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_MinimumCapacity", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetRowCache(
@@ -161,6 +127,17 @@ impl crate::System::Data::RecordManager {
             .invoke("SetRowCache", (newRows))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+        table: *mut crate::System::Data::DataTable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (table))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Item(
         &mut self,
         record: i32,
@@ -170,6 +147,39 @@ impl crate::System::Data::RecordManager {
         );
         let __cordl_ret: *mut crate::System::Data::DataRow = __cordl_object
             .invoke("get_Item", (record))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LastFreeRecord(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_LastFreeRecord", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MinimumCapacity(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_MinimumCapacity", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RecordCapacity(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_RecordCapacity", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Item(
+        &mut self,
+        record: i32,
+        value: *mut crate::System::Data::DataRow,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Item", (record, value))?;
         Ok(__cordl_ret)
     }
     pub fn set_MinimumCapacity(
@@ -183,26 +193,16 @@ impl crate::System::Data::RecordManager {
             .invoke("set_MinimumCapacity", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn CopyRecord(
+    pub fn set_RecordCapacity(
         &mut self,
-        src: *mut crate::System::Data::DataTable,
-        record: i32,
-        copy: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("CopyRecord", (src, record, copy))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_RecordCapacity", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        table: *mut crate::System::Data::DataTable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (table))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Data+RecordManager")]

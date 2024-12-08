@@ -23,18 +23,6 @@ impl std::ops::DerefMut for IHapticFeedbackPlayer {
 }
 #[cfg(feature = "IHapticFeedbackPlayer")]
 impl IHapticFeedbackPlayer {
-    pub fn PlayHapticFeedback(
-        &mut self,
-        node: crate::UnityEngine::XR::XRNode,
-        hapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PlayHapticFeedback", (node, hapticPreset))?;
-        Ok(__cordl_ret)
-    }
     pub fn CanPlayHapticPreset(
         &mut self,
         hapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
@@ -45,6 +33,18 @@ impl IHapticFeedbackPlayer {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("CanPlayHapticPreset", (hapticPreset, node))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PlayHapticFeedback(
+        &mut self,
+        node: crate::UnityEngine::XR::XRNode,
+        hapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PlayHapticFeedback", (node, hapticPreset))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

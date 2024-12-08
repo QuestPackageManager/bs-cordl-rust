@@ -22,45 +22,6 @@ for crate::UnityEngine::UIElements::EasingFunction {
 }
 #[cfg(feature = "UnityEngine+UIElements+EasingFunction")]
 impl crate::UnityEngine::UIElements::EasingFunction {
-    pub fn get_mode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::EasingMode> {
-        let __cordl_ret: crate::UnityEngine::UIElements::EasingMode = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_mode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        mode: crate::UnityEngine::UIElements::EasingMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (mode),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_EasingFunction0(
         &mut self,
         other: crate::UnityEngine::UIElements::EasingFunction,
@@ -80,6 +41,45 @@ impl crate::UnityEngine::UIElements::EasingFunction {
             self,
             "Equals",
             (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        mode: crate::UnityEngine::UIElements::EasingMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (mode),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_mode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::EasingMode> {
+        let __cordl_ret: crate::UnityEngine::UIElements::EasingMode = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_mode",
+            (),
         )?;
         Ok(__cordl_ret)
     }

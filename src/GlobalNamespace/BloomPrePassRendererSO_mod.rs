@@ -35,10 +35,10 @@ impl std::ops::DerefMut for BloomPrePassRendererSO {
 }
 #[cfg(feature = "BloomPrePassRendererSO")]
 impl BloomPrePassRendererSO {
-    #[cfg(feature = "BloomPrePassRendererSO+LightsRenderingData")]
-    pub type LightsRenderingData = crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData;
     #[cfg(feature = "BloomPrePassRendererSO+PreallocationData")]
     pub type PreallocationData = crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData;
+    #[cfg(feature = "BloomPrePassRendererSO+LightsRenderingData")]
+    pub type LightsRenderingData = crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData;
     pub fn Cleanup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -47,6 +47,21 @@ impl BloomPrePassRendererSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Cleanup", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateBloomPrePassRenderTextureIfNeeded(
+        &mut self,
+        renderTexture: *mut crate::UnityEngine::RenderTexture,
+        bloomPrePassParams: *mut IBloomPrePassParams,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RenderTexture> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::RenderTexture = __cordl_object
+            .invoke(
+                "CreateBloomPrePassRenderTextureIfNeeded",
+                (renderTexture, bloomPrePassParams),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn DisableBloomFog(
@@ -69,65 +84,6 @@ impl BloomPrePassRendererSO {
             .invoke("EnableBloomFog", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnEnable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateBloomPrePassRenderTextureIfNeeded(
-        &mut self,
-        renderTexture: *mut crate::UnityEngine::RenderTexture,
-        bloomPrePassParams: *mut IBloomPrePassParams,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RenderTexture> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::RenderTexture = __cordl_object
-            .invoke(
-                "CreateBloomPrePassRenderTextureIfNeeded",
-                (renderTexture, bloomPrePassParams),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RenderAllLights(
-        &mut self,
-        viewMatrix: crate::UnityEngine::Matrix4x4,
-        projectionMatrix: crate::UnityEngine::Matrix4x4,
-        linesWidth: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RenderAllLights", (viewMatrix, projectionMatrix, linesWidth))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetCustomStereoCameraEyeOffset(
-        &mut self,
-        stereoCameraEyeOffset: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCustomStereoCameraEyeOffset", (stereoCameraEyeOffset))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetCameraParams(
         &mut self,
         camera: *mut crate::UnityEngine::Camera,
@@ -145,6 +101,16 @@ impl BloomPrePassRendererSO {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn Init(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn MatrixLerp(
         &mut self,
         from: crate::UnityEngine::Matrix4x4,
@@ -158,14 +124,31 @@ impl BloomPrePassRendererSO {
             .invoke("MatrixLerp", (from, to, t))?;
         Ok(__cordl_ret)
     }
-    pub fn UpdateBloomFogParams(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDisable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateBloomFogParams", ())?;
+            .invoke("OnDisable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnEnable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnEnable", ())?;
         Ok(__cordl_ret)
     }
     pub fn PrepareLightsMeshRendering(
@@ -181,14 +164,17 @@ impl BloomPrePassRendererSO {
             .invoke("PrepareLightsMeshRendering", (lightType, data, numberOfLights))?;
         Ok(__cordl_ret)
     }
-    pub fn OnDisable(
+    pub fn RenderAllLights(
         &mut self,
+        viewMatrix: crate::UnityEngine::Matrix4x4,
+        projectionMatrix: crate::UnityEngine::Matrix4x4,
+        linesWidth: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDisable", ())?;
+            .invoke("RenderAllLights", (viewMatrix, projectionMatrix, linesWidth))?;
         Ok(__cordl_ret)
     }
     pub fn RenderAndSetData(
@@ -223,6 +209,27 @@ impl BloomPrePassRendererSO {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn SetCustomStereoCameraEyeOffset(
+        &mut self,
+        stereoCameraEyeOffset: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetCustomStereoCameraEyeOffset", (stereoCameraEyeOffset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateBloomFogParams(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateBloomFogParams", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -232,13 +239,6 @@ impl BloomPrePassRendererSO {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BloomPrePassRendererSO")]
@@ -284,6 +284,13 @@ for crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
 }
 #[cfg(feature = "BloomPrePassRendererSO+LightsRenderingData")]
 impl crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -293,13 +300,6 @@ impl crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BloomPrePassRendererSO+LightsRenderingData")]
@@ -343,6 +343,13 @@ for crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData {
 }
 #[cfg(feature = "BloomPrePassRendererSO+PreallocationData")]
 impl crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -352,13 +359,6 @@ impl crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BloomPrePassRendererSO+PreallocationData")]

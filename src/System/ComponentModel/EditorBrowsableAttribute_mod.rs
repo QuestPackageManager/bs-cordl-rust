@@ -35,6 +35,22 @@ impl crate::System::ComponentModel::EditorBrowsableAttribute {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret)
     }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        state: crate::System::ComponentModel::EditorBrowsableState,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (state))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         state: crate::System::ComponentModel::EditorBrowsableState,
@@ -45,22 +61,6 @@ impl crate::System::ComponentModel::EditorBrowsableAttribute {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (state))?;
         Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        state: crate::System::ComponentModel::EditorBrowsableState,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (state))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+ComponentModel+EditorBrowsableAttribute")]

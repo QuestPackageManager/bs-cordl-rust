@@ -29,6 +29,23 @@ impl std::ops::DerefMut for MirrorRendererGraphicsSettingsPresets {
 impl MirrorRendererGraphicsSettingsPresets {
     #[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]
     pub type Preset = crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_namedPresets(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -39,16 +56,6 @@ impl MirrorRendererGraphicsSettingsPresets {
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<*mut NamedPreset> = __cordl_object
             .invoke("get_namedPresets", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_presets(
@@ -65,13 +72,6 @@ impl MirrorRendererGraphicsSettingsPresets {
             *mut crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset,
         > = __cordl_object.invoke("get_presets", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MirrorRendererGraphicsSettingsPresets")]
@@ -135,6 +135,13 @@ for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
 impl crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
     #[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
     pub type MirrorType = crate::GlobalNamespace::Preset_MirrorType;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -144,13 +151,6 @@ impl crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]

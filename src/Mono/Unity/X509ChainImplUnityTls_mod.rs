@@ -42,6 +42,16 @@ impl crate::Mono::Unity::X509ChainImplUnityTls {
             .invoke("AddStatus", (error))?;
         Ok(__cordl_ret)
     }
+    pub fn Build(
+        &mut self,
+        certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Build", (certificate))?;
+        Ok(__cordl_ret)
+    }
     pub fn Dispose(
         &mut self,
         disposing: bool,
@@ -53,58 +63,15 @@ impl crate::Mono::Unity::X509ChainImplUnityTls {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn get_ChainPolicy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy = __cordl_object
-            .invoke("get_ChainPolicy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsValid", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Build(
-        &mut self,
-        certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Build", (certificate))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_NativeCertificateChain(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Mono::Unity::UnityTls_unitytls_x509list_ref,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Mono::Unity::UnityTls_unitytls_x509list_ref = __cordl_object
-            .invoke("get_NativeCertificateChain", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ChainElements(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection = __cordl_object
-            .invoke("get_ChainElements", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        nativeCertificateChain: crate::Mono::Unity::UnityTls_unitytls_x509list_ref,
+        reverseOrder: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (nativeCertificateChain, reverseOrder))?;
+        Ok(__cordl_object)
     }
     pub fn Reset(
         &mut self,
@@ -128,6 +95,30 @@ impl crate::Mono::Unity::X509ChainImplUnityTls {
             .invoke(".ctor", (nativeCertificateChain, reverseOrder))?;
         Ok(__cordl_ret)
     }
+    pub fn get_ChainElements(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection = __cordl_object
+            .invoke("get_ChainElements", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ChainPolicy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy = __cordl_object
+            .invoke("get_ChainPolicy", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_ChainStatus(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -143,15 +134,24 @@ impl crate::Mono::Unity::X509ChainImplUnityTls {
         > = __cordl_object.invoke("get_ChainStatus", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        nativeCertificateChain: crate::Mono::Unity::UnityTls_unitytls_x509list_ref,
-        reverseOrder: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (nativeCertificateChain, reverseOrder))?;
-        Ok(__cordl_object)
+    pub fn get_IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsValid", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NativeCertificateChain(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Mono::Unity::UnityTls_unitytls_x509list_ref,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Mono::Unity::UnityTls_unitytls_x509list_ref = __cordl_object
+            .invoke("get_NativeCertificateChain", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Mono+Unity+X509ChainImplUnityTls")]

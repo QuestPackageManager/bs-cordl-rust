@@ -39,16 +39,27 @@ impl crate::UnityEngine::InputSystem::Utilities::TypeTable {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_names(
+    pub fn FindNameForType(
         &mut self,
+        _cordl_type: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
-        >,
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_names", ())?;
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "FindNameForType",
+            (_cordl_type),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Initialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Initialize",
+            (),
+        )?;
         Ok(__cordl_ret)
     }
     pub fn LookupTypeRegistration(
@@ -74,27 +85,16 @@ impl crate::UnityEngine::InputSystem::Utilities::TypeTable {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_internedNames", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Initialize(
+    pub fn get_names(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Initialize",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn FindNameForType(
-        &mut self,
-        _cordl_type: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::String,
+        >,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "FindNameForType",
-            (_cordl_type),
-        )?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::String,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_names", ())?;
         Ok(__cordl_ret)
     }
 }

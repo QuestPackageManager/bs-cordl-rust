@@ -29,6 +29,17 @@ for crate::System::Linq::Expressions::Interpreter::ExceptionFilter {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ExceptionFilter")]
 impl crate::System::Linq::Expressions::Interpreter::ExceptionFilter {
+    pub fn New(
+        labelIndex: i32,
+        start: i32,
+        end: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (labelIndex, start, end))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         labelIndex: i32,
@@ -41,17 +52,6 @@ impl crate::System::Linq::Expressions::Interpreter::ExceptionFilter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (labelIndex, start, end))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        labelIndex: i32,
-        start: i32,
-        end: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (labelIndex, start, end))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ExceptionFilter")]

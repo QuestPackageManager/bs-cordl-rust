@@ -23,36 +23,6 @@ for crate::UnityEngine::UIElements::FontDefinition {
 }
 #[cfg(feature = "UnityEngine+UIElements+FontDefinition")]
 impl crate::UnityEngine::UIElements::FontDefinition {
-    pub fn get_fontAsset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::TextCore::Text::FontAsset,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::TextCore::Text::FontAsset = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_fontAsset",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_font(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Font> {
-        let __cordl_ret: *mut crate::UnityEngine::Font = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_font",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsEmpty",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_FontDefinition0(
         &mut self,
         other: crate::UnityEngine::UIElements::FontDefinition,
@@ -83,12 +53,42 @@ impl crate::UnityEngine::UIElements::FontDefinition {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsEmpty",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_font(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Font> {
+        let __cordl_ret: *mut crate::UnityEngine::Font = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_font",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_fontAsset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::TextCore::Text::FontAsset,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::TextCore::Text::FontAsset = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_fontAsset",
             (),
         )?;
         Ok(__cordl_ret)

@@ -27,31 +27,21 @@ impl std::ops::DerefMut for crate::System::Diagnostics::TraceEventCache {
 }
 #[cfg(feature = "System+Diagnostics+TraceEventCache")]
 impl crate::System::Diagnostics::TraceEventCache {
-    pub fn get_ProcessId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ProcessId", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn get_DateTime(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::DateTime = __cordl_object
-            .invoke("get_DateTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ThreadId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_ThreadId", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Callstack(
@@ -64,11 +54,14 @@ impl crate::System::Diagnostics::TraceEventCache {
             .invoke("get_Callstack", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Timestamp(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+    pub fn get_DateTime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_Timestamp", ())?;
+        let __cordl_ret: crate::System::DateTime = __cordl_object
+            .invoke("get_DateTime", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_LogicalOperationStack(
@@ -81,22 +74,29 @@ impl crate::System::Diagnostics::TraceEventCache {
             .invoke("get_LogicalOperationStack", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_ProcessId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ProcessId", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_ThreadId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_ThreadId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Timestamp(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_Timestamp", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Diagnostics+TraceEventCache")]

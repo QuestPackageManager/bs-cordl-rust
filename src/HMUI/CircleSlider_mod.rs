@@ -33,11 +33,115 @@ impl std::ops::DerefMut for crate::HMUI::CircleSlider {
 }
 #[cfg(feature = "HMUI+CircleSlider")]
 impl crate::HMUI::CircleSlider {
-    pub fn get_normalizedValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn GraphicUpdateComplete(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_normalizedValue", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GraphicUpdateComplete", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LayoutComplete(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LayoutComplete", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn MayDrag(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("MayDrag", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnBeginDrag(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnBeginDrag", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDisable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDisable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDrag(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDrag", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnEnable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnEnable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnInitializePotentialDrag(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnInitializePotentialDrag", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerDown(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerDown", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnRectTransformDimensionsChange(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnRectTransformDimensionsChange", ())?;
         Ok(__cordl_ret)
     }
     pub fn Rebuild(
@@ -51,15 +155,27 @@ impl crate::HMUI::CircleSlider {
             .invoke("Rebuild", (executing))?;
         Ok(__cordl_ret)
     }
-    pub fn OnInitializePotentialDrag(
+    pub fn SetNormalizedValue__cordl_bool1(
         &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        input: f32,
+        sendCallback: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnInitializePotentialDrag", (eventData))?;
+            .invoke("SetNormalizedValue", (input, sendCallback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetNormalizedValue_f32_0(
+        &mut self,
+        input: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetNormalizedValue", (input))?;
         Ok(__cordl_ret)
     }
     pub fn UnityEngine_UI_ICanvasElement_get_transform(
@@ -82,6 +198,27 @@ impl crate::HMUI::CircleSlider {
             .invoke("UpdateCachedReferences", ())?;
         Ok(__cordl_ret)
     }
+    pub fn UpdateDrag(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateDrag", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateVisuals(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateVisuals", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -92,14 +229,43 @@ impl crate::HMUI::CircleSlider {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnDisable(
+    pub fn add_normalizedValueDidChangeEvent(
         &mut self,
+        value: *mut crate::System::Action_2<*mut crate::HMUI::CircleSlider, f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDisable", ())?;
+            .invoke("add_normalizedValueDidChangeEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_handleRect(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RectTransform> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::RectTransform = __cordl_object
+            .invoke("get_handleRect", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_normalizedValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_normalizedValue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_normalizedValueDidChangeEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut crate::HMUI::CircleSlider, f32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_normalizedValueDidChangeEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_handleColor(
@@ -111,27 +277,6 @@ impl crate::HMUI::CircleSlider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_handleColor", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LayoutComplete(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LayoutComplete", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnBeginDrag(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnBeginDrag", (eventData))?;
         Ok(__cordl_ret)
     }
     pub fn set_handleRect(
@@ -155,151 +300,6 @@ impl crate::HMUI::CircleSlider {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_normalizedValue", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn remove_normalizedValueDidChangeEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<*mut crate::HMUI::CircleSlider, f32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_normalizedValueDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateDrag(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateDrag", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDrag(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDrag", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerDown(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerDown", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetNormalizedValue_f32_0(
-        &mut self,
-        input: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNormalizedValue", (input))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetNormalizedValue__cordl_bool1(
-        &mut self,
-        input: f32,
-        sendCallback: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNormalizedValue", (input, sendCallback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnRectTransformDimensionsChange(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnRectTransformDimensionsChange", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GraphicUpdateComplete(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GraphicUpdateComplete", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_normalizedValueDidChangeEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<*mut crate::HMUI::CircleSlider, f32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_normalizedValueDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateVisuals(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateVisuals", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MayDrag(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MayDrag", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_handleRect(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RectTransform> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::RectTransform = __cordl_object
-            .invoke("get_handleRect", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnEnable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HMUI+CircleSlider")]

@@ -28,11 +28,15 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::ActiveAxis {
 }
 #[cfg(feature = "System+Xml+Schema+ActiveAxis")]
 impl crate::System::Xml::Schema::ActiveAxis {
-    pub fn get_CurrentDepth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn EndElement(
+        &mut self,
+        localname: *mut crate::System::String,
+        URN: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_CurrentDepth", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("EndElement", (localname, URN))?;
         Ok(__cordl_ret)
     }
     pub fn MoveToAttribute(
@@ -47,27 +51,6 @@ impl crate::System::Xml::Schema::ActiveAxis {
             .invoke("MoveToAttribute", (localname, URN))?;
         Ok(__cordl_ret)
     }
-    pub fn Reactivate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reactivate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndElement(
-        &mut self,
-        localname: *mut crate::System::String,
-        URN: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EndElement", (localname, URN))?;
-        Ok(__cordl_ret)
-    }
     pub fn MoveToStartElement(
         &mut self,
         localname: *mut crate::System::String,
@@ -78,6 +61,25 @@ impl crate::System::Xml::Schema::ActiveAxis {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("MoveToStartElement", (localname, URN))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        axisTree: *mut crate::System::Xml::Schema::Asttree,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (axisTree))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reactivate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reactivate", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -91,14 +93,12 @@ impl crate::System::Xml::Schema::ActiveAxis {
             .invoke(".ctor", (axisTree))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        axisTree: *mut crate::System::Xml::Schema::Asttree,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (axisTree))?;
-        Ok(__cordl_object)
+    pub fn get_CurrentDepth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_CurrentDepth", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+ActiveAxis")]

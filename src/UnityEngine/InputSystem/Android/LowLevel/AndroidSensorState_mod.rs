@@ -61,18 +61,6 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
         feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
     )]
     pub type _data_e__FixedBuffer = crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data_e__FixedBuffer;
-    pub fn get_format(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::FourCC,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_format",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn WithData(
         &mut self,
         data: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
@@ -83,6 +71,18 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
             self,
             "WithData",
             (data),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_format(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_format",
+            (),
         )?;
         Ok(__cordl_ret)
     }

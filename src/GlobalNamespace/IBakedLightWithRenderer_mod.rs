@@ -23,6 +23,11 @@ impl std::ops::DerefMut for IBakedLightWithRenderer {
 }
 #[cfg(feature = "IBakedLightWithRenderer")]
 impl IBakedLightWithRenderer {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_bakingMaterial(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Material> {
@@ -32,11 +37,6 @@ impl IBakedLightWithRenderer {
         let __cordl_ret: *mut crate::UnityEngine::Material = __cordl_object
             .invoke("get_bakingMaterial", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IBakedLightWithRenderer")]

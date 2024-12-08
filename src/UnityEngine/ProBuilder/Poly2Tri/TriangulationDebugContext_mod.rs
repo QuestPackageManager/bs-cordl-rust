@@ -38,6 +38,15 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext {
             .invoke("Clear", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        tcx: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (tcx))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         tcx: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
@@ -48,15 +57,6 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (tcx))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        tcx: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (tcx))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationDebugContext")]

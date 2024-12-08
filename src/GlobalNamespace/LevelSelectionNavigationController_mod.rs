@@ -52,18 +52,70 @@ impl std::ops::DerefMut for LevelSelectionNavigationController {
 }
 #[cfg(feature = "LevelSelectionNavigationController")]
 impl LevelSelectionNavigationController {
-    pub fn HandleLevelCollectionNavigationControllerDidPressPracticeButton(
+    pub fn ClearSelected(
         &mut self,
-        _: *mut LevelCollectionNavigationController,
-        beatmapLevel: *mut BeatmapLevel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearSelected", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DidActivate(
+        &mut self,
+        firstActivation: bool,
+        addedToHierarchy: bool,
+        screenSystemEnabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "HandleLevelCollectionNavigationControllerDidPressPracticeButton",
-                (_, beatmapLevel),
+                "DidActivate",
+                (firstActivation, addedToHierarchy, screenSystemEnabling),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn DidDeactivate(
+        &mut self,
+        removedFromHierarchy: bool,
+        screenSystemDisabling: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleLevelCollectionNavigationControllerDidChangeDifficultyBeatmap(
+        &mut self,
+        viewController: *mut LevelCollectionNavigationController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleLevelCollectionNavigationControllerDidChangeDifficultyBeatmap",
+                (viewController),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleLevelCollectionNavigationControllerDidChangeLevelDetailContent(
+        &mut self,
+        viewController: *mut LevelCollectionNavigationController,
+        contentType: crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleLevelCollectionNavigationControllerDidChangeLevelDetailContent",
+                (viewController, contentType),
             )?;
         Ok(__cordl_ret)
     }
@@ -81,25 +133,137 @@ impl LevelSelectionNavigationController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn HandleLevelCollectionNavigationControllerDidPressOpenPackButton(
         &mut self,
+        viewController: *mut LevelCollectionNavigationController,
+        beatmapLevelPack: *mut BeatmapLevelPack,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke(
+                "HandleLevelCollectionNavigationControllerDidPressOpenPackButton",
+                (viewController, beatmapLevelPack),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didChangeDifficultyBeatmapEvent(
+    pub fn HandleLevelCollectionNavigationControllerDidPressPracticeButton(
         &mut self,
-        value: *mut crate::System::Action_1<*mut LevelSelectionNavigationController>,
+        _: *mut LevelCollectionNavigationController,
+        beatmapLevel: *mut BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didChangeDifficultyBeatmapEvent", (value))?;
+            .invoke(
+                "HandleLevelCollectionNavigationControllerDidPressPracticeButton",
+                (_, beatmapLevel),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleLevelCollectionNavigationControllerDidSelectPack(
+        &mut self,
+        viewController: *mut LevelCollectionNavigationController,
+        beatmapLevelPack: *mut BeatmapLevelPack,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleLevelCollectionNavigationControllerDidSelectPack",
+                (viewController, beatmapLevelPack),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleLevelFilteringNavigationControllerDidCloseBeatmapLevelCollections(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleLevelFilteringNavigationControllerDidCloseBeatmapLevelCollections",
+                (),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleLevelFilteringNavigationControllerDidOpenBeatmapLevelCollections(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleLevelFilteringNavigationControllerDidOpenBeatmapLevelCollections",
+                (),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleLevelFilteringNavigationControllerDidPressAllSongs(
+        &mut self,
+        controller: *mut LevelFilteringNavigationController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleLevelFilteringNavigationControllerDidPressAllSongs",
+                (controller),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleLevelFilteringNavigationControllerDidSelectBeatmapLevelPack(
+        &mut self,
+        controller: *mut LevelFilteringNavigationController,
+        annotatedBeatmapLevelPack: *mut BeatmapLevelPack,
+        noDataInfoPrefab: *mut crate::UnityEngine::GameObject,
+        options: LevelSelectionOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleLevelFilteringNavigationControllerDidSelectBeatmapLevelPack",
+                (controller, annotatedBeatmapLevelPack, noDataInfoPrefab, options),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleLevelFilteringNavigationControllerDidStartLoading(
+        &mut self,
+        controller: *mut LevelFilteringNavigationController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleLevelFilteringNavigationControllerDidStartLoading",
+                (controller),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn RefreshDetail(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RefreshDetail", ())?;
         Ok(__cordl_ret)
     }
     pub fn Setup(
@@ -138,85 +302,14 @@ impl LevelSelectionNavigationController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn RefreshDetail(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshDetail", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didPressActionButtonEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut LevelSelectionNavigationController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didPressActionButtonEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLevelFilteringNavigationControllerDidSelectBeatmapLevelPack(
-        &mut self,
-        controller: *mut LevelFilteringNavigationController,
-        annotatedBeatmapLevelPack: *mut BeatmapLevelPack,
-        noDataInfoPrefab: *mut crate::UnityEngine::GameObject,
-        options: LevelSelectionOptions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleLevelFilteringNavigationControllerDidSelectBeatmapLevelPack",
-                (controller, annotatedBeatmapLevelPack, noDataInfoPrefab, options),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didPressPracticeButtonEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<
-            *mut LevelSelectionNavigationController,
-            *mut BeatmapLevel,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didPressPracticeButtonEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLevelFilteringNavigationControllerDidPressAllSongs(
-        &mut self,
-        controller: *mut LevelFilteringNavigationController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleLevelFilteringNavigationControllerDidPressAllSongs",
-                (controller),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLevelCollectionNavigationControllerDidChangeLevelDetailContent(
-        &mut self,
-        viewController: *mut LevelCollectionNavigationController,
-        contentType: crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleLevelCollectionNavigationControllerDidChangeLevelDetailContent",
-                (viewController, contentType),
-            )?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_didChangeDifficultyBeatmapEvent(
@@ -228,52 +321,6 @@ impl LevelSelectionNavigationController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didChangeDifficultyBeatmapEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_beatmapLevel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevel> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut BeatmapLevel = __cordl_object
-            .invoke("get_beatmapLevel", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLevelFilteringNavigationControllerDidOpenBeatmapLevelCollections(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleLevelFilteringNavigationControllerDidOpenBeatmapLevelCollections",
-                (),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_selectedBeatmapLevelPack(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelPack> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut BeatmapLevelPack = __cordl_object
-            .invoke("get_selectedBeatmapLevelPack", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLevelFilteringNavigationControllerDidCloseBeatmapLevelCollections(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleLevelFilteringNavigationControllerDidCloseBeatmapLevelCollections",
-                (),
-            )?;
         Ok(__cordl_ret)
     }
     pub fn add_didChangeLevelDetailContentEvent(
@@ -290,16 +337,6 @@ impl LevelSelectionNavigationController {
             .invoke("add_didChangeLevelDetailContentEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ClearSelected(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearSelected", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn add_didPressActionButtonEvent(
         &mut self,
         value: *mut crate::System::Action_1<*mut LevelSelectionNavigationController>,
@@ -309,141 +346,6 @@ impl LevelSelectionNavigationController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didPressActionButtonEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didSelectLevelPackEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<
-            *mut LevelSelectionNavigationController,
-            *mut BeatmapLevelPack,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didSelectLevelPackEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLevelCollectionNavigationControllerDidSelectPack(
-        &mut self,
-        viewController: *mut LevelCollectionNavigationController,
-        beatmapLevelPack: *mut BeatmapLevelPack,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleLevelCollectionNavigationControllerDidSelectPack",
-                (viewController, beatmapLevelPack),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLevelFilteringNavigationControllerDidStartLoading(
-        &mut self,
-        controller: *mut LevelFilteringNavigationController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleLevelFilteringNavigationControllerDidStartLoading",
-                (controller),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didSelectLevelPackEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<
-            *mut LevelSelectionNavigationController,
-            *mut BeatmapLevelPack,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didSelectLevelPackEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DidActivate(
-        &mut self,
-        firstActivation: bool,
-        addedToHierarchy: bool,
-        screenSystemEnabling: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "DidActivate",
-                (firstActivation, addedToHierarchy, screenSystemEnabling),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn DidDeactivate(
-        &mut self,
-        removedFromHierarchy: bool,
-        screenSystemDisabling: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didChangeLevelDetailContentEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<
-            *mut LevelSelectionNavigationController,
-            crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didChangeLevelDetailContentEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLevelCollectionNavigationControllerDidChangeDifficultyBeatmap(
-        &mut self,
-        viewController: *mut LevelCollectionNavigationController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleLevelCollectionNavigationControllerDidChangeDifficultyBeatmap",
-                (viewController),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLevelCollectionNavigationControllerDidPressOpenPackButton(
-        &mut self,
-        viewController: *mut LevelCollectionNavigationController,
-        beatmapLevelPack: *mut BeatmapLevelPack,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleLevelCollectionNavigationControllerDidPressOpenPackButton",
-                (viewController, beatmapLevelPack),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_beatmapKey(&mut self) -> quest_hook::libil2cpp::Result<BeatmapKey> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: BeatmapKey = __cordl_object.invoke("get_beatmapKey", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_didPressPracticeButtonEvent(
@@ -460,6 +362,47 @@ impl LevelSelectionNavigationController {
             .invoke("add_didPressPracticeButtonEvent", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn add_didSelectLevelPackEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut LevelSelectionNavigationController,
+            *mut BeatmapLevelPack,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didSelectLevelPackEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_beatmapKey(&mut self) -> quest_hook::libil2cpp::Result<BeatmapKey> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: BeatmapKey = __cordl_object.invoke("get_beatmapKey", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_beatmapLevel(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevel> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut BeatmapLevel = __cordl_object
+            .invoke("get_beatmapLevel", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_selectedBeatmapLevelPack(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelPack> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut BeatmapLevelPack = __cordl_object
+            .invoke("get_selectedBeatmapLevelPack", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_selectedLevelCategory(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -472,12 +415,69 @@ impl LevelSelectionNavigationController {
             .invoke("get_selectedLevelCategory", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn remove_didChangeDifficultyBeatmapEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut LevelSelectionNavigationController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didChangeDifficultyBeatmapEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didChangeLevelDetailContentEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut LevelSelectionNavigationController,
+            crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didChangeLevelDetailContentEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didPressActionButtonEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut LevelSelectionNavigationController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didPressActionButtonEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didPressPracticeButtonEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut LevelSelectionNavigationController,
+            *mut BeatmapLevel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didPressPracticeButtonEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didSelectLevelPackEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut LevelSelectionNavigationController,
+            *mut BeatmapLevelPack,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didSelectLevelPackEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LevelSelectionNavigationController")]

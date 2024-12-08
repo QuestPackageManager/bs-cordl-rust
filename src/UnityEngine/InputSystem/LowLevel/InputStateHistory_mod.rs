@@ -102,14 +102,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Current(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Current",
+            "MoveNext",
             (),
         )?;
         Ok(__cordl_ret)
@@ -120,6 +116,16 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Reset",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerator_get_Current(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.IEnumerator.get_Current",
             (),
         )?;
         Ok(__cordl_ret)
@@ -135,20 +141,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerator_get_Current(
+    pub fn get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.Collections.IEnumerator.get_Current",
+            "get_Current",
             (),
         )?;
         Ok(__cordl_ret)
@@ -207,12 +207,365 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
     pub const kDefaultHistorySize: i32 = 128i32;
-    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
-    pub type RecordHeader = crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader;
     #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
     pub type Enumerator = crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator;
+    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
+    pub type RecordHeader = crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader;
     #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
     pub type Record = crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record;
+    pub fn AddRecord(
+        &mut self,
+        record: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record = __cordl_object
+            .invoke("AddRecord", (record))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Allocate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Allocate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn AllocateRecord(
+        &mut self,
+        index: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+            .invoke("AllocateRecord", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Destroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Destroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Finalize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Finalize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerator_1<
+            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
+            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+        > = __cordl_object.invoke("GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetRecord(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+            .invoke("GetRecord", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetRecordUnchecked(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+            .invoke("GetRecordUnchecked", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_IEnumerable_1_3(
+        controls: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::UnityEngine::InputSystem::InputControl,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (controls))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_InputControl2(
+        control: *mut crate::UnityEngine::InputSystem::InputControl,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (control))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String1(
+        path: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (path))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_0(
+        maxStateSizeInBytes: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (maxStateSizeInBytes))?;
+        Ok(__cordl_object)
+    }
+    pub fn ReadValue<TValue>(
+        &mut self,
+        data: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<TValue>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: TValue = __cordl_object.invoke("ReadValue", (data))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadValueAsObject(
+        &mut self,
+        data: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("ReadValueAsObject", (data))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RecordIndexToUserIndex(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("RecordIndexToUserIndex", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RecordStateChange_Il2CppObject_f64_1(
+        &mut self,
+        control: *mut crate::UnityEngine::InputSystem::InputControl,
+        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        _cordl_time: f64,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record = __cordl_object
+            .invoke("RecordStateChange", (control, statePtr, _cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RecordStateChange_InputEventPtr0(
+        &mut self,
+        control: *mut crate::UnityEngine::InputSystem::InputControl,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record = __cordl_object
+            .invoke("RecordStateChange", (control, eventPtr))?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartRecording(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartRecording", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn StopRecording(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StopRecording", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerable_GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnityEngine_InputSystem_LowLevel_IInputStateChangeMonitor_NotifyControlStateChanged(
+        &mut self,
+        control: *mut crate::UnityEngine::InputSystem::InputControl,
+        _cordl_time: f64,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        monitorIndex: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "UnityEngine.InputSystem.LowLevel.IInputStateChangeMonitor.NotifyControlStateChanged",
+                (control, _cordl_time, eventPtr, monitorIndex),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnityEngine_InputSystem_LowLevel_IInputStateChangeMonitor_NotifyTimerExpired(
+        &mut self,
+        control: *mut crate::UnityEngine::InputSystem::InputControl,
+        _cordl_time: f64,
+        monitorIndex: i64,
+        timerIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "UnityEngine.InputSystem.LowLevel.IInputStateChangeMonitor.NotifyTimerExpired",
+                (control, _cordl_time, monitorIndex, timerIndex),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UserIndexToRecordIndex(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("UserIndexToRecordIndex", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_IEnumerable_1_3(
+        &mut self,
+        controls: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::UnityEngine::InputSystem::InputControl,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (controls))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_InputControl2(
+        &mut self,
+        control: *mut crate::UnityEngine::InputSystem::InputControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (control))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_String1(
+        &mut self,
+        path: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (path))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_0(
+        &mut self,
+        maxStateSizeInBytes: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (maxStateSizeInBytes))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record = __cordl_object
+            .invoke("get_Item", (index))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_bytesPerRecord(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -235,37 +588,33 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
         > = __cordl_object.invoke("get_controls", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Destroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_extraMemoryPerRecord(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Destroy", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_extraMemoryPerRecord", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_updateMask(
+    pub fn get_historyDepth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_historyDepth", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_onRecordAdded(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+        *mut crate::System::Action_1<
+            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType = __cordl_object
-            .invoke("get_updateMask", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_extraMemoryPerRecord(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_extraMemoryPerRecord", (value))?;
+        let __cordl_ret: *mut crate::System::Action_1<
+            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+        > = __cordl_object.invoke("get_onRecordAdded", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_onShouldRecordStateChange(
@@ -289,66 +638,16 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
         > = __cordl_object.invoke("get_onShouldRecordStateChange", ())?;
         Ok(__cordl_ret)
     }
-    pub fn StartRecording(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartRecording", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnityEngine_InputSystem_LowLevel_IInputStateChangeMonitor_NotifyControlStateChanged(
-        &mut self,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
-        _cordl_time: f64,
-        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        monitorIndex: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "UnityEngine.InputSystem.LowLevel.IInputStateChangeMonitor.NotifyControlStateChanged",
-                (control, _cordl_time, eventPtr, monitorIndex),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn UserIndexToRecordIndex(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("UserIndexToRecordIndex", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEnumerator(
+    pub fn get_updateMask(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
-        >,
+        crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
-        > = __cordl_object.invoke("GetEnumerator", ())?;
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType = __cordl_object
+            .invoke("get_updateMask", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_version(&mut self) -> quest_hook::libil2cpp::Result<u32> {
@@ -358,87 +657,38 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
         let __cordl_ret: u32 = __cordl_object.invoke("get_version", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Finalize(
+    pub fn set_Item(
         &mut self,
+        index: i32,
+        value: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
+            .invoke("set_Item", (index, value))?;
         Ok(__cordl_ret)
     }
-    pub fn AddRecord(
+    pub fn set_extraMemoryPerRecord(
         &mut self,
-        record: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
-    > {
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record = __cordl_object
-            .invoke("AddRecord", (record))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_extraMemoryPerRecord", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_extraMemoryPerRecord(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_extraMemoryPerRecord", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerable_GetEnumerator(
+    pub fn set_historyDepth(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AllocateRecord(
-        &mut self,
-        index: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("AllocateRecord", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_historyDepth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_historyDepth", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadValueAsObject(
-        &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("ReadValueAsObject", (data))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadValue<TValue>(
-        &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<TValue>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TValue = __cordl_object.invoke("ReadValue", (data))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_historyDepth", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_onRecordAdded(
@@ -452,78 +702,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_onRecordAdded", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn StopRecording(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StopRecording", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Allocate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Allocate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_updateMask(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_updateMask", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record = __cordl_object
-            .invoke("get_Item", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnityEngine_InputSystem_LowLevel_IInputStateChangeMonitor_NotifyTimerExpired(
-        &mut self,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
-        _cordl_time: f64,
-        monitorIndex: i64,
-        timerIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "UnityEngine.InputSystem.LowLevel.IInputStateChangeMonitor.NotifyTimerExpired",
-                (control, _cordl_time, monitorIndex, timerIndex),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRecord(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("GetRecord", (index))?;
         Ok(__cordl_ret)
     }
     pub fn set_onShouldRecordStateChange(
@@ -542,194 +720,16 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
             .invoke("set_onShouldRecordStateChange", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn RecordStateChange_InputEventPtr0(
+    pub fn set_updateMask(
         &mut self,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
-        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record = __cordl_object
-            .invoke("RecordStateChange", (control, eventPtr))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RecordStateChange_Il2CppObject_f64_1(
-        &mut self,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
-        _cordl_time: f64,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record = __cordl_object
-            .invoke("RecordStateChange", (control, statePtr, _cordl_time))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_0(
-        &mut self,
-        maxStateSizeInBytes: i32,
+        value: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (maxStateSizeInBytes))?;
+            .invoke("set_updateMask", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor_String1(
-        &mut self,
-        path: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (path))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_InputControl2(
-        &mut self,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (control))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_IEnumerable_1_3(
-        &mut self,
-        controls: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::InputSystem::InputControl,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (controls))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_historyDepth(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_historyDepth", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_onRecordAdded(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Action_1<
-            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Action_1<
-            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
-        > = __cordl_object.invoke("get_onRecordAdded", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RecordIndexToUserIndex(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("RecordIndexToUserIndex", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRecordUnchecked(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("GetRecordUnchecked", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Item(
-        &mut self,
-        index: i32,
-        value: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Item", (index, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_i32_0(
-        maxStateSizeInBytes: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (maxStateSizeInBytes))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        path: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (path))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_InputControl2(
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (control))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IEnumerable_1_3(
-        controls: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::InputSystem::InputControl,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (controls))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
@@ -769,76 +769,24 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
-    pub fn ReadValue<TValue>(&mut self) -> quest_hook::libil2cpp::Result<TValue>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: TValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReadValue",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn CheckValid(
         &mut self,
-        owner: *mut crate::UnityEngine::InputSystem::LowLevel::InputStateHistory,
-        index: i32,
-        header: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (owner, index, header),
+            "CheckValid",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_next(
+    pub fn CopyFrom(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        record: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_next",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_time",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_control(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputControl,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_control",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_valid",
-            (),
+            "CopyFrom",
+            (record),
         )?;
         Ok(__cordl_ret)
     }
@@ -864,42 +812,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_recordIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_recordIndex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetUnsafeMemoryPtrUnchecked(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetUnsafeMemoryPtrUnchecked",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_previous(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_previous",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadValueAsObject(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReadValueAsObject",
+            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)
@@ -924,20 +840,44 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_version(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_version",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetUnsafeMemoryPtr(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetUnsafeMemoryPtr",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetUnsafeMemoryPtrUnchecked(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetUnsafeMemoryPtrUnchecked",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadValue<TValue>(&mut self) -> quest_hook::libil2cpp::Result<TValue>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ReadValue",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadValueAsObject(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ReadValueAsObject",
             (),
         )?;
         Ok(__cordl_ret)
@@ -952,10 +892,27 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_index(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn _ctor(
+        &mut self,
+        owner: *mut crate::UnityEngine::InputSystem::LowLevel::InputStateHistory,
+        index: i32,
+        header: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_index",
+            ".ctor",
+            (owner, index, header),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_control(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputControl,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_control",
             (),
         )?;
         Ok(__cordl_ret)
@@ -970,12 +927,22 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CheckValid(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_index(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CheckValid",
+            "get_index",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_next(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_next",
             (),
         )?;
         Ok(__cordl_ret)
@@ -992,14 +959,47 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CopyFrom(
+    pub fn get_previous(
         &mut self,
-        record: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CopyFrom",
-            (record),
+            "get_previous",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_recordIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_recordIndex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_time",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_valid",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_version(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_version",
+            (),
         )?;
         Ok(__cordl_ret)
     }

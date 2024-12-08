@@ -28,15 +28,18 @@ impl std::ops::DerefMut for crate::System::Xml::ByteStack {
 }
 #[cfg(feature = "System+Xml+ByteStack")]
 impl crate::System::Xml::ByteStack {
-    pub fn _ctor(
-        &mut self,
-        growthRate: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn New(growthRate: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (growthRate))?;
+        Ok(__cordl_object)
+    }
+    pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<u8> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (growthRate))?;
+        let __cordl_ret: u8 = __cordl_object.invoke("Pop", ())?;
         Ok(__cordl_ret)
     }
     pub fn Push(
@@ -50,19 +53,16 @@ impl crate::System::Xml::ByteStack {
             .invoke("Push", (data))?;
         Ok(__cordl_ret)
     }
-    pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<u8> {
+    pub fn _ctor(
+        &mut self,
+        growthRate: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: u8 = __cordl_object.invoke("Pop", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (growthRate))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(growthRate: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (growthRate))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+ByteStack")]

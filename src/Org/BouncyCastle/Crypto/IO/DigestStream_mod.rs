@@ -27,19 +27,36 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IO::DigestStream {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IO+DigestStream")]
 impl crate::Org::BouncyCastle::Crypto::IO::DigestStream {
-    pub fn get_CanSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn Close(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanSeek", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Close", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn Flush(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Flush", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        stream: *mut crate::System::IO::Stream,
+        readDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+        writeDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream, readDigest, writeDigest))?;
+        Ok(__cordl_object)
     }
     pub fn Read(
         &mut self,
@@ -53,26 +70,43 @@ impl crate::Org::BouncyCastle::Crypto::IO::DigestStream {
         let __cordl_ret: i32 = __cordl_object.invoke("Read", (buffer, offset, count))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Position(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Position", (value))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
         Ok(__cordl_ret)
     }
-    pub fn WriteByte(
+    pub fn ReadDigest(
         &mut self,
-        b: u8,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::IDigest> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IDigest = __cordl_object
+            .invoke("ReadDigest", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Seek(
+        &mut self,
+        offset: i64,
+        origin: crate::System::IO::SeekOrigin,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("Seek", (offset, origin))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetLength(
+        &mut self,
+        length: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteByte", (b))?;
+            .invoke("SetLength", (length))?;
         Ok(__cordl_ret)
     }
     pub fn Write(
@@ -86,6 +120,17 @@ impl crate::Org::BouncyCastle::Crypto::IO::DigestStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (buffer, offset, count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteByte(
+        &mut self,
+        b: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteByte", (b))?;
         Ok(__cordl_ret)
     }
     pub fn WriteDigest(
@@ -111,6 +156,27 @@ impl crate::Org::BouncyCastle::Crypto::IO::DigestStream {
             .invoke(".ctor", (stream, readDigest, writeDigest))?;
         Ok(__cordl_ret)
     }
+    pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanRead", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CanSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanSeek", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CanWrite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanWrite", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -125,82 +191,16 @@ impl crate::Org::BouncyCastle::Crypto::IO::DigestStream {
         let __cordl_ret: i64 = __cordl_object.invoke("get_Position", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetLength(
+    pub fn set_Position(
         &mut self,
-        length: i64,
+        value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLength", (length))?;
+            .invoke("set_Position", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_CanWrite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanWrite", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Flush(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Flush", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadDigest(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::IDigest> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IDigest = __cordl_object
-            .invoke("ReadDigest", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanRead", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Seek(
-        &mut self,
-        offset: i64,
-        origin: crate::System::IO::SeekOrigin,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("Seek", (offset, origin))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Close(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        stream: *mut crate::System::IO::Stream,
-        readDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        writeDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream, readDigest, writeDigest))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IO+DigestStream")]

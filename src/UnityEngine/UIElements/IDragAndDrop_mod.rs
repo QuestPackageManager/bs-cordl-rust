@@ -24,6 +24,37 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IDragAndDrop {
 }
 #[cfg(feature = "UnityEngine+UIElements+IDragAndDrop")]
 impl crate::UnityEngine::UIElements::IDragAndDrop {
+    pub fn AcceptDrag(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AcceptDrag", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DragCleanup(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DragCleanup", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetVisualMode(
+        &mut self,
+        visualMode: crate::UnityEngine::UIElements::DragVisualMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetVisualMode", (visualMode))?;
+        Ok(__cordl_ret)
+    }
     pub fn StartDrag(
         &mut self,
         args: crate::UnityEngine::UIElements::StartDragArgs,
@@ -47,6 +78,11 @@ impl crate::UnityEngine::UIElements::IDragAndDrop {
             .invoke("UpdateDrag", (pointerPosition))?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_data(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -58,42 +94,6 @@ impl crate::UnityEngine::UIElements::IDragAndDrop {
         let __cordl_ret: *mut crate::UnityEngine::UIElements::DragAndDropData = __cordl_object
             .invoke("get_data", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn DragCleanup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DragCleanup", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AcceptDrag(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AcceptDrag", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetVisualMode(
-        &mut self,
-        visualMode: crate::UnityEngine::UIElements::DragVisualMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetVisualMode", (visualMode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IDragAndDrop")]

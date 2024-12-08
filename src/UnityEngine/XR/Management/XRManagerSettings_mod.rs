@@ -39,45 +39,25 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
         feature = "UnityEngine+XR+Management+XRManagerSettings+_InitializeLoader_d__24"
     )]
     pub type _InitializeLoader_d__24 = crate::UnityEngine::XR::Management::XRManagerSettings__InitializeLoader_d__24;
-    pub fn set_automaticRunning(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn ActiveLoaderAs<T>(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_automaticRunning", (value))?;
+        let __cordl_ret: T = __cordl_object.invoke("ActiveLoaderAs", ())?;
         Ok(__cordl_ret)
     }
-    pub fn StopSubsystems(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StopSubsystems", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitializeLoader(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("InitializeLoader", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDisable(
+    pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDisable", ())?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
     pub fn CheckGraphicsAPICompatibility(
@@ -91,118 +71,6 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
             .invoke("CheckGraphicsAPICompatibility", (loader))?;
         Ok(__cordl_ret)
     }
-    pub fn get_currentLoaders(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::XR::Management::XRLoader,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::XR::Management::XRLoader,
-        > = __cordl_object.invoke("get_currentLoaders", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_currentLoaders(
-        &mut self,
-        value: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::XR::Management::XRLoader,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_currentLoaders", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isInitializationComplete(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_isInitializationComplete", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_automaticLoading(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_automaticLoading", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_activeLoader(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::XR::Management::XRLoader,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::XR::Management::XRLoader = __cordl_object
-            .invoke("get_activeLoader", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartSubsystems(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartSubsystems", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_registeredLoaders(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::HashSet_1<
-            *mut crate::UnityEngine::XR::Management::XRLoader,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut crate::UnityEngine::XR::Management::XRLoader,
-        > = __cordl_object.invoke("get_registeredLoaders", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn DeinitializeLoader(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -213,32 +81,14 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
             .invoke("DeinitializeLoader", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_automaticRunning(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_automaticRunning", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn InitializeLoader(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_automaticLoading(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_automaticLoading", (value))?;
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("InitializeLoader", ())?;
         Ok(__cordl_ret)
     }
     pub fn InitializeLoaderSync(
@@ -251,6 +101,74 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
             .invoke("InitializeLoaderSync", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDisable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDisable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartSubsystems(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartSubsystems", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn StopSubsystems(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StopSubsystems", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryAddLoader(
+        &mut self,
+        loader: *mut crate::UnityEngine::XR::Management::XRLoader,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryAddLoader", (loader, index))?;
+        Ok(__cordl_ret)
+    }
     pub fn TryRemoveLoader(
         &mut self,
         loader: *mut crate::UnityEngine::XR::Management::XRLoader,
@@ -261,30 +179,39 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
         let __cordl_ret: bool = __cordl_object.invoke("TryRemoveLoader", (loader))?;
         Ok(__cordl_ret)
     }
-    pub fn set_activeLoader(
+    pub fn TrySetLoaders(
         &mut self,
-        value: *mut crate::UnityEngine::XR::Management::XRLoader,
+        reorderedLoaders: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::XR::Management::XRLoader,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TrySetLoaders", (reorderedLoaders))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_activeLoader", (value))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_loaders(
+    pub fn get_activeLoader(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::XR::Management::XRLoader,
-        >,
+        *mut crate::UnityEngine::XR::Management::XRLoader,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::XR::Management::XRLoader,
-        > = __cordl_object.invoke("get_loaders", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::XR::Management::XRLoader = __cordl_object
+            .invoke("get_activeLoader", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_activeLoaders(
@@ -302,47 +229,120 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
         > = __cordl_object.invoke("get_activeLoaders", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ActiveLoaderAs<T>(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
+    pub fn get_automaticLoading(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: T = __cordl_object.invoke("ActiveLoaderAs", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_automaticLoading", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TrySetLoaders(
+    pub fn get_automaticRunning(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_automaticRunning", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_currentLoaders(
         &mut self,
-        reorderedLoaders: *mut crate::System::Collections::Generic::List_1<
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
             *mut crate::UnityEngine::XR::Management::XRLoader,
         >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::XR::Management::XRLoader,
+        > = __cordl_object.invoke("get_currentLoaders", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isInitializationComplete(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
-            .invoke("TrySetLoaders", (reorderedLoaders))?;
+            .invoke("get_isInitializationComplete", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TryAddLoader(
+    pub fn get_loaders(
         &mut self,
-        loader: *mut crate::UnityEngine::XR::Management::XRLoader,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::XR::Management::XRLoader,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("TryAddLoader", (loader, index))?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::XR::Management::XRLoader,
+        > = __cordl_object.invoke("get_loaders", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_registeredLoaders(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::HashSet_1<
+            *mut crate::UnityEngine::XR::Management::XRLoader,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::HashSet_1<
+            *mut crate::UnityEngine::XR::Management::XRLoader,
+        > = __cordl_object.invoke("get_registeredLoaders", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_activeLoader(
+        &mut self,
+        value: *mut crate::UnityEngine::XR::Management::XRLoader,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_activeLoader", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_automaticLoading(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_automaticLoading", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_automaticRunning(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_automaticRunning", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_currentLoaders(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::XR::Management::XRLoader,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_currentLoaders", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+XR+Management+XRManagerSettings")]

@@ -45,22 +45,6 @@ impl<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > LocalMultiplayerSyncState_3<TStateTable, TType, TState> {
-    pub fn get_player(&mut self) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
-            .invoke("get_player", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetState(
         &mut self,
         _cordl_type: TType,
@@ -79,10 +63,41 @@ impl<
         let __cordl_ret: TState = __cordl_object.invoke("GetState", (_cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Item(
+    pub fn New(
+        player: *mut IConnectedPlayer,
+        fullStateUpdateFrequency: i64,
+        deltaUpdateFrequency: i64,
+        _cordl_size: i32,
+        interpolator: *mut crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
+            TStateTable,
+            TType,
+            TState,
+        >,
+        smoother: *mut crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
+            TStateTable,
+            TType,
+            TState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    player,
+                    fullStateUpdateFrequency,
+                    deltaUpdateFrequency,
+                    _cordl_size,
+                    interpolator,
+                    smoother,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn SetCurrentTime(
         &mut self,
-        t: TType,
-        value: TState,
+        _cordl_time: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -96,25 +111,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Item", (t, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_stateBuffer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut StateBuffer_3<TStateTable, TType, TState>>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut StateBuffer_3<TStateTable, TType, TState> = __cordl_object
-            .invoke("get_stateBuffer", ())?;
+            .invoke("SetCurrentTime", (_cordl_time))?;
         Ok(__cordl_ret)
     }
     pub fn SetDirty(
@@ -133,6 +130,70 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDirty", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetState(
+        &mut self,
+        _cordl_type: TType,
+        state: TState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetState", (_cordl_type, state))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetSerializedState<T>(
+        &mut self,
+        pool: *mut IPacketPool_1<T>,
+        serializable: quest_hook::libil2cpp::ByRefMut<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetSerializedState", (pool, serializable))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetSerializedStateDelta<T>(
+        &mut self,
+        pool: *mut IPacketPool_1<T>,
+        serializable: quest_hook::libil2cpp::ByRefMut<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetSerializedStateDelta", (pool, serializable))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -192,11 +253,7 @@ impl<
         let __cordl_ret: TState = __cordl_object.invoke("get_Item", (t))?;
         Ok(__cordl_ret)
     }
-    pub fn TryGetSerializedState<T>(
-        &mut self,
-        pool: *mut IPacketPool_1<T>,
-        serializable: quest_hook::libil2cpp::ByRefMut<T>,
-    ) -> quest_hook::libil2cpp::Result<bool>
+    pub fn get_player(&mut self) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -204,21 +261,17 @@ impl<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
     {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetSerializedState", (pool, serializable))?;
+        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
+            .invoke("get_player", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TryGetSerializedStateDelta<T>(
+    pub fn get_stateBuffer(
         &mut self,
-        pool: *mut IPacketPool_1<T>,
-        serializable: quest_hook::libil2cpp::ByRefMut<T>,
-    ) -> quest_hook::libil2cpp::Result<bool>
+    ) -> quest_hook::libil2cpp::Result<*mut StateBuffer_3<TStateTable, TType, TState>>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -226,20 +279,18 @@ impl<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
     {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetSerializedStateDelta", (pool, serializable))?;
+        let __cordl_ret: *mut StateBuffer_3<TStateTable, TType, TState> = __cordl_object
+            .invoke("get_stateBuffer", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetState(
+    pub fn set_Item(
         &mut self,
-        _cordl_type: TType,
-        state: TState,
+        t: TType,
+        value: TState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -253,59 +304,8 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetState", (_cordl_type, state))?;
+            .invoke("set_Item", (t, value))?;
         Ok(__cordl_ret)
-    }
-    pub fn SetCurrentTime(
-        &mut self,
-        _cordl_time: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCurrentTime", (_cordl_time))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        player: *mut IConnectedPlayer,
-        fullStateUpdateFrequency: i64,
-        deltaUpdateFrequency: i64,
-        _cordl_size: i32,
-        interpolator: *mut crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
-            TStateTable,
-            TType,
-            TState,
-        >,
-        smoother: *mut crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
-            TStateTable,
-            TType,
-            TState,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    player,
-                    fullStateUpdateFrequency,
-                    deltaUpdateFrequency,
-                    _cordl_size,
-                    interpolator,
-                    smoother,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LocalMultiplayerSyncState_3")]

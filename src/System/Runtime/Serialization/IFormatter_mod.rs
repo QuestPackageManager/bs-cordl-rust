@@ -36,6 +36,11 @@ impl crate::System::Runtime::Serialization::IFormatter {
             .invoke("Serialize", (serializationStream, graph))?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn set_SurrogateSelector(
         &mut self,
         value: *mut crate::System::Runtime::Serialization::ISurrogateSelector,
@@ -46,11 +51,6 @@ impl crate::System::Runtime::Serialization::IFormatter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_SurrogateSelector", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+IFormatter")]

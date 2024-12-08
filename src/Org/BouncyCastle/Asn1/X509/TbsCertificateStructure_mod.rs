@@ -38,24 +38,23 @@ for crate::Org::BouncyCastle::Asn1::X509::TbsCertificateStructure {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateStructure")]
 impl crate::Org::BouncyCastle::Asn1::X509::TbsCertificateStructure {
-    pub fn get_StartDate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::X509::Time> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::Time = __cordl_object
-            .invoke("get_StartDate", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
     }
-    pub fn get_VersionNumber(
+    pub fn ToAsn1Object(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::DerInteger> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
-            .invoke("get_VersionNumber", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -69,21 +68,26 @@ impl crate::Org::BouncyCastle::Asn1::X509::TbsCertificateStructure {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Version(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_EndDate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::X509::Time> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Version", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::Time = __cordl_object
+            .invoke("get_EndDate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_SerialNumber(
+    pub fn get_Extensions(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::DerInteger> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
-            .invoke("get_SerialNumber", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions = __cordl_object
+            .invoke("get_Extensions", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Issuer(
@@ -98,14 +102,26 @@ impl crate::Org::BouncyCastle::Asn1::X509::TbsCertificateStructure {
             .invoke("get_Issuer", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_EndDate(
+    pub fn get_IssuerUniqueID(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::X509::Time> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::DerBitString,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::Time = __cordl_object
-            .invoke("get_EndDate", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerBitString = __cordl_object
+            .invoke("get_IssuerUniqueID", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SerialNumber(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::DerInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
+            .invoke("get_SerialNumber", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Signature(
@@ -118,6 +134,16 @@ impl crate::Org::BouncyCastle::Asn1::X509::TbsCertificateStructure {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier = __cordl_object
             .invoke("get_Signature", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_StartDate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::X509::Time> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::Time = __cordl_object
+            .invoke("get_StartDate", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Subject(
@@ -144,18 +170,6 @@ impl crate::Org::BouncyCastle::Asn1::X509::TbsCertificateStructure {
             .invoke("get_SubjectPublicKeyInfo", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_IssuerUniqueID(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::DerBitString,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerBitString = __cordl_object
-            .invoke("get_IssuerUniqueID", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_SubjectUniqueID(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -168,36 +182,22 @@ impl crate::Org::BouncyCastle::Asn1::X509::TbsCertificateStructure {
             .invoke("get_SubjectUniqueID", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Extensions(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
-    > {
+    pub fn get_Version(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions = __cordl_object
-            .invoke("get_Extensions", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Version", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ToAsn1Object(
+    pub fn get_VersionNumber(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::DerInteger> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
+            .invoke("get_VersionNumber", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateStructure")]

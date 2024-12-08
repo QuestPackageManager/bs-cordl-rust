@@ -41,6 +41,11 @@ impl crate::TMPro::ITextElement {
             .invoke("Rebuild", (update))?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_sharedMaterial(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Material> {
@@ -50,11 +55,6 @@ impl crate::TMPro::ITextElement {
         let __cordl_ret: *mut crate::UnityEngine::Material = __cordl_object
             .invoke("get_sharedMaterial", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "TMPro+ITextElement")]

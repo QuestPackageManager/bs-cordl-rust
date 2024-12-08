@@ -24,9 +24,9 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Converters::XDocumentWrappe
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XDocumentWrapper")]
 impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
-    pub fn CreateComment(
+    pub fn AppendChild(
         &mut self,
-        text: *mut crate::System::String,
+        newChild: *mut crate::Newtonsoft::Json::Converters::IXmlNode,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Converters::IXmlNode,
     > {
@@ -34,19 +34,14 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
             self,
         );
         let __cordl_ret: *mut crate::Newtonsoft::Json::Converters::IXmlNode = __cordl_object
-            .invoke("CreateComment", (text))?;
+            .invoke("AppendChild", (newChild))?;
         Ok(__cordl_ret)
     }
-    pub fn get_HasChildNodes(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasChildNodes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateTextNode(
+    pub fn CreateAttribute_String1(
         &mut self,
-        text: *mut crate::System::String,
+        qualifiedName: *mut crate::System::String,
+        namespaceUri: *mut crate::System::String,
+        value: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Converters::IXmlNode,
     > {
@@ -54,7 +49,21 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
             self,
         );
         let __cordl_ret: *mut crate::Newtonsoft::Json::Converters::IXmlNode = __cordl_object
-            .invoke("CreateTextNode", (text))?;
+            .invoke("CreateAttribute", (qualifiedName, namespaceUri, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateAttribute_String_String0(
+        &mut self,
+        name: *mut crate::System::String,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Newtonsoft::Json::Converters::IXmlNode = __cordl_object
+            .invoke("CreateAttribute", (name, value))?;
         Ok(__cordl_ret)
     }
     pub fn CreateCDataSection(
@@ -70,9 +79,9 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
             .invoke("CreateCDataSection", (data))?;
         Ok(__cordl_ret)
     }
-    pub fn AppendChild(
+    pub fn CreateComment(
         &mut self,
-        newChild: *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+        text: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Converters::IXmlNode,
     > {
@@ -80,33 +89,7 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
             self,
         );
         let __cordl_ret: *mut crate::Newtonsoft::Json::Converters::IXmlNode = __cordl_object
-            .invoke("AppendChild", (newChild))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ChildNodes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Newtonsoft::Json::Converters::IXmlNode,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Newtonsoft::Json::Converters::IXmlNode,
-        > = __cordl_object.invoke("get_ChildNodes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        document: *mut crate::System::Xml::Linq::XDocument,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (document))?;
+            .invoke("CreateComment", (text))?;
         Ok(__cordl_ret)
     }
     pub fn CreateElement_String0(
@@ -136,6 +119,46 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
             .invoke("CreateElement", (qualifiedName, namespaceUri))?;
         Ok(__cordl_ret)
     }
+    pub fn CreateProcessingInstruction(
+        &mut self,
+        target: *mut crate::System::String,
+        data: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Newtonsoft::Json::Converters::IXmlNode = __cordl_object
+            .invoke("CreateProcessingInstruction", (target, data))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateSignificantWhitespace(
+        &mut self,
+        text: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Newtonsoft::Json::Converters::IXmlNode = __cordl_object
+            .invoke("CreateSignificantWhitespace", (text))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateTextNode(
+        &mut self,
+        text: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Newtonsoft::Json::Converters::IXmlNode = __cordl_object
+            .invoke("CreateTextNode", (text))?;
+        Ok(__cordl_ret)
+    }
     pub fn CreateWhitespace(
         &mut self,
         text: *mut crate::System::String,
@@ -149,14 +172,19 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
             .invoke("CreateWhitespace", (text))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Document(
+    pub fn CreateXmlDeclaration(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Linq::XDocument> {
+        version: *mut crate::System::String,
+        encoding: *mut crate::System::String,
+        standalone: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Linq::XDocument = __cordl_object
-            .invoke("get_Document", ())?;
+        let __cordl_ret: *mut crate::Newtonsoft::Json::Converters::IXmlNode = __cordl_object
+            .invoke("CreateXmlDeclaration", (version, encoding, standalone))?;
         Ok(__cordl_ret)
     }
     pub fn CreateXmlDocumentType(
@@ -178,61 +206,49 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn CreateSignificantWhitespace(
+    pub fn New(
+        document: *mut crate::System::Xml::Linq::XDocument,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (document))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
         &mut self,
-        text: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Converters::IXmlNode,
-    > {
+        document: *mut crate::System::Xml::Linq::XDocument,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Converters::IXmlNode = __cordl_object
-            .invoke("CreateSignificantWhitespace", (text))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (document))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateAttribute_String_String0(
+    pub fn get_ChildNodes(
         &mut self,
-        name: *mut crate::System::String,
-        value: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Converters::IXmlNode = __cordl_object
-            .invoke("CreateAttribute", (name, value))?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+        > = __cordl_object.invoke("get_ChildNodes", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CreateAttribute_String1(
+    pub fn get_Document(
         &mut self,
-        qualifiedName: *mut crate::System::String,
-        namespaceUri: *mut crate::System::String,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Converters::IXmlNode,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Linq::XDocument> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Converters::IXmlNode = __cordl_object
-            .invoke("CreateAttribute", (qualifiedName, namespaceUri, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateXmlDeclaration(
-        &mut self,
-        version: *mut crate::System::String,
-        encoding: *mut crate::System::String,
-        standalone: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Converters::IXmlNode,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Converters::IXmlNode = __cordl_object
-            .invoke("CreateXmlDeclaration", (version, encoding, standalone))?;
+        let __cordl_ret: *mut crate::System::Xml::Linq::XDocument = __cordl_object
+            .invoke("get_Document", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_DocumentElement(
@@ -247,28 +263,12 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
             .invoke("get_DocumentElement", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CreateProcessingInstruction(
-        &mut self,
-        target: *mut crate::System::String,
-        data: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Converters::IXmlNode,
-    > {
+    pub fn get_HasChildNodes(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Converters::IXmlNode = __cordl_object
-            .invoke("CreateProcessingInstruction", (target, data))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasChildNodes", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        document: *mut crate::System::Xml::Linq::XDocument,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (document))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XDocumentWrapper")]

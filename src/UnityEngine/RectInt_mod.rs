@@ -23,96 +23,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::RectInt 
 }
 #[cfg(feature = "UnityEngine+RectInt")]
 impl crate::UnityEngine::RectInt {
-    pub fn set_x(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_x",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_height",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_xMin(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_xMin",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        xMin: i32,
-        yMin: i32,
-        width: i32,
-        height: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (xMin, yMin, width, height),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_width(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_width",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_height(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_height",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Overlaps(
-        &mut self,
-        other: crate::UnityEngine::RectInt,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Overlaps",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_y(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_y",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_width",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals(
         &mut self,
         other: crate::UnityEngine::RectInt,
@@ -124,27 +34,14 @@ impl crate::UnityEngine::RectInt {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_yMax(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Overlaps(
+        &mut self,
+        other: crate::UnityEngine::RectInt,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_yMax",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_xMax(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_xMax",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_x(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_x",
-            (),
+            "Overlaps",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -170,14 +67,73 @@ impl crate::UnityEngine::RectInt {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_y(
+    pub fn _ctor(
         &mut self,
-        value: i32,
+        xMin: i32,
+        yMin: i32,
+        width: i32,
+        height: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_y",
-            (value),
+            ".ctor",
+            (xMin, yMin, width, height),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_height",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_width",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_x(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_x",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_xMax(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_xMax",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_xMin(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_xMin",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_y(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_y",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_yMax(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_yMax",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -186,6 +142,50 @@ impl crate::UnityEngine::RectInt {
             self,
             "get_yMin",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_height(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_height",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_width(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_width",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_x(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_x",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_y(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_y",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

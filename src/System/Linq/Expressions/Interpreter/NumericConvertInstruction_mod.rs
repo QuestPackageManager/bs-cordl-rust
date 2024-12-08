@@ -31,22 +31,57 @@ for crate::System::Linq::Expressions::Interpreter::NumericConvertInstruction {
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::NumericConvertInstruction {
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Checked"
+        feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
     )]
-    pub type Checked = crate::GlobalNamespace::NumericConvertInstruction_Checked;
+    pub type Unchecked = crate::GlobalNamespace::NumericConvertInstruction_Unchecked;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+ToUnderlying"
     )]
     pub type ToUnderlying = crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
+        feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Checked"
     )]
-    pub type Unchecked = crate::GlobalNamespace::NumericConvertInstruction_Unchecked;
-    pub fn get_ConsumedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub type Checked = crate::GlobalNamespace::NumericConvertInstruction_Checked;
+    pub fn Convert(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("Convert", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        from: crate::System::TypeCode,
+        to: crate::System::TypeCode,
+        isLiftedToNull: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (from, to, isLiftedToNull))?;
+        Ok(__cordl_object)
+    }
+    pub fn Run(
+        &mut self,
+        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Run", (frame))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -62,35 +97,11 @@ impl crate::System::Linq::Expressions::Interpreter::NumericConvertInstruction {
             .invoke(".ctor", (from, to, isLiftedToNull))?;
         Ok(__cordl_ret)
     }
-    pub fn Convert(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    pub fn get_ConsumedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("Convert", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Run(
-        &mut self,
-        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Run", (frame))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_InstructionName(
@@ -109,17 +120,6 @@ impl crate::System::Linq::Expressions::Interpreter::NumericConvertInstruction {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        from: crate::System::TypeCode,
-        to: crate::System::TypeCode,
-        isLiftedToNull: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (from, to, isLiftedToNull))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction")]

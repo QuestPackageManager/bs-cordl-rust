@@ -24,54 +24,6 @@ impl std::ops::DerefMut for IMultiplayerSpectatingSpot {
 }
 #[cfg(feature = "IMultiplayerSpectatingSpot")]
 impl IMultiplayerSpectatingSpot {
-    pub fn get_observable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IMultiplayerObservable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut IMultiplayerObservable = __cordl_object
-            .invoke("get_observable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_transform(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Transform = __cordl_object
-            .invoke("get_transform", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_hasBeenRemovedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut IMultiplayerSpectatingSpot>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_hasBeenRemovedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_spotName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_spotName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isMain(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isMain", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn SetIsObserved(
         &mut self,
         isObserved: bool,
@@ -98,6 +50,54 @@ impl IMultiplayerSpectatingSpot {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_isMain(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isMain", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_observable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut IMultiplayerObservable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut IMultiplayerObservable = __cordl_object
+            .invoke("get_observable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_spotName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_spotName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_transform(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Transform = __cordl_object
+            .invoke("get_transform", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_hasBeenRemovedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut IMultiplayerSpectatingSpot>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_hasBeenRemovedEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "IMultiplayerSpectatingSpot")]

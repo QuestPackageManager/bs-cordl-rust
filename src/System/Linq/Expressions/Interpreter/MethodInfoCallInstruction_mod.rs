@@ -29,6 +29,32 @@ for crate::System::Linq::Expressions::Interpreter::MethodInfoCallInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+MethodInfoCallInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::MethodInfoCallInstruction {
+    pub fn GetArgs(
+        &mut self,
+        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+        first: i32,
+        skip: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Object,
+        > = __cordl_object.invoke("GetArgs", (frame, first, skip))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        target: *mut crate::System::Reflection::MethodInfo,
+        argumentCount: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (target, argumentCount))?;
+        Ok(__cordl_object)
+    }
     pub fn Run(
         &mut self,
         frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
@@ -68,38 +94,12 @@ impl crate::System::Linq::Expressions::Interpreter::MethodInfoCallInstruction {
         let __cordl_ret: i32 = __cordl_object.invoke("get_ArgumentCount", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetArgs(
-        &mut self,
-        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
-        first: i32,
-        skip: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
-        > = __cordl_object.invoke("GetArgs", (frame, first, skip))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        target: *mut crate::System::Reflection::MethodInfo,
-        argumentCount: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (target, argumentCount))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+MethodInfoCallInstruction")]

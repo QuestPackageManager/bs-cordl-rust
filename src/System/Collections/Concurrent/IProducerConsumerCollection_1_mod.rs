@@ -30,20 +30,6 @@ for crate::System::Collections::Concurrent::IProducerConsumerCollection_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Collections::Concurrent::IProducerConsumerCollection_1<T> {
-    pub fn TryTake(
-        &mut self,
-        item: quest_hook::libil2cpp::ByRefMut<T>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryTake", (item))?;
-        Ok(__cordl_ret)
-    }
     pub fn ToArray(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
@@ -67,6 +53,20 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryAdd", (item))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryTake(
+        &mut self,
+        item: quest_hook::libil2cpp::ByRefMut<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryTake", (item))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

@@ -27,12 +27,20 @@ for crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+IResourceLocation")]
 impl crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation {
-    pub fn get_DependencyHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn Hash(
+        &mut self,
+        resultType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_DependencyHashCode", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("Hash", (resultType))?;
         Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
     }
     pub fn get_Data(
         &mut self,
@@ -59,14 +67,18 @@ impl crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocatio
         > = __cordl_object.invoke("get_Dependencies", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_PrimaryKey(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    pub fn get_DependencyHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_PrimaryKey", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_DependencyHashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HasDependencies(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasDependencies", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_InternalId(
@@ -79,14 +91,14 @@ impl crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocatio
             .invoke("get_InternalId", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Hash(
+    pub fn get_PrimaryKey(
         &mut self,
-        resultType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("Hash", (resultType))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_PrimaryKey", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ProviderId(
@@ -99,13 +111,6 @@ impl crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocatio
             .invoke("get_ProviderId", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_HasDependencies(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasDependencies", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_ResourceType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
@@ -115,11 +120,6 @@ impl crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocatio
         let __cordl_ret: *mut crate::System::Type = __cordl_object
             .invoke("get_ResourceType", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+IResourceLocation")]

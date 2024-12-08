@@ -83,17 +83,12 @@ impl NoteDebris {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_didFinishEvent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut ILazyCopyHashSet_1<*mut INoteDebrisDidFinishEvent>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut ILazyCopyHashSet_1<*mut INoteDebrisDidFinishEvent> = __cordl_object
-            .invoke("get_didFinishEvent", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Update(
         &mut self,
@@ -115,12 +110,17 @@ impl NoteDebris {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_didFinishEvent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut ILazyCopyHashSet_1<*mut INoteDebrisDidFinishEvent>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut ILazyCopyHashSet_1<*mut INoteDebrisDidFinishEvent> = __cordl_object
+            .invoke("get_didFinishEvent", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "NoteDebris")]
@@ -158,6 +158,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NoteDebris_Pool {
 }
 #[cfg(feature = "NoteDebris+Pool")]
 impl crate::GlobalNamespace::NoteDebris_Pool {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -167,13 +174,6 @@ impl crate::GlobalNamespace::NoteDebris_Pool {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "NoteDebris+Pool")]

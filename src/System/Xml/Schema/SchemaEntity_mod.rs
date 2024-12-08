@@ -37,15 +37,24 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::SchemaEntity {
 }
 #[cfg(feature = "System+Xml+Schema+SchemaEntity")]
 impl crate::System::Xml::Schema::SchemaEntity {
-    pub fn set_NData(
+    pub fn New(
+        qname: *mut crate::System::Xml::XmlQualifiedName,
+        isParameter: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (qname, isParameter))?;
+        Ok(__cordl_object)
+    }
+    pub fn System_Xml_IDtdEntityInfo_get_BaseUriString(
         &mut self,
-        value: *mut crate::System::Xml::XmlQualifiedName,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_NData", (value))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("System.Xml.IDtdEntityInfo.get_BaseUriString", ())?;
         Ok(__cordl_ret)
     }
     pub fn System_Xml_IDtdEntityInfo_get_DeclaredUriString(
@@ -58,81 +67,24 @@ impl crate::System::Xml::Schema::SchemaEntity {
             .invoke("System.Xml.IDtdEntityInfo.get_DeclaredUriString", ())?;
         Ok(__cordl_ret)
     }
-    pub fn System_Xml_IDtdEntityInfo_get_IsUnparsedEntity(
+    pub fn System_Xml_IDtdEntityInfo_get_IsDeclaredInExternal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
-            .invoke("System.Xml.IDtdEntityInfo.get_IsUnparsedEntity", ())?;
+            .invoke("System.Xml.IDtdEntityInfo.get_IsDeclaredInExternal", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_BaseURI(
+    pub fn System_Xml_IDtdEntityInfo_get_IsExternal(
         &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_BaseURI", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdEntityInfo_get_Text(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("System.Xml.IDtdEntityInfo.get_Text", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_DeclaredURI(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_DeclaredURI", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Line(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Line", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdEntityInfo_get_SystemId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("System.Xml.IDtdEntityInfo.get_SystemId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_DeclaredInExternal(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_DeclaredInExternal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Url(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Url", (value))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Xml.IDtdEntityInfo.get_IsExternal", ())?;
         Ok(__cordl_ret)
     }
     pub fn System_Xml_IDtdEntityInfo_get_IsParameterEntity(
@@ -145,77 +97,14 @@ impl crate::System::Xml::Schema::SchemaEntity {
             .invoke("System.Xml.IDtdEntityInfo.get_IsParameterEntity", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_Pubid(
+    pub fn System_Xml_IDtdEntityInfo_get_IsUnparsedEntity(
         &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Pubid", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlQualifiedName> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::XmlQualifiedName = __cordl_object
-            .invoke("get_Name", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Pubid(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Pubid", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsExternal(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsExternal", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdEntityInfo_get_LinePosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("System.Xml.IDtdEntityInfo.get_LinePosition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Pos(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Pos", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_DeclaredURI(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_DeclaredURI", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Xml.IDtdEntityInfo.get_IsUnparsedEntity", ())?;
         Ok(__cordl_ret)
     }
     pub fn System_Xml_IDtdEntityInfo_get_LineNumber(
@@ -228,81 +117,54 @@ impl crate::System::Xml::Schema::SchemaEntity {
             .invoke("System.Xml.IDtdEntityInfo.get_LineNumber", ())?;
         Ok(__cordl_ret)
     }
-    pub fn System_Xml_IDtdEntityInfo_get_IsDeclaredInExternal(
+    pub fn System_Xml_IDtdEntityInfo_get_LinePosition(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Xml.IDtdEntityInfo.get_IsDeclaredInExternal", ())?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("System.Xml.IDtdEntityInfo.get_LinePosition", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsExternal(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsExternal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ParsingInProgress(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_ParsingInProgress", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Line(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Line", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ParsingInProgress(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ParsingInProgress", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Url(
+    pub fn System_Xml_IDtdEntityInfo_get_Name(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Url", ())?;
+            .invoke("System.Xml.IDtdEntityInfo.get_Name", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_NData(
+    pub fn System_Xml_IDtdEntityInfo_get_PublicId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlQualifiedName> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::XmlQualifiedName = __cordl_object
-            .invoke("get_NData", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("System.Xml.IDtdEntityInfo.get_PublicId", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_Text(
+    pub fn System_Xml_IDtdEntityInfo_get_SystemId(
         &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Text", (value))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("System.Xml.IDtdEntityInfo.get_SystemId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdEntityInfo_get_Text(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("System.Xml.IDtdEntityInfo.get_Text", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -317,24 +179,120 @@ impl crate::System::Xml::Schema::SchemaEntity {
             .invoke(".ctor", (qname, isParameter))?;
         Ok(__cordl_ret)
     }
-    pub fn System_Xml_IDtdEntityInfo_get_BaseUriString(
+    pub fn get_BaseURI(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("System.Xml.IDtdEntityInfo.get_BaseUriString", ())?;
+            .invoke("get_BaseURI", ())?;
         Ok(__cordl_ret)
     }
-    pub fn System_Xml_IDtdEntityInfo_get_PublicId(
+    pub fn get_DeclaredInExternal(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_DeclaredInExternal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_DeclaredURI(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("System.Xml.IDtdEntityInfo.get_PublicId", ())?;
+            .invoke("get_DeclaredURI", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsExternal(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsExternal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Line(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Line", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlQualifiedName> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::XmlQualifiedName = __cordl_object
+            .invoke("get_NData", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlQualifiedName> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::XmlQualifiedName = __cordl_object
+            .invoke("get_Name", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ParsingInProgress(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_ParsingInProgress", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Pos(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Pos", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Pubid(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Pubid", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Text(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Text", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Url(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Url", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_BaseURI(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_BaseURI", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_DeclaredInExternal(
@@ -348,62 +306,104 @@ impl crate::System::Xml::Schema::SchemaEntity {
             .invoke("set_DeclaredInExternal", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Pos(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Pos", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdEntityInfo_get_IsExternal(
+    pub fn set_DeclaredURI(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Xml.IDtdEntityInfo.get_IsExternal", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_DeclaredURI", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_BaseURI(
+    pub fn set_IsExternal(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_BaseURI", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsExternal", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Text(
+    pub fn set_Line(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Text", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Line", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn System_Xml_IDtdEntityInfo_get_Name(
+    pub fn set_NData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: *mut crate::System::Xml::XmlQualifiedName,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("System.Xml.IDtdEntityInfo.get_Name", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_NData", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        qname: *mut crate::System::Xml::XmlQualifiedName,
-        isParameter: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (qname, isParameter))?;
-        Ok(__cordl_object)
+    pub fn set_ParsingInProgress(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ParsingInProgress", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Pos(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Pos", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Pubid(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Pubid", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Text(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Text", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Url(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Url", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+SchemaEntity")]

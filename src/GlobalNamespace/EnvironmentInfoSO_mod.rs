@@ -40,6 +40,43 @@ impl EnvironmentInfoSO {
     pub const kLightGroupSubDir: &'static str = "LightGroups";
     #[cfg(feature = "EnvironmentInfoSO+Tags")]
     pub type Tags = crate::GlobalNamespace::EnvironmentInfoSO_Tags;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_colorScheme(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut ColorSchemeSO> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut ColorSchemeSO = __cordl_object
+            .invoke("get_colorScheme", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_defaultLightshowAsset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::TextAsset> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::TextAsset = __cordl_object
+            .invoke("get_defaultLightshowAsset", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_environmentIntensityReductionOptions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut EnvironmentIntensityReductionOptions> {
@@ -48,6 +85,31 @@ impl EnvironmentInfoSO {
         );
         let __cordl_ret: *mut EnvironmentIntensityReductionOptions = __cordl_object
             .invoke("get_environmentIntensityReductionOptions", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_environmentKeywords(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::System::String,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::System::String,
+        > = __cordl_object.invoke("get_environmentKeywords", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_environmentLightGroups(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut IEnvironmentLightGroups> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut IEnvironmentLightGroups = __cordl_object
+            .invoke("get_environmentLightGroups", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_environmentName(
@@ -70,39 +132,28 @@ impl EnvironmentInfoSO {
             .invoke("get_environmentSizeData", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_colorScheme(
+    pub fn get_environmentType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut ColorSchemeSO> {
+    ) -> quest_hook::libil2cpp::Result<EnvironmentType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ColorSchemeSO = __cordl_object
-            .invoke("get_colorScheme", ())?;
+        let __cordl_ret: EnvironmentType = __cordl_object
+            .invoke("get_environmentType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_environmentKeywords(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
-        >,
-    > {
+    pub fn get_isBranded(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
-        > = __cordl_object.invoke("get_environmentKeywords", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isBranded", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_defaultLightshowAsset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::TextAsset> {
+    pub fn get_isInDevelopment(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::TextAsset = __cordl_object
-            .invoke("get_defaultLightshowAsset", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isInDevelopment", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_order(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -119,50 +170,6 @@ impl EnvironmentInfoSO {
         let __cordl_ret: *mut SceneInfo = __cordl_object.invoke("get_sceneInfo", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_isBranded(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isBranded", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isInDevelopment(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isInDevelopment", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_environmentLightGroups(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IEnvironmentLightGroups> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut IEnvironmentLightGroups = __cordl_object
-            .invoke("get_environmentLightGroups", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_environmentType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<EnvironmentType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: EnvironmentType = __cordl_object
-            .invoke("get_environmentType", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_serializedName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -172,13 +179,6 @@ impl EnvironmentInfoSO {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_serializedName", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "EnvironmentInfoSO")]

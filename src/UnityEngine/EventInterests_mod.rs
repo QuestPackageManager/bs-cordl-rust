@@ -23,28 +23,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::EventInt
 }
 #[cfg(feature = "UnityEngine+EventInterests")]
 impl crate::UnityEngine::EventInterests {
-    pub fn set_wantsMouseMove(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_wantsMouseMove",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_wantsMouseEnterLeaveWindow(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_wantsMouseEnterLeaveWindow",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn WantsEvent(
         &mut self,
         _cordl_type: crate::UnityEngine::EventType,
@@ -67,6 +45,14 @@ impl crate::UnityEngine::EventInterests {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_wantsLessLayoutEvents(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_wantsLessLayoutEvents",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_wantsMouseEnterLeaveWindow(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -85,11 +71,25 @@ impl crate::UnityEngine::EventInterests {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_wantsLessLayoutEvents(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn set_wantsMouseEnterLeaveWindow(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_wantsLessLayoutEvents",
-            (),
+            "set_wantsMouseEnterLeaveWindow",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_wantsMouseMove(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_wantsMouseMove",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

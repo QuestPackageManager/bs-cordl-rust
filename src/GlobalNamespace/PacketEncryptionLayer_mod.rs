@@ -46,6 +46,17 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
             .invoke("AddDecryptionProcessingTime", (_cordl_time))?;
         Ok(__cordl_ret)
     }
+    pub fn AddEncryptionProcessingTime(
+        &mut self,
+        _cordl_time: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddEncryptionProcessingTime", (_cordl_time))?;
+        Ok(__cordl_ret)
+    }
     pub fn IncrementPacketsReceivedEncrypted(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -54,36 +65,6 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("IncrementPacketsReceivedEncrypted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_packetsReceivedEncrypted(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object
-            .invoke("get_packetsReceivedEncrypted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IncrementPacketsSentRejected(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("IncrementPacketsSentRejected", ())?;
         Ok(__cordl_ret)
     }
     pub fn IncrementPacketsReceivedPlaintext(
@@ -96,14 +77,71 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
             .invoke("IncrementPacketsReceivedPlaintext", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_packetsReceivedPlaintext(
+    pub fn IncrementPacketsReceivedRejected(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("IncrementPacketsReceivedRejected", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IncrementPacketsSentEncrypted(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("IncrementPacketsSentEncrypted", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IncrementPacketsSentPlaintext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("IncrementPacketsSentPlaintext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IncrementPacketsSentRejected(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("IncrementPacketsSentRejected", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_decryptionProcessingTime(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object
-            .invoke("get_packetsReceivedPlaintext", ())?;
+            .invoke("get_decryptionProcessingTime", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_encryptionProcessingTime(
@@ -116,21 +154,38 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
             .invoke("get_encryptionProcessingTime", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_packetsReceivedEncrypted(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object
+            .invoke("get_packetsReceivedEncrypted", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_packetsReceivedPlaintext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object
+            .invoke("get_packetsReceivedPlaintext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_packetsReceivedRejected(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_packetsReceivedRejected", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_packetsSentEncrypted(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_packetsSentEncrypted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IncrementPacketsReceivedRejected(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("IncrementPacketsReceivedRejected", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_packetsSentPlaintext(&mut self) -> quest_hook::libil2cpp::Result<i64> {
@@ -146,61 +201,6 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_packetsSentRejected", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_decryptionProcessingTime(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object
-            .invoke("get_decryptionProcessingTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IncrementPacketsSentPlaintext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("IncrementPacketsSentPlaintext", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IncrementPacketsSentEncrypted(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("IncrementPacketsSentEncrypted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_packetsReceivedRejected(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_packetsReceivedRejected", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddEncryptionProcessingTime(
-        &mut self,
-        _cordl_time: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddEncryptionProcessingTime", (_cordl_time))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PacketEncryptionLayer+EncryptionStatistics")]
@@ -257,12 +257,12 @@ impl PacketEncryptionLayer {
     pub const kPlaintextPacketType: u8 = 0u8;
     #[cfg(feature = "PacketEncryptionLayer+EncryptionStatistics")]
     pub type EncryptionStatistics = crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics;
-    #[cfg(feature = "PacketEncryptionLayer+_AddPendingEncryptedEndpointAsync_d__27")]
-    pub type _AddPendingEncryptedEndpointAsync_d__27 = crate::GlobalNamespace::PacketEncryptionLayer__AddPendingEncryptedEndpointAsync_d__27;
     #[cfg(feature = "PacketEncryptionLayer+_AddEncryptedEndpointAsync_d__25")]
     pub type _AddEncryptedEndpointAsync_d__25 = crate::GlobalNamespace::PacketEncryptionLayer__AddEncryptedEndpointAsync_d__25;
     #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
     pub type PendingEncryptionStateList = crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList;
+    #[cfg(feature = "PacketEncryptionLayer+_AddPendingEncryptedEndpointAsync_d__27")]
+    pub type _AddPendingEncryptedEndpointAsync_d__27 = crate::GlobalNamespace::PacketEncryptionLayer__AddPendingEncryptedEndpointAsync_d__27;
     pub fn AddEncryptedEndpoint(
         &mut self,
         endPoint: *mut crate::System::Net::IPEndPoint,
@@ -281,82 +281,6 @@ impl PacketEncryptionLayer {
                 "AddEncryptedEndpoint",
                 (endPoint, preMasterSecret, serverRandom, clientRandom, isClient),
             )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetEncryptionState(
-        &mut self,
-        endPoint: *mut crate::System::Net::IPEndPoint,
-        state: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetEncryptionState", (endPoint, state))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_filterUnencryptedTraffic(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_filterUnencryptedTraffic", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveAllEndpoints(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveAllEndpoints", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessOutBoundPacketInternal(
-        &mut self,
-        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
-        data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
-        offset: quest_hook::libil2cpp::ByRefMut<i32>,
-        length: quest_hook::libil2cpp::ByRefMut<i32>,
-        encrypted: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "ProcessOutBoundPacketInternal",
-                (remoteEndPoint, data, offset, length, encrypted),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveEncryptedEndpoint(
-        &mut self,
-        endPoint: *mut crate::System::Net::IPEndPoint,
-        encryptedState: *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("RemoveEncryptedEndpoint", (endPoint, encryptedState))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PollUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PollUpdate", ())?;
         Ok(__cordl_ret)
     }
     pub fn AddEncryptedEndpointAsync(
@@ -383,39 +307,6 @@ impl PacketEncryptionLayer {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn TryGetPotentialPendingEncryptionStates(
-        &mut self,
-        endPoint: *mut crate::System::Net::IPEndPoint,
-        encryptionStates: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "TryGetPotentialPendingEncryptionStates",
-                (endPoint, encryptionStates),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetPendingEncryptionState(
-        &mut self,
-        endPoint: *mut crate::System::Net::IPEndPoint,
-        state: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetPendingEncryptionState", (endPoint, state))?;
-        Ok(__cordl_ret)
-    }
     pub fn AddPendingEncryptedEndpointAsync(
         &mut self,
         endPoint: *mut crate::System::Net::IPEndPoint,
@@ -434,30 +325,6 @@ impl PacketEncryptionLayer {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        timeProvider: *mut crate::BGNet::Core::ITimeProvider,
-        taskUtility: *mut crate::BGNet::Core::ITaskUtility,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (timeProvider, taskUtility))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PromotePendingEncryptionState(
-        &mut self,
-        endPoint: *mut crate::System::Net::IPEndPoint,
-        state: *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PromotePendingEncryptionState", (endPoint, state))?;
-        Ok(__cordl_ret)
-    }
     pub fn MatchesFilter(
         &mut self,
         data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -469,6 +336,26 @@ impl PacketEncryptionLayer {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("MatchesFilter", (data, offset, length))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        timeProvider: *mut crate::BGNet::Core::ITimeProvider,
+        taskUtility: *mut crate::BGNet::Core::ITaskUtility,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (timeProvider, taskUtility))?;
+        Ok(__cordl_object)
+    }
+    pub fn PollUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PollUpdate", ())?;
         Ok(__cordl_ret)
     }
     pub fn ProcessInboundPacket(
@@ -507,6 +394,76 @@ impl PacketEncryptionLayer {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn ProcessOutBoundPacket(
+        &mut self,
+        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
+        data: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        offset: quest_hook::libil2cpp::ByRefMut<i32>,
+        length: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessOutBoundPacket", (remoteEndPoint, data, offset, length))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessOutBoundPacketInternal(
+        &mut self,
+        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
+        data: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        offset: quest_hook::libil2cpp::ByRefMut<i32>,
+        length: quest_hook::libil2cpp::ByRefMut<i32>,
+        encrypted: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "ProcessOutBoundPacketInternal",
+                (remoteEndPoint, data, offset, length, encrypted),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn PromotePendingEncryptionState(
+        &mut self,
+        endPoint: *mut crate::System::Net::IPEndPoint,
+        state: *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PromotePendingEncryptionState", (endPoint, state))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveAllEndpoints(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveAllEndpoints", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveEncryptedEndpoint(
+        &mut self,
+        endPoint: *mut crate::System::Net::IPEndPoint,
+        encryptedState: *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("RemoveEncryptedEndpoint", (endPoint, encryptedState))?;
+        Ok(__cordl_ret)
+    }
     pub fn SetUnencryptedTrafficFilter(
         &mut self,
         unencryptedTrafficFilter: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -518,11 +475,80 @@ impl PacketEncryptionLayer {
             .invoke("SetUnencryptedTrafficFilter", (unencryptedTrafficFilter))?;
         Ok(__cordl_ret)
     }
+    pub fn TryGetEncryptionState(
+        &mut self,
+        endPoint: *mut crate::System::Net::IPEndPoint,
+        state: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetEncryptionState", (endPoint, state))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetPendingEncryptionState(
+        &mut self,
+        endPoint: *mut crate::System::Net::IPEndPoint,
+        state: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetPendingEncryptionState", (endPoint, state))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetPotentialPendingEncryptionStates(
+        &mut self,
+        endPoint: *mut crate::System::Net::IPEndPoint,
+        encryptionStates: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "TryGetPotentialPendingEncryptionStates",
+                (endPoint, encryptionStates),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        timeProvider: *mut crate::BGNet::Core::ITimeProvider,
+        taskUtility: *mut crate::BGNet::Core::ITaskUtility,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (timeProvider, taskUtility))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_enableStatistics(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_enableStatistics", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_filterUnencryptedTraffic(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_filterUnencryptedTraffic", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_enableStatistics(
@@ -546,32 +572,6 @@ impl PacketEncryptionLayer {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_filterUnencryptedTraffic", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn ProcessOutBoundPacket(
-        &mut self,
-        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
-        data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
-        offset: quest_hook::libil2cpp::ByRefMut<i32>,
-        length: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessOutBoundPacket", (remoteEndPoint, data, offset, length))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        timeProvider: *mut crate::BGNet::Core::ITimeProvider,
-        taskUtility: *mut crate::BGNet::Core::ITaskUtility,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (timeProvider, taskUtility))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PacketEncryptionLayer")]
@@ -616,12 +616,12 @@ for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
 }
 #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
 impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
+    #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList+__c")]
+    pub type __c = crate::GlobalNamespace::PendingEncryptionStateList___c;
     #[cfg(
         feature = "PacketEncryptionLayer+PendingEncryptionStateList+__c__DisplayClass8_0"
     )]
     pub type __c__DisplayClass8_0 = crate::GlobalNamespace::PendingEncryptionStateList___c__DisplayClass8_0;
-    #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList+__c")]
-    pub type __c = crate::GlobalNamespace::PendingEncryptionStateList___c;
     #[cfg(
         feature = "PacketEncryptionLayer+PendingEncryptionStateList+__c__DisplayClass4_0"
     )]
@@ -638,14 +638,14 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
             .invoke("Add", (port, encryptionState))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("Dispose", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetSortedEncryptionStates(
@@ -664,19 +664,12 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
         > = __cordl_object.invoke("GetSortedEncryptionStates", (port))?;
         Ok(__cordl_ret)
     }
-    pub fn get_isEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isEmpty", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Remove_i32_0(&mut self, port: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Remove", (port))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Remove_EncryptionUtility_IEncryptionState1(
         &mut self,
@@ -690,14 +683,11 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
             .invoke("Remove", (port, encryptionState))?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn Remove_i32_0(&mut self, port: i32) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("Remove", (port))?;
         Ok(__cordl_ret)
     }
     pub fn TryGetEncryptionState(
@@ -714,12 +704,22 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
             .invoke("TryGetEncryptionState", (port, encryptionState))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isEmpty", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]

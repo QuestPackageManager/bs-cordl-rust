@@ -25,6 +25,20 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for LastUsedBeatmapDataCache {
 }
 #[cfg(feature = "LastUsedBeatmapDataCache")]
 impl LastUsedBeatmapDataCache {
+    pub fn AreSameBeatmapDataCached(
+        &mut self,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        environmentInfo: *mut IEnvironmentInfo,
+        gameplayModifiers: *mut GameplayModifiers,
+        playerSpecificSettings: *mut PlayerSpecificSettings,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AreSameBeatmapDataCached",
+            (beatmapKey, environmentInfo, gameplayModifiers, playerSpecificSettings),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         beatmapData: *mut IReadonlyBeatmapData,
@@ -43,20 +57,6 @@ impl LastUsedBeatmapDataCache {
                 gameplayModifiers,
                 playerSpecificSettings,
             ),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AreSameBeatmapDataCached(
-        &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        environmentInfo: *mut IEnvironmentInfo,
-        gameplayModifiers: *mut GameplayModifiers,
-        playerSpecificSettings: *mut PlayerSpecificSettings,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AreSameBeatmapDataCached",
-            (beatmapKey, environmentInfo, gameplayModifiers, playerSpecificSettings),
         )?;
         Ok(__cordl_ret)
     }

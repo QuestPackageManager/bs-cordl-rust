@@ -53,6 +53,16 @@ impl crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder {
             .invoke("Build", (contentEncryptor))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        privateKeyInfo: *mut crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
+        generalName: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (privateKeyInfo, generalName))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         privateKeyInfo: *mut crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
@@ -64,16 +74,6 @@ impl crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (privateKeyInfo, generalName))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        privateKeyInfo: *mut crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
-        generalName: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (privateKeyInfo, generalName))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+PkiArchiveControlBuilder")]

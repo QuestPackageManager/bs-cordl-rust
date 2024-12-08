@@ -34,19 +34,30 @@ for crate::Org::BouncyCastle::Crypto::Parameters::DsaParameterGenerationParamete
 impl crate::Org::BouncyCastle::Crypto::Parameters::DsaParameterGenerationParameters {
     pub const DigitalSignatureUsage: i32 = 1i32;
     pub const KeyEstablishmentUsage: i32 = 2i32;
-    pub fn _ctor_i32_i32_i32_SecureRandom0(
-        &mut self,
+    pub fn New_i32_1(
         L: i32,
         N: i32,
         certainty: i32,
         random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (L, N, certainty, random))?;
-        Ok(__cordl_ret)
+        usageIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (L, N, certainty, random, usageIndex))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_i32_i32_SecureRandom0(
+        L: i32,
+        N: i32,
+        certainty: i32,
+        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (L, N, certainty, random))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_i32_1(
         &mut self,
@@ -63,6 +74,20 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DsaParameterGenerationParamet
             .invoke(".ctor", (L, N, certainty, random, usageIndex))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_i32_i32_i32_SecureRandom0(
+        &mut self,
+        L: i32,
+        N: i32,
+        certainty: i32,
+        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (L, N, certainty, random))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Certainty(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,25 +95,18 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DsaParameterGenerationParamet
         let __cordl_ret: i32 = __cordl_object.invoke("get_Certainty", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_N(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_N", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_UsageIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_UsageIndex", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_L(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_L", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_N(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_N", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Random(
@@ -103,30 +121,12 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DsaParameterGenerationParamet
             .invoke("get_Random", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_i32_i32_i32_SecureRandom0(
-        L: i32,
-        N: i32,
-        certainty: i32,
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (L, N, certainty, random))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_1(
-        L: i32,
-        N: i32,
-        certainty: i32,
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-        usageIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (L, N, certainty, random, usageIndex))?;
-        Ok(__cordl_object)
+    pub fn get_UsageIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_UsageIndex", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DsaParameterGenerationParameters")]

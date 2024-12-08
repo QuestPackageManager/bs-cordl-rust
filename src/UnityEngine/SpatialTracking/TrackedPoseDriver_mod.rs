@@ -67,23 +67,252 @@ impl std::ops::DerefMut for crate::UnityEngine::SpatialTracking::TrackedPoseDriv
 }
 #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver")]
 impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
-    #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackedPose")]
-    pub type TrackedPose = crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose;
-    #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackingType")]
-    pub type TrackingType = crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType;
-    #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+UpdateType")]
-    pub type UpdateType = crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType;
     #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+DeviceType")]
     pub type DeviceType = crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType;
-    pub fn set_updateType(
+    #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackingType")]
+    pub type TrackingType = crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType;
+    #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackedPose")]
+    pub type TrackedPose = crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose;
+    #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+UpdateType")]
+    pub type UpdateType = crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType;
+    pub fn Awake(
         &mut self,
-        value: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_updateType", (value))?;
+            .invoke("Awake", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CacheLocalPosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CacheLocalPosition", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn FixedUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FixedUpdate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPoseData(
+        &mut self,
+        device: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType,
+        poseSource: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
+        resultPose: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::SpatialTracking::PoseDataFlags,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::SpatialTracking::PoseDataFlags = __cordl_object
+            .invoke("GetPoseData", (device, poseSource, resultPose))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HasStereoCamera(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("HasStereoCamera", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnBeforeRender(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnBeforeRender", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDisable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDisable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnEnable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnEnable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn PerformUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PerformUpdate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ResetToCachedLocalPosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ResetToCachedLocalPosition", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetLocalTransform(
+        &mut self,
+        newPosition: crate::UnityEngine::Vector3,
+        newRotation: crate::UnityEngine::Quaternion,
+        poseFlags: crate::UnityEngine::SpatialTracking::PoseDataFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetLocalTransform", (newPosition, newRotation, poseFlags))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetPoseSource(
+        &mut self,
+        deviceType: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType,
+        pose: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("SetPoseSource", (deviceType, pose))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TransformPoseByOriginIfNeeded(
+        &mut self,
+        pose: crate::UnityEngine::Pose,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Pose = __cordl_object
+            .invoke("TransformPoseByOriginIfNeeded", (pose))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_UseRelativeTransform(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_UseRelativeTransform", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_deviceType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType = __cordl_object
+            .invoke("get_deviceType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_originPose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Pose = __cordl_object
+            .invoke("get_originPose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_poseProviderComponent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider = __cordl_object
+            .invoke("get_poseProviderComponent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_poseSource(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose = __cordl_object
+            .invoke("get_poseSource", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_trackingType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType = __cordl_object
+            .invoke("get_trackingType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_updateType(
@@ -96,6 +325,28 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
         );
         let __cordl_ret: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType = __cordl_object
             .invoke("get_updateType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_UseRelativeTransform(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_UseRelativeTransform", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_deviceType(
+        &mut self,
+        value: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_deviceType", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_originPose(
@@ -120,120 +371,15 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             .invoke("set_poseProviderComponent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_deviceType(
+    pub fn set_poseSource(
         &mut self,
-        value: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType,
+        value: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_deviceType", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FixedUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FixedUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_originPose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Pose = __cordl_object
-            .invoke("get_originPose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TransformPoseByOriginIfNeeded(
-        &mut self,
-        pose: crate::UnityEngine::Pose,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Pose = __cordl_object
-            .invoke("TransformPoseByOriginIfNeeded", (pose))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_deviceType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType = __cordl_object
-            .invoke("get_deviceType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnBeforeRender(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnBeforeRender", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HasStereoCamera(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasStereoCamera", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetPoseSource(
-        &mut self,
-        deviceType: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType,
-        pose: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("SetPoseSource", (deviceType, pose))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetLocalTransform(
-        &mut self,
-        newPosition: crate::UnityEngine::Vector3,
-        newRotation: crate::UnityEngine::Quaternion,
-        poseFlags: crate::UnityEngine::SpatialTracking::PoseDataFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLocalTransform", (newPosition, newRotation, poseFlags))?;
+            .invoke("set_poseSource", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_trackingType(
@@ -247,162 +393,16 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             .invoke("set_trackingType", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_poseSource(
+    pub fn set_updateType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose = __cordl_object
-            .invoke("get_poseSource", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_UseRelativeTransform(
-        &mut self,
-        value: bool,
+        value: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_UseRelativeTransform", (value))?;
+            .invoke("set_updateType", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn PerformUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PerformUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnEnable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPoseData(
-        &mut self,
-        device: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType,
-        poseSource: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
-        resultPose: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::SpatialTracking::PoseDataFlags,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::SpatialTracking::PoseDataFlags = __cordl_object
-            .invoke("GetPoseData", (device, poseSource, resultPose))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_trackingType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType = __cordl_object
-            .invoke("get_trackingType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ResetToCachedLocalPosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetToCachedLocalPosition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_UseRelativeTransform(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_UseRelativeTransform", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CacheLocalPosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CacheLocalPosition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_poseProviderComponent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider = __cordl_object
-            .invoke("get_poseProviderComponent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_poseSource(
-        &mut self,
-        value: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_poseSource", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDisable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver")]

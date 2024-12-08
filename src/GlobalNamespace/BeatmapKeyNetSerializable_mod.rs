@@ -27,37 +27,6 @@ impl std::ops::DerefMut for BeatmapKeyNetSerializable {
 }
 #[cfg(feature = "BeatmapKeyNetSerializable")]
 impl BeatmapKeyNetSerializable {
-    pub fn set_beatmapCharacteristicSerializedName(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_beatmapCharacteristicSerializedName", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_difficulty(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapDifficulty> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: BeatmapDifficulty = __cordl_object
-            .invoke("get_difficulty", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_beatmapCharacteristicSerializedName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_beatmapCharacteristicSerializedName", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_BeatmapKeyNetSerializable0(
         &mut self,
         other: *mut BeatmapKeyNetSerializable,
@@ -76,6 +45,66 @@ impl BeatmapKeyNetSerializable {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LiteNetLib_Utils_INetSerializable_Deserialize(
+        &mut self,
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LiteNetLib.Utils.INetSerializable.Deserialize", (reader))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LiteNetLib_Utils_INetSerializable_Serialize(
+        &mut self,
+        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LiteNetLib.Utils.INetSerializable.Serialize", (writer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_String_BeatmapDifficulty1(
+        levelID: *mut crate::System::String,
+        beatmapCharacteristicSerializedName: *mut crate::System::String,
+        difficulty: BeatmapDifficulty,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (levelID, beatmapCharacteristicSerializedName, difficulty),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -104,15 +133,24 @@ impl BeatmapKeyNetSerializable {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn set_difficulty(
+    pub fn get_beatmapCharacteristicSerializedName(
         &mut self,
-        value: BeatmapDifficulty,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_difficulty", (value))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_beatmapCharacteristicSerializedName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_difficulty(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<BeatmapDifficulty> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: BeatmapDifficulty = __cordl_object
+            .invoke("get_difficulty", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_levelID(
@@ -125,6 +163,28 @@ impl BeatmapKeyNetSerializable {
             .invoke("get_levelID", ())?;
         Ok(__cordl_ret)
     }
+    pub fn set_beatmapCharacteristicSerializedName(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_beatmapCharacteristicSerializedName", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_difficulty(
+        &mut self,
+        value: BeatmapDifficulty,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_difficulty", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_levelID(
         &mut self,
         value: *mut crate::System::String,
@@ -135,66 +195,6 @@ impl BeatmapKeyNetSerializable {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_levelID", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn LiteNetLib_Utils_INetSerializable_Deserialize(
-        &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LiteNetLib.Utils.INetSerializable.Deserialize", (reader))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LiteNetLib_Utils_INetSerializable_Serialize(
-        &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LiteNetLib.Utils.INetSerializable.Serialize", (writer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_String_BeatmapDifficulty1(
-        levelID: *mut crate::System::String,
-        beatmapCharacteristicSerializedName: *mut crate::System::String,
-        difficulty: BeatmapDifficulty,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (levelID, beatmapCharacteristicSerializedName, difficulty),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapKeyNetSerializable")]

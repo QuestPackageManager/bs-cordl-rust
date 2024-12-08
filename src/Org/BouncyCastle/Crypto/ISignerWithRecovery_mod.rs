@@ -24,6 +24,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::ISignerWithRecover
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+ISignerWithRecovery")]
 impl crate::Org::BouncyCastle::Crypto::ISignerWithRecovery {
+    pub fn GetRecoveredMessage(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetRecoveredMessage", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn HasFullMessage(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -40,16 +50,6 @@ impl crate::Org::BouncyCastle::Crypto::ISignerWithRecovery {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateWithRecoveredMessage", (signature))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRecoveredMessage(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetRecoveredMessage", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

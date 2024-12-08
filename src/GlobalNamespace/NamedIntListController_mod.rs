@@ -30,17 +30,6 @@ impl std::ops::DerefMut for NamedIntListController {
 impl NamedIntListController {
     #[cfg(feature = "NamedIntListController+TextValuePair")]
     pub type TextValuePair = crate::GlobalNamespace::NamedIntListController_TextValuePair;
-    pub fn add_valueChangedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_valueChangedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn ApplyValue(
         &mut self,
         idx: i32,
@@ -52,25 +41,16 @@ impl NamedIntListController {
             .invoke("ApplyValue", (idx))?;
         Ok(__cordl_ret)
     }
-    pub fn SetValue(
+    pub fn GetInitValues(
         &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        idx: quest_hook::libil2cpp::ByRefMut<i32>,
+        numberOfElements: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetValue", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("GetInitValues", (idx, numberOfElements))?;
         Ok(__cordl_ret)
     }
     pub fn InitValues(
@@ -86,27 +66,22 @@ impl NamedIntListController {
             .invoke("InitValues", (values))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_valueChangedEvent(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetValue(
         &mut self,
-        value: *mut crate::System::Action_1<i32>,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_valueChangedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetInitValues(
-        &mut self,
-        idx: quest_hook::libil2cpp::ByRefMut<i32>,
-        numberOfElements: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("GetInitValues", (idx, numberOfElements))?;
+            .invoke("SetValue", (value))?;
         Ok(__cordl_ret)
     }
     pub fn TextForValue(
@@ -120,12 +95,37 @@ impl NamedIntListController {
             .invoke("TextForValue", (idx))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_valueChangedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_valueChangedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_valueChangedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_valueChangedEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "NamedIntListController")]
@@ -167,15 +167,12 @@ for crate::GlobalNamespace::NamedIntListController_TextValuePair {
 }
 #[cfg(feature = "NamedIntListController+TextValuePair")]
 impl crate::GlobalNamespace::NamedIntListController_TextValuePair {
-    pub fn get_localizedText(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_localizedText", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -187,12 +184,15 @@ impl crate::GlobalNamespace::NamedIntListController_TextValuePair {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_localizedText(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_localizedText", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "NamedIntListController+TextValuePair")]

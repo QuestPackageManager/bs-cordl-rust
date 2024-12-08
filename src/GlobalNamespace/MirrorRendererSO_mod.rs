@@ -106,48 +106,6 @@ impl MirrorRendererSO {
     pub const kWaterLayer: i32 = 4i32;
     #[cfg(feature = "MirrorRendererSO+CameraTransformData")]
     pub type CameraTransformData = crate::GlobalNamespace::MirrorRendererSO_CameraTransformData;
-    pub fn ValidateParams(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateParams", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn PrepareForNextFrame(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PrepareForNextFrame", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RenderMirrorTexture(
-        &mut self,
-        reflectionPlanePos: crate::UnityEngine::Vector3,
-        reflectionPlaneNormal: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Texture = __cordl_object
-            .invoke("RenderMirrorTexture", (reflectionPlanePos, reflectionPlaneNormal))?;
-        Ok(__cordl_ret)
-    }
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -158,14 +116,16 @@ impl MirrorRendererSO {
             .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnValidate(
+    pub fn CreateOrUpdateMirrorCamera(
         &mut self,
+        currentCamera: *mut crate::UnityEngine::Camera,
+        renderTexture: *mut crate::UnityEngine::RenderTexture,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnValidate", ())?;
+            .invoke("CreateOrUpdateMirrorCamera", (currentCamera, renderTexture))?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -196,6 +156,43 @@ impl MirrorRendererSO {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDisable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDisable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnValidate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnValidate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn PrepareForNextFrame(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PrepareForNextFrame", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn RenderMirror(
         &mut self,
         camPosition: crate::UnityEngine::Vector3,
@@ -222,34 +219,37 @@ impl MirrorRendererSO {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn OnDisable(
+    pub fn RenderMirrorTexture(
+        &mut self,
+        reflectionPlanePos: crate::UnityEngine::Vector3,
+        reflectionPlaneNormal: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Texture = __cordl_object
+            .invoke("RenderMirrorTexture", (reflectionPlanePos, reflectionPlaneNormal))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateParams(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDisable", ())?;
+            .invoke("ValidateParams", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CreateOrUpdateMirrorCamera(
+    pub fn _ctor(
         &mut self,
-        currentCamera: *mut crate::UnityEngine::Camera,
-        renderTexture: *mut crate::UnityEngine::RenderTexture,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CreateOrUpdateMirrorCamera", (currentCamera, renderTexture))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MirrorRendererSO")]

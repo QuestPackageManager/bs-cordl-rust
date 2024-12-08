@@ -26,18 +26,43 @@ impl std::ops::DerefMut for NullAllowedIf {
 }
 #[cfg(feature = "NullAllowedIf")]
 impl NullAllowedIf {
-    pub fn _ctor_Object_NullAllowed_Context0(
+    pub fn IsNullAllowedFor(
         &mut self,
-        propertyName: *mut crate::System::String,
-        equalsTo: *mut crate::System::Object,
+        value: *mut crate::System::Object,
         context: crate::GlobalNamespace::NullAllowed_Context,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (propertyName, equalsTo, context))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsNullAllowedFor", (value, context))?;
         Ok(__cordl_ret)
+    }
+    pub fn New_ComparisonOperation_Object_NullAllowed_Context1(
+        propertyName: *mut crate::System::String,
+        comparisonOperation: ComparisonOperation,
+        valueToCompare: *mut crate::System::Object,
+        context: crate::GlobalNamespace::NullAllowed_Context,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (propertyName, comparisonOperation, valueToCompare, context),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Object_NullAllowed_Context0(
+        propertyName: *mut crate::System::String,
+        equalsTo: *mut crate::System::Object,
+        context: crate::GlobalNamespace::NullAllowed_Context,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (propertyName, equalsTo, context))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_ComparisonOperation_Object_NullAllowed_Context1(
         &mut self,
@@ -56,43 +81,18 @@ impl NullAllowedIf {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn IsNullAllowedFor(
+    pub fn _ctor_Object_NullAllowed_Context0(
         &mut self,
-        value: *mut crate::System::Object,
-        context: crate::GlobalNamespace::NullAllowed_Context,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsNullAllowedFor", (value, context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_Object_NullAllowed_Context0(
         propertyName: *mut crate::System::String,
         equalsTo: *mut crate::System::Object,
         context: crate::GlobalNamespace::NullAllowed_Context,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (propertyName, equalsTo, context))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_ComparisonOperation_Object_NullAllowed_Context1(
-        propertyName: *mut crate::System::String,
-        comparisonOperation: ComparisonOperation,
-        valueToCompare: *mut crate::System::Object,
-        context: crate::GlobalNamespace::NullAllowed_Context,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (propertyName, comparisonOperation, valueToCompare, context),
-            )?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (propertyName, equalsTo, context))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "NullAllowedIf")]

@@ -27,6 +27,15 @@ impl std::ops::DerefMut for crate::System::Diagnostics::DebuggerDisplayAttribute
 }
 #[cfg(feature = "System+Diagnostics+DebuggerDisplayAttribute")]
 impl crate::System::Diagnostics::DebuggerDisplayAttribute {
+    pub fn New(
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (value))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         value: *mut crate::System::String,
@@ -59,15 +68,6 @@ impl crate::System::Diagnostics::DebuggerDisplayAttribute {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Type", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (value))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Diagnostics+DebuggerDisplayAttribute")]

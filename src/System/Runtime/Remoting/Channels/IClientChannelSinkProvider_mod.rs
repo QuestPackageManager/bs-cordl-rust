@@ -27,6 +27,11 @@ for crate::System::Runtime::Remoting::Channels::IClientChannelSinkProvider {
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+IClientChannelSinkProvider")]
 impl crate::System::Runtime::Remoting::Channels::IClientChannelSinkProvider {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn set_Next(
         &mut self,
         value: *mut crate::System::Runtime::Remoting::Channels::IClientChannelSinkProvider,
@@ -37,11 +42,6 @@ impl crate::System::Runtime::Remoting::Channels::IClientChannelSinkProvider {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Next", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+IClientChannelSinkProvider")]

@@ -33,12 +33,54 @@ impl std::ops::DerefMut for BeatmapEventDataBox {
 impl BeatmapEventDataBox {
     #[cfg(feature = "BeatmapEventDataBox+DistributionParamType")]
     pub type DistributionParamType = crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType;
-    pub fn get_subtypeIdentifier(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn GetBeatStep(
+        &mut self,
+        lastBaseEventRelativeBeat: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_subtypeIdentifier", ())?;
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("GetBeatStep", (lastBaseEventRelativeBeat))?;
         Ok(__cordl_ret)
+    }
+    pub fn GetDistribution(
+        &mut self,
+        isFirstBaseDataEvent: bool,
+        distributionOrderIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("GetDistribution", (isFirstBaseDataEvent, distributionOrderIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        indexFilter: *mut IndexFilter,
+        beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+        beatDistributionParam: f32,
+        eventDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+        eventDistributionParam: f32,
+        eventDistributionShouldAffectFirstBaseEvent: bool,
+        eventDistributionEaseType: EaseType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    indexFilter,
+                    beatDistributionParamType,
+                    beatDistributionParam,
+                    eventDistributionParamType,
+                    eventDistributionParam,
+                    eventDistributionShouldAffectFirstBaseEvent,
+                    eventDistributionEaseType,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn Unpack(
         &mut self,
@@ -70,18 +112,6 @@ impl BeatmapEventDataBox {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetDistribution(
-        &mut self,
-        isFirstBaseDataEvent: bool,
-        distributionOrderIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("GetDistribution", (isFirstBaseDataEvent, distributionOrderIndex))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         indexFilter: *mut IndexFilter,
@@ -110,15 +140,11 @@ impl BeatmapEventDataBox {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetBeatStep(
-        &mut self,
-        lastBaseEventRelativeBeat: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_beatStep(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("GetBeatStep", (lastBaseEventRelativeBeat))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_beatStep", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_indexFilter(
@@ -131,38 +157,12 @@ impl BeatmapEventDataBox {
             .invoke("get_indexFilter", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_beatStep(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_subtypeIdentifier(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_beatStep", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_subtypeIdentifier", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        indexFilter: *mut IndexFilter,
-        beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
-        beatDistributionParam: f32,
-        eventDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
-        eventDistributionParam: f32,
-        eventDistributionShouldAffectFirstBaseEvent: bool,
-        eventDistributionEaseType: EaseType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    indexFilter,
-                    beatDistributionParamType,
-                    beatDistributionParam,
-                    eventDistributionParamType,
-                    eventDistributionParam,
-                    eventDistributionShouldAffectFirstBaseEvent,
-                    eventDistributionEaseType,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapEventDataBox")]

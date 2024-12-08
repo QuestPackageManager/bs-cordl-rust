@@ -26,6 +26,22 @@ for crate::UnityEngine::WheelFrictionCurve {
 }
 #[cfg(feature = "UnityEngine+WheelFrictionCurve")]
 impl crate::UnityEngine::WheelFrictionCurve {
+    pub fn get_asymptoteSlip(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_asymptoteSlip",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_asymptoteValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_asymptoteValue",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_extremumSlip(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -34,14 +50,11 @@ impl crate::UnityEngine::WheelFrictionCurve {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_extremumValue(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_extremumValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_extremumValue",
-            (value),
+            "get_extremumValue",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -49,14 +62,6 @@ impl crate::UnityEngine::WheelFrictionCurve {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_stiffness",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_asymptoteSlip(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_asymptoteSlip",
             (),
         )?;
         Ok(__cordl_ret)
@@ -69,33 +74,6 @@ impl crate::UnityEngine::WheelFrictionCurve {
             self,
             "set_asymptoteSlip",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_asymptoteValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_asymptoteValue",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_stiffness(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_stiffness",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_extremumValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_extremumValue",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -117,6 +95,28 @@ impl crate::UnityEngine::WheelFrictionCurve {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_extremumSlip",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_extremumValue(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_extremumValue",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_stiffness(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_stiffness",
             (value),
         )?;
         Ok(__cordl_ret)

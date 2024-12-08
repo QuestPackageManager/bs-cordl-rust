@@ -29,12 +29,12 @@ for crate::LIV::SDK::Unity::SDKInputFrame {
 }
 #[cfg(feature = "LIV+SDK+Unity+SDKInputFrame")]
 impl crate::LIV::SDK::Unity::SDKInputFrame {
-    pub fn ToString(
+    pub fn ObtainControl(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
+            "ObtainControl",
             (),
         )?;
         Ok(__cordl_ret)
@@ -49,12 +49,12 @@ impl crate::LIV::SDK::Unity::SDKInputFrame {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ObtainControl(
+    pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ObtainControl",
+            "ToString",
             (),
         )?;
         Ok(__cordl_ret)

@@ -25,6 +25,13 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::CVRDriverManager {
 }
 #[cfg(feature = "OVR+OpenVR+CVRDriverManager")]
 impl crate::OVR::OpenVR::CVRDriverManager {
+    pub fn GetDriverCount(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("GetDriverCount", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetDriverHandle(
         &mut self,
         pchDriverName: *mut crate::System::String,
@@ -34,17 +41,6 @@ impl crate::OVR::OpenVR::CVRDriverManager {
         );
         let __cordl_ret: u64 = __cordl_object
             .invoke("GetDriverHandle", (pchDriverName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pInterface))?;
         Ok(__cordl_ret)
     }
     pub fn GetDriverName(
@@ -60,21 +56,25 @@ impl crate::OVR::OpenVR::CVRDriverManager {
             .invoke("GetDriverName", (nDriver, pchValue, unBufferSize))?;
         Ok(__cordl_ret)
     }
-    pub fn GetDriverCount(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("GetDriverCount", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pInterface))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        pInterface: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (pInterface))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRDriverManager")]

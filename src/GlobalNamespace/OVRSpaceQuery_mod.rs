@@ -68,34 +68,37 @@ for crate::GlobalNamespace::OVRSpaceQuery_Options {
 #[cfg(feature = "OVRSpaceQuery+Options")]
 impl crate::GlobalNamespace::OVRSpaceQuery_Options {
     pub const MaxUuidCount: i32 = 1024i32;
-    pub fn get_QueryType(
+    pub fn ToQueryInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRPlugin_SpaceQueryType,
+        crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo,
     > {
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceQueryType = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_QueryType",
+            "ToQueryInfo",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_Timeout(
+    pub fn TryQuerySpaces(
         &mut self,
-        value: f64,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "TryQuerySpaces",
+            (requestId),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        other: crate::GlobalNamespace::OVRSpaceQuery_Options,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_Timeout",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Timeout(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Timeout",
-            (),
+            ".ctor",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -135,13 +138,62 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_QueryType(
+    pub fn get_MaxResults(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_MaxResults",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_QueryType(
         &mut self,
-        value: crate::GlobalNamespace::OVRPlugin_SpaceQueryType,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRPlugin_SpaceQueryType,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceQueryType = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_QueryType",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Timeout(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Timeout",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_UuidFilter(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
+    > {
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            crate::System::Guid,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_UuidFilter", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ActionType(
+        &mut self,
+        value: crate::GlobalNamespace::OVRPlugin_SpaceQueryActionType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_QueryType",
+            "set_ActionType",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ComponentFilter(
+        &mut self,
+        value: crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_ComponentFilter",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -157,32 +209,35 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_MaxResults(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_MaxResults",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn set_MaxResults(
         &mut self,
-        other: crate::GlobalNamespace::OVRSpaceQuery_Options,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (other),
+            "set_MaxResults",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_ComponentFilter(
+    pub fn set_QueryType(
         &mut self,
-        value: crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+        value: crate::GlobalNamespace::OVRPlugin_SpaceQueryType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_ComponentFilter",
+            "set_QueryType",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Timeout(
+        &mut self,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_Timeout",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -196,61 +251,6 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_UuidFilter",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToQueryInfo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo,
-    > {
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToQueryInfo",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ActionType(
-        &mut self,
-        value: crate::GlobalNamespace::OVRPlugin_SpaceQueryActionType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_ActionType",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_UuidFilter(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
-    > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::System::Guid,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_UuidFilter", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryQuerySpaces(
-        &mut self,
-        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "TryQuerySpaces",
-            (requestId),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_MaxResults(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_MaxResults",
             (value),
         )?;
         Ok(__cordl_ret)

@@ -21,6 +21,36 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Mathematics::h
 }
 #[cfg(feature = "Unity+Mathematics+half")]
 impl crate::Unity::Mathematics::half {
+    pub fn Equals_Object1(
+        &mut self,
+        o: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (o),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_half0(
+        &mut self,
+        rhs: crate::Unity::Mathematics::half,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (rhs),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn ToString_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -43,47 +73,6 @@ impl crate::Unity::Mathematics::half {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_half0(
-        &mut self,
-        rhs: crate::Unity::Mathematics::half,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (rhs),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        o: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (o),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_half0(
-        &mut self,
-        x: crate::Unity::Mathematics::half,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (x),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_f32_1(
         &mut self,
         v: f32,
@@ -103,6 +92,17 @@ impl crate::Unity::Mathematics::half {
             self,
             ".ctor",
             (v),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_half0(
+        &mut self,
+        x: crate::Unity::Mathematics::half,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (x),
         )?;
         Ok(__cordl_ret)
     }

@@ -24,35 +24,14 @@ for crate::UnityEngine::UIElements::Cursor {
 }
 #[cfg(feature = "UnityEngine+UIElements+Cursor")]
 impl crate::UnityEngine::UIElements::Cursor {
-    pub fn set_defaultCursorId(
+    pub fn Equals_Cursor1(
         &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::UIElements::Cursor,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_defaultCursorId",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_texture(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
-        let __cordl_ret: *mut crate::UnityEngine::Texture2D = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_texture",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_hotspot(
-        &mut self,
-        value: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_hotspot",
-            (value),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -67,14 +46,21 @@ impl crate::UnityEngine::UIElements::Cursor {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Cursor1(
-        &mut self,
-        other: crate::UnityEngine::UIElements::Cursor,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -96,6 +82,38 @@ impl crate::UnityEngine::UIElements::Cursor {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_texture(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
+        let __cordl_ret: *mut crate::UnityEngine::Texture2D = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_texture",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_defaultCursorId(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_defaultCursorId",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_hotspot(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_hotspot",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_texture(
         &mut self,
         value: *mut crate::UnityEngine::Texture2D,
@@ -104,24 +122,6 @@ impl crate::UnityEngine::UIElements::Cursor {
             self,
             "set_texture",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
         )?;
         Ok(__cordl_ret)
     }

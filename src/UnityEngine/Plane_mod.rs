@@ -22,24 +22,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Plane {
 #[cfg(feature = "UnityEngine+Plane")]
 impl crate::UnityEngine::Plane {
     pub const _cordl_size: i32 = 16i32;
-    pub fn get_normal(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_normal",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_distance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_distance",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn ClosestPointOnPlane(
         &mut self,
         point: crate::UnityEngine::Vector3,
@@ -51,28 +33,14 @@ impl crate::UnityEngine::Plane {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Vector3_Vector3_0(
+    pub fn GetDistanceToPoint(
         &mut self,
-        inNormal: crate::UnityEngine::Vector3,
-        inPoint: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        point: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (inNormal, inPoint),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Vector3_1(
-        &mut self,
-        a: crate::UnityEngine::Vector3,
-        b: crate::UnityEngine::Vector3,
-        c: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c),
+            "GetDistanceToPoint",
+            (point),
         )?;
         Ok(__cordl_ret)
     }
@@ -122,14 +90,46 @@ impl crate::UnityEngine::Plane {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetDistanceToPoint(
+    pub fn _ctor_Vector3_1(
         &mut self,
-        point: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<f32> {
+        a: crate::UnityEngine::Vector3,
+        b: crate::UnityEngine::Vector3,
+        c: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (a, b, c),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Vector3_Vector3_0(
+        &mut self,
+        inNormal: crate::UnityEngine::Vector3,
+        inPoint: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (inNormal, inPoint),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_distance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetDistanceToPoint",
-            (point),
+            "get_distance",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_normal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_normal",
+            (),
         )?;
         Ok(__cordl_ret)
     }

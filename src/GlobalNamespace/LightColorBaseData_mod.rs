@@ -31,6 +31,34 @@ impl std::ops::DerefMut for LightColorBaseData {
 }
 #[cfg(feature = "LightColorBaseData")]
 impl LightColorBaseData {
+    pub fn New(
+        beat: f32,
+        usePreviousValue: bool,
+        easeType: EaseType,
+        colorType: EnvironmentColorType,
+        brightness: f32,
+        strobeBeatFrequency: i32,
+        strobeBrightness: f32,
+        strobeFade: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    beat,
+                    usePreviousValue,
+                    easeType,
+                    colorType,
+                    brightness,
+                    strobeBeatFrequency,
+                    strobeBrightness,
+                    strobeFade,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         beat: f32,
@@ -60,34 +88,6 @@ impl LightColorBaseData {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        beat: f32,
-        usePreviousValue: bool,
-        easeType: EaseType,
-        colorType: EnvironmentColorType,
-        brightness: f32,
-        strobeBeatFrequency: i32,
-        strobeBrightness: f32,
-        strobeFade: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    beat,
-                    usePreviousValue,
-                    easeType,
-                    colorType,
-                    brightness,
-                    strobeBeatFrequency,
-                    strobeBrightness,
-                    strobeFade,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LightColorBaseData")]

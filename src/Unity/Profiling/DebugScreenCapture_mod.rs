@@ -38,13 +38,13 @@ impl crate::Unity::Profiling::DebugScreenCapture {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_Width(
+    pub fn set_ImageFormat(
         &mut self,
-        value: i32,
+        value: crate::UnityEngine::TextureFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_Width",
+            "set_ImageFormat",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -60,13 +60,13 @@ impl crate::Unity::Profiling::DebugScreenCapture {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_ImageFormat(
+    pub fn set_Width(
         &mut self,
-        value: crate::UnityEngine::TextureFormat,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_ImageFormat",
+            "set_Width",
             (value),
         )?;
         Ok(__cordl_ret)

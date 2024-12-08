@@ -26,22 +26,23 @@ impl std::ops::DerefMut for OVRBoneCapsule {
 }
 #[cfg(feature = "OVRBoneCapsule")]
 impl OVRBoneCapsule {
-    pub fn get_CapsuleCollider(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::CapsuleCollider> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::CapsuleCollider = __cordl_object
-            .invoke("get_CapsuleCollider", ())?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn get_BoneIndex(&mut self) -> quest_hook::libil2cpp::Result<i16> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i16 = __cordl_object.invoke("get_BoneIndex", ())?;
-        Ok(__cordl_ret)
+    pub fn New_i16_Rigidbody_CapsuleCollider1(
+        boneIndex: i16,
+        capsuleRigidBody: *mut crate::UnityEngine::Rigidbody,
+        capsuleCollider: *mut crate::UnityEngine::CapsuleCollider,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (boneIndex, capsuleRigidBody, capsuleCollider))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_0(
         &mut self,
@@ -66,6 +67,33 @@ impl OVRBoneCapsule {
             .invoke(".ctor", (boneIndex, capsuleRigidBody, capsuleCollider))?;
         Ok(__cordl_ret)
     }
+    pub fn get_BoneIndex(&mut self) -> quest_hook::libil2cpp::Result<i16> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i16 = __cordl_object.invoke("get_BoneIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CapsuleCollider(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::CapsuleCollider> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::CapsuleCollider = __cordl_object
+            .invoke("get_CapsuleCollider", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CapsuleRigidbody(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Rigidbody> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Rigidbody = __cordl_object
+            .invoke("get_CapsuleRigidbody", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_BoneIndex(
         &mut self,
         value: i16,
@@ -75,17 +103,6 @@ impl OVRBoneCapsule {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_BoneIndex", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_CapsuleRigidbody(
-        &mut self,
-        value: *mut crate::UnityEngine::Rigidbody,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_CapsuleRigidbody", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_CapsuleCollider(
@@ -99,33 +116,16 @@ impl OVRBoneCapsule {
             .invoke("set_CapsuleCollider", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_CapsuleRigidbody(
+    pub fn set_CapsuleRigidbody(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Rigidbody> {
+        value: *mut crate::UnityEngine::Rigidbody,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Rigidbody = __cordl_object
-            .invoke("get_CapsuleRigidbody", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_CapsuleRigidbody", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i16_Rigidbody_CapsuleCollider1(
-        boneIndex: i16,
-        capsuleRigidBody: *mut crate::UnityEngine::Rigidbody,
-        capsuleCollider: *mut crate::UnityEngine::CapsuleCollider,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (boneIndex, capsuleRigidBody, capsuleCollider))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRBoneCapsule")]

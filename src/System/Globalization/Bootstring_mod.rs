@@ -32,6 +32,76 @@ impl std::ops::DerefMut for crate::System::Globalization::Bootstring {
 }
 #[cfg(feature = "System+Globalization+Bootstring")]
 impl crate::System::Globalization::Bootstring {
+    pub fn Adapt(
+        &mut self,
+        delta: i32,
+        numPoints: i32,
+        firstTime: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("Adapt", (delta, numPoints, firstTime))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Decode(
+        &mut self,
+        s: *mut crate::System::String,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("Decode", (s, offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DecodeDigit(&mut self, c: char) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("DecodeDigit", (c))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Encode(
+        &mut self,
+        s: *mut crate::System::String,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("Encode", (s, offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EncodeDigit(&mut self, d: i32) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: char = __cordl_object.invoke("EncodeDigit", (d))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        delimiter: char,
+        baseNum: i32,
+        tmin: i32,
+        tmax: i32,
+        skew: i32,
+        damp: i32,
+        initialBias: i32,
+        initialN: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (delimiter, baseNum, tmin, tmax, skew, damp, initialBias, initialN),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         delimiter: char,
@@ -52,76 +122,6 @@ impl crate::System::Globalization::Bootstring {
                 (delimiter, baseNum, tmin, tmax, skew, damp, initialBias, initialN),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn Decode(
-        &mut self,
-        s: *mut crate::System::String,
-        offset: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("Decode", (s, offset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EncodeDigit(&mut self, d: i32) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: char = __cordl_object.invoke("EncodeDigit", (d))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DecodeDigit(&mut self, c: char) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("DecodeDigit", (c))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Adapt(
-        &mut self,
-        delta: i32,
-        numPoints: i32,
-        firstTime: bool,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("Adapt", (delta, numPoints, firstTime))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Encode(
-        &mut self,
-        s: *mut crate::System::String,
-        offset: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("Encode", (s, offset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        delimiter: char,
-        baseNum: i32,
-        tmin: i32,
-        tmax: i32,
-        skew: i32,
-        damp: i32,
-        initialBias: i32,
-        initialN: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (delimiter, baseNum, tmin, tmax, skew, damp, initialBias, initialN),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Globalization+Bootstring")]

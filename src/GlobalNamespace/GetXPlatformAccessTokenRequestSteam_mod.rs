@@ -26,6 +26,16 @@ impl std::ops::DerefMut for GetXPlatformAccessTokenRequestSteam {
 }
 #[cfg(feature = "GetXPlatformAccessTokenRequestSteam")]
 impl GetXPlatformAccessTokenRequestSteam {
+    pub fn New(
+        platformToken: *mut crate::System::String,
+        platformUserId: i64,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (platformToken, platformUserId))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         platformToken: *mut crate::System::String,
@@ -37,16 +47,6 @@ impl GetXPlatformAccessTokenRequestSteam {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (platformToken, platformUserId))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        platformToken: *mut crate::System::String,
-        platformUserId: i64,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (platformToken, platformUserId))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "GetXPlatformAccessTokenRequestSteam")]

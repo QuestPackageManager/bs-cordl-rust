@@ -33,19 +33,14 @@ impl std::ops::DerefMut for SpriteAsyncLoader {
 impl SpriteAsyncLoader {
     #[cfg(feature = "SpriteAsyncLoader+_LoadSpriteAsyncInternal_d__4")]
     pub type _LoadSpriteAsyncInternal_d__4 = crate::GlobalNamespace::SpriteAsyncLoader__LoadSpriteAsyncInternal_d__4;
-    pub fn LoadSpriteAsyncInternal(
+    pub fn ClearCache(
         &mut self,
-        path: *mut crate::System::String,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::UnityEngine::Sprite,
-        > = __cordl_object.invoke("LoadSpriteAsyncInternal", (path, cancellationToken))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearCache", ())?;
         Ok(__cordl_ret)
     }
     pub fn LoadSpriteAsync(
@@ -63,15 +58,27 @@ impl SpriteAsyncLoader {
         > = __cordl_object.invoke("LoadSpriteAsync", (path, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn ClearCache(
+    pub fn LoadSpriteAsyncInternal(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        path: *mut crate::System::String,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearCache", ())?;
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::UnityEngine::Sprite,
+        > = __cordl_object.invoke("LoadSpriteAsyncInternal", (path, cancellationToken))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -82,13 +89,6 @@ impl SpriteAsyncLoader {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SpriteAsyncLoader")]

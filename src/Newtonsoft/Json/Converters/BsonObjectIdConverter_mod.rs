@@ -25,18 +25,22 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Converters::BsonObjectIdCon
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+BsonObjectIdConverter")]
 impl crate::Newtonsoft::Json::Converters::BsonObjectIdConverter {
-    pub fn WriteJson(
+    pub fn CanConvert(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        objectType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteJson", (writer, value, serializer))?;
+        let __cordl_ret: bool = __cordl_object.invoke("CanConvert", (objectType))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ReadJson(
         &mut self,
@@ -52,6 +56,19 @@ impl crate::Newtonsoft::Json::Converters::BsonObjectIdConverter {
             .invoke("ReadJson", (reader, objectType, existingValue, serializer))?;
         Ok(__cordl_ret)
     }
+    pub fn WriteJson(
+        &mut self,
+        writer: *mut crate::Newtonsoft::Json::JsonWriter,
+        value: *mut crate::System::Object,
+        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteJson", (writer, value, serializer))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -61,23 +78,6 @@ impl crate::Newtonsoft::Json::Converters::BsonObjectIdConverter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn CanConvert(
-        &mut self,
-        objectType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CanConvert", (objectType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+BsonObjectIdConverter")]

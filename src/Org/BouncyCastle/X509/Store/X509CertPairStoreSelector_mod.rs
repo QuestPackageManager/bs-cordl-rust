@@ -30,6 +30,42 @@ for crate::Org::BouncyCastle::X509::Store::X509CertPairStoreSelector {
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509CertPairStoreSelector")]
 impl crate::Org::BouncyCastle::X509::Store::X509CertPairStoreSelector {
+    pub fn Clone(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("Clone", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Match(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Match", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_X509CertPairStoreSelector1(
+        o: *mut crate::Org::BouncyCastle::X509::Store::X509CertPairStoreSelector,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (o))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -63,15 +99,16 @@ impl crate::Org::BouncyCastle::X509::Store::X509CertPairStoreSelector {
             .invoke("get_CertPair", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_ForwardSelector(
+    pub fn get_ForwardSelector(
         &mut self,
-        value: *mut crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ForwardSelector", (value))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector = __cordl_object
+            .invoke("get_ForwardSelector", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ReverseSelector(
@@ -97,6 +134,17 @@ impl crate::Org::BouncyCastle::X509::Store::X509CertPairStoreSelector {
             .invoke("set_CertPair", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn set_ForwardSelector(
+        &mut self,
+        value: *mut crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ForwardSelector", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_ReverseSelector(
         &mut self,
         value: *mut crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
@@ -107,54 +155,6 @@ impl crate::Org::BouncyCastle::X509::Store::X509CertPairStoreSelector {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ReverseSelector", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn Clone(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("Clone", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ForwardSelector(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector = __cordl_object
-            .invoke("get_ForwardSelector", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Match(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Match", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_X509CertPairStoreSelector1(
-        o: *mut crate::Org::BouncyCastle::X509::Store::X509CertPairStoreSelector,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (o))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509CertPairStoreSelector")]

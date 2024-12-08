@@ -100,6 +100,20 @@ for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         set: quest_hook::libil2cpp::ByRefMut<
@@ -114,20 +128,6 @@ impl<
             self,
             ".ctor",
             (set),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -159,6 +159,20 @@ for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         item: quest_hook::libil2cpp::ByRefMut<T>,
@@ -171,20 +185,6 @@ impl<
             self,
             ".ctor",
             (item),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -216,6 +216,20 @@ for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         list: quest_hook::libil2cpp::ByRefMut<
@@ -230,20 +244,6 @@ impl<
             self,
             ".ctor",
             (list),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -273,14 +273,6 @@ impl std::ops::DerefMut for OVRObjectPool {
 }
 #[cfg(feature = "OVRObjectPool")]
 impl OVRObjectPool {
-    #[cfg(feature = "OVRObjectPool+ItemScope_1")]
-    pub type ItemScope_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_ItemScope_1<
-        T,
-    >;
-    #[cfg(feature = "OVRObjectPool+QueueScope_1")]
-    pub type QueueScope_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_QueueScope_1<
-        T,
-    >;
     #[cfg(feature = "OVRObjectPool+HashSetScope_1")]
     pub type HashSetScope_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<
         T,
@@ -289,15 +281,23 @@ impl OVRObjectPool {
     pub type Storage_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_Storage_1<
         T,
     >;
+    #[cfg(feature = "OVRObjectPool+StackScope_1")]
+    pub type StackScope_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_StackScope_1<
+        T,
+    >;
+    #[cfg(feature = "OVRObjectPool+ItemScope_1")]
+    pub type ItemScope_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_ItemScope_1<
+        T,
+    >;
+    #[cfg(feature = "OVRObjectPool+QueueScope_1")]
+    pub type QueueScope_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_QueueScope_1<
+        T,
+    >;
     #[cfg(feature = "OVRObjectPool+DictionaryScope_2")]
     pub type DictionaryScope_2<
         TKey: quest_hook::libil2cpp::Type,
         TValue: quest_hook::libil2cpp::Type,
     > = crate::GlobalNamespace::OVRObjectPool_DictionaryScope_2<TKey, TValue>;
-    #[cfg(feature = "OVRObjectPool+StackScope_1")]
-    pub type StackScope_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_StackScope_1<
-        T,
-    >;
     #[cfg(feature = "OVRObjectPool+ListScope_1")]
     pub type ListScope_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_ListScope_1<
         T,
@@ -339,6 +339,20 @@ for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         queue: quest_hook::libil2cpp::ByRefMut<
@@ -353,20 +367,6 @@ impl<
             self,
             ".ctor",
             (queue),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -91,33 +91,249 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleSheet {
 impl crate::UnityEngine::UIElements::StyleSheet {
     #[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]
     pub type ImportStruct = crate::UnityEngine::UIElements::StyleSheet_ImportStruct;
-    pub fn TryReadString(
+    pub fn CheckAccess<T>(
         &mut self,
+        list: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        _cordl_type: crate::UnityEngine::UIElements::StyleValueType,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("TryReadString", (handle, value))?;
+        let __cordl_ret: T = __cordl_object
+            .invoke("CheckAccess", (list, _cordl_type, handle))?;
         Ok(__cordl_ret)
     }
-    pub fn set_contentHash(
+    pub fn FlattenImportedStyleSheetsRecursive_0(
         &mut self,
-        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_contentHash", (value))?;
+            .invoke("FlattenImportedStyleSheetsRecursive", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_isDefaultStyleSheet(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn FlattenImportedStyleSheetsRecursive_StyleSheet1(
+        &mut self,
+        sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isDefaultStyleSheet", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FlattenImportedStyleSheetsRecursive", (sheet))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnEnable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnEnable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadAssetReference(
+        &mut self,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Object = __cordl_object
+            .invoke("ReadAssetReference", (handle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadColor(
+        &mut self,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("ReadColor", (handle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadDimension(
+        &mut self,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StyleSheets::Dimension,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::Dimension = __cordl_object
+            .invoke("ReadDimension", (handle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadEnum(
+        &mut self,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ReadEnum", (handle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadFloat(
+        &mut self,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("ReadFloat", (handle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadFunction(
+        &mut self,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StyleValueFunction,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleValueFunction = __cordl_object
+            .invoke("ReadFunction", (handle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadFunctionName(
+        &mut self,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ReadFunctionName", (handle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadKeyword(
+        &mut self,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StyleValueKeyword,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleValueKeyword = __cordl_object
+            .invoke("ReadKeyword", (handle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadMissingAssetReferenceUrl(
+        &mut self,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ReadMissingAssetReferenceUrl", (handle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadResourcePath(
+        &mut self,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ReadResourcePath", (handle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadScalableImage(
+        &mut self,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StyleSheets::ScalableImage,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::ScalableImage = __cordl_object
+            .invoke("ReadScalableImage", (handle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadString(
+        &mut self,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ReadString", (handle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadVariable(
+        &mut self,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ReadVariable", (handle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetupReferences(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetupReferences", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryCheckAccess<T>(
+        &mut self,
+        list: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        _cordl_type: crate::UnityEngine::UIElements::StyleValueType,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+        value: quest_hook::libil2cpp::ByRefMut<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryCheckAccess", (list, _cordl_type, handle, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryReadAssetReference(
+        &mut self,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+        value: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryReadAssetReference", (handle, value))?;
         Ok(__cordl_ret)
     }
     pub fn TryReadColor(
@@ -131,38 +347,29 @@ impl crate::UnityEngine::UIElements::StyleSheet {
         let __cordl_ret: bool = __cordl_object.invoke("TryReadColor", (handle, value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_complexSelectors(
-        &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::StyleComplexSelector,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_complexSelectors", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetupReferences(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetupReferences", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadString(
+    pub fn TryReadDimension(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::StyleSheets::Dimension,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ReadString", (handle))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryReadDimension", (handle, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryReadEnum(
+        &mut self,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryReadEnum", (handle, value))?;
         Ok(__cordl_ret)
     }
     pub fn TryReadFloat(
@@ -188,137 +395,37 @@ impl crate::UnityEngine::UIElements::StyleSheet {
             .invoke("TryReadResourcePath", (handle, value))?;
         Ok(__cordl_ret)
     }
-    pub fn ReadEnum(
+    pub fn TryReadString(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ReadEnum", (handle))?;
+        let __cordl_ret: bool = __cordl_object.invoke("TryReadString", (handle, value))?;
         Ok(__cordl_ret)
     }
-    pub fn ReadAssetReference(
+    pub fn TryReadVariable(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Object = __cordl_object
-            .invoke("ReadAssetReference", (handle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_rules(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::StyleRule,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::StyleRule,
-        > = __cordl_object.invoke("get_rules", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_isDefaultStyleSheet(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_isDefaultStyleSheet", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadColor(
-        &mut self,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("ReadColor", (handle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadMissingAssetReferenceUrl(
-        &mut self,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ReadMissingAssetReferenceUrl", (handle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadFunctionName(
-        &mut self,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ReadFunctionName", (handle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadFunction(
-        &mut self,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::StyleValueFunction,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleValueFunction = __cordl_object
-            .invoke("ReadFunction", (handle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryCheckAccess<T>(
-        &mut self,
-        list: *mut quest_hook::libil2cpp::Il2CppArray<T>,
-        _cordl_type: crate::UnityEngine::UIElements::StyleValueType,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
-        value: quest_hook::libil2cpp::ByRefMut<T>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
+        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
-            .invoke("TryCheckAccess", (list, _cordl_type, handle, value))?;
+            .invoke("TryReadVariable", (handle, value))?;
         Ok(__cordl_ret)
     }
-    pub fn ReadVariable(
-        &mut self,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ReadVariable", (handle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnEnable(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_complexSelectors(
@@ -336,186 +443,11 @@ impl crate::UnityEngine::UIElements::StyleSheet {
         > = __cordl_object.invoke("get_complexSelectors", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_rules(
-        &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::StyleRule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_contentHash(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_rules", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryReadDimension(
-        &mut self,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
-        value: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::StyleSheets::Dimension,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryReadDimension", (handle, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_importedWithErrors(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_importedWithErrors", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_importedWithWarnings(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_importedWithWarnings", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckAccess<T>(
-        &mut self,
-        list: *mut quest_hook::libil2cpp::Il2CppArray<T>,
-        _cordl_type: crate::UnityEngine::UIElements::StyleValueType,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object
-            .invoke("CheckAccess", (list, _cordl_type, handle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryReadEnum(
-        &mut self,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryReadEnum", (handle, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryReadVariable(
-        &mut self,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryReadVariable", (handle, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryReadAssetReference(
-        &mut self,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Object>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryReadAssetReference", (handle, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadFloat(
-        &mut self,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("ReadFloat", (handle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadDimension(
-        &mut self,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::StyleSheets::Dimension,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::Dimension = __cordl_object
-            .invoke("ReadDimension", (handle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadKeyword(
-        &mut self,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::StyleValueKeyword,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleValueKeyword = __cordl_object
-            .invoke("ReadKeyword", (handle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_importedWithWarnings(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_importedWithWarnings", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadResourcePath(
-        &mut self,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ReadResourcePath", (handle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FlattenImportedStyleSheetsRecursive_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FlattenImportedStyleSheetsRecursive", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FlattenImportedStyleSheetsRecursive_StyleSheet1(
-        &mut self,
-        sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FlattenImportedStyleSheetsRecursive", (sheet))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_contentHash", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_flattenedRecursiveImports(
@@ -533,17 +465,64 @@ impl crate::UnityEngine::UIElements::StyleSheet {
         > = __cordl_object.invoke("get_flattenedRecursiveImports", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ReadScalableImage(
+    pub fn get_importedWithErrors(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_importedWithErrors", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_importedWithWarnings(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_importedWithWarnings", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isDefaultStyleSheet(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isDefaultStyleSheet", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rules(
         &mut self,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
     ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::StyleSheets::ScalableImage,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::StyleRule,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::ScalableImage = __cordl_object
-            .invoke("ReadScalableImage", (handle))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::StyleRule,
+        > = __cordl_object.invoke("get_rules", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_complexSelectors(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_complexSelectors", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_contentHash(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_contentHash", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_importedWithErrors(
@@ -557,19 +536,40 @@ impl crate::UnityEngine::UIElements::StyleSheet {
             .invoke("set_importedWithErrors", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_contentHash(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn set_importedWithWarnings(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_contentHash", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_importedWithWarnings", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_isDefaultStyleSheet(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_isDefaultStyleSheet", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_rules(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::StyleRule,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_rules", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheet")]

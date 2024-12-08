@@ -26,13 +26,19 @@ impl std::ops::DerefMut for crate::System::IO::Enumeration::FileSystemEnumerable
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerableFactory")]
 impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
     #[cfg(
-        feature = "System+IO+Enumeration+FileSystemEnumerableFactory+__c__DisplayClass4_0"
+        feature = "System+IO+Enumeration+FileSystemEnumerableFactory+__c__DisplayClass3_0"
     )]
-    pub type __c__DisplayClass4_0 = crate::System::IO::Enumeration::FileSystemEnumerableFactory___c__DisplayClass4_0;
+    pub type __c__DisplayClass3_0 = crate::System::IO::Enumeration::FileSystemEnumerableFactory___c__DisplayClass3_0;
     #[cfg(
         feature = "System+IO+Enumeration+FileSystemEnumerableFactory+__c__DisplayClass5_0"
     )]
     pub type __c__DisplayClass5_0 = crate::System::IO::Enumeration::FileSystemEnumerableFactory___c__DisplayClass5_0;
+    #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerableFactory+__c")]
+    pub type __c = crate::System::IO::Enumeration::FileSystemEnumerableFactory___c;
+    #[cfg(
+        feature = "System+IO+Enumeration+FileSystemEnumerableFactory+__c__DisplayClass4_0"
+    )]
+    pub type __c__DisplayClass4_0 = crate::System::IO::Enumeration::FileSystemEnumerableFactory___c__DisplayClass4_0;
     #[cfg(
         feature = "System+IO+Enumeration+FileSystemEnumerableFactory+__c__DisplayClass6_0"
     )]
@@ -42,15 +48,9 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
     )]
     pub type __c__DisplayClass7_0 = crate::System::IO::Enumeration::FileSystemEnumerableFactory___c__DisplayClass7_0;
     #[cfg(
-        feature = "System+IO+Enumeration+FileSystemEnumerableFactory+__c__DisplayClass3_0"
-    )]
-    pub type __c__DisplayClass3_0 = crate::System::IO::Enumeration::FileSystemEnumerableFactory___c__DisplayClass3_0;
-    #[cfg(
         feature = "System+IO+Enumeration+FileSystemEnumerableFactory+__c__DisplayClass8_0"
     )]
     pub type __c__DisplayClass8_0 = crate::System::IO::Enumeration::FileSystemEnumerableFactory___c__DisplayClass8_0;
-    #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerableFactory+__c")]
-    pub type __c = crate::System::IO::Enumeration::FileSystemEnumerableFactory___c;
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerableFactory")]
 impl quest_hook::libil2cpp::ObjectType

@@ -34,16 +34,19 @@ impl crate::BGLib::SaveDataCore::ISaveDataHandler {
             .invoke("GetState", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_instance(
+    pub fn ResetChangesAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::BGLib::SaveDataCore::VersionableSaveData,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::BGLib::SaveDataCore::SaveDataResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::BGLib::SaveDataCore::VersionableSaveData = __cordl_object
-            .invoke("get_instance", ())?;
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            crate::BGLib::SaveDataCore::SaveDataResult,
+        > = __cordl_object.invoke("ResetChangesAsync", ())?;
         Ok(__cordl_ret)
     }
     pub fn SaveAsync(
@@ -62,25 +65,22 @@ impl crate::BGLib::SaveDataCore::ISaveDataHandler {
         > = __cordl_object.invoke("SaveAsync", (force))?;
         Ok(__cordl_ret)
     }
-    pub fn ResetChangesAsync(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::BGLib::SaveDataCore::SaveDataResult,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::BGLib::SaveDataCore::SaveDataResult,
-        > = __cordl_object.invoke("ResetChangesAsync", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_instance(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::BGLib::SaveDataCore::VersionableSaveData,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::BGLib::SaveDataCore::VersionableSaveData = __cordl_object
+            .invoke("get_instance", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BGLib+SaveDataCore+ISaveDataHandler")]

@@ -26,15 +26,15 @@ impl std::ops::DerefMut for crate::Mono::Security::X509::SafeBag {
 }
 #[cfg(feature = "Mono+Security+X509+SafeBag")]
 impl crate::Mono::Security::X509::SafeBag {
-    pub fn get_BagOID(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_BagOID", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        bagOID: *mut crate::System::String,
+        asn1: *mut crate::Mono::Security::ASN1,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bagOID, asn1))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -58,15 +58,15 @@ impl crate::Mono::Security::X509::SafeBag {
             .invoke("get_ASN1", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        bagOID: *mut crate::System::String,
-        asn1: *mut crate::Mono::Security::ASN1,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bagOID, asn1))?;
-        Ok(__cordl_object)
+    pub fn get_BagOID(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_BagOID", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Mono+Security+X509+SafeBag")]

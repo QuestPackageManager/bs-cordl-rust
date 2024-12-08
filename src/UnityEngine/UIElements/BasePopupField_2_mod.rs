@@ -65,6 +65,98 @@ impl<
         TValueType,
         TValueChoice,
     >;
+    pub fn AddMenuItems(
+        &mut self,
+        menu: *mut crate::UnityEngine::UIElements::IGenericMenu,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValueChoice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddMenuItems", (menu))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ContainsPointer(
+        &mut self,
+        pointerId: i32,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValueChoice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ContainsPointer", (pointerId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetListItemToDisplay(
+        &mut self,
+        item: TValueType,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValueChoice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetListItemToDisplay", (item))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetValueToDisplay(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValueChoice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetValueToDisplay", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        label: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (label))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnNavigationSubmit(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::NavigationSubmitEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValueChoice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnNavigationSubmit", (evt))?;
+        Ok(__cordl_ret)
+    }
     pub fn OnPointerDownEvent(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::PointerDownEvent,
@@ -80,6 +172,23 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPointerDownEvent", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerMoveEvent(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::PointerMoveEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValueChoice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerMoveEvent", (evt))?;
         Ok(__cordl_ret)
     }
     pub fn ProcessPointerDown<T>(
@@ -101,9 +210,9 @@ impl<
             .invoke("ProcessPointerDown", (evt))?;
         Ok(__cordl_ret)
     }
-    pub fn OnNavigationSubmit(
+    pub fn SetValueWithoutNotify(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::NavigationSubmitEvent,
+        newValue: TValueType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -115,56 +224,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnNavigationSubmit", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerMoveEvent(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerMoveEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValueChoice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerMoveEvent", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateMixedValueContent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValueChoice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateMixedValueContent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetValueToDisplay(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValueChoice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetValueToDisplay", ())?;
+            .invoke("SetValueWithoutNotify", (newValue))?;
         Ok(__cordl_ret)
     }
     pub fn ShowMenu(
@@ -183,42 +243,8 @@ impl<
             .invoke("ShowMenu", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_textElement(
+    pub fn UpdateMixedValueContent(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::TextElement>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValueChoice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::TextElement = __cordl_object
-            .invoke("get_textElement", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetListItemToDisplay(
-        &mut self,
-        item: TValueType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValueChoice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetListItemToDisplay", (item))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetValueWithoutNotify(
-        &mut self,
-        newValue: TValueType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -230,24 +256,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetValueWithoutNotify", (newValue))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddMenuItems(
-        &mut self,
-        menu: *mut crate::UnityEngine::UIElements::IGenericMenu,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValueChoice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddMenuItems", (menu))?;
+            .invoke("UpdateMixedValueContent", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -267,10 +276,9 @@ impl<
             .invoke(".ctor", (label))?;
         Ok(__cordl_ret)
     }
-    pub fn ContainsPointer(
+    pub fn get_textElement(
         &mut self,
-        pointerId: i32,
-    ) -> quest_hook::libil2cpp::Result<bool>
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::TextElement>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -280,7 +288,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("ContainsPointer", (pointerId))?;
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::TextElement = __cordl_object
+            .invoke("get_textElement", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_choices(
@@ -299,15 +308,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_choices", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        label: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (label))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BasePopupField_2")]
@@ -396,6 +396,13 @@ impl<
             .invoke("DoMeasure", (desiredWidth, widthMode, desiredHeight, heightMode))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -409,13 +416,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]

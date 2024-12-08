@@ -20,17 +20,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::ENet::Event {
 }
 #[cfg(feature = "ENet+Event")]
 impl crate::ENet::Event {
-    pub fn set_NativeData(
-        &mut self,
-        value: crate::ENet::ENetEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_NativeData",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         event: crate::ENet::ENetEvent,
@@ -58,6 +47,24 @@ impl crate::ENet::Event {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_NativeData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::ENet::ENetEvent> {
+        let __cordl_ret: crate::ENet::ENetEvent = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_NativeData",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Packet(&mut self) -> quest_hook::libil2cpp::Result<crate::ENet::Packet> {
+        let __cordl_ret: crate::ENet::Packet = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Packet",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Peer(&mut self) -> quest_hook::libil2cpp::Result<crate::ENet::Peer> {
         let __cordl_ret: crate::ENet::Peer = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -74,21 +81,14 @@ impl crate::ENet::Event {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Packet(&mut self) -> quest_hook::libil2cpp::Result<crate::ENet::Packet> {
-        let __cordl_ret: crate::ENet::Packet = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Packet",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_NativeData(
+    pub fn set_NativeData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::ENet::ENetEvent> {
-        let __cordl_ret: crate::ENet::ENetEvent = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: crate::ENet::ENetEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_NativeData",
-            (),
+            "set_NativeData",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

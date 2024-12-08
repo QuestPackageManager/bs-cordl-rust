@@ -26,9 +26,9 @@ impl crate::TMPro::TMP_Math {
     pub const FLOAT_MAX: f32 = 32767f32;
     pub const FLOAT_MIN: f32 = -32767f32;
     pub const FLOAT_UNSET: f32 = -32767f32;
+    pub const INT_UNSET: i32 = -32767i32;
     pub const _cordl_INT_MAX: i32 = 2147483647i32;
     pub const _cordl_INT_MIN: i32 = -2147483647i32;
-    pub const INT_UNSET: i32 = -32767i32;
 }
 #[cfg(feature = "TMPro+TMP_Math")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Math {

@@ -22,40 +22,12 @@ for crate::System::Runtime::InteropServices::GCHandle {
 }
 #[cfg(feature = "System+Runtime+InteropServices+GCHandle")]
 impl crate::System::Runtime::InteropServices::GCHandle {
-    pub fn get_IsAllocated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsAllocated",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn AddrOfPinnedObject(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "AddrOfPinnedObject",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Target(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Target",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Free(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Free",
             (),
         )?;
         Ok(__cordl_ret)
@@ -68,6 +40,16 @@ impl crate::System::Runtime::InteropServices::GCHandle {
             self,
             "Equals",
             (o),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Free(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Free",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -110,6 +92,24 @@ impl crate::System::Runtime::InteropServices::GCHandle {
             self,
             ".ctor",
             (value, _cordl_type),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsAllocated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsAllocated",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Target(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Target",
+            (),
         )?;
         Ok(__cordl_ret)
     }

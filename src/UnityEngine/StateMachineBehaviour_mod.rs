@@ -24,18 +24,12 @@ impl std::ops::DerefMut for crate::UnityEngine::StateMachineBehaviour {
 }
 #[cfg(feature = "UnityEngine+StateMachineBehaviour")]
 impl crate::UnityEngine::StateMachineBehaviour {
-    pub fn OnStateEnter_Animator_AnimatorStateInfo_i32_0(
-        &mut self,
-        animator: *mut crate::UnityEngine::Animator,
-        stateInfo: crate::UnityEngine::AnimatorStateInfo,
-        layerIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStateEnter", (animator, stateInfo, layerIndex))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnStateEnter_AnimatorControllerPlayable1(
         &mut self,
@@ -51,7 +45,7 @@ impl crate::UnityEngine::StateMachineBehaviour {
             .invoke("OnStateEnter", (animator, stateInfo, layerIndex, controller))?;
         Ok(__cordl_ret)
     }
-    pub fn OnStateMove_Animator_AnimatorStateInfo_i32_0(
+    pub fn OnStateEnter_Animator_AnimatorStateInfo_i32_0(
         &mut self,
         animator: *mut crate::UnityEngine::Animator,
         stateInfo: crate::UnityEngine::AnimatorStateInfo,
@@ -61,34 +55,7 @@ impl crate::UnityEngine::StateMachineBehaviour {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStateMove", (animator, stateInfo, layerIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnStateMove_AnimatorControllerPlayable1(
-        &mut self,
-        animator: *mut crate::UnityEngine::Animator,
-        stateInfo: crate::UnityEngine::AnimatorStateInfo,
-        layerIndex: i32,
-        controller: crate::UnityEngine::Animations::AnimatorControllerPlayable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStateMove", (animator, stateInfo, layerIndex, controller))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnStateExit_Animator_AnimatorStateInfo_i32_0(
-        &mut self,
-        animator: *mut crate::UnityEngine::Animator,
-        stateInfo: crate::UnityEngine::AnimatorStateInfo,
-        layerIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStateExit", (animator, stateInfo, layerIndex))?;
+            .invoke("OnStateEnter", (animator, stateInfo, layerIndex))?;
         Ok(__cordl_ret)
     }
     pub fn OnStateExit_AnimatorControllerPlayable1(
@@ -105,7 +72,7 @@ impl crate::UnityEngine::StateMachineBehaviour {
             .invoke("OnStateExit", (animator, stateInfo, layerIndex, controller))?;
         Ok(__cordl_ret)
     }
-    pub fn OnStateUpdate_Animator_AnimatorStateInfo_i32_0(
+    pub fn OnStateExit_Animator_AnimatorStateInfo_i32_0(
         &mut self,
         animator: *mut crate::UnityEngine::Animator,
         stateInfo: crate::UnityEngine::AnimatorStateInfo,
@@ -115,34 +82,7 @@ impl crate::UnityEngine::StateMachineBehaviour {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStateUpdate", (animator, stateInfo, layerIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnStateUpdate_AnimatorControllerPlayable1(
-        &mut self,
-        animator: *mut crate::UnityEngine::Animator,
-        stateInfo: crate::UnityEngine::AnimatorStateInfo,
-        layerIndex: i32,
-        controller: crate::UnityEngine::Animations::AnimatorControllerPlayable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStateUpdate", (animator, stateInfo, layerIndex, controller))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnStateIK_Animator_AnimatorStateInfo_i32_0(
-        &mut self,
-        animator: *mut crate::UnityEngine::Animator,
-        stateInfo: crate::UnityEngine::AnimatorStateInfo,
-        layerIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStateIK", (animator, stateInfo, layerIndex))?;
+            .invoke("OnStateExit", (animator, stateInfo, layerIndex))?;
         Ok(__cordl_ret)
     }
     pub fn OnStateIK_AnimatorControllerPlayable1(
@@ -159,16 +99,17 @@ impl crate::UnityEngine::StateMachineBehaviour {
             .invoke("OnStateIK", (animator, stateInfo, layerIndex, controller))?;
         Ok(__cordl_ret)
     }
-    pub fn OnStateMachineEnter_Animator_i32_0(
+    pub fn OnStateIK_Animator_AnimatorStateInfo_i32_0(
         &mut self,
         animator: *mut crate::UnityEngine::Animator,
-        stateMachinePathHash: i32,
+        stateInfo: crate::UnityEngine::AnimatorStateInfo,
+        layerIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStateMachineEnter", (animator, stateMachinePathHash))?;
+            .invoke("OnStateIK", (animator, stateInfo, layerIndex))?;
         Ok(__cordl_ret)
     }
     pub fn OnStateMachineEnter_AnimatorControllerPlayable1(
@@ -187,7 +128,7 @@ impl crate::UnityEngine::StateMachineBehaviour {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn OnStateMachineExit_Animator_i32_0(
+    pub fn OnStateMachineEnter_Animator_i32_0(
         &mut self,
         animator: *mut crate::UnityEngine::Animator,
         stateMachinePathHash: i32,
@@ -196,7 +137,7 @@ impl crate::UnityEngine::StateMachineBehaviour {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStateMachineExit", (animator, stateMachinePathHash))?;
+            .invoke("OnStateMachineEnter", (animator, stateMachinePathHash))?;
         Ok(__cordl_ret)
     }
     pub fn OnStateMachineExit_AnimatorControllerPlayable1(
@@ -212,6 +153,72 @@ impl crate::UnityEngine::StateMachineBehaviour {
             .invoke("OnStateMachineExit", (animator, stateMachinePathHash, controller))?;
         Ok(__cordl_ret)
     }
+    pub fn OnStateMachineExit_Animator_i32_0(
+        &mut self,
+        animator: *mut crate::UnityEngine::Animator,
+        stateMachinePathHash: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnStateMachineExit", (animator, stateMachinePathHash))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnStateMove_AnimatorControllerPlayable1(
+        &mut self,
+        animator: *mut crate::UnityEngine::Animator,
+        stateInfo: crate::UnityEngine::AnimatorStateInfo,
+        layerIndex: i32,
+        controller: crate::UnityEngine::Animations::AnimatorControllerPlayable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnStateMove", (animator, stateInfo, layerIndex, controller))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnStateMove_Animator_AnimatorStateInfo_i32_0(
+        &mut self,
+        animator: *mut crate::UnityEngine::Animator,
+        stateInfo: crate::UnityEngine::AnimatorStateInfo,
+        layerIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnStateMove", (animator, stateInfo, layerIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnStateUpdate_AnimatorControllerPlayable1(
+        &mut self,
+        animator: *mut crate::UnityEngine::Animator,
+        stateInfo: crate::UnityEngine::AnimatorStateInfo,
+        layerIndex: i32,
+        controller: crate::UnityEngine::Animations::AnimatorControllerPlayable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnStateUpdate", (animator, stateInfo, layerIndex, controller))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnStateUpdate_Animator_AnimatorStateInfo_i32_0(
+        &mut self,
+        animator: *mut crate::UnityEngine::Animator,
+        stateInfo: crate::UnityEngine::AnimatorStateInfo,
+        layerIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnStateUpdate", (animator, stateInfo, layerIndex))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -221,13 +228,6 @@ impl crate::UnityEngine::StateMachineBehaviour {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+StateMachineBehaviour")]

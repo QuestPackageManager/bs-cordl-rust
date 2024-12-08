@@ -27,49 +27,6 @@ impl std::ops::DerefMut for crate::System::Security::AccessControl::ObjectSecuri
 }
 #[cfg(feature = "System+Security+AccessControl+ObjectSecurity")]
 impl crate::System::Security::AccessControl::ObjectSecurity {
-    pub fn Writing(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Writing", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadUnlock(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadUnlock", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_CommonSecurityDescriptor0(
-        &mut self,
-        securityDescriptor: *mut crate::System::Security::AccessControl::CommonSecurityDescriptor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (securityDescriptor))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor__cordl_bool__cordl_bool1(
-        &mut self,
-        isContainer: bool,
-        isDS: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (isContainer, isDS))?;
-        Ok(__cordl_ret)
-    }
     pub fn AccessRuleFactory(
         &mut self,
         identityReference: *mut crate::System::Security::Principal::IdentityReference,
@@ -98,35 +55,19 @@ impl crate::System::Security::AccessControl::ObjectSecurity {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn set_AccessControlSectionsModified(
+    pub fn InternalAccessRuleFactory(
         &mut self,
-        value: crate::System::Security::AccessControl::AccessControlSections,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        ace: *mut crate::System::Security::AccessControl::QualifiedAce,
+        targetType: *mut crate::System::Type,
+        _cordl_type: crate::System::Security::AccessControl::AccessControlType,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Security::AccessControl::AccessRule,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_AccessControlSectionsModified", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadLock(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadLock", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteUnlock(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteUnlock", ())?;
+        let __cordl_ret: *mut crate::System::Security::AccessControl::AccessRule = __cordl_object
+            .invoke("InternalAccessRuleFactory", (ace, targetType, _cordl_type))?;
         Ok(__cordl_ret)
     }
     pub fn InternalGetAccessRules(
@@ -147,19 +88,43 @@ impl crate::System::Security::AccessControl::ObjectSecurity {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn InternalAccessRuleFactory(
+    pub fn New_CommonSecurityDescriptor0(
+        securityDescriptor: *mut crate::System::Security::AccessControl::CommonSecurityDescriptor,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (securityDescriptor))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool__cordl_bool1(
+        isContainer: bool,
+        isDS: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (isContainer, isDS))?;
+        Ok(__cordl_object)
+    }
+    pub fn ReadLock(
         &mut self,
-        ace: *mut crate::System::Security::AccessControl::QualifiedAce,
-        targetType: *mut crate::System::Type,
-        _cordl_type: crate::System::Security::AccessControl::AccessControlType,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::AccessControl::AccessRule,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::AccessControl::AccessRule = __cordl_object
-            .invoke("InternalAccessRuleFactory", (ace, targetType, _cordl_type))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReadLock", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadUnlock(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReadUnlock", ())?;
         Ok(__cordl_ret)
     }
     pub fn WriteLock(
@@ -172,24 +137,59 @@ impl crate::System::Security::AccessControl::ObjectSecurity {
             .invoke("WriteLock", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_CommonSecurityDescriptor0(
-        securityDescriptor: *mut crate::System::Security::AccessControl::CommonSecurityDescriptor,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (securityDescriptor))?;
-        Ok(__cordl_object)
+    pub fn WriteUnlock(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteUnlock", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New__cordl_bool__cordl_bool1(
+    pub fn Writing(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Writing", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_CommonSecurityDescriptor0(
+        &mut self,
+        securityDescriptor: *mut crate::System::Security::AccessControl::CommonSecurityDescriptor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (securityDescriptor))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor__cordl_bool__cordl_bool1(
+        &mut self,
         isContainer: bool,
         isDS: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (isContainer, isDS))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (isContainer, isDS))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_AccessControlSectionsModified(
+        &mut self,
+        value: crate::System::Security::AccessControl::AccessControlSections,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_AccessControlSectionsModified", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Security+AccessControl+ObjectSecurity")]

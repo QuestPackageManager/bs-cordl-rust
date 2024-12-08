@@ -22,25 +22,6 @@ for crate::System::Threading::Tasks::ForceAsyncAwaiter {
 }
 #[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
 impl crate::System::Threading::Tasks::ForceAsyncAwaiter {
-    pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsCompleted",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnsafeOnCompleted(
-        &mut self,
-        action: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "UnsafeOnCompleted",
-            (action),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetAwaiter(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -50,17 +31,6 @@ impl crate::System::Threading::Tasks::ForceAsyncAwaiter {
             self,
             "GetAwaiter",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        task: *mut crate::System::Threading::Tasks::Task,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (task),
         )?;
         Ok(__cordl_ret)
     }
@@ -82,6 +52,36 @@ impl crate::System::Threading::Tasks::ForceAsyncAwaiter {
             self,
             "OnCompleted",
             (action),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnsafeOnCompleted(
+        &mut self,
+        action: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "UnsafeOnCompleted",
+            (action),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        task: *mut crate::System::Threading::Tasks::Task,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (task),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsCompleted",
+            (),
         )?;
         Ok(__cordl_ret)
     }

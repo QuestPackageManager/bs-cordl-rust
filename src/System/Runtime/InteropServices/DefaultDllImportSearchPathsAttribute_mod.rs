@@ -28,6 +28,15 @@ for crate::System::Runtime::InteropServices::DefaultDllImportSearchPathsAttribut
 }
 #[cfg(feature = "System+Runtime+InteropServices+DefaultDllImportSearchPathsAttribute")]
 impl crate::System::Runtime::InteropServices::DefaultDllImportSearchPathsAttribute {
+    pub fn New(
+        paths: crate::System::Runtime::InteropServices::DllImportSearchPath,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (paths))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         paths: crate::System::Runtime::InteropServices::DllImportSearchPath,
@@ -38,15 +47,6 @@ impl crate::System::Runtime::InteropServices::DefaultDllImportSearchPathsAttribu
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (paths))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        paths: crate::System::Runtime::InteropServices::DllImportSearchPath,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (paths))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+InteropServices+DefaultDllImportSearchPathsAttribute")]

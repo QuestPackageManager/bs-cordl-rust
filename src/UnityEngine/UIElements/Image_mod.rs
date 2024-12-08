@@ -33,59 +33,18 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Image {
 }
 #[cfg(feature = "UnityEngine+UIElements+Image")]
 impl crate::UnityEngine::UIElements::Image {
-    #[cfg(feature = "UnityEngine+UIElements+Image+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::Image_UxmlTraits;
     #[cfg(feature = "UnityEngine+UIElements+Image+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::Image_UxmlFactory;
-    pub fn get_image(
+    #[cfg(feature = "UnityEngine+UIElements+Image+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::Image_UxmlTraits;
+    pub fn ClearProperty(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Texture = __cordl_object
-            .invoke("get_image", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sourceRect(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
-            .invoke("get_sourceRect", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSourceRect(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
-            .invoke("GetSourceRect", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_uv(
-        &mut self,
-        value: crate::UnityEngine::Rect,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_uv", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_tintColor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_tintColor", ())?;
+            .invoke("ClearProperty", ())?;
         Ok(__cordl_ret)
     }
     pub fn DoMeasure(
@@ -100,6 +59,67 @@ impl crate::UnityEngine::UIElements::Image {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("DoMeasure", (desiredWidth, widthMode, desiredHeight, heightMode))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSourceRect(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
+            .invoke("GetSourceRect", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetTextureDisplaySize_Sprite1(
+        &mut self,
+        sprite: *mut crate::UnityEngine::Sprite,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("GetTextureDisplaySize", (sprite))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetTextureDisplaySize_Texture0(
+        &mut self,
+        texture: *mut crate::UnityEngine::Texture,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("GetTextureDisplaySize", (texture))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnCustomStyleResolved(
+        &mut self,
+        e: *mut crate::UnityEngine::UIElements::CustomStyleResolvedEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnCustomStyleResolved", (e))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnGenerateVisualContent(
+        &mut self,
+        mgc: *mut crate::UnityEngine::UIElements::MeshGenerationContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnGenerateVisualContent", (mgc))?;
         Ok(__cordl_ret)
     }
     pub fn ReadCustomProperties(
@@ -135,6 +155,17 @@ impl crate::UnityEngine::UIElements::Image {
             .invoke("SetProperty", (src, dst, alt0, alt1))?;
         Ok(__cordl_ret)
     }
+    pub fn SetScaleMode(
+        &mut self,
+        mode: crate::UnityEngine::ScaleMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetScaleMode", (mode))?;
+        Ok(__cordl_ret)
+    }
     pub fn SetTintColor(
         &mut self,
         color: crate::UnityEngine::Color,
@@ -146,6 +177,26 @@ impl crate::UnityEngine::UIElements::Image {
             .invoke("SetTintColor", (color))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_image(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Texture = __cordl_object
+            .invoke("get_image", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_scaleMode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ScaleMode> {
@@ -154,6 +205,55 @@ impl crate::UnityEngine::UIElements::Image {
         );
         let __cordl_ret: crate::UnityEngine::ScaleMode = __cordl_object
             .invoke("get_scaleMode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sourceRect(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
+            .invoke("get_sourceRect", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sprite(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
+            .invoke("get_sprite", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_tintColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_tintColor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_uv(&mut self) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Rect = __cordl_object.invoke("get_uv", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_vectorImage(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::VectorImage,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::VectorImage = __cordl_object
+            .invoke("get_vectorImage", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_image(
@@ -178,6 +278,17 @@ impl crate::UnityEngine::UIElements::Image {
             .invoke("set_sprite", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn set_uv(
+        &mut self,
+        value: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_uv", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_vectorImage(
         &mut self,
         value: *mut crate::UnityEngine::UIElements::VectorImage,
@@ -188,117 +299,6 @@ impl crate::UnityEngine::UIElements::Image {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_vectorImage", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_uv(&mut self) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Rect = __cordl_object.invoke("get_uv", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTextureDisplaySize_Texture0(
-        &mut self,
-        texture: *mut crate::UnityEngine::Texture,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("GetTextureDisplaySize", (texture))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTextureDisplaySize_Sprite1(
-        &mut self,
-        sprite: *mut crate::UnityEngine::Sprite,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("GetTextureDisplaySize", (sprite))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnGenerateVisualContent(
-        &mut self,
-        mgc: *mut crate::UnityEngine::UIElements::MeshGenerationContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnGenerateVisualContent", (mgc))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearProperty(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearProperty", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sprite(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
-            .invoke("get_sprite", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_vectorImage(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VectorImage,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VectorImage = __cordl_object
-            .invoke("get_vectorImage", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnCustomStyleResolved(
-        &mut self,
-        e: *mut crate::UnityEngine::UIElements::CustomStyleResolvedEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCustomStyleResolved", (e))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetScaleMode(
-        &mut self,
-        mode: crate::UnityEngine::ScaleMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetScaleMode", (mode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Image")]
@@ -342,6 +342,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Image_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+Image+UxmlFactory")]
 impl crate::UnityEngine::UIElements::Image_UxmlFactory {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -351,13 +358,6 @@ impl crate::UnityEngine::UIElements::Image_UxmlFactory {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Image+UxmlFactory")]
@@ -396,6 +396,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Image_UxmlTraits {
 }
 #[cfg(feature = "UnityEngine+UIElements+Image+UxmlTraits")]
 impl crate::UnityEngine::UIElements::Image_UxmlTraits {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -405,13 +412,6 @@ impl crate::UnityEngine::UIElements::Image_UxmlTraits {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Image+UxmlTraits")]

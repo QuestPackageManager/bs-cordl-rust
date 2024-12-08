@@ -29,6 +29,13 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap")]
 impl crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -38,13 +45,6 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap")]
@@ -86,64 +86,6 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap
 impl crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
     #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap")]
     pub type HEU_InputDataTilemap = crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap;
-    pub fn UploadData(
-        &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
-        inputNodeID: i32,
-        inputData: *mut crate::HoudiniEngineUnity::HEU_InputData,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("UploadData", (session, inputNodeID, inputData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GenerateTilemapDataFromGameObject(
-        &mut self,
-        inputObject: *mut crate::UnityEngine::GameObject,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap = __cordl_object
-            .invoke("GenerateTilemapDataFromGameObject", (inputObject))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsThisInputObjectSupported(
-        &mut self,
-        inputObject: *mut crate::UnityEngine::GameObject,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsThisInputObjectSupported", (inputObject))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Initialize(
-        &mut self,
-        settings: *mut crate::HoudiniEngineUnity::HEU_InputInterfaceTilemapSettings,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Initialize", (settings))?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateInputNodeWithDataUpload(
         &mut self,
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
@@ -161,12 +103,70 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn GenerateTilemapDataFromGameObject(
+        &mut self,
+        inputObject: *mut crate::UnityEngine::GameObject,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap = __cordl_object
+            .invoke("GenerateTilemapDataFromGameObject", (inputObject))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Initialize(
+        &mut self,
+        settings: *mut crate::HoudiniEngineUnity::HEU_InputInterfaceTilemapSettings,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Initialize", (settings))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsThisInputObjectSupported(
+        &mut self,
+        inputObject: *mut crate::UnityEngine::GameObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsThisInputObjectSupported", (inputObject))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn UploadData(
+        &mut self,
+        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+        inputNodeID: i32,
+        inputData: *mut crate::HoudiniEngineUnity::HEU_InputData,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("UploadData", (session, inputNodeID, inputData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap")]

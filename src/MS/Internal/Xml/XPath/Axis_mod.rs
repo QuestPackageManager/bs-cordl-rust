@@ -33,15 +33,101 @@ impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::Axis {
 impl crate::MS::Internal::Xml::XPath::Axis {
     #[cfg(feature = "MS+Internal+Xml+XPath+Axis+AxisType")]
     pub type AxisType = crate::MS::Internal::Xml::XPath::Axis_AxisType;
-    pub fn set_Urn(
+    pub fn New_Axis_AxisType_AstNode1(
+        axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
+        input: *mut crate::MS::Internal::Xml::XPath::AstNode,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (axisType, input))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_String_XPathNodeType0(
+        axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
+        input: *mut crate::MS::Internal::Xml::XPath::AstNode,
+        prefix: *mut crate::System::String,
+        name: *mut crate::System::String,
+        nodetype: crate::System::Xml::XPath::XPathNodeType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (axisType, input, prefix, name, nodetype))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_Axis_AxisType_AstNode1(
         &mut self,
-        value: *mut crate::System::String,
+        axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
+        input: *mut crate::MS::Internal::Xml::XPath::AstNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Urn", (value))?;
+            .invoke(".ctor", (axisType, input))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_String_String_XPathNodeType0(
+        &mut self,
+        axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
+        input: *mut crate::MS::Internal::Xml::XPath::AstNode,
+        prefix: *mut crate::System::String,
+        name: *mut crate::System::String,
+        nodetype: crate::System::Xml::XPath::XPathNodeType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (axisType, input, prefix, name, nodetype))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AbbrAxis(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_AbbrAxis", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Input(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
+            .invoke("get_Input", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Name", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NodeType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XPath::XPathNodeType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::XPath::XPathNodeType = __cordl_object
+            .invoke("get_NodeType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Prefix(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Prefix", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ReturnType(
@@ -66,53 +152,6 @@ impl crate::MS::Internal::Xml::XPath::Axis {
             .invoke("get_Type", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Name", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_String_XPathNodeType0(
-        &mut self,
-        axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
-        input: *mut crate::MS::Internal::Xml::XPath::AstNode,
-        prefix: *mut crate::System::String,
-        name: *mut crate::System::String,
-        nodetype: crate::System::Xml::XPath::XPathNodeType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (axisType, input, prefix, name, nodetype))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Axis_AxisType_AstNode1(
-        &mut self,
-        axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
-        input: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (axisType, input))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_NodeType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XPath::XPathNodeType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::XPath::XPathNodeType = __cordl_object
-            .invoke("get_NodeType", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_TypeOfAxis(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::MS::Internal::Xml::XPath::Axis_AxisType> {
@@ -121,6 +160,16 @@ impl crate::MS::Internal::Xml::XPath::Axis {
         );
         let __cordl_ret: crate::MS::Internal::Xml::XPath::Axis_AxisType = __cordl_object
             .invoke("get_TypeOfAxis", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Urn(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Urn", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Input(
@@ -134,65 +183,16 @@ impl crate::MS::Internal::Xml::XPath::Axis {
             .invoke("set_Input", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_AbbrAxis(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_AbbrAxis", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Input(
+    pub fn set_Urn(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
-            .invoke("get_Input", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Urn", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_Prefix(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Prefix", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Urn(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Urn", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_String_String_XPathNodeType0(
-        axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
-        input: *mut crate::MS::Internal::Xml::XPath::AstNode,
-        prefix: *mut crate::System::String,
-        name: *mut crate::System::String,
-        nodetype: crate::System::Xml::XPath::XPathNodeType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (axisType, input, prefix, name, nodetype))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Axis_AxisType_AstNode1(
-        axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
-        input: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (axisType, input))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Axis")]

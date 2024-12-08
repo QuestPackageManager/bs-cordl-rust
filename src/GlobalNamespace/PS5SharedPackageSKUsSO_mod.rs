@@ -41,6 +41,23 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
 }
 #[cfg(feature = "PS5SharedPackageSKUsSO+PS5BuildVersion")]
 impl crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_contentVersion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -60,23 +77,6 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_masterVersion", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PS5SharedPackageSKUsSO+PS5BuildVersion")]
@@ -125,30 +125,6 @@ impl PS5SharedPackageSKUsSO {
     pub type PS5BuildVersion = crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion;
     #[cfg(feature = "PS5SharedPackageSKUsSO+BuildType")]
     pub type BuildType = crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType;
-    pub fn get_latestBuildVersion(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion = __cordl_object
-            .invoke("get_latestBuildVersion", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_buildVersion(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion = __cordl_object
-            .invoke("get_buildVersion", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetPrimarySKU(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut PS5PublisherSKUSettingsSO> {
@@ -158,6 +134,13 @@ impl PS5SharedPackageSKUsSO {
         let __cordl_ret: *mut PS5PublisherSKUSettingsSO = __cordl_object
             .invoke("GetPrimarySKU", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -194,6 +177,18 @@ impl PS5SharedPackageSKUsSO {
             .invoke("get_buildType", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_buildVersion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion = __cordl_object
+            .invoke("get_buildVersion", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_conceptId(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -204,12 +199,17 @@ impl PS5SharedPackageSKUsSO {
             .invoke("get_conceptId", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_latestBuildVersion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion = __cordl_object
+            .invoke("get_latestBuildVersion", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PS5SharedPackageSKUsSO")]

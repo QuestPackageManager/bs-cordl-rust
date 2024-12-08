@@ -46,11 +46,63 @@ impl crate::UnityEngine::GUILayoutEntry {
             .invoke("ApplyOptions", (options))?;
         Ok(__cordl_ret)
     }
-    pub fn get_marginBottom(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn ApplyStyleSettings(
+        &mut self,
+        style: *mut crate::UnityEngine::GUIStyle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_marginBottom", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ApplyStyleSettings", (style))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CalcHeight(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CalcHeight", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CalcWidth(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CalcWidth", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        _minWidth: f32,
+        _maxWidth: f32,
+        _minHeight: f32,
+        _maxHeight: f32,
+        _style: *mut crate::UnityEngine::GUIStyle,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (_minWidth, _maxWidth, _minHeight, _maxHeight, _style),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn SetHorizontal(
+        &mut self,
+        x: f32,
+        width: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetHorizontal", (x, width))?;
         Ok(__cordl_ret)
     }
     pub fn SetVertical(
@@ -65,16 +117,6 @@ impl crate::UnityEngine::GUILayoutEntry {
             .invoke("SetVertical", (y, height))?;
         Ok(__cordl_ret)
     }
-    pub fn get_style(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GUIStyle> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GUIStyle = __cordl_object
-            .invoke("get_style", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -83,13 +125,6 @@ impl crate::UnityEngine::GUILayoutEntry {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("ToString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_marginRight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_marginRight", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -107,22 +142,18 @@ impl crate::UnityEngine::GUILayoutEntry {
             .invoke(".ctor", (_minWidth, _maxWidth, _minHeight, _maxHeight, _style))?;
         Ok(__cordl_ret)
     }
-    pub fn get_marginVertical(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_marginBottom(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_marginVertical", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_marginBottom", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ApplyStyleSettings(
-        &mut self,
-        style: *mut crate::UnityEngine::GUIStyle,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_marginHorizontal(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ApplyStyleSettings", (style))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_marginHorizontal", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_marginLeft(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -132,21 +163,35 @@ impl crate::UnityEngine::GUILayoutEntry {
         let __cordl_ret: i32 = __cordl_object.invoke("get_marginLeft", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CalcWidth(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_marginRight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CalcWidth", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_marginRight", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_marginHorizontal(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_marginTop(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_marginHorizontal", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_marginTop", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_marginVertical(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_marginVertical", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_style(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GUIStyle> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::GUIStyle = __cordl_object
+            .invoke("get_style", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_style(
@@ -159,51 +204,6 @@ impl crate::UnityEngine::GUILayoutEntry {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_style", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn SetHorizontal(
-        &mut self,
-        x: f32,
-        width: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetHorizontal", (x, width))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_marginTop(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_marginTop", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CalcHeight(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CalcHeight", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        _minWidth: f32,
-        _maxWidth: f32,
-        _minHeight: f32,
-        _maxHeight: f32,
-        _style: *mut crate::UnityEngine::GUIStyle,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (_minWidth, _maxWidth, _minHeight, _maxHeight, _style),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+GUILayoutEntry")]

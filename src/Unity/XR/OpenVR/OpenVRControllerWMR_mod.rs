@@ -35,28 +35,22 @@ impl std::ops::DerefMut for crate::Unity::XR::OpenVR::OpenVRControllerWMR {
 }
 #[cfg(feature = "Unity+XR+OpenVR+OpenVRControllerWMR")]
 impl crate::Unity::XR::OpenVR::OpenVRControllerWMR {
-    pub fn set_joystick(
+    pub fn FinishSetup(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_joystick", (value))?;
+            .invoke("FinishSetup", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_deviceVelocity(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control = __cordl_object
-            .invoke("get_deviceVelocity", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -66,73 +60,6 @@ impl crate::Unity::XR::OpenVR::OpenVRControllerWMR {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_trigger(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
-            .invoke("get_trigger", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_touchpadTouch(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_touchpadTouch", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_touchpadClick(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_touchpadClick", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_trigger(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_trigger", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_grip(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_grip", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_gripPressed(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_gripPressed", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_deviceAngularVelocity(
@@ -147,48 +74,28 @@ impl crate::Unity::XR::OpenVR::OpenVRControllerWMR {
             .invoke("get_deviceAngularVelocity", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_deviceVelocity(
+    pub fn get_deviceVelocity(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_deviceVelocity", (value))?;
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control = __cordl_object
+            .invoke("get_deviceVelocity", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_menu(
+    pub fn get_grip(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_menu", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_deviceAngularVelocity(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_deviceAngularVelocity", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_touchpad(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_touchpad", (value))?;
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
+            .invoke("get_grip", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_gripPressed(
@@ -203,26 +110,16 @@ impl crate::Unity::XR::OpenVR::OpenVRControllerWMR {
             .invoke("get_gripPressed", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_triggerPressed(
+    pub fn get_joystick(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_triggerPressed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FinishSetup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FinishSetup", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control = __cordl_object
+            .invoke("get_joystick", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_menu(
@@ -235,6 +132,18 @@ impl crate::Unity::XR::OpenVR::OpenVRControllerWMR {
         );
         let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
             .invoke("get_menu", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_touchpad(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control = __cordl_object
+            .invoke("get_touchpad", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_touchpadClick(
@@ -261,6 +170,140 @@ impl crate::Unity::XR::OpenVR::OpenVRControllerWMR {
             .invoke("get_touchpadTouch", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_trigger(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
+            .invoke("get_trigger", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_triggerPressed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
+            .invoke("get_triggerPressed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_deviceAngularVelocity(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_deviceAngularVelocity", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_deviceVelocity(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_deviceVelocity", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_grip(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_grip", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_gripPressed(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_gripPressed", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_joystick(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_joystick", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_menu(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_menu", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_touchpad(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_touchpad", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_touchpadClick(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_touchpadClick", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_touchpadTouch(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_touchpadTouch", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_trigger(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_trigger", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_triggerPressed(
         &mut self,
         value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -271,49 +314,6 @@ impl crate::Unity::XR::OpenVR::OpenVRControllerWMR {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_triggerPressed", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_grip(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
-            .invoke("get_grip", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_touchpad(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control = __cordl_object
-            .invoke("get_touchpad", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_joystick(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control = __cordl_object
-            .invoke("get_joystick", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+XR+OpenVR+OpenVRControllerWMR")]

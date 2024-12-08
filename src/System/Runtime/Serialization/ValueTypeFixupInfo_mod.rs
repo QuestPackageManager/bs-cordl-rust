@@ -28,6 +28,17 @@ impl std::ops::DerefMut for crate::System::Runtime::Serialization::ValueTypeFixu
 }
 #[cfg(feature = "System+Runtime+Serialization+ValueTypeFixupInfo")]
 impl crate::System::Runtime::Serialization::ValueTypeFixupInfo {
+    pub fn New(
+        containerID: i64,
+        member: *mut crate::System::Reflection::FieldInfo,
+        parentIndex: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (containerID, member, parentIndex))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         containerID: i64,
@@ -48,16 +59,6 @@ impl crate::System::Runtime::Serialization::ValueTypeFixupInfo {
         let __cordl_ret: i64 = __cordl_object.invoke("get_ContainerID", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_ParentIndex(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
-            .invoke("get_ParentIndex", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_ParentField(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::FieldInfo> {
@@ -68,16 +69,15 @@ impl crate::System::Runtime::Serialization::ValueTypeFixupInfo {
             .invoke("get_ParentField", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        containerID: i64,
-        member: *mut crate::System::Reflection::FieldInfo,
-        parentIndex: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (containerID, member, parentIndex))?;
-        Ok(__cordl_object)
+    pub fn get_ParentIndex(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
+            .invoke("get_ParentIndex", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+ValueTypeFixupInfo")]

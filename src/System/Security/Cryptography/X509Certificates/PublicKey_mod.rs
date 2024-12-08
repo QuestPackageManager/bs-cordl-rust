@@ -30,6 +30,17 @@ for crate::System::Security::Cryptography::X509Certificates::PublicKey {
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+PublicKey")]
 impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
+    pub fn New(
+        oid: *mut crate::System::Security::Cryptography::Oid,
+        parameters: *mut crate::System::Security::Cryptography::AsnEncodedData,
+        keyValue: *mut crate::System::Security::Cryptography::AsnEncodedData,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (oid, parameters, keyValue))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         oid: *mut crate::System::Security::Cryptography::Oid,
@@ -55,6 +66,18 @@ impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
             .invoke("get_EncodedKeyValue", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_EncodedParameters(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Security::Cryptography::AsnEncodedData,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Security::Cryptography::AsnEncodedData = __cordl_object
+            .invoke("get_EncodedParameters", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Key(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -76,29 +99,6 @@ impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
         let __cordl_ret: *mut crate::System::Security::Cryptography::Oid = __cordl_object
             .invoke("get_Oid", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_EncodedParameters(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::AsnEncodedData,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::AsnEncodedData = __cordl_object
-            .invoke("get_EncodedParameters", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        oid: *mut crate::System::Security::Cryptography::Oid,
-        parameters: *mut crate::System::Security::Cryptography::AsnEncodedData,
-        keyValue: *mut crate::System::Security::Cryptography::AsnEncodedData,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (oid, parameters, keyValue))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+PublicKey")]

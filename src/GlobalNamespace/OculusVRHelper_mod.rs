@@ -40,72 +40,44 @@ impl OculusVRHelper {
     pub const kHorizontalRightHand: &'static str = "HorizontalRightHand";
     pub const kVerticalLeftHand: &'static str = "VerticalLeftHand";
     pub const kVerticalRightHand: &'static str = "VerticalRightHand";
-    pub fn add_hmdMountedEvent(
+    pub fn DisableEventSystem(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_hmdMountedEvent", (value))?;
+            .invoke("DisableEventSystem", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_inputFocusWasReleasedEvent(
+    pub fn EnableEventSystem(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_inputFocusWasReleasedEvent", (value))?;
+            .invoke("EnableEventSystem", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get__isOVRManagerPresent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get__isOVRManagerPresent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_vrFocusWasReleasedEvent(
+    pub fn FixedUpdate(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_vrFocusWasReleasedEvent", (value))?;
+            .invoke("FixedUpdate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_hasInputFocus(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hasInputFocus", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_controllersDidDisconnectEvent(
+    pub fn GetAnyJoystickMaxAxis(
         &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_controllersDidDisconnectEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTriggerValue(
-        &mut self,
-        node: crate::UnityEngine::XR::XRNode,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetTriggerValue", (node))?;
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("GetAnyJoystickMaxAxis", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetInteractionProfile(
@@ -121,11 +93,64 @@ impl OculusVRHelper {
             .invoke("GetInteractionProfile", (node))?;
         Ok(__cordl_ret)
     }
-    pub fn get_vrPlatformSDK(&mut self) -> quest_hook::libil2cpp::Result<VRPlatformSDK> {
+    pub fn GetMenuButton(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: VRPlatformSDK = __cordl_object.invoke("get_vrPlatformSDK", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("GetMenuButton", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetMenuButtonDown(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("GetMenuButtonDown", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNodePose(
+        &mut self,
+        nodeType: crate::UnityEngine::XR::XRNode,
+        idx: i32,
+        pos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        rot: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("GetNodePose", (nodeType, idx, pos, rot))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetThumbstickValue(
+        &mut self,
+        node: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("GetThumbstickValue", (node))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetTriggerValue(
+        &mut self,
+        node: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("GetTriggerValue", (node))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsAdvancedHapticsSupported(
+        &mut self,
+        node: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsAdvancedHapticsSupported", (node))?;
         Ok(__cordl_ret)
     }
     pub fn LateUpdate(
@@ -138,26 +163,21 @@ impl OculusVRHelper {
             .invoke("LateUpdate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn add_controllersDidChangeReferenceEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_controllersDidChangeReferenceEvent", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn remove_hmdMountedEvent(
+    pub fn RefreshControllersReference(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_hmdMountedEvent", (value))?;
+            .invoke("RefreshControllersReference", ())?;
         Ok(__cordl_ret)
     }
     pub fn StopHaptics(
@@ -171,52 +191,30 @@ impl OculusVRHelper {
             .invoke("StopHaptics", (node))?;
         Ok(__cordl_ret)
     }
-    pub fn get_loggerPrefix(
+    pub fn TriggerHapticPulse(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_loggerPrefix", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_hmdUnmountedEvent(
-        &mut self,
-        value: *mut crate::System::Action,
+        node: crate::UnityEngine::XR::XRNode,
+        duration: f32,
+        strength: f32,
+        frequency: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_hmdUnmountedEvent", (value))?;
+            .invoke("TriggerHapticPulse", (node, duration, strength, frequency))?;
         Ok(__cordl_ret)
     }
-    pub fn RefreshControllersReference(
+    pub fn TryGetPoseOffsetForNode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        node: crate::UnityEngine::XR::XRNode,
+        poseOffset: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshControllersReference", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DisableEventSystem(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DisableEventSystem", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_hasVrFocus(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hasVrFocus", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetPoseOffsetForNode", (node, poseOffset))?;
         Ok(__cordl_ret)
     }
     pub fn Update(
@@ -229,17 +227,17 @@ impl OculusVRHelper {
             .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetAnyJoystickMaxAxis(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("GetAnyJoystickMaxAxis", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_controllersDidDisconnectEvent(
+    pub fn add_controllersDidChangeReferenceEvent(
         &mut self,
         value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -247,7 +245,51 @@ impl OculusVRHelper {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_controllersDidDisconnectEvent", (value))?;
+            .invoke("add_controllersDidChangeReferenceEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_controllersDidDisconnectEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_controllersDidDisconnectEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_hmdMountedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_hmdMountedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_hmdUnmountedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_hmdUnmountedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_inputFocusWasCapturedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_inputFocusWasCapturedEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_inputFocusWasReleasedEvent(
@@ -272,42 +314,6 @@ impl OculusVRHelper {
             .invoke("add_vrFocusWasCapturedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn add_inputFocusWasCapturedEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_inputFocusWasCapturedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNodePose(
-        &mut self,
-        nodeType: crate::UnityEngine::XR::XRNode,
-        idx: i32,
-        pos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-        rot: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("GetNodePose", (nodeType, idx, pos, rot))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_vrFocusWasCapturedEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_vrFocusWasCapturedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn add_vrFocusWasReleasedEvent(
         &mut self,
         value: *mut crate::System::Action,
@@ -319,91 +325,49 @@ impl OculusVRHelper {
             .invoke("add_vrFocusWasReleasedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn TryGetPoseOffsetForNode(
-        &mut self,
-        node: crate::UnityEngine::XR::XRNode,
-        poseOffset: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get__isOVRManagerPresent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetPoseOffsetForNode", (node, poseOffset))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get__isOVRManagerPresent", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetThumbstickValue(
-        &mut self,
-        node: crate::UnityEngine::XR::XRNode,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+    pub fn get_hasInputFocus(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("GetThumbstickValue", (node))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_hasInputFocus", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetMenuButtonDown(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_hasVrFocus(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("GetMenuButtonDown", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_hasVrFocus", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TriggerHapticPulse(
-        &mut self,
-        node: crate::UnityEngine::XR::XRNode,
-        duration: f32,
-        strength: f32,
-        frequency: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_isAlwaysWireless(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TriggerHapticPulse", (node, duration, strength, frequency))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isAlwaysWireless", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_inputFocusWasCapturedEvent(
+    pub fn get_loggerPrefix(
         &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_inputFocusWasCapturedEvent", (value))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_loggerPrefix", ())?;
         Ok(__cordl_ret)
     }
-    pub fn EnableEventSystem(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_vrPlatformSDK(&mut self) -> quest_hook::libil2cpp::Result<VRPlatformSDK> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EnableEventSystem", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsAdvancedHapticsSupported(
-        &mut self,
-        node: crate::UnityEngine::XR::XRNode,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsAdvancedHapticsSupported", (node))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_hmdUnmountedEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_hmdUnmountedEvent", (value))?;
+        let __cordl_ret: VRPlatformSDK = __cordl_object.invoke("get_vrPlatformSDK", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_controllersDidChangeReferenceEvent(
@@ -417,46 +381,82 @@ impl OculusVRHelper {
             .invoke("remove_controllersDidChangeReferenceEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn FixedUpdate(
+    pub fn remove_controllersDidDisconnectEvent(
         &mut self,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FixedUpdate", ())?;
+            .invoke("remove_controllersDidDisconnectEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_isAlwaysWireless(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isAlwaysWireless", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetMenuButton(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("GetMenuButton", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn remove_hmdMountedEvent(
         &mut self,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("remove_hmdMountedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn remove_hmdUnmountedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_hmdUnmountedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_inputFocusWasCapturedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_inputFocusWasCapturedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_inputFocusWasReleasedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_inputFocusWasReleasedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_vrFocusWasCapturedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_vrFocusWasCapturedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_vrFocusWasReleasedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_vrFocusWasReleasedEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OculusVRHelper")]

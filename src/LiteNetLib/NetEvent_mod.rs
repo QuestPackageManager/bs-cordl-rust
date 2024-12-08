@@ -54,6 +54,15 @@ impl std::ops::DerefMut for crate::LiteNetLib::NetEvent {
 impl crate::LiteNetLib::NetEvent {
     #[cfg(feature = "LiteNetLib+NetEvent+EType")]
     pub type EType = crate::LiteNetLib::NetEvent_EType;
+    pub fn New(
+        manager: *mut crate::LiteNetLib::NetManager,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (manager))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         manager: *mut crate::LiteNetLib::NetManager,
@@ -64,15 +73,6 @@ impl crate::LiteNetLib::NetEvent {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (manager))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        manager: *mut crate::LiteNetLib::NetManager,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (manager))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LiteNetLib+NetEvent")]

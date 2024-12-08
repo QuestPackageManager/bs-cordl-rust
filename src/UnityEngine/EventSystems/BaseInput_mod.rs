@@ -24,66 +24,24 @@ impl std::ops::DerefMut for crate::UnityEngine::EventSystems::BaseInput {
 }
 #[cfg(feature = "UnityEngine+EventSystems+BaseInput")]
 impl crate::UnityEngine::EventSystems::BaseInput {
-    pub fn get_compositionCursorPos(
+    pub fn GetAxisRaw(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        axisName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_compositionCursorPos", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("GetAxisRaw", (axisName))?;
         Ok(__cordl_ret)
     }
-    pub fn set_compositionCursorPos(
+    pub fn GetButtonDown(
         &mut self,
-        value: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_compositionCursorPos", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetMouseButtonDown(
-        &mut self,
-        button: i32,
+        buttonName: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("GetMouseButtonDown", (button))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_imeCompositionMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::IMECompositionMode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::IMECompositionMode = __cordl_object
-            .invoke("get_imeCompositionMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_imeCompositionMode(
-        &mut self,
-        value: crate::UnityEngine::IMECompositionMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_imeCompositionMode", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_compositionString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_compositionString", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("GetButtonDown", (buttonName))?;
         Ok(__cordl_ret)
     }
     pub fn GetMouseButton(
@@ -96,11 +54,24 @@ impl crate::UnityEngine::EventSystems::BaseInput {
         let __cordl_ret: bool = __cordl_object.invoke("GetMouseButton", (button))?;
         Ok(__cordl_ret)
     }
-    pub fn get_touchCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn GetMouseButtonDown(
+        &mut self,
+        button: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_touchCount", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("GetMouseButtonDown", (button))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetMouseButtonUp(
+        &mut self,
+        button: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("GetMouseButtonUp", (button))?;
         Ok(__cordl_ret)
     }
     pub fn GetTouch(
@@ -114,24 +85,61 @@ impl crate::UnityEngine::EventSystems::BaseInput {
             .invoke("GetTouch", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn GetMouseButtonUp(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
         &mut self,
-        button: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("GetMouseButtonUp", (button))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetButtonDown(
+    pub fn get_compositionCursorPos(
         &mut self,
-        buttonName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("GetButtonDown", (buttonName))?;
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_compositionCursorPos", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_compositionString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_compositionString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_imeCompositionMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::IMECompositionMode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::IMECompositionMode = __cordl_object
+            .invoke("get_imeCompositionMode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_mousePosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_mousePosition", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_mousePresent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -151,34 +159,11 @@ impl crate::UnityEngine::EventSystems::BaseInput {
             .invoke("get_mouseScrollDelta", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetAxisRaw(
-        &mut self,
-        axisName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_touchCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetAxisRaw", (axisName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_mousePosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_mousePosition", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_touchCount", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_touchSupported(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -188,12 +173,27 @@ impl crate::UnityEngine::EventSystems::BaseInput {
         let __cordl_ret: bool = __cordl_object.invoke("get_touchSupported", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_compositionCursorPos(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_compositionCursorPos", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_imeCompositionMode(
+        &mut self,
+        value: crate::UnityEngine::IMECompositionMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_imeCompositionMode", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+BaseInput")]

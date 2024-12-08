@@ -46,6 +46,18 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
             .invoke("Invoke", (operation, evt))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        action: *mut crate::System::Action_2<
+            crate::UnityEngine::UIElements::KeyboardNavigationOperation,
+            *mut crate::UnityEngine::UIElements::EventBase,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (action))?;
+        Ok(__cordl_object)
+    }
     pub fn OnKeyDown(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::KeyDownEvent,
@@ -57,6 +69,28 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
             .invoke("OnKeyDown", (evt))?;
         Ok(__cordl_ret)
     }
+    pub fn OnNavigationCancel(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::NavigationCancelEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnNavigationCancel", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnNavigationMove(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::NavigationMoveEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnNavigationMove", (evt))?;
+        Ok(__cordl_ret)
+    }
     pub fn OnNavigationSubmit(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::NavigationSubmitEvent,
@@ -66,6 +100,26 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnNavigationSubmit", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterCallbacksOnTarget(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterCallbacksOnTarget", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnregisterCallbacksFromTarget(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnregisterCallbacksFromTarget", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -81,60 +135,6 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (action))?;
         Ok(__cordl_ret)
-    }
-    pub fn OnNavigationCancel(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::NavigationCancelEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnNavigationCancel", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterCallbacksOnTarget(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterCallbacksOnTarget", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnNavigationMove(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::NavigationMoveEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnNavigationMove", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnregisterCallbacksFromTarget(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterCallbacksFromTarget", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        action: *mut crate::System::Action_2<
-            crate::UnityEngine::UIElements::KeyboardNavigationOperation,
-            *mut crate::UnityEngine::UIElements::EventBase,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (action))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+KeyboardNavigationManipulator")]

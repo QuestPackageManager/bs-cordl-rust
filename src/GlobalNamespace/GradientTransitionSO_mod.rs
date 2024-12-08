@@ -35,25 +35,12 @@ impl std::ops::DerefMut for GradientTransitionSO {
 }
 #[cfg(feature = "GradientTransitionSO")]
 impl GradientTransitionSO {
-    pub fn get_disabledColor1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_disabledColor1", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_normalColor2(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_normalColor2", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -65,24 +52,24 @@ impl GradientTransitionSO {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_selectedColor1(
+    pub fn get_disabledColor1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_selectedColor1", ())?;
+            .invoke("get_disabledColor1", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_selectedColor2(
+    pub fn get_disabledColor2(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_selectedColor2", ())?;
+            .invoke("get_disabledColor2", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_highlightColor1(
@@ -95,6 +82,16 @@ impl GradientTransitionSO {
             .invoke("get_highlightColor1", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_highlightColor2(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_highlightColor2", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_normalColor1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
@@ -105,6 +102,16 @@ impl GradientTransitionSO {
             .invoke("get_normalColor1", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_normalColor2(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_normalColor2", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_pressedColor1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
@@ -113,6 +120,16 @@ impl GradientTransitionSO {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_pressedColor1", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_pressedColor2(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_pressedColor2", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_selectedAndHighlightedColor1(
@@ -135,42 +152,25 @@ impl GradientTransitionSO {
             .invoke("get_selectedAndHighlightedColor2", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_pressedColor2(
+    pub fn get_selectedColor1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_pressedColor2", ())?;
+            .invoke("get_selectedColor1", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_highlightColor2(
+    pub fn get_selectedColor2(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_highlightColor2", ())?;
+            .invoke("get_selectedColor2", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_disabledColor2(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_disabledColor2", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "GradientTransitionSO")]

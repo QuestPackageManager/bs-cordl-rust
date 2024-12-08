@@ -26,14 +26,21 @@ impl std::ops::DerefMut for crate::Oculus::Platform::CAPI {
 impl crate::Oculus::Platform::CAPI {
     pub const DLL_NAME: &'static str = "ovrplatformloader";
     pub const VoipFilterBufferSize: i32 = 480i32;
-    #[cfg(feature = "Oculus+Platform+CAPI+ovrKeyValuePair")]
-    pub type ovrKeyValuePair = crate::Oculus::Platform::CAPI_ovrKeyValuePair;
-    #[cfg(feature = "Oculus+Platform+CAPI+OculusInitParams")]
-    pub type OculusInitParams = crate::Oculus::Platform::CAPI_OculusInitParams;
     #[cfg(feature = "Oculus+Platform+CAPI+ovrNetSyncVec3")]
     pub type ovrNetSyncVec3 = crate::Oculus::Platform::CAPI_ovrNetSyncVec3;
+    #[cfg(feature = "Oculus+Platform+CAPI+OculusInitParams")]
+    pub type OculusInitParams = crate::Oculus::Platform::CAPI_OculusInitParams;
     #[cfg(feature = "Oculus+Platform+CAPI+FilterCallback")]
     pub type FilterCallback = crate::Oculus::Platform::CAPI_FilterCallback;
+    #[cfg(feature = "Oculus+Platform+CAPI+ovrKeyValuePair")]
+    pub type ovrKeyValuePair = crate::Oculus::Platform::CAPI_ovrKeyValuePair;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -43,13 +50,6 @@ impl crate::Oculus::Platform::CAPI {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Oculus+Platform+CAPI")]
@@ -119,18 +119,6 @@ impl crate::Oculus::Platform::CAPI_FilterCallback {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         pcmData: quest_hook::libil2cpp::ByRefMut<
@@ -150,12 +138,24 @@ impl crate::Oculus::Platform::CAPI_FilterCallback {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Oculus+Platform+CAPI+FilterCallback")]
@@ -235,10 +235,10 @@ impl crate::Oculus::Platform::CAPI_ovrKeyValuePair {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_1(
+    pub fn _ctor_f64_2(
         &mut self,
         key: *mut crate::System::String,
-        value: i32,
+        value: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -247,10 +247,10 @@ impl crate::Oculus::Platform::CAPI_ovrKeyValuePair {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_f64_2(
+    pub fn _ctor_i32_1(
         &mut self,
         key: *mut crate::System::String,
-        value: f64,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

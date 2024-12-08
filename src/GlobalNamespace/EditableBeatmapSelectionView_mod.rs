@@ -29,21 +29,22 @@ impl std::ops::DerefMut for EditableBeatmapSelectionView {
 }
 #[cfg(feature = "EditableBeatmapSelectionView")]
 impl EditableBeatmapSelectionView {
-    pub fn get_interactable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_interactable", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn get_editButton(
+    pub fn SetBeatmap(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Button> {
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UI::Button = __cordl_object
-            .invoke("get_editButton", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetBeatmap", (beatmapKey))?;
         Ok(__cordl_ret)
     }
     pub fn SetVisibility(
@@ -57,14 +58,15 @@ impl EditableBeatmapSelectionView {
             .invoke("SetVisibility", (visible))?;
         Ok(__cordl_ret)
     }
-    pub fn get_clearButton(
+    pub fn Setup(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Button> {
+        showClearButton: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UI::Button = __cordl_object
-            .invoke("get_clearButton", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Setup", (showClearButton))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -75,6 +77,33 @@ impl EditableBeatmapSelectionView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_clearButton(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Button> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UI::Button = __cordl_object
+            .invoke("get_clearButton", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_editButton(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Button> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UI::Button = __cordl_object
+            .invoke("get_editButton", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_interactable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_interactable", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_showClearButton(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -95,28 +124,6 @@ impl EditableBeatmapSelectionView {
             .invoke("set_interactable", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Setup(
-        &mut self,
-        showClearButton: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Setup", (showClearButton))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetBeatmap(
-        &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetBeatmap", (beatmapKey))?;
-        Ok(__cordl_ret)
-    }
     pub fn set_showClearButton(
         &mut self,
         value: bool,
@@ -127,13 +134,6 @@ impl EditableBeatmapSelectionView {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_showClearButton", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "EditableBeatmapSelectionView")]

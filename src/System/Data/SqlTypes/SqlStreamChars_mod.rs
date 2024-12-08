@@ -24,13 +24,6 @@ impl std::ops::DerefMut for crate::System::Data::SqlTypes::SqlStreamChars {
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlStreamChars")]
 impl crate::System::Data::SqlTypes::SqlStreamChars {
-    pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_Position", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Read(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
@@ -43,13 +36,6 @@ impl crate::System::Data::SqlTypes::SqlStreamChars {
         let __cordl_ret: i32 = __cordl_object.invoke("Read", (buffer, offset, count))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_Length", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Seek(
         &mut self,
         offset: i64,
@@ -59,6 +45,20 @@ impl crate::System::Data::SqlTypes::SqlStreamChars {
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("Seek", (offset, origin))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_Length", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_Position", ())?;
         Ok(__cordl_ret)
     }
 }

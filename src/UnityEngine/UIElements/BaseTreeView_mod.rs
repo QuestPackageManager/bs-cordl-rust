@@ -28,49 +28,40 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::BaseTreeView {
 impl crate::UnityEngine::UIElements::BaseTreeView {
     #[cfg(feature = "UnityEngine+UIElements+BaseTreeView+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::BaseTreeView_UxmlTraits;
-    pub fn OnItemIndexChanged(
-        &mut self,
-        srcIndex: i32,
-        dstIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnItemIndexChanged", (srcIndex, dstIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_autoExpand(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_autoExpand", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetSelectionById_i32_0(
+    pub fn CollapseItem(
         &mut self,
         id: i32,
+        collapseAllChildren: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSelectionById", (id))?;
+            .invoke("CollapseItem", (id, collapseAllChildren))?;
         Ok(__cordl_ret)
     }
-    pub fn SetSelectionById_IEnumerable_1_1(
+    pub fn CollapseItemByIndex(
         &mut self,
-        ids: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+        index: i32,
+        collapseAll: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSelectionById", (ids))?;
+            .invoke("CollapseItemByIndex", (index, collapseAll))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateDragAndDropController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::ICollectionDragAndDropController,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::ICollectionDragAndDropController = __cordl_object
+            .invoke("CreateDragAndDropController", ())?;
         Ok(__cordl_ret)
     }
     pub fn CreateVirtualizationController(
@@ -81,6 +72,53 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateVirtualizationController", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExpandItem(
+        &mut self,
+        id: i32,
+        expandAllChildren: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExpandItem", (id, expandAllChildren))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExpandItemByIndex(
+        &mut self,
+        index: i32,
+        expandAll: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExpandItemByIndex", (index, expandAll))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetItemIndex(
+        &mut self,
+        id: i32,
+        expand: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetItemIndex", (id, expand))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleItemNavigation(
+        &mut self,
+        moveIn: bool,
+        altPressed: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("HandleItemNavigation", (moveIn, altPressed))?;
         Ok(__cordl_ret)
     }
     pub fn IsExpanded(&mut self, id: i32) -> quest_hook::libil2cpp::Result<bool> {
@@ -100,49 +138,73 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
         let __cordl_ret: bool = __cordl_object.invoke("IsExpandedByIndex", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn SetViewController(
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_1(itemHeight: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (itemHeight))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnItemIndexChanged(
         &mut self,
-        controller: *mut crate::UnityEngine::UIElements::CollectionViewController,
+        srcIndex: i32,
+        dstIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetViewController", (controller))?;
+            .invoke("OnItemIndexChanged", (srcIndex, dstIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn get_viewController(
+    pub fn OnTreeViewPointerUp(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::BaseTreeViewController,
-    > {
+        evt: *mut crate::UnityEngine::UIElements::PointerUpEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::BaseTreeViewController = __cordl_object
-            .invoke("get_viewController", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnTreeViewPointerUp", (evt))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleItemNavigation(
+    pub fn OnViewDataReady(
         &mut self,
-        moveIn: bool,
-        altPressed: bool,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("HandleItemNavigation", (moveIn, altPressed))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnViewDataReady", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_itemsSource(
+    pub fn SetSelectionById_IEnumerable_1_1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IList> {
+        ids: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IList = __cordl_object
-            .invoke("get_itemsSource", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetSelectionById", (ids))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetSelectionById_i32_0(
+        &mut self,
+        id: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetSelectionById", (id))?;
         Ok(__cordl_ret)
     }
     pub fn SetSelectionInternalById(
@@ -157,28 +219,26 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
             .invoke("SetSelectionInternalById", (ids, sendNotification))?;
         Ok(__cordl_ret)
     }
-    pub fn ExpandItem(
+    pub fn SetViewController(
         &mut self,
-        id: i32,
-        expandAllChildren: bool,
+        controller: *mut crate::UnityEngine::UIElements::CollectionViewController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExpandItem", (id, expandAllChildren))?;
+            .invoke("SetViewController", (controller))?;
         Ok(__cordl_ret)
     }
-    pub fn CollapseItemByIndex(
+    pub fn _SetSelectionInternalById_b__47_0(
         &mut self,
-        index: i32,
-        collapseAll: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        id: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CollapseItemByIndex", (index, collapseAll))?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("<SetSelectionInternalById>b__47_0", (id))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -202,90 +262,11 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
             .invoke(".ctor", (itemHeight))?;
         Ok(__cordl_ret)
     }
-    pub fn CollapseItem(
-        &mut self,
-        id: i32,
-        collapseAllChildren: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CollapseItem", (id, collapseAllChildren))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnViewDataReady(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnViewDataReady", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_expandedItemIds(
-        &mut self,
-        value: *mut crate::System::Collections::Generic::List_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_expandedItemIds", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExpandItemByIndex(
-        &mut self,
-        index: i32,
-        expandAll: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExpandItemByIndex", (index, expandAll))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _SetSelectionInternalById_b__47_0(
-        &mut self,
-        id: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("<SetSelectionInternalById>b__47_0", (id))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateDragAndDropController(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::ICollectionDragAndDropController,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::ICollectionDragAndDropController = __cordl_object
-            .invoke("CreateDragAndDropController", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_autoExpand(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_autoExpand", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetItemIndex(
-        &mut self,
-        id: i32,
-        expand: bool,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetItemIndex", (id, expand))?;
         Ok(__cordl_ret)
     }
     pub fn get_expandedItemIds(
@@ -300,32 +281,49 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
             .invoke("get_expandedItemIds", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnTreeViewPointerUp(
+    pub fn get_itemsSource(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerUpEvent,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IList> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IList = __cordl_object
+            .invoke("get_itemsSource", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_viewController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::BaseTreeViewController,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::BaseTreeViewController = __cordl_object
+            .invoke("get_viewController", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_autoExpand(
+        &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnTreeViewPointerUp", (evt))?;
+            .invoke("set_autoExpand", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_1(
-        itemHeight: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (itemHeight))?;
-        Ok(__cordl_object)
+    pub fn set_expandedItemIds(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::List_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_expandedItemIds", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseTreeView")]
@@ -364,16 +362,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::BaseTreeView_UxmlTra
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseTreeView+UxmlTraits")]
 impl crate::UnityEngine::UIElements::BaseTreeView_UxmlTraits {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Init(
         &mut self,
         ve: *mut crate::UnityEngine::UIElements::VisualElement,
@@ -387,12 +375,22 @@ impl crate::UnityEngine::UIElements::BaseTreeView_UxmlTraits {
             .invoke("Init", (ve, bag, cc))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseTreeView+UxmlTraits")]

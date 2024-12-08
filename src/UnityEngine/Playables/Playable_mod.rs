@@ -22,6 +22,37 @@ for crate::UnityEngine::Playables::Playable {
 }
 #[cfg(feature = "UnityEngine+Playables+Playable")]
 impl crate::UnityEngine::Playables::Playable {
+    pub fn Equals(
+        &mut self,
+        other: crate::UnityEngine::Playables::Playable,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHandle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHandle",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPlayableType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetPlayableType",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn IsPlayableOfType<T>(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -42,37 +73,6 @@ impl crate::UnityEngine::Playables::Playable {
             self,
             ".ctor",
             (handle),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPlayableType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetPlayableType",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        other: crate::UnityEngine::Playables::Playable,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHandle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHandle",
-            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -30,34 +30,6 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::SymbolsDictionary {
 }
 #[cfg(feature = "System+Xml+Schema+SymbolsDictionary")]
 impl crate::System::Xml::Schema::SymbolsDictionary {
-    pub fn get_Item(
-        &mut self,
-        name: *mut crate::System::Xml::XmlQualifiedName,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Item", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsUpaEnforced(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsUpaEnforced", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AddName(
         &mut self,
         name: *mut crate::System::Xml::XmlQualifiedName,
@@ -67,56 +39,6 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("AddName", (name, particle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNamespaceListSymbols(
-        &mut self,
-        list: *mut crate::System::Xml::Schema::NamespaceList,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
-            .invoke("GetNamespaceListSymbols", (list))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Exists(
-        &mut self,
-        name: *mut crate::System::Xml::XmlQualifiedName,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Exists", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsUpaEnforced(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsUpaEnforced", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetParticle(
-        &mut self,
-        symbol: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetParticle", (symbol))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NameOf(
-        &mut self,
-        symbol: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("NameOf", (symbol))?;
         Ok(__cordl_ret)
     }
     pub fn AddNamespaceList(
@@ -144,6 +66,56 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
             .invoke("AddWildcard", (wildcard, particle))?;
         Ok(__cordl_ret)
     }
+    pub fn Exists(
+        &mut self,
+        name: *mut crate::System::Xml::XmlQualifiedName,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Exists", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNamespaceListSymbols(
+        &mut self,
+        list: *mut crate::System::Xml::Schema::NamespaceList,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
+            .invoke("GetNamespaceListSymbols", (list))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetParticle(
+        &mut self,
+        symbol: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("GetParticle", (symbol))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NameOf(
+        &mut self,
+        symbol: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("NameOf", (symbol))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -154,12 +126,40 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsUpaEnforced(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsUpaEnforced", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(
+        &mut self,
+        name: *mut crate::System::Xml::XmlQualifiedName,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Item", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IsUpaEnforced(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsUpaEnforced", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+SymbolsDictionary")]

@@ -38,61 +38,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::TreeView {
 }
 #[cfg(feature = "UnityEngine+UIElements+TreeView")]
 impl crate::UnityEngine::UIElements::TreeView {
-    #[cfg(feature = "UnityEngine+UIElements+TreeView+UxmlFactory")]
-    pub type UxmlFactory = crate::UnityEngine::UIElements::TreeView_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+TreeView+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::TreeView_UxmlTraits;
-    pub fn get_bindItem(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Action_2<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-            i32,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Action_2<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-            i32,
-        > = __cordl_object.invoke("get_bindItem", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_bindItem(
-        &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-            i32,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_bindItem", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_makeItem(
-        &mut self,
-        value: *mut crate::System::Func_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_makeItem", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HasValidDataAndBindings(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasValidDataAndBindings", ())?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "UnityEngine+UIElements+TreeView+UxmlFactory")]
+    pub type UxmlFactory = crate::UnityEngine::UIElements::TreeView_UxmlFactory;
     pub fn CreateViewController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -105,31 +54,34 @@ impl crate::UnityEngine::UIElements::TreeView {
             .invoke("CreateViewController", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_makeItem(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_1<*mut crate::UnityEngine::UIElements::VisualElement>,
-    > {
+    pub fn HasValidDataAndBindings(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        > = __cordl_object.invoke("get_makeItem", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("HasValidDataAndBindings", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_destroyItem(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Action_1<*mut crate::UnityEngine::UIElements::VisualElement>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Action_1<
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Func_1_Action_2_1(
+        makeItem: *mut crate::System::Func_1<
             *mut crate::UnityEngine::UIElements::VisualElement,
-        > = __cordl_object.invoke("get_destroyItem", ())?;
-        Ok(__cordl_ret)
+        >,
+        bindItem: *mut crate::System::Action_2<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+            i32,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (makeItem, bindItem))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_0(
         &mut self,
@@ -158,6 +110,49 @@ impl crate::UnityEngine::UIElements::TreeView {
             .invoke(".ctor", (makeItem, bindItem))?;
         Ok(__cordl_ret)
     }
+    pub fn get_bindItem(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Action_2<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+            i32,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Action_2<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+            i32,
+        > = __cordl_object.invoke("get_bindItem", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_destroyItem(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Action_1<*mut crate::UnityEngine::UIElements::VisualElement>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        > = __cordl_object.invoke("get_destroyItem", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_makeItem(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Func_1<*mut crate::UnityEngine::UIElements::VisualElement>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Func_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        > = __cordl_object.invoke("get_makeItem", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_unbindItem(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -175,27 +170,32 @@ impl crate::UnityEngine::UIElements::TreeView {
         > = __cordl_object.invoke("get_unbindItem", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Func_1_Action_2_1(
-        makeItem: *mut crate::System::Func_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        >,
-        bindItem: *mut crate::System::Action_2<
+    pub fn set_bindItem(
+        &mut self,
+        value: *mut crate::System::Action_2<
             *mut crate::UnityEngine::UIElements::VisualElement,
             i32,
         >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (makeItem, bindItem))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_bindItem", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_makeItem(
+        &mut self,
+        value: *mut crate::System::Func_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_makeItem", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TreeView")]
@@ -239,6 +239,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::TreeView_UxmlFactory
 }
 #[cfg(feature = "UnityEngine+UIElements+TreeView+UxmlFactory")]
 impl crate::UnityEngine::UIElements::TreeView_UxmlFactory {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -248,13 +255,6 @@ impl crate::UnityEngine::UIElements::TreeView_UxmlFactory {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TreeView+UxmlFactory")]
@@ -293,6 +293,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::TreeView_UxmlTraits 
 }
 #[cfg(feature = "UnityEngine+UIElements+TreeView+UxmlTraits")]
 impl crate::UnityEngine::UIElements::TreeView_UxmlTraits {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -302,13 +309,6 @@ impl crate::UnityEngine::UIElements::TreeView_UxmlTraits {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TreeView+UxmlTraits")]

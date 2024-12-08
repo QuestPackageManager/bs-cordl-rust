@@ -45,67 +45,6 @@ impl GridView {
     type IDataSource = crate::GlobalNamespace::GridView_IDataSource;
     #[cfg(feature = "GridView+GridViewCellsEnumerator")]
     pub type GridViewCellsEnumerator = crate::GlobalNamespace::GridView_GridViewCellsEnumerator;
-    pub fn SetDataSource(
-        &mut self,
-        newDataSource: *mut crate::GlobalNamespace::GridView_IDataSource,
-        reloadData: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetDataSource", (newDataSource, reloadData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_cellsEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::GridView_GridViewCellsEnumerator,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::GlobalNamespace::GridView_GridViewCellsEnumerator = __cordl_object
-            .invoke("get_cellsEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_cellsEnumerator(
-        &mut self,
-        value: *mut crate::GlobalNamespace::GridView_GridViewCellsEnumerator,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_cellsEnumerator", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_rowCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_rowCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_dataSource(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::GridView_IDataSource,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::GlobalNamespace::GridView_IDataSource = __cordl_object
-            .invoke("get_dataSource", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_visibleColumnCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_visibleColumnCount", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetActiveCellsForIdentifier(
         &mut self,
         prefab: *mut crate::UnityEngine::MonoBehaviour,
@@ -136,12 +75,12 @@ impl GridView {
         let __cordl_ret: T = __cordl_object.invoke("GetReusableCellView", (prefab))?;
         Ok(__cordl_ret)
     }
-    pub fn get_columnCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_columnCount", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ReloadData(
         &mut self,
@@ -151,6 +90,18 @@ impl GridView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReloadData", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetDataSource(
+        &mut self,
+        newDataSource: *mut crate::GlobalNamespace::GridView_IDataSource,
+        reloadData: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetDataSource", (newDataSource, reloadData))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -163,12 +114,61 @@ impl GridView {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_cellsEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::GridView_GridViewCellsEnumerator,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::GlobalNamespace::GridView_GridViewCellsEnumerator = __cordl_object
+            .invoke("get_cellsEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_columnCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_columnCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_dataSource(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::GridView_IDataSource,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::GlobalNamespace::GridView_IDataSource = __cordl_object
+            .invoke("get_dataSource", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rowCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_rowCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_visibleColumnCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_visibleColumnCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_cellsEnumerator(
+        &mut self,
+        value: *mut crate::GlobalNamespace::GridView_GridViewCellsEnumerator,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_cellsEnumerator", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "GridView")]
@@ -210,17 +210,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GridView_GridViewCellsEnumer
 impl crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
     #[cfg(feature = "GridView+GridViewCellsEnumerator+_GetEnumerator_d__1")]
     pub type _GetEnumerator_d__1 = crate::GlobalNamespace::GridViewCellsEnumerator__GetEnumerator_d__1;
-    pub fn _ctor(
-        &mut self,
-        gridView: *mut GridView,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (gridView))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -236,6 +225,13 @@ impl crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(gridView: *mut GridView) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (gridView))?;
+        Ok(__cordl_object)
+    }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
@@ -246,14 +242,16 @@ impl crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
             .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         gridView: *mut GridView,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (gridView))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (gridView))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "GridView+GridViewCellsEnumerator")]
@@ -292,20 +290,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GridView_IDataSource {
 }
 #[cfg(feature = "GridView+IDataSource")]
 impl crate::GlobalNamespace::GridView_IDataSource {
-    pub fn GetCellHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetCellHeight", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetNumberOfCells", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CellForIdx(
         &mut self,
         gridView: *mut GridView,
@@ -318,11 +302,25 @@ impl crate::GlobalNamespace::GridView_IDataSource {
             .invoke("CellForIdx", (gridView, idx))?;
         Ok(__cordl_ret)
     }
+    pub fn GetCellHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("GetCellHeight", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetCellWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetCellWidth", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetNumberOfCells", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

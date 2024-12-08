@@ -24,82 +24,14 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::DerOutputStream {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerOutputStream")]
 impl crate::Org::BouncyCastle::Asn1::DerOutputStream {
-    pub fn WriteObject_Object0(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteObject", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteObject_Asn1Encodable1(
-        &mut self,
-        obj: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteObject", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteObject_Asn1Object2(
-        &mut self,
-        obj: *mut crate::Org::BouncyCastle::Asn1::Asn1Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteObject", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteNull(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteNull", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteTag(
-        &mut self,
-        flags: i32,
-        tagNo: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteTag", (flags, tagNo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         os: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (os))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteLength(
-        &mut self,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteLength", (length))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (os))?;
+        Ok(__cordl_object)
     }
     pub fn WriteEncoded_Il2CppArray0(
         &mut self,
@@ -111,19 +43,6 @@ impl crate::Org::BouncyCastle::Asn1::DerOutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteEncoded", (tag, bytes))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteEncoded_u8_Il2CppArray1(
-        &mut self,
-        tag: i32,
-        first: u8,
-        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteEncoded", (tag, first, bytes))?;
         Ok(__cordl_ret)
     }
     pub fn WriteEncoded_Il2CppArray_i32_i32_2(
@@ -153,14 +72,95 @@ impl crate::Org::BouncyCastle::Asn1::DerOutputStream {
             .invoke("WriteEncoded", (flags, tagNo, bytes))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn WriteEncoded_u8_Il2CppArray1(
+        &mut self,
+        tag: i32,
+        first: u8,
+        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteEncoded", (tag, first, bytes))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteLength(
+        &mut self,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteLength", (length))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteNull(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteNull", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteObject_Asn1Encodable1(
+        &mut self,
+        obj: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteObject", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteObject_Asn1Object2(
+        &mut self,
+        obj: *mut crate::Org::BouncyCastle::Asn1::Asn1Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteObject", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteObject_Object0(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteObject", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteTag(
+        &mut self,
+        flags: i32,
+        tagNo: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteTag", (flags, tagNo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
         os: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (os))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (os))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerOutputStream")]

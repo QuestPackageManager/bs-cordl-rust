@@ -23,10 +23,10 @@ impl std::ops::DerefMut for OVRKeyboard {
 }
 #[cfg(feature = "OVRKeyboard")]
 impl OVRKeyboard {
-    #[cfg(feature = "OVRKeyboard+TrackedKeyboardInfo")]
-    pub type TrackedKeyboardInfo = crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo;
     #[cfg(feature = "OVRKeyboard+TrackedKeyboardState")]
     pub type TrackedKeyboardState = crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState;
+    #[cfg(feature = "OVRKeyboard+TrackedKeyboardInfo")]
+    pub type TrackedKeyboardInfo = crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo;
 }
 #[cfg(feature = "OVRKeyboard")]
 impl quest_hook::libil2cpp::ObjectType for OVRKeyboard {

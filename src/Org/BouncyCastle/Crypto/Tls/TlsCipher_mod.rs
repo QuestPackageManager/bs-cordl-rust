@@ -24,15 +24,19 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsCipher {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsCipher")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsCipher {
-    pub fn GetPlaintextLimit(
+    pub fn DecodeCiphertext(
         &mut self,
-        ciphertextLimit: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+        seqNo: i64,
+        _cordl_type: u8,
+        ciphertext: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetPlaintextLimit", (ciphertextLimit))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("DecodeCiphertext", (seqNo, _cordl_type, ciphertext, offset, len))?;
         Ok(__cordl_ret)
     }
     pub fn EncodePlaintext(
@@ -50,19 +54,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsCipher {
             .invoke("EncodePlaintext", (seqNo, _cordl_type, plaintext, offset, len))?;
         Ok(__cordl_ret)
     }
-    pub fn DecodeCiphertext(
+    pub fn GetPlaintextLimit(
         &mut self,
-        seqNo: i64,
-        _cordl_type: u8,
-        ciphertext: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        len: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        ciphertextLimit: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("DecodeCiphertext", (seqNo, _cordl_type, ciphertext, offset, len))?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetPlaintextLimit", (ciphertextLimit))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

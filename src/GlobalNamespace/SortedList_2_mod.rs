@@ -39,24 +39,6 @@ impl<
     T: quest_hook::libil2cpp::Type,
     TBase: quest_hook::libil2cpp::Type,
 > SortedList_2<T, TBase> {
-    pub fn get_items(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::LinkedList_1<TBase>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::LinkedList_1<TBase> = __cordl_object
-            .invoke("get_items", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn InsertInternal(
         &mut self,
         newItem: *mut crate::System::Collections::Generic::LinkedListNode_1<TBase>,
@@ -74,7 +56,10 @@ impl<
             .invoke("InsertInternal", (newItem))?;
         Ok(__cordl_ret)
     }
-    pub fn get_count(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    pub fn Insert_LinkedListNode_1_1(
+        &mut self,
+        newNode: *mut crate::System::Collections::Generic::LinkedListNode_1<TBase>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -84,7 +69,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_count", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Insert", (newNode))?;
         Ok(__cordl_ret)
     }
     pub fn Insert_TBase0(
@@ -107,22 +93,14 @@ impl<
         > = __cordl_object.invoke("Insert", (newItem))?;
         Ok(__cordl_ret)
     }
-    pub fn Insert_LinkedListNode_1_1(
-        &mut self,
-        newNode: *mut crate::System::Collections::Generic::LinkedListNode_1<TBase>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Insert", (newNode))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        sortedListDataProcessor: *mut ISortedListItemProcessor_1<TBase>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (sortedListDataProcessor))?;
+        Ok(__cordl_object)
     }
     pub fn Remove(
         &mut self,
@@ -175,14 +153,36 @@ impl<
             .invoke(".ctor", (sortedListDataProcessor))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        sortedListDataProcessor: *mut ISortedListItemProcessor_1<TBase>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (sortedListDataProcessor))?;
-        Ok(__cordl_object)
+    pub fn get_count(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_count", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_items(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::LinkedList_1<TBase>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::LinkedList_1<TBase> = __cordl_object
+            .invoke("get_items", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "SortedList_2")]

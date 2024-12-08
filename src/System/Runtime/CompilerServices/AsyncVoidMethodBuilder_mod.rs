@@ -25,24 +25,21 @@ for crate::System::Runtime::CompilerServices::AsyncVoidMethodBuilder {
 }
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncVoidMethodBuilder")]
 impl crate::System::Runtime::CompilerServices::AsyncVoidMethodBuilder {
-    pub fn SetException(
+    pub fn AwaitOnCompleted<TAwaiter, TStateMachine>(
         &mut self,
-        exception: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        awaiter: quest_hook::libil2cpp::ByRefMut<TAwaiter>,
+        stateMachine: quest_hook::libil2cpp::ByRefMut<TStateMachine>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TAwaiter: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TStateMachine: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetException",
-            (exception),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn NotifySynchronizationContextOfCompletion(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "NotifySynchronizationContextOfCompletion",
-            (),
+            "AwaitOnCompleted",
+            (awaiter, stateMachine),
         )?;
         Ok(__cordl_ret)
     }
@@ -64,18 +61,24 @@ impl crate::System::Runtime::CompilerServices::AsyncVoidMethodBuilder {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Start<TStateMachine>(
+    pub fn NotifySynchronizationContextOfCompletion(
         &mut self,
-        stateMachine: quest_hook::libil2cpp::ByRefMut<TStateMachine>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TStateMachine: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Start",
-            (stateMachine),
+            "NotifySynchronizationContextOfCompletion",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetException(
+        &mut self,
+        exception: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetException",
+            (exception),
         )?;
         Ok(__cordl_ret)
     }
@@ -100,21 +103,18 @@ impl crate::System::Runtime::CompilerServices::AsyncVoidMethodBuilder {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn AwaitOnCompleted<TAwaiter, TStateMachine>(
+    pub fn Start<TStateMachine>(
         &mut self,
-        awaiter: quest_hook::libil2cpp::ByRefMut<TAwaiter>,
         stateMachine: quest_hook::libil2cpp::ByRefMut<TStateMachine>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TAwaiter: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
         TStateMachine: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "AwaitOnCompleted",
-            (awaiter, stateMachine),
+            "Start",
+            (stateMachine),
         )?;
         Ok(__cordl_ret)
     }

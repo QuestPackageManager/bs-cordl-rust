@@ -28,6 +28,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::X509::X509CrlParser {
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509CrlParser")]
 impl crate::Org::BouncyCastle::X509::X509CrlParser {
+    pub fn CreateX509Crl(
+        &mut self,
+        c: *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::X509::X509Crl> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::X509Crl = __cordl_object
+            .invoke("CreateX509Crl", (c))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetCrl(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::X509::X509Crl> {
@@ -38,7 +49,32 @@ impl crate::Org::BouncyCastle::X509::X509CrlParser {
             .invoke("GetCrl", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ReadPemCrl(
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool1(lazyAsn1: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (lazyAsn1))?;
+        Ok(__cordl_object)
+    }
+    pub fn ReadCrl_Il2CppArray0(
+        &mut self,
+        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::X509::X509Crl> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::X509Crl = __cordl_object
+            .invoke("ReadCrl", (input))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadCrl_Stream1(
         &mut self,
         inStream: *mut crate::System::IO::Stream,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::X509::X509Crl> {
@@ -46,7 +82,7 @@ impl crate::Org::BouncyCastle::X509::X509CrlParser {
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::X509::X509Crl = __cordl_object
-            .invoke("ReadPemCrl", (inStream))?;
+            .invoke("ReadCrl", (inStream))?;
         Ok(__cordl_ret)
     }
     pub fn ReadCrls_Il2CppArray0(
@@ -71,18 +107,18 @@ impl crate::Org::BouncyCastle::X509::X509CrlParser {
             .invoke("ReadCrls", (inStream))?;
         Ok(__cordl_ret)
     }
-    pub fn ReadCrl_Il2CppArray0(
+    pub fn ReadDerCrl(
         &mut self,
-        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        dIn: *mut crate::Org::BouncyCastle::Asn1::Asn1InputStream,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::X509::X509Crl> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::X509::X509Crl = __cordl_object
-            .invoke("ReadCrl", (input))?;
+            .invoke("ReadDerCrl", (dIn))?;
         Ok(__cordl_ret)
     }
-    pub fn ReadCrl_Stream1(
+    pub fn ReadPemCrl(
         &mut self,
         inStream: *mut crate::System::IO::Stream,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::X509::X509Crl> {
@@ -90,7 +126,7 @@ impl crate::Org::BouncyCastle::X509::X509CrlParser {
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::X509::X509Crl = __cordl_object
-            .invoke("ReadCrl", (inStream))?;
+            .invoke("ReadPemCrl", (inStream))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -113,44 +149,6 @@ impl crate::Org::BouncyCastle::X509::X509CrlParser {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (lazyAsn1))?;
         Ok(__cordl_ret)
-    }
-    pub fn CreateX509Crl(
-        &mut self,
-        c: *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::X509::X509Crl> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::X509Crl = __cordl_object
-            .invoke("CreateX509Crl", (c))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadDerCrl(
-        &mut self,
-        dIn: *mut crate::Org::BouncyCastle::Asn1::Asn1InputStream,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::X509::X509Crl> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::X509Crl = __cordl_object
-            .invoke("ReadDerCrl", (dIn))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New__cordl_bool1(
-        lazyAsn1: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (lazyAsn1))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509CrlParser")]

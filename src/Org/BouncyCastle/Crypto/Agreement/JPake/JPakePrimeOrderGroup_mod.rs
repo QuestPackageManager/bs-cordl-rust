@@ -30,35 +30,28 @@ for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroup {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakePrimeOrderGroup")]
 impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroup {
-    pub fn get_Q(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("get_Q", ())?;
-        Ok(__cordl_ret)
+    pub fn New_BigInteger_BigInteger_BigInteger0(
+        p: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        q: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        g: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (p, q, g))?;
+        Ok(__cordl_object)
     }
-    pub fn get_P(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("get_P", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_G(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("get_G", ())?;
-        Ok(__cordl_ret)
+    pub fn New__cordl_bool1(
+        p: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        q: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        g: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        skipChecks: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (p, q, g, skipChecks))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_BigInteger_BigInteger_BigInteger0(
         &mut self,
@@ -87,28 +80,35 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroup {
             .invoke(".ctor", (p, q, g, skipChecks))?;
         Ok(__cordl_ret)
     }
-    pub fn New_BigInteger_BigInteger_BigInteger0(
-        p: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        q: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        g: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (p, q, g))?;
-        Ok(__cordl_object)
+    pub fn get_G(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_G", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New__cordl_bool1(
-        p: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        q: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        g: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        skipChecks: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (p, q, g, skipChecks))?;
-        Ok(__cordl_object)
+    pub fn get_P(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_P", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Q(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_Q", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakePrimeOrderGroup")]

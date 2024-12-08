@@ -136,112 +136,27 @@ impl crate::Unity::Burst::BurstCompilerOptions {
     pub const OptionTempDirectory: &'static str = "temp-folder=";
     pub const OptionValidateExternalToolChain: &'static str = "validate-external-tool-chain";
     pub const OptionVerbose: &'static str = "verbose";
-    pub fn set_EnableBurstTimings(
+    pub fn Clone(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Unity::Burst::BurstCompilerOptions> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_EnableBurstTimings", (value))?;
+        let __cordl_ret: *mut crate::Unity::Burst::BurstCompilerOptions = __cordl_object
+            .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_ForceEnableBurstSafetyChecks(
+    pub fn GetOptions(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        attr: *mut crate::Unity::Burst::BurstCompileAttribute,
+        isForILPostProcessing: bool,
+        isForCompilerClient: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_ForceEnableBurstSafetyChecks", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_EnableBurstDebug(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_EnableBurstDebug", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_EnableBurstCompilation(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_EnableBurstCompilation", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_EnableBurstTimings(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_EnableBurstTimings", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_DisableOptimizations(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_DisableOptimizations", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_RequiresSynchronousCompilation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_RequiresSynchronousCompilation", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_OptionsChanged(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Action> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Action = __cordl_object
-            .invoke("get_OptionsChanged", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_EnableBurstCompileSynchronously(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_EnableBurstCompileSynchronously", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_EnableBurstCompilation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_EnableBurstCompilation", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_EnableBurstDebug(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_EnableBurstDebug", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsGlobal(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsGlobal", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetOptions", (attr, isForILPostProcessing, isForCompilerClient))?;
         Ok(__cordl_ret)
     }
     pub fn MaybeTriggerRecompilation(
@@ -252,6 +167,47 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MaybeTriggerRecompilation", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool1(isGlobal: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (isGlobal))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnOptionsChanged(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnOptionsChanged", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetOptions(
+        &mut self,
+        member: *mut crate::System::Reflection::MemberInfo,
+        flagsOut: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        isForILPostProcessing: bool,
+        isForCompilerClient: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "TryGetOptions",
+                (member, flagsOut, isForILPostProcessing, isForCompilerClient),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -275,6 +231,37 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             .invoke(".ctor", (isGlobal))?;
         Ok(__cordl_ret)
     }
+    pub fn get_DisableOptimizations(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_DisableOptimizations", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_EnableBurstCompilation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_EnableBurstCompilation", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_EnableBurstCompileSynchronously(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_EnableBurstCompileSynchronously", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_EnableBurstDebug(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_EnableBurstDebug", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_EnableBurstSafetyChecks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -285,14 +272,62 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             .invoke("get_EnableBurstSafetyChecks", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Clone(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Unity::Burst::BurstCompilerOptions> {
+    pub fn get_EnableBurstTimings(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Unity::Burst::BurstCompilerOptions = __cordl_object
-            .invoke("Clone", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_EnableBurstTimings", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_EnableFastMath(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_EnableFastMath", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ForceEnableBurstSafetyChecks(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_ForceEnableBurstSafetyChecks", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsEnabled", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsGlobal(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsGlobal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_OptionsChanged(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Action> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Action = __cordl_object
+            .invoke("get_OptionsChanged", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RequiresSynchronousCompilation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_RequiresSynchronousCompilation", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_DisableOptimizations(
@@ -306,58 +341,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             .invoke("set_DisableOptimizations", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_OptionsChanged(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_OptionsChanged", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetOptions(
-        &mut self,
-        attr: *mut crate::Unity::Burst::BurstCompileAttribute,
-        isForILPostProcessing: bool,
-        isForCompilerClient: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetOptions", (attr, isForILPostProcessing, isForCompilerClient))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetOptions(
-        &mut self,
-        member: *mut crate::System::Reflection::MemberInfo,
-        flagsOut: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-        isForILPostProcessing: bool,
-        isForCompilerClient: bool,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "TryGetOptions",
-                (member, flagsOut, isForILPostProcessing, isForCompilerClient),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnOptionsChanged(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnOptionsChanged", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_EnableBurstSafetyChecks(
+    pub fn set_EnableBurstCompilation(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -365,18 +349,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_EnableBurstSafetyChecks", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ForceEnableBurstSafetyChecks(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ForceEnableBurstSafetyChecks", (value))?;
+            .invoke("set_EnableBurstCompilation", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_EnableBurstCompileSynchronously(
@@ -390,6 +363,39 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             .invoke("set_EnableBurstCompileSynchronously", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn set_EnableBurstDebug(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_EnableBurstDebug", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_EnableBurstSafetyChecks(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_EnableBurstSafetyChecks", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_EnableBurstTimings(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_EnableBurstTimings", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_EnableFastMath(
         &mut self,
         value: bool,
@@ -401,35 +407,27 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             .invoke("set_EnableFastMath", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn set_ForceEnableBurstSafetyChecks(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsEnabled", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ForceEnableBurstSafetyChecks", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_EnableFastMath(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn set_OptionsChanged(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_EnableFastMath", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_OptionsChanged", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New__cordl_bool1(
-        isGlobal: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (isGlobal))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Burst+BurstCompilerOptions")]

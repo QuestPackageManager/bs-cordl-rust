@@ -33,9 +33,12 @@ for crate::UnityEngine::UIElements::DefaultMultiColumnTreeViewController_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::DefaultMultiColumnTreeViewController_1<T> {
-    pub fn get_itemsSource(
+    pub fn GetAllItemIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IList>
+        rootIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -43,8 +46,51 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IList = __cordl_object
-            .invoke("get_itemsSource", ())?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<i32> = __cordl_object
+            .invoke("GetAllItemIds", (rootIds))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetChildrenIds(
+        &mut self,
+        id: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<i32> = __cordl_object
+            .invoke("GetChildrenIds", (id))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetItemForIndex(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("GetItemForIndex", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetParentId(&mut self, id: i32) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetParentId", (id))?;
         Ok(__cordl_ret)
     }
     pub fn HasChildren(&mut self, id: i32) -> quest_hook::libil2cpp::Result<bool>
@@ -56,6 +102,69 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasChildren", (id))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsChildOf(
+        &mut self,
+        childId: i32,
+        id: i32,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsChildOf", (childId, id))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Move(
+        &mut self,
+        id: i32,
+        newParentId: i32,
+        childIndex: i32,
+        rebuildTree: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Move", (id, newParentId, childIndex, rebuildTree))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        columns: *mut crate::UnityEngine::UIElements::Columns,
+        sortDescriptions: *mut crate::UnityEngine::UIElements::SortColumnDescriptions,
+        sortedColumns: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::SortColumnDescription,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (columns, sortDescriptions, sortedColumns))?;
+        Ok(__cordl_object)
+    }
+    pub fn SetRootItems(
+        &mut self,
+        items: *mut crate::System::Collections::Generic::IList_1<
+            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetRootItems", (items))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -77,10 +186,9 @@ impl<
             .invoke(".ctor", (columns, sortDescriptions, sortedColumns))?;
         Ok(__cordl_ret)
     }
-    pub fn GetItemForIndex(
+    pub fn get_itemsSource(
         &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IList>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -88,103 +196,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetItemForIndex", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetChildrenIds(
-        &mut self,
-        id: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<i32> = __cordl_object
-            .invoke("GetChildrenIds", (id))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetRootItems(
-        &mut self,
-        items: *mut crate::System::Collections::Generic::IList_1<
-            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetRootItems", (items))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetParentId(&mut self, id: i32) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetParentId", (id))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAllItemIds(
-        &mut self,
-        rootIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<i32> = __cordl_object
-            .invoke("GetAllItemIds", (rootIds))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Move(
-        &mut self,
-        id: i32,
-        newParentId: i32,
-        childIndex: i32,
-        rebuildTree: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Move", (id, newParentId, childIndex, rebuildTree))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_itemsSource(
-        &mut self,
-        value: *mut crate::System::Collections::IList,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_itemsSource", (value))?;
+        let __cordl_ret: *mut crate::System::Collections::IList = __cordl_object
+            .invoke("get_itemsSource", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_treeDataController(
@@ -203,11 +216,10 @@ impl<
             .invoke("get_treeDataController", ())?;
         Ok(__cordl_ret)
     }
-    pub fn IsChildOf(
+    pub fn set_itemsSource(
         &mut self,
-        childId: i32,
-        id: i32,
-    ) -> quest_hook::libil2cpp::Result<bool>
+        value: *mut crate::System::Collections::IList,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -215,21 +227,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("IsChildOf", (childId, id))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_itemsSource", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        columns: *mut crate::UnityEngine::UIElements::Columns,
-        sortDescriptions: *mut crate::UnityEngine::UIElements::SortColumnDescriptions,
-        sortedColumns: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::SortColumnDescription,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (columns, sortDescriptions, sortedColumns))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultMultiColumnTreeViewController_1")]

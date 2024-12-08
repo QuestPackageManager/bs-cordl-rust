@@ -72,76 +72,24 @@ impl OVRHand {
     pub type HandFinger = crate::GlobalNamespace::OVRHand_HandFinger;
     #[cfg(feature = "OVRHand+TrackingConfidence")]
     pub type TrackingConfidence = crate::GlobalNamespace::OVRHand_TrackingConfidence;
-    pub fn get_HandConfidence(
+    pub fn Awake(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRHand_TrackingConfidence,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRHand_TrackingConfidence = __cordl_object
-            .invoke("get_HandConfidence", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsSystemGestureInProgress(
-        &mut self,
-        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsSystemGestureInProgress", (value))?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsDataHighConfidence(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsDataHighConfidence", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OVRSkeleton_IOVRSkeletonDataProvider_get_enabled(
+    pub fn FixedUpdate(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("OVRSkeleton.IOVRSkeletonDataProvider.get_enabled", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsDominantHand(
-        &mut self,
-        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsDominantHand", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetFingerIsPinching(
-        &mut self,
-        finger: crate::GlobalNamespace::OVRHand_HandFinger,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("GetFingerIsPinching", (finger))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsDataHighConfidence(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsDataHighConfidence", (value))?;
+            .invoke("FixedUpdate", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetFingerConfidence(
@@ -157,6 +105,27 @@ impl OVRHand {
             .invoke("GetFingerConfidence", (finger))?;
         Ok(__cordl_ret)
     }
+    pub fn GetFingerIsPinching(
+        &mut self,
+        finger: crate::GlobalNamespace::OVRHand_HandFinger,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("GetFingerIsPinching", (finger))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetFingerPinchStrength(
+        &mut self,
+        finger: crate::GlobalNamespace::OVRHand_HandFinger,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("GetFingerPinchStrength", (finger))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetHandState(
         &mut self,
         step: crate::GlobalNamespace::OVRPlugin_Step,
@@ -168,34 +137,36 @@ impl OVRHand {
             .invoke("GetHandState", (step))?;
         Ok(__cordl_ret)
     }
-    pub fn get_HandScale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_HandScale", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn set_HandScale(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_HandScale", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OVRSkeleton_IOVRSkeletonDataProvider_GetSkeletonType(
+    pub fn OVRMeshRenderer_IOVRMeshRendererDataProvider_GetMeshRendererData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRSkeleton_SkeletonType,
+        crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::GlobalNamespace::OVRSkeleton_SkeletonType = __cordl_object
-            .invoke("OVRSkeleton.IOVRSkeletonDataProvider.GetSkeletonType", ())?;
+        let __cordl_ret: crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData = __cordl_object
+            .invoke(
+                "OVRMeshRenderer.IOVRMeshRendererDataProvider.GetMeshRendererData",
+                (),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn OVRMesh_IOVRMeshDataProvider_GetMeshType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMesh_MeshType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::OVRMesh_MeshType = __cordl_object
+            .invoke("OVRMesh.IOVRMeshDataProvider.GetMeshType", ())?;
         Ok(__cordl_ret)
     }
     pub fn OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider_GetSkeletonRendererData(
@@ -225,97 +196,26 @@ impl OVRHand {
             .invoke("OVRSkeleton.IOVRSkeletonDataProvider.GetSkeletonPoseData", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetFingerPinchStrength(
+    pub fn OVRSkeleton_IOVRSkeletonDataProvider_GetSkeletonType(
         &mut self,
-        finger: crate::GlobalNamespace::OVRHand_HandFinger,
-    ) -> quest_hook::libil2cpp::Result<f32> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRSkeleton_SkeletonType,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("GetFingerPinchStrength", (finger))?;
+        let __cordl_ret: crate::GlobalNamespace::OVRSkeleton_SkeletonType = __cordl_object
+            .invoke("OVRSkeleton.IOVRSkeletonDataProvider.GetSkeletonType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsPointerPoseValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsPointerPoseValid", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Awake(
+    pub fn OVRSkeleton_IOVRSkeletonDataProvider_get_enabled(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_PointerPose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Transform = __cordl_object
-            .invoke("get_PointerPose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsDataValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsDataValid", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsTracked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsTracked", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FixedUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FixedUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_HandConfidence(
-        &mut self,
-        value: crate::GlobalNamespace::OVRHand_TrackingConfidence,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_HandConfidence", (value))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("OVRSkeleton.IOVRSkeletonDataProvider.get_enabled", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetHandType(
@@ -329,19 +229,131 @@ impl OVRHand {
             .invoke("SetHandType", (_cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn OVRMeshRenderer_IOVRMeshRendererDataProvider_GetMeshRendererData(
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HandConfidence(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData,
+        crate::GlobalNamespace::OVRHand_TrackingConfidence,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData = __cordl_object
-            .invoke(
-                "OVRMeshRenderer.IOVRMeshRendererDataProvider.GetMeshRendererData",
-                (),
-            )?;
+        let __cordl_ret: crate::GlobalNamespace::OVRHand_TrackingConfidence = __cordl_object
+            .invoke("get_HandConfidence", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HandScale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_HandScale", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsDataHighConfidence(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsDataHighConfidence", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsDataValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsDataValid", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsDominantHand(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsDominantHand", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsPointerPoseValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsPointerPoseValid", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsSystemGestureInProgress(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_IsSystemGestureInProgress", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsTracked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsTracked", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_PointerPose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Transform = __cordl_object
+            .invoke("get_PointerPose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_HandConfidence(
+        &mut self,
+        value: crate::GlobalNamespace::OVRHand_TrackingConfidence,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_HandConfidence", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_HandScale(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_HandScale", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IsDataHighConfidence(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsDataHighConfidence", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_IsDataValid(
@@ -355,25 +367,15 @@ impl OVRHand {
             .invoke("set_IsDataValid", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_PointerPose(
+    pub fn set_IsDominantHand(
         &mut self,
-        value: *mut crate::UnityEngine::Transform,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_PointerPose", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OVRMesh_IOVRMeshDataProvider_GetMeshType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMesh_MeshType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRMesh_MeshType = __cordl_object
-            .invoke("OVRMesh.IOVRMeshDataProvider.GetMeshType", ())?;
+            .invoke("set_IsDominantHand", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_IsPointerPoseValid(
@@ -387,21 +389,15 @@ impl OVRHand {
             .invoke("set_IsPointerPoseValid", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsDominantHand(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsDominantHand", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsSystemGestureInProgress(
+    pub fn set_IsSystemGestureInProgress(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_IsSystemGestureInProgress", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsSystemGestureInProgress", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_IsTracked(
@@ -415,12 +411,16 @@ impl OVRHand {
             .invoke("set_IsTracked", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_PointerPose(
+        &mut self,
+        value: *mut crate::UnityEngine::Transform,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_PointerPose", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRHand")]

@@ -26,26 +26,16 @@ impl std::ops::DerefMut for FileBrowserItem {
 }
 #[cfg(feature = "FileBrowserItem")]
 impl FileBrowserItem {
-    pub fn set_isDirectory(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_isDirectory", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_fullPath(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_fullPath", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        displayName: *mut crate::System::String,
+        fullPath: *mut crate::System::String,
+        isDirectory: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (displayName, fullPath, isDirectory))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -70,6 +60,23 @@ impl FileBrowserItem {
             .invoke("get_displayName", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_fullPath(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_fullPath", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isDirectory(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isDirectory", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_displayName(
         &mut self,
         value: *mut crate::System::String,
@@ -92,23 +99,16 @@ impl FileBrowserItem {
             .invoke("set_fullPath", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_isDirectory(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn set_isDirectory(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isDirectory", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_isDirectory", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        displayName: *mut crate::System::String,
-        fullPath: *mut crate::System::String,
-        isDirectory: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (displayName, fullPath, isDirectory))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "FileBrowserItem")]

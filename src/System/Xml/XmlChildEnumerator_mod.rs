@@ -27,15 +27,21 @@ impl std::ops::DerefMut for crate::System::Xml::XmlChildEnumerator {
 }
 #[cfg(feature = "System+Xml+XmlChildEnumerator")]
 impl crate::System::Xml::XmlChildEnumerator {
-    pub fn get_Current(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNode> {
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::XmlNode = __cordl_object
-            .invoke("get_Current", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        container: *mut crate::System::Xml::XmlNode,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (container))?;
+        Ok(__cordl_object)
     }
     pub fn System_Collections_IEnumerator_MoveNext(
         &mut self,
@@ -45,6 +51,16 @@ impl crate::System::Xml::XmlChildEnumerator {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("System.Collections.IEnumerator.MoveNext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerator_Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("System.Collections.IEnumerator.Reset", ())?;
         Ok(__cordl_ret)
     }
     pub fn System_Collections_IEnumerator_get_Current(
@@ -68,31 +84,15 @@ impl crate::System::Xml::XmlChildEnumerator {
             .invoke(".ctor", (container))?;
         Ok(__cordl_ret)
     }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerator_Reset(
+    pub fn get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("System.Collections.IEnumerator.Reset", ())?;
+        let __cordl_ret: *mut crate::System::Xml::XmlNode = __cordl_object
+            .invoke("get_Current", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        container: *mut crate::System::Xml::XmlNode,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (container))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+XmlChildEnumerator")]

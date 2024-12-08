@@ -23,6 +23,11 @@ impl std::ops::DerefMut for INoteMovementProvider {
 }
 #[cfg(feature = "INoteMovementProvider")]
 impl INoteMovementProvider {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_noteMovement(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut NoteMovement> {
@@ -32,11 +37,6 @@ impl INoteMovementProvider {
         let __cordl_ret: *mut NoteMovement = __cordl_object
             .invoke("get_noteMovement", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "INoteMovementProvider")]

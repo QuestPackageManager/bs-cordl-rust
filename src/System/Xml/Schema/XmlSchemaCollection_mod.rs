@@ -32,101 +32,6 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaCollection {
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaCollection")]
 impl crate::System::Xml::Schema::XmlSchemaCollection {
-    pub fn System_Collections_IEnumerable_GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaCollectionEnumerator,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaCollectionEnumerator = __cordl_object
-            .invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item(
-        &mut self,
-        ns: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchema = __cordl_object
-            .invoke("get_Item", (ns))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_ICollection_get_SyncRoot(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("System.Collections.ICollection.get_SyncRoot", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_ICollection_get_Count(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("System.Collections.ICollection.get_Count", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_EventHandler(
-        &mut self,
-        value: *mut crate::System::Xml::Schema::ValidationEventHandler,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_EventHandler", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_ICollection_CopyTo(
-        &mut self,
-        array: *mut crate::System::Array,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("System.Collections.ICollection.CopyTo", (array, index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_EventHandler(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::ValidationEventHandler,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::ValidationEventHandler = __cordl_object
-            .invoke("get_EventHandler", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Add_SchemaInfo_XmlSchema__cordl_bool0(
         &mut self,
         ns: *mut crate::System::String,
@@ -168,57 +73,16 @@ impl crate::System::Xml::Schema::XmlSchemaCollection {
             .invoke("Add", (ns, node))?;
         Ok(__cordl_ret)
     }
-    pub fn GetSchemaNames(
+    pub fn GetEnumerator(
         &mut self,
-        nt: *mut crate::System::Xml::XmlNameTable,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::SchemaNames> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Xml::Schema::XmlSchemaCollectionEnumerator,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::SchemaNames = __cordl_object
-            .invoke("GetSchemaNames", (nt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        nametable: *mut crate::System::Xml::XmlNameTable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (nametable))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_XmlResolver(
-        &mut self,
-        value: *mut crate::System::Xml::XmlResolver,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_XmlResolver", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_NameTable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNameTable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::XmlNameTable = __cordl_object
-            .invoke("get_NameTable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_ICollection_get_IsSynchronized(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Collections.ICollection.get_IsSynchronized", ())?;
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaCollectionEnumerator = __cordl_object
+            .invoke("GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetSchemaInfo(
@@ -232,14 +96,150 @@ impl crate::System::Xml::Schema::XmlSchemaCollection {
             .invoke("GetSchemaInfo", (ns))?;
         Ok(__cordl_ret)
     }
+    pub fn GetSchemaNames(
+        &mut self,
+        nt: *mut crate::System::Xml::XmlNameTable,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::SchemaNames> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::SchemaNames = __cordl_object
+            .invoke("GetSchemaNames", (nt))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         nametable: *mut crate::System::Xml::XmlNameTable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (nametable))?;
         Ok(__cordl_object)
+    }
+    pub fn System_Collections_ICollection_CopyTo(
+        &mut self,
+        array: *mut crate::System::Array,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("System.Collections.ICollection.CopyTo", (array, index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_ICollection_get_Count(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("System.Collections.ICollection.get_Count", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_ICollection_get_IsSynchronized(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Collections.ICollection.get_IsSynchronized", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_ICollection_get_SyncRoot(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("System.Collections.ICollection.get_SyncRoot", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerable_GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        nametable: *mut crate::System::Xml::XmlNameTable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (nametable))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_EventHandler(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Xml::Schema::ValidationEventHandler,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::ValidationEventHandler = __cordl_object
+            .invoke("get_EventHandler", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(
+        &mut self,
+        ns: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchema = __cordl_object
+            .invoke("get_Item", (ns))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NameTable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNameTable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::XmlNameTable = __cordl_object
+            .invoke("get_NameTable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_EventHandler(
+        &mut self,
+        value: *mut crate::System::Xml::Schema::ValidationEventHandler,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_EventHandler", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_XmlResolver(
+        &mut self,
+        value: *mut crate::System::Xml::XmlResolver,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_XmlResolver", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaCollection")]

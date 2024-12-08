@@ -23,6 +23,17 @@ impl std::ops::DerefMut for IDiffieHellmanKeyPair {
 }
 #[cfg(feature = "IDiffieHellmanKeyPair")]
 impl IDiffieHellmanKeyPair {
+    pub fn GetPreMasterSecret(
+        &mut self,
+        clientPublicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetPreMasterSecret", (clientPublicKey))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetPreMasterSecretAsync(
         &mut self,
         taskUtility: *mut crate::BGNet::Core::ITaskUtility,
@@ -41,6 +52,11 @@ impl IDiffieHellmanKeyPair {
             .invoke("GetPreMasterSecretAsync", (taskUtility, clientPublicKey))?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_publicKey(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
@@ -50,22 +66,6 @@ impl IDiffieHellmanKeyPair {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
             .invoke("get_publicKey", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetPreMasterSecret(
-        &mut self,
-        clientPublicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetPreMasterSecret", (clientPublicKey))?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IDiffieHellmanKeyPair")]

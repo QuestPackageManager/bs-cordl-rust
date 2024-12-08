@@ -53,30 +53,6 @@ for crate::System::Numerics::Vector_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::System::Numerics::Vector_1<T> {
     #[cfg(feature = "System+Numerics+Vector_1+VectorSizeHelper")]
     pub type VectorSizeHelper = crate::System::Numerics::Vector_1_VectorSizeHelper<T>;
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_Object0(
         &mut self,
         obj: *mut crate::System::Object,
@@ -104,6 +80,18 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Numerics::Vector_1<T> {
             self,
             "Equals",
             (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -137,9 +125,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Numerics::Vector_1<T> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_T0(
+    pub fn _ctor_ByRefMut3(
         &mut self,
-        value: T,
+        existingRegister: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Numerics::Register,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -148,7 +138,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Numerics::Vector_1<T> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
-            (value),
+            (existingRegister),
         )?;
         Ok(__cordl_ret)
     }
@@ -183,11 +173,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Numerics::Vector_1<T> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_ByRefMut3(
+    pub fn _ctor_T0(
         &mut self,
-        existingRegister: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Numerics::Register,
-        >,
+        value: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -196,7 +184,19 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Numerics::Vector_1<T> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
-            (existingRegister),
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (index),
         )?;
         Ok(__cordl_ret)
     }

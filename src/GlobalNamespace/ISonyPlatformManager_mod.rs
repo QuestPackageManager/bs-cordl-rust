@@ -23,12 +23,10 @@ impl std::ops::DerefMut for ISonyPlatformManager {
 }
 #[cfg(feature = "ISonyPlatformManager")]
 impl ISonyPlatformManager {
-    pub fn get_userAccountId(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u64 = __cordl_object.invoke("get_userAccountId", ())?;
-        Ok(__cordl_ret)
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
     }
     pub fn get_initializationTask(
         &mut self,
@@ -38,6 +36,13 @@ impl ISonyPlatformManager {
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
             .invoke("get_initializationTask", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_userAccountId(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u64 = __cordl_object.invoke("get_userAccountId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_userId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -56,11 +61,6 @@ impl ISonyPlatformManager {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_userName", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "ISonyPlatformManager")]

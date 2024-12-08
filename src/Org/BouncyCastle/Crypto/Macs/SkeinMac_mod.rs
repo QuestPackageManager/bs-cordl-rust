@@ -28,13 +28,6 @@ impl crate::Org::BouncyCastle::Crypto::Macs::SkeinMac {
     pub const SKEIN_1024: i32 = 1024i32;
     pub const SKEIN_256: i32 = 256i32;
     pub const SKEIN_512: i32 = 512i32;
-    pub fn GetMacSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetMacSize", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn BlockUpdate(
         &mut self,
         input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -59,27 +52,11 @@ impl crate::Org::BouncyCastle::Crypto::Macs::SkeinMac {
         let __cordl_ret: i32 = __cordl_object.invoke("DoFinal", (output, outOff))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_i32_0(
-        &mut self,
-        stateSizeBits: i32,
-        digestSizeBits: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn GetMacSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stateSizeBits, digestSizeBits))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_SkeinMac1(
-        &mut self,
-        mac: *mut crate::Org::BouncyCastle::Crypto::Macs::SkeinMac,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (mac))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetMacSize", ())?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -93,16 +70,24 @@ impl crate::Org::BouncyCastle::Crypto::Macs::SkeinMac {
             .invoke("Init", (parameters))?;
         Ok(__cordl_ret)
     }
-    pub fn Update(
-        &mut self,
-        inByte: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", (inByte))?;
-        Ok(__cordl_ret)
+    pub fn New_SkeinMac1(
+        mac: *mut crate::Org::BouncyCastle::Crypto::Macs::SkeinMac,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (mac))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_i32_0(
+        stateSizeBits: i32,
+        digestSizeBits: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stateSizeBits, digestSizeBits))?;
+        Ok(__cordl_object)
     }
     pub fn Reset(
         &mut self,
@@ -114,6 +99,40 @@ impl crate::Org::BouncyCastle::Crypto::Macs::SkeinMac {
             .invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
+    pub fn Update(
+        &mut self,
+        inByte: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", (inByte))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_SkeinMac1(
+        &mut self,
+        mac: *mut crate::Org::BouncyCastle::Crypto::Macs::SkeinMac,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (mac))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_i32_0(
+        &mut self,
+        stateSizeBits: i32,
+        digestSizeBits: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stateSizeBits, digestSizeBits))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_AlgorithmName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -123,25 +142,6 @@ impl crate::Org::BouncyCastle::Crypto::Macs::SkeinMac {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_AlgorithmName", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_i32_i32_0(
-        stateSizeBits: i32,
-        digestSizeBits: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stateSizeBits, digestSizeBits))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_SkeinMac1(
-        mac: *mut crate::Org::BouncyCastle::Crypto::Macs::SkeinMac,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (mac))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+SkeinMac")]

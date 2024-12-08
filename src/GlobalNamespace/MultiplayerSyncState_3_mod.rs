@@ -43,9 +43,9 @@ impl<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > MultiplayerSyncState_3<TStateTable, TType, TState> {
-    pub fn get_stateBuffer(
+    pub fn ClearBufferedStates(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut StateBuffer_3<TStateTable, TType, TState>>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -57,8 +57,27 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut StateBuffer_3<TStateTable, TType, TState> = __cordl_object
-            .invoke("get_stateBuffer", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearBufferedStates", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetLatestState(
+        &mut self,
+        _cordl_type: TType,
+    ) -> quest_hook::libil2cpp::Result<TState>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: TState = __cordl_object
+            .invoke("GetLatestState", (_cordl_type))?;
         Ok(__cordl_ret)
     }
     pub fn GetLatestTime(&mut self) -> quest_hook::libil2cpp::Result<i64>
@@ -96,39 +115,12 @@ impl<
             .invoke("GetState", (_cordl_type, _cordl_time))?;
         Ok(__cordl_ret)
     }
-    pub fn get_player(&mut self) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
-            .invoke("get_player", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearBufferedStates(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearBufferedStates", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -146,10 +138,7 @@ impl<
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetLatestState(
-        &mut self,
-        _cordl_type: TType,
-    ) -> quest_hook::libil2cpp::Result<TState>
+    pub fn get_player(&mut self) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -161,16 +150,27 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: TState = __cordl_object
-            .invoke("GetLatestState", (_cordl_type))?;
+        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
+            .invoke("get_player", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_stateBuffer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut StateBuffer_3<TStateTable, TType, TState>>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut StateBuffer_3<TStateTable, TType, TState> = __cordl_object
+            .invoke("get_stateBuffer", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MultiplayerSyncState_3")]

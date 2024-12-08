@@ -33,14 +33,14 @@ impl std::ops::DerefMut for PlatformInstaller {
 }
 #[cfg(feature = "PlatformInstaller")]
 impl PlatformInstaller {
-    pub fn BindMockPlatformAdditionalContentModel(
+    pub fn BindAchievementsHandler(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BindMockPlatformAdditionalContentModel", ())?;
+            .invoke("BindAchievementsHandler", ())?;
         Ok(__cordl_ret)
     }
     pub fn BindAdditionalContentModel(
@@ -53,14 +53,44 @@ impl PlatformInstaller {
             .invoke("BindAdditionalContentModel", ())?;
         Ok(__cordl_ret)
     }
-    pub fn BindAchievementsHandler(
+    pub fn BindAnalyticsModel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BindAchievementsHandler", ())?;
+            .invoke("BindAnalyticsModel", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn BindBeatmapDataAssetFileModel(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BindBeatmapDataAssetFileModel", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn BindMockPlatformAdditionalContentModel(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BindMockPlatformAdditionalContentModel", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn BindPlatformUserModel(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BindPlatformUserModel", ())?;
         Ok(__cordl_ret)
     }
     pub fn InstallBindings(
@@ -72,6 +102,19 @@ impl PlatformInstaller {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InstallBindings", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        appInitSetupData: *mut AppInitSetupData,
+        mockPlatformAdditionalContentModelInitialData: *mut MockPlatformAdditionalContentModelInitialDataSO,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (appInitSetupData, mockPlatformAdditionalContentModelInitialData),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -87,49 +130,6 @@ impl PlatformInstaller {
                 (appInitSetupData, mockPlatformAdditionalContentModelInitialData),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn BindBeatmapDataAssetFileModel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BindBeatmapDataAssetFileModel", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn BindAnalyticsModel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BindAnalyticsModel", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn BindPlatformUserModel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BindPlatformUserModel", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        appInitSetupData: *mut AppInitSetupData,
-        mockPlatformAdditionalContentModelInitialData: *mut MockPlatformAdditionalContentModelInitialDataSO,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (appInitSetupData, mockPlatformAdditionalContentModelInitialData),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PlatformInstaller")]

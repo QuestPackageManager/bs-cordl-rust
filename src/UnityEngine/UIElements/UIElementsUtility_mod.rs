@@ -24,6 +24,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIElementsUtility {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIElementsUtility")]
 impl crate::UnityEngine::UIElements::UIElementsUtility {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn UnityEngine_UIElements_IUIElementsUtility_CleanupRoots(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -32,6 +39,59 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("UnityEngine.UIElements.IUIElementsUtility.CleanupRoots", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnityEngine_UIElements_IUIElementsUtility_EndContainerGUIFromException(
+        &mut self,
+        exception: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "UnityEngine.UIElements.IUIElementsUtility.EndContainerGUIFromException",
+                (exception),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnityEngine_UIElements_IUIElementsUtility_MakeCurrentIMGUIContainerDirty(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "UnityEngine.UIElements.IUIElementsUtility.MakeCurrentIMGUIContainerDirty",
+                (),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnityEngine_UIElements_IUIElementsUtility_ProcessEvent(
+        &mut self,
+        instanceID: i32,
+        nativeEventPtr: crate::System::IntPtr,
+        eventHandled: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "UnityEngine.UIElements.IUIElementsUtility.ProcessEvent",
+                (instanceID, nativeEventPtr, eventHandled),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnityEngine_UIElements_IUIElementsUtility_ReleaseCapture(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("UnityEngine.UIElements.IUIElementsUtility.ReleaseCapture", ())?;
         Ok(__cordl_ret)
     }
     pub fn UnityEngine_UIElements_IUIElementsUtility_TakeCapture(
@@ -53,66 +113,6 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn UnityEngine_UIElements_IUIElementsUtility_MakeCurrentIMGUIContainerDirty(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "UnityEngine.UIElements.IUIElementsUtility.MakeCurrentIMGUIContainerDirty",
-                (),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnityEngine_UIElements_IUIElementsUtility_ReleaseCapture(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("UnityEngine.UIElements.IUIElementsUtility.ReleaseCapture", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnityEngine_UIElements_IUIElementsUtility_ProcessEvent(
-        &mut self,
-        instanceID: i32,
-        nativeEventPtr: crate::System::IntPtr,
-        eventHandled: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "UnityEngine.UIElements.IUIElementsUtility.ProcessEvent",
-                (instanceID, nativeEventPtr, eventHandled),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnityEngine_UIElements_IUIElementsUtility_EndContainerGUIFromException(
-        &mut self,
-        exception: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "UnityEngine.UIElements.IUIElementsUtility.EndContainerGUIFromException",
-                (exception),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIElementsUtility")]

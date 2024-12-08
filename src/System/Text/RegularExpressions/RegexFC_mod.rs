@@ -27,22 +27,15 @@ impl std::ops::DerefMut for crate::System::Text::RegularExpressions::RegexFC {
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexFC")]
 impl crate::System::Text::RegularExpressions::RegexFC {
-    pub fn get_CaseInsensitive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CaseInsensitive", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_CaseInsensitive(
+    pub fn AddFC(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        fc: *mut crate::System::Text::RegularExpressions::RegexFC,
+        concatenate: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_CaseInsensitive", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("AddFC", (fc, concatenate))?;
         Ok(__cordl_ret)
     }
     pub fn GetFirstChars(
@@ -56,15 +49,47 @@ impl crate::System::Text::RegularExpressions::RegexFC {
             .invoke("GetFirstChars", (culture))?;
         Ok(__cordl_ret)
     }
-    pub fn AddFC(
+    pub fn New_String__cordl_bool__cordl_bool2(
+        charClass: *mut crate::System::String,
+        nullable: bool,
+        caseInsensitive: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (charClass, nullable, caseInsensitive))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool0(nullable: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (nullable))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_char__cordl_bool__cordl_bool__cordl_bool1(
+        ch: char,
+        _cordl_not: bool,
+        nullable: bool,
+        caseInsensitive: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ch, _cordl_not, nullable, caseInsensitive))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_String__cordl_bool__cordl_bool2(
         &mut self,
-        fc: *mut crate::System::Text::RegularExpressions::RegexFC,
-        concatenate: bool,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        charClass: *mut crate::System::String,
+        nullable: bool,
+        caseInsensitive: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("AddFC", (fc, concatenate))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (charClass, nullable, caseInsensitive))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor__cordl_bool0(
@@ -92,50 +117,23 @@ impl crate::System::Text::RegularExpressions::RegexFC {
             .invoke(".ctor", (ch, _cordl_not, nullable, caseInsensitive))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String__cordl_bool__cordl_bool2(
+    pub fn get_CaseInsensitive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CaseInsensitive", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_CaseInsensitive(
         &mut self,
-        charClass: *mut crate::System::String,
-        nullable: bool,
-        caseInsensitive: bool,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (charClass, nullable, caseInsensitive))?;
+            .invoke("set_CaseInsensitive", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New__cordl_bool0(
-        nullable: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (nullable))?;
-        Ok(__cordl_object)
-    }
-    pub fn New__cordl_char__cordl_bool__cordl_bool__cordl_bool1(
-        ch: char,
-        _cordl_not: bool,
-        nullable: bool,
-        caseInsensitive: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ch, _cordl_not, nullable, caseInsensitive))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String__cordl_bool__cordl_bool2(
-        charClass: *mut crate::System::String,
-        nullable: bool,
-        caseInsensitive: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (charClass, nullable, caseInsensitive))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexFC")]

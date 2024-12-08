@@ -36,17 +36,29 @@ impl std::ops::DerefMut for EnvironmentsListModel {
 impl EnvironmentsListModel {
     #[cfg(feature = "EnvironmentsListModel+__c")]
     pub type __c = crate::GlobalNamespace::EnvironmentsListModel___c;
-    pub fn get_environmentInfos(
+    pub fn GetAllEnvironmentInfosWithType(
         &mut self,
+        environmentType: EnvironmentType,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<*mut EnvironmentInfoSO>,
+        *mut crate::System::Collections::Generic::List_1<*mut EnvironmentInfoSO>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
             *mut EnvironmentInfoSO,
-        > = __cordl_object.invoke("get_environmentInfos", ())?;
+        > = __cordl_object.invoke("GetAllEnvironmentInfosWithType", (environmentType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEnvironmentInfoBySerializedName(
+        &mut self,
+        environmentSerializedName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut EnvironmentInfoSO> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut EnvironmentInfoSO = __cordl_object
+            .invoke("GetEnvironmentInfoBySerializedName", (environmentSerializedName))?;
         Ok(__cordl_ret)
     }
     pub fn GetEnvironmentInfoBySerializedNameSafe(
@@ -63,15 +75,76 @@ impl EnvironmentsListModel {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetEnvironmentInfoBySerializedName(
+    pub fn GetFirstEnvironmentInfoWithType(
         &mut self,
-        environmentSerializedName: *mut crate::System::String,
+        environmentType: EnvironmentType,
     ) -> quest_hook::libil2cpp::Result<*mut EnvironmentInfoSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut EnvironmentInfoSO = __cordl_object
-            .invoke("GetEnvironmentInfoBySerializedName", (environmentSerializedName))?;
+            .invoke("GetFirstEnvironmentInfoWithType", (environmentType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetLastEnvironmentInfoWithType(
+        &mut self,
+        environmentType: EnvironmentType,
+    ) -> quest_hook::libil2cpp::Result<*mut EnvironmentInfoSO> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut EnvironmentInfoSO = __cordl_object
+            .invoke("GetLastEnvironmentInfoWithType", (environmentType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        envInfoSOs: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut EnvironmentInfoSO,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (envInfoSOs))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        envInfoSOs: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut EnvironmentInfoSO,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (envInfoSOs))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_environmentInfos(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IReadOnlyList_1<*mut EnvironmentInfoSO>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut EnvironmentInfoSO,
+        > = __cordl_object.invoke("get_environmentInfos", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_environmentNames(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::String,
+        > = __cordl_object.invoke("get_environmentNames", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_environmentSerializedNames(
@@ -96,79 +169,6 @@ impl EnvironmentsListModel {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_loggerPrefix", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_environmentNames(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
-        > = __cordl_object.invoke("get_environmentNames", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetLastEnvironmentInfoWithType(
-        &mut self,
-        environmentType: EnvironmentType,
-    ) -> quest_hook::libil2cpp::Result<*mut EnvironmentInfoSO> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut EnvironmentInfoSO = __cordl_object
-            .invoke("GetLastEnvironmentInfoWithType", (environmentType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAllEnvironmentInfosWithType(
-        &mut self,
-        environmentType: EnvironmentType,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut EnvironmentInfoSO>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut EnvironmentInfoSO,
-        > = __cordl_object.invoke("GetAllEnvironmentInfosWithType", (environmentType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        envInfoSOs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut EnvironmentInfoSO,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (envInfoSOs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetFirstEnvironmentInfoWithType(
-        &mut self,
-        environmentType: EnvironmentType,
-    ) -> quest_hook::libil2cpp::Result<*mut EnvironmentInfoSO> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut EnvironmentInfoSO = __cordl_object
-            .invoke("GetFirstEnvironmentInfoWithType", (environmentType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        envInfoSOs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut EnvironmentInfoSO,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (envInfoSOs))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "EnvironmentsListModel")]

@@ -24,18 +24,18 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphAnchorPoint {
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphAnchorPoint")]
 impl crate::UnityEngine::TextCore::LowLevel::GlyphAnchorPoint {
-    pub fn get_yCoordinate(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_yCoordinate",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_xCoordinate(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_xCoordinate",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_yCoordinate(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_yCoordinate",
             (),
         )?;
         Ok(__cordl_ret)

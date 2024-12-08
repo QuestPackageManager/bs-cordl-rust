@@ -22,11 +22,14 @@ for crate::UnityEngine::Rendering::BatchMaterialID {
 }
 #[cfg(feature = "UnityEngine+Rendering+BatchMaterialID")]
 impl crate::UnityEngine::Rendering::BatchMaterialID {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Equals_BatchMaterialID1(
+        &mut self,
+        other: crate::UnityEngine::Rendering::BatchMaterialID,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
-            (),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -41,14 +44,11 @@ impl crate::UnityEngine::Rendering::BatchMaterialID {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_BatchMaterialID1(
-        &mut self,
-        other: crate::UnityEngine::Rendering::BatchMaterialID,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }

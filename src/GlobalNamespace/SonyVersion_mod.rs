@@ -27,6 +27,27 @@ impl std::ops::DerefMut for SonyVersion {
 impl SonyVersion {
     #[cfg(feature = "SonyVersion+VersionFormat")]
     pub type VersionFormat = crate::GlobalNamespace::SonyVersion_VersionFormat;
+    pub fn Get(
+        &mut self,
+        format: crate::GlobalNamespace::SonyVersion_VersionFormat,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("Get", (format))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        majorVersion: u32,
+        minorVersion: u32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (majorVersion, minorVersion))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         majorVersion: u32,
@@ -52,27 +73,6 @@ impl SonyVersion {
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_minorVersion", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Get(
-        &mut self,
-        format: crate::GlobalNamespace::SonyVersion_VersionFormat,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("Get", (format))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        majorVersion: u32,
-        minorVersion: u32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (majorVersion, minorVersion))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SonyVersion")]

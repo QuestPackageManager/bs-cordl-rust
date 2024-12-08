@@ -26,6 +26,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TutorialSongController_InitD
 }
 #[cfg(feature = "TutorialSongController+InitData")]
 impl crate::GlobalNamespace::TutorialSongController_InitData {
+    pub fn New(
+        songBpm: f32,
+        beatmapData: *mut BeatmapData,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (songBpm, beatmapData))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         songBpm: f32,
@@ -37,16 +47,6 @@ impl crate::GlobalNamespace::TutorialSongController_InitData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (songBpm, beatmapData))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        songBpm: f32,
-        beatmapData: *mut BeatmapData,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (songBpm, beatmapData))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "TutorialSongController+InitData")]
@@ -90,6 +90,32 @@ for crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
 }
 #[cfg(feature = "TutorialSongController+TutorialBasicNoteSpawnData")]
 impl crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
+    pub fn New(
+        signal: *mut Signal,
+        firstTimeBeatOffset: i32,
+        beatOffset: i32,
+        lineIndex: i32,
+        noteLineLayer: NoteLineLayer,
+        cutDirection: NoteCutDirection,
+        colorType: ColorType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    signal,
+                    firstTimeBeatOffset,
+                    beatOffset,
+                    lineIndex,
+                    noteLineLayer,
+                    cutDirection,
+                    colorType,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         signal: *mut Signal,
@@ -117,32 +143,6 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        signal: *mut Signal,
-        firstTimeBeatOffset: i32,
-        beatOffset: i32,
-        lineIndex: i32,
-        noteLineLayer: NoteLineLayer,
-        cutDirection: NoteCutDirection,
-        colorType: ColorType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    signal,
-                    firstTimeBeatOffset,
-                    beatOffset,
-                    lineIndex,
-                    noteLineLayer,
-                    cutDirection,
-                    colorType,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "TutorialSongController+TutorialBasicNoteSpawnData")]
@@ -184,6 +184,22 @@ for crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
 }
 #[cfg(feature = "TutorialSongController+TutorialBombNoteSpawnData")]
 impl crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
+    pub fn New(
+        signal: *mut Signal,
+        firstTimeBeatOffset: i32,
+        beatOffset: i32,
+        lineIndex: i32,
+        noteLineLayer: NoteLineLayer,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (signal, firstTimeBeatOffset, beatOffset, lineIndex, noteLineLayer),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         signal: *mut Signal,
@@ -201,22 +217,6 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
                 (signal, firstTimeBeatOffset, beatOffset, lineIndex, noteLineLayer),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        signal: *mut Signal,
-        firstTimeBeatOffset: i32,
-        beatOffset: i32,
-        lineIndex: i32,
-        noteLineLayer: NoteLineLayer,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (signal, firstTimeBeatOffset, beatOffset, lineIndex, noteLineLayer),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "TutorialSongController+TutorialBombNoteSpawnData")]
@@ -259,6 +259,22 @@ for crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData 
 }
 #[cfg(feature = "TutorialSongController+TutorialJumpingNoteSpawnData")]
 impl crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData {
+    pub fn New(
+        signal: *mut Signal,
+        firstTimeBeatOffset: i32,
+        beatOffset: i32,
+        lineIndex: i32,
+        noteLineLayer: NoteLineLayer,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (signal, firstTimeBeatOffset, beatOffset, lineIndex, noteLineLayer),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         signal: *mut Signal,
@@ -276,22 +292,6 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData
                 (signal, firstTimeBeatOffset, beatOffset, lineIndex, noteLineLayer),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        signal: *mut Signal,
-        firstTimeBeatOffset: i32,
-        beatOffset: i32,
-        lineIndex: i32,
-        noteLineLayer: NoteLineLayer,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (signal, firstTimeBeatOffset, beatOffset, lineIndex, noteLineLayer),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "TutorialSongController+TutorialJumpingNoteSpawnData")]
@@ -337,6 +337,18 @@ for crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
 }
 #[cfg(feature = "TutorialSongController+TutorialObjectSpawnData")]
 impl crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
+    pub fn New(
+        signal: *mut Signal,
+        firstTimeBeatOffset: i32,
+        beatOffset: i32,
+        lineIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (signal, firstTimeBeatOffset, beatOffset, lineIndex))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         signal: *mut Signal,
@@ -350,18 +362,6 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (signal, firstTimeBeatOffset, beatOffset, lineIndex))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        signal: *mut Signal,
-        firstTimeBeatOffset: i32,
-        beatOffset: i32,
-        lineIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (signal, firstTimeBeatOffset, beatOffset, lineIndex))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "TutorialSongController+TutorialObjectSpawnData")]
@@ -406,6 +406,32 @@ for crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
 }
 #[cfg(feature = "TutorialSongController+TutorialObstacleSpawnData")]
 impl crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
+    pub fn New(
+        signal: *mut Signal,
+        firstTimeBeatOffset: i32,
+        beatOffset: i32,
+        lineIndex: i32,
+        width: i32,
+        height: i32,
+        noteLineLayer: NoteLineLayer,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    signal,
+                    firstTimeBeatOffset,
+                    beatOffset,
+                    lineIndex,
+                    width,
+                    height,
+                    noteLineLayer,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         signal: *mut Signal,
@@ -433,32 +459,6 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        signal: *mut Signal,
-        firstTimeBeatOffset: i32,
-        beatOffset: i32,
-        lineIndex: i32,
-        width: i32,
-        height: i32,
-        noteLineLayer: NoteLineLayer,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    signal,
-                    firstTimeBeatOffset,
-                    beatOffset,
-                    lineIndex,
-                    width,
-                    height,
-                    noteLineLayer,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "TutorialSongController+TutorialObstacleSpawnData")]
@@ -521,104 +521,26 @@ impl std::ops::DerefMut for TutorialSongController {
 }
 #[cfg(feature = "TutorialSongController")]
 impl TutorialSongController {
+    #[cfg(feature = "TutorialSongController+TutorialBombNoteSpawnData")]
+    pub type TutorialBombNoteSpawnData = crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData;
+    #[cfg(feature = "TutorialSongController+TutorialObstacleSpawnData")]
+    pub type TutorialObstacleSpawnData = crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData;
     #[cfg(feature = "TutorialSongController+TutorialObjectSpawnData")]
     pub type TutorialObjectSpawnData = crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData;
     #[cfg(feature = "TutorialSongController+TutorialBasicNoteSpawnData")]
     pub type TutorialBasicNoteSpawnData = crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData;
-    #[cfg(feature = "TutorialSongController+TutorialBombNoteSpawnData")]
-    pub type TutorialBombNoteSpawnData = crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData;
     #[cfg(feature = "TutorialSongController+InitData")]
     pub type InitData = crate::GlobalNamespace::TutorialSongController_InitData;
-    #[cfg(feature = "TutorialSongController+TutorialObstacleSpawnData")]
-    pub type TutorialObstacleSpawnData = crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData;
     #[cfg(feature = "TutorialSongController+TutorialJumpingNoteSpawnData")]
     pub type TutorialJumpingNoteSpawnData = crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData;
-    pub fn CreateBombNoteData(
-        &mut self,
-        _cordl_time: f32,
-        tutorialBombNoteSpawnData: *mut crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData,
-    ) -> quest_hook::libil2cpp::Result<*mut NoteData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut NoteData = __cordl_object
-            .invoke("CreateBombNoteData", (_cordl_time, tutorialBombNoteSpawnData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleNoteWasCut(
-        &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNoteWasCut", (noteController, noteCutInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleObstacleDidPassThreeQuartersOfMove2(
-        &mut self,
-        obstacleController: *mut ObstacleController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleObstacleDidPassThreeQuartersOfMove2", (obstacleController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNextBeatmapObjectTime(
-        &mut self,
-        beatOffset: i32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("GetNextBeatmapObjectTime", (beatOffset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateBeatmapData(
-        &mut self,
-        noteTime: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateBeatmapData", (noteTime))?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartSong(
-        &mut self,
-        startTimeOffset: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartSong", (startTimeOffset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
     pub fn CreateBasicNoteData(
@@ -633,24 +555,90 @@ impl TutorialSongController {
             .invoke("CreateBasicNoteData", (_cordl_time, tutorialBasicNoteSpawnData))?;
         Ok(__cordl_ret)
     }
-    pub fn Awake(
+    pub fn CreateBombNoteData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        _cordl_time: f32,
+        tutorialBombNoteSpawnData: *mut crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData,
+    ) -> quest_hook::libil2cpp::Result<*mut NoteData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
+        let __cordl_ret: *mut NoteData = __cordl_object
+            .invoke("CreateBombNoteData", (_cordl_time, tutorialBombNoteSpawnData))?;
         Ok(__cordl_ret)
     }
-    pub fn StopSong(
+    pub fn CreateObstacleData(
+        &mut self,
+        _cordl_time: f32,
+        tutorialObstacleSpawnData: *mut crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData,
+    ) -> quest_hook::libil2cpp::Result<*mut ObstacleData> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut ObstacleData = __cordl_object
+            .invoke("CreateObstacleData", (_cordl_time, tutorialObstacleSpawnData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNextBeatmapObjectTime(
+        &mut self,
+        beatOffset: i32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("GetNextBeatmapObjectTime", (beatOffset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleNoteWasCut(
+        &mut self,
+        noteController: *mut NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleNoteWasCut", (noteController, noteCutInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleNoteWasMissed(
+        &mut self,
+        noteController: *mut NoteController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleNoteWasMissed", (noteController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleObstacleDidPassThreeQuartersOfMove2(
+        &mut self,
+        obstacleController: *mut ObstacleController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleObstacleDidPassThreeQuartersOfMove2", (obstacleController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StopSong", ())?;
+            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn PauseSong(
@@ -673,29 +661,6 @@ impl TutorialSongController {
             .invoke("ResumeSong", ())?;
         Ok(__cordl_ret)
     }
-    pub fn HandleNoteWasMissed(
-        &mut self,
-        noteController: *mut NoteController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNoteWasMissed", (noteController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateObstacleData(
-        &mut self,
-        _cordl_time: f32,
-        tutorialObstacleSpawnData: *mut crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData,
-    ) -> quest_hook::libil2cpp::Result<*mut ObstacleData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut ObstacleData = __cordl_object
-            .invoke("CreateObstacleData", (_cordl_time, tutorialObstacleSpawnData))?;
-        Ok(__cordl_ret)
-    }
     pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -706,12 +671,47 @@ impl TutorialSongController {
             .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn StartSong(
+        &mut self,
+        startTimeOffset: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartSong", (startTimeOffset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn StopSong(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StopSong", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateBeatmapData(
+        &mut self,
+        noteTime: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateBeatmapData", (noteTime))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "TutorialSongController")]

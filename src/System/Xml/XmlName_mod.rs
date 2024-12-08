@@ -30,33 +30,6 @@ impl std::ops::DerefMut for crate::System::Xml::XmlName {
 }
 #[cfg(feature = "System+Xml+XmlName")]
 impl crate::System::Xml::XmlName {
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Name", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsNil(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsNil", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Prefix(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Prefix", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals(
         &mut self,
         schemaInfo: *mut crate::System::Xml::Schema::IXmlSchemaInfo,
@@ -67,44 +40,19 @@ impl crate::System::Xml::XmlName {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (schemaInfo))?;
         Ok(__cordl_ret)
     }
-    pub fn get_OwnerDocument(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlDocument> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::XmlDocument = __cordl_object
-            .invoke("get_OwnerDocument", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SchemaElement(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaElement = __cordl_object
-            .invoke("get_SchemaElement", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LocalName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_LocalName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsDefault(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsDefault", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        prefix: *mut crate::System::String,
+        localName: *mut crate::System::String,
+        ns: *mut crate::System::String,
+        hashCode: i32,
+        ownerDoc: *mut crate::System::Xml::XmlDocument,
+        next: *mut crate::System::Xml::XmlName,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (prefix, localName, ns, hashCode, ownerDoc, next))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -122,14 +70,35 @@ impl crate::System::Xml::XmlName {
             .invoke(".ctor", (prefix, localName, ns, hashCode, ownerDoc, next))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Validity(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::XmlSchemaValidity> {
+    pub fn get_HashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Xml::Schema::XmlSchemaValidity = __cordl_object
-            .invoke("get_Validity", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_HashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsDefault(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsDefault", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsNil(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsNil", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LocalName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_LocalName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_MemberType(
@@ -144,11 +113,14 @@ impl crate::System::Xml::XmlName {
             .invoke("get_MemberType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_HashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_Name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_HashCode", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_NamespaceURI(
@@ -161,14 +133,24 @@ impl crate::System::Xml::XmlName {
             .invoke("get_NamespaceURI", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_SchemaType(
+    pub fn get_OwnerDocument(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchemaType> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlDocument> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaType = __cordl_object
-            .invoke("get_SchemaType", ())?;
+        let __cordl_ret: *mut crate::System::Xml::XmlDocument = __cordl_object
+            .invoke("get_OwnerDocument", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Prefix(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Prefix", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SchemaAttribute(
@@ -183,19 +165,37 @@ impl crate::System::Xml::XmlName {
             .invoke("get_SchemaAttribute", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
-        hashCode: i32,
-        ownerDoc: *mut crate::System::Xml::XmlDocument,
-        next: *mut crate::System::Xml::XmlName,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (prefix, localName, ns, hashCode, ownerDoc, next))?;
-        Ok(__cordl_object)
+    pub fn get_SchemaElement(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Xml::Schema::XmlSchemaElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaElement = __cordl_object
+            .invoke("get_SchemaElement", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SchemaType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchemaType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaType = __cordl_object
+            .invoke("get_SchemaType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Validity(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::XmlSchemaValidity> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::Schema::XmlSchemaValidity = __cordl_object
+            .invoke("get_Validity", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+XmlName")]

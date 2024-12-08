@@ -25,6 +25,30 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ISerializableJsonDic
 }
 #[cfg(feature = "UnityEngine+UIElements+ISerializableJsonDictionary")]
 impl crate::UnityEngine::UIElements::ISerializableJsonDictionary {
+    pub fn ContainsKey(
+        &mut self,
+        key: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ContainsKey", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Get<T>(
+        &mut self,
+        key: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("Get", (key))?;
+        Ok(__cordl_ret)
+    }
     pub fn Overwrite(
         &mut self,
         obj: *mut crate::System::Object,
@@ -51,30 +75,6 @@ impl crate::UnityEngine::UIElements::ISerializableJsonDictionary {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Set", (key, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ContainsKey(
-        &mut self,
-        key: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ContainsKey", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Get<T>(
-        &mut self,
-        key: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("Get", (key))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

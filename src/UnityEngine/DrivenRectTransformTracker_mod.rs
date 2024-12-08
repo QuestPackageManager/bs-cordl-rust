@@ -20,16 +20,6 @@ for crate::UnityEngine::DrivenRectTransformTracker {
 }
 #[cfg(feature = "UnityEngine+DrivenRectTransformTracker")]
 impl crate::UnityEngine::DrivenRectTransformTracker {
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Clear",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Add(
         &mut self,
         driver: *mut crate::UnityEngine::Object,
@@ -40,6 +30,16 @@ impl crate::UnityEngine::DrivenRectTransformTracker {
             self,
             "Add",
             (driver, rectTransform, drivenProperties),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Clear",
+            (),
         )?;
         Ok(__cordl_ret)
     }

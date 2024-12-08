@@ -25,18 +25,6 @@ for crate::UnityEngine::ProBuilder::BezierPoint {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+BezierPoint")]
 impl crate::UnityEngine::ProBuilder::BezierPoint {
-    pub fn SetTangentIn(
-        &mut self,
-        tangent: crate::UnityEngine::Vector3,
-        mode: crate::UnityEngine::ProBuilder::BezierTangentMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetTangentIn",
-            (tangent, mode),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn EnforceTangentMode(
         &mut self,
         master: crate::UnityEngine::ProBuilder::BezierTangentDirection,
@@ -49,17 +37,26 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn SetPosition(
         &mut self,
         position: crate::UnityEngine::Vector3,
-        tangentIn: crate::UnityEngine::Vector3,
-        tangentOut: crate::UnityEngine::Vector3,
-        rotation: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (position, tangentIn, tangentOut, rotation),
+            "SetPosition",
+            (position),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetTangentIn(
+        &mut self,
+        tangent: crate::UnityEngine::Vector3,
+        mode: crate::UnityEngine::ProBuilder::BezierTangentMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetTangentIn",
+            (tangent, mode),
         )?;
         Ok(__cordl_ret)
     }
@@ -75,14 +72,17 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetPosition(
+    pub fn _ctor(
         &mut self,
         position: crate::UnityEngine::Vector3,
+        tangentIn: crate::UnityEngine::Vector3,
+        tangentOut: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetPosition",
-            (position),
+            ".ctor",
+            (position, tangentIn, tangentOut, rotation),
         )?;
         Ok(__cordl_ret)
     }

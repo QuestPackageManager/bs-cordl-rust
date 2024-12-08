@@ -26,6 +26,13 @@ impl std::ops::DerefMut for crate::UnityEngine::RangeAttribute {
 }
 #[cfg(feature = "UnityEngine+RangeAttribute")]
 impl crate::UnityEngine::RangeAttribute {
+    pub fn New(min: f32, max: f32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (min, max))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         min: f32,
@@ -37,13 +44,6 @@ impl crate::UnityEngine::RangeAttribute {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (min, max))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(min: f32, max: f32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (min, max))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+RangeAttribute")]

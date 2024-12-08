@@ -23,57 +23,14 @@ for crate::UnityEngine::UIElements::StyleTranslate {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleTranslate")]
 impl crate::UnityEngine::UIElements::StyleTranslate {
-    pub fn _ctor_Translate0(
+    pub fn Equals_Object1(
         &mut self,
-        v: crate::UnityEngine::UIElements::Translate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (v),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_StyleKeyword1(
-        &mut self,
-        keyword: crate::UnityEngine::UIElements::StyleKeyword,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (keyword),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Translate_StyleKeyword2(
-        &mut self,
-        v: crate::UnityEngine::UIElements::Translate,
-        keyword: crate::UnityEngine::UIElements::StyleKeyword,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v, keyword),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_value(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Translate> {
-        let __cordl_ret: crate::UnityEngine::UIElements::Translate = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_value",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_keyword(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleKeyword> {
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleKeyword = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_keyword",
-            (),
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -85,17 +42,6 @@ impl crate::UnityEngine::UIElements::StyleTranslate {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -113,6 +59,60 @@ impl crate::UnityEngine::UIElements::StyleTranslate {
         let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_StyleKeyword1(
+        &mut self,
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (keyword),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Translate0(
+        &mut self,
+        v: crate::UnityEngine::UIElements::Translate,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (v),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Translate_StyleKeyword2(
+        &mut self,
+        v: crate::UnityEngine::UIElements::Translate,
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (v, keyword),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_keyword(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleKeyword> {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleKeyword = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_keyword",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Translate> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Translate = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_value",
             (),
         )?;
         Ok(__cordl_ret)

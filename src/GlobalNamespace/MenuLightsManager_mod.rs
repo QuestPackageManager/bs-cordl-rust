@@ -40,18 +40,6 @@ impl MenuLightsManager {
             .invoke("CurrentColorForID", (lightId))?;
         Ok(__cordl_ret)
     }
-    pub fn SetColorsFromPreset(
-        &mut self,
-        preset: *mut MenuLightsPresetSO,
-        interpolationFactor: f32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("SetColorsFromPreset", (preset, interpolationFactor))?;
-        Ok(__cordl_ret)
-    }
     pub fn IsColorVeryCloseToColor(
         &mut self,
         color0: crate::UnityEngine::Color,
@@ -64,6 +52,23 @@ impl MenuLightsManager {
             .invoke("IsColorVeryCloseToColor", (color0, color1))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn RefreshColors(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RefreshColors", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn RefreshLightsDictForPreset(
         &mut self,
         preset: *mut MenuLightsPresetSO,
@@ -73,18 +78,6 @@ impl MenuLightsManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshLightsDictForPreset", (preset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetColorPreset(
-        &mut self,
-        preset: *mut MenuLightsPresetSO,
-        animated: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColorPreset", (preset, animated))?;
         Ok(__cordl_ret)
     }
     pub fn SetColor(
@@ -99,14 +92,28 @@ impl MenuLightsManager {
             .invoke("SetColor", (lightId, color))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn SetColorPreset(
         &mut self,
+        preset: *mut MenuLightsPresetSO,
+        animated: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("SetColorPreset", (preset, animated))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetColorsFromPreset(
+        &mut self,
+        preset: *mut MenuLightsPresetSO,
+        interpolationFactor: f32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("SetColorsFromPreset", (preset, interpolationFactor))?;
         Ok(__cordl_ret)
     }
     pub fn Start(
@@ -129,22 +136,15 @@ impl MenuLightsManager {
             .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
-    pub fn RefreshColors(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshColors", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MenuLightsManager")]

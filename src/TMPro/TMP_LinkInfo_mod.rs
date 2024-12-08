@@ -26,22 +26,22 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::TMP_LinkInfo {
 }
 #[cfg(feature = "TMPro+TMP_LinkInfo")]
 impl crate::TMPro::TMP_LinkInfo {
-    pub fn GetLinkText(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetLinkText",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetLinkID(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetLinkID",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetLinkText(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetLinkText",
             (),
         )?;
         Ok(__cordl_ret)

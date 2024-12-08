@@ -36,37 +36,16 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter {
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryFormatter")]
 impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter {
-    pub fn set_AssemblyFormat(
-        &mut self,
-        value: crate::System::Runtime::Serialization::Formatters::FormatterAssemblyStyle,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_AssemblyFormat", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_SurrogateSelector(
-        &mut self,
-        value: *mut crate::System::Runtime::Serialization::ISurrogateSelector,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_SurrogateSelector", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Deserialize_Stream0(
+    pub fn Deserialize_HeaderHandler2(
         &mut self,
         serializationStream: *mut crate::System::IO::Stream,
+        handler: *mut crate::System::Runtime::Remoting::Messaging::HeaderHandler,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("Deserialize", (serializationStream))?;
+            .invoke("Deserialize", (serializationStream, handler))?;
         Ok(__cordl_ret)
     }
     pub fn Deserialize_HeaderHandler__cordl_bool1(
@@ -82,29 +61,33 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter 
             .invoke("Deserialize", (serializationStream, handler, fCheck))?;
         Ok(__cordl_ret)
     }
-    pub fn Deserialize_HeaderHandler2(
+    pub fn Deserialize_Stream0(
         &mut self,
         serializationStream: *mut crate::System::IO::Stream,
-        handler: *mut crate::System::Runtime::Remoting::Messaging::HeaderHandler,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("Deserialize", (serializationStream, handler))?;
+            .invoke("Deserialize", (serializationStream))?;
         Ok(__cordl_ret)
     }
-    pub fn Serialize_Stream_Object0(
-        &mut self,
-        serializationStream: *mut crate::System::IO::Stream,
-        graph: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Serialize", (serializationStream, graph))?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_ISurrogateSelector_StreamingContext1(
+        selector: *mut crate::System::Runtime::Serialization::ISurrogateSelector,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (selector, context))?;
+        Ok(__cordl_object)
     }
     pub fn Serialize_Il2CppArray1(
         &mut self,
@@ -137,6 +120,18 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter 
             .invoke("Serialize", (serializationStream, graph, headers, fCheck))?;
         Ok(__cordl_ret)
     }
+    pub fn Serialize_Stream_Object0(
+        &mut self,
+        serializationStream: *mut crate::System::IO::Stream,
+        graph: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Serialize", (serializationStream, graph))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -159,6 +154,17 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter 
             .invoke(".ctor", (selector, context))?;
         Ok(__cordl_ret)
     }
+    pub fn set_AssemblyFormat(
+        &mut self,
+        value: crate::System::Runtime::Serialization::Formatters::FormatterAssemblyStyle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_AssemblyFormat", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_Binder(
         &mut self,
         value: *mut crate::System::Runtime::Serialization::SerializationBinder,
@@ -170,22 +176,16 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter 
             .invoke("set_Binder", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_ISurrogateSelector_StreamingContext1(
-        selector: *mut crate::System::Runtime::Serialization::ISurrogateSelector,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (selector, context))?;
-        Ok(__cordl_object)
+    pub fn set_SurrogateSelector(
+        &mut self,
+        value: *mut crate::System::Runtime::Serialization::ISurrogateSelector,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_SurrogateSelector", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryFormatter")]

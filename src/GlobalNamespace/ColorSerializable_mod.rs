@@ -20,14 +20,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for ColorSerializable {
 }
 #[cfg(feature = "ColorSerializable")]
 impl ColorSerializable {
-    pub fn _ctor(
+    pub fn Deserialize(
         &mut self,
-        color: crate::UnityEngine::Color,
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (color),
+            "Deserialize",
+            (reader),
         )?;
         Ok(__cordl_ret)
     }
@@ -61,16 +61,6 @@ impl ColorSerializable {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Serialize(
         &mut self,
         writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
@@ -82,14 +72,24 @@ impl ColorSerializable {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Deserialize(
+    pub fn ToString(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Deserialize",
-            (reader),
+            ".ctor",
+            (color),
         )?;
         Ok(__cordl_ret)
     }

@@ -24,15 +24,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IRsa {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IRsa")]
 impl crate::Org::BouncyCastle::Crypto::IRsa {
-    pub fn ProcessBlock(
+    pub fn ConvertInput(
         &mut self,
-        input: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        off: i32,
+        len: i32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("ProcessBlock", (input))?;
+            .invoke("ConvertInput", (buf, off, len))?;
         Ok(__cordl_ret)
     }
     pub fn ConvertOutput(
@@ -44,6 +46,13 @@ impl crate::Org::BouncyCastle::Crypto::IRsa {
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
             .invoke("ConvertOutput", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetInputBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetInputBlockSize", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetOutputBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -65,24 +74,15 @@ impl crate::Org::BouncyCastle::Crypto::IRsa {
             .invoke("Init", (forEncryption, parameters))?;
         Ok(__cordl_ret)
     }
-    pub fn GetInputBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetInputBlockSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConvertInput(
+    pub fn ProcessBlock(
         &mut self,
-        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        off: i32,
-        len: i32,
+        input: *mut crate::Org::BouncyCastle::Math::BigInteger,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("ConvertInput", (buf, off, len))?;
+            .invoke("ProcessBlock", (input))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

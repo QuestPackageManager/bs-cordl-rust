@@ -28,40 +28,22 @@ impl std::ops::DerefMut for crate::UnityEngine::XR::WindowsMR::Input::HololensHa
 }
 #[cfg(feature = "UnityEngine+XR+WindowsMR+Input+HololensHand")]
 impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
-    pub fn get_sourceLossRisk(
+    pub fn FinishSetup(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
-            .invoke("get_sourceLossRisk", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sourceLossMitigationDirection(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control = __cordl_object
-            .invoke("get_sourceLossMitigationDirection", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_sourceLossMitigationDirection(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_sourceLossMitigationDirection", (value))?;
+            .invoke("FinishSetup", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -71,16 +53,6 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FinishSetup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FinishSetup", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_airTap(
@@ -95,26 +67,40 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
             .invoke("get_airTap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_deviceVelocity(
+    pub fn get_deviceVelocity(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_deviceVelocity", (value))?;
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control = __cordl_object
+            .invoke("get_deviceVelocity", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_sourceLossRisk(
+    pub fn get_sourceLossMitigationDirection(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_sourceLossRisk", (value))?;
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control = __cordl_object
+            .invoke("get_sourceLossMitigationDirection", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sourceLossRisk(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
+            .invoke("get_sourceLossRisk", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_airTap(
@@ -128,24 +114,38 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
             .invoke("set_airTap", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_deviceVelocity(
+    pub fn set_deviceVelocity(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    > {
+        value: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control = __cordl_object
-            .invoke("get_deviceVelocity", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_deviceVelocity", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_sourceLossMitigationDirection(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_sourceLossMitigationDirection", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_sourceLossRisk(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_sourceLossRisk", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+XR+WindowsMR+Input+HololensHand")]

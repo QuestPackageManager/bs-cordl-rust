@@ -27,37 +27,80 @@ impl std::ops::DerefMut for MockPlayerGamePoseGeneratorMirror {
 }
 #[cfg(feature = "MockPlayerGamePoseGeneratorMirror")]
 impl MockPlayerGamePoseGeneratorMirror {
-    pub fn Init(
+    pub fn Dispose(
         &mut self,
-        introStartTime: i64,
-        beatmapData: *mut MockBeatmapData,
-        gameplayModifiers: *mut GameplayModifiers,
-        onSongFinished: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "Init",
-                (introStartTime, beatmapData, gameplayModifiers, onSongFinished),
-            )?;
+            .invoke("Dispose", ())?;
         Ok(__cordl_ret)
     }
-    pub fn HandleSliderWasSpawned(
+    pub fn FindPlayerToMirror(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FindPlayerToMirror", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleLevelFinished(
+        &mut self,
+        userId: *mut crate::System::String,
+        results: *mut MultiplayerLevelCompletionResults,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleLevelFinished", (userId, results))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleNoteWasCut(
         &mut self,
         userId: *mut crate::System::String,
         syncTime: i64,
         songTime: f32,
-        sliderSpawnInfoNetSerializable: *mut SliderSpawnInfoNetSerializable,
+        noteCutInfo: *mut NoteCutInfoNetSerializable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleNoteWasCut", (userId, syncTime, songTime, noteCutInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleNoteWasMissed(
+        &mut self,
+        userId: *mut crate::System::String,
+        syncTime: i64,
+        songTime: f32,
+        noteMissInfo: *mut NoteMissInfoNetSerializable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleNoteWasMissed", (userId, syncTime, songTime, noteMissInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleNoteWasSpawned(
+        &mut self,
+        userId: *mut crate::System::String,
+        syncTime: i64,
+        songTime: f32,
+        noteSpawnInfoNetSerializable: *mut NoteSpawnInfoNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "HandleSliderWasSpawned",
-                (userId, syncTime, songTime, sliderSpawnInfoNetSerializable),
+                "HandleNoteWasSpawned",
+                (userId, syncTime, songTime, noteSpawnInfoNetSerializable),
             )?;
         Ok(__cordl_ret)
     }
@@ -76,88 +119,6 @@ impl MockPlayerGamePoseGeneratorMirror {
                 "HandleObstacleWasSpawned",
                 (userId, syncTime, songTime, obstacleSpawnInfoNetSerializable),
             )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
-        gameplayRpcManager: *mut IGameplayRpcManager,
-        leftHanded: bool,
-        nodePoseSyncStateManager: *mut NodePoseSyncStateManager,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (
-                    multiplayerSessionManager,
-                    gameplayRpcManager,
-                    leftHanded,
-                    nodePoseSyncStateManager,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLevelFinished(
-        &mut self,
-        userId: *mut crate::System::String,
-        results: *mut MultiplayerLevelCompletionResults,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleLevelFinished", (userId, results))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FindPlayerToMirror(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FindPlayerToMirror", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleNoteWasCut(
-        &mut self,
-        userId: *mut crate::System::String,
-        syncTime: i64,
-        songTime: f32,
-        noteCutInfo: *mut NoteCutInfoNetSerializable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNoteWasCut", (userId, syncTime, songTime, noteCutInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Tick(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Tick", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleNoteWasMissed(
-        &mut self,
-        userId: *mut crate::System::String,
-        syncTime: i64,
-        songTime: f32,
-        noteMissInfo: *mut NoteMissInfoNetSerializable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNoteWasMissed", (userId, syncTime, songTime, noteMissInfo))?;
         Ok(__cordl_ret)
     }
     pub fn HandleOptionalAvatarDataReceived(
@@ -187,31 +148,38 @@ impl MockPlayerGamePoseGeneratorMirror {
             .invoke("HandleScoreSyncStateUpdate", (nodePose, player))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleNoteWasSpawned(
+    pub fn HandleSliderWasSpawned(
         &mut self,
         userId: *mut crate::System::String,
         syncTime: i64,
         songTime: f32,
-        noteSpawnInfoNetSerializable: *mut NoteSpawnInfoNetSerializable,
+        sliderSpawnInfoNetSerializable: *mut SliderSpawnInfoNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "HandleNoteWasSpawned",
-                (userId, syncTime, songTime, noteSpawnInfoNetSerializable),
+                "HandleSliderWasSpawned",
+                (userId, syncTime, songTime, sliderSpawnInfoNetSerializable),
             )?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
+    pub fn Init(
         &mut self,
+        introStartTime: i64,
+        beatmapData: *mut MockBeatmapData,
+        gameplayModifiers: *mut GameplayModifiers,
+        onSongFinished: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+            .invoke(
+                "Init",
+                (introStartTime, beatmapData, gameplayModifiers, onSongFinished),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn New(
@@ -219,7 +187,7 @@ impl MockPlayerGamePoseGeneratorMirror {
         gameplayRpcManager: *mut IGameplayRpcManager,
         leftHanded: bool,
         nodePoseSyncStateManager: *mut NodePoseSyncStateManager,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -233,6 +201,38 @@ impl MockPlayerGamePoseGeneratorMirror {
                 ),
             )?;
         Ok(__cordl_object)
+    }
+    pub fn Tick(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Tick", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        multiplayerSessionManager: *mut IMultiplayerSessionManager,
+        gameplayRpcManager: *mut IGameplayRpcManager,
+        leftHanded: bool,
+        nodePoseSyncStateManager: *mut NodePoseSyncStateManager,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (
+                    multiplayerSessionManager,
+                    gameplayRpcManager,
+                    leftHanded,
+                    nodePoseSyncStateManager,
+                ),
+            )?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MockPlayerGamePoseGeneratorMirror")]

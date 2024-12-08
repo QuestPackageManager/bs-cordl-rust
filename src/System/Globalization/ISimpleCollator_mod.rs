@@ -24,18 +24,6 @@ impl std::ops::DerefMut for crate::System::Globalization::ISimpleCollator {
 }
 #[cfg(feature = "System+Globalization+ISimpleCollator")]
 impl crate::System::Globalization::ISimpleCollator {
-    pub fn IsPrefix(
-        &mut self,
-        src: *mut crate::System::String,
-        target: *mut crate::System::String,
-        opt: crate::System::Globalization::CompareOptions,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsPrefix", (src, target, opt))?;
-        Ok(__cordl_ret)
-    }
     pub fn Compare(
         &mut self,
         s1: *mut crate::System::String,
@@ -65,18 +53,6 @@ impl crate::System::Globalization::ISimpleCollator {
             .invoke("GetSortKey", (source, options))?;
         Ok(__cordl_ret)
     }
-    pub fn IsSuffix(
-        &mut self,
-        src: *mut crate::System::String,
-        target: *mut crate::System::String,
-        opt: crate::System::Globalization::CompareOptions,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsSuffix", (src, target, opt))?;
-        Ok(__cordl_ret)
-    }
     pub fn IndexOf(
         &mut self,
         s: *mut crate::System::String,
@@ -90,6 +66,30 @@ impl crate::System::Globalization::ISimpleCollator {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("IndexOf", (s, target, start, length, opt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsPrefix(
+        &mut self,
+        src: *mut crate::System::String,
+        target: *mut crate::System::String,
+        opt: crate::System::Globalization::CompareOptions,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsPrefix", (src, target, opt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsSuffix(
+        &mut self,
+        src: *mut crate::System::String,
+        target: *mut crate::System::String,
+        opt: crate::System::Globalization::CompareOptions,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsSuffix", (src, target, opt))?;
         Ok(__cordl_ret)
     }
     pub fn LastIndexOf(

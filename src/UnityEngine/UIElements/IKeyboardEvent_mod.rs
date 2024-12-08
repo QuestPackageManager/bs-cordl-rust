@@ -24,21 +24,16 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IKeyboardEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+IKeyboardEvent")]
 impl crate::UnityEngine::UIElements::IKeyboardEvent {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_character(&mut self) -> quest_hook::libil2cpp::Result<char> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: char = __cordl_object.invoke("get_character", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_modifiers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EventModifiers> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::EventModifiers = __cordl_object
-            .invoke("get_modifiers", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_keyCode(
@@ -51,10 +46,15 @@ impl crate::UnityEngine::UIElements::IKeyboardEvent {
             .invoke("get_keyCode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
+    pub fn get_modifiers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EventModifiers> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::EventModifiers = __cordl_object
+            .invoke("get_modifiers", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IKeyboardEvent")]

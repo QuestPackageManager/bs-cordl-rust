@@ -24,38 +24,6 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlAnyConverter {
 }
 #[cfg(feature = "System+Xml+Schema+XmlAnyConverter")]
 impl crate::System::Xml::Schema::XmlAnyConverter {
-    pub fn ToDateTimeOffset(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::DateTimeOffset = __cordl_object
-            .invoke("ToDateTimeOffset", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToDouble(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("ToDouble", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        typeCode: crate::System::Xml::Schema::XmlTypeCode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (typeCode))?;
-        Ok(__cordl_ret)
-    }
     pub fn ChangeTypeWildcardDestination(
         &mut self,
         value: *mut crate::System::Object,
@@ -72,26 +40,6 @@ impl crate::System::Xml::Schema::XmlAnyConverter {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn ToSingle(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("ToSingle", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToBoolean(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ToBoolean", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn ChangeTypeWildcardSource(
         &mut self,
         value: *mut crate::System::Object,
@@ -103,71 +51,6 @@ impl crate::System::Xml::Schema::XmlAnyConverter {
         );
         let __cordl_ret: *mut crate::System::Object = __cordl_object
             .invoke("ChangeTypeWildcardSource", (value, destinationType, nsResolver))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToNavigator(
-        &mut self,
-        nav: *mut crate::System::Xml::XPath::XPathNavigator,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XPath::XPathNavigator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::XPath::XPathNavigator = __cordl_object
-            .invoke("ToNavigator", (nav))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToDecimal(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Decimal = __cordl_object
-            .invoke("ToDecimal", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToDateTime(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::DateTime = __cordl_object
-            .invoke("ToDateTime", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToInt32(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ToInt32", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToInt64(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("ToInt64", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ChangeType__cordl_bool0(
-        &mut self,
-        value: bool,
-        destinationType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("ChangeType", (value, destinationType))?;
         Ok(__cordl_ret)
     }
     pub fn ChangeType_DateTime1(
@@ -185,6 +68,44 @@ impl crate::System::Xml::Schema::XmlAnyConverter {
     pub fn ChangeType_Decimal2(
         &mut self,
         value: crate::System::Decimal,
+        destinationType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("ChangeType", (value, destinationType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ChangeType_Object_IXmlNamespaceResolver7(
+        &mut self,
+        value: *mut crate::System::Object,
+        destinationType: *mut crate::System::Type,
+        nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("ChangeType", (value, destinationType, nsResolver))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ChangeType_String_IXmlNamespaceResolver6(
+        &mut self,
+        value: *mut crate::System::String,
+        destinationType: *mut crate::System::Type,
+        nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("ChangeType", (value, destinationType, nsResolver))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ChangeType__cordl_bool0(
+        &mut self,
+        value: bool,
         destinationType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -230,40 +151,119 @@ impl crate::System::Xml::Schema::XmlAnyConverter {
             .invoke("ChangeType", (value, destinationType))?;
         Ok(__cordl_ret)
     }
-    pub fn ChangeType_String_IXmlNamespaceResolver6(
-        &mut self,
-        value: *mut crate::System::String,
-        destinationType: *mut crate::System::Type,
-        nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("ChangeType", (value, destinationType, nsResolver))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ChangeType_Object_IXmlNamespaceResolver7(
-        &mut self,
-        value: *mut crate::System::Object,
-        destinationType: *mut crate::System::Type,
-        nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("ChangeType", (value, destinationType, nsResolver))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         typeCode: crate::System::Xml::Schema::XmlTypeCode,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (typeCode))?;
         Ok(__cordl_object)
+    }
+    pub fn ToBoolean(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ToBoolean", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToDateTime(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::DateTime = __cordl_object
+            .invoke("ToDateTime", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToDateTimeOffset(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::DateTimeOffset = __cordl_object
+            .invoke("ToDateTimeOffset", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToDecimal(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Decimal = __cordl_object
+            .invoke("ToDecimal", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToDouble(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object.invoke("ToDouble", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToInt32(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("ToInt32", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToInt64(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("ToInt64", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToNavigator(
+        &mut self,
+        nav: *mut crate::System::Xml::XPath::XPathNavigator,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XPath::XPathNavigator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::XPath::XPathNavigator = __cordl_object
+            .invoke("ToNavigator", (nav))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToSingle(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("ToSingle", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        typeCode: crate::System::Xml::Schema::XmlTypeCode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (typeCode))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlAnyConverter")]

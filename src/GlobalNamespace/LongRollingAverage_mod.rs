@@ -28,6 +28,13 @@ impl std::ops::DerefMut for LongRollingAverage {
 }
 #[cfg(feature = "LongRollingAverage")]
 impl LongRollingAverage {
+    pub fn New(window: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (window))?;
+        Ok(__cordl_object)
+    }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -36,13 +43,6 @@ impl LongRollingAverage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_currentAverage(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_currentAverage", ())?;
         Ok(__cordl_ret)
     }
     pub fn Update(
@@ -67,19 +67,19 @@ impl LongRollingAverage {
             .invoke(".ctor", (window))?;
         Ok(__cordl_ret)
     }
+    pub fn get_currentAverage(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_currentAverage", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_hasValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_hasValue", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(window: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (window))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LongRollingAverage")]

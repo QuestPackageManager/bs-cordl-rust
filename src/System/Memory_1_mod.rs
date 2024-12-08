@@ -26,17 +26,18 @@ for crate::System::Memory_1<T> {
 #[cfg(feature = "System+Memory_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
     pub const RemoveFlagsBitMask: i32 = 2147483647i32;
-    pub fn Pin(
+    pub fn Equals_Memory_1_1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Buffers::MemoryHandle>
+        other: crate::System::Memory_1<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::System::Buffers::MemoryHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Pin",
-            (),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -55,21 +56,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Memory_1_1(
-        &mut self,
-        other: crate::System::Memory_1<T>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -78,6 +64,79 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Pin(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Buffers::MemoryHandle>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::Buffers::MemoryHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Pin",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Slice_i32_0(
+        &mut self,
+        start: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Memory_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::Memory_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Slice",
+            (start),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Slice_i32_1(
+        &mut self,
+        start: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Memory_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::Memory_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Slice",
+            (start, length),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToArray(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToArray",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
             (),
         )?;
         Ok(__cordl_ret)
@@ -131,37 +190,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Slice_i32_0(
-        &mut self,
-        start: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Memory_1<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: crate::System::Memory_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Slice",
-            (start),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Slice_i32_1(
-        &mut self,
-        start: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Memory_1<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: crate::System::Memory_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Slice",
-            (start, length),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -170,34 +198,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Length",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToArray(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToArray",
             (),
         )?;
         Ok(__cordl_ret)

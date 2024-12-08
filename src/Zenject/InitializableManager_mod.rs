@@ -26,6 +26,16 @@ impl std::ops::DerefMut for crate::Zenject::InitializableManager_InitializableIn
 }
 #[cfg(feature = "Zenject+InitializableManager+InitializableInfo")]
 impl crate::Zenject::InitializableManager_InitializableInfo {
+    pub fn New(
+        initializable: *mut crate::Zenject::IInitializable,
+        priority: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (initializable, priority))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         initializable: *mut crate::Zenject::IInitializable,
@@ -37,16 +47,6 @@ impl crate::Zenject::InitializableManager_InitializableInfo {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (initializable, priority))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        initializable: *mut crate::Zenject::IInitializable,
-        priority: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (initializable, priority))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+InitializableManager+InitializableInfo")]
@@ -89,12 +89,12 @@ impl std::ops::DerefMut for crate::Zenject::InitializableManager {
 }
 #[cfg(feature = "Zenject+InitializableManager")]
 impl crate::Zenject::InitializableManager {
+    #[cfg(feature = "Zenject+InitializableManager+InitializableInfo")]
+    pub type InitializableInfo = crate::Zenject::InitializableManager_InitializableInfo;
     #[cfg(feature = "Zenject+InitializableManager+__c")]
     pub type __c = crate::Zenject::InitializableManager___c;
     #[cfg(feature = "Zenject+InitializableManager+__c__DisplayClass2_0")]
     pub type __c__DisplayClass2_0 = crate::Zenject::InitializableManager___c__DisplayClass2_0;
-    #[cfg(feature = "Zenject+InitializableManager+InitializableInfo")]
-    pub type InitializableInfo = crate::Zenject::InitializableManager_InitializableInfo;
     pub fn Add_IInitializable0(
         &mut self,
         initializable: *mut crate::Zenject::IInitializable,
@@ -118,22 +118,6 @@ impl crate::Zenject::InitializableManager {
             .invoke("Add", (initializable, priority))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        initializables: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::IInitializable,
-        >,
-        priorities: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (initializables, priorities))?;
-        Ok(__cordl_ret)
-    }
     pub fn Initialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -151,12 +135,28 @@ impl crate::Zenject::InitializableManager {
         priorities: *mut crate::System::Collections::Generic::List_1<
             *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
         >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (initializables, priorities))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        initializables: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::IInitializable,
+        >,
+        priorities: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (initializables, priorities))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+InitializableManager")]

@@ -98,40 +98,15 @@ impl std::ops::DerefMut for SongRunningHelper {
 impl SongRunningHelper {
     #[cfg(feature = "SongRunningHelper+QueuedSongParams")]
     pub type QueuedSongParams = crate::GlobalNamespace::SongRunningHelper_QueuedSongParams;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _StartLevel_g__HandleLevelDidFinishCallback_9_0(
-        &mut self,
-        standardLevelScenesTransition: *mut StandardLevelScenesTransitionSetupDataSO,
-        results: *mut LevelCompletionResults,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "<StartLevel>g__HandleLevelDidFinishCallback|9_0",
-                (standardLevelScenesTransition, results),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartLevel(
+    pub fn EnqueueLevel(
         &mut self,
         queuedSongParams: crate::GlobalNamespace::SongRunningHelper_QueuedSongParams,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartLevel", (queuedSongParams))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("EnqueueLevel", (queuedSongParams))?;
         Ok(__cordl_ret)
     }
     pub fn FindBeatmapLevelPackBeatmaps(
@@ -147,15 +122,22 @@ impl SongRunningHelper {
             .invoke("FindBeatmapLevelPackBeatmaps", (packId))?;
         Ok(__cordl_ret)
     }
-    pub fn EnqueueLevel(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn StartLevel(
         &mut self,
         queuedSongParams: crate::GlobalNamespace::SongRunningHelper_QueuedSongParams,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("EnqueueLevel", (queuedSongParams))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartLevel", (queuedSongParams))?;
         Ok(__cordl_ret)
     }
     pub fn StopAllLevels(
@@ -178,12 +160,30 @@ impl SongRunningHelper {
             .invoke("StopCurrentLevel", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _StartLevel_g__HandleLevelDidFinishCallback_9_0(
+        &mut self,
+        standardLevelScenesTransition: *mut StandardLevelScenesTransitionSetupDataSO,
+        results: *mut LevelCompletionResults,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "<StartLevel>g__HandleLevelDidFinishCallback|9_0",
+                (standardLevelScenesTransition, results),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "SongRunningHelper")]

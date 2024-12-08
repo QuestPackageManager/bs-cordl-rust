@@ -33,15 +33,14 @@ impl std::ops::DerefMut for crate::System::Diagnostics::AsyncStreamReader {
 }
 #[cfg(feature = "System+Diagnostics+AsyncStreamReader")]
 impl crate::System::Diagnostics::AsyncStreamReader {
-    pub fn Dispose(
+    pub fn CancelOperation(
         &mut self,
-        disposing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", (disposing))?;
+            .invoke("CancelOperation", ())?;
         Ok(__cordl_ret)
     }
     pub fn Close(
@@ -54,14 +53,15 @@ impl crate::System::Diagnostics::AsyncStreamReader {
             .invoke("Close", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CancelOperation(
+    pub fn Dispose(
         &mut self,
+        disposing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CancelOperation", ())?;
+            .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
 }

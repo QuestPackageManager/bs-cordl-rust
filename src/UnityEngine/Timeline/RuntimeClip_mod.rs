@@ -27,19 +27,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::RuntimeClip {
 }
 #[cfg(feature = "UnityEngine+Timeline+RuntimeClip")]
 impl crate::UnityEngine::Timeline::RuntimeClip {
-    pub fn EvaluateAt(
-        &mut self,
-        localTime: f64,
-        frameData: crate::UnityEngine::Playables::FrameData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EvaluateAt", (localTime, frameData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn Create(
         &mut self,
         clip: *mut crate::UnityEngine::Timeline::TimelineClip,
         clipPlayable: crate::UnityEngine::Playables::Playable,
@@ -49,18 +37,7 @@ impl crate::UnityEngine::Timeline::RuntimeClip {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (clip, clipPlayable, parentMixer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_enable(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_enable", (value))?;
+            .invoke("Create", (clip, clipPlayable, parentMixer))?;
         Ok(__cordl_ret)
     }
     pub fn DisableAt(
@@ -76,17 +53,38 @@ impl crate::UnityEngine::Timeline::RuntimeClip {
             .invoke("DisableAt", (localTime, rootDuration, frameData))?;
         Ok(__cordl_ret)
     }
-    pub fn Create(
+    pub fn EvaluateAt(
         &mut self,
-        clip: *mut crate::UnityEngine::Timeline::TimelineClip,
-        clipPlayable: crate::UnityEngine::Playables::Playable,
-        parentMixer: crate::UnityEngine::Playables::Playable,
+        localTime: f64,
+        frameData: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Create", (clip, clipPlayable, parentMixer))?;
+            .invoke("EvaluateAt", (localTime, frameData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        clip: *mut crate::UnityEngine::Timeline::TimelineClip,
+        clipPlayable: crate::UnityEngine::Playables::Playable,
+        parentMixer: crate::UnityEngine::Playables::Playable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (clip, clipPlayable, parentMixer))?;
+        Ok(__cordl_object)
+    }
+    pub fn SetDuration(
+        &mut self,
+        duration: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetDuration", (duration))?;
         Ok(__cordl_ret)
     }
     pub fn SetTime(
@@ -100,11 +98,17 @@ impl crate::UnityEngine::Timeline::RuntimeClip {
             .invoke("SetTime", (_cordl_time))?;
         Ok(__cordl_ret)
     }
-    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+    pub fn _ctor(
+        &mut self,
+        clip: *mut crate::UnityEngine::Timeline::TimelineClip,
+        clipPlayable: crate::UnityEngine::Playables::Playable,
+        parentMixer: crate::UnityEngine::Playables::Playable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f64 = __cordl_object.invoke("get_duration", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (clip, clipPlayable, parentMixer))?;
         Ok(__cordl_ret)
     }
     pub fn get_clip(
@@ -115,6 +119,13 @@ impl crate::UnityEngine::Timeline::RuntimeClip {
         );
         let __cordl_ret: *mut crate::UnityEngine::Timeline::TimelineClip = __cordl_object
             .invoke("get_clip", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object.invoke("get_duration", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_mixer(
@@ -137,17 +148,6 @@ impl crate::UnityEngine::Timeline::RuntimeClip {
             .invoke("get_playable", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetDuration(
-        &mut self,
-        duration: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetDuration", (duration))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_start(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -155,16 +155,16 @@ impl crate::UnityEngine::Timeline::RuntimeClip {
         let __cordl_ret: f64 = __cordl_object.invoke("get_start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        clip: *mut crate::UnityEngine::Timeline::TimelineClip,
-        clipPlayable: crate::UnityEngine::Playables::Playable,
-        parentMixer: crate::UnityEngine::Playables::Playable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (clip, clipPlayable, parentMixer))?;
-        Ok(__cordl_object)
+    pub fn set_enable(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_enable", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+RuntimeClip")]

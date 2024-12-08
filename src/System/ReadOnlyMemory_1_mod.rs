@@ -25,20 +25,6 @@ for crate::System::ReadOnlyMemory_1<T> {
 }
 #[cfg(feature = "System+ReadOnlyMemory_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlyMemory_1<T> {
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_Object0(
         &mut self,
         obj: *mut crate::System::Object,
@@ -66,6 +52,63 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlyMemory_1<T> {
             self,
             "Equals",
             (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetObjectStartLength(
+        &mut self,
+        start: quest_hook::libil2cpp::ByRefMut<i32>,
+        length: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetObjectStartLength",
+            (start, length),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Slice(
+        &mut self,
+        start: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlyMemory_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::ReadOnlyMemory_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Slice",
+            (start),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -118,45 +161,14 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlyMemory_1<T> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Slice(
-        &mut self,
-        start: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlyMemory_1<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: crate::System::ReadOnlyMemory_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Slice",
-            (start),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetObjectStartLength(
-        &mut self,
-        start: quest_hook::libil2cpp::ByRefMut<i32>,
-        length: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetObjectStartLength",
-            (start, length),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
+            "get_Length",
             (),
         )?;
         Ok(__cordl_ret)
@@ -171,18 +183,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlyMemory_1<T> {
         let __cordl_ret: crate::System::ReadOnlySpan_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Span",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Length",
             (),
         )?;
         Ok(__cordl_ret)

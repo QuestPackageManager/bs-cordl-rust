@@ -29,16 +29,6 @@ for crate::Org::BouncyCastle::Crypto::Operators::Asn1VerifierFactory {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1VerifierFactory")]
 impl crate::Org::BouncyCastle::Crypto::Operators::Asn1VerifierFactory {
-    pub fn get_AlgorithmDetails(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_AlgorithmDetails", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateCalculator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -49,6 +39,38 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1VerifierFactory {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IStreamCalculator = __cordl_object
             .invoke("CreateCalculator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_AlgorithmIdentifier1(
+        algorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        publicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, publicKey))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String0(
+        algorithm: *mut crate::System::String,
+        publicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, publicKey))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_AlgorithmIdentifier1(
+        &mut self,
+        algorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        publicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (algorithm, publicKey))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_String0(
@@ -63,37 +85,15 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1VerifierFactory {
             .invoke(".ctor", (algorithm, publicKey))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_AlgorithmIdentifier1(
+    pub fn get_AlgorithmDetails(
         &mut self,
-        algorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        publicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (algorithm, publicKey))?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_AlgorithmDetails", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_String0(
-        algorithm: *mut crate::System::String,
-        publicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, publicKey))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_AlgorithmIdentifier1(
-        algorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        publicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, publicKey))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1VerifierFactory")]

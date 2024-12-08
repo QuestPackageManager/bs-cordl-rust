@@ -39,6 +39,24 @@ impl OVRCustomSkeleton {
             .invoke("AllocateBones", ())?;
         Ok(__cordl_ret)
     }
+    pub fn GetBoneTransform(
+        &mut self,
+        boneId: crate::GlobalNamespace::OVRSkeleton_BoneId,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Transform = __cordl_object
+            .invoke("GetBoneTransform", (boneId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn SetSkeletonType(
         &mut self,
         skeletonType: crate::GlobalNamespace::OVRSkeleton_SkeletonType,
@@ -61,6 +79,16 @@ impl OVRCustomSkeleton {
                 "UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize",
                 (),
             )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -87,34 +115,6 @@ impl OVRCustomSkeleton {
             *mut crate::UnityEngine::Transform,
         > = __cordl_object.invoke("get_CustomBones", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetBoneTransform(
-        &mut self,
-        boneId: crate::GlobalNamespace::OVRSkeleton_BoneId,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Transform = __cordl_object
-            .invoke("GetBoneTransform", (boneId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRCustomSkeleton")]

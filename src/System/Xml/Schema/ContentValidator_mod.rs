@@ -27,11 +27,14 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::ContentValidator {
 }
 #[cfg(feature = "System+Xml+Schema+ContentValidator")]
 impl crate::System::Xml::Schema::ContentValidator {
-    pub fn get_PreserveWhitespace(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn CompleteValidation(
+        &mut self,
+        context: *mut crate::System::Xml::Schema::ValidationState,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_PreserveWhitespace", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("CompleteValidation", (context))?;
         Ok(__cordl_ret)
     }
     pub fn ExpectedElements(
@@ -44,24 +47,6 @@ impl crate::System::Xml::Schema::ContentValidator {
         );
         let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
             .invoke("ExpectedElements", (context, isRequiredOnly))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsEmptiable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsEmptiable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsOpen(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsOpen", (value))?;
         Ok(__cordl_ret)
     }
     pub fn ExpectedParticles(
@@ -87,6 +72,26 @@ impl crate::System::Xml::Schema::ContentValidator {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitValidation", (context))?;
         Ok(__cordl_ret)
+    }
+    pub fn New_XmlSchemaContentType0(
+        contentType: crate::System::Xml::Schema::XmlSchemaContentType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (contentType))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool__cordl_bool1(
+        contentType: crate::System::Xml::Schema::XmlSchemaContentType,
+        isOpen: bool,
+        isEmptiable: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (contentType, isOpen, isEmptiable))?;
+        Ok(__cordl_object)
     }
     pub fn ValidateElement(
         &mut self,
@@ -137,6 +142,13 @@ impl crate::System::Xml::Schema::ContentValidator {
             .invoke("get_ContentType", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_IsEmptiable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsEmptiable", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_IsOpen(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -144,35 +156,23 @@ impl crate::System::Xml::Schema::ContentValidator {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsOpen", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CompleteValidation(
-        &mut self,
-        context: *mut crate::System::Xml::Schema::ValidationState,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_PreserveWhitespace(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("CompleteValidation", (context))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_PreserveWhitespace", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_XmlSchemaContentType0(
-        contentType: crate::System::Xml::Schema::XmlSchemaContentType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (contentType))?;
-        Ok(__cordl_object)
-    }
-    pub fn New__cordl_bool__cordl_bool1(
-        contentType: crate::System::Xml::Schema::XmlSchemaContentType,
-        isOpen: bool,
-        isEmptiable: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (contentType, isOpen, isEmptiable))?;
-        Ok(__cordl_object)
+    pub fn set_IsOpen(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsOpen", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+ContentValidator")]

@@ -47,37 +47,20 @@ impl std::ops::DerefMut for BloomPrePassBackgroundNonLightInstancedGroupRenderer
 #[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer")]
 impl BloomPrePassBackgroundNonLightInstancedGroupRenderer {
     pub const kInternalMatricesCachingId: &'static str = "INTERNAL_MATRICES";
-    #[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer+PropertyType")]
-    pub type PropertyType = crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_PropertyType;
     #[cfg(
         feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer+SupportedProperty"
     )]
     pub type SupportedProperty = crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty;
-    pub fn GetCachedVectorArray(
+    #[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer+PropertyType")]
+    pub type PropertyType = crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_PropertyType;
+    pub fn AutoFillRenderers(
         &mut self,
-        propertyName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Vector4,
-        > = __cordl_object.invoke("GetCachedVectorArray", (propertyName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Render(
-        &mut self,
-        dest: *mut crate::UnityEngine::RenderTexture,
-        viewMatrix: crate::UnityEngine::Matrix4x4,
-        projectionMatrix: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Render", (dest, viewMatrix, projectionMatrix))?;
+            .invoke("AutoFillRenderers", ())?;
         Ok(__cordl_ret)
     }
     pub fn Awake(
@@ -90,14 +73,15 @@ impl BloomPrePassBackgroundNonLightInstancedGroupRenderer {
             .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn InitIfNeeded(
+    pub fn GetCachedFloatArray(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        propertyName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<f32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitIfNeeded", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<f32> = __cordl_object
+            .invoke("GetCachedFloatArray", (propertyName))?;
         Ok(__cordl_ret)
     }
     pub fn GetCachedMatrixArray(
@@ -114,25 +98,48 @@ impl BloomPrePassBackgroundNonLightInstancedGroupRenderer {
         > = __cordl_object.invoke("GetCachedMatrixArray", (propertyName))?;
         Ok(__cordl_ret)
     }
-    pub fn GetCachedFloatArray(
+    pub fn GetCachedVectorArray(
         &mut self,
         propertyName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<f32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<f32> = __cordl_object
-            .invoke("GetCachedFloatArray", (propertyName))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::Vector4,
+        > = __cordl_object.invoke("GetCachedVectorArray", (propertyName))?;
         Ok(__cordl_ret)
     }
-    pub fn AutoFillRenderers(
+    pub fn InitIfNeeded(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AutoFillRenderers", ())?;
+            .invoke("InitIfNeeded", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Render(
+        &mut self,
+        dest: *mut crate::UnityEngine::RenderTexture,
+        viewMatrix: crate::UnityEngine::Matrix4x4,
+        projectionMatrix: crate::UnityEngine::Matrix4x4,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Render", (dest, viewMatrix, projectionMatrix))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -144,13 +151,6 @@ impl BloomPrePassBackgroundNonLightInstancedGroupRenderer {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer")]
@@ -220,6 +220,13 @@ for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer
     feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer+SupportedProperty"
 )]
 impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -229,13 +236,6 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRendere
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

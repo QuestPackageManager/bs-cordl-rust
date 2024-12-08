@@ -24,24 +24,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IRawAgreement {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IRawAgreement")]
 impl crate::Org::BouncyCastle::Crypto::IRawAgreement {
-    pub fn get_AgreementSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_AgreementSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init(
-        &mut self,
-        parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (parameters))?;
-        Ok(__cordl_ret)
-    }
     pub fn CalculateAgreement(
         &mut self,
         publicKey: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
@@ -55,10 +37,28 @@ impl crate::Org::BouncyCastle::Crypto::IRawAgreement {
             .invoke("CalculateAgreement", (publicKey, buf, off))?;
         Ok(__cordl_ret)
     }
+    pub fn Init(
+        &mut self,
+        parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (parameters))?;
+        Ok(__cordl_ret)
+    }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_AgreementSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_AgreementSize", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IRawAgreement")]

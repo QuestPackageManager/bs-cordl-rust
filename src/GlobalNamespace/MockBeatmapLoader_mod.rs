@@ -29,6 +29,51 @@ impl std::ops::DerefMut for MockBeatmapLoader {
 impl MockBeatmapLoader {
     #[cfg(feature = "MockBeatmapLoader+_GetBeatmapData_d__5")]
     pub type _GetBeatmapData_d__5 = crate::GlobalNamespace::MockBeatmapLoader__GetBeatmapData_d__5;
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetBeatmapData(
+        &mut self,
+        beatmap: *mut BeatmapKeyNetSerializable,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<*mut MockBeatmapData>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut MockBeatmapData,
+        > = __cordl_object.invoke("GetBeatmapData", (beatmap, cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        beatmapLevelsModel: *mut BeatmapLevelsModel,
+        beatmapDataLoader: *mut BeatmapDataLoader,
+        environmentsListModel: *mut EnvironmentsListModel,
+        beatmapCharacteristicCollection: *mut BeatmapCharacteristicCollection,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    beatmapLevelsModel,
+                    beatmapDataLoader,
+                    environmentsListModel,
+                    beatmapCharacteristicCollection,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         beatmapLevelsModel: *mut BeatmapLevelsModel,
@@ -50,51 +95,6 @@ impl MockBeatmapLoader {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn GetBeatmapData(
-        &mut self,
-        beatmap: *mut BeatmapKeyNetSerializable,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut MockBeatmapData>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut MockBeatmapData,
-        > = __cordl_object.invoke("GetBeatmapData", (beatmap, cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        beatmapLevelsModel: *mut BeatmapLevelsModel,
-        beatmapDataLoader: *mut BeatmapDataLoader,
-        environmentsListModel: *mut EnvironmentsListModel,
-        beatmapCharacteristicCollection: *mut BeatmapCharacteristicCollection,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    beatmapLevelsModel,
-                    beatmapDataLoader,
-                    environmentsListModel,
-                    beatmapCharacteristicCollection,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MockBeatmapLoader")]

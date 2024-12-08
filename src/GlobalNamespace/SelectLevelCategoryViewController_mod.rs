@@ -46,6 +46,13 @@ for crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo 
 }
 #[cfg(feature = "SelectLevelCategoryViewController+LevelCategoryInfo")]
 impl crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,13 +62,6 @@ impl crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SelectLevelCategoryViewController+LevelCategoryInfo")]
@@ -113,14 +113,14 @@ impl std::ops::DerefMut for SelectLevelCategoryViewController {
 }
 #[cfg(feature = "SelectLevelCategoryViewController")]
 impl SelectLevelCategoryViewController {
+    #[cfg(feature = "SelectLevelCategoryViewController+__c")]
+    pub type __c = crate::GlobalNamespace::SelectLevelCategoryViewController___c;
+    #[cfg(feature = "SelectLevelCategoryViewController+LevelCategoryInfo")]
+    pub type LevelCategoryInfo = crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo;
     #[cfg(feature = "SelectLevelCategoryViewController+__c__DisplayClass12_0")]
     pub type __c__DisplayClass12_0 = crate::GlobalNamespace::SelectLevelCategoryViewController___c__DisplayClass12_0;
     #[cfg(feature = "SelectLevelCategoryViewController+LevelCategory")]
     pub type LevelCategory = crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory;
-    #[cfg(feature = "SelectLevelCategoryViewController+LevelCategoryInfo")]
-    pub type LevelCategoryInfo = crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo;
-    #[cfg(feature = "SelectLevelCategoryViewController+__c")]
-    pub type __c = crate::GlobalNamespace::SelectLevelCategoryViewController___c;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -135,6 +135,18 @@ impl SelectLevelCategoryViewController {
                 "DidActivate",
                 (firstActivation, addedToHierarchy, screenSystemEnabling),
             )?;
+        Ok(__cordl_ret)
+    }
+    pub fn DidDeactivate(
+        &mut self,
+        removedFromHierarchy: bool,
+        screenSystemDisabling: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
         Ok(__cordl_ret)
     }
     pub fn LevelFilterCategoryIconSegmentedControlDidSelectCell(
@@ -152,19 +164,12 @@ impl SelectLevelCategoryViewController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didSelectLevelCategoryEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<
-            *mut SelectLevelCategoryViewController,
-            crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didSelectLevelCategoryEvent", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Setup(
         &mut self,
@@ -180,28 +185,14 @@ impl SelectLevelCategoryViewController {
             .invoke("Setup", (selectedCategory, enabledLevelCategories))?;
         Ok(__cordl_ret)
     }
-    pub fn DidDeactivate(
+    pub fn _ctor(
         &mut self,
-        removedFromHierarchy: bool,
-        screenSystemDisabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_selectedLevelCategory(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory = __cordl_object
-            .invoke("get_selectedLevelCategory", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_didSelectLevelCategoryEvent(
@@ -218,22 +209,31 @@ impl SelectLevelCategoryViewController {
             .invoke("add_didSelectLevelCategoryEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn get_selectedLevelCategory(
         &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory = __cordl_object
+            .invoke("get_selectedLevelCategory", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didSelectLevelCategoryEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut SelectLevelCategoryViewController,
+            crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("remove_didSelectLevelCategoryEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SelectLevelCategoryViewController")]

@@ -31,28 +31,6 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
         feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
     )]
     pub type ProcessMessageRes = crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes;
-    pub fn SendAsyncMessage(
-        &mut self,
-        data: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendAsyncMessage", (data))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _AsyncProcessMessage_b__10_0(
-        &mut self,
-        data: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<AsyncProcessMessage>b__10_0", (data))?;
-        Ok(__cordl_ret)
-    }
     pub fn AsyncProcessMessage(
         &mut self,
         reqMsg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
@@ -67,15 +45,22 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
             .invoke("AsyncProcessMessage", (reqMsg, replySink))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn New(domainID: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (domainID))?;
+        Ok(__cordl_object)
+    }
+    pub fn SendAsyncMessage(
         &mut self,
-        domainID: i32,
+        data: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (domainID))?;
+            .invoke("SendAsyncMessage", (data))?;
         Ok(__cordl_ret)
     }
     pub fn SyncProcessMessage(
@@ -91,19 +76,34 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
             .invoke("SyncProcessMessage", (msgRequest))?;
         Ok(__cordl_ret)
     }
+    pub fn _AsyncProcessMessage_b__10_0(
+        &mut self,
+        data: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<AsyncProcessMessage>b__10_0", (data))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        domainID: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (domainID))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_TargetDomainId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_TargetDomainId", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(domainID: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (domainID))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink")]

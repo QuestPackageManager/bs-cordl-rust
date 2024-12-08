@@ -23,21 +23,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::JointMot
 }
 #[cfg(feature = "UnityEngine+JointMotor")]
 impl crate::UnityEngine::JointMotor {
-    pub fn set_targetVelocity(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_targetVelocity",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_targetVelocity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_force(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_targetVelocity",
+            "get_force",
             (),
         )?;
         Ok(__cordl_ret)
@@ -50,11 +39,22 @@ impl crate::UnityEngine::JointMotor {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_force(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_targetVelocity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_force",
+            "get_targetVelocity",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_force(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_force",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -69,13 +69,13 @@ impl crate::UnityEngine::JointMotor {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_force(
+    pub fn set_targetVelocity(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_force",
+            "set_targetVelocity",
             (value),
         )?;
         Ok(__cordl_ret)

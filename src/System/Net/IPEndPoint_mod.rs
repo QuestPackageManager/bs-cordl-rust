@@ -29,26 +29,6 @@ impl crate::System::Net::IPEndPoint {
     pub const AnyPort: i32 = 0i32;
     pub const MaxPort: i32 = 65535i32;
     pub const MinPort: i32 = 0i32;
-    pub fn get_AddressFamily(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Net::Sockets::AddressFamily> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Net::Sockets::AddressFamily = __cordl_object
-            .invoke("get_AddressFamily", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Create(
         &mut self,
         socketAddress: *mut crate::System::Net::SocketAddress,
@@ -60,11 +40,51 @@ impl crate::System::Net::IPEndPoint {
             .invoke("Create", (socketAddress))?;
         Ok(__cordl_ret)
     }
+    pub fn Equals(
+        &mut self,
+        comparand: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (comparand))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        address: *mut crate::System::Net::IPAddress,
+        port: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (address, port))?;
+        Ok(__cordl_object)
+    }
+    pub fn Serialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::SocketAddress> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::SocketAddress = __cordl_object
+            .invoke("Serialize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -79,23 +99,6 @@ impl crate::System::Net::IPEndPoint {
             .invoke(".ctor", (address, port))?;
         Ok(__cordl_ret)
     }
-    pub fn Equals(
-        &mut self,
-        comparand: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (comparand))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Port(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Port", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Address(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::IPAddress> {
@@ -106,25 +109,22 @@ impl crate::System::Net::IPEndPoint {
             .invoke("get_Address", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Serialize(
+    pub fn get_AddressFamily(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::SocketAddress> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Net::Sockets::AddressFamily> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::SocketAddress = __cordl_object
-            .invoke("Serialize", ())?;
+        let __cordl_ret: crate::System::Net::Sockets::AddressFamily = __cordl_object
+            .invoke("get_AddressFamily", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        address: *mut crate::System::Net::IPAddress,
-        port: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (address, port))?;
-        Ok(__cordl_object)
+    pub fn get_Port(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Port", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+IPEndPoint")]

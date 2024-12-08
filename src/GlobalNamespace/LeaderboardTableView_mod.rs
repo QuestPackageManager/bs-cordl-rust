@@ -45,21 +45,25 @@ impl LeaderboardTableView {
             .invoke("CellForIdx", (tableView, row))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetScores(
@@ -76,19 +80,15 @@ impl LeaderboardTableView {
             .invoke("SetScores", (scores, specialScorePos))?;
         Ok(__cordl_ret)
     }
-    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LeaderboardTableView")]
@@ -130,6 +130,39 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardTableView_ScoreDa
 }
 #[cfg(feature = "LeaderboardTableView+ScoreData")]
 impl crate::GlobalNamespace::LeaderboardTableView_ScoreData {
+    pub fn New(
+        score: i32,
+        playerName: *mut crate::System::String,
+        rank: i32,
+        fullCombo: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (score, playerName, rank, fullCombo))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        score: i32,
+        playerName: *mut crate::System::String,
+        rank: i32,
+        fullCombo: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (score, playerName, rank, fullCombo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_fullCombo(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_fullCombo", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_playerName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -138,24 +171,6 @@ impl crate::GlobalNamespace::LeaderboardTableView_ScoreData {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_playerName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_rank(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_rank", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_fullCombo(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_fullCombo", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_rank(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -172,6 +187,17 @@ impl crate::GlobalNamespace::LeaderboardTableView_ScoreData {
         let __cordl_ret: i32 = __cordl_object.invoke("get_score", ())?;
         Ok(__cordl_ret)
     }
+    pub fn set_fullCombo(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_fullCombo", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_playerName(
         &mut self,
         value: *mut crate::System::String,
@@ -183,29 +209,15 @@ impl crate::GlobalNamespace::LeaderboardTableView_ScoreData {
             .invoke("set_playerName", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn set_rank(
         &mut self,
-        score: i32,
-        playerName: *mut crate::System::String,
-        rank: i32,
-        fullCombo: bool,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (score, playerName, rank, fullCombo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_fullCombo(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_fullCombo", (value))?;
+            .invoke("set_rank", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_score(
@@ -218,18 +230,6 @@ impl crate::GlobalNamespace::LeaderboardTableView_ScoreData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_score", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        score: i32,
-        playerName: *mut crate::System::String,
-        rank: i32,
-        fullCombo: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (score, playerName, rank, fullCombo))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LeaderboardTableView+ScoreData")]

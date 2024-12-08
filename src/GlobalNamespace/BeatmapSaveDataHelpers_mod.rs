@@ -68,6 +68,13 @@ for crate::GlobalNamespace::BeatmapSaveDataHelpers_VersionSerializedData {
 }
 #[cfg(feature = "BeatmapSaveDataHelpers+VersionSerializedData")]
 impl crate::GlobalNamespace::BeatmapSaveDataHelpers_VersionSerializedData {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -87,13 +94,6 @@ impl crate::GlobalNamespace::BeatmapSaveDataHelpers_VersionSerializedData {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_v", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapSaveDataHelpers+VersionSerializedData")]

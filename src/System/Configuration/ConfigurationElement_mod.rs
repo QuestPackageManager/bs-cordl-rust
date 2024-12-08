@@ -24,16 +24,11 @@ impl std::ops::DerefMut for crate::System::Configuration::ConfigurationElement {
 }
 #[cfg(feature = "System+Configuration+ConfigurationElement")]
 impl crate::System::Configuration::ConfigurationElement {
-    pub fn get_Properties(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Configuration::ConfigurationPropertyCollection,
-    > {
+    pub fn IsModified(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Configuration::ConfigurationPropertyCollection = __cordl_object
-            .invoke("get_Properties", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("IsModified", ())?;
         Ok(__cordl_ret)
     }
     pub fn Reset(
@@ -57,11 +52,16 @@ impl crate::System::Configuration::ConfigurationElement {
             .invoke("ResetModified", ())?;
         Ok(__cordl_ret)
     }
-    pub fn IsModified(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_Properties(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Configuration::ConfigurationPropertyCollection,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("IsModified", ())?;
+        let __cordl_ret: *mut crate::System::Configuration::ConfigurationPropertyCollection = __cordl_object
+            .invoke("get_Properties", ())?;
         Ok(__cordl_ret)
     }
 }

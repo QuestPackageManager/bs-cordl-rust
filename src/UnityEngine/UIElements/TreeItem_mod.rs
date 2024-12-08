@@ -26,11 +26,16 @@ for crate::UnityEngine::UIElements::TreeItem {
 }
 #[cfg(feature = "UnityEngine+UIElements+TreeItem")]
 impl crate::UnityEngine::UIElements::TreeItem {
-    pub fn get_hasChildren(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn _ctor(
+        &mut self,
+        id: i32,
+        parentId: i32,
+        childrenIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_hasChildren",
-            (),
+            ".ctor",
+            (id, parentId, childrenIds),
         )?;
         Ok(__cordl_ret)
     }
@@ -46,16 +51,11 @@ impl crate::UnityEngine::UIElements::TreeItem {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        id: i32,
-        parentId: i32,
-        childrenIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_hasChildren(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (id, parentId, childrenIds),
+            "get_hasChildren",
+            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -26,16 +26,18 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::ClientActivatedIde
 }
 #[cfg(feature = "System+Runtime+Remoting+ClientActivatedIdentity")]
 impl crate::System::Runtime::Remoting::ClientActivatedIdentity {
-    pub fn _ctor(
+    pub fn AsyncObjectProcessMessage(
         &mut self,
-        objectUri: *mut crate::System::String,
-        objectType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
+        replySink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (objectUri, objectType))?;
+        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::IMessageCtrl = __cordl_object
+            .invoke("AsyncObjectProcessMessage", (msg, replySink))?;
         Ok(__cordl_ret)
     }
     pub fn GetServerObject(
@@ -48,16 +50,15 @@ impl crate::System::Runtime::Remoting::ClientActivatedIdentity {
             .invoke("GetServerObject", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetClientProxy(
-        &mut self,
-        obj: *mut crate::System::MarshalByRefObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetClientProxy", (obj))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        objectUri: *mut crate::System::String,
+        objectType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (objectUri, objectType))?;
+        Ok(__cordl_object)
     }
     pub fn OnLifetimeExpired(
         &mut self,
@@ -67,6 +68,17 @@ impl crate::System::Runtime::Remoting::ClientActivatedIdentity {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnLifetimeExpired", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetClientProxy(
+        &mut self,
+        obj: *mut crate::System::MarshalByRefObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetClientProxy", (obj))?;
         Ok(__cordl_ret)
     }
     pub fn SyncObjectProcessMessage(
@@ -82,29 +94,17 @@ impl crate::System::Runtime::Remoting::ClientActivatedIdentity {
             .invoke("SyncObjectProcessMessage", (msg))?;
         Ok(__cordl_ret)
     }
-    pub fn AsyncObjectProcessMessage(
+    pub fn _ctor(
         &mut self,
-        msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
-        replySink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
-    > {
+        objectUri: *mut crate::System::String,
+        objectType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::IMessageCtrl = __cordl_object
-            .invoke("AsyncObjectProcessMessage", (msg, replySink))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (objectUri, objectType))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        objectUri: *mut crate::System::String,
-        objectType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (objectUri, objectType))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+ClientActivatedIdentity")]

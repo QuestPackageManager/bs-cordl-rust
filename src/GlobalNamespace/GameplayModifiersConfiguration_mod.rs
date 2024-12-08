@@ -66,12 +66,12 @@ impl std::ops::DerefMut for GameplayModifiersConfiguration {
 }
 #[cfg(feature = "GameplayModifiersConfiguration")]
 impl GameplayModifiersConfiguration {
-    #[cfg(feature = "GameplayModifiersConfiguration+NoteUniformScale")]
-    pub type NoteUniformScale = crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale;
     #[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
     pub type CutAngleTolerance = crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance;
     #[cfg(feature = "GameplayModifiersConfiguration+SongSpeed")]
     pub type SongSpeed = crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed;
+    #[cfg(feature = "GameplayModifiersConfiguration+NoteUniformScale")]
+    pub type NoteUniformScale = crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale;
 }
 #[cfg(feature = "GameplayModifiersConfiguration")]
 impl quest_hook::libil2cpp::ObjectType for GameplayModifiersConfiguration {

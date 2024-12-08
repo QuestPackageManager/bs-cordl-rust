@@ -40,6 +40,19 @@ impl crate::Newtonsoft::Json::Utilities::FSharpFunction {
             .invoke("Invoke", (args))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        instance: *mut crate::System::Object,
+        invoker: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
+            *mut crate::System::Object,
+            *mut crate::System::Object,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (instance, invoker))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         instance: *mut crate::System::Object,
@@ -54,19 +67,6 @@ impl crate::Newtonsoft::Json::Utilities::FSharpFunction {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (instance, invoker))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        instance: *mut crate::System::Object,
-        invoker: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut crate::System::Object,
-            *mut crate::System::Object,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (instance, invoker))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+FSharpFunction")]

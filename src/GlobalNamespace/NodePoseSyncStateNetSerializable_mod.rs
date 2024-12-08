@@ -27,38 +27,6 @@ impl std::ops::DerefMut for NodePoseSyncStateNetSerializable {
 }
 #[cfg(feature = "NodePoseSyncStateNetSerializable")]
 impl NodePoseSyncStateNetSerializable {
-    pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<SyncStateId> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: SyncStateId = __cordl_object.invoke("get_id", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_time", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_state(&mut self) -> quest_hook::libil2cpp::Result<NodePoseSyncState> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: NodePoseSyncState = __cordl_object.invoke("get_state", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_state(
-        &mut self,
-        value: NodePoseSyncState,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_state", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -70,6 +38,13 @@ impl NodePoseSyncStateNetSerializable {
             .invoke("Deserialize", (reader))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -78,16 +53,6 @@ impl NodePoseSyncStateNetSerializable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Release", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn Serialize(
@@ -101,6 +66,37 @@ impl NodePoseSyncStateNetSerializable {
             .invoke("Serialize", (writer))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<SyncStateId> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: SyncStateId = __cordl_object.invoke("get_id", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_state(&mut self) -> quest_hook::libil2cpp::Result<NodePoseSyncState> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: NodePoseSyncState = __cordl_object.invoke("get_state", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_time", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_id(
         &mut self,
         value: SyncStateId,
@@ -110,6 +106,17 @@ impl NodePoseSyncStateNetSerializable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_id", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_state(
+        &mut self,
+        value: NodePoseSyncState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_state", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_time(
@@ -122,13 +129,6 @@ impl NodePoseSyncStateNetSerializable {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_time", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "NodePoseSyncStateNetSerializable")]

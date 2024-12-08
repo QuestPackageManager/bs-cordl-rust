@@ -33,42 +33,22 @@ impl std::ops::DerefMut for crate::BGLib::AppFlow::Initialization::AsyncSceneCon
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext")]
 impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
-    #[cfg(
-        feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+_LoadInstallersAsync_d__9"
-    )]
-    pub type _LoadInstallersAsync_d__9 = crate::BGLib::AppFlow::Initialization::AsyncSceneContext__LoadInstallersAsync_d__9;
+    #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+__c")]
+    pub type __c = crate::BGLib::AppFlow::Initialization::AsyncSceneContext___c;
     #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+_RunAsync_d__6")]
     pub type _RunAsync_d__6 = crate::BGLib::AppFlow::Initialization::AsyncSceneContext__RunAsync_d__6;
     #[cfg(
         feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+__c__DisplayClass9_0"
     )]
     pub type __c__DisplayClass9_0 = crate::BGLib::AppFlow::Initialization::AsyncSceneContext___c__DisplayClass9_0;
-    #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+__c")]
-    pub type __c = crate::BGLib::AppFlow::Initialization::AsyncSceneContext___c;
     #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
     pub type State = crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State;
+    #[cfg(
+        feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+_LoadInstallersAsync_d__9"
+    )]
+    pub type _LoadInstallersAsync_d__9 = crate::BGLib::AppFlow::Initialization::AsyncSceneContext__LoadInstallersAsync_d__9;
     #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+_Run_d__5")]
     pub type _Run_d__5 = crate::BGLib::AppFlow::Initialization::AsyncSceneContext__Run_d__5;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RunAsync(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("RunAsync", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateContainerForLoading(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
@@ -77,6 +57,28 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
         );
         let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
             .invoke("CreateContainerForLoading", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateRegistry(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry = __cordl_object
+            .invoke("CreateRegistry", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn InstallInstallers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InstallInstallers", ())?;
         Ok(__cordl_ret)
     }
     pub fn LoadInstallersAsync(
@@ -94,6 +96,30 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
         > = __cordl_object.invoke("LoadInstallersAsync", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Run(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object.invoke("Run", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RunAsync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("RunAsync", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn __n__0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -104,41 +130,15 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
             .invoke("<>n__0", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CreateRegistry(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry = __cordl_object
-            .invoke("CreateRegistry", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Run(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object.invoke("Run", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstallInstallers(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InstallInstallers", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext")]

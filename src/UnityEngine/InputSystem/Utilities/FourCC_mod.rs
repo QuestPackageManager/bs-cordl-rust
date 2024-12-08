@@ -22,42 +22,6 @@ for crate::UnityEngine::InputSystem::Utilities::FourCC {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+FourCC")]
 impl crate::UnityEngine::InputSystem::Utilities::FourCC {
-    pub fn _ctor_i32_0(
-        &mut self,
-        code: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (code),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor__cordl_char__cordl_char__cordl_char__cordl_char1(
-        &mut self,
-        a: char,
-        b: char,
-        c: char,
-        d: char,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c, d),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String2(
-        &mut self,
-        str: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (str),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_FourCC0(
         &mut self,
         other: crate::UnityEngine::InputSystem::Utilities::FourCC,
@@ -95,6 +59,42 @@ impl crate::UnityEngine::InputSystem::Utilities::FourCC {
             self,
             "ToString",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_String2(
+        &mut self,
+        str: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (str),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor__cordl_char__cordl_char__cordl_char__cordl_char1(
+        &mut self,
+        a: char,
+        b: char,
+        c: char,
+        d: char,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (a, b, c, d),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_0(
+        &mut self,
+        code: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (code),
         )?;
         Ok(__cordl_ret)
     }

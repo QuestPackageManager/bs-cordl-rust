@@ -29,6 +29,24 @@ impl std::ops::DerefMut for crate::Assets::OVR::Scripts::FixRecord {
 }
 #[cfg(feature = "Assets+OVR+Scripts+FixRecord")]
 impl crate::Assets::OVR::Scripts::FixRecord {
+    pub fn New(
+        order: i32,
+        cat: *mut crate::System::String,
+        msg: *mut crate::System::String,
+        fix: *mut crate::Assets::OVR::Scripts::FixMethodDelegate,
+        target: *mut crate::UnityEngine::Object,
+        editRequired: bool,
+        buttons: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (order, cat, msg, fix, target, editRequired, buttons),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         order: i32,
@@ -45,24 +63,6 @@ impl crate::Assets::OVR::Scripts::FixRecord {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (order, cat, msg, fix, target, editRequired, buttons))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        order: i32,
-        cat: *mut crate::System::String,
-        msg: *mut crate::System::String,
-        fix: *mut crate::Assets::OVR::Scripts::FixMethodDelegate,
-        target: *mut crate::UnityEngine::Object,
-        editRequired: bool,
-        buttons: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (order, cat, msg, fix, target, editRequired, buttons),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Assets+OVR+Scripts+FixRecord")]

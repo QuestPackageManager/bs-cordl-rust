@@ -40,23 +40,12 @@ impl std::ops::DerefMut for MockPlayerSettings {
 }
 #[cfg(feature = "MockPlayerSettings")]
 impl MockPlayerSettings {
-    pub fn get_leftHanded(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_leftHanded", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_platformUserId(
-        &mut self,
-        value: u64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_platformUserId", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -68,15 +57,18 @@ impl MockPlayerSettings {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_latency(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_aiCubeHitChance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_latency", (value))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_aiCubeHitChance", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_autoConnect(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_autoConnect", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_avatarType(
@@ -89,15 +81,129 @@ impl MockPlayerSettings {
             .invoke("get_avatarType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_avatarType(
+    pub fn get_beatmapDifficulty(
         &mut self,
-        value: MockPlayerAvatarType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<BeatmapDifficulty> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_avatarType", (value))?;
+        let __cordl_ret: BeatmapDifficulty = __cordl_object
+            .invoke("get_beatmapDifficulty", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_beatmapLevelId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_beatmapLevelId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_inactiveByDefault(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_inactiveByDefault", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_latency(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_latency", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_leftHanded(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_leftHanded", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_movementType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<MockPlayerMovementType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: MockPlayerMovementType = __cordl_object
+            .invoke("get_movementType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_obstaclesColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_obstaclesColor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_platformUserId(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u64 = __cordl_object.invoke("get_platformUserId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_recodingFile(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_recodingFile", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_saberAColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_saberAColor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_saberBColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_saberBColor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sortIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_sortIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_userId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_userId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_userName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_userName", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_aiCubeHitChance(
@@ -111,14 +217,7 @@ impl MockPlayerSettings {
             .invoke("set_aiCubeHitChance", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_inactiveByDefault(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_inactiveByDefault", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_inactiveByDefault(
+    pub fn set_autoConnect(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -126,24 +225,18 @@ impl MockPlayerSettings {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_inactiveByDefault", (value))?;
+            .invoke("set_autoConnect", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_latency(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_latency", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_userName(
+    pub fn set_avatarType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: MockPlayerAvatarType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_userName", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_avatarType", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_beatmapDifficulty(
@@ -157,7 +250,7 @@ impl MockPlayerSettings {
             .invoke("set_beatmapDifficulty", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_userId(
+    pub fn set_beatmapLevelId(
         &mut self,
         value: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -165,65 +258,29 @@ impl MockPlayerSettings {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_userId", (value))?;
+            .invoke("set_beatmapLevelId", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_platformUserId(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u64 = __cordl_object.invoke("get_platformUserId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_userId(
+    pub fn set_inactiveByDefault(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_userId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_beatmapLevelId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_beatmapLevelId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_saberBColor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_saberBColor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_sortIndex(
-        &mut self,
-        value: i32,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_sortIndex", (value))?;
+            .invoke("set_inactiveByDefault", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_recodingFile(
+    pub fn set_latency(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_recodingFile", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_latency", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_leftHanded(
@@ -237,6 +294,17 @@ impl MockPlayerSettings {
             .invoke("set_leftHanded", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn set_movementType(
+        &mut self,
+        value: MockPlayerMovementType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_movementType", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_obstaclesColor(
         &mut self,
         value: crate::UnityEngine::Color,
@@ -248,14 +316,15 @@ impl MockPlayerSettings {
             .invoke("set_obstaclesColor", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_obstaclesColor(
+    pub fn set_platformUserId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_obstaclesColor", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_platformUserId", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_recodingFile(
@@ -269,42 +338,6 @@ impl MockPlayerSettings {
             .invoke("set_recodingFile", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_movementType(
-        &mut self,
-        value: MockPlayerMovementType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_movementType", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_autoConnect(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_autoConnect", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_aiCubeHitChance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_aiCubeHitChance", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sortIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_sortIndex", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_saberAColor(
         &mut self,
         value: crate::UnityEngine::Color,
@@ -314,38 +347,6 @@ impl MockPlayerSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_saberAColor", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_userName(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_userName", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_beatmapDifficulty(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapDifficulty> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: BeatmapDifficulty = __cordl_object
-            .invoke("get_beatmapDifficulty", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_beatmapLevelId(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_beatmapLevelId", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_saberBColor(
@@ -359,39 +360,38 @@ impl MockPlayerSettings {
             .invoke("set_saberBColor", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_movementType(
+    pub fn set_sortIndex(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<MockPlayerMovementType> {
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: MockPlayerMovementType = __cordl_object
-            .invoke("get_movementType", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_sortIndex", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_saberAColor(
+    pub fn set_userId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_saberAColor", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_userId", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_autoConnect(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn set_userName(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_autoConnect", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_userName", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MockPlayerSettings")]

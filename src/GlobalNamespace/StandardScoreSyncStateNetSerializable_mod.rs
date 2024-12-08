@@ -27,6 +27,34 @@ impl std::ops::DerefMut for StandardScoreSyncStateNetSerializable {
 }
 #[cfg(feature = "StandardScoreSyncStateNetSerializable")]
 impl StandardScoreSyncStateNetSerializable {
+    pub fn Deserialize(
+        &mut self,
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Deserialize", (reader))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Release(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Release", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Serialize(
         &mut self,
         writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
@@ -48,6 +76,13 @@ impl StandardScoreSyncStateNetSerializable {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<SyncStateId> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: SyncStateId = __cordl_object.invoke("get_id", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_state(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<StandardScoreSyncState> {
@@ -58,50 +93,11 @@ impl StandardScoreSyncStateNetSerializable {
             .invoke("get_state", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<SyncStateId> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: SyncStateId = __cordl_object.invoke("get_id", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_time", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Release(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Release", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_time(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_time", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Deserialize(
-        &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Deserialize", (reader))?;
         Ok(__cordl_ret)
     }
     pub fn set_id(
@@ -126,12 +122,16 @@ impl StandardScoreSyncStateNetSerializable {
             .invoke("set_state", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_time(
+        &mut self,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_time", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "StandardScoreSyncStateNetSerializable")]

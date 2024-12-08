@@ -45,6 +45,11 @@ impl crate::System::Net::IWebProxy {
         let __cordl_ret: bool = __cordl_object.invoke("IsBypassed", (host))?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_Credentials(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::ICredentials> {
@@ -54,11 +59,6 @@ impl crate::System::Net::IWebProxy {
         let __cordl_ret: *mut crate::System::Net::ICredentials = __cordl_object
             .invoke("get_Credentials", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "System+Net+IWebProxy")]

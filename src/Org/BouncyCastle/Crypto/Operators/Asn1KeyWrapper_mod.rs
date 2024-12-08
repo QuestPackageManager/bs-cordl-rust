@@ -27,6 +27,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Operators::Asn1Key
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1KeyWrapper")]
 impl crate::Org::BouncyCastle::Crypto::Operators::Asn1KeyWrapper {
+    pub fn New(
+        algorithm: *mut crate::System::String,
+        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, cert))?;
+        Ok(__cordl_object)
+    }
     pub fn Wrap(
         &mut self,
         keyData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -61,16 +71,6 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1KeyWrapper {
         let __cordl_ret: *mut crate::System::Object = __cordl_object
             .invoke("get_AlgorithmDetails", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        algorithm: *mut crate::System::String,
-        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, cert))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1KeyWrapper")]

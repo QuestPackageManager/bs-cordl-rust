@@ -61,6 +61,18 @@ impl<
             .invoke("GetEnumerableSorter", (next))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        source: *mut crate::System::Collections::Generic::IEnumerable_1<TElement>,
+        keySelector: *mut crate::System::Func_2<TElement, TKey>,
+        comparer: *mut crate::System::Collections::Generic::IComparer_1<TKey>,
+        descending: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (source, keySelector, comparer, descending))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         source: *mut crate::System::Collections::Generic::IEnumerable_1<TElement>,
@@ -80,18 +92,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (source, keySelector, comparer, descending))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        source: *mut crate::System::Collections::Generic::IEnumerable_1<TElement>,
-        keySelector: *mut crate::System::Func_2<TElement, TKey>,
-        comparer: *mut crate::System::Collections::Generic::IComparer_1<TKey>,
-        descending: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (source, keySelector, comparer, descending))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Linq+OrderedEnumerable_2")]

@@ -29,6 +29,22 @@ impl std::ops::DerefMut for crate::System::Net::HeaderInfo {
 }
 #[cfg(feature = "System+Net+HeaderInfo")]
 impl crate::System::Net::HeaderInfo {
+    pub fn New(
+        name: *mut crate::System::String,
+        requestRestricted: bool,
+        responseRestricted: bool,
+        multi: bool,
+        p: *mut crate::System::Net::HeaderParser,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (name, requestRestricted, responseRestricted, multi, p),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         name: *mut crate::System::String,
@@ -43,22 +59,6 @@ impl crate::System::Net::HeaderInfo {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (name, requestRestricted, responseRestricted, multi, p))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        name: *mut crate::System::String,
-        requestRestricted: bool,
-        responseRestricted: bool,
-        multi: bool,
-        p: *mut crate::System::Net::HeaderParser,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (name, requestRestricted, responseRestricted, multi, p),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+HeaderInfo")]

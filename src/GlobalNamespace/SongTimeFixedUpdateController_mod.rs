@@ -30,22 +30,31 @@ impl std::ops::DerefMut for SongTimeFixedUpdateController {
 #[cfg(feature = "SongTimeFixedUpdateController")]
 impl SongTimeFixedUpdateController {
     pub const kFixedDeltaTime: f32 = 0.016666668f32;
-    pub fn remove_songControllerTimeDidUpdateEvent(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Update(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_songControllerTimeDidUpdateEvent", (value))?;
+            .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_fixedDeltaTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_fixedDeltaTime", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_songControllerFixedTimeDidUpdateEvent(
@@ -59,23 +68,6 @@ impl SongTimeFixedUpdateController {
             .invoke("add_songControllerFixedTimeDidUpdateEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_interpolationFactor(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_interpolationFactor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn add_songControllerTimeDidUpdateEvent(
         &mut self,
         value: *mut crate::System::Action,
@@ -85,6 +77,20 @@ impl SongTimeFixedUpdateController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_songControllerTimeDidUpdateEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_fixedDeltaTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_fixedDeltaTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_interpolationFactor(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_interpolationFactor", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_songControllerFixedTimeDidUpdateEvent(
@@ -98,22 +104,16 @@ impl SongTimeFixedUpdateController {
             .invoke("remove_songControllerFixedTimeDidUpdateEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Update(
+    pub fn remove_songControllerTimeDidUpdateEvent(
         &mut self,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
+            .invoke("remove_songControllerTimeDidUpdateEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SongTimeFixedUpdateController")]

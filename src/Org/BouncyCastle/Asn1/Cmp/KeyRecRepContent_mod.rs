@@ -28,6 +28,45 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cmp::KeyRecRepConten
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+KeyRecRepContent")]
 impl crate::Org::BouncyCastle::Asn1::Cmp::KeyRecRepContent {
+    pub fn GetCACerts(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+        > = __cordl_object.invoke("GetCACerts", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetKeyPairHist(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPair,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPair,
+        > = __cordl_object.invoke("GetKeyPairHist", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
+    }
     pub fn ToAsn1Object(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
@@ -47,21 +86,6 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::KeyRecRepContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (seq))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCACerts(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
-        > = __cordl_object.invoke("GetCACerts", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_NewSigCert(
@@ -87,30 +111,6 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::KeyRecRepContent {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo = __cordl_object
             .invoke("get_Status", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetKeyPairHist(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPair,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPair,
-        > = __cordl_object.invoke("GetKeyPairHist", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+KeyRecRepContent")]

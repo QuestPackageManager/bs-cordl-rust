@@ -24,16 +24,6 @@ impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::IAvatarPoseDataProvide
 }
 #[cfg(feature = "BeatSaber+AvatarCore+IAvatarPoseDataProvider")]
 impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
-    pub fn get_currentPose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::AvatarCore::AvatarPoseData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::BeatSaber::AvatarCore::AvatarPoseData = __cordl_object
-            .invoke("get_currentPose", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn add_poseDidChangeEvent(
         &mut self,
         value: *mut crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
@@ -43,6 +33,21 @@ impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_poseDidChangeEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_currentPose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::AvatarCore::AvatarPoseData> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::BeatSaber::AvatarCore::AvatarPoseData = __cordl_object
+            .invoke("get_currentPose", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_poseDidChangeEvent(
@@ -55,11 +60,6 @@ impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_poseDidChangeEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+IAvatarPoseDataProvider")]

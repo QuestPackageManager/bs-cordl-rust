@@ -55,35 +55,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
     pub const kDynamicOriginClickable: &'static str = "DynamicOriginClickable";
     #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick+Behaviour")]
     pub type Behaviour = crate::UnityEngine::InputSystem::OnScreen::OnScreenStick_Behaviour;
-    pub fn set_controlPathInternal(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_controlPathInternal", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_movementRange(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_movementRange", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveStick(
+    pub fn BeginInteraction(
         &mut self,
         pointerPosition: crate::UnityEngine::Vector2,
         uiCamera: *mut crate::UnityEngine::Camera,
@@ -92,17 +64,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveStick", (pointerPosition, uiCamera))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInteraction(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInteraction", ())?;
+            .invoke("BeginInteraction", (pointerPosition, uiCamera))?;
         Ok(__cordl_ret)
     }
     pub fn DrawGizmoCircle(
@@ -117,6 +79,16 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
             .invoke("DrawGizmoCircle", (center, radius))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInteraction(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndInteraction", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetCameraFromCanvas(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Camera> {
@@ -127,28 +99,26 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
             .invoke("GetCameraFromCanvas", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn MoveStick(
         &mut self,
+        pointerPosition: crate::UnityEngine::Vector2,
+        uiCamera: *mut crate::UnityEngine::Camera,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("MoveStick", (pointerPosition, uiCamera))?;
         Ok(__cordl_ret)
     }
-    pub fn set_behaviour(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::OnScreen::OnScreenStick_Behaviour,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_behaviour", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn OnPointerDown_PointerEventData0(
+    pub fn OnDrag(
         &mut self,
         eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -156,7 +126,17 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerDown", (eventData))?;
+            .invoke("OnDrag", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDrawGizmosSelected(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDrawGizmosSelected", ())?;
         Ok(__cordl_ret)
     }
     pub fn OnPointerDown_InputAction_CallbackContext1(
@@ -170,67 +150,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
             .invoke("OnPointerDown", (ctx))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInteraction(
-        &mut self,
-        pointerPosition: crate::UnityEngine::Vector2,
-        uiCamera: *mut crate::UnityEngine::Camera,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BeginInteraction", (pointerPosition, uiCamera))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_useIsolatedInputActions(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_useIsolatedInputActions", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_movementRange(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_movementRange", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_dynamicOriginRange(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_dynamicOriginRange", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_controlPathInternal(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_controlPathInternal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDrawGizmosSelected(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDrawGizmosSelected", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerUp_PointerEventData0(
+    pub fn OnPointerDown_PointerEventData0(
         &mut self,
         eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -238,7 +158,18 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerUp", (eventData))?;
+            .invoke("OnPointerDown", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerMove(
+        &mut self,
+        ctx: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerMove", (ctx))?;
         Ok(__cordl_ret)
     }
     pub fn OnPointerUp_InputAction_CallbackContext1(
@@ -252,15 +183,45 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
             .invoke("OnPointerUp", (ctx))?;
         Ok(__cordl_ret)
     }
-    pub fn set_useIsolatedInputActions(
+    pub fn OnPointerUp_PointerEventData0(
         &mut self,
-        value: bool,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_useIsolatedInputActions", (value))?;
+            .invoke("OnPointerUp", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateDynamicOriginClickableArea(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateDynamicOriginClickableArea", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_behaviour(
@@ -275,36 +236,60 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
             .invoke("get_behaviour", ())?;
         Ok(__cordl_ret)
     }
-    pub fn UpdateDynamicOriginClickableArea(
+    pub fn get_controlPathInternal(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateDynamicOriginClickableArea", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_controlPathInternal", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnDrag(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_dynamicOriginRange(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDrag", (eventData))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_dynamicOriginRange", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnPointerMove(
+    pub fn get_movementRange(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_movementRange", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_useIsolatedInputActions(
         &mut self,
-        ctx: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_useIsolatedInputActions", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_behaviour(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::OnScreen::OnScreenStick_Behaviour,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerMove", (ctx))?;
+            .invoke("set_behaviour", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_controlPathInternal(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_controlPathInternal", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_dynamicOriginRange(
@@ -318,12 +303,27 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
             .invoke("set_dynamicOriginRange", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_movementRange(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_movementRange", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_useIsolatedInputActions(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_useIsolatedInputActions", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick")]

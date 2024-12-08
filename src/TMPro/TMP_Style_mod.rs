@@ -31,15 +31,44 @@ impl std::ops::DerefMut for crate::TMPro::TMP_Style {
 }
 #[cfg(feature = "TMPro+TMP_Style")]
 impl crate::TMPro::TMP_Style {
-    pub fn set_name(
+    pub fn New(
+        styleName: *mut crate::System::String,
+        styleOpeningDefinition: *mut crate::System::String,
+        styleClosingDefinition: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (styleName, styleOpeningDefinition, styleClosingDefinition),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn RefreshStyle(
         &mut self,
-        value: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_name", (value))?;
+            .invoke("RefreshStyle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        styleName: *mut crate::System::String,
+        styleOpeningDefinition: *mut crate::System::String,
+        styleClosingDefinition: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (styleName, styleOpeningDefinition, styleClosingDefinition),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn get_hashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -49,15 +78,34 @@ impl crate::TMPro::TMP_Style {
         let __cordl_ret: i32 = __cordl_object.invoke("get_hashCode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_hashCode(
+    pub fn get_name(
         &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_hashCode", (value))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_name", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_styleClosingDefinition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_styleClosingDefinition", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_styleClosingTagArray(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
+            .invoke("get_styleClosingTagArray", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_styleOpeningDefinition(
@@ -80,75 +128,27 @@ impl crate::TMPro::TMP_Style {
             .invoke("get_styleOpeningTagArray", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn set_hashCode(
         &mut self,
-        styleName: *mut crate::System::String,
-        styleOpeningDefinition: *mut crate::System::String,
-        styleClosingDefinition: *mut crate::System::String,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (styleName, styleOpeningDefinition, styleClosingDefinition),
-            )?;
+            .invoke("set_hashCode", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_styleClosingDefinition(
+    pub fn set_name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_styleClosingDefinition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_name", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_styleClosingTagArray(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
-            .invoke("get_styleClosingTagArray", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RefreshStyle(
-        &mut self,
+        value: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshStyle", ())?;
+            .invoke("set_name", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        styleName: *mut crate::System::String,
-        styleOpeningDefinition: *mut crate::System::String,
-        styleClosingDefinition: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (styleName, styleOpeningDefinition, styleClosingDefinition),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "TMPro+TMP_Style")]

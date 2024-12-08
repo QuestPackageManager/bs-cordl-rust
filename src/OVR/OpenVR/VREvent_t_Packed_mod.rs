@@ -25,17 +25,6 @@ for crate::OVR::OpenVR::VREvent_t_Packed {
 }
 #[cfg(feature = "OVR+OpenVR+VREvent_t_Packed")]
 impl crate::OVR::OpenVR::VREvent_t_Packed {
-    pub fn _ctor(
-        &mut self,
-        unpacked: crate::OVR::OpenVR::VREvent_t,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (unpacked),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Unpack(
         &mut self,
         unpacked: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VREvent_t>,
@@ -43,6 +32,17 @@ impl crate::OVR::OpenVR::VREvent_t_Packed {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Unpack",
+            (unpacked),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        unpacked: crate::OVR::OpenVR::VREvent_t,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
             (unpacked),
         )?;
         Ok(__cordl_ret)

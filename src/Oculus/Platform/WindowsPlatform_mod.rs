@@ -25,41 +25,6 @@ impl std::ops::DerefMut for crate::Oculus::Platform::WindowsPlatform_UnityLogDel
 }
 #[cfg(feature = "Oculus+Platform+WindowsPlatform+UnityLogDelegate")]
 impl crate::Oculus::Platform::WindowsPlatform_UnityLogDelegate {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        tag: crate::System::IntPtr,
-        msg: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (tag, msg))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         tag: crate::System::IntPtr,
@@ -74,15 +39,50 @@ impl crate::Oculus::Platform::WindowsPlatform_UnityLogDelegate {
             .invoke("BeginInvoke", (tag, msg, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        tag: crate::System::IntPtr,
+        msg: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (tag, msg))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Oculus+Platform+WindowsPlatform+UnityLogDelegate")]
@@ -123,14 +123,20 @@ impl std::ops::DerefMut for crate::Oculus::Platform::WindowsPlatform {
 impl crate::Oculus::Platform::WindowsPlatform {
     #[cfg(feature = "Oculus+Platform+WindowsPlatform+UnityLogDelegate")]
     pub type UnityLogDelegate = crate::Oculus::Platform::WindowsPlatform_UnityLogDelegate;
-    pub fn _ctor(
+    pub fn AsyncInitialize(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        appId: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Oculus::Platform::Request_1<
+            *mut crate::Oculus::Platform::Models::PlatformInitialize,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::Oculus::Platform::Request_1<
+            *mut crate::Oculus::Platform::Models::PlatformInitialize,
+        > = __cordl_object.invoke("AsyncInitialize", (appId))?;
         Ok(__cordl_ret)
     }
     pub fn CPPLogCallback(
@@ -155,20 +161,21 @@ impl crate::Oculus::Platform::WindowsPlatform {
         let __cordl_ret: bool = __cordl_object.invoke("Initialize", (appId))?;
         Ok(__cordl_ret)
     }
-    pub fn AsyncInitialize(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
         &mut self,
-        appId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Request_1<
-            *mut crate::Oculus::Platform::Models::PlatformInitialize,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Request_1<
-            *mut crate::Oculus::Platform::Models::PlatformInitialize,
-        > = __cordl_object.invoke("AsyncInitialize", (appId))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn getCallbackPointer(
@@ -180,13 +187,6 @@ impl crate::Oculus::Platform::WindowsPlatform {
         let __cordl_ret: crate::System::IntPtr = __cordl_object
             .invoke("getCallbackPointer", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Oculus+Platform+WindowsPlatform")]

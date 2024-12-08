@@ -23,13 +23,34 @@ for crate::UnityEngine::ProBuilder::Edge {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Edge")]
 impl crate::UnityEngine::ProBuilder::Edge {
-    pub fn ToString(
+    pub fn Contains_Edge1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::ProBuilder::Edge,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
-            (),
+            "Contains",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Contains_i32_0(&mut self, index: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Contains",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Contains_i32_Dictionary_2_2(
+        &mut self,
+        index: i32,
+        lookup: *mut crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Contains",
+            (index, lookup),
         )?;
         Ok(__cordl_ret)
     }
@@ -41,17 +62,6 @@ impl crate::UnityEngine::ProBuilder::Edge {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -67,15 +77,14 @@ impl crate::UnityEngine::ProBuilder::Edge {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn Equals_Object1(
         &mut self,
-        a: i32,
-        b: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (a, b),
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -95,34 +104,25 @@ impl crate::UnityEngine::ProBuilder::Edge {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Contains_i32_0(&mut self, index: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Contains",
-            (index),
+            "ToString",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Contains_Edge1(
+    pub fn _ctor(
         &mut self,
-        other: crate::UnityEngine::ProBuilder::Edge,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        a: i32,
+        b: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Contains",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Contains_i32_Dictionary_2_2(
-        &mut self,
-        index: i32,
-        lookup: *mut crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Contains",
-            (index, lookup),
+            ".ctor",
+            (a, b),
         )?;
         Ok(__cordl_ret)
     }

@@ -24,6 +24,11 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::IWrappedCollecti
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+IWrappedCollection")]
 impl crate::Newtonsoft::Json::Utilities::IWrappedCollection {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_UnderlyingCollection(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
@@ -33,11 +38,6 @@ impl crate::Newtonsoft::Json::Utilities::IWrappedCollection {
         let __cordl_ret: *mut crate::System::Object = __cordl_object
             .invoke("get_UnderlyingCollection", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+IWrappedCollection")]

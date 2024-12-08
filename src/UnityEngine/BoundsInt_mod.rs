@@ -24,12 +24,78 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::BoundsIn
 impl crate::UnityEngine::BoundsInt {
     #[cfg(feature = "UnityEngine+BoundsInt+PositionEnumerator")]
     pub type PositionEnumerator = crate::UnityEngine::BoundsInt_PositionEnumerator;
-    pub fn get_size(
+    pub fn Equals_BoundsInt1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
-        let __cordl_ret: crate::UnityEngine::Vector3Int = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::BoundsInt,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_size",
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object0(
+        &mut self,
+        other: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString_String_IFormatProvider1(
+        &mut self,
+        format: *mut crate::System::String,
+        formatProvider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (format, formatProvider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        position: crate::UnityEngine::Vector3Int,
+        _cordl_size: crate::UnityEngine::Vector3Int,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (position, _cordl_size),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_allPositionsWithin(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::BoundsInt_PositionEnumerator,
+    > {
+        let __cordl_ret: crate::UnityEngine::BoundsInt_PositionEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_allPositionsWithin",
             (),
         )?;
         Ok(__cordl_ret)
@@ -44,21 +110,32 @@ impl crate::UnityEngine::BoundsInt {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_xMin(
+    pub fn get_min(
         &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
+        let __cordl_ret: crate::UnityEngine::Vector3Int = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_xMin",
-            (value),
+            "get_min",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_zMin(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_position(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
+        let __cordl_ret: crate::UnityEngine::Vector3Int = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_zMin",
+            "get_position",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_size(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
+        let __cordl_ret: crate::UnityEngine::Vector3Int = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_size",
             (),
         )?;
         Ok(__cordl_ret)
@@ -87,36 +164,71 @@ impl crate::UnityEngine::BoundsInt {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_yMin(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_yMin(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_yMin",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
+            "get_yMin",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString_String_IFormatProvider1(
-        &mut self,
-        format: *mut crate::System::String,
-        formatProvider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_zMax(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
-            (format, formatProvider),
+            "get_zMax",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_zMin(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_zMin",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_max(
+        &mut self,
+        value: crate::UnityEngine::Vector3Int,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_max",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_min(
+        &mut self,
+        value: crate::UnityEngine::Vector3Int,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_min",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_position(
+        &mut self,
+        value: crate::UnityEngine::Vector3Int,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_position",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_size(
+        &mut self,
+        value: crate::UnityEngine::Vector3Int,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_size",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -127,6 +239,39 @@ impl crate::UnityEngine::BoundsInt {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_xMax",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_xMin(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_xMin",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_yMax(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_yMax",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_yMin(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_yMin",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -142,35 +287,6 @@ impl crate::UnityEngine::BoundsInt {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_yMin(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_yMin",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_position(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
-        let __cordl_ret: crate::UnityEngine::Vector3Int = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_position",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_size(
-        &mut self,
-        value: crate::UnityEngine::Vector3Int,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_size",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_zMin(
         &mut self,
         value: i32,
@@ -178,122 +294,6 @@ impl crate::UnityEngine::BoundsInt {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_zMin",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_allPositionsWithin(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::BoundsInt_PositionEnumerator,
-    > {
-        let __cordl_ret: crate::UnityEngine::BoundsInt_PositionEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_allPositionsWithin",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_min(
-        &mut self,
-        value: crate::UnityEngine::Vector3Int,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_min",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object0(
-        &mut self,
-        other: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_BoundsInt1(
-        &mut self,
-        other: crate::UnityEngine::BoundsInt,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_min(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
-        let __cordl_ret: crate::UnityEngine::Vector3Int = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_min",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_zMax(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_zMax",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_position(
-        &mut self,
-        value: crate::UnityEngine::Vector3Int,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_position",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_max(
-        &mut self,
-        value: crate::UnityEngine::Vector3Int,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_max",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        position: crate::UnityEngine::Vector3Int,
-        _cordl_size: crate::UnityEngine::Vector3Int,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (position, _cordl_size),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_yMax(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_yMax",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -337,32 +337,10 @@ impl crate::UnityEngine::BoundsInt_PositionEnumerator {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        min: crate::UnityEngine::Vector3Int,
-        max: crate::UnityEngine::Vector3Int,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (min, max),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "MoveNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Current(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
-        let __cordl_ret: crate::UnityEngine::Vector3Int = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Current",
             (),
         )?;
         Ok(__cordl_ret)
@@ -393,6 +371,28 @@ impl crate::UnityEngine::BoundsInt_PositionEnumerator {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.IDisposable.Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        min: crate::UnityEngine::Vector3Int,
+        max: crate::UnityEngine::Vector3Int,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (min, max),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Current(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
+        let __cordl_ret: crate::UnityEngine::Vector3Int = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Current",
             (),
         )?;
         Ok(__cordl_ret)

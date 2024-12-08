@@ -23,50 +23,6 @@ for crate::UnityEngine::UIElements::StyleRotate {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleRotate")]
 impl crate::UnityEngine::UIElements::StyleRotate {
-    pub fn get_keyword(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleKeyword> {
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleKeyword = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_keyword",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_StyleKeyword0(
-        &mut self,
-        keyword: crate::UnityEngine::UIElements::StyleKeyword,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (keyword),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Rotate_StyleKeyword1(
-        &mut self,
-        v: crate::UnityEngine::UIElements::Rotate,
-        keyword: crate::UnityEngine::UIElements::StyleKeyword,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v, keyword),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_StyleRotate0(
-        &mut self,
-        other: crate::UnityEngine::UIElements::StyleRotate,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_Object1(
         &mut self,
         obj: *mut crate::System::Object,
@@ -78,13 +34,14 @@ impl crate::UnityEngine::UIElements::StyleRotate {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_value(
+    pub fn Equals_StyleRotate0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Rotate> {
-        let __cordl_ret: crate::UnityEngine::UIElements::Rotate = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::UIElements::StyleRotate,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_value",
-            (),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -102,6 +59,49 @@ impl crate::UnityEngine::UIElements::StyleRotate {
         let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Rotate_StyleKeyword1(
+        &mut self,
+        v: crate::UnityEngine::UIElements::Rotate,
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (v, keyword),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_StyleKeyword0(
+        &mut self,
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (keyword),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_keyword(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleKeyword> {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleKeyword = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_keyword",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Rotate> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Rotate = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_value",
             (),
         )?;
         Ok(__cordl_ret)

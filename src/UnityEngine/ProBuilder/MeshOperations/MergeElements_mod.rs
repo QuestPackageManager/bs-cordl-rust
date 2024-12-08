@@ -26,12 +26,12 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
+    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements+__c")]
+    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::MergeElements___c;
     #[cfg(
         feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements+__c__DisplayClass0_0"
     )]
     pub type __c__DisplayClass0_0 = crate::UnityEngine::ProBuilder::MeshOperations::MergeElements___c__DisplayClass0_0;
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::MergeElements___c;
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements")]
 impl quest_hook::libil2cpp::ObjectType

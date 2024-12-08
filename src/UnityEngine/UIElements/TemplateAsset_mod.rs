@@ -60,21 +60,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::TemplateAsset {
 impl crate::UnityEngine::UIElements::TemplateAsset {
     #[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
     pub type AttributeOverride = crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride;
-    pub fn get_slotUsages(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
-        > = __cordl_object.invoke("get_slotUsages", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_attributeOverrides(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -88,6 +73,21 @@ impl crate::UnityEngine::UIElements::TemplateAsset {
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
             crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
         > = __cordl_object.invoke("get_attributeOverrides", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_slotUsages(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
+        > = __cordl_object.invoke("get_slotUsages", ())?;
         Ok(__cordl_ret)
     }
 }

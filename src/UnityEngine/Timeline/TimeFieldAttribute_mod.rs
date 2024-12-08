@@ -27,17 +27,14 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimeFieldAttribute {
 impl crate::UnityEngine::Timeline::TimeFieldAttribute {
     #[cfg(feature = "UnityEngine+Timeline+TimeFieldAttribute+UseEditMode")]
     pub type UseEditMode = crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode;
-    pub fn get_useEditMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode = __cordl_object
-            .invoke("get_useEditMode", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        useEditMode: crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (useEditMode))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -50,14 +47,17 @@ impl crate::UnityEngine::Timeline::TimeFieldAttribute {
             .invoke(".ctor", (useEditMode))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        useEditMode: crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (useEditMode))?;
-        Ok(__cordl_object)
+    pub fn get_useEditMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode = __cordl_object
+            .invoke("get_useEditMode", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimeFieldAttribute")]

@@ -32,20 +32,9 @@ for crate::UnityEngine::UIElements::FixedHeightVirtualizationController_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::FixedHeightVirtualizationController_1<T> {
-    pub fn get_resolvedItemHeight(&mut self) -> quest_hook::libil2cpp::Result<f32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_resolvedItemHeight", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Resize(
+    pub fn EndDrag(
         &mut self,
-        _cordl_size: crate::UnityEngine::Vector2,
+        dropIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -55,22 +44,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Resize", (_cordl_size))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnScroll(
-        &mut self,
-        scrollOffset: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnScroll", (scrollOffset))?;
+            .invoke("EndDrag", (dropIndex))?;
         Ok(__cordl_ret)
     }
     pub fn GetExpectedContentHeight(&mut self) -> quest_hook::libil2cpp::Result<f32>
@@ -82,6 +56,35 @@ impl<
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetExpectedContentHeight", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetExpectedItemHeight(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<f32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("GetExpectedItemHeight", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetIndexFromPosition(
+        &mut self,
+        position: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetIndexFromPosition", (position))?;
         Ok(__cordl_ret)
     }
     pub fn GetOrMakeItemAtIndex(
@@ -100,23 +103,18 @@ impl<
             .invoke("GetOrMakeItemAtIndex", (activeItemIndex, scrollViewIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn GetExpectedItemHeight(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<f32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetExpectedItemHeight", (index))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        collectionView: *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (collectionView))?;
+        Ok(__cordl_object)
     }
-    pub fn EndDrag(
+    pub fn OnScroll(
         &mut self,
-        dropIndex: i32,
+        scrollOffset: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -126,7 +124,37 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndDrag", (dropIndex))?;
+            .invoke("OnScroll", (scrollOffset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Resize(
+        &mut self,
+        _cordl_size: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Resize", (_cordl_size))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ScrollToItem(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ScrollToItem", (index))?;
         Ok(__cordl_ret)
     }
     pub fn VisibleItemPredicate(&mut self, i: T) -> quest_hook::libil2cpp::Result<bool>
@@ -155,10 +183,7 @@ impl<
             .invoke(".ctor", (collectionView))?;
         Ok(__cordl_ret)
     }
-    pub fn ScrollToItem(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn get_resolvedItemHeight(&mut self) -> quest_hook::libil2cpp::Result<f32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -166,33 +191,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ScrollToItem", (index))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_resolvedItemHeight", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetIndexFromPosition(
-        &mut self,
-        position: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetIndexFromPosition", (position))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        collectionView: *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (collectionView))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+FixedHeightVirtualizationController_1")]

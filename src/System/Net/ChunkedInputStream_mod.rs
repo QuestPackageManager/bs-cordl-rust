@@ -30,6 +30,65 @@ impl std::ops::DerefMut for crate::System::Net::ChunkedInputStream {
 impl crate::System::Net::ChunkedInputStream {
     #[cfg(feature = "System+Net+ChunkedInputStream+ReadBufferState")]
     pub type ReadBufferState = crate::System::Net::ChunkedInputStream_ReadBufferState;
+    pub fn BeginRead(
+        &mut self,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+        cback: *mut crate::System::AsyncCallback,
+        state: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginRead", (buffer, offset, count, cback, state))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Close(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Close", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndRead(
+        &mut self,
+        ares: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("EndRead", (ares))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        context: *mut crate::System::Net::HttpListenerContext,
+        stream: *mut crate::System::IO::Stream,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (context, stream, buffer, offset, length))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnRead(
+        &mut self,
+        base_ares: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnRead", (base_ares))?;
+        Ok(__cordl_ret)
+    }
     pub fn Read(
         &mut self,
         buffer: quest_hook::libil2cpp::ByRefMut<
@@ -42,17 +101,6 @@ impl crate::System::Net::ChunkedInputStream {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Read", (buffer, offset, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnRead(
-        &mut self,
-        base_ares: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnRead", (base_ares))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -69,54 +117,6 @@ impl crate::System::Net::ChunkedInputStream {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (context, stream, buffer, offset, length))?;
         Ok(__cordl_ret)
-    }
-    pub fn EndRead(
-        &mut self,
-        ares: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("EndRead", (ares))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Close(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn BeginRead(
-        &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-        cback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginRead", (buffer, offset, count, cback, state))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        context: *mut crate::System::Net::HttpListenerContext,
-        stream: *mut crate::System::IO::Stream,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (context, stream, buffer, offset, length))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+ChunkedInputStream")]
@@ -159,6 +159,18 @@ impl std::ops::DerefMut for crate::System::Net::ChunkedInputStream_ReadBufferSta
 }
 #[cfg(feature = "System+Net+ChunkedInputStream+ReadBufferState")]
 impl crate::System::Net::ChunkedInputStream_ReadBufferState {
+    pub fn New(
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+        ares: *mut crate::System::Net::HttpStreamAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (buffer, offset, count, ares))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -172,18 +184,6 @@ impl crate::System::Net::ChunkedInputStream_ReadBufferState {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (buffer, offset, count, ares))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-        ares: *mut crate::System::Net::HttpStreamAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (buffer, offset, count, ares))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+ChunkedInputStream+ReadBufferState")]

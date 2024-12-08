@@ -23,24 +23,6 @@ for crate::Zenject::SignalSubscriptionId {
 }
 #[cfg(feature = "Zenject+SignalSubscriptionId")]
 impl crate::Zenject::SignalSubscriptionId {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SignalId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Zenject::BindingId> {
-        let __cordl_ret: crate::Zenject::BindingId = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_SignalId",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_Object0(
         &mut self,
         that: *mut crate::System::Object,
@@ -63,6 +45,14 @@ impl crate::Zenject::SignalSubscriptionId {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         signalId: crate::Zenject::BindingId,
@@ -81,6 +71,16 @@ impl crate::Zenject::SignalSubscriptionId {
         let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Callback",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SignalId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Zenject::BindingId> {
+        let __cordl_ret: crate::Zenject::BindingId = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_SignalId",
             (),
         )?;
         Ok(__cordl_ret)

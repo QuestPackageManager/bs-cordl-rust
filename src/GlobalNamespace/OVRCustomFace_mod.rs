@@ -30,18 +30,6 @@ impl std::ops::DerefMut for OVRCustomFace {
 impl OVRCustomFace {
     #[cfg(feature = "OVRCustomFace+RetargetingType")]
     pub type RetargetingType = crate::GlobalNamespace::OVRCustomFace_RetargetingType;
-    pub fn get_RetargetingValue(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRCustomFace_RetargetingType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRCustomFace_RetargetingType = __cordl_object
-            .invoke("get_RetargetingValue", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetCustomBlendShapeNameAndExpressionPairs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -63,15 +51,51 @@ impl OVRCustomFace {
         > = __cordl_object.invoke("GetCustomBlendShapeNameAndExpressionPairs", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_AllowDuplicateMapping(
+    pub fn GetFaceExpression(
         &mut self,
-        value: bool,
+        blendShapeIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::OVRFaceExpressions_FaceExpression = __cordl_object
+            .invoke("GetFaceExpression", (blendShapeIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Start(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_AllowDuplicateMapping", (value))?;
+            .invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AllowDuplicateMapping(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_AllowDuplicateMapping", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Mappings(
@@ -87,6 +111,29 @@ impl OVRCustomFace {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
             crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
         > = __cordl_object.invoke("get_Mappings", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RetargetingValue(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRCustomFace_RetargetingType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::OVRCustomFace_RetargetingType = __cordl_object
+            .invoke("get_RetargetingValue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_AllowDuplicateMapping(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_AllowDuplicateMapping", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_Mappings(
@@ -112,53 +159,6 @@ impl OVRCustomFace {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_RetargetingValue", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn GetFaceExpression(
-        &mut self,
-        blendShapeIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRFaceExpressions_FaceExpression = __cordl_object
-            .invoke("GetFaceExpression", (blendShapeIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AllowDuplicateMapping(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_AllowDuplicateMapping", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRCustomFace")]

@@ -53,6 +53,16 @@ impl std::ops::DerefMut for ResultsViewController {
 impl ResultsViewController {
     #[cfg(feature = "ResultsViewController+_StartFireworksAfterDelay_d__33")]
     pub type _StartFireworksAfterDelay_d__33 = crate::GlobalNamespace::ResultsViewController__StartFireworksAfterDelay_d__33;
+    pub fn ContinueButtonPressed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ContinueButtonPressed", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -69,67 +79,16 @@ impl ResultsViewController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessMenuDestinationRequest(
+    pub fn DidDeactivate(
         &mut self,
-        menuDestination: *mut MenuDestination,
+        removedFromHierarchy: bool,
+        screenSystemDisabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessMenuDestinationRequest", (menuDestination))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetDataToUI(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetDataToUI", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ContinueButtonPressed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ContinueButtonPressed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartFireworksAfterDelay(
-        &mut self,
-        delay: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("StartFireworksAfterDelay", (delay))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_restartButtonPressedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut ResultsViewController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_restartButtonPressedEvent", (value))?;
+            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -158,34 +117,63 @@ impl ResultsViewController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn DidDeactivate(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ProcessMenuDestinationRequest(
         &mut self,
-        removedFromHierarchy: bool,
-        screenSystemDisabling: bool,
+        menuDestination: *mut MenuDestination,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
+            .invoke("ProcessMenuDestinationRequest", (menuDestination))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_restartButtonPressedEvent(
+    pub fn RestartButtonPressed(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ResultsViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_restartButtonPressedEvent", (value))?;
+            .invoke("RestartButtonPressed", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_practice(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn SetDataToUI(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_practice", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetDataToUI", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartFireworksAfterDelay(
+        &mut self,
+        delay: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("StartFireworksAfterDelay", (delay))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_continueButtonPressedEvent(
@@ -199,6 +187,24 @@ impl ResultsViewController {
             .invoke("add_continueButtonPressedEvent", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn add_restartButtonPressedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut ResultsViewController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_restartButtonPressedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_practice(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_practice", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn remove_continueButtonPressedEvent(
         &mut self,
         value: *mut crate::System::Action_1<*mut ResultsViewController>,
@@ -210,22 +216,16 @@ impl ResultsViewController {
             .invoke("remove_continueButtonPressedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn RestartButtonPressed(
+    pub fn remove_restartButtonPressedEvent(
         &mut self,
+        value: *mut crate::System::Action_1<*mut ResultsViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RestartButtonPressed", ())?;
+            .invoke("remove_restartButtonPressedEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ResultsViewController")]

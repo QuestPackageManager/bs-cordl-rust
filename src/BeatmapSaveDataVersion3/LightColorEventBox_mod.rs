@@ -31,15 +31,35 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::LightColorEventBox {
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+LightColorEventBox")]
 impl crate::BeatmapSaveDataVersion3::LightColorEventBox {
-    pub fn get_brightnessDistributionParam(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("get_brightnessDistributionParam", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        indexFilter: *mut crate::BeatmapSaveDataVersion3::IndexFilter,
+        beatDistributionParam: f32,
+        beatDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
+        brightnessDistributionParam: f32,
+        brightnessDistributionShouldAffectFirstBaseEvent: bool,
+        brightnessDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
+        brightnessDistributionEaseType: crate::BeatmapSaveDataCommon::EaseType,
+        lightColorBaseDataList: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::BeatmapSaveDataVersion3::LightColorBaseData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    indexFilter,
+                    beatDistributionParam,
+                    beatDistributionParamType,
+                    brightnessDistributionParam,
+                    brightnessDistributionShouldAffectFirstBaseEvent,
+                    brightnessDistributionParamType,
+                    brightnessDistributionEaseType,
+                    lightColorBaseDataList,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -73,19 +93,24 @@ impl crate::BeatmapSaveDataVersion3::LightColorEventBox {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_lightColorBaseDataList(
+    pub fn get_brightnessDistributionEaseType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::LightColorBaseData,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::EaseType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::LightColorBaseData,
-        > = __cordl_object.invoke("get_lightColorBaseDataList", ())?;
+        let __cordl_ret: crate::BeatmapSaveDataCommon::EaseType = __cordl_object
+            .invoke("get_brightnessDistributionEaseType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_brightnessDistributionParam(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("get_brightnessDistributionParam", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_brightnessDistributionParamType(
@@ -100,16 +125,6 @@ impl crate::BeatmapSaveDataVersion3::LightColorEventBox {
             .invoke("get_brightnessDistributionParamType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_brightnessDistributionEaseType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::EaseType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::BeatmapSaveDataCommon::EaseType = __cordl_object
-            .invoke("get_brightnessDistributionEaseType", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_brightnessDistributionShouldAffectFirstBaseEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -120,35 +135,20 @@ impl crate::BeatmapSaveDataVersion3::LightColorEventBox {
             .invoke("get_brightnessDistributionShouldAffectFirstBaseEvent", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        indexFilter: *mut crate::BeatmapSaveDataVersion3::IndexFilter,
-        beatDistributionParam: f32,
-        beatDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
-        brightnessDistributionParam: f32,
-        brightnessDistributionShouldAffectFirstBaseEvent: bool,
-        brightnessDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
-        brightnessDistributionEaseType: crate::BeatmapSaveDataCommon::EaseType,
-        lightColorBaseDataList: *mut crate::System::Collections::Generic::List_1<
+    pub fn get_lightColorBaseDataList(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
             *mut crate::BeatmapSaveDataVersion3::LightColorBaseData,
         >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    indexFilter,
-                    beatDistributionParam,
-                    beatDistributionParamType,
-                    brightnessDistributionParam,
-                    brightnessDistributionShouldAffectFirstBaseEvent,
-                    brightnessDistributionParamType,
-                    brightnessDistributionEaseType,
-                    lightColorBaseDataList,
-                ),
-            )?;
-        Ok(__cordl_object)
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::BeatmapSaveDataVersion3::LightColorBaseData,
+        > = __cordl_object.invoke("get_lightColorBaseDataList", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+LightColorEventBox")]

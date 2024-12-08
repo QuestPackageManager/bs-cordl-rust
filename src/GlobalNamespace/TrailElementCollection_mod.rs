@@ -55,6 +55,75 @@ impl std::ops::DerefMut for TrailElementCollection {
 impl TrailElementCollection {
     #[cfg(feature = "TrailElementCollection+InterpolationState")]
     pub type InterpolationState = crate::GlobalNamespace::TrailElementCollection_InterpolationState;
+    pub fn GetElement(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut TrailElement> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut TrailElement = __cordl_object
+            .invoke("GetElement", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitSnapshots(
+        &mut self,
+        defaultStartPosition: crate::UnityEngine::Vector3,
+        defaultEndPosition: crate::UnityEngine::Vector3,
+        _cordl_time: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "InitSnapshots",
+                (defaultStartPosition, defaultEndPosition, _cordl_time),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Interpolate(
+        &mut self,
+        t: f32,
+        lerpState: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::TrailElementCollection_InterpolationState,
+        >,
+        position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        normal: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        _cordl_time: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Interpolate", (t, lerpState, position, normal, _cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveTailToHead(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MoveTailToHead", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        capacity: i32,
+        defaultStartPosition: crate::UnityEngine::Vector3,
+        defaultEndPosition: crate::UnityEngine::Vector3,
+        _cordl_time: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (capacity, defaultStartPosition, defaultEndPosition, _cordl_time),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn SetHeadData(
         &mut self,
         start: crate::UnityEngine::Vector3,
@@ -66,6 +135,16 @@ impl TrailElementCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetHeadData", (start, end, _cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateDistances(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateDistances", ())?;
         Ok(__cordl_ret)
     }
     pub fn UpdateLerpState(
@@ -98,85 +177,6 @@ impl TrailElementCollection {
                 (capacity, defaultStartPosition, defaultEndPosition, _cordl_time),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn GetElement(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut TrailElement> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut TrailElement = __cordl_object
-            .invoke("GetElement", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveTailToHead(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveTailToHead", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Interpolate(
-        &mut self,
-        t: f32,
-        lerpState: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::TrailElementCollection_InterpolationState,
-        >,
-        position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-        normal: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-        _cordl_time: quest_hook::libil2cpp::ByRefMut<f32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Interpolate", (t, lerpState, position, normal, _cordl_time))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitSnapshots(
-        &mut self,
-        defaultStartPosition: crate::UnityEngine::Vector3,
-        defaultEndPosition: crate::UnityEngine::Vector3,
-        _cordl_time: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "InitSnapshots",
-                (defaultStartPosition, defaultEndPosition, _cordl_time),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateDistances(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateDistances", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        capacity: i32,
-        defaultStartPosition: crate::UnityEngine::Vector3,
-        defaultEndPosition: crate::UnityEngine::Vector3,
-        _cordl_time: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (capacity, defaultStartPosition, defaultEndPosition, _cordl_time),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "TrailElementCollection")]

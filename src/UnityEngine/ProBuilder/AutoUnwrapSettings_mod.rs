@@ -51,24 +51,49 @@ for crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings")]
 impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
-    #[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Anchor")]
-    pub type Anchor = crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor;
     #[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Fill")]
     pub type Fill = crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Fill;
-    pub fn get_rotation(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_rotation",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Anchor")]
+    pub type Anchor = crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor;
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Reset",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        unwrapSettings: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (unwrapSettings),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_anchor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor,
+    > {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_anchor",
             (),
         )?;
         Ok(__cordl_ret)
@@ -85,24 +110,11 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_offset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_flipU(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_offset",
+            "get_flipU",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_offset(
-        &mut self,
-        value: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_offset",
-            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -114,10 +126,20 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_swapUV(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_offset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_swapUV",
+            "get_offset",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rotation(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_rotation",
             (),
         )?;
         Ok(__cordl_ret)
@@ -132,55 +154,18 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_scale(
-        &mut self,
-        value: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_swapUV(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_scale",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_fill(
-        &mut self,
-        value: crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Fill,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_fill",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_anchor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor,
-    > {
-        let __cordl_ret: crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_anchor",
+            "get_swapUV",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        unwrapSettings: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (unwrapSettings),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_flipU(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_useWorldSpace(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_flipU",
+            "get_useWorldSpace",
             (),
         )?;
         Ok(__cordl_ret)
@@ -196,35 +181,24 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_useWorldSpace(
+    pub fn set_fill(
+        &mut self,
+        value: crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Fill,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_fill",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_flipU(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_useWorldSpace",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_swapUV(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_swapUV",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_rotation(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_rotation",
+            "set_flipU",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -240,32 +214,58 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
+    pub fn set_offset(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
-            (),
+            "set_offset",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_flipU(
+    pub fn set_rotation(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_rotation",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_scale(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_scale",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_swapUV(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_flipU",
+            "set_swapUV",
             (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_useWorldSpace(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn set_useWorldSpace(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_useWorldSpace",
-            (),
+            "set_useWorldSpace",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

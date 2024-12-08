@@ -40,6 +40,18 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ElementUnderPointer 
 }
 #[cfg(feature = "UnityEngine+UIElements+ElementUnderPointer")]
 impl crate::UnityEngine::UIElements::ElementUnderPointer {
+    pub fn CommitElementUnderPointers(
+        &mut self,
+        dispatcher: *mut crate::UnityEngine::UIElements::EventDispatcher,
+        contextType: crate::UnityEngine::UIElements::ContextType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CommitElementUnderPointers", (dispatcher, contextType))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetEventPointerPosition(
         &mut self,
         triggerEvent: *mut crate::UnityEngine::UIElements::EventBase,
@@ -51,21 +63,43 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
             .invoke("GetEventPointerPosition", (triggerEvent))?;
         Ok(__cordl_ret)
     }
-    pub fn SetElementUnderPointer_Vector2_0(
+    pub fn GetTopElementUnderPointer_ByRefMut_ByRefMut0(
         &mut self,
-        newElementUnderPointer: *mut crate::UnityEngine::UIElements::VisualElement,
         pointerId: i32,
-        pointerPos: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        pickPosition: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        isTemporary: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
             .invoke(
-                "SetElementUnderPointer",
-                (newElementUnderPointer, pointerId, pointerPos),
+                "GetTopElementUnderPointer",
+                (pointerId, pickPosition, isTemporary),
             )?;
         Ok(__cordl_ret)
+    }
+    pub fn GetTopElementUnderPointer_i32_1(
+        &mut self,
+        pointerId: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
+            .invoke("GetTopElementUnderPointer", (pointerId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn SetElementUnderPointer_EventBase1(
         &mut self,
@@ -100,35 +134,20 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetTopElementUnderPointer_ByRefMut_ByRefMut0(
+    pub fn SetElementUnderPointer_Vector2_0(
         &mut self,
+        newElementUnderPointer: *mut crate::UnityEngine::UIElements::VisualElement,
         pointerId: i32,
-        pickPosition: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
-        isTemporary: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-    > {
+        pointerPos: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "GetTopElementUnderPointer",
-                (pointerId, pickPosition, isTemporary),
+                "SetElementUnderPointer",
+                (newElementUnderPointer, pointerId, pointerPos),
             )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTopElementUnderPointer_i32_1(
-        &mut self,
-        pointerId: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
-            .invoke("GetTopElementUnderPointer", (pointerId))?;
         Ok(__cordl_ret)
     }
     pub fn SetTemporaryElementUnderPointer(
@@ -147,18 +166,6 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn CommitElementUnderPointers(
-        &mut self,
-        dispatcher: *mut crate::UnityEngine::UIElements::EventDispatcher,
-        contextType: crate::UnityEngine::UIElements::ContextType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CommitElementUnderPointers", (dispatcher, contextType))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -168,13 +175,6 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ElementUnderPointer")]

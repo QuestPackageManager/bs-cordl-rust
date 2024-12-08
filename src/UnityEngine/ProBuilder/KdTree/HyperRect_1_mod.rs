@@ -26,6 +26,52 @@ for crate::UnityEngine::ProBuilder::KdTree::HyperRect_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::ProBuilder::KdTree::HyperRect_1<T> {
+    pub fn Clone(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ProBuilder::KdTree::HyperRect_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::KdTree::HyperRect_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Clone",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetClosestPoint(
+        &mut self,
+        toPoint: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        math: *mut crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<T>,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetClosestPoint",
+            (toPoint, math),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MaxPoint(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_MaxPoint",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_MinPoint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
@@ -52,52 +98,6 @@ impl<
             self,
             "set_MaxPoint",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MaxPoint(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_MaxPoint",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetClosestPoint(
-        &mut self,
-        toPoint: *mut quest_hook::libil2cpp::Il2CppArray<T>,
-        math: *mut crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<T>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetClosestPoint",
-            (toPoint, math),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clone(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ProBuilder::KdTree::HyperRect_1<T>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: crate::UnityEngine::ProBuilder::KdTree::HyperRect_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Clone",
-            (),
         )?;
         Ok(__cordl_ret)
     }

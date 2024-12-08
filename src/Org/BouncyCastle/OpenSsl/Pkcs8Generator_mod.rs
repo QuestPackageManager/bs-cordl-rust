@@ -29,27 +29,36 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
 }
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+Pkcs8Generator")]
 impl crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
-    pub fn set_IterationCount(
+    pub fn Generate(
         &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IterationCount", (value))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject = __cordl_object
+            .invoke("Generate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_Password(
-        &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Password", (value))?;
-        Ok(__cordl_ret)
+    pub fn New_AsymmetricKeyParameter0(
+        privKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (privKey))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String1(
+        privKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        algorithm: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (privKey, algorithm))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_AsymmetricKeyParameter0(
         &mut self,
@@ -74,16 +83,26 @@ impl crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
             .invoke(".ctor", (privKey, algorithm))?;
         Ok(__cordl_ret)
     }
-    pub fn Generate(
+    pub fn set_IterationCount(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
-    > {
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject = __cordl_object
-            .invoke("Generate", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IterationCount", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Password(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Password", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_SecureRandom(
@@ -96,25 +115,6 @@ impl crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_SecureRandom", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_AsymmetricKeyParameter0(
-        privKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (privKey))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        privKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        algorithm: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (privKey, algorithm))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+Pkcs8Generator")]

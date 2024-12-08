@@ -38,16 +38,14 @@ for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualDouble {
     feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualDouble"
 )]
 impl crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualDouble {
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         nullValue: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (nullValue))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (nullValue))?;
+        Ok(__cordl_object)
     }
     pub fn Run(
         &mut self,
@@ -59,14 +57,16 @@ impl crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualDouble {
         let __cordl_ret: i32 = __cordl_object.invoke("Run", (frame))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         nullValue: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (nullValue))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (nullValue))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(

@@ -25,18 +25,6 @@ impl std::ops::DerefMut for crate::UnityEngine::Video::VideoPlayer_ErrorEventHan
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
 impl crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         source: *mut crate::UnityEngine::Video::VideoPlayer,
@@ -52,12 +40,24 @@ impl crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
@@ -96,18 +96,6 @@ impl std::ops::DerefMut for crate::UnityEngine::Video::VideoPlayer_EventHandler 
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
 impl crate::UnityEngine::Video::VideoPlayer_EventHandler {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         source: *mut crate::UnityEngine::Video::VideoPlayer,
@@ -122,12 +110,24 @@ impl crate::UnityEngine::Video::VideoPlayer_EventHandler {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
@@ -168,18 +168,6 @@ for crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
 impl crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         source: *mut crate::UnityEngine::Video::VideoPlayer,
@@ -195,12 +183,24 @@ impl crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
@@ -239,18 +239,6 @@ impl std::ops::DerefMut for crate::UnityEngine::Video::VideoPlayer_TimeEventHand
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
 impl crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         source: *mut crate::UnityEngine::Video::VideoPlayer,
@@ -266,12 +254,24 @@ impl crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
@@ -320,12 +320,247 @@ impl std::ops::DerefMut for crate::UnityEngine::Video::VideoPlayer {
 impl crate::UnityEngine::Video::VideoPlayer {
     #[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
     pub type ErrorEventHandler = crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler;
-    #[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
-    pub type EventHandler = crate::UnityEngine::Video::VideoPlayer_EventHandler;
-    #[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
-    pub type TimeEventHandler = crate::UnityEngine::Video::VideoPlayer_TimeEventHandler;
     #[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
     pub type FrameReadyEventHandler = crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler;
+    #[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
+    pub type TimeEventHandler = crate::UnityEngine::Video::VideoPlayer_TimeEventHandler;
+    #[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
+    pub type EventHandler = crate::UnityEngine::Video::VideoPlayer_EventHandler;
+    pub fn EnableAudioTrack(
+        &mut self,
+        trackIndex: u16,
+        enabled: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EnableAudioTrack", (trackIndex, enabled))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetAudioChannelCount(
+        &mut self,
+        trackIndex: u16,
+    ) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u16 = __cordl_object
+            .invoke("GetAudioChannelCount", (trackIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetAudioLanguageCode(
+        &mut self,
+        trackIndex: u16,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetAudioLanguageCode", (trackIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetAudioSampleRate(
+        &mut self,
+        trackIndex: u16,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object
+            .invoke("GetAudioSampleRate", (trackIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetControlledAudioTrackCount(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u16 = __cordl_object
+            .invoke("GetControlledAudioTrackCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDirectAudioMute(
+        &mut self,
+        trackIndex: u16,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("GetDirectAudioMute", (trackIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDirectAudioVolume(
+        &mut self,
+        trackIndex: u16,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("GetDirectAudioVolume", (trackIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetTargetAudioSource(
+        &mut self,
+        trackIndex: u16,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AudioSource> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::AudioSource = __cordl_object
+            .invoke("GetTargetAudioSource", (trackIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsAudioTrackEnabled(
+        &mut self,
+        trackIndex: u16,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsAudioTrackEnabled", (trackIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Pause(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Pause", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Play(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Play", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Prepare(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Prepare", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetControlledAudioTrackCount(
+        &mut self,
+        value: u16,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetControlledAudioTrackCount", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetDirectAudioMute(
+        &mut self,
+        trackIndex: u16,
+        mute: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetDirectAudioMute", (trackIndex, mute))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetDirectAudioVolume(
+        &mut self,
+        trackIndex: u16,
+        volume: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetDirectAudioVolume", (trackIndex, volume))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetTargetAudioSource(
+        &mut self,
+        trackIndex: u16,
+        source: *mut crate::UnityEngine::AudioSource,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetTargetAudioSource", (trackIndex, source))?;
+        Ok(__cordl_ret)
+    }
+    pub fn StepForward(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StepForward", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Stop(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Stop", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_clockResyncOccurred(
+        &mut self,
+        value: *mut crate::UnityEngine::Video::VideoPlayer_TimeEventHandler,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_clockResyncOccurred", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_errorReceived(
+        &mut self,
+        value: *mut crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_errorReceived", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn add_frameDropped(
         &mut self,
         value: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
@@ -337,42 +572,138 @@ impl crate::UnityEngine::Video::VideoPlayer {
             .invoke("add_frameDropped", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_clockResyncOccurred(
+    pub fn add_frameReady(
         &mut self,
-        value: *mut crate::UnityEngine::Video::VideoPlayer_TimeEventHandler,
+        value: *mut crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_clockResyncOccurred", (value))?;
+            .invoke("add_frameReady", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_externalReferenceTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("get_externalReferenceTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_targetMaterialProperty(
+    pub fn add_loopPointReached(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_targetMaterialProperty", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_loopPointReached", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_timeSource(
+    pub fn add_prepareCompleted(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Video::VideoTimeSource> {
+        value: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Video::VideoTimeSource = __cordl_object
-            .invoke("get_timeSource", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_prepareCompleted", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_seekCompleted(
+        &mut self,
+        value: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_seekCompleted", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_started(
+        &mut self,
+        value: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_started", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_aspectRatio(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Video::VideoAspectRatio> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Video::VideoAspectRatio = __cordl_object
+            .invoke("get_aspectRatio", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_audioOutputMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Video::VideoAudioOutputMode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Video::VideoAudioOutputMode = __cordl_object
+            .invoke("get_audioOutputMode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_audioTrackCount(&mut self) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u16 = __cordl_object.invoke("get_audioTrackCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_canSetDirectAudioVolume(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_canSetDirectAudioVolume", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_canSetPlaybackSpeed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_canSetPlaybackSpeed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_canSetSkipOnDrop(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_canSetSkipOnDrop", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_canSetTime(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_canSetTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_canSetTimeSource(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_canSetTimeSource", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_canSetTimeUpdateMode(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_canSetTimeUpdateMode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_canStep(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_canStep", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_clip(
@@ -392,60 +723,21 @@ impl crate::UnityEngine::Video::VideoPlayer {
         let __cordl_ret: f64 = __cordl_object.invoke("get_clockTime", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetDirectAudioMute(
+    pub fn get_controlledAudioTrackCount(
         &mut self,
-        trackIndex: u16,
-        mute: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<u16> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetDirectAudioMute", (trackIndex, mute))?;
+        let __cordl_ret: u16 = __cordl_object
+            .invoke("get_controlledAudioTrackCount", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_isPrepared(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_externalReferenceTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isPrepared", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_canSetTime(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_canSetTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_targetCameraAlpha(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_targetCameraAlpha", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_frameCount(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u64 = __cordl_object.invoke("get_frameCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetTargetAudioSource(
-        &mut self,
-        trackIndex: u16,
-        source: *mut crate::UnityEngine::AudioSource,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTargetAudioSource", (trackIndex, source))?;
+        let __cordl_ret: f64 = __cordl_object.invoke("get_externalReferenceTime", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_frame(&mut self) -> quest_hook::libil2cpp::Result<i64> {
@@ -455,6 +747,41 @@ impl crate::UnityEngine::Video::VideoPlayer {
         let __cordl_ret: i64 = __cordl_object.invoke("get_frame", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_frameCount(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u64 = __cordl_object.invoke("get_frameCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_frameRate(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_frameRate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("get_height", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isLooping(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isLooping", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isPaused(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isPaused", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_isPlaying(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -462,54 +789,76 @@ impl crate::UnityEngine::Video::VideoPlayer {
         let __cordl_ret: bool = __cordl_object.invoke("get_isPlaying", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_playbackSpeed(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_isPrepared(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_playbackSpeed", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isPrepared", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_canSetPlaybackSpeed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_length(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_canSetPlaybackSpeed", ())?;
+        let __cordl_ret: f64 = __cordl_object.invoke("get_length", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_timeReference(
+    pub fn get_pixelAspectRatioDenominator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Video::VideoTimeReference> {
+    ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Video::VideoTimeReference = __cordl_object
-            .invoke("get_timeReference", ())?;
+        let __cordl_ret: u32 = __cordl_object
+            .invoke("get_pixelAspectRatioDenominator", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_externalReferenceTime(
+    pub fn get_pixelAspectRatioNumerator(
         &mut self,
-        value: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_externalReferenceTime", (value))?;
+        let __cordl_ret: u32 = __cordl_object
+            .invoke("get_pixelAspectRatioNumerator", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_controlledAudioTrackCount(
-        &mut self,
-        value: u16,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_playOnAwake(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_controlledAudioTrackCount", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_playOnAwake", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_playbackSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_playbackSpeed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_renderMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Video::VideoRenderMode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Video::VideoRenderMode = __cordl_object
+            .invoke("get_renderMode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sendFrameReadyEvents(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_sendFrameReadyEvents", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_skipOnDrop(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_skipOnDrop", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_source(
@@ -522,57 +871,157 @@ impl crate::UnityEngine::Video::VideoPlayer {
             .invoke("get_source", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_isLooping(
+    pub fn get_targetCamera(
         &mut self,
-        value: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Camera> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Camera = __cordl_object
+            .invoke("get_targetCamera", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_targetCamera3DLayout(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Video::Video3DLayout> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Video::Video3DLayout = __cordl_object
+            .invoke("get_targetCamera3DLayout", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_targetCameraAlpha(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_targetCameraAlpha", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_targetMaterialProperty(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_targetMaterialProperty", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_targetMaterialRenderer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Renderer> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Renderer = __cordl_object
+            .invoke("get_targetMaterialRenderer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_targetTexture(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RenderTexture> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::RenderTexture = __cordl_object
+            .invoke("get_targetTexture", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_texture(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Texture = __cordl_object
+            .invoke("get_texture", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object.invoke("get_time", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_timeReference(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Video::VideoTimeReference> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Video::VideoTimeReference = __cordl_object
+            .invoke("get_timeReference", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_timeSource(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Video::VideoTimeSource> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Video::VideoTimeSource = __cordl_object
+            .invoke("get_timeSource", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_timeUpdateMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Video::VideoTimeUpdateMode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Video::VideoTimeUpdateMode = __cordl_object
+            .invoke("get_timeUpdateMode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_url(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_url", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_waitForFirstFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_waitForFirstFrame", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("get_width", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_clockResyncOccurred(
+        &mut self,
+        value: *mut crate::UnityEngine::Video::VideoPlayer_TimeEventHandler,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_isLooping", (value))?;
+            .invoke("remove_clockResyncOccurred", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_audioTrackCount(&mut self) -> quest_hook::libil2cpp::Result<u16> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u16 = __cordl_object.invoke("get_audioTrackCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAudioChannelCount(
+    pub fn remove_errorReceived(
         &mut self,
-        trackIndex: u16,
-    ) -> quest_hook::libil2cpp::Result<u16> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u16 = __cordl_object
-            .invoke("GetAudioChannelCount", (trackIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetControlledAudioTrackCount(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<u16> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u16 = __cordl_object
-            .invoke("GetControlledAudioTrackCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_skipOnDrop(
-        &mut self,
-        value: bool,
+        value: *mut crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_skipOnDrop", (value))?;
+            .invoke("remove_errorReceived", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn add_loopPointReached(
+    pub fn remove_frameDropped(
         &mut self,
         value: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -580,35 +1029,7 @@ impl crate::UnityEngine::Video::VideoPlayer {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_loopPointReached", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAudioSampleRate(
-        &mut self,
-        trackIndex: u16,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke("GetAudioSampleRate", (trackIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_skipOnDrop(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_skipOnDrop", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("remove_frameDropped", (value))?;
         Ok(__cordl_ret)
     }
     pub fn remove_frameReady(
@@ -633,35 +1054,7 @@ impl crate::UnityEngine::Video::VideoPlayer {
             .invoke("remove_loopPointReached", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_targetTexture(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RenderTexture> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::RenderTexture = __cordl_object
-            .invoke("get_targetTexture", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("get_width", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDirectAudioVolume(
-        &mut self,
-        trackIndex: u16,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("GetDirectAudioVolume", (trackIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_started(
+    pub fn remove_prepareCompleted(
         &mut self,
         value: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -669,625 +1062,7 @@ impl crate::UnityEngine::Video::VideoPlayer {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_started", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_source(
-        &mut self,
-        value: crate::UnityEngine::Video::VideoSource,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_source", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_playbackSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_playbackSpeed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_frame(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_frame", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isLooping(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isLooping", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_pixelAspectRatioDenominator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke("get_pixelAspectRatioDenominator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_timeSource(
-        &mut self,
-        value: crate::UnityEngine::Video::VideoTimeSource,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_timeSource", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_pixelAspectRatioNumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke("get_pixelAspectRatioNumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_targetCamera(
-        &mut self,
-        value: *mut crate::UnityEngine::Camera,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_targetCamera", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTargetAudioSource(
-        &mut self,
-        trackIndex: u16,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AudioSource> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::AudioSource = __cordl_object
-            .invoke("GetTargetAudioSource", (trackIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_started(
-        &mut self,
-        value: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_started", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_errorReceived(
-        &mut self,
-        value: *mut crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_errorReceived", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_targetMaterialRenderer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Renderer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Renderer = __cordl_object
-            .invoke("get_targetMaterialRenderer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_canSetDirectAudioVolume(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_canSetDirectAudioVolume", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_targetCamera3DLayout(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Video::Video3DLayout> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Video::Video3DLayout = __cordl_object
-            .invoke("get_targetCamera3DLayout", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_renderMode(
-        &mut self,
-        value: crate::UnityEngine::Video::VideoRenderMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_renderMode", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_timeUpdateMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Video::VideoTimeUpdateMode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Video::VideoTimeUpdateMode = __cordl_object
-            .invoke("get_timeUpdateMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_canSetSkipOnDrop(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_canSetSkipOnDrop", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_prepareCompleted(
-        &mut self,
-        value: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_prepareCompleted", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_renderMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Video::VideoRenderMode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Video::VideoRenderMode = __cordl_object
-            .invoke("get_renderMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetDirectAudioVolume(
-        &mut self,
-        trackIndex: u16,
-        volume: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetDirectAudioVolume", (trackIndex, volume))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_timeUpdateMode(
-        &mut self,
-        value: crate::UnityEngine::Video::VideoTimeUpdateMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_timeUpdateMode", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsAudioTrackEnabled(
-        &mut self,
-        trackIndex: u16,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsAudioTrackEnabled", (trackIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_clockResyncOccurred(
-        &mut self,
-        value: *mut crate::UnityEngine::Video::VideoPlayer_TimeEventHandler,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_clockResyncOccurred", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_sendFrameReadyEvents(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_sendFrameReadyEvents", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_targetMaterialProperty(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_targetMaterialProperty", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("get_time", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_playOnAwake(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_playOnAwake", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_audioOutputMode(
-        &mut self,
-        value: crate::UnityEngine::Video::VideoAudioOutputMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_audioOutputMode", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_url(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_url", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_aspectRatio(
-        &mut self,
-        value: crate::UnityEngine::Video::VideoAspectRatio,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_aspectRatio", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EnableAudioTrack(
-        &mut self,
-        trackIndex: u16,
-        enabled: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EnableAudioTrack", (trackIndex, enabled))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sendFrameReadyEvents(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_sendFrameReadyEvents", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn StepForward(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StepForward", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_canSetTimeSource(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_canSetTimeSource", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_targetCameraAlpha(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_targetCameraAlpha", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Prepare(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Prepare", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_canSetTimeUpdateMode(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_canSetTimeUpdateMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_targetMaterialRenderer(
-        &mut self,
-        value: *mut crate::UnityEngine::Renderer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_targetMaterialRenderer", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_frameDropped(
-        &mut self,
-        value: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_frameDropped", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_waitForFirstFrame(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_waitForFirstFrame", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_clip(
-        &mut self,
-        value: *mut crate::UnityEngine::Video::VideoClip,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_clip", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_texture(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Texture = __cordl_object
-            .invoke("get_texture", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Play(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Play", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Pause(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Pause", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_frameRate(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_frameRate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_audioOutputMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Video::VideoAudioOutputMode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Video::VideoAudioOutputMode = __cordl_object
-            .invoke("get_audioOutputMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_controlledAudioTrackCount(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<u16> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u16 = __cordl_object
-            .invoke("get_controlledAudioTrackCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDirectAudioMute(
-        &mut self,
-        trackIndex: u16,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("GetDirectAudioMute", (trackIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_errorReceived(
-        &mut self,
-        value: *mut crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_errorReceived", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetControlledAudioTrackCount(
-        &mut self,
-        value: u16,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetControlledAudioTrackCount", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_playOnAwake(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_playOnAwake", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_targetTexture(
-        &mut self,
-        value: *mut crate::UnityEngine::RenderTexture,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_targetTexture", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Stop(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Stop", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_aspectRatio(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Video::VideoAspectRatio> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Video::VideoAspectRatio = __cordl_object
-            .invoke("get_aspectRatio", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_timeReference(
-        &mut self,
-        value: crate::UnityEngine::Video::VideoTimeReference,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_timeReference", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAudioLanguageCode(
-        &mut self,
-        trackIndex: u16,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetAudioLanguageCode", (trackIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_url(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_url", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_seekCompleted(
-        &mut self,
-        value: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_seekCompleted", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("get_height", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_canStep(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_canStep", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isPaused(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isPaused", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_waitForFirstFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_waitForFirstFrame", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_length(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("get_length", ())?;
+            .invoke("remove_prepareCompleted", (value))?;
         Ok(__cordl_ret)
     }
     pub fn remove_seekCompleted(
@@ -1301,6 +1076,171 @@ impl crate::UnityEngine::Video::VideoPlayer {
             .invoke("remove_seekCompleted", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn remove_started(
+        &mut self,
+        value: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_started", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_aspectRatio(
+        &mut self,
+        value: crate::UnityEngine::Video::VideoAspectRatio,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_aspectRatio", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_audioOutputMode(
+        &mut self,
+        value: crate::UnityEngine::Video::VideoAudioOutputMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_audioOutputMode", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_clip(
+        &mut self,
+        value: *mut crate::UnityEngine::Video::VideoClip,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_clip", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_controlledAudioTrackCount(
+        &mut self,
+        value: u16,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_controlledAudioTrackCount", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_externalReferenceTime(
+        &mut self,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_externalReferenceTime", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_frame(
+        &mut self,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_frame", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_isLooping(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_isLooping", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_playOnAwake(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_playOnAwake", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_playbackSpeed(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_playbackSpeed", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_renderMode(
+        &mut self,
+        value: crate::UnityEngine::Video::VideoRenderMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_renderMode", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_sendFrameReadyEvents(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_sendFrameReadyEvents", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_skipOnDrop(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_skipOnDrop", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_source(
+        &mut self,
+        value: crate::UnityEngine::Video::VideoSource,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_source", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_targetCamera(
+        &mut self,
+        value: *mut crate::UnityEngine::Camera,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_targetCamera", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_targetCamera3DLayout(
         &mut self,
         value: crate::UnityEngine::Video::Video3DLayout,
@@ -1312,25 +1252,48 @@ impl crate::UnityEngine::Video::VideoPlayer {
             .invoke("set_targetCamera3DLayout", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn add_frameReady(
+    pub fn set_targetCameraAlpha(
         &mut self,
-        value: *mut crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_frameReady", (value))?;
+            .invoke("set_targetCameraAlpha", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_targetCamera(
+    pub fn set_targetMaterialProperty(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Camera> {
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Camera = __cordl_object
-            .invoke("get_targetCamera", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_targetMaterialProperty", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_targetMaterialRenderer(
+        &mut self,
+        value: *mut crate::UnityEngine::Renderer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_targetMaterialRenderer", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_targetTexture(
+        &mut self,
+        value: *mut crate::UnityEngine::RenderTexture,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_targetTexture", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_time(
@@ -1344,23 +1307,60 @@ impl crate::UnityEngine::Video::VideoPlayer {
             .invoke("set_time", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_prepareCompleted(
+    pub fn set_timeReference(
         &mut self,
-        value: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
+        value: crate::UnityEngine::Video::VideoTimeReference,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_prepareCompleted", (value))?;
+            .invoke("set_timeReference", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_timeSource(
+        &mut self,
+        value: crate::UnityEngine::Video::VideoTimeSource,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_timeSource", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_timeUpdateMode(
+        &mut self,
+        value: crate::UnityEngine::Video::VideoTimeUpdateMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_timeUpdateMode", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_url(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_url", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_waitForFirstFrame(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_waitForFirstFrame", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer")]

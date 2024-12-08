@@ -25,17 +25,26 @@ impl std::ops::DerefMut for GraphAPIClient {
 }
 #[cfg(feature = "GraphAPIClient")]
 impl GraphAPIClient {
-    #[cfg(feature = "GraphAPIClient+PostOptions")]
-    pub type PostOptions = crate::GlobalNamespace::GraphAPIClient_PostOptions;
     #[cfg(feature = "GraphAPIClient+_Post_d__4_2")]
     pub type _Post_d__4_2<
         TRequest: quest_hook::libil2cpp::Type,
         TResponse: quest_hook::libil2cpp::Type,
     > = crate::GlobalNamespace::GraphAPIClient__Post_d__4_2<TRequest, TResponse>;
+    #[cfg(feature = "GraphAPIClient+PostOptions")]
+    pub type PostOptions = crate::GlobalNamespace::GraphAPIClient_PostOptions;
     #[cfg(feature = "GraphAPIClient+_Post_d__5_1")]
     pub type _Post_d__5_1<TResponse: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::GraphAPIClient__Post_d__5_1<
         TResponse,
     >;
+    pub fn New(
+        networkConfig: *mut INetworkConfig,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (networkConfig))?;
+        Ok(__cordl_object)
+    }
     pub fn PostLoggedOut<TRequest, TResponse>(
         &mut self,
         path: *mut crate::System::String,
@@ -117,15 +126,6 @@ impl GraphAPIClient {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (networkConfig))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        networkConfig: *mut INetworkConfig,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (networkConfig))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "GraphAPIClient")]

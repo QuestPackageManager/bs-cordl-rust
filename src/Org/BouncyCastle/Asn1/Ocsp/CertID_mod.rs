@@ -28,6 +28,40 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Ocsp::CertID {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+CertID")]
 impl crate::Org::BouncyCastle::Asn1::Ocsp::CertID {
+    pub fn New_AlgorithmIdentifier_Asn1OctetString_Asn1OctetString_DerInteger0(
+        hashAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        issuerNameHash: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+        issuerKeyHash: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+        serialNumber: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (hashAlgorithm, issuerNameHash, issuerKeyHash, serialNumber),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Asn1Sequence1(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToAsn1Object(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("ToAsn1Object", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_AlgorithmIdentifier_Asn1OctetString_Asn1OctetString_DerInteger0(
         &mut self,
         hashAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
@@ -80,16 +114,6 @@ impl crate::Org::BouncyCastle::Asn1::Ocsp::CertID {
             .invoke("get_IssuerKeyHash", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_SerialNumber(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::DerInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
-            .invoke("get_SerialNumber", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_IssuerNameHash(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -102,39 +126,15 @@ impl crate::Org::BouncyCastle::Asn1::Ocsp::CertID {
             .invoke("get_IssuerNameHash", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ToAsn1Object(
+    pub fn get_SerialNumber(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::DerInteger> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
+            .invoke("get_SerialNumber", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_AlgorithmIdentifier_Asn1OctetString_Asn1OctetString_DerInteger0(
-        hashAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        issuerNameHash: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-        issuerKeyHash: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-        serialNumber: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (hashAlgorithm, issuerNameHash, issuerKeyHash, serialNumber),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Asn1Sequence1(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+CertID")]

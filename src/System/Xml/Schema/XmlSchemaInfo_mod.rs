@@ -32,59 +32,31 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaInfo {
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaInfo")]
 impl crate::System::Xml::Schema::XmlSchemaInfo {
-    pub fn get_SchemaAttribute(
+    pub fn Clear(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaAttribute,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaAttribute = __cordl_object
-            .invoke("get_SchemaAttribute", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsDefault(
-        &mut self,
-        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsDefault", (value))?;
+            .invoke("Clear", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_SchemaType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchemaType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaType = __cordl_object
-            .invoke("get_SchemaType", ())?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn get_Validity(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::XmlSchemaValidity> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::Schema::XmlSchemaValidity = __cordl_object
-            .invoke("get_Validity", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_SchemaElement(
-        &mut self,
-        value: *mut crate::System::Xml::Schema::XmlSchemaElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_SchemaElement", (value))?;
-        Ok(__cordl_ret)
+    pub fn New_XmlSchemaValidity1(
+        validity: crate::System::Xml::Schema::XmlSchemaValidity,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (validity))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_0(
         &mut self,
@@ -107,46 +79,6 @@ impl crate::System::Xml::Schema::XmlSchemaInfo {
             .invoke(".ctor", (validity))?;
         Ok(__cordl_ret)
     }
-    pub fn set_SchemaType(
-        &mut self,
-        value: *mut crate::System::Xml::Schema::XmlSchemaType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_SchemaType", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_MemberType(
-        &mut self,
-        value: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_MemberType", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsDefault(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsDefault", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_SchemaAttribute(
-        &mut self,
-        value: *mut crate::System::Xml::Schema::XmlSchemaAttribute,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_SchemaAttribute", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_ContentType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -159,24 +91,18 @@ impl crate::System::Xml::Schema::XmlSchemaInfo {
             .invoke("get_ContentType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_XmlType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchemaType> {
+    pub fn get_HasDefaultValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaType = __cordl_object
-            .invoke("get_XmlType", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasDefaultValue", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_IsDefault(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsDefault", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_IsNil(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -186,22 +112,11 @@ impl crate::System::Xml::Schema::XmlSchemaInfo {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsNil", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_Validity(
-        &mut self,
-        value: crate::System::Xml::Schema::XmlSchemaValidity,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_IsUnionType(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Validity", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_HasDefaultValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasDefaultValue", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsUnionType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_MemberType(
@@ -216,6 +131,18 @@ impl crate::System::Xml::Schema::XmlSchemaInfo {
             .invoke("get_MemberType", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_SchemaAttribute(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Xml::Schema::XmlSchemaAttribute,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaAttribute = __cordl_object
+            .invoke("get_SchemaAttribute", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_SchemaElement(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -228,11 +155,45 @@ impl crate::System::Xml::Schema::XmlSchemaInfo {
             .invoke("get_SchemaElement", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsUnionType(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_SchemaType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchemaType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsUnionType", ())?;
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaType = __cordl_object
+            .invoke("get_SchemaType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Validity(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::XmlSchemaValidity> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::Schema::XmlSchemaValidity = __cordl_object
+            .invoke("get_Validity", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_XmlType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchemaType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaType = __cordl_object
+            .invoke("get_XmlType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IsDefault(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsDefault", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_IsNil(
@@ -246,21 +207,60 @@ impl crate::System::Xml::Schema::XmlSchemaInfo {
             .invoke("set_IsNil", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_MemberType(
+        &mut self,
+        value: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_MemberType", (value))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_XmlSchemaValidity1(
-        validity: crate::System::Xml::Schema::XmlSchemaValidity,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (validity))?;
-        Ok(__cordl_object)
+    pub fn set_SchemaAttribute(
+        &mut self,
+        value: *mut crate::System::Xml::Schema::XmlSchemaAttribute,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_SchemaAttribute", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_SchemaElement(
+        &mut self,
+        value: *mut crate::System::Xml::Schema::XmlSchemaElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_SchemaElement", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_SchemaType(
+        &mut self,
+        value: *mut crate::System::Xml::Schema::XmlSchemaType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_SchemaType", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Validity(
+        &mut self,
+        value: crate::System::Xml::Schema::XmlSchemaValidity,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Validity", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaInfo")]

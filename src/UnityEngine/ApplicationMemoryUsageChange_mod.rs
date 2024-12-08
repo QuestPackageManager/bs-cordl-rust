@@ -22,17 +22,6 @@ for crate::UnityEngine::ApplicationMemoryUsageChange {
 }
 #[cfg(feature = "UnityEngine+ApplicationMemoryUsageChange")]
 impl crate::UnityEngine::ApplicationMemoryUsageChange {
-    pub fn set_memoryUsage(
-        &mut self,
-        value: crate::UnityEngine::ApplicationMemoryUsage,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_memoryUsage",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         usage: crate::UnityEngine::ApplicationMemoryUsage,
@@ -41,6 +30,17 @@ impl crate::UnityEngine::ApplicationMemoryUsageChange {
             self,
             ".ctor",
             (usage),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_memoryUsage(
+        &mut self,
+        value: crate::UnityEngine::ApplicationMemoryUsage,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_memoryUsage",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

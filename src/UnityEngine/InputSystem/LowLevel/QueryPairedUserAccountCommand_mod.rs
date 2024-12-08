@@ -95,10 +95,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::QueryPairedUserAccountCommand {
     pub const kMaxNameLength: i32 = 256i32;
     pub const kSize: i32 = 1040i32;
     #[cfg(
-        feature = "UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand+Result"
-    )]
-    pub type Result = crate::UnityEngine::InputSystem::LowLevel::QueryPairedUserAccountCommand_Result;
-    #[cfg(
         feature = "UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand+_nameBuffer_e__FixedBuffer"
     )]
     pub type _nameBuffer_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::QueryPairedUserAccountCommand__nameBuffer_e__FixedBuffer;
@@ -106,29 +102,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::QueryPairedUserAccountCommand {
         feature = "UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand+_idBuffer_e__FixedBuffer"
     )]
     pub type _idBuffer_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::QueryPairedUserAccountCommand__idBuffer_e__FixedBuffer;
-    pub fn set_id(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_id",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_typeStatic(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::FourCC,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_typeStatic",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(
+        feature = "UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand+Result"
+    )]
+    pub type Result = crate::UnityEngine::InputSystem::LowLevel::QueryPairedUserAccountCommand_Result;
     pub fn get_id(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -146,6 +123,29 @@ impl crate::UnityEngine::InputSystem::LowLevel::QueryPairedUserAccountCommand {
             self,
             "get_name",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_typeStatic(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_typeStatic",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_id(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_id",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

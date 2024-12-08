@@ -24,11 +24,34 @@ impl std::ops::DerefMut for crate::GlobalNamespace::Stream_NullStream {
 }
 #[cfg(feature = "System+IO+Stream+NullStream")]
 impl crate::GlobalNamespace::Stream_NullStream {
-    pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+    pub fn BeginRead(
+        &mut self,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+        callback: *mut crate::System::AsyncCallback,
+        state: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_Position", ())?;
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginRead", (buffer, offset, count, callback, state))?;
+        Ok(__cordl_ret)
+    }
+    pub fn BeginWrite(
+        &mut self,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+        callback: *mut crate::System::AsyncCallback,
+        state: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginWrite", (buffer, offset, count, callback, state))?;
         Ok(__cordl_ret)
     }
     pub fn CopyTo(
@@ -43,6 +66,19 @@ impl crate::GlobalNamespace::Stream_NullStream {
             .invoke("CopyTo", (destination, bufferSize))?;
         Ok(__cordl_ret)
     }
+    pub fn CopyToAsync(
+        &mut self,
+        destination: *mut crate::System::IO::Stream,
+        bufferSize: i32,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("CopyToAsync", (destination, bufferSize, cancellationToken))?;
+        Ok(__cordl_ret)
+    }
     pub fn Dispose(
         &mut self,
         disposing: bool,
@@ -54,21 +90,14 @@ impl crate::GlobalNamespace::Stream_NullStream {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn get_CanWrite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanWrite", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Flush(
+    pub fn EndRead(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        asyncResult: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Flush", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("EndRead", (asyncResult))?;
         Ok(__cordl_ret)
     }
     pub fn EndWrite(
@@ -82,68 +111,33 @@ impl crate::GlobalNamespace::Stream_NullStream {
             .invoke("EndWrite", (asyncResult))?;
         Ok(__cordl_ret)
     }
-    pub fn WriteAsync_Il2CppArray_i32_i32_CancellationToken0(
+    pub fn Flush(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Flush", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn FlushAsync(
+        &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("WriteAsync", (buffer, offset, count, cancellationToken))?;
+            .invoke("FlushAsync", (cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn WriteAsync_ReadOnlyMemory_1_CancellationToken1(
-        &mut self,
-        buffer: crate::System::ReadOnlyMemory_1<u8>,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Threading::Tasks::ValueTask = __cordl_object
-            .invoke("WriteAsync", (buffer, cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Write_Il2CppArray_i32_i32_0(
-        &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (buffer, offset, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Write_ReadOnlySpan_1_1(
-        &mut self,
-        buffer: crate::System::ReadOnlySpan_1<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (buffer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CopyToAsync(
-        &mut self,
-        destination: *mut crate::System::IO::Stream,
-        bufferSize: i32,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("CopyToAsync", (destination, bufferSize, cancellationToken))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ReadAsync_Il2CppArray_i32_i32_CancellationToken0(
         &mut self,
@@ -175,97 +169,11 @@ impl crate::GlobalNamespace::Stream_NullStream {
             .invoke("ReadAsync", (buffer, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn EndRead(
-        &mut self,
-        asyncResult: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("EndRead", (asyncResult))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_Length", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FlushAsync(
-        &mut self,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("FlushAsync", (cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn BeginWrite(
-        &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-        callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginWrite", (buffer, offset, count, callback, state))?;
-        Ok(__cordl_ret)
-    }
     pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanRead", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetLength(
-        &mut self,
-        length: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLength", (length))?;
-        Ok(__cordl_ret)
-    }
-    pub fn BeginRead(
-        &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-        callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginRead", (buffer, offset, count, callback, state))?;
         Ok(__cordl_ret)
     }
     pub fn Read_Il2CppArray_i32_i32_0(
@@ -290,15 +198,52 @@ impl crate::GlobalNamespace::Stream_NullStream {
         let __cordl_ret: i32 = __cordl_object.invoke("Read", (buffer))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Position(
+    pub fn Seek(
         &mut self,
-        value: i64,
+        offset: i64,
+        origin: crate::System::IO::SeekOrigin,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("Seek", (offset, origin))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetLength(
+        &mut self,
+        length: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Position", (value))?;
+            .invoke("SetLength", (length))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteAsync_Il2CppArray_i32_i32_CancellationToken0(
+        &mut self,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("WriteAsync", (buffer, offset, count, cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteAsync_ReadOnlyMemory_1_CancellationToken1(
+        &mut self,
+        buffer: crate::System::ReadOnlyMemory_1<u8>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Threading::Tasks::ValueTask = __cordl_object
+            .invoke("WriteAsync", (buffer, cancellationToken))?;
         Ok(__cordl_ret)
     }
     pub fn WriteByte(
@@ -312,15 +257,45 @@ impl crate::GlobalNamespace::Stream_NullStream {
             .invoke("WriteByte", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Seek(
+    pub fn Write_Il2CppArray_i32_i32_0(
         &mut self,
-        offset: i64,
-        origin: crate::System::IO::SeekOrigin,
-    ) -> quest_hook::libil2cpp::Result<i64> {
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i64 = __cordl_object.invoke("Seek", (offset, origin))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Write", (buffer, offset, count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Write_ReadOnlySpan_1_1(
+        &mut self,
+        buffer: crate::System::ReadOnlySpan_1<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Write", (buffer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanRead", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_CanSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -330,12 +305,37 @@ impl crate::GlobalNamespace::Stream_NullStream {
         let __cordl_ret: bool = __cordl_object.invoke("get_CanSeek", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_CanWrite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanWrite", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_Length", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_Position", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Position(
+        &mut self,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Position", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+IO+Stream+NullStream")]

@@ -23,6 +23,16 @@ impl std::ops::DerefMut for ILobbyPlayersDataModel {
 }
 #[cfg(feature = "ILobbyPlayersDataModel")]
 impl ILobbyPlayersDataModel {
+    pub fn Activate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Activate", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn ClearData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -33,25 +43,44 @@ impl ILobbyPlayersDataModel {
             .invoke("ClearData", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didChangeEvent(
+    pub fn ClearLocalPlayerBeatmapLevel(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didChangeEvent", (value))?;
+            .invoke("ClearLocalPlayerBeatmapLevel", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Activate(
+    pub fn ClearLocalPlayerGameplayModifiers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Activate", ())?;
+            .invoke("ClearLocalPlayerGameplayModifiers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearRecommendations(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearRecommendations", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Deactivate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Deactivate", ())?;
         Ok(__cordl_ret)
     }
     pub fn RequestKickPlayer(
@@ -65,15 +94,15 @@ impl ILobbyPlayersDataModel {
             .invoke("RequestKickPlayer", (kickedUserId))?;
         Ok(__cordl_ret)
     }
-    pub fn SetLocalPlayerIsReady(
+    pub fn SetLocalPlayerBeatmapLevel(
         &mut self,
-        isReady: bool,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLocalPlayerIsReady", (isReady))?;
+            .invoke("SetLocalPlayerBeatmapLevel", (beatmapKey))?;
         Ok(__cordl_ret)
     }
     pub fn SetLocalPlayerGameplayModifiers(
@@ -98,65 +127,26 @@ impl ILobbyPlayersDataModel {
             .invoke("SetLocalPlayerIsActive", (isActive))?;
         Ok(__cordl_ret)
     }
-    pub fn ClearRecommendations(
+    pub fn SetLocalPlayerIsInLobby(
         &mut self,
+        isInLobby: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearRecommendations", ())?;
+            .invoke("SetLocalPlayerIsInLobby", (isInLobby))?;
         Ok(__cordl_ret)
     }
-    pub fn get_partyOwnerId(
+    pub fn SetLocalPlayerIsReady(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_partyOwnerId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_localUserId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_localUserId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearLocalPlayerBeatmapLevel(
-        &mut self,
+        isReady: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearLocalPlayerBeatmapLevel", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Deactivate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Deactivate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetLocalPlayerBeatmapLevel(
-        &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLocalPlayerBeatmapLevel", (beatmapKey))?;
+            .invoke("SetLocalPlayerIsReady", (isReady))?;
         Ok(__cordl_ret)
     }
     pub fn add_didChangeEvent(
@@ -170,31 +160,41 @@ impl ILobbyPlayersDataModel {
             .invoke("add_didChangeEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ClearLocalPlayerGameplayModifiers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearLocalPlayerGameplayModifiers", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetLocalPlayerIsInLobby(
-        &mut self,
-        isInLobby: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLocalPlayerIsInLobby", (isInLobby))?;
-        Ok(__cordl_ret)
-    }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_localUserId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_localUserId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_partyOwnerId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_partyOwnerId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didChangeEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didChangeEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "ILobbyPlayersDataModel")]

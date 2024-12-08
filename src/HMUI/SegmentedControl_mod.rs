@@ -114,6 +114,96 @@ impl std::ops::DerefMut for crate::HMUI::SegmentedControl {
 impl crate::HMUI::SegmentedControl {
     #[cfg(feature = "HMUI+SegmentedControl+IDataSource")]
     type IDataSource = crate::HMUI::SegmentedControl_IDataSource;
+    pub fn CreateCells(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CreateCells", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetReusableCell<T>(
+        &mut self,
+        prefab: *mut crate::UnityEngine::Object,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("GetReusableCell", (prefab))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleCellSelectionDidChange(
+        &mut self,
+        selectableCell: *mut crate::HMUI::SelectableCell,
+        transitionType: crate::HMUI::SelectableCell_TransitionType,
+        changeOwner: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleCellSelectionDidChange",
+                (selectableCell, transitionType, changeOwner),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ReloadData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReloadData", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectCellWithNumber(
+        &mut self,
+        selectCellNumber: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectCellWithNumber", (selectCellNumber))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetCallbackForCell(
+        &mut self,
+        cellNumber: i32,
+        callback: *mut crate::System::Action_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetCallbackForCell", (cellNumber, callback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn add_didSelectCellEvent(
         &mut self,
         value: *mut crate::System::Action_2<*mut crate::HMUI::SegmentedControl, i32>,
@@ -123,17 +213,6 @@ impl crate::HMUI::SegmentedControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didSelectCellEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_dataSource(
-        &mut self,
-        value: *mut crate::HMUI::SegmentedControl_IDataSource,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_dataSource", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_cells(
@@ -149,6 +228,16 @@ impl crate::HMUI::SegmentedControl {
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::HMUI::SegmentedControlCell,
         > = __cordl_object.invoke("get_cells", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_dataSource(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::SegmentedControl_IDataSource> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::SegmentedControl_IDataSource = __cordl_object
+            .invoke("get_dataSource", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_selectedCellNumber(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -169,105 +258,16 @@ impl crate::HMUI::SegmentedControl {
             .invoke("remove_didSelectCellEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_dataSource(
+    pub fn set_dataSource(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::SegmentedControl_IDataSource> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::SegmentedControl_IDataSource = __cordl_object
-            .invoke("get_dataSource", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleCellSelectionDidChange(
-        &mut self,
-        selectableCell: *mut crate::HMUI::SelectableCell,
-        transitionType: crate::HMUI::SelectableCell_TransitionType,
-        changeOwner: *mut crate::System::Object,
+        value: *mut crate::HMUI::SegmentedControl_IDataSource,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleCellSelectionDidChange",
-                (selectableCell, transitionType, changeOwner),
-            )?;
+            .invoke("set_dataSource", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn SetCallbackForCell(
-        &mut self,
-        cellNumber: i32,
-        callback: *mut crate::System::Action_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCallbackForCell", (cellNumber, callback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReloadData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReloadData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetReusableCell<T>(
-        &mut self,
-        prefab: *mut crate::UnityEngine::Object,
-    ) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("GetReusableCell", (prefab))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateCells(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CreateCells", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectCellWithNumber(
-        &mut self,
-        selectCellNumber: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectCellWithNumber", (selectCellNumber))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HMUI+SegmentedControl")]

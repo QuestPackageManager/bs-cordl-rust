@@ -37,6 +37,26 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::DropdownMenuAction {
 impl crate::UnityEngine::UIElements::DropdownMenuAction {
     #[cfg(feature = "UnityEngine+UIElements+DropdownMenuAction+Status")]
     pub type Status = crate::UnityEngine::UIElements::DropdownMenuAction_Status;
+    pub fn New(
+        actionName: *mut crate::System::String,
+        actionCallback: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::DropdownMenuAction,
+        >,
+        actionStatusCallback: *mut crate::System::Func_2<
+            *mut crate::UnityEngine::UIElements::DropdownMenuAction,
+            crate::UnityEngine::UIElements::DropdownMenuAction_Status,
+        >,
+        userData: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (actionName, actionCallback, actionStatusCallback, userData),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn UpdateActionStatus(
         &mut self,
         eventInfo: *mut crate::UnityEngine::UIElements::DropdownMenuEventInfo,
@@ -46,39 +66,6 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateActionStatus", (eventInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_eventInfo(
-        &mut self,
-        value: *mut crate::UnityEngine::UIElements::DropdownMenuEventInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_eventInfo", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_userData(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_userData", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_status(
-        &mut self,
-        value: crate::UnityEngine::UIElements::DropdownMenuAction_Status,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_status", (value))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -103,25 +90,38 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        actionName: *mut crate::System::String,
-        actionCallback: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::UIElements::DropdownMenuAction,
-        >,
-        actionStatusCallback: *mut crate::System::Func_2<
-            *mut crate::UnityEngine::UIElements::DropdownMenuAction,
-            crate::UnityEngine::UIElements::DropdownMenuAction_Status,
-        >,
-        userData: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (actionName, actionCallback, actionStatusCallback, userData),
-            )?;
-        Ok(__cordl_object)
+    pub fn set_eventInfo(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::DropdownMenuEventInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_eventInfo", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_status(
+        &mut self,
+        value: crate::UnityEngine::UIElements::DropdownMenuAction_Status,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_status", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_userData(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_userData", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownMenuAction")]

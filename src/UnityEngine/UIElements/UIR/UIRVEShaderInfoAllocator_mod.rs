@@ -46,206 +46,12 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ReallyCreateStorage(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReallyCreateStorage",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn AllocColor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::BMPAlloc> {
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::BMPAlloc = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "AllocColor",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn FreeColor(
-        &mut self,
-        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "FreeColor",
-            (alloc),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetClipRectValue(
-        &mut self,
-        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
-        clipRect: crate::UnityEngine::Vector4,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetClipRectValue",
-            (alloc, clipRect),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TextCoreSettingsToVertexData(
-        &mut self,
-        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        let __cordl_ret: crate::UnityEngine::Color32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "TextCoreSettingsToVertexData",
-            (alloc),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn FreeTransform(
-        &mut self,
-        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "FreeTransform",
-            (alloc),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetColorValue(
-        &mut self,
-        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
-        color: crate::UnityEngine::Color,
-        isEditorContext: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetColorValue",
-            (alloc, color, isEditorContext),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_atlas(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture> {
-        let __cordl_ret: *mut crate::UnityEngine::Texture = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_atlas",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetTransformValue(
-        &mut self,
-        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
-        xform: crate::UnityEngine::Matrix4x4,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetTransformValue",
-            (alloc, xform),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClipRectAllocToVertexData(
-        &mut self,
-        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        let __cordl_ret: crate::UnityEngine::Color32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ClipRectAllocToVertexData",
-            (alloc),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_transformConstants(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Unity::Collections::NativeSlice_1<
-            crate::UnityEngine::UIElements::UIR::Transform3x4,
-        >,
-    > {
-        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<
-            crate::UnityEngine::UIElements::UIR::Transform3x4,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_transformConstants",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn FreeClipRect(
-        &mut self,
-        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "FreeClipRect",
-            (alloc),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IssuePendingStorageChanges(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IssuePendingStorageChanges",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TransformAllocToVertexData(
-        &mut self,
-        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        let __cordl_ret: crate::UnityEngine::Color32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "TransformAllocToVertexData",
-            (alloc),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn OpacityAllocToVertexData(
-        &mut self,
-        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        let __cordl_ret: crate::UnityEngine::Color32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "OpacityAllocToVertexData",
-            (alloc),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_clipRectConstants(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Unity::Collections::NativeSlice_1<crate::UnityEngine::Vector4>,
-    > {
-        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<
-            crate::UnityEngine::Vector4,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_clipRectConstants",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AllocTransform(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::BMPAlloc> {
-        let __cordl_ret: crate::UnityEngine::UIElements::UIR::BMPAlloc = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AllocTransform",
             (),
         )?;
         Ok(__cordl_ret)
@@ -268,6 +74,169 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             self,
             "AllocTextCoreSettings",
             (settings),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn AllocTransform(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::BMPAlloc> {
+        let __cordl_ret: crate::UnityEngine::UIElements::UIR::BMPAlloc = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AllocTransform",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClipRectAllocToVertexData(
+        &mut self,
+        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
+        let __cordl_ret: crate::UnityEngine::Color32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ClipRectAllocToVertexData",
+            (alloc),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ColorAllocToVertexData(
+        &mut self,
+        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
+        let __cordl_ret: crate::UnityEngine::Color32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ColorAllocToVertexData",
+            (alloc),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Construct(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Construct",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn FreeClipRect(
+        &mut self,
+        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "FreeClipRect",
+            (alloc),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn FreeColor(
+        &mut self,
+        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "FreeColor",
+            (alloc),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn FreeOpacity(
+        &mut self,
+        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "FreeOpacity",
+            (alloc),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn FreeTextCoreSettings(
+        &mut self,
+        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "FreeTextCoreSettings",
+            (alloc),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn FreeTransform(
+        &mut self,
+        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "FreeTransform",
+            (alloc),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IssuePendingStorageChanges(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IssuePendingStorageChanges",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn OpacityAllocToVertexData(
+        &mut self,
+        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
+        let __cordl_ret: crate::UnityEngine::Color32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "OpacityAllocToVertexData",
+            (alloc),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReallyCreateStorage(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ReallyCreateStorage",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetClipRectValue(
+        &mut self,
+        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+        clipRect: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetClipRectValue",
+            (alloc, clipRect),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetColorValue(
+        &mut self,
+        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+        color: crate::UnityEngine::Color,
+        isEditorContext: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetColorValue",
+            (alloc, color, isEditorContext),
         )?;
         Ok(__cordl_ret)
     }
@@ -296,46 +265,77 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Construct(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Construct",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn FreeOpacity(
+    pub fn SetTransformValue(
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+        xform: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "FreeOpacity",
-            (alloc),
+            "SetTransformValue",
+            (alloc, xform),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ColorAllocToVertexData(
+    pub fn TextCoreSettingsToVertexData(
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
         let __cordl_ret: crate::UnityEngine::Color32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ColorAllocToVertexData",
+            "TextCoreSettingsToVertexData",
             (alloc),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn FreeTextCoreSettings(
+    pub fn TransformAllocToVertexData(
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
+        let __cordl_ret: crate::UnityEngine::Color32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "FreeTextCoreSettings",
+            "TransformAllocToVertexData",
             (alloc),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_atlas(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture> {
+        let __cordl_ret: *mut crate::UnityEngine::Texture = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_atlas",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_clipRectConstants(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Unity::Collections::NativeSlice_1<crate::UnityEngine::Vector4>,
+    > {
+        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<
+            crate::UnityEngine::Vector4,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_clipRectConstants",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_transformConstants(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Unity::Collections::NativeSlice_1<
+            crate::UnityEngine::UIElements::UIR::Transform3x4,
+        >,
+    > {
+        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<
+            crate::UnityEngine::UIElements::UIR::Transform3x4,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_transformConstants",
+            (),
         )?;
         Ok(__cordl_ret)
     }

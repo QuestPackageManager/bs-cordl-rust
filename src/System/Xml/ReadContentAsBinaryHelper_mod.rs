@@ -30,16 +30,6 @@ impl std::ops::DerefMut for crate::System::Xml::ReadContentAsBinaryHelper {
 impl crate::System::Xml::ReadContentAsBinaryHelper {
     #[cfg(feature = "System+Xml+ReadContentAsBinaryHelper+State")]
     pub type State = crate::System::Xml::ReadContentAsBinaryHelper_State;
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Finish(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -59,6 +49,16 @@ impl crate::System::Xml::ReadContentAsBinaryHelper {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("MoveToNextContentNode", (moveIfOnContentNode))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
 }

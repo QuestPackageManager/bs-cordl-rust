@@ -84,6 +84,49 @@ impl crate::UnityEngine::UIElements::StyleVariableResolver {
     pub type ResolveContext = crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext;
     #[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+Result")]
     pub type Result = crate::UnityEngine::UIElements::StyleVariableResolver_Result;
+    pub fn AddValue(
+        &mut self,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddValue", (handle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        property: *mut crate::UnityEngine::UIElements::StyleProperty,
+        sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
+        handles: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::UIElements::StyleValueHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (property, sheet, handles))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn PopContext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PopContext", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn PushContext(
         &mut self,
         sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
@@ -96,6 +139,19 @@ impl crate::UnityEngine::UIElements::StyleVariableResolver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PushContext", (sheet, handles))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ResolveFallback(
+        &mut self,
+        index: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StyleVariableResolver_Result,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleVariableResolver_Result = __cordl_object
+            .invoke("ResolveFallback", (index))?;
         Ok(__cordl_ret)
     }
     pub fn ResolveVarFunction_ByRefMut0(
@@ -123,9 +179,9 @@ impl crate::UnityEngine::UIElements::StyleVariableResolver {
             .invoke("ResolveVarFunction", (index, argc, varName))?;
         Ok(__cordl_ret)
     }
-    pub fn ResolveFallback(
+    pub fn ResolveVariable(
         &mut self,
-        index: quest_hook::libil2cpp::ByRefMut<i32>,
+        variableName: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::StyleVariableResolver_Result,
     > {
@@ -133,7 +189,14 @@ impl crate::UnityEngine::UIElements::StyleVariableResolver {
             self,
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleVariableResolver_Result = __cordl_object
-            .invoke("ResolveFallback", (index))?;
+            .invoke("ResolveVariable", (variableName))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateResolvedValues(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ValidateResolvedValues", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -144,27 +207,6 @@ impl crate::UnityEngine::UIElements::StyleVariableResolver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_currentSheet(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::StyleSheet> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::StyleSheet = __cordl_object
-            .invoke("get_currentSheet", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_variableContext(
-        &mut self,
-        value: *mut crate::UnityEngine::UIElements::StyleVariableContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_variableContext", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_currentHandles(
@@ -182,6 +224,16 @@ impl crate::UnityEngine::UIElements::StyleVariableResolver {
         > = __cordl_object.invoke("get_currentHandles", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_currentSheet(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::StyleSheet> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::StyleSheet = __cordl_object
+            .invoke("get_currentSheet", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_resolvedValues(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -197,16 +249,6 @@ impl crate::UnityEngine::UIElements::StyleVariableResolver {
         > = __cordl_object.invoke("get_resolvedValues", ())?;
         Ok(__cordl_ret)
     }
-    pub fn PopContext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PopContext", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_variableContext(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -219,58 +261,16 @@ impl crate::UnityEngine::UIElements::StyleVariableResolver {
             .invoke("get_variableContext", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AddValue(
+    pub fn set_variableContext(
         &mut self,
-        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+        value: *mut crate::UnityEngine::UIElements::StyleVariableContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddValue", (handle))?;
+            .invoke("set_variableContext", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn ValidateResolvedValues(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ValidateResolvedValues", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init(
-        &mut self,
-        property: *mut crate::UnityEngine::UIElements::StyleProperty,
-        sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
-        handles: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::UIElements::StyleValueHandle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (property, sheet, handles))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ResolveVariable(
-        &mut self,
-        variableName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::StyleVariableResolver_Result,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleVariableResolver_Result = __cordl_object
-            .invoke("ResolveVariable", (variableName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver")]

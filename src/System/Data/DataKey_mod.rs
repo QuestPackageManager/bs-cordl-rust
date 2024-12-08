@@ -22,6 +22,70 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Data::DataKey
 }
 #[cfg(feature = "System+Data+DataKey")]
 impl crate::System::Data::DataKey {
+    pub fn CheckState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CheckState",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ColumnsEqual(
+        &mut self,
+        key: crate::System::Data::DataKey,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ColumnsEqual",
+            (key),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ContainsColumn(
+        &mut self,
+        column: *mut crate::System::Data::DataColumn,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ContainsColumn",
+            (column),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_DataKey1(
+        &mut self,
+        value: crate::System::Data::DataKey,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object0(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetColumnNames(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    > {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::String,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetColumnNames", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -30,12 +94,25 @@ impl crate::System::Data::DataKey {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_HasValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_HasValue",
-            (),
-        )?;
+    pub fn GetIndexDesc(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<crate::System::Data::IndexField>,
+    > {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Data::IndexField,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetIndexDesc", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetKeyValues(
+        &mut self,
+        record: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    > {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Object,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetKeyValues", (record))?;
         Ok(__cordl_ret)
     }
     pub fn GetSortIndex_0(
@@ -59,57 +136,16 @@ impl crate::System::Data::DataKey {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ContainsColumn(
+    pub fn RecordsEqual(
         &mut self,
-        column: *mut crate::System::Data::DataColumn,
+        record1: i32,
+        record2: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ContainsColumn",
-            (column),
+            "RecordsEqual",
+            (record1, record2),
         )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CheckState",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object0(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_DataKey1(
-        &mut self,
-        value: crate::System::Data::DataKey,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetIndexDesc(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<crate::System::Data::IndexField>,
-    > {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Data::IndexField,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetIndexDesc", ())?;
         Ok(__cordl_ret)
     }
     pub fn ToArray(
@@ -120,52 +156,6 @@ impl crate::System::Data::DataKey {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Data::DataColumn,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToArray", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ColumnsReference(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
-    > {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Data::DataColumn,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_ColumnsReference",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetKeyValues(
-        &mut self,
-        record: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    > {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetKeyValues", (record))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetColumnNames(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    > {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetColumnNames", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ColumnsEqual(
-        &mut self,
-        key: crate::System::Data::DataKey,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ColumnsEqual",
-            (key),
-        )?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -182,15 +172,25 @@ impl crate::System::Data::DataKey {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn RecordsEqual(
+    pub fn get_ColumnsReference(
         &mut self,
-        record1: i32,
-        record2: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
+    > {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Data::DataColumn,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_ColumnsReference",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HasValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "RecordsEqual",
-            (record1, record2),
+            "get_HasValue",
+            (),
         )?;
         Ok(__cordl_ret)
     }

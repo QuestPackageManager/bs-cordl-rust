@@ -28,18 +28,6 @@ impl std::ops::DerefMut for crate::UnityOpus::Decoder {
 #[cfg(feature = "UnityOpus+Decoder")]
 impl crate::UnityOpus::Decoder {
     pub const maximumPacketDuration: i32 = 5760i32;
-    pub fn _ctor(
-        &mut self,
-        samplingFrequency: crate::UnityOpus::SamplingFrequency,
-        channels: crate::UnityOpus::NumChannels,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (samplingFrequency, channels))?;
-        Ok(__cordl_ret)
-    }
     pub fn Decode(
         &mut self,
         data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -54,6 +42,16 @@ impl crate::UnityOpus::Decoder {
             .invoke("Decode", (data, dataLength, pcm, decodeFec))?;
         Ok(__cordl_ret)
     }
+    pub fn Dispose_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Dispose__cordl_bool0(
         &mut self,
         disposing: bool,
@@ -63,16 +61,6 @@ impl crate::UnityOpus::Decoder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
         Ok(__cordl_ret)
     }
     pub fn Finalize(
@@ -88,12 +76,24 @@ impl crate::UnityOpus::Decoder {
     pub fn New(
         samplingFrequency: crate::UnityOpus::SamplingFrequency,
         channels: crate::UnityOpus::NumChannels,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (samplingFrequency, channels))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        samplingFrequency: crate::UnityOpus::SamplingFrequency,
+        channels: crate::UnityOpus::NumChannels,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (samplingFrequency, channels))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityOpus+Decoder")]

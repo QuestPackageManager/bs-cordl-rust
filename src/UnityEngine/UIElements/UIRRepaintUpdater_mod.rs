@@ -29,16 +29,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIRRepaintUpdater {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIRRepaintUpdater")]
 impl crate::UnityEngine::UIElements::UIRRepaintUpdater {
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AttachToPanel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -47,30 +37,6 @@ impl crate::UnityEngine::UIElements::UIRRepaintUpdater {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AttachToPanel", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DestroyRenderChain(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DestroyRenderChain", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_disposed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_breakBatches(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_breakBatches", ())?;
         Ok(__cordl_ret)
     }
     pub fn CreateRenderChain(
@@ -85,15 +51,24 @@ impl crate::UnityEngine::UIElements::UIRRepaintUpdater {
             .invoke("CreateRenderChain", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_disposed(
+    pub fn DestroyRenderChain(
         &mut self,
-        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_disposed", (value))?;
+            .invoke("DestroyRenderChain", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DetachFromPanel(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DetachFromPanel", ())?;
         Ok(__cordl_ret)
     }
     pub fn Dispose(
@@ -107,16 +82,31 @@ impl crate::UnityEngine::UIElements::UIRRepaintUpdater {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn OnVersionChanged(
+    pub fn InitRenderChain(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-        versionChangeType: crate::UnityEngine::UIElements::VersionChangeType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnVersionChanged", (ve, versionChangeType))?;
+            .invoke("InitRenderChain", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnPanelAtlasChanged(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPanelAtlasChanged", ())?;
         Ok(__cordl_ret)
     }
     pub fn OnPanelChanged(
@@ -128,43 +118,6 @@ impl crate::UnityEngine::UIElements::UIRRepaintUpdater {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPanelChanged", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitRenderChain(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitRenderChain", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_profilerMarker(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Unity::Profiling::ProfilerMarker> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Unity::Profiling::ProfilerMarker = __cordl_object
-            .invoke("get_profilerMarker", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_drawStats(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_drawStats", ())?;
         Ok(__cordl_ret)
     }
     pub fn OnPanelHierarchyChanged(
@@ -189,14 +142,26 @@ impl crate::UnityEngine::UIElements::UIRRepaintUpdater {
             .invoke("OnPanelStandardShaderChanged", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnPanelAtlasChanged(
+    pub fn OnPanelStandardWorldSpaceShaderChanged(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPanelAtlasChanged", ())?;
+            .invoke("OnPanelStandardWorldSpaceShaderChanged", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnVersionChanged(
+        &mut self,
+        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        versionChangeType: crate::UnityEngine::UIElements::VersionChangeType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnVersionChanged", (ve, versionChangeType))?;
         Ok(__cordl_ret)
     }
     pub fn ResetAllElementsDataRecursive(
@@ -210,32 +175,67 @@ impl crate::UnityEngine::UIElements::UIRRepaintUpdater {
             .invoke("ResetAllElementsDataRecursive", (ve))?;
         Ok(__cordl_ret)
     }
-    pub fn DetachFromPanel(
+    pub fn Update(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DetachFromPanel", ())?;
+            .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnPanelStandardWorldSpaceShaderChanged(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPanelStandardWorldSpaceShaderChanged", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_breakBatches(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_breakBatches", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_disposed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_drawStats(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_drawStats", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_profilerMarker(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Profiling::ProfilerMarker> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Unity::Profiling::ProfilerMarker = __cordl_object
+            .invoke("get_profilerMarker", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_disposed(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_disposed", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIRRepaintUpdater")]

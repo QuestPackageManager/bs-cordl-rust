@@ -28,15 +28,21 @@ for crate::System::Linq::Expressions::Interpreter::LoadCachedObjectInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LoadCachedObjectInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::LoadCachedObjectInstruction {
-    pub fn _ctor(
+    pub fn New(index: u32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (index))?;
+        Ok(__cordl_object)
+    }
+    pub fn Run(
         &mut self,
-        index: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (index))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("Run", (frame))?;
         Ok(__cordl_ret)
     }
     pub fn ToDebugString(
@@ -55,13 +61,6 @@ impl crate::System::Linq::Expressions::Interpreter::LoadCachedObjectInstruction 
             .invoke("ToDebugString", (instructionIndex, cookie, labelIndexer, objects))?;
         Ok(__cordl_ret)
     }
-    pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -70,6 +69,17 @@ impl crate::System::Linq::Expressions::Interpreter::LoadCachedObjectInstruction 
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        index: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (index))?;
         Ok(__cordl_ret)
     }
     pub fn get_InstructionName(
@@ -82,22 +92,12 @@ impl crate::System::Linq::Expressions::Interpreter::LoadCachedObjectInstruction 
             .invoke("get_InstructionName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Run(
-        &mut self,
-        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("Run", (frame))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(index: u32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (index))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LoadCachedObjectInstruction")]

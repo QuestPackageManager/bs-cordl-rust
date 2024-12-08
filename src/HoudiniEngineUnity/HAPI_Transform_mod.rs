@@ -26,6 +26,16 @@ for crate::HoudiniEngineUnity::HAPI_Transform {
 }
 #[cfg(feature = "HoudiniEngineUnity+HAPI_Transform")]
 impl crate::HoudiniEngineUnity::HAPI_Transform {
+    pub fn Init(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Init",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         initializeFields: bool,
@@ -34,16 +44,6 @@ impl crate::HoudiniEngineUnity::HAPI_Transform {
             self,
             ".ctor",
             (initializeFields),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Init",
-            (),
         )?;
         Ok(__cordl_ret)
     }

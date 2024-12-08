@@ -39,16 +39,6 @@ for crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Client {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+Srp+Srp6Client")]
 impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Client {
-    pub fn CalculateSessionKey(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("CalculateSessionKey", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CalculateClientEvidenceMessage(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
@@ -59,14 +49,48 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Client {
             .invoke("CalculateClientEvidenceMessage", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn CalculateS(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("CalculateS", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CalculateSecret(
+        &mut self,
+        serverB: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("CalculateSecret", (serverB))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CalculateSessionKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("CalculateSessionKey", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GenerateClientCredentials(
+        &mut self,
+        salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        identity: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        password: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("GenerateClientCredentials", (salt, identity, password))?;
         Ok(__cordl_ret)
     }
     pub fn Init_BigInteger_BigInteger_IDigest_SecureRandom0(
@@ -96,38 +120,21 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Client {
             .invoke("Init", (group, digest, random))?;
         Ok(__cordl_ret)
     }
-    pub fn GenerateClientCredentials(
-        &mut self,
-        salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        identity: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        password: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("GenerateClientCredentials", (salt, identity, password))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn CalculateSecret(
-        &mut self,
-        serverB: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("CalculateSecret", (serverB))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CalculateS(
+    pub fn SelectPrivateValue(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("CalculateS", ())?;
+            .invoke("SelectPrivateValue", ())?;
         Ok(__cordl_ret)
     }
     pub fn VerifyServerEvidenceMessage(
@@ -141,22 +148,15 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Client {
             .invoke("VerifyServerEvidenceMessage", (serverM2))?;
         Ok(__cordl_ret)
     }
-    pub fn SelectPrivateValue(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("SelectPrivateValue", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+Srp+Srp6Client")]

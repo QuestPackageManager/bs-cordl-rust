@@ -43,56 +43,6 @@ impl std::ops::DerefMut for crate::System::Threading::ReaderWriterLockSlim {
 impl crate::System::Threading::ReaderWriterLockSlim {
     #[cfg(feature = "System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
     pub type TimeoutTracker = crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker;
-    pub fn SetWriterAcquired(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetWriterAcquired", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EnterWriteLock(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EnterWriteLock", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsRwHashEntryChanged(
-        &mut self,
-        lrwc: *mut crate::System::Threading::ReaderWriterCount,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsRwHashEntryChanged", (lrwc))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EnterUpgradeableReadLock(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EnterUpgradeableReadLock", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExitMyLock(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExitMyLock", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ClearUpgraderWaiting(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -101,257 +51,6 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearUpgraderWaiting", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearWritersWaiting(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearWritersWaiting", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryEnterReadLockCore(
-        &mut self,
-        timeout: crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryEnterReadLockCore", (timeout))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitializeThreadCounts(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitializeThreadCounts", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsUpgradeableReadLockHeld(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_IsUpgradeableReadLockHeld", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetUpgraderWaiting(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUpgraderWaiting", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_RecursiveReadCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_RecursiveReadCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_RecursiveWriteCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_RecursiveWriteCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExitAndWakeUpAppropriateReadWaiters(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExitAndWakeUpAppropriateReadWaiters", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_WaitingUpgradeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_WaitingUpgradeCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_LockRecursionPolicy1(
-        &mut self,
-        recursionPolicy: crate::System::Threading::LockRecursionPolicy,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (recursionPolicy))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsWriterAcquired(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsWriterAcquired", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNumReaders(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("GetNumReaders", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryEnterWriteLock_i32_0(
-        &mut self,
-        millisecondsTimeout: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryEnterWriteLock", (millisecondsTimeout))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryEnterWriteLock_ReaderWriterLockSlim_TimeoutTracker1(
-        &mut self,
-        timeout: crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryEnterWriteLock", (timeout))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsWriteLockHeld(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsWriteLockHeld", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn WaitOnEvent(
-        &mut self,
-        waitEvent: *mut crate::System::Threading::EventWaitHandle,
-        numWaiters: quest_hook::libil2cpp::ByRefMut<u32>,
-        timeout: crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker,
-        isWriteWaiter: bool,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("WaitOnEvent", (waitEvent, numWaiters, timeout, isWriteWaiter))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryEnterReadLock_i32_0(
-        &mut self,
-        millisecondsTimeout: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryEnterReadLock", (millisecondsTimeout))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryEnterReadLock_ReaderWriterLockSlim_TimeoutTracker1(
-        &mut self,
-        timeout: crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryEnterReadLock", (timeout))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_WaitingWriteCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_WaitingWriteCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExitReadLock(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExitReadLock", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExitAndWakeUpAppropriateWaiters(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExitAndWakeUpAppropriateWaiters", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetWritersWaiting(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetWritersWaiting", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EnterMyLock(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EnterMyLock", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EnterMyLockSpin(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EnterMyLockSpin", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsReadLockHeld(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsReadLockHeld", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_WaitingReadCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_WaitingReadCount", ())?;
         Ok(__cordl_ret)
     }
     pub fn ClearWriterAcquired(
@@ -364,82 +63,14 @@ impl crate::System::Threading::ReaderWriterLockSlim {
             .invoke("ClearWriterAcquired", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetThreadRWCount(
-        &mut self,
-        dontAllocate: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::ReaderWriterCount,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::ReaderWriterCount = __cordl_object
-            .invoke("GetThreadRWCount", (dontAllocate))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EnterReadLock(
+    pub fn ClearWritersWaiting(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EnterReadLock", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryEnterWriteLockCore(
-        &mut self,
-        timeout: crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryEnterWriteLockCore", (timeout))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExitWriteLock(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExitWriteLock", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExitUpgradeableReadLock(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExitUpgradeableReadLock", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LazyCreateEvent(
-        &mut self,
-        waitEvent: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Threading::EventWaitHandle,
-        >,
-        makeAutoResetEvent: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LazyCreateEvent", (waitEvent, makeAutoResetEvent))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExitAndWakeUpAppropriateWaitersPreferringWriters(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExitAndWakeUpAppropriateWaitersPreferringWriters", ())?;
+            .invoke("ClearWritersWaiting", ())?;
         Ok(__cordl_ret)
     }
     pub fn Dispose_0(
@@ -463,25 +94,234 @@ impl crate::System::Threading::ReaderWriterLockSlim {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn get_RecursiveUpgradeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn EnterMyLock(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_RecursiveUpgradeCount", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EnterMyLock", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TryEnterUpgradeableReadLock_i32_0(
+    pub fn EnterMyLockSpin(
         &mut self,
-        millisecondsTimeout: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EnterMyLockSpin", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn EnterReadLock(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EnterReadLock", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn EnterUpgradeableReadLock(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EnterUpgradeableReadLock", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn EnterWriteLock(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EnterWriteLock", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExitAndWakeUpAppropriateReadWaiters(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExitAndWakeUpAppropriateReadWaiters", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExitAndWakeUpAppropriateWaiters(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExitAndWakeUpAppropriateWaiters", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExitAndWakeUpAppropriateWaitersPreferringWriters(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExitAndWakeUpAppropriateWaitersPreferringWriters", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExitMyLock(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExitMyLock", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExitReadLock(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExitReadLock", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExitUpgradeableReadLock(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExitUpgradeableReadLock", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExitWriteLock(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExitWriteLock", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNumReaders(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("GetNumReaders", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetThreadRWCount(
+        &mut self,
+        dontAllocate: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::ReaderWriterCount,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::ReaderWriterCount = __cordl_object
+            .invoke("GetThreadRWCount", (dontAllocate))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitializeThreadCounts(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitializeThreadCounts", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsRwHashEntryChanged(
+        &mut self,
+        lrwc: *mut crate::System::Threading::ReaderWriterCount,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryEnterUpgradeableReadLock", (millisecondsTimeout))?;
+        let __cordl_ret: bool = __cordl_object.invoke("IsRwHashEntryChanged", (lrwc))?;
         Ok(__cordl_ret)
     }
-    pub fn TryEnterUpgradeableReadLock_ReaderWriterLockSlim_TimeoutTracker1(
+    pub fn IsWriterAcquired(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsWriterAcquired", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LazyCreateEvent(
+        &mut self,
+        waitEvent: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Threading::EventWaitHandle,
+        >,
+        makeAutoResetEvent: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LazyCreateEvent", (waitEvent, makeAutoResetEvent))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_LockRecursionPolicy1(
+        recursionPolicy: crate::System::Threading::LockRecursionPolicy,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (recursionPolicy))?;
+        Ok(__cordl_object)
+    }
+    pub fn SetUpgraderWaiting(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetUpgraderWaiting", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetWriterAcquired(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetWriterAcquired", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetWritersWaiting(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetWritersWaiting", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryEnterReadLockCore(
         &mut self,
         timeout: crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -489,7 +329,28 @@ impl crate::System::Threading::ReaderWriterLockSlim {
             self,
         );
         let __cordl_ret: bool = __cordl_object
-            .invoke("TryEnterUpgradeableReadLock", (timeout))?;
+            .invoke("TryEnterReadLockCore", (timeout))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryEnterReadLock_ReaderWriterLockSlim_TimeoutTracker1(
+        &mut self,
+        timeout: crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryEnterReadLock", (timeout))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryEnterReadLock_i32_0(
+        &mut self,
+        millisecondsTimeout: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryEnterReadLock", (millisecondsTimeout))?;
         Ok(__cordl_ret)
     }
     pub fn TryEnterUpgradeableReadLockCore(
@@ -503,21 +364,160 @@ impl crate::System::Threading::ReaderWriterLockSlim {
             .invoke("TryEnterUpgradeableReadLockCore", (timeout))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn TryEnterUpgradeableReadLock_ReaderWriterLockSlim_TimeoutTracker1(
+        &mut self,
+        timeout: crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryEnterUpgradeableReadLock", (timeout))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_LockRecursionPolicy1(
+    pub fn TryEnterUpgradeableReadLock_i32_0(
+        &mut self,
+        millisecondsTimeout: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryEnterUpgradeableReadLock", (millisecondsTimeout))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryEnterWriteLockCore(
+        &mut self,
+        timeout: crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryEnterWriteLockCore", (timeout))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryEnterWriteLock_ReaderWriterLockSlim_TimeoutTracker1(
+        &mut self,
+        timeout: crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryEnterWriteLock", (timeout))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryEnterWriteLock_i32_0(
+        &mut self,
+        millisecondsTimeout: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryEnterWriteLock", (millisecondsTimeout))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WaitOnEvent(
+        &mut self,
+        waitEvent: *mut crate::System::Threading::EventWaitHandle,
+        numWaiters: quest_hook::libil2cpp::ByRefMut<u32>,
+        timeout: crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker,
+        isWriteWaiter: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("WaitOnEvent", (waitEvent, numWaiters, timeout, isWriteWaiter))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_LockRecursionPolicy1(
+        &mut self,
         recursionPolicy: crate::System::Threading::LockRecursionPolicy,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (recursionPolicy))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (recursionPolicy))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsReadLockHeld(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsReadLockHeld", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsUpgradeableReadLockHeld(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_IsUpgradeableReadLockHeld", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsWriteLockHeld(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsWriteLockHeld", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RecursiveReadCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_RecursiveReadCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RecursiveUpgradeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_RecursiveUpgradeCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RecursiveWriteCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_RecursiveWriteCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_WaitingReadCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_WaitingReadCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_WaitingUpgradeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_WaitingUpgradeCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_WaitingWriteCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_WaitingWriteCount", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Threading+ReaderWriterLockSlim")]

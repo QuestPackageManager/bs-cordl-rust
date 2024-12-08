@@ -62,6 +62,16 @@ impl crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand {
         feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand+_nameBuffer_e__FixedBuffer"
     )]
     pub type _nameBuffer_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand__nameBuffer_e__FixedBuffer;
+    pub fn ReadLayoutName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ReadLayoutName",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn WriteLayoutName(
         &mut self,
         name: *mut crate::System::String,
@@ -81,16 +91,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_typeStatic",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadLayoutName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReadLayoutName",
             (),
         )?;
         Ok(__cordl_ret)

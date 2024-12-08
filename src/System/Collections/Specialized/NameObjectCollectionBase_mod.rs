@@ -36,14 +36,14 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase {
 #[cfg(feature = "System+Collections+Specialized+NameObjectCollectionBase")]
 impl crate::System::Collections::Specialized::NameObjectCollectionBase {
     #[cfg(
-        feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
-    )]
-    pub type NameObjectKeysEnumerator = crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectKeysEnumerator;
-    #[cfg(
         feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
     )]
     pub type NameObjectEntry = crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry;
-    pub fn BaseSet(
+    #[cfg(
+        feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
+    )]
+    pub type NameObjectKeysEnumerator = crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectKeysEnumerator;
+    pub fn BaseAdd(
         &mut self,
         name: *mut crate::System::String,
         value: *mut crate::System::Object,
@@ -52,39 +52,18 @@ impl crate::System::Collections::Specialized::NameObjectCollectionBase {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BaseSet", (name, value))?;
+            .invoke("BaseAdd", (name, value))?;
         Ok(__cordl_ret)
     }
-    pub fn GetObjectData(
+    pub fn BaseGetKey(
         &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetObjectData", (info, context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FindEntry(
-        &mut self,
-        key: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry = __cordl_object
-            .invoke("FindEntry", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsReadOnly", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("BaseGetKey", (index))?;
         Ok(__cordl_ret)
     }
     pub fn BaseGet_String0(
@@ -109,57 +88,6 @@ impl crate::System::Collections::Specialized::NameObjectCollectionBase {
             .invoke("BaseGet", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn BaseGetKey(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("BaseGetKey", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_ICollection_get_IsSynchronized(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Collections.ICollection.get_IsSynchronized", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDeserialization(
-        &mut self,
-        sender: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDeserialization", (sender))?;
-        Ok(__cordl_ret)
-    }
-    pub fn BaseAdd(
-        &mut self,
-        name: *mut crate::System::String,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BaseAdd", (name, value))?;
-        Ok(__cordl_ret)
-    }
     pub fn BaseRemove(
         &mut self,
         name: *mut crate::System::String,
@@ -171,81 +99,29 @@ impl crate::System::Collections::Specialized::NameObjectCollectionBase {
             .invoke("BaseRemove", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_ICollection_get_SyncRoot(
+    pub fn BaseSet(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("System.Collections.ICollection.get_SyncRoot", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_0(
-        &mut self,
+        name: *mut crate::System::String,
+        value: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("BaseSet", (name, value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_IEqualityComparer1(
+    pub fn FindEntry(
         &mut self,
-        equalityComparer: *mut crate::System::Collections::IEqualityComparer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        key: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (equalityComparer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_IEqualityComparer2(
-        &mut self,
-        capacity: i32,
-        equalityComparer: *mut crate::System::Collections::IEqualityComparer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (capacity, equalityComparer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_3(
-        &mut self,
-        capacity: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (capacity))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_DBNull4(
-        &mut self,
-        dummy: *mut crate::System::DBNull,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dummy))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_SerializationInfo_StreamingContext5(
-        &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (info, context))?;
+        let __cordl_ret: *mut crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry = __cordl_object
+            .invoke("FindEntry", (key))?;
         Ok(__cordl_ret)
     }
     pub fn GetEnumerator(
@@ -258,16 +134,79 @@ impl crate::System::Collections::Specialized::NameObjectCollectionBase {
             .invoke("GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_ICollection_CopyTo(
+    pub fn GetObjectData(
         &mut self,
-        array: *mut crate::System::Array,
-        index: i32,
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("System.Collections.ICollection.CopyTo", (array, index))?;
+            .invoke("GetObjectData", (info, context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_DBNull4(
+        dummy: *mut crate::System::DBNull,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dummy))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IEqualityComparer1(
+        equalityComparer: *mut crate::System::Collections::IEqualityComparer,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (equalityComparer))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_SerializationInfo_StreamingContext5(
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (info, context))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_3(capacity: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (capacity))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_IEqualityComparer2(
+        capacity: i32,
+        equalityComparer: *mut crate::System::Collections::IEqualityComparer,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (capacity, equalityComparer))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDeserialization(
+        &mut self,
+        sender: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDeserialization", (sender))?;
         Ok(__cordl_ret)
     }
     pub fn Reset_0(
@@ -291,57 +230,118 @@ impl crate::System::Collections::Specialized::NameObjectCollectionBase {
             .invoke("Reset", (capacity))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn System_Collections_ICollection_CopyTo(
+        &mut self,
+        array: *mut crate::System::Array,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("System.Collections.ICollection.CopyTo", (array, index))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_IEqualityComparer1(
-        equalityComparer: *mut crate::System::Collections::IEqualityComparer,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (equalityComparer))?;
-        Ok(__cordl_object)
+    pub fn System_Collections_ICollection_get_IsSynchronized(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Collections.ICollection.get_IsSynchronized", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_i32_IEqualityComparer2(
-        capacity: i32,
-        equalityComparer: *mut crate::System::Collections::IEqualityComparer,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (capacity, equalityComparer))?;
-        Ok(__cordl_object)
+    pub fn System_Collections_ICollection_get_SyncRoot(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("System.Collections.ICollection.get_SyncRoot", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_i32_3(capacity: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (capacity))?;
-        Ok(__cordl_object)
+    pub fn _ctor_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_DBNull4(
+    pub fn _ctor_DBNull4(
+        &mut self,
         dummy: *mut crate::System::DBNull,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dummy))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (dummy))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_SerializationInfo_StreamingContext5(
+    pub fn _ctor_IEqualityComparer1(
+        &mut self,
+        equalityComparer: *mut crate::System::Collections::IEqualityComparer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (equalityComparer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_SerializationInfo_StreamingContext5(
+        &mut self,
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
         context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (info, context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_3(
+        &mut self,
+        capacity: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (capacity))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_IEqualityComparer2(
+        &mut self,
+        capacity: i32,
+        equalityComparer: *mut crate::System::Collections::IEqualityComparer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (capacity, equalityComparer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsReadOnly", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Collections+Specialized+NameObjectCollectionBase")]
@@ -395,6 +395,16 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObject
     feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
 )]
 impl crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry {
+    pub fn New(
+        name: *mut crate::System::String,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, value))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         name: *mut crate::System::String,
@@ -406,16 +416,6 @@ impl crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjec
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (name, value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        name: *mut crate::System::String,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, value))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -480,6 +480,15 @@ impl crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjec
         let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        coll: *mut crate::System::Collections::Specialized::NameObjectCollectionBase,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (coll))?;
+        Ok(__cordl_object)
+    }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -510,15 +519,6 @@ impl crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjec
         let __cordl_ret: *mut crate::System::Object = __cordl_object
             .invoke("get_Current", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        coll: *mut crate::System::Collections::Specialized::NameObjectCollectionBase,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (coll))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

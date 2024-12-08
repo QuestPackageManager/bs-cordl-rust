@@ -33,22 +33,14 @@ impl std::ops::DerefMut for crate::HMUI::DropdownWithTableView {
 }
 #[cfg(feature = "HMUI+DropdownWithTableView")]
 impl crate::HMUI::DropdownWithTableView {
-    pub fn get_interactable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_interactable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectCellWithIdx(
+    pub fn Awake(
         &mut self,
-        idx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectCellWithIdx", (idx))?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
     pub fn HandleModalViewBlockerClicked(
@@ -59,55 +51,6 @@ impl crate::HMUI::DropdownWithTableView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleModalViewBlockerClicked", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_tableViewDataSource(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableView_IDataSource> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::TableView_IDataSource = __cordl_object
-            .invoke("get_tableViewDataSource", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didSelectCellWithIdxEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<*mut crate::HMUI::DropdownWithTableView, i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didSelectCellWithIdxEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_selectedIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_selectedIndex", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RefreshSize(
-        &mut self,
-        dataSource: *mut crate::HMUI::TableView_IDataSource,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshSize", (dataSource))?;
         Ok(__cordl_ret)
     }
     pub fn HandleTableViewDidSelectCellWithIdx(
@@ -122,7 +65,7 @@ impl crate::HMUI::DropdownWithTableView {
             .invoke("HandleTableViewDidSelectCellWithIdx", (tableView, idx))?;
         Ok(__cordl_ret)
     }
-    pub fn Show(
+    pub fn Hide(
         &mut self,
         animated: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -130,38 +73,7 @@ impl crate::HMUI::DropdownWithTableView {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Show", (animated))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didSelectCellWithIdxEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<*mut crate::HMUI::DropdownWithTableView, i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didSelectCellWithIdxEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnButtonClick(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnButtonClick", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReloadData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReloadData", ())?;
+            .invoke("Hide", (animated))?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -175,26 +87,31 @@ impl crate::HMUI::DropdownWithTableView {
             .invoke("Init", (tableViewDataSource))?;
         Ok(__cordl_ret)
     }
-    pub fn Hide(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnButtonClick(
         &mut self,
-        animated: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Hide", (animated))?;
+            .invoke("OnButtonClick", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_selectedIndex(
+    pub fn OnDestroy(
         &mut self,
-        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_selectedIndex", (value))?;
+            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn OnDisable(
@@ -205,6 +122,105 @@ impl crate::HMUI::DropdownWithTableView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RefreshSize(
+        &mut self,
+        dataSource: *mut crate::HMUI::TableView_IDataSource,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RefreshSize", (dataSource))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReloadData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReloadData", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectCellWithIdx(
+        &mut self,
+        idx: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectCellWithIdx", (idx))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Show(
+        &mut self,
+        animated: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Show", (animated))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didSelectCellWithIdxEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut crate::HMUI::DropdownWithTableView, i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didSelectCellWithIdxEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_interactable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_interactable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_selectedIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_selectedIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_tableViewDataSource(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableView_IDataSource> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::TableView_IDataSource = __cordl_object
+            .invoke("get_tableViewDataSource", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didSelectCellWithIdxEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut crate::HMUI::DropdownWithTableView, i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didSelectCellWithIdxEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_interactable(
@@ -218,32 +234,16 @@ impl crate::HMUI::DropdownWithTableView {
             .invoke("set_interactable", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn set_selectedIndex(
         &mut self,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("set_selectedIndex", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HMUI+DropdownWithTableView")]

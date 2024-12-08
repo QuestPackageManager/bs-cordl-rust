@@ -49,18 +49,18 @@ impl std::ops::DerefMut for crate::System::Dynamic::BindingRestrictions {
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions")]
 impl crate::System::Dynamic::BindingRestrictions {
-    #[cfg(feature = "System+Dynamic+BindingRestrictions+BindingRestrictionsProxy")]
-    pub type BindingRestrictionsProxy = crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy;
-    #[cfg(feature = "System+Dynamic+BindingRestrictions+InstanceRestriction")]
-    pub type InstanceRestriction = crate::GlobalNamespace::BindingRestrictions_InstanceRestriction;
     #[cfg(feature = "System+Dynamic+BindingRestrictions+TypeRestriction")]
     pub type TypeRestriction = crate::GlobalNamespace::BindingRestrictions_TypeRestriction;
+    #[cfg(feature = "System+Dynamic+BindingRestrictions+MergedRestriction")]
+    pub type MergedRestriction = crate::GlobalNamespace::BindingRestrictions_MergedRestriction;
+    #[cfg(feature = "System+Dynamic+BindingRestrictions+InstanceRestriction")]
+    pub type InstanceRestriction = crate::GlobalNamespace::BindingRestrictions_InstanceRestriction;
+    #[cfg(feature = "System+Dynamic+BindingRestrictions+BindingRestrictionsProxy")]
+    pub type BindingRestrictionsProxy = crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy;
     #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
     pub type TestBuilder = crate::System::Dynamic::BindingRestrictions_TestBuilder;
     #[cfg(feature = "System+Dynamic+BindingRestrictions+CustomRestriction")]
     pub type CustomRestriction = crate::GlobalNamespace::BindingRestrictions_CustomRestriction;
-    #[cfg(feature = "System+Dynamic+BindingRestrictions+MergedRestriction")]
-    pub type MergedRestriction = crate::GlobalNamespace::BindingRestrictions_MergedRestriction;
     pub fn GetExpression(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -86,15 +86,12 @@ impl crate::System::Dynamic::BindingRestrictions {
             .invoke("Merge", (restrictions))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ToExpression(
         &mut self,
@@ -108,12 +105,15 @@ impl crate::System::Dynamic::BindingRestrictions {
             .invoke("ToExpression", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions")]
@@ -198,6 +198,36 @@ impl std::ops::DerefMut for crate::System::Dynamic::BindingRestrictions_TestBuil
 impl crate::System::Dynamic::BindingRestrictions_TestBuilder {
     #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
     pub type AndNode = crate::System::Dynamic::TestBuilder_AndNode;
+    pub fn Append(
+        &mut self,
+        restrictions: *mut crate::System::Dynamic::BindingRestrictions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Append", (restrictions))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Push(
+        &mut self,
+        node: *mut crate::System::Linq::Expressions::Expression,
+        depth: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Push", (node, depth))?;
+        Ok(__cordl_ret)
+    }
     pub fn ToExpression(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -219,36 +249,6 @@ impl crate::System::Dynamic::BindingRestrictions_TestBuilder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Append(
-        &mut self,
-        restrictions: *mut crate::System::Dynamic::BindingRestrictions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Append", (restrictions))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Push(
-        &mut self,
-        node: *mut crate::System::Linq::Expressions::Expression,
-        depth: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Push", (node, depth))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]

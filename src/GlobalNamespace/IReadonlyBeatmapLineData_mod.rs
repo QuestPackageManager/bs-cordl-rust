@@ -24,6 +24,11 @@ impl std::ops::DerefMut for IReadonlyBeatmapLineData {
 }
 #[cfg(feature = "IReadonlyBeatmapLineData")]
 impl IReadonlyBeatmapLineData {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_beatmapObjectsData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -36,11 +41,6 @@ impl IReadonlyBeatmapLineData {
             *mut BeatmapObjectData,
         > = __cordl_object.invoke("get_beatmapObjectsData", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IReadonlyBeatmapLineData")]

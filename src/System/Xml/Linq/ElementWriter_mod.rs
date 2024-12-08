@@ -23,14 +23,15 @@ for crate::System::Xml::Linq::ElementWriter {
 }
 #[cfg(feature = "System+Xml+Linq+ElementWriter")]
 impl crate::System::Xml::Linq::ElementWriter {
-    pub fn _ctor(
+    pub fn GetPrefixOfNamespace(
         &mut self,
-        writer: *mut crate::System::Xml::XmlWriter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        ns: *mut crate::System::Xml::Linq::XNamespace,
+        allowDefaultNamespace: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (writer),
+            "GetPrefixOfNamespace",
+            (ns, allowDefaultNamespace),
         )?;
         Ok(__cordl_ret)
     }
@@ -41,6 +42,28 @@ impl crate::System::Xml::Linq::ElementWriter {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "PushAncestors",
+            (e),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn PushElement(
+        &mut self,
+        e: *mut crate::System::Xml::Linq::XElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "PushElement",
+            (e),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteElement(
+        &mut self,
+        e: *mut crate::System::Xml::Linq::XElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WriteElement",
             (e),
         )?;
         Ok(__cordl_ret)
@@ -65,17 +88,6 @@ impl crate::System::Xml::Linq::ElementWriter {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WriteElement(
-        &mut self,
-        e: *mut crate::System::Xml::Linq::XElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WriteElement",
-            (e),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn WriteStartElement(
         &mut self,
         e: *mut crate::System::Xml::Linq::XElement,
@@ -87,26 +99,14 @@ impl crate::System::Xml::Linq::ElementWriter {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn PushElement(
+    pub fn _ctor(
         &mut self,
-        e: *mut crate::System::Xml::Linq::XElement,
+        writer: *mut crate::System::Xml::XmlWriter,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "PushElement",
-            (e),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPrefixOfNamespace(
-        &mut self,
-        ns: *mut crate::System::Xml::Linq::XNamespace,
-        allowDefaultNamespace: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetPrefixOfNamespace",
-            (ns, allowDefaultNamespace),
+            ".ctor",
+            (writer),
         )?;
         Ok(__cordl_ret)
     }

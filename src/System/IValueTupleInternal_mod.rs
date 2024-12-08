@@ -24,16 +24,6 @@ impl std::ops::DerefMut for crate::System::IValueTupleInternal {
 }
 #[cfg(feature = "System+IValueTupleInternal")]
 impl crate::System::IValueTupleInternal {
-    pub fn ToStringEnd(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToStringEnd", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetHashCode(
         &mut self,
         comparer: *mut crate::System::Collections::IEqualityComparer,
@@ -42,6 +32,16 @@ impl crate::System::IValueTupleInternal {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", (comparer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToStringEnd(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToStringEnd", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

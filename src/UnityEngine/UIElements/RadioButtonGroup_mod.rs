@@ -35,14 +35,45 @@ impl crate::UnityEngine::UIElements::RadioButtonGroup {
     pub type UxmlFactory = crate::UnityEngine::UIElements::RadioButtonGroup_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::RadioButtonGroup_UxmlTraits;
-    pub fn UpdateRadioButtons(
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_List_1_1(
+        label: *mut crate::System::String,
+        radioButtonChoices: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::System::String,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (label, radioButtonChoices))?;
+        Ok(__cordl_object)
+    }
+    pub fn RadioButtonValueChangedCallback(
         &mut self,
+        evt: *mut crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateRadioButtons", ())?;
+            .invoke("RadioButtonValueChangedCallback", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetValueWithoutNotify(
+        &mut self,
+        newValue: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetValueWithoutNotify", (newValue))?;
         Ok(__cordl_ret)
     }
     pub fn UnityEngine_UIElements_IGroupBox_OnOptionAdded(
@@ -56,15 +87,25 @@ impl crate::UnityEngine::UIElements::RadioButtonGroup {
             .invoke("UnityEngine.UIElements.IGroupBox.OnOptionAdded", (option))?;
         Ok(__cordl_ret)
     }
-    pub fn SetValueWithoutNotify(
+    pub fn UnityEngine_UIElements_IGroupBox_OnOptionRemoved(
         &mut self,
-        newValue: i32,
+        option: *mut crate::UnityEngine::UIElements::IGroupBoxOption,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetValueWithoutNotify", (newValue))?;
+            .invoke("UnityEngine.UIElements.IGroupBox.OnOptionRemoved", (option))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateRadioButtons(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateRadioButtons", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -91,28 +132,6 @@ impl crate::UnityEngine::UIElements::RadioButtonGroup {
             .invoke(".ctor", (label, radioButtonChoices))?;
         Ok(__cordl_ret)
     }
-    pub fn RadioButtonValueChangedCallback(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RadioButtonValueChangedCallback", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnityEngine_UIElements_IGroupBox_OnOptionRemoved(
-        &mut self,
-        option: *mut crate::UnityEngine::UIElements::IGroupBoxOption,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnityEngine.UIElements.IGroupBox.OnOptionRemoved", (option))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_contentContainer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -137,25 +156,6 @@ impl crate::UnityEngine::UIElements::RadioButtonGroup {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_choices", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_List_1_1(
-        label: *mut crate::System::String,
-        radioButtonChoices: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (label, radioButtonChoices))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup")]
@@ -202,6 +202,13 @@ for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup+UxmlFactory")]
 impl crate::UnityEngine::UIElements::RadioButtonGroup_UxmlFactory {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -211,13 +218,6 @@ impl crate::UnityEngine::UIElements::RadioButtonGroup_UxmlFactory {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup+UxmlFactory")]
@@ -264,16 +264,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::RadioButtonGroup_Uxm
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup+UxmlTraits")]
 impl crate::UnityEngine::UIElements::RadioButtonGroup_UxmlTraits {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Init(
         &mut self,
         ve: *mut crate::UnityEngine::UIElements::VisualElement,
@@ -287,12 +277,22 @@ impl crate::UnityEngine::UIElements::RadioButtonGroup_UxmlTraits {
             .invoke("Init", (ve, bag, cc))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup+UxmlTraits")]

@@ -43,6 +43,31 @@ for crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult> {
 impl<
     TResult: quest_hook::libil2cpp::Type,
 > crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult> {
+    pub fn CloseDirectoryHandle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CloseDirectoryHandle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ContinueOnError(&mut self, error: i32) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ContinueOnError", (error))?;
+        Ok(__cordl_ret)
+    }
     pub fn CreateDirectoryHandle(
         &mut self,
         path: *mut crate::System::String,
@@ -59,7 +84,7 @@ impl<
             .invoke("CreateDirectoryHandle", (path, ignoreNotFound))?;
         Ok(__cordl_ret)
     }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    pub fn DequeueNextDirectory(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -67,10 +92,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("DequeueNextDirectory", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CloseDirectoryHandle(
+    pub fn DirectoryFinished(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -81,7 +106,50 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CloseDirectoryHandle", ())?;
+            .invoke("DirectoryFinished", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose__cordl_bool1(
+        &mut self,
+        disposing: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", (disposing))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Finalize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Finalize", ())?;
         Ok(__cordl_ret)
     }
     pub fn FindNextEntry_0(
@@ -114,12 +182,11 @@ impl<
             .invoke("FindNextEntry", (entryBufferPtr, bufferLength))?;
         Ok(__cordl_ret)
     }
-    pub fn TransformEntry(
+    pub fn InternalContinueOnError(
         &mut self,
-        entry: quest_hook::libil2cpp::ByRefMut<
-            crate::System::IO::Enumeration::FileSystemEntry,
-        >,
-    ) -> quest_hook::libil2cpp::Result<TResult>
+        info: crate::GlobalNamespace::Interop_ErrorInfo,
+        ignoreNotFound: bool,
+    ) -> quest_hook::libil2cpp::Result<bool>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -127,7 +194,71 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: TResult = __cordl_object.invoke("TransformEntry", (entry))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("InternalContinueOnError", (info, ignoreNotFound))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InternalDispose(
+        &mut self,
+        disposing: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalDispose", (disposing))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        directory: *mut crate::System::String,
+        options: *mut crate::System::IO::EnumerationOptions,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (directory, options))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDirectoryFinished(
+        &mut self,
+        directory: crate::System::ReadOnlySpan_1<char>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDirectoryFinished", (directory))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
     pub fn ShouldIncludeEntry(
@@ -144,32 +275,6 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ShouldIncludeEntry", (entry))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DequeueNextDirectory(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("DequeueNextDirectory", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDirectoryFinished(
-        &mut self,
-        directory: crate::System::ReadOnlySpan_1<char>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDirectoryFinished", (directory))?;
         Ok(__cordl_ret)
     }
     pub fn ShouldRecurseIntoEntry(
@@ -189,35 +294,6 @@ impl<
             .invoke("ShouldRecurseIntoEntry", (entry))?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose__cordl_bool1(
-        &mut self,
-        disposing: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
-    }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
@@ -232,33 +308,12 @@ impl<
             .invoke("System.Collections.IEnumerator.get_Current", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<TResult>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TResult = __cordl_object.invoke("get_Current", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalDispose(
+    pub fn TransformEntry(
         &mut self,
-        disposing: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+        entry: quest_hook::libil2cpp::ByRefMut<
+            crate::System::IO::Enumeration::FileSystemEntry,
+        >,
+    ) -> quest_hook::libil2cpp::Result<TResult>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -266,38 +321,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalDispose", (disposing))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalContinueOnError(
-        &mut self,
-        info: crate::GlobalNamespace::Interop_ErrorInfo,
-        ignoreNotFound: bool,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("InternalContinueOnError", (info, ignoreNotFound))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DirectoryFinished(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DirectoryFinished", ())?;
+        let __cordl_ret: TResult = __cordl_object.invoke("TransformEntry", (entry))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -316,9 +340,7 @@ impl<
             .invoke(".ctor", (directory, options))?;
         Ok(__cordl_ret)
     }
-    pub fn Finalize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<TResult>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -326,30 +348,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
+        let __cordl_ret: TResult = __cordl_object.invoke("get_Current", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn ContinueOnError(&mut self, error: i32) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ContinueOnError", (error))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        directory: *mut crate::System::String,
-        options: *mut crate::System::IO::EnumerationOptions,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (directory, options))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerator_1")]

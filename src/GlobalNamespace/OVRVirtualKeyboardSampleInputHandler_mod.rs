@@ -37,35 +37,12 @@ impl OVRVirtualKeyboardSampleInputHandler {
     pub const LINEPOINTER_THINNING_THRESHOLD: f32 = 0.015f32;
     pub const RAY_MAX_DISTANCE: f32 = 100f32;
     pub const THUMBSTICK_DEADZONE: f32 = 0.2f32;
-    pub fn get_InputRayPosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_InputRayPosition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateInteractionAnchor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateInteractionAnchor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Start(
         &mut self,
@@ -87,14 +64,14 @@ impl OVRVirtualKeyboardSampleInputHandler {
             .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_InputRayRotation(
+    pub fn UpdateInteractionAnchor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("get_InputRayRotation", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateInteractionAnchor", ())?;
         Ok(__cordl_ret)
     }
     pub fn UpdateLineRenderer(
@@ -105,6 +82,27 @@ impl OVRVirtualKeyboardSampleInputHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateLineRenderer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateLineRendererFromSource(
+        &mut self,
+        source: crate::GlobalNamespace::OVRVirtualKeyboard_InputSource,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateLineRendererFromSource", (source))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_AnalogStickX(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -121,23 +119,25 @@ impl OVRVirtualKeyboardSampleInputHandler {
         let __cordl_ret: f32 = __cordl_object.invoke("get_AnalogStickY", ())?;
         Ok(__cordl_ret)
     }
-    pub fn UpdateLineRendererFromSource(
+    pub fn get_InputRayPosition(
         &mut self,
-        source: crate::GlobalNamespace::OVRVirtualKeyboard_InputSource,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateLineRendererFromSource", (source))?;
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_InputRayPosition", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_InputRayRotation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
+            .invoke("get_InputRayRotation", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRVirtualKeyboardSampleInputHandler")]

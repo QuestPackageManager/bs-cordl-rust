@@ -24,6 +24,17 @@ impl std::ops::DerefMut for crate::UnityEngine::Tilemaps::TilemapRenderer {
 }
 #[cfg(feature = "UnityEngine+Tilemaps+TilemapRenderer")]
 impl crate::UnityEngine::Tilemaps::TilemapRenderer {
+    pub fn OnSpriteAtlasRegistered(
+        &mut self,
+        atlas: *mut crate::UnityEngine::U2D::SpriteAtlas,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnSpriteAtlasRegistered", (atlas))?;
+        Ok(__cordl_ret)
+    }
     pub fn RegisterSpriteAtlasRegistered(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -42,17 +53,6 @@ impl crate::UnityEngine::Tilemaps::TilemapRenderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnregisterSpriteAtlasRegistered", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnSpriteAtlasRegistered(
-        &mut self,
-        atlas: *mut crate::UnityEngine::U2D::SpriteAtlas,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnSpriteAtlasRegistered", (atlas))?;
         Ok(__cordl_ret)
     }
 }

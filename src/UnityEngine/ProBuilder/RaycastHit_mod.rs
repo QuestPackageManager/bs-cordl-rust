@@ -28,6 +28,18 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::RaycastHit {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+RaycastHit")]
 impl crate::UnityEngine::ProBuilder::RaycastHit {
+    pub fn New(
+        distance: f32,
+        point: crate::UnityEngine::Vector3,
+        normal: crate::UnityEngine::Vector3,
+        face: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (distance, point, normal, face))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         distance: f32,
@@ -41,18 +53,6 @@ impl crate::UnityEngine::ProBuilder::RaycastHit {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (distance, point, normal, face))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        distance: f32,
-        point: crate::UnityEngine::Vector3,
-        normal: crate::UnityEngine::Vector3,
-        face: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (distance, point, normal, face))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+RaycastHit")]

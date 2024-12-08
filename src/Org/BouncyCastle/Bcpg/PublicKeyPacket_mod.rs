@@ -29,33 +29,25 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::PublicKeyPacket {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+PublicKeyPacket")]
 impl crate::Org::BouncyCastle::Bcpg::PublicKeyPacket {
-    pub fn get_ValidDays(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn Encode(
+        &mut self,
+        bcpgOut: *mut crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ValidDays", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Encode", (bcpgOut))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Algorithm(
+    pub fn GetEncodedContents(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag = __cordl_object
-            .invoke("get_Algorithm", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Key(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Bcpg::IBcpgKey> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Bcpg::IBcpgKey = __cordl_object
-            .invoke("get_Key", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetEncodedContents", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetTime(&mut self) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
@@ -65,12 +57,25 @@ impl crate::Org::BouncyCastle::Bcpg::PublicKeyPacket {
         let __cordl_ret: crate::System::DateTime = __cordl_object.invoke("GetTime", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Version(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Version", ())?;
-        Ok(__cordl_ret)
+    pub fn New_BcpgInputStream0(
+        bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bcpgIn))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_PublicKeyAlgorithmTag_DateTime_IBcpgKey1(
+        algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
+        _cordl_time: crate::System::DateTime,
+        key: *mut crate::Org::BouncyCastle::Bcpg::IBcpgKey,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, _cordl_time, key))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_BcpgInputStream0(
         &mut self,
@@ -96,46 +101,41 @@ impl crate::Org::BouncyCastle::Bcpg::PublicKeyPacket {
             .invoke(".ctor", (algorithm, _cordl_time, key))?;
         Ok(__cordl_ret)
     }
-    pub fn Encode(
+    pub fn get_Algorithm(
         &mut self,
-        bcpgOut: *mut crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Encode", (bcpgOut))?;
+        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag = __cordl_object
+            .invoke("get_Algorithm", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetEncodedContents(
+    pub fn get_Key(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Bcpg::IBcpgKey> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetEncodedContents", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Bcpg::IBcpgKey = __cordl_object
+            .invoke("get_Key", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_BcpgInputStream0(
-        bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bcpgIn))?;
-        Ok(__cordl_object)
+    pub fn get_ValidDays(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ValidDays", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_PublicKeyAlgorithmTag_DateTime_IBcpgKey1(
-        algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
-        _cordl_time: crate::System::DateTime,
-        key: *mut crate::Org::BouncyCastle::Bcpg::IBcpgKey,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, _cordl_time, key))?;
-        Ok(__cordl_object)
+    pub fn get_Version(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Version", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+PublicKeyPacket")]

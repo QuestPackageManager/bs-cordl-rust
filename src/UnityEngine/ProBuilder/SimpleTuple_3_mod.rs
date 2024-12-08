@@ -39,6 +39,24 @@ impl<
     T2: quest_hook::libil2cpp::Type,
     T3: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::ProBuilder::SimpleTuple_3<T1, T2, T3> {
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    where
+        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         item1: T1,
@@ -60,6 +78,38 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_item1(&mut self) -> quest_hook::libil2cpp::Result<T1>
+    where
+        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T1 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_item1",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_item2(&mut self) -> quest_hook::libil2cpp::Result<T2>
+    where
+        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_item2",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_item3(&mut self) -> quest_hook::libil2cpp::Result<T3>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -76,9 +126,9 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_item3(
+    pub fn set_item1(
         &mut self,
-        value: T3,
+        value: T1,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -90,24 +140,8 @@ impl<
     {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_item3",
+            "set_item1",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_item1(&mut self) -> quest_hook::libil2cpp::Result<T1>
-    where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: T1 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_item1",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -130,43 +164,9 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_item2(&mut self) -> quest_hook::libil2cpp::Result<T2>
-    where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: T2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_item2",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
+    pub fn set_item3(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
-    where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_item1(
-        &mut self,
-        value: T1,
+        value: T3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -178,7 +178,7 @@ impl<
     {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_item1",
+            "set_item3",
             (value),
         )?;
         Ok(__cordl_ret)

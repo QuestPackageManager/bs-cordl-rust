@@ -23,11 +23,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::TypedReferenc
 }
 #[cfg(feature = "System+TypedReference")]
 impl crate::System::TypedReference {
-    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn Equals(
+        &mut self,
+        o: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_IsNull",
-            (),
+            "Equals",
+            (o),
         )?;
         Ok(__cordl_ret)
     }
@@ -39,14 +42,11 @@ impl crate::System::TypedReference {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals(
-        &mut self,
-        o: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (o),
+            "get_IsNull",
+            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -29,28 +29,28 @@ impl std::ops::DerefMut for crate::Mono::Security::X509::X509Store {
 }
 #[cfg(feature = "Mono+Security+X509+X509Store")]
 impl crate::Mono::Security::X509::X509Store {
-    pub fn LoadCertificate(
+    pub fn BuildCertificatesCollection(
         &mut self,
-        filename: *mut crate::System::String,
+        storeName: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Mono::Security::X509::X509Certificate,
+        *mut crate::Mono::Security::X509::X509CertificateCollection,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Security::X509::X509Certificate = __cordl_object
-            .invoke("LoadCertificate", (filename))?;
+        let __cordl_ret: *mut crate::Mono::Security::X509::X509CertificateCollection = __cordl_object
+            .invoke("BuildCertificatesCollection", (storeName))?;
         Ok(__cordl_ret)
     }
-    pub fn Load(
+    pub fn BuildCrlsCollection(
         &mut self,
-        filename: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        storeName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("Load", (filename))?;
+        let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
+            .invoke("BuildCrlsCollection", (storeName))?;
         Ok(__cordl_ret)
     }
     pub fn CheckStore(
@@ -65,40 +65,51 @@ impl crate::Mono::Security::X509::X509Store {
             .invoke("CheckStore", (path, throwException))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Crls(
+    pub fn Load(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
+        filename: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
-            .invoke("get_Crls", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("Load", (filename))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Certificates(
+    pub fn LoadCertificate(
         &mut self,
+        filename: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Mono::Security::X509::X509CertificateCollection,
+        *mut crate::Mono::Security::X509::X509Certificate,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Security::X509::X509CertificateCollection = __cordl_object
-            .invoke("get_Certificates", ())?;
+        let __cordl_ret: *mut crate::Mono::Security::X509::X509Certificate = __cordl_object
+            .invoke("LoadCertificate", (filename))?;
         Ok(__cordl_ret)
     }
-    pub fn BuildCertificatesCollection(
+    pub fn LoadCrl(
         &mut self,
-        storeName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Mono::Security::X509::X509CertificateCollection,
-    > {
+        filename: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::X509::X509Crl> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Security::X509::X509CertificateCollection = __cordl_object
-            .invoke("BuildCertificatesCollection", (storeName))?;
+        let __cordl_ret: *mut crate::Mono::Security::X509::X509Crl = __cordl_object
+            .invoke("LoadCrl", (filename))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        path: *mut crate::System::String,
+        crl: bool,
+        newFormat: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (path, crl, newFormat))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -113,38 +124,27 @@ impl crate::Mono::Security::X509::X509Store {
             .invoke(".ctor", (path, crl, newFormat))?;
         Ok(__cordl_ret)
     }
-    pub fn LoadCrl(
+    pub fn get_Certificates(
         &mut self,
-        filename: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::X509::X509Crl> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Mono::Security::X509::X509CertificateCollection,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Security::X509::X509Crl = __cordl_object
-            .invoke("LoadCrl", (filename))?;
+        let __cordl_ret: *mut crate::Mono::Security::X509::X509CertificateCollection = __cordl_object
+            .invoke("get_Certificates", ())?;
         Ok(__cordl_ret)
     }
-    pub fn BuildCrlsCollection(
+    pub fn get_Crls(
         &mut self,
-        storeName: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
-            .invoke("BuildCrlsCollection", (storeName))?;
+            .invoke("get_Crls", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        path: *mut crate::System::String,
-        crl: bool,
-        newFormat: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (path, crl, newFormat))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Security+X509+X509Store")]

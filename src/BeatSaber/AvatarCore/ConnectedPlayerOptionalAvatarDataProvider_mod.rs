@@ -33,6 +33,16 @@ for crate::BeatSaber::AvatarCore::ConnectedPlayerOptionalAvatarDataProvider {
 }
 #[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerOptionalAvatarDataProvider")]
 impl crate::BeatSaber::AvatarCore::ConnectedPlayerOptionalAvatarDataProvider {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn HandleOptionalAvatarDataSyncHandlerDidChangeOptionalAvatarDataSync(
         &mut self,
         connectedPlayer: *mut IConnectedPlayer,
@@ -46,6 +56,35 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerOptionalAvatarDataProvider {
                 "HandleOptionalAvatarDataSyncHandlerDidChangeOptionalAvatarDataSync",
                 (connectedPlayer, optionalAvatarData),
             )?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        connectedPlayer: *mut IConnectedPlayer,
+        multiplayerSessionManager: *mut IMultiplayerSessionManager,
+        optionalAvatarDataSyncHandler: *mut crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    connectedPlayer,
+                    multiplayerSessionManager,
+                    optionalAvatarDataSyncHandler,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn SetDisplayContext(
+        &mut self,
+        avatarDisplayContext: crate::BeatSaber::AvatarCore::AvatarDisplayContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetDisplayContext", (avatarDisplayContext))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -66,19 +105,6 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerOptionalAvatarDataProvider {
                     optionalAvatarDataSyncHandler,
                 ),
             )?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_dataDidChangeEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<
-            crate::BeatSaber::AvatarCore::OptionalAvatarData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_dataDidChangeEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_dataDidChangeEvent(
@@ -111,16 +137,6 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerOptionalAvatarDataProvider {
         > = __cordl_object.invoke("get_currentData", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_playbackDelaySeconds(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -128,34 +144,18 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerOptionalAvatarDataProvider {
         let __cordl_ret: f32 = __cordl_object.invoke("get_playbackDelaySeconds", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetDisplayContext(
+    pub fn remove_dataDidChangeEvent(
         &mut self,
-        avatarDisplayContext: crate::BeatSaber::AvatarCore::AvatarDisplayContext,
+        value: *mut crate::System::Action_1<
+            crate::BeatSaber::AvatarCore::OptionalAvatarData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetDisplayContext", (avatarDisplayContext))?;
+            .invoke("remove_dataDidChangeEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        connectedPlayer: *mut IConnectedPlayer,
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
-        optionalAvatarDataSyncHandler: *mut crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    connectedPlayer,
-                    multiplayerSessionManager,
-                    optionalAvatarDataSyncHandler,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerOptionalAvatarDataProvider")]

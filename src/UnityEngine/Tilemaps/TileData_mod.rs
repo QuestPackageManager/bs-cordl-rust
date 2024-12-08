@@ -27,39 +27,6 @@ for crate::UnityEngine::Tilemaps::TileData {
 }
 #[cfg(feature = "UnityEngine+Tilemaps+TileData")]
 impl crate::UnityEngine::Tilemaps::TileData {
-    pub fn set_sprite(
-        &mut self,
-        value: *mut crate::UnityEngine::Sprite,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_sprite",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_transform(
-        &mut self,
-        value: crate::UnityEngine::Matrix4x4,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_transform",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_flags(
-        &mut self,
-        value: crate::UnityEngine::Tilemaps::TileFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_flags",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_colliderType(
         &mut self,
         value: crate::UnityEngine::Tilemaps::Tile_ColliderType,
@@ -82,6 +49,17 @@ impl crate::UnityEngine::Tilemaps::TileData {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn set_flags(
+        &mut self,
+        value: crate::UnityEngine::Tilemaps::TileFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_flags",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_gameObject(
         &mut self,
         value: *mut crate::UnityEngine::GameObject,
@@ -89,6 +67,28 @@ impl crate::UnityEngine::Tilemaps::TileData {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_gameObject",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_sprite(
+        &mut self,
+        value: *mut crate::UnityEngine::Sprite,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_sprite",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_transform(
+        &mut self,
+        value: crate::UnityEngine::Matrix4x4,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_transform",
             (value),
         )?;
         Ok(__cordl_ret)

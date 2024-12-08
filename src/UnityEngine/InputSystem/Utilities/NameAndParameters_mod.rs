@@ -28,19 +28,6 @@ for crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
 impl crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
     #[cfg(feature = "UnityEngine+InputSystem+Utilities+NameAndParameters+__c")]
     pub type __c = crate::UnityEngine::InputSystem::Utilities::NameAndParameters___c;
-    pub fn set_parameters(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            crate::UnityEngine::InputSystem::Utilities::NamedValue,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_parameters",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -80,6 +67,19 @@ impl crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_name",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_parameters(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::Utilities::NamedValue,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_parameters",
             (value),
         )?;
         Ok(__cordl_ret)

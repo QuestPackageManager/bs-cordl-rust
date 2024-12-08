@@ -24,34 +24,6 @@ for crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUserAccountHandle")]
 impl crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
-    pub fn get_apiName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_apiName",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_handle",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_InputUserAccountHandle0(
         &mut self,
         other: crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
@@ -82,6 +54,16 @@ impl crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         apiName: *mut crate::System::String,
@@ -91,6 +73,24 @@ impl crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
             self,
             ".ctor",
             (apiName, handle),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_apiName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_apiName",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_handle",
+            (),
         )?;
         Ok(__cordl_ret)
     }

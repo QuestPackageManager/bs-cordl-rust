@@ -26,10 +26,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::DoubleField {
 impl crate::UnityEngine::UIElements::DoubleField {
     #[cfg(feature = "UnityEngine+UIElements+DoubleField+DoubleInput")]
     pub type DoubleInput = crate::UnityEngine::UIElements::DoubleField_DoubleInput;
-    #[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlFactory")]
-    pub type UxmlFactory = crate::UnityEngine::UIElements::DoubleField_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::DoubleField_UxmlTraits;
+    #[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlFactory")]
+    pub type UxmlFactory = crate::UnityEngine::UIElements::DoubleField_UxmlFactory;
     pub fn ApplyInputDeviceDelta(
         &mut self,
         delta: crate::UnityEngine::Vector3,
@@ -43,17 +43,32 @@ impl crate::UnityEngine::UIElements::DoubleField {
             .invoke("ApplyInputDeviceDelta", (delta, speed, startValue))?;
         Ok(__cordl_ret)
     }
-    pub fn get_doubleInput(
+    pub fn CanTryParse(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::DoubleField_DoubleInput,
-    > {
+        textString: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::DoubleField_DoubleInput = __cordl_object
-            .invoke("get_doubleInput", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("CanTryParse", (textString))?;
         Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_i32_1(
+        label: *mut crate::System::String,
+        maxLength: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (label, maxLength))?;
+        Ok(__cordl_object)
     }
     pub fn StringToValue(
         &mut self,
@@ -98,32 +113,17 @@ impl crate::UnityEngine::UIElements::DoubleField {
             .invoke(".ctor", (label, maxLength))?;
         Ok(__cordl_ret)
     }
-    pub fn CanTryParse(
+    pub fn get_doubleInput(
         &mut self,
-        textString: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::DoubleField_DoubleInput,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("CanTryParse", (textString))?;
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::DoubleField_DoubleInput = __cordl_object
+            .invoke("get_doubleInput", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_i32_1(
-        label: *mut crate::System::String,
-        maxLength: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (label, maxLength))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DoubleField")]
@@ -161,17 +161,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::DoubleField_DoubleIn
 }
 #[cfg(feature = "UnityEngine+UIElements+DoubleField+DoubleInput")]
 impl crate::UnityEngine::UIElements::DoubleField_DoubleInput {
-    pub fn ValueToString(
-        &mut self,
-        v: f64,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ValueToString", (v))?;
-        Ok(__cordl_ret)
-    }
     pub fn ApplyInputDeviceDelta(
         &mut self,
         delta: crate::UnityEngine::Vector3,
@@ -185,6 +174,13 @@ impl crate::UnityEngine::UIElements::DoubleField_DoubleInput {
             .invoke("ApplyInputDeviceDelta", (delta, speed, startValue))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn StringToValue(
         &mut self,
         str: *mut crate::System::String,
@@ -193,6 +189,37 @@ impl crate::UnityEngine::UIElements::DoubleField_DoubleInput {
             self,
         );
         let __cordl_ret: f64 = __cordl_object.invoke("StringToValue", (str))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValueToString(
+        &mut self,
+        v: f64,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ValueToString", (v))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_allowedCharacters(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_allowedCharacters", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_parentDoubleField(
@@ -206,33 +233,6 @@ impl crate::UnityEngine::UIElements::DoubleField_DoubleInput {
         let __cordl_ret: *mut crate::UnityEngine::UIElements::DoubleField = __cordl_object
             .invoke("get_parentDoubleField", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_allowedCharacters(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_allowedCharacters", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DoubleField+DoubleInput")]
@@ -277,6 +277,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::DoubleField_UxmlFact
 }
 #[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlFactory")]
 impl crate::UnityEngine::UIElements::DoubleField_UxmlFactory {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -286,13 +293,6 @@ impl crate::UnityEngine::UIElements::DoubleField_UxmlFactory {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlFactory")]
@@ -337,6 +337,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::DoubleField_UxmlTrai
 }
 #[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlTraits")]
 impl crate::UnityEngine::UIElements::DoubleField_UxmlTraits {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -346,13 +353,6 @@ impl crate::UnityEngine::UIElements::DoubleField_UxmlTraits {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlTraits")]

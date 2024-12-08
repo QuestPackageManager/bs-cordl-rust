@@ -24,6 +24,18 @@ impl std::ops::DerefMut for crate::System::Xml::IDtdAttributeListInfo {
 }
 #[cfg(feature = "System+Xml+IDtdAttributeListInfo")]
 impl crate::System::Xml::IDtdAttributeListInfo {
+    pub fn LookupAttribute(
+        &mut self,
+        prefix: *mut crate::System::String,
+        localName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::IDtdAttributeInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::IDtdAttributeInfo = __cordl_object
+            .invoke("LookupAttribute", (prefix, localName))?;
+        Ok(__cordl_ret)
+    }
     pub fn LookupDefaultAttributes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -39,29 +51,17 @@ impl crate::System::Xml::IDtdAttributeListInfo {
         > = __cordl_object.invoke("LookupDefaultAttributes", ())?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_HasNonCDataAttributes(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasNonCDataAttributes", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn LookupAttribute(
-        &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::IDtdAttributeInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::IDtdAttributeInfo = __cordl_object
-            .invoke("LookupAttribute", (prefix, localName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "System+Xml+IDtdAttributeListInfo")]

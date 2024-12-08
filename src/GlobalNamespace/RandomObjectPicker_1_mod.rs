@@ -28,6 +28,26 @@ impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for RandomObjectPicker_1
 }
 #[cfg(feature = "RandomObjectPicker_1")]
 impl<T: quest_hook::libil2cpp::Type> RandomObjectPicker_1<T> {
+    pub fn New_Il2CppArray1(
+        objects: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        minimumPickInterval: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (objects, minimumPickInterval))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_T0(
+        obj: T,
+        minimumPickInterval: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (obj, minimumPickInterval))?;
+        Ok(__cordl_object)
+    }
     pub fn PickRandomObject(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -37,22 +57,6 @@ impl<T: quest_hook::libil2cpp::Type> RandomObjectPicker_1<T> {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("PickRandomObject", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_T0(
-        &mut self,
-        obj: T,
-        minimumPickInterval: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (obj, minimumPickInterval))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_Il2CppArray1(
@@ -71,25 +75,21 @@ impl<T: quest_hook::libil2cpp::Type> RandomObjectPicker_1<T> {
             .invoke(".ctor", (objects, minimumPickInterval))?;
         Ok(__cordl_ret)
     }
-    pub fn New_T0(
+    pub fn _ctor_T0(
+        &mut self,
         obj: T,
         minimumPickInterval: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (obj, minimumPickInterval))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray1(
-        objects: *mut quest_hook::libil2cpp::Il2CppArray<T>,
-        minimumPickInterval: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (objects, minimumPickInterval))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (obj, minimumPickInterval))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "RandomObjectPicker_1")]

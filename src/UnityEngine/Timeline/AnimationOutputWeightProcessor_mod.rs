@@ -33,15 +33,14 @@ for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
 impl crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
     #[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
     pub type WeightInfo = crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo;
-    pub fn _ctor(
+    pub fn Evaluate(
         &mut self,
-        output: crate::UnityEngine::Animations::AnimationPlayableOutput,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (output))?;
+            .invoke("Evaluate", ())?;
         Ok(__cordl_ret)
     }
     pub fn FindMixers_0(
@@ -67,24 +66,25 @@ impl crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
             .invoke("FindMixers", (parent, port, node))?;
         Ok(__cordl_ret)
     }
-    pub fn Evaluate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Evaluate", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         output: crate::UnityEngine::Animations::AnimationPlayableOutput,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (output))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        output: crate::UnityEngine::Animations::AnimationPlayableOutput,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (output))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor")]

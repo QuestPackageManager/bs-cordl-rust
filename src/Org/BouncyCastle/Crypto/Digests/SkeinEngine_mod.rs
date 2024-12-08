@@ -28,6 +28,13 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
 impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
+    pub fn New(outputSizeBits: i64) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (outputSizeBits))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         outputSizeBits: i64,
@@ -48,13 +55,6 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
             .invoke("get_Bytes", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(outputSizeBits: i64) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (outputSizeBits))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
@@ -98,6 +98,16 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
 impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
+    pub fn New(
+        _cordl_type: i32,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, value))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         _cordl_type: i32,
@@ -126,16 +136,6 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
             .invoke("get_Value", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        _cordl_type: i32,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, value))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
@@ -194,36 +194,22 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
     pub const SKEIN_1024: i32 = 1024i32;
     pub const SKEIN_256: i32 = 256i32;
     pub const SKEIN_512: i32 = 512i32;
+    #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
+    pub type Parameter = crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter;
+    #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
+    pub type UbiTweak = crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak;
     #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
     pub type Configuration = crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration;
     #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
     pub type UBI = crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI;
-    #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
-    pub type UbiTweak = crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak;
-    #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
-    pub type Parameter = crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter;
-    pub fn Update_u8_0(
+    pub fn CheckInitialised(
         &mut self,
-        inByte: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", (inByte))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Update_Il2CppArray_i32_i32_1(
-        &mut self,
-        inBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        inOff: i32,
-        len: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", (inBytes, inOff, len))?;
+            .invoke("CheckInitialised", ())?;
         Ok(__cordl_ret)
     }
     pub fn Copy(
@@ -238,43 +224,47 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
             .invoke("Copy", ())?;
         Ok(__cordl_ret)
     }
-    pub fn UbiInit(
+    pub fn CopyIn(
         &mut self,
-        _cordl_type: i32,
+        engine: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UbiInit", (_cordl_type))?;
+            .invoke("CopyIn", (engine))?;
         Ok(__cordl_ret)
     }
-    pub fn Reset_IMemoable0(
-        &mut self,
-        other: *mut crate::Org::BouncyCastle::Utilities::IMemoable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", (other))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset_1(
+    pub fn CreateInitialState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
+            .invoke("CreateInitialState", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_BlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn DoFinal(
+        &mut self,
+        outBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        outOff: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_BlockSize", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("DoFinal", (outBytes, outOff))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (parameters))?;
         Ok(__cordl_ret)
     }
     pub fn InitParams(
@@ -288,38 +278,24 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
             .invoke("InitParams", (parameters))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_i32_0(
-        &mut self,
+    pub fn New_SkeinEngine1(
+        engine: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (engine))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_i32_0(
         blockSizeBits: i32,
         outputSizeBits: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (blockSizeBits, outputSizeBits))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_SkeinEngine1(
-        &mut self,
-        engine: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (engine))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateInitialState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CreateInitialState", ())?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (blockSizeBits, outputSizeBits))?;
+        Ok(__cordl_object)
     }
     pub fn Output(
         &mut self,
@@ -335,15 +311,25 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
             .invoke("Output", (outputSequence, outBytes, outOff, outputBytes))?;
         Ok(__cordl_ret)
     }
-    pub fn CopyIn(
+    pub fn Reset_1(
         &mut self,
-        engine: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CopyIn", (engine))?;
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reset_IMemoable0(
+        &mut self,
+        other: *mut crate::Org::BouncyCastle::Utilities::IMemoable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", (other))?;
         Ok(__cordl_ret)
     }
     pub fn UbiComplete(
@@ -358,34 +344,6 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
             .invoke("UbiComplete", (_cordl_type, value))?;
         Ok(__cordl_ret)
     }
-    pub fn CheckInitialised(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckInitialised", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init(
-        &mut self,
-        parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (parameters))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_OutputSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_OutputSize", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn UbiFinal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -396,35 +354,77 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
             .invoke("UbiFinal", ())?;
         Ok(__cordl_ret)
     }
-    pub fn DoFinal(
+    pub fn UbiInit(
         &mut self,
-        outBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        outOff: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+        _cordl_type: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("DoFinal", (outBytes, outOff))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UbiInit", (_cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn New_i32_i32_0(
+    pub fn Update_Il2CppArray_i32_i32_1(
+        &mut self,
+        inBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inOff: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", (inBytes, inOff, len))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Update_u8_0(
+        &mut self,
+        inByte: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", (inByte))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_SkeinEngine1(
+        &mut self,
+        engine: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (engine))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_i32_0(
+        &mut self,
         blockSizeBits: i32,
         outputSizeBits: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (blockSizeBits, outputSizeBits))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (blockSizeBits, outputSizeBits))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_SkeinEngine1(
-        engine: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (engine))?;
-        Ok(__cordl_object)
+    pub fn get_BlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_BlockSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_OutputSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_OutputSize", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
@@ -469,6 +469,60 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngi
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
 impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI {
+    pub fn DoFinal(
+        &mut self,
+        output: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DoFinal", (output))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        engine: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine,
+        blockSize: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (engine, blockSize))?;
+        Ok(__cordl_object)
+    }
+    pub fn ProcessBlock(
+        &mut self,
+        output: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessBlock", (output))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reset_SkeinEngine_UBI0(
+        &mut self,
+        ubi: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", (ubi))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reset_i32_1(
+        &mut self,
+        _cordl_type: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", (_cordl_type))?;
+        Ok(__cordl_ret)
+    }
     pub fn Update(
         &mut self,
         value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -494,60 +548,6 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (engine, blockSize))?;
         Ok(__cordl_ret)
-    }
-    pub fn DoFinal(
-        &mut self,
-        output: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DoFinal", (output))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset_SkeinEngine_UBI0(
-        &mut self,
-        ubi: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", (ubi))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset_i32_1(
-        &mut self,
-        _cordl_type: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", (_cordl_type))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessBlock(
-        &mut self,
-        output: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessBlock", (output))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        engine: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine,
-        blockSize: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (engine, blockSize))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
@@ -594,6 +594,96 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
     pub const LOW_RANGE: u64 = 18446744069414584320u64;
     pub const T1_FINAL: u64 = 9223372036854775808u64;
     pub const T1_FIRST: u64 = 4611686018427387904u64;
+    pub fn AdvancePosition(
+        &mut self,
+        advance: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AdvancePosition", (advance))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetWords(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u64>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u64> = __cordl_object
+            .invoke("GetWords", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Reset_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reset_SkeinEngine_UbiTweak0(
+        &mut self,
+        tweak: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", (tweak))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Final(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_Final", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_First(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_First", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Type(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("get_Type", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_Final(
         &mut self,
         value: bool,
@@ -616,44 +706,6 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
             .invoke("set_First", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Final(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Final", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetWords(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u64>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u64> = __cordl_object
-            .invoke("GetWords", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AdvancePosition(
-        &mut self,
-        advance: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AdvancePosition", (advance))?;
-        Ok(__cordl_ret)
-    }
     pub fn set_Type(
         &mut self,
         value: u32,
@@ -664,58 +716,6 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Type", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_First(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_First", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset_SkeinEngine_UbiTweak0(
-        &mut self,
-        tweak: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", (tweak))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Type(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("get_Type", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]

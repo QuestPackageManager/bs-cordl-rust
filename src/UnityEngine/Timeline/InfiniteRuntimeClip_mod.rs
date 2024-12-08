@@ -25,43 +25,6 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::InfiniteRuntimeClip {
 }
 #[cfg(feature = "UnityEngine+Timeline+InfiniteRuntimeClip")]
 impl crate::UnityEngine::Timeline::InfiniteRuntimeClip {
-    pub fn EvaluateAt(
-        &mut self,
-        localTime: f64,
-        frameData: crate::UnityEngine::Playables::FrameData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EvaluateAt", (localTime, frameData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_intervalStart(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_intervalStart", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_intervalEnd(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_intervalEnd", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        playable: crate::UnityEngine::Playables::Playable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (playable))?;
-        Ok(__cordl_ret)
-    }
     pub fn DisableAt(
         &mut self,
         localTime: f64,
@@ -75,6 +38,52 @@ impl crate::UnityEngine::Timeline::InfiniteRuntimeClip {
             .invoke("DisableAt", (localTime, rootDuration, frameData))?;
         Ok(__cordl_ret)
     }
+    pub fn EvaluateAt(
+        &mut self,
+        localTime: f64,
+        frameData: crate::UnityEngine::Playables::FrameData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EvaluateAt", (localTime, frameData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        playable: crate::UnityEngine::Playables::Playable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (playable))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        playable: crate::UnityEngine::Playables::Playable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (playable))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_intervalEnd(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_intervalEnd", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_intervalStart(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_intervalStart", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_enable(
         &mut self,
         value: bool,
@@ -85,15 +94,6 @@ impl crate::UnityEngine::Timeline::InfiniteRuntimeClip {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_enable", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        playable: crate::UnityEngine::Playables::Playable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (playable))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+InfiniteRuntimeClip")]

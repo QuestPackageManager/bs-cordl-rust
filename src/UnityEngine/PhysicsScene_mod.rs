@@ -21,37 +21,85 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::PhysicsS
 }
 #[cfg(feature = "UnityEngine+PhysicsScene")]
 impl crate::UnityEngine::PhysicsScene {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn BoxCast_ByRefMut1(
+        &mut self,
+        center: crate::UnityEngine::Vector3,
+        halfExtents: crate::UnityEngine::Vector3,
+        direction: crate::UnityEngine::Vector3,
+        hitInfo: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "BoxCast",
+            (center, halfExtents, direction, hitInfo),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn BoxCast_ByRefMut_Quaternion_f32_i32_QueryTriggerInteraction0(
+        &mut self,
+        center: crate::UnityEngine::Vector3,
+        halfExtents: crate::UnityEngine::Vector3,
+        direction: crate::UnityEngine::Vector3,
+        hitInfo: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+        orientation: crate::UnityEngine::Quaternion,
+        maxDistance: f32,
+        layerMask: i32,
+        queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "BoxCast",
+            (
+                center,
+                halfExtents,
+                direction,
+                hitInfo,
+                orientation,
+                maxDistance,
+                layerMask,
+                queryTriggerInteraction,
+            ),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn BoxCast_Il2CppArray3(
+        &mut self,
+        center: crate::UnityEngine::Vector3,
+        halfExtents: crate::UnityEngine::Vector3,
+        direction: crate::UnityEngine::Vector3,
+        results: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
-            (),
+            "BoxCast",
+            (center, halfExtents, direction, results),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
+    pub fn BoxCast_Il2CppArray_Quaternion_f32_i32_QueryTriggerInteraction2(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        center: crate::UnityEngine::Vector3,
+        halfExtents: crate::UnityEngine::Vector3,
+        direction: crate::UnityEngine::Vector3,
+        results: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+        orientation: crate::UnityEngine::Quaternion,
+        maxDistance: f32,
+        layerMask: i32,
+        queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsValid",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsEmpty",
-            (),
+            "BoxCast",
+            (
+                center,
+                halfExtents,
+                direction,
+                results,
+                orientation,
+                maxDistance,
+                layerMask,
+                queryTriggerInteraction,
+            ),
         )?;
         Ok(__cordl_ret)
     }
@@ -109,21 +157,59 @@ impl crate::UnityEngine::PhysicsScene {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn OverlapCapsule(
+    pub fn Equals_Object0(
         &mut self,
-        point0: crate::UnityEngine::Vector3,
-        point1: crate::UnityEngine::Vector3,
-        radius: f32,
-        results: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Collider,
-        >,
-        layerMask: i32,
-        queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+        other: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_PhysicsScene1(
+        &mut self,
+        other: crate::UnityEngine::PhysicsScene,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "OverlapCapsule",
-            (point0, point1, radius, results, layerMask, queryTriggerInteraction),
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn InterpolateBodies(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "InterpolateBodies",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsEmpty",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsValid",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -167,34 +253,21 @@ impl crate::UnityEngine::PhysicsScene {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn InterpolateBodies(
+    pub fn OverlapCapsule(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        point0: crate::UnityEngine::Vector3,
+        point1: crate::UnityEngine::Vector3,
+        radius: f32,
+        results: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::Collider,
+        >,
+        layerMask: i32,
+        queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "InterpolateBodies",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Simulate(
-        &mut self,
-        step: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Simulate",
-            (step),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ResetInterpolationPoses(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ResetInterpolationPoses",
-            (),
+            "OverlapCapsule",
+            (point0, point1, radius, results, layerMask, queryTriggerInteraction),
         )?;
         Ok(__cordl_ret)
     }
@@ -212,21 +285,6 @@ impl crate::UnityEngine::PhysicsScene {
             self,
             "OverlapSphere",
             (position, radius, results, layerMask, queryTriggerInteraction),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Raycast_f32_i32_QueryTriggerInteraction0(
-        &mut self,
-        origin: crate::UnityEngine::Vector3,
-        direction: crate::UnityEngine::Vector3,
-        maxDistance: f32,
-        layerMask: i32,
-        queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Raycast",
-            (origin, direction, maxDistance, layerMask, queryTriggerInteraction),
         )?;
         Ok(__cordl_ret)
     }
@@ -271,25 +329,39 @@ impl crate::UnityEngine::PhysicsScene {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
+    pub fn Raycast_f32_i32_QueryTriggerInteraction0(
         &mut self,
-        other: *mut crate::System::Object,
+        origin: crate::UnityEngine::Vector3,
+        direction: crate::UnityEngine::Vector3,
+        maxDistance: f32,
+        layerMask: i32,
+        queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "Raycast",
+            (origin, direction, maxDistance, layerMask, queryTriggerInteraction),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_PhysicsScene1(
+    pub fn ResetInterpolationPoses(
         &mut self,
-        other: crate::UnityEngine::PhysicsScene,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "ResetInterpolationPoses",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Simulate(
+        &mut self,
+        step: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Simulate",
+            (step),
         )?;
         Ok(__cordl_ret)
     }
@@ -343,85 +415,13 @@ impl crate::UnityEngine::PhysicsScene {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn BoxCast_ByRefMut_Quaternion_f32_i32_QueryTriggerInteraction0(
+    pub fn ToString(
         &mut self,
-        center: crate::UnityEngine::Vector3,
-        halfExtents: crate::UnityEngine::Vector3,
-        direction: crate::UnityEngine::Vector3,
-        hitInfo: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
-        orientation: crate::UnityEngine::Quaternion,
-        maxDistance: f32,
-        layerMask: i32,
-        queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "BoxCast",
-            (
-                center,
-                halfExtents,
-                direction,
-                hitInfo,
-                orientation,
-                maxDistance,
-                layerMask,
-                queryTriggerInteraction,
-            ),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn BoxCast_ByRefMut1(
-        &mut self,
-        center: crate::UnityEngine::Vector3,
-        halfExtents: crate::UnityEngine::Vector3,
-        direction: crate::UnityEngine::Vector3,
-        hitInfo: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "BoxCast",
-            (center, halfExtents, direction, hitInfo),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn BoxCast_Il2CppArray_Quaternion_f32_i32_QueryTriggerInteraction2(
-        &mut self,
-        center: crate::UnityEngine::Vector3,
-        halfExtents: crate::UnityEngine::Vector3,
-        direction: crate::UnityEngine::Vector3,
-        results: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
-        orientation: crate::UnityEngine::Quaternion,
-        maxDistance: f32,
-        layerMask: i32,
-        queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "BoxCast",
-            (
-                center,
-                halfExtents,
-                direction,
-                results,
-                orientation,
-                maxDistance,
-                layerMask,
-                queryTriggerInteraction,
-            ),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn BoxCast_Il2CppArray3(
-        &mut self,
-        center: crate::UnityEngine::Vector3,
-        halfExtents: crate::UnityEngine::Vector3,
-        direction: crate::UnityEngine::Vector3,
-        results: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "BoxCast",
-            (center, halfExtents, direction, results),
+            "ToString",
+            (),
         )?;
         Ok(__cordl_ret)
     }

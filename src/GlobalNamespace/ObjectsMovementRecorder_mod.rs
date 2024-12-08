@@ -52,6 +52,44 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ObjectsMovementRecorder_Init
 }
 #[cfg(feature = "ObjectsMovementRecorder+InitData")]
 impl crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
+    pub fn New(
+        mode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
+        recordingPath: *mut crate::System::String,
+        cameraView: crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
+        addDateTimeSuffixToRecordingName: bool,
+        screenshotRecording: bool,
+        screenshotWidth: i32,
+        screenshotHeight: i32,
+        framerate: i32,
+        playbackScreenshots: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+        >,
+        saveToOldFormat: bool,
+        logger: *mut IBeatSaberLogger,
+        posesSerializer: *mut IPosesSerializer,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    mode,
+                    recordingPath,
+                    cameraView,
+                    addDateTimeSuffixToRecordingName,
+                    screenshotRecording,
+                    screenshotWidth,
+                    screenshotHeight,
+                    framerate,
+                    playbackScreenshots,
+                    saveToOldFormat,
+                    logger,
+                    posesSerializer,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         mode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
@@ -91,44 +129,6 @@ impl crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        mode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
-        recordingPath: *mut crate::System::String,
-        cameraView: crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
-        addDateTimeSuffixToRecordingName: bool,
-        screenshotRecording: bool,
-        screenshotWidth: i32,
-        screenshotHeight: i32,
-        framerate: i32,
-        playbackScreenshots: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
-        >,
-        saveToOldFormat: bool,
-        logger: *mut IBeatSaberLogger,
-        posesSerializer: *mut IPosesSerializer,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    mode,
-                    recordingPath,
-                    cameraView,
-                    addDateTimeSuffixToRecordingName,
-                    screenshotRecording,
-                    screenshotWidth,
-                    screenshotHeight,
-                    framerate,
-                    playbackScreenshots,
-                    saveToOldFormat,
-                    logger,
-                    posesSerializer,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ObjectsMovementRecorder+InitData")]
@@ -198,12 +198,12 @@ impl std::ops::DerefMut for ObjectsMovementRecorder {
 }
 #[cfg(feature = "ObjectsMovementRecorder")]
 impl ObjectsMovementRecorder {
-    #[cfg(feature = "ObjectsMovementRecorder+CameraView")]
-    pub type CameraView = crate::GlobalNamespace::ObjectsMovementRecorder_CameraView;
     #[cfg(feature = "ObjectsMovementRecorder+InitData")]
     pub type InitData = crate::GlobalNamespace::ObjectsMovementRecorder_InitData;
     #[cfg(feature = "ObjectsMovementRecorder+Mode")]
     pub type Mode = crate::GlobalNamespace::ObjectsMovementRecorder_Mode;
+    #[cfg(feature = "ObjectsMovementRecorder+CameraView")]
+    pub type CameraView = crate::GlobalNamespace::ObjectsMovementRecorder_CameraView;
     pub fn HandleGameStateChanged(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -224,6 +224,13 @@ impl ObjectsMovementRecorder {
             .invoke("Init", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -243,13 +250,6 @@ impl ObjectsMovementRecorder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ObjectsMovementRecorder")]

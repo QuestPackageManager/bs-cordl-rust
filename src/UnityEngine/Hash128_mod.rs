@@ -21,14 +21,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Hash128 
 }
 #[cfg(feature = "UnityEngine+Hash128")]
 impl crate::UnityEngine::Hash128 {
-    pub fn get_isValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isValid",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn CompareTo_Hash128_0(
         &mut self,
         rhs: crate::UnityEngine::Hash128,
@@ -51,6 +43,28 @@ impl crate::UnityEngine::Hash128 {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn Equals_Hash128_1(
+        &mut self,
+        obj: crate::UnityEngine::Hash128,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object0(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -69,28 +83,6 @@ impl crate::UnityEngine::Hash128 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Hash128_1(
-        &mut self,
-        obj: crate::UnityEngine::Hash128,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         u64_0: u64,
@@ -100,6 +92,14 @@ impl crate::UnityEngine::Hash128 {
             self,
             ".ctor",
             (u64_0, u64_1),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_isValid",
+            (),
         )?;
         Ok(__cordl_ret)
     }

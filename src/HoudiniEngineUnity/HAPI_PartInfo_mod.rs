@@ -32,14 +32,6 @@ for crate::HoudiniEngineUnity::HAPI_PartInfo {
 }
 #[cfg(feature = "HoudiniEngineUnity+HAPI_PartInfo")]
 impl crate::HoudiniEngineUnity::HAPI_PartInfo {
-    pub fn get_pointAttributeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_pointAttributeCount",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn getElementCountByAttributeOwner(
         &mut self,
         owner: crate::HoudiniEngineUnity::HAPI_AttributeOwner,
@@ -62,36 +54,19 @@ impl crate::HoudiniEngineUnity::HAPI_PartInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_primitiveAttributeCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_detailAttributeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_primitiveAttributeCount",
-            (value),
+            "get_detailAttributeCount",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_pointAttributeCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_pointAttributeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_pointAttributeCount",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_vertexAttributeCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_vertexAttributeCount",
-            (value),
+            "get_pointAttributeCount",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -103,10 +78,20 @@ impl crate::HoudiniEngineUnity::HAPI_PartInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_detailAttributeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_vertexAttributeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_detailAttributeCount",
+            "get_vertexAttributeCount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn init(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "init",
             (),
         )?;
         Ok(__cordl_ret)
@@ -122,21 +107,36 @@ impl crate::HoudiniEngineUnity::HAPI_PartInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn init(
+    pub fn set_pointAttributeCount(
         &mut self,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "init",
-            (),
+            "set_pointAttributeCount",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_vertexAttributeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn set_primitiveAttributeCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_vertexAttributeCount",
-            (),
+            "set_primitiveAttributeCount",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_vertexAttributeCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_vertexAttributeCount",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

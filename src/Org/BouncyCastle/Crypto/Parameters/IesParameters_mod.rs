@@ -38,13 +38,6 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::IesParameters {
             .invoke("GetDerivationV", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_MacKeySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_MacKeySize", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetEncodingV(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
@@ -54,6 +47,17 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::IesParameters {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
             .invoke("GetEncodingV", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        derivation: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        encoding: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        macKeySize: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (derivation, encoding, macKeySize))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -68,16 +72,12 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::IesParameters {
             .invoke(".ctor", (derivation, encoding, macKeySize))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        derivation: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        encoding: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        macKeySize: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (derivation, encoding, macKeySize))?;
-        Ok(__cordl_object)
+    pub fn get_MacKeySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_MacKeySize", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+IesParameters")]

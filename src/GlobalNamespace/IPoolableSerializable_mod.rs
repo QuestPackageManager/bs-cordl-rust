@@ -23,16 +23,6 @@ impl std::ops::DerefMut for IPoolableSerializable {
 }
 #[cfg(feature = "IPoolableSerializable")]
 impl IPoolableSerializable {
-    pub fn Retain(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Retain", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -41,6 +31,16 @@ impl IPoolableSerializable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Release", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Retain(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Retain", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

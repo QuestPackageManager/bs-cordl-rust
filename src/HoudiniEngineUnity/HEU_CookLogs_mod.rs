@@ -30,14 +30,25 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_CookLogs {
 impl crate::HoudiniEngineUnity::HEU_CookLogs {
     pub const MAX_COOK_LOG_COUNT: i32 = 9001i32;
     pub const MaxLogSize: i64 = 50000000i64;
-    pub fn GetCookLogString(
+    pub fn AppendCookLog(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        logStr: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetCookLogString", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AppendCookLog", (logStr))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearCookLog(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearCookLog", ())?;
         Ok(__cordl_ret)
     }
     pub fn DeleteCookingFile(
@@ -50,13 +61,6 @@ impl crate::HoudiniEngineUnity::HEU_CookLogs {
             .invoke("DeleteCookingFile", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetFileSizeOfLogFile(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("GetFileSizeOfLogFile", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetCookLogFilePath(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -67,36 +71,29 @@ impl crate::HoudiniEngineUnity::HEU_CookLogs {
             .invoke("GetCookLogFilePath", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AppendCookLog(
+    pub fn GetCookLogString(
         &mut self,
-        logStr: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AppendCookLog", (logStr))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetCookLogString", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn GetFileSizeOfLogFile(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: i64 = __cordl_object.invoke("GetFileSizeOfLogFile", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ClearCookLog(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearCookLog", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn WriteToLogFile(
         &mut self,
@@ -110,12 +107,15 @@ impl crate::HoudiniEngineUnity::HEU_CookLogs {
             .invoke("WriteToLogFile", (logStr, checkLastLogStr))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_CookLogs")]

@@ -27,17 +27,6 @@ for crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IInputStateCallbackReceiver")]
 impl crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
-    pub fn OnStateEvent(
-        &mut self,
-        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStateEvent", (eventPtr))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetStateOffsetForEvent(
         &mut self,
         control: *mut crate::UnityEngine::InputSystem::InputControl,
@@ -59,6 +48,17 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnNextUpdate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnStateEvent(
+        &mut self,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnStateEvent", (eventPtr))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

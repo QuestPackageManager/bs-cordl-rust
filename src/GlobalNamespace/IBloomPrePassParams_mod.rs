@@ -23,6 +23,11 @@ impl std::ops::DerefMut for IBloomPrePassParams {
 }
 #[cfg(feature = "IBloomPrePassParams")]
 impl IBloomPrePassParams {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_fov(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
@@ -33,11 +38,11 @@ impl IBloomPrePassParams {
             .invoke("get_fov", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_textureWidth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_linesWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_textureWidth", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_linesWidth", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_textureEffect(
@@ -50,18 +55,18 @@ impl IBloomPrePassParams {
             .invoke("get_textureEffect", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_linesWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_linesWidth", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_textureHeight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_textureHeight", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_textureWidth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_textureWidth", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_toneMapping(&mut self) -> quest_hook::libil2cpp::Result<ToneMapping> {
@@ -70,11 +75,6 @@ impl IBloomPrePassParams {
         );
         let __cordl_ret: ToneMapping = __cordl_object.invoke("get_toneMapping", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IBloomPrePassParams")]

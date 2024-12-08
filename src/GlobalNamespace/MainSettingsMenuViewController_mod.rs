@@ -34,6 +34,55 @@ impl std::ops::DerefMut for MainSettingsMenuViewController {
 }
 #[cfg(feature = "MainSettingsMenuViewController")]
 impl MainSettingsMenuViewController {
+    pub fn DidActivate(
+        &mut self,
+        firstActivation: bool,
+        addedToHierarchy: bool,
+        screenSystemEnabling: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "DidActivate",
+                (firstActivation, addedToHierarchy, screenSystemEnabling),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleSettingsMenuSegmentedControlDidSelectCell(
+        &mut self,
+        segmentedControl: *mut crate::HMUI::SegmentedControl,
+        cellIdx: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleSettingsMenuSegmentedControlDidSelectCell",
+                (segmentedControl, cellIdx),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        selectedSubMenuInfoIdx: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (selectedSubMenuInfoIdx))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -42,6 +91,17 @@ impl MainSettingsMenuViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didSelectSettingsSubMenuEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut SettingsSubMenuInfo, i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didSelectSettingsSubMenuEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_numberOfSubMenus(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -61,44 +121,6 @@ impl MainSettingsMenuViewController {
             .invoke("get_selectedSubMenuInfo", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Init(
-        &mut self,
-        selectedSubMenuInfoIdx: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (selectedSubMenuInfoIdx))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DidActivate(
-        &mut self,
-        firstActivation: bool,
-        addedToHierarchy: bool,
-        screenSystemEnabling: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "DidActivate",
-                (firstActivation, addedToHierarchy, screenSystemEnabling),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didSelectSettingsSubMenuEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<*mut SettingsSubMenuInfo, i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didSelectSettingsSubMenuEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn remove_didSelectSettingsSubMenuEvent(
         &mut self,
         value: *mut crate::System::Action_2<*mut SettingsSubMenuInfo, i32>,
@@ -109,28 +131,6 @@ impl MainSettingsMenuViewController {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didSelectSettingsSubMenuEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn HandleSettingsMenuSegmentedControlDidSelectCell(
-        &mut self,
-        segmentedControl: *mut crate::HMUI::SegmentedControl,
-        cellIdx: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleSettingsMenuSegmentedControlDidSelectCell",
-                (segmentedControl, cellIdx),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MainSettingsMenuViewController")]

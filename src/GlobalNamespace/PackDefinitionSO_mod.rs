@@ -26,6 +26,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PackDefinitionSO_Credits {
 }
 #[cfg(feature = "PackDefinitionSO+Credits")]
 impl crate::GlobalNamespace::PackDefinitionSO_Credits {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -35,13 +42,6 @@ impl crate::GlobalNamespace::PackDefinitionSO_Credits {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PackDefinitionSO+Credits")]
@@ -85,6 +85,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PackDefinitionSO_Leaderboard
 }
 #[cfg(feature = "PackDefinitionSO+LeaderboardIds")]
 impl crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -93,27 +100,6 @@ impl crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_riftLeaderboardIds(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut LeaderboardIdsSO> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut LeaderboardIdsSO = __cordl_object
-            .invoke("get_riftLeaderboardIds", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_steamLeaderboardIds(
-        &mut self,
-        value: *mut LeaderboardIdsSO,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_steamLeaderboardIds", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_ps4LeaderboardIds(
@@ -126,25 +112,14 @@ impl crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
             .invoke("get_ps4LeaderboardIds", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_questLeaderboardIds(
+    pub fn get_ps5LeaderboardIds(
         &mut self,
-        value: *mut LeaderboardIdsSO,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut SonyLeaderboardIdsSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_questLeaderboardIds", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_steamLeaderboardIds(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut LeaderboardIdsSO> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut LeaderboardIdsSO = __cordl_object
-            .invoke("get_steamLeaderboardIds", ())?;
+        let __cordl_ret: *mut SonyLeaderboardIdsSO = __cordl_object
+            .invoke("get_ps5LeaderboardIds", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_questLeaderboardIds(
@@ -155,6 +130,26 @@ impl crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
         );
         let __cordl_ret: *mut LeaderboardIdsSO = __cordl_object
             .invoke("get_questLeaderboardIds", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_riftLeaderboardIds(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut LeaderboardIdsSO> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut LeaderboardIdsSO = __cordl_object
+            .invoke("get_riftLeaderboardIds", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_steamLeaderboardIds(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut LeaderboardIdsSO> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut LeaderboardIdsSO = __cordl_object
+            .invoke("get_steamLeaderboardIds", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_ps4LeaderboardIds(
@@ -168,27 +163,6 @@ impl crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
             .invoke("set_ps4LeaderboardIds", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_riftLeaderboardIds(
-        &mut self,
-        value: *mut LeaderboardIdsSO,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_riftLeaderboardIds", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ps5LeaderboardIds(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut SonyLeaderboardIdsSO> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut SonyLeaderboardIdsSO = __cordl_object
-            .invoke("get_ps5LeaderboardIds", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_ps5LeaderboardIds(
         &mut self,
         value: *mut SonyLeaderboardIdsSO,
@@ -200,12 +174,38 @@ impl crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
             .invoke("set_ps5LeaderboardIds", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_questLeaderboardIds(
+        &mut self,
+        value: *mut LeaderboardIdsSO,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_questLeaderboardIds", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_riftLeaderboardIds(
+        &mut self,
+        value: *mut LeaderboardIdsSO,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_riftLeaderboardIds", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_steamLeaderboardIds(
+        &mut self,
+        value: *mut LeaderboardIdsSO,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_steamLeaderboardIds", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PackDefinitionSO+LeaderboardIds")]
@@ -250,6 +250,33 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PackDefinitionSO_LevelProduc
 }
 #[cfg(feature = "PackDefinitionSO+LevelProductPacks")]
 impl crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_oculusLevelProductPacks(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut OculusLevelProductPacksSO> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut OculusLevelProductPacksSO = __cordl_object
+            .invoke("get_oculusLevelProductPacks", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_ps4LevelProductPacks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut PS4LevelProductPacksSO> {
@@ -258,16 +285,6 @@ impl crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks {
         );
         let __cordl_ret: *mut PS4LevelProductPacksSO = __cordl_object
             .invoke("get_ps4LevelProductPacks", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sonyLevelProductPackSource(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut SonyLevelProductPackSourceSO> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut SonyLevelProductPackSourceSO = __cordl_object
-            .invoke("get_sonyLevelProductPackSource", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ps5LevelProductPacks(
@@ -280,25 +297,14 @@ impl crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks {
             .invoke("get_ps5LevelProductPacks", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_sonyLevelProductPackSource(
+    pub fn get_sonyLevelProductPackSource(
         &mut self,
-        value: *mut SonyLevelProductPackSourceSO,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut SonyLevelProductPackSourceSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_sonyLevelProductPackSource", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut SonyLevelProductPackSourceSO = __cordl_object
+            .invoke("get_sonyLevelProductPackSource", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_steamLevelProductPacks(
@@ -309,28 +315,6 @@ impl crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks {
         );
         let __cordl_ret: *mut SteamLevelProductPacksSO = __cordl_object
             .invoke("get_steamLevelProductPacks", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ps5LevelProductPacks(
-        &mut self,
-        value: *mut PS5LevelProductPacksSO,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ps5LevelProductPacks", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_steamLevelProductPacks(
-        &mut self,
-        value: *mut SteamLevelProductPacksSO,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_steamLevelProductPacks", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_oculusLevelProductPacks(
@@ -355,22 +339,38 @@ impl crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks {
             .invoke("set_ps4LevelProductPacks", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_oculusLevelProductPacks(
+    pub fn set_ps5LevelProductPacks(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut OculusLevelProductPacksSO> {
+        value: *mut PS5LevelProductPacksSO,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut OculusLevelProductPacksSO = __cordl_object
-            .invoke("get_oculusLevelProductPacks", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ps5LevelProductPacks", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_sonyLevelProductPackSource(
+        &mut self,
+        value: *mut SonyLevelProductPackSourceSO,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_sonyLevelProductPackSource", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_steamLevelProductPacks(
+        &mut self,
+        value: *mut SteamLevelProductPacksSO,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_steamLevelProductPacks", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PackDefinitionSO+LevelProductPacks")]
@@ -418,14 +418,67 @@ impl std::ops::DerefMut for PackDefinitionSO {
 }
 #[cfg(feature = "PackDefinitionSO")]
 impl PackDefinitionSO {
-    #[cfg(feature = "PackDefinitionSO+LeaderboardIds")]
-    pub type LeaderboardIds = crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds;
+    #[cfg(feature = "PackDefinitionSO+Tags")]
+    pub type Tags = crate::GlobalNamespace::PackDefinitionSO_Tags;
     #[cfg(feature = "PackDefinitionSO+LevelProductPacks")]
     pub type LevelProductPacks = crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks;
     #[cfg(feature = "PackDefinitionSO+Credits")]
     pub type Credits = crate::GlobalNamespace::PackDefinitionSO_Credits;
-    #[cfg(feature = "PackDefinitionSO+Tags")]
-    pub type Tags = crate::GlobalNamespace::PackDefinitionSO_Tags;
+    #[cfg(feature = "PackDefinitionSO+LeaderboardIds")]
+    pub type LeaderboardIds = crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_content(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelPackSO> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut BeatmapLevelPackSO = __cordl_object
+            .invoke("get_content", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_credits(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PackDefinitionSO_Credits,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::GlobalNamespace::PackDefinitionSO_Credits = __cordl_object
+            .invoke("get_credits", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hasCredits(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_hasCredits", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isBuiltIn(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isBuiltIn", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_isBuiltInContent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -433,14 +486,73 @@ impl PackDefinitionSO {
         let __cordl_ret: bool = __cordl_object.invoke("get_isBuiltInContent", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_perceivedLoudness(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PerceivedLoudnessSO> {
+    pub fn get_isDLC(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PerceivedLoudnessSO = __cordl_object
-            .invoke("get_perceivedLoudness", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isDLC", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isEntitlementCheckSkipped(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_isEntitlementCheckSkipped", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isHidden(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isHidden", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isInDevelopment(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isInDevelopment", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isOST(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isOST", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_leaderboardIds(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds = __cordl_object
+            .invoke("get_leaderboardIds", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_levelProductPacks(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks = __cordl_object
+            .invoke("get_levelProductPacks", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_order(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_order", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_packPromoInfoReference(
@@ -458,11 +570,24 @@ impl PackDefinitionSO {
         > = __cordl_object.invoke("get_packPromoInfoReference", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_isBuiltIn(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_perceivedLoudness(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut PerceivedLoudnessSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isBuiltIn", ())?;
+        let __cordl_ret: *mut PerceivedLoudnessSO = __cordl_object
+            .invoke("get_perceivedLoudness", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_tags(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PackDefinitionSO_Tags> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::PackDefinitionSO_Tags = __cordl_object
+            .invoke("get_tags", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_content(
@@ -476,49 +601,15 @@ impl PackDefinitionSO {
             .invoke("set_content", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_levelProductPacks(
+    pub fn set_levelProductPacks(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks = __cordl_object
-            .invoke("get_levelProductPacks", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_perceivedLoudness(
-        &mut self,
-        value: *mut PerceivedLoudnessSO,
+        value: *mut crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_perceivedLoudness", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_credits(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PackDefinitionSO_Credits,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::GlobalNamespace::PackDefinitionSO_Credits = __cordl_object
-            .invoke("get_credits", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_tags(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PackDefinitionSO_Tags> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::PackDefinitionSO_Tags = __cordl_object
-            .invoke("get_tags", ())?;
+            .invoke("set_levelProductPacks", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_order(
@@ -532,6 +623,17 @@ impl PackDefinitionSO {
             .invoke("set_order", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn set_perceivedLoudness(
+        &mut self,
+        value: *mut PerceivedLoudnessSO,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_perceivedLoudness", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_tags(
         &mut self,
         value: crate::GlobalNamespace::PackDefinitionSO_Tags,
@@ -542,108 +644,6 @@ impl PackDefinitionSO {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_tags", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_hasCredits(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hasCredits", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isEntitlementCheckSkipped(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_isEntitlementCheckSkipped", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isOST(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isOST", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_levelProductPacks(
-        &mut self,
-        value: *mut crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_levelProductPacks", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_content(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelPackSO> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut BeatmapLevelPackSO = __cordl_object
-            .invoke("get_content", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isHidden(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isHidden", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_leaderboardIds(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds = __cordl_object
-            .invoke("get_leaderboardIds", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_order(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_order", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isInDevelopment(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isInDevelopment", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isDLC(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isDLC", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PackDefinitionSO")]

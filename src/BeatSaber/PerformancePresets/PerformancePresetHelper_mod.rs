@@ -38,20 +38,27 @@ impl crate::BeatSaber::PerformancePresets::PerformancePresetHelper {
     pub const kQuestHWDeviceCategoryName: &'static str = "Monterey";
     pub const kQuestProHWDeviceCategoryName: &'static str = "Arcata";
     pub const kStandaloneHWDeviceCategoryName: &'static str = "Standalone";
+    #[cfg(feature = "BeatSaber+PerformancePresets+PerformancePresetHelper+__c")]
+    pub type __c = crate::BeatSaber::PerformancePresets::PerformancePresetHelper___c;
     #[cfg(
         feature = "BeatSaber+PerformancePresets+PerformancePresetHelper+_IsPerformancePresetAvailableAsync_d__12"
     )]
     pub type _IsPerformancePresetAvailableAsync_d__12 = crate::BeatSaber::PerformancePresets::PerformancePresetHelper__IsPerformancePresetAvailableAsync_d__12;
-    #[cfg(feature = "BeatSaber+PerformancePresets+PerformancePresetHelper+__c")]
-    pub type __c = crate::BeatSaber::PerformancePresets::PerformancePresetHelper___c;
-    #[cfg(
-        feature = "BeatSaber+PerformancePresets+PerformancePresetHelper+_GetDefaultPerformancePresetAsync_d__14"
-    )]
-    pub type _GetDefaultPerformancePresetAsync_d__14 = crate::BeatSaber::PerformancePresets::PerformancePresetHelper__GetDefaultPerformancePresetAsync_d__14;
     #[cfg(
         feature = "BeatSaber+PerformancePresets+PerformancePresetHelper+_GetPerformancePresetAsync_d__13"
     )]
     pub type _GetPerformancePresetAsync_d__13 = crate::BeatSaber::PerformancePresets::PerformancePresetHelper__GetPerformancePresetAsync_d__13;
+    #[cfg(
+        feature = "BeatSaber+PerformancePresets+PerformancePresetHelper+_GetDefaultPerformancePresetAsync_d__14"
+    )]
+    pub type _GetDefaultPerformancePresetAsync_d__14 = crate::BeatSaber::PerformancePresets::PerformancePresetHelper__GetDefaultPerformancePresetAsync_d__14;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -61,13 +68,6 @@ impl crate::BeatSaber::PerformancePresets::PerformancePresetHelper {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatSaber+PerformancePresets+PerformancePresetHelper")]

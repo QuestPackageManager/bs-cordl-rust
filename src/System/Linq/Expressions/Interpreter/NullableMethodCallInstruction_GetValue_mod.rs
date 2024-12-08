@@ -36,6 +36,13 @@ for crate::GlobalNamespace::NullableMethodCallInstruction_GetValue {
     feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValue"
 )]
 impl crate::GlobalNamespace::NullableMethodCallInstruction_GetValue {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn Run(
         &mut self,
         frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
@@ -55,13 +62,6 @@ impl crate::GlobalNamespace::NullableMethodCallInstruction_GetValue {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

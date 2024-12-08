@@ -47,93 +47,26 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataE
     feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogDataEntry"
 )]
 impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry {
-    pub fn get_Keys(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut crate::System::Object>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+    pub fn New(
+        _cordl_type: *mut crate::System::Type,
+        internalId: *mut crate::System::String,
+        provider: *mut crate::System::String,
+        keys: *mut crate::System::Collections::Generic::IEnumerable_1<
             *mut crate::System::Object,
-        > = __cordl_object.invoke("get_Keys", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Provider(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Provider", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Data(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_Data", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_InternalId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_InternalId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ResourceType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_ResourceType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Dependencies(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut crate::System::Object>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+        >,
+        dependencies: *mut crate::System::Collections::Generic::IEnumerable_1<
             *mut crate::System::Object,
-        > = __cordl_object.invoke("get_Dependencies", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ResourceType(
-        &mut self,
-        value: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ResourceType", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_InternalId(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_InternalId", (value))?;
-        Ok(__cordl_ret)
+        >,
+        extraData: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (_cordl_type, internalId, provider, keys, dependencies, extraData),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -158,15 +91,70 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
             )?;
         Ok(__cordl_ret)
     }
-    pub fn set_Provider(
+    pub fn get_Data(
         &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Provider", (value))?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_Data", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Dependencies(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<*mut crate::System::Object>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::System::Object,
+        > = __cordl_object.invoke("get_Dependencies", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_InternalId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_InternalId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Keys(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<*mut crate::System::Object>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::System::Object,
+        > = __cordl_object.invoke("get_Keys", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Provider(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Provider", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ResourceType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_ResourceType", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Data(
@@ -178,19 +166,6 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Data", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Keys(
-        &mut self,
-        value: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Object,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Keys", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_Dependencies(
@@ -206,26 +181,51 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
             .invoke("set_Dependencies", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        _cordl_type: *mut crate::System::Type,
-        internalId: *mut crate::System::String,
-        provider: *mut crate::System::String,
-        keys: *mut crate::System::Collections::Generic::IEnumerable_1<
+    pub fn set_InternalId(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_InternalId", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Keys(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::List_1<
             *mut crate::System::Object,
         >,
-        dependencies: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
-        >,
-        extraData: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (_cordl_type, internalId, provider, keys, dependencies, extraData),
-            )?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Keys", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Provider(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Provider", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ResourceType(
+        &mut self,
+        value: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ResourceType", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(

@@ -23,17 +23,6 @@ impl std::ops::DerefMut for ISaberMovementData {
 }
 #[cfg(feature = "ISaberMovementData")]
 impl ISaberMovementData {
-    pub fn RemoveDataProcessor(
-        &mut self,
-        dataProcessor: *mut ISaberMovementDataProcessor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveDataProcessor", (dataProcessor))?;
-        Ok(__cordl_ret)
-    }
     pub fn AddDataProcessor(
         &mut self,
         dataProcessor: *mut ISaberMovementDataProcessor,
@@ -45,15 +34,11 @@ impl ISaberMovementData {
             .invoke("AddDataProcessor", (dataProcessor))?;
         Ok(__cordl_ret)
     }
-    pub fn RequestLastDataProcessing(
-        &mut self,
-        dataProcessor: *mut ISaberMovementDataProcessor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn ComputeSwingRating_1(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RequestLastDataProcessing", (dataProcessor))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("ComputeSwingRating", ())?;
         Ok(__cordl_ret)
     }
     pub fn ComputeSwingRating_f32_0(
@@ -67,12 +52,32 @@ impl ISaberMovementData {
             .invoke("ComputeSwingRating", (overrideSegmentAngle))?;
         Ok(__cordl_ret)
     }
-    pub fn ComputeSwingRating_1(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn RemoveDataProcessor(
+        &mut self,
+        dataProcessor: *mut ISaberMovementDataProcessor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("ComputeSwingRating", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveDataProcessor", (dataProcessor))?;
         Ok(__cordl_ret)
+    }
+    pub fn RequestLastDataProcessing(
+        &mut self,
+        dataProcessor: *mut ISaberMovementDataProcessor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RequestLastDataProcessing", (dataProcessor))?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
     }
     pub fn get_lastAddedData(
         &mut self,
@@ -83,11 +88,6 @@ impl ISaberMovementData {
         let __cordl_ret: BladeMovementDataElement = __cordl_object
             .invoke("get_lastAddedData", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "ISaberMovementData")]

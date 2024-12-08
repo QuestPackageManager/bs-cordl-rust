@@ -28,8 +28,6 @@ for crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ElementSelection")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
     pub const k_MaxHoleIterations: i32 = 2048i32;
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ElementSelection+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection___c;
     #[cfg(
         feature = "UnityEngine+ProBuilder+MeshOperations+ElementSelection+__c__DisplayClass25_0"
     )]
@@ -38,6 +36,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
         feature = "UnityEngine+ProBuilder+MeshOperations+ElementSelection+__c__DisplayClass27_0"
     )]
     pub type __c__DisplayClass27_0 = crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection___c__DisplayClass27_0;
+    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ElementSelection+__c")]
+    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection___c;
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ElementSelection")]
 impl quest_hook::libil2cpp::ObjectType

@@ -31,11 +31,188 @@ for crate::UnityEngine::ModifiableContactPair {
 }
 #[cfg(feature = "UnityEngine+ModifiableContactPair")]
 impl crate::UnityEngine::ModifiableContactPair {
-    pub fn get_contactCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetBounciness(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_contactCount",
+            "GetBounciness",
+            (i),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetContact(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetContact",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetContactPatch(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetContactPatch",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDynamicFriction(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetDynamicFriction",
+            (i),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetFaceIndex(&mut self, i: i32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetFaceIndex",
+            (i),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetMaxImpulse(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetMaxImpulse",
+            (i),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNormal(
+        &mut self,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetNormal",
+            (i),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPoint(
+        &mut self,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetPoint",
+            (i),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSeparation(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetSeparation",
+            (i),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetStaticFriction(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetStaticFriction",
+            (i),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetTargetVelocity(
+        &mut self,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetTargetVelocity",
+            (i),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IgnoreContact(
+        &mut self,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IgnoreContact",
+            (i),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetBounciness(
+        &mut self,
+        i: i32,
+        bounciness: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetBounciness",
+            (i, bounciness),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetDynamicFriction(
+        &mut self,
+        i: i32,
+        dynamicFriction: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetDynamicFriction",
+            (i, dynamicFriction),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetMaxImpulse(
+        &mut self,
+        i: i32,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetMaxImpulse",
+            (i, value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetNormal(
+        &mut self,
+        i: i32,
+        normal: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetNormal",
+            (i, normal),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetPoint(
+        &mut self,
+        i: i32,
+        v: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetPoint",
+            (i, v),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetSeparation(
+        &mut self,
+        i: i32,
+        separation: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetSeparation",
+            (i, separation),
         )?;
         Ok(__cordl_ret)
     }
@@ -73,73 +250,10 @@ impl crate::UnityEngine::ModifiableContactPair {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_otherBodyInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_otherBodyInstanceID",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_otherColliderInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_otherColliderInstanceID",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTargetVelocity(
-        &mut self,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetTargetVelocity",
-            (i),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDynamicFriction(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetDynamicFriction",
-            (i),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetBounciness(
-        &mut self,
-        i: i32,
-        bounciness: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetBounciness",
-            (i, bounciness),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_bodyInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_bodyInstanceID",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetBounciness(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetBounciness",
-            (i),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_colliderInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_colliderInstanceID",
             (),
         )?;
         Ok(__cordl_ret)
@@ -154,113 +268,18 @@ impl crate::UnityEngine::ModifiableContactPair {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn IgnoreContact(
-        &mut self,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_colliderInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "IgnoreContact",
-            (i),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPoint(
-        &mut self,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetPoint",
-            (i),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetSeparation(
-        &mut self,
-        i: i32,
-        separation: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetSeparation",
-            (i, separation),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetStaticFriction(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetStaticFriction",
-            (i),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetDynamicFriction(
-        &mut self,
-        i: i32,
-        dynamicFriction: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetDynamicFriction",
-            (i, dynamicFriction),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetContactPatch(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetContactPatch",
+            "get_colliderInstanceID",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetSeparation(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_contactCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetSeparation",
-            (i),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetFaceIndex(&mut self, i: i32) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetFaceIndex",
-            (i),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_otherBodyVelocity(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_otherBodyVelocity",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_massProperties(
-        &mut self,
-        value: crate::UnityEngine::ModifiableMassProperties,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_massProperties",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_otherBodyAngularVelocity(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_otherBodyAngularVelocity",
+            "get_contactCount",
             (),
         )?;
         Ok(__cordl_ret)
@@ -275,69 +294,50 @@ impl crate::UnityEngine::ModifiableContactPair {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetNormal(
+    pub fn get_otherBodyAngularVelocity(
         &mut self,
-        i: i32,
-        normal: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetNormal",
-            (i, normal),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetMaxImpulse(
-        &mut self,
-        i: i32,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetMaxImpulse",
-            (i, value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNormal(
-        &mut self,
-        i: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetNormal",
-            (i),
+            "get_otherBodyAngularVelocity",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetContact(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_otherBodyInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetContact",
-            (index),
+            "get_otherBodyInstanceID",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetMaxImpulse(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetMaxImpulse",
-            (i),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetPoint(
+    pub fn get_otherBodyVelocity(
         &mut self,
-        i: i32,
-        v: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_otherBodyVelocity",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_otherColliderInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_otherColliderInstanceID",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_massProperties(
+        &mut self,
+        value: crate::UnityEngine::ModifiableMassProperties,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetPoint",
-            (i, v),
+            "set_massProperties",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

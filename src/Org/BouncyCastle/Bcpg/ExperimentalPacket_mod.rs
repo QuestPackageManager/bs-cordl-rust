@@ -26,28 +26,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::ExperimentalPacket {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+ExperimentalPacket")]
 impl crate::Org::BouncyCastle::Bcpg::ExperimentalPacket {
-    pub fn get_Tag(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Org::BouncyCastle::Bcpg::PacketTag> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::PacketTag = __cordl_object
-            .invoke("get_Tag", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        tag: crate::Org::BouncyCastle::Bcpg::PacketTag,
-        bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (tag, bcpgIn))?;
-        Ok(__cordl_ret)
-    }
     pub fn Encode(
         &mut self,
         bcpgOut: *mut crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
@@ -72,12 +50,34 @@ impl crate::Org::BouncyCastle::Bcpg::ExperimentalPacket {
     pub fn New(
         tag: crate::Org::BouncyCastle::Bcpg::PacketTag,
         bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (tag, bcpgIn))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        tag: crate::Org::BouncyCastle::Bcpg::PacketTag,
+        bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (tag, bcpgIn))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Tag(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Org::BouncyCastle::Bcpg::PacketTag> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::PacketTag = __cordl_object
+            .invoke("get_Tag", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+ExperimentalPacket")]

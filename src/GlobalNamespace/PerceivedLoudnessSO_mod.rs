@@ -30,26 +30,14 @@ for crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
 }
 #[cfg(feature = "PerceivedLoudnessSO+PerceivedLevelLoudnessPair")]
 impl crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
-    pub fn get_levelId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_levelId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         levelId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (levelId))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (levelId))?;
+        Ok(__cordl_object)
     }
     pub fn SetLoudness(
         &mut self,
@@ -63,11 +51,15 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
             .invoke("SetLoudness", (newPerceivedLoudness, newChecksum))?;
         Ok(__cordl_ret)
     }
-    pub fn get_perceivedLoudness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn _ctor(
+        &mut self,
+        levelId: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_perceivedLoudness", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (levelId))?;
         Ok(__cordl_ret)
     }
     pub fn get_checksum(
@@ -80,14 +72,22 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
             .invoke("get_checksum", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        levelId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (levelId))?;
-        Ok(__cordl_object)
+    pub fn get_levelId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_levelId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_perceivedLoudness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_perceivedLoudness", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PerceivedLoudnessSO+PerceivedLevelLoudnessPair")]
@@ -128,10 +128,41 @@ impl std::ops::DerefMut for PerceivedLoudnessSO {
 }
 #[cfg(feature = "PerceivedLoudnessSO")]
 impl PerceivedLoudnessSO {
-    #[cfg(feature = "PerceivedLoudnessSO+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::GlobalNamespace::PerceivedLoudnessSO___c__DisplayClass6_0;
     #[cfg(feature = "PerceivedLoudnessSO+PerceivedLevelLoudnessPair")]
     pub type PerceivedLevelLoudnessPair = crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair;
+    #[cfg(feature = "PerceivedLoudnessSO+__c__DisplayClass6_0")]
+    pub type __c__DisplayClass6_0 = crate::GlobalNamespace::PerceivedLoudnessSO___c__DisplayClass6_0;
+    pub fn GetLoudnessData(
+        &mut self,
+        levelId: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<f32>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Nullable_1<f32> = __cordl_object
+            .invoke("GetLoudnessData", (levelId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetLoudnessData(
+        &mut self,
+        loudnessPairs: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetLoudnessData", (loudnessPairs))?;
+        Ok(__cordl_ret)
+    }
     pub fn ToDictionary(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -173,37 +204,6 @@ impl PerceivedLoudnessSO {
             *mut crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
         > = __cordl_object.invoke("get_perceivedLoudnessPairs", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetLoudnessData(
-        &mut self,
-        levelId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<f32>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Nullable_1<f32> = __cordl_object
-            .invoke("GetLoudnessData", (levelId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetLoudnessData(
-        &mut self,
-        loudnessPairs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLoudnessData", (loudnessPairs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PerceivedLoudnessSO")]

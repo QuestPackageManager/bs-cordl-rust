@@ -31,56 +31,6 @@ impl OVRBounded2D {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn IOVRAnchorComponent_OVRBounded2D__FromAnchor(
-        &mut self,
-        anchor: OVRAnchor,
-    ) -> quest_hook::libil2cpp::Result<OVRBounded2D> {
-        let __cordl_ret: OVRBounded2D = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IOVRAnchorComponent<OVRBounded2D>.FromAnchor",
-            (anchor),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IOVRAnchorComponent_OVRBounded2D__get_Type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-    > {
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IOVRAnchorComponent<OVRBounded2D>.get_Type",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsEnabled",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetBoundaryPoints(
-        &mut self,
-        positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector2>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "TryGetBoundaryPoints",
-            (positions),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_OVRBounded2D0(
         &mut self,
         other: OVRBounded2D,
@@ -103,6 +53,25 @@ impl OVRBounded2D {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IOVRAnchorComponent_OVRBounded2D__FromAnchor(
+        &mut self,
+        anchor: OVRAnchor,
+    ) -> quest_hook::libil2cpp::Result<OVRBounded2D> {
+        let __cordl_ret: OVRBounded2D = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IOVRAnchorComponent<OVRBounded2D>.FromAnchor",
+            (anchor),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn IOVRAnchorComponent_OVRBounded2D__SetEnabledAsync(
         &mut self,
         enabled: bool,
@@ -115,42 +84,24 @@ impl OVRBounded2D {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-    > {
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Type",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsNull",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_BoundingBox(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
-        let __cordl_ret: crate::UnityEngine::Rect = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_BoundingBox",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn IOVRAnchorComponent_OVRBounded2D__get_Handle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "IOVRAnchorComponent<OVRBounded2D>.get_Handle",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IOVRAnchorComponent_OVRBounded2D__get_Type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IOVRAnchorComponent<OVRBounded2D>.get_Type",
             (),
         )?;
         Ok(__cordl_ret)
@@ -165,11 +116,14 @@ impl OVRBounded2D {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn TryGetBoundaryPoints(
+        &mut self,
+        positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector2>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Handle",
-            (),
+            "TryGetBoundaryPoints",
+            (positions),
         )?;
         Ok(__cordl_ret)
     }
@@ -192,6 +146,52 @@ impl OVRBounded2D {
             self,
             ".ctor",
             (anchor),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_BoundingBox(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_ret: crate::UnityEngine::Rect = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_BoundingBox",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Handle",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsEnabled",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsNull",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Type",
+            (),
         )?;
         Ok(__cordl_ret)
     }

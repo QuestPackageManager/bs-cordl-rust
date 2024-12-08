@@ -42,7 +42,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::KeyExchangeAlgorithm {
     pub const ECDH_ECDSA: i32 = 16i32;
     pub const ECDH_RSA: i32 = 18i32;
     pub const ECDH_anon: i32 = 20i32;
-    pub const _cordl_NULL: i32 = 0i32;
     pub const PSK: i32 = 13i32;
     pub const RSA: i32 = 1i32;
     pub const RSA_EXPORT: i32 = 2i32;
@@ -50,6 +49,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::KeyExchangeAlgorithm {
     pub const SRP: i32 = 21i32;
     pub const SRP_DSS: i32 = 22i32;
     pub const SRP_RSA: i32 = 23i32;
+    pub const _cordl_NULL: i32 = 0i32;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -59,13 +66,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::KeyExchangeAlgorithm {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+KeyExchangeAlgorithm")]

@@ -78,12 +78,19 @@ impl OVRNetwork {
     pub const FrameHeaderMagicIdentifier: u32 = 2208787440u32;
     pub const MaxBufferLength: i32 = 65536i32;
     pub const MaxPayloadLength: i32 = 65524i32;
-    #[cfg(feature = "OVRNetwork+OVRNetworkTcpClient")]
-    pub type OVRNetworkTcpClient = crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient;
     #[cfg(feature = "OVRNetwork+OVRNetworkTcpServer")]
     pub type OVRNetworkTcpServer = crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer;
+    #[cfg(feature = "OVRNetwork+OVRNetworkTcpClient")]
+    pub type OVRNetworkTcpClient = crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient;
     #[cfg(feature = "OVRNetwork+FrameHeader")]
     pub type FrameHeader = crate::GlobalNamespace::OVRNetwork_FrameHeader;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -93,13 +100,6 @@ impl OVRNetwork {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRNetwork")]
@@ -164,12 +164,33 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
             .invoke("Connect", (listeningPort))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Connected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn ConnectCallback(
+        &mut self,
+        ar: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Connected", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConnectCallback", (ar))?;
         Ok(__cordl_ret)
+    }
+    pub fn Disconnect(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Disconnect", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnReadDataCallback(
         &mut self,
@@ -192,17 +213,6 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
             .invoke("Tick", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ConnectCallback(
-        &mut self,
-        ar: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConnectCallback", (ar))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -213,14 +223,11 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Disconnect(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_Connected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Disconnect", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_Connected", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_connectionState(
@@ -234,13 +241,6 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
         let __cordl_ret: crate::GlobalNamespace::OVRNetworkTcpClient_ConnectionState = __cordl_object
             .invoke("get_connectionState", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRNetwork+OVRNetworkTcpClient")]
@@ -284,15 +284,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServ
 }
 #[cfg(feature = "OVRNetwork+OVRNetworkTcpServer")]
 impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
-    pub fn StartListening(
+    pub fn Broadcast(
         &mut self,
-        listeningPort: i32,
+        payloadType: i32,
+        payload: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartListening", (listeningPort))?;
+            .invoke("Broadcast", (payloadType, payload))?;
         Ok(__cordl_ret)
     }
     pub fn DoAcceptTcpClientCallback(
@@ -317,6 +318,31 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
             .invoke("DoWriteDataCallback", (ar))?;
         Ok(__cordl_ret)
     }
+    pub fn HasConnectedClient(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("HasConnectedClient", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn StartListening(
+        &mut self,
+        listeningPort: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartListening", (listeningPort))?;
+        Ok(__cordl_ret)
+    }
     pub fn StopListening(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -336,32 +362,6 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn HasConnectedClient(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasConnectedClient", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Broadcast(
-        &mut self,
-        payloadType: i32,
-        payload: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Broadcast", (payloadType, payload))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRNetwork+OVRNetworkTcpServer")]

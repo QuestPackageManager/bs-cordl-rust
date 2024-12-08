@@ -31,44 +31,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ScheduledItem {
 impl crate::UnityEngine::UIElements::ScheduledItem {
     #[cfg(feature = "UnityEngine+UIElements+ScheduledItem+__c")]
     pub type __c = crate::UnityEngine::UIElements::ScheduledItem___c;
-    pub fn set_startMs(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_startMs", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ShouldUnschedule(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ShouldUnschedule", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_delayMs(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_delayMs", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnItemUnscheduled(
         &mut self,
@@ -80,18 +48,15 @@ impl crate::UnityEngine::UIElements::ScheduledItem {
             .invoke("OnItemUnscheduled", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_startMs(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+    pub fn PerformTimerUpdate(
+        &mut self,
+        state: crate::UnityEngine::UIElements::TimerState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_startMs", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_intervalMs(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_intervalMs", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PerformTimerUpdate", (state))?;
         Ok(__cordl_ret)
     }
     pub fn ResetStartTime(
@@ -102,6 +67,23 @@ impl crate::UnityEngine::UIElements::ScheduledItem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResetStartTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ShouldUnschedule(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ShouldUnschedule", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_delayMs(&mut self) -> quest_hook::libil2cpp::Result<i64> {
@@ -118,15 +100,29 @@ impl crate::UnityEngine::UIElements::ScheduledItem {
         let __cordl_ret: i64 = __cordl_object.invoke("get_endTimeMs", ())?;
         Ok(__cordl_ret)
     }
-    pub fn PerformTimerUpdate(
+    pub fn get_intervalMs(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_intervalMs", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_startMs(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_startMs", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_delayMs(
         &mut self,
-        state: crate::UnityEngine::UIElements::TimerState,
+        value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PerformTimerUpdate", (state))?;
+            .invoke("set_delayMs", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_intervalMs(
@@ -140,12 +136,16 @@ impl crate::UnityEngine::UIElements::ScheduledItem {
             .invoke("set_intervalMs", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_startMs(
+        &mut self,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_startMs", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ScheduledItem")]

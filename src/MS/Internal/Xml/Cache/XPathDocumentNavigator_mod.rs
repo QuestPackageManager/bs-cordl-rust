@@ -32,58 +32,14 @@ impl std::ops::DerefMut for crate::MS::Internal::Xml::Cache::XPathDocumentNaviga
 }
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathDocumentNavigator")]
 impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
-    pub fn get_LinePosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_LinePosition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Prefix(
+    pub fn Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XPath::XPathNavigator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Prefix", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Value(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Value", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveToNextNamespace(
-        &mut self,
-        scope: crate::System::Xml::XPath::XPathNamespaceScope,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveToNextNamespace", (scope))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_NodeType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XPath::XPathNodeType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::XPath::XPathNodeType = __cordl_object
-            .invoke("get_NodeType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HasLineInfo(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasLineInfo", ())?;
+        let __cordl_ret: *mut crate::System::Xml::XPath::XPathNavigator = __cordl_object
+            .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetPositionHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -93,21 +49,21 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         let __cordl_ret: i32 = __cordl_object.invoke("GetPositionHashCode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn MoveToParent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn HasLineInfo(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveToParent", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("HasLineInfo", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_NamespaceURI(
+    pub fn IsSamePosition(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        other: *mut crate::System::Xml::XPath::XPathNavigator,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_NamespaceURI", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("IsSamePosition", (other))?;
         Ok(__cordl_ret)
     }
     pub fn MoveToFirstNamespace(
@@ -121,22 +77,38 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
             .invoke("MoveToFirstNamespace", (namespaceScope))?;
         Ok(__cordl_ret)
     }
-    pub fn get_LineNumber(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn MoveToNextNamespace(
+        &mut self,
+        scope: crate::System::Xml::XPath::XPathNamespaceScope,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_LineNumber", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("MoveToNextNamespace", (scope))?;
         Ok(__cordl_ret)
     }
-    pub fn get_NameTable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNameTable> {
+    pub fn MoveToParent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::XmlNameTable = __cordl_object
-            .invoke("get_NameTable", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("MoveToParent", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        pageCurrent: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::MS::Internal::Xml::Cache::XPathNode,
+        >,
+        idxCurrent: i32,
+        pageParent: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::MS::Internal::Xml::Cache::XPathNode,
+        >,
+        idxParent: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (pageCurrent, idxCurrent, pageParent, idxParent))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -156,34 +128,18 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
             .invoke(".ctor", (pageCurrent, idxCurrent, pageParent, idxParent))?;
         Ok(__cordl_ret)
     }
-    pub fn IsSamePosition(
-        &mut self,
-        other: *mut crate::System::Xml::XPath::XPathNavigator,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_LineNumber(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("IsSamePosition", (other))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_LineNumber", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_UnderlyingObject(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    pub fn get_LinePosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_UnderlyingObject", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clone(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XPath::XPathNavigator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::XPath::XPathNavigator = __cordl_object
-            .invoke("Clone", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_LinePosition", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_LocalName(
@@ -196,21 +152,65 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
             .invoke("get_LocalName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        pageCurrent: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::MS::Internal::Xml::Cache::XPathNode,
-        >,
-        idxCurrent: i32,
-        pageParent: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::MS::Internal::Xml::Cache::XPathNode,
-        >,
-        idxParent: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (pageCurrent, idxCurrent, pageParent, idxParent))?;
-        Ok(__cordl_object)
+    pub fn get_NameTable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNameTable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::XmlNameTable = __cordl_object
+            .invoke("get_NameTable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NamespaceURI(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_NamespaceURI", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NodeType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XPath::XPathNodeType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::XPath::XPathNodeType = __cordl_object
+            .invoke("get_NodeType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Prefix(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Prefix", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_UnderlyingObject(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_UnderlyingObject", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Value", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathDocumentNavigator")]

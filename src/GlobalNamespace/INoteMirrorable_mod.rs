@@ -23,6 +23,18 @@ impl std::ops::DerefMut for INoteMirrorable {
 }
 #[cfg(feature = "INoteMirrorable")]
 impl INoteMirrorable {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_noteData(&mut self) -> quest_hook::libil2cpp::Result<*mut NoteData> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut NoteData = __cordl_object.invoke("get_noteData", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_noteDidStartDissolvingEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -45,18 +57,6 @@ impl INoteMirrorable {
         let __cordl_ret: *mut crate::UnityEngine::Transform = __cordl_object
             .invoke("get_noteTransform", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_noteData(&mut self) -> quest_hook::libil2cpp::Result<*mut NoteData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut NoteData = __cordl_object.invoke("get_noteData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "INoteMirrorable")]

@@ -29,6 +29,20 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::ServerIdentity {
 }
 #[cfg(feature = "System+Runtime+Remoting+ServerIdentity")]
 impl crate::System::Runtime::Remoting::ServerIdentity {
+    pub fn AsyncObjectProcessMessage(
+        &mut self,
+        msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
+        replySink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::IMessageCtrl = __cordl_object
+            .invoke("AsyncObjectProcessMessage", (msg, replySink))?;
+        Ok(__cordl_ret)
+    }
     pub fn AttachServerObject(
         &mut self,
         serverObject: *mut crate::System::MarshalByRefObject,
@@ -41,27 +55,57 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
             .invoke("AttachServerObject", (serverObject, context))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Context(
+    pub fn CreateObjRef(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Contexts::Context,
-    > {
+        requestedType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Runtime::Remoting::ObjRef> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Contexts::Context = __cordl_object
-            .invoke("get_Context", ())?;
+        let __cordl_ret: *mut crate::System::Runtime::Remoting::ObjRef = __cordl_object
+            .invoke("CreateObjRef", (requestedType))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Context(
+    pub fn DisposeServerObject(
         &mut self,
-        value: *mut crate::System::Runtime::Remoting::Contexts::Context,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Context", (value))?;
+            .invoke("DisposeServerObject", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        objectUri: *mut crate::System::String,
+        context: *mut crate::System::Runtime::Remoting::Contexts::Context,
+        objectType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (objectUri, context, objectType))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnLifetimeExpired(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnLifetimeExpired", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartTrackingLifetime(
+        &mut self,
+        lease: *mut crate::System::Runtime::Remoting::Lifetime::ILease,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartTrackingLifetime", (lease))?;
         Ok(__cordl_ret)
     }
     pub fn SyncObjectProcessMessage(
@@ -77,49 +121,29 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
             .invoke("SyncObjectProcessMessage", (msg))?;
         Ok(__cordl_ret)
     }
-    pub fn AsyncObjectProcessMessage(
+    pub fn _ctor(
         &mut self,
-        msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
-        replySink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
+        objectUri: *mut crate::System::String,
+        context: *mut crate::System::Runtime::Remoting::Contexts::Context,
+        objectType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (objectUri, context, objectType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Context(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
+        *mut crate::System::Runtime::Remoting::Contexts::Context,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::IMessageCtrl = __cordl_object
-            .invoke("AsyncObjectProcessMessage", (msg, replySink))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnLifetimeExpired(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnLifetimeExpired", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DisposeServerObject(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DisposeServerObject", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartTrackingLifetime(
-        &mut self,
-        lease: *mut crate::System::Runtime::Remoting::Lifetime::ILease,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartTrackingLifetime", (lease))?;
+        let __cordl_ret: *mut crate::System::Runtime::Remoting::Contexts::Context = __cordl_object
+            .invoke("get_Context", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Lease(
@@ -134,19 +158,6 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
             .invoke("get_Lease", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        objectUri: *mut crate::System::String,
-        context: *mut crate::System::Runtime::Remoting::Contexts::Context,
-        objectType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (objectUri, context, objectType))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_ObjectType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
@@ -157,27 +168,16 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
             .invoke("get_ObjectType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CreateObjRef(
+    pub fn set_Context(
         &mut self,
-        requestedType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Runtime::Remoting::ObjRef> {
+        value: *mut crate::System::Runtime::Remoting::Contexts::Context,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::ObjRef = __cordl_object
-            .invoke("CreateObjRef", (requestedType))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Context", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        objectUri: *mut crate::System::String,
-        context: *mut crate::System::Runtime::Remoting::Contexts::Context,
-        objectType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (objectUri, context, objectType))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+ServerIdentity")]

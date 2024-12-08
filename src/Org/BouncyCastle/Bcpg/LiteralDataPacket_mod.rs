@@ -27,12 +27,24 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::LiteralDataPacket {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+LiteralDataPacket")]
 impl crate::Org::BouncyCastle::Bcpg::LiteralDataPacket {
-    pub fn get_ModificationTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+    pub fn GetRawFileName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_ModificationTime", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetRawFileName", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bcpgIn))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -62,24 +74,12 @@ impl crate::Org::BouncyCastle::Bcpg::LiteralDataPacket {
         let __cordl_ret: i32 = __cordl_object.invoke("get_Format", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetRawFileName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    pub fn get_ModificationTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetRawFileName", ())?;
+        let __cordl_ret: i64 = __cordl_object.invoke("get_ModificationTime", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bcpgIn))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+LiteralDataPacket")]

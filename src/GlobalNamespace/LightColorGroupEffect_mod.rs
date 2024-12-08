@@ -27,6 +27,17 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LightColorGroupEffect_InitDa
 }
 #[cfg(feature = "LightColorGroupEffect+InitData")]
 impl crate::GlobalNamespace::LightColorGroupEffect_InitData {
+    pub fn New(
+        groupId: i32,
+        elementId: i32,
+        lightId: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (groupId, elementId, lightId))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         groupId: i32,
@@ -39,17 +50,6 @@ impl crate::GlobalNamespace::LightColorGroupEffect_InitData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (groupId, elementId, lightId))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        groupId: i32,
-        elementId: i32,
-        lightId: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (groupId, elementId, lightId))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LightColorGroupEffect+InitData")]
@@ -107,6 +107,29 @@ impl std::ops::DerefMut for LightColorGroupEffect {
 impl LightColorGroupEffect {
     #[cfg(feature = "LightColorGroupEffect+InitData")]
     pub type InitData = crate::GlobalNamespace::LightColorGroupEffect_InitData;
+    pub fn Cleanup(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Cleanup", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetColor(
+        &mut self,
+        colorType: EnvironmentColorType,
+        colorBoost: bool,
+        brightness: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("GetColor", (colorType, colorBoost, brightness))?;
+        Ok(__cordl_ret)
+    }
     pub fn HandleColorChangeBeatmapEvent(
         &mut self,
         currentEventData: *mut LightColorBeatmapEventData,
@@ -118,14 +141,39 @@ impl LightColorGroupEffect {
             .invoke("HandleColorChangeBeatmapEvent", (currentEventData))?;
         Ok(__cordl_ret)
     }
-    pub fn Cleanup(
+    pub fn New(
+        initData: *mut crate::GlobalNamespace::LightColorGroupEffect_InitData,
+        lightManager: *mut LightWithIdManager,
+        tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
+        colorManager: *mut ColorManager,
+        beatmapCallbacksController: *mut BeatmapCallbacksController,
+        bpmController: *mut IBpmController,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    initData,
+                    lightManager,
+                    tweeningManager,
+                    colorManager,
+                    beatmapCallbacksController,
+                    bpmController,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn SetColor(
         &mut self,
+        t: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Cleanup", ())?;
+            .invoke("SetColor", (t))?;
         Ok(__cordl_ret)
     }
     pub fn SetData(
@@ -158,17 +206,6 @@ impl LightColorGroupEffect {
                     strobeFade,
                 ),
             )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetColor(
-        &mut self,
-        t: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColor", (t))?;
         Ok(__cordl_ret)
     }
     pub fn UseBoostColors(
@@ -207,43 +244,6 @@ impl LightColorGroupEffect {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn GetColor(
-        &mut self,
-        colorType: EnvironmentColorType,
-        colorBoost: bool,
-        brightness: f32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("GetColor", (colorType, colorBoost, brightness))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        initData: *mut crate::GlobalNamespace::LightColorGroupEffect_InitData,
-        lightManager: *mut LightWithIdManager,
-        tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-        colorManager: *mut ColorManager,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
-        bpmController: *mut IBpmController,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    initData,
-                    lightManager,
-                    tweeningManager,
-                    colorManager,
-                    beatmapCallbacksController,
-                    bpmController,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LightColorGroupEffect")]

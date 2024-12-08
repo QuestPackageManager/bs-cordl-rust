@@ -23,13 +23,14 @@ for crate::UnityEngine::UIElements::StyleCursor {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
 impl crate::UnityEngine::UIElements::StyleCursor {
-    pub fn ToString(
+    pub fn Equals_Object1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
-            (),
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -44,35 +45,21 @@ impl crate::UnityEngine::UIElements::StyleCursor {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_value(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Cursor> {
-        let __cordl_ret: crate::UnityEngine::UIElements::Cursor = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_value",
+            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_StyleKeyword0(
+    pub fn ToString(
         &mut self,
-        keyword: crate::UnityEngine::UIElements::StyleKeyword,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (keyword),
+            "ToString",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -88,11 +75,14 @@ impl crate::UnityEngine::UIElements::StyleCursor {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn _ctor_StyleKeyword0(
+        &mut self,
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
-            (),
+            ".ctor",
+            (keyword),
         )?;
         Ok(__cordl_ret)
     }
@@ -102,6 +92,16 @@ impl crate::UnityEngine::UIElements::StyleCursor {
         let __cordl_ret: crate::UnityEngine::UIElements::StyleKeyword = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_keyword",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Cursor> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Cursor = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_value",
             (),
         )?;
         Ok(__cordl_ret)

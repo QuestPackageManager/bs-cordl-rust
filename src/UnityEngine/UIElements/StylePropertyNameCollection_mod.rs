@@ -25,25 +25,20 @@ for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
 impl crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
-    pub fn _ctor(
+    pub fn Dispose(
         &mut self,
-        enumerator: crate::System::Collections::Generic::List_1_Enumerator<
-            crate::UnityEngine::UIElements::StylePropertyName,
-        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (enumerator),
+            "Dispose",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_IEnumerator_get_Current(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.Collections.IEnumerator.get_Current",
+            "MoveNext",
             (),
         )?;
         Ok(__cordl_ret)
@@ -58,21 +53,26 @@ impl crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn System_Collections_IEnumerator_get_Current(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "MoveNext",
+            "System.Collections.IEnumerator.get_Current",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
+    pub fn _ctor(
         &mut self,
+        enumerator: crate::System::Collections::Generic::List_1_Enumerator<
+            crate::UnityEngine::UIElements::StylePropertyName,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Dispose",
-            (),
+            ".ctor",
+            (enumerator),
         )?;
         Ok(__cordl_ret)
     }
@@ -118,19 +118,6 @@ for crate::UnityEngine::UIElements::StylePropertyNameCollection {
 impl crate::UnityEngine::UIElements::StylePropertyNameCollection {
     #[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
     pub type Enumerator = crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator;
-    pub fn _ctor(
-        &mut self,
-        list: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StylePropertyName,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (list),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -166,6 +153,19 @@ impl crate::UnityEngine::UIElements::StylePropertyNameCollection {
             self,
             "System.Collections.IEnumerable.GetEnumerator",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        list: *mut crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StylePropertyName,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (list),
         )?;
         Ok(__cordl_ret)
     }

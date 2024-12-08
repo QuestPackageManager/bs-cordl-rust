@@ -40,11 +40,28 @@ for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_Col
     feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter+ColorData"
 )]
 impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_ColorData {
-    pub fn get_whiteBoost(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_whiteBoost", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_darkerColorMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_darkerColorMultiplier", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_defaultColor(
@@ -57,29 +74,12 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_Co
             .invoke("get_defaultColor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_darkerColorMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_whiteBoost(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_darkerColorMultiplier", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_whiteBoost", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -143,17 +143,12 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
         feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter+__c"
     )]
     pub type __c = crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter___c;
-    pub fn SetHighlight(
-        &mut self,
-        highlighted: bool,
-        uvSegment: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetHighlight", (highlighted, uvSegment))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnValidate(
         &mut self,
@@ -176,14 +171,16 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
             .invoke("SetColors", (colors))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn SetHighlight(
         &mut self,
+        highlighted: bool,
+        uvSegment: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("SetHighlight", (highlighted, uvSegment))?;
         Ok(__cordl_ret)
     }
     pub fn UpdateRenderer(
@@ -196,12 +193,15 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
             .invoke("UpdateRenderer", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter")]

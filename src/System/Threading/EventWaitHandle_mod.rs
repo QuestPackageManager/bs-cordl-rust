@@ -24,6 +24,27 @@ impl std::ops::DerefMut for crate::System::Threading::EventWaitHandle {
 }
 #[cfg(feature = "System+Threading+EventWaitHandle")]
 impl crate::System::Threading::EventWaitHandle {
+    pub fn New_String1(
+        initialState: bool,
+        mode: crate::System::Threading::EventResetMode,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (initialState, mode, name))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool_EventResetMode0(
+        initialState: bool,
+        mode: crate::System::Threading::EventResetMode,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (initialState, mode))?;
+        Ok(__cordl_object)
+    }
     pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -31,16 +52,11 @@ impl crate::System::Threading::EventWaitHandle {
         let __cordl_ret: bool = __cordl_object.invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor__cordl_bool_EventResetMode0(
-        &mut self,
-        initialState: bool,
-        mode: crate::System::Threading::EventResetMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn Set(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (initialState, mode))?;
+        let __cordl_ret: bool = __cordl_object.invoke("Set", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_String1(
@@ -56,33 +72,17 @@ impl crate::System::Threading::EventWaitHandle {
             .invoke(".ctor", (initialState, mode, name))?;
         Ok(__cordl_ret)
     }
-    pub fn Set(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn _ctor__cordl_bool_EventResetMode0(
+        &mut self,
+        initialState: bool,
+        mode: crate::System::Threading::EventResetMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Set", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (initialState, mode))?;
         Ok(__cordl_ret)
-    }
-    pub fn New__cordl_bool_EventResetMode0(
-        initialState: bool,
-        mode: crate::System::Threading::EventResetMode,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (initialState, mode))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        initialState: bool,
-        mode: crate::System::Threading::EventResetMode,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (initialState, mode, name))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Threading+EventWaitHandle")]

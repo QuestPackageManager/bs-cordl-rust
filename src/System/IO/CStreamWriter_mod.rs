@@ -25,15 +25,15 @@ impl std::ops::DerefMut for crate::System::IO::CStreamWriter {
 }
 #[cfg(feature = "System+IO+CStreamWriter")]
 impl crate::System::IO::CStreamWriter {
-    pub fn InternalWriteString(
+    pub fn InternalWriteChar(
         &mut self,
-        val: *mut crate::System::String,
+        val: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalWriteString", (val))?;
+            .invoke("InternalWriteChar", (val))?;
         Ok(__cordl_ret)
     }
     pub fn InternalWriteChars(
@@ -48,6 +48,28 @@ impl crate::System::IO::CStreamWriter {
             .invoke("InternalWriteChars", (buffer, n))?;
         Ok(__cordl_ret)
     }
+    pub fn InternalWriteString(
+        &mut self,
+        val: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalWriteString", (val))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        stream: *mut crate::System::IO::Stream,
+        encoding: *mut crate::System::Text::Encoding,
+        leaveOpen: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream, encoding, leaveOpen))?;
+        Ok(__cordl_object)
+    }
     pub fn WriteLine(
         &mut self,
         val: *mut crate::System::String,
@@ -59,17 +81,15 @@ impl crate::System::IO::CStreamWriter {
             .invoke("WriteLine", (val))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn Write_Il2CppArray2(
         &mut self,
-        stream: *mut crate::System::IO::Stream,
-        encoding: *mut crate::System::Text::Encoding,
-        leaveOpen: bool,
+        val: *mut quest_hook::libil2cpp::Il2CppArray<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stream, encoding, leaveOpen))?;
+            .invoke("Write", (val))?;
         Ok(__cordl_ret)
     }
     pub fn Write_Il2CppArray_i32_i32_0(
@@ -85,28 +105,6 @@ impl crate::System::IO::CStreamWriter {
             .invoke("Write", (buffer, index, count))?;
         Ok(__cordl_ret)
     }
-    pub fn Write__cordl_char1(
-        &mut self,
-        val: char,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (val))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Write_Il2CppArray2(
-        &mut self,
-        val: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (val))?;
-        Ok(__cordl_ret)
-    }
     pub fn Write_String3(
         &mut self,
         val: *mut crate::System::String,
@@ -118,7 +116,7 @@ impl crate::System::IO::CStreamWriter {
             .invoke("Write", (val))?;
         Ok(__cordl_ret)
     }
-    pub fn InternalWriteChar(
+    pub fn Write__cordl_char1(
         &mut self,
         val: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -126,19 +124,21 @@ impl crate::System::IO::CStreamWriter {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalWriteChar", (val))?;
+            .invoke("Write", (val))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         stream: *mut crate::System::IO::Stream,
         encoding: *mut crate::System::Text::Encoding,
         leaveOpen: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream, encoding, leaveOpen))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stream, encoding, leaveOpen))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+IO+CStreamWriter")]

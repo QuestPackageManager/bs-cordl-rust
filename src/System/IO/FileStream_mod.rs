@@ -43,71 +43,19 @@ impl crate::System::IO::FileStream {
     pub type ReadDelegate = crate::System::IO::FileStream_ReadDelegate;
     #[cfg(feature = "System+IO+FileStream+WriteDelegate")]
     pub type WriteDelegate = crate::System::IO::FileStream_WriteDelegate;
-    pub fn ExposeHandle(
+    pub fn BeginRead(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExposeHandle", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Read(
-        &mut self,
-        array: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
+        array: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         offset: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+        numBytes: i32,
+        userCallback: *mut crate::System::AsyncCallback,
+        stateObject: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("Read", (array, offset, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Name", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteSegment(
-        &mut self,
-        src: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        src_offset: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("WriteSegment", (src, src_offset, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadSegment(
-        &mut self,
-        dest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        dest_offset: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("ReadSegment", (dest, dest_offset, count))?;
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginRead", (array, offset, numBytes, userCallback, stateObject))?;
         Ok(__cordl_ret)
     }
     pub fn BeginWrite(
@@ -125,6 +73,58 @@ impl crate::System::IO::FileStream {
             .invoke("BeginWrite", (array, offset, numBytes, userCallback, stateObject))?;
         Ok(__cordl_ret)
     }
+    pub fn Dispose(
+        &mut self,
+        disposing: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", (disposing))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndRead(
+        &mut self,
+        asyncResult: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("EndRead", (asyncResult))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndWrite(
+        &mut self,
+        asyncResult: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndWrite", (asyncResult))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExposeHandle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExposeHandle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Finalize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Finalize", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Flush(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -133,6 +133,415 @@ impl crate::System::IO::FileStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Flush", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn FlushAsync(
+        &mut self,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("FlushAsync", (cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn FlushBuffer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FlushBuffer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn FlushBufferIfDirty(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FlushBufferIfDirty", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSecureFileName_String0(
+        &mut self,
+        filename: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetSecureFileName", (filename))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSecureFileName__cordl_bool1(
+        &mut self,
+        filename: *mut crate::System::String,
+        full: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetSecureFileName", (filename, full))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        safeHandle: *mut crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
+        access: crate::System::IO::FileAccess,
+        ownsHandle: bool,
+        bufferSize: i32,
+        isAsync: bool,
+        isConsoleWrapper: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "Init",
+                (safeHandle, access, ownsHandle, bufferSize, isAsync, isConsoleWrapper),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitBuffer(
+        &mut self,
+        _cordl_size: i32,
+        isZeroSize: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitBuffer", (_cordl_size, isZeroSize))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_IntPtr_FileAccess__cordl_bool_i32_0(
+        handle: crate::System::IntPtr,
+        access: crate::System::IO::FileAccess,
+        ownsHandle: bool,
+        bufferSize: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (handle, access, ownsHandle, bufferSize))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IntPtr_FileAccess__cordl_bool_i32__cordl_bool__cordl_bool1(
+        handle: crate::System::IntPtr,
+        access: crate::System::IO::FileAccess,
+        ownsHandle: bool,
+        bufferSize: i32,
+        isAsync: bool,
+        isConsoleWrapper: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (handle, access, ownsHandle, bufferSize, isAsync, isConsoleWrapper),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_SafeFileHandle_FileAccess7(
+        handle: *mut crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
+        access: crate::System::IO::FileAccess,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (handle, access))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_SafeFileHandle_FileAccess_i32__cordl_bool8(
+        handle: *mut crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
+        access: crate::System::IO::FileAccess,
+        bufferSize: i32,
+        isAsync: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (handle, access, bufferSize, isAsync))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_FileMode_FileAccess2(
+        path: *mut crate::System::String,
+        mode: crate::System::IO::FileMode,
+        access: crate::System::IO::FileAccess,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (path, mode, access))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_FileMode_FileAccess_FileShare3(
+        path: *mut crate::System::String,
+        mode: crate::System::IO::FileMode,
+        access: crate::System::IO::FileAccess,
+        share: crate::System::IO::FileShare,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (path, mode, access, share))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_FileMode_FileAccess_FileShare_i32_4(
+        path: *mut crate::System::String,
+        mode: crate::System::IO::FileMode,
+        access: crate::System::IO::FileAccess,
+        share: crate::System::IO::FileShare,
+        bufferSize: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (path, mode, access, share, bufferSize))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_FileMode_FileAccess_FileShare_i32_FileOptions6(
+        path: *mut crate::System::String,
+        mode: crate::System::IO::FileMode,
+        access: crate::System::IO::FileAccess,
+        share: crate::System::IO::FileShare,
+        bufferSize: i32,
+        options: crate::System::IO::FileOptions,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (path, mode, access, share, bufferSize, options))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_FileMode_FileAccess_FileShare_i32__cordl_bool5(
+        path: *mut crate::System::String,
+        mode: crate::System::IO::FileMode,
+        access: crate::System::IO::FileAccess,
+        share: crate::System::IO::FileShare,
+        bufferSize: i32,
+        useAsync: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (path, mode, access, share, bufferSize, useAsync))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_FileMode_FileAccess_FileShare_i32__cordl_bool_FileOptions10(
+        path: *mut crate::System::String,
+        mode: crate::System::IO::FileMode,
+        access: crate::System::IO::FileAccess,
+        share: crate::System::IO::FileShare,
+        bufferSize: i32,
+        anonymous: bool,
+        options: crate::System::IO::FileOptions,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (path, mode, access, share, bufferSize, anonymous, options),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_FileMode_FileAccess_FileShare_i32__cordl_bool__cordl_bool9(
+        path: *mut crate::System::String,
+        mode: crate::System::IO::FileMode,
+        access: crate::System::IO::FileAccess,
+        share: crate::System::IO::FileShare,
+        bufferSize: i32,
+        isAsync: bool,
+        anonymous: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (path, mode, access, share, bufferSize, isAsync, anonymous),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn Read(
+        &mut self,
+        array: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        offset: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Read", (array, offset, count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadAsync(
+        &mut self,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<i32>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<i32> = __cordl_object
+            .invoke("ReadAsync", (buffer, offset, count, cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadData(
+        &mut self,
+        safeHandle: *mut crate::System::Runtime::InteropServices::SafeHandle,
+        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("ReadData", (safeHandle, buf, offset, count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadInternal(
+        &mut self,
+        dest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("ReadInternal", (dest, offset, count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadSegment(
+        &mut self,
+        dest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        dest_offset: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("ReadSegment", (dest, dest_offset, count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RefillBuffer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RefillBuffer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Seek(
+        &mut self,
+        offset: i64,
+        origin: crate::System::IO::SeekOrigin,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("Seek", (offset, origin))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetLength(
+        &mut self,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetLength", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Write(
+        &mut self,
+        array: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Write", (array, offset, count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteAsync(
+        &mut self,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("WriteAsync", (buffer, offset, count, cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteByte(
+        &mut self,
+        value: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteByte", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteInternal(
+        &mut self,
+        src: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteInternal", (src, offset, count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteSegment(
+        &mut self,
+        src: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        src_offset: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("WriteSegment", (src, src_offset, count))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_IntPtr_FileAccess__cordl_bool_i32_0(
@@ -166,6 +575,32 @@ impl crate::System::IO::FileStream {
                 ".ctor",
                 (handle, access, ownsHandle, bufferSize, isAsync, isConsoleWrapper),
             )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_SafeFileHandle_FileAccess7(
+        &mut self,
+        handle: *mut crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
+        access: crate::System::IO::FileAccess,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (handle, access))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_SafeFileHandle_FileAccess_i32__cordl_bool8(
+        &mut self,
+        handle: *mut crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
+        access: crate::System::IO::FileAccess,
+        bufferSize: i32,
+        isAsync: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (handle, access, bufferSize, isAsync))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_String_FileMode_FileAccess2(
@@ -210,22 +645,6 @@ impl crate::System::IO::FileStream {
             .invoke(".ctor", (path, mode, access, share, bufferSize))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_FileMode_FileAccess_FileShare_i32__cordl_bool5(
-        &mut self,
-        path: *mut crate::System::String,
-        mode: crate::System::IO::FileMode,
-        access: crate::System::IO::FileAccess,
-        share: crate::System::IO::FileShare,
-        bufferSize: i32,
-        useAsync: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (path, mode, access, share, bufferSize, useAsync))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_String_FileMode_FileAccess_FileShare_i32_FileOptions6(
         &mut self,
         path: *mut crate::System::String,
@@ -242,50 +661,20 @@ impl crate::System::IO::FileStream {
             .invoke(".ctor", (path, mode, access, share, bufferSize, options))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_SafeFileHandle_FileAccess7(
-        &mut self,
-        handle: *mut crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-        access: crate::System::IO::FileAccess,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (handle, access))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_SafeFileHandle_FileAccess_i32__cordl_bool8(
-        &mut self,
-        handle: *mut crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-        access: crate::System::IO::FileAccess,
-        bufferSize: i32,
-        isAsync: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (handle, access, bufferSize, isAsync))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_FileMode_FileAccess_FileShare_i32__cordl_bool__cordl_bool9(
+    pub fn _ctor_String_FileMode_FileAccess_FileShare_i32__cordl_bool5(
         &mut self,
         path: *mut crate::System::String,
         mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
         share: crate::System::IO::FileShare,
         bufferSize: i32,
-        isAsync: bool,
-        anonymous: bool,
+        useAsync: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (path, mode, access, share, bufferSize, isAsync, anonymous),
-            )?;
+            .invoke(".ctor", (path, mode, access, share, bufferSize, useAsync))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_String_FileMode_FileAccess_FileShare_i32__cordl_bool_FileOptions10(
@@ -308,71 +697,38 @@ impl crate::System::IO::FileStream {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn ReadInternal(
+    pub fn _ctor_String_FileMode_FileAccess_FileShare_i32__cordl_bool__cordl_bool9(
         &mut self,
-        dest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("ReadInternal", (dest, offset, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Write(
-        &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (array, offset, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init(
-        &mut self,
-        safeHandle: *mut crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
+        path: *mut crate::System::String,
+        mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
-        ownsHandle: bool,
+        share: crate::System::IO::FileShare,
         bufferSize: i32,
         isAsync: bool,
-        isConsoleWrapper: bool,
+        anonymous: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "Init",
-                (safeHandle, access, ownsHandle, bufferSize, isAsync, isConsoleWrapper),
+                ".ctor",
+                (path, mode, access, share, bufferSize, isAsync, anonymous),
             )?;
         Ok(__cordl_ret)
     }
-    pub fn WriteByte(
-        &mut self,
-        value: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteByte", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanRead", ())?;
         Ok(__cordl_ret)
     }
-    pub fn EndWrite(
-        &mut self,
-        asyncResult: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_CanSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndWrite", (asyncResult))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanSeek", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_CanWrite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -380,6 +736,30 @@ impl crate::System::IO::FileStream {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_CanWrite", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_Length", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Name", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_Position", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SafeFileHandle(
@@ -394,71 +774,6 @@ impl crate::System::IO::FileStream {
             .invoke("get_SafeFileHandle", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Seek(
-        &mut self,
-        offset: i64,
-        origin: crate::System::IO::SeekOrigin,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("Seek", (offset, origin))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetLength(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLength", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn BeginRead(
-        &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        numBytes: i32,
-        userCallback: *mut crate::System::AsyncCallback,
-        stateObject: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginRead", (array, offset, numBytes, userCallback, stateObject))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-        disposing: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Finalize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanRead", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_Position(
         &mut self,
         value: i64,
@@ -469,321 +784,6 @@ impl crate::System::IO::FileStream {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Position", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn WriteInternal(
-        &mut self,
-        src: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteInternal", (src, offset, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FlushBufferIfDirty(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FlushBufferIfDirty", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RefillBuffer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefillBuffer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_Length", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteAsync(
-        &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("WriteAsync", (buffer, offset, count, cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadData(
-        &mut self,
-        safeHandle: *mut crate::System::Runtime::InteropServices::SafeHandle,
-        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("ReadData", (safeHandle, buf, offset, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitBuffer(
-        &mut self,
-        _cordl_size: i32,
-        isZeroSize: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitBuffer", (_cordl_size, isZeroSize))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadAsync(
-        &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<i32>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<i32> = __cordl_object
-            .invoke("ReadAsync", (buffer, offset, count, cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_Position", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CanSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanSeek", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FlushAsync(
-        &mut self,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("FlushAsync", (cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSecureFileName_String0(
-        &mut self,
-        filename: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetSecureFileName", (filename))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSecureFileName__cordl_bool1(
-        &mut self,
-        filename: *mut crate::System::String,
-        full: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetSecureFileName", (filename, full))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FlushBuffer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FlushBuffer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndRead(
-        &mut self,
-        asyncResult: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("EndRead", (asyncResult))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_IntPtr_FileAccess__cordl_bool_i32_0(
-        handle: crate::System::IntPtr,
-        access: crate::System::IO::FileAccess,
-        ownsHandle: bool,
-        bufferSize: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (handle, access, ownsHandle, bufferSize))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IntPtr_FileAccess__cordl_bool_i32__cordl_bool__cordl_bool1(
-        handle: crate::System::IntPtr,
-        access: crate::System::IO::FileAccess,
-        ownsHandle: bool,
-        bufferSize: i32,
-        isAsync: bool,
-        isConsoleWrapper: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (handle, access, ownsHandle, bufferSize, isAsync, isConsoleWrapper),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_FileMode_FileAccess2(
-        path: *mut crate::System::String,
-        mode: crate::System::IO::FileMode,
-        access: crate::System::IO::FileAccess,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (path, mode, access))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_FileMode_FileAccess_FileShare3(
-        path: *mut crate::System::String,
-        mode: crate::System::IO::FileMode,
-        access: crate::System::IO::FileAccess,
-        share: crate::System::IO::FileShare,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (path, mode, access, share))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_FileMode_FileAccess_FileShare_i32_4(
-        path: *mut crate::System::String,
-        mode: crate::System::IO::FileMode,
-        access: crate::System::IO::FileAccess,
-        share: crate::System::IO::FileShare,
-        bufferSize: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (path, mode, access, share, bufferSize))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_FileMode_FileAccess_FileShare_i32__cordl_bool5(
-        path: *mut crate::System::String,
-        mode: crate::System::IO::FileMode,
-        access: crate::System::IO::FileAccess,
-        share: crate::System::IO::FileShare,
-        bufferSize: i32,
-        useAsync: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (path, mode, access, share, bufferSize, useAsync))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_FileMode_FileAccess_FileShare_i32_FileOptions6(
-        path: *mut crate::System::String,
-        mode: crate::System::IO::FileMode,
-        access: crate::System::IO::FileAccess,
-        share: crate::System::IO::FileShare,
-        bufferSize: i32,
-        options: crate::System::IO::FileOptions,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (path, mode, access, share, bufferSize, options))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_SafeFileHandle_FileAccess7(
-        handle: *mut crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-        access: crate::System::IO::FileAccess,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (handle, access))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_SafeFileHandle_FileAccess_i32__cordl_bool8(
-        handle: *mut crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-        access: crate::System::IO::FileAccess,
-        bufferSize: i32,
-        isAsync: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (handle, access, bufferSize, isAsync))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_FileMode_FileAccess_FileShare_i32__cordl_bool__cordl_bool9(
-        path: *mut crate::System::String,
-        mode: crate::System::IO::FileMode,
-        access: crate::System::IO::FileAccess,
-        share: crate::System::IO::FileShare,
-        bufferSize: i32,
-        isAsync: bool,
-        anonymous: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (path, mode, access, share, bufferSize, isAsync, anonymous),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_FileMode_FileAccess_FileShare_i32__cordl_bool_FileOptions10(
-        path: *mut crate::System::String,
-        mode: crate::System::IO::FileMode,
-        access: crate::System::IO::FileAccess,
-        share: crate::System::IO::FileShare,
-        bufferSize: i32,
-        anonymous: bool,
-        options: crate::System::IO::FileOptions,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (path, mode, access, share, bufferSize, anonymous, options),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+IO+FileStream")]
@@ -821,40 +821,6 @@ impl std::ops::DerefMut for crate::System::IO::FileStream_ReadDelegate {
 }
 #[cfg(feature = "System+IO+FileStream+ReadDelegate")]
 impl crate::System::IO::FileStream_ReadDelegate {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Invoke", (buffer, offset, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -870,15 +836,49 @@ impl crate::System::IO::FileStream_ReadDelegate {
             .invoke("BeginInvoke", (buffer, offset, count, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Invoke", (buffer, offset, count))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+IO+FileStream+ReadDelegate")]
@@ -942,18 +942,6 @@ impl crate::System::IO::FileStream_WriteDelegate {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -970,12 +958,24 @@ impl crate::System::IO::FileStream_WriteDelegate {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+IO+FileStream+WriteDelegate")]

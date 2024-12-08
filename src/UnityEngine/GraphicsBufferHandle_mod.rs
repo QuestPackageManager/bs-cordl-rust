@@ -22,11 +22,14 @@ for crate::UnityEngine::GraphicsBufferHandle {
 }
 #[cfg(feature = "UnityEngine+GraphicsBufferHandle")]
 impl crate::UnityEngine::GraphicsBufferHandle {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Equals_GraphicsBufferHandle1(
+        &mut self,
+        other: crate::UnityEngine::GraphicsBufferHandle,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
-            (),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -41,14 +44,11 @@ impl crate::UnityEngine::GraphicsBufferHandle {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_GraphicsBufferHandle1(
-        &mut self,
-        other: crate::UnityEngine::GraphicsBufferHandle,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }

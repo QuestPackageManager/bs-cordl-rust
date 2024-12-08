@@ -29,6 +29,32 @@ impl std::ops::DerefMut for crate::System::Resources::ResourceReader_ResourceEnu
 }
 #[cfg(feature = "System+Resources+ResourceReader+ResourceEnumerator")]
 impl crate::System::Resources::ResourceReader_ResourceEnumerator {
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        reader: *mut crate::System::Resources::ResourceReader,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (reader))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         reader: *mut crate::System::Resources::ResourceReader,
@@ -48,16 +74,6 @@ impl crate::System::Resources::ResourceReader_ResourceEnumerator {
         );
         let __cordl_ret: *mut crate::System::Object = __cordl_object
             .invoke("get_Current", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Value(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_Value", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_DataPosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -87,31 +103,15 @@ impl crate::System::Resources::ResourceReader_ResourceEnumerator {
             .invoke("get_Key", ())?;
         Ok(__cordl_ret)
     }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
+    pub fn get_Value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_Value", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        reader: *mut crate::System::Resources::ResourceReader,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (reader))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Resources+ResourceReader+ResourceEnumerator")]
@@ -171,40 +171,6 @@ impl std::ops::DerefMut for crate::System::Resources::ResourceReader {
 impl crate::System::Resources::ResourceReader {
     #[cfg(feature = "System+Resources+ResourceReader+ResourceEnumerator")]
     pub type ResourceEnumerator = crate::System::Resources::ResourceReader_ResourceEnumerator;
-    pub fn _LoadObjectV1(
-        &mut self,
-        pos: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("_LoadObjectV1", (pos))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::IDictionaryEnumerator,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IDictionaryEnumerator = __cordl_object
-            .invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetValueForNameIndex(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetValueForNameIndex", (index))?;
-        Ok(__cordl_ret)
-    }
     pub fn AllocateStringForNameIndex(
         &mut self,
         index: i32,
@@ -217,46 +183,14 @@ impl crate::System::Resources::ResourceReader {
             .invoke("AllocateStringForNameIndex", (index, dataOffset))?;
         Ok(__cordl_ret)
     }
-    pub fn GetNamePosition(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetNamePosition", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadString(
-        &mut self,
-        pos: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("LoadString", (pos))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ReadResources(
+    pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("_ReadResources", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _LoadObjectV2(
-        &mut self,
-        pos: i32,
-        typeCode: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Resources::ResourceTypeCode,
-        >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("_LoadObjectV2", (pos, typeCode))?;
+            .invoke("Close", ())?;
         Ok(__cordl_ret)
     }
     pub fn CompareStringEqualsName(
@@ -270,119 +204,6 @@ impl crate::System::Resources::ResourceReader {
             .invoke("CompareStringEqualsName", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn FindType(
-        &mut self,
-        typeIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::RuntimeType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::RuntimeType = __cordl_object
-            .invoke("FindType", (typeIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEnumeratorInternal(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Resources::ResourceReader_ResourceEnumerator,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Resources::ResourceReader_ResourceEnumerator = __cordl_object
-            .invoke("GetEnumeratorInternal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Close(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadObject_i32_0(
-        &mut self,
-        pos: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("LoadObject", (pos))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadObject_ByRefMut1(
-        &mut self,
-        pos: i32,
-        typeCode: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Resources::ResourceTypeCode,
-        >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("LoadObject", (pos, typeCode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FindPosForResource(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("FindPosForResource", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadObjectV2(
-        &mut self,
-        pos: i32,
-        typeCode: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Resources::ResourceTypeCode,
-        >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("LoadObjectV2", (pos, typeCode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerable_GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SkipString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SkipString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadObjectV1(
-        &mut self,
-        pos: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("LoadObjectV1", (pos))?;
-        Ok(__cordl_ret)
-    }
     pub fn DeserializeObject(
         &mut self,
         typeIndex: i32,
@@ -392,38 +213,6 @@ impl crate::System::Resources::ResourceReader {
         );
         let __cordl_ret: *mut crate::System::Object = __cordl_object
             .invoke("DeserializeObject", (typeIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadResources(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadResources", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNameHash(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetNameHash", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        stream: *mut crate::System::IO::Stream,
-        resCache: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            crate::System::Resources::ResourceLocator,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stream, resCache))?;
         Ok(__cordl_ret)
     }
     pub fn Dispose_0(
@@ -447,18 +236,229 @@ impl crate::System::Resources::ResourceReader {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
+    pub fn FindPosForResource(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("FindPosForResource", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn FindType(
+        &mut self,
+        typeIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::RuntimeType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::RuntimeType = __cordl_object
+            .invoke("FindType", (typeIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::IDictionaryEnumerator,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IDictionaryEnumerator = __cordl_object
+            .invoke("GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEnumeratorInternal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Resources::ResourceReader_ResourceEnumerator,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Resources::ResourceReader_ResourceEnumerator = __cordl_object
+            .invoke("GetEnumeratorInternal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNameHash(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetNameHash", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNamePosition(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetNamePosition", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetValueForNameIndex(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("GetValueForNameIndex", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadObjectV1(
+        &mut self,
+        pos: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("LoadObjectV1", (pos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadObjectV2(
+        &mut self,
+        pos: i32,
+        typeCode: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Resources::ResourceTypeCode,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("LoadObjectV2", (pos, typeCode))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadObject_ByRefMut1(
+        &mut self,
+        pos: i32,
+        typeCode: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Resources::ResourceTypeCode,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("LoadObject", (pos, typeCode))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadObject_i32_0(
+        &mut self,
+        pos: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("LoadObject", (pos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadString(
+        &mut self,
+        pos: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("LoadString", (pos))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         stream: *mut crate::System::IO::Stream,
         resCache: *mut crate::System::Collections::Generic::Dictionary_2<
             *mut crate::System::String,
             crate::System::Resources::ResourceLocator,
         >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (stream, resCache))?;
         Ok(__cordl_object)
+    }
+    pub fn ReadResources(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReadResources", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SkipString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SkipString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerable_GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _LoadObjectV1(
+        &mut self,
+        pos: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("_LoadObjectV1", (pos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _LoadObjectV2(
+        &mut self,
+        pos: i32,
+        typeCode: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Resources::ResourceTypeCode,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("_LoadObjectV2", (pos, typeCode))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ReadResources(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("_ReadResources", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        stream: *mut crate::System::IO::Stream,
+        resCache: *mut crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::String,
+            crate::System::Resources::ResourceLocator,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stream, resCache))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Resources+ResourceReader")]

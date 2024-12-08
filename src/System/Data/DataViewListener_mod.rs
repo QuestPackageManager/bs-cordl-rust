@@ -40,18 +40,18 @@ impl crate::System::Data::DataViewListener {
             .invoke("ChildRelationCollectionChanged", (sender, e))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn CleanUp(
         &mut self,
-        dv: *mut crate::System::Data::DataView,
+        updateListeners: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dv))?;
+            .invoke("CleanUp", (updateListeners))?;
         Ok(__cordl_ret)
     }
-    pub fn ParentRelationCollectionChanged(
+    pub fn ColumnCollectionChanged(
         &mut self,
         sender: *mut crate::System::Object,
         e: *mut crate::System::ComponentModel::CollectionChangeEventArgs,
@@ -60,7 +60,7 @@ impl crate::System::Data::DataViewListener {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ParentRelationCollectionChanged", (sender, e))?;
+            .invoke("ColumnCollectionChanged", (sender, e))?;
         Ok(__cordl_ret)
     }
     pub fn IndexListChanged(
@@ -74,14 +74,60 @@ impl crate::System::Data::DataViewListener {
             .invoke("IndexListChanged", (e))?;
         Ok(__cordl_ret)
     }
-    pub fn UnregisterListChangedEvent(
+    pub fn MaintainDataView(
         &mut self,
+        changedType: crate::System::ComponentModel::ListChangedType,
+        row: *mut crate::System::Data::DataRow,
+        trackAddRemove: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterListChangedEvent", ())?;
+            .invoke("MaintainDataView", (changedType, row, trackAddRemove))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        dv: *mut crate::System::Data::DataView,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dv))?;
+        Ok(__cordl_object)
+    }
+    pub fn ParentRelationCollectionChanged(
+        &mut self,
+        sender: *mut crate::System::Object,
+        e: *mut crate::System::ComponentModel::CollectionChangeEventArgs,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ParentRelationCollectionChanged", (sender, e))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterListChangedEvent(
+        &mut self,
+        index: *mut crate::System::Data::Index,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterListChangedEvent", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterListener(
+        &mut self,
+        table: *mut crate::System::Data::DataTable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterListener", (table))?;
         Ok(__cordl_ret)
     }
     pub fn RegisterMetaDataEvents(
@@ -95,17 +141,14 @@ impl crate::System::Data::DataViewListener {
             .invoke("RegisterMetaDataEvents", (table))?;
         Ok(__cordl_ret)
     }
-    pub fn MaintainDataView(
+    pub fn UnregisterListChangedEvent(
         &mut self,
-        changedType: crate::System::ComponentModel::ListChangedType,
-        row: *mut crate::System::Data::DataRow,
-        trackAddRemove: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MaintainDataView", (changedType, row, trackAddRemove))?;
+            .invoke("UnregisterListChangedEvent", ())?;
         Ok(__cordl_ret)
     }
     pub fn UnregisterMetaDataEvents_0(
@@ -129,59 +172,16 @@ impl crate::System::Data::DataViewListener {
             .invoke("UnregisterMetaDataEvents", (updateListeners))?;
         Ok(__cordl_ret)
     }
-    pub fn RegisterListChangedEvent(
+    pub fn _ctor(
         &mut self,
-        index: *mut crate::System::Data::Index,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterListChangedEvent", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CleanUp(
-        &mut self,
-        updateListeners: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CleanUp", (updateListeners))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterListener(
-        &mut self,
-        table: *mut crate::System::Data::DataTable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterListener", (table))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ColumnCollectionChanged(
-        &mut self,
-        sender: *mut crate::System::Object,
-        e: *mut crate::System::ComponentModel::CollectionChangeEventArgs,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ColumnCollectionChanged", (sender, e))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
         dv: *mut crate::System::Data::DataView,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dv))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (dv))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Data+DataViewListener")]

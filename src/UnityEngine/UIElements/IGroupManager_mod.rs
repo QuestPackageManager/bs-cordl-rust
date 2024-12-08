@@ -24,17 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IGroupManager {
 }
 #[cfg(feature = "UnityEngine+UIElements+IGroupManager")]
 impl crate::UnityEngine::UIElements::IGroupManager {
-    pub fn OnOptionSelectionChanged(
-        &mut self,
-        selectedOption: *mut crate::UnityEngine::UIElements::IGroupBoxOption,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnOptionSelectionChanged", (selectedOption))?;
-        Ok(__cordl_ret)
-    }
     pub fn Init(
         &mut self,
         groupBox: *mut crate::UnityEngine::UIElements::IGroupBox,
@@ -44,6 +33,17 @@ impl crate::UnityEngine::UIElements::IGroupManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (groupBox))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnOptionSelectionChanged(
+        &mut self,
+        selectedOption: *mut crate::UnityEngine::UIElements::IGroupBoxOption,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnOptionSelectionChanged", (selectedOption))?;
         Ok(__cordl_ret)
     }
     pub fn RegisterOption(

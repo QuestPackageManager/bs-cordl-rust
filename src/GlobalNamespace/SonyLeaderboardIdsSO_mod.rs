@@ -28,6 +28,16 @@ for crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
 }
 #[cfg(feature = "SonyLeaderboardIdsSO+LeaderboardIdData")]
 impl crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
+    pub fn New(
+        sonyLeaderboardId: u32,
+        difficultyBeatmapId: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (sonyLeaderboardId, difficultyBeatmapId))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         sonyLeaderboardId: u32,
@@ -56,16 +66,6 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_sonyLeaderboardId", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        sonyLeaderboardId: u32,
-        difficultyBeatmapId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (sonyLeaderboardId, difficultyBeatmapId))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SonyLeaderboardIdsSO+LeaderboardIdData")]
@@ -108,6 +108,36 @@ impl std::ops::DerefMut for SonyLeaderboardIdsSO {
 impl SonyLeaderboardIdsSO {
     #[cfg(feature = "SonyLeaderboardIdsSO+LeaderboardIdData")]
     pub type LeaderboardIdData = crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData;
+    pub fn ILeaderboardIdContainer_get_leaderboardIds(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<*mut ILeaderboardIdData>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut ILeaderboardIdData,
+        > = __cordl_object.invoke("ILeaderboardIdContainer.get_leaderboardIds", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_leaderboardIds(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -123,29 +153,6 @@ impl SonyLeaderboardIdsSO {
         > = __cordl_object.invoke("get_leaderboardIds", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ILeaderboardIdContainer_get_leaderboardIds(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<*mut ILeaderboardIdData>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut ILeaderboardIdData,
-        > = __cordl_object.invoke("ILeaderboardIdContainer.get_leaderboardIds", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_leaderboardIds(
         &mut self,
         value: *mut crate::System::Collections::Generic::IEnumerable_1<
@@ -158,13 +165,6 @@ impl SonyLeaderboardIdsSO {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_leaderboardIds", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SonyLeaderboardIdsSO")]

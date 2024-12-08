@@ -27,46 +27,21 @@ impl<TType: quest_hook::libil2cpp::Type> std::ops::DerefMut for RpcHandler_1<TTy
 }
 #[cfg(feature = "RpcHandler_1")]
 impl<TType: quest_hook::libil2cpp::Type> RpcHandler_1<TType> {
-    #[cfg(feature = "RpcHandler_1+__c__DisplayClass10_0_1")]
-    pub type __c__DisplayClass10_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass10_0_1<
-        TType,
-        T,
-    >;
-    #[cfg(feature = "RpcHandler_1+__c__DisplayClass17_0_3")]
-    pub type __c__DisplayClass17_0_3<
-        T: quest_hook::libil2cpp::Type,
-        T0: quest_hook::libil2cpp::Type,
-        T1: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass17_0_3<TType, T, T0, T1>;
-    #[cfg(feature = "RpcHandler_1+__c__DisplayClass12_0_3")]
-    pub type __c__DisplayClass12_0_3<
-        T: quest_hook::libil2cpp::Type,
-        T0: quest_hook::libil2cpp::Type,
-        T1: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass12_0_3<TType, T, T0, T1>;
     #[cfg(feature = "RpcHandler_1+__c__DisplayClass15_0_1")]
     pub type __c__DisplayClass15_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass15_0_1<
         TType,
         T,
     >;
-    #[cfg(feature = "RpcHandler_1+__c__DisplayClass18_0_4")]
-    pub type __c__DisplayClass18_0_4<
+    #[cfg(feature = "RpcHandler_1+__c__DisplayClass16_0_2")]
+    pub type __c__DisplayClass16_0_2<
         T: quest_hook::libil2cpp::Type,
         T0: quest_hook::libil2cpp::Type,
-        T1: quest_hook::libil2cpp::Type,
-        T2: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass18_0_4<
+    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass16_0_2<TType, T, T0>;
+    #[cfg(feature = "RpcHandler_1+__c__DisplayClass10_0_1")]
+    pub type __c__DisplayClass10_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass10_0_1<
         TType,
         T,
-        T0,
-        T1,
-        T2,
     >;
-    #[cfg(feature = "RpcHandler_1+__c__DisplayClass11_0_2")]
-    pub type __c__DisplayClass11_0_2<
-        T: quest_hook::libil2cpp::Type,
-        T0: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass11_0_2<TType, T, T0>;
     #[cfg(feature = "RpcHandler_1+__c__DisplayClass13_0_4")]
     pub type __c__DisplayClass13_0_4<
         T: quest_hook::libil2cpp::Type,
@@ -80,25 +55,18 @@ impl<TType: quest_hook::libil2cpp::Type> RpcHandler_1<TType> {
         T1,
         T2,
     >;
-    #[cfg(feature = "RpcHandler_1+__c__DisplayClass20_0_1")]
-    pub type __c__DisplayClass20_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass20_0_1<
-        TType,
-        T,
-    >;
-    #[cfg(feature = "RpcHandler_1+__c__DisplayClass19_0_5")]
-    pub type __c__DisplayClass19_0_5<
+    #[cfg(feature = "RpcHandler_1+__c__DisplayClass18_0_4")]
+    pub type __c__DisplayClass18_0_4<
         T: quest_hook::libil2cpp::Type,
         T0: quest_hook::libil2cpp::Type,
         T1: quest_hook::libil2cpp::Type,
         T2: quest_hook::libil2cpp::Type,
-        T3: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass19_0_5<
+    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass18_0_4<
         TType,
         T,
         T0,
         T1,
         T2,
-        T3,
     >;
     #[cfg(feature = "RpcHandler_1+__c__DisplayClass14_0_5")]
     pub type __c__DisplayClass14_0_5<
@@ -115,27 +83,43 @@ impl<TType: quest_hook::libil2cpp::Type> RpcHandler_1<TType> {
         T2,
         T3,
     >;
-    #[cfg(feature = "RpcHandler_1+__c__DisplayClass16_0_2")]
-    pub type __c__DisplayClass16_0_2<
+    #[cfg(feature = "RpcHandler_1+__c__DisplayClass12_0_3")]
+    pub type __c__DisplayClass12_0_3<
         T: quest_hook::libil2cpp::Type,
         T0: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass16_0_2<TType, T, T0>;
-    pub fn _ctor(
-        &mut self,
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
-        messageType: crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (multiplayerSessionManager, messageType))?;
-        Ok(__cordl_ret)
-    }
+        T1: quest_hook::libil2cpp::Type,
+    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass12_0_3<TType, T, T0, T1>;
+    #[cfg(feature = "RpcHandler_1+__c__DisplayClass17_0_3")]
+    pub type __c__DisplayClass17_0_3<
+        T: quest_hook::libil2cpp::Type,
+        T0: quest_hook::libil2cpp::Type,
+        T1: quest_hook::libil2cpp::Type,
+    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass17_0_3<TType, T, T0, T1>;
+    #[cfg(feature = "RpcHandler_1+__c__DisplayClass19_0_5")]
+    pub type __c__DisplayClass19_0_5<
+        T: quest_hook::libil2cpp::Type,
+        T0: quest_hook::libil2cpp::Type,
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass19_0_5<
+        TType,
+        T,
+        T0,
+        T1,
+        T2,
+        T3,
+    >;
+    #[cfg(feature = "RpcHandler_1+__c__DisplayClass20_0_1")]
+    pub type __c__DisplayClass20_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass20_0_1<
+        TType,
+        T,
+    >;
+    #[cfg(feature = "RpcHandler_1+__c__DisplayClass11_0_2")]
+    pub type __c__DisplayClass11_0_2<
+        T: quest_hook::libil2cpp::Type,
+        T0: quest_hook::libil2cpp::Type,
+    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass11_0_2<TType, T, T0>;
     pub fn Destroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -259,6 +243,16 @@ impl<TType: quest_hook::libil2cpp::Type> RpcHandler_1<TType> {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EnqueueRpc", (value0, value1, value2, value3))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        multiplayerSessionManager: *mut IMultiplayerSessionManager,
+        messageType: crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (multiplayerSessionManager, messageType))?;
+        Ok(__cordl_object)
     }
     pub fn RegisterCallbackWithTime_Action_2_0<T>(
         &mut self,
@@ -421,6 +415,24 @@ impl<TType: quest_hook::libil2cpp::Type> RpcHandler_1<TType> {
             .invoke("RegisterCallback", (_cordl_type, callback))?;
         Ok(__cordl_ret)
     }
+    pub fn RegisterCallback_Action_2_5<T>(
+        &mut self,
+        _cordl_type: TType,
+        callback: *mut crate::System::Action_2<*mut IConnectedPlayer, T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterCallback", (_cordl_type, callback))?;
+        Ok(__cordl_ret)
+    }
     pub fn RegisterCallback_Action_3_2<T, T0, T1>(
         &mut self,
         _cordl_type: TType,
@@ -499,33 +511,21 @@ impl<TType: quest_hook::libil2cpp::Type> RpcHandler_1<TType> {
             .invoke("RegisterCallback", (_cordl_type, callback))?;
         Ok(__cordl_ret)
     }
-    pub fn RegisterCallback_Action_2_5<T>(
+    pub fn _ctor(
         &mut self,
-        _cordl_type: TType,
-        callback: *mut crate::System::Action_2<*mut IConnectedPlayer, T>,
+        multiplayerSessionManager: *mut IMultiplayerSessionManager,
+        messageType: crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
     {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterCallback", (_cordl_type, callback))?;
+            .invoke(".ctor", (multiplayerSessionManager, messageType))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
-        messageType: crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (multiplayerSessionManager, messageType))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "RpcHandler_1")]

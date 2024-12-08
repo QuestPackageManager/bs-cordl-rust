@@ -29,27 +29,15 @@ for crate::UnityEngine::Timeline::MarkerList {
 }
 #[cfg(feature = "UnityEngine+Timeline+MarkerList")]
 impl crate::UnityEngine::Timeline::MarkerList {
-    pub fn _ctor(
+    pub fn Add(
         &mut self,
-        capacity: i32,
+        item: *mut crate::UnityEngine::ScriptableObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (capacity),
+            "Add",
+            (item),
         )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRawMarkerList(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::ScriptableObject,
-        >,
-    > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::ScriptableObject,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetRawMarkerList", ())?;
         Ok(__cordl_ret)
     }
     pub fn BuildCache(
@@ -58,6 +46,16 @@ impl crate::UnityEngine::Timeline::MarkerList {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "BuildCache",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Clear",
             (),
         )?;
         Ok(__cordl_ret)
@@ -73,16 +71,17 @@ impl crate::UnityEngine::Timeline::MarkerList {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_markers(
+    pub fn CreateMarker(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::Timeline::IMarker,
-        >,
-    > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::Timeline::IMarker,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_markers", ())?;
+        _cordl_type: *mut crate::System::Type,
+        _cordl_time: f64,
+        owner: *mut crate::UnityEngine::Timeline::TrackAsset,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Timeline::IMarker> {
+        let __cordl_ret: *mut crate::UnityEngine::Timeline::IMarker = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CreateMarker",
+            (_cordl_type, _cordl_time, owner),
+        )?;
         Ok(__cordl_ret)
     }
     pub fn GetMarkers(
@@ -97,36 +96,23 @@ impl crate::UnityEngine::Timeline::MarkerList {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetMarkers", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Clear(
+    pub fn GetRawMarkerList(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Clear",
-            (),
-        )?;
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ScriptableObject,
+        >,
+    > {
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ScriptableObject,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetRawMarkerList", ())?;
         Ok(__cordl_ret)
     }
-    pub fn UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn HasNotifications(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize",
+            "HasNotifications",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateMarker(
-        &mut self,
-        _cordl_type: *mut crate::System::Type,
-        _cordl_time: f64,
-        owner: *mut crate::UnityEngine::Timeline::TrackAsset,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Timeline::IMarker> {
-        let __cordl_ret: *mut crate::UnityEngine::Timeline::IMarker = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CreateMarker",
-            (_cordl_type, _cordl_time, owner),
         )?;
         Ok(__cordl_ret)
     }
@@ -154,10 +140,12 @@ impl crate::UnityEngine::Timeline::MarkerList {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn HasNotifications(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "HasNotifications",
+            "UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize",
             (),
         )?;
         Ok(__cordl_ret)
@@ -172,22 +160,22 @@ impl crate::UnityEngine::Timeline::MarkerList {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+        capacity: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (capacity),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Count",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Add(
-        &mut self,
-        item: *mut crate::UnityEngine::ScriptableObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Add",
-            (item),
         )?;
         Ok(__cordl_ret)
     }
@@ -200,6 +188,18 @@ impl crate::UnityEngine::Timeline::MarkerList {
             "get_Item",
             (idx),
         )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_markers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Timeline::IMarker,
+        >,
+    > {
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Timeline::IMarker,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_markers", ())?;
         Ok(__cordl_ret)
     }
 }

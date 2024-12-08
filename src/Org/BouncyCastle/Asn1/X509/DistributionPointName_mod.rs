@@ -29,12 +29,33 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X509::DistributionPo
 impl crate::Org::BouncyCastle::Asn1::X509::DistributionPointName {
     pub const FullName: i32 = 0i32;
     pub const NameRelativeToCrlIssuer: i32 = 1i32;
-    pub fn get_PointType(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_PointType", ())?;
-        Ok(__cordl_ret)
+    pub fn New_Asn1TaggedObject2(
+        obj: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (obj))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_GeneralNames1(
+        name: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_Asn1Encodable0(
+        _cordl_type: i32,
+        name: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, name))?;
+        Ok(__cordl_object)
     }
     pub fn ToAsn1Object(
         &mut self,
@@ -46,16 +67,25 @@ impl crate::Org::BouncyCastle::Asn1::X509::DistributionPointName {
             .invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_Asn1Encodable0(
+    pub fn ToString(
         &mut self,
-        _cordl_type: i32,
-        name: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Asn1TaggedObject2(
+        &mut self,
+        obj: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_type, name))?;
+            .invoke(".ctor", (obj))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_GeneralNames1(
@@ -69,15 +99,16 @@ impl crate::Org::BouncyCastle::Asn1::X509::DistributionPointName {
             .invoke(".ctor", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Asn1TaggedObject2(
+    pub fn _ctor_i32_Asn1Encodable0(
         &mut self,
-        obj: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
+        _cordl_type: i32,
+        name: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (obj))?;
+            .invoke(".ctor", (_cordl_type, name))?;
         Ok(__cordl_ret)
     }
     pub fn appendObject(
@@ -94,16 +125,6 @@ impl crate::Org::BouncyCastle::Asn1::X509::DistributionPointName {
             .invoke("appendObject", (buf, sep, name, val))?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Name(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -116,33 +137,12 @@ impl crate::Org::BouncyCastle::Asn1::X509::DistributionPointName {
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_i32_Asn1Encodable0(
-        _cordl_type: i32,
-        name: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, name))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_GeneralNames1(
-        name: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Asn1TaggedObject2(
-        obj: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (obj))?;
-        Ok(__cordl_object)
+    pub fn get_PointType(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_PointType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+DistributionPointName")]

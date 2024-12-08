@@ -28,16 +28,6 @@ impl std::ops::DerefMut for crate::System::Net::DigestHeaderParser {
 }
 #[cfg(feature = "System+Net+DigestHeaderParser")]
 impl crate::System::Net::DigestHeaderParser {
-    pub fn get_Opaque(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Opaque", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetKey(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -46,16 +36,6 @@ impl crate::System::Net::DigestHeaderParser {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("GetKey", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_QOP(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_QOP", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetKeywordAndValue(
@@ -70,14 +50,30 @@ impl crate::System::Net::DigestHeaderParser {
             .invoke("GetKeywordAndValue", (key, value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Realm(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    pub fn New(
+        header: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (header))?;
+        Ok(__cordl_object)
+    }
+    pub fn Parse(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Realm", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("Parse", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SkipWhitespace(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SkipWhitespace", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -91,16 +87,6 @@ impl crate::System::Net::DigestHeaderParser {
             .invoke(".ctor", (header))?;
         Ok(__cordl_ret)
     }
-    pub fn SkipWhitespace(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SkipWhitespace", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Algorithm(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -109,13 +95,6 @@ impl crate::System::Net::DigestHeaderParser {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_Algorithm", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Parse(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Parse", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Nonce(
@@ -128,14 +107,35 @@ impl crate::System::Net::DigestHeaderParser {
             .invoke("get_Nonce", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        header: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (header))?;
-        Ok(__cordl_object)
+    pub fn get_Opaque(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Opaque", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_QOP(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_QOP", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Realm(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Realm", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+DigestHeaderParser")]

@@ -23,15 +23,10 @@ impl std::ops::DerefMut for IGameNoteMirrorable {
 }
 #[cfg(feature = "IGameNoteMirrorable")]
 impl IGameNoteMirrorable {
-    pub fn get_noteVisualModifierType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<NoteVisualModifierType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: NoteVisualModifierType = __cordl_object
-            .invoke("get_noteVisualModifierType", ())?;
-        Ok(__cordl_ret)
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
     }
     pub fn get_gameplayType(
         &mut self,
@@ -53,10 +48,15 @@ impl IGameNoteMirrorable {
             .invoke("get_noteMovement", ())?;
         Ok(__cordl_ret)
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
+    pub fn get_noteVisualModifierType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<NoteVisualModifierType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: NoteVisualModifierType = __cordl_object
+            .invoke("get_noteVisualModifierType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "IGameNoteMirrorable")]

@@ -32,40 +32,29 @@ impl crate::UnityEngine::EventSystems::PhysicsRaycaster {
     pub const kNoEventMaskSet: i32 = -1i32;
     #[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer")]
     pub type RaycastHitComparer = crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer;
-    pub fn get_depth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_depth", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_eventMask(
+    pub fn ComputeRayAndDistance(
         &mut self,
-        value: crate::UnityEngine::LayerMask,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        ray: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Ray>,
+        eventDisplayIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        distanceToClipPlane: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_eventMask", (value))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "ComputeRayAndDistance",
+                (eventData, ray, eventDisplayIndex, distanceToClipPlane),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn get_maxRayIntersections(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_maxRayIntersections", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_eventCamera(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Camera> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Camera = __cordl_object
-            .invoke("get_eventCamera", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Raycast(
         &mut self,
@@ -91,11 +80,21 @@ impl crate::UnityEngine::EventSystems::PhysicsRaycaster {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_finalEventMask(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_depth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_finalEventMask", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_depth", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_eventCamera(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Camera> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Camera = __cordl_object
+            .invoke("get_eventCamera", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_eventMask(
@@ -108,6 +107,31 @@ impl crate::UnityEngine::EventSystems::PhysicsRaycaster {
             .invoke("get_eventMask", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_finalEventMask(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_finalEventMask", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxRayIntersections(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_maxRayIntersections", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_eventMask(
+        &mut self,
+        value: crate::UnityEngine::LayerMask,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_eventMask", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_maxRayIntersections(
         &mut self,
         value: i32,
@@ -118,30 +142,6 @@ impl crate::UnityEngine::EventSystems::PhysicsRaycaster {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_maxRayIntersections", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn ComputeRayAndDistance(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-        ray: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Ray>,
-        eventDisplayIndex: quest_hook::libil2cpp::ByRefMut<i32>,
-        distanceToClipPlane: quest_hook::libil2cpp::ByRefMut<f32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "ComputeRayAndDistance",
-                (eventData, ray, eventDisplayIndex, distanceToClipPlane),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster")]
@@ -183,16 +183,6 @@ for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
 }
 #[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer")]
 impl crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Compare(
         &mut self,
         x: crate::UnityEngine::RaycastHit,
@@ -204,12 +194,22 @@ impl crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
         let __cordl_ret: i32 = __cordl_object.invoke("Compare", (x, y))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer")]

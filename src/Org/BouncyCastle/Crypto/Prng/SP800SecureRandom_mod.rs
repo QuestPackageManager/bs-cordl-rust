@@ -30,55 +30,31 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureR
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandom")]
 impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom {
-    pub fn Reseed(
+    pub fn GenerateSeed(
         &mut self,
-        additionalInput: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        numBytes: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reseed", (additionalInput))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GenerateSeed", (numBytes))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         randomSource: *mut crate::Org::BouncyCastle::Security::SecureRandom,
         entropySource: *mut crate::Org::BouncyCastle::Crypto::IEntropySource,
         drbgProvider: *mut crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider,
         predictionResistant: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
                 ".ctor",
                 (randomSource, entropySource, drbgProvider, predictionResistant),
             )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetSeed_Il2CppArray0(
-        &mut self,
-        seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSeed", (seed))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetSeed_i64_1(
-        &mut self,
-        seed: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSeed", (seed))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_object)
     }
     pub fn NextBytes_Il2CppArray0(
         &mut self,
@@ -104,31 +80,55 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom {
             .invoke("NextBytes", (buf, off, len))?;
         Ok(__cordl_ret)
     }
-    pub fn GenerateSeed(
+    pub fn Reseed(
         &mut self,
-        numBytes: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        additionalInput: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GenerateSeed", (numBytes))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reseed", (additionalInput))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn SetSeed_Il2CppArray0(
+        &mut self,
+        seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetSeed", (seed))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetSeed_i64_1(
+        &mut self,
+        seed: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetSeed", (seed))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
         randomSource: *mut crate::Org::BouncyCastle::Security::SecureRandom,
         entropySource: *mut crate::Org::BouncyCastle::Crypto::IEntropySource,
         drbgProvider: *mut crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider,
         predictionResistant: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
                 ".ctor",
                 (randomSource, entropySource, drbgProvider, predictionResistant),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandom")]

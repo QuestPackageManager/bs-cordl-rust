@@ -33,6 +33,24 @@ impl std::ops::DerefMut for VertexDisplacementFloatFxGroupEffectTarget {
 }
 #[cfg(feature = "VertexDisplacementFloatFxGroupEffectTarget")]
 impl VertexDisplacementFloatFxGroupEffectTarget {
+    pub fn CalculateDisplacementVector(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector4 = __cordl_object
+            .invoke("CalculateDisplacementVector", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn OnEnable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -41,29 +59,6 @@ impl VertexDisplacementFloatFxGroupEffectTarget {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TriggerValue(
-        &mut self,
-        groupId: i32,
-        elementId: i32,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TriggerValue", (groupId, elementId, value))?;
         Ok(__cordl_ret)
     }
     pub fn OnValidate(
@@ -76,15 +71,15 @@ impl VertexDisplacementFloatFxGroupEffectTarget {
             .invoke("OnValidate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CalculateDisplacementVector(
+    pub fn SetValue_f32_1(
         &mut self,
         value: f32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Vector4 = __cordl_object
-            .invoke("CalculateDisplacementVector", (value))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetValue", (value))?;
         Ok(__cordl_ret)
     }
     pub fn SetValue_i32_i32_f32_0(
@@ -100,23 +95,28 @@ impl VertexDisplacementFloatFxGroupEffectTarget {
             .invoke("SetValue", (groupId, elementId, value))?;
         Ok(__cordl_ret)
     }
-    pub fn SetValue_f32_1(
+    pub fn TriggerValue(
         &mut self,
+        groupId: i32,
+        elementId: i32,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetValue", (value))?;
+            .invoke("TriggerValue", (groupId, elementId, value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "VertexDisplacementFloatFxGroupEffectTarget")]

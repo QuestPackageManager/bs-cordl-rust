@@ -24,14 +24,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Drawing::Rect
 }
 #[cfg(feature = "System+Drawing+Rectangle")]
 impl crate::System::Drawing::Rectangle {
-    pub fn get_Height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Height",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_Object0(
         &mut self,
         obj: *mut crate::System::Object,
@@ -54,26 +46,10 @@ impl crate::System::Drawing::Rectangle {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Width",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Y(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Y",
             (),
         )?;
         Ok(__cordl_ret)
@@ -88,10 +64,34 @@ impl crate::System::Drawing::Rectangle {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_Height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Height",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Width",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_X(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_X",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Y(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Y",
             (),
         )?;
         Ok(__cordl_ret)

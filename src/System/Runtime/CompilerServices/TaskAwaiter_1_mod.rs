@@ -37,15 +37,18 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    pub fn OnCompleted(
+        &mut self,
+        continuation: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_IsCompleted",
-            (),
+            "OnCompleted",
+            (continuation),
         )?;
         Ok(__cordl_ret)
     }
@@ -79,18 +82,15 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn OnCompleted(
-        &mut self,
-        continuation: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "OnCompleted",
-            (continuation),
+            "get_IsCompleted",
+            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -20,14 +20,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for EnvironmentName {
 }
 #[cfg(feature = "EnvironmentName")]
 impl EnvironmentName {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_EnvironmentName0(
         &mut self,
         other: EnvironmentName,
@@ -47,6 +39,14 @@ impl EnvironmentName {
             self,
             "Equals",
             (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }

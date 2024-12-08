@@ -30,6 +30,35 @@ impl std::ops::DerefMut for PlayerSpecificSettingsAtStartNetSerializable {
 }
 #[cfg(feature = "PlayerSpecificSettingsAtStartNetSerializable")]
 impl PlayerSpecificSettingsAtStartNetSerializable {
+    pub fn Deserialize(
+        &mut self,
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Deserialize", (reader))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_List_1_1(
+        activePlayerSpecificSettingsAtGameStart: *mut crate::System::Collections::Generic::List_1<
+            *mut PlayerSpecificSettingsNetSerializable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (activePlayerSpecificSettingsAtGameStart))?;
+        Ok(__cordl_object)
+    }
     pub fn Serialize(
         &mut self,
         writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
@@ -64,19 +93,6 @@ impl PlayerSpecificSettingsAtStartNetSerializable {
             .invoke(".ctor", (activePlayerSpecificSettingsAtGameStart))?;
         Ok(__cordl_ret)
     }
-    pub fn set_activePlayerSpecificSettingsAtGameStart(
-        &mut self,
-        value: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut PlayerSpecificSettingsNetSerializable,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_activePlayerSpecificSettingsAtGameStart", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_activePlayerSpecificSettingsAtGameStart(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -105,34 +121,18 @@ impl PlayerSpecificSettingsAtStartNetSerializable {
         > = __cordl_object.invoke("get_activePlayersAtGameStart", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Deserialize(
+    pub fn set_activePlayerSpecificSettingsAtGameStart(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        value: *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut PlayerSpecificSettingsNetSerializable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Deserialize", (reader))?;
+            .invoke("set_activePlayerSpecificSettingsAtGameStart", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_List_1_1(
-        activePlayerSpecificSettingsAtGameStart: *mut crate::System::Collections::Generic::List_1<
-            *mut PlayerSpecificSettingsNetSerializable,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (activePlayerSpecificSettingsAtGameStart))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PlayerSpecificSettingsAtStartNetSerializable")]

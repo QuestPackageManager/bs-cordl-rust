@@ -25,16 +25,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::MPInteger {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+MPInteger")]
 impl crate::Org::BouncyCastle::Bcpg::MPInteger {
-    pub fn get_Value(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("get_Value", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Encode(
         &mut self,
         bcpgOut: *mut crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
@@ -45,6 +35,24 @@ impl crate::Org::BouncyCastle::Bcpg::MPInteger {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Encode", (bcpgOut))?;
         Ok(__cordl_ret)
+    }
+    pub fn New_BcpgInputStream0(
+        bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bcpgIn))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_BigInteger1(
+        val: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (val))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_BcpgInputStream0(
         &mut self,
@@ -68,23 +76,15 @@ impl crate::Org::BouncyCastle::Bcpg::MPInteger {
             .invoke(".ctor", (val))?;
         Ok(__cordl_ret)
     }
-    pub fn New_BcpgInputStream0(
-        bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bcpgIn))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_BigInteger1(
-        val: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (val))?;
-        Ok(__cordl_object)
+    pub fn get_Value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_Value", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+MPInteger")]

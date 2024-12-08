@@ -33,6 +33,26 @@ for crate::UnityEngine::ResourceManagement::WebRequestQueueOperation {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+WebRequestQueueOperation")]
 impl crate::UnityEngine::ResourceManagement::WebRequestQueueOperation {
+    pub fn Complete(
+        &mut self,
+        asyncOp: *mut crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Complete", (asyncOp))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        request: *mut crate::UnityEngine::Networking::UnityWebRequest,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (request))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         request: *mut crate::UnityEngine::Networking::UnityWebRequest,
@@ -42,17 +62,6 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueueOperation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (request))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_WebRequest(
-        &mut self,
-        value: *mut crate::UnityEngine::Networking::UnityWebRequest,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_WebRequest", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_IsDone(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -74,25 +83,16 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueueOperation {
             .invoke("get_WebRequest", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Complete(
+    pub fn set_WebRequest(
         &mut self,
-        asyncOp: *mut crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
+        value: *mut crate::UnityEngine::Networking::UnityWebRequest,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Complete", (asyncOp))?;
+            .invoke("set_WebRequest", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        request: *mut crate::UnityEngine::Networking::UnityWebRequest,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (request))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+WebRequestQueueOperation")]

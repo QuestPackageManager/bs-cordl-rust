@@ -30,6 +30,23 @@ impl std::ops::DerefMut for crate::TMPro::TMP_TextElement {
 }
 #[cfg(feature = "TMPro+TMP_TextElement")]
 impl crate::TMPro::TMP_TextElement {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_elementType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::TMPro::TextElementType> {
@@ -40,31 +57,6 @@ impl crate::TMPro::TMP_TextElement {
             .invoke("get_elementType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_glyphIndex(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("get_glyphIndex", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_unicode(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_unicode", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_unicode(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("get_unicode", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_glyph(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::TextCore::Glyph> {
@@ -73,6 +65,37 @@ impl crate::TMPro::TMP_TextElement {
         );
         let __cordl_ret: *mut crate::UnityEngine::TextCore::Glyph = __cordl_object
             .invoke("get_glyph", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_glyphIndex(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("get_glyphIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_scale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_scale", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_textAsset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::TMPro::TMP_Asset> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::TMPro::TMP_Asset = __cordl_object
+            .invoke("get_textAsset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_unicode(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("get_unicode", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_glyph(
@@ -86,11 +109,15 @@ impl crate::TMPro::TMP_TextElement {
             .invoke("set_glyph", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_scale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn set_glyphIndex(
+        &mut self,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_scale", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_glyphIndex", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_scale(
@@ -104,16 +131,6 @@ impl crate::TMPro::TMP_TextElement {
             .invoke("set_scale", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_textAsset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::TMPro::TMP_Asset> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::TMPro::TMP_Asset = __cordl_object
-            .invoke("get_textAsset", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_textAsset(
         &mut self,
         value: *mut crate::TMPro::TMP_Asset,
@@ -125,7 +142,7 @@ impl crate::TMPro::TMP_TextElement {
             .invoke("set_textAsset", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_glyphIndex(
+    pub fn set_unicode(
         &mut self,
         value: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -133,25 +150,8 @@ impl crate::TMPro::TMP_TextElement {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_glyphIndex", (value))?;
+            .invoke("set_unicode", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "TMPro+TMP_TextElement")]

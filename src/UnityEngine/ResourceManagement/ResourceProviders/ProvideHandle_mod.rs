@@ -25,27 +25,48 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle")]
 impl crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
-    pub fn get_Location(
+    pub fn Complete<T>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        result: T,
+        status: bool,
+        exception: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Location",
-            (),
+            "Complete",
+            (result, status, exception),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_ResourceManager(
+    pub fn GetDependencies(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::ResourceManager = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        list: *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::System::Object,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_ResourceManager",
-            (),
+            "GetDependencies",
+            (list),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDependency<TDepObject>(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<TDepObject>
+    where
+        TDepObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TDepObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetDependency",
+            (index),
         )?;
         Ok(__cordl_ret)
     }
@@ -73,6 +94,17 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn SetWaitForCompletionCallback(
+        &mut self,
+        callback: *mut crate::System::Func_1<bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetWaitForCompletionCallback",
+            (callback),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         rm: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
@@ -82,6 +114,14 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
             self,
             ".ctor",
             (rm, op),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_DependencyCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_DependencyCount",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -97,31 +137,34 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_DependencyCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_DependencyCount",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDependencies(
-        &mut self,
-        list: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::System::Object,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetDependencies",
-            (list),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_IsValid",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Location(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Location",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ResourceManager(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::ResourceManagement::ResourceManager,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::ResourceManager = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_ResourceManager",
             (),
         )?;
         Ok(__cordl_ret)
@@ -133,49 +176,6 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
             self,
             "get_Type",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDependency<TDepObject>(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<TDepObject>
-    where
-        TDepObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: TDepObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetDependency",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Complete<T>(
-        &mut self,
-        result: T,
-        status: bool,
-        exception: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Complete",
-            (result, status, exception),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetWaitForCompletionCallback(
-        &mut self,
-        callback: *mut crate::System::Func_1<bool>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetWaitForCompletionCallback",
-            (callback),
         )?;
         Ok(__cordl_ret)
     }

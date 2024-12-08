@@ -27,6 +27,36 @@ for crate::UnityEngine::UIElements::ReusableMultiColumnTreeViewItem {
 }
 #[cfg(feature = "UnityEngine+UIElements+ReusableMultiColumnTreeViewItem")]
 impl crate::UnityEngine::UIElements::ReusableMultiColumnTreeViewItem {
+    pub fn Init_Columns1(
+        &mut self,
+        container: *mut crate::UnityEngine::UIElements::VisualElement,
+        columns: *mut crate::UnityEngine::UIElements::Columns,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (container, columns))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init_VisualElement0(
+        &mut self,
+        item: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (item))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -48,36 +78,6 @@ impl crate::UnityEngine::UIElements::ReusableMultiColumnTreeViewItem {
         let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
             .invoke("get_rootElement", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Init_VisualElement0(
-        &mut self,
-        item: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (item))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init_Columns1(
-        &mut self,
-        container: *mut crate::UnityEngine::UIElements::VisualElement,
-        columns: *mut crate::UnityEngine::UIElements::Columns,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (container, columns))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ReusableMultiColumnTreeViewItem")]

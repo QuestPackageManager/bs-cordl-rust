@@ -27,16 +27,14 @@ impl std::ops::DerefMut for crate::System::Threading::ThreadHelper {
 }
 #[cfg(feature = "System+Threading+ThreadHelper")]
 impl crate::System::Threading::ThreadHelper {
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         start: *mut crate::System::Delegate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (start))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (start))?;
+        Ok(__cordl_object)
     }
     pub fn SetExecutionContextHelper(
         &mut self,
@@ -47,6 +45,16 @@ impl crate::System::Threading::ThreadHelper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetExecutionContextHelper", (ec))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ThreadStart_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ThreadStart", ())?;
         Ok(__cordl_ret)
     }
     pub fn ThreadStart_Object0(
@@ -60,24 +68,16 @@ impl crate::System::Threading::ThreadHelper {
             .invoke("ThreadStart", (obj))?;
         Ok(__cordl_ret)
     }
-    pub fn ThreadStart_1(
+    pub fn _ctor(
         &mut self,
+        start: *mut crate::System::Delegate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ThreadStart", ())?;
+            .invoke(".ctor", (start))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        start: *mut crate::System::Delegate,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (start))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Threading+ThreadHelper")]

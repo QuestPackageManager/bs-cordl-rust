@@ -23,18 +23,18 @@ impl std::ops::DerefMut for TaskExtensions {
 }
 #[cfg(feature = "TaskExtensions")]
 impl TaskExtensions {
-    #[cfg(feature = "TaskExtensions+_WaitAsyncInternal_d__3")]
-    pub type _WaitAsyncInternal_d__3 = crate::GlobalNamespace::TaskExtensions__WaitAsyncInternal_d__3;
     #[cfg(feature = "TaskExtensions+__c__DisplayClass4_0_1")]
     pub type __c__DisplayClass4_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::TaskExtensions___c__DisplayClass4_0_1<
         T,
     >;
-    #[cfg(feature = "TaskExtensions+__c__DisplayClass3_0")]
-    pub type __c__DisplayClass3_0 = crate::GlobalNamespace::TaskExtensions___c__DisplayClass3_0;
     #[cfg(feature = "TaskExtensions+_WaitAsyncInternal_d__4_1")]
     pub type _WaitAsyncInternal_d__4_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::TaskExtensions__WaitAsyncInternal_d__4_1<
         T,
     >;
+    #[cfg(feature = "TaskExtensions+__c__DisplayClass3_0")]
+    pub type __c__DisplayClass3_0 = crate::GlobalNamespace::TaskExtensions___c__DisplayClass3_0;
+    #[cfg(feature = "TaskExtensions+_WaitAsyncInternal_d__3")]
+    pub type _WaitAsyncInternal_d__3 = crate::GlobalNamespace::TaskExtensions__WaitAsyncInternal_d__3;
 }
 #[cfg(feature = "TaskExtensions")]
 impl quest_hook::libil2cpp::ObjectType for TaskExtensions {

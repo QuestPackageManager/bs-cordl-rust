@@ -26,28 +26,28 @@ for crate::System::Linq::Expressions::Interpreter::AddInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::AddInstruction {
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddInt16")]
+    pub type AddInt16 = crate::GlobalNamespace::AddInstruction_AddInt16;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddUInt32")]
+    pub type AddUInt32 = crate::GlobalNamespace::AddInstruction_AddUInt32;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddInt64")]
     pub type AddInt64 = crate::GlobalNamespace::AddInstruction_AddInt64;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddUInt16")]
     pub type AddUInt16 = crate::GlobalNamespace::AddInstruction_AddUInt16;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddUInt64")]
+    pub type AddUInt64 = crate::GlobalNamespace::AddInstruction_AddUInt64;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddSingle")]
     pub type AddSingle = crate::GlobalNamespace::AddInstruction_AddSingle;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddDouble")]
     pub type AddDouble = crate::GlobalNamespace::AddInstruction_AddDouble;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddUInt32")]
-    pub type AddUInt32 = crate::GlobalNamespace::AddInstruction_AddUInt32;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddInt32")]
     pub type AddInt32 = crate::GlobalNamespace::AddInstruction_AddInt32;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddUInt64")]
-    pub type AddUInt64 = crate::GlobalNamespace::AddInstruction_AddUInt64;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddInt16")]
-    pub type AddInt16 = crate::GlobalNamespace::AddInstruction_AddInt16;
-    pub fn get_ConsumedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -59,11 +59,11 @@ impl crate::System::Linq::Expressions::Interpreter::AddInstruction {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_ConsumedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_InstructionName(
@@ -76,12 +76,12 @@ impl crate::System::Linq::Expressions::Interpreter::AddInstruction {
             .invoke("get_InstructionName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction")]

@@ -33,6 +33,35 @@ impl std::ops::DerefMut for BeatmapObjectSpawnCenter {
 impl BeatmapObjectSpawnCenter {
     #[cfg(feature = "BeatmapObjectSpawnCenter+PlayerCountToDistance")]
     pub type PlayerCountToDistance = crate::GlobalNamespace::BeatmapObjectSpawnCenter_PlayerCountToDistance;
+    pub fn CalculateSpawnCenterPosition(
+        &mut self,
+        numberOfPlayers: i32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("CalculateSpawnCenterPosition", (numberOfPlayers))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ReportAndSaveSpawnCenterDistance(
+        &mut self,
+        distance: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReportAndSaveSpawnCenterDistance", (distance))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -41,13 +70,6 @@ impl BeatmapObjectSpawnCenter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_spawnCenterDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_spawnCenterDistance", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_spawnCenterDistanceWasFoundEvent(
@@ -59,6 +81,13 @@ impl BeatmapObjectSpawnCenter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_spawnCenterDistanceWasFoundEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_spawnCenterDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_spawnCenterDistance", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_spawnCenterDistanceWasFound(
@@ -81,35 +110,6 @@ impl BeatmapObjectSpawnCenter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_spawnCenterDistanceWasFoundEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn CalculateSpawnCenterPosition(
-        &mut self,
-        numberOfPlayers: i32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("CalculateSpawnCenterPosition", (numberOfPlayers))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReportAndSaveSpawnCenterDistance(
-        &mut self,
-        distance: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReportAndSaveSpawnCenterDistance", (distance))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapObjectSpawnCenter")]
@@ -152,6 +152,13 @@ for crate::GlobalNamespace::BeatmapObjectSpawnCenter_PlayerCountToDistance {
 }
 #[cfg(feature = "BeatmapObjectSpawnCenter+PlayerCountToDistance")]
 impl crate::GlobalNamespace::BeatmapObjectSpawnCenter_PlayerCountToDistance {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -175,13 +182,6 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnCenter_PlayerCountToDistance {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_playerCount", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapObjectSpawnCenter+PlayerCountToDistance")]

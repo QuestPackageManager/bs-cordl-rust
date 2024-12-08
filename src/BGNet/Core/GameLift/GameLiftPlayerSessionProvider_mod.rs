@@ -40,6 +40,10 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
     pub const kMaxPingCount: i32 = 10i32;
     pub const kPingFrequencyMs: i32 = 3000i32;
     #[cfg(
+        feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+_GetGameLiftPlayerSessionInfo_d__14"
+    )]
+    pub type _GetGameLiftPlayerSessionInfo_d__14 = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider__GetGameLiftPlayerSessionInfo_d__14;
+    #[cfg(
         feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+_PingAllAwsGameLiftRegions_d__15"
     )]
     pub type _PingAllAwsGameLiftRegions_d__15 = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider__PingAllAwsGameLiftRegions_d__15;
@@ -49,68 +53,6 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+_PingRegionAsync_d__17"
     )]
     pub type _PingRegionAsync_d__17 = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider__PingRegionAsync_d__17;
-    #[cfg(
-        feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+_GetGameLiftPlayerSessionInfo_d__14"
-    )]
-    pub type _GetGameLiftPlayerSessionInfo_d__14 = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider__GetGameLiftPlayerSessionInfo_d__14;
-    pub fn PingRegionAsync(
-        &mut self,
-        awsRegion: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::System::ValueTuple_2<*mut crate::System::String, i64>,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::System::ValueTuple_2<*mut crate::System::String, i64>,
-        > = __cordl_object.invoke("PingRegionAsync", (awsRegion))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PollUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PollUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        networkConfig: *mut INetworkConfig,
-        xPlatformAuthFeatureFlag: *mut XPlatformAuthFeatureFlag,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (networkConfig, xPlatformAuthFeatureFlag))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetXPlatformAccessToken(
-        &mut self,
-        authenticationTokenProvider: *mut IAuthenticationTokenProvider,
-        cancellationToken: crate::System::Threading::CancellationToken,
-        skipCache: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<XPlatformAccessTokenData>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            XPlatformAccessTokenData,
-        > = __cordl_object
-            .invoke(
-                "GetXPlatformAccessToken",
-                (authenticationTokenProvider, cancellationToken, skipCache),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetAverageLatencies(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -162,6 +104,36 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn GetXPlatformAccessToken(
+        &mut self,
+        authenticationTokenProvider: *mut IAuthenticationTokenProvider,
+        cancellationToken: crate::System::Threading::CancellationToken,
+        skipCache: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<XPlatformAccessTokenData>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            XPlatformAccessTokenData,
+        > = __cordl_object
+            .invoke(
+                "GetXPlatformAccessToken",
+                (authenticationTokenProvider, cancellationToken, skipCache),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        networkConfig: *mut INetworkConfig,
+        xPlatformAuthFeatureFlag: *mut XPlatformAuthFeatureFlag,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (networkConfig, xPlatformAuthFeatureFlag))?;
+        Ok(__cordl_object)
+    }
     pub fn PingAllAwsGameLiftRegions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -170,6 +142,32 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PingAllAwsGameLiftRegions", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn PingRegionAsync(
+        &mut self,
+        awsRegion: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::System::ValueTuple_2<*mut crate::System::String, i64>,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            crate::System::ValueTuple_2<*mut crate::System::String, i64>,
+        > = __cordl_object.invoke("PingRegionAsync", (awsRegion))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PollUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PollUpdate", ())?;
         Ok(__cordl_ret)
     }
     pub fn _PingAllAwsGameLiftRegions_b__15_0(
@@ -188,15 +186,17 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         > = __cordl_object.invoke("<PingAllAwsGameLiftRegions>b__15_0", (region))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         networkConfig: *mut INetworkConfig,
         xPlatformAuthFeatureFlag: *mut XPlatformAuthFeatureFlag,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (networkConfig, xPlatformAuthFeatureFlag))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (networkConfig, xPlatformAuthFeatureFlag))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]

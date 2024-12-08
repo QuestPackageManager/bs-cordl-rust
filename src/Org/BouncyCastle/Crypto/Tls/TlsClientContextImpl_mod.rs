@@ -25,12 +25,15 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsClientCont
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsClientContextImpl")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl {
-    pub fn get_IsServer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsServer", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        secureRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        securityParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (secureRandom, securityParameters))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -44,15 +47,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl {
             .invoke(".ctor", (secureRandom, securityParameters))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        secureRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-        securityParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (secureRandom, securityParameters))?;
-        Ok(__cordl_object)
+    pub fn get_IsServer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsServer", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsClientContextImpl")]

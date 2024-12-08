@@ -25,18 +25,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCred
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsSignerCredentials")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials {
-    pub fn get_SignatureAndHashAlgorithm(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm = __cordl_object
-            .invoke("get_SignatureAndHashAlgorithm", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GenerateCertificateSignature(
         &mut self,
         hash: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -52,6 +40,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_SignatureAndHashAlgorithm(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm = __cordl_object
+            .invoke("get_SignatureAndHashAlgorithm", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsSignerCredentials")]

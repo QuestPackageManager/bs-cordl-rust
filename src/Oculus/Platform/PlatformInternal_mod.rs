@@ -137,10 +137,10 @@ impl std::ops::DerefMut for crate::Oculus::Platform::PlatformInternal {
 impl crate::Oculus::Platform::PlatformInternal {
     #[cfg(feature = "Oculus+Platform+PlatformInternal+MessageTypeInternal")]
     pub type MessageTypeInternal = crate::Oculus::Platform::PlatformInternal_MessageTypeInternal;
-    #[cfg(feature = "Oculus+Platform+PlatformInternal+HTTP")]
-    pub type HTTP = crate::Oculus::Platform::PlatformInternal_HTTP;
     #[cfg(feature = "Oculus+Platform+PlatformInternal+Users")]
     pub type Users = crate::Oculus::Platform::PlatformInternal_Users;
+    #[cfg(feature = "Oculus+Platform+PlatformInternal+HTTP")]
+    pub type HTTP = crate::Oculus::Platform::PlatformInternal_HTTP;
 }
 #[cfg(feature = "Oculus+Platform+PlatformInternal")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::PlatformInternal {

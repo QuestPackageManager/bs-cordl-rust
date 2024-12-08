@@ -130,12 +130,19 @@ impl std::ops::DerefMut for crate::Unity::XR::Oculus::Stats {
 }
 #[cfg(feature = "Unity+XR+Oculus+Stats")]
 impl crate::Unity::XR::Oculus::Stats {
-    #[cfg(feature = "Unity+XR+Oculus+Stats+AdaptivePerformance")]
-    pub type AdaptivePerformance = crate::Unity::XR::Oculus::Stats_AdaptivePerformance;
     #[cfg(feature = "Unity+XR+Oculus+Stats+PerfMetrics")]
     pub type PerfMetrics = crate::Unity::XR::Oculus::Stats_PerfMetrics;
+    #[cfg(feature = "Unity+XR+Oculus+Stats+AdaptivePerformance")]
+    pub type AdaptivePerformance = crate::Unity::XR::Oculus::Stats_AdaptivePerformance;
     #[cfg(feature = "Unity+XR+Oculus+Stats+AppMetrics")]
     pub type AppMetrics = crate::Unity::XR::Oculus::Stats_AppMetrics;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -145,13 +152,6 @@ impl crate::Unity::XR::Oculus::Stats {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+XR+Oculus+Stats")]

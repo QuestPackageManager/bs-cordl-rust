@@ -63,22 +63,15 @@ impl ObstacleController {
     pub type Pool = crate::GlobalNamespace::ObstacleController_Pool;
     #[cfg(feature = "ObstacleController+_DissolveCoroutine_d__65")]
     pub type _DissolveCoroutine_d__65 = crate::GlobalNamespace::ObstacleController__DissolveCoroutine_d__65;
-    pub fn get_length(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_length", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_finishedMovementEvent(
+    pub fn Dissolve(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_finishedMovementEvent", (value))?;
+            .invoke("Dissolve", (duration))?;
         Ok(__cordl_ret)
     }
     pub fn DissolveCoroutine(
@@ -92,66 +85,26 @@ impl ObstacleController {
             .invoke("DissolveCoroutine", (duration))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_passedAvoidedMarkEvent(
+    pub fn GetPosForTime(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        _cordl_time: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("GetPosForTime", (_cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Hide(
+        &mut self,
+        hide: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_passedAvoidedMarkEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didUpdateProgress(
-        &mut self,
-        value: *mut crate::System::Action_2<*mut ObstacleController, f32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didUpdateProgress", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dissolve(
-        &mut self,
-        duration: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dissolve", (duration))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Pause(
-        &mut self,
-        pause: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Pause", (pause))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_hasPassedAvoidedMark(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hasPassedAvoidedMark", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_finishedMovementEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_finishedMovementEvent", (value))?;
+            .invoke("Hide", (hide))?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -186,6 +139,54 @@ impl ObstacleController {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn ManualUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ManualUpdate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Pause(
+        &mut self,
+        pause: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Pause", (pause))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn add_didDissolveEvent(
         &mut self,
         value: *mut crate::System::Action_1<*mut ObstacleController>,
@@ -208,7 +209,7 @@ impl ObstacleController {
             .invoke("add_didUpdateProgress", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didDissolveEvent(
+    pub fn add_finishedMovementEvent(
         &mut self,
         value: *mut crate::System::Action_1<*mut ObstacleController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -216,108 +217,7 @@ impl ObstacleController {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didDissolveEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_height", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_passedThreeQuartersOfMove2Event(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_passedThreeQuartersOfMove2Event", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_color(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_color", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_bounds(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Bounds = __cordl_object
-            .invoke("get_bounds", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ManualUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ManualUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPosForTime(
-        &mut self,
-        _cordl_time: f32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("GetPosForTime", (_cordl_time))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Hide(
-        &mut self,
-        hide: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Hide", (hide))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_obstacleData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut ObstacleData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut ObstacleData = __cordl_object
-            .invoke("get_obstacleData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_passedThreeQuartersOfMove2Event(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_passedThreeQuartersOfMove2Event", (value))?;
+            .invoke("add_finishedMovementEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_passedAvoidedMarkEvent(
@@ -331,28 +231,56 @@ impl ObstacleController {
             .invoke("add_passedAvoidedMarkEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_width", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn add_passedThreeQuartersOfMove2Event(
         &mut self,
+        value: *mut crate::System::Action_1<*mut ObstacleController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("add_passedThreeQuartersOfMove2Event", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_move2Duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_bounds(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_move2Duration", ())?;
+        let __cordl_ret: crate::UnityEngine::Bounds = __cordl_object
+            .invoke("get_bounds", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_color(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_color", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hasPassedAvoidedMark(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_hasPassedAvoidedMark", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_height", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_length(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_length", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_move1Duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -362,12 +290,84 @@ impl ObstacleController {
         let __cordl_ret: f32 = __cordl_object.invoke("get_move1Duration", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_move2Duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_move2Duration", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_obstacleData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut ObstacleData> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut ObstacleData = __cordl_object
+            .invoke("get_obstacleData", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_width", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didDissolveEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut ObstacleController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didDissolveEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didUpdateProgress(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut ObstacleController, f32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didUpdateProgress", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_finishedMovementEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut ObstacleController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_finishedMovementEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_passedAvoidedMarkEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut ObstacleController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_passedAvoidedMarkEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_passedThreeQuartersOfMove2Event(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut ObstacleController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_passedThreeQuartersOfMove2Event", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "ObstacleController")]
@@ -405,6 +405,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ObstacleController_Pool {
 }
 #[cfg(feature = "ObstacleController+Pool")]
 impl crate::GlobalNamespace::ObstacleController_Pool {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -414,13 +421,6 @@ impl crate::GlobalNamespace::ObstacleController_Pool {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ObstacleController+Pool")]

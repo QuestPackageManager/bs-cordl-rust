@@ -25,16 +25,14 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::HumiditySensor {
 }
 #[cfg(feature = "UnityEngine+InputSystem+HumiditySensor")]
 impl crate::UnityEngine::InputSystem::HumiditySensor {
-    pub fn get_relativeHumidity(
+    pub fn FinishSetup(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
-            .invoke("get_relativeHumidity", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FinishSetup", ())?;
         Ok(__cordl_ret)
     }
     pub fn MakeCurrent(
@@ -47,6 +45,13 @@ impl crate::UnityEngine::InputSystem::HumiditySensor {
             .invoke("MakeCurrent", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn OnRemoved(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,16 +60,6 @@ impl crate::UnityEngine::InputSystem::HumiditySensor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnRemoved", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FinishSetup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FinishSetup", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -77,6 +72,18 @@ impl crate::UnityEngine::InputSystem::HumiditySensor {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_relativeHumidity(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
+            .invoke("get_relativeHumidity", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_relativeHumidity(
         &mut self,
         value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
@@ -87,13 +94,6 @@ impl crate::UnityEngine::InputSystem::HumiditySensor {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_relativeHumidity", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+HumiditySensor")]

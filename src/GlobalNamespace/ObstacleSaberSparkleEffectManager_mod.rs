@@ -77,15 +77,21 @@ impl std::ops::DerefMut for ObstacleSaberSparkleEffectManager {
 impl ObstacleSaberSparkleEffectManager {
     #[cfg(feature = "ObstacleSaberSparkleEffectManager+BoxSideRotations")]
     pub type BoxSideRotations = crate::GlobalNamespace::ObstacleSaberSparkleEffectManager_BoxSideRotations;
-    pub fn remove_sparkleEffectDidStartEvent(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Start(
         &mut self,
-        value: *mut crate::System::Action_1<SaberType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_sparkleEffectDidStartEvent", (value))?;
+            .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
     pub fn Update(
@@ -106,6 +112,17 @@ impl ObstacleSaberSparkleEffectManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_sparkleEffectDidEndEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<SaberType>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_sparkleEffectDidEndEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_sparkleEffectDidStartEvent(
@@ -130,7 +147,7 @@ impl ObstacleSaberSparkleEffectManager {
             .invoke("remove_sparkleEffectDidEndEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn add_sparkleEffectDidEndEvent(
+    pub fn remove_sparkleEffectDidStartEvent(
         &mut self,
         value: *mut crate::System::Action_1<SaberType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -138,25 +155,8 @@ impl ObstacleSaberSparkleEffectManager {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_sparkleEffectDidEndEvent", (value))?;
+            .invoke("remove_sparkleEffectDidStartEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ObstacleSaberSparkleEffectManager")]

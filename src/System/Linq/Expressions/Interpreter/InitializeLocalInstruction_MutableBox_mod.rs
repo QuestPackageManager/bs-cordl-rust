@@ -37,6 +37,26 @@ for crate::GlobalNamespace::InitializeLocalInstruction_MutableBox {
     feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+MutableBox"
 )]
 impl crate::GlobalNamespace::InitializeLocalInstruction_MutableBox {
+    pub fn New(
+        index: i32,
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (index, _cordl_type))?;
+        Ok(__cordl_object)
+    }
+    pub fn Run(
+        &mut self,
+        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Run", (frame))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         index: i32,
@@ -49,16 +69,6 @@ impl crate::GlobalNamespace::InitializeLocalInstruction_MutableBox {
             .invoke(".ctor", (index, _cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn Run(
-        &mut self,
-        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Run", (frame))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_InstructionName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -68,16 +78,6 @@ impl crate::GlobalNamespace::InitializeLocalInstruction_MutableBox {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_InstructionName", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        index: i32,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (index, _cordl_type))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

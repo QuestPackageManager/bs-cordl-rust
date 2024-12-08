@@ -78,32 +78,6 @@ for crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct NewLayoutMsg_Data {
-    pub name: *mut crate::System::String,
-    pub layoutJson: *mut crate::System::String,
-    pub isOverride: bool,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::NewLayoutMsg_Data =>
-    "UnityEngine.InputSystem"."InputRemoting/NewLayoutMsg/Data"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::NewLayoutMsg_Data {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
-impl crate::UnityEngine::InputSystem::NewLayoutMsg_Data {}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -132,6 +106,32 @@ for crate::UnityEngine::InputSystem::NewDeviceMsg_Data {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 impl crate::UnityEngine::InputSystem::NewDeviceMsg_Data {}
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct NewLayoutMsg_Data {
+    pub name: *mut crate::System::String,
+    pub layoutJson: *mut crate::System::String,
+    pub isOverride: bool,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::NewLayoutMsg_Data =>
+    "UnityEngine.InputSystem"."InputRemoting/NewLayoutMsg/Data"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::NewLayoutMsg_Data {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
+impl crate::UnityEngine::InputSystem::NewLayoutMsg_Data {}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -241,37 +241,81 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
 impl crate::UnityEngine::InputSystem::InputRemoting {
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+MessageType")]
-    pub type MessageType = crate::UnityEngine::InputSystem::InputRemoting_MessageType;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
-    pub type Subscriber = crate::UnityEngine::InputSystem::InputRemoting_Subscriber;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
-    pub type ConnectMsg = crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
-    pub type NewEventsMsg = crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteSender")]
-    pub type RemoteSender = crate::UnityEngine::InputSystem::InputRemoting_RemoteSender;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
-    pub type StartSendingMsg = crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
-    pub type DisconnectMsg = crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
-    pub type RemoveDeviceMsg = crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg")]
-    pub type NewLayoutMsg = crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
-    pub type StopSendingMsg = crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
-    pub type NewDeviceMsg = crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
-    pub type ChangeUsageMsg = crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg;
     #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Flags")]
     pub type Flags = crate::UnityEngine::InputSystem::InputRemoting_Flags;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Message")]
-    pub type Message = crate::UnityEngine::InputSystem::InputRemoting_Message;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
+    pub type RemoveDeviceMsg = crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
+    pub type StartSendingMsg = crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
+    pub type StopSendingMsg = crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
+    pub type ConnectMsg = crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg;
     #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
     pub type RemoteInputDevice = crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice;
-    pub fn System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnNext(
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
+    pub type ChangeUsageMsg = crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg")]
+    pub type NewLayoutMsg = crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteSender")]
+    pub type RemoteSender = crate::UnityEngine::InputSystem::InputRemoting_RemoteSender;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
+    pub type NewEventsMsg = crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Message")]
+    pub type Message = crate::UnityEngine::InputSystem::InputRemoting_Message;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
+    pub type Subscriber = crate::UnityEngine::InputSystem::InputRemoting_Subscriber;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
+    pub type NewDeviceMsg = crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+MessageType")]
+    pub type MessageType = crate::UnityEngine::InputSystem::InputRemoting_MessageType;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
+    pub type DisconnectMsg = crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg;
+    pub fn FindLocalDeviceId(
+        &mut self,
+        remoteDeviceId: i32,
+        senderIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("FindLocalDeviceId", (remoteDeviceId, senderIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn FindOrCreateSenderRecord(
+        &mut self,
+        senderId: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("FindOrCreateSenderRecord", (senderId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        manager: *mut crate::UnityEngine::InputSystem::InputManager,
+        startSendingOnConnect: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (manager, startSendingOnConnect))?;
+        Ok(__cordl_object)
+    }
+    pub fn RemoveRemoteDevices(
+        &mut self,
+        participantId: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveRemoteDevices", (participantId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Send(
         &mut self,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -279,10 +323,27 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnNext",
-                (msg),
-            )?;
+            .invoke("Send", (msg))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendAllDevices(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendAllDevices", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendAllGeneratedLayouts(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendAllGeneratedLayouts", ())?;
         Ok(__cordl_ret)
     }
     pub fn SendDevice(
@@ -296,6 +357,18 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
             .invoke("SendDevice", (device))?;
         Ok(__cordl_ret)
     }
+    pub fn SendDeviceChange(
+        &mut self,
+        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+        change: crate::UnityEngine::InputSystem::InputDeviceChange,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendDeviceChange", (device, change))?;
+        Ok(__cordl_ret)
+    }
     pub fn SendEvent(
         &mut self,
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
@@ -306,6 +379,59 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendEvent", (eventPtr, device))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendInitialMessages(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendInitialMessages", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendLayout(
+        &mut self,
+        layoutName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendLayout", (layoutName))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendLayoutChange(
+        &mut self,
+        layout: *mut crate::System::String,
+        change: crate::UnityEngine::InputSystem::InputControlLayoutChange,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendLayoutChange", (layout, change))?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartSending(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartSending", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn StopSending(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StopSending", ())?;
         Ok(__cordl_ret)
     }
     pub fn Subscribe(
@@ -321,15 +447,17 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
             .invoke("Subscribe", (observer))?;
         Ok(__cordl_ret)
     }
-    pub fn FindOrCreateSenderRecord(
+    pub fn System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnCompleted(
         &mut self,
-        senderId: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("FindOrCreateSenderRecord", (senderId))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnCompleted",
+                (),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnError(
@@ -346,127 +474,7 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn SendLayout(
-        &mut self,
-        layoutName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendLayout", (layoutName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SendAllDevices(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendAllDevices", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SendDeviceChange(
-        &mut self,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
-        change: crate::UnityEngine::InputSystem::InputDeviceChange,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendDeviceChange", (device, change))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_sending(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_sending", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FindLocalDeviceId(
-        &mut self,
-        remoteDeviceId: i32,
-        senderIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("FindLocalDeviceId", (remoteDeviceId, senderIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SendAllGeneratedLayouts(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendAllGeneratedLayouts", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SendLayoutChange(
-        &mut self,
-        layout: *mut crate::System::String,
-        change: crate::UnityEngine::InputSystem::InputControlLayoutChange,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendLayoutChange", (layout, change))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sending(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_sending", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnCompleted(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnCompleted",
-                (),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        manager: *mut crate::UnityEngine::InputSystem::InputManager,
-        startSendingOnConnect: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (manager, startSendingOnConnect))?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartSending(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartSending", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Send(
+    pub fn System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnNext(
         &mut self,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -474,7 +482,10 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Send", (msg))?;
+            .invoke(
+                "System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnNext",
+                (msg),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn TryGetDeviceByRemoteId(
@@ -491,25 +502,16 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
             .invoke("TryGetDeviceByRemoteId", (remoteDeviceId, senderIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn StopSending(
+    pub fn _ctor(
         &mut self,
+        manager: *mut crate::UnityEngine::InputSystem::InputManager,
+        startSendingOnConnect: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StopSending", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveRemoteDevices(
-        &mut self,
-        participantId: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveRemoteDevices", (participantId))?;
+            .invoke(".ctor", (manager, startSendingOnConnect))?;
         Ok(__cordl_ret)
     }
     pub fn get_manager(
@@ -524,25 +526,23 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
             .invoke("get_manager", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SendInitialMessages(
+    pub fn get_sending(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_sending", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_sending(
         &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendInitialMessages", ())?;
+            .invoke("set_sending", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        manager: *mut crate::UnityEngine::InputSystem::InputManager,
-        startSendingOnConnect: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (manager, startSendingOnConnect))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
@@ -629,10 +629,10 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_NewDe
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
 impl crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
-    pub type Data = crate::UnityEngine::InputSystem::NewDeviceMsg_Data;
     #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+__c")]
     pub type __c = crate::UnityEngine::InputSystem::NewDeviceMsg___c;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
+    pub type Data = crate::UnityEngine::InputSystem::NewDeviceMsg_Data;
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
 impl quest_hook::libil2cpp::ObjectType
@@ -924,16 +924,6 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_Subsc
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
 impl crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -944,12 +934,22 @@ impl crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
             .invoke("Dispose", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]

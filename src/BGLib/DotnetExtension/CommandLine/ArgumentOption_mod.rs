@@ -51,18 +51,18 @@ impl crate::BGLib::DotnetExtension::CommandLine::ArgumentOption {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_required(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_required",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_expectsValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_expectsValue",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_required(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_required",
             (),
         )?;
         Ok(__cordl_ret)

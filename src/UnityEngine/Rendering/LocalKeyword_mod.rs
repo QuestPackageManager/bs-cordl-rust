@@ -24,17 +24,6 @@ for crate::UnityEngine::Rendering::LocalKeyword {
 }
 #[cfg(feature = "UnityEngine+Rendering+LocalKeyword")]
 impl crate::UnityEngine::Rendering::LocalKeyword {
-    pub fn Equals_Object0(
-        &mut self,
-        o: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (o),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_LocalKeyword1(
         &mut self,
         rhs: crate::UnityEngine::Rendering::LocalKeyword,
@@ -43,6 +32,17 @@ impl crate::UnityEngine::Rendering::LocalKeyword {
             self,
             "Equals",
             (rhs),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object0(
+        &mut self,
+        o: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (o),
         )?;
         Ok(__cordl_ret)
     }

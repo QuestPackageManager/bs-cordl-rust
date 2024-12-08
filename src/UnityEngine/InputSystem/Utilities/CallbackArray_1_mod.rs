@@ -35,30 +35,6 @@ for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
 impl<
     TDelegate: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
-    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<TDelegate>
-    where
-        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: TDelegate = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Clear",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn AddCallback(
         &mut self,
         dlg: TDelegate,
@@ -74,14 +50,14 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_length(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_length",
+            "Clear",
             (),
         )?;
         Ok(__cordl_ret)
@@ -125,6 +101,30 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "UnlockForChanges",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<TDelegate>
+    where
+        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TDelegate = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_length(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_length",
             (),
         )?;
         Ok(__cordl_ret)

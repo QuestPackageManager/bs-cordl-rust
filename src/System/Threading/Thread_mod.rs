@@ -32,6 +32,16 @@ impl std::ops::DerefMut for crate::System::Threading::Thread {
 }
 #[cfg(feature = "System+Threading+Thread")]
 impl crate::System::Threading::Thread {
+    pub fn Abort(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Abort", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn ConstructInternalThread(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -42,11 +52,14 @@ impl crate::System::Threading::Thread {
             .invoke("ConstructInternalThread", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn Finalize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Finalize", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetCurrentCultureNoAppX(
@@ -59,15 +72,100 @@ impl crate::System::Threading::Thread {
             .invoke("GetCurrentCultureNoAppX", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ValidateThreadState(
+    pub fn GetCurrentUICultureNoAppX(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::ThreadState> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::CultureInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Threading::ThreadState = __cordl_object
-            .invoke("ValidateThreadState", ())?;
+        let __cordl_ret: *mut crate::System::Globalization::CultureInfo = __cordl_object
+            .invoke("GetCurrentUICultureNoAppX", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn GetExecutionContextReader(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Threading::ExecutionContext_Reader,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Threading::ExecutionContext_Reader = __cordl_object
+            .invoke("GetExecutionContextReader", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetMutableExecutionContext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::ExecutionContext> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::ExecutionContext = __cordl_object
+            .invoke("GetMutableExecutionContext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPriorityNative(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetPriorityNative", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Join(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Join", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn JoinInternal(
+        &mut self,
+        millisecondsTimeout: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("JoinInternal", (millisecondsTimeout))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_ParameterizedThreadStart1(
+        start: *mut crate::System::Threading::ParameterizedThreadStart,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (start))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_ParameterizedThreadStart_i32_2(
+        start: *mut crate::System::Threading::ParameterizedThreadStart,
+        maxStackSize: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (start, maxStackSize))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_ThreadStart0(
+        start: *mut crate::System::Threading::ThreadStart,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (start))?;
+        Ok(__cordl_object)
     }
     pub fn SetExecutionContext_ExecutionContext0(
         &mut self,
@@ -93,6 +191,17 @@ impl crate::System::Threading::Thread {
             .invoke("SetExecutionContext", (value, belongsToCurrentScope))?;
         Ok(__cordl_ret)
     }
+    pub fn SetPriorityNative(
+        &mut self,
+        priority: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetPriorityNative", (priority))?;
+        Ok(__cordl_ret)
+    }
     pub fn SetStart(
         &mut self,
         start: *mut crate::System::MulticastDelegate,
@@ -105,55 +214,16 @@ impl crate::System::Threading::Thread {
             .invoke("SetStart", (start, maxStackSize))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Internal(
+    pub fn SetStartHelper(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::InternalThread> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::InternalThread = __cordl_object
-            .invoke("get_Internal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start_0(
-        &mut self,
+        start: *mut crate::System::Delegate,
+        maxStackSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start_Object1(
-        &mut self,
-        parameter: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", (parameter))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start_ByRefMut2(
-        &mut self,
-        stackMark: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Threading::StackCrawlMark,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", (stackMark))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPriorityNative(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetPriorityNative", ())?;
+            .invoke("SetStartHelper", (start, maxStackSize))?;
         Ok(__cordl_ret)
     }
     pub fn StartInternal(
@@ -170,107 +240,38 @@ impl crate::System::Threading::Thread {
             .invoke("StartInternal", (principal, stackMark))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Priority(
-        &mut self,
-        value: crate::System::Threading::ThreadPriority,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Priority", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_CurrentCulture(
-        &mut self,
-        value: *mut crate::System::Globalization::CultureInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_CurrentCulture", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetPriorityNative(
-        &mut self,
-        priority: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetPriorityNative", (priority))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ExecutionContextBelongsToCurrentScope(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_ExecutionContextBelongsToCurrentScope", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn JoinInternal(
-        &mut self,
-        millisecondsTimeout: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("JoinInternal", (millisecondsTimeout))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetExecutionContextReader(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Threading::ExecutionContext_Reader,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Threading::ExecutionContext_Reader = __cordl_object
-            .invoke("GetExecutionContextReader", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Abort(
+    pub fn Start_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Abort", ())?;
+            .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Join(
+    pub fn Start_ByRefMut2(
         &mut self,
+        stackMark: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Threading::StackCrawlMark,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Join", ())?;
+            .invoke("Start", (stackMark))?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsThreadPoolThreadInternal(
+    pub fn Start_Object1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        parameter: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_IsThreadPoolThreadInternal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ManagedThreadId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ManagedThreadId", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", (parameter))?;
         Ok(__cordl_ret)
     }
     pub fn Thread_internal(
@@ -283,134 +284,14 @@ impl crate::System::Threading::Thread {
         let __cordl_ret: bool = __cordl_object.invoke("Thread_internal", (start))?;
         Ok(__cordl_ret)
     }
-    pub fn Finalize(
+    pub fn ValidateThreadState(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::ThreadState> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Priority(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::ThreadPriority> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Threading::ThreadPriority = __cordl_object
-            .invoke("get_Priority", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ExecutionContextBelongsToCurrentScope(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ExecutionContextBelongsToCurrentScope", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetMutableExecutionContext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::ExecutionContext> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::ExecutionContext = __cordl_object
-            .invoke("GetMutableExecutionContext", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCurrentUICultureNoAppX(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::CultureInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Globalization::CultureInfo = __cordl_object
-            .invoke("GetCurrentUICultureNoAppX", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_CurrentUICulture(
-        &mut self,
-        value: *mut crate::System::Globalization::CultureInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_CurrentUICulture", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CurrentUICulture(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::CultureInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Globalization::CultureInfo = __cordl_object
-            .invoke("get_CurrentUICulture", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsBackground(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsBackground", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsAlive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsAlive", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetStartHelper(
-        &mut self,
-        start: *mut crate::System::Delegate,
-        maxStackSize: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetStartHelper", (start, maxStackSize))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CurrentCulture(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::CultureInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Globalization::CultureInfo = __cordl_object
-            .invoke("get_CurrentCulture", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsThreadPoolThread(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsThreadPoolThread", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_ThreadStart0(
-        &mut self,
-        start: *mut crate::System::Threading::ThreadStart,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (start))?;
+        let __cordl_ret: crate::System::Threading::ThreadState = __cordl_object
+            .invoke("ValidateThreadState", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_ParameterizedThreadStart1(
@@ -436,6 +317,142 @@ impl crate::System::Threading::Thread {
             .invoke(".ctor", (start, maxStackSize))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_ThreadStart0(
+        &mut self,
+        start: *mut crate::System::Threading::ThreadStart,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (start))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CurrentCulture(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::CultureInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Globalization::CultureInfo = __cordl_object
+            .invoke("get_CurrentCulture", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CurrentUICulture(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::CultureInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Globalization::CultureInfo = __cordl_object
+            .invoke("get_CurrentUICulture", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ExecutionContextBelongsToCurrentScope(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_ExecutionContextBelongsToCurrentScope", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Internal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::InternalThread> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::InternalThread = __cordl_object
+            .invoke("get_Internal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsAlive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsAlive", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsThreadPoolThread(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsThreadPoolThread", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsThreadPoolThreadInternal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_IsThreadPoolThreadInternal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ManagedThreadId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ManagedThreadId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Priority(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::ThreadPriority> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Threading::ThreadPriority = __cordl_object
+            .invoke("get_Priority", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_CurrentCulture(
+        &mut self,
+        value: *mut crate::System::Globalization::CultureInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_CurrentCulture", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_CurrentUICulture(
+        &mut self,
+        value: *mut crate::System::Globalization::CultureInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_CurrentUICulture", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ExecutionContextBelongsToCurrentScope(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ExecutionContextBelongsToCurrentScope", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IsBackground(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsBackground", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_Name(
         &mut self,
         value: *mut crate::System::String,
@@ -447,33 +464,16 @@ impl crate::System::Threading::Thread {
             .invoke("set_Name", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New_ThreadStart0(
-        start: *mut crate::System::Threading::ThreadStart,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (start))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_ParameterizedThreadStart1(
-        start: *mut crate::System::Threading::ParameterizedThreadStart,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (start))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_ParameterizedThreadStart_i32_2(
-        start: *mut crate::System::Threading::ParameterizedThreadStart,
-        maxStackSize: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (start, maxStackSize))?;
-        Ok(__cordl_object)
+    pub fn set_Priority(
+        &mut self,
+        value: crate::System::Threading::ThreadPriority,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Priority", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Threading+Thread")]

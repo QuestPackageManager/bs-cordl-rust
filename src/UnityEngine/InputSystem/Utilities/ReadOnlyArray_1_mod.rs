@@ -29,11 +29,8 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValu
 impl<
     TValue: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
-    pub fn _ctor(
+    pub fn Dispose(
         &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<TValue>,
-        index: i32,
-        length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -41,8 +38,8 @@ impl<
     {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (array, index, length),
+            "Dispose",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -54,6 +51,18 @@ impl<
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Reset",
             (),
         )?;
         Ok(__cordl_ret)
@@ -72,20 +81,11 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Reset",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
+    pub fn _ctor(
         &mut self,
+        array: *mut quest_hook::libil2cpp::Il2CppArray<TValue>,
+        index: i32,
+        length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -93,8 +93,8 @@ impl<
     {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Dispose",
-            (),
+            ".ctor",
+            (array, index, length),
         )?;
         Ok(__cordl_ret)
     }
@@ -145,30 +145,6 @@ impl<
     pub type Enumerator = crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<
         TValue,
     >;
-    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<TValue>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: TValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Count",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -183,6 +159,39 @@ impl<
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
+    pub fn IndexOf(
+        &mut self,
+        predicate: *mut crate::System::Predicate_1<TValue>,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IndexOf",
+            (predicate),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_Generic_IEnumerable_TValue__GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerator_1<TValue>,
+    >
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
+            TValue,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.Generic.IEnumerable<TValue>.GetEnumerator",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
@@ -193,6 +202,20 @@ impl<
         let __cordl_ret: *mut crate::System::Collections::IEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.IEnumerable.GetEnumerator",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToArray(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<TValue>>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<TValue> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToArray",
             (),
         )?;
         Ok(__cordl_ret)
@@ -229,50 +252,27 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_Generic_IEnumerable_TValue__GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<TValue>,
-    >
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            TValue,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.Generic.IEnumerable<TValue>.GetEnumerator",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IndexOf(
-        &mut self,
-        predicate: *mut crate::System::Predicate_1<TValue>,
-    ) -> quest_hook::libil2cpp::Result<i32>
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "IndexOf",
-            (predicate),
+            "get_Count",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToArray(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<TValue>>
+    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<TValue>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<TValue> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: TValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToArray",
-            (),
+            "get_Item",
+            (index),
         )?;
         Ok(__cordl_ret)
     }

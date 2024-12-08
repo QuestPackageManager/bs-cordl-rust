@@ -24,6 +24,22 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::ICurvesOwner {
 }
 #[cfg(feature = "UnityEngine+Timeline+ICurvesOwner")]
 impl crate::UnityEngine::Timeline::ICurvesOwner {
+    pub fn CreateCurves(
+        &mut self,
+        curvesClipName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CreateCurves", (curvesClipName))?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_asset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
@@ -32,6 +48,43 @@ impl crate::UnityEngine::Timeline::ICurvesOwner {
         );
         let __cordl_ret: *mut crate::UnityEngine::Object = __cordl_object
             .invoke("get_asset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_assetOwner(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Object = __cordl_object
+            .invoke("get_assetOwner", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_curves(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AnimationClip> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::AnimationClip = __cordl_object
+            .invoke("get_curves", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_defaultCurvesName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_defaultCurvesName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object.invoke("get_duration", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_hasCurves(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -50,59 +103,6 @@ impl crate::UnityEngine::Timeline::ICurvesOwner {
         let __cordl_ret: *mut crate::UnityEngine::Timeline::TrackAsset = __cordl_object
             .invoke("get_targetTrack", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_curves(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AnimationClip> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::AnimationClip = __cordl_object
-            .invoke("get_curves", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("get_duration", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateCurves(
-        &mut self,
-        curvesClipName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CreateCurves", (curvesClipName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_defaultCurvesName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_defaultCurvesName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_assetOwner(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Object = __cordl_object
-            .invoke("get_assetOwner", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+ICurvesOwner")]

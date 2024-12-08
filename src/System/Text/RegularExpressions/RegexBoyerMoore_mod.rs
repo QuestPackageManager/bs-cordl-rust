@@ -36,20 +36,6 @@ impl std::ops::DerefMut for crate::System::Text::RegularExpressions::RegexBoyerM
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexBoyerMoore")]
 impl crate::System::Text::RegularExpressions::RegexBoyerMoore {
-    pub fn Scan(
-        &mut self,
-        text: *mut crate::System::String,
-        index: i32,
-        beglimit: i32,
-        endlimit: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("Scan", (text, index, beglimit, endlimit))?;
-        Ok(__cordl_ret)
-    }
     pub fn IsMatch(
         &mut self,
         text: *mut crate::System::String,
@@ -62,20 +48,6 @@ impl crate::System::Text::RegularExpressions::RegexBoyerMoore {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsMatch", (text, index, beglimit, endlimit))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        pattern: *mut crate::System::String,
-        caseInsensitive: bool,
-        rightToLeft: bool,
-        culture: *mut crate::System::Globalization::CultureInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pattern, caseInsensitive, rightToLeft, culture))?;
         Ok(__cordl_ret)
     }
     pub fn MatchPattern(
@@ -94,12 +66,40 @@ impl crate::System::Text::RegularExpressions::RegexBoyerMoore {
         caseInsensitive: bool,
         rightToLeft: bool,
         culture: *mut crate::System::Globalization::CultureInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pattern, caseInsensitive, rightToLeft, culture))?;
         Ok(__cordl_object)
+    }
+    pub fn Scan(
+        &mut self,
+        text: *mut crate::System::String,
+        index: i32,
+        beglimit: i32,
+        endlimit: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("Scan", (text, index, beglimit, endlimit))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        pattern: *mut crate::System::String,
+        caseInsensitive: bool,
+        rightToLeft: bool,
+        culture: *mut crate::System::Globalization::CultureInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (pattern, caseInsensitive, rightToLeft, culture))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexBoyerMoore")]

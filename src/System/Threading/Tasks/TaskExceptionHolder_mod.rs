@@ -30,84 +30,6 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::TaskExceptionHolder
 }
 #[cfg(feature = "System+Threading+Tasks+TaskExceptionHolder")]
 impl crate::System::Threading::Tasks::TaskExceptionHolder {
-    pub fn _ctor(
-        &mut self,
-        task: *mut crate::System::Threading::Tasks::Task,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (task))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ContainsFaultList(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_ContainsFaultList", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetCancellationException(
-        &mut self,
-        exceptionObject: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCancellationException", (exceptionObject))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetExceptionDispatchInfos(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
-        > = __cordl_object.invoke("GetExceptionDispatchInfos", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddFaultException(
-        &mut self,
-        exceptionObject: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddFaultException", (exceptionObject))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MarkAsHandled(
-        &mut self,
-        calledFromFinalizer: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MarkAsHandled", (calledFromFinalizer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCancellationExceptionDispatchInfo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo = __cordl_object
-            .invoke("GetCancellationExceptionDispatchInfo", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Add(
         &mut self,
         exceptionObject: *mut crate::System::Object,
@@ -120,24 +42,15 @@ impl crate::System::Threading::Tasks::TaskExceptionHolder {
             .invoke("Add", (exceptionObject, representsCancellation))?;
         Ok(__cordl_ret)
     }
-    pub fn Finalize(
+    pub fn AddFaultException(
         &mut self,
+        exceptionObject: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MarkAsUnhandled(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MarkAsUnhandled", ())?;
+            .invoke("AddFaultException", (exceptionObject))?;
         Ok(__cordl_ret)
     }
     pub fn CreateExceptionObject(
@@ -155,14 +68,101 @@ impl crate::System::Threading::Tasks::TaskExceptionHolder {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn Finalize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Finalize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetCancellationExceptionDispatchInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo = __cordl_object
+            .invoke("GetCancellationExceptionDispatchInfo", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetExceptionDispatchInfos(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        > = __cordl_object.invoke("GetExceptionDispatchInfos", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn MarkAsHandled(
+        &mut self,
+        calledFromFinalizer: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MarkAsHandled", (calledFromFinalizer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MarkAsUnhandled(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MarkAsUnhandled", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         task: *mut crate::System::Threading::Tasks::Task,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (task))?;
         Ok(__cordl_object)
+    }
+    pub fn SetCancellationException(
+        &mut self,
+        exceptionObject: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetCancellationException", (exceptionObject))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        task: *mut crate::System::Threading::Tasks::Task,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (task))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ContainsFaultList(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_ContainsFaultList", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Threading+Tasks+TaskExceptionHolder")]

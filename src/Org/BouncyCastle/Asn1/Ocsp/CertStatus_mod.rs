@@ -26,17 +26,40 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Ocsp::CertStatus {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+CertStatus")]
 impl crate::Org::BouncyCastle::Asn1::Ocsp::CertStatus {
-    pub fn get_Status(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable = __cordl_object
-            .invoke("get_Status", ())?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Asn1TaggedObject3(
+        choice: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (choice))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_RevokedInfo1(
+        info: *mut crate::Org::BouncyCastle::Asn1::Ocsp::RevokedInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (info))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_Asn1Encodable2(
+        tagNo: i32,
+        value: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (tagNo, value))?;
+        Ok(__cordl_object)
     }
     pub fn ToAsn1Object(
         &mut self,
@@ -56,6 +79,17 @@ impl crate::Org::BouncyCastle::Asn1::Ocsp::CertStatus {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Asn1TaggedObject3(
+        &mut self,
+        choice: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (choice))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_RevokedInfo1(
@@ -81,15 +115,16 @@ impl crate::Org::BouncyCastle::Asn1::Ocsp::CertStatus {
             .invoke(".ctor", (tagNo, value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Asn1TaggedObject3(
+    pub fn get_Status(
         &mut self,
-        choice: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (choice))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable = __cordl_object
+            .invoke("get_Status", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_TagNo(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -98,41 +133,6 @@ impl crate::Org::BouncyCastle::Asn1::Ocsp::CertStatus {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_TagNo", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_RevokedInfo1(
-        info: *mut crate::Org::BouncyCastle::Asn1::Ocsp::RevokedInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (info))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_Asn1Encodable2(
-        tagNo: i32,
-        value: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (tagNo, value))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Asn1TaggedObject3(
-        choice: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (choice))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+CertStatus")]

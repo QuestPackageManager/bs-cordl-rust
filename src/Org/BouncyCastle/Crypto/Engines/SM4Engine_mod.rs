@@ -26,14 +26,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Engines::SM4Engine
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+SM4Engine")]
 impl crate::Org::BouncyCastle::Crypto::Engines::SM4Engine {
     pub const BlockSize: i32 = 16i32;
-    pub fn get_AlgorithmName(
+    pub fn ExpandKey(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        forEncryption: bool,
+        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_AlgorithmName", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExpandKey", (forEncryption, key))?;
         Ok(__cordl_ret)
     }
     pub fn GetBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -41,13 +43,6 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SM4Engine {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetBlockSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn T_ap(&mut self, Z: u32) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("T_ap", (Z))?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -62,12 +57,12 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SM4Engine {
             .invoke("Init", (forEncryption, parameters))?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsPartialBlockOkay(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsPartialBlockOkay", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ProcessBlock(
         &mut self,
@@ -83,16 +78,21 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SM4Engine {
             .invoke("ProcessBlock", (input, inOff, output, outOff))?;
         Ok(__cordl_ret)
     }
-    pub fn ExpandKey(
+    pub fn Reset(
         &mut self,
-        forEncryption: bool,
-        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExpandKey", (forEncryption, key))?;
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn T_ap(&mut self, Z: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("T_ap", (Z))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -105,22 +105,22 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SM4Engine {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Reset(
+    pub fn get_AlgorithmName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_AlgorithmName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_IsPartialBlockOkay(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsPartialBlockOkay", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+SM4Engine")]

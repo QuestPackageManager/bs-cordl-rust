@@ -34,24 +34,14 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::Lifetime::Lease {
 impl crate::System::Runtime::Remoting::Lifetime::Lease {
     #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
     pub type RenewalDelegate = crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate;
-    pub fn get_RenewOnCallTime(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::TimeSpan = __cordl_object
-            .invoke("get_RenewOnCallTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn Activate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("Activate", ())?;
         Ok(__cordl_ret)
     }
     pub fn CheckNextSponsor(
@@ -64,14 +54,23 @@ impl crate::System::Runtime::Remoting::Lifetime::Lease {
             .invoke("CheckNextSponsor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn UpdateState(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ProcessSponsorResponse(
         &mut self,
+        state: *mut crate::System::Object,
+        timedOut: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateState", ())?;
+            .invoke("ProcessSponsorResponse", (state, timedOut))?;
         Ok(__cordl_ret)
     }
     pub fn Renew(
@@ -85,6 +84,37 @@ impl crate::System::Runtime::Remoting::Lifetime::Lease {
             .invoke("Renew", (renewalTime))?;
         Ok(__cordl_ret)
     }
+    pub fn Unregister(
+        &mut self,
+        obj: *mut crate::System::Runtime::Remoting::Lifetime::ISponsor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Unregister", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_CurrentLeaseTime(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
@@ -93,18 +123,6 @@ impl crate::System::Runtime::Remoting::Lifetime::Lease {
         );
         let __cordl_ret: crate::System::TimeSpan = __cordl_object
             .invoke("get_CurrentLeaseTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessSponsorResponse(
-        &mut self,
-        state: *mut crate::System::Object,
-        timedOut: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessSponsorResponse", (state, timedOut))?;
         Ok(__cordl_ret)
     }
     pub fn get_CurrentState(
@@ -119,33 +137,15 @@ impl crate::System::Runtime::Remoting::Lifetime::Lease {
             .invoke("get_CurrentState", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Unregister(
+    pub fn get_RenewOnCallTime(
         &mut self,
-        obj: *mut crate::System::Runtime::Remoting::Lifetime::ISponsor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Unregister", (obj))?;
+        let __cordl_ret: crate::System::TimeSpan = __cordl_object
+            .invoke("get_RenewOnCallTime", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Activate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Activate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease")]
@@ -200,6 +200,17 @@ impl crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate {
             .invoke("BeginInvoke", (lease, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::TimeSpan = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         lease: *mut crate::System::Runtime::Remoting::Lifetime::ILease,
@@ -211,16 +222,15 @@ impl crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate {
             .invoke("Invoke", (lease))?;
         Ok(__cordl_ret)
     }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::TimeSpan = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -233,16 +243,6 @@ impl crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]

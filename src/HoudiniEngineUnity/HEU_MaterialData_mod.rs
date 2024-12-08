@@ -39,14 +39,30 @@ impl crate::HoudiniEngineUnity::HEU_MaterialData {
         let __cordl_ret: bool = __cordl_object.invoke("IsEquivalentTo", (other))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn IsExistingMaterial(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsExistingMaterial", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn UpdateMaterialFromHoudini(
         &mut self,
+        materialInfo: crate::HoudiniEngineUnity::HAPI_MaterialInfo,
+        assetCacheFolderPath: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("UpdateMaterialFromHoudini", (materialInfo, assetCacheFolderPath))?;
         Ok(__cordl_ret)
     }
     pub fn UseLegacyShaders(
@@ -69,31 +85,15 @@ impl crate::HoudiniEngineUnity::HEU_MaterialData {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn IsExistingMaterial(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsExistingMaterial", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateMaterialFromHoudini(
+    pub fn _ctor(
         &mut self,
-        materialInfo: crate::HoudiniEngineUnity::HAPI_MaterialInfo,
-        assetCacheFolderPath: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateMaterialFromHoudini", (materialInfo, assetCacheFolderPath))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData")]

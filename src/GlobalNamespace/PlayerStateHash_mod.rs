@@ -22,14 +22,25 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for PlayerStateHash {
 impl PlayerStateHash {
     pub const kToStringPrefix: &'static str = "[PlayerStateMask ";
     pub const kToStringSuffix: &'static str = "]";
-    pub fn Serialize(
+    pub fn AddState(
         &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        state: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<PlayerStateHash> {
+        let __cordl_ret: PlayerStateHash = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Serialize",
-            (writer),
+            "AddState",
+            (state),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Contains(
+        &mut self,
+        state: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Contains",
+            (state),
         )?;
         Ok(__cordl_ret)
     }
@@ -44,6 +55,28 @@ impl PlayerStateHash {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn Equals_Object1(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_PlayerStateHash0(
+        &mut self,
+        other: PlayerStateHash,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -52,38 +85,24 @@ impl PlayerStateHash {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_BitMask128_0(
+    pub fn Serialize(
         &mut self,
-        bloomFilter: BitMask128,
+        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (bloomFilter),
+            "Serialize",
+            (writer),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn ToBytes(
         &mut self,
-        state: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (state),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_HashSet_1_2(
-        &mut self,
-        stateHashSet: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut crate::System::String,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (stateHashSet),
+            "ToBytes",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -107,56 +126,37 @@ impl PlayerStateHash {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_PlayerStateHash0(
+    pub fn _ctor_BitMask128_0(
         &mut self,
-        other: PlayerStateHash,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        bloomFilter: BitMask128,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            ".ctor",
+            (bloomFilter),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object1(
+    pub fn _ctor_HashSet_1_2(
         &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        stateHashSet: *mut crate::System::Collections::Generic::HashSet_1<
+            *mut crate::System::String,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (obj),
+            ".ctor",
+            (stateHashSet),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn AddState(
+    pub fn _ctor_String1(
         &mut self,
         state: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<PlayerStateHash> {
-        let __cordl_ret: PlayerStateHash = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "AddState",
-            (state),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToBytes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToBytes",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Contains(
-        &mut self,
-        state: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Contains",
+            ".ctor",
             (state),
         )?;
         Ok(__cordl_ret)

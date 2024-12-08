@@ -35,6 +35,32 @@ for crate::UnityEngine::Pool::ObjectPool_1<T> {
 }
 #[cfg(feature = "UnityEngine+Pool+ObjectPool_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Pool::ObjectPool_1<T> {
+    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Get_0(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -60,6 +86,32 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Pool::ObjectPool_1<T> {
         let __cordl_ret: crate::UnityEngine::Pool::PooledObject_1<T> = __cordl_object
             .invoke("Get", (v))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        createFunc: *mut crate::System::Func_1<T>,
+        actionOnGet: *mut crate::System::Action_1<T>,
+        actionOnRelease: *mut crate::System::Action_1<T>,
+        actionOnDestroy: *mut crate::System::Action_1<T>,
+        collectionCheck: bool,
+        defaultCapacity: i32,
+        maxSize: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    createFunc,
+                    actionOnGet,
+                    actionOnRelease,
+                    actionOnDestroy,
+                    collectionCheck,
+                    defaultCapacity,
+                    maxSize,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn Release(
         &mut self,
@@ -108,35 +160,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Pool::ObjectPool_1<T> {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn set_CountAll(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_CountAll", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_CountAll(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -159,7 +182,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Pool::ObjectPool_1<T> {
         let __cordl_ret: i32 = __cordl_object.invoke("get_CountInactive", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn set_CountAll(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -168,34 +194,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Pool::ObjectPool_1<T> {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
+            .invoke("set_CountAll", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        createFunc: *mut crate::System::Func_1<T>,
-        actionOnGet: *mut crate::System::Action_1<T>,
-        actionOnRelease: *mut crate::System::Action_1<T>,
-        actionOnDestroy: *mut crate::System::Action_1<T>,
-        collectionCheck: bool,
-        defaultCapacity: i32,
-        maxSize: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    createFunc,
-                    actionOnGet,
-                    actionOnRelease,
-                    actionOnDestroy,
-                    collectionCheck,
-                    defaultCapacity,
-                    maxSize,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+Pool+ObjectPool_1")]

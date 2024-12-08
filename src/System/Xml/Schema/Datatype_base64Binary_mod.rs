@@ -24,15 +24,36 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_base64Binary {
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_base64Binary")]
 impl crate::System::Xml::Schema::Datatype_base64Binary {
-    pub fn get_ValueType(
+    pub fn Compare(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        value1: *mut crate::System::Object,
+        value2: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_ValueType", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("Compare", (value1, value2))?;
         Ok(__cordl_ret)
+    }
+    pub fn CreateValueConverter(
+        &mut self,
+        schemaType: *mut crate::System::Xml::Schema::XmlSchemaType,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Xml::Schema::XmlValueConverter,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlValueConverter = __cordl_object
+            .invoke("CreateValueConverter", (schemaType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn TryParseValue(
         &mut self,
@@ -78,16 +99,6 @@ impl crate::System::Xml::Schema::Datatype_base64Binary {
             .invoke("get_FacetsChecker", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_TypeCode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::XmlTypeCode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::Schema::XmlTypeCode = __cordl_object
-            .invoke("get_TypeCode", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_ListValueType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
@@ -96,6 +107,16 @@ impl crate::System::Xml::Schema::Datatype_base64Binary {
         );
         let __cordl_ret: *mut crate::System::Type = __cordl_object
             .invoke("get_ListValueType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TypeCode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::XmlTypeCode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::Schema::XmlTypeCode = __cordl_object
+            .invoke("get_TypeCode", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ValidRestrictionFlags(
@@ -108,36 +129,15 @@ impl crate::System::Xml::Schema::Datatype_base64Binary {
             .invoke("get_ValidRestrictionFlags", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CreateValueConverter(
+    pub fn get_ValueType(
         &mut self,
-        schemaType: *mut crate::System::Xml::Schema::XmlSchemaType,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlValueConverter,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlValueConverter = __cordl_object
-            .invoke("CreateValueConverter", (schemaType))?;
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_ValueType", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Compare(
-        &mut self,
-        value1: *mut crate::System::Object,
-        value2: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Compare", (value1, value2))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_base64Binary")]

@@ -34,15 +34,29 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Prng::Drbg::CtrSP8
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+Drbg+CtrSP800Drbg")]
 impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::CtrSP800Drbg {
-    pub fn Reseed(
+    pub fn AddOneTo(
         &mut self,
-        additionalInput: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        longer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reseed", (additionalInput))?;
+            .invoke("AddOneTo", (longer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn BCC(
+        &mut self,
+        bccOut: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        k: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        iV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BCC", (bccOut, k, iV, data))?;
         Ok(__cordl_ret)
     }
     pub fn Block_Cipher_df(
@@ -55,39 +69,6 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::CtrSP800Drbg {
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
             .invoke("Block_Cipher_df", (inputString, bitLength))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsTdea(
-        &mut self,
-        cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsTdea", (cipher))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExpandKey(
-        &mut self,
-        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("ExpandKey", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetMaxSecurityStrength(
-        &mut self,
-        cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-        keySizeInBits: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetMaxSecurityStrength", (cipher, keySizeInBits))?;
         Ok(__cordl_ret)
     }
     pub fn CTR_DRBG_Instantiate_algorithm(
@@ -106,6 +87,17 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::CtrSP800Drbg {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn CTR_DRBG_Reseed_algorithm(
+        &mut self,
+        additionalInput: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CTR_DRBG_Reseed_algorithm", (additionalInput))?;
+        Ok(__cordl_ret)
+    }
     pub fn CTR_DRBG_Update(
         &mut self,
         seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -119,63 +111,15 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::CtrSP800Drbg {
             .invoke("CTR_DRBG_Update", (seed, key, v))?;
         Ok(__cordl_ret)
     }
-    pub fn AddOneTo(
+    pub fn ExpandKey(
         &mut self,
-        longer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddOneTo", (longer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CTR_DRBG_Reseed_algorithm(
-        &mut self,
-        additionalInput: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CTR_DRBG_Reseed_algorithm", (additionalInput))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEntropy(
-        &mut self,
+        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetEntropy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn copyIntToByteArray(
-        &mut self,
-        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        value: i32,
-        offSet: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("copyIntToByteArray", (buf, value, offSet))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PadKey(
-        &mut self,
-        keyMaster: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        keyOff: i32,
-        tmp: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        tmpOff: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PadKey", (keyMaster, keyOff, tmp, tmpOff))?;
+            .invoke("ExpandKey", (key))?;
         Ok(__cordl_ret)
     }
     pub fn Generate(
@@ -191,25 +135,85 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::CtrSP800Drbg {
             .invoke("Generate", (output, additionalInput, predictionResistant))?;
         Ok(__cordl_ret)
     }
-    pub fn get_BlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn GetEntropy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_BlockSize", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetEntropy", ())?;
         Ok(__cordl_ret)
     }
-    pub fn BCC(
+    pub fn GetMaxSecurityStrength(
         &mut self,
-        bccOut: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        k: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        iV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
+        keySizeInBits: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetMaxSecurityStrength", (cipher, keySizeInBits))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsTdea(
+        &mut self,
+        cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsTdea", (cipher))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        engine: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
+        keySizeInBits: i32,
+        securityStrength: i32,
+        entropySource: *mut crate::Org::BouncyCastle::Crypto::IEntropySource,
+        personalizationString: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        nonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    engine,
+                    keySizeInBits,
+                    securityStrength,
+                    entropySource,
+                    personalizationString,
+                    nonce,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn PadKey(
+        &mut self,
+        keyMaster: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        keyOff: i32,
+        tmp: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        tmpOff: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BCC", (bccOut, k, iV, data))?;
+            .invoke("PadKey", (keyMaster, keyOff, tmp, tmpOff))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reseed(
+        &mut self,
+        additionalInput: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reseed", (additionalInput))?;
         Ok(__cordl_ret)
     }
     pub fn XOR(
@@ -252,29 +256,25 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::CtrSP800Drbg {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        engine: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-        keySizeInBits: i32,
-        securityStrength: i32,
-        entropySource: *mut crate::Org::BouncyCastle::Crypto::IEntropySource,
-        personalizationString: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        nonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    engine,
-                    keySizeInBits,
-                    securityStrength,
-                    entropySource,
-                    personalizationString,
-                    nonce,
-                ),
-            )?;
-        Ok(__cordl_object)
+    pub fn copyIntToByteArray(
+        &mut self,
+        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        value: i32,
+        offSet: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("copyIntToByteArray", (buf, value, offSet))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_BlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_BlockSize", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+Drbg+CtrSP800Drbg")]

@@ -24,20 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::CoroutineTween::ITweenValue 
 }
 #[cfg(feature = "UnityEngine+UI+CoroutineTween+ITweenValue")]
 impl crate::UnityEngine::UI::CoroutineTween::ITweenValue {
-    pub fn ValidTarget(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ValidTarget", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_duration", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn TweenValue(
         &mut self,
         floatPercentage: f32,
@@ -49,17 +35,31 @@ impl crate::UnityEngine::UI::CoroutineTween::ITweenValue {
             .invoke("TweenValue", (floatPercentage))?;
         Ok(__cordl_ret)
     }
-    pub fn get_ignoreTimeScale(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn ValidTarget(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_ignoreTimeScale", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("ValidTarget", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_duration", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ignoreTimeScale(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_ignoreTimeScale", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UI+CoroutineTween+ITweenValue")]

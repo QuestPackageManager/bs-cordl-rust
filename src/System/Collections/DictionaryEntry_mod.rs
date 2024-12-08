@@ -23,16 +23,6 @@ for crate::System::Collections::DictionaryEntry {
 }
 #[cfg(feature = "System+Collections+DictionaryEntry")]
 impl crate::System::Collections::DictionaryEntry {
-    pub fn get_Key(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Key",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         key: *mut crate::System::Object,
@@ -42,6 +32,16 @@ impl crate::System::Collections::DictionaryEntry {
             self,
             ".ctor",
             (key, value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Key(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Key",
+            (),
         )?;
         Ok(__cordl_ret)
     }

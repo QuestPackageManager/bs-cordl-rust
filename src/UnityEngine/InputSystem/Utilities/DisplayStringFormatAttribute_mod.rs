@@ -28,26 +28,14 @@ for crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute")]
 impl crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
-    pub fn set_formatString(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_formatString", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_formatString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_formatString", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        formatString: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (formatString))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -60,14 +48,26 @@ impl crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
             .invoke(".ctor", (formatString))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        formatString: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (formatString))?;
-        Ok(__cordl_object)
+    pub fn get_formatString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_formatString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_formatString(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_formatString", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute")]

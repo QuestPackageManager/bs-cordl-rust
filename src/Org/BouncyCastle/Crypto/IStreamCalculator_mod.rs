@@ -24,16 +24,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IStreamCalculator 
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IStreamCalculator")]
 impl crate::Org::BouncyCastle::Crypto::IStreamCalculator {
-    pub fn get_Stream(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("get_Stream", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
@@ -48,6 +38,16 @@ impl crate::Org::BouncyCastle::Crypto::IStreamCalculator {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_Stream(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+            .invoke("get_Stream", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IStreamCalculator")]

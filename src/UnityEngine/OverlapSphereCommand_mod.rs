@@ -25,19 +25,6 @@ for crate::UnityEngine::OverlapSphereCommand {
 }
 #[cfg(feature = "UnityEngine+OverlapSphereCommand")]
 impl crate::UnityEngine::OverlapSphereCommand {
-    pub fn _ctor_Vector3_f32_QueryParameters0(
-        &mut self,
-        point: crate::UnityEngine::Vector3,
-        radius: f32,
-        queryParameters: crate::UnityEngine::QueryParameters,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (point, radius, queryParameters),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_PhysicsScene_Vector3_f32_QueryParameters1(
         &mut self,
         physicsScene: crate::UnityEngine::PhysicsScene,
@@ -52,12 +39,43 @@ impl crate::UnityEngine::OverlapSphereCommand {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_Vector3_f32_QueryParameters0(
+        &mut self,
+        point: crate::UnityEngine::Vector3,
+        radius: f32,
+        queryParameters: crate::UnityEngine::QueryParameters,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (point, radius, queryParameters),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_physicsScene(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::PhysicsScene> {
         let __cordl_ret: crate::UnityEngine::PhysicsScene = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_physicsScene",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_point(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_point",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_radius(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_radius",
             (),
         )?;
         Ok(__cordl_ret)
@@ -81,24 +99,6 @@ impl crate::UnityEngine::OverlapSphereCommand {
             self,
             "set_point",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_point(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_point",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_radius(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_radius",
-            (),
         )?;
         Ok(__cordl_ret)
     }

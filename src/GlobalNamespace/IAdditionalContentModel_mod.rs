@@ -23,30 +23,20 @@ impl std::ops::DerefMut for IAdditionalContentModel {
 }
 #[cfg(feature = "IAdditionalContentModel")]
 impl IAdditionalContentModel {
-    pub fn OpenLevelProductStoreAsync(
+    pub fn IsPackBetterBuyThanLevelAsync(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelPackId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<OpenProductStoreResult>,
+        *mut crate::System::Threading::Tasks::Task_1<IsPackBetterBuyThanLevelResult>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            OpenProductStoreResult,
-        > = __cordl_object.invoke("OpenLevelProductStoreAsync", (levelId, token))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didInvalidateDataEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didInvalidateDataEvent", (value))?;
+            IsPackBetterBuyThanLevelResult,
+        > = __cordl_object
+            .invoke("IsPackBetterBuyThanLevelAsync", (levelPackId, token))?;
         Ok(__cordl_ret)
     }
     pub fn OpenLevelPackProductStoreAsync(
@@ -65,20 +55,19 @@ impl IAdditionalContentModel {
             .invoke("OpenLevelPackProductStoreAsync", (levelPackId, token))?;
         Ok(__cordl_ret)
     }
-    pub fn IsPackBetterBuyThanLevelAsync(
+    pub fn OpenLevelProductStoreAsync(
         &mut self,
-        levelPackId: *mut crate::System::String,
+        levelId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<IsPackBetterBuyThanLevelResult>,
+        *mut crate::System::Threading::Tasks::Task_1<OpenProductStoreResult>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            IsPackBetterBuyThanLevelResult,
-        > = __cordl_object
-            .invoke("IsPackBetterBuyThanLevelAsync", (levelPackId, token))?;
+            OpenProductStoreResult,
+        > = __cordl_object.invoke("OpenLevelProductStoreAsync", (levelId, token))?;
         Ok(__cordl_ret)
     }
     pub fn add_didInvalidateDataEvent(
@@ -96,6 +85,17 @@ impl IAdditionalContentModel {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn remove_didInvalidateDataEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didInvalidateDataEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "IAdditionalContentModel")]

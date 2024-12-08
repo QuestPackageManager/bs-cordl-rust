@@ -26,30 +26,6 @@ impl std::ops::DerefMut for MultiplayerBadgeDataMinMaxIntSO {
 }
 #[cfg(feature = "MultiplayerBadgeDataMinMaxIntSO")]
 impl MultiplayerBadgeDataMinMaxIntSO {
-    pub fn GetValue(
-        &mut self,
-        result: *mut MultiplayerPlayerResultsData,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetValue", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CalculateMin(
-        &mut self,
-        resultsData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut MultiplayerPlayerResultsData,
-        >,
-        randomMultiplier: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut MultiplayerBadgeAwardData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut MultiplayerBadgeAwardData = __cordl_object
-            .invoke("CalculateMin", (resultsData, randomMultiplier))?;
-        Ok(__cordl_ret)
-    }
     pub fn CalculateBadgeData(
         &mut self,
         resultsData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
@@ -69,16 +45,6 @@ impl MultiplayerBadgeDataMinMaxIntSO {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CalculateMax(
         &mut self,
         resultsData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
@@ -93,12 +59,46 @@ impl MultiplayerBadgeDataMinMaxIntSO {
             .invoke("CalculateMax", (resultsData, randomMultiplier))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn CalculateMin(
+        &mut self,
+        resultsData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut MultiplayerPlayerResultsData,
+        >,
+        randomMultiplier: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut MultiplayerBadgeAwardData> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut MultiplayerBadgeAwardData = __cordl_object
+            .invoke("CalculateMin", (resultsData, randomMultiplier))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetValue(
+        &mut self,
+        result: *mut MultiplayerPlayerResultsData,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetValue", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataMinMaxIntSO")]

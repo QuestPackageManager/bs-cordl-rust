@@ -34,6 +34,16 @@ impl crate::UnityEngine::Animations::AnimatorControllerPlayable {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn GetHandle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHandle",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn SetHandle(
         &mut self,
         handle: crate::UnityEngine::Playables::PlayableHandle,
@@ -53,16 +63,6 @@ impl crate::UnityEngine::Animations::AnimatorControllerPlayable {
             self,
             ".ctor",
             (handle),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHandle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHandle",
-            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -47,6 +47,13 @@ for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord")]
 impl crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -56,13 +63,6 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord")]
@@ -110,40 +110,6 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
     pub type DefaultFocusOrder = crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder;
     #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord")]
     pub type FocusRingRecord = crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord;
-    pub fn set_defaultFocusOrder(
-        &mut self,
-        value: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_defaultFocusOrder", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_defaultFocusOrder(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder = __cordl_object
-            .invoke("get_defaultFocusOrder", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FocusRingAutoIndexSort(
-        &mut self,
-        a: *mut crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
-        b: *mut crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("FocusRingAutoIndexSort", (a, b))?;
-        Ok(__cordl_ret)
-    }
     pub fn BuildRingForScopeRecursive(
         &mut self,
         ve: *mut crate::UnityEngine::UIElements::VisualElement,
@@ -159,16 +125,50 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             .invoke("BuildRingForScopeRecursive", (ve, scopeIndex, scopeList))?;
         Ok(__cordl_ret)
     }
-    pub fn get_focusController(
+    pub fn DoUpdate(
         &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DoUpdate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn FocusRingAutoIndexSort(
+        &mut self,
+        a: *mut crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+        b: *mut crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("FocusRingAutoIndexSort", (a, b))?;
+        Ok(__cordl_ret)
+    }
+    pub fn FocusRingSort(
+        &mut self,
+        a: *mut crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+        b: *mut crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("FocusRingSort", (a, b))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetFocusChangeDirection(
+        &mut self,
+        currentFocusable: *mut crate::UnityEngine::UIElements::Focusable,
+        e: *mut crate::UnityEngine::UIElements::EventBase,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::FocusController,
+        *mut crate::UnityEngine::UIElements::FocusChangeDirection,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::FocusController = __cordl_object
-            .invoke("get_focusController", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::FocusChangeDirection = __cordl_object
+            .invoke("GetFocusChangeDirection", (currentFocusable, e))?;
         Ok(__cordl_ret)
     }
     pub fn GetFocusableInternalIndex(
@@ -193,27 +193,15 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             .invoke("GetNextFocusable", (currentFocusable, direction))?;
         Ok(__cordl_ret)
     }
-    pub fn DoUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DoUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         root: *mut crate::UnityEngine::UIElements::VisualElement,
         dfo: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (root, dfo))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (root, dfo))?;
+        Ok(__cordl_object)
     }
     pub fn SortAndFlattenScopeLists(
         &mut self,
@@ -228,40 +216,52 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             .invoke("SortAndFlattenScopeLists", (rootScopeList))?;
         Ok(__cordl_ret)
     }
-    pub fn GetFocusChangeDirection(
+    pub fn _ctor(
         &mut self,
-        currentFocusable: *mut crate::UnityEngine::UIElements::Focusable,
-        e: *mut crate::UnityEngine::UIElements::EventBase,
+        root: *mut crate::UnityEngine::UIElements::VisualElement,
+        dfo: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (root, dfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_defaultFocusOrder(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::FocusChangeDirection,
+        crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::FocusChangeDirection = __cordl_object
-            .invoke("GetFocusChangeDirection", (currentFocusable, e))?;
+        let __cordl_ret: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder = __cordl_object
+            .invoke("get_defaultFocusOrder", ())?;
         Ok(__cordl_ret)
     }
-    pub fn FocusRingSort(
+    pub fn get_focusController(
         &mut self,
-        a: *mut crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
-        b: *mut crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::FocusController,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("FocusRingSort", (a, b))?;
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::FocusController = __cordl_object
+            .invoke("get_focusController", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        root: *mut crate::UnityEngine::UIElements::VisualElement,
-        dfo: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (root, dfo))?;
-        Ok(__cordl_object)
+    pub fn set_defaultFocusOrder(
+        &mut self,
+        value: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_defaultFocusOrder", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing")]

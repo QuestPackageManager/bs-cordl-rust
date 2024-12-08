@@ -29,6 +29,47 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsRsaKeyExch
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsRsaKeyExchange")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsRsaKeyExchange {
+    pub fn GenerateClientKeyExchange(
+        &mut self,
+        output: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GenerateClientKeyExchange", (output))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GeneratePremasterSecret(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GeneratePremasterSecret", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        supportedSignatureAlgorithms: *mut crate::System::Collections::IList,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (supportedSignatureAlgorithms))?;
+        Ok(__cordl_object)
+    }
+    pub fn ProcessClientCredentials(
+        &mut self,
+        clientCredentials: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessClientCredentials", (clientCredentials))?;
+        Ok(__cordl_ret)
+    }
     pub fn ProcessClientKeyExchange(
         &mut self,
         input: *mut crate::System::IO::Stream,
@@ -40,15 +81,26 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsRsaKeyExchange {
             .invoke("ProcessClientKeyExchange", (input))?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessClientCredentials(
+    pub fn ProcessServerCertificate(
         &mut self,
-        clientCredentials: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
+        serverCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessClientCredentials", (clientCredentials))?;
+            .invoke("ProcessServerCertificate", (serverCertificate))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessServerCredentials(
+        &mut self,
+        serverCredentials: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessServerCredentials", (serverCredentials))?;
         Ok(__cordl_ret)
     }
     pub fn SkipServerCredentials(
@@ -72,27 +124,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsRsaKeyExchange {
             .invoke("ValidateCertificateRequest", (certificateRequest))?;
         Ok(__cordl_ret)
     }
-    pub fn GenerateClientKeyExchange(
-        &mut self,
-        output: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateClientKeyExchange", (output))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GeneratePremasterSecret(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GeneratePremasterSecret", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ValidateRsaPublicKey(
         &mut self,
         key: *mut crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
@@ -106,28 +137,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsRsaKeyExchange {
             .invoke("ValidateRsaPublicKey", (key))?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessServerCredentials(
-        &mut self,
-        serverCredentials: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessServerCredentials", (serverCredentials))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessServerCertificate(
-        &mut self,
-        serverCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessServerCertificate", (serverCertificate))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         supportedSignatureAlgorithms: *mut crate::System::Collections::IList,
@@ -138,15 +147,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsRsaKeyExchange {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (supportedSignatureAlgorithms))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        supportedSignatureAlgorithms: *mut crate::System::Collections::IList,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (supportedSignatureAlgorithms))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsRsaKeyExchange")]

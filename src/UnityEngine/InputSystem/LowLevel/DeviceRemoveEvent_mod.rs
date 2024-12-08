@@ -24,18 +24,6 @@ for crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent {
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+DeviceRemoveEvent")]
 impl crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent {
     pub const Type: i32 = 1146242381i32;
-    pub fn get_typeStatic(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::FourCC,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_typeStatic",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn ToEventPtr(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -44,6 +32,18 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent {
         let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToEventPtr",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_typeStatic(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_typeStatic",
             (),
         )?;
         Ok(__cordl_ret)

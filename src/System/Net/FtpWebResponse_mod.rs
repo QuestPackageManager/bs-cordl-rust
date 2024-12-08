@@ -24,6 +24,13 @@ impl std::ops::DerefMut for crate::System::Net::FtpWebResponse_EmptyStream {
 }
 #[cfg(feature = "System+Net+FtpWebResponse+EmptyStream")]
 impl crate::System::Net::FtpWebResponse_EmptyStream {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -33,13 +40,6 @@ impl crate::System::Net::FtpWebResponse_EmptyStream {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+FtpWebResponse+EmptyStream")]
@@ -90,24 +90,78 @@ impl std::ops::DerefMut for crate::System::Net::FtpWebResponse {
 impl crate::System::Net::FtpWebResponse {
     #[cfg(feature = "System+Net+FtpWebResponse+EmptyStream")]
     pub type EmptyStream = crate::System::Net::FtpWebResponse_EmptyStream;
-    pub fn get_ResponseUri(
+    pub fn Close(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Uri = __cordl_object
-            .invoke("get_ResponseUri", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Close", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_StatusCode(
+    pub fn GetResponseStream(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Net::FtpStatusCode> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Net::FtpStatusCode = __cordl_object
-            .invoke("get_StatusCode", ())?;
+        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+            .invoke("GetResponseStream", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        responseStream: *mut crate::System::IO::Stream,
+        contentLength: i64,
+        responseUri: *mut crate::System::Uri,
+        statusCode: crate::System::Net::FtpStatusCode,
+        statusLine: *mut crate::System::String,
+        lastModified: crate::System::DateTime,
+        bannerMessage: *mut crate::System::String,
+        welcomeMessage: *mut crate::System::String,
+        exitMessage: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    responseStream,
+                    contentLength,
+                    responseUri,
+                    statusCode,
+                    statusLine,
+                    lastModified,
+                    bannerMessage,
+                    welcomeMessage,
+                    exitMessage,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn SetResponseStream(
+        &mut self,
+        stream: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetResponseStream", (stream))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateStatus(
+        &mut self,
+        statusCode: crate::System::Net::FtpStatusCode,
+        statusLine: *mut crate::System::String,
+        exitMessage: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateStatus", (statusCode, statusLine, exitMessage))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -142,50 +196,6 @@ impl crate::System::Net::FtpWebResponse {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn Close(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetResponseStream(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("GetResponseStream", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateStatus(
-        &mut self,
-        statusCode: crate::System::Net::FtpStatusCode,
-        statusLine: *mut crate::System::String,
-        exitMessage: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateStatus", (statusCode, statusLine, exitMessage))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetResponseStream(
-        &mut self,
-        stream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetResponseStream", (stream))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Headers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::WebHeaderCollection> {
@@ -196,35 +206,25 @@ impl crate::System::Net::FtpWebResponse {
             .invoke("get_Headers", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        responseStream: *mut crate::System::IO::Stream,
-        contentLength: i64,
-        responseUri: *mut crate::System::Uri,
-        statusCode: crate::System::Net::FtpStatusCode,
-        statusLine: *mut crate::System::String,
-        lastModified: crate::System::DateTime,
-        bannerMessage: *mut crate::System::String,
-        welcomeMessage: *mut crate::System::String,
-        exitMessage: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    responseStream,
-                    contentLength,
-                    responseUri,
-                    statusCode,
-                    statusLine,
-                    lastModified,
-                    bannerMessage,
-                    welcomeMessage,
-                    exitMessage,
-                ),
-            )?;
-        Ok(__cordl_object)
+    pub fn get_ResponseUri(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Uri = __cordl_object
+            .invoke("get_ResponseUri", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_StatusCode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Net::FtpStatusCode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Net::FtpStatusCode = __cordl_object
+            .invoke("get_StatusCode", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+FtpWebResponse")]

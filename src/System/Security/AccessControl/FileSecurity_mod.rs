@@ -24,6 +24,16 @@ impl std::ops::DerefMut for crate::System::Security::AccessControl::FileSecurity
 }
 #[cfg(feature = "System+Security+AccessControl+FileSecurity")]
 impl crate::System::Security::AccessControl::FileSecurity {
+    pub fn New(
+        fileName: *mut crate::System::String,
+        includeSections: crate::System::Security::AccessControl::AccessControlSections,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (fileName, includeSections))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         fileName: *mut crate::System::String,
@@ -35,16 +45,6 @@ impl crate::System::Security::AccessControl::FileSecurity {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (fileName, includeSections))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        fileName: *mut crate::System::String,
-        includeSections: crate::System::Security::AccessControl::AccessControlSections,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (fileName, includeSections))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Security+AccessControl+FileSecurity")]

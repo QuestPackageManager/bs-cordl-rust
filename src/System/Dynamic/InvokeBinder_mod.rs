@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::System::Dynamic::InvokeBinder {
 }
 #[cfg(feature = "System+Dynamic+InvokeBinder")]
 impl crate::System::Dynamic::InvokeBinder {
-    pub fn FallbackInvoke_DynamicMetaObject_Il2CppArray0(
+    pub fn Bind(
         &mut self,
         target: *mut crate::System::Dynamic::DynamicMetaObject,
         args: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -35,7 +35,7 @@ impl crate::System::Dynamic::InvokeBinder {
             self,
         );
         let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("FallbackInvoke", (target, args))?;
+            .invoke("Bind", (target, args))?;
         Ok(__cordl_ret)
     }
     pub fn FallbackInvoke_DynamicMetaObject1(
@@ -53,7 +53,7 @@ impl crate::System::Dynamic::InvokeBinder {
             .invoke("FallbackInvoke", (target, args, errorSuggestion))?;
         Ok(__cordl_ret)
     }
-    pub fn Bind(
+    pub fn FallbackInvoke_DynamicMetaObject_Il2CppArray0(
         &mut self,
         target: *mut crate::System::Dynamic::DynamicMetaObject,
         args: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -64,7 +64,7 @@ impl crate::System::Dynamic::InvokeBinder {
             self,
         );
         let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("Bind", (target, args))?;
+            .invoke("FallbackInvoke", (target, args))?;
         Ok(__cordl_ret)
     }
 }

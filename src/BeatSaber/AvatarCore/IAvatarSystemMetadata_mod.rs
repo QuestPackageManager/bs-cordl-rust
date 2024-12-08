@@ -24,6 +24,11 @@ impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::IAvatarSystemMetadata 
 }
 #[cfg(feature = "BeatSaber+AvatarCore+IAvatarSystemMetadata")]
 impl crate::BeatSaber::AvatarCore::IAvatarSystemMetadata {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_avatarCreated(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -47,11 +52,6 @@ impl crate::BeatSaber::AvatarCore::IAvatarSystemMetadata {
         let __cordl_ret: crate::BeatSaber::AvatarCore::AvatarSystemIdentifier = __cordl_object
             .invoke("get_typeIdentifier", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+IAvatarSystemMetadata")]

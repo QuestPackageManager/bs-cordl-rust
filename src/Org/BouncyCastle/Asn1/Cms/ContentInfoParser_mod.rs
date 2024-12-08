@@ -26,18 +26,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cms::ContentInfoPars
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+ContentInfoParser")]
 impl crate::Org::BouncyCastle::Asn1::Cms::ContentInfoParser {
-    pub fn get_ContentType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier = __cordl_object
-            .invoke("get_ContentType", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetContent(
         &mut self,
         tag: i32,
@@ -51,6 +39,15 @@ impl crate::Org::BouncyCastle::Asn1::Cms::ContentInfoParser {
             .invoke("GetContent", (tag))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1SequenceParser,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         seq: *mut crate::Org::BouncyCastle::Asn1::Asn1SequenceParser,
@@ -62,14 +59,17 @@ impl crate::Org::BouncyCastle::Asn1::Cms::ContentInfoParser {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1SequenceParser,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
+    pub fn get_ContentType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier = __cordl_object
+            .invoke("get_ContentType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+ContentInfoParser")]

@@ -26,21 +26,6 @@ for ISortedListItemProcessor_1<T> {
 }
 #[cfg(feature = "ISortedListItemProcessor_1")]
 impl<T: quest_hook::libil2cpp::Type> ISortedListItemProcessor_1<T> {
-    pub fn ProcessInsertedData(
-        &mut self,
-        insertedNode: *mut crate::System::Collections::Generic::LinkedListNode_1<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessInsertedData", (insertedNode))?;
-        Ok(__cordl_ret)
-    }
     pub fn ProcessBeforeDeleteData(
         &mut self,
         nodeToDelete: *mut crate::System::Collections::Generic::LinkedListNode_1<T>,
@@ -54,6 +39,21 @@ impl<T: quest_hook::libil2cpp::Type> ISortedListItemProcessor_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessBeforeDeleteData", (nodeToDelete))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessInsertedData(
+        &mut self,
+        insertedNode: *mut crate::System::Collections::Generic::LinkedListNode_1<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessInsertedData", (insertedNode))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

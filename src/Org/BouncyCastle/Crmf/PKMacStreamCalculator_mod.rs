@@ -25,6 +25,25 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crmf::PKMacStreamCalculato
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
 impl crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
+    pub fn GetResult(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("GetResult", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (mac))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
@@ -45,25 +64,6 @@ impl crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
         let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
             .invoke("get_Stream", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetResult(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetResult", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (mac))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+PKMacStreamCalculator")]

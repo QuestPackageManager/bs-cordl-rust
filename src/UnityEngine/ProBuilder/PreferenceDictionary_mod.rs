@@ -78,6 +78,16 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::PreferenceDictionary
 }
 #[cfg(feature = "UnityEngine+ProBuilder+PreferenceDictionary")]
 impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn DeleteKey(
         &mut self,
         key: *mut crate::System::String,
@@ -115,42 +125,6 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         let __cordl_ret: bool = __cordl_object.invoke("GetBool", (key, fallback))?;
         Ok(__cordl_ret)
     }
-    pub fn GetString(
-        &mut self,
-        key: *mut crate::System::String,
-        fallback: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetString", (key, fallback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetMaterial(
-        &mut self,
-        key: *mut crate::System::String,
-        fallback: *mut crate::UnityEngine::Material,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Material> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Material = __cordl_object
-            .invoke("GetMaterial", (key, fallback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetString(
-        &mut self,
-        key: *mut crate::System::String,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetString", (key, value))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetBoolDictionary(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -166,6 +140,18 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
             *mut crate::System::String,
             bool,
         > = __cordl_object.invoke("GetBoolDictionary", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetColor(
+        &mut self,
+        key: *mut crate::System::String,
+        fallback: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("GetColor", (key, fallback))?;
         Ok(__cordl_ret)
     }
     pub fn GetColorDictionary(
@@ -185,20 +171,15 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         > = __cordl_object.invoke("GetColorDictionary", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Set<T>(
+    pub fn GetFloat(
         &mut self,
         key: *mut crate::System::String,
-        value: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
+        fallback: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Set", (key, value))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("GetFloat", (key, fallback))?;
         Ok(__cordl_ret)
     }
     pub fn GetFloatDictionary(
@@ -218,16 +199,73 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         > = __cordl_object.invoke("GetFloatDictionary", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetFloat(
+    pub fn GetInt(
         &mut self,
         key: *mut crate::System::String,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        fallback: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetFloat", (key, value))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetInt", (key, fallback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetIntDictionary(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::String,
+            i32,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::String,
+            i32,
+        > = __cordl_object.invoke("GetIntDictionary", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetMaterial(
+        &mut self,
+        key: *mut crate::System::String,
+        fallback: *mut crate::UnityEngine::Material,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Material> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Material = __cordl_object
+            .invoke("GetMaterial", (key, fallback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetMaterialDictionary(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::String,
+            *mut crate::UnityEngine::Material,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::String,
+            *mut crate::UnityEngine::Material,
+        > = __cordl_object.invoke("GetMaterialDictionary", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetString(
+        &mut self,
+        key: *mut crate::System::String,
+        fallback: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetString", (key, fallback))?;
         Ok(__cordl_ret)
     }
     pub fn GetStringDictionary(
@@ -245,16 +283,6 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
             *mut crate::System::String,
             *mut crate::System::String,
         > = __cordl_object.invoke("GetStringDictionary", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetDefaultValues(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetDefaultValues", ())?;
         Ok(__cordl_ret)
     }
     pub fn HasKey_String0(
@@ -281,39 +309,12 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         let __cordl_ret: bool = __cordl_object.invoke("HasKey", (key))?;
         Ok(__cordl_ret)
     }
-    pub fn GetColor(
-        &mut self,
-        key: *mut crate::System::String,
-        fallback: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("GetColor", (key, fallback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetInt(
-        &mut self,
-        key: *mut crate::System::String,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetInt", (key, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnAfterDeserialize(
         &mut self,
@@ -323,30 +324,6 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnAfterDeserialize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetColor(
-        &mut self,
-        key: *mut crate::System::String,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColor", (key, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetMaterial(
-        &mut self,
-        key: *mut crate::System::String,
-        value: *mut crate::UnityEngine::Material,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetMaterial", (key, value))?;
         Ok(__cordl_ret)
     }
     pub fn OnBeforeSerialize(
@@ -359,26 +336,20 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
             .invoke("OnBeforeSerialize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetInt(
+    pub fn Set<T>(
         &mut self,
         key: *mut crate::System::String,
-        fallback: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+        value: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetInt", (key, fallback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetFloat(
-        &mut self,
-        key: *mut crate::System::String,
-        fallback: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetFloat", (key, fallback))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Set", (key, value))?;
         Ok(__cordl_ret)
     }
     pub fn SetBool(
@@ -393,56 +364,85 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
             .invoke("SetBool", (key, value))?;
         Ok(__cordl_ret)
     }
-    pub fn GetIntDictionary(
+    pub fn SetColor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            i32,
-        >,
-    > {
+        key: *mut crate::System::String,
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            i32,
-        > = __cordl_object.invoke("GetIntDictionary", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetColor", (key, value))?;
         Ok(__cordl_ret)
     }
-    pub fn Clear(
+    pub fn SetDefaultValues(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
+            .invoke("SetDefaultValues", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetMaterialDictionary(
+    pub fn SetFloat(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            *mut crate::UnityEngine::Material,
-        >,
-    > {
+        key: *mut crate::System::String,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            *mut crate::UnityEngine::Material,
-        > = __cordl_object.invoke("GetMaterialDictionary", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetFloat", (key, value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn SetInt(
+        &mut self,
+        key: *mut crate::System::String,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetInt", (key, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetMaterial(
+        &mut self,
+        key: *mut crate::System::String,
+        value: *mut crate::UnityEngine::Material,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetMaterial", (key, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetString(
+        &mut self,
+        key: *mut crate::System::String,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetString", (key, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+PreferenceDictionary")]

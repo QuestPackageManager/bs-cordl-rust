@@ -41,6 +41,19 @@ impl std::ops::DerefMut for crate::GlobalNamespace::EncryptionUtility_Encryption
 #[cfg(feature = "EncryptionUtility+EncryptionState")]
 impl crate::GlobalNamespace::EncryptionUtility_EncryptionState {
     pub const kReceivedSequencNumBufferLength: i32 = 64i32;
+    pub fn ComputeReceiveMac(
+        &mut self,
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("ComputeReceiveMac", (data, offset, count))?;
+        Ok(__cordl_ret)
+    }
     pub fn ComputeSendMac(
         &mut self,
         data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -54,6 +67,60 @@ impl crate::GlobalNamespace::EncryptionUtility_EncryptionState {
             .invoke("ComputeSendMac", (data, offset, count))?;
         Ok(__cordl_ret)
     }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn EncryptData(
+        &mut self,
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: quest_hook::libil2cpp::ByRefMut<i32>,
+        length: quest_hook::libil2cpp::ByRefMut<i32>,
+        extraPrefixBytes: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EncryptData", (data, offset, length, extraPrefixBytes))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNextSentSequenceNum(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("GetNextSentSequenceNum", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsValidSequenceNum(
+        &mut self,
+        sequenceNum: u32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsValidSequenceNum", (sequenceNum))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        preMasterSecret: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        serverSeed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        clientSeed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        isClient: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (preMasterSecret, serverSeed, clientSeed, isClient))?;
+        Ok(__cordl_object)
+    }
     pub fn PutSequenceNum(
         &mut self,
         sequenceNum: u32,
@@ -62,19 +129,6 @@ impl crate::GlobalNamespace::EncryptionUtility_EncryptionState {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("PutSequenceNum", (sequenceNum))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ComputeReceiveMac(
-        &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("ComputeReceiveMac", (data, offset, count))?;
         Ok(__cordl_ret)
     }
     pub fn TryDecryptData(
@@ -104,66 +158,12 @@ impl crate::GlobalNamespace::EncryptionUtility_EncryptionState {
             .invoke(".ctor", (preMasterSecret, serverSeed, clientSeed, isClient))?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNextSentSequenceNum(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("GetNextSentSequenceNum", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EncryptData(
-        &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: quest_hook::libil2cpp::ByRefMut<i32>,
-        length: quest_hook::libil2cpp::ByRefMut<i32>,
-        extraPrefixBytes: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EncryptData", (data, offset, length, extraPrefixBytes))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsValidSequenceNum(
-        &mut self,
-        sequenceNum: u32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsValidSequenceNum", (sequenceNum))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_isValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isValid", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        preMasterSecret: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        serverSeed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        clientSeed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        isClient: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (preMasterSecret, serverSeed, clientSeed, isClient))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "EncryptionUtility+EncryptionState")]
@@ -211,12 +211,12 @@ impl EncryptionUtility {
     pub const kMaxPadding: i32 = 32i32;
     pub const kRandomBlockSize: i32 = 32i32;
     pub const kSequenceNumberSize: i32 = 4i32;
-    #[cfg(feature = "EncryptionUtility+__c__DisplayClass18_0")]
-    pub type __c__DisplayClass18_0 = crate::GlobalNamespace::EncryptionUtility___c__DisplayClass18_0;
     #[cfg(feature = "EncryptionUtility+IEncryptionState")]
     type IEncryptionState = crate::GlobalNamespace::EncryptionUtility_IEncryptionState;
     #[cfg(feature = "EncryptionUtility+EncryptionState")]
     pub type EncryptionState = crate::GlobalNamespace::EncryptionUtility_EncryptionState;
+    #[cfg(feature = "EncryptionUtility+__c__DisplayClass18_0")]
+    pub type __c__DisplayClass18_0 = crate::GlobalNamespace::EncryptionUtility___c__DisplayClass18_0;
 }
 #[cfg(feature = "EncryptionUtility")]
 impl quest_hook::libil2cpp::ObjectType for EncryptionUtility {
@@ -281,17 +281,17 @@ impl crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
             .invoke("TryDecryptData", (data, offset, length))?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_isValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isValid", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "EncryptionUtility+IEncryptionState")]

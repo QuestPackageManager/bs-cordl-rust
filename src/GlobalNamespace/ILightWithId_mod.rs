@@ -23,21 +23,15 @@ impl std::ops::DerefMut for ILightWithId {
 }
 #[cfg(feature = "ILightWithId")]
 impl ILightWithId {
-    pub fn __SetIsUnRegistered(
+    pub fn ColorWasSet(
         &mut self,
+        color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("__SetIsUnRegistered", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isRegistered(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isRegistered", ())?;
+            .invoke("ColorWasSet", (color))?;
         Ok(__cordl_ret)
     }
     pub fn __SetIsRegistered(
@@ -50,15 +44,26 @@ impl ILightWithId {
             .invoke("__SetIsRegistered", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ColorWasSet(
+    pub fn __SetIsUnRegistered(
         &mut self,
-        color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ColorWasSet", (color))?;
+            .invoke("__SetIsUnRegistered", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_isRegistered(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isRegistered", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_lightId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -67,11 +72,6 @@ impl ILightWithId {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_lightId", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "ILightWithId")]

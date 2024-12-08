@@ -26,21 +26,6 @@ impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for AsyncComputeOperatio
 }
 #[cfg(feature = "AsyncComputeOperation_1")]
 impl<T: quest_hook::libil2cpp::Type> AsyncComputeOperation_1<T> {
-    pub fn Execute(
-        &mut self,
-        disposed: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Execute", (disposed))?;
-        Ok(__cordl_ret)
-    }
     pub fn Cancel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -53,50 +38,6 @@ impl<T: quest_hook::libil2cpp::Type> AsyncComputeOperation_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Cancel", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Finally(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finally", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Fail(
-        &mut self,
-        ex: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Fail", (ex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        timeoutMs: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (timeoutMs))?;
         Ok(__cordl_ret)
     }
     pub fn Complete(
@@ -114,6 +55,61 @@ impl<T: quest_hook::libil2cpp::Type> AsyncComputeOperation_1<T> {
             .invoke("Complete", (computeResult))?;
         Ok(__cordl_ret)
     }
+    pub fn Compute(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("Compute", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Execute(
+        &mut self,
+        disposed: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Execute", (disposed))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Fail(
+        &mut self,
+        ex: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Fail", (ex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Finally(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Finally", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn IsValidRequest(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -125,7 +121,17 @@ impl<T: quest_hook::libil2cpp::Type> AsyncComputeOperation_1<T> {
         let __cordl_ret: bool = __cordl_object.invoke("IsValidRequest", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Compute(&mut self) -> quest_hook::libil2cpp::Result<T>
+    pub fn New(timeoutMs: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (timeoutMs))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        timeoutMs: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -133,7 +139,8 @@ impl<T: quest_hook::libil2cpp::Type> AsyncComputeOperation_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: T = __cordl_object.invoke("Compute", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (timeoutMs))?;
         Ok(__cordl_ret)
     }
     pub fn get_task(
@@ -149,13 +156,6 @@ impl<T: quest_hook::libil2cpp::Type> AsyncComputeOperation_1<T> {
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<T> = __cordl_object
             .invoke("get_task", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(timeoutMs: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (timeoutMs))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "AsyncComputeOperation_1")]

@@ -29,15 +29,39 @@ impl std::ops::DerefMut for PlayersSpecificSettingsAtGameStartModel {
 impl PlayersSpecificSettingsAtGameStartModel {
     #[cfg(feature = "PlayersSpecificSettingsAtGameStartModel+__c__DisplayClass13_0")]
     pub type __c__DisplayClass13_0 = crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel___c__DisplayClass13_0;
-    pub fn set_localPlayerSpecificSettings(
+    pub fn GetPlayerSpecificSettingsForUserId(
         &mut self,
-        value: *mut PlayerSpecificSettingsNetSerializable,
+        userId: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut PlayerSpecificSettingsNetSerializable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut PlayerSpecificSettingsNetSerializable = __cordl_object
+            .invoke("GetPlayerSpecificSettingsForUserId", (userId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        multiplayerSessionManager: *mut IMultiplayerSessionManager,
+        localPlayerSpecificSettings: *mut PlayerSpecificSettingsNetSerializable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (multiplayerSessionManager, localPlayerSpecificSettings),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn SaveFromNetSerializable(
+        &mut self,
+        playersAtGameStartNetSerializable: *mut PlayerSpecificSettingsAtStartNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_localPlayerSpecificSettings", (value))?;
+            .invoke("SaveFromNetSerializable", (playersAtGameStartNetSerializable))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -52,15 +76,14 @@ impl PlayersSpecificSettingsAtGameStartModel {
             .invoke(".ctor", (multiplayerSessionManager, localPlayerSpecificSettings))?;
         Ok(__cordl_ret)
     }
-    pub fn GetPlayerSpecificSettingsForUserId(
+    pub fn get_localPlayerSpecificSettings(
         &mut self,
-        userId: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<*mut PlayerSpecificSettingsNetSerializable> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut PlayerSpecificSettingsNetSerializable = __cordl_object
-            .invoke("GetPlayerSpecificSettingsForUserId", (userId))?;
+            .invoke("get_localPlayerSpecificSettings", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_playersAtGameStart(
@@ -76,27 +99,6 @@ impl PlayersSpecificSettingsAtGameStartModel {
         > = __cordl_object.invoke("get_playersAtGameStart", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_localPlayerSpecificSettings(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerSpecificSettingsNetSerializable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut PlayerSpecificSettingsNetSerializable = __cordl_object
-            .invoke("get_localPlayerSpecificSettings", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SaveFromNetSerializable(
-        &mut self,
-        playersAtGameStartNetSerializable: *mut PlayerSpecificSettingsAtStartNetSerializable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SaveFromNetSerializable", (playersAtGameStartNetSerializable))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_playersAtGameStartNetSerializable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -109,6 +111,17 @@ impl PlayersSpecificSettingsAtGameStartModel {
             .invoke("get_playersAtGameStartNetSerializable", ())?;
         Ok(__cordl_ret)
     }
+    pub fn set_localPlayerSpecificSettings(
+        &mut self,
+        value: *mut PlayerSpecificSettingsNetSerializable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_localPlayerSpecificSettings", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_playersAtGameStartNetSerializable(
         &mut self,
         value: *mut PlayerSpecificSettingsAtStartNetSerializable,
@@ -119,19 +132,6 @@ impl PlayersSpecificSettingsAtGameStartModel {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_playersAtGameStartNetSerializable", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
-        localPlayerSpecificSettings: *mut PlayerSpecificSettingsNetSerializable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (multiplayerSessionManager, localPlayerSpecificSettings),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PlayersSpecificSettingsAtGameStartModel")]

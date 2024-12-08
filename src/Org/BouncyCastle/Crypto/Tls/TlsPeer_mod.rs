@@ -46,74 +46,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPeer {
             .invoke("GetCipher", ())?;
         Ok(__cordl_ret)
     }
-    pub fn NotifyHandshakeComplete(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NotifyHandshakeComplete", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn NotifyCloseHandle(
-        &mut self,
-        closehandle: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NotifyCloseHandle", (closehandle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NotifyAlertReceived(
-        &mut self,
-        alertLevel: u8,
-        alertDescription: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NotifyAlertReceived", (alertLevel, alertDescription))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHandshakeTimeoutMillis(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHandshakeTimeoutMillis", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RequiresExtendedMasterSecret(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("RequiresExtendedMasterSecret", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn NotifySecureRenegotiation(
-        &mut self,
-        secureRenegotiation: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NotifySecureRenegotiation", (secureRenegotiation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ShouldUseGmtUnixTime(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ShouldUseGmtUnixTime", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetCompression(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -124,6 +56,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPeer {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCompression = __cordl_object
             .invoke("GetCompression", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHandshakeTimeoutMillis(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHandshakeTimeoutMillis", ())?;
         Ok(__cordl_ret)
     }
     pub fn NotifyAlertRaised(
@@ -141,6 +80,67 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPeer {
                 "NotifyAlertRaised",
                 (alertLevel, alertDescription, message, cause),
             )?;
+        Ok(__cordl_ret)
+    }
+    pub fn NotifyAlertReceived(
+        &mut self,
+        alertLevel: u8,
+        alertDescription: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("NotifyAlertReceived", (alertLevel, alertDescription))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NotifyCloseHandle(
+        &mut self,
+        closehandle: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("NotifyCloseHandle", (closehandle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NotifyHandshakeComplete(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("NotifyHandshakeComplete", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn NotifySecureRenegotiation(
+        &mut self,
+        secureRenegotiation: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("NotifySecureRenegotiation", (secureRenegotiation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RequiresExtendedMasterSecret(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("RequiresExtendedMasterSecret", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ShouldUseGmtUnixTime(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ShouldUseGmtUnixTime", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

@@ -25,6 +25,24 @@ impl std::ops::DerefMut for crate::System::Net::Http::HttpContent_FixedMemoryStr
 }
 #[cfg(feature = "System+Net+Http+HttpContent+FixedMemoryStream")]
 impl crate::System::Net::Http::HttpContent_FixedMemoryStream {
+    pub fn CheckOverflow(
+        &mut self,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckOverflow", (count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(maxSize: i64) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (maxSize))?;
+        Ok(__cordl_object)
+    }
     pub fn Write(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -38,15 +56,15 @@ impl crate::System::Net::Http::HttpContent_FixedMemoryStream {
             .invoke("Write", (buffer, offset, count))?;
         Ok(__cordl_ret)
     }
-    pub fn CheckOverflow(
+    pub fn WriteByte(
         &mut self,
-        count: i32,
+        value: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckOverflow", (count))?;
+            .invoke("WriteByte", (value))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -59,24 +77,6 @@ impl crate::System::Net::Http::HttpContent_FixedMemoryStream {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (maxSize))?;
         Ok(__cordl_ret)
-    }
-    pub fn WriteByte(
-        &mut self,
-        value: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteByte", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(maxSize: i64) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (maxSize))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+Http+HttpContent+FixedMemoryStream")]
@@ -124,82 +124,6 @@ impl crate::System::Net::Http::HttpContent {
     pub type _ReadAsStringAsync_d__20 = crate::System::Net::Http::HttpContent__ReadAsStringAsync_d__20;
     #[cfg(feature = "System+Net+Http+HttpContent+_LoadIntoBufferAsync_d__17")]
     pub type _LoadIntoBufferAsync_d__17 = crate::System::Net::Http::HttpContent__LoadIntoBufferAsync_d__17;
-    pub fn ReadAsStringAsync(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::String,
-        > = __cordl_object.invoke("ReadAsStringAsync", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryComputeLength(
-        &mut self,
-        length: quest_hook::libil2cpp::ByRefMut<i64>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryComputeLength", (length))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LoadedBufferLength(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i64>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Nullable_1<i64> = __cordl_object
-            .invoke("get_LoadedBufferLength", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadIntoBufferAsync_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("LoadIntoBufferAsync", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadIntoBufferAsync_i64_1(
-        &mut self,
-        maxBufferSize: i64,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("LoadIntoBufferAsync", (maxBufferSize))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SerializeToStreamAsync(
-        &mut self,
-        stream: *mut crate::System::IO::Stream,
-        context: *mut crate::System::Net::TransportContext,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("SerializeToStreamAsync", (stream, context))?;
-        Ok(__cordl_ret)
-    }
     pub fn CopyToAsync_Stream0(
         &mut self,
         stream: *mut crate::System::IO::Stream,
@@ -223,18 +147,6 @@ impl crate::System::Net::Http::HttpContent {
             .invoke("CopyToAsync", (stream, context))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Headers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Net::Http::Headers::HttpContentHeaders,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::Http::Headers::HttpContentHeaders = __cordl_object
-            .invoke("get_Headers", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -256,12 +168,100 @@ impl crate::System::Net::Http::HttpContent {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn LoadIntoBufferAsync_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("LoadIntoBufferAsync", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadIntoBufferAsync_i64_1(
+        &mut self,
+        maxBufferSize: i64,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("LoadIntoBufferAsync", (maxBufferSize))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn ReadAsStringAsync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::System::String,
+        > = __cordl_object.invoke("ReadAsStringAsync", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SerializeToStreamAsync(
+        &mut self,
+        stream: *mut crate::System::IO::Stream,
+        context: *mut crate::System::Net::TransportContext,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("SerializeToStreamAsync", (stream, context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryComputeLength(
+        &mut self,
+        length: quest_hook::libil2cpp::ByRefMut<i64>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryComputeLength", (length))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Headers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Net::Http::Headers::HttpContentHeaders,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::Http::Headers::HttpContentHeaders = __cordl_object
+            .invoke("get_Headers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LoadedBufferLength(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i64>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Nullable_1<i64> = __cordl_object
+            .invoke("get_LoadedBufferLength", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+Http+HttpContent")]

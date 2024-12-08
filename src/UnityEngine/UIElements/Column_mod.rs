@@ -78,31 +78,6 @@ impl crate::UnityEngine::UIElements::Column {
     pub type UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::Column_UxmlObjectTraits_1<
         T,
     >;
-    pub fn add_resized(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut crate::UnityEngine::UIElements::Column>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_resized", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_displayIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_displayIndex", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetWidth(&mut self, layoutWidth: f32) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetWidth", (layoutWidth))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetMaxWidth(
         &mut self,
         layoutWidth: f32,
@@ -123,35 +98,64 @@ impl crate::UnityEngine::UIElements::Column {
         let __cordl_ret: f32 = __cordl_object.invoke("GetMinWidth", (layoutWidth))?;
         Ok(__cordl_ret)
     }
-    pub fn set_collection(
+    pub fn GetWidth(&mut self, layoutWidth: f32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("GetWidth", (layoutWidth))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn NotifyChange(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::Columns,
+        _cordl_type: crate::UnityEngine::UIElements::ColumnDataType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_collection", (value))?;
+            .invoke("NotifyChange", (_cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn get_desiredWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_desiredWidth", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_makeHeader(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_1<*mut crate::UnityEngine::UIElements::VisualElement>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        > = __cordl_object.invoke("get_makeHeader", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_changed(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::UnityEngine::UIElements::Column,
+            crate::UnityEngine::UIElements::ColumnDataType,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_changed", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_resized(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::UnityEngine::UIElements::Column>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_resized", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_bindCell(
@@ -171,6 +175,163 @@ impl crate::UnityEngine::UIElements::Column {
         > = __cordl_object.invoke("get_bindCell", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_bindHeader(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Action_1<*mut crate::UnityEngine::UIElements::VisualElement>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        > = __cordl_object.invoke("get_bindHeader", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_collection(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Columns> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::Columns = __cordl_object
+            .invoke("get_collection", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_desiredWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_desiredWidth", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_destroyCell(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Action_1<*mut crate::UnityEngine::UIElements::VisualElement>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        > = __cordl_object.invoke("get_destroyCell", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_destroyHeader(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Action_1<*mut crate::UnityEngine::UIElements::VisualElement>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        > = __cordl_object.invoke("get_destroyHeader", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_displayIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_displayIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_icon(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Background> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::Background = __cordl_object
+            .invoke("get_icon", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_index(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_index", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_makeCell(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Func_1<*mut crate::UnityEngine::UIElements::VisualElement>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Func_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        > = __cordl_object.invoke("get_makeCell", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_makeHeader(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Func_1<*mut crate::UnityEngine::UIElements::VisualElement>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Func_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        > = __cordl_object.invoke("get_makeHeader", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxWidth(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::Length = __cordl_object
+            .invoke("get_maxWidth", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_minWidth(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::Length = __cordl_object
+            .invoke("get_minWidth", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_name", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_optional(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_optional", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_resizable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_resizable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sortable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_sortable", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_stretchable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -188,15 +349,58 @@ impl crate::UnityEngine::UIElements::Column {
             .invoke("get_title", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_resizable(
+    pub fn get_unbindCell(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Action_2<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+            i32,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_resizable", (value))?;
+        let __cordl_ret: *mut crate::System::Action_2<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+            i32,
+        > = __cordl_object.invoke("get_unbindCell", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_unbindHeader(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Action_1<*mut crate::UnityEngine::UIElements::VisualElement>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        > = __cordl_object.invoke("get_unbindHeader", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_visible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_visible", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_visibleIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_visibleIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_width(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::Length = __cordl_object
+            .invoke("get_width", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_changed(
@@ -213,31 +417,37 @@ impl crate::UnityEngine::UIElements::Column {
             .invoke("remove_changed", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn remove_resized(
         &mut self,
+        value: *mut crate::System::Action_1<*mut crate::UnityEngine::UIElements::Column>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("remove_resized", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_visible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_visible", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_minWidth(
+    pub fn set_collection(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
+        value: *mut crate::UnityEngine::UIElements::Columns,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::UIElements::Length = __cordl_object
-            .invoke("get_minWidth", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_collection", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_desiredWidth(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_desiredWidth", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_makeCell(
@@ -253,65 +463,17 @@ impl crate::UnityEngine::UIElements::Column {
             .invoke("set_makeCell", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_resized(
+    pub fn set_makeHeader(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::UnityEngine::UIElements::Column>,
+        value: *mut crate::System::Func_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_resized", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NotifyChange(
-        &mut self,
-        _cordl_type: crate::UnityEngine::UIElements::ColumnDataType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NotifyChange", (_cordl_type))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_optional(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_optional", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_maxWidth(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::Length = __cordl_object
-            .invoke("get_maxWidth", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_optional(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_optional", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_visible(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_visible", (value))?;
+            .invoke("set_makeHeader", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_maxWidth(
@@ -325,48 +487,59 @@ impl crate::UnityEngine::UIElements::Column {
             .invoke("set_maxWidth", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_collection(
+    pub fn set_minWidth(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Columns> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Columns = __cordl_object
-            .invoke("get_collection", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_visibleIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_visibleIndex", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_destroyCell(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Action_1<*mut crate::UnityEngine::UIElements::VisualElement>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        > = __cordl_object.invoke("get_destroyCell", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_changed(
-        &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::UnityEngine::UIElements::Column,
-            crate::UnityEngine::UIElements::ColumnDataType,
-        >,
+        value: crate::UnityEngine::UIElements::Length,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_changed", (value))?;
+            .invoke("set_minWidth", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_name(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_name", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_optional(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_optional", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_resizable(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_resizable", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_sortable(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_sortable", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_stretchable(
@@ -391,21 +564,7 @@ impl crate::UnityEngine::UIElements::Column {
             .invoke("set_title", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_index(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_index", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_resizable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_resizable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_sortable(
+    pub fn set_visible(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -413,68 +572,7 @@ impl crate::UnityEngine::UIElements::Column {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_sortable", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_unbindCell(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Action_2<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-            i32,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Action_2<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-            i32,
-        > = __cordl_object.invoke("get_unbindCell", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_icon(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Background> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::Background = __cordl_object
-            .invoke("get_icon", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_makeHeader(
-        &mut self,
-        value: *mut crate::System::Func_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_makeHeader", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_name", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_name(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_name", (value))?;
+            .invoke("set_visible", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_width(
@@ -487,104 +585,6 @@ impl crate::UnityEngine::UIElements::Column {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_width", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn set_desiredWidth(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_desiredWidth", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sortable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_sortable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_minWidth(
-        &mut self,
-        value: crate::UnityEngine::UIElements::Length,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_minWidth", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_bindHeader(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Action_1<*mut crate::UnityEngine::UIElements::VisualElement>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        > = __cordl_object.invoke("get_bindHeader", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_unbindHeader(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Action_1<*mut crate::UnityEngine::UIElements::VisualElement>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        > = __cordl_object.invoke("get_unbindHeader", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_destroyHeader(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Action_1<*mut crate::UnityEngine::UIElements::VisualElement>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        > = __cordl_object.invoke("get_destroyHeader", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_width(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::Length = __cordl_object
-            .invoke("get_width", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_makeCell(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_1<*mut crate::UnityEngine::UIElements::VisualElement>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Func_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        > = __cordl_object.invoke("get_makeCell", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Column")]
@@ -634,6 +634,13 @@ for crate::UnityEngine::UIElements::Column_UxmlObjectFactory_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::Column_UxmlObjectFactory_1<T> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -645,13 +652,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Column+UxmlObjectFactory_1")]
@@ -709,29 +709,17 @@ impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::Column_UxmlObjectTraits_1<T> {
     #[cfg(
-        feature = "UnityEngine+UIElements+Column+UxmlObjectTraits_1+__c__DisplayClass15_0"
-    )]
-    pub type __c__DisplayClass15_0 = crate::UnityEngine::UIElements::UxmlObjectTraits_1___c__DisplayClass15_0<
-        T,
-    >;
-    #[cfg(
         feature = "UnityEngine+UIElements+Column+UxmlObjectTraits_1+__c__DisplayClass15_1"
     )]
     pub type __c__DisplayClass15_1 = crate::UnityEngine::UIElements::UxmlObjectTraits_1___c__DisplayClass15_1<
         T,
     >;
-    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(
+        feature = "UnityEngine+UIElements+Column+UxmlObjectTraits_1+__c__DisplayClass15_0"
+    )]
+    pub type __c__DisplayClass15_0 = crate::UnityEngine::UIElements::UxmlObjectTraits_1___c__DisplayClass15_0<
+        T,
+    >;
     pub fn Init(
         &mut self,
         obj: quest_hook::libil2cpp::ByRefMut<T>,
@@ -749,12 +737,24 @@ impl<
             .invoke("Init", (obj, bag, cc))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Column+UxmlObjectTraits_1")]

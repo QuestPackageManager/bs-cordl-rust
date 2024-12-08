@@ -24,6 +24,16 @@ for crate::System::Buffers::MemoryHandle {
 }
 #[cfg(feature = "System+Buffers+MemoryHandle")]
 impl crate::System::Buffers::MemoryHandle {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         pointer: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -43,16 +53,6 @@ impl crate::System::Buffers::MemoryHandle {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Pointer",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
             (),
         )?;
         Ok(__cordl_ret)

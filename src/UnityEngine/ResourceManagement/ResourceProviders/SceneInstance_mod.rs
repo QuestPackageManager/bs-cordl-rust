@@ -24,6 +24,26 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneInstance")]
 impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
+    pub fn Activate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Activate",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ActivateAsync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AsyncOperation> {
+        let __cordl_ret: *mut crate::UnityEngine::AsyncOperation = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ActivateAsync",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals(
         &mut self,
         obj: *mut crate::System::Object,
@@ -32,6 +52,14 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
             self,
             "Equals",
             (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -45,16 +73,6 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Activate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Activate",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_Scene(
         &mut self,
         value: crate::UnityEngine::SceneManagement::Scene,
@@ -63,24 +81,6 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
             self,
             "set_Scene",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ActivateAsync(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AsyncOperation> {
-        let __cordl_ret: *mut crate::UnityEngine::AsyncOperation = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ActivateAsync",
-            (),
         )?;
         Ok(__cordl_ret)
     }

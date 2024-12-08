@@ -32,6 +32,19 @@ for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable_ForDevi
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice")]
 impl crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable_ForDevice {
+    pub fn New(
+        deviceType: *mut crate::System::Type,
+        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+        observer: *mut crate::System::IObserver_1<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (deviceType, device, observer))?;
+        Ok(__cordl_object)
+    }
     pub fn OnCompleted(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -40,6 +53,17 @@ impl crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable_ForDev
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnCompleted", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnError(
+        &mut self,
+        error: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnError", (error))?;
         Ok(__cordl_ret)
     }
     pub fn OnNext(
@@ -67,30 +91,6 @@ impl crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable_ForDev
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (deviceType, device, observer))?;
         Ok(__cordl_ret)
-    }
-    pub fn OnError(
-        &mut self,
-        error: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnError", (error))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        deviceType: *mut crate::System::Type,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
-        observer: *mut crate::System::IObserver_1<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (deviceType, device, observer))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice")]
@@ -141,20 +141,18 @@ impl crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable {
         feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice"
     )]
     pub type ForDevice = crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable_ForDevice;
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         source: *mut crate::System::IObservable_1<
             crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         >,
         deviceType: *mut crate::System::Type,
         device: *mut crate::UnityEngine::InputSystem::InputDevice,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (source, deviceType, device))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (source, deviceType, device))?;
+        Ok(__cordl_object)
     }
     pub fn Subscribe(
         &mut self,
@@ -169,18 +167,20 @@ impl crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable {
             .invoke("Subscribe", (observer))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         source: *mut crate::System::IObservable_1<
             crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         >,
         deviceType: *mut crate::System::Type,
         device: *mut crate::UnityEngine::InputSystem::InputDevice,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (source, deviceType, device))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (source, deviceType, device))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable")]

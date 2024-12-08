@@ -26,6 +26,26 @@ impl std::ops::DerefMut for crate::Mono::Http::NtlmClient {
 impl crate::Mono::Http::NtlmClient {
     #[cfg(feature = "Mono+Http+NtlmClient+__c")]
     pub type __c = crate::Mono::Http::NtlmClient___c;
+    pub fn Authenticate(
+        &mut self,
+        challenge: *mut crate::System::String,
+        webRequest: *mut crate::System::Net::WebRequest,
+        credentials: *mut crate::System::Net::ICredentials,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::Authorization> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::Authorization = __cordl_object
+            .invoke("Authenticate", (challenge, webRequest, credentials))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn PreAuthenticate(
         &mut self,
         webRequest: *mut crate::System::Net::WebRequest,
@@ -48,19 +68,6 @@ impl crate::Mono::Http::NtlmClient {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Authenticate(
-        &mut self,
-        challenge: *mut crate::System::String,
-        webRequest: *mut crate::System::Net::WebRequest,
-        credentials: *mut crate::System::Net::ICredentials,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::Authorization> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::Authorization = __cordl_object
-            .invoke("Authenticate", (challenge, webRequest, credentials))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_AuthenticationType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -70,13 +77,6 @@ impl crate::Mono::Http::NtlmClient {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_AuthenticationType", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Http+NtlmClient")]

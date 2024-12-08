@@ -71,6 +71,16 @@ impl<T: quest_hook::libil2cpp::Type> crate::BGLib::UnityExtension::Debouncer_1<T
         let __cordl_ret: f32 = __cordl_object.invoke("GetCurrentTime", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        callback: *mut crate::System::Action_1<T>,
+        debounceDelaySeconds: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (callback, debounceDelaySeconds))?;
+        Ok(__cordl_object)
+    }
     pub fn Tick(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -98,16 +108,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::BGLib::UnityExtension::Debouncer_1<T
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (callback, debounceDelaySeconds))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        callback: *mut crate::System::Action_1<T>,
-        debounceDelaySeconds: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (callback, debounceDelaySeconds))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BGLib+UnityExtension+Debouncer_1")]

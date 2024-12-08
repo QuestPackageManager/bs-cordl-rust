@@ -26,6 +26,13 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCur
 impl crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves {
     #[cfg(feature = "Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves+Frp256v1Holder")]
     pub type Frp256v1Holder = crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves_Frp256v1Holder;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -35,13 +42,6 @@ impl crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves")]
@@ -95,6 +95,13 @@ impl crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves_Frp256v1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -104,13 +111,6 @@ impl crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves_Frp256v1Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves+Frp256v1Holder")]

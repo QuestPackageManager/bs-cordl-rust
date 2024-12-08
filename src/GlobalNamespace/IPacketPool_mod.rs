@@ -23,15 +23,14 @@ impl std::ops::DerefMut for IPacketPool {
 }
 #[cfg(feature = "IPacketPool")]
 impl IPacketPool {
-    pub fn Release(
+    pub fn Clear(
         &mut self,
-        t: *mut IPoolablePacket,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Release", (t))?;
+            .invoke("Clear", ())?;
         Ok(__cordl_ret)
     }
     pub fn Fill(
@@ -44,14 +43,15 @@ impl IPacketPool {
             .invoke("Fill", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Clear(
+    pub fn Release(
         &mut self,
+        t: *mut IPoolablePacket,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
+            .invoke("Release", (t))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

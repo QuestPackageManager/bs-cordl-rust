@@ -84,14 +84,22 @@ impl OVRBoundary {
     pub type BoundaryTestResult = crate::GlobalNamespace::OVRBoundary_BoundaryTestResult;
     #[cfg(feature = "OVRBoundary+Node")]
     pub type Node = crate::GlobalNamespace::OVRBoundary_Node;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn GetConfigured(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("GetConfigured", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDimensions(
+        &mut self,
+        boundaryType: crate::GlobalNamespace::OVRBoundary_BoundaryType,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("GetDimensions", (boundaryType))?;
         Ok(__cordl_ret)
     }
     pub fn GetGeometry(
@@ -108,6 +116,31 @@ impl OVRBoundary {
         > = __cordl_object.invoke("GetGeometry", (boundaryType))?;
         Ok(__cordl_ret)
     }
+    pub fn GetVisible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("GetVisible", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetVisible(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetVisible", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn TestNode(
         &mut self,
         node: crate::GlobalNamespace::OVRBoundary_Node,
@@ -120,24 +153,6 @@ impl OVRBoundary {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRBoundary_BoundaryTestResult = __cordl_object
             .invoke("TestNode", (node, boundaryType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetConfigured(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("GetConfigured", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetVisible(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetVisible", (value))?;
         Ok(__cordl_ret)
     }
     pub fn TestPoint(
@@ -154,30 +169,15 @@ impl OVRBoundary {
             .invoke("TestPoint", (point, boundaryType))?;
         Ok(__cordl_ret)
     }
-    pub fn GetDimensions(
+    pub fn _ctor(
         &mut self,
-        boundaryType: crate::GlobalNamespace::OVRBoundary_BoundaryType,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("GetDimensions", (boundaryType))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetVisible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("GetVisible", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRBoundary")]

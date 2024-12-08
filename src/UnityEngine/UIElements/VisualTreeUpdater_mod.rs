@@ -29,6 +29,13 @@ for crate::UnityEngine::UIElements::VisualTreeUpdater_UpdaterArray {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]
 impl crate::UnityEngine::UIElements::VisualTreeUpdater_UpdaterArray {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -77,13 +84,6 @@ impl crate::UnityEngine::UIElements::VisualTreeUpdater_UpdaterArray {
             .invoke("set_Item", (phase, value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]
 impl quest_hook::libil2cpp::ObjectType
@@ -125,6 +125,38 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualTreeUpdater {
 impl crate::UnityEngine::UIElements::VisualTreeUpdater {
     #[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]
     pub type UpdaterArray = crate::UnityEngine::UIElements::VisualTreeUpdater_UpdaterArray;
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetUpdater(
+        &mut self,
+        phase: crate::UnityEngine::UIElements::VisualTreeUpdatePhase,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::IVisualTreeUpdater,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::IVisualTreeUpdater = __cordl_object
+            .invoke("GetUpdater", (phase))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        panel: *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (panel))?;
+        Ok(__cordl_object)
+    }
     pub fn OnVersionChanged(
         &mut self,
         ve: *mut crate::UnityEngine::UIElements::VisualElement,
@@ -145,17 +177,6 @@ impl crate::UnityEngine::UIElements::VisualTreeUpdater {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDefaultUpdaters", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        panel: *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (panel))?;
         Ok(__cordl_ret)
     }
     pub fn SetUpdater<T>(
@@ -184,37 +205,16 @@ impl crate::UnityEngine::UIElements::VisualTreeUpdater {
             .invoke("UpdateVisualTreePhase", (phase))?;
         Ok(__cordl_ret)
     }
-    pub fn GetUpdater(
+    pub fn _ctor(
         &mut self,
-        phase: crate::UnityEngine::UIElements::VisualTreeUpdatePhase,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::IVisualTreeUpdater,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::IVisualTreeUpdater = __cordl_object
-            .invoke("GetUpdater", (phase))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
+        panel: *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+            .invoke(".ctor", (panel))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        panel: *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (panel))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater")]

@@ -52,13 +52,6 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sce
     feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
 )]
 impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
-    pub fn get_Progress(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_Progress", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Destroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -69,15 +62,42 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
             .invoke("Destroy", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn Execute(
         &mut self,
-        rm: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (rm))?;
+            .invoke("Execute", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDependencies(
+        &mut self,
+        deps: *mut crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetDependencies", (deps))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDownloadStatus(
+        &mut self,
+        visited: *mut crate::System::Collections::Generic::HashSet_1<
+            *mut crate::System::Object,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus = __cordl_object
+            .invoke("GetDownloadStatus", (visited))?;
         Ok(__cordl_ret)
     }
     pub fn Init_LoadSceneMode0(
@@ -121,32 +141,17 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetDependencies(
+    pub fn InternalLoad(
         &mut self,
-        deps: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        path: *mut crate::System::String,
+        loadingFromBundle: bool,
+        loadSceneParameters: crate::UnityEngine::SceneManagement::LoadSceneParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AsyncOperation> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetDependencies", (deps))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDownloadStatus(
-        &mut self,
-        visited: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut crate::System::Object,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus = __cordl_object
-            .invoke("GetDownloadStatus", (visited))?;
+        let __cordl_ret: *mut crate::UnityEngine::AsyncOperation = __cordl_object
+            .invoke("InternalLoad", (path, loadingFromBundle, loadSceneParameters))?;
         Ok(__cordl_ret)
     }
     pub fn InternalLoadScene(
@@ -175,18 +180,21 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
             )?;
         Ok(__cordl_ret)
     }
-    pub fn InternalLoad(
-        &mut self,
-        path: *mut crate::System::String,
-        loadingFromBundle: bool,
-        loadSceneParameters: crate::UnityEngine::SceneManagement::LoadSceneParameters,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AsyncOperation> {
+    pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::AsyncOperation = __cordl_object
-            .invoke("InternalLoad", (path, loadingFromBundle, loadSceneParameters))?;
+        let __cordl_ret: bool = __cordl_object.invoke("InvokeWaitForCompletion", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        rm: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (rm))?;
+        Ok(__cordl_object)
     }
     pub fn UnityEngine_ResourceManagement_IUpdateReceiver_Update(
         &mut self,
@@ -202,21 +210,15 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
             )?;
         Ok(__cordl_ret)
     }
-    pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("InvokeWaitForCompletion", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Execute(
+    pub fn _ctor(
         &mut self,
+        rm: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Execute", ())?;
+            .invoke(".ctor", (rm))?;
         Ok(__cordl_ret)
     }
     pub fn get_DebugName(
@@ -229,14 +231,12 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
             .invoke("get_DebugName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        rm: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (rm))?;
-        Ok(__cordl_object)
+    pub fn get_Progress(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_Progress", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -288,48 +288,12 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
         feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
     )]
     pub type UnloadSceneOp = crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_UnloadSceneOp;
-    pub fn UnityEngine_ResourceManagement_ResourceProviders_ISceneProvider2_ReleaseScene(
-        &mut self,
-        resourceManager: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-        sceneLoadHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
-        >,
-        unloadOptions: crate::UnityEngine::SceneManagement::UnloadSceneOptions,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
-        > = __cordl_object
-            .invoke(
-                "UnityEngine.ResourceManagement.ResourceProviders.ISceneProvider2.ReleaseScene",
-                (resourceManager, sceneLoadHandle, unloadOptions),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReleaseScene(
-        &mut self,
-        resourceManager: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-        sceneLoadHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
-        > = __cordl_object.invoke("ReleaseScene", (resourceManager, sceneLoadHandle))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ProvideScene_LoadSceneMode0(
         &mut self,
@@ -385,6 +349,49 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn ReleaseScene(
+        &mut self,
+        resourceManager: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
+        sceneLoadHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+        > = __cordl_object.invoke("ReleaseScene", (resourceManager, sceneLoadHandle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnityEngine_ResourceManagement_ResourceProviders_ISceneProvider2_ReleaseScene(
+        &mut self,
+        resourceManager: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
+        sceneLoadHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+        >,
+        unloadOptions: crate::UnityEngine::SceneManagement::UnloadSceneOptions,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+        > = __cordl_object
+            .invoke(
+                "UnityEngine.ResourceManagement.ResourceProviders.ISceneProvider2.ReleaseScene",
+                (resourceManager, sceneLoadHandle, unloadOptions),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -394,13 +401,6 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
@@ -461,23 +461,6 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Unl
     feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
 )]
 impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_UnloadSceneOp {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("InvokeWaitForCompletion", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Execute(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -487,6 +470,34 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Un
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Execute", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        sceneLoadHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+        >,
+        options: crate::UnityEngine::SceneManagement::UnloadSceneOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (sceneLoadHandle, options))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("InvokeWaitForCompletion", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn UnloadSceneCompleted(
         &mut self,
@@ -510,18 +521,14 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Un
             .invoke("UnloadSceneCompletedNoRelease", (obj))?;
         Ok(__cordl_ret)
     }
-    pub fn Init(
+    pub fn _ctor(
         &mut self,
-        sceneLoadHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
-        >,
-        options: crate::UnityEngine::SceneManagement::UnloadSceneOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (sceneLoadHandle, options))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Progress(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -530,13 +537,6 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Un
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_Progress", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

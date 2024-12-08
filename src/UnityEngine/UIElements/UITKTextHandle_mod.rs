@@ -31,65 +31,26 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UITKTextHandle {
 }
 #[cfg(feature = "UnityEngine+UIElements+UITKTextHandle")]
 impl crate::UnityEngine::UIElements::UITKTextHandle {
-    pub fn TextLibraryCanElide(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TextLibraryCanElide", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MeasuredSizes(
+    pub fn ATagOnPointerMove(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_MeasuredSizes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_RoundedSizes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_RoundedSizes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LinkTagOnPointerUp(
-        &mut self,
-        pue: *mut crate::UnityEngine::UIElements::PointerUpEvent,
+        pme: *mut crate::UnityEngine::UIElements::PointerMoveEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LinkTagOnPointerUp", (pue))?;
+            .invoke("ATagOnPointerMove", (pme))?;
         Ok(__cordl_ret)
     }
-    pub fn set_RoundedSizes(
+    pub fn ATagOnPointerOut(
         &mut self,
-        value: crate::UnityEngine::Vector2,
+        _: *mut crate::UnityEngine::UIElements::PointerOutEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_RoundedSizes", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::TextCore::Text::TextInfo,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::TextCore::Text::TextInfo = __cordl_object
-            .invoke("Update", ())?;
+            .invoke("ATagOnPointerOut", (_))?;
         Ok(__cordl_ret)
     }
     pub fn ATagOnPointerOver(
@@ -103,26 +64,15 @@ impl crate::UnityEngine::UIElements::UITKTextHandle {
             .invoke("ATagOnPointerOver", (_))?;
         Ok(__cordl_ret)
     }
-    pub fn LinkTagOnPointerDown(
+    pub fn ATagOnPointerUp(
         &mut self,
-        pde: *mut crate::UnityEngine::UIElements::PointerDownEvent,
+        pue: *mut crate::UnityEngine::UIElements::PointerUpEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LinkTagOnPointerDown", (pde))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LinkTagOnPointerMove(
-        &mut self,
-        pme: *mut crate::UnityEngine::UIElements::PointerMoveEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LinkTagOnPointerMove", (pme))?;
+            .invoke("ATagOnPointerUp", (pue))?;
         Ok(__cordl_ret)
     }
     pub fn ComputeTextHeight(
@@ -136,39 +86,6 @@ impl crate::UnityEngine::UIElements::UITKTextHandle {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("ComputeTextHeight", (textToMeasure, width, height))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTextOverflowMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::TextCore::Text::TextOverflowMode,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::TextCore::Text::TextOverflowMode = __cordl_object
-            .invoke("GetTextOverflowMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_MeasuredSizes(
-        &mut self,
-        value: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_MeasuredSizes", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLinkTag(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleLinkTag", ())?;
         Ok(__cordl_ret)
     }
     pub fn ComputeTextWidth(
@@ -196,29 +113,61 @@ impl crate::UnityEngine::UIElements::UITKTextHandle {
             .invoke("ConvertUssToTextGenerationSettings", (tgs))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn GetTextEffectPadding(
         &mut self,
-        te: *mut crate::UnityEngine::UIElements::TextElement,
+        fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("GetTextEffectPadding", (fontAsset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetTextOverflowMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::TextCore::Text::TextOverflowMode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::TextCore::Text::TextOverflowMode = __cordl_object
+            .invoke("GetTextOverflowMode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleATag(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (te))?;
+            .invoke("HandleATag", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ATagOnPointerUp(
+    pub fn HandleLinkTag(
         &mut self,
-        pue: *mut crate::UnityEngine::UIElements::PointerUpEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ATagOnPointerUp", (pue))?;
+            .invoke("HandleLinkTag", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ATagOnPointerMove(
+    pub fn LinkTagOnPointerDown(
+        &mut self,
+        pde: *mut crate::UnityEngine::UIElements::PointerDownEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LinkTagOnPointerDown", (pde))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LinkTagOnPointerMove(
         &mut self,
         pme: *mut crate::UnityEngine::UIElements::PointerMoveEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -226,18 +175,7 @@ impl crate::UnityEngine::UIElements::UITKTextHandle {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ATagOnPointerMove", (pme))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ATagOnPointerOut(
-        &mut self,
-        _: *mut crate::UnityEngine::UIElements::PointerOutEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ATagOnPointerOut", (_))?;
+            .invoke("LinkTagOnPointerMove", (pme))?;
         Ok(__cordl_ret)
     }
     pub fn LinkTagOnPointerOut(
@@ -251,35 +189,97 @@ impl crate::UnityEngine::UIElements::UITKTextHandle {
             .invoke("LinkTagOnPointerOut", (poe))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleATag(
+    pub fn LinkTagOnPointerUp(
         &mut self,
+        pue: *mut crate::UnityEngine::UIElements::PointerUpEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleATag", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTextEffectPadding(
-        &mut self,
-        fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("GetTextEffectPadding", (fontAsset))?;
+            .invoke("LinkTagOnPointerUp", (pue))?;
         Ok(__cordl_ret)
     }
     pub fn New(
         te: *mut crate::UnityEngine::UIElements::TextElement,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (te))?;
         Ok(__cordl_object)
+    }
+    pub fn TextLibraryCanElide(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TextLibraryCanElide", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::TextCore::Text::TextInfo,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::TextCore::Text::TextInfo = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        te: *mut crate::UnityEngine::UIElements::TextElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (te))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MeasuredSizes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_MeasuredSizes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RoundedSizes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_RoundedSizes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_MeasuredSizes(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_MeasuredSizes", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_RoundedSizes(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_RoundedSizes", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UITKTextHandle")]

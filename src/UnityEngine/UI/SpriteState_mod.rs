@@ -24,14 +24,34 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::UI::Spri
 }
 #[cfg(feature = "UnityEngine+UI+SpriteState")]
 impl crate::UnityEngine::UI::SpriteState {
-    pub fn set_highlightedSprite(
+    pub fn Equals(
         &mut self,
-        value: *mut crate::UnityEngine::Sprite,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::UI::SpriteState,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_highlightedSprite",
-            (value),
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_disabledSprite(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
+        let __cordl_ret: *mut crate::UnityEngine::Sprite = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_disabledSprite",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_highlightedSprite(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
+        let __cordl_ret: *mut crate::UnityEngine::Sprite = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_highlightedSprite",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -42,6 +62,38 @@ impl crate::UnityEngine::UI::SpriteState {
             self,
             "get_pressedSprite",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_selectedSprite(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
+        let __cordl_ret: *mut crate::UnityEngine::Sprite = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_selectedSprite",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_disabledSprite(
+        &mut self,
+        value: *mut crate::UnityEngine::Sprite,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_disabledSprite",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_highlightedSprite(
+        &mut self,
+        value: *mut crate::UnityEngine::Sprite,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_highlightedSprite",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -64,58 +116,6 @@ impl crate::UnityEngine::UI::SpriteState {
             self,
             "set_selectedSprite",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        other: crate::UnityEngine::UI::SpriteState,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_selectedSprite(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
-        let __cordl_ret: *mut crate::UnityEngine::Sprite = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_selectedSprite",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_highlightedSprite(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
-        let __cordl_ret: *mut crate::UnityEngine::Sprite = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_highlightedSprite",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_disabledSprite(
-        &mut self,
-        value: *mut crate::UnityEngine::Sprite,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_disabledSprite",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_disabledSprite(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
-        let __cordl_ret: *mut crate::UnityEngine::Sprite = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_disabledSprite",
-            (),
         )?;
         Ok(__cordl_ret)
     }

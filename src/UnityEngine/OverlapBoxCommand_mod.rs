@@ -26,54 +26,18 @@ for crate::UnityEngine::OverlapBoxCommand {
 }
 #[cfg(feature = "UnityEngine+OverlapBoxCommand")]
 impl crate::UnityEngine::OverlapBoxCommand {
-    pub fn get_center(
+    pub fn _ctor_PhysicsScene_Vector3_Quaternion_QueryParameters1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_center",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_orientation(
-        &mut self,
-        value: crate::UnityEngine::Quaternion,
+        physicsScene: crate::UnityEngine::PhysicsScene,
+        center: crate::UnityEngine::Vector3,
+        halfExtents: crate::UnityEngine::Vector3,
+        orientation: crate::UnityEngine::Quaternion,
+        queryParameters: crate::UnityEngine::QueryParameters,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_orientation",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_halfExtents(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_halfExtents",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_physicsScene(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::PhysicsScene> {
-        let __cordl_ret: crate::UnityEngine::PhysicsScene = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_physicsScene",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_orientation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_ret: crate::UnityEngine::Quaternion = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_orientation",
-            (),
+            ".ctor",
+            (physicsScene, center, halfExtents, orientation, queryParameters),
         )?;
         Ok(__cordl_ret)
     }
@@ -91,18 +55,43 @@ impl crate::UnityEngine::OverlapBoxCommand {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_PhysicsScene_Vector3_Quaternion_QueryParameters1(
+    pub fn get_center(
         &mut self,
-        physicsScene: crate::UnityEngine::PhysicsScene,
-        center: crate::UnityEngine::Vector3,
-        halfExtents: crate::UnityEngine::Vector3,
-        orientation: crate::UnityEngine::Quaternion,
-        queryParameters: crate::UnityEngine::QueryParameters,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (physicsScene, center, halfExtents, orientation, queryParameters),
+            "get_center",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_halfExtents(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_halfExtents",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_orientation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_ret: crate::UnityEngine::Quaternion = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_orientation",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_physicsScene(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::PhysicsScene> {
+        let __cordl_ret: crate::UnityEngine::PhysicsScene = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_physicsScene",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -124,6 +113,17 @@ impl crate::UnityEngine::OverlapBoxCommand {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_halfExtents",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_orientation(
+        &mut self,
+        value: crate::UnityEngine::Quaternion,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_orientation",
             (value),
         )?;
         Ok(__cordl_ret)

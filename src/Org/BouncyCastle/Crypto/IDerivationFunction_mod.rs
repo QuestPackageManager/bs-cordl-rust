@@ -24,16 +24,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IDerivationFunctio
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IDerivationFunction")]
 impl crate::Org::BouncyCastle::Crypto::IDerivationFunction {
-    pub fn get_Digest(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::IDigest> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IDigest = __cordl_object
-            .invoke("get_Digest", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GenerateBytes(
         &mut self,
         output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -62,6 +52,16 @@ impl crate::Org::BouncyCastle::Crypto::IDerivationFunction {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_Digest(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::IDigest> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IDigest = __cordl_object
+            .invoke("get_Digest", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IDerivationFunction")]

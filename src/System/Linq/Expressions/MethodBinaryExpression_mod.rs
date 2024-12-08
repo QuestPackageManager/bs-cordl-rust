@@ -26,21 +26,6 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::MethodBinaryExpres
 }
 #[cfg(feature = "System+Linq+Expressions+MethodBinaryExpression")]
 impl crate::System::Linq::Expressions::MethodBinaryExpression {
-    pub fn _ctor(
-        &mut self,
-        nodeType: crate::System::Linq::Expressions::ExpressionType,
-        left: *mut crate::System::Linq::Expressions::Expression,
-        right: *mut crate::System::Linq::Expressions::Expression,
-        _cordl_type: *mut crate::System::Type,
-        method: *mut crate::System::Reflection::MethodInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (nodeType, left, right, _cordl_type, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetMethod(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
@@ -57,12 +42,27 @@ impl crate::System::Linq::Expressions::MethodBinaryExpression {
         right: *mut crate::System::Linq::Expressions::Expression,
         _cordl_type: *mut crate::System::Type,
         method: *mut crate::System::Reflection::MethodInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (nodeType, left, right, _cordl_type, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        nodeType: crate::System::Linq::Expressions::ExpressionType,
+        left: *mut crate::System::Linq::Expressions::Expression,
+        right: *mut crate::System::Linq::Expressions::Expression,
+        _cordl_type: *mut crate::System::Type,
+        method: *mut crate::System::Reflection::MethodInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (nodeType, left, right, _cordl_type, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+MethodBinaryExpression")]

@@ -25,6 +25,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsServerCont
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsServerContextImpl")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsServerContextImpl {
+    pub fn New(
+        secureRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        securityParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (secureRandom, securityParameters))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         secureRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
@@ -43,16 +53,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsServerContextImpl {
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsServer", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        secureRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-        securityParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (secureRandom, securityParameters))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsServerContextImpl")]

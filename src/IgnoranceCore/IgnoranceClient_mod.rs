@@ -58,11 +58,21 @@ impl std::ops::DerefMut for crate::IgnoranceCore::IgnoranceClient {
 impl crate::IgnoranceCore::IgnoranceClient {
     #[cfg(feature = "IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
     pub type ThreadParamInfo = crate::IgnoranceCore::IgnoranceClient_ThreadParamInfo;
-    pub fn get_IsAlive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetupRingBuffersIfNull(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsAlive", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetupRingBuffersIfNull", ())?;
         Ok(__cordl_ret)
     }
     pub fn Start(
@@ -73,6 +83,16 @@ impl crate::IgnoranceCore::IgnoranceClient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Stop(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Stop", ())?;
         Ok(__cordl_ret)
     }
     pub fn ThreadWorker(
@@ -86,16 +106,6 @@ impl crate::IgnoranceCore::IgnoranceClient {
             .invoke("ThreadWorker", (parameters))?;
         Ok(__cordl_ret)
     }
-    pub fn SetupRingBuffersIfNull(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetupRingBuffersIfNull", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -106,22 +116,12 @@ impl crate::IgnoranceCore::IgnoranceClient {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Stop(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_IsAlive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Stop", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsAlive", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "IgnoranceCore+IgnoranceClient")]

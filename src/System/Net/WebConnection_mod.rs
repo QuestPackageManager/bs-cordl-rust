@@ -35,31 +35,143 @@ impl std::ops::DerefMut for crate::System::Net::WebConnection {
 }
 #[cfg(feature = "System+Net+WebConnection")]
 impl crate::System::Net::WebConnection {
+    #[cfg(feature = "System+Net+WebConnection+_Connect_d__16")]
+    pub type _Connect_d__16 = crate::System::Net::WebConnection__Connect_d__16;
     #[cfg(feature = "System+Net+WebConnection+_CreateStream_d__18")]
     pub type _CreateStream_d__18 = crate::System::Net::WebConnection__CreateStream_d__18;
     #[cfg(feature = "System+Net+WebConnection+_InitConnection_d__19")]
     pub type _InitConnection_d__19 = crate::System::Net::WebConnection__InitConnection_d__19;
     #[cfg(feature = "System+Net+WebConnection+__c")]
     pub type __c = crate::System::Net::WebConnection___c;
-    #[cfg(feature = "System+Net+WebConnection+_Connect_d__16")]
-    pub type _Connect_d__16 = crate::System::Net::WebConnection__Connect_d__16;
-    pub fn get_NtlmAuthenticated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn CanReuse(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_NtlmAuthenticated", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("CanReuse", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_NtlmAuthenticated(
+    pub fn CanReuseConnection(
         &mut self,
-        value: bool,
+        operation: *mut crate::System::Net::WebOperation,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("CanReuseConnection", (operation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckReusable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("CheckReusable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Close(
+        &mut self,
+        reset: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_NtlmAuthenticated", (value))?;
+            .invoke("Close", (reset))?;
         Ok(__cordl_ret)
+    }
+    pub fn CloseSocket(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CloseSocket", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Connect(
+        &mut self,
+        operation: *mut crate::System::Net::WebOperation,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("Connect", (operation, cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Continue(
+        &mut self,
+        next: *mut crate::System::Net::WebOperation,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Continue", (next))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateStream(
+        &mut self,
+        operation: *mut crate::System::Net::WebOperation,
+        reused: bool,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<bool>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<bool> = __cordl_object
+            .invoke("CreateStream", (operation, reused, cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose__cordl_bool0(
+        &mut self,
+        disposing: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", (disposing))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitConnection(
+        &mut self,
+        operation: *mut crate::System::Net::WebOperation,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::System::Net::WebRequestStream,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::System::Net::WebRequestStream,
+        > = __cordl_object.invoke("InitConnection", (operation, cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        sPoint: *mut crate::System::Net::ServicePoint,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (sPoint))?;
+        Ok(__cordl_object)
     }
     pub fn PrepareSharingNtlm(
         &mut self,
@@ -82,167 +194,14 @@ impl crate::System::Net::WebConnection {
             .invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_NtlmCredential(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::NetworkCredential> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::NetworkCredential = __cordl_object
-            .invoke("get_NtlmCredential", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckReusable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CheckReusable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_UnsafeAuthenticatedConnectionSharing(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_UnsafeAuthenticatedConnectionSharing", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitConnection(
-        &mut self,
-        operation: *mut crate::System::Net::WebOperation,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Net::WebRequestStream,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Net::WebRequestStream,
-        > = __cordl_object.invoke("InitConnection", (operation, cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Closed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Closed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateStream(
-        &mut self,
-        operation: *mut crate::System::Net::WebOperation,
-        reused: bool,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<bool>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<bool> = __cordl_object
-            .invoke("CreateStream", (operation, reused, cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Connect(
-        &mut self,
-        operation: *mut crate::System::Net::WebOperation,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("Connect", (operation, cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_NtlmCredential(
-        &mut self,
-        value: *mut crate::System::Net::NetworkCredential,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_NtlmCredential", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_UnsafeAuthenticatedConnectionSharing(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_UnsafeAuthenticatedConnectionSharing", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CloseSocket(
+    pub fn ResetNtlm(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CloseSocket", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose__cordl_bool0(
-        &mut self,
-        disposing: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IdleSince(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::DateTime = __cordl_object
-            .invoke("get_IdleSince", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        sPoint: *mut crate::System::Net::ServicePoint,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (sPoint))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Close(
-        &mut self,
-        reset: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", (reset))?;
+            .invoke("ResetNtlm", ())?;
         Ok(__cordl_ret)
     }
     pub fn StartOperation(
@@ -257,11 +216,49 @@ impl crate::System::Net::WebConnection {
             .invoke("StartOperation", (operation, reused))?;
         Ok(__cordl_ret)
     }
-    pub fn CanReuse(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn _ctor(
+        &mut self,
+        sPoint: *mut crate::System::Net::ServicePoint,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("CanReuse", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (sPoint))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Closed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_Closed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IdleSince(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::DateTime = __cordl_object
+            .invoke("get_IdleSince", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NtlmAuthenticated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_NtlmAuthenticated", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NtlmCredential(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::NetworkCredential> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::NetworkCredential = __cordl_object
+            .invoke("get_NtlmCredential", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ServicePoint(
@@ -274,45 +271,48 @@ impl crate::System::Net::WebConnection {
             .invoke("get_ServicePoint", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Continue(
+    pub fn get_UnsafeAuthenticatedConnectionSharing(
         &mut self,
-        next: *mut crate::System::Net::WebOperation,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Continue", (next))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CanReuseConnection(
-        &mut self,
-        operation: *mut crate::System::Net::WebOperation,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
-            .invoke("CanReuseConnection", (operation))?;
+            .invoke("get_UnsafeAuthenticatedConnectionSharing", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ResetNtlm(
+    pub fn set_NtlmAuthenticated(
         &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetNtlm", ())?;
+            .invoke("set_NtlmAuthenticated", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        sPoint: *mut crate::System::Net::ServicePoint,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (sPoint))?;
-        Ok(__cordl_object)
+    pub fn set_NtlmCredential(
+        &mut self,
+        value: *mut crate::System::Net::NetworkCredential,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_NtlmCredential", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_UnsafeAuthenticatedConnectionSharing(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_UnsafeAuthenticatedConnectionSharing", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+WebConnection")]

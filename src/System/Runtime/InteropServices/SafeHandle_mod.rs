@@ -30,31 +30,56 @@ impl std::ops::DerefMut for crate::System::Runtime::InteropServices::SafeHandle 
 impl crate::System::Runtime::InteropServices::SafeHandle {
     pub const RefCount_Mask: i32 = 2147483644i32;
     pub const RefCount_One: i32 = 4i32;
-    pub fn get_IsInvalid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsInvalid", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Finalize(
+    pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
+            .invoke("Close", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetHandleAsInvalid(
+    pub fn DangerousAddRef(
+        &mut self,
+        success: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DangerousAddRef", (success))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DangerousGetHandle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::IntPtr = __cordl_object
+            .invoke("DangerousGetHandle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DangerousRelease(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetHandleAsInvalid", ())?;
+            .invoke("DangerousRelease", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DangerousReleaseInternal(
+        &mut self,
+        dispose: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DangerousReleaseInternal", (dispose))?;
         Ok(__cordl_ret)
     }
     pub fn Dispose_0(
@@ -78,29 +103,51 @@ impl crate::System::Runtime::InteropServices::SafeHandle {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn ReleaseHandle(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ReleaseHandle", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DangerousReleaseInternal(
+    pub fn Finalize(
         &mut self,
-        dispose: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DangerousReleaseInternal", (dispose))?;
+            .invoke("Finalize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsClosed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn InternalDispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsClosed", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalDispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn InternalFinalize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalFinalize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        invalidHandleValue: crate::System::IntPtr,
+        ownsHandle: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (invalidHandleValue, ownsHandle))?;
+        Ok(__cordl_object)
+    }
+    pub fn ReleaseHandle(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ReleaseHandle", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetHandle(
@@ -114,55 +161,14 @@ impl crate::System::Runtime::InteropServices::SafeHandle {
             .invoke("SetHandle", (handle))?;
         Ok(__cordl_ret)
     }
-    pub fn DangerousGetHandle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::IntPtr = __cordl_object
-            .invoke("DangerousGetHandle", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Close(
+    pub fn SetHandleAsInvalid(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DangerousRelease(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DangerousRelease", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DangerousAddRef(
-        &mut self,
-        success: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DangerousAddRef", (success))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalFinalize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalFinalize", ())?;
+            .invoke("SetHandleAsInvalid", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -177,25 +183,19 @@ impl crate::System::Runtime::InteropServices::SafeHandle {
             .invoke(".ctor", (invalidHandleValue, ownsHandle))?;
         Ok(__cordl_ret)
     }
-    pub fn InternalDispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_IsClosed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalDispose", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsClosed", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        invalidHandleValue: crate::System::IntPtr,
-        ownsHandle: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (invalidHandleValue, ownsHandle))?;
-        Ok(__cordl_object)
+    pub fn get_IsInvalid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsInvalid", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Runtime+InteropServices+SafeHandle")]

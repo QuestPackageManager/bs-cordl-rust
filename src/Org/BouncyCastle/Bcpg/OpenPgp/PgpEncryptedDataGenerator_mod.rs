@@ -30,16 +30,6 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_EncMethod
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+EncMethod")]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_EncMethod {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AddSessionInfo(
         &mut self,
         si: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -52,12 +42,22 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_EncMetho
             .invoke("AddSessionInfo", (si, random))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+EncMethod")]
@@ -100,18 +100,6 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PbeMethod
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+PbeMethod")]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PbeMethod {
-    pub fn GetKey(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter = __cordl_object
-            .invoke("GetKey", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AddSessionInfo(
         &mut self,
         si: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -122,19 +110,6 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PbeMetho
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddSessionInfo", (si, random))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        s2k: *mut crate::Org::BouncyCastle::Bcpg::S2k,
-        key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (encAlgorithm, s2k, key))?;
         Ok(__cordl_ret)
     }
     pub fn Encode(
@@ -148,16 +123,41 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PbeMetho
             .invoke("Encode", (pOut))?;
         Ok(__cordl_ret)
     }
+    pub fn GetKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter = __cordl_object
+            .invoke("GetKey", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         s2k: *mut crate::Org::BouncyCastle::Bcpg::S2k,
         key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (encAlgorithm, s2k, key))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        s2k: *mut crate::Org::BouncyCastle::Bcpg::S2k,
+        key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (encAlgorithm, s2k, key))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+PbeMethod")]
@@ -208,81 +208,33 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator")]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
+    #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+PbeMethod")]
+    pub type PbeMethod = crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PbeMethod;
     #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+PubMethod")]
     pub type PubMethod = crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PubMethod;
     #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+EncMethod")]
     pub type EncMethod = crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_EncMethod;
-    #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+PbeMethod")]
-    pub type PbeMethod = crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PbeMethod;
-    pub fn Close(
+    pub fn AddCheckSum(
         &mut self,
+        sessionInfo: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
+            .invoke("AddCheckSum", (sessionInfo))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_SymmetricKeyAlgorithmTag0(
+    pub fn AddMethodRaw(
         &mut self,
-        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        s2kDigest: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (encAlgorithm))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor__cordl_bool1(
-        &mut self,
-        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        withIntegrityPacket: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (encAlgorithm, withIntegrityPacket))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_SecureRandom2(
-        &mut self,
-        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (encAlgorithm, _cordl_rand))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor__cordl_bool_SecureRandom3(
-        &mut self,
-        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        withIntegrityPacket: bool,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (encAlgorithm, withIntegrityPacket, _cordl_rand))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_SecureRandom__cordl_bool4(
-        &mut self,
-        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-        oldFormat: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (encAlgorithm, _cordl_rand, oldFormat))?;
+            .invoke("AddMethodRaw", (rawPassPhrase, s2kDigest))?;
         Ok(__cordl_ret)
     }
     pub fn AddMethodUtf8(
@@ -295,42 +247,6 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddMethodUtf8", (passPhrase, s2kDigest))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DoAddMethod(
-        &mut self,
-        rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        clearPassPhrase: bool,
-        s2kDigest: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DoAddMethod", (rawPassPhrase, clearPassPhrase, s2kDigest))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddCheckSum(
-        &mut self,
-        sessionInfo: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddCheckSum", (sessionInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateSessionInfo(
-        &mut self,
-        algorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("CreateSessionInfo", (algorithm, key))?;
         Ok(__cordl_ret)
     }
     pub fn AddMethod_Il2CppArray0(
@@ -379,17 +295,102 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
             .invoke("AddMethod", (key, sessionKeyObfuscation))?;
         Ok(__cordl_ret)
     }
-    pub fn Open_i64_Il2CppArray0(
+    pub fn Close(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Close", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateSessionInfo(
+        &mut self,
+        algorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("CreateSessionInfo", (algorithm, key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DoAddMethod(
+        &mut self,
+        rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        clearPassPhrase: bool,
+        s2kDigest: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DoAddMethod", (rawPassPhrase, clearPassPhrase, s2kDigest))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_SecureRandom2(
+        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encAlgorithm, _cordl_rand))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_SecureRandom__cordl_bool4(
+        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        oldFormat: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encAlgorithm, _cordl_rand, oldFormat))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_SymmetricKeyAlgorithmTag0(
+        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encAlgorithm))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool1(
+        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        withIntegrityPacket: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encAlgorithm, withIntegrityPacket))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool_SecureRandom3(
+        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        withIntegrityPacket: bool,
+        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encAlgorithm, withIntegrityPacket, _cordl_rand))?;
+        Ok(__cordl_object)
+    }
+    pub fn Open_Il2CppArray2(
         &mut self,
         outStr: *mut crate::System::IO::Stream,
-        length: i64,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("Open", (outStr, length, buffer))?;
+            .invoke("Open", (outStr, buffer))?;
         Ok(__cordl_ret)
     }
     pub fn Open_i64_1(
@@ -404,80 +405,79 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
             .invoke("Open", (outStr, length))?;
         Ok(__cordl_ret)
     }
-    pub fn Open_Il2CppArray2(
+    pub fn Open_i64_Il2CppArray0(
         &mut self,
         outStr: *mut crate::System::IO::Stream,
+        length: i64,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("Open", (outStr, buffer))?;
+            .invoke("Open", (outStr, length, buffer))?;
         Ok(__cordl_ret)
     }
-    pub fn AddMethodRaw(
+    pub fn _ctor_SecureRandom2(
         &mut self,
-        rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        s2kDigest: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
+        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddMethodRaw", (rawPassPhrase, s2kDigest))?;
+            .invoke(".ctor", (encAlgorithm, _cordl_rand))?;
         Ok(__cordl_ret)
     }
-    pub fn New_SymmetricKeyAlgorithmTag0(
-        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encAlgorithm))?;
-        Ok(__cordl_object)
-    }
-    pub fn New__cordl_bool1(
-        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        withIntegrityPacket: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encAlgorithm, withIntegrityPacket))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_SecureRandom2(
-        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encAlgorithm, _cordl_rand))?;
-        Ok(__cordl_object)
-    }
-    pub fn New__cordl_bool_SecureRandom3(
-        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        withIntegrityPacket: bool,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encAlgorithm, withIntegrityPacket, _cordl_rand))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_SecureRandom__cordl_bool4(
+    pub fn _ctor_SecureRandom__cordl_bool4(
+        &mut self,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
         oldFormat: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encAlgorithm, _cordl_rand, oldFormat))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (encAlgorithm, _cordl_rand, oldFormat))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_SymmetricKeyAlgorithmTag0(
+        &mut self,
+        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (encAlgorithm))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor__cordl_bool1(
+        &mut self,
+        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        withIntegrityPacket: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (encAlgorithm, withIntegrityPacket))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor__cordl_bool_SecureRandom3(
+        &mut self,
+        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        withIntegrityPacket: bool,
+        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (encAlgorithm, withIntegrityPacket, _cordl_rand))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator")]
@@ -524,28 +524,16 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PubMethod
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+PubMethod")]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PubMethod {
-    pub fn _ctor(
+    pub fn AddSessionInfo(
         &mut self,
-        pubKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        sessionKeyObfuscation: bool,
+        sessionInfo: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pubKey, sessionKeyObfuscation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EncryptSessionInfo(
-        &mut self,
-        sessionInfo: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("EncryptSessionInfo", (sessionInfo, random))?;
+            .invoke("AddSessionInfo", (sessionInfo, random))?;
         Ok(__cordl_ret)
     }
     pub fn ConvertToEncodedMpi(
@@ -570,6 +558,28 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PubMetho
             .invoke("Encode", (pOut))?;
         Ok(__cordl_ret)
     }
+    pub fn EncryptSessionInfo(
+        &mut self,
+        sessionInfo: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("EncryptSessionInfo", (sessionInfo, random))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        pubKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        sessionKeyObfuscation: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (pubKey, sessionKeyObfuscation))?;
+        Ok(__cordl_object)
+    }
     pub fn ProcessSessionInfo(
         &mut self,
         encryptedSessionInfo: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -586,27 +596,17 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PubMetho
         > = __cordl_object.invoke("ProcessSessionInfo", (encryptedSessionInfo))?;
         Ok(__cordl_ret)
     }
-    pub fn AddSessionInfo(
+    pub fn _ctor(
         &mut self,
-        sessionInfo: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        pubKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        sessionKeyObfuscation: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddSessionInfo", (sessionInfo, random))?;
+            .invoke(".ctor", (pubKey, sessionKeyObfuscation))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        pubKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        sessionKeyObfuscation: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (pubKey, sessionKeyObfuscation))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+PubMethod")]

@@ -25,43 +25,27 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::CVRTrackedCamera {
 }
 #[cfg(feature = "OVR+OpenVR+CVRTrackedCamera")]
 impl crate::OVR::OpenVR::CVRTrackedCamera {
-    pub fn _ctor(
-        &mut self,
-        pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pInterface))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReleaseVideoStreamingService(
-        &mut self,
-        hTrackedCamera: u64,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = __cordl_object
-            .invoke("ReleaseVideoStreamingService", (hTrackedCamera))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCameraIntrinsics(
+    pub fn AcquireVideoStreamingService(
         &mut self,
         nDeviceIndex: u32,
-        eFrameType: crate::OVR::OpenVR::EVRTrackedCameraFrameType,
-        pFocalLength: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
-        pCenter: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
+        pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = __cordl_object
-            .invoke(
-                "GetCameraIntrinsics",
-                (nDeviceIndex, eFrameType, pFocalLength, pCenter),
-            )?;
+            .invoke("AcquireVideoStreamingService", (nDeviceIndex, pHandle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetCameraErrorNameFromEnum(
+        &mut self,
+        eCameraError: crate::OVR::OpenVR::EVRTrackedCameraError,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetCameraErrorNameFromEnum", (eCameraError))?;
         Ok(__cordl_ret)
     }
     pub fn GetCameraFrameSize(
@@ -82,23 +66,20 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetVideoStreamTextureSize(
+    pub fn GetCameraIntrinsics(
         &mut self,
         nDeviceIndex: u32,
         eFrameType: crate::OVR::OpenVR::EVRTrackedCameraFrameType,
-        pTextureBounds: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::VRTextureBounds_t,
-        >,
-        pnWidth: quest_hook::libil2cpp::ByRefMut<u32>,
-        pnHeight: quest_hook::libil2cpp::ByRefMut<u32>,
+        pFocalLength: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
+        pCenter: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = __cordl_object
             .invoke(
-                "GetVideoStreamTextureSize",
-                (nDeviceIndex, eFrameType, pTextureBounds, pnWidth, pnHeight),
+                "GetCameraIntrinsics",
+                (nDeviceIndex, eFrameType, pFocalLength, pCenter),
             )?;
         Ok(__cordl_ret)
     }
@@ -118,29 +99,6 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
                 "GetCameraProjection",
                 (nDeviceIndex, eFrameType, flZNear, flZFar, pProjection),
             )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReleaseVideoStreamTextureGL(
-        &mut self,
-        hTrackedCamera: u64,
-        glTextureId: u32,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = __cordl_object
-            .invoke("ReleaseVideoStreamTextureGL", (hTrackedCamera, glTextureId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCameraErrorNameFromEnum(
-        &mut self,
-        eCameraError: crate::OVR::OpenVR::EVRTrackedCameraError,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetCameraErrorNameFromEnum", (eCameraError))?;
         Ok(__cordl_ret)
     }
     pub fn GetVideoStreamFrameBuffer(
@@ -227,16 +185,24 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn AcquireVideoStreamingService(
+    pub fn GetVideoStreamTextureSize(
         &mut self,
         nDeviceIndex: u32,
-        pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
+        eFrameType: crate::OVR::OpenVR::EVRTrackedCameraFrameType,
+        pTextureBounds: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::VRTextureBounds_t,
+        >,
+        pnWidth: quest_hook::libil2cpp::ByRefMut<u32>,
+        pnHeight: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = __cordl_object
-            .invoke("AcquireVideoStreamingService", (nDeviceIndex, pHandle))?;
+            .invoke(
+                "GetVideoStreamTextureSize",
+                (nDeviceIndex, eFrameType, pTextureBounds, pnWidth, pnHeight),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn HasCamera(
@@ -253,12 +219,46 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
     }
     pub fn New(
         pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pInterface))?;
         Ok(__cordl_object)
+    }
+    pub fn ReleaseVideoStreamTextureGL(
+        &mut self,
+        hTrackedCamera: u64,
+        glTextureId: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = __cordl_object
+            .invoke("ReleaseVideoStreamTextureGL", (hTrackedCamera, glTextureId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReleaseVideoStreamingService(
+        &mut self,
+        hTrackedCamera: u64,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = __cordl_object
+            .invoke("ReleaseVideoStreamingService", (hTrackedCamera))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        pInterface: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (pInterface))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRTrackedCamera")]

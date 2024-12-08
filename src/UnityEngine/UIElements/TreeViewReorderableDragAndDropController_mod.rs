@@ -42,6 +42,13 @@ for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_Dro
     feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
 )]
 impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -51,13 +58,6 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_Dr
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -109,15 +109,15 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
     )]
     pub type DropData = crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData;
-    pub fn _ctor(
+    pub fn CompareId(
         &mut self,
-        view: *mut crate::UnityEngine::UIElements::BaseTreeView,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        id1: i32,
+        id2: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (view))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("CompareId", (id1, id2))?;
         Ok(__cordl_ret)
     }
     pub fn DelayExpandDropItem(
@@ -140,15 +140,26 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
             .invoke("DragCleanup", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CompareId(
+    pub fn ExpandDropItem(
         &mut self,
-        id1: i32,
-        id2: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("CompareId", (id1, id2))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExpandDropItem", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleAutoExpand(
+        &mut self,
+        item: *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+        pointerPosition: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleAutoExpand", (item, pointerPosition))?;
         Ok(__cordl_ret)
     }
     pub fn HandleDragAndDrop(
@@ -162,17 +173,14 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
             .invoke("HandleDragAndDrop", (args))?;
         Ok(__cordl_ret)
     }
-    pub fn SetupDragAndDrop(
-        &mut self,
-        itemIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
-        skipText: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StartDragArgs> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::StartDragArgs = __cordl_object
-            .invoke("SetupDragAndDrop", (itemIds, skipText))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        view: *mut crate::UnityEngine::UIElements::BaseTreeView,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (view))?;
+        Ok(__cordl_object)
     }
     pub fn OnDrop(
         &mut self,
@@ -196,36 +204,28 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
             .invoke("RestoreExpanded", (ids))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleAutoExpand(
+    pub fn SetupDragAndDrop(
         &mut self,
-        item: *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
-        pointerPosition: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        itemIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+        skipText: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StartDragArgs> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleAutoExpand", (item, pointerPosition))?;
+        let __cordl_ret: crate::UnityEngine::UIElements::StartDragArgs = __cordl_object
+            .invoke("SetupDragAndDrop", (itemIds, skipText))?;
         Ok(__cordl_ret)
     }
-    pub fn ExpandDropItem(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExpandDropItem", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
         view: *mut crate::UnityEngine::UIElements::BaseTreeView,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (view))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (view))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController")]

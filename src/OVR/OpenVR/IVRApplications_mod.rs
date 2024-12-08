@@ -51,70 +51,70 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::OVR::OpenVR::IVRAppli
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications")]
 impl crate::OVR::OpenVR::IVRApplications {
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchTemplateApplication")]
-    pub type _LaunchTemplateApplication = crate::OVR::OpenVR::IVRApplications__LaunchTemplateApplication;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchInternalProcess")]
-    pub type _LaunchInternalProcess = crate::OVR::OpenVR::IVRApplications__LaunchInternalProcess;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_SetDefaultApplicationForMimeType")]
+    pub type _SetDefaultApplicationForMimeType = crate::OVR::OpenVR::IVRApplications__SetDefaultApplicationForMimeType;
     #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationCount")]
     pub type _GetApplicationCount = crate::OVR::OpenVR::IVRApplications__GetApplicationCount;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_AddApplicationManifest")]
-    pub type _AddApplicationManifest = crate::OVR::OpenVR::IVRApplications__AddApplicationManifest;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_IdentifyApplication")]
-    pub type _IdentifyApplication = crate::OVR::OpenVR::IVRApplications__IdentifyApplication;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_PerformApplicationPrelaunchCheck")]
-    pub type _PerformApplicationPrelaunchCheck = crate::OVR::OpenVR::IVRApplications__PerformApplicationPrelaunchCheck;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationsThatSupportMimeType")]
-    pub type _GetApplicationsThatSupportMimeType = crate::OVR::OpenVR::IVRApplications__GetApplicationsThatSupportMimeType;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchApplicationFromMimeType")]
+    pub type _LaunchApplicationFromMimeType = crate::OVR::OpenVR::IVRApplications__LaunchApplicationFromMimeType;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationsErrorNameFromEnum")]
+    pub type _GetApplicationsErrorNameFromEnum = crate::OVR::OpenVR::IVRApplications__GetApplicationsErrorNameFromEnum;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_RemoveApplicationManifest")]
+    pub type _RemoveApplicationManifest = crate::OVR::OpenVR::IVRApplications__RemoveApplicationManifest;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_IsQuitUserPromptRequested")]
+    pub type _IsQuitUserPromptRequested = crate::OVR::OpenVR::IVRApplications__IsQuitUserPromptRequested;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyString")]
+    pub type _GetApplicationPropertyString = crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyString;
     #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetCurrentSceneProcessId")]
     pub type _GetCurrentSceneProcessId = crate::OVR::OpenVR::IVRApplications__GetCurrentSceneProcessId;
     #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchDashboardOverlay")]
     pub type _LaunchDashboardOverlay = crate::OVR::OpenVR::IVRApplications__LaunchDashboardOverlay;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyUint64")]
-    pub type _GetApplicationPropertyUint64 = crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyUint64;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetDefaultApplicationForMimeType")]
-    pub type _GetDefaultApplicationForMimeType = crate::OVR::OpenVR::IVRApplications__GetDefaultApplicationForMimeType;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_RemoveApplicationManifest")]
-    pub type _RemoveApplicationManifest = crate::OVR::OpenVR::IVRApplications__RemoveApplicationManifest;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationSupportedMimeTypes")]
+    pub type _GetApplicationSupportedMimeTypes = crate::OVR::OpenVR::IVRApplications__GetApplicationSupportedMimeTypes;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_SetApplicationAutoLaunch")]
+    pub type _SetApplicationAutoLaunch = crate::OVR::OpenVR::IVRApplications__SetApplicationAutoLaunch;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchTemplateApplication")]
+    pub type _LaunchTemplateApplication = crate::OVR::OpenVR::IVRApplications__LaunchTemplateApplication;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_IdentifyApplication")]
+    pub type _IdentifyApplication = crate::OVR::OpenVR::IVRApplications__IdentifyApplication;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchInternalProcess")]
+    pub type _LaunchInternalProcess = crate::OVR::OpenVR::IVRApplications__LaunchInternalProcess;
     #[cfg(
         feature = "OVR+OpenVR+IVRApplications+_GetApplicationsTransitionStateNameFromEnum"
     )]
     pub type _GetApplicationsTransitionStateNameFromEnum = crate::OVR::OpenVR::IVRApplications__GetApplicationsTransitionStateNameFromEnum;
     #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyBool")]
     pub type _GetApplicationPropertyBool = crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyBool;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationProcessId")]
-    pub type _GetApplicationProcessId = crate::OVR::OpenVR::IVRApplications__GetApplicationProcessId;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_IsQuitUserPromptRequested")]
-    pub type _IsQuitUserPromptRequested = crate::OVR::OpenVR::IVRApplications__IsQuitUserPromptRequested;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyString")]
-    pub type _GetApplicationPropertyString = crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyString;
     #[cfg(feature = "OVR+OpenVR+IVRApplications+_IsApplicationInstalled")]
     pub type _IsApplicationInstalled = crate::OVR::OpenVR::IVRApplications__IsApplicationInstalled;
     #[cfg(feature = "OVR+OpenVR+IVRApplications+_CancelApplicationLaunch")]
     pub type _CancelApplicationLaunch = crate::OVR::OpenVR::IVRApplications__CancelApplicationLaunch;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_SetApplicationAutoLaunch")]
-    pub type _SetApplicationAutoLaunch = crate::OVR::OpenVR::IVRApplications__SetApplicationAutoLaunch;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationKeyByProcessId")]
+    pub type _GetApplicationKeyByProcessId = crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByProcessId;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_AddApplicationManifest")]
+    pub type _AddApplicationManifest = crate::OVR::OpenVR::IVRApplications__AddApplicationManifest;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationsThatSupportMimeType")]
+    pub type _GetApplicationsThatSupportMimeType = crate::OVR::OpenVR::IVRApplications__GetApplicationsThatSupportMimeType;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetDefaultApplicationForMimeType")]
+    pub type _GetDefaultApplicationForMimeType = crate::OVR::OpenVR::IVRApplications__GetDefaultApplicationForMimeType;
     #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationLaunchArguments")]
     pub type _GetApplicationLaunchArguments = crate::OVR::OpenVR::IVRApplications__GetApplicationLaunchArguments;
     #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetStartingApplication")]
     pub type _GetStartingApplication = crate::OVR::OpenVR::IVRApplications__GetStartingApplication;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationSupportedMimeTypes")]
-    pub type _GetApplicationSupportedMimeTypes = crate::OVR::OpenVR::IVRApplications__GetApplicationSupportedMimeTypes;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_SetDefaultApplicationForMimeType")]
-    pub type _SetDefaultApplicationForMimeType = crate::OVR::OpenVR::IVRApplications__SetDefaultApplicationForMimeType;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchApplicationFromMimeType")]
-    pub type _LaunchApplicationFromMimeType = crate::OVR::OpenVR::IVRApplications__LaunchApplicationFromMimeType;
     #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetTransitionState")]
     pub type _GetTransitionState = crate::OVR::OpenVR::IVRApplications__GetTransitionState;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationsErrorNameFromEnum")]
-    pub type _GetApplicationsErrorNameFromEnum = crate::OVR::OpenVR::IVRApplications__GetApplicationsErrorNameFromEnum;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationKeyByProcessId")]
-    pub type _GetApplicationKeyByProcessId = crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByProcessId;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchApplication")]
-    pub type _LaunchApplication = crate::OVR::OpenVR::IVRApplications__LaunchApplication;
-    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationAutoLaunch")]
-    pub type _GetApplicationAutoLaunch = crate::OVR::OpenVR::IVRApplications__GetApplicationAutoLaunch;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_PerformApplicationPrelaunchCheck")]
+    pub type _PerformApplicationPrelaunchCheck = crate::OVR::OpenVR::IVRApplications__PerformApplicationPrelaunchCheck;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyUint64")]
+    pub type _GetApplicationPropertyUint64 = crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyUint64;
     #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationKeyByIndex")]
     pub type _GetApplicationKeyByIndex = crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByIndex;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchApplication")]
+    pub type _LaunchApplication = crate::OVR::OpenVR::IVRApplications__LaunchApplication;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationProcessId")]
+    pub type _GetApplicationProcessId = crate::OVR::OpenVR::IVRApplications__GetApplicationProcessId;
+    #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationAutoLaunch")]
+    pub type _GetApplicationAutoLaunch = crate::OVR::OpenVR::IVRApplications__GetApplicationAutoLaunch;
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_AddApplicationManifest")]
 #[repr(C)]
@@ -143,29 +143,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVRApplications__AddApplicationM
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_AddApplicationManifest")]
 impl crate::OVR::OpenVR::IVRApplications__AddApplicationManifest {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchApplicationManifestFullPath: *mut crate::System::String,
@@ -183,6 +160,17 @@ impl crate::OVR::OpenVR::IVRApplications__AddApplicationManifest {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         pchApplicationManifestFullPath: *mut crate::System::String,
@@ -198,12 +186,24 @@ impl crate::OVR::OpenVR::IVRApplications__AddApplicationManifest {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_AddApplicationManifest")]
@@ -244,16 +244,6 @@ for crate::OVR::OpenVR::IVRApplications__CancelApplicationLaunch {
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_CancelApplicationLaunch")]
 impl crate::OVR::OpenVR::IVRApplications__CancelApplicationLaunch {
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchAppKey: *mut crate::System::String,
@@ -267,6 +257,16 @@ impl crate::OVR::OpenVR::IVRApplications__CancelApplicationLaunch {
             .invoke("BeginInvoke", (pchAppKey, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         pchAppKey: *mut crate::System::String,
@@ -276,6 +276,16 @@ impl crate::OVR::OpenVR::IVRApplications__CancelApplicationLaunch {
         );
         let __cordl_ret: bool = __cordl_object.invoke("Invoke", (pchAppKey))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -288,16 +298,6 @@ impl crate::OVR::OpenVR::IVRApplications__CancelApplicationLaunch {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_CancelApplicationLaunch")]
@@ -351,18 +351,6 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationAutoLaunch {
             .invoke("BeginInvoke", (pchAppKey, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -386,12 +374,24 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationAutoLaunch {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationAutoLaunch")]
@@ -431,25 +431,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVRApplications__GetApplicationC
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationCount")]
 impl crate::OVR::OpenVR::IVRApplications__GetApplicationCount {
-    pub fn Invoke(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("Invoke", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         callback: *mut crate::System::AsyncCallback,
@@ -472,15 +453,34 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationCount {
         let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("Invoke", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationCount")]
@@ -521,31 +521,6 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByIndex {
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationKeyByIndex")]
 impl crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByIndex {
-    pub fn Invoke(
-        &mut self,
-        unApplicationIndex: u32,
-        pchAppKeyBuffer: *mut crate::System::Text::StringBuilder,
-        unAppKeyBufferLen: u32,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
-            .invoke("Invoke", (unApplicationIndex, pchAppKeyBuffer, unAppKeyBufferLen))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         unApplicationIndex: u32,
@@ -581,15 +556,40 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByIndex {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        unApplicationIndex: u32,
+        pchAppKeyBuffer: *mut crate::System::Text::StringBuilder,
+        unAppKeyBufferLen: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
+            .invoke("Invoke", (unApplicationIndex, pchAppKeyBuffer, unAppKeyBufferLen))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationKeyByIndex")]
@@ -631,17 +631,6 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByProcessId {
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationKeyByProcessId")]
 impl crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByProcessId {
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         unProcessId: u32,
@@ -660,16 +649,15 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByProcessId {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn EndInvoke(
         &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
+            .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -688,12 +676,24 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByProcessId {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationKeyByProcessId")]
@@ -735,28 +735,6 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationLaunchArguments {
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationLaunchArguments")]
 impl crate::OVR::OpenVR::IVRApplications__GetApplicationLaunchArguments {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         unHandle: u32,
@@ -770,6 +748,16 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationLaunchArguments {
         );
         let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
             .invoke("BeginInvoke", (unHandle, pchArgs, unArgs, callback, object))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -788,12 +776,24 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationLaunchArguments {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationLaunchArguments")]
@@ -847,6 +847,16 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationProcessId {
             .invoke("BeginInvoke", (pchAppKey, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         pchAppKey: *mut crate::System::String,
@@ -857,15 +867,15 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationProcessId {
         let __cordl_ret: u32 = __cordl_object.invoke("Invoke", (pchAppKey))?;
         Ok(__cordl_ret)
     }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -878,16 +888,6 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationProcessId {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationProcessId")]
@@ -929,44 +929,6 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyBool {
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyBool")]
 impl crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyBool {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        pchAppKey: *mut crate::System::String,
-        eProperty: crate::OVR::OpenVR::EVRApplicationProperty,
-        peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRApplicationError>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("Invoke", (pchAppKey, eProperty, peError))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        peError: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::EVRApplicationError,
-        >,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (peError, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchAppKey: *mut crate::System::String,
@@ -984,15 +946,53 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyBool {
             .invoke("BeginInvoke", (pchAppKey, eProperty, peError, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        peError: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::EVRApplicationError,
+        >,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (peError, result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        pchAppKey: *mut crate::System::String,
+        eProperty: crate::OVR::OpenVR::EVRApplicationProperty,
+        peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRApplicationError>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("Invoke", (pchAppKey, eProperty, peError))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyBool")]
@@ -1034,19 +1034,6 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyString {
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyString")]
 impl crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyString {
-    pub fn EndInvoke(
-        &mut self,
-        peError: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::EVRApplicationError,
-        >,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (peError, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchAppKey: *mut crate::System::String,
@@ -1077,6 +1064,19 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyString {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        peError: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::EVRApplicationError,
+        >,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (peError, result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         pchAppKey: *mut crate::System::String,
@@ -1101,6 +1101,16 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyString {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -1112,16 +1122,6 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyString {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyString")]
@@ -1163,16 +1163,21 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyUint64 {
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyUint64")]
 impl crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyUint64 {
-    pub fn _ctor(
+    pub fn BeginInvoke(
         &mut self,
+        pchAppKey: *mut crate::System::String,
+        eProperty: crate::OVR::OpenVR::EVRApplicationProperty,
+        peError: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::EVRApplicationError,
+        >,
+        callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (pchAppKey, eProperty, peError, callback, object))?;
         Ok(__cordl_ret)
     }
     pub fn EndInvoke(
@@ -1201,32 +1206,27 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyUint64 {
             .invoke("Invoke", (pchAppKey, eProperty, peError))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInvoke(
-        &mut self,
-        pchAppKey: *mut crate::System::String,
-        eProperty: crate::OVR::OpenVR::EVRApplicationProperty,
-        peError: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::EVRApplicationError,
-        >,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (pchAppKey, eProperty, peError, callback, object))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyUint64")]
@@ -1268,31 +1268,6 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationSupportedMimeTypes {
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationSupportedMimeTypes")]
 impl crate::OVR::OpenVR::IVRApplications__GetApplicationSupportedMimeTypes {
-    pub fn Invoke(
-        &mut self,
-        pchAppKey: *mut crate::System::String,
-        pchMimeTypesBuffer: *mut crate::System::Text::StringBuilder,
-        unMimeTypesBuffer: u32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("Invoke", (pchAppKey, pchMimeTypesBuffer, unMimeTypesBuffer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchAppKey: *mut crate::System::String,
@@ -1321,15 +1296,40 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationSupportedMimeTypes {
         let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        pchAppKey: *mut crate::System::String,
+        pchMimeTypesBuffer: *mut crate::System::Text::StringBuilder,
+        unMimeTypesBuffer: u32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("Invoke", (pchAppKey, pchMimeTypesBuffer, unMimeTypesBuffer))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationSupportedMimeTypes")]
@@ -1371,18 +1371,6 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationsErrorNameFromEnum {
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationsErrorNameFromEnum")]
 impl crate::OVR::OpenVR::IVRApplications__GetApplicationsErrorNameFromEnum {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         error: crate::OVR::OpenVR::EVRApplicationError,
@@ -1396,17 +1384,6 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationsErrorNameFromEnum {
             .invoke("BeginInvoke", (error, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn Invoke(
-        &mut self,
-        error: crate::OVR::OpenVR::EVRApplicationError,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::IntPtr = __cordl_object
-            .invoke("Invoke", (error))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -1418,15 +1395,38 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationsErrorNameFromEnum {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        error: crate::OVR::OpenVR::EVRApplicationError,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::IntPtr = __cordl_object
+            .invoke("Invoke", (error))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationsErrorNameFromEnum")]
@@ -1468,22 +1468,6 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationsThatSupportMimeType {
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationsThatSupportMimeType")]
 impl crate::OVR::OpenVR::IVRApplications__GetApplicationsThatSupportMimeType {
-    pub fn Invoke(
-        &mut self,
-        pchMimeType: *mut crate::System::String,
-        pchAppKeysThatSupportBuffer: *mut crate::System::Text::StringBuilder,
-        unAppKeysThatSupportBuffer: u32,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke(
-                "Invoke",
-                (pchMimeType, pchAppKeysThatSupportBuffer, unAppKeysThatSupportBuffer),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchMimeType: *mut crate::System::String,
@@ -1508,6 +1492,42 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationsThatSupportMimeType {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        pchMimeType: *mut crate::System::String,
+        pchAppKeysThatSupportBuffer: *mut crate::System::Text::StringBuilder,
+        unAppKeysThatSupportBuffer: u32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object
+            .invoke(
+                "Invoke",
+                (pchMimeType, pchAppKeysThatSupportBuffer, unAppKeysThatSupportBuffer),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -1519,26 +1539,6 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationsThatSupportMimeType {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationsThatSupportMimeType")]
@@ -1590,17 +1590,6 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationsTransitionStateNameFromE
     feature = "OVR+OpenVR+IVRApplications+_GetApplicationsTransitionStateNameFromEnum"
 )]
 impl crate::OVR::OpenVR::IVRApplications__GetApplicationsTransitionStateNameFromEnum {
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::IntPtr = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         state: crate::OVR::OpenVR::EVRApplicationTransitionState,
@@ -1614,16 +1603,15 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationsTransitionStateNameFrom
             .invoke("BeginInvoke", (state, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn EndInvoke(
         &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: crate::System::IntPtr = __cordl_object
+            .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -1640,12 +1628,24 @@ impl crate::OVR::OpenVR::IVRApplications__GetApplicationsTransitionStateNameFrom
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -1688,16 +1688,6 @@ for crate::OVR::OpenVR::IVRApplications__GetCurrentSceneProcessId {
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetCurrentSceneProcessId")]
 impl crate::OVR::OpenVR::IVRApplications__GetCurrentSceneProcessId {
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         callback: *mut crate::System::AsyncCallback,
@@ -1710,16 +1700,14 @@ impl crate::OVR::OpenVR::IVRApplications__GetCurrentSceneProcessId {
             .invoke("BeginInvoke", (callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn EndInvoke(
         &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(&mut self) -> quest_hook::libil2cpp::Result<u32> {
@@ -1732,12 +1720,24 @@ impl crate::OVR::OpenVR::IVRApplications__GetCurrentSceneProcessId {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetCurrentSceneProcessId")]
@@ -1797,16 +1797,14 @@ impl crate::OVR::OpenVR::IVRApplications__GetDefaultApplicationForMimeType {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn EndInvoke(
         &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -1822,25 +1820,27 @@ impl crate::OVR::OpenVR::IVRApplications__GetDefaultApplicationForMimeType {
             .invoke("Invoke", (pchMimeType, pchAppKeyBuffer, unAppKeyBufferLen))?;
         Ok(__cordl_ret)
     }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetDefaultApplicationForMimeType")]
@@ -1897,6 +1897,17 @@ impl crate::OVR::OpenVR::IVRApplications__GetStartingApplication {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         pchAppKeyBuffer: *mut crate::System::Text::StringBuilder,
@@ -1909,6 +1920,16 @@ impl crate::OVR::OpenVR::IVRApplications__GetStartingApplication {
             .invoke("Invoke", (pchAppKeyBuffer, unAppKeyBufferLen))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -1920,27 +1941,6 @@ impl crate::OVR::OpenVR::IVRApplications__GetStartingApplication {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetStartingApplication")]
@@ -1991,18 +1991,6 @@ impl crate::OVR::OpenVR::IVRApplications__GetTransitionState {
             .invoke("BeginInvoke", (callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -2031,12 +2019,24 @@ impl crate::OVR::OpenVR::IVRApplications__GetTransitionState {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_GetTransitionState")]
@@ -2076,18 +2076,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVRApplications__IdentifyApplica
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_IdentifyApplication")]
 impl crate::OVR::OpenVR::IVRApplications__IdentifyApplication {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         unProcessId: u32,
@@ -2128,12 +2116,24 @@ impl crate::OVR::OpenVR::IVRApplications__IdentifyApplication {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_IdentifyApplication")]
@@ -2173,16 +2173,17 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVRApplications__IsApplicationIn
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_IsApplicationInstalled")]
 impl crate::OVR::OpenVR::IVRApplications__IsApplicationInstalled {
-    pub fn _ctor(
+    pub fn BeginInvoke(
         &mut self,
+        pchAppKey: *mut crate::System::String,
+        callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (pchAppKey, callback, object))?;
         Ok(__cordl_ret)
     }
     pub fn EndInvoke(
@@ -2205,28 +2206,27 @@ impl crate::OVR::OpenVR::IVRApplications__IsApplicationInstalled {
         let __cordl_ret: bool = __cordl_object.invoke("Invoke", (pchAppKey))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInvoke(
-        &mut self,
-        pchAppKey: *mut crate::System::String,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (pchAppKey, callback, object))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_IsApplicationInstalled")]
@@ -2296,6 +2296,16 @@ impl crate::OVR::OpenVR::IVRApplications__IsQuitUserPromptRequested {
         let __cordl_ret: bool = __cordl_object.invoke("Invoke", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -2307,16 +2317,6 @@ impl crate::OVR::OpenVR::IVRApplications__IsQuitUserPromptRequested {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_IsQuitUserPromptRequested")]
@@ -2355,40 +2355,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVRApplications__LaunchApplicati
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchApplication")]
 impl crate::OVR::OpenVR::IVRApplications__LaunchApplication {
-    pub fn Invoke(
-        &mut self,
-        pchAppKey: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
-            .invoke("Invoke", (pchAppKey))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchAppKey: *mut crate::System::String,
@@ -2402,15 +2368,49 @@ impl crate::OVR::OpenVR::IVRApplications__LaunchApplication {
             .invoke("BeginInvoke", (pchAppKey, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        pchAppKey: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
+            .invoke("Invoke", (pchAppKey))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchApplication")]
@@ -2452,18 +2452,6 @@ for crate::OVR::OpenVR::IVRApplications__LaunchApplicationFromMimeType {
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchApplicationFromMimeType")]
 impl crate::OVR::OpenVR::IVRApplications__LaunchApplicationFromMimeType {
-    pub fn Invoke(
-        &mut self,
-        pchMimeType: *mut crate::System::String,
-        pchArgs: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
-            .invoke("Invoke", (pchMimeType, pchArgs))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchMimeType: *mut crate::System::String,
@@ -2478,18 +2466,6 @@ impl crate::OVR::OpenVR::IVRApplications__LaunchApplicationFromMimeType {
             .invoke("BeginInvoke", (pchMimeType, pchArgs, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -2501,15 +2477,39 @@ impl crate::OVR::OpenVR::IVRApplications__LaunchApplicationFromMimeType {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        pchMimeType: *mut crate::System::String,
+        pchArgs: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
+            .invoke("Invoke", (pchMimeType, pchArgs))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchApplicationFromMimeType")]
@@ -2549,40 +2549,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVRApplications__LaunchDashboard
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchDashboardOverlay")]
 impl crate::OVR::OpenVR::IVRApplications__LaunchDashboardOverlay {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        pchAppKey: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
-            .invoke("Invoke", (pchAppKey))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchAppKey: *mut crate::System::String,
@@ -2596,15 +2562,49 @@ impl crate::OVR::OpenVR::IVRApplications__LaunchDashboardOverlay {
             .invoke("BeginInvoke", (pchAppKey, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        pchAppKey: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
+            .invoke("Invoke", (pchAppKey))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchDashboardOverlay")]
@@ -2644,31 +2644,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVRApplications__LaunchInternalP
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchInternalProcess")]
 impl crate::OVR::OpenVR::IVRApplications__LaunchInternalProcess {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        pchBinaryPath: *mut crate::System::String,
-        pchArguments: *mut crate::System::String,
-        pchWorkingDirectory: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
-            .invoke("Invoke", (pchBinaryPath, pchArguments, pchWorkingDirectory))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchBinaryPath: *mut crate::System::String,
@@ -2698,15 +2673,40 @@ impl crate::OVR::OpenVR::IVRApplications__LaunchInternalProcess {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        pchBinaryPath: *mut crate::System::String,
+        pchArguments: *mut crate::System::String,
+        pchWorkingDirectory: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
+            .invoke("Invoke", (pchBinaryPath, pchArguments, pchWorkingDirectory))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchInternalProcess")]
@@ -2781,18 +2781,6 @@ impl crate::OVR::OpenVR::IVRApplications__LaunchTemplateApplication {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         pchTemplateAppKey: *mut crate::System::String,
@@ -2814,12 +2802,24 @@ impl crate::OVR::OpenVR::IVRApplications__LaunchTemplateApplication {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchTemplateApplication")]
@@ -2861,18 +2861,6 @@ for crate::OVR::OpenVR::IVRApplications__PerformApplicationPrelaunchCheck {
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_PerformApplicationPrelaunchCheck")]
 impl crate::OVR::OpenVR::IVRApplications__PerformApplicationPrelaunchCheck {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchAppKey: *mut crate::System::String,
@@ -2911,12 +2899,24 @@ impl crate::OVR::OpenVR::IVRApplications__PerformApplicationPrelaunchCheck {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_PerformApplicationPrelaunchCheck")]
@@ -2957,29 +2957,6 @@ for crate::OVR::OpenVR::IVRApplications__RemoveApplicationManifest {
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_RemoveApplicationManifest")]
 impl crate::OVR::OpenVR::IVRApplications__RemoveApplicationManifest {
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchApplicationManifestFullPath: *mut crate::System::String,
@@ -2991,6 +2968,17 @@ impl crate::OVR::OpenVR::IVRApplications__RemoveApplicationManifest {
         );
         let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
             .invoke("BeginInvoke", (pchApplicationManifestFullPath, callback, object))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
+            .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -3007,12 +2995,24 @@ impl crate::OVR::OpenVR::IVRApplications__RemoveApplicationManifest {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_RemoveApplicationManifest")]
@@ -3053,41 +3053,6 @@ for crate::OVR::OpenVR::IVRApplications__SetApplicationAutoLaunch {
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_SetApplicationAutoLaunch")]
 impl crate::OVR::OpenVR::IVRApplications__SetApplicationAutoLaunch {
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        pchAppKey: *mut crate::System::String,
-        bAutoLaunch: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
-            .invoke("Invoke", (pchAppKey, bAutoLaunch))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchAppKey: *mut crate::System::String,
@@ -3102,15 +3067,50 @@ impl crate::OVR::OpenVR::IVRApplications__SetApplicationAutoLaunch {
             .invoke("BeginInvoke", (pchAppKey, bAutoLaunch, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        pchAppKey: *mut crate::System::String,
+        bAutoLaunch: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
+            .invoke("Invoke", (pchAppKey, bAutoLaunch))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_SetApplicationAutoLaunch")]
@@ -3152,18 +3152,6 @@ for crate::OVR::OpenVR::IVRApplications__SetDefaultApplicationForMimeType {
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_SetDefaultApplicationForMimeType")]
 impl crate::OVR::OpenVR::IVRApplications__SetDefaultApplicationForMimeType {
-    pub fn Invoke(
-        &mut self,
-        pchAppKey: *mut crate::System::String,
-        pchMimeType: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
-            .invoke("Invoke", (pchAppKey, pchMimeType))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchAppKey: *mut crate::System::String,
@@ -3178,18 +3166,6 @@ impl crate::OVR::OpenVR::IVRApplications__SetDefaultApplicationForMimeType {
             .invoke("BeginInvoke", (pchAppKey, pchMimeType, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -3201,15 +3177,39 @@ impl crate::OVR::OpenVR::IVRApplications__SetDefaultApplicationForMimeType {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        pchAppKey: *mut crate::System::String,
+        pchMimeType: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = __cordl_object
+            .invoke("Invoke", (pchAppKey, pchMimeType))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications+_SetDefaultApplicationForMimeType")]

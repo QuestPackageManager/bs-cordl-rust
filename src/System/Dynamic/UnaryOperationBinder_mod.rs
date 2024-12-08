@@ -24,6 +24,20 @@ impl std::ops::DerefMut for crate::System::Dynamic::UnaryOperationBinder {
 }
 #[cfg(feature = "System+Dynamic+UnaryOperationBinder")]
 impl crate::System::Dynamic::UnaryOperationBinder {
+    pub fn Bind(
+        &mut self,
+        target: *mut crate::System::Dynamic::DynamicMetaObject,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Dynamic::DynamicMetaObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
+            .invoke("Bind", (target, args))?;
+        Ok(__cordl_ret)
+    }
     pub fn FallbackUnaryOperation_DynamicMetaObject0(
         &mut self,
         target: *mut crate::System::Dynamic::DynamicMetaObject,
@@ -45,20 +59,6 @@ impl crate::System::Dynamic::UnaryOperationBinder {
         );
         let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
             .invoke("FallbackUnaryOperation", (target, errorSuggestion))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Bind(
-        &mut self,
-        target: *mut crate::System::Dynamic::DynamicMetaObject,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Dynamic::DynamicMetaObject,
-        >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("Bind", (target, args))?;
         Ok(__cordl_ret)
     }
 }

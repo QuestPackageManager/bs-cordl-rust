@@ -26,40 +26,25 @@ impl std::ops::DerefMut for crate::System::CultureAwareComparer {
 }
 #[cfg(feature = "System+CultureAwareComparer")]
 impl crate::System::CultureAwareComparer {
-    pub fn _ctor_CultureInfo_CompareOptions0(
+    pub fn Compare(
         &mut self,
-        culture: *mut crate::System::Globalization::CultureInfo,
-        options: crate::System::Globalization::CompareOptions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        x: *mut crate::System::String,
+        y: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (culture, options))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("Compare", (x, y))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_CompareInfo_CompareOptions1(
+    pub fn Equals_Object1(
         &mut self,
-        compareInfo: *mut crate::System::Globalization::CompareInfo,
-        options: crate::System::Globalization::CompareOptions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (compareInfo, options))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_SerializationInfo_StreamingContext2(
-        &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (info, context))?;
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret)
     }
     pub fn Equals_String_String0(
@@ -73,14 +58,21 @@ impl crate::System::CultureAwareComparer {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (x, y))?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn GetHashCode_1(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode_String0(
+        &mut self,
+        obj: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", (obj))?;
         Ok(__cordl_ret)
     }
     pub fn GetObjectData(
@@ -95,63 +87,71 @@ impl crate::System::CultureAwareComparer {
             .invoke("GetObjectData", (info, context))?;
         Ok(__cordl_ret)
     }
-    pub fn Compare(
-        &mut self,
-        x: *mut crate::System::String,
-        y: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Compare", (x, y))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode_String0(
-        &mut self,
-        obj: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode_1(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_CultureInfo_CompareOptions0(
-        culture: *mut crate::System::Globalization::CultureInfo,
-        options: crate::System::Globalization::CompareOptions,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (culture, options))?;
-        Ok(__cordl_object)
-    }
     pub fn New_CompareInfo_CompareOptions1(
         compareInfo: *mut crate::System::Globalization::CompareInfo,
         options: crate::System::Globalization::CompareOptions,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (compareInfo, options))?;
         Ok(__cordl_object)
     }
+    pub fn New_CultureInfo_CompareOptions0(
+        culture: *mut crate::System::Globalization::CultureInfo,
+        options: crate::System::Globalization::CompareOptions,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (culture, options))?;
+        Ok(__cordl_object)
+    }
     pub fn New_SerializationInfo_StreamingContext2(
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
         context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (info, context))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor_CompareInfo_CompareOptions1(
+        &mut self,
+        compareInfo: *mut crate::System::Globalization::CompareInfo,
+        options: crate::System::Globalization::CompareOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (compareInfo, options))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_CultureInfo_CompareOptions0(
+        &mut self,
+        culture: *mut crate::System::Globalization::CultureInfo,
+        options: crate::System::Globalization::CompareOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (culture, options))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_SerializationInfo_StreamingContext2(
+        &mut self,
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (info, context))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+CultureAwareComparer")]

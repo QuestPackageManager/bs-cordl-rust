@@ -64,36 +64,74 @@ impl std::ops::DerefMut for MenuTransitionsHelper {
 }
 #[cfg(feature = "MenuTransitionsHelper")]
 impl MenuTransitionsHelper {
-    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass34_0")]
-    pub type __c__DisplayClass34_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass34_0;
-    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass33_0")]
-    pub type __c__DisplayClass33_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass33_0;
     #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass35_0")]
     pub type __c__DisplayClass35_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass35_0;
-    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass36_0")]
-    pub type __c__DisplayClass36_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass36_0;
-    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass37_0")]
-    pub type __c__DisplayClass37_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass37_0;
     #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass40_0")]
     pub type __c__DisplayClass40_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass40_0;
-    pub fn _ctor(
+    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass33_0")]
+    pub type __c__DisplayClass33_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass33_0;
+    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass37_0")]
+    pub type __c__DisplayClass37_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass37_0;
+    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass34_0")]
+    pub type __c__DisplayClass34_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass34_0;
+    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass36_0")]
+    pub type __c__DisplayClass36_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass36_0;
+    pub fn HandleBeatmapEditorGameSceneDidFinish(
         &mut self,
+        beatmapEditorStandardLevelScenesTransitionSetupData: *mut crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
+        levelCompletionResults: *mut LevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke(
+                "HandleBeatmapEditorGameSceneDidFinish",
+                (
+                    beatmapEditorStandardLevelScenesTransitionSetupData,
+                    levelCompletionResults,
+                ),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn ShowCredits(
+    pub fn HandleBeatmapEditorSceneDidFinish(
         &mut self,
+        beatmapEditorScenesTransitionSetupData: *mut BeatmapEditorScenesTransitionSetupDataSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ShowCredits", ())?;
+            .invoke(
+                "HandleBeatmapEditorSceneDidFinish",
+                (beatmapEditorScenesTransitionSetupData),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleCreditsSceneDidFinish(
+        &mut self,
+        creditsSceneTransitionSetupData: *mut CreditsScenesTransitionSetupDataSO,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleCreditsSceneDidFinish", (creditsSceneTransitionSetupData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleMainGameSceneDidFinish(
+        &mut self,
+        standardLevelScenesTransitionSetupData: *mut StandardLevelScenesTransitionSetupDataSO,
+        levelCompletionResults: *mut LevelCompletionResults,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleMainGameSceneDidFinish",
+                (standardLevelScenesTransitionSetupData, levelCompletionResults),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn HandleMissionLevelSceneDidFinish(
@@ -108,6 +146,36 @@ impl MenuTransitionsHelper {
             .invoke(
                 "HandleMissionLevelSceneDidFinish",
                 (missionLevelScenesTransitionSetupData, missionCompletionResults),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleMultiplayerLevelDidDisconnect(
+        &mut self,
+        multiplayerLevelScenesTransitionSetupData: *mut MultiplayerLevelScenesTransitionSetupDataSO,
+        disconnectedReason: DisconnectedReason,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleMultiplayerLevelDidDisconnect",
+                (multiplayerLevelScenesTransitionSetupData, disconnectedReason),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleMultiplayerLevelDidFinish(
+        &mut self,
+        multiplayerLevelScenesTransitionSetupData: *mut MultiplayerLevelScenesTransitionSetupDataSO,
+        multiplayerResultsData: *mut MultiplayerResultsData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleMultiplayerLevelDidFinish",
+                (multiplayerLevelScenesTransitionSetupData, multiplayerResultsData),
             )?;
         Ok(__cordl_ret)
     }
@@ -126,45 +194,134 @@ impl MenuTransitionsHelper {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn StartMultiplayerLevel_Action_2_Action_1_0(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
         &mut self,
-        gameMode: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RestartGame(
+        &mut self,
+        finishCallback: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RestartGame", (finishCallback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ShowCredits(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ShowCredits", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartBeatmapEditor(
+        &mut self,
+        beatmapEditorFinishedCallback: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartBeatmapEditor", (beatmapEditorFinishedCallback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartBeatmapEditorStandardLevel(
+        &mut self,
+        beatmapLevelData: *mut IBeatmapLevelData,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
         beatmapLevel: *mut BeatmapLevel,
-        beatmapLevelData: *mut IBeatmapLevelData,
-        overrideColorScheme: *mut ColorScheme,
         gameplayModifiers: *mut GameplayModifiers,
         playerSpecificSettings: *mut PlayerSpecificSettings,
         practiceSettings: *mut PracticeSettings,
-        backButtonText: *mut crate::System::String,
-        useTestNoteCutSoundEffects: bool,
+        colorScheme: *mut ColorScheme,
+        environmentsListModel: *mut EnvironmentsListModel,
+        useFirstPersonFlyingController: bool,
         beforeSceneSwitchCallback: *mut crate::System::Action,
         levelFinishedCallback: *mut crate::System::Action_2<
-            *mut MultiplayerLevelScenesTransitionSetupDataSO,
-            *mut MultiplayerResultsData,
+            *mut crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
+            *mut LevelCompletionResults,
         >,
-        didDisconnectCallback: *mut crate::System::Action_1<DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "StartMultiplayerLevel",
+                "StartBeatmapEditorStandardLevel",
                 (
-                    gameMode,
+                    beatmapLevelData,
                     beatmapKey,
                     beatmapLevel,
-                    beatmapLevelData,
-                    overrideColorScheme,
                     gameplayModifiers,
                     playerSpecificSettings,
                     practiceSettings,
-                    backButtonText,
-                    useTestNoteCutSoundEffects,
+                    colorScheme,
+                    environmentsListModel,
+                    useFirstPersonFlyingController,
                     beforeSceneSwitchCallback,
                     levelFinishedCallback,
-                    didDisconnectCallback,
+                ),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartMissionLevel(
+        &mut self,
+        missionId: *mut crate::System::String,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapLevel: *mut BeatmapLevel,
+        overrideColorScheme: *mut ColorScheme,
+        gameplayModifiers: *mut GameplayModifiers,
+        missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut MissionObjective,
+        >,
+        playerSpecificSettings: *mut PlayerSpecificSettings,
+        environmentsListModel: *mut EnvironmentsListModel,
+        beforeSceneSwitchCallback: *mut crate::System::Action,
+        levelFinishedCallback: *mut crate::System::Action_2<
+            *mut MissionLevelScenesTransitionSetupDataSO,
+            *mut MissionCompletionResults,
+        >,
+        levelRestartedCallback: *mut crate::System::Action_2<
+            *mut MissionLevelScenesTransitionSetupDataSO,
+            *mut MissionCompletionResults,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "StartMissionLevel",
+                (
+                    missionId,
+                    beatmapKey,
+                    beatmapLevel,
+                    overrideColorScheme,
+                    gameplayModifiers,
+                    missionObjectives,
+                    playerSpecificSettings,
+                    environmentsListModel,
+                    beforeSceneSwitchCallback,
+                    levelFinishedCallback,
+                    levelRestartedCallback,
                 ),
             )?;
         Ok(__cordl_ret)
@@ -216,120 +373,45 @@ impl MenuTransitionsHelper {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HandleBeatmapEditorGameSceneDidFinish(
-        &mut self,
-        beatmapEditorStandardLevelScenesTransitionSetupData: *mut crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
-        levelCompletionResults: *mut LevelCompletionResults,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleBeatmapEditorGameSceneDidFinish",
-                (
-                    beatmapEditorStandardLevelScenesTransitionSetupData,
-                    levelCompletionResults,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleMainGameSceneDidFinish(
-        &mut self,
-        standardLevelScenesTransitionSetupData: *mut StandardLevelScenesTransitionSetupDataSO,
-        levelCompletionResults: *mut LevelCompletionResults,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleMainGameSceneDidFinish",
-                (standardLevelScenesTransitionSetupData, levelCompletionResults),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleBeatmapEditorSceneDidFinish(
-        &mut self,
-        beatmapEditorScenesTransitionSetupData: *mut BeatmapEditorScenesTransitionSetupDataSO,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleBeatmapEditorSceneDidFinish",
-                (beatmapEditorScenesTransitionSetupData),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _HandleBeatmapEditorSceneDidFinish_b__39_0(
-        &mut self,
-        container: *mut crate::Zenject::DiContainer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<HandleBeatmapEditorSceneDidFinish>b__39_0", (container))?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartStandardLevel_OverrideEnvironmentSettings_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_String__cordl_bool_Action_Action_1_Action_2_Nullable_1_0(
+    pub fn StartMultiplayerLevel_Action_2_Action_1_0(
         &mut self,
         gameMode: *mut crate::System::String,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
         beatmapLevel: *mut BeatmapLevel,
-        overrideEnvironmentSettings: *mut OverrideEnvironmentSettings,
+        beatmapLevelData: *mut IBeatmapLevelData,
         overrideColorScheme: *mut ColorScheme,
-        beatmapOverrideColorScheme: *mut ColorScheme,
         gameplayModifiers: *mut GameplayModifiers,
         playerSpecificSettings: *mut PlayerSpecificSettings,
         practiceSettings: *mut PracticeSettings,
-        environmentsListModel: *mut EnvironmentsListModel,
         backButtonText: *mut crate::System::String,
         useTestNoteCutSoundEffects: bool,
-        startPaused: bool,
         beforeSceneSwitchCallback: *mut crate::System::Action,
-        afterSceneSwitchCallback: *mut crate::System::Action_1<
-            *mut crate::Zenject::DiContainer,
-        >,
         levelFinishedCallback: *mut crate::System::Action_2<
-            *mut StandardLevelScenesTransitionSetupDataSO,
-            *mut LevelCompletionResults,
+            *mut MultiplayerLevelScenesTransitionSetupDataSO,
+            *mut MultiplayerResultsData,
         >,
-        levelRestartedCallback: *mut crate::System::Action_2<
-            *mut LevelScenesTransitionSetupDataSO,
-            *mut LevelCompletionResults,
-        >,
-        recordingToolData: crate::System::Nullable_1<
-            crate::GlobalNamespace::RecordingToolManager_SetupData,
-        >,
+        didDisconnectCallback: *mut crate::System::Action_1<DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "StartStandardLevel",
+                "StartMultiplayerLevel",
                 (
                     gameMode,
                     beatmapKey,
                     beatmapLevel,
-                    overrideEnvironmentSettings,
+                    beatmapLevelData,
                     overrideColorScheme,
-                    beatmapOverrideColorScheme,
                     gameplayModifiers,
                     playerSpecificSettings,
                     practiceSettings,
-                    environmentsListModel,
                     backButtonText,
                     useTestNoteCutSoundEffects,
-                    startPaused,
                     beforeSceneSwitchCallback,
-                    afterSceneSwitchCallback,
                     levelFinishedCallback,
-                    levelRestartedCallback,
-                    recordingToolData,
+                    didDisconnectCallback,
                 ),
             )?;
         Ok(__cordl_ret)
@@ -396,87 +478,35 @@ impl MenuTransitionsHelper {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HandleCreditsSceneDidFinish(
+    pub fn StartStandardLevel_OverrideEnvironmentSettings_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_String__cordl_bool_Action_Action_1_Action_2_Nullable_1_0(
         &mut self,
-        creditsSceneTransitionSetupData: *mut CreditsScenesTransitionSetupDataSO,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleCreditsSceneDidFinish", (creditsSceneTransitionSetupData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartMissionLevel(
-        &mut self,
-        missionId: *mut crate::System::String,
+        gameMode: *mut crate::System::String,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
         beatmapLevel: *mut BeatmapLevel,
+        overrideEnvironmentSettings: *mut OverrideEnvironmentSettings,
         overrideColorScheme: *mut ColorScheme,
-        gameplayModifiers: *mut GameplayModifiers,
-        missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut MissionObjective,
-        >,
-        playerSpecificSettings: *mut PlayerSpecificSettings,
-        environmentsListModel: *mut EnvironmentsListModel,
-        beforeSceneSwitchCallback: *mut crate::System::Action,
-        levelFinishedCallback: *mut crate::System::Action_2<
-            *mut MissionLevelScenesTransitionSetupDataSO,
-            *mut MissionCompletionResults,
-        >,
-        levelRestartedCallback: *mut crate::System::Action_2<
-            *mut MissionLevelScenesTransitionSetupDataSO,
-            *mut MissionCompletionResults,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "StartMissionLevel",
-                (
-                    missionId,
-                    beatmapKey,
-                    beatmapLevel,
-                    overrideColorScheme,
-                    gameplayModifiers,
-                    missionObjectives,
-                    playerSpecificSettings,
-                    environmentsListModel,
-                    beforeSceneSwitchCallback,
-                    levelFinishedCallback,
-                    levelRestartedCallback,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RestartGame(
-        &mut self,
-        finishCallback: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RestartGame", (finishCallback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartBeatmapEditorStandardLevel(
-        &mut self,
-        beatmapLevelData: *mut IBeatmapLevelData,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        beatmapLevel: *mut BeatmapLevel,
+        beatmapOverrideColorScheme: *mut ColorScheme,
         gameplayModifiers: *mut GameplayModifiers,
         playerSpecificSettings: *mut PlayerSpecificSettings,
         practiceSettings: *mut PracticeSettings,
-        colorScheme: *mut ColorScheme,
         environmentsListModel: *mut EnvironmentsListModel,
-        useFirstPersonFlyingController: bool,
+        backButtonText: *mut crate::System::String,
+        useTestNoteCutSoundEffects: bool,
+        startPaused: bool,
         beforeSceneSwitchCallback: *mut crate::System::Action,
+        afterSceneSwitchCallback: *mut crate::System::Action_1<
+            *mut crate::Zenject::DiContainer,
+        >,
         levelFinishedCallback: *mut crate::System::Action_2<
-            *mut crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
+            *mut StandardLevelScenesTransitionSetupDataSO,
             *mut LevelCompletionResults,
+        >,
+        levelRestartedCallback: *mut crate::System::Action_2<
+            *mut LevelScenesTransitionSetupDataSO,
+            *mut LevelCompletionResults,
+        >,
+        recordingToolData: crate::System::Nullable_1<
+            crate::GlobalNamespace::RecordingToolManager_SetupData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -484,35 +514,27 @@ impl MenuTransitionsHelper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "StartBeatmapEditorStandardLevel",
+                "StartStandardLevel",
                 (
-                    beatmapLevelData,
+                    gameMode,
                     beatmapKey,
                     beatmapLevel,
+                    overrideEnvironmentSettings,
+                    overrideColorScheme,
+                    beatmapOverrideColorScheme,
                     gameplayModifiers,
                     playerSpecificSettings,
                     practiceSettings,
-                    colorScheme,
                     environmentsListModel,
-                    useFirstPersonFlyingController,
+                    backButtonText,
+                    useTestNoteCutSoundEffects,
+                    startPaused,
                     beforeSceneSwitchCallback,
+                    afterSceneSwitchCallback,
                     levelFinishedCallback,
+                    levelRestartedCallback,
+                    recordingToolData,
                 ),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleMultiplayerLevelDidFinish(
-        &mut self,
-        multiplayerLevelScenesTransitionSetupData: *mut MultiplayerLevelScenesTransitionSetupDataSO,
-        multiplayerResultsData: *mut MultiplayerResultsData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleMultiplayerLevelDidFinish",
-                (multiplayerLevelScenesTransitionSetupData, multiplayerResultsData),
             )?;
         Ok(__cordl_ret)
     }
@@ -541,48 +563,26 @@ impl MenuTransitionsHelper {
             .invoke("StopStandardLevel", ())?;
         Ok(__cordl_ret)
     }
-    pub fn HandleMultiplayerLevelDidDisconnect(
+    pub fn _HandleBeatmapEditorSceneDidFinish_b__39_0(
         &mut self,
-        multiplayerLevelScenesTransitionSetupData: *mut MultiplayerLevelScenesTransitionSetupDataSO,
-        disconnectedReason: DisconnectedReason,
+        container: *mut crate::Zenject::DiContainer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleMultiplayerLevelDidDisconnect",
-                (multiplayerLevelScenesTransitionSetupData, disconnectedReason),
-            )?;
+            .invoke("<HandleBeatmapEditorSceneDidFinish>b__39_0", (container))?;
         Ok(__cordl_ret)
     }
-    pub fn StartBeatmapEditor(
-        &mut self,
-        beatmapEditorFinishedCallback: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartBeatmapEditor", (beatmapEditorFinishedCallback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MenuTransitionsHelper")]

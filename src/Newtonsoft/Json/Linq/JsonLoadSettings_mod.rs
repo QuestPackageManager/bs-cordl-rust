@@ -27,25 +27,31 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JsonLoadSettings {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonLoadSettings")]
 impl crate::Newtonsoft::Json::Linq::JsonLoadSettings {
-    pub fn get_LineInfoHandling(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Linq::LineInfoHandling> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Newtonsoft::Json::Linq::LineInfoHandling = __cordl_object
-            .invoke("get_LineInfoHandling", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn set_LineInfoHandling(
+    pub fn _ctor(
         &mut self,
-        value: crate::Newtonsoft::Json::Linq::LineInfoHandling,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_LineInfoHandling", (value))?;
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CommentHandling(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Linq::CommentHandling> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Newtonsoft::Json::Linq::CommentHandling = __cordl_object
+            .invoke("get_CommentHandling", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_DuplicatePropertyNameHandling(
@@ -60,25 +66,14 @@ impl crate::Newtonsoft::Json::Linq::JsonLoadSettings {
             .invoke("get_DuplicatePropertyNameHandling", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_DuplicatePropertyNameHandling(
+    pub fn get_LineInfoHandling(
         &mut self,
-        value: crate::Newtonsoft::Json::Linq::DuplicatePropertyNameHandling,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Linq::LineInfoHandling> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_DuplicatePropertyNameHandling", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: crate::Newtonsoft::Json::Linq::LineInfoHandling = __cordl_object
+            .invoke("get_LineInfoHandling", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_CommentHandling(
@@ -92,22 +87,27 @@ impl crate::Newtonsoft::Json::Linq::JsonLoadSettings {
             .invoke("set_CommentHandling", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_CommentHandling(
+    pub fn set_DuplicatePropertyNameHandling(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Linq::CommentHandling> {
+        value: crate::Newtonsoft::Json::Linq::DuplicatePropertyNameHandling,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::Newtonsoft::Json::Linq::CommentHandling = __cordl_object
-            .invoke("get_CommentHandling", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_DuplicatePropertyNameHandling", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_LineInfoHandling(
+        &mut self,
+        value: crate::Newtonsoft::Json::Linq::LineInfoHandling,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_LineInfoHandling", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonLoadSettings")]

@@ -29,10 +29,27 @@ impl std::ops::DerefMut for LocalizedTextAsset {
 impl LocalizedTextAsset {
     #[cfg(feature = "LocalizedTextAsset+__c")]
     pub type __c = crate::GlobalNamespace::LocalizedTextAsset___c;
-    #[cfg(feature = "LocalizedTextAsset+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::GlobalNamespace::LocalizedTextAsset___c__DisplayClass6_0;
     #[cfg(feature = "LocalizedTextAsset+TextInfo")]
     pub type TextInfo = crate::GlobalNamespace::LocalizedTextAsset_TextInfo;
+    #[cfg(feature = "LocalizedTextAsset+__c__DisplayClass6_0")]
+    pub type __c__DisplayClass6_0 = crate::GlobalNamespace::LocalizedTextAsset___c__DisplayClass6_0;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_localizedText(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -57,23 +74,6 @@ impl LocalizedTextAsset {
             *mut crate::GlobalNamespace::LocalizedTextAsset_TextInfo,
         > = __cordl_object.invoke("get_textInfos", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LocalizedTextAsset")]
@@ -113,6 +113,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LocalizedTextAsset_TextInfo 
 }
 #[cfg(feature = "LocalizedTextAsset+TextInfo")]
 impl crate::GlobalNamespace::LocalizedTextAsset_TextInfo {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -122,13 +129,6 @@ impl crate::GlobalNamespace::LocalizedTextAsset_TextInfo {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LocalizedTextAsset+TextInfo")]

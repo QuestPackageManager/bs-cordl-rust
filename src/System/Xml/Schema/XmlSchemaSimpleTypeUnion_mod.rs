@@ -31,49 +31,6 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaSimpleTypeUnion
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleTypeUnion")]
 impl crate::System::Xml::Schema::XmlSchemaSimpleTypeUnion {
-    pub fn set_MemberTypes(
-        &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::XmlQualifiedName,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_MemberTypes", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MemberTypes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::XmlQualifiedName,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::XmlQualifiedName,
-        > = __cordl_object.invoke("get_MemberTypes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_BaseMemberTypes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
-        > = __cordl_object.invoke("get_BaseMemberTypes", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -86,17 +43,12 @@ impl crate::System::Xml::Schema::XmlSchemaSimpleTypeUnion {
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_BaseTypes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection = __cordl_object
-            .invoke("get_BaseTypes", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn SetBaseMemberTypes(
         &mut self,
@@ -121,12 +73,60 @@ impl crate::System::Xml::Schema::XmlSchemaSimpleTypeUnion {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_BaseMemberTypes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+        > = __cordl_object.invoke("get_BaseMemberTypes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_BaseTypes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection = __cordl_object
+            .invoke("get_BaseTypes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MemberTypes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::XmlQualifiedName,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::XmlQualifiedName,
+        > = __cordl_object.invoke("get_MemberTypes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_MemberTypes(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::XmlQualifiedName,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_MemberTypes", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleTypeUnion")]

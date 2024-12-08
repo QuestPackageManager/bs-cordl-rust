@@ -21,16 +21,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Ray {
 }
 #[cfg(feature = "UnityEngine+Ray")]
 impl crate::UnityEngine::Ray {
-    pub fn get_direction(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_direction",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetPoint(
         &mut self,
         distance: f32,
@@ -39,38 +29,6 @@ impl crate::UnityEngine::Ray {
             self,
             "GetPoint",
             (distance),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_origin(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_origin",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_origin(
-        &mut self,
-        value: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_origin",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_direction(
-        &mut self,
-        value: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_direction",
-            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -105,6 +63,48 @@ impl crate::UnityEngine::Ray {
             self,
             ".ctor",
             (origin, direction),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_direction(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_direction",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_origin(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_origin",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_direction(
+        &mut self,
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_direction",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_origin(
+        &mut self,
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_origin",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

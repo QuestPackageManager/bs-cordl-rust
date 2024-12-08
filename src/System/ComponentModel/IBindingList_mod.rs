@@ -24,11 +24,37 @@ impl std::ops::DerefMut for crate::System::ComponentModel::IBindingList {
 }
 #[cfg(feature = "System+ComponentModel+IBindingList")]
 impl crate::System::ComponentModel::IBindingList {
-    pub fn get_AllowEdit(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn AddIndex(
+        &mut self,
+        property: *mut crate::System::ComponentModel::PropertyDescriptor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_AllowEdit", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddIndex", (property))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddNew(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("AddNew", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ApplySort(
+        &mut self,
+        property: *mut crate::System::ComponentModel::PropertyDescriptor,
+        direction: crate::System::ComponentModel::ListSortDirection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ApplySort", (property, direction))?;
         Ok(__cordl_ret)
     }
     pub fn Find(
@@ -40,6 +66,94 @@ impl crate::System::ComponentModel::IBindingList {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Find", (property, key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveIndex(
+        &mut self,
+        property: *mut crate::System::ComponentModel::PropertyDescriptor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveIndex", (property))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveSort(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveSort", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_AllowEdit(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_AllowEdit", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AllowNew(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_AllowNew", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AllowRemove(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_AllowRemove", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsSorted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsSorted", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SortDirection(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::ComponentModel::ListSortDirection,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::ComponentModel::ListSortDirection = __cordl_object
+            .invoke("get_SortDirection", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SortProperty(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::ComponentModel::PropertyDescriptor,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::ComponentModel::PropertyDescriptor = __cordl_object
+            .invoke("get_SortProperty", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SupportsChangeNotification(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_SupportsChangeNotification", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SupportsSearching(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -55,120 +169,6 @@ impl crate::System::ComponentModel::IBindingList {
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_SupportsSorting", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_IsSorted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsSorted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddNew(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("AddNew", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AllowRemove(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_AllowRemove", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveSort(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveSort", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddIndex(
-        &mut self,
-        property: *mut crate::System::ComponentModel::PropertyDescriptor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddIndex", (property))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ApplySort(
-        &mut self,
-        property: *mut crate::System::ComponentModel::PropertyDescriptor,
-        direction: crate::System::ComponentModel::ListSortDirection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ApplySort", (property, direction))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AllowNew(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_AllowNew", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SortProperty(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::ComponentModel::PropertyDescriptor,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::ComponentModel::PropertyDescriptor = __cordl_object
-            .invoke("get_SortProperty", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SortDirection(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::ComponentModel::ListSortDirection,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::ComponentModel::ListSortDirection = __cordl_object
-            .invoke("get_SortDirection", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SupportsChangeNotification(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_SupportsChangeNotification", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveIndex(
-        &mut self,
-        property: *mut crate::System::ComponentModel::PropertyDescriptor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveIndex", (property))?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+IBindingList")]

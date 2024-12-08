@@ -27,28 +27,6 @@ for crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
 }
 #[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
 impl crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         callback: *mut crate::System::AsyncCallback,
@@ -72,15 +50,37 @@ impl crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
@@ -206,117 +206,12 @@ impl OVROverlay {
     pub const maxInstances: i32 = 15i32;
     #[cfg(feature = "OVROverlay+OverlayShape")]
     pub type OverlayShape = crate::GlobalNamespace::OVROverlay_OverlayShape;
-    #[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
-    pub type ExternalSurfaceObjectCreated = crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated;
-    #[cfg(feature = "OVROverlay+LayerTexture")]
-    pub type LayerTexture = crate::GlobalNamespace::OVROverlay_LayerTexture;
     #[cfg(feature = "OVROverlay+OverlayType")]
     pub type OverlayType = crate::GlobalNamespace::OVROverlay_OverlayType;
-    pub fn LateUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LateUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SubmitLayer(
-        &mut self,
-        overlay: bool,
-        headLocked: bool,
-        noDepthBufferTesting: bool,
-        pose: OVRPose,
-        scale: crate::UnityEngine::Vector3,
-        frameIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "SubmitLayer",
-                (overlay, headLocked, noDepthBufferTesting, pose, scale, frameIndex),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn LatchLayerTextures(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("LatchLayerTextures", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnEnable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateTextureRectMatrix(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateTextureRectMatrix", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OpenVROverlayUpdate(
-        &mut self,
-        scale: crate::UnityEngine::Vector3,
-        pose: OVRPose,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OpenVROverlayUpdate", (scale, pose))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_layerId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_layerId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_texturesPerStage(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_texturesPerStage", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OverrideOverlayTextureInfo(
-        &mut self,
-        srcTexture: *mut crate::UnityEngine::Texture,
-        nativePtr: crate::System::IntPtr,
-        node: crate::UnityEngine::XR::XRNode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OverrideOverlayTextureInfo", (srcTexture, nativePtr, node))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetupEditorPreview(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetupEditorPreview", ())?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "OVROverlay+LayerTexture")]
+    pub type LayerTexture = crate::GlobalNamespace::OVROverlay_LayerTexture;
+    #[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
+    pub type ExternalSurfaceObjectCreated = crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -325,6 +220,48 @@ impl OVROverlay {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn BlitSubImage(
+        &mut self,
+        src: *mut crate::UnityEngine::Texture,
+        dst: *mut crate::UnityEngine::RenderTexture,
+        mat: *mut crate::UnityEngine::Material,
+        rect: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BlitSubImage", (src, dst, mat, rect))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ComputePoseAndScale(
+        &mut self,
+        pose: quest_hook::libil2cpp::ByRefMut<OVRPose>,
+        scale: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        overlay: quest_hook::libil2cpp::ByRefMut<bool>,
+        headLocked: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ComputePoseAndScale", (pose, scale, overlay, headLocked))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ComputeSubmit(
+        &mut self,
+        pose: quest_hook::libil2cpp::ByRefMut<OVRPose>,
+        scale: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        overlay: quest_hook::libil2cpp::ByRefMut<bool>,
+        headLocked: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("ComputeSubmit", (pose, scale, overlay, headLocked))?;
         Ok(__cordl_ret)
     }
     pub fn CreateLayer(
@@ -346,37 +283,6 @@ impl OVROverlay {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn BlitSubImage(
-        &mut self,
-        src: *mut crate::UnityEngine::Texture,
-        dst: *mut crate::UnityEngine::RenderTexture,
-        mat: *mut crate::UnityEngine::Material,
-        rect: crate::UnityEngine::Rect,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BlitSubImage", (src, dst, mat, rect))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_previewInEditor(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_previewInEditor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateLayerTextures(
         &mut self,
         useMipmaps: bool,
@@ -390,18 +296,134 @@ impl OVROverlay {
             .invoke("CreateLayerTextures", (useMipmaps, _cordl_size, isHdr))?;
         Ok(__cordl_ret)
     }
-    pub fn ComputePoseAndScale(
+    pub fn DestroyLayer(
         &mut self,
-        pose: quest_hook::libil2cpp::ByRefMut<OVRPose>,
-        scale: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-        overlay: quest_hook::libil2cpp::ByRefMut<bool>,
-        headLocked: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ComputePoseAndScale", (pose, scale, overlay, headLocked))?;
+            .invoke("DestroyLayer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DestroyLayerTextures(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DestroyLayerTextures", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetBlitRect(
+        &mut self,
+        eyeId: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
+            .invoke("GetBlitRect", (eyeId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetCurrentLayerDesc(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_LayerDesc> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_LayerDesc = __cordl_object
+            .invoke("GetCurrentLayerDesc", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitOVROverlay(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitOVROverlay", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LatchLayerTextures(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("LatchLayerTextures", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LateUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LateUpdate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDisable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDisable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnEnable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnEnable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OpenVROverlayUpdate(
+        &mut self,
+        scale: crate::UnityEngine::Vector3,
+        pose: OVRPose,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OpenVROverlayUpdate", (scale, pose))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OverrideOverlayTextureInfo(
+        &mut self,
+        srcTexture: *mut crate::UnityEngine::Texture,
+        nativePtr: crate::System::IntPtr,
+        node: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OverrideOverlayTextureInfo", (srcTexture, nativePtr, node))?;
         Ok(__cordl_ret)
     }
     pub fn PopulateLayer(
@@ -422,36 +444,6 @@ impl OVROverlay {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn OnDisable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitOVROverlay(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitOVROverlay", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DestroyLayer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DestroyLayer", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn SetPerLayerColorScaleAndOffset(
         &mut self,
         scale: crate::UnityEngine::Vector4,
@@ -462,20 +454,6 @@ impl OVROverlay {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetPerLayerColorScaleAndOffset", (scale, offset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ComputeSubmit(
-        &mut self,
-        pose: quest_hook::libil2cpp::ByRefMut<OVRPose>,
-        scale: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-        overlay: quest_hook::libil2cpp::ByRefMut<bool>,
-        headLocked: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("ComputeSubmit", (pose, scale, overlay, headLocked))?;
         Ok(__cordl_ret)
     }
     pub fn SetSrcDestRects(
@@ -492,15 +470,60 @@ impl OVROverlay {
             .invoke("SetSrcDestRects", (srcLeft, srcRight, destLeft, destRight))?;
         Ok(__cordl_ret)
     }
-    pub fn set_previewInEditor(
+    pub fn SetupEditorPreview(
         &mut self,
-        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_previewInEditor", (value))?;
+            .invoke("SetupEditorPreview", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SubmitLayer(
+        &mut self,
+        overlay: bool,
+        headLocked: bool,
+        noDepthBufferTesting: bool,
+        pose: OVRPose,
+        scale: crate::UnityEngine::Vector3,
+        frameIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "SubmitLayer",
+                (overlay, headLocked, noDepthBufferTesting, pose, scale, frameIndex),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateTextureRectMatrix(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateTextureRectMatrix", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_layerId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_layerId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_layout(
@@ -513,35 +536,18 @@ impl OVROverlay {
             .invoke("get_layout", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetBlitRect(
-        &mut self,
-        eyeId: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+    pub fn get_previewInEditor(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
-            .invoke("GetBlitRect", (eyeId))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_previewInEditor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_texturesPerStage(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DestroyLayerTextures(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DestroyLayerTextures", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_texturesPerStage", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_layerId(
@@ -555,22 +561,16 @@ impl OVROverlay {
             .invoke("set_layerId", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn GetCurrentLayerDesc(
+    pub fn set_previewInEditor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_LayerDesc> {
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_LayerDesc = __cordl_object
-            .invoke("GetCurrentLayerDesc", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_previewInEditor", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVROverlay")]

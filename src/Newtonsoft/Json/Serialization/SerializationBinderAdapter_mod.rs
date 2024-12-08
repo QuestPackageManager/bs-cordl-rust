@@ -28,29 +28,6 @@ for crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
 impl crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
-    pub fn BindToType(
-        &mut self,
-        assemblyName: *mut crate::System::String,
-        typeName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("BindToType", (assemblyName, typeName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        serializationBinder: *mut crate::System::Runtime::Serialization::SerializationBinder,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (serializationBinder))?;
-        Ok(__cordl_ret)
-    }
     pub fn BindToName(
         &mut self,
         serializedType: *mut crate::System::Type,
@@ -64,14 +41,37 @@ impl crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
             .invoke("BindToName", (serializedType, assemblyName, typeName))?;
         Ok(__cordl_ret)
     }
+    pub fn BindToType(
+        &mut self,
+        assemblyName: *mut crate::System::String,
+        typeName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("BindToType", (assemblyName, typeName))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         serializationBinder: *mut crate::System::Runtime::Serialization::SerializationBinder,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (serializationBinder))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        serializationBinder: *mut crate::System::Runtime::Serialization::SerializationBinder,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (serializationBinder))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+SerializationBinderAdapter")]

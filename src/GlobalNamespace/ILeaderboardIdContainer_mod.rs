@@ -23,6 +23,11 @@ impl std::ops::DerefMut for ILeaderboardIdContainer {
 }
 #[cfg(feature = "ILeaderboardIdContainer")]
 impl ILeaderboardIdContainer {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_leaderboardIds(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -35,11 +40,6 @@ impl ILeaderboardIdContainer {
             *mut ILeaderboardIdData,
         > = __cordl_object.invoke("get_leaderboardIds", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "ILeaderboardIdContainer")]

@@ -25,6 +25,15 @@ impl std::ops::DerefMut for crate::UnityEngine::WaitWhile {
 }
 #[cfg(feature = "UnityEngine+WaitWhile")]
 impl crate::UnityEngine::WaitWhile {
+    pub fn New(
+        predicate: *mut crate::System::Func_1<bool>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (predicate))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         predicate: *mut crate::System::Func_1<bool>,
@@ -42,15 +51,6 @@ impl crate::UnityEngine::WaitWhile {
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_keepWaiting", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        predicate: *mut crate::System::Func_1<bool>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (predicate))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+WaitWhile")]

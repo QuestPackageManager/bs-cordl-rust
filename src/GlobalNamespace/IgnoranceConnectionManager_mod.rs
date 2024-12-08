@@ -34,6 +34,13 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectToServerParams {
 }
 #[cfg(feature = "IgnoranceConnectionManager+ConnectToServerParams")]
 impl crate::GlobalNamespace::IgnoranceConnectionManager_ConnectToServerParams {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -43,13 +50,6 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager_ConnectToServerParams {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "IgnoranceConnectionManager+ConnectToServerParams")]
@@ -112,15 +112,67 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
 }
 #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnection")]
 impl crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
-    pub fn set_userId(
+    pub fn Disconnect(
         &mut self,
-        value: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_userId", (value))?;
+            .invoke("Disconnect", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        connectionManager: *mut IgnoranceConnectionManager,
+        peerId: u32,
+        userId: *mut crate::System::String,
+        userName: *mut crate::System::String,
+        isConnectionOwner: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (connectionManager, peerId, userId, userName, isConnectionOwner),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn Send(
+        &mut self,
+        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        deliveryMethod: crate::BGNet::Core::DeliveryMethod,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Send", (writer, deliveryMethod))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        connectionManager: *mut IgnoranceConnectionManager,
+        peerId: u32,
+        userId: *mut crate::System::String,
+        userName: *mut crate::System::String,
+        isConnectionOwner: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (connectionManager, peerId, userId, userName, isConnectionOwner),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isConnectionOwner(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isConnectionOwner", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_userId(
@@ -143,32 +195,26 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
             .invoke("get_userName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Disconnect(
+    pub fn set_isConnectionOwner(
         &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Disconnect", ())?;
+            .invoke("set_isConnectionOwner", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn set_userId(
         &mut self,
-        connectionManager: *mut IgnoranceConnectionManager,
-        peerId: u32,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
-        isConnectionOwner: bool,
+        value: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (connectionManager, peerId, userId, userName, isConnectionOwner),
-            )?;
+            .invoke("set_userId", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_userName(
@@ -181,52 +227,6 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_userName", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn Send(
-        &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-        deliveryMethod: crate::BGNet::Core::DeliveryMethod,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Send", (writer, deliveryMethod))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isConnectionOwner(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isConnectionOwner", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_isConnectionOwner(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_isConnectionOwner", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        connectionManager: *mut IgnoranceConnectionManager,
-        peerId: u32,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
-        isConnectionOwner: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (connectionManager, peerId, userId, userName, isConnectionOwner),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnection")]
@@ -306,51 +306,32 @@ impl IgnoranceConnectionManager {
     pub const kIgnoranceConnectHeader: &'static str = "IgnCon";
     pub const kMaxClientShutdownTimeMs: i32 = 30i32;
     pub const kMaxServerShutdownTimeMs: i32 = 300i32;
-    #[cfg(feature = "IgnoranceConnectionManager+StartServerParams")]
-    pub type StartServerParams = crate::GlobalNamespace::IgnoranceConnectionManager_StartServerParams;
-    #[cfg(feature = "IgnoranceConnectionManager+ConnectToServerParams")]
-    pub type ConnectToServerParams = crate::GlobalNamespace::IgnoranceConnectionManager_ConnectToServerParams;
     #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnectionParamsBase")]
     pub type IgnoranceConnectionParamsBase = crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase;
-    #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnection")]
-    pub type IgnoranceConnection = crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection;
-    #[cfg(feature = "IgnoranceConnectionManager+_DisposeAsync_d__77")]
-    pub type _DisposeAsync_d__77 = crate::GlobalNamespace::IgnoranceConnectionManager__DisposeAsync_d__77;
-    #[cfg(feature = "IgnoranceConnectionManager+ConnectionState")]
-    pub type ConnectionState = crate::GlobalNamespace::IgnoranceConnectionManager_ConnectionState;
+    #[cfg(feature = "IgnoranceConnectionManager+ConnectToServerParams")]
+    pub type ConnectToServerParams = crate::GlobalNamespace::IgnoranceConnectionManager_ConnectToServerParams;
+    #[cfg(feature = "IgnoranceConnectionManager+StartServerParams")]
+    pub type StartServerParams = crate::GlobalNamespace::IgnoranceConnectionManager_StartServerParams;
     #[cfg(feature = "IgnoranceConnectionManager+__c__DisplayClass77_0")]
     pub type __c__DisplayClass77_0 = crate::GlobalNamespace::IgnoranceConnectionManager___c__DisplayClass77_0;
-    #[cfg(feature = "IgnoranceConnectionManager+__c__DisplayClass77_1")]
-    pub type __c__DisplayClass77_1 = crate::GlobalNamespace::IgnoranceConnectionManager___c__DisplayClass77_1;
+    #[cfg(feature = "IgnoranceConnectionManager+ConnectionState")]
+    pub type ConnectionState = crate::GlobalNamespace::IgnoranceConnectionManager_ConnectionState;
     #[cfg(feature = "IgnoranceConnectionManager+_BackgroundDisconnectSentry_d__99")]
     pub type _BackgroundDisconnectSentry_d__99 = crate::GlobalNamespace::IgnoranceConnectionManager__BackgroundDisconnectSentry_d__99;
-    pub fn set_serverUserId(
+    #[cfg(feature = "IgnoranceConnectionManager+__c__DisplayClass77_1")]
+    pub type __c__DisplayClass77_1 = crate::GlobalNamespace::IgnoranceConnectionManager___c__DisplayClass77_1;
+    #[cfg(feature = "IgnoranceConnectionManager+_DisposeAsync_d__77")]
+    pub type _DisposeAsync_d__77 = crate::GlobalNamespace::IgnoranceConnectionManager__DisposeAsync_d__77;
+    #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnection")]
+    pub type IgnoranceConnection = crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection;
+    pub fn BackgroundDisconnectSentry(
         &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_serverUserId", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_userId(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_userId", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isConnecting(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isConnecting", ())?;
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("BackgroundDisconnectSentry", ())?;
         Ok(__cordl_ret)
     }
     pub fn CheckSentryState(
@@ -363,6 +344,131 @@ impl IgnoranceConnectionManager {
             .invoke("CheckSentryState", ())?;
         Ok(__cordl_ret)
     }
+    pub fn Disconnect(
+        &mut self,
+        disconnectedReason: DisconnectedReason,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Disconnect", (disconnectedReason))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DisconnectPeer(
+        &mut self,
+        peerId: u32,
+        disconnectedReason: DisconnectedReason,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DisconnectPeer", (peerId, disconnectedReason))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DisposeAsync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("DisposeAsync", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetConnection(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut IConnection> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut IConnection = __cordl_object
+            .invoke("GetConnection", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetConnectionMessage(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::LiteNetLib::Utils::NetDataWriter> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::LiteNetLib::Utils::NetDataWriter = __cordl_object
+            .invoke("GetConnectionMessage", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleConnectionEvents(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleConnectionEvents", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleDisconnectionEvents(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleDisconnectionEvents", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleIncomingEvents(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleIncomingEvents", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init<T>(
+        &mut self,
+        initParams: *mut IConnectionInitParams_1<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Init", (initParams))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_ITimeProvider_ITaskUtility1(
+        timeProvider: *mut crate::BGNet::Core::ITimeProvider,
+        taskUtility: *mut crate::BGNet::Core::ITaskUtility,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (timeProvider, taskUtility))?;
+        Ok(__cordl_object)
+    }
     pub fn PollUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -373,29 +479,83 @@ impl IgnoranceConnectionManager {
             .invoke("PollUpdate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_onReceivedDataEvent(
+    pub fn Send(
         &mut self,
-        value: *mut crate::System::Action_3<
-            *mut IConnection,
-            *mut crate::LiteNetLib::Utils::NetDataReader,
-            crate::BGNet::Core::DeliveryMethod,
-        >,
+        peerId: u32,
+        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        deliveryMethod: crate::BGNet::Core::DeliveryMethod,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_onReceivedDataEvent", (value))?;
+            .invoke("Send", (peerId, writer, deliveryMethod))?;
         Ok(__cordl_ret)
     }
-    pub fn get_userName(
+    pub fn SendToAll_IConnection1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        deliveryMethod: crate::BGNet::Core::DeliveryMethod,
+        excludingConnection: *mut IConnection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_userName", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendToAll", (writer, deliveryMethod, excludingConnection))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendToAll_NetDataWriter_DeliveryMethod0(
+        &mut self,
+        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        deliveryMethod: crate::BGNet::Core::DeliveryMethod,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendToAll", (writer, deliveryMethod))?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartBackgroundSentry(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartBackgroundSentry", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetConnection(
+        &mut self,
+        peerId: u32,
+        connection: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetConnection", (peerId, connection))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryParseConnectionMessage(
+        &mut self,
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        userId: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        userName: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        isConnectionOwner: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "TryParseConnectionMessage",
+                (reader, userId, userName, isConnectionOwner),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -420,14 +580,70 @@ impl IgnoranceConnectionManager {
             .invoke(".ctor", (timeProvider, taskUtility))?;
         Ok(__cordl_ret)
     }
-    pub fn DisposeAsync(
+    pub fn add_onConnectedEvent(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("DisposeAsync", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_onConnectedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_onConnectionConnectedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut IConnection>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_onConnectionConnectedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_onConnectionDisconnectedEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut IConnection, DisconnectedReason>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_onConnectionDisconnectedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_onConnectionFailedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<ConnectionFailedReason>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_onConnectionFailedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_onDisconnectedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<DisconnectedReason>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_onDisconnectedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_onInitializedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_onInitializedEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_onReceivedDataEvent(
@@ -445,63 +661,25 @@ impl IgnoranceConnectionManager {
             .invoke("add_onReceivedDataEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleConnectionEvents(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_connectionCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleConnectionEvents", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_connectionCount", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Send(
-        &mut self,
-        peerId: u32,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-        deliveryMethod: crate::BGNet::Core::DeliveryMethod,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_isConnected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Send", (peerId, writer, deliveryMethod))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isConnected", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Disconnect(
-        &mut self,
-        disconnectedReason: DisconnectedReason,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_isConnecting(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Disconnect", (disconnectedReason))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SendToAll_NetDataWriter_DeliveryMethod0(
-        &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-        deliveryMethod: crate::BGNet::Core::DeliveryMethod,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendToAll", (writer, deliveryMethod))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SendToAll_IConnection1(
-        &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-        deliveryMethod: crate::BGNet::Core::DeliveryMethod,
-        excludingConnection: *mut IConnection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendToAll", (writer, deliveryMethod, excludingConnection))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isConnecting", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_isConnectionOwner(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -511,40 +689,18 @@ impl IgnoranceConnectionManager {
         let __cordl_ret: bool = __cordl_object.invoke("get_isConnectionOwner", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Init<T>(
-        &mut self,
-        initParams: *mut IConnectionInitParams_1<T>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
+    pub fn get_isDisconnecting(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Init", (initParams))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isDisconnecting", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_onConnectionFailedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<ConnectionFailedReason>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_isDisposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_onConnectionFailedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_userName(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_userName", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isDisposed", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_serverUserId(
@@ -577,182 +733,14 @@ impl IgnoranceConnectionManager {
             .invoke("get_userId", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_onInitializedEvent(
+    pub fn get_userName(
         &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_onInitializedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_onConnectionDisconnectedEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<*mut IConnection, DisconnectedReason>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_onConnectionDisconnectedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_onConnectionFailedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<ConnectionFailedReason>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_onConnectionFailedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetConnectionMessage(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::LiteNetLib::Utils::NetDataWriter> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::LiteNetLib::Utils::NetDataWriter = __cordl_object
-            .invoke("GetConnectionMessage", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_onInitializedEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_onInitializedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_onConnectionConnectedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut IConnection>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_onConnectionConnectedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isConnected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isConnected", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetConnection(
-        &mut self,
-        peerId: u32,
-        connection: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetConnection", (peerId, connection))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_onDisconnectedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<DisconnectedReason>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_onDisconnectedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_onConnectionDisconnectedEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<*mut IConnection, DisconnectedReason>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_onConnectionDisconnectedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_connectionCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_connectionCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isDisposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isDisposed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_onConnectionConnectedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut IConnection>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_onConnectionConnectedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_serverUserName(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_serverUserName", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryParseConnectionMessage(
-        &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-        userId: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-        userName: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-        isConnectionOwner: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "TryParseConnectionMessage",
-                (reader, userId, userName, isConnectionOwner),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isDisconnecting(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isDisconnecting", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_userName", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_onConnectedEvent(
@@ -766,78 +754,37 @@ impl IgnoranceConnectionManager {
             .invoke("remove_onConnectedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleDisconnectionEvents(
+    pub fn remove_onConnectionConnectedEvent(
         &mut self,
+        value: *mut crate::System::Action_1<*mut IConnection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleDisconnectionEvents", ())?;
+            .invoke("remove_onConnectionConnectedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn DisconnectPeer(
+    pub fn remove_onConnectionDisconnectedEvent(
         &mut self,
-        peerId: u32,
-        disconnectedReason: DisconnectedReason,
+        value: *mut crate::System::Action_2<*mut IConnection, DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DisconnectPeer", (peerId, disconnectedReason))?;
+            .invoke("remove_onConnectionDisconnectedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn GetConnection(
+    pub fn remove_onConnectionFailedEvent(
         &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut IConnection> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut IConnection = __cordl_object
-            .invoke("GetConnection", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn BackgroundDisconnectSentry(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("BackgroundDisconnectSentry", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_onConnectedEvent(
-        &mut self,
-        value: *mut crate::System::Action,
+        value: *mut crate::System::Action_1<ConnectionFailedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_onConnectedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleIncomingEvents(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleIncomingEvents", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartBackgroundSentry(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartBackgroundSentry", ())?;
+            .invoke("remove_onConnectionFailedEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn remove_onDisconnectedEvent(
@@ -851,22 +798,75 @@ impl IgnoranceConnectionManager {
             .invoke("remove_onDisconnectedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn remove_onInitializedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_onInitializedEvent", (value))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_ITimeProvider_ITaskUtility1(
-        timeProvider: *mut crate::BGNet::Core::ITimeProvider,
-        taskUtility: *mut crate::BGNet::Core::ITaskUtility,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (timeProvider, taskUtility))?;
-        Ok(__cordl_object)
+    pub fn remove_onReceivedDataEvent(
+        &mut self,
+        value: *mut crate::System::Action_3<
+            *mut IConnection,
+            *mut crate::LiteNetLib::Utils::NetDataReader,
+            crate::BGNet::Core::DeliveryMethod,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_onReceivedDataEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_serverUserId(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_serverUserId", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_serverUserName(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_serverUserName", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_userId(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_userId", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_userName(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_userName", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "IgnoranceConnectionManager")]
@@ -912,6 +912,13 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParams
 }
 #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnectionParamsBase")]
 impl crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -921,13 +928,6 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParam
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnectionParamsBase")]
@@ -974,6 +974,13 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_StartServerParams {
 }
 #[cfg(feature = "IgnoranceConnectionManager+StartServerParams")]
 impl crate::GlobalNamespace::IgnoranceConnectionManager_StartServerParams {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -983,13 +990,6 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager_StartServerParams {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "IgnoranceConnectionManager+StartServerParams")]

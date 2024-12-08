@@ -36,106 +36,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsSignedDataParser {
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataParser")]
 impl crate::Org::BouncyCastle::Cms::CmsSignedDataParser {
-    pub fn GetSignedContent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cms::CmsTypedStream,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cms::CmsTypedStream = __cordl_object
-            .invoke("GetSignedContent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_DigestOids(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("get_DigestOids", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Il2CppArray0(
-        &mut self,
-        sigBlock: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (sigBlock))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_CmsTypedStream_Il2CppArray1(
-        &mut self,
-        signedContent: *mut crate::Org::BouncyCastle::Cms::CmsTypedStream,
-        sigBlock: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (signedContent, sigBlock))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Stream2(
-        &mut self,
-        sigData: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (sigData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_CmsTypedStream_Stream3(
-        &mut self,
-        signedContent: *mut crate::Org::BouncyCastle::Cms::CmsTypedStream,
-        sigData: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (signedContent, sigData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCrls(
-        &mut self,
-        _cordl_type: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::Store::IX509Store = __cordl_object
-            .invoke("GetCrls", (_cordl_type))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Version(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Version", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn PopulateCertCrlSets(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PopulateCertCrlSets", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetAttributeCertificates(
         &mut self,
         _cordl_type: *mut crate::System::String,
@@ -147,30 +47,6 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataParser {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::X509::Store::IX509Store = __cordl_object
             .invoke("GetAttributeCertificates", (_cordl_type))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SignedContentType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier = __cordl_object
-            .invoke("get_SignedContentType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSignerInfos(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cms::SignerInformationStore,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cms::SignerInformationStore = __cordl_object
-            .invoke("GetSignerInfos", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetCertificates(
@@ -186,43 +62,167 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataParser {
             .invoke("GetCertificates", (_cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn New_Il2CppArray0(
-        sigBlock: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (sigBlock))?;
-        Ok(__cordl_object)
+    pub fn GetCrls(
+        &mut self,
+        _cordl_type: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::Store::IX509Store = __cordl_object
+            .invoke("GetCrls", (_cordl_type))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSignedContent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Cms::CmsTypedStream,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Cms::CmsTypedStream = __cordl_object
+            .invoke("GetSignedContent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSignerInfos(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Cms::SignerInformationStore,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Cms::SignerInformationStore = __cordl_object
+            .invoke("GetSignerInfos", ())?;
+        Ok(__cordl_ret)
     }
     pub fn New_CmsTypedStream_Il2CppArray1(
         signedContent: *mut crate::Org::BouncyCastle::Cms::CmsTypedStream,
         sigBlock: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (signedContent, sigBlock))?;
         Ok(__cordl_object)
     }
+    pub fn New_CmsTypedStream_Stream3(
+        signedContent: *mut crate::Org::BouncyCastle::Cms::CmsTypedStream,
+        sigData: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (signedContent, sigData))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray0(
+        sigBlock: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (sigBlock))?;
+        Ok(__cordl_object)
+    }
     pub fn New_Stream2(
         sigData: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (sigData))?;
         Ok(__cordl_object)
     }
-    pub fn New_CmsTypedStream_Stream3(
+    pub fn PopulateCertCrlSets(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PopulateCertCrlSets", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_CmsTypedStream_Il2CppArray1(
+        &mut self,
+        signedContent: *mut crate::Org::BouncyCastle::Cms::CmsTypedStream,
+        sigBlock: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (signedContent, sigBlock))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_CmsTypedStream_Stream3(
+        &mut self,
         signedContent: *mut crate::Org::BouncyCastle::Cms::CmsTypedStream,
         sigData: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (signedContent, sigData))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (signedContent, sigData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppArray0(
+        &mut self,
+        sigBlock: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (sigBlock))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Stream2(
+        &mut self,
+        sigData: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (sigData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_DigestOids(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
+            .invoke("get_DigestOids", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SignedContentType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier = __cordl_object
+            .invoke("get_SignedContentType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Version(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Version", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataParser")]

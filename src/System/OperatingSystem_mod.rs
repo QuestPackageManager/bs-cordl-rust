@@ -38,6 +38,39 @@ impl crate::System::OperatingSystem {
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
+    pub fn GetObjectData(
+        &mut self,
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetObjectData", (info, context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_PlatformID_Version0(
+        platform: crate::System::PlatformID,
+        version: *mut crate::System::Version,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (platform, version))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String1(
+        platform: crate::System::PlatformID,
+        version: *mut crate::System::Version,
+        servicePack: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (platform, version, servicePack))?;
+        Ok(__cordl_object)
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -46,26 +79,6 @@ impl crate::System::OperatingSystem {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("ToString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Platform(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::PlatformID> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::PlatformID = __cordl_object
-            .invoke("get_Platform", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_VersionString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_VersionString", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_PlatformID_Version0(
@@ -93,38 +106,25 @@ impl crate::System::OperatingSystem {
             .invoke(".ctor", (platform, version, servicePack))?;
         Ok(__cordl_ret)
     }
-    pub fn GetObjectData(
+    pub fn get_Platform(
         &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::PlatformID> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetObjectData", (info, context))?;
+        let __cordl_ret: crate::System::PlatformID = __cordl_object
+            .invoke("get_Platform", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_PlatformID_Version0(
-        platform: crate::System::PlatformID,
-        version: *mut crate::System::Version,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (platform, version))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        platform: crate::System::PlatformID,
-        version: *mut crate::System::Version,
-        servicePack: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (platform, version, servicePack))?;
-        Ok(__cordl_object)
+    pub fn get_VersionString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_VersionString", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+OperatingSystem")]

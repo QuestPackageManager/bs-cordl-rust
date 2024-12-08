@@ -26,6 +26,13 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilit
 impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
     #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
     pub type MapPointCallback = crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -35,13 +42,6 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
@@ -97,17 +97,15 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
             .invoke("CheckExisting", (existingEndo, endomorphism))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         endomorphism: *mut crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
         point: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (endomorphism, point))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (endomorphism, point))?;
+        Ok(__cordl_object)
     }
     pub fn Precompute(
         &mut self,
@@ -122,15 +120,17 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
             .invoke("Precompute", (existing))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         endomorphism: *mut crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
         point: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (endomorphism, point))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (endomorphism, point))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]

@@ -28,25 +28,13 @@ for crate::UnityEngine::InputSystem::XR::Eyes {
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+Eyes")]
 impl crate::UnityEngine::InputSystem::XR::Eyes {
-    pub fn set_leftEyeOpenAmount(
+    pub fn get_fixationPoint(
         &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_leftEyeOpenAmount",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_rightEyePosition(
-        &mut self,
-        value: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_rightEyePosition",
-            (value),
+            "get_fixationPoint",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -54,6 +42,34 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_leftEyeOpenAmount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_leftEyePosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_leftEyePosition",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_leftEyeRotation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_ret: crate::UnityEngine::Quaternion = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_leftEyeRotation",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rightEyeOpenAmount(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_rightEyeOpenAmount",
             (),
         )?;
         Ok(__cordl_ret)
@@ -68,32 +84,35 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_fixationPoint(
+    pub fn get_rightEyeRotation(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_ret: crate::UnityEngine::Quaternion = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_fixationPoint",
+            "get_rightEyeRotation",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_rightEyeOpenAmount(
+    pub fn set_fixationPoint(
+        &mut self,
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_fixationPoint",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_leftEyeOpenAmount(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_rightEyeOpenAmount",
+            "set_leftEyeOpenAmount",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_rightEyeOpenAmount(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_rightEyeOpenAmount",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -119,23 +138,25 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_leftEyePosition(
+    pub fn set_rightEyeOpenAmount(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_leftEyePosition",
-            (),
+            "set_rightEyeOpenAmount",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_leftEyeRotation(
+    pub fn set_rightEyePosition(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_ret: crate::UnityEngine::Quaternion = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_leftEyeRotation",
-            (),
+            "set_rightEyePosition",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -147,27 +168,6 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
             self,
             "set_rightEyeRotation",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_fixationPoint(
-        &mut self,
-        value: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_fixationPoint",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_rightEyeRotation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_ret: crate::UnityEngine::Quaternion = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_rightEyeRotation",
-            (),
         )?;
         Ok(__cordl_ret)
     }

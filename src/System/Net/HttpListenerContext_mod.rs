@@ -31,14 +31,24 @@ impl std::ops::DerefMut for crate::System::Net::HttpListenerContext {
 }
 #[cfg(feature = "System+Net+HttpListenerContext")]
 impl crate::System::Net::HttpListenerContext {
-    pub fn get_ErrorMessage(
+    pub fn New(
+        cnc: *mut crate::System::Net::HttpConnection,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (cnc))?;
+        Ok(__cordl_object)
+    }
+    pub fn ParseAuthentication(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        expectedSchemes: crate::System::Net::AuthenticationSchemes,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_ErrorMessage", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ParseAuthentication", (expectedSchemes))?;
         Ok(__cordl_ret)
     }
     pub fn ParseBasicAuthentication(
@@ -54,11 +64,15 @@ impl crate::System::Net::HttpListenerContext {
             .invoke("ParseBasicAuthentication", (authData))?;
         Ok(__cordl_ret)
     }
-    pub fn get_HaveError(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn _ctor(
+        &mut self,
+        cnc: *mut crate::System::Net::HttpConnection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HaveError", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (cnc))?;
         Ok(__cordl_ret)
     }
     pub fn get_Connection(
@@ -71,11 +85,38 @@ impl crate::System::Net::HttpListenerContext {
             .invoke("get_Connection", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_ErrorMessage(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_ErrorMessage", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_ErrorStatus(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ErrorStatus", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HaveError(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_HaveError", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Request(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::HttpListenerRequest> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::HttpListenerRequest = __cordl_object
+            .invoke("get_Request", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Response(
@@ -99,28 +140,6 @@ impl crate::System::Net::HttpListenerContext {
             .invoke("set_ErrorMessage", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        cnc: *mut crate::System::Net::HttpConnection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (cnc))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseAuthentication(
-        &mut self,
-        expectedSchemes: crate::System::Net::AuthenticationSchemes,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ParseAuthentication", (expectedSchemes))?;
-        Ok(__cordl_ret)
-    }
     pub fn set_ErrorStatus(
         &mut self,
         value: i32,
@@ -131,25 +150,6 @@ impl crate::System::Net::HttpListenerContext {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ErrorStatus", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_Request(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::HttpListenerRequest> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::HttpListenerRequest = __cordl_object
-            .invoke("get_Request", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        cnc: *mut crate::System::Net::HttpConnection,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (cnc))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+HttpListenerContext")]

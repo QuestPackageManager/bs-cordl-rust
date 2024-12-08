@@ -24,6 +24,11 @@ impl std::ops::DerefMut for IFilePathSongAudioClipProvider {
 }
 #[cfg(feature = "IFilePathSongAudioClipProvider")]
 impl IFilePathSongAudioClipProvider {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_songAudioClipPath(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -33,11 +38,6 @@ impl IFilePathSongAudioClipProvider {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_songAudioClipPath", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IFilePathSongAudioClipProvider")]

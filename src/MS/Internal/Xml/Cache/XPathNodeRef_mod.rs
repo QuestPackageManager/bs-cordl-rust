@@ -25,18 +25,6 @@ for crate::MS::Internal::Xml::Cache::XPathNodeRef {
 }
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathNodeRef")]
 impl crate::MS::Internal::Xml::Cache::XPathNodeRef {
-    pub fn get_Page(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::MS::Internal::Xml::Cache::XPathNode,
-        >,
-    > {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::MS::Internal::Xml::Cache::XPathNode,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Page", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -65,6 +53,18 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeRef {
             "get_Index",
             (),
         )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Page(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::MS::Internal::Xml::Cache::XPathNode,
+        >,
+    > {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::MS::Internal::Xml::Cache::XPathNode,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Page", ())?;
         Ok(__cordl_ret)
     }
 }

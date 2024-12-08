@@ -34,14 +34,25 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::GradientSetting
 impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas {
     #[cfg(feature = "UnityEngine+UIElements+UIR+GradientSettingsAtlas+RawTexture")]
     pub type RawTexture = crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas_RawTexture;
-    pub fn PrepareAtlas(
+    pub fn Add(
+        &mut self,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::Alloc> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::UIR::Alloc = __cordl_object
+            .invoke("Add", (count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Commit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PrepareAtlas", ())?;
+            .invoke("Commit", ())?;
         Ok(__cordl_ret)
     }
     pub fn Dispose_0(
@@ -65,50 +76,21 @@ impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn get_length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_length", ())?;
-        Ok(__cordl_ret)
+    pub fn New(length: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (length))?;
+        Ok(__cordl_object)
     }
-    pub fn Commit(
+    pub fn PrepareAtlas(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Commit", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MustCommit(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_MustCommit", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_disposed(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_disposed", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_MustCommit(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_MustCommit", (value))?;
+            .invoke("PrepareAtlas", ())?;
         Ok(__cordl_ret)
     }
     pub fn Reset(
@@ -119,27 +101,6 @@ impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Add(
-        &mut self,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::Alloc> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::UIR::Alloc = __cordl_object
-            .invoke("Add", (count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_atlas(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Texture2D = __cordl_object
-            .invoke("get_atlas", ())?;
         Ok(__cordl_ret)
     }
     pub fn Write(
@@ -168,6 +129,23 @@ impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas {
             .invoke(".ctor", (length))?;
         Ok(__cordl_ret)
     }
+    pub fn get_MustCommit(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_MustCommit", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_atlas(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Texture2D = __cordl_object
+            .invoke("get_atlas", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -175,12 +153,34 @@ impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas {
         let __cordl_ret: bool = __cordl_object.invoke("get_disposed", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(length: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (length))?;
-        Ok(__cordl_object)
+    pub fn get_length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_length", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_MustCommit(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_MustCommit", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_disposed(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_disposed", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+GradientSettingsAtlas")]
@@ -220,20 +220,6 @@ for crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas_RawTexture {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+GradientSettingsAtlas+RawTexture")]
 impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas_RawTexture {
-    pub fn WriteRawInt2Packed(
-        &mut self,
-        v0: i32,
-        v1: i32,
-        destX: i32,
-        destY: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WriteRawInt2Packed",
-            (v0, v1, destX, destY),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn WriteRawFloat4Packed(
         &mut self,
         f0: f32,
@@ -247,6 +233,20 @@ impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas_RawTexture {
             self,
             "WriteRawFloat4Packed",
             (f0, f1, f2, f3, destX, destY),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteRawInt2Packed(
+        &mut self,
+        v0: i32,
+        v1: i32,
+        destX: i32,
+        destY: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WriteRawInt2Packed",
+            (v0, v1, destX, destY),
         )?;
         Ok(__cordl_ret)
     }

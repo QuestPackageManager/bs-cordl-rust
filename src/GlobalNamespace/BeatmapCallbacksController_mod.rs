@@ -44,139 +44,6 @@ impl BeatmapCallbacksController {
     type ICallCallbacksBehavior = crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior;
     #[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehavior")]
     pub type CallCallbacksBehavior = crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior;
-    pub fn TriggerBeatmapEvent(
-        &mut self,
-        beatmapEventData: *mut BeatmapEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TriggerBeatmapEvent", (beatmapEventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didProcessAllCallbacksThisFrameEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didProcessAllCallbacksThisFrameEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_sendCallbacksOnBeatmapDataChange(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_sendCallbacksOnBeatmapDataChange", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        initData: *mut crate::GlobalNamespace::BeatmapCallbacksController_InitData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (initData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleBeatmapEventDataWillBeRemoved(
-        &mut self,
-        beatmapEventDataToRemove: *mut BeatmapEventData,
-        nodeToRemove: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut BeatmapDataItem,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleBeatmapEventDataWillBeRemoved",
-                (beatmapEventDataToRemove, nodeToRemove),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleBeatmapEventDataWasInserted(
-        &mut self,
-        beatmapEventData: *mut BeatmapEventData,
-        node: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut BeatmapDataItem,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleBeatmapEventDataWasInserted", (beatmapEventData, node))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleBeatmapEventDataWasRemoved(
-        &mut self,
-        beatmapEventData: *mut BeatmapEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleBeatmapEventDataWasRemoved", (beatmapEventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ManualUpdate(
-        &mut self,
-        songTime: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ManualUpdate", (songTime))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReplayState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReplayState", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddBeatmapCallback_f32_BeatmapDataCallback_1_0<T>(
-        &mut self,
-        aheadTime: f32,
-        callback: *mut BeatmapDataCallback_1<T>,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapDataCallbackWrapper>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut BeatmapDataCallbackWrapper = __cordl_object
-            .invoke("AddBeatmapCallback", (aheadTime, callback))?;
-        Ok(__cordl_ret)
-    }
     pub fn AddBeatmapCallback_BeatmapDataCallback_1_1<T>(
         &mut self,
         callback: *mut BeatmapDataCallback_1<T>,
@@ -208,6 +75,22 @@ impl BeatmapCallbacksController {
             .invoke("AddBeatmapCallback", (callback, beatmapDataSubtypeIdentifiers))?;
         Ok(__cordl_ret)
     }
+    pub fn AddBeatmapCallback_f32_BeatmapDataCallback_1_0<T>(
+        &mut self,
+        aheadTime: f32,
+        callback: *mut BeatmapDataCallback_1<T>,
+    ) -> quest_hook::libil2cpp::Result<*mut BeatmapDataCallbackWrapper>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut BeatmapDataCallbackWrapper = __cordl_object
+            .invoke("AddBeatmapCallback", (aheadTime, callback))?;
+        Ok(__cordl_ret)
+    }
     pub fn AddBeatmapCallback_f32_BeatmapDataCallback_1_Il2CppArray3<T>(
         &mut self,
         aheadTime: f32,
@@ -228,6 +111,132 @@ impl BeatmapCallbacksController {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleBeatmapEventDataWasInserted(
+        &mut self,
+        beatmapEventData: *mut BeatmapEventData,
+        node: *mut crate::System::Collections::Generic::LinkedListNode_1<
+            *mut BeatmapDataItem,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleBeatmapEventDataWasInserted", (beatmapEventData, node))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleBeatmapEventDataWasRemoved(
+        &mut self,
+        beatmapEventData: *mut BeatmapEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleBeatmapEventDataWasRemoved", (beatmapEventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleBeatmapEventDataWillBeRemoved(
+        &mut self,
+        beatmapEventDataToRemove: *mut BeatmapEventData,
+        nodeToRemove: *mut crate::System::Collections::Generic::LinkedListNode_1<
+            *mut BeatmapDataItem,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleBeatmapEventDataWillBeRemoved",
+                (beatmapEventDataToRemove, nodeToRemove),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ManualUpdate(
+        &mut self,
+        songTime: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ManualUpdate", (songTime))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        initData: *mut crate::GlobalNamespace::BeatmapCallbacksController_InitData,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (initData))?;
+        Ok(__cordl_object)
+    }
+    pub fn RemoveBeatmapCallback(
+        &mut self,
+        callbackWrapper: *mut BeatmapDataCallbackWrapper,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveBeatmapCallback", (callbackWrapper))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReplayState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReplayState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TriggerBeatmapEvent(
+        &mut self,
+        beatmapEventData: *mut BeatmapEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("TriggerBeatmapEvent", (beatmapEventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        initData: *mut crate::GlobalNamespace::BeatmapCallbacksController_InitData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (initData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didProcessAllCallbacksThisFrameEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didProcessAllCallbacksThisFrameEvent", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_sendCallbacksOnBeatmapDataChange(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -236,6 +245,13 @@ impl BeatmapCallbacksController {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_sendCallbacksOnBeatmapDataChange", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_songTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_songTime", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_didProcessAllCallbacksThisFrameEvent(
@@ -249,32 +265,16 @@ impl BeatmapCallbacksController {
             .invoke("remove_didProcessAllCallbacksThisFrameEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_songTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_songTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveBeatmapCallback(
+    pub fn set_sendCallbacksOnBeatmapDataChange(
         &mut self,
-        callbackWrapper: *mut BeatmapDataCallbackWrapper,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveBeatmapCallback", (callbackWrapper))?;
+            .invoke("set_sendCallbacksOnBeatmapDataChange", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        initData: *mut crate::GlobalNamespace::BeatmapCallbacksController_InitData,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (initData))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapCallbacksController")]
@@ -315,16 +315,6 @@ for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior {
 }
 #[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehavior")]
 impl crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CallCallbacks(
         &mut self,
         callbacksInTime: *mut CallbacksInTime,
@@ -336,6 +326,13 @@ impl crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CallCallbacks", (callbacksInTime, beatmapDataItem))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Replay(
         &mut self,
@@ -351,12 +348,15 @@ impl crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior {
             .invoke("Replay", (callbacksInTimes))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehavior")]
@@ -402,16 +402,6 @@ for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehaviorWith
 }
 #[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehaviorWithLastState")]
 impl crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehaviorWithLastState {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CallCallbacks(
         &mut self,
         callbacksInTime: *mut CallbacksInTime,
@@ -423,6 +413,13 @@ impl crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehaviorWit
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CallCallbacks", (callbacksInTime, beatmapDataItem))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Replay(
         &mut self,
@@ -438,12 +435,15 @@ impl crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehaviorWit
             .invoke("Replay", (callbacksInTimes))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehaviorWithLastState")]
@@ -557,6 +557,20 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapCallbacksController_I
 }
 #[cfg(feature = "BeatmapCallbacksController+InitData")]
 impl crate::GlobalNamespace::BeatmapCallbacksController_InitData {
+    pub fn New(
+        beatmapData: *mut IReadonlyBeatmapData,
+        startFilterTime: f32,
+        shouldKeepReplayState: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (beatmapData, startFilterTime, shouldKeepReplayState),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         beatmapData: *mut IReadonlyBeatmapData,
@@ -569,20 +583,6 @@ impl crate::GlobalNamespace::BeatmapCallbacksController_InitData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (beatmapData, startFilterTime, shouldKeepReplayState))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        beatmapData: *mut IReadonlyBeatmapData,
-        startFilterTime: f32,
-        shouldKeepReplayState: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (beatmapData, startFilterTime, shouldKeepReplayState),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapCallbacksController+InitData")]

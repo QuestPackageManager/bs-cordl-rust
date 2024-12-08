@@ -37,6 +37,16 @@ impl crate::Org::BouncyCastle::Crypto::Tls::NewSessionTicket {
             .invoke("Encode", (output))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        ticketLifetimeHint: i64,
+        ticket: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ticketLifetimeHint, ticket))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         ticketLifetimeHint: i64,
@@ -65,16 +75,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::NewSessionTicket {
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_TicketLifetimeHint", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        ticketLifetimeHint: i64,
-        ticket: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ticketLifetimeHint, ticket))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+NewSessionTicket")]

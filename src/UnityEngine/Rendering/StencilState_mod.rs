@@ -33,25 +33,33 @@ for crate::UnityEngine::Rendering::StencilState {
 }
 #[cfg(feature = "UnityEngine+Rendering+StencilState")]
 impl crate::UnityEngine::Rendering::StencilState {
-    pub fn set_passOperationFront(
+    pub fn Equals_Object1(
         &mut self,
-        value: crate::UnityEngine::Rendering::StencilOp,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_passOperationFront",
-            (value),
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_passOperationBack(
+    pub fn Equals_StencilState0(
         &mut self,
-        value: crate::UnityEngine::Rendering::StencilOp,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::Rendering::StencilState,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_passOperationBack",
-            (value),
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -62,6 +70,17 @@ impl crate::UnityEngine::Rendering::StencilState {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_compareFunctionBack",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_compareFunctionFront(
+        &mut self,
+        value: crate::UnityEngine::Rendering::CompareFunction,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_compareFunctionFront",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -77,14 +96,6 @@ impl crate::UnityEngine::Rendering::StencilState {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_failOperationBack(
         &mut self,
         value: crate::UnityEngine::Rendering::StencilOp,
@@ -92,50 +103,6 @@ impl crate::UnityEngine::Rendering::StencilState {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_failOperationBack",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_readMask(
-        &mut self,
-        value: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_readMask",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_StencilState0(
-        &mut self,
-        other: crate::UnityEngine::Rendering::StencilState,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_writeMask(
-        &mut self,
-        value: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_writeMask",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -151,13 +118,46 @@ impl crate::UnityEngine::Rendering::StencilState {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_zFailOperationFront(
+    pub fn set_passOperationBack(
         &mut self,
         value: crate::UnityEngine::Rendering::StencilOp,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_zFailOperationFront",
+            "set_passOperationBack",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_passOperationFront(
+        &mut self,
+        value: crate::UnityEngine::Rendering::StencilOp,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_passOperationFront",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_readMask(
+        &mut self,
+        value: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_readMask",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_writeMask(
+        &mut self,
+        value: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_writeMask",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -173,13 +173,13 @@ impl crate::UnityEngine::Rendering::StencilState {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_compareFunctionFront(
+    pub fn set_zFailOperationFront(
         &mut self,
-        value: crate::UnityEngine::Rendering::CompareFunction,
+        value: crate::UnityEngine::Rendering::StencilOp,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_compareFunctionFront",
+            "set_zFailOperationFront",
             (value),
         )?;
         Ok(__cordl_ret)

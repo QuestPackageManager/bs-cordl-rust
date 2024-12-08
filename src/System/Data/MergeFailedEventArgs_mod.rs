@@ -26,6 +26,16 @@ impl std::ops::DerefMut for crate::System::Data::MergeFailedEventArgs {
 }
 #[cfg(feature = "System+Data+MergeFailedEventArgs")]
 impl crate::System::Data::MergeFailedEventArgs {
+    pub fn New(
+        table: *mut crate::System::Data::DataTable,
+        conflict: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (table, conflict))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         table: *mut crate::System::Data::DataTable,
@@ -47,16 +57,6 @@ impl crate::System::Data::MergeFailedEventArgs {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_Conflict", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        table: *mut crate::System::Data::DataTable,
-        conflict: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (table, conflict))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Data+MergeFailedEventArgs")]

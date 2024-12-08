@@ -36,6 +36,63 @@ impl crate::Org::BouncyCastle::Ocsp::CertificateID {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret)
     }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetIssuerKeyHash(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetIssuerKeyHash", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetIssuerNameHash(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetIssuerNameHash", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn MatchesIssuer(
+        &mut self,
+        issuerCert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("MatchesIssuer", (issuerCert))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_CertID0(
+        id: *mut crate::Org::BouncyCastle::Asn1::Ocsp::CertID,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (id))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_X509Certificate_BigInteger1(
+        hashAlgorithm: *mut crate::System::String,
+        issuerCert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+        serialNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (hashAlgorithm, issuerCert, serialNumber))?;
+        Ok(__cordl_object)
+    }
     pub fn ToAsn1Object(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -82,43 +139,6 @@ impl crate::Org::BouncyCastle::Ocsp::CertificateID {
             .invoke("get_HashAlgOid", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetIssuerNameHash(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetIssuerNameHash", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetIssuerKeyHash(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetIssuerKeyHash", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MatchesIssuer(
-        &mut self,
-        issuerCert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MatchesIssuer", (issuerCert))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_SerialNumber(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
@@ -128,26 +148,6 @@ impl crate::Org::BouncyCastle::Ocsp::CertificateID {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
             .invoke("get_SerialNumber", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_CertID0(
-        id: *mut crate::Org::BouncyCastle::Asn1::Ocsp::CertID,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (id))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_X509Certificate_BigInteger1(
-        hashAlgorithm: *mut crate::System::String,
-        issuerCert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-        serialNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (hashAlgorithm, issuerCert, serialNumber))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+CertificateID")]

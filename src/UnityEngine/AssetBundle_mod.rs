@@ -37,16 +37,52 @@ impl crate::UnityEngine::AssetBundle {
         > = __cordl_object.invoke("GetAllAssetNames", ())?;
         Ok(__cordl_ret)
     }
-    pub fn LoadAssetWithSubAssetsAsync(
+    pub fn GetAllScenePaths(
         &mut self,
-        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::String,
+        > = __cordl_object.invoke("GetAllScenePaths", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadAllAssetsAsync_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AssetBundleRequest> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::AssetBundleRequest = __cordl_object
+            .invoke("LoadAllAssetsAsync", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadAllAssetsAsync_1<T>(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AssetBundleRequest>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::AssetBundleRequest = __cordl_object
+            .invoke("LoadAllAssetsAsync", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadAllAssetsAsync_Type2(
+        &mut self,
         _cordl_type: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AssetBundleRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::UnityEngine::AssetBundleRequest = __cordl_object
-            .invoke("LoadAssetWithSubAssetsAsync", (name, _cordl_type))?;
+            .invoke("LoadAllAssetsAsync", (_cordl_type))?;
         Ok(__cordl_ret)
     }
     pub fn LoadAssetAsync_Internal(
@@ -61,14 +97,67 @@ impl crate::UnityEngine::AssetBundle {
             .invoke("LoadAssetAsync_Internal", (name, _cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn LoadAssetAsync_String0<T>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AssetBundleRequest>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::AssetBundleRequest = __cordl_object
+            .invoke("LoadAssetAsync", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadAssetAsync_Type1(
+        &mut self,
+        name: *mut crate::System::String,
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AssetBundleRequest> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::AssetBundleRequest = __cordl_object
+            .invoke("LoadAssetAsync", (name, _cordl_type))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadAssetWithSubAssetsAsync(
+        &mut self,
+        name: *mut crate::System::String,
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AssetBundleRequest> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::AssetBundleRequest = __cordl_object
+            .invoke("LoadAssetWithSubAssetsAsync", (name, _cordl_type))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadAssetWithSubAssetsAsync_Internal(
+        &mut self,
+        name: *mut crate::System::String,
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AssetBundleRequest> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::AssetBundleRequest = __cordl_object
+            .invoke("LoadAssetWithSubAssetsAsync_Internal", (name, _cordl_type))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadAsset_Internal(
+        &mut self,
+        name: *mut crate::System::String,
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Object = __cordl_object
+            .invoke("LoadAsset_Internal", (name, _cordl_type))?;
         Ok(__cordl_ret)
     }
     pub fn LoadAsset_String0(
@@ -108,40 +197,12 @@ impl crate::UnityEngine::AssetBundle {
             .invoke("LoadAsset", (name, _cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn LoadAllAssetsAsync_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AssetBundleRequest> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::AssetBundleRequest = __cordl_object
-            .invoke("LoadAllAssetsAsync", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadAllAssetsAsync_1<T>(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AssetBundleRequest>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::AssetBundleRequest = __cordl_object
-            .invoke("LoadAllAssetsAsync", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadAllAssetsAsync_Type2(
-        &mut self,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AssetBundleRequest> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::AssetBundleRequest = __cordl_object
-            .invoke("LoadAllAssetsAsync", (_cordl_type))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Unload(
         &mut self,
@@ -152,46 +213,6 @@ impl crate::UnityEngine::AssetBundle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Unload", (unloadAllLoadedObjects))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAllScenePaths(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
-        > = __cordl_object.invoke("GetAllScenePaths", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadAssetAsync_String0<T>(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AssetBundleRequest>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::AssetBundleRequest = __cordl_object
-            .invoke("LoadAssetAsync", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadAssetAsync_Type1(
-        &mut self,
-        name: *mut crate::System::String,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AssetBundleRequest> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::AssetBundleRequest = __cordl_object
-            .invoke("LoadAssetAsync", (name, _cordl_type))?;
         Ok(__cordl_ret)
     }
     pub fn UnloadAsync(
@@ -207,36 +228,15 @@ impl crate::UnityEngine::AssetBundle {
             .invoke("UnloadAsync", (unloadAllLoadedObjects))?;
         Ok(__cordl_ret)
     }
-    pub fn LoadAsset_Internal(
+    pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Object = __cordl_object
-            .invoke("LoadAsset_Internal", (name, _cordl_type))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn LoadAssetWithSubAssetsAsync_Internal(
-        &mut self,
-        name: *mut crate::System::String,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AssetBundleRequest> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::AssetBundleRequest = __cordl_object
-            .invoke("LoadAssetWithSubAssetsAsync_Internal", (name, _cordl_type))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+AssetBundle")]

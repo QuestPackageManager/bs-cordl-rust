@@ -28,6 +28,18 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventD
 }
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+EventData")]
 impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData {
+    pub fn New(
+        _cordl_time: f32,
+        _cordl_type: crate::BeatmapSaveDataCommon::BeatmapEventType,
+        value: i32,
+        floatValue: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_time, _cordl_type, value, floatValue))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         _cordl_time: f32,
@@ -42,6 +54,20 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData {
             .invoke(".ctor", (_cordl_time, _cordl_type, value, floatValue))?;
         Ok(__cordl_ret)
     }
+    pub fn get_floatValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_floatValue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_time", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_type(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::BeatmapEventType> {
@@ -52,38 +78,12 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData {
             .invoke("get_type", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_time", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_value", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_floatValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_floatValue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        _cordl_time: f32,
-        _cordl_type: crate::BeatmapSaveDataCommon::BeatmapEventType,
-        value: i32,
-        floatValue: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_time, _cordl_type, value, floatValue))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+EventData")]

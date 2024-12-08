@@ -23,6 +23,20 @@ for crate::Unity::Burst::FunctionPointer_1<T> {
 }
 #[cfg(feature = "Unity+Burst+FunctionPointer_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::FunctionPointer_1<T> {
+    pub fn CheckIsCreated(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CheckIsCreated",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Unity_Burst_IFunctionPointer_FromIntPtr(
         &mut self,
         ptr: crate::System::IntPtr,
@@ -50,20 +64,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::FunctionPointer_1<T> {
             self,
             ".ctor",
             (ptr),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckIsCreated(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CheckIsCreated",
-            (),
         )?;
         Ok(__cordl_ret)
     }

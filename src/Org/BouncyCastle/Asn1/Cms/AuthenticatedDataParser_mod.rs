@@ -30,7 +30,7 @@ for crate::Org::BouncyCastle::Asn1::Cms::AuthenticatedDataParser {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+AuthenticatedDataParser")]
 impl crate::Org::BouncyCastle::Asn1::Cms::AuthenticatedDataParser {
-    pub fn GetRecipientInfos(
+    pub fn GetAuthAttrs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Asn1::Asn1SetParser,
@@ -39,18 +39,7 @@ impl crate::Org::BouncyCastle::Asn1::Cms::AuthenticatedDataParser {
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1SetParser = __cordl_object
-            .invoke("GetRecipientInfos", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1SequenceParser,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seq))?;
+            .invoke("GetAuthAttrs", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetDigestAlgorithm(
@@ -65,6 +54,18 @@ impl crate::Org::BouncyCastle::Asn1::Cms::AuthenticatedDataParser {
             .invoke("GetDigestAlgorithm", ())?;
         Ok(__cordl_ret)
     }
+    pub fn GetEnapsulatedContentInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfoParser,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfoParser = __cordl_object
+            .invoke("GetEnapsulatedContentInfo", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetMac(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -75,30 +76,6 @@ impl crate::Org::BouncyCastle::Asn1::Cms::AuthenticatedDataParser {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString = __cordl_object
             .invoke("GetMac", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetUnauthAttrs(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Asn1SetParser,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1SetParser = __cordl_object
-            .invoke("GetUnauthAttrs", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAuthAttrs(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Asn1SetParser,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1SetParser = __cordl_object
-            .invoke("GetAuthAttrs", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetMacAlgorithm(
@@ -113,28 +90,6 @@ impl crate::Org::BouncyCastle::Asn1::Cms::AuthenticatedDataParser {
             .invoke("GetMacAlgorithm", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetEnapsulatedContentInfo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfoParser,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfoParser = __cordl_object
-            .invoke("GetEnapsulatedContentInfo", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Version(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::DerInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
-            .invoke("get_Version", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetOriginatorInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -147,14 +102,59 @@ impl crate::Org::BouncyCastle::Asn1::Cms::AuthenticatedDataParser {
             .invoke("GetOriginatorInfo", ())?;
         Ok(__cordl_ret)
     }
+    pub fn GetRecipientInfos(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Asn1SetParser,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1SetParser = __cordl_object
+            .invoke("GetRecipientInfos", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetUnauthAttrs(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Asn1SetParser,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1SetParser = __cordl_object
+            .invoke("GetUnauthAttrs", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         seq: *mut crate::Org::BouncyCastle::Asn1::Asn1SequenceParser,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1SequenceParser,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (seq))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Version(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::DerInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
+            .invoke("get_Version", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+AuthenticatedDataParser")]

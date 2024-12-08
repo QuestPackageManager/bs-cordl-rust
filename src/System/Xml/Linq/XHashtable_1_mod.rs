@@ -74,6 +74,16 @@ impl<
             .invoke("Invoke", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -89,16 +99,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Linq+XHashtable_1+ExtractKeyDelegate")]
@@ -152,10 +152,13 @@ impl<
 > crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue> {
     #[cfg(feature = "System+Xml+Linq+XHashtable_1+XHashtableState+Entry")]
     pub type Entry = crate::System::Xml::Linq::XHashtableState_Entry<TValue>;
-    pub fn TryAdd(
+    pub fn FindEntry(
         &mut self,
-        value: TValue,
-        newValue: quest_hook::libil2cpp::ByRefMut<TValue>,
+        hashCode: i32,
+        key: *mut crate::System::String,
+        index: i32,
+        count: i32,
+        entryIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -164,26 +167,21 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("TryAdd", (value, newValue))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("FindEntry", (hashCode, key, index, count, entryIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         extractKey: *mut crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<
             TValue,
         >,
         capacity: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (extractKey, capacity))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (extractKey, capacity))?;
+        Ok(__cordl_object)
     }
     pub fn Resize(
         &mut self,
@@ -202,13 +200,10 @@ impl<
         > = __cordl_object.invoke("Resize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn FindEntry(
+    pub fn TryAdd(
         &mut self,
-        hashCode: i32,
-        key: *mut crate::System::String,
-        index: i32,
-        count: i32,
-        entryIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        value: TValue,
+        newValue: quest_hook::libil2cpp::ByRefMut<TValue>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -217,8 +212,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("FindEntry", (hashCode, key, index, count, entryIndex))?;
+        let __cordl_ret: bool = __cordl_object.invoke("TryAdd", (value, newValue))?;
         Ok(__cordl_ret)
     }
     pub fn TryGetValue(
@@ -239,17 +233,23 @@ impl<
             .invoke("TryGetValue", (key, index, count, value))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         extractKey: *mut crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<
             TValue,
         >,
         capacity: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (extractKey, capacity))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (extractKey, capacity))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Linq+XHashtable_1+XHashtableState")]
@@ -313,23 +313,17 @@ impl<
         let __cordl_ret: TValue = __cordl_object.invoke("Add", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         extractKey: *mut crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<
             TValue,
         >,
         capacity: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (extractKey, capacity))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (extractKey, capacity))?;
+        Ok(__cordl_object)
     }
     pub fn TryGetValue(
         &mut self,
@@ -349,17 +343,23 @@ impl<
             .invoke("TryGetValue", (key, index, count, value))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         extractKey: *mut crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<
             TValue,
         >,
         capacity: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (extractKey, capacity))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (extractKey, capacity))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Linq+XHashtable_1")]

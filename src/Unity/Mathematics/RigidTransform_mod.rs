@@ -23,44 +23,9 @@ for crate::Unity::Mathematics::RigidTransform {
 }
 #[cfg(feature = "Unity+Mathematics+RigidTransform")]
 impl crate::Unity::Mathematics::RigidTransform {
-    pub fn _ctor_quaternion_float3_0(
+    pub fn Equals_Object1(
         &mut self,
-        rotation: crate::Unity::Mathematics::quaternion,
-        translation: crate::Unity::Mathematics::float3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (rotation, translation),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_float3x3_float3_1(
-        &mut self,
-        rotation: crate::Unity::Mathematics::float3x3,
-        translation: crate::Unity::Mathematics::float3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (rotation, translation),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_float4x4_2(
-        &mut self,
-        transform: crate::Unity::Mathematics::float4x4,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (transform),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_RigidTransform0(
-        &mut self,
-        x: crate::Unity::Mathematics::RigidTransform,
+        x: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -69,9 +34,9 @@ impl crate::Unity::Mathematics::RigidTransform {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object1(
+    pub fn Equals_RigidTransform0(
         &mut self,
-        x: *mut crate::System::Object,
+        x: crate::Unity::Mathematics::RigidTransform,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -107,6 +72,41 @@ impl crate::Unity::Mathematics::RigidTransform {
             self,
             "ToString",
             (format, formatProvider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_float3x3_float3_1(
+        &mut self,
+        rotation: crate::Unity::Mathematics::float3x3,
+        translation: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (rotation, translation),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_float4x4_2(
+        &mut self,
+        transform: crate::Unity::Mathematics::float4x4,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (transform),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_quaternion_float3_0(
+        &mut self,
+        rotation: crate::Unity::Mathematics::quaternion,
+        translation: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (rotation, translation),
         )?;
         Ok(__cordl_ret)
     }

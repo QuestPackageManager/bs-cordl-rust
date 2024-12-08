@@ -53,44 +53,14 @@ impl std::ops::DerefMut for EventsTestGameplayManager {
 #[cfg(feature = "EventsTestGameplayManager")]
 impl EventsTestGameplayManager {
     pub const kNumberOfLightGroups: i32 = 20i32;
-    #[cfg(feature = "EventsTestGameplayManager+__c__DisplayClass20_0")]
-    pub type __c__DisplayClass20_0 = crate::GlobalNamespace::EventsTestGameplayManager___c__DisplayClass20_0;
-    #[cfg(feature = "EventsTestGameplayManager+__c__DisplayClass18_0")]
-    pub type __c__DisplayClass18_0 = crate::GlobalNamespace::EventsTestGameplayManager___c__DisplayClass18_0;
-    #[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
-    pub type MockBeatToTimeConverter = crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter;
     #[cfg(feature = "EventsTestGameplayManager+__c__DisplayClass19_0")]
     pub type __c__DisplayClass19_0 = crate::GlobalNamespace::EventsTestGameplayManager___c__DisplayClass19_0;
-    pub fn AddTestBox(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddTestBox", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "EventsTestGameplayManager+__c__DisplayClass20_0")]
+    pub type __c__DisplayClass20_0 = crate::GlobalNamespace::EventsTestGameplayManager___c__DisplayClass20_0;
+    #[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
+    pub type MockBeatToTimeConverter = crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter;
+    #[cfg(feature = "EventsTestGameplayManager+__c__DisplayClass18_0")]
+    pub type __c__DisplayClass18_0 = crate::GlobalNamespace::EventsTestGameplayManager___c__DisplayClass18_0;
     pub fn AddEventsForLightGroup(
         &mut self,
         lightGroupId: i32,
@@ -100,6 +70,27 @@ impl EventsTestGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddEventsForLightGroup", (lightGroupId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddInstantToggleEventsForLightGroup(
+        &mut self,
+        lightGroupId: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddInstantToggleEventsForLightGroup", (lightGroupId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddTestBox(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddTestBox", ())?;
         Ok(__cordl_ret)
     }
     pub fn AddToggleEventsForLightGroup(
@@ -114,16 +105,12 @@ impl EventsTestGameplayManager {
             .invoke("AddToggleEventsForLightGroup", (lightGroupId, color))?;
         Ok(__cordl_ret)
     }
-    pub fn AddInstantToggleEventsForLightGroup(
-        &mut self,
-        lightGroupId: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddInstantToggleEventsForLightGroup", (lightGroupId))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Start(
         &mut self,
@@ -135,12 +122,25 @@ impl EventsTestGameplayManager {
             .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "EventsTestGameplayManager")]
@@ -182,17 +182,6 @@ for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
 }
 #[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
 impl crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
-    pub fn _ctor(
-        &mut self,
-        bpm: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bpm))?;
-        Ok(__cordl_ret)
-    }
     pub fn ConvertBeatToTime(
         &mut self,
         beat: f32,
@@ -203,12 +192,23 @@ impl crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
         let __cordl_ret: f32 = __cordl_object.invoke("ConvertBeatToTime", (beat))?;
         Ok(__cordl_ret)
     }
-    pub fn New(bpm: f32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New(bpm: f32) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bpm))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        bpm: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bpm))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]

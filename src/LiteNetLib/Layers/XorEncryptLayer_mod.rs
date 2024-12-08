@@ -25,21 +25,30 @@ impl std::ops::DerefMut for crate::LiteNetLib::Layers::XorEncryptLayer {
 }
 #[cfg(feature = "LiteNetLib+Layers+XorEncryptLayer")]
 impl crate::LiteNetLib::Layers::XorEncryptLayer {
-    pub fn ProcessOutBoundPacket(
-        &mut self,
-        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
-        data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
-        offset: quest_hook::libil2cpp::ByRefMut<i32>,
-        length: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessOutBoundPacket", (remoteEndPoint, data, offset, length))?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray1(
+        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (key))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String2(
+        key: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (key))?;
+        Ok(__cordl_object)
     }
     pub fn ProcessInboundPacket(
         &mut self,
@@ -57,9 +66,25 @@ impl crate::LiteNetLib::Layers::XorEncryptLayer {
             .invoke("ProcessInboundPacket", (remoteEndPoint, data, offset, length))?;
         Ok(__cordl_ret)
     }
-    pub fn SetKey_String0(
+    pub fn ProcessOutBoundPacket(
         &mut self,
-        key: *mut crate::System::String,
+        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
+        data: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        offset: quest_hook::libil2cpp::ByRefMut<i32>,
+        length: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessOutBoundPacket", (remoteEndPoint, data, offset, length))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetKey_Il2CppArray1(
+        &mut self,
+        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -68,9 +93,9 @@ impl crate::LiteNetLib::Layers::XorEncryptLayer {
             .invoke("SetKey", (key))?;
         Ok(__cordl_ret)
     }
-    pub fn SetKey_Il2CppArray1(
+    pub fn SetKey_String0(
         &mut self,
-        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        key: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -110,31 +135,6 @@ impl crate::LiteNetLib::Layers::XorEncryptLayer {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (key))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray1(
-        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (key))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String2(
-        key: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (key))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LiteNetLib+Layers+XorEncryptLayer")]

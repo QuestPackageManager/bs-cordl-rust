@@ -22,27 +22,6 @@ for crate::UnityEngine::Audio::AudioPlayableOutput {
 }
 #[cfg(feature = "UnityEngine+Audio+AudioPlayableOutput")]
 impl crate::UnityEngine::Audio::AudioPlayableOutput {
-    pub fn GetTarget(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AudioSource> {
-        let __cordl_ret: *mut crate::UnityEngine::AudioSource = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetTarget",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetTarget(
-        &mut self,
-        value: *mut crate::UnityEngine::AudioSource,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetTarget",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetEvaluateOnSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -63,14 +42,13 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn GetTarget(
         &mut self,
-        handle: crate::UnityEngine::Playables::PlayableOutputHandle,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AudioSource> {
+        let __cordl_ret: *mut crate::UnityEngine::AudioSource = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (handle),
+            "GetTarget",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -82,6 +60,28 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
             self,
             "SetEvaluateOnSeek",
             (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetTarget(
+        &mut self,
+        value: *mut crate::UnityEngine::AudioSource,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetTarget",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        handle: crate::UnityEngine::Playables::PlayableOutputHandle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (handle),
         )?;
         Ok(__cordl_ret)
     }

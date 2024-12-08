@@ -48,20 +48,81 @@ impl crate::System::Threading::SemaphoreSlim {
             .invoke("CheckDispose", ())?;
         Ok(__cordl_ret)
     }
-    pub fn WaitUntilCountOrTimeout(
+    pub fn CreateAndAddAsyncWaiter(
         &mut self,
-        millisecondsTimeout: i32,
-        startTime: u32,
-        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::SemaphoreSlim_TaskNode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::SemaphoreSlim_TaskNode = __cordl_object
+            .invoke("CreateAndAddAsyncWaiter", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose__cordl_bool1(
+        &mut self,
+        disposing: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", (disposing))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_i32_0(initialCount: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (initialCount))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_1(
+        initialCount: i32,
+        maxCount: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (initialCount, maxCount))?;
+        Ok(__cordl_object)
+    }
+    pub fn Release_0(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Release", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Release_i32_1(
+        &mut self,
+        releaseCount: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Release", (releaseCount))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveAsyncWaiter(
+        &mut self,
+        task: *mut crate::System::Threading::SemaphoreSlim_TaskNode,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "WaitUntilCountOrTimeout",
-                (millisecondsTimeout, startTime, cancellationToken),
-            )?;
+        let __cordl_ret: bool = __cordl_object.invoke("RemoveAsyncWaiter", (task))?;
         Ok(__cordl_ret)
     }
     pub fn WaitAsync_0(
@@ -99,16 +160,20 @@ impl crate::System::Threading::SemaphoreSlim {
             .invoke("WaitAsync", (millisecondsTimeout, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateAndAddAsyncWaiter(
+    pub fn WaitUntilCountOrTimeout(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::SemaphoreSlim_TaskNode,
-    > {
+        millisecondsTimeout: i32,
+        startTime: u32,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::SemaphoreSlim_TaskNode = __cordl_object
-            .invoke("CreateAndAddAsyncWaiter", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "WaitUntilCountOrTimeout",
+                (millisecondsTimeout, startTime, cancellationToken),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn WaitUntilCountOrTimeoutAsync(
@@ -127,46 +192,6 @@ impl crate::System::Threading::SemaphoreSlim {
                 "WaitUntilCountOrTimeoutAsync",
                 (asyncWaiter, millisecondsTimeout, cancellationToken),
             )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveAsyncWaiter(
-        &mut self,
-        task: *mut crate::System::Threading::SemaphoreSlim_TaskNode,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("RemoveAsyncWaiter", (task))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CurrentCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_CurrentCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_0(
-        &mut self,
-        initialCount: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (initialCount))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_1(
-        &mut self,
-        initialCount: i32,
-        maxCount: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (initialCount, maxCount))?;
         Ok(__cordl_ret)
     }
     pub fn Wait_0(
@@ -201,62 +226,35 @@ impl crate::System::Threading::SemaphoreSlim {
             .invoke("Wait", (millisecondsTimeout, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn Release_0(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Release", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Release_i32_1(
+    pub fn _ctor_i32_0(
         &mut self,
-        releaseCount: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Release", (releaseCount))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose__cordl_bool1(
-        &mut self,
-        disposing: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_i32_0(
         initialCount: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (initialCount))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (initialCount))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_i32_1(
+    pub fn _ctor_i32_1(
+        &mut self,
         initialCount: i32,
         maxCount: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (initialCount, maxCount))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (initialCount, maxCount))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CurrentCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_CurrentCount", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Threading+SemaphoreSlim")]
@@ -296,16 +294,12 @@ impl std::ops::DerefMut for crate::System::Threading::SemaphoreSlim_TaskNode {
 }
 #[cfg(feature = "System+Threading+SemaphoreSlim+TaskNode")]
 impl crate::System::Threading::SemaphoreSlim_TaskNode {
-    pub fn System_Threading_IThreadPoolWorkItem_MarkAborted(
-        &mut self,
-        tae: *mut crate::System::Threading::ThreadAbortException,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("System.Threading.IThreadPoolWorkItem.MarkAborted", (tae))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn System_Threading_IThreadPoolWorkItem_ExecuteWorkItem(
         &mut self,
@@ -317,6 +311,17 @@ impl crate::System::Threading::SemaphoreSlim_TaskNode {
             .invoke("System.Threading.IThreadPoolWorkItem.ExecuteWorkItem", ())?;
         Ok(__cordl_ret)
     }
+    pub fn System_Threading_IThreadPoolWorkItem_MarkAborted(
+        &mut self,
+        tae: *mut crate::System::Threading::ThreadAbortException,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("System.Threading.IThreadPoolWorkItem.MarkAborted", (tae))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -326,13 +331,6 @@ impl crate::System::Threading::SemaphoreSlim_TaskNode {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Threading+SemaphoreSlim+TaskNode")]

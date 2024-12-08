@@ -25,14 +25,40 @@ for crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+HapticCapabilities")]
 impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
-    pub fn set_maxBufferSize(
+    pub fn _ctor(
         &mut self,
-        value: u32,
+        numChannels: u32,
+        frequencyHz: u32,
+        maxBufferSize: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_maxBufferSize",
-            (value),
+            ".ctor",
+            (numChannels, frequencyHz, maxBufferSize),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_frequencyHz(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_frequencyHz",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxBufferSize(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_maxBufferSize",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_numChannels(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_numChannels",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -47,32 +73,14 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_maxBufferSize(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_maxBufferSize",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn set_maxBufferSize(
         &mut self,
-        numChannels: u32,
-        frequencyHz: u32,
-        maxBufferSize: u32,
+        value: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (numChannels, frequencyHz, maxBufferSize),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_numChannels(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_numChannels",
-            (),
+            "set_maxBufferSize",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -84,14 +92,6 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
             self,
             "set_numChannels",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_frequencyHz(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_frequencyHz",
-            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -30,26 +30,32 @@ impl std::ops::DerefMut for UIKeyboardManager {
 #[cfg(feature = "UIKeyboardManager")]
 impl UIKeyboardManager {
     pub const kKeyboardTopOffset: f32 = 5f32;
-    pub fn OpenKeyboardFor(
+    pub fn CloseKeyboard(
         &mut self,
-        input: *mut crate::HMUI::InputFieldView,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OpenKeyboardFor", (input))?;
+            .invoke("CloseKeyboard", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_keyboard(
+    pub fn HandleKeyboardOkButton(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::UIKeyboard> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::HMUI::UIKeyboard = __cordl_object
-            .invoke("get_keyboard", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleKeyboardOkButton", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnDestroy(
         &mut self,
@@ -71,25 +77,25 @@ impl UIKeyboardManager {
             .invoke("OnDisable", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TransferKeyboardTo(
+    pub fn OnEnable(
         &mut self,
-        nextInput: *mut crate::HMUI::InputFieldView,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransferKeyboardTo", (nextInput))?;
+            .invoke("OnEnable", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ShouldCloseKeyboard(
+    pub fn OpenKeyboardFor(
         &mut self,
-        root: *mut crate::UnityEngine::GameObject,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        input: *mut crate::HMUI::InputFieldView,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("ShouldCloseKeyboard", (root))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OpenKeyboardFor", (input))?;
         Ok(__cordl_ret)
     }
     pub fn ProcessMousePress(
@@ -103,6 +109,16 @@ impl UIKeyboardManager {
             .invoke("ProcessMousePress", (currentOverGo))?;
         Ok(__cordl_ret)
     }
+    pub fn ShouldCloseKeyboard(
+        &mut self,
+        root: *mut crate::UnityEngine::GameObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ShouldCloseKeyboard", (root))?;
+        Ok(__cordl_ret)
+    }
     pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -113,34 +129,15 @@ impl UIKeyboardManager {
             .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnEnable(
+    pub fn TransferKeyboardTo(
         &mut self,
+        nextInput: *mut crate::HMUI::InputFieldView,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CloseKeyboard(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CloseKeyboard", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleKeyboardOkButton(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleKeyboardOkButton", ())?;
+            .invoke("TransferKeyboardTo", (nextInput))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -153,12 +150,15 @@ impl UIKeyboardManager {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_keyboard(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::UIKeyboard> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::UIKeyboard = __cordl_object
+            .invoke("get_keyboard", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UIKeyboardManager")]

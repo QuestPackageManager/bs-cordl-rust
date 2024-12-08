@@ -24,72 +24,79 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves 
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves")]
 impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves {
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect163r1Holder")]
-    pub type Sect163r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect163r1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp384r1Holder")]
-    pub type Secp384r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp384r1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp160r1Holder")]
-    pub type Secp160r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp160r1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp128r1Holder")]
-    pub type Secp128r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp128r1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect113r2Holder")]
-    pub type Sect113r2Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect113r2Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect193r1Holder")]
-    pub type Sect193r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect193r1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp192r1Holder")]
-    pub type Secp192r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp192r1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp521r1Holder")]
-    pub type Secp521r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp521r1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp128r2Holder")]
-    pub type Secp128r2Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp128r2Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect193r2Holder")]
-    pub type Sect193r2Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect193r2Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect409k1Holder")]
-    pub type Sect409k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect409k1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect571k1Holder")]
-    pub type Sect571k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect571k1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect233r1Holder")]
-    pub type Sect233r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect233r1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect571r1Holder")]
-    pub type Sect571r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect571r1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp160r2Holder")]
-    pub type Secp160r2Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp160r2Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp256k1Holder")]
-    pub type Secp256k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp256k1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect131r2Holder")]
-    pub type Sect131r2Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect131r2Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp224r1Holder")]
-    pub type Secp224r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp224r1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect409r1Holder")]
-    pub type Sect409r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect409r1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect163r2Holder")]
-    pub type Sect163r2Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect163r2Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp256r1Holder")]
-    pub type Secp256r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp256r1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect113r1Holder")]
-    pub type Sect113r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect113r1Holder;
     #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect163k1Holder")]
     pub type Sect163k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect163k1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect131r1Holder")]
-    pub type Sect131r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect131r1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect233k1Holder")]
-    pub type Sect233k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect233k1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp112r1Holder")]
-    pub type Secp112r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp112r1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect239k1Holder")]
-    pub type Sect239k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect239k1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp224k1Holder")]
-    pub type Secp224k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp224k1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp160k1Holder")]
-    pub type Secp160k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp160k1Holder;
     #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect283r1Holder")]
     pub type Sect283r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect283r1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp112r2Holder")]
-    pub type Secp112r2Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp112r2Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect131r1Holder")]
+    pub type Sect131r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect131r1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect409k1Holder")]
+    pub type Sect409k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect409k1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect193r2Holder")]
+    pub type Sect193r2Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect193r2Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect163r1Holder")]
+    pub type Sect163r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect163r1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp128r1Holder")]
+    pub type Secp128r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp128r1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect233k1Holder")]
+    pub type Sect233k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect233k1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect239k1Holder")]
+    pub type Sect239k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect239k1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp256r1Holder")]
+    pub type Secp256r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp256r1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect113r2Holder")]
+    pub type Sect113r2Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect113r2Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect571r1Holder")]
+    pub type Sect571r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect571r1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp160k1Holder")]
+    pub type Secp160k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp160k1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect571k1Holder")]
+    pub type Sect571k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect571k1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp128r2Holder")]
+    pub type Secp128r2Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp128r2Holder;
     #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp192k1Holder")]
     pub type Secp192k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp192k1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp521r1Holder")]
+    pub type Secp521r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp521r1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp224r1Holder")]
+    pub type Secp224r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp224r1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp160r2Holder")]
+    pub type Secp160r2Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp160r2Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect163r2Holder")]
+    pub type Sect163r2Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect163r2Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect233r1Holder")]
+    pub type Sect233r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect233r1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp112r1Holder")]
+    pub type Secp112r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp112r1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect113r1Holder")]
+    pub type Sect113r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect113r1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp112r2Holder")]
+    pub type Secp112r2Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp112r2Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect193r1Holder")]
+    pub type Sect193r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect193r1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp224k1Holder")]
+    pub type Secp224k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp224k1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp160r1Holder")]
+    pub type Secp160r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp160r1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp192r1Holder")]
+    pub type Secp192r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp192r1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp256k1Holder")]
+    pub type Secp256k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp256k1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp384r1Holder")]
+    pub type Secp384r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp384r1Holder;
     #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect283k1Holder")]
     pub type Sect283k1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect283k1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect131r2Holder")]
+    pub type Sect131r2Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect131r2Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect409r1Holder")]
+    pub type Sect409r1Holder = crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect409r1Holder;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -99,13 +106,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves")]
@@ -159,6 +159,13 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp112r1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -168,13 +175,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp112r1Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp112r1Holder")]
@@ -216,16 +216,6 @@ for crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp112r2Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp112r2Holder")]
 impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp112r2Holder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -238,12 +228,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp112r2Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp112r2Holder")]
@@ -285,16 +285,6 @@ for crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp128r1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp128r1Holder")]
 impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp128r1Holder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -307,12 +297,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp128r1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp128r1Holder")]
@@ -354,16 +354,6 @@ for crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp128r2Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp128r2Holder")]
 impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp128r2Holder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -376,12 +366,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp128r2Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp128r2Holder")]
@@ -435,6 +435,13 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp160k1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -444,13 +451,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp160k1Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp160k1Holder")]
@@ -504,6 +504,13 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp160r1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -513,13 +520,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp160r1Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp160r1Holder")]
@@ -561,16 +561,6 @@ for crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp160r2Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp160r2Holder")]
 impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp160r2Holder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -583,12 +573,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp160r2Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp160r2Holder")]
@@ -642,6 +642,13 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp192k1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -651,13 +658,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp192k1Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp192k1Holder")]
@@ -711,6 +711,13 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp192r1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -720,13 +727,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp192r1Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp192r1Holder")]
@@ -768,16 +768,6 @@ for crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp224k1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp224k1Holder")]
 impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp224k1Holder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -790,12 +780,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp224k1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp224k1Holder")]
@@ -837,16 +837,6 @@ for crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp224r1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp224r1Holder")]
 impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp224r1Holder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -859,12 +849,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp224r1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp224r1Holder")]
@@ -906,16 +906,6 @@ for crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp256k1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp256k1Holder")]
 impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp256k1Holder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -928,12 +918,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp256k1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp256k1Holder")]
@@ -975,16 +975,6 @@ for crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp256r1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp256r1Holder")]
 impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp256r1Holder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -997,12 +987,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp256r1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp256r1Holder")]
@@ -1056,6 +1056,13 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp384r1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1065,13 +1072,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp384r1Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp384r1Holder")]
@@ -1125,6 +1125,13 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp521r1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1134,13 +1141,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Secp521r1Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp521r1Holder")]
@@ -1184,16 +1184,6 @@ for crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect113r1Holder {
 impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect113r1Holder {
     pub const k: i32 = 9i32;
     pub const m: i32 = 113i32;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1206,12 +1196,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect113r1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect113r1Holder")]
@@ -1267,6 +1267,13 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect113r2Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1276,13 +1283,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect113r2Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect113r2Holder")]
@@ -1328,16 +1328,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect131r1Holder {
     pub const k2: i32 = 3i32;
     pub const k3: i32 = 8i32;
     pub const m: i32 = 131i32;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1350,12 +1340,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect131r1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect131r1Holder")]
@@ -1401,16 +1401,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect131r2Holder {
     pub const k2: i32 = 3i32;
     pub const k3: i32 = 8i32;
     pub const m: i32 = 131i32;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1423,12 +1413,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect131r2Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect131r2Holder")]
@@ -1486,6 +1486,13 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect163k1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1495,13 +1502,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect163k1Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect163k1Holder")]
@@ -1559,6 +1559,13 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect163r1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1568,13 +1575,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect163r1Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect163r1Holder")]
@@ -1632,6 +1632,13 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect163r2Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1641,13 +1648,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect163r2Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect163r2Holder")]
@@ -1703,6 +1703,13 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect193r1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1712,13 +1719,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect193r1Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect193r1Holder")]
@@ -1762,16 +1762,6 @@ for crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect193r2Holder {
 impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect193r2Holder {
     pub const k: i32 = 15i32;
     pub const m: i32 = 193i32;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1784,12 +1774,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect193r2Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect193r2Holder")]
@@ -1845,6 +1845,13 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect233k1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1854,13 +1861,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect233k1Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect233k1Holder")]
@@ -1904,16 +1904,6 @@ for crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect233r1Holder {
 impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect233r1Holder {
     pub const k: i32 = 74i32;
     pub const m: i32 = 233i32;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1926,12 +1916,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect233r1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect233r1Holder")]
@@ -1987,6 +1987,13 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect239k1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1996,13 +2003,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect239k1Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect239k1Holder")]
@@ -2060,6 +2060,13 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect283k1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2069,13 +2076,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect283k1Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect283k1Holder")]
@@ -2121,16 +2121,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect283r1Holder {
     pub const k2: i32 = 7i32;
     pub const k3: i32 = 12i32;
     pub const m: i32 = 283i32;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -2143,12 +2133,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect283r1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect283r1Holder")]
@@ -2192,16 +2192,6 @@ for crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect409k1Holder {
 impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect409k1Holder {
     pub const k: i32 = 87i32;
     pub const m: i32 = 409i32;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -2214,12 +2204,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect409k1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect409k1Holder")]
@@ -2263,16 +2263,6 @@ for crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect409r1Holder {
 impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect409r1Holder {
     pub const k: i32 = 87i32;
     pub const m: i32 = 409i32;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -2285,12 +2275,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect409r1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect409r1Holder")]
@@ -2336,16 +2336,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect571k1Holder {
     pub const k2: i32 = 5i32;
     pub const k3: i32 = 10i32;
     pub const m: i32 = 571i32;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -2358,12 +2348,22 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect571k1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect571k1Holder")]
@@ -2421,6 +2421,13 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect571r1Holder {
             .invoke("CreateParameters", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2430,13 +2437,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::SecNamedCurves_Sect571r1Holder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect571r1Holder")]

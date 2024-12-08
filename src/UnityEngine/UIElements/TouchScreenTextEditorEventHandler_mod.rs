@@ -30,37 +30,6 @@ for crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
 }
 #[cfg(feature = "UnityEngine+UIElements+TouchScreenTextEditorEventHandler")]
 impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
-    pub fn OpenTouchScreenKeyboard(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OpenTouchScreenKeyboard", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerUpEvent(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerUpEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerUpEvent", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnFocusInEvent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnFocusInEvent", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CloseTouchScreenKeyboard(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -69,6 +38,16 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CloseTouchScreenKeyboard", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DoPollTouchScreenKeyboard(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DoPollTouchScreenKeyboard", ())?;
         Ok(__cordl_ret)
     }
     pub fn ExecuteDefaultActionAtTarget(
@@ -82,46 +61,24 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
             .invoke("ExecuteDefaultActionAtTarget", (evt))?;
         Ok(__cordl_ret)
     }
-    pub fn UpdateStringPositionFromKeyboard(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateStringPositionFromKeyboard", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         textElement: *mut crate::UnityEngine::UIElements::TextElement,
         editingUtilities: *mut crate::UnityEngine::TextEditingUtilities,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (textElement, editingUtilities))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (textElement, editingUtilities))?;
+        Ok(__cordl_object)
     }
-    pub fn PollTouchScreenKeyboard(
+    pub fn OnFocusInEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PollTouchScreenKeyboard", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DoPollTouchScreenKeyboard(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DoPollTouchScreenKeyboard", ())?;
+            .invoke("OnFocusInEvent", ())?;
         Ok(__cordl_ret)
     }
     pub fn OnFocusOutEvent(
@@ -145,15 +102,58 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
             .invoke("OnPointerDownEvent", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn OnPointerUpEvent(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::PointerUpEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerUpEvent", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OpenTouchScreenKeyboard(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OpenTouchScreenKeyboard", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn PollTouchScreenKeyboard(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PollTouchScreenKeyboard", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateStringPositionFromKeyboard(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateStringPositionFromKeyboard", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
         textElement: *mut crate::UnityEngine::UIElements::TextElement,
         editingUtilities: *mut crate::UnityEngine::TextEditingUtilities,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (textElement, editingUtilities))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (textElement, editingUtilities))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TouchScreenTextEditorEventHandler")]

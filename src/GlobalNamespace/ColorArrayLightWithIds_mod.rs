@@ -29,17 +29,6 @@ for crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
 }
 #[cfg(feature = "ColorArrayLightWithIds+ColorArrayLightWithId")]
 impl crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
-    pub fn add_didSetColorEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<i32, crate::UnityEngine::Color>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didSetColorEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn ColorWasSet(
         &mut self,
         newColor: crate::UnityEngine::Color,
@@ -50,6 +39,13 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ColorWasSet", (newColor))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(index: i32, lightId: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (index, lightId))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -63,6 +59,17 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
             .invoke(".ctor", (index, lightId))?;
         Ok(__cordl_ret)
     }
+    pub fn add_didSetColorEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<i32, crate::UnityEngine::Color>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didSetColorEvent", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn remove_didSetColorEvent(
         &mut self,
         value: *mut crate::System::Action_2<i32, crate::UnityEngine::Color>,
@@ -73,16 +80,6 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didSetColorEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        index: i32,
-        lightId: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (index, lightId))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ColorArrayLightWithIds+ColorArrayLightWithId")]
@@ -136,26 +133,6 @@ impl std::ops::DerefMut for ColorArrayLightWithIds {
 impl ColorArrayLightWithIds {
     #[cfg(feature = "ColorArrayLightWithIds+ColorArrayLightWithId")]
     pub type ColorArrayLightWithId = crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId;
-    pub fn ProcessNewColorData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessNewColorData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnEnable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetLightWithIds(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -171,16 +148,6 @@ impl ColorArrayLightWithIds {
         > = __cordl_object.invoke("GetLightWithIds", ())?;
         Ok(__cordl_ret)
     }
-    pub fn UnregisterArrayFromColorChanges(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterArrayFromColorChanges", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn HandleColorLightWithIdDidSetColor(
         &mut self,
         index: i32,
@@ -193,15 +160,12 @@ impl ColorArrayLightWithIds {
             .invoke("HandleColorLightWithIdDidSetColor", (index, color))?;
         Ok(__cordl_ret)
     }
-    pub fn SetColorDataToMaterial(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColorDataToMaterial", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnDestroy(
         &mut self,
@@ -211,6 +175,26 @@ impl ColorArrayLightWithIds {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnEnable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnEnable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessNewColorData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessNewColorData", ())?;
         Ok(__cordl_ret)
     }
     pub fn RegisterArrayForColorChanges(
@@ -223,16 +207,6 @@ impl ColorArrayLightWithIds {
             .invoke("RegisterArrayForColorChanges", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn SetColorArrayOffsetToMaterialPropertyBlocks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -243,12 +217,35 @@ impl ColorArrayLightWithIds {
             .invoke("SetColorArrayOffsetToMaterialPropertyBlocks", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn SetColorDataToMaterial(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetColorDataToMaterial", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnregisterArrayFromColorChanges(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnregisterArrayFromColorChanges", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "ColorArrayLightWithIds")]

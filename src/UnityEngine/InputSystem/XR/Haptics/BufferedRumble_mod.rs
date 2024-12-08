@@ -35,6 +35,29 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::BufferedRumble {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (device),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_capabilities(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_capabilities",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_device(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -66,29 +89,6 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::BufferedRumble {
             self,
             "set_device",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_capabilities(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_capabilities",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (device),
         )?;
         Ok(__cordl_ret)
     }

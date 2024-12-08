@@ -36,6 +36,16 @@ impl crate::Org::BouncyCastle::Utilities::IO::TeeInputStream {
             .invoke("Close", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        input: *mut crate::System::IO::Stream,
+        tee: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (input, tee))?;
+        Ok(__cordl_object)
+    }
     pub fn Read(
         &mut self,
         buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -46,6 +56,13 @@ impl crate::Org::BouncyCastle::Utilities::IO::TeeInputStream {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Read", (buf, off, len))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -59,23 +76,6 @@ impl crate::Org::BouncyCastle::Utilities::IO::TeeInputStream {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (input, tee))?;
         Ok(__cordl_ret)
-    }
-    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        input: *mut crate::System::IO::Stream,
-        tee: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (input, tee))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+TeeInputStream")]

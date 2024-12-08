@@ -24,6 +24,13 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::RuntimeClipBase {
 }
 #[cfg(feature = "UnityEngine+Timeline+RuntimeClipBase")]
 impl crate::UnityEngine::Timeline::RuntimeClipBase {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -34,11 +41,11 @@ impl crate::UnityEngine::Timeline::RuntimeClipBase {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_intervalStart(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_intervalStart", ())?;
+        let __cordl_ret: f64 = __cordl_object.invoke("get_duration", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_intervalEnd(&mut self) -> quest_hook::libil2cpp::Result<i64> {
@@ -48,26 +55,19 @@ impl crate::UnityEngine::Timeline::RuntimeClipBase {
         let __cordl_ret: i64 = __cordl_object.invoke("get_intervalEnd", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_intervalStart(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_intervalStart", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_start(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f64 = __cordl_object.invoke("get_start", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("get_duration", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+RuntimeClipBase")]

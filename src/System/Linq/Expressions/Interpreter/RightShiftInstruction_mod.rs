@@ -28,49 +28,59 @@ for crate::System::Linq::Expressions::Interpreter::RightShiftInstruction {
 #[cfg(feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::RightShiftInstruction {
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt64"
-    )]
-    pub type RightShiftUInt64 = crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt64;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt32"
-    )]
-    pub type RightShiftUInt32 = crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt32;
-    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftSByte"
     )]
     pub type RightShiftSByte = crate::GlobalNamespace::RightShiftInstruction_RightShiftSByte;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt64"
+    )]
+    pub type RightShiftUInt64 = crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt64;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftByte"
     )]
     pub type RightShiftByte = crate::GlobalNamespace::RightShiftInstruction_RightShiftByte;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftInt16"
+        feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt16"
     )]
-    pub type RightShiftInt16 = crate::GlobalNamespace::RightShiftInstruction_RightShiftInt16;
+    pub type RightShiftUInt16 = crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt16;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftInt32"
     )]
     pub type RightShiftInt32 = crate::GlobalNamespace::RightShiftInstruction_RightShiftInt32;
     #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftInt16"
+    )]
+    pub type RightShiftInt16 = crate::GlobalNamespace::RightShiftInstruction_RightShiftInt16;
+    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftInt64"
     )]
     pub type RightShiftInt64 = crate::GlobalNamespace::RightShiftInstruction_RightShiftInt64;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt16"
+        feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt32"
     )]
-    pub type RightShiftUInt16 = crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt16;
+    pub type RightShiftUInt32 = crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt32;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_ConsumedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_InstructionName(
@@ -83,22 +93,12 @@ impl crate::System::Linq::Expressions::Interpreter::RightShiftInstruction {
             .invoke("get_InstructionName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction")]

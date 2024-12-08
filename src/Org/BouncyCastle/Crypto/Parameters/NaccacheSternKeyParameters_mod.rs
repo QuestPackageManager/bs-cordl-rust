@@ -30,6 +30,18 @@ for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyParameters {
+    pub fn New(
+        privateKey: bool,
+        g: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        n: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        lowerSigmaBound: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (privateKey, g, n, lowerSigmaBound))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         privateKey: bool,
@@ -44,23 +56,6 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyParameters {
             .invoke(".ctor", (privateKey, g, n, lowerSigmaBound))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Modulus(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("get_Modulus", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LowerSigmaBound(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_LowerSigmaBound", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_G(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
@@ -71,17 +66,22 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyParameters {
             .invoke("get_G", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        privateKey: bool,
-        g: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        n: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        lowerSigmaBound: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (privateKey, g, n, lowerSigmaBound))?;
-        Ok(__cordl_object)
+    pub fn get_LowerSigmaBound(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_LowerSigmaBound", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Modulus(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_Modulus", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyParameters")]

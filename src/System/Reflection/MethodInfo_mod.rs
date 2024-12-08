@@ -24,17 +24,6 @@ impl std::ops::DerefMut for crate::System::Reflection::MethodInfo {
 }
 #[cfg(feature = "System+Reflection+MethodInfo")]
 impl crate::System::Reflection::MethodInfo {
-    pub fn CreateDelegate_Type0(
-        &mut self,
-        delegateType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Delegate> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Delegate = __cordl_object
-            .invoke("CreateDelegate", (delegateType))?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateDelegate_Object1(
         &mut self,
         delegateType: *mut crate::System::Type,
@@ -47,22 +36,35 @@ impl crate::System::Reflection::MethodInfo {
             .invoke("CreateDelegate", (delegateType, target))?;
         Ok(__cordl_ret)
     }
-    pub fn MakeGenericMethod(
+    pub fn CreateDelegate_Type0(
         &mut self,
-        typeArguments: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        delegateType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Delegate> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Delegate = __cordl_object
+            .invoke("CreateDelegate", (delegateType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetBaseDefinition(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Reflection::MethodInfo = __cordl_object
-            .invoke("MakeGenericMethod", (typeArguments))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+            .invoke("GetBaseDefinition", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetGenericArguments(
@@ -76,6 +78,51 @@ impl crate::System::Reflection::MethodInfo {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Type,
         > = __cordl_object.invoke("GetGenericArguments", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetGenericMethodDefinition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Reflection::MethodInfo = __cordl_object
+            .invoke("GetGenericMethodDefinition", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn MakeGenericMethod(
+        &mut self,
+        typeArguments: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Reflection::MethodInfo = __cordl_object
+            .invoke("MakeGenericMethod", (typeArguments))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_GenericParameterCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -95,16 +142,6 @@ impl crate::System::Reflection::MethodInfo {
             .invoke("get_MemberType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Equals(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_ReturnParameter(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::ParameterInfo> {
@@ -113,26 +150,6 @@ impl crate::System::Reflection::MethodInfo {
         );
         let __cordl_ret: *mut crate::System::Reflection::ParameterInfo = __cordl_object
             .invoke("get_ReturnParameter", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetGenericMethodDefinition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Reflection::MethodInfo = __cordl_object
-            .invoke("GetGenericMethodDefinition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ReturnType(
@@ -144,23 +161,6 @@ impl crate::System::Reflection::MethodInfo {
         let __cordl_ret: *mut crate::System::Type = __cordl_object
             .invoke("get_ReturnType", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetBaseDefinition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Reflection::MethodInfo = __cordl_object
-            .invoke("GetBaseDefinition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Reflection+MethodInfo")]

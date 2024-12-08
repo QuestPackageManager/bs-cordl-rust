@@ -23,14 +23,6 @@ for crate::UnityEngine::TextCore::Text::HighlightState {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+HighlightState")]
 impl crate::UnityEngine::TextCore::Text::HighlightState {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals(
         &mut self,
         obj: *mut crate::System::Object,
@@ -39,6 +31,14 @@ impl crate::UnityEngine::TextCore::Text::HighlightState {
             self,
             "Equals",
             (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }

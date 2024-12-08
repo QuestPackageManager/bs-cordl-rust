@@ -23,111 +23,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::TMP_Offset {
 }
 #[cfg(feature = "TMPro+TMP_Offset")]
 impl crate::TMPro::TMP_Offset {
-    pub fn get_horizontal(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_horizontal",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_horizontal(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_horizontal",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_right(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_right",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_f32_f32_0(
-        &mut self,
-        left: f32,
-        right: f32,
-        top: f32,
-        bottom: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (left, right, top, bottom),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_f32_f32_1(
-        &mut self,
-        horizontal: f32,
-        vertical: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (horizontal, vertical),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_left(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_left",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_top(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_top",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_bottom(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_bottom",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_top(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_top",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_vertical(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_vertical",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_Object0(
         &mut self,
         obj: *mut crate::System::Object,
@@ -158,18 +53,44 @@ impl crate::TMPro::TMP_Offset {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_vertical(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn _ctor_f32_f32_0(
+        &mut self,
+        left: f32,
+        right: f32,
+        top: f32,
+        bottom: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (left, right, top, bottom),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_f32_f32_1(
+        &mut self,
+        horizontal: f32,
+        vertical: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (horizontal, vertical),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_bottom(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_vertical",
+            "get_bottom",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_right(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_horizontal(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_right",
+            "get_horizontal",
             (),
         )?;
         Ok(__cordl_ret)
@@ -182,6 +103,30 @@ impl crate::TMPro::TMP_Offset {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_right(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_right",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_top(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_top",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_vertical(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_vertical",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_bottom(
         &mut self,
         value: f32,
@@ -189,6 +134,61 @@ impl crate::TMPro::TMP_Offset {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_bottom",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_horizontal(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_horizontal",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_left(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_left",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_right(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_right",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_top(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_top",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_vertical(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_vertical",
             (value),
         )?;
         Ok(__cordl_ret)

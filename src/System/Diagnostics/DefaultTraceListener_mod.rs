@@ -25,14 +25,22 @@ impl std::ops::DerefMut for crate::System::Diagnostics::DefaultTraceListener {
 }
 #[cfg(feature = "System+Diagnostics+DefaultTraceListener")]
 impl crate::System::Diagnostics::DefaultTraceListener {
-    pub fn get_LogFileName(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Write(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        message: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_LogFileName", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Write", (message))?;
         Ok(__cordl_ret)
     }
     pub fn WriteDebugString(
@@ -44,6 +52,17 @@ impl crate::System::Diagnostics::DefaultTraceListener {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteDebugString", (message))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteImpl(
+        &mut self,
+        message: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteImpl", (message))?;
         Ok(__cordl_ret)
     }
     pub fn WriteLine(
@@ -69,16 +88,6 @@ impl crate::System::Diagnostics::DefaultTraceListener {
             .invoke("WriteLogFile", (message, logFile))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn WriteMonoTrace(
         &mut self,
         message: *mut crate::System::String,
@@ -88,17 +97,6 @@ impl crate::System::Diagnostics::DefaultTraceListener {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteMonoTrace", (message))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteImpl(
-        &mut self,
-        message: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteImpl", (message))?;
         Ok(__cordl_ret)
     }
     pub fn WritePrefix(
@@ -111,23 +109,25 @@ impl crate::System::Diagnostics::DefaultTraceListener {
             .invoke("WritePrefix", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Write(
+    pub fn _ctor(
         &mut self,
-        message: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (message))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_LogFileName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_LogFileName", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Diagnostics+DefaultTraceListener")]

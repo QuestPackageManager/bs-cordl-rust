@@ -24,14 +24,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IStreamCipher {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IStreamCipher")]
 impl crate::Org::BouncyCastle::Crypto::IStreamCipher {
-    pub fn get_AlgorithmName(
+    pub fn Init(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        forEncryption: bool,
+        parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_AlgorithmName", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (forEncryption, parameters))?;
         Ok(__cordl_ret)
     }
     pub fn ProcessBytes(
@@ -59,18 +61,6 @@ impl crate::Org::BouncyCastle::Crypto::IStreamCipher {
             .invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Init(
-        &mut self,
-        forEncryption: bool,
-        parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (forEncryption, parameters))?;
-        Ok(__cordl_ret)
-    }
     pub fn ReturnByte(&mut self, input: u8) -> quest_hook::libil2cpp::Result<u8> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -82,6 +72,16 @@ impl crate::Org::BouncyCastle::Crypto::IStreamCipher {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_AlgorithmName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_AlgorithmName", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IStreamCipher")]

@@ -42,70 +42,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for StandardScoreSyncState {
 impl StandardScoreSyncState {
     #[cfg(feature = "StandardScoreSyncState+Score")]
     pub type Score = crate::GlobalNamespace::StandardScoreSyncState_Score;
-    pub fn GetDelta(
-        &mut self,
-        stateTable: quest_hook::libil2cpp::ByRefMut<StandardScoreSyncState>,
-    ) -> quest_hook::libil2cpp::Result<StandardScoreSyncState> {
-        let __cordl_ret: StandardScoreSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetDelta",
-            (stateTable),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetState(
-        &mut self,
-        s: crate::GlobalNamespace::StandardScoreSyncState_Score,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetState",
-            (s),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IStateTable_StandardScoreSyncState_StandardScoreSyncState_Score_System_Int32__ApplyDelta(
+    pub fn ApplyDelta(
         &mut self,
         delta: quest_hook::libil2cpp::ByRefMut<StandardScoreSyncState>,
     ) -> quest_hook::libil2cpp::Result<StandardScoreSyncState> {
         let __cordl_ret: StandardScoreSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "IStateTable<StandardScoreSyncState,StandardScoreSyncState.Score,System.Int32>.ApplyDelta",
+            "ApplyDelta",
             (delta),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Serialize(
-        &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Serialize",
-            (writer),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        other: quest_hook::libil2cpp::ByRefMut<StandardScoreSyncState>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetState(
-        &mut self,
-        s: crate::GlobalNamespace::StandardScoreSyncState_Score,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetState",
-            (s, value),
         )?;
         Ok(__cordl_ret)
     }
@@ -120,6 +64,47 @@ impl StandardScoreSyncState {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn Equals(
+        &mut self,
+        other: quest_hook::libil2cpp::ByRefMut<StandardScoreSyncState>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDelta(
+        &mut self,
+        stateTable: quest_hook::libil2cpp::ByRefMut<StandardScoreSyncState>,
+    ) -> quest_hook::libil2cpp::Result<StandardScoreSyncState> {
+        let __cordl_ret: StandardScoreSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetDelta",
+            (stateTable),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetSize",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetState(
+        &mut self,
+        s: crate::GlobalNamespace::StandardScoreSyncState_Score,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetState",
+            (s),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn IEquatableByReference_StandardScoreSyncState__Equals(
         &mut self,
         other: quest_hook::libil2cpp::ByRefMut<StandardScoreSyncState>,
@@ -131,13 +116,13 @@ impl StandardScoreSyncState {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ApplyDelta(
+    pub fn IStateTable_StandardScoreSyncState_StandardScoreSyncState_Score_System_Int32__ApplyDelta(
         &mut self,
         delta: quest_hook::libil2cpp::ByRefMut<StandardScoreSyncState>,
     ) -> quest_hook::libil2cpp::Result<StandardScoreSyncState> {
         let __cordl_ret: StandardScoreSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ApplyDelta",
+            "IStateTable<StandardScoreSyncState,StandardScoreSyncState.Score,System.Int32>.ApplyDelta",
             (delta),
         )?;
         Ok(__cordl_ret)
@@ -153,11 +138,26 @@ impl StandardScoreSyncState {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Serialize(
+        &mut self,
+        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetSize",
-            (),
+            "Serialize",
+            (writer),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetState(
+        &mut self,
+        s: crate::GlobalNamespace::StandardScoreSyncState_Score,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetState",
+            (s, value),
         )?;
         Ok(__cordl_ret)
     }

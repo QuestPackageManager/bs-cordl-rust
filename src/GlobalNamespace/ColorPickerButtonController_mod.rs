@@ -26,6 +26,13 @@ impl std::ops::DerefMut for ColorPickerButtonController {
 }
 #[cfg(feature = "ColorPickerButtonController")]
 impl ColorPickerButtonController {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn SetColor(
         &mut self,
         color: crate::UnityEngine::Color,
@@ -56,13 +63,6 @@ impl ColorPickerButtonController {
         let __cordl_ret: *mut crate::UnityEngine::UI::Button = __cordl_object
             .invoke("get_button", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ColorPickerButtonController")]

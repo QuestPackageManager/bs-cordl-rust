@@ -24,23 +24,14 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord {
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphAdjustmentRecord")]
 impl crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord {
-    pub fn get_glyphValueRecord(
+    pub fn Equals_GlyphAdjustmentRecord1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord,
-    > {
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_glyphValueRecord",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -55,14 +46,11 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_GlyphAdjustmentRecord1(
-        &mut self,
-        other: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -70,6 +58,18 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_glyphIndex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_glyphValueRecord(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord,
+    > {
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_glyphValueRecord",
             (),
         )?;
         Ok(__cordl_ret)

@@ -51,22 +51,45 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
     pub type BlockingObjects = crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects;
     #[cfg(feature = "UnityEngine+UI+GraphicRaycaster+__c")]
     pub type __c = crate::UnityEngine::UI::GraphicRaycaster___c;
-    pub fn set_ignoreReversedGraphics(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Raycast(
         &mut self,
-        value: bool,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        resultAppendList: *mut crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::EventSystems::RaycastResult,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ignoreReversedGraphics", (value))?;
+            .invoke("Raycast", (eventData, resultAppendList))?;
         Ok(__cordl_ret)
     }
-    pub fn get_sortOrderPriority(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_sortOrderPriority", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_blockingMask(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LayerMask> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::LayerMask = __cordl_object
+            .invoke("get_blockingMask", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_blockingObjects(
@@ -81,15 +104,24 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
             .invoke("get_blockingObjects", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_blockingObjects(
+    pub fn get_canvas(
         &mut self,
-        value: crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Canvas> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_blockingObjects", (value))?;
+        let __cordl_ret: *mut crate::UnityEngine::Canvas = __cordl_object
+            .invoke("get_canvas", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_eventCamera(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Camera> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Camera = __cordl_object
+            .invoke("get_eventCamera", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ignoreReversedGraphics(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -106,48 +138,11 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
         let __cordl_ret: i32 = __cordl_object.invoke("get_renderOrderPriority", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_sortOrderPriority(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_eventCamera(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Camera> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Camera = __cordl_object
-            .invoke("get_eventCamera", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_canvas(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Canvas> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Canvas = __cordl_object
-            .invoke("get_canvas", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Raycast(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-        resultAppendList: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::EventSystems::RaycastResult,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Raycast", (eventData, resultAppendList))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_sortOrderPriority", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_blockingMask(
@@ -161,22 +156,27 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
             .invoke("set_blockingMask", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_blockingMask(
+    pub fn set_blockingObjects(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LayerMask> {
+        value: crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::LayerMask = __cordl_object
-            .invoke("get_blockingMask", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_blockingObjects", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_ignoreReversedGraphics(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ignoreReversedGraphics", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UI+GraphicRaycaster")]

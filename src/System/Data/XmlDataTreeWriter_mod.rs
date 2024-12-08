@@ -35,6 +35,72 @@ impl std::ops::DerefMut for crate::System::Data::XmlDataTreeWriter {
 }
 #[cfg(feature = "System+Data+XmlDataTreeWriter")]
 impl crate::System::Data::XmlDataTreeWriter {
+    pub fn CreateTablesHierarchy(
+        &mut self,
+        dt: *mut crate::System::Data::DataTable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CreateTablesHierarchy", (dt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateToplevelTables(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Data::DataTable,
+        > = __cordl_object.invoke("CreateToplevelTables", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNestedChildRelations(
+        &mut self,
+        row: *mut crate::System::Data::DataRow,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
+            .invoke("GetNestedChildRelations", (row))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_DataSet0(
+        ds: *mut crate::System::Data::DataSet,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ds))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_DataTable__cordl_bool1(
+        dt: *mut crate::System::Data::DataTable,
+        writeHierarchy: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dt, writeHierarchy))?;
+        Ok(__cordl_object)
+    }
+    pub fn Save(
+        &mut self,
+        xw: *mut crate::System::Xml::XmlWriter,
+        writeSchema: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Save", (xw, writeSchema))?;
+        Ok(__cordl_ret)
+    }
     pub fn SaveDiffgramData(
         &mut self,
         xw: *mut crate::System::Xml::XmlWriter,
@@ -47,26 +113,16 @@ impl crate::System::Data::XmlDataTreeWriter {
             .invoke("SaveDiffgramData", (xw, rowsOrder))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateTablesHierarchy(
+    pub fn XmlDataRowWriter(
         &mut self,
-        dt: *mut crate::System::Data::DataTable,
+        row: *mut crate::System::Data::DataRow,
+        encodedTableName: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CreateTablesHierarchy", (dt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNestedChildRelations(
-        &mut self,
-        row: *mut crate::System::Data::DataRow,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
-            .invoke("GetNestedChildRelations", (row))?;
+            .invoke("XmlDataRowWriter", (row, encodedTableName))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_DataSet0(
@@ -91,62 +147,6 @@ impl crate::System::Data::XmlDataTreeWriter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (dt, writeHierarchy))?;
         Ok(__cordl_ret)
-    }
-    pub fn Save(
-        &mut self,
-        xw: *mut crate::System::Xml::XmlWriter,
-        writeSchema: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Save", (xw, writeSchema))?;
-        Ok(__cordl_ret)
-    }
-    pub fn XmlDataRowWriter(
-        &mut self,
-        row: *mut crate::System::Data::DataRow,
-        encodedTableName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("XmlDataRowWriter", (row, encodedTableName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateToplevelTables(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Data::DataTable,
-        > = __cordl_object.invoke("CreateToplevelTables", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_DataSet0(
-        ds: *mut crate::System::Data::DataSet,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ds))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_DataTable__cordl_bool1(
-        dt: *mut crate::System::Data::DataTable,
-        writeHierarchy: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dt, writeHierarchy))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Data+XmlDataTreeWriter")]

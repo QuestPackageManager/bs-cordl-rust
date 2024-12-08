@@ -45,22 +45,30 @@ for crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
 impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
     #[cfg(feature = "UnityEngine+UIElements+VisualTreeStyleUpdaterTraversal+__c")]
     pub type __c = crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal___c;
-    pub fn set_currentPixelsPerPoint(
+    pub fn AddChangedElement(
         &mut self,
-        value: f32,
+        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        versionChangeType: crate::UnityEngine::UIElements::VersionChangeType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_currentPixelsPerPoint", (value))?;
+            .invoke("AddChangedElement", (ve, versionChangeType))?;
         Ok(__cordl_ret)
     }
-    pub fn get_currentPixelsPerPoint(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn CancelAnimationsWithNoTransitionProperty(
+        &mut self,
+        element: *mut crate::UnityEngine::UIElements::VisualElement,
+        newStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_currentPixelsPerPoint", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CancelAnimationsWithNoTransitionProperty", (element, newStyle))?;
         Ok(__cordl_ret)
     }
     pub fn Clear(
@@ -73,34 +81,23 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
             .invoke("Clear", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TraverseRecursive(
+    pub fn ForceUpdateTransitions(
         &mut self,
         element: *mut crate::UnityEngine::UIElements::VisualElement,
-        depth: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TraverseRecursive", (element, depth))?;
+            .invoke("ForceUpdateTransitions", (element))?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessTransitions(
-        &mut self,
-        element: *mut crate::UnityEngine::UIElements::VisualElement,
-        oldStyle: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::ComputedStyle,
-        >,
-        newStyle: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::ComputedStyle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessTransitions", (element, oldStyle, newStyle))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn PrepareTraversal(
         &mut self,
@@ -127,36 +124,33 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
             .invoke("ProcessMatchedRules", (element, matchingSelectors))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn ProcessMatchedVariables(
         &mut self,
+        sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
+        rule: *mut crate::UnityEngine::UIElements::StyleRule,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("ProcessMatchedVariables", (sheet, rule))?;
         Ok(__cordl_ret)
     }
-    pub fn ShouldSkipElement(
+    pub fn ProcessTransitions(
         &mut self,
         element: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ShouldSkipElement", (element))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddChangedElement(
-        &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-        versionChangeType: crate::UnityEngine::UIElements::VersionChangeType,
+        oldStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+        newStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddChangedElement", (ve, versionChangeType))?;
+            .invoke("ProcessTransitions", (element, oldStyle, newStyle))?;
         Ok(__cordl_ret)
     }
     pub fn PropagateToChildren(
@@ -170,32 +164,6 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
             .invoke("PropagateToChildren", (ve))?;
         Ok(__cordl_ret)
     }
-    pub fn CancelAnimationsWithNoTransitionProperty(
-        &mut self,
-        element: *mut crate::UnityEngine::UIElements::VisualElement,
-        newStyle: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::ComputedStyle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CancelAnimationsWithNoTransitionProperty", (element, newStyle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessMatchedVariables(
-        &mut self,
-        sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
-        rule: *mut crate::UnityEngine::UIElements::StyleRule,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessMatchedVariables", (sheet, rule))?;
-        Ok(__cordl_ret)
-    }
     pub fn PropagateToParents(
         &mut self,
         ve: *mut crate::UnityEngine::UIElements::VisualElement,
@@ -207,23 +175,55 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
             .invoke("PropagateToParents", (ve))?;
         Ok(__cordl_ret)
     }
-    pub fn ForceUpdateTransitions(
+    pub fn ShouldSkipElement(
         &mut self,
         element: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ShouldSkipElement", (element))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TraverseRecursive(
+        &mut self,
+        element: *mut crate::UnityEngine::UIElements::VisualElement,
+        depth: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ForceUpdateTransitions", (element))?;
+            .invoke("TraverseRecursive", (element, depth))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_currentPixelsPerPoint(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_currentPixelsPerPoint", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_currentPixelsPerPoint(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_currentPixelsPerPoint", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeStyleUpdaterTraversal")]

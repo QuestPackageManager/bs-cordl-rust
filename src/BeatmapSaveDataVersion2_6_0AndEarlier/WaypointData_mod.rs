@@ -29,6 +29,18 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion2_6_0AndEarlier::Waypoi
 }
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+WaypointData")]
 impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData {
+    pub fn New(
+        _cordl_time: f32,
+        lineIndex: i32,
+        lineLayer: crate::BeatmapSaveDataCommon::NoteLineLayer,
+        offsetDirection: crate::BeatmapSaveDataCommon::OffsetDirection,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_time, lineIndex, lineLayer, offsetDirection))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         _cordl_time: f32,
@@ -43,6 +55,13 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData {
             .invoke(".ctor", (_cordl_time, lineIndex, lineLayer, offsetDirection))?;
         Ok(__cordl_ret)
     }
+    pub fn get_lineIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_lineIndex", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_lineLayer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::NoteLineLayer> {
@@ -51,13 +70,6 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData {
         );
         let __cordl_ret: crate::BeatmapSaveDataCommon::NoteLineLayer = __cordl_object
             .invoke("get_lineLayer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_lineIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_lineIndex", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_offsetDirection(
@@ -76,18 +88,6 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData {
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_time", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        _cordl_time: f32,
-        lineIndex: i32,
-        lineLayer: crate::BeatmapSaveDataCommon::NoteLineLayer,
-        offsetDirection: crate::BeatmapSaveDataCommon::OffsetDirection,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_time, lineIndex, lineLayer, offsetDirection))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+WaypointData")]

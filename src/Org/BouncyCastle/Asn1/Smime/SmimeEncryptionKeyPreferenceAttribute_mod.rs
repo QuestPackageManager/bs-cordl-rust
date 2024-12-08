@@ -27,6 +27,44 @@ for crate::Org::BouncyCastle::Asn1::Smime::SmimeEncryptionKeyPreferenceAttribute
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Smime+SmimeEncryptionKeyPreferenceAttribute")]
 impl crate::Org::BouncyCastle::Asn1::Smime::SmimeEncryptionKeyPreferenceAttribute {
+    pub fn New_Asn1OctetString2(
+        sKeyID: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (sKeyID))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IssuerAndSerialNumber0(
+        issAndSer: *mut crate::Org::BouncyCastle::Asn1::Cms::IssuerAndSerialNumber,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (issAndSer))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_RecipientKeyIdentifier1(
+        rKeyID: *mut crate::Org::BouncyCastle::Asn1::Cms::RecipientKeyIdentifier,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (rKeyID))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_Asn1OctetString2(
+        &mut self,
+        sKeyID: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (sKeyID))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_IssuerAndSerialNumber0(
         &mut self,
         issAndSer: *mut crate::Org::BouncyCastle::Asn1::Cms::IssuerAndSerialNumber,
@@ -48,44 +86,6 @@ impl crate::Org::BouncyCastle::Asn1::Smime::SmimeEncryptionKeyPreferenceAttribut
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (rKeyID))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor_Asn1OctetString2(
-        &mut self,
-        sKeyID: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (sKeyID))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_IssuerAndSerialNumber0(
-        issAndSer: *mut crate::Org::BouncyCastle::Asn1::Cms::IssuerAndSerialNumber,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (issAndSer))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_RecipientKeyIdentifier1(
-        rKeyID: *mut crate::Org::BouncyCastle::Asn1::Cms::RecipientKeyIdentifier,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (rKeyID))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Asn1OctetString2(
-        sKeyID: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (sKeyID))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Smime+SmimeEncryptionKeyPreferenceAttribute")]

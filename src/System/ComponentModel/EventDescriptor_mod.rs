@@ -24,6 +24,16 @@ impl std::ops::DerefMut for crate::System::ComponentModel::EventDescriptor {
 }
 #[cfg(feature = "System+ComponentModel+EventDescriptor")]
 impl crate::System::ComponentModel::EventDescriptor {
+    pub fn New(
+        name: *mut crate::System::String,
+        attrs: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, attrs))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         name: *mut crate::System::String,
@@ -35,16 +45,6 @@ impl crate::System::ComponentModel::EventDescriptor {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (name, attrs))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        name: *mut crate::System::String,
-        attrs: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, attrs))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+ComponentModel+EventDescriptor")]

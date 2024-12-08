@@ -41,18 +41,22 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
         feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+__c__DisplayClass8_0"
     )]
     pub type __c__DisplayClass8_0 = crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter___c__DisplayClass8_0;
-    pub fn WriteJson(
+    pub fn CanConvert(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        objectType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteJson", (writer, value, serializer))?;
+        let __cordl_ret: bool = __cordl_object.invoke("CanConvert", (objectType))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ReadJson(
         &mut self,
@@ -68,6 +72,19 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
             .invoke("ReadJson", (reader, objectType, existingValue, serializer))?;
         Ok(__cordl_ret)
     }
+    pub fn WriteJson(
+        &mut self,
+        writer: *mut crate::Newtonsoft::Json::JsonWriter,
+        value: *mut crate::System::Object,
+        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteJson", (writer, value, serializer))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -77,23 +94,6 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn CanConvert(
-        &mut self,
-        objectType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CanConvert", (objectType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
@@ -139,6 +139,18 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
 impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
+    pub fn New(
+        tagReader: *mut crate::Newtonsoft::Json::Utilities::FSharpFunction,
+        cases: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (tagReader, cases))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         tagReader: *mut crate::Newtonsoft::Json::Utilities::FSharpFunction,
@@ -152,18 +164,6 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (tagReader, cases))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        tagReader: *mut crate::Newtonsoft::Json::Utilities::FSharpFunction,
-        cases: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (tagReader, cases))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
@@ -212,6 +212,21 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
 impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
+    pub fn New(
+        tag: i32,
+        name: *mut crate::System::String,
+        fields: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Reflection::PropertyInfo,
+        >,
+        fieldReader: *mut crate::Newtonsoft::Json::Utilities::FSharpFunction,
+        constructor: *mut crate::Newtonsoft::Json::Utilities::FSharpFunction,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (tag, name, fields, fieldReader, constructor))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         tag: i32,
@@ -228,21 +243,6 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase 
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (tag, name, fields, fieldReader, constructor))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        tag: i32,
-        name: *mut crate::System::String,
-        fields: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Reflection::PropertyInfo,
-        >,
-        fieldReader: *mut crate::Newtonsoft::Json::Utilities::FSharpFunction,
-        constructor: *mut crate::Newtonsoft::Json::Utilities::FSharpFunction,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (tag, name, fields, fieldReader, constructor))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]

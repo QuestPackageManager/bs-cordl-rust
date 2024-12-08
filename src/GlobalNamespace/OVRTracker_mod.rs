@@ -51,18 +51,29 @@ impl std::ops::DerefMut for OVRTracker {
 impl OVRTracker {
     #[cfg(feature = "OVRTracker+Frustum")]
     pub type Frustum = crate::GlobalNamespace::OVRTracker_Frustum;
-    pub fn get_isPresent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn GetFrustum(
+        &mut self,
+        tracker: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTracker_Frustum> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isPresent", ())?;
+        let __cordl_ret: crate::GlobalNamespace::OVRTracker_Frustum = __cordl_object
+            .invoke("GetFrustum", (tracker))?;
         Ok(__cordl_ret)
     }
-    pub fn get_isEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn GetPose(&mut self, tracker: i32) -> quest_hook::libil2cpp::Result<OVRPose> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isEnabled", ())?;
+        let __cordl_ret: OVRPose = __cordl_object.invoke("GetPose", (tracker))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPoseValid(&mut self, tracker: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("GetPoseValid", (tracker))?;
         Ok(__cordl_ret)
     }
     pub fn GetPresent(&mut self, tracker: i32) -> quest_hook::libil2cpp::Result<bool> {
@@ -71,6 +82,13 @@ impl OVRTracker {
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetPresent", (tracker))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -82,6 +100,20 @@ impl OVRTracker {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_count", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isEnabled", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_isPositionTracked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -89,11 +121,11 @@ impl OVRTracker {
         let __cordl_ret: bool = __cordl_object.invoke("get_isPositionTracked", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetPoseValid(&mut self, tracker: i32) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_isPresent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("GetPoseValid", (tracker))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isPresent", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_isEnabled(
@@ -106,38 +138,6 @@ impl OVRTracker {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_isEnabled", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_count", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPose(&mut self, tracker: i32) -> quest_hook::libil2cpp::Result<OVRPose> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: OVRPose = __cordl_object.invoke("GetPose", (tracker))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetFrustum(
-        &mut self,
-        tracker: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTracker_Frustum> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRTracker_Frustum = __cordl_object
-            .invoke("GetFrustum", (tracker))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRTracker")]

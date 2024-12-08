@@ -68,21 +68,22 @@ impl crate::HoudiniEngineUnity::HEU_AttributeData {
     pub type AttributeType = crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType;
     #[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
     pub type AttributeState = crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState;
-    pub fn IsColorAttribute(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsColorAttribute", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn CopyValuesTo(
         &mut self,
+        destAttrData: *mut crate::HoudiniEngineUnity::HEU_AttributeData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("CopyValuesTo", (destAttrData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsColorAttribute(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsColorAttribute", ())?;
         Ok(__cordl_ret)
     }
     pub fn IsEquivalentTo(
@@ -95,23 +96,22 @@ impl crate::HoudiniEngineUnity::HEU_AttributeData {
         let __cordl_ret: bool = __cordl_object.invoke("IsEquivalentTo", (other))?;
         Ok(__cordl_ret)
     }
-    pub fn CopyValuesTo(
-        &mut self,
-        destAttrData: *mut crate::HoudiniEngineUnity::HEU_AttributeData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CopyValuesTo", (destAttrData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData")]

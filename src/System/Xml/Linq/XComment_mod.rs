@@ -25,24 +25,43 @@ impl std::ops::DerefMut for crate::System::Xml::Linq::XComment {
 }
 #[cfg(feature = "System+Xml+Linq+XComment")]
 impl crate::System::Xml::Linq::XComment {
-    pub fn get_NodeType(
+    pub fn CloneNode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Linq::XNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
-            .invoke("get_NodeType", ())?;
+        let __cordl_ret: *mut crate::System::Xml::Linq::XNode = __cordl_object
+            .invoke("CloneNode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Value(
+    pub fn New_String0(
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (value))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_XComment1(
+        other: *mut crate::System::Xml::Linq::XComment,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (other))?;
+        Ok(__cordl_object)
+    }
+    pub fn WriteTo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        writer: *mut crate::System::Xml::XmlWriter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Value", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteTo", (writer))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_String0(
@@ -67,14 +86,24 @@ impl crate::System::Xml::Linq::XComment {
             .invoke(".ctor", (other))?;
         Ok(__cordl_ret)
     }
-    pub fn CloneNode(
+    pub fn get_NodeType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Linq::XNode> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Linq::XNode = __cordl_object
-            .invoke("CloneNode", ())?;
+        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
+            .invoke("get_NodeType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Value", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Value(
@@ -87,35 +116,6 @@ impl crate::System::Xml::Linq::XComment {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Value", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn WriteTo(
-        &mut self,
-        writer: *mut crate::System::Xml::XmlWriter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteTo", (writer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_String0(
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (value))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_XComment1(
-        other: *mut crate::System::Xml::Linq::XComment,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (other))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Linq+XComment")]

@@ -37,6 +37,34 @@ impl crate::Newtonsoft::Json::Linq::JRaw {
             .invoke("CloneToken", (settings))?;
         Ok(__cordl_ret)
     }
+    pub fn New_JRaw0(
+        other: *mut crate::Newtonsoft::Json::Linq::JRaw,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (other))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_JRaw_JsonCloneSettings1(
+        other: *mut crate::Newtonsoft::Json::Linq::JRaw,
+        settings: *mut crate::Newtonsoft::Json::Linq::JsonCloneSettings,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (other, settings))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Object2(
+        rawJson: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (rawJson))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_JRaw0(
         &mut self,
         other: *mut crate::Newtonsoft::Json::Linq::JRaw,
@@ -70,34 +98,6 @@ impl crate::Newtonsoft::Json::Linq::JRaw {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (rawJson))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_JRaw0(
-        other: *mut crate::Newtonsoft::Json::Linq::JRaw,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (other))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_JRaw_JsonCloneSettings1(
-        other: *mut crate::Newtonsoft::Json::Linq::JRaw,
-        settings: *mut crate::Newtonsoft::Json::Linq::JsonCloneSettings,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (other, settings))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Object2(
-        rawJson: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (rawJson))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JRaw")]

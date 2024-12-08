@@ -79,12 +79,12 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext")]
 impl crate::UnityEngine::InputSystem::InputBindingCompositeContext {
-    #[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding")]
-    pub type PartBinding = crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding;
     #[cfg(
         feature = "UnityEngine+InputSystem+InputBindingCompositeContext+_get_controls_d__2"
     )]
     pub type _get_controls_d__2 = crate::UnityEngine::InputSystem::InputBindingCompositeContext__get_controls_d__2;
+    #[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding")]
+    pub type PartBinding = crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding;
     #[cfg(
         feature = "UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
     )]
@@ -98,6 +98,17 @@ impl crate::UnityEngine::InputSystem::InputBindingCompositeContext {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "EvaluateMagnitude",
+            (partNumber),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPressTime(
+        &mut self,
+        partNumber: i32,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetPressTime",
             (partNumber),
         )?;
         Ok(__cordl_ret)
@@ -124,33 +135,6 @@ impl crate::UnityEngine::InputSystem::InputBindingCompositeContext {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_controls(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding,
-        >,
-    > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_controls", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadValue_i32_0<TValue>(
-        &mut self,
-        partNumber: i32,
-    ) -> quest_hook::libil2cpp::Result<TValue>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: TValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReadValue",
-            (partNumber),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn ReadValue_ByRefMut1<TValue>(
         &mut self,
         partNumber: i32,
@@ -166,24 +150,6 @@ impl crate::UnityEngine::InputSystem::InputBindingCompositeContext {
             self,
             "ReadValue",
             (partNumber, sourceControl),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadValue_TComparer2<TValue, TComparer>(
-        &mut self,
-        partNumber: i32,
-        comparer: TComparer,
-    ) -> quest_hook::libil2cpp::Result<TValue>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TComparer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: TValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReadValue",
-            (partNumber, comparer),
         )?;
         Ok(__cordl_ret)
     }
@@ -221,15 +187,49 @@ impl crate::UnityEngine::InputSystem::InputBindingCompositeContext {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetPressTime(
+    pub fn ReadValue_TComparer2<TValue, TComparer>(
         &mut self,
         partNumber: i32,
-    ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        comparer: TComparer,
+    ) -> quest_hook::libil2cpp::Result<TValue>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TComparer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetPressTime",
+            "ReadValue",
+            (partNumber, comparer),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadValue_i32_0<TValue>(
+        &mut self,
+        partNumber: i32,
+    ) -> quest_hook::libil2cpp::Result<TValue>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ReadValue",
             (partNumber),
         )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_controls(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding,
+        >,
+    > {
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_controls", ())?;
         Ok(__cordl_ret)
     }
 }
@@ -259,17 +259,6 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding")]
 impl crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding {
-    pub fn set_part(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_part",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_control(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -278,6 +267,14 @@ impl crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding {
         let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_control",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_part(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_part",
             (),
         )?;
         Ok(__cordl_ret)
@@ -293,11 +290,14 @@ impl crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_part(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn set_part(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_part",
-            (),
+            "set_part",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

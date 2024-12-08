@@ -39,6 +39,31 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::Interpreter::Inter
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+Interpreter")]
 impl crate::System::Linq::Expressions::Interpreter::Interpreter {
+    pub fn New(
+        name: *mut crate::System::String,
+        locals: *mut crate::System::Linq::Expressions::Interpreter::LocalVariables,
+        instructions: crate::System::Linq::Expressions::Interpreter::InstructionArray,
+        debugInfos: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, locals, instructions, debugInfos))?;
+        Ok(__cordl_object)
+    }
+    pub fn Run(
+        &mut self,
+        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Run", (frame))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         name: *mut crate::System::String,
@@ -55,33 +80,11 @@ impl crate::System::Linq::Expressions::Interpreter::Interpreter {
             .invoke(".ctor", (name, locals, instructions, debugInfos))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Name", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_ClosureSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ClosureSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Instructions(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Linq::Expressions::Interpreter::InstructionArray,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Linq::Expressions::Interpreter::InstructionArray = __cordl_object
-            .invoke("get_Instructions", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ClosureVariables(
@@ -101,15 +104,16 @@ impl crate::System::Linq::Expressions::Interpreter::Interpreter {
         > = __cordl_object.invoke("get_ClosureVariables", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Run(
+    pub fn get_Instructions(
         &mut self,
-        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Linq::Expressions::Interpreter::InstructionArray,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Run", (frame))?;
+        let __cordl_ret: crate::System::Linq::Expressions::Interpreter::InstructionArray = __cordl_object
+            .invoke("get_Instructions", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_LocalCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -119,19 +123,15 @@ impl crate::System::Linq::Expressions::Interpreter::Interpreter {
         let __cordl_ret: i32 = __cordl_object.invoke("get_LocalCount", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        name: *mut crate::System::String,
-        locals: *mut crate::System::Linq::Expressions::Interpreter::LocalVariables,
-        instructions: crate::System::Linq::Expressions::Interpreter::InstructionArray,
-        debugInfos: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, locals, instructions, debugInfos))?;
-        Ok(__cordl_object)
+    pub fn get_Name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Name", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+Interpreter")]

@@ -28,6 +28,28 @@ impl std::ops::DerefMut for crate::Zenject::MemoryPoolSettings {
 }
 #[cfg(feature = "Zenject+MemoryPoolSettings")]
 impl crate::Zenject::MemoryPoolSettings {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_i32_PoolExpandMethods__cordl_bool1(
+        initialSize: i32,
+        maxSize: i32,
+        expandMethod: crate::Zenject::PoolExpandMethods,
+        showExpandWarning: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (initialSize, maxSize, expandMethod, showExpandWarning),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -51,28 +73,6 @@ impl crate::Zenject::MemoryPoolSettings {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (initialSize, maxSize, expandMethod, showExpandWarning))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_i32_PoolExpandMethods__cordl_bool1(
-        initialSize: i32,
-        maxSize: i32,
-        expandMethod: crate::Zenject::PoolExpandMethods,
-        showExpandWarning: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (initialSize, maxSize, expandMethod, showExpandWarning),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+MemoryPoolSettings")]

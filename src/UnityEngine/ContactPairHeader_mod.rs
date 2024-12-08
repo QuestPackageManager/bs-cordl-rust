@@ -27,51 +27,6 @@ for crate::UnityEngine::ContactPairHeader {
 }
 #[cfg(feature = "UnityEngine+ContactPairHeader")]
 impl crate::UnityEngine::ContactPairHeader {
-    pub fn get_PairCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_PairCount",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_BodyInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_BodyInstanceID",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_OtherBodyInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_OtherBodyInstanceID",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Body(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Component> {
-        let __cordl_ret: *mut crate::UnityEngine::Component = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Body",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetContactPair_Internal(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetContactPair_Internal",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetContactPair(
         &mut self,
         index: i32,
@@ -87,6 +42,43 @@ impl crate::UnityEngine::ContactPairHeader {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn GetContactPair_Internal(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetContactPair_Internal",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Body(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Component> {
+        let __cordl_ret: *mut crate::UnityEngine::Component = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Body",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_BodyInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_BodyInstanceID",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HasRemovedBody(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_HasRemovedBody",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_OtherBody(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Component> {
@@ -97,10 +89,18 @@ impl crate::UnityEngine::ContactPairHeader {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_HasRemovedBody(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_OtherBodyInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_HasRemovedBody",
+            "get_OtherBodyInstanceID",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_PairCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_PairCount",
             (),
         )?;
         Ok(__cordl_ret)

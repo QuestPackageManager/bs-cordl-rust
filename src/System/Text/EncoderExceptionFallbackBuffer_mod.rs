@@ -24,17 +24,6 @@ impl std::ops::DerefMut for crate::System::Text::EncoderExceptionFallbackBuffer 
 }
 #[cfg(feature = "System+Text+EncoderExceptionFallbackBuffer")]
 impl crate::System::Text::EncoderExceptionFallbackBuffer {
-    pub fn Fallback_i32_0(
-        &mut self,
-        charUnknown: char,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Fallback", (charUnknown, index))?;
-        Ok(__cordl_ret)
-    }
     pub fn Fallback__cordl_char_i32_1(
         &mut self,
         charUnknownHigh: char,
@@ -48,14 +37,15 @@ impl crate::System::Text::EncoderExceptionFallbackBuffer {
             .invoke("Fallback", (charUnknownHigh, charUnknownLow, index))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn Fallback_i32_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        charUnknown: char,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("Fallback", (charUnknown, index))?;
         Ok(__cordl_ret)
     }
     pub fn GetNextChar(&mut self) -> quest_hook::libil2cpp::Result<char> {
@@ -72,19 +62,29 @@ impl crate::System::Text::EncoderExceptionFallbackBuffer {
         let __cordl_ret: bool = __cordl_object.invoke("MovePrevious", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Remaining(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Remaining", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Text+EncoderExceptionFallbackBuffer")]

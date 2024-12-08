@@ -30,11 +30,24 @@ for crate::Org::BouncyCastle::Crypto::Parameters::DsaValidationParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DsaValidationParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::DsaValidationParameters {
-    pub fn get_UsageIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn Equals_DsaValidationParameters1(
+        &mut self,
+        other: *mut crate::Org::BouncyCastle::Crypto::Parameters::DsaValidationParameters,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_UsageIndex", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object0(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret)
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -44,12 +57,36 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DsaValidationParameters {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Counter(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn GetSeed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Counter", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetSeed", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New_Il2CppArray_i32_0(
+        seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        counter: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seed, counter))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_1(
+        seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        counter: i32,
+        usageIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seed, counter, usageIndex))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_Il2CppArray_i32_0(
         &mut self,
@@ -76,56 +113,19 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DsaValidationParameters {
             .invoke(".ctor", (seed, counter, usageIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn GetSeed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    pub fn get_Counter(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetSeed", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Counter", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_UsageIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_UsageIndex", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Equals_DsaValidationParameters1(
-        &mut self,
-        other: *mut crate::Org::BouncyCastle::Crypto::Parameters::DsaValidationParameters,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_Il2CppArray_i32_0(
-        seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        counter: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seed, counter))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_1(
-        seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        counter: i32,
-        usageIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seed, counter, usageIndex))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DsaValidationParameters")]

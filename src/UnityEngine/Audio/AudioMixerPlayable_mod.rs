@@ -22,6 +22,17 @@ for crate::UnityEngine::Audio::AudioMixerPlayable {
 }
 #[cfg(feature = "UnityEngine+Audio+AudioMixerPlayable")]
 impl crate::UnityEngine::Audio::AudioMixerPlayable {
+    pub fn Equals(
+        &mut self,
+        other: crate::UnityEngine::Audio::AudioMixerPlayable,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn GetHandle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
@@ -40,17 +51,6 @@ impl crate::UnityEngine::Audio::AudioMixerPlayable {
             self,
             ".ctor",
             (handle),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        other: crate::UnityEngine::Audio::AudioMixerPlayable,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
         )?;
         Ok(__cordl_ret)
     }

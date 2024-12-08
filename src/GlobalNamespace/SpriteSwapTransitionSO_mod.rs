@@ -29,24 +29,21 @@ impl std::ops::DerefMut for SpriteSwapTransitionSO {
 }
 #[cfg(feature = "SpriteSwapTransitionSO")]
 impl SpriteSwapTransitionSO {
-    pub fn get_pressedSprite(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
-            .invoke("get_pressedSprite", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn get_normalSprite(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
-            .invoke("get_normalSprite", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_disabledSprite(
@@ -59,16 +56,6 @@ impl SpriteSwapTransitionSO {
             .invoke("get_disabledSprite", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_selectedAndHighlightedSprite(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
-            .invoke("get_selectedAndHighlightedSprite", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_highlightedSprite(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
@@ -79,14 +66,34 @@ impl SpriteSwapTransitionSO {
             .invoke("get_highlightedSprite", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn get_normalSprite(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
+            .invoke("get_normalSprite", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_pressedSprite(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
+            .invoke("get_pressedSprite", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_selectedAndHighlightedSprite(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
+            .invoke("get_selectedAndHighlightedSprite", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_selectedSprite(
@@ -98,13 +105,6 @@ impl SpriteSwapTransitionSO {
         let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
             .invoke("get_selectedSprite", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SpriteSwapTransitionSO")]

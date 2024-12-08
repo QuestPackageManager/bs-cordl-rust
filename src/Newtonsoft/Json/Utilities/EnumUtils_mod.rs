@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::EnumUtils {
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+EnumUtils")]
 impl crate::Newtonsoft::Json::Utilities::EnumUtils {
-    pub const EnumSeparatorChar: char = ",";
+    pub const EnumSeparatorChar: char = ',';
     pub const EnumSeparatorString: &'static str = ", ";
     #[cfg(feature = "Newtonsoft+Json+Utilities+EnumUtils+__c")]
     pub type __c = crate::Newtonsoft::Json::Utilities::EnumUtils___c;

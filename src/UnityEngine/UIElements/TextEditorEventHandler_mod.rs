@@ -26,18 +26,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::TextEditorEventHandl
 }
 #[cfg(feature = "UnityEngine+UIElements+TextEditorEventHandler")]
 impl crate::UnityEngine::UIElements::TextEditorEventHandler {
-    pub fn _ctor(
-        &mut self,
-        textElement: *mut crate::UnityEngine::UIElements::TextElement,
-        editingUtilities: *mut crate::UnityEngine::TextEditingUtilities,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (textElement, editingUtilities))?;
-        Ok(__cordl_ret)
-    }
     pub fn ExecuteDefaultActionAtTarget(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::EventBase,
@@ -52,12 +40,24 @@ impl crate::UnityEngine::UIElements::TextEditorEventHandler {
     pub fn New(
         textElement: *mut crate::UnityEngine::UIElements::TextElement,
         editingUtilities: *mut crate::UnityEngine::TextEditingUtilities,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (textElement, editingUtilities))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        textElement: *mut crate::UnityEngine::UIElements::TextElement,
+        editingUtilities: *mut crate::UnityEngine::TextEditingUtilities,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (textElement, editingUtilities))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextEditorEventHandler")]

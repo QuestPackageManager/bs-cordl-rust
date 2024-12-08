@@ -28,83 +28,13 @@ for crate::UnityEngine::Rendering::SubMeshDescriptor {
 }
 #[cfg(feature = "UnityEngine+Rendering+SubMeshDescriptor")]
 impl crate::UnityEngine::Rendering::SubMeshDescriptor {
-    pub fn get_indexCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_indexCount",
+            "ToString",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_bounds(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
-        let __cordl_ret: crate::UnityEngine::Bounds = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_bounds",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_indexCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_indexCount",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_baseVertex(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_baseVertex",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_firstVertex(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_firstVertex",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_firstVertex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_firstVertex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_topology(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::MeshTopology> {
-        let __cordl_ret: crate::UnityEngine::MeshTopology = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_topology",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_vertexCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_vertexCount",
-            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -129,11 +59,66 @@ impl crate::UnityEngine::Rendering::SubMeshDescriptor {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_bounds(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
+        let __cordl_ret: crate::UnityEngine::Bounds = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_bounds",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_firstVertex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_firstVertex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_indexCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_indexCount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_indexStart(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_indexStart",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_topology(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::MeshTopology> {
+        let __cordl_ret: crate::UnityEngine::MeshTopology = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_topology",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_vertexCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_vertexCount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_baseVertex(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_baseVertex",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -144,6 +129,39 @@ impl crate::UnityEngine::Rendering::SubMeshDescriptor {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_bounds",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_firstVertex(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_firstVertex",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_indexCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_indexCount",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_indexStart(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_indexStart",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -159,31 +177,13 @@ impl crate::UnityEngine::Rendering::SubMeshDescriptor {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_vertexCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_vertexCount",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_indexStart(
+    pub fn set_vertexCount(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_indexStart",
+            "set_vertexCount",
             (value),
         )?;
         Ok(__cordl_ret)

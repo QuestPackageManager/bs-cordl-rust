@@ -28,6 +28,60 @@ impl std::ops::DerefMut for crate::System::ComponentModel::ListChangedEventArgs 
 }
 #[cfg(feature = "System+ComponentModel+ListChangedEventArgs")]
 impl crate::System::ComponentModel::ListChangedEventArgs {
+    pub fn New_PropertyDescriptor2(
+        listChangedType: crate::System::ComponentModel::ListChangedType,
+        propDesc: *mut crate::System::ComponentModel::PropertyDescriptor,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (listChangedType, propDesc))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_0(
+        listChangedType: crate::System::ComponentModel::ListChangedType,
+        newIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (listChangedType, newIndex))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_PropertyDescriptor1(
+        listChangedType: crate::System::ComponentModel::ListChangedType,
+        newIndex: i32,
+        propDesc: *mut crate::System::ComponentModel::PropertyDescriptor,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (listChangedType, newIndex, propDesc))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_i32_3(
+        listChangedType: crate::System::ComponentModel::ListChangedType,
+        newIndex: i32,
+        oldIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (listChangedType, newIndex, oldIndex))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_PropertyDescriptor2(
+        &mut self,
+        listChangedType: crate::System::ComponentModel::ListChangedType,
+        propDesc: *mut crate::System::ComponentModel::PropertyDescriptor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (listChangedType, propDesc))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_i32_0(
         &mut self,
         listChangedType: crate::System::ComponentModel::ListChangedType,
@@ -51,18 +105,6 @@ impl crate::System::ComponentModel::ListChangedEventArgs {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (listChangedType, newIndex, propDesc))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_PropertyDescriptor2(
-        &mut self,
-        listChangedType: crate::System::ComponentModel::ListChangedType,
-        propDesc: *mut crate::System::ComponentModel::PropertyDescriptor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (listChangedType, propDesc))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_i32_i32_3(
@@ -101,48 +143,6 @@ impl crate::System::ComponentModel::ListChangedEventArgs {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_OldIndex", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_i32_0(
-        listChangedType: crate::System::ComponentModel::ListChangedType,
-        newIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (listChangedType, newIndex))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_PropertyDescriptor1(
-        listChangedType: crate::System::ComponentModel::ListChangedType,
-        newIndex: i32,
-        propDesc: *mut crate::System::ComponentModel::PropertyDescriptor,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (listChangedType, newIndex, propDesc))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_PropertyDescriptor2(
-        listChangedType: crate::System::ComponentModel::ListChangedType,
-        propDesc: *mut crate::System::ComponentModel::PropertyDescriptor,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (listChangedType, propDesc))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_i32_3(
-        listChangedType: crate::System::ComponentModel::ListChangedType,
-        newIndex: i32,
-        oldIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (listChangedType, newIndex, oldIndex))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+ComponentModel+ListChangedEventArgs")]

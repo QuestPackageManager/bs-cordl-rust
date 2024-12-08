@@ -32,10 +32,12 @@ impl std::ops::DerefMut for SonyPlatformAdditionalContentModel {
 }
 #[cfg(feature = "SonyPlatformAdditionalContentModel")]
 impl SonyPlatformAdditionalContentModel {
+    #[cfg(feature = "SonyPlatformAdditionalContentModel+_UpdateEntitlementsAsync_d__21")]
+    pub type _UpdateEntitlementsAsync_d__21 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__UpdateEntitlementsAsync_d__21;
     #[cfg(
-        feature = "SonyPlatformAdditionalContentModel+_GetLevelDataVersionInternalAsync_d__12"
+        feature = "SonyPlatformAdditionalContentModel+_OpenLevelPackProductStoreAsync_d__14"
     )]
-    pub type _GetLevelDataVersionInternalAsync_d__12 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetLevelDataVersionInternalAsync_d__12;
+    pub type _OpenLevelPackProductStoreAsync_d__14 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__OpenLevelPackProductStoreAsync_d__14;
     #[cfg(
         feature = "SonyPlatformAdditionalContentModel+_GetPackEntitlementStatusInternalAsync_d__11"
     )]
@@ -44,14 +46,8 @@ impl SonyPlatformAdditionalContentModel {
         feature = "SonyPlatformAdditionalContentModel+_IsPackBetterBuyThanLevelAsync_d__15"
     )]
     pub type _IsPackBetterBuyThanLevelAsync_d__15 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__IsPackBetterBuyThanLevelAsync_d__15;
-    #[cfg(
-        feature = "SonyPlatformAdditionalContentModel+_OpenLevelProductStoreAsync_d__13"
-    )]
-    pub type _OpenLevelProductStoreAsync_d__13 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__OpenLevelProductStoreAsync_d__13;
-    #[cfg(
-        feature = "SonyPlatformAdditionalContentModel+_OpenLevelPackProductStoreAsync_d__14"
-    )]
-    pub type _OpenLevelPackProductStoreAsync_d__14 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__OpenLevelPackProductStoreAsync_d__14;
+    #[cfg(feature = "SonyPlatformAdditionalContentModel+_EnsureDataValidity_d__20")]
+    pub type _EnsureDataValidity_d__20 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__EnsureDataValidity_d__20;
     #[cfg(
         feature = "SonyPlatformAdditionalContentModel+_GetLevelEntitlementStatusInternalAsync_d__10"
     )]
@@ -60,19 +56,22 @@ impl SonyPlatformAdditionalContentModel {
         feature = "SonyPlatformAdditionalContentModel+_GetRedirectedLevelPackProductData_d__16"
     )]
     pub type _GetRedirectedLevelPackProductData_d__16 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetRedirectedLevelPackProductData_d__16;
-    #[cfg(feature = "SonyPlatformAdditionalContentModel+_UpdateEntitlementsAsync_d__21")]
-    pub type _UpdateEntitlementsAsync_d__21 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__UpdateEntitlementsAsync_d__21;
-    #[cfg(feature = "SonyPlatformAdditionalContentModel+_EnsureDataValidity_d__20")]
-    pub type _EnsureDataValidity_d__20 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__EnsureDataValidity_d__20;
-    pub fn HasLevelPackEntitlement(
+    #[cfg(
+        feature = "SonyPlatformAdditionalContentModel+_GetLevelDataVersionInternalAsync_d__12"
+    )]
+    pub type _GetLevelDataVersionInternalAsync_d__12 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetLevelDataVersionInternalAsync_d__12;
+    #[cfg(
+        feature = "SonyPlatformAdditionalContentModel+_OpenLevelProductStoreAsync_d__13"
+    )]
+    pub type _OpenLevelProductStoreAsync_d__13 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__OpenLevelProductStoreAsync_d__13;
+    pub fn Dispose(
         &mut self,
-        levelPackId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("HasLevelPackEntitlement", (levelPackId))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
         Ok(__cordl_ret)
     }
     pub fn EnsureDataValidity(
@@ -88,18 +87,6 @@ impl SonyPlatformAdditionalContentModel {
             .invoke("EnsureDataValidity", (cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        sonyCommerceHelper: *mut ISonyCommerceHelper,
-        sonyLevelProductCollectionModel: *mut SonyLevelProductCollectionModel,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (sonyCommerceHelper, sonyLevelProductCollectionModel))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetLevelDataVersion(
         &mut self,
         levelId: *mut crate::System::String,
@@ -109,22 +96,6 @@ impl SonyPlatformAdditionalContentModel {
         );
         let __cordl_ret: BeatmapLevelDataVersion = __cordl_object
             .invoke("GetLevelDataVersion", (levelId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OpenLevelPackProductStoreAsync(
-        &mut self,
-        levelPackId: *mut crate::System::String,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<OpenProductStoreResult>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            OpenProductStoreResult,
-        > = __cordl_object
-            .invoke("OpenLevelPackProductStoreAsync", (levelPackId, cancellationToken))?;
         Ok(__cordl_ret)
     }
     pub fn GetLevelDataVersionInternalAsync(
@@ -140,16 +111,6 @@ impl SonyPlatformAdditionalContentModel {
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
             BeatmapLevelDataVersion,
         > = __cordl_object.invoke("GetLevelDataVersionInternalAsync", (levelId, token))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InvalidateDataInternal(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InvalidateDataInternal", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetLevelEntitlementStatusInternalAsync(
@@ -171,22 +132,6 @@ impl SonyPlatformAdditionalContentModel {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetRedirectedLevelPackProductData(
-        &mut self,
-        packId: *mut crate::System::String,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::String,
-        > = __cordl_object
-            .invoke("GetRedirectedLevelPackProductData", (packId, cancellationToken))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetPackEntitlementStatusInternalAsync(
         &mut self,
         levelPackId: *mut crate::System::String,
@@ -206,30 +151,62 @@ impl SonyPlatformAdditionalContentModel {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
+    pub fn GetRedirectedLevelPackProductData(
+        &mut self,
+        packId: *mut crate::System::String,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::System::String,
+        > = __cordl_object
+            .invoke("GetRedirectedLevelPackProductData", (packId, cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HasLevelEntitlement(
+        &mut self,
+        levelId: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("HasLevelEntitlement", (levelId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HasLevelPackEntitlement(
+        &mut self,
+        levelPackId: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("HasLevelPackEntitlement", (levelPackId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        vrPlatformHelper: *mut IVRPlatformHelper,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (vrPlatformHelper))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InvalidateDataInternal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateEntitlementsAsync(
-        &mut self,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult,
-        > = __cordl_object.invoke("UpdateEntitlementsAsync", (cancellationToken))?;
+            .invoke("InvalidateDataInternal", ())?;
         Ok(__cordl_ret)
     }
     pub fn IsPackBetterBuyThanLevelAsync(
@@ -248,36 +225,33 @@ impl SonyPlatformAdditionalContentModel {
             .invoke("IsPackBetterBuyThanLevelAsync", (levelPackId, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn HasLevelEntitlement(
-        &mut self,
-        levelId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasLevelEntitlement", (levelId))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        sonyCommerceHelper: *mut ISonyCommerceHelper,
+        sonyLevelProductCollectionModel: *mut SonyLevelProductCollectionModel,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (sonyCommerceHelper, sonyLevelProductCollectionModel),
+            )?;
+        Ok(__cordl_object)
     }
-    pub fn Init(
+    pub fn OpenLevelPackProductStoreAsync(
         &mut self,
-        vrPlatformHelper: *mut IVRPlatformHelper,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        levelPackId: *mut crate::System::String,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<OpenProductStoreResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (vrPlatformHelper))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _HasLevelPackEntitlement_b__18_0(
-        &mut self,
-        levelProductData: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("<HasLevelPackEntitlement>b__18_0", (levelProductData))?;
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            OpenProductStoreResult,
+        > = __cordl_object
+            .invoke("OpenLevelPackProductStoreAsync", (levelPackId, cancellationToken))?;
         Ok(__cordl_ret)
     }
     pub fn OpenLevelProductStoreAsync(
@@ -296,18 +270,44 @@ impl SonyPlatformAdditionalContentModel {
             .invoke("OpenLevelProductStoreAsync", (levelId, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn UpdateEntitlementsAsync(
+        &mut self,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult,
+        > = __cordl_object.invoke("UpdateEntitlementsAsync", (cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _HasLevelPackEntitlement_b__18_0(
+        &mut self,
+        levelProductData: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("<HasLevelPackEntitlement>b__18_0", (levelProductData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
         sonyCommerceHelper: *mut ISonyCommerceHelper,
         sonyLevelProductCollectionModel: *mut SonyLevelProductCollectionModel,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (sonyCommerceHelper, sonyLevelProductCollectionModel),
-            )?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (sonyCommerceHelper, sonyLevelProductCollectionModel))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "SonyPlatformAdditionalContentModel")]

@@ -25,18 +25,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UQuery_FirstQueryMat
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+FirstQueryMatcher")]
 impl crate::UnityEngine::UIElements::UQuery_FirstQueryMatcher {
-    pub fn OnRuleMatchedElement(
-        &mut self,
-        matcher: crate::UnityEngine::UIElements::RuleMatcher,
-        element: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("OnRuleMatchedElement", (matcher, element))?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateNew(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -49,6 +37,25 @@ impl crate::UnityEngine::UIElements::UQuery_FirstQueryMatcher {
             .invoke("CreateNew", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnRuleMatchedElement(
+        &mut self,
+        matcher: crate::UnityEngine::UIElements::RuleMatcher,
+        element: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("OnRuleMatchedElement", (matcher, element))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -58,13 +65,6 @@ impl crate::UnityEngine::UIElements::UQuery_FirstQueryMatcher {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+FirstQueryMatcher")]
@@ -162,6 +162,13 @@ for crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn Predicate(
         &mut self,
         e: *mut crate::System::Object,
@@ -187,13 +194,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+IsOfType_1")]
@@ -253,6 +253,37 @@ impl crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher {
         let __cordl_ret: bool = __cordl_object.invoke("IsInUse", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Run(
+        &mut self,
+        root: *mut crate::UnityEngine::UIElements::VisualElement,
+        matchers: *mut crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::RuleMatcher,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Run", (root, matchers))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_match(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -275,37 +306,6 @@ impl crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_match", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Run(
-        &mut self,
-        root: *mut crate::UnityEngine::UIElements::VisualElement,
-        matchers: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::RuleMatcher,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Run", (root, matchers))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+SingleQueryMatcher")]
@@ -344,14 +344,14 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UQuery {
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery")]
 impl crate::UnityEngine::UIElements::UQuery {
-    #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]
-    pub type UQueryMatcher = crate::UnityEngine::UIElements::UQuery_UQueryMatcher;
-    #[cfg(feature = "UnityEngine+UIElements+UQuery+SingleQueryMatcher")]
-    pub type SingleQueryMatcher = crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher;
     #[cfg(feature = "UnityEngine+UIElements+UQuery+IVisualPredicateWrapper")]
     type IVisualPredicateWrapper = crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper;
+    #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]
+    pub type UQueryMatcher = crate::UnityEngine::UIElements::UQuery_UQueryMatcher;
     #[cfg(feature = "UnityEngine+UIElements+UQuery+FirstQueryMatcher")]
     pub type FirstQueryMatcher = crate::UnityEngine::UIElements::UQuery_FirstQueryMatcher;
+    #[cfg(feature = "UnityEngine+UIElements+UQuery+SingleQueryMatcher")]
+    pub type SingleQueryMatcher = crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher;
     #[cfg(feature = "UnityEngine+UIElements+UQuery+IsOfType_1")]
     pub type IsOfType_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::UQuery_IsOfType_1<
         T,
@@ -397,17 +397,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UQuery_UQueryMatcher
 impl crate::UnityEngine::UIElements::UQuery_UQueryMatcher {
     #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher+__c")]
     pub type __c = crate::UnityEngine::UIElements::UQueryMatcher___c;
-    pub fn TraverseRecursive(
-        &mut self,
-        element: *mut crate::UnityEngine::UIElements::VisualElement,
-        depth: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TraverseRecursive", (element, depth))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnRuleMatchedElement(
         &mut self,
@@ -446,6 +441,18 @@ impl crate::UnityEngine::UIElements::UQuery_UQueryMatcher {
             .invoke("Traverse", (element))?;
         Ok(__cordl_ret)
     }
+    pub fn TraverseRecursive(
+        &mut self,
+        element: *mut crate::UnityEngine::UIElements::VisualElement,
+        depth: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("TraverseRecursive", (element, depth))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -455,13 +462,6 @@ impl crate::UnityEngine::UIElements::UQuery_UQueryMatcher {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]

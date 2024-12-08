@@ -32,6 +32,36 @@ impl std::ops::DerefMut for BeatmapBasicData {
 }
 #[cfg(feature = "BeatmapBasicData")]
 impl BeatmapBasicData {
+    pub fn New(
+        noteJumpMovementSpeed: f32,
+        noteJumpStartBeatOffset: f32,
+        environmentName: EnvironmentName,
+        beatmapColorScheme: *mut ColorScheme,
+        notesCount: i32,
+        obstaclesCount: i32,
+        bombsCount: i32,
+        mappers: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        lighters: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    noteJumpMovementSpeed,
+                    noteJumpStartBeatOffset,
+                    environmentName,
+                    beatmapColorScheme,
+                    notesCount,
+                    obstaclesCount,
+                    bombsCount,
+                    mappers,
+                    lighters,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         noteJumpMovementSpeed: f32,
@@ -63,36 +93,6 @@ impl BeatmapBasicData {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        noteJumpMovementSpeed: f32,
-        noteJumpStartBeatOffset: f32,
-        environmentName: EnvironmentName,
-        beatmapColorScheme: *mut ColorScheme,
-        notesCount: i32,
-        obstaclesCount: i32,
-        bombsCount: i32,
-        mappers: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        lighters: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    noteJumpMovementSpeed,
-                    noteJumpStartBeatOffset,
-                    environmentName,
-                    beatmapColorScheme,
-                    notesCount,
-                    obstaclesCount,
-                    bombsCount,
-                    mappers,
-                    lighters,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapBasicData")]

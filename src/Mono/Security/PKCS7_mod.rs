@@ -26,6 +26,103 @@ impl std::ops::DerefMut for crate::Mono::Security::PKCS7_ContentInfo {
 }
 #[cfg(feature = "Mono+Security+PKCS7+ContentInfo")]
 impl crate::Mono::Security::PKCS7_ContentInfo {
+    pub fn GetASN1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::ASN1> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Mono::Security::ASN1 = __cordl_object
+            .invoke("GetASN1", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_ASN1_3(
+        asn1: *mut crate::Mono::Security::ASN1,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (asn1))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray2(
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (data))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String1(
+        oid: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (oid))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_ASN1_3(
+        &mut self,
+        asn1: *mut crate::Mono::Security::ASN1,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (asn1))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppArray2(
+        &mut self,
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (data))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_String1(
+        &mut self,
+        oid: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (oid))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ASN1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::ASN1> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Mono::Security::ASN1 = __cordl_object
+            .invoke("get_ASN1", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Content(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::ASN1> {
@@ -46,47 +143,15 @@ impl crate::Mono::Security::PKCS7_ContentInfo {
             .invoke("get_ContentType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_0(
+    pub fn set_Content(
         &mut self,
+        value: *mut crate::Mono::Security::ASN1,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String1(
-        &mut self,
-        oid: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (oid))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Il2CppArray2(
-        &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (data))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_ASN1_3(
-        &mut self,
-        asn1: *mut crate::Mono::Security::ASN1,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (asn1))?;
+            .invoke("set_Content", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_ContentType(
@@ -99,71 +164,6 @@ impl crate::Mono::Security::PKCS7_ContentInfo {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ContentType", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_ASN1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::ASN1> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Mono::Security::ASN1 = __cordl_object
-            .invoke("get_ASN1", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetASN1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::ASN1> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Mono::Security::ASN1 = __cordl_object
-            .invoke("GetASN1", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Content(
-        &mut self,
-        value: *mut crate::Mono::Security::ASN1,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Content", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        oid: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (oid))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray2(
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (data))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_ASN1_3(
-        asn1: *mut crate::Mono::Security::ASN1,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (asn1))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Security+PKCS7+ContentInfo")]
@@ -205,25 +205,21 @@ impl std::ops::DerefMut for crate::Mono::Security::PKCS7_EncryptedData {
 }
 #[cfg(feature = "Mono+Security+PKCS7+EncryptedData")]
 impl crate::Mono::Security::PKCS7_EncryptedData {
-    pub fn get_EncryptionAlgorithm(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::PKCS7_ContentInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Mono::Security::PKCS7_ContentInfo = __cordl_object
-            .invoke("get_EncryptionAlgorithm", ())?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn get_EncryptedContent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("get_EncryptedContent", ())?;
-        Ok(__cordl_ret)
+    pub fn New_ASN1_1(
+        asn1: *mut crate::Mono::Security::ASN1,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (asn1))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_0(
         &mut self,
@@ -246,21 +242,25 @@ impl crate::Mono::Security::PKCS7_EncryptedData {
             .invoke(".ctor", (asn1))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_EncryptedContent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("get_EncryptedContent", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_ASN1_1(
-        asn1: *mut crate::Mono::Security::ASN1,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (asn1))?;
-        Ok(__cordl_object)
+    pub fn get_EncryptionAlgorithm(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::PKCS7_ContentInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Mono::Security::PKCS7_ContentInfo = __cordl_object
+            .invoke("get_EncryptionAlgorithm", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Mono+Security+PKCS7+EncryptedData")]
@@ -297,14 +297,14 @@ impl std::ops::DerefMut for crate::Mono::Security::PKCS7 {
 }
 #[cfg(feature = "Mono+Security+PKCS7")]
 impl crate::Mono::Security::PKCS7 {
-    #[cfg(feature = "Mono+Security+PKCS7+SignerInfo")]
-    pub type SignerInfo = crate::Mono::Security::PKCS7_SignerInfo;
-    #[cfg(feature = "Mono+Security+PKCS7+ContentInfo")]
-    pub type ContentInfo = crate::Mono::Security::PKCS7_ContentInfo;
-    #[cfg(feature = "Mono+Security+PKCS7+EncryptedData")]
-    pub type EncryptedData = crate::Mono::Security::PKCS7_EncryptedData;
     #[cfg(feature = "Mono+Security+PKCS7+SignedData")]
     pub type SignedData = crate::Mono::Security::PKCS7_SignedData;
+    #[cfg(feature = "Mono+Security+PKCS7+ContentInfo")]
+    pub type ContentInfo = crate::Mono::Security::PKCS7_ContentInfo;
+    #[cfg(feature = "Mono+Security+PKCS7+SignerInfo")]
+    pub type SignerInfo = crate::Mono::Security::PKCS7_SignerInfo;
+    #[cfg(feature = "Mono+Security+PKCS7+EncryptedData")]
+    pub type EncryptedData = crate::Mono::Security::PKCS7_EncryptedData;
 }
 #[cfg(feature = "Mono+Security+PKCS7")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7 {
@@ -348,6 +348,49 @@ impl std::ops::DerefMut for crate::Mono::Security::PKCS7_SignedData {
 }
 #[cfg(feature = "Mono+Security+PKCS7+SignedData")]
 impl crate::Mono::Security::PKCS7_SignedData {
+    pub fn New(
+        asn1: *mut crate::Mono::Security::ASN1,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (asn1))?;
+        Ok(__cordl_object)
+    }
+    pub fn OidToName(
+        &mut self,
+        oid: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("OidToName", (oid))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        asn1: *mut crate::Mono::Security::ASN1,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (asn1))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Certificates(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Mono::Security::X509::X509CertificateCollection,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Mono::Security::X509::X509CertificateCollection = __cordl_object
+            .invoke("get_Certificates", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_ContentInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::PKCS7_ContentInfo> {
@@ -368,17 +411,6 @@ impl crate::Mono::Security::PKCS7_SignedData {
             .invoke("get_SignerInfo", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        asn1: *mut crate::Mono::Security::ASN1,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (asn1))?;
-        Ok(__cordl_ret)
-    }
     pub fn set_HashName(
         &mut self,
         value: *mut crate::System::String,
@@ -389,38 +421,6 @@ impl crate::Mono::Security::PKCS7_SignedData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_HashName", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn OidToName(
-        &mut self,
-        oid: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("OidToName", (oid))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Certificates(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Mono::Security::X509::X509CertificateCollection,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Mono::Security::X509::X509CertificateCollection = __cordl_object
-            .invoke("get_Certificates", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        asn1: *mut crate::Mono::Security::ASN1,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (asn1))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Security+PKCS7+SignedData")]
@@ -466,35 +466,21 @@ impl std::ops::DerefMut for crate::Mono::Security::PKCS7_SignerInfo {
 }
 #[cfg(feature = "Mono+Security+PKCS7+SignerInfo")]
 impl crate::Mono::Security::PKCS7_SignerInfo {
-    pub fn get_AuthenticatedAttributes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
-            .invoke("get_AuthenticatedAttributes", ())?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn get_Signature(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("get_Signature", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IssuerName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_IssuerName", ())?;
-        Ok(__cordl_ret)
+    pub fn New_ASN1_1(
+        asn1: *mut crate::Mono::Security::ASN1,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (asn1))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_0(
         &mut self,
@@ -517,15 +503,34 @@ impl crate::Mono::Security::PKCS7_SignerInfo {
             .invoke(".ctor", (asn1))?;
         Ok(__cordl_ret)
     }
-    pub fn set_HashName(
+    pub fn get_AuthenticatedAttributes(
         &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_HashName", (value))?;
+        let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
+            .invoke("get_AuthenticatedAttributes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HashName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_HashName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IssuerName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_IssuerName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SerialNumber(
@@ -536,6 +541,16 @@ impl crate::Mono::Security::PKCS7_SignerInfo {
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
             .invoke("get_SerialNumber", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Signature(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("get_Signature", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_UnauthenticatedAttributes(
@@ -555,31 +570,16 @@ impl crate::Mono::Security::PKCS7_SignerInfo {
         let __cordl_ret: u8 = __cordl_object.invoke("get_Version", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_HashName(
+    pub fn set_HashName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_HashName", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_HashName", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_ASN1_1(
-        asn1: *mut crate::Mono::Security::ASN1,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (asn1))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Security+PKCS7+SignerInfo")]

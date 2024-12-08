@@ -27,20 +27,12 @@ impl std::ops::DerefMut for FloatFxGroup {
 }
 #[cfg(feature = "FloatFxGroup")]
 impl FloatFxGroup {
-    pub fn get_targets(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut FloatFxGroupEffectTarget,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut FloatFxGroupEffectTarget,
-        > = __cordl_object.invoke("get_targets", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -59,12 +51,20 @@ impl FloatFxGroup {
         let __cordl_ret: bool = __cordl_object.invoke("get_isTriggerOnly", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_targets(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut FloatFxGroupEffectTarget,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut FloatFxGroupEffectTarget,
+        > = __cordl_object.invoke("get_targets", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "FloatFxGroup")]

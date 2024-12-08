@@ -33,6 +33,13 @@ for crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
 }
 #[cfg(feature = "MultiplayerLobbyAvatarController+Factory")]
 impl crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -42,13 +49,6 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MultiplayerLobbyAvatarController+Factory")]
@@ -95,26 +95,16 @@ impl std::ops::DerefMut for MultiplayerLobbyAvatarController {
 }
 #[cfg(feature = "MultiplayerLobbyAvatarController")]
 impl MultiplayerLobbyAvatarController {
-    #[cfg(feature = "MultiplayerLobbyAvatarController+_DespawnAnimationCoroutine_d__12")]
-    pub type _DespawnAnimationCoroutine_d__12 = crate::GlobalNamespace::MultiplayerLobbyAvatarController__DespawnAnimationCoroutine_d__12;
-    #[cfg(feature = "MultiplayerLobbyAvatarController+Factory")]
-    pub type Factory = crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory;
     #[cfg(
         feature = "MultiplayerLobbyAvatarController+_ShowDespawnAnimationAndDestroy_d__10"
     )]
     pub type _ShowDespawnAnimationAndDestroy_d__10 = crate::GlobalNamespace::MultiplayerLobbyAvatarController__ShowDespawnAnimationAndDestroy_d__10;
+    #[cfg(feature = "MultiplayerLobbyAvatarController+Factory")]
+    pub type Factory = crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory;
+    #[cfg(feature = "MultiplayerLobbyAvatarController+_DespawnAnimationCoroutine_d__12")]
+    pub type _DespawnAnimationCoroutine_d__12 = crate::GlobalNamespace::MultiplayerLobbyAvatarController__DespawnAnimationCoroutine_d__12;
     #[cfg(feature = "MultiplayerLobbyAvatarController+_SpawnAnimationCoroutine_d__8")]
     pub type _SpawnAnimationCoroutine_d__8 = crate::GlobalNamespace::MultiplayerLobbyAvatarController__SpawnAnimationCoroutine_d__8;
-    pub fn DestroySelf(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DestroySelf", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ActivateVisualObjects(
         &mut self,
         on: bool,
@@ -126,15 +116,32 @@ impl MultiplayerLobbyAvatarController {
             .invoke("ActivateVisualObjects", (on))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn DespawnAnimationCoroutine(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("DespawnAnimationCoroutine", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DestroySelf(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("DestroySelf", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ShowDespawnAnimationAndDestroy(
         &mut self,
@@ -144,16 +151,6 @@ impl MultiplayerLobbyAvatarController {
         );
         let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
             .invoke("ShowDespawnAnimationAndDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DespawnAnimationCoroutine(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("DespawnAnimationCoroutine", ())?;
         Ok(__cordl_ret)
     }
     pub fn ShowSpawnAnimation(
@@ -178,12 +175,15 @@ impl MultiplayerLobbyAvatarController {
             .invoke("SpawnAnimationCoroutine", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MultiplayerLobbyAvatarController")]

@@ -30,14 +30,15 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::BerOctetString {
 impl crate::Org::BouncyCastle::Asn1::BerOctetString {
     #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
     pub type ChunkEnumerator = crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator;
-    pub fn GetObjects(
+    pub fn Encode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        derOut: *mut crate::Org::BouncyCastle::Asn1::DerOutputStream,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("GetObjects", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Encode", (derOut))?;
         Ok(__cordl_ret)
     }
     pub fn GetEnumerator(
@@ -50,16 +51,79 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
             .invoke("GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Encode(
+    pub fn GetObjects(
         &mut self,
-        derOut: *mut crate::Org::BouncyCastle::Asn1::DerOutputStream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Encode", (derOut))?;
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("GetObjects", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New_IEnumerable0(
+        e: *mut crate::System::Collections::IEnumerable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (e))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray1(
+        str: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (str))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray2(
+        octs: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (octs))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray_Il2CppArray_i32_5(
+        str: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        octs: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+        >,
+        chunkSize: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (str, octs, chunkSize))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray_i32_3(
+        str: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        chunkSize: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (str, chunkSize))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray_i32_4(
+        octs: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+        >,
+        chunkSize: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (octs, chunkSize))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_IEnumerable0(
         &mut self,
@@ -96,6 +160,21 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
             .invoke(".ctor", (octs))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_Il2CppArray_Il2CppArray_i32_5(
+        &mut self,
+        str: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        octs: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+        >,
+        chunkSize: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (str, octs, chunkSize))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_Il2CppArray_i32_3(
         &mut self,
         str: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -121,85 +200,6 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (octs, chunkSize))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor_Il2CppArray_Il2CppArray_i32_5(
-        &mut self,
-        str: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        octs: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-        >,
-        chunkSize: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (str, octs, chunkSize))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_IEnumerable0(
-        e: *mut crate::System::Collections::IEnumerable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (e))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray1(
-        str: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (str))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray2(
-        octs: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (octs))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray_i32_3(
-        str: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        chunkSize: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (str, chunkSize))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray_i32_4(
-        octs: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-        >,
-        chunkSize: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (octs, chunkSize))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray_Il2CppArray_i32_5(
-        str: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        octs: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-        >,
-        chunkSize: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (str, octs, chunkSize))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString")]
@@ -244,6 +244,33 @@ for crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
 impl crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        octets: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        chunkSize: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (octets, chunkSize))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         octets: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -265,33 +292,6 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
         let __cordl_ret: *mut crate::System::Object = __cordl_object
             .invoke("get_Current", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        octets: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        chunkSize: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (octets, chunkSize))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]

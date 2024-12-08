@@ -27,6 +27,18 @@ for crate::System::Buffers::MemoryManager_1<T> {
 }
 #[cfg(feature = "System+Buffers+MemoryManager_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> {
+    pub fn GetSpan(&mut self) -> quest_hook::libil2cpp::Result<crate::System::Span_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Span_1<T> = __cordl_object
+            .invoke("GetSpan", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Pin(
         &mut self,
         elementIndex: i32,
@@ -54,18 +66,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> 
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGetArray", (segment))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSpan(&mut self) -> quest_hook::libil2cpp::Result<crate::System::Span_1<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Span_1<T> = __cordl_object
-            .invoke("GetSpan", ())?;
         Ok(__cordl_ret)
     }
 }

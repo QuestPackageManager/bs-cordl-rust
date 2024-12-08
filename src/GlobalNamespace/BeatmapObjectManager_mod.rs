@@ -63,41 +63,52 @@ impl std::ops::DerefMut for BeatmapObjectManager {
 impl BeatmapObjectManager {
     #[cfg(feature = "BeatmapObjectManager+NoteWasCutDelegate")]
     pub type NoteWasCutDelegate = crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate;
-    pub fn add_noteDidStartDissolvingEvent(
+    pub fn AddSpawnedNoteController(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteControllerBase>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_noteDidStartDissolvingEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessObstacleData(
-        &mut self,
-        obstacleData: *mut ObstacleData,
-        obstacleSpawnData: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
-        >,
+        noteController: *mut NoteController,
+        noteSpawnData: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
         rotation: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessObstacleData", (obstacleData, obstacleSpawnData, rotation))?;
+            .invoke(
+                "AddSpawnedNoteController",
+                (noteController, noteSpawnData, rotation),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn add_obstacleWasDespawnedEvent(
+    pub fn AddSpawnedObstacleController(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        obstacleController: *mut ObstacleController,
+        obstacleSpawnData: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
+        rotation: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_obstacleWasDespawnedEvent", (value))?;
+            .invoke(
+                "AddSpawnedObstacleController",
+                (obstacleController, obstacleSpawnData, rotation),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddSpawnedSliderController(
+        &mut self,
+        sliderController: *mut SliderController,
+        sliderSpawnData: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
+        rotation: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "AddSpawnedSliderController",
+                (sliderController, sliderSpawnData, rotation),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn DespawnInternal_NoteController0(
@@ -133,113 +144,6 @@ impl BeatmapObjectManager {
             .invoke("DespawnInternal", (sliderNoteController))?;
         Ok(__cordl_ret)
     }
-    pub fn add_sliderWasAddedEvent(
-        &mut self,
-        value: *mut crate::System::Action_3<
-            *mut SliderData,
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
-            f32,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_sliderWasAddedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_noteWasCutEvent(
-        &mut self,
-        value: *mut crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_noteWasCutEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PauseAllBeatmapObjects(
-        &mut self,
-        pause: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PauseAllBeatmapObjects", (pause))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_noteWasMissedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut NoteController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_noteWasMissedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleSliderDidDissolve(
-        &mut self,
-        sliderController: *mut SliderController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSliderDidDissolve", (sliderController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleObstacleDidDissolve(
-        &mut self,
-        obstacleController: *mut ObstacleController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleObstacleDidDissolve", (obstacleController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessSliderData(
-        &mut self,
-        sliderData: *mut SliderData,
-        sliderSpawnData: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
-        >,
-        rotation: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessSliderData", (sliderData, sliderSpawnData, rotation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_sliderWasSpawnedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut SliderController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_sliderWasSpawnedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_sliderWasDespawnedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut SliderController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_sliderWasDespawnedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Despawn_NoteController0(
         &mut self,
         noteController: *mut NoteController,
@@ -273,107 +177,14 @@ impl BeatmapObjectManager {
             .invoke("Despawn", (sliderNoteController))?;
         Ok(__cordl_ret)
     }
-    pub fn add_noteWasCutEvent(
+    pub fn DissolveAllObjects(
         &mut self,
-        value: *mut crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_noteWasCutEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_spawnHidden(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_spawnHidden", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_obstacleWasSpawnedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_obstacleWasSpawnedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_noteWasSpawnedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut NoteController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_noteWasSpawnedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_noteDidStartJumpEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut NoteController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_noteDidStartJumpEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_obstacleWasDespawnedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_obstacleWasDespawnedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_obstacleDidPassAvoidedMarkEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_obstacleDidPassAvoidedMarkEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_noteWasAddedEvent(
-        &mut self,
-        value: *mut crate::System::Action_3<
-            *mut NoteData,
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
-            f32,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_noteWasAddedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_noteWasAddedEvent(
-        &mut self,
-        value: *mut crate::System::Action_3<
-            *mut NoteData,
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
-            f32,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_noteWasAddedEvent", (value))?;
+            .invoke("DissolveAllObjects", ())?;
         Ok(__cordl_ret)
     }
     pub fn HandleNoteControllerNoteDidDissolve(
@@ -387,48 +198,53 @@ impl BeatmapObjectManager {
             .invoke("HandleNoteControllerNoteDidDissolve", (noteController))?;
         Ok(__cordl_ret)
     }
-    pub fn add_obstacleDidPassAvoidedMarkEvent(
+    pub fn HandleNoteControllerNoteDidFinishJump(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        noteController: *mut NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_obstacleDidPassAvoidedMarkEvent", (value))?;
+            .invoke("HandleNoteControllerNoteDidFinishJump", (noteController))?;
         Ok(__cordl_ret)
     }
-    pub fn RemoveSliderNoteControllerEventCallbacks(
+    pub fn HandleNoteControllerNoteDidStartDissolving(
         &mut self,
-        sliderNoteController: *mut SliderController,
+        noteController: *mut NoteControllerBase,
+        duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveSliderNoteControllerEventCallbacks", (sliderNoteController))?;
+            .invoke(
+                "HandleNoteControllerNoteDidStartDissolving",
+                (noteController, duration),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn add_noteDidStartJumpEvent(
+    pub fn HandleNoteControllerNoteDidStartJump(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteController>,
+        noteController: *mut NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_noteDidStartJumpEvent", (value))?;
+            .invoke("HandleNoteControllerNoteDidStartJump", (noteController))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleObstaclePassedAvoidedMark(
+    pub fn HandleNoteControllerNoteWasCut(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        noteController: *mut NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleObstaclePassedAvoidedMark", (obstacleController))?;
+            .invoke("HandleNoteControllerNoteWasCut", (noteController, noteCutInfo))?;
         Ok(__cordl_ret)
     }
     pub fn HandleNoteControllerNoteWasMissed(
@@ -442,67 +258,114 @@ impl BeatmapObjectManager {
             .invoke("HandleNoteControllerNoteWasMissed", (noteController))?;
         Ok(__cordl_ret)
     }
-    pub fn SetNoteControllerEventCallbacks(
+    pub fn HandleObstacleDidDissolve(
+        &mut self,
+        obstacleController: *mut ObstacleController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleObstacleDidDissolve", (obstacleController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleObstacleFinishedMovement(
+        &mut self,
+        obstacleController: *mut ObstacleController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleObstacleFinishedMovement", (obstacleController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleObstaclePassedAvoidedMark(
+        &mut self,
+        obstacleController: *mut ObstacleController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleObstaclePassedAvoidedMark", (obstacleController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleObstaclePassedThreeQuartersOfMove2(
+        &mut self,
+        obstacleController: *mut ObstacleController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleObstaclePassedThreeQuartersOfMove2", (obstacleController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleSliderDidDissolve(
+        &mut self,
+        sliderController: *mut SliderController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleSliderDidDissolve", (sliderController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleSliderDidFinishJump(
+        &mut self,
+        sliderController: *mut SliderController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleSliderDidFinishJump", (sliderController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HideAllBeatmapObjects(
+        &mut self,
+        hide: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HideAllBeatmapObjects", (hide))?;
+        Ok(__cordl_ret)
+    }
+    pub fn INoteControllerNoteWasCutEvent_HandleNoteControllerNoteWasCut(
         &mut self,
         noteController: *mut NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNoteControllerEventCallbacks", (noteController))?;
+            .invoke(
+                "INoteControllerNoteWasCutEvent.HandleNoteControllerNoteWasCut",
+                (noteController, noteCutInfo),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn add_didHideAllBeatmapObjectsEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<bool>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didHideAllBeatmapObjectsEvent", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn add_sliderWasDespawnedEvent(
+    pub fn PauseAllBeatmapObjects(
         &mut self,
-        value: *mut crate::System::Action_1<*mut SliderController>,
+        pause: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_sliderWasDespawnedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_sliderWasAddedEvent(
-        &mut self,
-        value: *mut crate::System::Action_3<
-            *mut SliderData,
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
-            f32,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_sliderWasAddedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_obstacleWasAddedEvent(
-        &mut self,
-        value: *mut crate::System::Action_3<
-            *mut ObstacleData,
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
-            f32,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_obstacleWasAddedEvent", (value))?;
+            .invoke("PauseAllBeatmapObjects", (pause))?;
         Ok(__cordl_ret)
     }
     pub fn ProcessNoteData(
@@ -524,37 +387,45 @@ impl BeatmapObjectManager {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn remove_noteWasSpawnedEvent(
+    pub fn ProcessObstacleData(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteController>,
+        obstacleData: *mut ObstacleData,
+        obstacleSpawnData: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
+        >,
+        rotation: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_noteWasSpawnedEvent", (value))?;
+            .invoke("ProcessObstacleData", (obstacleData, obstacleSpawnData, rotation))?;
         Ok(__cordl_ret)
     }
-    pub fn add_obstacleWasSpawnedEvent(
+    pub fn ProcessSliderData(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        sliderData: *mut SliderData,
+        sliderSpawnData: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
+        >,
+        rotation: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_obstacleWasSpawnedEvent", (value))?;
+            .invoke("ProcessSliderData", (sliderData, sliderSpawnData, rotation))?;
         Ok(__cordl_ret)
     }
-    pub fn SetObstacleEventCallbacks(
+    pub fn RemoveNoteControllerEventCallbacks(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        noteController: *mut NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetObstacleEventCallbacks", (obstacleController))?;
+            .invoke("RemoveNoteControllerEventCallbacks", (noteController))?;
         Ok(__cordl_ret)
     }
     pub fn RemoveObstacleEventCallbacks(
@@ -568,7 +439,29 @@ impl BeatmapObjectManager {
             .invoke("RemoveObstacleEventCallbacks", (obstacleController))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleObstacleFinishedMovement(
+    pub fn RemoveSliderNoteControllerEventCallbacks(
+        &mut self,
+        sliderNoteController: *mut SliderController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveSliderNoteControllerEventCallbacks", (sliderNoteController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetNoteControllerEventCallbacks(
+        &mut self,
+        noteController: *mut NoteController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetNoteControllerEventCallbacks", (noteController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetObstacleEventCallbacks(
         &mut self,
         obstacleController: *mut ObstacleController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -576,47 +469,197 @@ impl BeatmapObjectManager {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleObstacleFinishedMovement", (obstacleController))?;
+            .invoke("SetObstacleEventCallbacks", (obstacleController))?;
         Ok(__cordl_ret)
     }
-    pub fn DissolveAllObjects(
+    pub fn SetSliderNoteControllerEventCallbacks(
+        &mut self,
+        sliderNoteController: *mut SliderController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetSliderNoteControllerEventCallbacks", (sliderNoteController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DissolveAllObjects", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_spawnHidden(
+    pub fn add_didHideAllBeatmapObjectsEvent(
         &mut self,
-        value: bool,
+        value: *mut crate::System::Action_1<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_spawnHidden", (value))?;
+            .invoke("add_didHideAllBeatmapObjectsEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn AddSpawnedObstacleController(
+    pub fn add_noteDidStartDissolvingEvent(
         &mut self,
-        obstacleController: *mut ObstacleController,
-        obstacleSpawnData: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
-        rotation: f32,
+        value: *mut crate::System::Action_1<*mut NoteControllerBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "AddSpawnedObstacleController",
-                (obstacleController, obstacleSpawnData, rotation),
-            )?;
+            .invoke("add_noteDidStartDissolvingEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_sliderWasSpawnedEvent(
+    pub fn add_noteDidStartJumpEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut NoteController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_noteDidStartJumpEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_noteWasAddedEvent(
+        &mut self,
+        value: *mut crate::System::Action_3<
+            *mut NoteData,
+            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
+            f32,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_noteWasAddedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_noteWasCutEvent(
+        &mut self,
+        value: *mut crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_noteWasCutEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_noteWasDespawnedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut NoteController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_noteWasDespawnedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_noteWasMissedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut NoteController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_noteWasMissedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_noteWasSpawnedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut NoteController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_noteWasSpawnedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_obstacleDidPassAvoidedMarkEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut ObstacleController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_obstacleDidPassAvoidedMarkEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_obstacleDidPassThreeQuartersOfMove2Event(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut ObstacleController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_obstacleDidPassThreeQuartersOfMove2Event", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_obstacleWasAddedEvent(
+        &mut self,
+        value: *mut crate::System::Action_3<
+            *mut ObstacleData,
+            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
+            f32,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_obstacleWasAddedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_obstacleWasDespawnedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut ObstacleController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_obstacleWasDespawnedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_obstacleWasSpawnedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut ObstacleController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_obstacleWasSpawnedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_sliderWasAddedEvent(
+        &mut self,
+        value: *mut crate::System::Action_3<
+            *mut SliderData,
+            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
+            f32,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_sliderWasAddedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_sliderWasDespawnedEvent(
         &mut self,
         value: *mut crate::System::Action_1<*mut SliderController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -624,7 +667,18 @@ impl BeatmapObjectManager {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_sliderWasSpawnedEvent", (value))?;
+            .invoke("add_sliderWasDespawnedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_sliderWasSpawnedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut SliderController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_sliderWasSpawnedEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_activeObstacleControllers(
@@ -640,102 +694,11 @@ impl BeatmapObjectManager {
         > = __cordl_object.invoke("get_activeObstacleControllers", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetSliderNoteControllerEventCallbacks(
-        &mut self,
-        sliderNoteController: *mut SliderController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_spawnHidden(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSliderNoteControllerEventCallbacks", (sliderNoteController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveNoteControllerEventCallbacks(
-        &mut self,
-        noteController: *mut NoteController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveNoteControllerEventCallbacks", (noteController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_noteWasMissedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut NoteController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_noteWasMissedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn INoteControllerNoteWasCutEvent_HandleNoteControllerNoteWasCut(
-        &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "INoteControllerNoteWasCutEvent.HandleNoteControllerNoteWasCut",
-                (noteController, noteCutInfo),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_noteWasDespawnedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut NoteController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_noteWasDespawnedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddSpawnedSliderController(
-        &mut self,
-        sliderController: *mut SliderController,
-        sliderSpawnData: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
-        rotation: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "AddSpawnedSliderController",
-                (sliderController, sliderSpawnData, rotation),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleNoteControllerNoteWasCut(
-        &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNoteControllerNoteWasCut", (noteController, noteCutInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_obstacleDidPassThreeQuartersOfMove2Event(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_obstacleDidPassThreeQuartersOfMove2Event", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_spawnHidden", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_didHideAllBeatmapObjectsEvent(
@@ -749,33 +712,6 @@ impl BeatmapObjectManager {
             .invoke("remove_didHideAllBeatmapObjectsEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn AddSpawnedNoteController(
-        &mut self,
-        noteController: *mut NoteController,
-        noteSpawnData: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
-        rotation: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "AddSpawnedNoteController",
-                (noteController, noteSpawnData, rotation),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleSliderDidFinishJump(
-        &mut self,
-        sliderController: *mut SliderController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSliderDidFinishJump", (sliderController))?;
-        Ok(__cordl_ret)
-    }
     pub fn remove_noteDidStartDissolvingEvent(
         &mut self,
         value: *mut crate::System::Action_1<*mut NoteControllerBase>,
@@ -787,28 +723,7 @@ impl BeatmapObjectManager {
             .invoke("remove_noteDidStartDissolvingEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleNoteControllerNoteDidFinishJump(
-        &mut self,
-        noteController: *mut NoteController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNoteControllerNoteDidFinishJump", (noteController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_noteWasDespawnedEvent(
+    pub fn remove_noteDidStartJumpEvent(
         &mut self,
         value: *mut crate::System::Action_1<*mut NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -816,29 +731,88 @@ impl BeatmapObjectManager {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_noteWasDespawnedEvent", (value))?;
+            .invoke("remove_noteDidStartJumpEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleObstaclePassedThreeQuartersOfMove2(
+    pub fn remove_noteWasAddedEvent(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        value: *mut crate::System::Action_3<
+            *mut NoteData,
+            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
+            f32,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleObstaclePassedThreeQuartersOfMove2", (obstacleController))?;
+            .invoke("remove_noteWasAddedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleNoteControllerNoteDidStartJump(
+    pub fn remove_noteWasCutEvent(
         &mut self,
-        noteController: *mut NoteController,
+        value: *mut crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNoteControllerNoteDidStartJump", (noteController))?;
+            .invoke("remove_noteWasCutEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_noteWasDespawnedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut NoteController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_noteWasDespawnedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_noteWasMissedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut NoteController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_noteWasMissedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_noteWasSpawnedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut NoteController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_noteWasSpawnedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_obstacleDidPassAvoidedMarkEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut ObstacleController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_obstacleDidPassAvoidedMarkEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_obstacleDidPassThreeQuartersOfMove2Event(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut ObstacleController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_obstacleDidPassThreeQuartersOfMove2Event", (value))?;
         Ok(__cordl_ret)
     }
     pub fn remove_obstacleWasAddedEvent(
@@ -856,18 +830,7 @@ impl BeatmapObjectManager {
             .invoke("remove_obstacleWasAddedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn HideAllBeatmapObjects(
-        &mut self,
-        hide: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HideAllBeatmapObjects", (hide))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_obstacleDidPassThreeQuartersOfMove2Event(
+    pub fn remove_obstacleWasDespawnedEvent(
         &mut self,
         value: *mut crate::System::Action_1<*mut ObstacleController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -875,30 +838,67 @@ impl BeatmapObjectManager {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_obstacleDidPassThreeQuartersOfMove2Event", (value))?;
+            .invoke("remove_obstacleWasDespawnedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleNoteControllerNoteDidStartDissolving(
+    pub fn remove_obstacleWasSpawnedEvent(
         &mut self,
-        noteController: *mut NoteControllerBase,
-        duration: f32,
+        value: *mut crate::System::Action_1<*mut ObstacleController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleNoteControllerNoteDidStartDissolving",
-                (noteController, duration),
-            )?;
+            .invoke("remove_obstacleWasSpawnedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn remove_sliderWasAddedEvent(
+        &mut self,
+        value: *mut crate::System::Action_3<
+            *mut SliderData,
+            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
+            f32,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_sliderWasAddedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_sliderWasDespawnedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut SliderController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_sliderWasDespawnedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_sliderWasSpawnedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut SliderController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_sliderWasSpawnedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_spawnHidden(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_spawnHidden", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapObjectManager")]
@@ -977,6 +977,16 @@ impl crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate {
             .invoke("Invoke", (noteController, noteCutInfo))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -988,16 +998,6 @@ impl crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapObjectManager+NoteWasCutDelegate")]

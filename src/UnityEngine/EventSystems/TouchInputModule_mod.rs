@@ -28,20 +28,6 @@ impl std::ops::DerefMut for crate::UnityEngine::EventSystems::TouchInputModule {
 }
 #[cfg(feature = "UnityEngine+EventSystems+TouchInputModule")]
 impl crate::UnityEngine::EventSystems::TouchInputModule {
-    pub fn IsModuleSupported(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsModuleSupported", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UseFakeInput(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("UseFakeInput", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn DeactivateModule(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -52,15 +38,29 @@ impl crate::UnityEngine::EventSystems::TouchInputModule {
             .invoke("DeactivateModule", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
+    pub fn FakeTouches(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FakeTouches", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn IsModuleSupported(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsModuleSupported", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Process(
         &mut self,
@@ -72,11 +72,14 @@ impl crate::UnityEngine::EventSystems::TouchInputModule {
             .invoke("Process", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ShouldActivateModule(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn ProcessTouchEvents(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("ShouldActivateModule", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessTouchEvents", ())?;
         Ok(__cordl_ret)
     }
     pub fn ProcessTouchPress(
@@ -92,6 +95,23 @@ impl crate::UnityEngine::EventSystems::TouchInputModule {
             .invoke("ProcessTouchPress", (pointerEvent, pressed, released))?;
         Ok(__cordl_ret)
     }
+    pub fn ShouldActivateModule(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ShouldActivateModule", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn UpdateModule(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -102,6 +122,13 @@ impl crate::UnityEngine::EventSystems::TouchInputModule {
             .invoke("UpdateModule", ())?;
         Ok(__cordl_ret)
     }
+    pub fn UseFakeInput(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("UseFakeInput", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -110,6 +137,23 @@ impl crate::UnityEngine::EventSystems::TouchInputModule {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_allowActivationOnStandalone(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_allowActivationOnStandalone", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_forceModuleActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_forceModuleActive", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_allowActivationOnStandalone(
@@ -133,50 +177,6 @@ impl crate::UnityEngine::EventSystems::TouchInputModule {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_forceModuleActive", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_allowActivationOnStandalone(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_allowActivationOnStandalone", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_forceModuleActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_forceModuleActive", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FakeTouches(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FakeTouches", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessTouchEvents(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessTouchEvents", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+TouchInputModule")]

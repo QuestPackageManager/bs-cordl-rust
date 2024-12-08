@@ -66,21 +66,59 @@ impl crate::System::Globalization::Calendar {
     pub const TicksPerMillisecond: i64 = 10000i64;
     pub const TicksPerMinute: i64 = 600000000i64;
     pub const TicksPerSecond: i64 = 10000000i64;
-    pub fn _ctor(
+    pub fn Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ToFourDigitYear(&mut self, year: i32) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn GetDayOfMonth(
+        &mut self,
+        _cordl_time: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("ToFourDigitYear", (year))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetDayOfMonth", (_cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDayOfWeek(
+        &mut self,
+        _cordl_time: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DayOfWeek> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::DayOfWeek = __cordl_object
+            .invoke("GetDayOfWeek", (_cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDaysInMonth(
+        &mut self,
+        year: i32,
+        month: i32,
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetDaysInMonth", (year, month, era))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDaysInYear(
+        &mut self,
+        year: i32,
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetDaysInYear", (year, era))?;
         Ok(__cordl_ret)
     }
     pub fn GetEra(
@@ -91,6 +129,162 @@ impl crate::System::Globalization::Calendar {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetEra", (_cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetMonth(
+        &mut self,
+        _cordl_time: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetMonth", (_cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetMonthsInYear(
+        &mut self,
+        year: i32,
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetMonthsInYear", (year, era))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetYear(
+        &mut self,
+        _cordl_time: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetYear", (_cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsLeapYear_i32_0(
+        &mut self,
+        year: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsLeapYear", (year))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsLeapYear_i32_1(
+        &mut self,
+        year: i32,
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsLeapYear", (year, era))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsValidDay(
+        &mut self,
+        year: i32,
+        month: i32,
+        day: i32,
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsValidDay", (year, month, day, era))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsValidMonth(
+        &mut self,
+        year: i32,
+        month: i32,
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsValidMonth", (year, month, era))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsValidYear(
+        &mut self,
+        year: i32,
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsValidYear", (year, era))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetReadOnlyState(
+        &mut self,
+        readOnly: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetReadOnlyState", (readOnly))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToDateTime_i32_1(
+        &mut self,
+        year: i32,
+        month: i32,
+        day: i32,
+        hour: i32,
+        minute: i32,
+        second: i32,
+        millisecond: i32,
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::DateTime = __cordl_object
+            .invoke(
+                "ToDateTime",
+                (year, month, day, hour, minute, second, millisecond, era),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToDateTime_i32_i32_i32_i32_i32_i32_i32_0(
+        &mut self,
+        year: i32,
+        month: i32,
+        day: i32,
+        hour: i32,
+        minute: i32,
+        second: i32,
+        millisecond: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::DateTime = __cordl_object
+            .invoke(
+                "ToDateTime",
+                (year, month, day, hour, minute, second, millisecond),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToFourDigitYear(&mut self, year: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("ToFourDigitYear", (year))?;
         Ok(__cordl_ret)
     }
     pub fn TryToDateTime(
@@ -115,36 +309,38 @@ impl crate::System::Globalization::Calendar {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetDayOfWeek(
+    pub fn VerifyWritable(
         &mut self,
-        _cordl_time: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DayOfWeek> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::DayOfWeek = __cordl_object
-            .invoke("GetDayOfWeek", (_cordl_time))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("VerifyWritable", ())?;
         Ok(__cordl_ret)
     }
-    pub fn IsLeapYear_i32_0(
+    pub fn _ctor(
         &mut self,
-        year: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("IsLeapYear", (year))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn IsLeapYear_i32_1(
-        &mut self,
-        year: i32,
-        era: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_BaseCalendarID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("IsLeapYear", (year, era))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_BaseCalendarID", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CurrentEraValue(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_CurrentEraValue", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Eras(
@@ -157,43 +353,11 @@ impl crate::System::Globalization::Calendar {
             .invoke("get_Eras", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_MinSupportedDateTime(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+    pub fn get_ID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::DateTime = __cordl_object
-            .invoke("get_MinSupportedDateTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CurrentEraValue(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_CurrentEraValue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetReadOnlyState(
-        &mut self,
-        readOnly: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetReadOnlyState", (readOnly))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDaysInYear(
-        &mut self,
-        year: i32,
-        era: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetDaysInYear", (year, era))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ID", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_MaxSupportedDateTime(
@@ -206,164 +370,14 @@ impl crate::System::Globalization::Calendar {
             .invoke("get_MaxSupportedDateTime", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetMonth(
+    pub fn get_MinSupportedDateTime(
         &mut self,
-        _cordl_time: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetMonth", (_cordl_time))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToDateTime_i32_i32_i32_i32_i32_i32_i32_0(
-        &mut self,
-        year: i32,
-        month: i32,
-        day: i32,
-        hour: i32,
-        minute: i32,
-        second: i32,
-        millisecond: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::System::DateTime = __cordl_object
-            .invoke(
-                "ToDateTime",
-                (year, month, day, hour, minute, second, millisecond),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToDateTime_i32_1(
-        &mut self,
-        year: i32,
-        month: i32,
-        day: i32,
-        hour: i32,
-        minute: i32,
-        second: i32,
-        millisecond: i32,
-        era: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::DateTime = __cordl_object
-            .invoke(
-                "ToDateTime",
-                (year, month, day, hour, minute, second, millisecond, era),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsValidYear(
-        &mut self,
-        year: i32,
-        era: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsValidYear", (year, era))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsValidMonth(
-        &mut self,
-        year: i32,
-        month: i32,
-        era: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsValidMonth", (year, month, era))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetMonthsInYear(
-        &mut self,
-        year: i32,
-        era: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetMonthsInYear", (year, era))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ID", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDayOfMonth(
-        &mut self,
-        _cordl_time: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetDayOfMonth", (_cordl_time))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clone(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("Clone", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn VerifyWritable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("VerifyWritable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDaysInMonth(
-        &mut self,
-        year: i32,
-        month: i32,
-        era: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetDaysInMonth", (year, month, era))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetYear(
-        &mut self,
-        _cordl_time: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetYear", (_cordl_time))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsValidDay(
-        &mut self,
-        year: i32,
-        month: i32,
-        day: i32,
-        era: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsValidDay", (year, month, day, era))?;
+            .invoke("get_MinSupportedDateTime", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_TwoDigitYearMax(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -383,20 +397,6 @@ impl crate::System::Globalization::Calendar {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_TwoDigitYearMax", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_BaseCalendarID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_BaseCalendarID", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Globalization+Calendar")]

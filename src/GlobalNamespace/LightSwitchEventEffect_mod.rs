@@ -47,6 +47,17 @@ impl std::ops::DerefMut for LightSwitchEventEffect {
 impl LightSwitchEventEffect {
     pub const kFlashAndFadeDuration: f32 = 1.5f32;
     pub const kHighlightDuration: f32 = 0.6f32;
+    pub fn CheckNextEventForFade(
+        &mut self,
+        basicBeatmapEventData: *mut BasicBeatmapEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckNextEventForFade", (basicBeatmapEventData))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetHighlightColor(
         &mut self,
         beatmapEventValue: i32,
@@ -59,14 +70,27 @@ impl LightSwitchEventEffect {
             .invoke("GetHighlightColor", (beatmapEventValue, colorBoost))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn GetNormalColor(
         &mut self,
+        beatmapEventValue: i32,
+        colorBoost: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("GetNormalColor", (beatmapEventValue, colorBoost))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleColorBoostBeatmapEvent(
+        &mut self,
+        eventData: *mut ColorBoostBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("HandleColorBoostBeatmapEvent", (eventData))?;
         Ok(__cordl_ret)
     }
     pub fn HandleColorChangeBeatmapEvent(
@@ -80,16 +104,32 @@ impl LightSwitchEventEffect {
             .invoke("HandleColorChangeBeatmapEvent", (basicBeatmapEventData))?;
         Ok(__cordl_ret)
     }
-    pub fn GetNormalColor(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
         &mut self,
-        beatmapEventValue: i32,
-        colorBoost: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("GetNormalColor", (beatmapEventValue, colorBoost))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetColor(
+        &mut self,
+        color: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetColor", (color))?;
         Ok(__cordl_ret)
     }
     pub fn SetupTweenAndSaveOtherColors(
@@ -109,16 +149,6 @@ impl LightSwitchEventEffect {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -129,15 +159,14 @@ impl LightSwitchEventEffect {
             .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetColor(
+    pub fn _ctor(
         &mut self,
-        color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColor", (color))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_eventType(
@@ -150,41 +179,12 @@ impl LightSwitchEventEffect {
             .invoke("get_eventType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn HandleColorBoostBeatmapEvent(
-        &mut self,
-        eventData: *mut ColorBoostBeatmapEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleColorBoostBeatmapEvent", (eventData))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_lightsId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_lightsId", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn CheckNextEventForFade(
-        &mut self,
-        basicBeatmapEventData: *mut BasicBeatmapEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckNextEventForFade", (basicBeatmapEventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LightSwitchEventEffect")]

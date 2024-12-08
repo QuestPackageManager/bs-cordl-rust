@@ -29,6 +29,13 @@ for crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
 }
 #[cfg(feature = "SonyAchievementIdsModelSO+AchievementIdData")]
 impl crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,13 +62,6 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ps4TrophyId", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SonyAchievementIdsModelSO+AchievementIdData")]
@@ -113,29 +113,16 @@ impl std::ops::DerefMut for SonyAchievementIdsModelSO {
 impl SonyAchievementIdsModelSO {
     #[cfg(feature = "SonyAchievementIdsModelSO+AchievementIdData")]
     pub type AchievementIdData = crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData;
-    pub fn get_achievementsIds(
+    pub fn GetAchievementId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
-        >,
-    > {
+        trophyId: i32,
+        achievementId: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
-        > = __cordl_object.invoke("get_achievementsIds", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTrophyIds(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
-            .invoke("GetTrophyIds", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("GetAchievementId", (trophyId, achievementId))?;
         Ok(__cordl_ret)
     }
     pub fn GetTrophyId(
@@ -150,27 +137,22 @@ impl SonyAchievementIdsModelSO {
             .invoke("GetTrophyId", (achievementId, trophyId))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn GetTrophyIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
+            .invoke("GetTrophyIds", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetAchievementId(
-        &mut self,
-        trophyId: i32,
-        achievementId: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("GetAchievementId", (trophyId, achievementId))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnEnable(
         &mut self,
@@ -182,12 +164,30 @@ impl SonyAchievementIdsModelSO {
             .invoke("OnEnable", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_achievementsIds(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
+        > = __cordl_object.invoke("get_achievementsIds", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "SonyAchievementIdsModelSO")]

@@ -34,6 +34,36 @@ for crate::UnityEngine::EventSystems::RaycastResult {
 }
 #[cfg(feature = "UnityEngine+EventSystems+RaycastResult")]
 impl crate::UnityEngine::EventSystems::RaycastResult {
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Clear",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_gameObject(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_gameObject",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_isValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -50,36 +80,6 @@ impl crate::UnityEngine::EventSystems::RaycastResult {
             self,
             "set_gameObject",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Clear",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_gameObject(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_gameObject",
-            (),
         )?;
         Ok(__cordl_ret)
     }

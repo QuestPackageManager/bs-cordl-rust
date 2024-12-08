@@ -45,6 +45,17 @@ impl crate::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise {
             .invoke("Invoke", (completingTask))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        tasks: *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::System::Threading::Tasks::Task,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (tasks))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         tasks: *mut crate::System::Collections::Generic::IList_1<
@@ -67,17 +78,6 @@ impl crate::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise {
         let __cordl_ret: bool = __cordl_object
             .invoke("get_InvokeMayRunArbitraryCode", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        tasks: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::System::Threading::Tasks::Task,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (tasks))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise")]
@@ -122,33 +122,6 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::TaskFactory {
 impl crate::System::Threading::Tasks::TaskFactory {
     #[cfg(feature = "System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise")]
     pub type CompleteOnInvokePromise = crate::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise;
-    pub fn _ctor_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_CancellationToken_TaskCreationOptions_TaskContinuationOptions_TaskScheduler1(
-        &mut self,
-        cancellationToken: crate::System::Threading::CancellationToken,
-        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
-        continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
-        scheduler: *mut crate::System::Threading::Tasks::TaskScheduler,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (cancellationToken, creationOptions, continuationOptions, scheduler),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn FromAsync_Func_4_Object0<TArg1>(
         &mut self,
         beginMethod: *mut crate::System::Func_4<
@@ -257,6 +230,28 @@ impl crate::System::Threading::Tasks::TaskFactory {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_CancellationToken_TaskCreationOptions_TaskContinuationOptions_TaskScheduler1(
+        cancellationToken: crate::System::Threading::CancellationToken,
+        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
+        continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
+        scheduler: *mut crate::System::Threading::Tasks::TaskScheduler,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (cancellationToken, creationOptions, continuationOptions, scheduler),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn StartNew_Action_1_Object_CancellationToken_TaskCreationOptions_TaskScheduler0(
         &mut self,
         action: *mut crate::System::Action_1<*mut crate::System::Object>,
@@ -324,27 +319,32 @@ impl crate::System::Threading::Tasks::TaskFactory {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_CancellationToken_TaskCreationOptions_TaskContinuationOptions_TaskScheduler1(
+    pub fn _ctor_CancellationToken_TaskCreationOptions_TaskContinuationOptions_TaskScheduler1(
+        &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
         continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
         scheduler: *mut crate::System::Threading::Tasks::TaskScheduler,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
                 ".ctor",
                 (cancellationToken, creationOptions, continuationOptions, scheduler),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Threading+Tasks+TaskFactory")]

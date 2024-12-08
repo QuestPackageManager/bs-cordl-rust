@@ -112,7 +112,6 @@ impl crate::Unity::Mathematics::math {
     pub const EPSILON_DBL: f64 = 0.0000000000000002220446049250313f64;
     pub const E_DBL: f64 = 2.718281828459045f64;
     pub const FLT_MIN_NORMAL: f32 = 0.000000000000000000000000000000000000011754944f32;
-    pub const _cordl_INFINITY: f32 = std::f32::INFINITY;
     pub const INFINITY_DBL: f64 = std::f64::INFINITY;
     pub const LN10: f32 = 2.3025851f32;
     pub const LN10_DBL: f64 = 2.302585092994046f64;
@@ -122,20 +121,21 @@ impl crate::Unity::Mathematics::math {
     pub const LOG10E_DBL: f64 = 0.4342944819032518f64;
     pub const LOG2E: f32 = 1.442695f32;
     pub const LOG2E_DBL: f64 = 1.4426950408889634f64;
-    pub const _cordl_NAN: f32 = std::f64::NAN;
     pub const NAN_DBL: f64 = std::f64::NAN;
     pub const PI: f32 = 3.1415927f32;
     pub const PI_DBL: f64 = 3.141592653589793f64;
     pub const SQRT2: f32 = 1.4142135f32;
     pub const SQRT2_DBL: f64 = 1.4142135623730951f64;
-    #[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
-    pub type LongDoubleUnion = crate::Unity::Mathematics::math_LongDoubleUnion;
-    #[cfg(feature = "Unity+Mathematics+math+IntFloatUnion")]
-    pub type IntFloatUnion = crate::Unity::Mathematics::math_IntFloatUnion;
+    pub const _cordl_INFINITY: f32 = std::f32::INFINITY;
+    pub const _cordl_NAN: f32 = std::f64::NAN;
     #[cfg(feature = "Unity+Mathematics+math+RotationOrder")]
     pub type RotationOrder = crate::Unity::Mathematics::math_RotationOrder;
     #[cfg(feature = "Unity+Mathematics+math+ShuffleComponent")]
     pub type ShuffleComponent = crate::Unity::Mathematics::math_ShuffleComponent;
+    #[cfg(feature = "Unity+Mathematics+math+IntFloatUnion")]
+    pub type IntFloatUnion = crate::Unity::Mathematics::math_IntFloatUnion;
+    #[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
+    pub type LongDoubleUnion = crate::Unity::Mathematics::math_LongDoubleUnion;
 }
 #[cfg(feature = "Unity+Mathematics+math")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Mathematics::math {

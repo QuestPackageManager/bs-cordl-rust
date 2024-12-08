@@ -29,25 +29,12 @@ for crate::Newtonsoft::Json::Linq::JsonPath::FieldMultipleFilter {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+FieldMultipleFilter")]
 impl crate::Newtonsoft::Json::Linq::JsonPath::FieldMultipleFilter {
+    #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+FieldMultipleFilter+__c")]
+    pub type __c = crate::Newtonsoft::Json::Linq::JsonPath::FieldMultipleFilter___c;
     #[cfg(
         feature = "Newtonsoft+Json+Linq+JsonPath+FieldMultipleFilter+_ExecuteFilter_d__2"
     )]
     pub type _ExecuteFilter_d__2 = crate::Newtonsoft::Json::Linq::JsonPath::FieldMultipleFilter__ExecuteFilter_d__2;
-    #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+FieldMultipleFilter+__c")]
-    pub type __c = crate::Newtonsoft::Json::Linq::JsonPath::FieldMultipleFilter___c;
-    pub fn _ctor(
-        &mut self,
-        names: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (names))?;
-        Ok(__cordl_ret)
-    }
     pub fn ExecuteFilter(
         &mut self,
         root: *mut crate::Newtonsoft::Json::Linq::JToken,
@@ -72,12 +59,25 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::FieldMultipleFilter {
         names: *mut crate::System::Collections::Generic::List_1<
             *mut crate::System::String,
         >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (names))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        names: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::System::String,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (names))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+FieldMultipleFilter")]

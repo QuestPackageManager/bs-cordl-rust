@@ -36,35 +36,72 @@ impl crate::Org::BouncyCastle::Bcpg::S2k {
     pub const Salted: i32 = 1i32;
     pub const SaltedAndIterated: i32 = 3i32;
     pub const Simple: i32 = 0i32;
-    pub fn get_IterationCount(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_IterationCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_HashAlgorithm(
+    pub fn Encode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag = __cordl_object
-            .invoke("get_HashAlgorithm", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Stream0(
-        &mut self,
-        inStr: *mut crate::System::IO::Stream,
+        bcpgOut: *mut crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (inStr))?;
+            .invoke("Encode", (bcpgOut))?;
         Ok(__cordl_ret)
+    }
+    pub fn GetIV(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetIV", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetIterationCount(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("GetIterationCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_HashAlgorithmTag1(
+        algorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_HashAlgorithmTag_Il2CppArray2(
+        algorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
+        iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, iv))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_HashAlgorithmTag_Il2CppArray_i32_3(
+        algorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
+        iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        itCount: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, iv, itCount))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Stream0(
+        inStr: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (inStr))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_HashAlgorithmTag1(
         &mut self,
@@ -102,21 +139,41 @@ impl crate::Org::BouncyCastle::Bcpg::S2k {
             .invoke(".ctor", (algorithm, iv, itCount))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_Stream0(
+        &mut self,
+        inStr: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (inStr))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HashAlgorithm(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag = __cordl_object
+            .invoke("get_HashAlgorithm", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IterationCount(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_IterationCount", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_ProtectionMode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ProtectionMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetIV(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetIV", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Type(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -125,63 +182,6 @@ impl crate::Org::BouncyCastle::Bcpg::S2k {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Type", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Encode(
-        &mut self,
-        bcpgOut: *mut crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Encode", (bcpgOut))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetIterationCount(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("GetIterationCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_Stream0(
-        inStr: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (inStr))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_HashAlgorithmTag1(
-        algorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_HashAlgorithmTag_Il2CppArray2(
-        algorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-        iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, iv))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_HashAlgorithmTag_Il2CppArray_i32_3(
-        algorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-        iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        itCount: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, iv, itCount))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+S2k")]

@@ -31,16 +31,15 @@ for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
 impl crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
     #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair+__c__DisplayClass5_0")]
     pub type __c__DisplayClass5_0 = crate::GlobalNamespace::DiffieHellmanKeyPair___c__DisplayClass5_0;
-    pub fn _ctor(
+    pub fn GetPreMasterSecret(
         &mut self,
-        privateKeyParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
-        publicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        clientPublicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (privateKeyParameters, publicKey))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetPreMasterSecret", (clientPublicKey))?;
         Ok(__cordl_ret)
     }
     pub fn GetPreMasterSecretAsync(
@@ -61,15 +60,26 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
             .invoke("GetPreMasterSecretAsync", (taskUtility, clientPublicKey))?;
         Ok(__cordl_ret)
     }
-    pub fn GetPreMasterSecret(
+    pub fn New(
+        privateKeyParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
+        publicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (privateKeyParameters, publicKey))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
         &mut self,
-        clientPublicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        privateKeyParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
+        publicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetPreMasterSecret", (clientPublicKey))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (privateKeyParameters, publicKey))?;
         Ok(__cordl_ret)
     }
     pub fn get_publicKey(
@@ -81,16 +91,6 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
             .invoke("get_publicKey", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        privateKeyParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
-        publicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (privateKeyParameters, publicKey))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
@@ -130,14 +130,14 @@ impl std::ops::DerefMut for DiffieHellmanUtility {
 impl DiffieHellmanUtility {
     pub const kMaxDiffieHellmanPublicKeyLength: i32 = 2048i32;
     pub const kMaxElipticalCurvePublicKeyLength: i32 = 256i32;
-    #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
-    pub type DiffieHellmanKeyPair = crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair;
-    #[cfg(feature = "DiffieHellmanUtility+KeyType")]
-    pub type KeyType = crate::GlobalNamespace::DiffieHellmanUtility_KeyType;
-    #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
-    pub type ElipticalCurveKeyPair = crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair;
     #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
     pub type OperationTimer = crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer;
+    #[cfg(feature = "DiffieHellmanUtility+KeyType")]
+    pub type KeyType = crate::GlobalNamespace::DiffieHellmanUtility_KeyType;
+    #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
+    pub type DiffieHellmanKeyPair = crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair;
+    #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
+    pub type ElipticalCurveKeyPair = crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair;
 }
 #[cfg(feature = "DiffieHellmanUtility")]
 impl quest_hook::libil2cpp::ObjectType for DiffieHellmanUtility {
@@ -192,16 +192,6 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
             .invoke("GetPreMasterSecret", (clientPublicKey))?;
         Ok(__cordl_ret)
     }
-    pub fn get_publicKey(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("get_publicKey", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetPreMasterSecretAsync(
         &mut self,
         taskUtility: *mut crate::BGNet::Core::ITaskUtility,
@@ -220,6 +210,16 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
             .invoke("GetPreMasterSecretAsync", (taskUtility, clientPublicKey))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        privateKeyParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+        publicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (privateKeyParameters, publicKey))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         privateKeyParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
@@ -232,15 +232,15 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
             .invoke(".ctor", (privateKeyParameters, publicKey))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        privateKeyParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
-        publicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (privateKeyParameters, publicKey))?;
-        Ok(__cordl_object)
+    pub fn get_publicKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("get_publicKey", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
@@ -294,17 +294,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DiffieHellmanUtility_Operati
 }
 #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
 impl crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
-    pub fn _ctor(
-        &mut self,
-        operationName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (operationName))?;
-        Ok(__cordl_ret)
-    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -317,12 +306,23 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
     }
     pub fn New(
         operationName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (operationName))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        operationName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (operationName))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]

@@ -43,23 +43,6 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderB
     feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
 )]
 impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase_BaseInitAsyncOp {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("InvokeWaitForCompletion", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Execute(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -81,12 +64,29 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProvider
             .invoke("Init", (callback))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("InvokeWaitForCompletion", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -140,6 +140,17 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProvider
         feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
     )]
     pub type BaseInitAsyncOp = crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase_BaseInitAsyncOp;
+    pub fn CanProvide(
+        &mut self,
+        t: *mut crate::System::Type,
+        location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("CanProvide", (t, location))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetDefaultType(
         &mut self,
         location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
@@ -149,6 +160,17 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProvider
         );
         let __cordl_ret: *mut crate::System::Type = __cordl_object
             .invoke("GetDefaultType", (location))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Initialize(
+        &mut self,
+        id: *mut crate::System::String,
+        data: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Initialize", (id, data))?;
         Ok(__cordl_ret)
     }
     pub fn InitializeAsync(
@@ -169,46 +191,12 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProvider
         > = __cordl_object.invoke("InitializeAsync", (rm, id, data))?;
         Ok(__cordl_ret)
     }
-    pub fn get_ProviderId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_ProviderId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CanProvide(
-        &mut self,
-        t: *mut crate::System::Type,
-        location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CanProvide", (t, location))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Provide(
         &mut self,
@@ -221,17 +209,6 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProvider
             .invoke("Provide", (provideHandle))?;
         Ok(__cordl_ret)
     }
-    pub fn Initialize(
-        &mut self,
-        id: *mut crate::System::String,
-        data: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Initialize", (id, data))?;
-        Ok(__cordl_ret)
-    }
     pub fn Release(
         &mut self,
         location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
@@ -242,6 +219,16 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProvider
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Release", (location, obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn UnityEngine_ResourceManagement_ResourceProviders_IResourceProvider_get_BehaviourFlags(
@@ -259,12 +246,25 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProvider
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ProviderId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_ProviderId", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]

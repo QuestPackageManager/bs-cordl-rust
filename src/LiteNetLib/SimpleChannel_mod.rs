@@ -24,15 +24,14 @@ impl std::ops::DerefMut for crate::LiteNetLib::SimpleChannel {
 }
 #[cfg(feature = "LiteNetLib+SimpleChannel")]
 impl crate::LiteNetLib::SimpleChannel {
-    pub fn SendNextPackets(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendNextPackets", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        peer: *mut crate::LiteNetLib::NetPeer,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (peer))?;
+        Ok(__cordl_object)
     }
     pub fn ProcessPacket(
         &mut self,
@@ -42,6 +41,16 @@ impl crate::LiteNetLib::SimpleChannel {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ProcessPacket", (packet))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendNextPackets(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendNextPackets", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -54,15 +63,6 @@ impl crate::LiteNetLib::SimpleChannel {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (peer))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        peer: *mut crate::LiteNetLib::NetPeer,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (peer))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LiteNetLib+SimpleChannel")]

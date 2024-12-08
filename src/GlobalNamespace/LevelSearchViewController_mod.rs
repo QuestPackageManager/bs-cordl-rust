@@ -55,28 +55,6 @@ impl std::ops::DerefMut for LevelSearchViewController {
 impl LevelSearchViewController {
     #[cfg(feature = "LevelSearchViewController+_RefreshAsync_d__35")]
     pub type _RefreshAsync_d__35 = crate::GlobalNamespace::LevelSearchViewController__RefreshAsync_d__35;
-    pub fn ResetTextFilterSettings(
-        &mut self,
-        text: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetTextFilterSettings", (text))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ResetFilter(
-        &mut self,
-        onlyFavorites: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetFilter", (onlyFavorites))?;
-        Ok(__cordl_ret)
-    }
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -93,15 +71,40 @@ impl LevelSearchViewController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn ResetAllFilterSettings(
+    pub fn DidDeactivate(
         &mut self,
-        onlyFavorites: bool,
+        removedFromHierarchy: bool,
+        screenSystemDisabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetAllFilterSettings", (onlyFavorites))?;
+            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsFilteringPlayCounts(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsFilteringPlayCounts", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn RefreshAsync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RefreshAsync", ())?;
         Ok(__cordl_ret)
     }
     pub fn Refresh_0(
@@ -125,6 +128,28 @@ impl LevelSearchViewController {
             .invoke("Refresh", (filter))?;
         Ok(__cordl_ret)
     }
+    pub fn ResetAllFilterSettings(
+        &mut self,
+        onlyFavorites: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ResetAllFilterSettings", (onlyFavorites))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ResetFilter(
+        &mut self,
+        onlyFavorites: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ResetFilter", (onlyFavorites))?;
+        Ok(__cordl_ret)
+    }
     pub fn ResetOptionFilterSettings(
         &mut self,
         onlyFavorites: bool,
@@ -136,33 +161,15 @@ impl LevelSearchViewController {
             .invoke("ResetOptionFilterSettings", (onlyFavorites))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didFilterBeatmapLevelCollectionEvent(
+    pub fn ResetTextFilterSettings(
         &mut self,
-        value: *mut crate::System::Action_2<*mut BeatmapLevelPack, LevelSelectionOptions>,
+        text: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didFilterBeatmapLevelCollectionEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Setup(
-        &mut self,
-        beatmapLevelPacks: *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapLevelPack>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Setup", (beatmapLevelPacks))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsFilteringPlayCounts(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsFilteringPlayCounts", ())?;
+            .invoke("ResetTextFilterSettings", (text))?;
         Ok(__cordl_ret)
     }
     pub fn SearchTextInputFieldViewOnValueChanged(
@@ -176,6 +183,17 @@ impl LevelSearchViewController {
             .invoke("SearchTextInputFieldViewOnValueChanged", (inputFieldView))?;
         Ok(__cordl_ret)
     }
+    pub fn Setup(
+        &mut self,
+        beatmapLevelPacks: *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapLevelPack>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Setup", (beatmapLevelPacks))?;
+        Ok(__cordl_ret)
+    }
     pub fn _DidActivate_b__30_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -184,49 +202,6 @@ impl LevelSearchViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<DidActivate>b__30_0", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didPressSearchButtonEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<*mut LevelSearchViewController, LevelFilter>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didPressSearchButtonEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didFilterBeatmapLevelCollectionEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<*mut BeatmapLevelPack, LevelSelectionOptions>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didFilterBeatmapLevelCollectionEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RefreshAsync(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshAsync", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didStartLoadingEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut LevelSearchViewController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didStartLoadingEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn _DidActivate_b__30_1(
@@ -239,18 +214,6 @@ impl LevelSearchViewController {
             .invoke("<DidActivate>b__30_1", ())?;
         Ok(__cordl_ret)
     }
-    pub fn DidDeactivate(
-        &mut self,
-        removedFromHierarchy: bool,
-        screenSystemDisabling: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -259,6 +222,17 @@ impl LevelSearchViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didFilterBeatmapLevelCollectionEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut BeatmapLevelPack, LevelSelectionOptions>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didFilterBeatmapLevelCollectionEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_didPressSearchButtonEvent(
@@ -283,12 +257,38 @@ impl LevelSearchViewController {
             .invoke("add_didStartLoadingEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn remove_didFilterBeatmapLevelCollectionEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut BeatmapLevelPack, LevelSelectionOptions>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didFilterBeatmapLevelCollectionEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didPressSearchButtonEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut LevelSearchViewController, LevelFilter>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didPressSearchButtonEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didStartLoadingEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut LevelSearchViewController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didStartLoadingEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LevelSearchViewController")]

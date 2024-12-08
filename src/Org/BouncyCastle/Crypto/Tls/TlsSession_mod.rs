@@ -36,13 +36,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSession {
             .invoke("ExportSessionParameters", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsResumable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsResumable", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Invalidate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -51,6 +44,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSession {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Invalidate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_IsResumable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsResumable", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SessionID(
@@ -62,11 +67,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSession {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
             .invoke("get_SessionID", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsSession")]

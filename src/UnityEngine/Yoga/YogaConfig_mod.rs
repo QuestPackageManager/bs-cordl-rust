@@ -26,16 +26,6 @@ impl std::ops::DerefMut for crate::UnityEngine::Yoga::YogaConfig {
 }
 #[cfg(feature = "UnityEngine+Yoga+YogaConfig")]
 impl crate::UnityEngine::Yoga::YogaConfig {
-    pub fn get_Handle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::IntPtr = __cordl_object
-            .invoke("get_Handle", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -46,26 +36,30 @@ impl crate::UnityEngine::Yoga::YogaConfig {
             .invoke("Finalize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_UseWebDefaults(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_UseWebDefaults", (value))?;
-        Ok(__cordl_ret)
+    pub fn New_1() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn set_PointScaleFactor(
+    pub fn New_IntPtr0(
+        ygConfig: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ygConfig))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_1(
         &mut self,
-        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_PointScaleFactor", (value))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_IntPtr0(
@@ -79,14 +73,14 @@ impl crate::UnityEngine::Yoga::YogaConfig {
             .invoke(".ctor", (ygConfig))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_1(
+    pub fn get_Handle(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: crate::System::IntPtr = __cordl_object
+            .invoke("get_Handle", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_UseWebDefaults(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -96,21 +90,27 @@ impl crate::UnityEngine::Yoga::YogaConfig {
         let __cordl_ret: bool = __cordl_object.invoke("get_UseWebDefaults", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_IntPtr0(
-        ygConfig: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ygConfig))?;
-        Ok(__cordl_object)
+    pub fn set_PointScaleFactor(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_PointScaleFactor", (value))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_1() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_UseWebDefaults(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_UseWebDefaults", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Yoga+YogaConfig")]

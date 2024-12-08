@@ -35,14 +35,14 @@ impl crate::System::Data::DataRelationPropertyDescriptor {
         let __cordl_ret: bool = __cordl_object.invoke("CanResetValue", (component))?;
         Ok(__cordl_ret)
     }
-    pub fn get_ComponentType(
+    pub fn Equals(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        other: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_ComponentType", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret)
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -50,23 +50,6 @@ impl crate::System::Data::DataRelationPropertyDescriptor {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsReadOnly", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Relation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataRelation> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::DataRelation = __cordl_object
-            .invoke("get_Relation", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetValue(
@@ -80,15 +63,14 @@ impl crate::System::Data::DataRelationPropertyDescriptor {
             .invoke("GetValue", (component))?;
         Ok(__cordl_ret)
     }
-    pub fn get_PropertyType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_PropertyType", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        dataRelation: *mut crate::System::Data::DataRelation,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dataRelation))?;
+        Ok(__cordl_object)
     }
     pub fn ResetValue(
         &mut self,
@@ -99,16 +81,6 @@ impl crate::System::Data::DataRelationPropertyDescriptor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResetValue", (component))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        other: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret)
     }
     pub fn SetValue(
@@ -123,17 +95,6 @@ impl crate::System::Data::DataRelationPropertyDescriptor {
             .invoke("SetValue", (component, value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        dataRelation: *mut crate::System::Data::DataRelation,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dataRelation))?;
-        Ok(__cordl_ret)
-    }
     pub fn ShouldSerializeValue(
         &mut self,
         component: *mut crate::System::Object,
@@ -145,14 +106,53 @@ impl crate::System::Data::DataRelationPropertyDescriptor {
             .invoke("ShouldSerializeValue", (component))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         dataRelation: *mut crate::System::Data::DataRelation,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dataRelation))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (dataRelation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ComponentType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_ComponentType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsReadOnly", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_PropertyType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_PropertyType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Relation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataRelation> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Data::DataRelation = __cordl_object
+            .invoke("get_Relation", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Data+DataRelationPropertyDescriptor")]

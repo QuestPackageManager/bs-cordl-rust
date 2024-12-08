@@ -27,24 +27,6 @@ impl std::ops::DerefMut for MomentaryLoudnessHistory {
 }
 #[cfg(feature = "MomentaryLoudnessHistory")]
 impl MomentaryLoudnessHistory {
-    pub fn _ctor(
-        &mut self,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (length))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAverageLoudness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetAverageLoudness", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Add(
         &mut self,
         momentaryLoudness: f32,
@@ -56,12 +38,30 @@ impl MomentaryLoudnessHistory {
             .invoke("Add", (momentaryLoudness))?;
         Ok(__cordl_ret)
     }
-    pub fn New(length: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn GetAverageLoudness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("GetAverageLoudness", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(length: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (length))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (length))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MomentaryLoudnessHistory")]

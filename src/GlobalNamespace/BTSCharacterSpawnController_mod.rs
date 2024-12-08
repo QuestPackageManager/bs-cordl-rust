@@ -31,31 +31,34 @@ impl std::ops::DerefMut for BTSCharacterSpawnController {
 }
 #[cfg(feature = "BTSCharacterSpawnController")]
 impl BTSCharacterSpawnController {
-    pub fn _ctor(
+    pub fn HandleAnimationFinished(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("HandleAnimationFinished", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Start(
+    pub fn HandleGamePauseDidPause(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
+            .invoke("HandleGamePauseDidPause", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_isSpawned(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn HandleGamePauseDidResume(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isSpawned", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleGamePauseDidResume", ())?;
         Ok(__cordl_ret)
     }
     pub fn HandleGamePauseWillResume(
@@ -68,14 +71,14 @@ impl BTSCharacterSpawnController {
             .invoke("HandleGamePauseWillResume", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnDestroy(
+    pub fn HandleLevelEndActionsLevelFailed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
+            .invoke("HandleLevelEndActionsLevelFailed", ())?;
         Ok(__cordl_ret)
     }
     pub fn HandleStartCharacterAnimation(
@@ -89,34 +92,41 @@ impl BTSCharacterSpawnController {
             .invoke("HandleStartCharacterAnimation", (btsCharacter))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleGamePauseDidPause(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleGamePauseDidPause", ())?;
+            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
-    pub fn HandleLevelEndActionsLevelFailed(
+    pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleLevelEndActionsLevelFailed", ())?;
+            .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn HandleAnimationFinished(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleAnimationFinished", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_isCharacterVisible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -126,22 +136,12 @@ impl BTSCharacterSpawnController {
         let __cordl_ret: bool = __cordl_object.invoke("get_isCharacterVisible", ())?;
         Ok(__cordl_ret)
     }
-    pub fn HandleGamePauseDidResume(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_isSpawned(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleGamePauseDidResume", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isSpawned", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BTSCharacterSpawnController")]

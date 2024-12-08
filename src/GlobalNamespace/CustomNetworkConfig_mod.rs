@@ -33,15 +33,20 @@ impl std::ops::DerefMut for CustomNetworkConfig {
 }
 #[cfg(feature = "CustomNetworkConfig")]
 impl CustomNetworkConfig {
-    pub fn get_serviceEnvironment(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<ServiceEnvironment> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: ServiceEnvironment = __cordl_object
-            .invoke("get_serviceEnvironment", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        fromNetworkConfig: *mut INetworkConfig,
+        customServerHostName: *mut crate::System::String,
+        port: i32,
+        forceGameLift: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (fromNetworkConfig, customServerHostName, port, forceGameLift),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -60,28 +65,28 @@ impl CustomNetworkConfig {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_partyPort(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_partyPort", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_masterServerEndPoint(
+    pub fn get_appId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut DnsEndPoint> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut DnsEndPoint = __cordl_object
-            .invoke("get_masterServerEndPoint", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_appId", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_multiplayerPort(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_discoveryPort(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_multiplayerPort", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_discoveryPort", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_forceGameLift(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_forceGameLift", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_graphAccessToken(
@@ -104,11 +109,14 @@ impl CustomNetworkConfig {
             .invoke("get_graphUrl", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_forceGameLift(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_masterServerEndPoint(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut DnsEndPoint> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_forceGameLift", ())?;
+        let __cordl_ret: *mut DnsEndPoint = __cordl_object
+            .invoke("get_masterServerEndPoint", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_maxPartySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -118,31 +126,11 @@ impl CustomNetworkConfig {
         let __cordl_ret: i32 = __cordl_object.invoke("get_maxPartySize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_appId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    pub fn get_multiplayerPort(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_appId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_discoveryPort(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_discoveryPort", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_quickPlaySetupUrl(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_quickPlaySetupUrl", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_multiplayerPort", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_multiplayerStatusUrl(
@@ -155,20 +143,32 @@ impl CustomNetworkConfig {
             .invoke("get_multiplayerStatusUrl", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        fromNetworkConfig: *mut INetworkConfig,
-        customServerHostName: *mut crate::System::String,
-        port: i32,
-        forceGameLift: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (fromNetworkConfig, customServerHostName, port, forceGameLift),
-            )?;
-        Ok(__cordl_object)
+    pub fn get_partyPort(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_partyPort", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_quickPlaySetupUrl(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_quickPlaySetupUrl", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_serviceEnvironment(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<ServiceEnvironment> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: ServiceEnvironment = __cordl_object
+            .invoke("get_serviceEnvironment", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "CustomNetworkConfig")]

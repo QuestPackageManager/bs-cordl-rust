@@ -32,50 +32,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsCo
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsContext")]
 impl crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsContext {
-    pub fn get_UserObject(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_UserObject", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_UserObject(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_UserObject", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetClientVersion(
-        &mut self,
-        clientVersion: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetClientVersion", (clientVersion))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ServerVersion(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion = __cordl_object
-            .invoke("get_ServerVersion", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ExportKeyingMaterial(
         &mut self,
         asciiLabel: *mut crate::System::String,
@@ -89,40 +45,25 @@ impl crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsContext {
             .invoke("ExportKeyingMaterial", (asciiLabel, context_value, length))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         secureRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
         securityParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (secureRandom, securityParameters))?;
+        Ok(__cordl_object)
+    }
+    pub fn SetClientVersion(
+        &mut self,
+        clientVersion: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (secureRandom, securityParameters))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_NonceRandomGenerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator = __cordl_object
-            .invoke("get_NonceRandomGenerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ClientVersion(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion = __cordl_object
-            .invoke("get_ClientVersion", ())?;
+            .invoke("SetClientVersion", (clientVersion))?;
         Ok(__cordl_ret)
     }
     pub fn SetResumableSession(
@@ -147,11 +88,47 @@ impl crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsContext {
             .invoke("SetServerVersion", (serverVersion))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor(
+        &mut self,
+        secureRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        securityParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (secureRandom, securityParameters))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ClientVersion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion = __cordl_object
+            .invoke("get_ClientVersion", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_IsServer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsServer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NonceRandomGenerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator = __cordl_object
+            .invoke("get_NonceRandomGenerator", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ResumableSession(
@@ -166,18 +143,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsContext {
             .invoke("get_ResumableSession", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_SecurityParameters(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters = __cordl_object
-            .invoke("get_SecurityParameters", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_SecureRandom(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -190,15 +155,50 @@ impl crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsContext {
             .invoke("get_SecureRandom", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        secureRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-        securityParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (secureRandom, securityParameters))?;
-        Ok(__cordl_object)
+    pub fn get_SecurityParameters(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters = __cordl_object
+            .invoke("get_SecurityParameters", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ServerVersion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion = __cordl_object
+            .invoke("get_ServerVersion", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_UserObject(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_UserObject", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_UserObject(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_UserObject", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsContext")]

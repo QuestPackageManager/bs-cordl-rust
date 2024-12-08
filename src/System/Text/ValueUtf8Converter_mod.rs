@@ -23,14 +23,14 @@ for crate::System::Text::ValueUtf8Converter {
 }
 #[cfg(feature = "System+Text+ValueUtf8Converter")]
 impl crate::System::Text::ValueUtf8Converter {
-    pub fn _ctor(
+    pub fn ConvertAndTerminateString(
         &mut self,
-        initialBuffer: crate::System::Span_1<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: crate::System::ReadOnlySpan_1<char>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Span_1<u8>> {
+        let __cordl_ret: crate::System::Span_1<u8> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (initialBuffer),
+            "ConvertAndTerminateString",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -44,14 +44,14 @@ impl crate::System::Text::ValueUtf8Converter {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ConvertAndTerminateString(
+    pub fn _ctor(
         &mut self,
-        value: crate::System::ReadOnlySpan_1<char>,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Span_1<u8>> {
-        let __cordl_ret: crate::System::Span_1<u8> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        initialBuffer: crate::System::Span_1<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ConvertAndTerminateString",
-            (value),
+            ".ctor",
+            (initialBuffer),
         )?;
         Ok(__cordl_ret)
     }

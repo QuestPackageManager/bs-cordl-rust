@@ -35,6 +35,13 @@ for crate::GlobalNamespace::QuickPlaySongPacksOverride_LocalizedCustomPack {
 }
 #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+LocalizedCustomPack")]
 impl crate::GlobalNamespace::QuickPlaySongPacksOverride_LocalizedCustomPack {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -44,13 +51,6 @@ impl crate::GlobalNamespace::QuickPlaySongPacksOverride_LocalizedCustomPack {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+LocalizedCustomPack")]
@@ -94,6 +94,13 @@ for crate::GlobalNamespace::QuickPlaySongPacksOverride_LocalizedCustomPackName {
 }
 #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+LocalizedCustomPackName")]
 impl crate::GlobalNamespace::QuickPlaySongPacksOverride_LocalizedCustomPackName {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -103,13 +110,6 @@ impl crate::GlobalNamespace::QuickPlaySongPacksOverride_LocalizedCustomPackName 
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+LocalizedCustomPackName")]
@@ -153,6 +153,13 @@ for crate::GlobalNamespace::QuickPlaySongPacksOverride_PredefinedPack {
 }
 #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+PredefinedPack")]
 impl crate::GlobalNamespace::QuickPlaySongPacksOverride_PredefinedPack {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -162,13 +169,6 @@ impl crate::GlobalNamespace::QuickPlaySongPacksOverride_PredefinedPack {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+PredefinedPack")]
@@ -209,6 +209,13 @@ impl std::ops::DerefMut for QuickPlaySetupData {
 impl QuickPlaySetupData {
     #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride")]
     pub type QuickPlaySongPacksOverride = crate::GlobalNamespace::QuickPlaySetupData_QuickPlaySongPacksOverride;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -225,13 +232,6 @@ impl QuickPlaySetupData {
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_hasOverride", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "QuickPlaySetupData")]
@@ -278,14 +278,21 @@ for crate::GlobalNamespace::QuickPlaySetupData_QuickPlaySongPacksOverride {
 }
 #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride")]
 impl crate::GlobalNamespace::QuickPlaySetupData_QuickPlaySongPacksOverride {
+    #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+LocalizedCustomPack")]
+    pub type LocalizedCustomPack = crate::GlobalNamespace::QuickPlaySongPacksOverride_LocalizedCustomPack;
+    #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+PredefinedPack")]
+    pub type PredefinedPack = crate::GlobalNamespace::QuickPlaySongPacksOverride_PredefinedPack;
     #[cfg(
         feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+LocalizedCustomPackName"
     )]
     pub type LocalizedCustomPackName = crate::GlobalNamespace::QuickPlaySongPacksOverride_LocalizedCustomPackName;
-    #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+PredefinedPack")]
-    pub type PredefinedPack = crate::GlobalNamespace::QuickPlaySongPacksOverride_PredefinedPack;
-    #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+LocalizedCustomPack")]
-    pub type LocalizedCustomPack = crate::GlobalNamespace::QuickPlaySongPacksOverride_LocalizedCustomPack;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -295,13 +302,6 @@ impl crate::GlobalNamespace::QuickPlaySetupData_QuickPlaySongPacksOverride {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride")]

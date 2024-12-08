@@ -54,16 +54,25 @@ impl crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
         feature = "UnityEngine+InputSystem+LowLevel+KeyboardState+_keys_e__FixedBuffer"
     )]
     pub type _keys_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::KeyboardState__keys_e__FixedBuffer;
-    pub fn _ctor(
+    pub fn Press(
         &mut self,
-        pressedKeys: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::InputSystem::Key,
-        >,
+        key: crate::UnityEngine::InputSystem::Key,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (pressedKeys),
+            "Press",
+            (key),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Release(
+        &mut self,
+        key: crate::UnityEngine::InputSystem::Key,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Release",
+            (key),
         )?;
         Ok(__cordl_ret)
     }
@@ -79,14 +88,16 @@ impl crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Release(
+    pub fn _ctor(
         &mut self,
-        key: crate::UnityEngine::InputSystem::Key,
+        pressedKeys: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::Key,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Release",
-            (key),
+            ".ctor",
+            (pressedKeys),
         )?;
         Ok(__cordl_ret)
     }
@@ -99,17 +110,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
             self,
             "get_format",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Press(
-        &mut self,
-        key: crate::UnityEngine::InputSystem::Key,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Press",
-            (key),
         )?;
         Ok(__cordl_ret)
     }

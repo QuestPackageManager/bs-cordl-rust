@@ -25,34 +25,19 @@ impl std::ops::DerefMut for crate::System::IO::Compression::GZipStream {
 }
 #[cfg(feature = "System+IO+Compression+GZipStream")]
 impl crate::System::IO::Compression::GZipStream {
-    pub fn CopyToAsync(
+    pub fn BeginRead(
         &mut self,
-        destination: *mut crate::System::IO::Stream,
-        bufferSize: i32,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        array: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+        asyncCallback: *mut crate::System::AsyncCallback,
+        asyncState: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("CopyToAsync", (destination, bufferSize, cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckDeflateStream(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckDeflateStream", ())?;
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginRead", (array, offset, count, asyncCallback, asyncState))?;
         Ok(__cordl_ret)
     }
     pub fn BeginWrite(
@@ -70,11 +55,60 @@ impl crate::System::IO::Compression::GZipStream {
             .invoke("BeginWrite", (array, offset, count, asyncCallback, asyncState))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+    pub fn CheckDeflateStream(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_Position", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckDeflateStream", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CopyTo(
+        &mut self,
+        destination: *mut crate::System::IO::Stream,
+        bufferSize: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CopyTo", (destination, bufferSize))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CopyToAsync(
+        &mut self,
+        destination: *mut crate::System::IO::Stream,
+        bufferSize: i32,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("CopyToAsync", (destination, bufferSize, cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose(
+        &mut self,
+        disposing: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", (disposing))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndRead(
+        &mut self,
+        asyncResult: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("EndRead", (asyncResult))?;
         Ok(__cordl_ret)
     }
     pub fn EndWrite(
@@ -88,114 +122,6 @@ impl crate::System::IO::Compression::GZipStream {
             .invoke("EndWrite", (asyncResult))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_CompressionMode0(
-        &mut self,
-        stream: *mut crate::System::IO::Stream,
-        mode: crate::System::IO::Compression::CompressionMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stream, mode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_CompressionMode__cordl_bool1(
-        &mut self,
-        stream: *mut crate::System::IO::Stream,
-        mode: crate::System::IO::Compression::CompressionMode,
-        leaveOpen: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stream, mode, leaveOpen))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_CompressionLevel2(
-        &mut self,
-        stream: *mut crate::System::IO::Stream,
-        compressionLevel: crate::System::IO::Compression::CompressionLevel,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stream, compressionLevel))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_CompressionLevel__cordl_bool3(
-        &mut self,
-        stream: *mut crate::System::IO::Stream,
-        compressionLevel: crate::System::IO::Compression::CompressionLevel,
-        leaveOpen: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stream, compressionLevel, leaveOpen))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CanWrite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanWrite", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetLength(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLength", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CanSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanSeek", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Position(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Position", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Read_Il2CppArray_i32_i32_0(
-        &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Read", (array, offset, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Read_Span_1_1(
-        &mut self,
-        buffer: crate::System::Span_1<u8>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Read", (buffer))?;
-        Ok(__cordl_ret)
-    }
     pub fn Flush(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -206,27 +132,58 @@ impl crate::System::IO::Compression::GZipStream {
             .invoke("Flush", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+    pub fn FlushAsync(
+        &mut self,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_Length", ())?;
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("FlushAsync", (cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginRead(
-        &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-        asyncCallback: *mut crate::System::AsyncCallback,
-        asyncState: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginRead", (array, offset, count, asyncCallback, asyncState))?;
-        Ok(__cordl_ret)
+    pub fn New_CompressionLevel2(
+        stream: *mut crate::System::IO::Stream,
+        compressionLevel: crate::System::IO::Compression::CompressionLevel,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream, compressionLevel))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_CompressionLevel__cordl_bool3(
+        stream: *mut crate::System::IO::Stream,
+        compressionLevel: crate::System::IO::Compression::CompressionLevel,
+        leaveOpen: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream, compressionLevel, leaveOpen))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_CompressionMode0(
+        stream: *mut crate::System::IO::Stream,
+        mode: crate::System::IO::Compression::CompressionMode,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream, mode))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_CompressionMode__cordl_bool1(
+        stream: *mut crate::System::IO::Stream,
+        mode: crate::System::IO::Compression::CompressionMode,
+        leaveOpen: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream, mode, leaveOpen))?;
+        Ok(__cordl_object)
     }
     pub fn ReadAsync_Il2CppArray_i32_i32_CancellationToken0(
         &mut self,
@@ -258,15 +215,55 @@ impl crate::System::IO::Compression::GZipStream {
             .invoke("ReadAsync", (buffer, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
+    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Read_Il2CppArray_i32_i32_0(
         &mut self,
-        disposing: bool,
+        array: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Read", (array, offset, count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Read_Span_1_1(
+        &mut self,
+        buffer: crate::System::Span_1<u8>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Read", (buffer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Seek(
+        &mut self,
+        offset: i64,
+        origin: crate::System::IO::SeekOrigin,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("Seek", (offset, origin))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetLength(
+        &mut self,
+        value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", (disposing))?;
+            .invoke("SetLength", (value))?;
         Ok(__cordl_ret)
     }
     pub fn WriteAsync_Il2CppArray_i32_i32_CancellationToken0(
@@ -295,34 +292,6 @@ impl crate::System::IO::Compression::GZipStream {
             .invoke("WriteAsync", (buffer, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn EndRead(
-        &mut self,
-        asyncResult: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("EndRead", (asyncResult))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanRead", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Seek(
-        &mut self,
-        offset: i64,
-        origin: crate::System::IO::SeekOrigin,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("Seek", (offset, origin))?;
-        Ok(__cordl_ret)
-    }
     pub fn Write_Il2CppArray_i32_i32_0(
         &mut self,
         array: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -347,70 +316,101 @@ impl crate::System::IO::Compression::GZipStream {
             .invoke("Write", (buffer))?;
         Ok(__cordl_ret)
     }
-    pub fn CopyTo(
+    pub fn _ctor_CompressionLevel2(
         &mut self,
-        destination: *mut crate::System::IO::Stream,
-        bufferSize: i32,
+        stream: *mut crate::System::IO::Stream,
+        compressionLevel: crate::System::IO::Compression::CompressionLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CopyTo", (destination, bufferSize))?;
+            .invoke(".ctor", (stream, compressionLevel))?;
         Ok(__cordl_ret)
     }
-    pub fn FlushAsync(
+    pub fn _ctor_CompressionLevel__cordl_bool3(
         &mut self,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        stream: *mut crate::System::IO::Stream,
+        compressionLevel: crate::System::IO::Compression::CompressionLevel,
+        leaveOpen: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("FlushAsync", (cancellationToken))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stream, compressionLevel, leaveOpen))?;
         Ok(__cordl_ret)
     }
-    pub fn New_CompressionMode0(
+    pub fn _ctor_CompressionMode0(
+        &mut self,
         stream: *mut crate::System::IO::Stream,
         mode: crate::System::IO::Compression::CompressionMode,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream, mode))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stream, mode))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_CompressionMode__cordl_bool1(
+    pub fn _ctor_CompressionMode__cordl_bool1(
+        &mut self,
         stream: *mut crate::System::IO::Stream,
         mode: crate::System::IO::Compression::CompressionMode,
         leaveOpen: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream, mode, leaveOpen))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stream, mode, leaveOpen))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_CompressionLevel2(
-        stream: *mut crate::System::IO::Stream,
-        compressionLevel: crate::System::IO::Compression::CompressionLevel,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream, compressionLevel))?;
-        Ok(__cordl_object)
+    pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanRead", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_CompressionLevel__cordl_bool3(
-        stream: *mut crate::System::IO::Stream,
-        compressionLevel: crate::System::IO::Compression::CompressionLevel,
-        leaveOpen: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream, compressionLevel, leaveOpen))?;
-        Ok(__cordl_object)
+    pub fn get_CanSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanSeek", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CanWrite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanWrite", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_Length", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_Position", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Position(
+        &mut self,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Position", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+IO+Compression+GZipStream")]

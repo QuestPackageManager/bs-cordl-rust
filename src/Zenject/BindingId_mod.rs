@@ -21,45 +21,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Zenject::BindingId {
 }
 #[cfg(feature = "Zenject+BindingId")]
 impl crate::Zenject::BindingId {
-    pub fn set_Type(
+    pub fn Equals_BindingId1(
         &mut self,
-        value: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        that: crate::Zenject::BindingId,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_Type",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Identifier(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Identifier",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Type",
-            (),
+            "Equals",
+            (that),
         )?;
         Ok(__cordl_ret)
     }
@@ -74,31 +43,20 @@ impl crate::Zenject::BindingId {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_BindingId1(
-        &mut self,
-        that: crate::Zenject::BindingId,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (that),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Identifier(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Identifier",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
             (),
         )?;
         Ok(__cordl_ret)
@@ -112,6 +70,48 @@ impl crate::Zenject::BindingId {
             self,
             ".ctor",
             (_cordl_type, identifier),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Identifier(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Identifier",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Type",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Identifier(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_Identifier",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Type(
+        &mut self,
+        value: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_Type",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

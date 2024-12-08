@@ -25,16 +25,6 @@ for crate::System::Runtime::Serialization::SerializationEntry {
 }
 #[cfg(feature = "System+Runtime+Serialization+SerializationEntry")]
 impl crate::System::Runtime::Serialization::SerializationEntry {
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Name",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         entryName: *mut crate::System::String,
@@ -45,6 +35,16 @@ impl crate::System::Runtime::Serialization::SerializationEntry {
             self,
             ".ctor",
             (entryName, entryValue, entryType),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Name",
+            (),
         )?;
         Ok(__cordl_ret)
     }

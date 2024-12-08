@@ -39,21 +39,21 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputControlPath {
 #[cfg(feature = "UnityEngine+InputSystem+InputControlPath")]
 impl crate::UnityEngine::InputSystem::InputControlPath {
     pub const DoubleWildcard: &'static str = "**";
-    pub const Separator: char = "/";
-    pub const SeparatorReplacement: char = " ";
+    pub const Separator: char = '/';
+    pub const SeparatorReplacement: char = ' ';
     pub const Wildcard: &'static str = "*";
     #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathComponentType")]
     pub type PathComponentType = crate::UnityEngine::InputSystem::InputControlPath_PathComponentType;
+    #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
+    pub type PathParser = crate::UnityEngine::InputSystem::InputControlPath_PathParser;
+    #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+_Parse_d__34")]
+    pub type _Parse_d__34 = crate::UnityEngine::InputSystem::InputControlPath__Parse_d__34;
     #[cfg(
         feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions"
     )]
     pub type HumanReadableStringOptions = crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions;
     #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
     pub type ParsedPathComponent = crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent;
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
-    pub type PathParser = crate::UnityEngine::InputSystem::InputControlPath_PathParser;
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+_Parse_d__34")]
-    pub type _Parse_d__34 = crate::UnityEngine::InputSystem::InputControlPath__Parse_d__34;
     #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+__c")]
     pub type __c = crate::UnityEngine::InputSystem::InputControlPath___c;
 }
@@ -99,54 +99,6 @@ for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
 impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent+__c")]
     pub type __c = crate::UnityEngine::InputSystem::ParsedPathComponent___c;
-    pub fn get_isWildcard(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isWildcard",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_usages(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
-        >,
-    > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_usages", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_layout(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_layout",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_displayName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_displayName",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isDoubleWildcard(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isDoubleWildcard",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Matches(
         &mut self,
         control: *mut crate::UnityEngine::InputSystem::InputControl,
@@ -155,16 +107,6 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
             self,
             "Matches",
             (control),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_name",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -189,6 +131,64 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
                 options,
             ),
         )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_displayName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_displayName",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isDoubleWildcard(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_isDoubleWildcard",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isWildcard(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_isWildcard",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_layout(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_layout",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_name",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_usages(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::String,
+        >,
+    > {
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::String,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_usages", ())?;
         Ok(__cordl_ret)
     }
 }
@@ -236,21 +236,10 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
 impl crate::UnityEngine::InputSystem::InputControlPath_PathParser {
-    pub fn _ctor(
-        &mut self,
-        path: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (path),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isAtEnd(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn MoveToNextComponent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_isAtEnd",
+            "MoveToNextComponent",
             (),
         )?;
         Ok(__cordl_ret)
@@ -268,10 +257,21 @@ impl crate::UnityEngine::InputSystem::InputControlPath_PathParser {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn MoveToNextComponent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn _ctor(
+        &mut self,
+        path: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (path),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isAtEnd(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "MoveToNextComponent",
+            "get_isAtEnd",
             (),
         )?;
         Ok(__cordl_ret)

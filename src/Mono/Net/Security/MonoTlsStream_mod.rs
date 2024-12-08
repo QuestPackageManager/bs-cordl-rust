@@ -34,26 +34,50 @@ impl std::ops::DerefMut for crate::Mono::Net::Security::MonoTlsStream {
 impl crate::Mono::Net::Security::MonoTlsStream {
     #[cfg(feature = "Mono+Net+Security+MonoTlsStream+_CreateStream_d__18")]
     pub type _CreateStream_d__18 = crate::Mono::Net::Security::MonoTlsStream__CreateStream_d__18;
-    pub fn get_Request(
+    pub fn CloseSslStream(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::HttpWebRequest> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::HttpWebRequest = __cordl_object
-            .invoke("get_Request", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_CertificateValidationFailed(
-        &mut self,
-        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_CertificateValidationFailed", (value))?;
+            .invoke("CloseSslStream", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn CreateStream(
+        &mut self,
+        tunnel: *mut crate::System::Net::WebConnectionTunnel,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::System::IO::Stream,
+        > = __cordl_object.invoke("CreateStream", (tunnel, cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        request: *mut crate::System::Net::HttpWebRequest,
+        networkStream: *mut crate::System::Net::Sockets::NetworkStream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (request, networkStream))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -77,16 +101,6 @@ impl crate::Mono::Net::Security::MonoTlsStream {
             .invoke("get_CertificateValidationFailed", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_ExceptionStatus(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::WebExceptionStatus> {
@@ -97,40 +111,26 @@ impl crate::Mono::Net::Security::MonoTlsStream {
             .invoke("get_ExceptionStatus", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CreateStream(
+    pub fn get_Request(
         &mut self,
-        tunnel: *mut crate::System::Net::WebConnectionTunnel,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::HttpWebRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::IO::Stream,
-        > = __cordl_object.invoke("CreateStream", (tunnel, cancellationToken))?;
+        let __cordl_ret: *mut crate::System::Net::HttpWebRequest = __cordl_object
+            .invoke("get_Request", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CloseSslStream(
+    pub fn set_CertificateValidationFailed(
         &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CloseSslStream", ())?;
+            .invoke("set_CertificateValidationFailed", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        request: *mut crate::System::Net::HttpWebRequest,
-        networkStream: *mut crate::System::Net::Sockets::NetworkStream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (request, networkStream))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Net+Security+MonoTlsStream")]

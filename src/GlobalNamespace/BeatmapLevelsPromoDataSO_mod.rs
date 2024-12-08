@@ -39,20 +39,12 @@ for crate::GlobalNamespace::BeatmapLevelsPromoDataSO_BeatmapLevelsPromo {
 }
 #[cfg(feature = "BeatmapLevelsPromoDataSO+BeatmapLevelsPromo")]
 impl crate::GlobalNamespace::BeatmapLevelsPromoDataSO_BeatmapLevelsPromo {
-    pub fn get_updatedBeatmapLevelPacks(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
-        > = __cordl_object.invoke("get_updatedBeatmapLevelPacks", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -62,21 +54,6 @@ impl crate::GlobalNamespace::BeatmapLevelsPromoDataSO_BeatmapLevelsPromo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_promotedBeatmapLevels(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
-        > = __cordl_object.invoke("get_promotedBeatmapLevels", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_promotedBeatmapLevelPacks(
@@ -94,6 +71,36 @@ impl crate::GlobalNamespace::BeatmapLevelsPromoDataSO_BeatmapLevelsPromo {
         > = __cordl_object.invoke("get_promotedBeatmapLevelPacks", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_promotedBeatmapLevels(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::String,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::String,
+        > = __cordl_object.invoke("get_promotedBeatmapLevels", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_updatedBeatmapLevelPacks(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::String,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::String,
+        > = __cordl_object.invoke("get_updatedBeatmapLevelPacks", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_updatedBeatmapLevels(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -108,13 +115,6 @@ impl crate::GlobalNamespace::BeatmapLevelsPromoDataSO_BeatmapLevelsPromo {
             *mut crate::System::String,
         > = __cordl_object.invoke("get_updatedBeatmapLevels", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapLevelsPromoDataSO+BeatmapLevelsPromo")]
@@ -156,6 +156,13 @@ impl std::ops::DerefMut for BeatmapLevelsPromoDataSO {
 impl BeatmapLevelsPromoDataSO {
     #[cfg(feature = "BeatmapLevelsPromoDataSO+BeatmapLevelsPromo")]
     pub type BeatmapLevelsPromo = crate::GlobalNamespace::BeatmapLevelsPromoDataSO_BeatmapLevelsPromo;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -188,13 +195,6 @@ impl BeatmapLevelsPromoDataSO {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_promo", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapLevelsPromoDataSO")]

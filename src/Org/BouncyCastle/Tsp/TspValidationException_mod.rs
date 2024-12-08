@@ -25,6 +25,25 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Tsp::TspValidationExceptio
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TspValidationException")]
 impl crate::Org::BouncyCastle::Tsp::TspValidationException {
+    pub fn New_String0(
+        message: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (message))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_1(
+        message: *mut crate::System::String,
+        failureCode: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (message, failureCode))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_String0(
         &mut self,
         message: *mut crate::System::String,
@@ -54,25 +73,6 @@ impl crate::Org::BouncyCastle::Tsp::TspValidationException {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_FailureCode", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_String0(
-        message: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (message))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_1(
-        message: *mut crate::System::String,
-        failureCode: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (message, failureCode))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TspValidationException")]

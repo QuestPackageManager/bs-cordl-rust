@@ -22,17 +22,6 @@ for crate::UnityEngine::Rendering::ScriptableRenderContext {
 }
 #[cfg(feature = "UnityEngine+Rendering+ScriptableRenderContext")]
 impl crate::UnityEngine::Rendering::ScriptableRenderContext {
-    pub fn Equals_ScriptableRenderContext0(
-        &mut self,
-        other: crate::UnityEngine::Rendering::ScriptableRenderContext,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_Object1(
         &mut self,
         obj: *mut crate::System::Object,
@@ -44,14 +33,27 @@ impl crate::UnityEngine::Rendering::ScriptableRenderContext {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn Equals_ScriptableRenderContext0(
         &mut self,
-        ptr: crate::System::IntPtr,
+        other: crate::UnityEngine::Rendering::ScriptableRenderContext,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetCameras(
+        &mut self,
+        results: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Camera,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (ptr),
+            "GetCameras",
+            (results),
         )?;
         Ok(__cordl_ret)
     }
@@ -75,16 +77,14 @@ impl crate::UnityEngine::Rendering::ScriptableRenderContext {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetCameras(
+    pub fn _ctor(
         &mut self,
-        results: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::Camera,
-        >,
+        ptr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetCameras",
-            (results),
+            ".ctor",
+            (ptr),
         )?;
         Ok(__cordl_ret)
     }

@@ -22,36 +22,14 @@ for crate::UnityEngine::Animations::AnimationClipPlayable {
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationClipPlayable")]
 impl crate::UnityEngine::Animations::AnimationClipPlayable {
-    pub fn _ctor(
+    pub fn Equals(
         &mut self,
-        handle: crate::UnityEngine::Playables::PlayableHandle,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::Animations::AnimationClipPlayable,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (handle),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetApplyFootIK(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetApplyFootIK",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetOverrideLoopTime(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetOverrideLoopTime",
-            (value),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -65,13 +43,13 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetRemoveStartOffset(
+    pub fn SetApplyFootIK(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetRemoveStartOffset",
+            "SetApplyFootIK",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -87,14 +65,36 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals(
+    pub fn SetOverrideLoopTime(
         &mut self,
-        other: crate::UnityEngine::Animations::AnimationClipPlayable,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "SetOverrideLoopTime",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetRemoveStartOffset(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetRemoveStartOffset",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        handle: crate::UnityEngine::Playables::PlayableHandle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (handle),
         )?;
         Ok(__cordl_ret)
     }

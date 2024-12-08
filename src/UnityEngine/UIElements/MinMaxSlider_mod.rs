@@ -61,43 +61,6 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
     pub type UxmlFactory = crate::UnityEngine::UIElements::MinMaxSlider_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits;
-    pub fn set_value(
-        &mut self,
-        value: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_value", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SliderNormalizeValue(
-        &mut self,
-        currentValue: f32,
-        lowerValue: f32,
-        higherValue: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("SliderNormalizeValue", (currentValue, lowerValue, higherValue))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SliderLerpUnclamped(
-        &mut self,
-        a: f32,
-        b: f32,
-        interpolant: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("SliderLerpUnclamped", (a, b, interpolant))?;
-        Ok(__cordl_ret)
-    }
     pub fn ClampValues(
         &mut self,
         valueToClamp: crate::UnityEngine::Vector2,
@@ -107,71 +70,6 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("ClampValues", (valueToClamp))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_dragMaxThumb(
-        &mut self,
-        value: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_dragMaxThumb", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateDragThumbsRect(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateDragThumbsRect", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_clampedDragger(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::ClampedDragger_1<f32>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::ClampedDragger_1<f32> = __cordl_object
-            .invoke("get_clampedDragger", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnregisterEditingCallbacks(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterEditingCallbacks", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_maxValue(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_maxValue", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_minValue(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_minValue", (value))?;
         Ok(__cordl_ret)
     }
     pub fn ComputeValueFromDraggingThumb(
@@ -189,34 +87,56 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn set_dragElement(
+    pub fn ComputeValueFromPosition(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::VisualElement,
+        positionToConvert: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("ComputeValueFromPosition", (positionToConvert))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExecuteDefaultAction(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::EventBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_dragElement", (value))?;
+            .invoke("ExecuteDefaultAction", (evt))?;
         Ok(__cordl_ret)
     }
-    pub fn get_lowLimit(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_lowLimit", ())?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn get_dragMinThumb(
+    pub fn New_String_f32_f32_f32_f32_1(
+        label: *mut crate::System::String,
+        minValue: f32,
+        maxValue: f32,
+        minLimit: f32,
+        maxLimit: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (label, minValue, maxValue, minLimit, maxLimit))?;
+        Ok(__cordl_object)
+    }
+    pub fn RegisterEditingCallbacks(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
-            .invoke("get_dragMinThumb", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterEditingCallbacks", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetSliderValueFromClick(
@@ -229,25 +149,14 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
             .invoke("SetSliderValueFromClick", ())?;
         Ok(__cordl_ret)
     }
-    pub fn UpdateDragElementPosition_GeometryChangedEvent0(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateDragElementPosition", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateDragElementPosition_1(
+    pub fn SetSliderValueFromDrag(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateDragElementPosition", ())?;
+            .invoke("SetSliderValueFromDrag", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetValueWithoutNotify(
@@ -261,22 +170,81 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
             .invoke("SetValueWithoutNotify", (newValue))?;
         Ok(__cordl_ret)
     }
-    pub fn set_highLimit(
+    pub fn SliderLerpUnclamped(
         &mut self,
-        value: f32,
+        a: f32,
+        b: f32,
+        interpolant: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("SliderLerpUnclamped", (a, b, interpolant))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SliderNormalizeValue(
+        &mut self,
+        currentValue: f32,
+        lowerValue: f32,
+        higherValue: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("SliderNormalizeValue", (currentValue, lowerValue, higherValue))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnregisterEditingCallbacks(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_highLimit", (value))?;
+            .invoke("UnregisterEditingCallbacks", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_highLimit(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn UpdateDragElementPosition_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_highLimit", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateDragElementPosition", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateDragElementPosition_GeometryChangedEvent0(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateDragElementPosition", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateDragThumbsRect(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateDragThumbsRect", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateMixedValueContent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateMixedValueContent", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -304,36 +272,16 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
             .invoke(".ctor", (label, minValue, maxValue, minLimit, maxLimit))?;
         Ok(__cordl_ret)
     }
-    pub fn set_lowLimit(
+    pub fn get_clampedDragger(
         &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::ClampedDragger_1<f32>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_lowLimit", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExecuteDefaultAction(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExecuteDefaultAction", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterEditingCallbacks(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterEditingCallbacks", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::ClampedDragger_1<f32> = __cordl_object
+            .invoke("get_clampedDragger", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_dragElement(
@@ -348,15 +296,49 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
             .invoke("get_dragElement", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_dragMinThumb(
+    pub fn get_dragMaxThumb(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_dragMinThumb", (value))?;
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
+            .invoke("get_dragMaxThumb", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_dragMinThumb(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
+            .invoke("get_dragMinThumb", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_highLimit(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_highLimit", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_lowLimit(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_lowLimit", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_maxValue", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_minValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -364,6 +346,16 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_minValue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_value", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_clampedDragger(
@@ -377,85 +369,93 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
             .invoke("set_clampedDragger", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_dragMaxThumb(
+    pub fn set_dragElement(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
-            .invoke("get_dragMaxThumb", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ComputeValueFromPosition(
-        &mut self,
-        positionToConvert: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("ComputeValueFromPosition", (positionToConvert))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_value(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_value", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateMixedValueContent(
-        &mut self,
+        value: *mut crate::UnityEngine::UIElements::VisualElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateMixedValueContent", ())?;
+            .invoke("set_dragElement", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn SetSliderValueFromDrag(
+    pub fn set_dragMaxThumb(
         &mut self,
+        value: *mut crate::UnityEngine::UIElements::VisualElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSliderValueFromDrag", ())?;
+            .invoke("set_dragMaxThumb", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_maxValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn set_dragMinThumb(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_maxValue", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_dragMinThumb", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_highLimit(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_highLimit", (value))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_String_f32_f32_f32_f32_1(
-        label: *mut crate::System::String,
-        minValue: f32,
-        maxValue: f32,
-        minLimit: f32,
-        maxLimit: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (label, minValue, maxValue, minLimit, maxLimit))?;
-        Ok(__cordl_object)
+    pub fn set_lowLimit(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_lowLimit", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_maxValue(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_maxValue", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_minValue(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_minValue", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_value(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_value", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+MinMaxSlider")]
@@ -500,6 +500,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MinMaxSlider_UxmlFac
 }
 #[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlFactory")]
 impl crate::UnityEngine::UIElements::MinMaxSlider_UxmlFactory {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -509,13 +516,6 @@ impl crate::UnityEngine::UIElements::MinMaxSlider_UxmlFactory {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlFactory")]
@@ -562,16 +562,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MinMaxSlider_UxmlTra
 }
 #[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlTraits")]
 impl crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Init(
         &mut self,
         ve: *mut crate::UnityEngine::UIElements::VisualElement,
@@ -585,12 +575,22 @@ impl crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits {
             .invoke("Init", (ve, bag, cc))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlTraits")]

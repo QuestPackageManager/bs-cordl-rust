@@ -39,15 +39,16 @@ impl std::ops::DerefMut for MissionToggle {
 }
 #[cfg(feature = "MissionToggle")]
 impl MissionToggle {
-    pub fn remove_selectionDidChangeEvent(
+    pub fn ChangeHighlight(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MissionToggle>,
+        value: bool,
+        ignoreCurrentValue: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_selectionDidChangeEvent", (value))?;
+            .invoke("ChangeHighlight", (value, ignoreCurrentValue))?;
         Ok(__cordl_ret)
     }
     pub fn ChangeSelection(
@@ -66,6 +67,23 @@ impl MissionToggle {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn InternalToggle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalToggle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn OnPointerClick(
         &mut self,
         eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
@@ -77,22 +95,37 @@ impl MissionToggle {
             .invoke("OnPointerClick", (eventData))?;
         Ok(__cordl_ret)
     }
-    pub fn get_interactable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_interactable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_selectionDidChangeEvent(
+    pub fn OnPointerEnter(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MissionToggle>,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_selectionDidChangeEvent", (value))?;
+            .invoke("OnPointerEnter", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerExit(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerExit", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnSubmit(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnSubmit", (eventData))?;
         Ok(__cordl_ret)
     }
     pub fn RefreshUI(
@@ -116,17 +149,6 @@ impl MissionToggle {
             .invoke("SetText", (text))?;
         Ok(__cordl_ret)
     }
-    pub fn set_missionCleared(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_missionCleared", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -135,41 +157,6 @@ impl MissionToggle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_selected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_selected", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnSubmit(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnSubmit", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_highlighted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_highlighted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalToggle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalToggle", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -182,37 +169,47 @@ impl MissionToggle {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnPointerExit(
+    pub fn add_selectionDidChangeEvent(
         &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        value: *mut crate::System::Action_1<*mut MissionToggle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerExit", (eventData))?;
+            .invoke("add_selectionDidChangeEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_selected(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_highlighted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_selected", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_highlighted", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnPointerEnter(
+    pub fn get_interactable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_interactable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_selected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_selected", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_selectionDidChangeEvent(
         &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        value: *mut crate::System::Action_1<*mut MissionToggle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerEnter", (eventData))?;
+            .invoke("remove_selectionDidChangeEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_interactable(
@@ -226,24 +223,27 @@ impl MissionToggle {
             .invoke("set_interactable", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ChangeHighlight(
+    pub fn set_missionCleared(
         &mut self,
         value: bool,
-        ignoreCurrentValue: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ChangeHighlight", (value, ignoreCurrentValue))?;
+            .invoke("set_missionCleared", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_selected(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_selected", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MissionToggle")]

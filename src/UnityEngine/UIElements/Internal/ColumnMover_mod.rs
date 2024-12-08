@@ -44,38 +44,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Internal::ColumnMove
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+ColumnMover")]
 impl crate::UnityEngine::UIElements::Internal::ColumnMover {
-    pub fn OnPointerUp(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerUpEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerUp", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerDown(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerDownEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerDown", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdatePreviewPosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdatePreviewPosition", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginDragMove(
         &mut self,
         pos: f32,
@@ -87,17 +55,66 @@ impl crate::UnityEngine::UIElements::Internal::ColumnMover {
             .invoke("BeginDragMove", (pos))?;
         Ok(__cordl_ret)
     }
-    pub fn add_movingChanged(
+    pub fn DragMove(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::UIElements::Internal::ColumnMover,
-        >,
+        pos: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_movingChanged", (value))?;
+            .invoke("DragMove", (pos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndDragMove(
+        &mut self,
+        cancelled: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndDragMove", (cancelled))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnKeyDown(
+        &mut self,
+        e: *mut crate::UnityEngine::UIElements::KeyDownEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnKeyDown", (e))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnMouseCaptureOut(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::MouseCaptureOutEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnMouseCaptureOut", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnMouseDown(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::MouseDownEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnMouseDown", (evt))?;
         Ok(__cordl_ret)
     }
     pub fn OnMouseMove(
@@ -111,62 +128,15 @@ impl crate::UnityEngine::UIElements::Internal::ColumnMover {
             .invoke("OnMouseMove", (evt))?;
         Ok(__cordl_ret)
     }
-    pub fn add_activeChanged(
+    pub fn OnMouseUp(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::UIElements::Internal::ColumnMover,
-        >,
+        evt: *mut crate::UnityEngine::UIElements::MouseUpEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_activeChanged", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_columnLayout(
-        &mut self,
-        value: *mut crate::UnityEngine::UIElements::ColumnLayout,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_columnLayout", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessMoveEvent(
-        &mut self,
-        e: *mut crate::UnityEngine::UIElements::EventBase,
-        localPosition: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessMoveEvent", (e, localPosition))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_columnLayout(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::ColumnLayout,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::ColumnLayout = __cordl_object
-            .invoke("get_columnLayout", ())?;
+            .invoke("OnMouseUp", (evt))?;
         Ok(__cordl_ret)
     }
     pub fn OnPointerCancel(
@@ -180,55 +150,60 @@ impl crate::UnityEngine::UIElements::Internal::ColumnMover {
             .invoke("OnPointerCancel", (evt))?;
         Ok(__cordl_ret)
     }
-    pub fn get_active(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_active", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_movingChanged(
+    pub fn OnPointerCaptureOut(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::UIElements::Internal::ColumnMover,
-        >,
+        evt: *mut crate::UnityEngine::UIElements::PointerCaptureOutEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_movingChanged", (value))?;
+            .invoke("OnPointerCaptureOut", (evt))?;
         Ok(__cordl_ret)
     }
-    pub fn get_moving(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn OnPointerDown(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::PointerDownEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_moving", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerDown", (evt))?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessUpEvent(
+    pub fn OnPointerMove(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::PointerMoveEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerMove", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerUp(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::PointerUpEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerUp", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessCancelEvent(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::EventBase,
-        localPosition: crate::UnityEngine::Vector2,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessUpEvent", (evt, localPosition, pointerId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnKeyDown(
-        &mut self,
-        e: *mut crate::UnityEngine::UIElements::KeyDownEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnKeyDown", (e))?;
+            .invoke("ProcessCancelEvent", (evt, pointerId))?;
         Ok(__cordl_ret)
     }
     pub fn ProcessDownEvent(
@@ -244,113 +219,29 @@ impl crate::UnityEngine::UIElements::Internal::ColumnMover {
             .invoke("ProcessDownEvent", (evt, localPosition, pointerId))?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessCancelEvent(
+    pub fn ProcessMoveEvent(
+        &mut self,
+        e: *mut crate::UnityEngine::UIElements::EventBase,
+        localPosition: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessMoveEvent", (e, localPosition))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessUpEvent(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::EventBase,
+        localPosition: crate::UnityEngine::Vector2,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessCancelEvent", (evt, pointerId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_active(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_active", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_moving(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_moving", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerCaptureOut(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerCaptureOutEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerCaptureOut", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerMove(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerMoveEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerMove", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateMoveLocation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateMoveLocation", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnMouseUp(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::MouseUpEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnMouseUp", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnregisterCallbacksFromTarget(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterCallbacksFromTarget", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnMouseDown(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::MouseDownEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnMouseDown", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndDragMove(
-        &mut self,
-        cancelled: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndDragMove", (cancelled))?;
+            .invoke("ProcessUpEvent", (evt, localPosition, pointerId))?;
         Ok(__cordl_ret)
     }
     pub fn RegisterCallbacksOnTarget(
@@ -363,26 +254,96 @@ impl crate::UnityEngine::UIElements::Internal::ColumnMover {
             .invoke("RegisterCallbacksOnTarget", ())?;
         Ok(__cordl_ret)
     }
-    pub fn DragMove(
+    pub fn UnregisterCallbacksFromTarget(
         &mut self,
-        pos: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DragMove", (pos))?;
+            .invoke("UnregisterCallbacksFromTarget", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnMouseCaptureOut(
+    pub fn UpdateMoveLocation(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::MouseCaptureOutEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnMouseCaptureOut", (evt))?;
+            .invoke("UpdateMoveLocation", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdatePreviewPosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdatePreviewPosition", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_activeChanged(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::Internal::ColumnMover,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_activeChanged", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_movingChanged(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::Internal::ColumnMover,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_movingChanged", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_active(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_active", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_columnLayout(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::ColumnLayout,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::ColumnLayout = __cordl_object
+            .invoke("get_columnLayout", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_moving(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_moving", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_activeChanged(
@@ -398,12 +359,51 @@ impl crate::UnityEngine::UIElements::Internal::ColumnMover {
             .invoke("remove_activeChanged", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn remove_movingChanged(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::Internal::ColumnMover,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_movingChanged", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_active(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_active", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_columnLayout(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::ColumnLayout,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_columnLayout", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_moving(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_moving", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+ColumnMover")]

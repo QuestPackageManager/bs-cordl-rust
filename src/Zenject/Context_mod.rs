@@ -40,64 +40,42 @@ impl std::ops::DerefMut for crate::Zenject::Context {
 impl crate::Zenject::Context {
     #[cfg(feature = "Zenject+Context+__c")]
     pub type __c = crate::Zenject::Context___c;
-    pub fn InstallSceneBindings(
+    pub fn AddNormalInstaller(
         &mut self,
-        injectableMonoBehaviours: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::MonoBehaviour,
+        installer: *mut crate::Zenject::InstallerBase,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddNormalInstaller", (installer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddNormalInstallerType(
+        &mut self,
+        installerType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddNormalInstallerType", (installerType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckInstallerPrefabTypes(
+        &mut self,
+        installers: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::MonoInstaller,
+        >,
+        installerPrefabs: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::MonoInstaller,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InstallSceneBindings", (injectableMonoBehaviours))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstallZenjectBinding(
-        &mut self,
-        binding: *mut crate::Zenject::ZenjectBinding,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InstallZenjectBinding", (binding))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_NormalInstallers(
-        &mut self,
-        value: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::Zenject::InstallerBase,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_NormalInstallers", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_NormalInstallerTypes(
-        &mut self,
-        value: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Type,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_NormalInstallerTypes", (value))?;
+            .invoke("CheckInstallerPrefabTypes", (installers, installerPrefabs))?;
         Ok(__cordl_ret)
     }
     pub fn GetInjectableMonoBehaviours(
@@ -113,32 +91,19 @@ impl crate::Zenject::Context {
             .invoke("GetInjectableMonoBehaviours", (components))?;
         Ok(__cordl_ret)
     }
-    pub fn get_ScriptableObjectInstallers(
+    pub fn GetRootGameObjects(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::Zenject::ScriptableObjectInstaller,
+            *mut crate::UnityEngine::GameObject,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::Zenject::ScriptableObjectInstaller,
-        > = __cordl_object.invoke("get_ScriptableObjectInstallers", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ScriptableObjectInstallers(
-        &mut self,
-        value: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::Zenject::ScriptableObjectInstaller,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ScriptableObjectInstallers", (value))?;
+            *mut crate::UnityEngine::GameObject,
+        > = __cordl_object.invoke("GetRootGameObjects", ())?;
         Ok(__cordl_ret)
     }
     pub fn InstallInstallers_0(
@@ -185,96 +150,45 @@ impl crate::Zenject::Context {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_NormalInstallers(
+    pub fn InstallSceneBindings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::Zenject::InstallerBase,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::Zenject::InstallerBase,
-        > = __cordl_object.invoke("get_NormalInstallers", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_NormalInstallerTypes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<*mut crate::System::Type>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Type,
-        > = __cordl_object.invoke("get_NormalInstallerTypes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddNormalInstallerType(
-        &mut self,
-        installerType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddNormalInstallerType", (installerType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_InstallerPrefabs(
-        &mut self,
-        value: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::Zenject::MonoInstaller,
+        injectableMonoBehaviours: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::MonoBehaviour,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_InstallerPrefabs", (value))?;
+            .invoke("InstallSceneBindings", (injectableMonoBehaviours))?;
         Ok(__cordl_ret)
     }
-    pub fn CheckInstallerPrefabTypes(
+    pub fn InstallZenjectBinding(
         &mut self,
-        installers: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::MonoInstaller,
-        >,
-        installerPrefabs: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::MonoInstaller,
-        >,
+        binding: *mut crate::Zenject::ZenjectBinding,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckInstallerPrefabTypes", (installers, installerPrefabs))?;
+            .invoke("InstallZenjectBinding", (binding))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Installers(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
         &mut self,
-        value: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::Zenject::MonoInstaller,
-        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Installers", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddNormalInstaller(
-        &mut self,
-        installer: *mut crate::Zenject::InstallerBase,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddNormalInstaller", (installer))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Container(
@@ -285,21 +199,6 @@ impl crate::Zenject::Context {
         );
         let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
             .invoke("get_Container", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRootGameObjects(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::GameObject,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::GameObject,
-        > = __cordl_object.invoke("GetRootGameObjects", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_InstallerPrefabs(
@@ -332,12 +231,113 @@ impl crate::Zenject::Context {
         > = __cordl_object.invoke("get_Installers", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_NormalInstallerTypes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<*mut crate::System::Type>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::Type,
+        > = __cordl_object.invoke("get_NormalInstallerTypes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NormalInstallers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::Zenject::InstallerBase,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::Zenject::InstallerBase,
+        > = __cordl_object.invoke("get_NormalInstallers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ScriptableObjectInstallers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::Zenject::ScriptableObjectInstaller,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::Zenject::ScriptableObjectInstaller,
+        > = __cordl_object.invoke("get_ScriptableObjectInstallers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_InstallerPrefabs(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::Zenject::MonoInstaller,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_InstallerPrefabs", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Installers(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::Zenject::MonoInstaller,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Installers", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_NormalInstallerTypes(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::Type,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_NormalInstallerTypes", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_NormalInstallers(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::Zenject::InstallerBase,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_NormalInstallers", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ScriptableObjectInstallers(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::Zenject::ScriptableObjectInstaller,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ScriptableObjectInstallers", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+Context")]

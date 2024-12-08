@@ -30,15 +30,51 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::SignerInfoGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+SignerInfoGenerator")]
 impl crate::Org::BouncyCastle::Cms::SignerInfoGenerator {
-    pub fn setAssociatedCertificate(
+    pub fn New_CmsAttributeTableGenerator_CmsAttributeTableGenerator2(
+        sigId: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
+        contentSigner: *mut crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+        signedGen: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+        unsignedGen: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (sigId, contentSigner, signedGen, unsignedGen))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_SignerIdentifier_ISignatureFactory0(
+        sigId: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
+        signerFactory: *mut crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (sigId, signerFactory))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool1(
+        sigId: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
+        signerFactory: *mut crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+        isDirectSignature: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (sigId, signerFactory, isDirectSignature))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_CmsAttributeTableGenerator_CmsAttributeTableGenerator2(
         &mut self,
-        certificate: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+        sigId: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
+        contentSigner: *mut crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+        signedGen: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+        unsignedGen: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("setAssociatedCertificate", (certificate))?;
+            .invoke(".ctor", (sigId, contentSigner, signedGen, unsignedGen))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_SignerIdentifier_ISignatureFactory0(
@@ -66,52 +102,16 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGenerator {
             .invoke(".ctor", (sigId, signerFactory, isDirectSignature))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_CmsAttributeTableGenerator_CmsAttributeTableGenerator2(
+    pub fn setAssociatedCertificate(
         &mut self,
-        sigId: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
-        contentSigner: *mut crate::Org::BouncyCastle::Crypto::ISignatureFactory,
-        signedGen: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
-        unsignedGen: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+        certificate: *mut crate::Org::BouncyCastle::X509::X509Certificate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (sigId, contentSigner, signedGen, unsignedGen))?;
+            .invoke("setAssociatedCertificate", (certificate))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_SignerIdentifier_ISignatureFactory0(
-        sigId: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
-        signerFactory: *mut crate::Org::BouncyCastle::Crypto::ISignatureFactory,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (sigId, signerFactory))?;
-        Ok(__cordl_object)
-    }
-    pub fn New__cordl_bool1(
-        sigId: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
-        signerFactory: *mut crate::Org::BouncyCastle::Crypto::ISignatureFactory,
-        isDirectSignature: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (sigId, signerFactory, isDirectSignature))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_CmsAttributeTableGenerator_CmsAttributeTableGenerator2(
-        sigId: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
-        contentSigner: *mut crate::Org::BouncyCastle::Crypto::ISignatureFactory,
-        signedGen: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
-        unsignedGen: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (sigId, contentSigner, signedGen, unsignedGen))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+SignerInfoGenerator")]

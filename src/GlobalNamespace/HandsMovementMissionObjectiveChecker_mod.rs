@@ -25,14 +25,15 @@ impl std::ops::DerefMut for HandsMovementMissionObjectiveChecker {
 }
 #[cfg(feature = "HandsMovementMissionObjectiveChecker")]
 impl HandsMovementMissionObjectiveChecker {
-    pub fn _ctor(
+    pub fn HandleTotalDistanceDidChange(
         &mut self,
+        distance: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("HandleTotalDistanceDidChange", (distance))?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -45,6 +46,13 @@ impl HandsMovementMissionObjectiveChecker {
             .invoke("Init", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,23 +63,15 @@ impl HandsMovementMissionObjectiveChecker {
             .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
-    pub fn HandleTotalDistanceDidChange(
+    pub fn _ctor(
         &mut self,
-        distance: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleTotalDistanceDidChange", (distance))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HandsMovementMissionObjectiveChecker")]

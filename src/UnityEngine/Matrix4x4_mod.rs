@@ -36,6 +36,123 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Matrix4x
 }
 #[cfg(feature = "UnityEngine+Matrix4x4")]
 impl crate::UnityEngine::Matrix4x4 {
+    pub fn Equals_Matrix4x4_1(
+        &mut self,
+        other: crate::UnityEngine::Matrix4x4,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object0(
+        &mut self,
+        other: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetColumn(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetColumn",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetLossyScale(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetLossyScale",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetRotation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_ret: crate::UnityEngine::Quaternion = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetRotation",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetRow(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetRow",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn MultiplyPoint(
+        &mut self,
+        point: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MultiplyPoint",
+            (point),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn MultiplyPoint3x4(
+        &mut self,
+        point: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MultiplyPoint3x4",
+            (point),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn MultiplyVector(
+        &mut self,
+        vector: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MultiplyVector",
+            (vector),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetColumn(
+        &mut self,
+        index: i32,
+        column: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetColumn",
+            (index, column),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn SetTRS(
         &mut self,
         pos: crate::UnityEngine::Vector3,
@@ -71,39 +188,6 @@ impl crate::UnityEngine::Matrix4x4 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetColumn(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        let __cordl_ret: crate::UnityEngine::Vector4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetColumn",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn MultiplyPoint3x4(
-        &mut self,
-        point: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MultiplyPoint3x4",
-            (point),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn MultiplyVector(
-        &mut self,
-        vector: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MultiplyVector",
-            (vector),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         column0: crate::UnityEngine::Vector4,
@@ -118,12 +202,32 @@ impl crate::UnityEngine::Matrix4x4 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_transpose(
+    pub fn get_Item_i32_0(
+        &mut self,
+        row: i32,
+        column: i32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (row, column),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item_i32_1(&mut self, index: i32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_inverse(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_transpose",
+            "get_inverse",
             (),
         )?;
         Ok(__cordl_ret)
@@ -148,111 +252,13 @@ impl crate::UnityEngine::Matrix4x4 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn MultiplyPoint(
-        &mut self,
-        point: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MultiplyPoint",
-            (point),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object0(
-        &mut self,
-        other: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Matrix4x4_1(
-        &mut self,
-        other: crate::UnityEngine::Matrix4x4,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item_i32_0(
-        &mut self,
-        row: i32,
-        column: i32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (row, column),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item_i32_1(&mut self, index: i32) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetLossyScale(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetLossyScale",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRotation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_ret: crate::UnityEngine::Quaternion = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetRotation",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetColumn(
-        &mut self,
-        index: i32,
-        column: crate::UnityEngine::Vector4,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetColumn",
-            (index, column),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_inverse(
+    pub fn get_transpose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_inverse",
+            "get_transpose",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Item_i32_f32_0(
-        &mut self,
-        row: i32,
-        column: i32,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Item",
-            (row, column, value),
         )?;
         Ok(__cordl_ret)
     }
@@ -268,22 +274,16 @@ impl crate::UnityEngine::Matrix4x4 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRow(
+    pub fn set_Item_i32_f32_0(
         &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        let __cordl_ret: crate::UnityEngine::Vector4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        row: i32,
+        column: i32,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetRow",
-            (index),
+            "set_Item",
+            (row, column, value),
         )?;
         Ok(__cordl_ret)
     }

@@ -49,33 +49,37 @@ impl std::ops::DerefMut for BeatmapObjectSpawnMovementData {
 impl BeatmapObjectSpawnMovementData {
     pub const kDefaultMaxHalfJumpDistance: f32 = 18f32;
     pub const kDefaultStartHalfJumpDurationInBeats: f32 = 4f32;
+    #[cfg(feature = "BeatmapObjectSpawnMovementData+ObstacleSpawnData")]
+    pub type ObstacleSpawnData = crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData;
     #[cfg(feature = "BeatmapObjectSpawnMovementData+NoteJumpValueType")]
     pub type NoteJumpValueType = crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteJumpValueType;
     #[cfg(feature = "BeatmapObjectSpawnMovementData+NoteSpawnData")]
     pub type NoteSpawnData = crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData;
     #[cfg(feature = "BeatmapObjectSpawnMovementData+SliderSpawnData")]
     pub type SliderSpawnData = crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData;
-    #[cfg(feature = "BeatmapObjectSpawnMovementData+ObstacleSpawnData")]
-    pub type ObstacleSpawnData = crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData;
-    pub fn get_moveDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn Get2DNoteOffset(
+        &mut self,
+        noteLineIndex: i32,
+        noteLineLayer: NoteLineLayer,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_moveDuration", ())?;
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("Get2DNoteOffset", (noteLineIndex, noteLineLayer))?;
         Ok(__cordl_ret)
     }
-    pub fn get_jumpDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn GetJumpingNoteSpawnData(
+        &mut self,
+        noteData: *mut NoteData,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_jumpDistance", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_noteJumpMovementSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_noteJumpMovementSpeed", ())?;
+        let __cordl_ret: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData = __cordl_object
+            .invoke("GetJumpingNoteSpawnData", (noteData))?;
         Ok(__cordl_ret)
     }
     pub fn GetNoteOffset(
@@ -90,25 +94,64 @@ impl BeatmapObjectSpawnMovementData {
             .invoke("GetNoteOffset", (noteLineIndex, noteLineLayer))?;
         Ok(__cordl_ret)
     }
-    pub fn get_noteLinesDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn GetObstacleOffset(
+        &mut self,
+        noteLineIndex: i32,
+        noteLineLayer: NoteLineLayer,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_noteLinesDistance", ())?;
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("GetObstacleOffset", (noteLineIndex, noteLineLayer))?;
         Ok(__cordl_ret)
     }
-    pub fn get_verticalLayersDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn GetObstacleSpawnData(
+        &mut self,
+        obstacleData: *mut ObstacleData,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_verticalLayersDistance", ())?;
+        let __cordl_ret: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData = __cordl_object
+            .invoke("GetObstacleSpawnData", (obstacleData))?;
         Ok(__cordl_ret)
     }
-    pub fn get_jumpDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn GetSliderSpawnData(
+        &mut self,
+        sliderData: *mut SliderData,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_jumpDuration", ())?;
+        let __cordl_ret: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData = __cordl_object
+            .invoke("GetSliderSpawnData", (sliderData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HighestJumpPosYForLineLayer(
+        &mut self,
+        lineLayer: NoteLineLayer,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("HighestJumpPosYForLineLayer", (lineLayer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HighestJumpPosYForLineLayerWithoutJumpOffset(
+        &mut self,
+        lineLayer: NoteLineLayer,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("HighestJumpPosYForLineLayerWithoutJumpOffset", (lineLayer))?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -141,73 +184,6 @@ impl BeatmapObjectSpawnMovementData {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetObstacleOffset(
-        &mut self,
-        noteLineIndex: i32,
-        noteLineLayer: NoteLineLayer,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("GetObstacleOffset", (noteLineIndex, noteLineLayer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Get2DNoteOffset(
-        &mut self,
-        noteLineIndex: i32,
-        noteLineLayer: NoteLineLayer,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("Get2DNoteOffset", (noteLineIndex, noteLineLayer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_spawnAheadTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_spawnAheadTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetJumpingNoteSpawnData(
-        &mut self,
-        noteData: *mut NoteData,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData = __cordl_object
-            .invoke("GetJumpingNoteSpawnData", (noteData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetObstacleSpawnData(
-        &mut self,
-        obstacleData: *mut ObstacleData,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData = __cordl_object
-            .invoke("GetObstacleSpawnData", (obstacleData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_centerPos(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_centerPos", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn JumpPosYForLineLayerAtDistanceFromPlayerWithoutJumpOffset(
         &mut self,
         lineLayer: NoteLineLayer,
@@ -223,56 +199,23 @@ impl BeatmapObjectSpawnMovementData {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_noteLinesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_noteLinesCount", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn HighestJumpPosYForLineLayer(
+    pub fn NoteJumpGravityForLineLayer(
         &mut self,
         lineLayer: NoteLineLayer,
+        beforeJumpLineLayer: NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object
-            .invoke("HighestJumpPosYForLineLayer", (lineLayer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HighestJumpPosYForLineLayerWithoutJumpOffset(
-        &mut self,
-        lineLayer: NoteLineLayer,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("HighestJumpPosYForLineLayerWithoutJumpOffset", (lineLayer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSliderSpawnData(
-        &mut self,
-        sliderData: *mut SliderData,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData = __cordl_object
-            .invoke("GetSliderSpawnData", (sliderData))?;
+            .invoke("NoteJumpGravityForLineLayer", (lineLayer, beforeJumpLineLayer))?;
         Ok(__cordl_ret)
     }
     pub fn NoteJumpGravityForLineLayerWithoutJumpOffset(
@@ -290,16 +233,38 @@ impl BeatmapObjectSpawnMovementData {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn NoteJumpGravityForLineLayer(
+    pub fn _ctor(
         &mut self,
-        lineLayer: NoteLineLayer,
-        beforeJumpLineLayer: NoteLineLayer,
-    ) -> quest_hook::libil2cpp::Result<f32> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("NoteJumpGravityForLineLayer", (lineLayer, beforeJumpLineLayer))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_centerPos(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_centerPos", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_jumpDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_jumpDistance", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_jumpDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_jumpDuration", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_jumpOffsetY(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -309,12 +274,47 @@ impl BeatmapObjectSpawnMovementData {
         let __cordl_ret: f32 = __cordl_object.invoke("get_jumpOffsetY", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_moveDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_moveDuration", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noteJumpMovementSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_noteJumpMovementSpeed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noteLinesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_noteLinesCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noteLinesDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_noteLinesDistance", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_spawnAheadTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_spawnAheadTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_verticalLayersDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_verticalLayersDistance", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapObjectSpawnMovementData")]

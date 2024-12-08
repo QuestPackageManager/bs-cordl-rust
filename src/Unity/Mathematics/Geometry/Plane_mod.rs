@@ -22,67 +22,6 @@ for crate::Unity::Mathematics::Geometry::Plane {
 }
 #[cfg(feature = "Unity+Mathematics+Geometry+Plane")]
 impl crate::Unity::Mathematics::Geometry::Plane {
-    pub fn set_Normal(
-        &mut self,
-        value: crate::Unity::Mathematics::float3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Normal",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Normal(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3> {
-        let __cordl_ret: crate::Unity::Mathematics::float3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Normal",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Distance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Distance",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Flipped(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::Plane> {
-        let __cordl_ret: crate::Unity::Mathematics::Geometry::Plane = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Flipped",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SignedDistanceToPoint(
-        &mut self,
-        point: crate::Unity::Mathematics::float3,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SignedDistanceToPoint",
-            (point),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Distance(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Distance",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn CheckPlaneIsNormalized(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -100,6 +39,17 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         let __cordl_ret: crate::Unity::Mathematics::float3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Projection",
+            (point),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SignedDistanceToPoint(
+        &mut self,
+        point: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SignedDistanceToPoint",
             (point),
         )?;
         Ok(__cordl_ret)
@@ -152,6 +102,56 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             self,
             ".ctor",
             (vector1InPlane, vector2InPlane, pointInPlane),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Distance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Distance",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Flipped(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::Plane> {
+        let __cordl_ret: crate::Unity::Mathematics::Geometry::Plane = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Flipped",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Normal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Normal",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Distance(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_Distance",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Normal(
+        &mut self,
+        value: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_Normal",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

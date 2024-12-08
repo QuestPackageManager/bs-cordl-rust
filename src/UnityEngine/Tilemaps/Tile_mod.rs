@@ -45,6 +45,96 @@ impl std::ops::DerefMut for crate::UnityEngine::Tilemaps::Tile {
 impl crate::UnityEngine::Tilemaps::Tile {
     #[cfg(feature = "UnityEngine+Tilemaps+Tile+ColliderType")]
     pub type ColliderType = crate::UnityEngine::Tilemaps::Tile_ColliderType;
+    pub fn GetTileData(
+        &mut self,
+        position: crate::UnityEngine::Vector3Int,
+        tilemap: *mut crate::UnityEngine::Tilemaps::ITilemap,
+        tileData: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Tilemaps::TileData>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetTileData", (position, tilemap, tileData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_colliderType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Tilemaps::Tile_ColliderType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Tilemaps::Tile_ColliderType = __cordl_object
+            .invoke("get_colliderType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_color(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_color", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_flags(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Tilemaps::TileFlags> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Tilemaps::TileFlags = __cordl_object
+            .invoke("get_flags", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_gameObject(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("get_gameObject", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sprite(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
+            .invoke("get_sprite", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_transform(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 = __cordl_object
+            .invoke("get_transform", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_colliderType(
         &mut self,
         value: crate::UnityEngine::Tilemaps::Tile_ColliderType,
@@ -67,80 +157,6 @@ impl crate::UnityEngine::Tilemaps::Tile {
             .invoke("set_color", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_color(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_color", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTileData(
-        &mut self,
-        position: crate::UnityEngine::Vector3Int,
-        tilemap: *mut crate::UnityEngine::Tilemaps::ITilemap,
-        tileData: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Tilemaps::TileData>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetTileData", (position, tilemap, tileData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sprite(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
-            .invoke("get_sprite", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_gameObject(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("get_gameObject", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_sprite(
-        &mut self,
-        value: *mut crate::UnityEngine::Sprite,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_sprite", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_transform(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Matrix4x4 = __cordl_object
-            .invoke("get_transform", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_colliderType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Tilemaps::Tile_ColliderType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Tilemaps::Tile_ColliderType = __cordl_object
-            .invoke("get_colliderType", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_flags(
         &mut self,
         value: crate::UnityEngine::Tilemaps::TileFlags,
@@ -150,16 +166,6 @@ impl crate::UnityEngine::Tilemaps::Tile {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_flags", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_gameObject(
@@ -173,14 +179,15 @@ impl crate::UnityEngine::Tilemaps::Tile {
             .invoke("set_gameObject", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_flags(
+    pub fn set_sprite(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Tilemaps::TileFlags> {
+        value: *mut crate::UnityEngine::Sprite,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Tilemaps::TileFlags = __cordl_object
-            .invoke("get_flags", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_sprite", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_transform(
@@ -193,13 +200,6 @@ impl crate::UnityEngine::Tilemaps::Tile {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_transform", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+Tilemaps+Tile")]

@@ -26,24 +26,11 @@ impl std::ops::DerefMut for crate::System::Net::MonoChunkStream {
 }
 #[cfg(feature = "System+Net+MonoChunkStream")]
 impl crate::System::Net::MonoChunkStream {
-    #[cfg(feature = "System+Net+MonoChunkStream+_FinishReading_d__8")]
-    pub type _FinishReading_d__8 = crate::System::Net::MonoChunkStream__FinishReading_d__8;
     #[cfg(feature = "System+Net+MonoChunkStream+_ProcessReadAsync_d__7")]
     pub type _ProcessReadAsync_d__7 = crate::System::Net::MonoChunkStream__ProcessReadAsync_d__7;
-    pub fn _ctor(
-        &mut self,
-        operation: *mut crate::System::Net::WebOperation,
-        innerStream: *mut crate::System::IO::Stream,
-        headers: *mut crate::System::Net::WebHeaderCollection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (operation, innerStream, headers))?;
-        Ok(__cordl_ret)
-    }
-    pub fn __n__0(
+    #[cfg(feature = "System+Net+MonoChunkStream+_FinishReading_d__8")]
+    pub type _FinishReading_d__8 = crate::System::Net::MonoChunkStream__FinishReading_d__8;
+    pub fn FinishReading(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
@@ -51,18 +38,19 @@ impl crate::System::Net::MonoChunkStream {
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("<>n__0", (cancellationToken))?;
+            .invoke("FinishReading", (cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Decoder(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::MonoChunkParser> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::MonoChunkParser = __cordl_object
-            .invoke("get_Decoder", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        operation: *mut crate::System::Net::WebOperation,
+        innerStream: *mut crate::System::IO::Stream,
+        headers: *mut crate::System::Net::WebHeaderCollection,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (operation, innerStream, headers))?;
+        Ok(__cordl_object)
     }
     pub fn ProcessReadAsync(
         &mut self,
@@ -83,7 +71,7 @@ impl crate::System::Net::MonoChunkStream {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn FinishReading(
+    pub fn __n__0(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
@@ -91,19 +79,31 @@ impl crate::System::Net::MonoChunkStream {
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("FinishReading", (cancellationToken))?;
+            .invoke("<>n__0", (cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         operation: *mut crate::System::Net::WebOperation,
         innerStream: *mut crate::System::IO::Stream,
         headers: *mut crate::System::Net::WebHeaderCollection,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (operation, innerStream, headers))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (operation, innerStream, headers))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Decoder(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::MonoChunkParser> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::MonoChunkParser = __cordl_object
+            .invoke("get_Decoder", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+MonoChunkStream")]

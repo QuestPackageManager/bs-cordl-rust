@@ -45,6 +45,27 @@ for crate::UnityEngine::InputSystem::InputBindingResolver {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingResolver")]
 impl crate::UnityEngine::InputSystem::InputBindingResolver {
+    pub fn AddActionMap(
+        &mut self,
+        actionMap: *mut crate::UnityEngine::InputSystem::InputActionMap,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AddActionMap",
+            (actionMap),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn InstantiateWithParameters<TType>(
         &mut self,
         registrations: crate::UnityEngine::InputSystem::Utilities::TypeTable,
@@ -69,16 +90,6 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn StartWithPreviousResolve(
         &mut self,
         state: *mut crate::UnityEngine::InputSystem::InputActionState,
@@ -91,18 +102,18 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_totalMapCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_totalMapCount",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_totalActionCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_totalActionCount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_totalBindingCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_totalBindingCount",
             (),
         )?;
         Ok(__cordl_ret)
@@ -115,21 +126,10 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn AddActionMap(
-        &mut self,
-        actionMap: *mut crate::UnityEngine::InputSystem::InputActionMap,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AddActionMap",
-            (actionMap),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_totalBindingCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_totalMapCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_totalBindingCount",
+            "get_totalMapCount",
             (),
         )?;
         Ok(__cordl_ret)

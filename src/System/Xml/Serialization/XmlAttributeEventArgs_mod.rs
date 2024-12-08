@@ -30,6 +30,19 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlAttributeEvent
 }
 #[cfg(feature = "System+Xml+Serialization+XmlAttributeEventArgs")]
 impl crate::System::Xml::Serialization::XmlAttributeEventArgs {
+    pub fn New(
+        attr: *mut crate::System::Xml::XmlAttribute,
+        lineNumber: i32,
+        linePosition: i32,
+        o: *mut crate::System::Object,
+        qnames: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (attr, lineNumber, linePosition, o, qnames))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         attr: *mut crate::System::Xml::XmlAttribute,
@@ -44,19 +57,6 @@ impl crate::System::Xml::Serialization::XmlAttributeEventArgs {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (attr, lineNumber, linePosition, o, qnames))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        attr: *mut crate::System::Xml::XmlAttribute,
-        lineNumber: i32,
-        linePosition: i32,
-        o: *mut crate::System::Object,
-        qnames: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (attr, lineNumber, linePosition, o, qnames))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Serialization+XmlAttributeEventArgs")]

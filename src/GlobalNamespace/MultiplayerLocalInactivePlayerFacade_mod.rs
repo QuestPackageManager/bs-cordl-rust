@@ -33,6 +33,13 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory {
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade+Factory")]
 impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -42,13 +49,6 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade+Factory")]
@@ -99,24 +99,43 @@ impl std::ops::DerefMut for MultiplayerLocalInactivePlayerFacade {
 impl MultiplayerLocalInactivePlayerFacade {
     #[cfg(feature = "MultiplayerLocalInactivePlayerFacade+Factory")]
     pub type Factory = crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory;
-    pub fn get_songController(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ReportPlayerDidFinish(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IStartSeekSongController> {
+        results: *mut MultiplayerLevelCompletionResults,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IStartSeekSongController = __cordl_object
-            .invoke("get_songController", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReportPlayerDidFinish", (results))?;
         Ok(__cordl_ret)
     }
-    pub fn get_introAnimator(
+    pub fn ReportPlayerNetworkDidFailed(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        results: *mut MultiplayerLevelCompletionResults,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("get_introAnimator", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReportPlayerNetworkDidFailed", (results))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_playerDidFinishEvent(
@@ -130,18 +149,6 @@ impl MultiplayerLocalInactivePlayerFacade {
             .invoke("add_playerDidFinishEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_outroAnimator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut MultiplayerLocalInactivePlayerOutroAnimator,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut MultiplayerLocalInactivePlayerOutroAnimator = __cordl_object
-            .invoke("get_outroAnimator", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn add_playerNetworkDidFailedEvent(
         &mut self,
         value: *mut crate::System::Action_1<*mut MultiplayerLevelCompletionResults>,
@@ -153,36 +160,14 @@ impl MultiplayerLocalInactivePlayerFacade {
             .invoke("add_playerNetworkDidFailedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_playerNetworkDidFailedEvent(
+    pub fn get_introAnimator(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MultiplayerLevelCompletionResults>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_playerNetworkDidFailedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReportPlayerDidFinish(
-        &mut self,
-        results: *mut MultiplayerLevelCompletionResults,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReportPlayerDidFinish", (results))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("get_introAnimator", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_introPlayableDirector(
@@ -197,15 +182,26 @@ impl MultiplayerLocalInactivePlayerFacade {
             .invoke("get_introPlayableDirector", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ReportPlayerNetworkDidFailed(
+    pub fn get_outroAnimator(
         &mut self,
-        results: *mut MultiplayerLevelCompletionResults,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut MultiplayerLocalInactivePlayerOutroAnimator,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReportPlayerNetworkDidFailed", (results))?;
+        let __cordl_ret: *mut MultiplayerLocalInactivePlayerOutroAnimator = __cordl_object
+            .invoke("get_outroAnimator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_songController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut IStartSeekSongController> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut IStartSeekSongController = __cordl_object
+            .invoke("get_songController", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_spectatorController(
@@ -229,12 +225,16 @@ impl MultiplayerLocalInactivePlayerFacade {
             .invoke("remove_playerDidFinishEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn remove_playerNetworkDidFailedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut MultiplayerLevelCompletionResults>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_playerNetworkDidFailedEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]

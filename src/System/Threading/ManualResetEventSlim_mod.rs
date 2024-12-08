@@ -37,16 +37,47 @@ impl crate::System::Threading::ManualResetEventSlim {
     pub const SpinCountState_BitMask: i32 = 1073217536i32;
     pub const SpinCountState_MaxValue: i32 = 2047i32;
     pub const SpinCountState_ShiftCount: i32 = 19i32;
-    pub fn Wait(
+    pub fn Dispose_0(
         &mut self,
-        millisecondsTimeout: i32,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("Wait", (millisecondsTimeout, cancellationToken))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose__cordl_bool1(
+        &mut self,
+        disposing: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", (disposing))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EnsureLockObjectCreated(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EnsureLockObjectCreated", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Initialize(
+        &mut self,
+        initialState: bool,
+        spinCount: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Initialize", (initialState, spinCount))?;
         Ok(__cordl_ret)
     }
     pub fn LazyInitializeEvent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -54,6 +85,55 @@ impl crate::System::Threading::ManualResetEventSlim {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("LazyInitializeEvent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New__cordl_bool0(
+        initialState: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (initialState))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_1(
+        initialState: bool,
+        spinCount: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (initialState, spinCount))?;
+        Ok(__cordl_object)
+    }
+    pub fn Set_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object.invoke("Set", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Set__cordl_bool1(
+        &mut self,
+        duringCancellation: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Set", (duringCancellation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ThrowIfDisposed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ThrowIfDisposed", ())?;
         Ok(__cordl_ret)
     }
     pub fn UpdateStateAtomically(
@@ -68,15 +148,16 @@ impl crate::System::Threading::ManualResetEventSlim {
             .invoke("UpdateStateAtomically", (newBits, updateBitsMask))?;
         Ok(__cordl_ret)
     }
-    pub fn set_SpinCount(
+    pub fn Wait(
         &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        millisecondsTimeout: i32,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_SpinCount", (value))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("Wait", (millisecondsTimeout, cancellationToken))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor__cordl_bool0(
@@ -102,39 +183,6 @@ impl crate::System::Threading::ManualResetEventSlim {
             .invoke(".ctor", (initialState, spinCount))?;
         Ok(__cordl_ret)
     }
-    pub fn Initialize(
-        &mut self,
-        initialState: bool,
-        spinCount: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Initialize", (initialState, spinCount))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose__cordl_bool1(
-        &mut self,
-        disposing: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_IsSet(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -142,25 +190,11 @@ impl crate::System::Threading::ManualResetEventSlim {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsSet", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_Waiters(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_SpinCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Waiters", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ThrowIfDisposed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ThrowIfDisposed", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_SpinCount", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_WaitHandle(
@@ -173,41 +207,11 @@ impl crate::System::Threading::ManualResetEventSlim {
             .invoke("get_WaitHandle", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Set_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_Waiters(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object.invoke("Set", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Set__cordl_bool1(
-        &mut self,
-        duringCancellation: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Set", (duringCancellation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EnsureLockObjectCreated(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EnsureLockObjectCreated", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SpinCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_SpinCount", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Waiters", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_IsSet(
@@ -221,31 +225,27 @@ impl crate::System::Threading::ManualResetEventSlim {
             .invoke("set_IsSet", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Waiters(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn set_SpinCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Waiters", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_SpinCount", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New__cordl_bool0(
-        initialState: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (initialState))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_1(
-        initialState: bool,
-        spinCount: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (initialState, spinCount))?;
-        Ok(__cordl_object)
+    pub fn set_Waiters(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Waiters", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Threading+ManualResetEventSlim")]

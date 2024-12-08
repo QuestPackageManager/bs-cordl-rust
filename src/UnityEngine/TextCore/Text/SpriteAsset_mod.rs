@@ -51,15 +51,63 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::SpriteAsset {
 impl crate::UnityEngine::TextCore::Text::SpriteAsset {
     #[cfg(feature = "UnityEngine+TextCore+Text+SpriteAsset+__c")]
     pub type __c = crate::UnityEngine::TextCore::Text::SpriteAsset___c;
-    pub fn set_faceInfo(
+    pub fn Awake(
         &mut self,
-        value: crate::UnityEngine::TextCore::FaceInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_faceInfo", (value))?;
+            .invoke("Awake", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSpriteIndexFromHashcode(
+        &mut self,
+        hashCode: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetSpriteIndexFromHashcode", (hashCode))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSpriteIndexFromName(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetSpriteIndexFromName", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSpriteIndexFromUnicode(
+        &mut self,
+        unicode: u32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetSpriteIndexFromUnicode", (unicode))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SortCharacterTable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SortCharacterTable", ())?;
         Ok(__cordl_ret)
     }
     pub fn SortGlyphAndCharacterTables(
@@ -72,17 +120,24 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
             .invoke("SortGlyphAndCharacterTables", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_spriteCharacterTable(
+    pub fn SortGlyphTable(
         &mut self,
-        value: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::TextCore::Text::SpriteCharacter,
-        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_spriteCharacterTable", (value))?;
+            .invoke("SortGlyphTable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateLookupTables(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateLookupTables", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -105,143 +160,6 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
             .invoke("get_faceInfo", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_spriteSheet(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Texture = __cordl_object
-            .invoke("get_spriteSheet", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_spriteCharacterLookupTable(
-        &mut self,
-        value: *mut crate::System::Collections::Generic::Dictionary_2<
-            u32,
-            *mut crate::UnityEngine::TextCore::Text::SpriteCharacter,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_spriteCharacterLookupTable", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_spriteGlyphTable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::TextCore::Text::SpriteGlyph,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::TextCore::Text::SpriteGlyph,
-        > = __cordl_object.invoke("get_spriteGlyphTable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateLookupTables(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateLookupTables", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSpriteIndexFromHashcode(
-        &mut self,
-        hashCode: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetSpriteIndexFromHashcode", (hashCode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_spriteCharacterTable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::TextCore::Text::SpriteCharacter,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::TextCore::Text::SpriteCharacter,
-        > = __cordl_object.invoke("get_spriteCharacterTable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_spriteSheet(
-        &mut self,
-        value: *mut crate::UnityEngine::Texture,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_spriteSheet", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SortCharacterTable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SortCharacterTable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSpriteIndexFromUnicode(
-        &mut self,
-        unicode: u32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetSpriteIndexFromUnicode", (unicode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSpriteIndexFromName(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetSpriteIndexFromName", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SortGlyphTable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SortGlyphTable", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_spriteCharacterLookupTable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -259,6 +177,84 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
         > = __cordl_object.invoke("get_spriteCharacterLookupTable", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_spriteCharacterTable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::TextCore::Text::SpriteCharacter,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::TextCore::Text::SpriteCharacter,
+        > = __cordl_object.invoke("get_spriteCharacterTable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_spriteGlyphTable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::TextCore::Text::SpriteGlyph,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::TextCore::Text::SpriteGlyph,
+        > = __cordl_object.invoke("get_spriteGlyphTable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_spriteSheet(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Texture = __cordl_object
+            .invoke("get_spriteSheet", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_faceInfo(
+        &mut self,
+        value: crate::UnityEngine::TextCore::FaceInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_faceInfo", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_spriteCharacterLookupTable(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::Dictionary_2<
+            u32,
+            *mut crate::UnityEngine::TextCore::Text::SpriteCharacter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_spriteCharacterLookupTable", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_spriteCharacterTable(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::TextCore::Text::SpriteCharacter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_spriteCharacterTable", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_spriteGlyphTable(
         &mut self,
         value: *mut crate::System::Collections::Generic::List_1<
@@ -272,12 +268,16 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
             .invoke("set_spriteGlyphTable", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_spriteSheet(
+        &mut self,
+        value: *mut crate::UnityEngine::Texture,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_spriteSheet", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+SpriteAsset")]

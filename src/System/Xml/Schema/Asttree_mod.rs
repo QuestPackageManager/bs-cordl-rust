@@ -28,41 +28,6 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::Asttree {
 }
 #[cfg(feature = "System+Xml+Schema+Asttree")]
 impl crate::System::Xml::Schema::Asttree {
-    pub fn _ctor(
-        &mut self,
-        xPath: *mut crate::System::String,
-        isField: bool,
-        nsmgr: *mut crate::System::Xml::XmlNamespaceManager,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (xPath, isField, nsmgr))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetURN(
-        &mut self,
-        axis: *mut crate::MS::Internal::Xml::XPath::Axis,
-        nsmgr: *mut crate::System::Xml::XmlNamespaceManager,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetURN", (axis, nsmgr))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SubtreeArray(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
-            .invoke("get_SubtreeArray", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CompileXPath(
         &mut self,
         xPath: *mut crate::System::String,
@@ -80,12 +45,47 @@ impl crate::System::Xml::Schema::Asttree {
         xPath: *mut crate::System::String,
         isField: bool,
         nsmgr: *mut crate::System::Xml::XmlNamespaceManager,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (xPath, isField, nsmgr))?;
         Ok(__cordl_object)
+    }
+    pub fn SetURN(
+        &mut self,
+        axis: *mut crate::MS::Internal::Xml::XPath::Axis,
+        nsmgr: *mut crate::System::Xml::XmlNamespaceManager,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetURN", (axis, nsmgr))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        xPath: *mut crate::System::String,
+        isField: bool,
+        nsmgr: *mut crate::System::Xml::XmlNamespaceManager,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (xPath, isField, nsmgr))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SubtreeArray(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
+            .invoke("get_SubtreeArray", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+Asttree")]

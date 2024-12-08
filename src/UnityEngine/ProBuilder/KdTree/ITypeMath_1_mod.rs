@@ -29,7 +29,7 @@ for crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<T> {
-    pub fn get_Zero(&mut self) -> quest_hook::libil2cpp::Result<T>
+    pub fn Add(&mut self, a: T, b: T) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -37,51 +37,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: T = __cordl_object.invoke("get_Zero", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Min(&mut self, a: T, b: T) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("Min", (a, b))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_PositiveInfinity(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("get_PositiveInfinity", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Max(&mut self, a: T, b: T) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("Max", (a, b))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AreEqual_T_T0(&mut self, a: T, b: T) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("AreEqual", (a, b))?;
+        let __cordl_ret: T = __cordl_object.invoke("Add", (a, b))?;
         Ok(__cordl_ret)
     }
     pub fn AreEqual_Il2CppArray_Il2CppArray1(
@@ -99,7 +55,7 @@ impl<
         let __cordl_ret: bool = __cordl_object.invoke("AreEqual", (a, b))?;
         Ok(__cordl_ret)
     }
-    pub fn get_NegativeInfinity(&mut self) -> quest_hook::libil2cpp::Result<T>
+    pub fn AreEqual_T_T0(&mut self, a: T, b: T) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -107,7 +63,18 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: T = __cordl_object.invoke("get_NegativeInfinity", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("AreEqual", (a, b))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Compare(&mut self, a: T, b: T) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Compare", (a, b))?;
         Ok(__cordl_ret)
     }
     pub fn DistanceSquaredBetweenPoints(
@@ -126,7 +93,7 @@ impl<
             .invoke("DistanceSquaredBetweenPoints", (a, b))?;
         Ok(__cordl_ret)
     }
-    pub fn Subtract(&mut self, a: T, b: T) -> quest_hook::libil2cpp::Result<T>
+    pub fn Max(&mut self, a: T, b: T) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -134,10 +101,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: T = __cordl_object.invoke("Subtract", (a, b))?;
+        let __cordl_ret: T = __cordl_object.invoke("Max", (a, b))?;
         Ok(__cordl_ret)
     }
-    pub fn Add(&mut self, a: T, b: T) -> quest_hook::libil2cpp::Result<T>
+    pub fn Min(&mut self, a: T, b: T) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -145,29 +112,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: T = __cordl_object.invoke("Add", (a, b))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MinValue(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("get_MinValue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Compare(&mut self, a: T, b: T) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Compare", (a, b))?;
+        let __cordl_ret: T = __cordl_object.invoke("Min", (a, b))?;
         Ok(__cordl_ret)
     }
     pub fn Multiply(&mut self, a: T, b: T) -> quest_hook::libil2cpp::Result<T>
@@ -181,6 +126,22 @@ impl<
         let __cordl_ret: T = __cordl_object.invoke("Multiply", (a, b))?;
         Ok(__cordl_ret)
     }
+    pub fn Subtract(&mut self, a: T, b: T) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("Subtract", (a, b))?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_MaxValue(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -192,10 +153,49 @@ impl<
         let __cordl_ret: T = __cordl_object.invoke("get_MaxValue", ())?;
         Ok(__cordl_ret)
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
+    pub fn get_MinValue(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("get_MinValue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NegativeInfinity(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("get_NegativeInfinity", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_PositiveInfinity(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("get_PositiveInfinity", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Zero(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("get_Zero", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+ITypeMath_1")]

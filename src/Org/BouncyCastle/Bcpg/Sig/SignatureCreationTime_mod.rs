@@ -25,18 +25,33 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::Sig::SignatureCreati
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+SignatureCreationTime")]
 impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureCreationTime {
-    pub fn _ctor__cordl_bool_Il2CppArray0(
-        &mut self,
-        critical: bool,
-        isLongLength: bool,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn GetTime(&mut self) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (critical, isLongLength, data))?;
+        let __cordl_ret: crate::System::DateTime = __cordl_object.invoke("GetTime", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New_DateTime1(
+        critical: bool,
+        date: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (critical, date))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool_Il2CppArray0(
+        critical: bool,
+        isLongLength: bool,
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (critical, isLongLength, data))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_DateTime1(
         &mut self,
@@ -50,33 +65,18 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureCreationTime {
             .invoke(".ctor", (critical, date))?;
         Ok(__cordl_ret)
     }
-    pub fn GetTime(&mut self) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::DateTime = __cordl_object.invoke("GetTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New__cordl_bool_Il2CppArray0(
+    pub fn _ctor__cordl_bool_Il2CppArray0(
+        &mut self,
         critical: bool,
         isLongLength: bool,
         data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (critical, isLongLength, data))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_DateTime1(
-        critical: bool,
-        date: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (critical, date))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (critical, isLongLength, data))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+SignatureCreationTime")]

@@ -29,15 +29,36 @@ impl std::ops::DerefMut for crate::Mono::Security::Cryptography::MD4Managed {
 }
 #[cfg(feature = "Mono+Security+Cryptography+MD4Managed")]
 impl crate::Mono::Security::Cryptography::MD4Managed {
-    pub fn Padding(
+    pub fn Decode(
         &mut self,
-        nLength: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        output: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("Padding", (nLength))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Decode", (output, input, index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Encode(
+        &mut self,
+        output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        input: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Encode", (output, input))?;
+        Ok(__cordl_ret)
+    }
+    pub fn F(&mut self, x: u32, y: u32, z: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("F", (x, y, z))?;
         Ok(__cordl_ret)
     }
     pub fn FF(
@@ -56,17 +77,11 @@ impl crate::Mono::Security::Cryptography::MD4Managed {
             .invoke("FF", (a, b, c, d, x, s))?;
         Ok(__cordl_ret)
     }
-    pub fn HashCore(
-        &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        ibStart: i32,
-        cbSize: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn G(&mut self, x: u32, y: u32, z: u32) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HashCore", (array, ibStart, cbSize))?;
+        let __cordl_ret: u32 = __cordl_object.invoke("G", (x, y, z))?;
         Ok(__cordl_ret)
     }
     pub fn GG(
@@ -85,73 +100,11 @@ impl crate::Mono::Security::Cryptography::MD4Managed {
             .invoke("GG", (a, b, c, d, x, s))?;
         Ok(__cordl_ret)
     }
-    pub fn F(&mut self, x: u32, y: u32, z: u32) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("F", (x, y, z))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ROL(&mut self, x: u32, n: u8) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("ROL", (x, n))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Encode(
-        &mut self,
-        output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        input: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Encode", (output, input))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HashFinal(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("HashFinal", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn H(&mut self, x: u32, y: u32, z: u32) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("H", (x, y, z))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Decode(
-        &mut self,
-        output: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Decode", (output, input, index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MD4Transform(
-        &mut self,
-        state: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-        block: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MD4Transform", (state, block, index))?;
         Ok(__cordl_ret)
     }
     pub fn HH(
@@ -170,11 +123,27 @@ impl crate::Mono::Security::Cryptography::MD4Managed {
             .invoke("HH", (a, b, c, d, x, s))?;
         Ok(__cordl_ret)
     }
-    pub fn G(&mut self, x: u32, y: u32, z: u32) -> quest_hook::libil2cpp::Result<u32> {
+    pub fn HashCore(
+        &mut self,
+        array: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        ibStart: i32,
+        cbSize: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: u32 = __cordl_object.invoke("G", (x, y, z))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HashCore", (array, ibStart, cbSize))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HashFinal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("HashFinal", ())?;
         Ok(__cordl_ret)
     }
     pub fn Initialize(
@@ -187,6 +156,44 @@ impl crate::Mono::Security::Cryptography::MD4Managed {
             .invoke("Initialize", ())?;
         Ok(__cordl_ret)
     }
+    pub fn MD4Transform(
+        &mut self,
+        state: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+        block: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MD4Transform", (state, block, index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Padding(
+        &mut self,
+        nLength: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("Padding", (nLength))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ROL(&mut self, x: u32, n: u8) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("ROL", (x, n))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -196,13 +203,6 @@ impl crate::Mono::Security::Cryptography::MD4Managed {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Security+Cryptography+MD4Managed")]

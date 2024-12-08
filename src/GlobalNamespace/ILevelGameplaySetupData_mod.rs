@@ -23,6 +23,18 @@ impl std::ops::DerefMut for ILevelGameplaySetupData {
 }
 #[cfg(feature = "ILevelGameplaySetupData")]
 impl ILevelGameplaySetupData {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_beatmapKey(&mut self) -> quest_hook::libil2cpp::Result<BeatmapKey> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: BeatmapKey = __cordl_object.invoke("get_beatmapKey", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_gameplayModifiers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut GameplayModifiers> {
@@ -32,18 +44,6 @@ impl ILevelGameplaySetupData {
         let __cordl_ret: *mut GameplayModifiers = __cordl_object
             .invoke("get_gameplayModifiers", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_beatmapKey(&mut self) -> quest_hook::libil2cpp::Result<BeatmapKey> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: BeatmapKey = __cordl_object.invoke("get_beatmapKey", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "ILevelGameplaySetupData")]

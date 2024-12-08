@@ -26,6 +26,16 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_PreAssetEventData {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PreAssetEventData")]
 impl crate::HoudiniEngineUnity::HEU_PreAssetEventData {
+    pub fn New(
+        asset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+        assetType: crate::HoudiniEngineUnity::HEU_AssetEventType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (asset, assetType))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         asset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
@@ -37,16 +47,6 @@ impl crate::HoudiniEngineUnity::HEU_PreAssetEventData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (asset, assetType))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        asset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
-        assetType: crate::HoudiniEngineUnity::HEU_AssetEventType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (asset, assetType))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PreAssetEventData")]

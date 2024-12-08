@@ -27,18 +27,18 @@ impl std::ops::DerefMut for crate::System::Data::NameNode {
 }
 #[cfg(feature = "System+Data+NameNode")]
 impl crate::System::Data::NameNode {
-    pub fn IsTableConstant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn Bind(
+        &mut self,
+        table: *mut crate::System::Data::DataTable,
+        list: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::System::Data::DataColumn,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("IsTableConstant", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HasRemoteAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasRemoteAggregate", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Bind", (table, list))?;
         Ok(__cordl_ret)
     }
     pub fn DependsOn(
@@ -49,46 +49,6 @@ impl crate::System::Data::NameNode {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("DependsOn", (column))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsConstant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsConstant", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HasLocalAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasLocalAggregate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Il2CppArray_i32_i32_0(
-        &mut self,
-        table: *mut crate::System::Data::DataTable,
-        text: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        start: i32,
-        pos: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (table, text, start, pos))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String1(
-        &mut self,
-        table: *mut crate::System::Data::DataTable,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (table, name))?;
         Ok(__cordl_ret)
     }
     pub fn Eval_0(
@@ -123,26 +83,55 @@ impl crate::System::Data::NameNode {
             .invoke("Eval", (records))?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsSqlColumn(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn HasLocalAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsSqlColumn", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("HasLocalAggregate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Bind(
-        &mut self,
-        table: *mut crate::System::Data::DataTable,
-        list: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Data::DataColumn,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn HasRemoteAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Bind", (table, list))?;
+        let __cordl_ret: bool = __cordl_object.invoke("HasRemoteAggregate", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn IsConstant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsConstant", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsTableConstant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsTableConstant", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_Il2CppArray_i32_i32_0(
+        table: *mut crate::System::Data::DataTable,
+        text: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        start: i32,
+        pos: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (table, text, start, pos))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String1(
+        table: *mut crate::System::Data::DataTable,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (table, name))?;
+        Ok(__cordl_object)
     }
     pub fn Optimize(
         &mut self,
@@ -154,27 +143,38 @@ impl crate::System::Data::NameNode {
             .invoke("Optimize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_Il2CppArray_i32_i32_0(
+    pub fn _ctor_Il2CppArray_i32_i32_0(
+        &mut self,
         table: *mut crate::System::Data::DataTable,
         text: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         start: i32,
         pos: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (table, text, start, pos))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (table, text, start, pos))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_String1(
+    pub fn _ctor_String1(
+        &mut self,
         table: *mut crate::System::Data::DataTable,
         name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (table, name))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (table, name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsSqlColumn(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsSqlColumn", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Data+NameNode")]

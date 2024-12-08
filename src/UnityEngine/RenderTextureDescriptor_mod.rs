@@ -34,55 +34,44 @@ for crate::UnityEngine::RenderTextureDescriptor {
 }
 #[cfg(feature = "UnityEngine+RenderTextureDescriptor")]
 impl crate::UnityEngine::RenderTextureDescriptor {
-    pub fn set_depthStencilFormat(
-        &mut self,
-        value: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_depthStencilFormat",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_autoGenerateMips(
+    pub fn SetOrClearRenderTextureCreationFlag(
         &mut self,
         value: bool,
+        flag: crate::UnityEngine::RenderTextureCreationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_autoGenerateMips",
-            (value),
+            "SetOrClearRenderTextureCreationFlag",
+            (value, flag),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_msaaSamples(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_msaaSamples",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_shadowSamplingMode(
+    pub fn _ctor_GraphicsFormat_GraphicsFormat3(
         &mut self,
-        value: crate::UnityEngine::Rendering::ShadowSamplingMode,
+        width: i32,
+        height: i32,
+        colorFormat: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        depthStencilFormat: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_shadowSamplingMode",
-            (value),
+            ".ctor",
+            (width, height, colorFormat, depthStencilFormat),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_dimension(
+    pub fn _ctor_GraphicsFormat_GraphicsFormat_i32_4(
         &mut self,
-        value: crate::UnityEngine::Rendering::TextureDimension,
+        width: i32,
+        height: i32,
+        colorFormat: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        depthStencilFormat: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        mipCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_dimension",
-            (value),
+            ".ctor",
+            (width, height, colorFormat, depthStencilFormat, mipCount),
         )?;
         Ok(__cordl_ret)
     }
@@ -131,79 +120,6 @@ impl crate::UnityEngine::RenderTextureDescriptor {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_GraphicsFormat_GraphicsFormat3(
-        &mut self,
-        width: i32,
-        height: i32,
-        colorFormat: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-        depthStencilFormat: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (width, height, colorFormat, depthStencilFormat),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_GraphicsFormat_GraphicsFormat_i32_4(
-        &mut self,
-        width: i32,
-        height: i32,
-        colorFormat: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-        depthStencilFormat: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-        mipCount: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (width, height, colorFormat, depthStencilFormat, mipCount),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_mipCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_mipCount",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_useDynamicScale(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_useDynamicScale",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_msaaSamples(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_msaaSamples",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_useMipMap(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_useMipMap",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_colorFormat(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RenderTextureFormat> {
@@ -214,103 +130,10 @@ impl crate::UnityEngine::RenderTextureDescriptor {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_sRGB(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_sRGB",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_depthBufferBits(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_depthBufferBits",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_shadowSamplingMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Rendering::ShadowSamplingMode,
-    > {
-        let __cordl_ret: crate::UnityEngine::Rendering::ShadowSamplingMode = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_shadowSamplingMode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_depthBufferBits(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_height",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_vrUsage(
-        &mut self,
-        value: crate::UnityEngine::VRTextureUsage,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_vrUsage",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_height(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_height",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_width",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_volumeDepth(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_volumeDepth",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_sRGB(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_sRGB",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_dimension(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::TextureDimension> {
-        let __cordl_ret: crate::UnityEngine::Rendering::TextureDimension = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_dimension",
+            "get_depthBufferBits",
             (),
         )?;
         Ok(__cordl_ret)
@@ -327,53 +150,13 @@ impl crate::UnityEngine::RenderTextureDescriptor {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_depthBufferBits(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_dimension(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::TextureDimension> {
+        let __cordl_ret: crate::UnityEngine::Rendering::TextureDimension = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_depthBufferBits",
+            "get_dimension",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_createdFromScript(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_createdFromScript",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_graphicsFormat(
-        &mut self,
-        value: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_graphicsFormat",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_volumeDepth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_volumeDepth",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetOrClearRenderTextureCreationFlag(
-        &mut self,
-        value: bool,
-        flag: crate::UnityEngine::RenderTextureCreationFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetOrClearRenderTextureCreationFlag",
-            (value, flag),
         )?;
         Ok(__cordl_ret)
     }
@@ -389,13 +172,65 @@ impl crate::UnityEngine::RenderTextureDescriptor {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_width(
+    pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_height",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_msaaSamples(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_msaaSamples",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sRGB(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_sRGB",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_shadowSamplingMode(
         &mut self,
-        value: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Rendering::ShadowSamplingMode,
+    > {
+        let __cordl_ret: crate::UnityEngine::Rendering::ShadowSamplingMode = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_shadowSamplingMode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_volumeDepth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_volumeDepth",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_width",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_autoGenerateMips(
+        &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_width",
+            "set_autoGenerateMips",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -411,13 +246,46 @@ impl crate::UnityEngine::RenderTextureDescriptor {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_memoryless(
+    pub fn set_createdFromScript(
         &mut self,
-        value: crate::UnityEngine::RenderTextureMemoryless,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_memoryless",
+            "set_createdFromScript",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_depthBufferBits(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_depthBufferBits",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_depthStencilFormat(
+        &mut self,
+        value: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_depthStencilFormat",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_dimension(
+        &mut self,
+        value: crate::UnityEngine::Rendering::TextureDimension,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_dimension",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -429,6 +297,138 @@ impl crate::UnityEngine::RenderTextureDescriptor {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_enableRandomWrite",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_graphicsFormat(
+        &mut self,
+        value: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_graphicsFormat",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_height(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_height",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_memoryless(
+        &mut self,
+        value: crate::UnityEngine::RenderTextureMemoryless,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_memoryless",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_mipCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_mipCount",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_msaaSamples(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_msaaSamples",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_sRGB(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_sRGB",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_shadowSamplingMode(
+        &mut self,
+        value: crate::UnityEngine::Rendering::ShadowSamplingMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_shadowSamplingMode",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_useDynamicScale(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_useDynamicScale",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_useMipMap(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_useMipMap",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_volumeDepth(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_volumeDepth",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_vrUsage(
+        &mut self,
+        value: crate::UnityEngine::VRTextureUsage,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_vrUsage",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_width(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_width",
             (value),
         )?;
         Ok(__cordl_ret)

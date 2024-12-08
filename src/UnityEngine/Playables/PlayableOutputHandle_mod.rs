@@ -23,17 +23,6 @@ for crate::UnityEngine::Playables::PlayableOutputHandle {
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableOutputHandle")]
 impl crate::UnityEngine::Playables::PlayableOutputHandle {
-    pub fn SetUserData(
-        &mut self,
-        target: *mut crate::UnityEngine::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetUserData",
-            (target),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn AddNotificationReceiver(
         &mut self,
         receiver: *mut crate::UnityEngine::Playables::INotificationReceiver,
@@ -42,78 +31,6 @@ impl crate::UnityEngine::Playables::PlayableOutputHandle {
             self,
             "AddNotificationReceiver",
             (receiver),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsValid",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetReferenceObject(
-        &mut self,
-        target: *mut crate::UnityEngine::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetReferenceObject",
-            (target),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsPlayableOutputOfType<T>(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsPlayableOutputOfType",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn PushNotification(
-        &mut self,
-        origin: crate::UnityEngine::Playables::PlayableHandle,
-        notification: *mut crate::UnityEngine::Playables::INotification,
-        context: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "PushNotification",
-            (origin, notification, context),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPlayableOutputType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetPlayableOutputType",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSourcePlayable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetSourcePlayable",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -139,6 +56,86 @@ impl crate::UnityEngine::Playables::PlayableOutputHandle {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPlayableOutputType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetPlayableOutputType",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSourceOutputPort(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetSourceOutputPort",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSourcePlayable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetSourcePlayable",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsPlayableOutputOfType<T>(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsPlayableOutputOfType",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsValid",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn PushNotification(
+        &mut self,
+        origin: crate::UnityEngine::Playables::PlayableHandle,
+        notification: *mut crate::UnityEngine::Playables::INotification,
+        context: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "PushNotification",
+            (origin, notification, context),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetReferenceObject(
+        &mut self,
+        target: *mut crate::UnityEngine::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetReferenceObject",
+            (target),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn SetSourcePlayable(
         &mut self,
         target: crate::UnityEngine::Playables::PlayableHandle,
@@ -151,11 +148,14 @@ impl crate::UnityEngine::Playables::PlayableOutputHandle {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetSourceOutputPort(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn SetUserData(
+        &mut self,
+        target: *mut crate::UnityEngine::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetSourceOutputPort",
-            (),
+            "SetUserData",
+            (target),
         )?;
         Ok(__cordl_ret)
     }

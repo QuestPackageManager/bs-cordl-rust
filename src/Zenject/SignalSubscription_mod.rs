@@ -32,6 +32,13 @@ impl std::ops::DerefMut for crate::Zenject::SignalSubscription_Pool {
 }
 #[cfg(feature = "Zenject+SignalSubscription+Pool")]
 impl crate::Zenject::SignalSubscription_Pool {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -41,13 +48,6 @@ impl crate::Zenject::SignalSubscription_Pool {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+SignalSubscription+Pool")]
@@ -91,37 +91,14 @@ impl std::ops::DerefMut for crate::Zenject::SignalSubscription {
 impl crate::Zenject::SignalSubscription {
     #[cfg(feature = "Zenject+SignalSubscription+Pool")]
     pub type Pool = crate::Zenject::SignalSubscription_Pool;
-    pub fn OnSpawned(
+    pub fn Dispose(
         &mut self,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
-        declaration: *mut crate::Zenject::SignalDeclaration,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnSpawned", (callback, declaration))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SignalId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Zenject::BindingId> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Zenject::BindingId = __cordl_object
-            .invoke("get_SignalId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        pool: *mut crate::Zenject::SignalSubscription_Pool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pool))?;
+            .invoke("Dispose", ())?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -135,14 +112,23 @@ impl crate::Zenject::SignalSubscription {
             .invoke("Invoke", (signal))?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
+    pub fn New(
+        pool: *mut crate::Zenject::SignalSubscription_Pool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (pool))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDeclarationDespawned(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+            .invoke("OnDeclarationDespawned", ())?;
         Ok(__cordl_ret)
     }
     pub fn OnDespawned(
@@ -155,14 +141,16 @@ impl crate::Zenject::SignalSubscription {
             .invoke("OnDespawned", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnDeclarationDespawned(
+    pub fn OnSpawned(
         &mut self,
+        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
+        declaration: *mut crate::Zenject::SignalDeclaration,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDeclarationDespawned", ())?;
+            .invoke("OnSpawned", (callback, declaration))?;
         Ok(__cordl_ret)
     }
     pub fn SetDefaults(
@@ -175,14 +163,26 @@ impl crate::Zenject::SignalSubscription {
             .invoke("SetDefaults", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         pool: *mut crate::Zenject::SignalSubscription_Pool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (pool))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (pool))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SignalId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Zenject::BindingId> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Zenject::BindingId = __cordl_object
+            .invoke("get_SignalId", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+SignalSubscription")]

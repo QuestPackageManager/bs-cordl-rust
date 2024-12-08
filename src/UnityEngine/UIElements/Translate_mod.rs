@@ -25,21 +25,25 @@ for crate::UnityEngine::UIElements::Translate {
 }
 #[cfg(feature = "UnityEngine+UIElements+Translate")]
 impl crate::UnityEngine::UIElements::Translate {
-    pub fn ToString(
+    pub fn Equals_Object1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
-            (),
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_z(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Equals_Translate0(
+        &mut self,
+        other: crate::UnityEngine::UIElements::Translate,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_z",
-            (),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -51,25 +55,13 @@ impl crate::UnityEngine::UIElements::Translate {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_y(
+    pub fn ToString(
         &mut self,
-        value: crate::UnityEngine::UIElements::Length,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_y",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_x(
-        &mut self,
-        value: crate::UnityEngine::UIElements::Length,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_x",
-            (value),
+            "ToString",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -106,25 +98,33 @@ impl crate::UnityEngine::UIElements::Translate {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Translate0(
-        &mut self,
-        other: crate::UnityEngine::UIElements::Translate,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_z(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "get_z",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object1(
+    pub fn set_x(
         &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: crate::UnityEngine::UIElements::Length,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (obj),
+            "set_x",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_y(
+        &mut self,
+        value: crate::UnityEngine::UIElements::Length,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_y",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

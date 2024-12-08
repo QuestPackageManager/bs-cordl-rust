@@ -24,20 +24,6 @@ for crate::Unity::Burst::SharedStatic_1<T> {
 #[cfg(feature = "Unity+Burst+SharedStatic_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::SharedStatic_1<T> {
     pub const DefaultAlignment: u32 = 67239952u32;
-    pub fn get_UnsafeDataPointer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_UnsafeDataPointer",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -63,6 +49,20 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::SharedStatic_1<T> {
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Data",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_UnsafeDataPointer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_UnsafeDataPointer",
             (),
         )?;
         Ok(__cordl_ret)

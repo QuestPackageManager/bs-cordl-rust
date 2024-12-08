@@ -26,12 +26,15 @@ impl std::ops::DerefMut for crate::System::MonoCustomAttrs_AttributeInfo {
 }
 #[cfg(feature = "System+MonoCustomAttrs+AttributeInfo")]
 impl crate::System::MonoCustomAttrs_AttributeInfo {
-    pub fn get_InheritanceLevel(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_InheritanceLevel", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        usage: *mut crate::System::AttributeUsageAttribute,
+        inheritanceLevel: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (usage, inheritanceLevel))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -45,6 +48,13 @@ impl crate::System::MonoCustomAttrs_AttributeInfo {
             .invoke(".ctor", (usage, inheritanceLevel))?;
         Ok(__cordl_ret)
     }
+    pub fn get_InheritanceLevel(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_InheritanceLevel", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Usage(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::AttributeUsageAttribute> {
@@ -54,16 +64,6 @@ impl crate::System::MonoCustomAttrs_AttributeInfo {
         let __cordl_ret: *mut crate::System::AttributeUsageAttribute = __cordl_object
             .invoke("get_Usage", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        usage: *mut crate::System::AttributeUsageAttribute,
-        inheritanceLevel: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (usage, inheritanceLevel))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+MonoCustomAttrs+AttributeInfo")]

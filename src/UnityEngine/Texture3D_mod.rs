@@ -24,11 +24,218 @@ impl std::ops::DerefMut for crate::UnityEngine::Texture3D {
 }
 #[cfg(feature = "UnityEngine+Texture3D")]
 impl crate::UnityEngine::Texture3D {
-    pub fn get_isReadable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn ApplyImpl(
+        &mut self,
+        updateMipmaps: bool,
+        makeNoLongerReadable: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isReadable", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ApplyImpl", (updateMipmaps, makeNoLongerReadable))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Apply_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Apply", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Apply__cordl_bool__cordl_bool0(
+        &mut self,
+        updateMipmaps: bool,
+        makeNoLongerReadable: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Apply", (updateMipmaps, makeNoLongerReadable))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_DefaultFormat_TextureCreationFlags0(
+        width: i32,
+        height: i32,
+        depth: i32,
+        format: crate::UnityEngine::Experimental::Rendering::DefaultFormat,
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (width, height, depth, format, flags))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_DefaultFormat_TextureCreationFlags_i32_1(
+        width: i32,
+        height: i32,
+        depth: i32,
+        format: crate::UnityEngine::Experimental::Rendering::DefaultFormat,
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+        mipCount: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (width, height, depth, format, flags, mipCount))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_GraphicsFormat_TextureCreationFlags2(
+        width: i32,
+        height: i32,
+        depth: i32,
+        format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (width, height, depth, format, flags))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_GraphicsFormat_TextureCreationFlags_i32_3(
+        width: i32,
+        height: i32,
+        depth: i32,
+        format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+        mipCount: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (width, height, depth, format, flags, mipCount))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_TextureFormat__cordl_bool7(
+        width: i32,
+        height: i32,
+        depth: i32,
+        textureFormat: crate::UnityEngine::TextureFormat,
+        mipChain: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (width, height, depth, textureFormat, mipChain))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_TextureFormat__cordl_bool_IntPtr9(
+        width: i32,
+        height: i32,
+        depth: i32,
+        textureFormat: crate::UnityEngine::TextureFormat,
+        mipChain: bool,
+        nativeTex: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (width, height, depth, textureFormat, mipChain, nativeTex),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_TextureFormat__cordl_bool__cordl_bool8(
+        width: i32,
+        height: i32,
+        depth: i32,
+        textureFormat: crate::UnityEngine::TextureFormat,
+        mipChain: bool,
+        createUninitialized: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (width, height, depth, textureFormat, mipChain, createUninitialized),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_TextureFormat_i32_4(
+        width: i32,
+        height: i32,
+        depth: i32,
+        textureFormat: crate::UnityEngine::TextureFormat,
+        mipCount: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (width, height, depth, textureFormat, mipCount))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_TextureFormat_i32_IntPtr5(
+        width: i32,
+        height: i32,
+        depth: i32,
+        textureFormat: crate::UnityEngine::TextureFormat,
+        mipCount: i32,
+        nativeTex: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (width, height, depth, textureFormat, mipCount, nativeTex),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_TextureFormat_i32_IntPtr__cordl_bool6(
+        width: i32,
+        height: i32,
+        depth: i32,
+        textureFormat: crate::UnityEngine::TextureFormat,
+        mipCount: i32,
+        nativeTex: crate::System::IntPtr,
+        createUninitialized: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    width,
+                    height,
+                    depth,
+                    textureFormat,
+                    mipCount,
+                    nativeTex,
+                    createUninitialized,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn SetPixels32_Il2CppArray1(
+        &mut self,
+        colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetPixels32", (colors))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetPixels32_i32_0(
+        &mut self,
+        colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+        miplevel: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetPixels32", (colors, miplevel))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_DefaultFormat_TextureCreationFlags0(
@@ -93,6 +300,59 @@ impl crate::UnityEngine::Texture3D {
             .invoke(".ctor", (width, height, depth, format, flags, mipCount))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_TextureFormat__cordl_bool7(
+        &mut self,
+        width: i32,
+        height: i32,
+        depth: i32,
+        textureFormat: crate::UnityEngine::TextureFormat,
+        mipChain: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (width, height, depth, textureFormat, mipChain))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_TextureFormat__cordl_bool_IntPtr9(
+        &mut self,
+        width: i32,
+        height: i32,
+        depth: i32,
+        textureFormat: crate::UnityEngine::TextureFormat,
+        mipChain: bool,
+        nativeTex: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (width, height, depth, textureFormat, mipChain, nativeTex),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_TextureFormat__cordl_bool__cordl_bool8(
+        &mut self,
+        width: i32,
+        height: i32,
+        depth: i32,
+        textureFormat: crate::UnityEngine::TextureFormat,
+        mipChain: bool,
+        createUninitialized: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (width, height, depth, textureFormat, mipChain, createUninitialized),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_TextureFormat_i32_4(
         &mut self,
         width: i32,
@@ -155,272 +415,12 @@ impl crate::UnityEngine::Texture3D {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_TextureFormat__cordl_bool7(
-        &mut self,
-        width: i32,
-        height: i32,
-        depth: i32,
-        textureFormat: crate::UnityEngine::TextureFormat,
-        mipChain: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_isReadable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (width, height, depth, textureFormat, mipChain))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isReadable", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor_TextureFormat__cordl_bool__cordl_bool8(
-        &mut self,
-        width: i32,
-        height: i32,
-        depth: i32,
-        textureFormat: crate::UnityEngine::TextureFormat,
-        mipChain: bool,
-        createUninitialized: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (width, height, depth, textureFormat, mipChain, createUninitialized),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_TextureFormat__cordl_bool_IntPtr9(
-        &mut self,
-        width: i32,
-        height: i32,
-        depth: i32,
-        textureFormat: crate::UnityEngine::TextureFormat,
-        mipChain: bool,
-        nativeTex: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (width, height, depth, textureFormat, mipChain, nativeTex),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ApplyImpl(
-        &mut self,
-        updateMipmaps: bool,
-        makeNoLongerReadable: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ApplyImpl", (updateMipmaps, makeNoLongerReadable))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetPixels32_i32_0(
-        &mut self,
-        colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
-        miplevel: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetPixels32", (colors, miplevel))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetPixels32_Il2CppArray1(
-        &mut self,
-        colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetPixels32", (colors))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Apply__cordl_bool__cordl_bool0(
-        &mut self,
-        updateMipmaps: bool,
-        makeNoLongerReadable: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Apply", (updateMipmaps, makeNoLongerReadable))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Apply_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Apply", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_DefaultFormat_TextureCreationFlags0(
-        width: i32,
-        height: i32,
-        depth: i32,
-        format: crate::UnityEngine::Experimental::Rendering::DefaultFormat,
-        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (width, height, depth, format, flags))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_DefaultFormat_TextureCreationFlags_i32_1(
-        width: i32,
-        height: i32,
-        depth: i32,
-        format: crate::UnityEngine::Experimental::Rendering::DefaultFormat,
-        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
-        mipCount: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (width, height, depth, format, flags, mipCount))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_GraphicsFormat_TextureCreationFlags2(
-        width: i32,
-        height: i32,
-        depth: i32,
-        format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (width, height, depth, format, flags))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_GraphicsFormat_TextureCreationFlags_i32_3(
-        width: i32,
-        height: i32,
-        depth: i32,
-        format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
-        mipCount: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (width, height, depth, format, flags, mipCount))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_TextureFormat_i32_4(
-        width: i32,
-        height: i32,
-        depth: i32,
-        textureFormat: crate::UnityEngine::TextureFormat,
-        mipCount: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (width, height, depth, textureFormat, mipCount))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_TextureFormat_i32_IntPtr5(
-        width: i32,
-        height: i32,
-        depth: i32,
-        textureFormat: crate::UnityEngine::TextureFormat,
-        mipCount: i32,
-        nativeTex: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (width, height, depth, textureFormat, mipCount, nativeTex),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_TextureFormat_i32_IntPtr__cordl_bool6(
-        width: i32,
-        height: i32,
-        depth: i32,
-        textureFormat: crate::UnityEngine::TextureFormat,
-        mipCount: i32,
-        nativeTex: crate::System::IntPtr,
-        createUninitialized: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    width,
-                    height,
-                    depth,
-                    textureFormat,
-                    mipCount,
-                    nativeTex,
-                    createUninitialized,
-                ),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_TextureFormat__cordl_bool7(
-        width: i32,
-        height: i32,
-        depth: i32,
-        textureFormat: crate::UnityEngine::TextureFormat,
-        mipChain: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (width, height, depth, textureFormat, mipChain))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_TextureFormat__cordl_bool__cordl_bool8(
-        width: i32,
-        height: i32,
-        depth: i32,
-        textureFormat: crate::UnityEngine::TextureFormat,
-        mipChain: bool,
-        createUninitialized: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (width, height, depth, textureFormat, mipChain, createUninitialized),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_TextureFormat__cordl_bool_IntPtr9(
-        width: i32,
-        height: i32,
-        depth: i32,
-        textureFormat: crate::UnityEngine::TextureFormat,
-        mipChain: bool,
-        nativeTex: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (width, height, depth, textureFormat, mipChain, nativeTex),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+Texture3D")]

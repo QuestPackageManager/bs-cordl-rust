@@ -29,11 +29,18 @@ impl std::ops::DerefMut for crate::System::Runtime::Serialization::DataMemberAtt
 }
 #[cfg(feature = "System+Runtime+Serialization+DataMemberAttribute")]
 impl crate::System::Runtime::Serialization::DataMemberAttribute {
-    pub fn get_Order(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_EmitDefaultValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Order", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_EmitDefaultValue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsRequired(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsRequired", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Name(
@@ -46,18 +53,11 @@ impl crate::System::Runtime::Serialization::DataMemberAttribute {
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsRequired(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_Order(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsRequired", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_EmitDefaultValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_EmitDefaultValue", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Order", ())?;
         Ok(__cordl_ret)
     }
 }

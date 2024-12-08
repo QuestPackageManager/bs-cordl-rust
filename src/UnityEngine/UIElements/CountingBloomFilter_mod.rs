@@ -51,22 +51,15 @@ impl crate::UnityEngine::UIElements::CountingBloomFilter {
         feature = "UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer"
     )]
     pub type _m_Counters_e__FixedBuffer = crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer;
-    pub fn Hash2(&mut self, hash: u32) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Hash2",
-            (hash),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveHash(
+    pub fn AdjustSlot(
         &mut self,
-        hash: u32,
+        index: u32,
+        increment: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "RemoveHash",
-            (hash),
+            "AdjustSlot",
+            (index, increment),
         )?;
         Ok(__cordl_ret)
     }
@@ -86,15 +79,22 @@ impl crate::UnityEngine::UIElements::CountingBloomFilter {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn AdjustSlot(
+    pub fn Hash2(&mut self, hash: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Hash2",
+            (hash),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn InsertHash(
         &mut self,
-        index: u32,
-        increment: bool,
+        hash: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "AdjustSlot",
-            (index, increment),
+            "InsertHash",
+            (hash),
         )?;
         Ok(__cordl_ret)
     }
@@ -106,13 +106,13 @@ impl crate::UnityEngine::UIElements::CountingBloomFilter {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn InsertHash(
+    pub fn RemoveHash(
         &mut self,
         hash: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "InsertHash",
+            "RemoveHash",
             (hash),
         )?;
         Ok(__cordl_ret)

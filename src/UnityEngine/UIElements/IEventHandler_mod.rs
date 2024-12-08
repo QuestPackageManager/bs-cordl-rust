@@ -24,17 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IEventHandler {
 }
 #[cfg(feature = "UnityEngine+UIElements+IEventHandler")]
 impl crate::UnityEngine::UIElements::IEventHandler {
-    pub fn SendEvent(
-        &mut self,
-        e: *mut crate::UnityEngine::UIElements::EventBase,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendEvent", (e))?;
-        Ok(__cordl_ret)
-    }
     pub fn HandleEvent(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::EventBase,
@@ -44,6 +33,17 @@ impl crate::UnityEngine::UIElements::IEventHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleEvent", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendEvent(
+        &mut self,
+        e: *mut crate::UnityEngine::UIElements::EventBase,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendEvent", (e))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

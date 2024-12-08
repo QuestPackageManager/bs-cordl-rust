@@ -114,10 +114,10 @@ impl std::ops::DerefMut for crate::Meta::XR::Samples::Telemetry::SampleTelemetry
 }
 #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
 impl crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents {
-    #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+EventTypes")]
-    pub type EventTypes = crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_EventTypes;
     #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+AnnotationTypes")]
     pub type AnnotationTypes = crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_AnnotationTypes;
+    #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+EventTypes")]
+    pub type EventTypes = crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_EventTypes;
 }
 #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
 impl quest_hook::libil2cpp::ObjectType

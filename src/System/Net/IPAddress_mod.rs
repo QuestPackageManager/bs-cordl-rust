@@ -32,6 +32,16 @@ impl crate::System::Net::IPAddress {
     pub const NumberOfLabels: i32 = 8i32;
     #[cfg(feature = "System+Net+IPAddress+ReadOnlyIPAddress")]
     pub type ReadOnlyIPAddress = crate::GlobalNamespace::IPAddress_ReadOnlyIPAddress;
+    pub fn Equals_Object1(
+        &mut self,
+        comparand: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (comparand))?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals__cordl_bool0(
         &mut self,
         comparandObj: *mut crate::System::Object,
@@ -44,25 +54,21 @@ impl crate::System::Net::IPAddress {
             .invoke("Equals", (comparandObj, compareScopeId))?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object1(
+    pub fn GetAddressBytes(
         &mut self,
-        comparand: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (comparand))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetAddressBytes", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_PrivateAddress(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_PrivateAddress", (value))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret)
     }
     pub fn MapToIPv6(
@@ -75,14 +81,92 @@ impl crate::System::Net::IPAddress {
             .invoke("MapToIPv6", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_AddressFamily(
+    pub fn New_Il2CppArray5(
+        address: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (address))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray_i64_1(
+        address: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        scopeid: i64,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (address, scopeid))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray_u32_4(
+        numbers: *mut quest_hook::libil2cpp::Il2CppArray<u16>,
+        scopeid: u32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (numbers, scopeid))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppObject_i32_u32_3(
+        numbers: *mut quest_hook::libil2cpp::Il2CppObject,
+        numbersLength: i32,
+        scopeid: u32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (numbers, numbersLength, scopeid))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_ReadOnlySpan_1_6(
+        address: crate::System::ReadOnlySpan_1<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (address))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_ReadOnlySpan_1_i64_2(
+        address: crate::System::ReadOnlySpan_1<u8>,
+        scopeid: i64,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (address, scopeid))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i64_0(newAddress: i64) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (newAddress))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Net::Sockets::AddressFamily> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Net::Sockets::AddressFamily = __cordl_object
-            .invoke("get_AddressFamily", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryWriteBytes(
+        &mut self,
+        destination: crate::System::Span_1<u8>,
+        bytesWritten: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryWriteBytes", (destination, bytesWritten))?;
         Ok(__cordl_ret)
     }
     pub fn WriteIPv4Bytes(
@@ -96,15 +180,26 @@ impl crate::System::Net::IPAddress {
             .invoke("WriteIPv4Bytes", (destination))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i64_0(
+    pub fn WriteIPv6Bytes(
         &mut self,
-        newAddress: i64,
+        destination: crate::System::Span_1<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (newAddress))?;
+            .invoke("WriteIPv6Bytes", (destination))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppArray5(
+        &mut self,
+        address: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (address))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_Il2CppArray_i64_1(
@@ -119,16 +214,16 @@ impl crate::System::Net::IPAddress {
             .invoke(".ctor", (address, scopeid))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_ReadOnlySpan_1_i64_2(
+    pub fn _ctor_Il2CppArray_u32_4(
         &mut self,
-        address: crate::System::ReadOnlySpan_1<u8>,
-        scopeid: i64,
+        numbers: *mut quest_hook::libil2cpp::Il2CppArray<u16>,
+        scopeid: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (address, scopeid))?;
+            .invoke(".ctor", (numbers, scopeid))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_Il2CppObject_i32_u32_3(
@@ -144,29 +239,6 @@ impl crate::System::Net::IPAddress {
             .invoke(".ctor", (numbers, numbersLength, scopeid))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Il2CppArray_u32_4(
-        &mut self,
-        numbers: *mut quest_hook::libil2cpp::Il2CppArray<u16>,
-        scopeid: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (numbers, scopeid))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Il2CppArray5(
-        &mut self,
-        address: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (address))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_ReadOnlySpan_1_6(
         &mut self,
         address: crate::System::ReadOnlySpan_1<u8>,
@@ -178,25 +250,44 @@ impl crate::System::Net::IPAddress {
             .invoke(".ctor", (address))?;
         Ok(__cordl_ret)
     }
-    pub fn get_PrivateAddress(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+    pub fn _ctor_ReadOnlySpan_1_i64_2(
+        &mut self,
+        address: crate::System::ReadOnlySpan_1<u8>,
+        scopeid: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: u32 = __cordl_object.invoke("get_PrivateAddress", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (address, scopeid))?;
         Ok(__cordl_ret)
     }
-    pub fn get_ScopeId(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+    pub fn _ctor_i64_0(
+        &mut self,
+        newAddress: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_ScopeId", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (newAddress))?;
         Ok(__cordl_ret)
     }
-    pub fn get_PrivateScopeId(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+    pub fn get_AddressFamily(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Net::Sockets::AddressFamily> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: u32 = __cordl_object.invoke("get_PrivateScopeId", ())?;
+        let __cordl_ret: crate::System::Net::Sockets::AddressFamily = __cordl_object
+            .invoke("get_AddressFamily", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsIPv4(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsIPv4", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_IsIPv6(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -206,14 +297,43 @@ impl crate::System::Net::IPAddress {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsIPv6", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    pub fn get_IsIPv6Multicast(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsIPv6Multicast", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_PrivateAddress(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("get_PrivateAddress", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_PrivateScopeId(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("get_PrivateScopeId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ScopeId(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_ScopeId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_PrivateAddress(
+        &mut self,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_PrivateAddress", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_PrivateScopeId(
@@ -226,128 +346,6 @@ impl crate::System::Net::IPAddress {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_PrivateScopeId", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsIPv6Multicast(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsIPv6Multicast", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryWriteBytes(
-        &mut self,
-        destination: crate::System::Span_1<u8>,
-        bytesWritten: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryWriteBytes", (destination, bytesWritten))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsIPv4(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsIPv4", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteIPv6Bytes(
-        &mut self,
-        destination: crate::System::Span_1<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteIPv6Bytes", (destination))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAddressBytes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetAddressBytes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_i64_0(
-        newAddress: i64,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (newAddress))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray_i64_1(
-        address: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        scopeid: i64,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (address, scopeid))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_ReadOnlySpan_1_i64_2(
-        address: crate::System::ReadOnlySpan_1<u8>,
-        scopeid: i64,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (address, scopeid))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppObject_i32_u32_3(
-        numbers: *mut quest_hook::libil2cpp::Il2CppObject,
-        numbersLength: i32,
-        scopeid: u32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (numbers, numbersLength, scopeid))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray_u32_4(
-        numbers: *mut quest_hook::libil2cpp::Il2CppArray<u16>,
-        scopeid: u32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (numbers, scopeid))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray5(
-        address: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (address))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_ReadOnlySpan_1_6(
-        address: crate::System::ReadOnlySpan_1<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (address))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+IPAddress")]

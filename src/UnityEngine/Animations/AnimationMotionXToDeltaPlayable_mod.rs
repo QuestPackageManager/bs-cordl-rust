@@ -23,28 +23,6 @@ for crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationMotionXToDeltaPlayable")]
 impl crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
-    pub fn _ctor(
-        &mut self,
-        handle: crate::UnityEngine::Playables::PlayableHandle,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (handle),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetAbsoluteMotion(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetAbsoluteMotion",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals(
         &mut self,
         other: crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable,
@@ -63,6 +41,28 @@ impl crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
             self,
             "GetHandle",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetAbsoluteMotion(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetAbsoluteMotion",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        handle: crate::UnityEngine::Playables::PlayableHandle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (handle),
         )?;
         Ok(__cordl_ret)
     }

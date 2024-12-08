@@ -175,6 +175,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_HapticInfo {
 }
 #[cfg(feature = "OVRInput+HapticInfo")]
 impl crate::GlobalNamespace::OVRInput_HapticInfo {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -184,13 +191,6 @@ impl crate::GlobalNamespace::OVRInput_HapticInfo {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRInput+HapticInfo")]
@@ -357,42 +357,28 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
     pub type VirtualAxis1DMap = crate::GlobalNamespace::OVRControllerBase_VirtualAxis1DMap;
     #[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
     pub type VirtualAxis2DMap = crate::GlobalNamespace::OVRControllerBase_VirtualAxis2DMap;
-    #[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
-    pub type VirtualNearTouchMap = crate::GlobalNamespace::OVRControllerBase_VirtualNearTouchMap;
     #[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
     pub type VirtualButtonMap = crate::GlobalNamespace::OVRControllerBase_VirtualButtonMap;
-    pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u8 = __cordl_object.invoke("GetBatteryPercentRemaining", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetControllerLocalizedVibration(
+    #[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
+    pub type VirtualNearTouchMap = crate::GlobalNamespace::OVRControllerBase_VirtualNearTouchMap;
+    pub fn ConfigureAxis1DMap(
         &mut self,
-        hapticsLocationMask: crate::GlobalNamespace::OVRInput_HapticsLocation,
-        frequency: f32,
-        amplitude: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetControllerLocalizedVibration",
-                (hapticsLocationMask, frequency, amplitude),
-            )?;
+            .invoke("ConfigureAxis1DMap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetControllerHapticsPcm(
+    pub fn ConfigureAxis2DMap(
         &mut self,
-        hapticsVibration: crate::GlobalNamespace::OVRInput_HapticsPcmVibration,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("SetControllerHapticsPcm", (hapticsVibration))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureAxis2DMap", ())?;
         Ok(__cordl_ret)
     }
     pub fn ConfigureButtonMap(
@@ -405,36 +391,38 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
             .invoke("ConfigureButtonMap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ConfigureAxis1DMap(
+    pub fn ConfigureNearTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureAxis1DMap", ())?;
+            .invoke("ConfigureNearTouchMap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetControllerVibration(
+    pub fn ConfigureTouchMap(
         &mut self,
-        frequency: f32,
-        amplitude: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetControllerVibration", (frequency, amplitude))?;
+            .invoke("ConfigureTouchMap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: u8 = __cordl_object.invoke("GetBatteryPercentRemaining", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetControllerSampleRateHz(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("GetControllerSampleRateHz", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetOpenVRControllerState(
@@ -450,49 +438,12 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
             .invoke("GetOpenVRControllerState", (controllerType))?;
         Ok(__cordl_ret)
     }
-    pub fn SetControllerHapticsAmplitudeEnvelope(
-        &mut self,
-        hapticsVibration: crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetControllerHapticsAmplitudeEnvelope", (hapticsVibration))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ResolveToRawMask_OVRInput_Button0(
-        &mut self,
-        virtualMask: crate::GlobalNamespace::OVRInput_Button,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawButton> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRInput_RawButton = __cordl_object
-            .invoke("ResolveToRawMask", (virtualMask))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ResolveToRawMask_OVRInput_Touch1(
-        &mut self,
-        virtualMask: crate::GlobalNamespace::OVRInput_Touch,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawTouch> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRInput_RawTouch = __cordl_object
-            .invoke("ResolveToRawMask", (virtualMask))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ResolveToRawMask_OVRInput_NearTouch2(
-        &mut self,
-        virtualMask: crate::GlobalNamespace::OVRInput_NearTouch,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawNearTouch> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRInput_RawNearTouch = __cordl_object
-            .invoke("ResolveToRawMask", (virtualMask))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ResolveToRawMask_OVRInput_Axis1D3(
         &mut self,
@@ -516,14 +467,87 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
             .invoke("ResolveToRawMask", (virtualMask))?;
         Ok(__cordl_ret)
     }
-    pub fn ConfigureAxis2DMap(
+    pub fn ResolveToRawMask_OVRInput_Button0(
         &mut self,
+        virtualMask: crate::GlobalNamespace::OVRInput_Button,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawButton> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::OVRInput_RawButton = __cordl_object
+            .invoke("ResolveToRawMask", (virtualMask))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ResolveToRawMask_OVRInput_NearTouch2(
+        &mut self,
+        virtualMask: crate::GlobalNamespace::OVRInput_NearTouch,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawNearTouch> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::OVRInput_RawNearTouch = __cordl_object
+            .invoke("ResolveToRawMask", (virtualMask))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ResolveToRawMask_OVRInput_Touch1(
+        &mut self,
+        virtualMask: crate::GlobalNamespace::OVRInput_Touch,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawTouch> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::OVRInput_RawTouch = __cordl_object
+            .invoke("ResolveToRawMask", (virtualMask))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetControllerHapticsAmplitudeEnvelope(
+        &mut self,
+        hapticsVibration: crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureAxis2DMap", ())?;
+            .invoke("SetControllerHapticsAmplitudeEnvelope", (hapticsVibration))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetControllerHapticsPcm(
+        &mut self,
+        hapticsVibration: crate::GlobalNamespace::OVRInput_HapticsPcmVibration,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("SetControllerHapticsPcm", (hapticsVibration))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetControllerLocalizedVibration(
+        &mut self,
+        hapticsLocationMask: crate::GlobalNamespace::OVRInput_HapticsLocation,
+        frequency: f32,
+        amplitude: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "SetControllerLocalizedVibration",
+                (hapticsLocationMask, frequency, amplitude),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetControllerVibration(
+        &mut self,
+        frequency: f32,
+        amplitude: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetControllerVibration", (frequency, amplitude))?;
         Ok(__cordl_ret)
     }
     pub fn Update(
@@ -536,39 +560,15 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
             .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ConfigureTouchMap(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureTouchMap", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetControllerSampleRateHz(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetControllerSampleRateHz", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConfigureNearTouchMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureNearTouchMap", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerBase")]
@@ -609,16 +609,6 @@ for crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid {
 }
 #[cfg(feature = "OVRInput+OVRControllerGamepadAndroid")]
 impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid {
-    pub fn ConfigureTouchMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureTouchMap", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -639,26 +629,6 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid {
             .invoke("ConfigureAxis2DMap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ConfigureNearTouchMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureNearTouchMap", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ConfigureButtonMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -669,12 +639,42 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid {
             .invoke("ConfigureButtonMap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn ConfigureNearTouchMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureNearTouchMap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ConfigureTouchMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureTouchMap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerGamepadAndroid")]
@@ -713,16 +713,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerGamepa
 }
 #[cfg(feature = "OVRInput+OVRControllerGamepadPC")]
 impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC {
-    pub fn ConfigureButtonMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureButtonMap", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -743,6 +733,16 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC {
             .invoke("ConfigureAxis2DMap", ())?;
         Ok(__cordl_ret)
     }
+    pub fn ConfigureButtonMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureButtonMap", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn ConfigureNearTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -751,16 +751,6 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ConfigureNearTouchMap", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn ConfigureTouchMap(
@@ -773,12 +763,22 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC {
             .invoke("ConfigureTouchMap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerGamepadPC")]
@@ -817,14 +817,14 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerHands 
 }
 #[cfg(feature = "OVRInput+OVRControllerHands")]
 impl crate::GlobalNamespace::OVRInput_OVRControllerHands {
-    pub fn ConfigureNearTouchMap(
+    pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureNearTouchMap", ())?;
+            .invoke("ConfigureAxis1DMap", ())?;
         Ok(__cordl_ret)
     }
     pub fn ConfigureAxis2DMap(
@@ -837,43 +837,6 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerHands {
             .invoke("ConfigureAxis2DMap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ConfigureTouchMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureTouchMap", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u8 = __cordl_object.invoke("GetBatteryPercentRemaining", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConfigureAxis1DMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureAxis1DMap", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ConfigureButtonMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -884,12 +847,49 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerHands {
             .invoke("ConfigureButtonMap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn ConfigureNearTouchMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureNearTouchMap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ConfigureTouchMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureTouchMap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u8 = __cordl_object.invoke("GetBatteryPercentRemaining", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerHands")]
@@ -938,26 +938,6 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLHand {
             .invoke("ConfigureAxis1DMap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConfigureTouchMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureTouchMap", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ConfigureAxis2DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -966,13 +946,6 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLHand {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ConfigureAxis2DMap", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u8 = __cordl_object.invoke("GetBatteryPercentRemaining", ())?;
         Ok(__cordl_ret)
     }
     pub fn ConfigureButtonMap(
@@ -995,12 +968,39 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLHand {
             .invoke("ConfigureNearTouchMap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn ConfigureTouchMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureTouchMap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u8 = __cordl_object.invoke("GetBatteryPercentRemaining", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerLHand")]
@@ -1039,36 +1039,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerLTouch
 }
 #[cfg(feature = "OVRInput+OVRControllerLTouch")]
 impl crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
-    pub fn ConfigureButtonMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureButtonMap", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConfigureTouchMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureTouchMap", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConfigureNearTouchMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureNearTouchMap", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1077,16 +1047,6 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ConfigureAxis1DMap", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn ConfigureAxis2DMap(
@@ -1099,6 +1059,36 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
             .invoke("ConfigureAxis2DMap", ())?;
         Ok(__cordl_ret)
     }
+    pub fn ConfigureButtonMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureButtonMap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ConfigureNearTouchMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureNearTouchMap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ConfigureTouchMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureTouchMap", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1106,12 +1096,22 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
         let __cordl_ret: u8 = __cordl_object.invoke("GetBatteryPercentRemaining", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerLTouch")]
@@ -1150,46 +1150,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerRHand 
 }
 #[cfg(feature = "OVRInput+OVRControllerRHand")]
 impl crate::GlobalNamespace::OVRInput_OVRControllerRHand {
-    pub fn ConfigureButtonMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureButtonMap", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConfigureTouchMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureTouchMap", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConfigureNearTouchMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureNearTouchMap", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1210,6 +1170,36 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRHand {
             .invoke("ConfigureAxis2DMap", ())?;
         Ok(__cordl_ret)
     }
+    pub fn ConfigureButtonMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureButtonMap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ConfigureNearTouchMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureNearTouchMap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ConfigureTouchMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureTouchMap", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1217,12 +1207,22 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRHand {
         let __cordl_ret: u8 = __cordl_object.invoke("GetBatteryPercentRemaining", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerRHand")]
@@ -1261,23 +1261,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerRTouch
 }
 #[cfg(feature = "OVRInput+OVRControllerRTouch")]
 impl crate::GlobalNamespace::OVRInput_OVRControllerRTouch {
-    pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u8 = __cordl_object.invoke("GetBatteryPercentRemaining", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConfigureButtonMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureButtonMap", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1288,14 +1271,24 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRTouch {
             .invoke("ConfigureAxis1DMap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn ConfigureAxis2DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("ConfigureAxis2DMap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ConfigureButtonMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureButtonMap", ())?;
         Ok(__cordl_ret)
     }
     pub fn ConfigureNearTouchMap(
@@ -1318,22 +1311,29 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRTouch {
             .invoke("ConfigureTouchMap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ConfigureAxis2DMap(
+    pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u8 = __cordl_object.invoke("GetBatteryPercentRemaining", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureAxis2DMap", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerRTouch")]
@@ -1372,26 +1372,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerRemote
 }
 #[cfg(feature = "OVRInput+OVRControllerRemote")]
 impl crate::GlobalNamespace::OVRInput_OVRControllerRemote {
-    pub fn ConfigureTouchMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureTouchMap", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConfigureButtonMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureButtonMap", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1400,16 +1380,6 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRemote {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ConfigureAxis1DMap", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConfigureNearTouchMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureNearTouchMap", ())?;
         Ok(__cordl_ret)
     }
     pub fn ConfigureAxis2DMap(
@@ -1422,6 +1392,43 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRemote {
             .invoke("ConfigureAxis2DMap", ())?;
         Ok(__cordl_ret)
     }
+    pub fn ConfigureButtonMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureButtonMap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ConfigureNearTouchMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureNearTouchMap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ConfigureTouchMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureTouchMap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1431,13 +1438,6 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRemote {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerRemote")]
@@ -1486,13 +1486,6 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerTouch {
             .invoke("ConfigureAxis1DMap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u8 = __cordl_object.invoke("GetBatteryPercentRemaining", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ConfigureAxis2DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1513,16 +1506,6 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerTouch {
             .invoke("ConfigureButtonMap", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ConfigureTouchMap(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConfigureTouchMap", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ConfigureNearTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1533,6 +1516,30 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerTouch {
             .invoke("ConfigureNearTouchMap", ())?;
         Ok(__cordl_ret)
     }
+    pub fn ConfigureTouchMap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConfigureTouchMap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u8 = __cordl_object.invoke("GetBatteryPercentRemaining", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1542,13 +1549,6 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerTouch {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerTouch")]
@@ -1586,72 +1586,72 @@ impl std::ops::DerefMut for OVRInput {
 }
 #[cfg(feature = "OVRInput")]
 impl OVRInput {
-    #[cfg(feature = "OVRInput+Handedness")]
-    pub type Handedness = crate::GlobalNamespace::OVRInput_Handedness;
-    #[cfg(feature = "OVRInput+Controller")]
-    pub type Controller = crate::GlobalNamespace::OVRInput_Controller;
-    #[cfg(feature = "OVRInput+OVRControllerRHand")]
-    pub type OVRControllerRHand = crate::GlobalNamespace::OVRInput_OVRControllerRHand;
-    #[cfg(feature = "OVRInput+OVRControllerTouch")]
-    pub type OVRControllerTouch = crate::GlobalNamespace::OVRInput_OVRControllerTouch;
-    #[cfg(feature = "OVRInput+NearTouch")]
-    pub type NearTouch = crate::GlobalNamespace::OVRInput_NearTouch;
-    #[cfg(feature = "OVRInput+RawButton")]
-    pub type RawButton = crate::GlobalNamespace::OVRInput_RawButton;
-    #[cfg(feature = "OVRInput+OpenVRController")]
-    pub type OpenVRController = crate::GlobalNamespace::OVRInput_OpenVRController;
-    #[cfg(feature = "OVRInput+OVRControllerRemote")]
-    pub type OVRControllerRemote = crate::GlobalNamespace::OVRInput_OVRControllerRemote;
-    #[cfg(feature = "OVRInput+OpenVRControllerDetails")]
-    pub type OpenVRControllerDetails = crate::GlobalNamespace::OVRInput_OpenVRControllerDetails;
-    #[cfg(feature = "OVRInput+Button")]
-    pub type Button = crate::GlobalNamespace::OVRInput_Button;
-    #[cfg(feature = "OVRInput+RawTouch")]
-    pub type RawTouch = crate::GlobalNamespace::OVRInput_RawTouch;
-    #[cfg(feature = "OVRInput+InteractionProfile")]
-    pub type InteractionProfile = crate::GlobalNamespace::OVRInput_InteractionProfile;
-    #[cfg(feature = "OVRInput+HapticInfo")]
-    pub type HapticInfo = crate::GlobalNamespace::OVRInput_HapticInfo;
-    #[cfg(feature = "OVRInput+OVRControllerHands")]
-    pub type OVRControllerHands = crate::GlobalNamespace::OVRInput_OVRControllerHands;
     #[cfg(feature = "OVRInput+Touch")]
     pub type Touch = crate::GlobalNamespace::OVRInput_Touch;
+    #[cfg(feature = "OVRInput+HapticsAmplitudeEnvelopeVibration")]
+    pub type HapticsAmplitudeEnvelopeVibration = crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration;
+    #[cfg(feature = "OVRInput+RawButton")]
+    pub type RawButton = crate::GlobalNamespace::OVRInput_RawButton;
+    #[cfg(feature = "OVRInput+OVRControllerHands")]
+    pub type OVRControllerHands = crate::GlobalNamespace::OVRInput_OVRControllerHands;
+    #[cfg(feature = "OVRInput+Hand")]
+    pub type Hand = crate::GlobalNamespace::OVRInput_Hand;
+    #[cfg(feature = "OVRInput+OVRControllerGamepadPC")]
+    pub type OVRControllerGamepadPC = crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC;
+    #[cfg(feature = "OVRInput+RawAxis1D")]
+    pub type RawAxis1D = crate::GlobalNamespace::OVRInput_RawAxis1D;
+    #[cfg(feature = "OVRInput+OpenVRController")]
+    pub type OpenVRController = crate::GlobalNamespace::OVRInput_OpenVRController;
+    #[cfg(feature = "OVRInput+HapticInfo")]
+    pub type HapticInfo = crate::GlobalNamespace::OVRInput_HapticInfo;
+    #[cfg(feature = "OVRInput+OVRControllerTouch")]
+    pub type OVRControllerTouch = crate::GlobalNamespace::OVRInput_OVRControllerTouch;
     #[cfg(feature = "OVRInput+OVRControllerLTouch")]
     pub type OVRControllerLTouch = crate::GlobalNamespace::OVRInput_OVRControllerLTouch;
     #[cfg(feature = "OVRInput+OVRControllerBase")]
     pub type OVRControllerBase = crate::GlobalNamespace::OVRInput_OVRControllerBase;
-    #[cfg(feature = "OVRInput+OVRControllerLHand")]
-    pub type OVRControllerLHand = crate::GlobalNamespace::OVRInput_OVRControllerLHand;
     #[cfg(feature = "OVRInput+OVRControllerRTouch")]
     pub type OVRControllerRTouch = crate::GlobalNamespace::OVRInput_OVRControllerRTouch;
-    #[cfg(feature = "OVRInput+Axis1D")]
-    pub type Axis1D = crate::GlobalNamespace::OVRInput_Axis1D;
-    #[cfg(feature = "OVRInput+Hand")]
-    pub type Hand = crate::GlobalNamespace::OVRInput_Hand;
-    #[cfg(feature = "OVRInput+RawAxis1D")]
-    pub type RawAxis1D = crate::GlobalNamespace::OVRInput_RawAxis1D;
-    #[cfg(feature = "OVRInput+Axis2D")]
-    pub type Axis2D = crate::GlobalNamespace::OVRInput_Axis2D;
+    #[cfg(feature = "OVRInput+OVRControllerLHand")]
+    pub type OVRControllerLHand = crate::GlobalNamespace::OVRInput_OVRControllerLHand;
+    #[cfg(feature = "OVRInput+OpenVRButton")]
+    pub type OpenVRButton = crate::GlobalNamespace::OVRInput_OpenVRButton;
+    #[cfg(feature = "OVRInput+OVRControllerRHand")]
+    pub type OVRControllerRHand = crate::GlobalNamespace::OVRInput_OVRControllerRHand;
+    #[cfg(feature = "OVRInput+OVRControllerRemote")]
+    pub type OVRControllerRemote = crate::GlobalNamespace::OVRInput_OVRControllerRemote;
     #[cfg(feature = "OVRInput+OVRControllerGamepadAndroid")]
     pub type OVRControllerGamepadAndroid = crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid;
-    #[cfg(feature = "OVRInput+RawNearTouch")]
-    pub type RawNearTouch = crate::GlobalNamespace::OVRInput_RawNearTouch;
+    #[cfg(feature = "OVRInput+NearTouch")]
+    pub type NearTouch = crate::GlobalNamespace::OVRInput_NearTouch;
+    #[cfg(feature = "OVRInput+InteractionProfile")]
+    pub type InteractionProfile = crate::GlobalNamespace::OVRInput_InteractionProfile;
+    #[cfg(feature = "OVRInput+Axis2D")]
+    pub type Axis2D = crate::GlobalNamespace::OVRInput_Axis2D;
+    #[cfg(feature = "OVRInput+Button")]
+    pub type Button = crate::GlobalNamespace::OVRInput_Button;
+    #[cfg(feature = "OVRInput+Controller")]
+    pub type Controller = crate::GlobalNamespace::OVRInput_Controller;
+    #[cfg(feature = "OVRInput+Handedness")]
+    pub type Handedness = crate::GlobalNamespace::OVRInput_Handedness;
     #[cfg(feature = "OVRInput+HapticsLocation")]
     pub type HapticsLocation = crate::GlobalNamespace::OVRInput_HapticsLocation;
-    #[cfg(feature = "OVRInput+OVRControllerGamepadPC")]
-    pub type OVRControllerGamepadPC = crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC;
     #[cfg(feature = "OVRInput+ControllerInHandState")]
     pub type ControllerInHandState = crate::GlobalNamespace::OVRInput_ControllerInHandState;
+    #[cfg(feature = "OVRInput+OpenVRControllerDetails")]
+    pub type OpenVRControllerDetails = crate::GlobalNamespace::OVRInput_OpenVRControllerDetails;
+    #[cfg(feature = "OVRInput+Axis1D")]
+    pub type Axis1D = crate::GlobalNamespace::OVRInput_Axis1D;
+    #[cfg(feature = "OVRInput+RawTouch")]
+    pub type RawTouch = crate::GlobalNamespace::OVRInput_RawTouch;
+    #[cfg(feature = "OVRInput+RawNearTouch")]
+    pub type RawNearTouch = crate::GlobalNamespace::OVRInput_RawNearTouch;
     #[cfg(feature = "OVRInput+RawAxis2D")]
     pub type RawAxis2D = crate::GlobalNamespace::OVRInput_RawAxis2D;
-    #[cfg(feature = "OVRInput+HapticsAmplitudeEnvelopeVibration")]
-    pub type HapticsAmplitudeEnvelopeVibration = crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration;
     #[cfg(feature = "OVRInput+HapticsPcmVibration")]
     pub type HapticsPcmVibration = crate::GlobalNamespace::OVRInput_HapticsPcmVibration;
     #[cfg(feature = "OVRInput+InputDeviceShowState")]
     pub type InputDeviceShowState = crate::GlobalNamespace::OVRInput_InputDeviceShowState;
-    #[cfg(feature = "OVRInput+OpenVRButton")]
-    pub type OpenVRButton = crate::GlobalNamespace::OVRInput_OpenVRButton;
 }
 #[cfg(feature = "OVRInput")]
 impl quest_hook::libil2cpp::ObjectType for OVRInput {
@@ -1907,6 +1907,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRControllerBase_VirtualAxi
 }
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
 impl crate::GlobalNamespace::OVRControllerBase_VirtualAxis1DMap {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn ToRawMask(
         &mut self,
         virtualMask: crate::GlobalNamespace::OVRInput_Axis1D,
@@ -1927,13 +1934,6 @@ impl crate::GlobalNamespace::OVRControllerBase_VirtualAxis1DMap {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
@@ -1978,6 +1978,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRControllerBase_VirtualAxi
 }
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
 impl crate::GlobalNamespace::OVRControllerBase_VirtualAxis2DMap {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn ToRawMask(
         &mut self,
         virtualMask: crate::GlobalNamespace::OVRInput_Axis2D,
@@ -1998,13 +2005,6 @@ impl crate::GlobalNamespace::OVRControllerBase_VirtualAxis2DMap {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
@@ -2077,15 +2077,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRControllerBase_VirtualBut
 }
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
 impl crate::GlobalNamespace::OVRControllerBase_VirtualButtonMap {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ToRawMask(
         &mut self,
@@ -2098,12 +2095,15 @@ impl crate::GlobalNamespace::OVRControllerBase_VirtualButtonMap {
             .invoke("ToRawMask", (virtualMask))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
@@ -2149,6 +2149,13 @@ for crate::GlobalNamespace::OVRControllerBase_VirtualNearTouchMap {
 }
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
 impl crate::GlobalNamespace::OVRControllerBase_VirtualNearTouchMap {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn ToRawMask(
         &mut self,
         virtualMask: crate::GlobalNamespace::OVRInput_NearTouch,
@@ -2169,13 +2176,6 @@ impl crate::GlobalNamespace::OVRControllerBase_VirtualNearTouchMap {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
@@ -2228,6 +2228,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRControllerBase_VirtualTou
 }
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
 impl crate::GlobalNamespace::OVRControllerBase_VirtualTouchMap {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn ToRawMask(
         &mut self,
         virtualMask: crate::GlobalNamespace::OVRInput_Touch,
@@ -2248,13 +2255,6 @@ impl crate::GlobalNamespace::OVRControllerBase_VirtualTouchMap {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]

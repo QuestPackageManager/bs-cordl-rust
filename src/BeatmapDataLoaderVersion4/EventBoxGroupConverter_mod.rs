@@ -27,6 +27,17 @@ impl std::ops::DerefMut for crate::BeatmapDataLoaderVersion4::EventBoxGroupConve
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+EventBoxGroupConverter")]
 impl crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter {
+    pub fn Convert(
+        &mut self,
+        eventBoxGroup: *mut crate::BeatmapSaveDataVersion4::EventBoxGroup,
+    ) -> quest_hook::libil2cpp::Result<*mut BeatmapEventDataBoxGroup> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut BeatmapEventDataBoxGroup = __cordl_object
+            .invoke("Convert", (eventBoxGroup))?;
+        Ok(__cordl_ret)
+    }
     pub fn ConvertEvents(
         &mut self,
         eventBox: crate::BeatmapSaveDataVersion4::EventBox,
@@ -39,6 +50,16 @@ impl crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter {
             .invoke("ConvertEvents", (eventBox, indexFilter))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        lightshowSaveData: *mut crate::BeatmapSaveDataVersion4::LightshowSaveData,
+        lightGroups: *mut IEnvironmentLightGroups,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (lightshowSaveData, lightGroups))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         lightshowSaveData: *mut crate::BeatmapSaveDataVersion4::LightshowSaveData,
@@ -50,27 +71,6 @@ impl crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (lightshowSaveData, lightGroups))?;
         Ok(__cordl_ret)
-    }
-    pub fn Convert(
-        &mut self,
-        eventBoxGroup: *mut crate::BeatmapSaveDataVersion4::EventBoxGroup,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapEventDataBoxGroup> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut BeatmapEventDataBoxGroup = __cordl_object
-            .invoke("Convert", (eventBoxGroup))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        lightshowSaveData: *mut crate::BeatmapSaveDataVersion4::LightshowSaveData,
-        lightGroups: *mut IEnvironmentLightGroups,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (lightshowSaveData, lightGroups))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+EventBoxGroupConverter")]

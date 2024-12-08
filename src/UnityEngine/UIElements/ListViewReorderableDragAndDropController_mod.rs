@@ -28,6 +28,26 @@ for crate::UnityEngine::UIElements::ListViewReorderableDragAndDropController {
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewReorderableDragAndDropController")]
 impl crate::UnityEngine::UIElements::ListViewReorderableDragAndDropController {
+    pub fn HandleDragAndDrop(
+        &mut self,
+        args: *mut crate::UnityEngine::UIElements::IListDragAndDropArgs,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::DragVisualMode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::DragVisualMode = __cordl_object
+            .invoke("HandleDragAndDrop", (args))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        view: *mut crate::UnityEngine::UIElements::BaseListView,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (view))?;
+        Ok(__cordl_object)
+    }
     pub fn OnDrop(
         &mut self,
         args: *mut crate::UnityEngine::UIElements::IListDragAndDropArgs,
@@ -49,26 +69,6 @@ impl crate::UnityEngine::UIElements::ListViewReorderableDragAndDropController {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (view))?;
         Ok(__cordl_ret)
-    }
-    pub fn HandleDragAndDrop(
-        &mut self,
-        args: *mut crate::UnityEngine::UIElements::IListDragAndDropArgs,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::DragVisualMode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::DragVisualMode = __cordl_object
-            .invoke("HandleDragAndDrop", (args))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        view: *mut crate::UnityEngine::UIElements::BaseListView,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (view))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewReorderableDragAndDropController")]

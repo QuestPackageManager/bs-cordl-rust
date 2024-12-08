@@ -32,24 +32,6 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvid
         feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider+InternalOp"
     )]
     pub type InternalOp = crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider_InternalOp;
-    pub fn get_IgnoreFailures(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IgnoreFailures", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Provide(
-        &mut self,
-        provideHandle: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Provide", (provideHandle))?;
-        Ok(__cordl_ret)
-    }
     pub fn Convert(
         &mut self,
         _cordl_type: *mut crate::System::Type,
@@ -62,15 +44,22 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvid
             .invoke("Convert", (_cordl_type, data))?;
         Ok(__cordl_ret)
     }
-    pub fn set_IgnoreFailures(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Provide(
         &mut self,
-        value: bool,
+        provideHandle: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IgnoreFailures", (value))?;
+            .invoke("Provide", (provideHandle))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -83,12 +72,23 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvid
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_IgnoreFailures(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IgnoreFailures", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IgnoreFailures(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IgnoreFailures", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider")]
@@ -159,14 +159,15 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvid
             .invoke("CompleteOperation", (data, exception))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn ConvertBytes(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("ConvertBytes", (data))?;
         Ok(__cordl_ret)
     }
     pub fn GetPercentComplete(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -174,6 +175,35 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvid
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetPercentComplete", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn RequestOperation_completed(
+        &mut self,
+        op: *mut crate::UnityEngine::AsyncOperation,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RequestOperation_completed", (op))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendWebRequest(
+        &mut self,
+        path: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendWebRequest", (path))?;
         Ok(__cordl_ret)
     }
     pub fn Start(
@@ -188,33 +218,11 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvid
             .invoke("Start", (provideHandle, rawProvider))?;
         Ok(__cordl_ret)
     }
-    pub fn SendWebRequest(
-        &mut self,
-        path: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendWebRequest", (path))?;
-        Ok(__cordl_ret)
-    }
     pub fn WaitForCompletionHandler(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("WaitForCompletionHandler", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RequestOperation_completed(
-        &mut self,
-        op: *mut crate::UnityEngine::AsyncOperation,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RequestOperation_completed", (op))?;
         Ok(__cordl_ret)
     }
     pub fn _SendWebRequest_b__13_0(
@@ -228,23 +236,15 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvid
             .invoke("<SendWebRequest>b__13_0", (asyncOperation))?;
         Ok(__cordl_ret)
     }
-    pub fn ConvertBytes(
+    pub fn _ctor(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("ConvertBytes", (data))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

@@ -25,6 +25,15 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::CompressedDataPacket
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+CompressedDataPacket")]
 impl crate::Org::BouncyCastle::Bcpg::CompressedDataPacket {
+    pub fn New(
+        bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bcpgIn))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
@@ -47,15 +56,6 @@ impl crate::Org::BouncyCastle::Bcpg::CompressedDataPacket {
         let __cordl_ret: crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag = __cordl_object
             .invoke("get_Algorithm", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bcpgIn))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+CompressedDataPacket")]

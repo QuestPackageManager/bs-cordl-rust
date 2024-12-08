@@ -36,14 +36,17 @@ for crate::Org::BouncyCastle::Crypto::Generators::KdfFeedbackBytesGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+KdfFeedbackBytesGenerator")]
 impl crate::Org::BouncyCastle::Crypto::Generators::KdfFeedbackBytesGenerator {
-    pub fn generateNext(
+    pub fn GenerateBytes(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        outOff: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("generateNext", ())?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GenerateBytes", (output, outOff, length))?;
         Ok(__cordl_ret)
     }
     pub fn GetMac(
@@ -67,28 +70,14 @@ impl crate::Org::BouncyCastle::Crypto::Generators::KdfFeedbackBytesGenerator {
             .invoke("Init", (parameters))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Digest(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::IDigest> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IDigest = __cordl_object
-            .invoke("get_Digest", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GenerateBytes(
-        &mut self,
-        output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        outOff: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GenerateBytes", (output, outOff, length))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        prf: *mut crate::Org::BouncyCastle::Crypto::IMac,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (prf))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -101,14 +90,25 @@ impl crate::Org::BouncyCastle::Crypto::Generators::KdfFeedbackBytesGenerator {
             .invoke(".ctor", (prf))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        prf: *mut crate::Org::BouncyCastle::Crypto::IMac,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (prf))?;
-        Ok(__cordl_object)
+    pub fn generateNext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("generateNext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Digest(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::IDigest> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IDigest = __cordl_object
+            .invoke("get_Digest", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+KdfFeedbackBytesGenerator")]

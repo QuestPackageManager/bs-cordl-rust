@@ -27,12 +27,12 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsRemoteCatalogLoader {
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsRemoteCatalogLoader")]
 impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsRemoteCatalogLoader {
-    #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsRemoteCatalogLoader+__c")]
-    pub type __c = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsRemoteCatalogLoader___c;
     #[cfg(
         feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsRemoteCatalogLoader+_LoadRemoteCatalogAsync_d__0"
     )]
     pub type _LoadRemoteCatalogAsync_d__0 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsRemoteCatalogLoader__LoadRemoteCatalogAsync_d__0;
+    #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsRemoteCatalogLoader+__c")]
+    pub type __c = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsRemoteCatalogLoader___c;
     pub fn LoadRemoteCatalogAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -46,6 +46,13 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsRemoteCatalogLoader {
             .invoke("LoadRemoteCatalogAsync", (cancellationToken))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,13 +62,6 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsRemoteCatalogLoader {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsRemoteCatalogLoader")]

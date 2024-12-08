@@ -25,16 +25,6 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorDynamicContext {
 }
 #[cfg(feature = "Zenject+SubContainerCreatorDynamicContext")]
 impl crate::Zenject::SubContainerCreatorDynamicContext {
-    pub fn get_Container(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
-            .invoke("get_Container", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AddInstallers(
         &mut self,
         args: *mut crate::System::Collections::Generic::List_1<
@@ -49,15 +39,15 @@ impl crate::Zenject::SubContainerCreatorDynamicContext {
             .invoke("AddInstallers", (args, context))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn CreateGameObject(
         &mut self,
-        container: *mut crate::Zenject::DiContainer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        shouldMakeActive: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (container))?;
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("CreateGameObject", (shouldMakeActive))?;
         Ok(__cordl_ret)
     }
     pub fn CreateSubContainer(
@@ -74,25 +64,35 @@ impl crate::Zenject::SubContainerCreatorDynamicContext {
             .invoke("CreateSubContainer", (args, parentContext))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateGameObject(
-        &mut self,
-        shouldMakeActive: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("CreateGameObject", (shouldMakeActive))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         container: *mut crate::Zenject::DiContainer,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (container))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        container: *mut crate::Zenject::DiContainer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (container))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Container(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
+            .invoke("get_Container", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+SubContainerCreatorDynamicContext")]

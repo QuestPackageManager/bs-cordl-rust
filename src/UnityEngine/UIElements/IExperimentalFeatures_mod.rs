@@ -24,6 +24,11 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IExperimentalFeature
 }
 #[cfg(feature = "UnityEngine+UIElements+IExperimentalFeatures")]
 impl crate::UnityEngine::UIElements::IExperimentalFeatures {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_animation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -35,11 +40,6 @@ impl crate::UnityEngine::UIElements::IExperimentalFeatures {
         let __cordl_ret: *mut crate::UnityEngine::UIElements::Experimental::ITransitionAnimations = __cordl_object
             .invoke("get_animation", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IExperimentalFeatures")]

@@ -24,14 +24,14 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IBinding {
 }
 #[cfg(feature = "UnityEngine+UIElements+IBinding")]
 impl crate::UnityEngine::UIElements::IBinding {
-    pub fn Update(
+    pub fn PreUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
+            .invoke("PreUpdate", ())?;
         Ok(__cordl_ret)
     }
     pub fn Release(
@@ -44,14 +44,14 @@ impl crate::UnityEngine::UIElements::IBinding {
             .invoke("Release", ())?;
         Ok(__cordl_ret)
     }
-    pub fn PreUpdate(
+    pub fn Update(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreUpdate", ())?;
+            .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

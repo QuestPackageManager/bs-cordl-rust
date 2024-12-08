@@ -164,7 +164,7 @@ impl crate::HoudiniEngineUnity::HEU_Defines {
     pub const HEU_HENGINE_TOOLS_SHIPPED_FOLDER: &'static str = "<HFS>/engine/tools";
     pub const HEU_INSTALL_INFO: &'static str = "Houdini Engine Installation Info";
     pub const HEU_INSTANCE: &'static str = "_Instance";
-    pub const HEU_INSTANCE_PATTERN: &'static str = "_Instance\\\\d*\\\\z";
+    pub const HEU_INSTANCE_PATTERN: &'static str = "_Instance\\d*\\z";
     pub const HEU_INVALID_MATERIAL: i32 = -1i32;
     pub const HEU_INVALID_NODE_ID: i32 = -1i32;
     pub const HEU_KEY_CTRL: &'static str = "Ctrl";
@@ -253,6 +253,13 @@ impl crate::HoudiniEngineUnity::HEU_Defines {
     pub const UNITY_SHADER_SPEC_COLOR: &'static str = "_SpecColor";
     pub const UNITY_SHADER_SPEC_MAP: &'static str = "_SpecMap";
     pub const UNITY_USE_INSTANCE_FLAGS_ATTR: &'static str = "unity_use_instance_flags";
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -262,13 +269,6 @@ impl crate::HoudiniEngineUnity::HEU_Defines {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_Defines")]

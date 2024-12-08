@@ -27,12 +27,12 @@ impl crate::UnityEngine::UI::DefaultControls {
     pub const kThickHeight: f32 = 30f32;
     pub const kThinHeight: f32 = 20f32;
     pub const kWidth: f32 = 160f32;
-    #[cfg(feature = "UnityEngine+UI+DefaultControls+Resources")]
-    pub type Resources = crate::UnityEngine::UI::DefaultControls_Resources;
-    #[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
-    pub type DefaultRuntimeFactory = crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory;
     #[cfg(feature = "UnityEngine+UI+DefaultControls+IFactoryControls")]
     type IFactoryControls = crate::UnityEngine::UI::DefaultControls_IFactoryControls;
+    #[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
+    pub type DefaultRuntimeFactory = crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory;
+    #[cfg(feature = "UnityEngine+UI+DefaultControls+Resources")]
+    pub type Resources = crate::UnityEngine::UI::DefaultControls_Resources;
 }
 #[cfg(feature = "UnityEngine+UI+DefaultControls")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::DefaultControls {
@@ -71,16 +71,6 @@ for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
 }
 #[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
 impl crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateGameObject(
         &mut self,
         name: *mut crate::System::String,
@@ -93,12 +83,22 @@ impl crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
             .invoke("CreateGameObject", (name, components))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]

@@ -26,6 +26,38 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::BurstSliderData {
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+BurstSliderData")]
 impl crate::BeatmapSaveDataVersion3::BurstSliderData {
+    pub fn New(
+        colorType: crate::BeatmapSaveDataCommon::NoteColorType,
+        headBeat: f32,
+        headLine: i32,
+        headLayer: i32,
+        headCutDirection: crate::BeatmapSaveDataCommon::NoteCutDirection,
+        tailBeat: f32,
+        tailLine: i32,
+        tailLayer: i32,
+        sliceCount: i32,
+        squishAmount: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    colorType,
+                    headBeat,
+                    headLine,
+                    headLayer,
+                    headCutDirection,
+                    tailBeat,
+                    tailLine,
+                    tailLayer,
+                    sliceCount,
+                    squishAmount,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         colorType: crate::BeatmapSaveDataCommon::NoteColorType,
@@ -73,38 +105,6 @@ impl crate::BeatmapSaveDataVersion3::BurstSliderData {
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_squishAmount", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        colorType: crate::BeatmapSaveDataCommon::NoteColorType,
-        headBeat: f32,
-        headLine: i32,
-        headLayer: i32,
-        headCutDirection: crate::BeatmapSaveDataCommon::NoteCutDirection,
-        tailBeat: f32,
-        tailLine: i32,
-        tailLayer: i32,
-        sliceCount: i32,
-        squishAmount: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    colorType,
-                    headBeat,
-                    headLine,
-                    headLayer,
-                    headCutDirection,
-                    tailBeat,
-                    tailLine,
-                    tailLayer,
-                    sliceCount,
-                    squishAmount,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+BurstSliderData")]

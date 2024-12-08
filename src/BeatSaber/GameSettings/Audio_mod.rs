@@ -40,6 +40,13 @@ impl crate::BeatSaber::GameSettings::Audio {
             .invoke("GetAudioLatency", (graphicSettingsHandler))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -48,6 +55,20 @@ impl crate::BeatSaber::GameSettings::Audio {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ambientVolumeScale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_ambientVolumeScale", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isDirty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isDirty", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_overrideAudioLatency(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -64,15 +85,15 @@ impl crate::BeatSaber::GameSettings::Audio {
         let __cordl_ret: f32 = __cordl_object.invoke("get_volume", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_isDirty(
+    pub fn set_ambientVolumeScale(
         &mut self,
-        value: bool,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_isDirty", (value))?;
+            .invoke("set_ambientVolumeScale", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_audioLatency(
@@ -86,26 +107,15 @@ impl crate::BeatSaber::GameSettings::Audio {
             .invoke("set_audioLatency", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_volume(
+    pub fn set_isDirty(
         &mut self,
-        value: f32,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_volume", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ambientVolumeScale(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ambientVolumeScale", (value))?;
+            .invoke("set_isDirty", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_overrideAudioLatency(
@@ -119,26 +129,16 @@ impl crate::BeatSaber::GameSettings::Audio {
             .invoke("set_overrideAudioLatency", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_isDirty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn set_volume(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isDirty", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_volume", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_ambientVolumeScale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_ambientVolumeScale", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatSaber+GameSettings+Audio")]

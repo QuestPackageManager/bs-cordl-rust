@@ -31,88 +31,6 @@ impl SaberMovementData {
     pub const kOutOfRangeBladeSpeed: f32 = 100f32;
     pub const kSmoothDownBladeSpeedCoef: f32 = 2f32;
     pub const kSmoothUpBladeSpeedCoef: f32 = 24f32;
-    pub fn ComputeAdditionalData(
-        &mut self,
-        topPos: crate::UnityEngine::Vector3,
-        bottomPos: crate::UnityEngine::Vector3,
-        idxOffset: i32,
-        segmentNormal: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-        segmentAngle: quest_hook::libil2cpp::ByRefMut<f32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "ComputeAdditionalData",
-                (topPos, bottomPos, idxOffset, segmentNormal, segmentAngle),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ComputePlaneNormal(
-        &mut self,
-        tp0: crate::UnityEngine::Vector3,
-        bp0: crate::UnityEngine::Vector3,
-        tp1: crate::UnityEngine::Vector3,
-        bp1: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("ComputePlaneNormal", (tp0, bp0, tp1, bp1))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ComputeCutPlaneNormal(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("ComputeCutPlaneNormal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ComputeSwingRating_f32_0(
-        &mut self,
-        overrideSegmentAngle: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("ComputeSwingRating", (overrideSegmentAngle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ComputeSwingRating_1(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("ComputeSwingRating", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ComputeSwingRating__cordl_bool_f32_2(
-        &mut self,
-        overrideSegmenAngle: bool,
-        overrideValue: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("ComputeSwingRating", (overrideSegmenAngle, overrideValue))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_lastAddedData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<BladeMovementDataElement> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: BladeMovementDataElement = __cordl_object
-            .invoke("get_lastAddedData", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AddDataProcessor(
         &mut self,
         dataProcessor: *mut ISaberMovementDataProcessor,
@@ -137,16 +55,84 @@ impl SaberMovementData {
             .invoke("AddNewData", (topPos, bottomPos, _cordl_time))?;
         Ok(__cordl_ret)
     }
-    pub fn RequestLastDataProcessing(
+    pub fn ComputeAdditionalData(
         &mut self,
-        dataProcessor: *mut ISaberMovementDataProcessor,
+        topPos: crate::UnityEngine::Vector3,
+        bottomPos: crate::UnityEngine::Vector3,
+        idxOffset: i32,
+        segmentNormal: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        segmentAngle: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RequestLastDataProcessing", (dataProcessor))?;
+            .invoke(
+                "ComputeAdditionalData",
+                (topPos, bottomPos, idxOffset, segmentNormal, segmentAngle),
+            )?;
         Ok(__cordl_ret)
+    }
+    pub fn ComputeCutPlaneNormal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("ComputeCutPlaneNormal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ComputePlaneNormal(
+        &mut self,
+        tp0: crate::UnityEngine::Vector3,
+        bp0: crate::UnityEngine::Vector3,
+        tp1: crate::UnityEngine::Vector3,
+        bp1: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("ComputePlaneNormal", (tp0, bp0, tp1, bp1))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ComputeSwingRating_1(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("ComputeSwingRating", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ComputeSwingRating__cordl_bool_f32_2(
+        &mut self,
+        overrideSegmenAngle: bool,
+        overrideValue: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("ComputeSwingRating", (overrideSegmenAngle, overrideValue))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ComputeSwingRating_f32_0(
+        &mut self,
+        overrideSegmentAngle: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("ComputeSwingRating", (overrideSegmentAngle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn RemoveDataProcessor(
         &mut self,
@@ -159,21 +145,15 @@ impl SaberMovementData {
             .invoke("RemoveDataProcessor", (dataProcessor))?;
         Ok(__cordl_ret)
     }
-    pub fn get_bladeSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_bladeSpeed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_prevAddedData(
+    pub fn RequestLastDataProcessing(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BladeMovementDataElement> {
+        dataProcessor: *mut ISaberMovementDataProcessor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BladeMovementDataElement = __cordl_object
-            .invoke("get_prevAddedData", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RequestLastDataProcessing", (dataProcessor))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -186,12 +166,32 @@ impl SaberMovementData {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_bladeSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_bladeSpeed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_lastAddedData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<BladeMovementDataElement> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: BladeMovementDataElement = __cordl_object
+            .invoke("get_lastAddedData", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_prevAddedData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<BladeMovementDataElement> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: BladeMovementDataElement = __cordl_object
+            .invoke("get_prevAddedData", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "SaberMovementData")]

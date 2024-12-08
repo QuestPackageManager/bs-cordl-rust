@@ -24,18 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IFocusRing {
 }
 #[cfg(feature = "UnityEngine+UIElements+IFocusRing")]
 impl crate::UnityEngine::UIElements::IFocusRing {
-    pub fn GetNextFocusable(
-        &mut self,
-        currentFocusable: *mut crate::UnityEngine::UIElements::Focusable,
-        direction: *mut crate::UnityEngine::UIElements::FocusChangeDirection,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Focusable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Focusable = __cordl_object
-            .invoke("GetNextFocusable", (currentFocusable, direction))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetFocusChangeDirection(
         &mut self,
         currentFocusable: *mut crate::UnityEngine::UIElements::Focusable,
@@ -48,6 +36,18 @@ impl crate::UnityEngine::UIElements::IFocusRing {
         );
         let __cordl_ret: *mut crate::UnityEngine::UIElements::FocusChangeDirection = __cordl_object
             .invoke("GetFocusChangeDirection", (currentFocusable, e))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNextFocusable(
+        &mut self,
+        currentFocusable: *mut crate::UnityEngine::UIElements::Focusable,
+        direction: *mut crate::UnityEngine::UIElements::FocusChangeDirection,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Focusable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::Focusable = __cordl_object
+            .invoke("GetNextFocusable", (currentFocusable, direction))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

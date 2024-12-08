@@ -46,18 +46,6 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
 impl crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
     #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate+Choice")]
     pub type Choice = crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice;
-    pub fn get_Type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice = __cordl_object
-            .invoke("get_Type", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetCertificateBytes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
@@ -67,6 +55,34 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
             .invoke("GetCertificateBytes", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New_Asn1TaggedObject0(
+        tagged: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (tagged))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_RequestedCertificate_Choice_Il2CppArray2(
+        _cordl_type: crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice,
+        certificateOctets: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, certificateOctets))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_X509CertificateStructure1(
+        certificate: *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (certificate))?;
+        Ok(__cordl_object)
     }
     pub fn ToAsn1Object(
         &mut self,
@@ -89,17 +105,6 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
             .invoke(".ctor", (tagged))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_X509CertificateStructure1(
-        &mut self,
-        certificate: *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (certificate))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_RequestedCertificate_Choice_Il2CppArray2(
         &mut self,
         _cordl_type: crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice,
@@ -112,33 +117,28 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
             .invoke(".ctor", (_cordl_type, certificateOctets))?;
         Ok(__cordl_ret)
     }
-    pub fn New_Asn1TaggedObject0(
-        tagged: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (tagged))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_X509CertificateStructure1(
+    pub fn _ctor_X509CertificateStructure1(
+        &mut self,
         certificate: *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (certificate))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (certificate))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_RequestedCertificate_Choice_Il2CppArray2(
-        _cordl_type: crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice,
-        certificateOctets: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, certificateOctets))?;
-        Ok(__cordl_object)
+    pub fn get_Type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice = __cordl_object
+            .invoke("get_Type", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate")]

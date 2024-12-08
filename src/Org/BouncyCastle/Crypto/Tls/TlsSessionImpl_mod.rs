@@ -27,16 +27,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsSessionImp
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsSessionImpl")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsSessionImpl {
-    pub fn get_SessionID(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("get_SessionID", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ExportSessionParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -59,6 +49,16 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSessionImpl {
             .invoke("Invalidate", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        sessionID: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        sessionParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (sessionID, sessionParameters))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         sessionID: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -78,15 +78,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSessionImpl {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsResumable", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        sessionID: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        sessionParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (sessionID, sessionParameters))?;
-        Ok(__cordl_object)
+    pub fn get_SessionID(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("get_SessionID", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsSessionImpl")]

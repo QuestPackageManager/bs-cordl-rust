@@ -26,29 +26,34 @@ impl std::ops::DerefMut for BeatmapLineData {
 }
 #[cfg(feature = "BeatmapLineData")]
 impl BeatmapLineData {
-    pub fn get_beatmapObjectsData(
+    pub fn AddBeatmapObjectData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<*mut BeatmapObjectData>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut BeatmapObjectData,
-        > = __cordl_object.invoke("get_beatmapObjectsData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_0(
-        &mut self,
-        initialCapacity: i32,
+        beatmapObjectData: *mut BeatmapObjectData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (initialCapacity))?;
+            .invoke("AddBeatmapObjectData", (beatmapObjectData))?;
         Ok(__cordl_ret)
+    }
+    pub fn New_List_1_1(
+        beatmapObjectData: *mut crate::System::Collections::Generic::List_1<
+            *mut BeatmapObjectData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (beatmapObjectData))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_0(initialCapacity: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (initialCapacity))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_List_1_1(
         &mut self,
@@ -63,36 +68,29 @@ impl BeatmapLineData {
             .invoke(".ctor", (beatmapObjectData))?;
         Ok(__cordl_ret)
     }
-    pub fn AddBeatmapObjectData(
+    pub fn _ctor_i32_0(
         &mut self,
-        beatmapObjectData: *mut BeatmapObjectData,
+        initialCapacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddBeatmapObjectData", (beatmapObjectData))?;
+            .invoke(".ctor", (initialCapacity))?;
         Ok(__cordl_ret)
     }
-    pub fn New_i32_0(
-        initialCapacity: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (initialCapacity))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_List_1_1(
-        beatmapObjectData: *mut crate::System::Collections::Generic::List_1<
+    pub fn get_beatmapObjectsData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IReadOnlyList_1<*mut BeatmapObjectData>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut BeatmapObjectData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (beatmapObjectData))?;
-        Ok(__cordl_object)
+        > = __cordl_object.invoke("get_beatmapObjectsData", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapLineData")]

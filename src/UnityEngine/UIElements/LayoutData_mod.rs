@@ -54,6 +54,29 @@ for crate::UnityEngine::UIElements::LayoutData {
 }
 #[cfg(feature = "UnityEngine+UIElements+LayoutData")]
 impl crate::UnityEngine::UIElements::LayoutData {
+    pub fn Copy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::LayoutData> {
+        let __cordl_ret: crate::UnityEngine::UIElements::LayoutData = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Copy",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn CopyFrom(
+        &mut self,
+        other: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::LayoutData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CopyFrom",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_LayoutData0(
         &mut self,
         other: crate::UnityEngine::UIElements::LayoutData,
@@ -73,29 +96,6 @@ impl crate::UnityEngine::UIElements::LayoutData {
             self,
             "Equals",
             (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CopyFrom(
-        &mut self,
-        other: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::LayoutData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CopyFrom",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Copy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::LayoutData> {
-        let __cordl_ret: crate::UnityEngine::UIElements::LayoutData = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Copy",
-            (),
         )?;
         Ok(__cordl_ret)
     }

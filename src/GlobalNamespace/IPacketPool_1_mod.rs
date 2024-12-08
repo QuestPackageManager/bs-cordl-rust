@@ -24,6 +24,17 @@ impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for IPacketPool_1<T> {
 }
 #[cfg(feature = "IPacketPool_1")]
 impl<T: quest_hook::libil2cpp::Type> IPacketPool_1<T> {
+    pub fn Obtain(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("Obtain", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Release(
         &mut self,
         t: T,
@@ -37,17 +48,6 @@ impl<T: quest_hook::libil2cpp::Type> IPacketPool_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Release", (t))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Obtain(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("Obtain", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

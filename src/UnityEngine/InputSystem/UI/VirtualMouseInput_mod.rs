@@ -60,54 +60,42 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::UI::VirtualMouseInp
 impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
     #[cfg(feature = "UnityEngine+InputSystem+UI+VirtualMouseInput+CursorMode")]
     pub type CursorMode = crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode;
-    pub fn set_scrollSpeed(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnAfterInputUpdate(
         &mut self,
-        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_scrollSpeed", (value))?;
+            .invoke("OnAfterInputUpdate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_middleButtonAction(
+    pub fn OnButtonActionTriggered(
         &mut self,
-        value: crate::UnityEngine::InputSystem::InputActionProperty,
+        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_middleButtonAction", (value))?;
+            .invoke("OnButtonActionTriggered", (context))?;
         Ok(__cordl_ret)
     }
-    pub fn get_cursorGraphic(
+    pub fn OnDisable(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Graphic> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UI::Graphic = __cordl_object
-            .invoke("get_cursorGraphic", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_scrollSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_scrollSpeed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_forwardButtonAction(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::InputActionProperty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_forwardButtonAction", (value))?;
+            .invoke("OnDisable", ())?;
         Ok(__cordl_ret)
     }
     pub fn OnEnable(
@@ -120,51 +108,44 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
             .invoke("OnEnable", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_leftButtonAction(
+    pub fn TryEnableHardwareCursor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionProperty,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionProperty = __cordl_object
-            .invoke("get_leftButtonAction", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_rightButtonAction(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionProperty,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionProperty = __cordl_object
-            .invoke("get_rightButtonAction", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_cursorMode(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_cursorMode", (value))?;
+            .invoke("TryEnableHardwareCursor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_scrollWheelAction(
+    pub fn TryFindCanvas(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionProperty,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionProperty = __cordl_object
-            .invoke("get_scrollWheelAction", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("TryFindCanvas", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateMotion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateMotion", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_backButtonAction(
@@ -179,106 +160,14 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
             .invoke("get_backButtonAction", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_backButtonAction(
+    pub fn get_cursorGraphic(
         &mut self,
-        value: crate::UnityEngine::InputSystem::InputActionProperty,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Graphic> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_backButtonAction", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_scrollWheelAction(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::InputActionProperty,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_scrollWheelAction", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_virtualMouse(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::InputSystem::Mouse> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Mouse = __cordl_object
-            .invoke("get_virtualMouse", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnButtonActionTriggered(
-        &mut self,
-        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnButtonActionTriggered", (context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_cursorTransform(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RectTransform> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::RectTransform = __cordl_object
-            .invoke("get_cursorTransform", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_cursorTransform(
-        &mut self,
-        value: *mut crate::UnityEngine::RectTransform,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_cursorTransform", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateMotion(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateMotion", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_cursorSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_cursorSpeed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_cursorGraphic(
-        &mut self,
-        value: *mut crate::UnityEngine::UI::Graphic,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_cursorGraphic", (value))?;
+        let __cordl_ret: *mut crate::UnityEngine::UI::Graphic = __cordl_object
+            .invoke("get_cursorGraphic", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_cursorMode(
@@ -293,58 +182,21 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
             .invoke("get_cursorMode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_stickAction(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::InputActionProperty,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_cursorSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_stickAction", (value))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_cursorSpeed", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnDisable(
+    pub fn get_cursorTransform(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RectTransform> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_rightButtonAction(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::InputActionProperty,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_rightButtonAction", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_leftButtonAction(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::InputActionProperty,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_leftButtonAction", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_cursorSpeed(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_cursorSpeed", (value))?;
+        let __cordl_ret: *mut crate::UnityEngine::RectTransform = __cordl_object
+            .invoke("get_cursorTransform", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_forwardButtonAction(
@@ -359,14 +211,16 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
             .invoke("get_forwardButtonAction", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TryEnableHardwareCursor(
+    pub fn get_leftButtonAction(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionProperty,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TryEnableHardwareCursor", ())?;
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionProperty = __cordl_object
+            .invoke("get_leftButtonAction", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_middleButtonAction(
@@ -381,14 +235,35 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
             .invoke("get_middleButtonAction", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnAfterInputUpdate(
+    pub fn get_rightButtonAction(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionProperty,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnAfterInputUpdate", ())?;
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionProperty = __cordl_object
+            .invoke("get_rightButtonAction", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_scrollSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_scrollSpeed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_scrollWheelAction(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionProperty,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionProperty = __cordl_object
+            .invoke("get_scrollWheelAction", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_stickAction(
@@ -403,22 +278,147 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
             .invoke("get_stickAction", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TryFindCanvas(
+    pub fn get_virtualMouse(
         &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::InputSystem::Mouse> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Mouse = __cordl_object
+            .invoke("get_virtualMouse", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_backButtonAction(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::InputActionProperty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TryFindCanvas", ())?;
+            .invoke("set_backButtonAction", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_cursorGraphic(
+        &mut self,
+        value: *mut crate::UnityEngine::UI::Graphic,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_cursorGraphic", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_cursorMode(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_cursorMode", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_cursorSpeed(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_cursorSpeed", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_cursorTransform(
+        &mut self,
+        value: *mut crate::UnityEngine::RectTransform,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_cursorTransform", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_forwardButtonAction(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::InputActionProperty,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_forwardButtonAction", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_leftButtonAction(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::InputActionProperty,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_leftButtonAction", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_middleButtonAction(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::InputActionProperty,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_middleButtonAction", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_rightButtonAction(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::InputActionProperty,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_rightButtonAction", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_scrollSpeed(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_scrollSpeed", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_scrollWheelAction(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::InputActionProperty,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_scrollWheelAction", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_stickAction(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::InputActionProperty,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_stickAction", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+UI+VirtualMouseInput")]

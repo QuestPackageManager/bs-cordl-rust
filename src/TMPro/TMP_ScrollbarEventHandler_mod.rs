@@ -25,7 +25,14 @@ impl std::ops::DerefMut for crate::TMPro::TMP_ScrollbarEventHandler {
 }
 #[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
 impl crate::TMPro::TMP_ScrollbarEventHandler {
-    pub fn OnSelect(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDeselect(
         &mut self,
         eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -33,7 +40,7 @@ impl crate::TMPro::TMP_ScrollbarEventHandler {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnSelect", (eventData))?;
+            .invoke("OnDeselect", (eventData))?;
         Ok(__cordl_ret)
     }
     pub fn OnPointerClick(
@@ -47,7 +54,7 @@ impl crate::TMPro::TMP_ScrollbarEventHandler {
             .invoke("OnPointerClick", (eventData))?;
         Ok(__cordl_ret)
     }
-    pub fn OnDeselect(
+    pub fn OnSelect(
         &mut self,
         eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,7 +62,7 @@ impl crate::TMPro::TMP_ScrollbarEventHandler {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDeselect", (eventData))?;
+            .invoke("OnSelect", (eventData))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -67,13 +74,6 @@ impl crate::TMPro::TMP_ScrollbarEventHandler {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]

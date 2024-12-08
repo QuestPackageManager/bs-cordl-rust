@@ -24,14 +24,14 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainStatus")]
 impl crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
-    pub fn set_Status(
+    pub fn _ctor(
         &mut self,
-        value: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
+        flag: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_Status",
-            (value),
+            ".ctor",
+            (flag),
         )?;
         Ok(__cordl_ret)
     }
@@ -47,14 +47,14 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn set_Status(
         &mut self,
-        flag: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
+        value: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (flag),
+            "set_Status",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

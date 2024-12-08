@@ -32,22 +32,6 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
 impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
-    pub fn GetUsagePage(
-        &mut self,
-        index: i32,
-        localItemState: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::HID::HID_UsagePage,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_UsagePage = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetUsagePage",
-            (index, localItemState),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetPhysicalMax(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -61,6 +45,22 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
             self,
             "GetPhysicalMin",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetUsagePage(
+        &mut self,
+        index: i32,
+        localItemState: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::HID::HID_UsagePage,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_UsagePage = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetUsagePage",
+            (index, localItemState),
         )?;
         Ok(__cordl_ret)
     }
@@ -183,14 +183,14 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::HID::HIDParser {
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser")]
 impl crate::UnityEngine::InputSystem::HID::HIDParser {
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
-    pub type HIDReportData = crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData;
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
-    pub type HIDItemStateGlobal = crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal;
     #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]
     pub type HIDItemTypeAndTag = crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemTypeAndTag;
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
+    pub type HIDReportData = crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData;
     #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
     pub type HIDItemStateLocal = crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal;
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
+    pub type HIDItemStateGlobal = crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal;
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser")]
 impl quest_hook::libil2cpp::ObjectType

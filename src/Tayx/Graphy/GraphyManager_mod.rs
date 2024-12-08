@@ -76,105 +76,18 @@ impl std::ops::DerefMut for crate::Tayx::Graphy::GraphyManager {
 }
 #[cfg(feature = "Tayx+Graphy+GraphyManager")]
 impl crate::Tayx::Graphy::GraphyManager {
-    #[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleState")]
-    pub type ModuleState = crate::Tayx::Graphy::GraphyManager_ModuleState;
-    #[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePreset")]
-    pub type ModulePreset = crate::Tayx::Graphy::GraphyManager_ModulePreset;
     #[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleType")]
     pub type ModuleType = crate::Tayx::Graphy::GraphyManager_ModuleType;
-    #[cfg(feature = "Tayx+Graphy+GraphyManager+Mode")]
-    pub type Mode = crate::Tayx::Graphy::GraphyManager_Mode;
     #[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePosition")]
     pub type ModulePosition = crate::Tayx::Graphy::GraphyManager_ModulePosition;
+    #[cfg(feature = "Tayx+Graphy+GraphyManager+Mode")]
+    pub type Mode = crate::Tayx::Graphy::GraphyManager_Mode;
+    #[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleState")]
+    pub type ModuleState = crate::Tayx::Graphy::GraphyManager_ModuleState;
     #[cfg(feature = "Tayx+Graphy+GraphyManager+LookForAudioListener")]
     pub type LookForAudioListener = crate::Tayx::Graphy::GraphyManager_LookForAudioListener;
-    pub fn get_GraphModulePosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Tayx::Graphy::GraphyManager_ModulePosition,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Tayx::Graphy::GraphyManager_ModulePosition = __cordl_object
-            .invoke("get_GraphModulePosition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AudioListener(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AudioListener> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::AudioListener = __cordl_object
-            .invoke("get_AudioListener", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_AudioListener(
-        &mut self,
-        value: *mut crate::UnityEngine::AudioListener,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_AudioListener", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Background(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Background", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AllocatedRam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_AllocatedRam", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_GraphModulePosition(
-        &mut self,
-        value: crate::Tayx::Graphy::GraphyManager_ModulePosition,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_GraphModulePosition", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CurrentFPS(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_CurrentFPS", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetModulePosition(
-        &mut self,
-        moduleType: crate::Tayx::Graphy::GraphyManager_ModuleType,
-        modulePosition: crate::Tayx::Graphy::GraphyManager_ModulePosition,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetModulePosition", (moduleType, modulePosition))?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePreset")]
+    pub type ModulePreset = crate::Tayx::Graphy::GraphyManager_ModulePreset;
     pub fn CheckFor1KeyPress(
         &mut self,
         key: crate::UnityEngine::InputSystem::Key,
@@ -185,46 +98,16 @@ impl crate::Tayx::Graphy::GraphyManager {
         let __cordl_ret: bool = __cordl_object.invoke("CheckFor1KeyPress", (key))?;
         Ok(__cordl_ret)
     }
-    pub fn get_FpsTextUpdateRate(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_FpsTextUpdateRate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MaxFPS(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_MaxFPS", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ReservedRam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_ReservedRam", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_GoodFPSColor(
+    pub fn CheckFor2KeyPress(
         &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        key1: crate::UnityEngine::InputSystem::Key,
+        key2: crate::UnityEngine::InputSystem::Key,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_GoodFPSColor", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_RamModuleState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Tayx::Graphy::GraphyManager_ModuleState> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Tayx::Graphy::GraphyManager_ModuleState = __cordl_object
-            .invoke("get_RamModuleState", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("CheckFor2KeyPress", (key1, key2))?;
         Ok(__cordl_ret)
     }
     pub fn CheckFor3KeyPress(
@@ -240,75 +123,82 @@ impl crate::Tayx::Graphy::GraphyManager {
             .invoke("CheckFor3KeyPress", (key1, key2, key3))?;
         Ok(__cordl_ret)
     }
-    pub fn set_RamTextUpdateRate(
+    pub fn CheckForHotkeyPresses(
         &mut self,
-        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_RamTextUpdateRate", (value))?;
+            .invoke("CheckForHotkeyPresses", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_AudioGraphResolution(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_AudioGraphResolution", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AverageFPS(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_AverageFPS", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_RamModuleState(
+    pub fn Disable(
         &mut self,
-        value: crate::Tayx::Graphy::GraphyManager_ModuleState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_RamModuleState", (value))?;
+            .invoke("Disable", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_MonoRamColor(
+    pub fn Enable(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_MonoRamColor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AudioTextUpdateRate(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_AudioTextUpdateRate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MaxDB(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_MaxDB", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_AdvancedModuleState(
-        &mut self,
-        value: crate::Tayx::Graphy::GraphyManager_ModuleState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_AdvancedModuleState", (value))?;
+            .invoke("Enable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnApplicationFocus(
+        &mut self,
+        isFocused: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnApplicationFocus", (isFocused))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RefreshAllParameters(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RefreshAllParameters", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetModuleMode(
@@ -323,35 +213,184 @@ impl crate::Tayx::Graphy::GraphyManager {
             .invoke("SetModuleMode", (moduleType, moduleState))?;
         Ok(__cordl_ret)
     }
-    pub fn Init(
+    pub fn SetModulePosition(
+        &mut self,
+        moduleType: crate::Tayx::Graphy::GraphyManager_ModuleType,
+        modulePosition: crate::Tayx::Graphy::GraphyManager_ModulePosition,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetModulePosition", (moduleType, modulePosition))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetPreset(
+        &mut self,
+        modulePreset: crate::Tayx::Graphy::GraphyManager_ModulePreset,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetPreset", (modulePreset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", ())?;
+            .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_CautionFPSThreshold(
+    pub fn ToggleActive(
         &mut self,
-        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_CautionFPSThreshold", (value))?;
+            .invoke("ToggleActive", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Spectrum(
+    pub fn ToggleModes(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<f32>> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<f32> = __cordl_object
-            .invoke("get_Spectrum", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ToggleModes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateAllParameters(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateAllParameters", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AdvancedModulePosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Tayx::Graphy::GraphyManager_ModulePosition,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Tayx::Graphy::GraphyManager_ModulePosition = __cordl_object
+            .invoke("get_AdvancedModulePosition", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AdvancedModuleState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Tayx::Graphy::GraphyManager_ModuleState> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Tayx::Graphy::GraphyManager_ModuleState = __cordl_object
+            .invoke("get_AdvancedModuleState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AllocatedRam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_AllocatedRam", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AllocatedRamColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_AllocatedRamColor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AudioGraphColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_AudioGraphColor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AudioGraphResolution(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_AudioGraphResolution", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AudioListener(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AudioListener> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::AudioListener = __cordl_object
+            .invoke("get_AudioListener", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AudioModuleState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Tayx::Graphy::GraphyManager_ModuleState> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Tayx::Graphy::GraphyManager_ModuleState = __cordl_object
+            .invoke("get_AudioModuleState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AudioTextUpdateRate(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_AudioTextUpdateRate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AverageFPS(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_AverageFPS", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Background(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_Background", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_BackgroundColor(
@@ -374,42 +413,11 @@ impl crate::Tayx::Graphy::GraphyManager {
             .invoke("get_CautionFPSColor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_AdvancedModuleState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Tayx::Graphy::GraphyManager_ModuleState> {
+    pub fn get_CautionFPSThreshold(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::Tayx::Graphy::GraphyManager_ModuleState = __cordl_object
-            .invoke("get_AdvancedModuleState", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_BackgroundColor(
-        &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_BackgroundColor", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_EnableOnStartup(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_EnableOnStartup", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_CautionFPSThreshold", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_CriticalFPSColor(
@@ -422,36 +430,18 @@ impl crate::Tayx::Graphy::GraphyManager {
             .invoke("get_CriticalFPSColor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ToggleActive(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_CurrentFPS(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ToggleActive", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_CurrentFPS", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_AllocatedRamColor(
-        &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_EnableOnStartup(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_AllocatedRamColor", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_CriticalFPSColor(
-        &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_CriticalFPSColor", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_EnableOnStartup", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_FftWindow(
@@ -462,251 +452,6 @@ impl crate::Tayx::Graphy::GraphyManager {
         );
         let __cordl_ret: crate::UnityEngine::FFTWindow = __cordl_object
             .invoke("get_FftWindow", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_AudioModuleState(
-        &mut self,
-        value: crate::Tayx::Graphy::GraphyManager_ModuleState,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_AudioModuleState", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_AudioGraphResolution(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_AudioGraphResolution", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AllocatedRamColor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_AllocatedRamColor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_FpsTextUpdateRate(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_FpsTextUpdateRate", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_FpsModuleState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Tayx::Graphy::GraphyManager_ModuleState> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Tayx::Graphy::GraphyManager_ModuleState = __cordl_object
-            .invoke("get_FpsModuleState", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_CautionFPSColor(
-        &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_CautionFPSColor", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_FftWindow(
-        &mut self,
-        value: crate::UnityEngine::FFTWindow,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_FftWindow", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_SpectrumSize(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_SpectrumSize", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Enable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Enable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Disable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Disable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateAllParameters(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateAllParameters", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_GoodFPSColor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_GoodFPSColor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_FpsGraphResolution(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_FpsGraphResolution", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckFor2KeyPress(
-        &mut self,
-        key1: crate::UnityEngine::InputSystem::Key,
-        key2: crate::UnityEngine::InputSystem::Key,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CheckFor2KeyPress", (key1, key2))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AudioGraphColor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_AudioGraphColor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_FpsModuleState(
-        &mut self,
-        value: crate::Tayx::Graphy::GraphyManager_ModuleState,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_FpsModuleState", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_RamTextUpdateRate(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_RamTextUpdateRate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_GoodFPSThreshold(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_GoodFPSThreshold", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckForHotkeyPresses(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckForHotkeyPresses", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RefreshAllParameters(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshAllParameters", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MonoRam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_MonoRam", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_GoodFPSThreshold(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_GoodFPSThreshold", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AudioModuleState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Tayx::Graphy::GraphyManager_ModuleState> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Tayx::Graphy::GraphyManager_ModuleState = __cordl_object
-            .invoke("get_AudioModuleState", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_KeepAlive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_KeepAlive", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_FindAudioListenerInCameraIfNull(
@@ -721,65 +466,57 @@ impl crate::Tayx::Graphy::GraphyManager {
             .invoke("get_FindAudioListenerInCameraIfNull", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_MinFPS(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_FpsGraphResolution(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_MinFPS", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_FpsGraphResolution", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_AudioTextUpdateRate(
+    pub fn get_FpsModuleState(
         &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::Tayx::Graphy::GraphyManager_ModuleState> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_AudioTextUpdateRate", (value))?;
+        let __cordl_ret: crate::Tayx::Graphy::GraphyManager_ModuleState = __cordl_object
+            .invoke("get_FpsModuleState", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetPreset(
-        &mut self,
-        modulePreset: crate::Tayx::Graphy::GraphyManager_ModulePreset,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_FpsTextUpdateRate(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetPreset", (modulePreset))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_FpsTextUpdateRate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_Background(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Background", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ReservedRamColor(
+    pub fn get_GoodFPSColor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_ReservedRamColor", ())?;
+            .invoke("get_GoodFPSColor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_RamGraphResolution(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_GoodFPSThreshold(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_RamGraphResolution", (value))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_GoodFPSThreshold", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_GraphModulePosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Tayx::Graphy::GraphyManager_ModulePosition,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Tayx::Graphy::GraphyManager_ModulePosition = __cordl_object
+            .invoke("get_GraphModulePosition", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_GraphyMode(
@@ -792,44 +529,49 @@ impl crate::Tayx::Graphy::GraphyManager {
             .invoke("get_GraphyMode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_ReservedRamColor(
-        &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_KeepAlive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ReservedRamColor", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_KeepAlive", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_FindAudioListenerInCameraIfNull(
-        &mut self,
-        value: crate::Tayx::Graphy::GraphyManager_LookForAudioListener,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_MaxDB(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_FindAudioListenerInCameraIfNull", (value))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_MaxDB", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_GraphyMode(
-        &mut self,
-        value: crate::Tayx::Graphy::GraphyManager_Mode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_MaxFPS(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_GraphyMode", (value))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_MaxFPS", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_CautionFPSThreshold(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_MinFPS(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_CautionFPSThreshold", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_MinFPS", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MonoRam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_MonoRam", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MonoRamColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_MonoRamColor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_RamGraphResolution(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -839,15 +581,48 @@ impl crate::Tayx::Graphy::GraphyManager {
         let __cordl_ret: i32 = __cordl_object.invoke("get_RamGraphResolution", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_AudioGraphColor(
+    pub fn get_RamModuleState(
         &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::Tayx::Graphy::GraphyManager_ModuleState> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_AudioGraphColor", (value))?;
+        let __cordl_ret: crate::Tayx::Graphy::GraphyManager_ModuleState = __cordl_object
+            .invoke("get_RamModuleState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RamTextUpdateRate(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_RamTextUpdateRate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ReservedRam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_ReservedRam", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ReservedRamColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_ReservedRamColor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Spectrum(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<f32>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<f32> = __cordl_object
+            .invoke("get_Spectrum", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SpectrumSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -855,16 +630,6 @@ impl crate::Tayx::Graphy::GraphyManager {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_SpectrumSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_AdvancedModulePosition(
@@ -878,19 +643,18 @@ impl crate::Tayx::Graphy::GraphyManager {
             .invoke("set_AdvancedModulePosition", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_AdvancedModulePosition(
+    pub fn set_AdvancedModuleState(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Tayx::Graphy::GraphyManager_ModulePosition,
-    > {
+        value: crate::Tayx::Graphy::GraphyManager_ModuleState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::Tayx::Graphy::GraphyManager_ModulePosition = __cordl_object
-            .invoke("get_AdvancedModulePosition", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_AdvancedModuleState", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_MonoRamColor(
+    pub fn set_AllocatedRamColor(
         &mut self,
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -898,28 +662,139 @@ impl crate::Tayx::Graphy::GraphyManager {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_MonoRamColor", (value))?;
+            .invoke("set_AllocatedRamColor", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn OnApplicationFocus(
+    pub fn set_AudioGraphColor(
         &mut self,
-        isFocused: bool,
+        value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnApplicationFocus", (isFocused))?;
+            .invoke("set_AudioGraphColor", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToggleModes(
+    pub fn set_AudioGraphResolution(
         &mut self,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ToggleModes", ())?;
+            .invoke("set_AudioGraphResolution", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_AudioListener(
+        &mut self,
+        value: *mut crate::UnityEngine::AudioListener,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_AudioListener", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_AudioModuleState(
+        &mut self,
+        value: crate::Tayx::Graphy::GraphyManager_ModuleState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_AudioModuleState", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_AudioTextUpdateRate(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_AudioTextUpdateRate", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Background(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Background", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_BackgroundColor(
+        &mut self,
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_BackgroundColor", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_CautionFPSColor(
+        &mut self,
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_CautionFPSColor", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_CautionFPSThreshold(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_CautionFPSThreshold", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_CriticalFPSColor(
+        &mut self,
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_CriticalFPSColor", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_FftWindow(
+        &mut self,
+        value: crate::UnityEngine::FFTWindow,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_FftWindow", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_FindAudioListenerInCameraIfNull(
+        &mut self,
+        value: crate::Tayx::Graphy::GraphyManager_LookForAudioListener,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_FindAudioListenerInCameraIfNull", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_FpsGraphResolution(
@@ -933,12 +808,137 @@ impl crate::Tayx::Graphy::GraphyManager {
             .invoke("set_FpsGraphResolution", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_FpsModuleState(
+        &mut self,
+        value: crate::Tayx::Graphy::GraphyManager_ModuleState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_FpsModuleState", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_FpsTextUpdateRate(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_FpsTextUpdateRate", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_GoodFPSColor(
+        &mut self,
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_GoodFPSColor", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_GoodFPSThreshold(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_GoodFPSThreshold", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_GraphModulePosition(
+        &mut self,
+        value: crate::Tayx::Graphy::GraphyManager_ModulePosition,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_GraphModulePosition", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_GraphyMode(
+        &mut self,
+        value: crate::Tayx::Graphy::GraphyManager_Mode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_GraphyMode", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_MonoRamColor(
+        &mut self,
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_MonoRamColor", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_RamGraphResolution(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_RamGraphResolution", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_RamModuleState(
+        &mut self,
+        value: crate::Tayx::Graphy::GraphyManager_ModuleState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_RamModuleState", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_RamTextUpdateRate(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_RamTextUpdateRate", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ReservedRamColor(
+        &mut self,
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ReservedRamColor", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_SpectrumSize(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_SpectrumSize", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Tayx+Graphy+GraphyManager")]

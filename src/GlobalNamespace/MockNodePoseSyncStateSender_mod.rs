@@ -25,15 +25,14 @@ impl std::ops::DerefMut for MockNodePoseSyncStateSender {
 }
 #[cfg(feature = "MockNodePoseSyncStateSender")]
 impl MockNodePoseSyncStateSender {
-    pub fn _ctor(
+    pub fn Dispose(
         &mut self,
-        msm: *mut IMultiplayerSessionManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (msm))?;
+            .invoke("Dispose", ())?;
         Ok(__cordl_ret)
     }
     pub fn HandleNodePoseSyncStateUpdate(
@@ -48,6 +47,15 @@ impl MockNodePoseSyncStateSender {
             .invoke("HandleNodePoseSyncStateUpdate", (nodePose, connectedPlayer))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        msm: *mut IMultiplayerSessionManager,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (msm))?;
+        Ok(__cordl_object)
+    }
     pub fn SendPose(
         &mut self,
         headPose: PoseSerializable,
@@ -61,24 +69,16 @@ impl MockNodePoseSyncStateSender {
             .invoke("SendPose", (headPose, leftHandPose, rightHandPose))?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
+    pub fn _ctor(
         &mut self,
+        msm: *mut IMultiplayerSessionManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+            .invoke(".ctor", (msm))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        msm: *mut IMultiplayerSessionManager,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (msm))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MockNodePoseSyncStateSender")]

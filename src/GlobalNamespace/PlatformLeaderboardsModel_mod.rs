@@ -27,21 +27,6 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler
 }
 #[cfg(feature = "PlatformLeaderboardsModel+GetScoresCompletionHandler")]
 impl crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler {
-    pub fn Invoke(
-        &mut self,
-        result: crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult,
-        scores: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
-        >,
-        referencePlayerScoreIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (result, scores, referencePlayerScoreIndex))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         result: crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult,
@@ -62,18 +47,6 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandle
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -85,15 +58,42 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandle
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        result: crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult,
+        scores: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+        >,
+        referencePlayerScoreIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (result, scores, referencePlayerScoreIndex))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PlatformLeaderboardsModel+GetScoresCompletionHandler")]
@@ -153,23 +153,6 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
 }
 #[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
 impl crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
-    pub fn _ctor(
-        &mut self,
-        score: i32,
-        rank: i32,
-        playerName: *mut crate::System::String,
-        playerId: *mut crate::System::String,
-        gameplayModifiers: *mut crate::System::Collections::Generic::List_1<
-            *mut GameplayModifierParamsSO,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (score, rank, playerName, playerId, gameplayModifiers))?;
-        Ok(__cordl_ret)
-    }
     pub fn CompareTo(
         &mut self,
         other: *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
@@ -188,7 +171,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
         gameplayModifiers: *mut crate::System::Collections::Generic::List_1<
             *mut GameplayModifierParamsSO,
         >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -197,6 +180,23 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
                 (score, rank, playerName, playerId, gameplayModifiers),
             )?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        score: i32,
+        rank: i32,
+        playerName: *mut crate::System::String,
+        playerId: *mut crate::System::String,
+        gameplayModifiers: *mut crate::System::Collections::Generic::List_1<
+            *mut GameplayModifierParamsSO,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (score, rank, playerName, playerId, gameplayModifiers))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
@@ -244,47 +244,26 @@ impl std::ops::DerefMut for PlatformLeaderboardsModel {
 }
 #[cfg(feature = "PlatformLeaderboardsModel")]
 impl PlatformLeaderboardsModel {
-    #[cfg(feature = "PlatformLeaderboardsModel+ScoresScope")]
-    pub type ScoresScope = crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope;
+    #[cfg(feature = "PlatformLeaderboardsModel+_Initialize_d__23")]
+    pub type _Initialize_d__23 = crate::GlobalNamespace::PlatformLeaderboardsModel__Initialize_d__23;
+    #[cfg(feature = "PlatformLeaderboardsModel+__c")]
+    pub type __c = crate::GlobalNamespace::PlatformLeaderboardsModel___c;
     #[cfg(feature = "PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
     pub type UploadScoreCompletionHandler = crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler;
+    #[cfg(feature = "PlatformLeaderboardsModel+GetScoresCompletionHandler")]
+    pub type GetScoresCompletionHandler = crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler;
+    #[cfg(feature = "PlatformLeaderboardsModel+__c__DisplayClass27_0")]
+    pub type __c__DisplayClass27_0 = crate::GlobalNamespace::PlatformLeaderboardsModel___c__DisplayClass27_0;
+    #[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
+    pub type LeaderboardScore = crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore;
+    #[cfg(feature = "PlatformLeaderboardsModel+ScoresScope")]
+    pub type ScoresScope = crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope;
     #[cfg(feature = "PlatformLeaderboardsModel+State")]
     pub type State = crate::GlobalNamespace::PlatformLeaderboardsModel_State;
     #[cfg(feature = "PlatformLeaderboardsModel+GetScoresResult")]
     pub type GetScoresResult = crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult;
-    #[cfg(feature = "PlatformLeaderboardsModel+__c")]
-    pub type __c = crate::GlobalNamespace::PlatformLeaderboardsModel___c;
-    #[cfg(feature = "PlatformLeaderboardsModel+__c__DisplayClass27_0")]
-    pub type __c__DisplayClass27_0 = crate::GlobalNamespace::PlatformLeaderboardsModel___c__DisplayClass27_0;
-    #[cfg(feature = "PlatformLeaderboardsModel+GetScoresCompletionHandler")]
-    pub type GetScoresCompletionHandler = crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler;
-    #[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
-    pub type LeaderboardScore = crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore;
-    #[cfg(feature = "PlatformLeaderboardsModel+_Initialize_d__23")]
-    pub type _Initialize_d__23 = crate::GlobalNamespace::PlatformLeaderboardsModel__Initialize_d__23;
     #[cfg(feature = "PlatformLeaderboardsModel+UploadScoreResult")]
     pub type UploadScoreResult = crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult;
-    pub fn add_allScoresDidUploadEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_allScoresDidUploadEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleAllScoresDidUpload(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleAllScoresDidUpload", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetFriendsScores(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
@@ -302,38 +281,6 @@ impl PlatformLeaderboardsModel {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitializeForUserInfo(
-        &mut self,
-        newInfo: *mut UserInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitializeForUserInfo", (newInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandlePlatformUserInfoDidChange(
-        &mut self,
-        newInfo: *mut UserInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandlePlatformUserInfoDidChange", (newInfo))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetScoresAroundPlayer(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
@@ -345,26 +292,6 @@ impl PlatformLeaderboardsModel {
         );
         let __cordl_ret: *mut HMAsyncRequest = __cordl_object
             .invoke("GetScoresAroundPlayer", (beatmapKey, count, completionHandler))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_playerId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_playerId", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetScores_BeatmapKey_PlatformLeaderboardsModel_ScoresScope_PlatformLeaderboardsModel_GetScoresCompletionHandler0(
@@ -399,15 +326,25 @@ impl PlatformLeaderboardsModel {
             .invoke("GetScores", (beatmapKey, count, fromRank, completionHandler))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_allScoresDidUploadEvent(
+    pub fn HandleAllScoresDidUpload(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_allScoresDidUploadEvent", (value))?;
+            .invoke("HandleAllScoresDidUpload", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandlePlatformUserInfoDidChange(
+        &mut self,
+        newInfo: *mut UserInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandlePlatformUserInfoDidChange", (newInfo))?;
         Ok(__cordl_ret)
     }
     pub fn Initialize(
@@ -420,23 +357,32 @@ impl PlatformLeaderboardsModel {
             .invoke("Initialize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_initialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn InitializeForUserInfo(
+        &mut self,
+        newInfo: *mut UserInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_initialized", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitializeForUserInfo", (newInfo))?;
         Ok(__cordl_ret)
     }
-    pub fn UploadScore_LeaderboardScoreUploader_ScoreData_PlatformLeaderboardsModel_UploadScoreCompletionHandler0(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
         &mut self,
-        scoreData: *mut crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
-        completionHandler: *mut crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
-            .invoke("UploadScore", (scoreData, completionHandler))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn UploadScore_ByRefMut_i32_i32_i32__cordl_bool_i32_i32_i32_i32_f32_GameplayModifiers1(
@@ -475,12 +421,66 @@ impl PlatformLeaderboardsModel {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn UploadScore_LeaderboardScoreUploader_ScoreData_PlatformLeaderboardsModel_UploadScoreCompletionHandler0(
+        &mut self,
+        scoreData: *mut crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+        completionHandler: *mut crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler,
+    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
+            .invoke("UploadScore", (scoreData, completionHandler))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_allScoresDidUploadEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_allScoresDidUploadEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_initialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_initialized", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_playerId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_playerId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_allScoresDidUploadEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_allScoresDidUploadEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PlatformLeaderboardsModel")]
@@ -548,16 +548,17 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandl
 }
 #[cfg(feature = "PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
 impl crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler {
-    pub fn _ctor(
+    pub fn BeginInvoke(
         &mut self,
+        result: crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult,
+        callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (result, callback, object))?;
         Ok(__cordl_ret)
     }
     pub fn EndInvoke(
@@ -582,28 +583,27 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHand
             .invoke("Invoke", (result))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInvoke(
-        &mut self,
-        result: crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (result, callback, object))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PlatformLeaderboardsModel+UploadScoreCompletionHandler")]

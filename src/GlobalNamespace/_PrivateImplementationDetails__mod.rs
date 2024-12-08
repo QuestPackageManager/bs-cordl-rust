@@ -1,16 +1,16 @@
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_363")]
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_74")]
 #[repr(C)]
 #[derive(Debug, Clone)]
-pub struct _PrivateImplementationDetails____StaticArrayInitTypeSize_363 {}
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_363")]
+pub struct _PrivateImplementationDetails____StaticArrayInitTypeSize_74 {}
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_74")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_363 => ""
-    ."<PrivateImplementationDetails>/__StaticArrayInitTypeSize=363"
+    ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_74 => ""
+    ."<PrivateImplementationDetails>/__StaticArrayInitTypeSize=74"
 );
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_363")]
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_74")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_363 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_74 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -19,21 +19,21 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_363")]
-impl crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_363 {}
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_638")]
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_74")]
+impl crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_74 {}
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_94")]
 #[repr(C)]
 #[derive(Debug, Clone)]
-pub struct _PrivateImplementationDetails____StaticArrayInitTypeSize_638 {}
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_638")]
+pub struct _PrivateImplementationDetails____StaticArrayInitTypeSize_94 {}
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_94")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_638 => ""
-    ."<PrivateImplementationDetails>/__StaticArrayInitTypeSize=638"
+    ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_94 => ""
+    ."<PrivateImplementationDetails>/__StaticArrayInitTypeSize=94"
 );
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_638")]
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_94")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_638 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_94 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -42,5 +42,5 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_638")]
-impl crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_638 {}
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_94")]
+impl crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_94 {}

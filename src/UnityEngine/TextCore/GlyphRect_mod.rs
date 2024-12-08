@@ -25,41 +25,14 @@ for crate::UnityEngine::TextCore::GlyphRect {
 }
 #[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
 impl crate::UnityEngine::TextCore::GlyphRect {
-    pub fn _ctor(
+    pub fn Equals_GlyphRect1(
         &mut self,
-        x: i32,
-        y: i32,
-        width: i32,
-        height: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::TextCore::GlyphRect,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (x, y, width, height),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_x(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_x",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_width",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -74,14 +47,25 @@ impl crate::UnityEngine::TextCore::GlyphRect {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_GlyphRect1(
-        &mut self,
-        other: crate::UnityEngine::TextCore::GlyphRect,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        x: i32,
+        y: i32,
+        width: i32,
+        height: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (x, y, width, height),
         )?;
         Ok(__cordl_ret)
     }
@@ -89,6 +73,22 @@ impl crate::UnityEngine::TextCore::GlyphRect {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_height",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_width",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_x(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_x",
             (),
         )?;
         Ok(__cordl_ret)

@@ -27,6 +27,15 @@ for crate::Newtonsoft::Json::Serialization::JsonPrimitiveContract {
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonPrimitiveContract")]
 impl crate::Newtonsoft::Json::Serialization::JsonPrimitiveContract {
+    pub fn New(
+        underlyingType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (underlyingType))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         underlyingType: *mut crate::System::Type,
@@ -60,15 +69,6 @@ impl crate::Newtonsoft::Json::Serialization::JsonPrimitiveContract {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_TypeCode", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        underlyingType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (underlyingType))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonPrimitiveContract")]

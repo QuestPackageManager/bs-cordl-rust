@@ -35,6 +35,13 @@ impl std::ops::DerefMut for NetworkConfigSO {
 }
 #[cfg(feature = "NetworkConfigSO")]
 impl NetworkConfigSO {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -43,101 +50,6 @@ impl NetworkConfigSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_masterServerEndPoint(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut DnsEndPoint> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut DnsEndPoint = __cordl_object
-            .invoke("get_masterServerEndPoint", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_quickPlaySetupUrl(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_quickPlaySetupUrl", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_discoveryPort(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_discoveryPort", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_graphUrl(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_graphUrl", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_graphAccessToken(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_graphAccessToken", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_maxPartySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_maxPartySize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_forceGameLift(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_forceGameLift", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_multiplayerStatusUrl(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_multiplayerStatusUrl", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_serviceEnvironment(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<ServiceEnvironment> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: ServiceEnvironment = __cordl_object
-            .invoke("get_serviceEnvironment", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_multiplayerPort(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_multiplayerPort", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_partyPort(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_partyPort", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_appId(
@@ -150,12 +62,100 @@ impl NetworkConfigSO {
             .invoke("get_appId", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_discoveryPort(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_discoveryPort", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_forceGameLift(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_forceGameLift", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_graphAccessToken(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_graphAccessToken", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_graphUrl(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_graphUrl", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_masterServerEndPoint(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut DnsEndPoint> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut DnsEndPoint = __cordl_object
+            .invoke("get_masterServerEndPoint", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxPartySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_maxPartySize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_multiplayerPort(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_multiplayerPort", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_multiplayerStatusUrl(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_multiplayerStatusUrl", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_partyPort(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_partyPort", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_quickPlaySetupUrl(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_quickPlaySetupUrl", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_serviceEnvironment(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<ServiceEnvironment> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: ServiceEnvironment = __cordl_object
+            .invoke("get_serviceEnvironment", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "NetworkConfigSO")]

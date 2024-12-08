@@ -27,13 +27,6 @@ impl std::ops::DerefMut for crate::System::Data::ConstraintEnumerator {
 }
 #[cfg(feature = "System+Data+ConstraintEnumerator")]
 impl crate::System::Data::ConstraintEnumerator {
-    pub fn GetNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("GetNext", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetConstraint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::Constraint> {
@@ -44,14 +37,11 @@ impl crate::System::Data::ConstraintEnumerator {
             .invoke("GetConstraint", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_CurrentObject(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::Constraint> {
+    pub fn GetNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Data::Constraint = __cordl_object
-            .invoke("get_CurrentObject", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("GetNext", ())?;
         Ok(__cordl_ret)
     }
     pub fn IsValidCandidate(
@@ -64,6 +54,15 @@ impl crate::System::Data::ConstraintEnumerator {
         let __cordl_ret: bool = __cordl_object.invoke("IsValidCandidate", (constraint))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        dataSet: *mut crate::System::Data::DataSet,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dataSet))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         dataSet: *mut crate::System::Data::DataSet,
@@ -75,14 +74,15 @@ impl crate::System::Data::ConstraintEnumerator {
             .invoke(".ctor", (dataSet))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        dataSet: *mut crate::System::Data::DataSet,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dataSet))?;
-        Ok(__cordl_object)
+    pub fn get_CurrentObject(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::Constraint> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Data::Constraint = __cordl_object
+            .invoke("get_CurrentObject", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Data+ConstraintEnumerator")]

@@ -46,13 +46,6 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_disposed", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn InternalProcessRenderRequests<RequestData>(
         &mut self,
         context: crate::UnityEngine::Rendering::ScriptableRenderContext,
@@ -70,21 +63,18 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
             .invoke("InternalProcessRenderRequests", (context, camera, renderRequest))?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessRenderRequests<RequestData>(
+    pub fn InternalRender(
         &mut self,
         context: crate::UnityEngine::Rendering::ScriptableRenderContext,
-        camera: *mut crate::UnityEngine::Camera,
-        renderRequest: RequestData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        RequestData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
+        cameras: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Camera,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessRenderRequests", (context, camera, renderRequest))?;
+            .invoke("InternalRender", (context, cameras))?;
         Ok(__cordl_ret)
     }
     pub fn IsRenderRequestSupported<RequestData>(
@@ -101,6 +91,23 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsRenderRequestSupported", (camera, data))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessRenderRequests<RequestData>(
+        &mut self,
+        context: crate::UnityEngine::Rendering::ScriptableRenderContext,
+        camera: *mut crate::UnityEngine::Camera,
+        renderRequest: RequestData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        RequestData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessRenderRequests", (context, camera, renderRequest))?;
         Ok(__cordl_ret)
     }
     pub fn Render_Il2CppArray0(
@@ -129,6 +136,13 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
             .invoke("Render", (context, cameras))?;
         Ok(__cordl_ret)
     }
+    pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_disposed", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_disposed(
         &mut self,
         value: bool,
@@ -138,20 +152,6 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_disposed", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalRender(
-        &mut self,
-        context: crate::UnityEngine::Rendering::ScriptableRenderContext,
-        cameras: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::Camera,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalRender", (context, cameras))?;
         Ok(__cordl_ret)
     }
 }

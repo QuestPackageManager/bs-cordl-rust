@@ -30,17 +30,6 @@ for crate::System::Collections::Generic::IEqualityComparer_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Collections::Generic::IEqualityComparer_1<T> {
-    pub fn GetHashCode(&mut self, obj: T) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", (obj))?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals(&mut self, x: T, y: T) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -50,6 +39,17 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (x, y))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self, obj: T) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", (obj))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

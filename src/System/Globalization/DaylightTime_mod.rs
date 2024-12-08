@@ -27,6 +27,40 @@ impl std::ops::DerefMut for crate::System::Globalization::DaylightTime {
 }
 #[cfg(feature = "System+Globalization+DaylightTime")]
 impl crate::System::Globalization::DaylightTime {
+    pub fn New(
+        start: crate::System::DateTime,
+        end: crate::System::DateTime,
+        delta: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (start, end, delta))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        start: crate::System::DateTime,
+        end: crate::System::DateTime,
+        delta: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (start, end, delta))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Delta(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::TimeSpan = __cordl_object
+            .invoke("get_Delta", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_End(&mut self) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -43,40 +77,6 @@ impl crate::System::Globalization::DaylightTime {
         let __cordl_ret: crate::System::DateTime = __cordl_object
             .invoke("get_Start", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_Delta(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::TimeSpan = __cordl_object
-            .invoke("get_Delta", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        start: crate::System::DateTime,
-        end: crate::System::DateTime,
-        delta: crate::System::TimeSpan,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (start, end, delta))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        start: crate::System::DateTime,
-        end: crate::System::DateTime,
-        delta: crate::System::TimeSpan,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (start, end, delta))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Globalization+DaylightTime")]

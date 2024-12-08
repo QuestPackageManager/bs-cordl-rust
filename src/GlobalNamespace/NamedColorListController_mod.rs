@@ -29,6 +29,13 @@ for crate::GlobalNamespace::NamedColorListController_ColorValuePair {
 }
 #[cfg(feature = "NamedColorListController+ColorValuePair")]
 impl crate::GlobalNamespace::NamedColorListController_ColorValuePair {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -38,13 +45,6 @@ impl crate::GlobalNamespace::NamedColorListController_ColorValuePair {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "NamedColorListController+ColorValuePair")]
@@ -90,27 +90,15 @@ impl std::ops::DerefMut for NamedColorListController {
 impl NamedColorListController {
     #[cfg(feature = "NamedColorListController+ColorValuePair")]
     pub type ColorValuePair = crate::GlobalNamespace::NamedColorListController_ColorValuePair;
-    pub fn GetInitValues(
+    pub fn ApplyValue(
         &mut self,
-        idx: quest_hook::libil2cpp::ByRefMut<i32>,
-        numberOfElements: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("GetInitValues", (idx, numberOfElements))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetValue(
-        &mut self,
-        value: i32,
+        idx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetValue", (value))?;
+            .invoke("ApplyValue", (idx))?;
         Ok(__cordl_ret)
     }
     pub fn ColorForValue(
@@ -122,6 +110,18 @@ impl NamedColorListController {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("ColorForValue", (idx))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetInitValues(
+        &mut self,
+        idx: quest_hook::libil2cpp::ByRefMut<i32>,
+        numberOfElements: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("GetInitValues", (idx, numberOfElements))?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -138,6 +138,24 @@ impl NamedColorListController {
             .invoke("Init", (values, value))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetValue(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetValue", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -146,28 +164,6 @@ impl NamedColorListController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_valueChangedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_valueChangedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ApplyValue(
-        &mut self,
-        idx: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ApplyValue", (idx))?;
         Ok(__cordl_ret)
     }
     pub fn add_valueChangedEvent(
@@ -181,12 +177,16 @@ impl NamedColorListController {
             .invoke("add_valueChangedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn remove_valueChangedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_valueChangedEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "NamedColorListController")]

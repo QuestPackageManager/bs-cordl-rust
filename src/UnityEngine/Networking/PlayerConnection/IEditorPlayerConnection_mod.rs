@@ -27,17 +27,6 @@ for crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
 }
 #[cfg(feature = "UnityEngine+Networking+PlayerConnection+IEditorPlayerConnection")]
 impl crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
-    pub fn RegisterDisconnection(
-        &mut self,
-        callback: *mut crate::UnityEngine::Events::UnityAction_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterDisconnection", (callback))?;
-        Ok(__cordl_ret)
-    }
     pub fn Register(
         &mut self,
         messageId: crate::System::Guid,
@@ -52,6 +41,28 @@ impl crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
             .invoke("Register", (messageId, callback))?;
         Ok(__cordl_ret)
     }
+    pub fn RegisterConnection(
+        &mut self,
+        callback: *mut crate::UnityEngine::Events::UnityAction_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterConnection", (callback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterDisconnection(
+        &mut self,
+        callback: *mut crate::UnityEngine::Events::UnityAction_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterDisconnection", (callback))?;
+        Ok(__cordl_ret)
+    }
     pub fn Send(
         &mut self,
         messageId: crate::System::Guid,
@@ -62,17 +73,6 @@ impl crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Send", (messageId, data))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterConnection(
-        &mut self,
-        callback: *mut crate::UnityEngine::Events::UnityAction_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterConnection", (callback))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

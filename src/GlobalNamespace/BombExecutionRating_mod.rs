@@ -26,17 +26,15 @@ impl std::ops::DerefMut for BombExecutionRating {
 impl BombExecutionRating {
     #[cfg(feature = "BombExecutionRating+Rating")]
     pub type Rating = crate::GlobalNamespace::BombExecutionRating_Rating;
-    pub fn get_rating(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::BombExecutionRating_Rating,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::BombExecutionRating_Rating = __cordl_object
-            .invoke("get_rating", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        _cordl_time: f32,
+        rating: crate::GlobalNamespace::BombExecutionRating_Rating,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_time, rating))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -50,15 +48,17 @@ impl BombExecutionRating {
             .invoke(".ctor", (_cordl_time, rating))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        _cordl_time: f32,
-        rating: crate::GlobalNamespace::BombExecutionRating_Rating,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_time, rating))?;
-        Ok(__cordl_object)
+    pub fn get_rating(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::BombExecutionRating_Rating,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::BombExecutionRating_Rating = __cordl_object
+            .invoke("get_rating", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BombExecutionRating")]

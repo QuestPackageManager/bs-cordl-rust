@@ -35,6 +35,42 @@ impl crate::Org::BouncyCastle::Pkcs::AsymmetricKeyEntry {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret)
     }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_AsymmetricKeyParameter0(
+        key: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (key))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Hashtable1(
+        key: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        attributes: *mut crate::System::Collections::Hashtable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (key, attributes))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IDictionary2(
+        key: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        attributes: *mut crate::System::Collections::IDictionary,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (key, attributes))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_AsymmetricKeyParameter0(
         &mut self,
         key: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -70,13 +106,6 @@ impl crate::Org::BouncyCastle::Pkcs::AsymmetricKeyEntry {
             .invoke(".ctor", (key, attributes))?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Key(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -88,35 +117,6 @@ impl crate::Org::BouncyCastle::Pkcs::AsymmetricKeyEntry {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter = __cordl_object
             .invoke("get_Key", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_AsymmetricKeyParameter0(
-        key: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (key))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Hashtable1(
-        key: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        attributes: *mut crate::System::Collections::Hashtable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (key, attributes))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IDictionary2(
-        key: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        attributes: *mut crate::System::Collections::IDictionary,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (key, attributes))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+AsymmetricKeyEntry")]

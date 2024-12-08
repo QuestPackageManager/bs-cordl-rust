@@ -35,16 +35,6 @@ impl std::ops::DerefMut for crate::System::Net::ListenerAsyncResult {
 }
 #[cfg(feature = "System+Net+ListenerAsyncResult")]
 impl crate::System::Net::ListenerAsyncResult {
-    pub fn GetContext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::HttpListenerContext> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::HttpListenerContext = __cordl_object
-            .invoke("GetContext", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Complete_Exception0(
         &mut self,
         exc: *mut crate::System::Exception,
@@ -79,32 +69,25 @@ impl crate::System::Net::ListenerAsyncResult {
             .invoke("Complete", (context, synch))?;
         Ok(__cordl_ret)
     }
-    pub fn get_AsyncWaitHandle(
+    pub fn GetContext(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::WaitHandle> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::HttpListenerContext> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::WaitHandle = __cordl_object
-            .invoke("get_AsyncWaitHandle", ())?;
+        let __cordl_ret: *mut crate::System::Net::HttpListenerContext = __cordl_object
+            .invoke("GetContext", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_AsyncState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_AsyncState", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CompletedSynchronously(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CompletedSynchronously", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        cb: *mut crate::System::AsyncCallback,
+        state: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (cb, state))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -118,22 +101,39 @@ impl crate::System::Net::ListenerAsyncResult {
             .invoke(".ctor", (cb, state))?;
         Ok(__cordl_ret)
     }
+    pub fn get_AsyncState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_AsyncState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AsyncWaitHandle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::WaitHandle> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::WaitHandle = __cordl_object
+            .invoke("get_AsyncWaitHandle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CompletedSynchronously(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CompletedSynchronously", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsCompleted", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        cb: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (cb, state))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+ListenerAsyncResult")]

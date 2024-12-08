@@ -28,33 +28,6 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerDependencyProvider {
 }
 #[cfg(feature = "Zenject+SubContainerDependencyProvider")]
 impl crate::Zenject::SubContainerDependencyProvider {
-    pub fn _ctor(
-        &mut self,
-        dependencyType: *mut crate::System::Type,
-        identifier: *mut crate::System::Object,
-        subContainerCreator: *mut crate::Zenject::ISubContainerCreator,
-        resolveAll: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (dependencyType, identifier, subContainerCreator, resolveAll),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TypeVariesBasedOnMemberType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_TypeVariesBasedOnMemberType", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateSubContext(
         &mut self,
         parent: *mut crate::Zenject::InjectContext,
@@ -88,13 +61,6 @@ impl crate::Zenject::SubContainerDependencyProvider {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsCached(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsCached", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetInstanceType(
         &mut self,
         context: *mut crate::Zenject::InjectContext,
@@ -111,7 +77,7 @@ impl crate::Zenject::SubContainerDependencyProvider {
         identifier: *mut crate::System::Object,
         subContainerCreator: *mut crate::Zenject::ISubContainerCreator,
         resolveAll: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -120,6 +86,40 @@ impl crate::Zenject::SubContainerDependencyProvider {
                 (dependencyType, identifier, subContainerCreator, resolveAll),
             )?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        dependencyType: *mut crate::System::Type,
+        identifier: *mut crate::System::Object,
+        subContainerCreator: *mut crate::Zenject::ISubContainerCreator,
+        resolveAll: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (dependencyType, identifier, subContainerCreator, resolveAll),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsCached(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsCached", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TypeVariesBasedOnMemberType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_TypeVariesBasedOnMemberType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+SubContainerDependencyProvider")]

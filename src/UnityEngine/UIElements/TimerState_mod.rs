@@ -23,41 +23,6 @@ for crate::UnityEngine::UIElements::TimerState {
 }
 #[cfg(feature = "UnityEngine+UIElements+TimerState")]
 impl crate::UnityEngine::UIElements::TimerState {
-    pub fn get_start(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_start",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_now(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_now",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_now(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_now",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_deltaTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_deltaTime",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_Object0(
         &mut self,
         obj: *mut crate::System::Object,
@@ -85,6 +50,41 @@ impl crate::UnityEngine::UIElements::TimerState {
             self,
             "GetHashCode",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_deltaTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_deltaTime",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_now(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_now",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_start(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_start",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_now(
+        &mut self,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_now",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

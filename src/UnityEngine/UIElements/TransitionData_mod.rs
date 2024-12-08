@@ -33,14 +33,6 @@ for crate::UnityEngine::UIElements::TransitionData {
 }
 #[cfg(feature = "UnityEngine+UIElements+TransitionData")]
 impl crate::UnityEngine::UIElements::TransitionData {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Copy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TransitionData> {
@@ -64,6 +56,17 @@ impl crate::UnityEngine::UIElements::TransitionData {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn Equals_Object1(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_TransitionData0(
         &mut self,
         other: crate::UnityEngine::UIElements::TransitionData,
@@ -75,14 +78,11 @@ impl crate::UnityEngine::UIElements::TransitionData {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (obj),
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }

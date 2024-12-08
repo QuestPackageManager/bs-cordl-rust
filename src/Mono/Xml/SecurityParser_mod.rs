@@ -27,14 +27,33 @@ impl std::ops::DerefMut for crate::Mono::Xml::SecurityParser {
 }
 #[cfg(feature = "Mono+Xml+SecurityParser")]
 impl crate::Mono::Xml::SecurityParser {
-    pub fn _ctor(
+    pub fn LoadXml(
         &mut self,
+        xml: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("LoadXml", (xml))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnChars(
+        &mut self,
+        ch: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnChars", (ch))?;
         Ok(__cordl_ret)
     }
     pub fn OnEndElement(
@@ -59,29 +78,6 @@ impl crate::Mono::Xml::SecurityParser {
             .invoke("OnEndParsing", (parser))?;
         Ok(__cordl_ret)
     }
-    pub fn OnStartElement(
-        &mut self,
-        name: *mut crate::System::String,
-        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStartElement", (name, attrs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadXml(
-        &mut self,
-        xml: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LoadXml", (xml))?;
-        Ok(__cordl_ret)
-    }
     pub fn OnIgnorableWhitespace(
         &mut self,
         s: *mut crate::System::String,
@@ -91,38 +87,6 @@ impl crate::Mono::Xml::SecurityParser {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnIgnorableWhitespace", (s))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToXml(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Security::SecurityElement> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Security::SecurityElement = __cordl_object
-            .invoke("ToXml", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnChars(
-        &mut self,
-        ch: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnChars", (ch))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnStartParsing(
-        &mut self,
-        parser: *mut crate::Mono::Xml::SmallXmlParser,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStartParsing", (parser))?;
         Ok(__cordl_ret)
     }
     pub fn OnProcessingInstruction(
@@ -137,12 +101,48 @@ impl crate::Mono::Xml::SecurityParser {
             .invoke("OnProcessingInstruction", (name, text))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn OnStartElement(
+        &mut self,
+        name: *mut crate::System::String,
+        attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnStartElement", (name, attrs))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnStartParsing(
+        &mut self,
+        parser: *mut crate::Mono::Xml::SmallXmlParser,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnStartParsing", (parser))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToXml(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Security::SecurityElement> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Security::SecurityElement = __cordl_object
+            .invoke("ToXml", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Mono+Xml+SecurityParser")]

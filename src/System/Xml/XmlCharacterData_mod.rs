@@ -25,15 +25,25 @@ impl std::ops::DerefMut for crate::System::Xml::XmlCharacterData {
 }
 #[cfg(feature = "System+Xml+XmlCharacterData")]
 impl crate::System::Xml::XmlCharacterData {
-    pub fn get_InnerText(
+    pub fn CheckOnData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        data: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_InnerText", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("CheckOnData", (data))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        data: *mut crate::System::String,
+        doc: *mut crate::System::Xml::XmlDocument,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (data, doc))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -47,6 +57,36 @@ impl crate::System::Xml::XmlCharacterData {
             .invoke(".ctor", (data, doc))?;
         Ok(__cordl_ret)
     }
+    pub fn get_Data(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Data", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_InnerText(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_InnerText", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Value", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_Data(
         &mut self,
         value: *mut crate::System::String,
@@ -56,26 +96,6 @@ impl crate::System::Xml::XmlCharacterData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Data", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckOnData(
-        &mut self,
-        data: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CheckOnData", (data))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Data(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Data", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_InnerText(
@@ -99,26 +119,6 @@ impl crate::System::Xml::XmlCharacterData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Value", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_Value(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Value", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        data: *mut crate::System::String,
-        doc: *mut crate::System::Xml::XmlDocument,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (data, doc))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+XmlCharacterData")]

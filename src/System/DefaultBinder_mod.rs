@@ -27,6 +27,17 @@ impl std::ops::DerefMut for crate::System::DefaultBinder_BinderState {
 }
 #[cfg(feature = "System+DefaultBinder+BinderState")]
 impl crate::System::DefaultBinder_BinderState {
+    pub fn New(
+        argsMap: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        originalSize: i32,
+        isParamArray: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (argsMap, originalSize, isParamArray))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         argsMap: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -39,17 +50,6 @@ impl crate::System::DefaultBinder_BinderState {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (argsMap, originalSize, isParamArray))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        argsMap: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        originalSize: i32,
-        isParamArray: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (argsMap, originalSize, isParamArray))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+DefaultBinder+BinderState")]
@@ -87,37 +87,26 @@ impl std::ops::DerefMut for crate::System::DefaultBinder {
 }
 #[cfg(feature = "System+DefaultBinder")]
 impl crate::System::DefaultBinder {
+    #[cfg(feature = "System+DefaultBinder+Primitives")]
+    pub type Primitives = crate::System::DefaultBinder_Primitives;
     #[cfg(feature = "System+DefaultBinder+BinderState")]
     pub type BinderState = crate::System::DefaultBinder_BinderState;
     #[cfg(feature = "System+DefaultBinder+__c")]
     pub type __c = crate::System::DefaultBinder___c;
-    #[cfg(feature = "System+DefaultBinder+Primitives")]
-    pub type Primitives = crate::System::DefaultBinder_Primitives;
-    pub fn ChangeType(
+    pub fn BindToField(
         &mut self,
-        value: *mut crate::System::Object,
-        _cordl_type: *mut crate::System::Type,
-        cultureInfo: *mut crate::System::Globalization::CultureInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("ChangeType", (value, _cordl_type, cultureInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReorderArgumentArray(
-        &mut self,
-        args: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        bindingAttr: crate::System::Reflection::BindingFlags,
+        _cordl_match: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Reflection::FieldInfo,
         >,
-        state: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        value: *mut crate::System::Object,
+        cultureInfo: *mut crate::System::Globalization::CultureInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::FieldInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReorderArgumentArray", (args, state))?;
+        let __cordl_ret: *mut crate::System::Reflection::FieldInfo = __cordl_object
+            .invoke("BindToField", (bindingAttr, _cordl_match, value, cultureInfo))?;
         Ok(__cordl_ret)
     }
     pub fn BindToMethod(
@@ -146,20 +135,38 @@ impl crate::System::DefaultBinder {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn BindToField(
+    pub fn ChangeType(
         &mut self,
-        bindingAttr: crate::System::Reflection::BindingFlags,
-        _cordl_match: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Reflection::FieldInfo,
-        >,
         value: *mut crate::System::Object,
+        _cordl_type: *mut crate::System::Type,
         cultureInfo: *mut crate::System::Globalization::CultureInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::FieldInfo> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Reflection::FieldInfo = __cordl_object
-            .invoke("BindToField", (bindingAttr, _cordl_match, value, cultureInfo))?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("ChangeType", (value, _cordl_type, cultureInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ReorderArgumentArray(
+        &mut self,
+        args: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        >,
+        state: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReorderArgumentArray", (args, state))?;
         Ok(__cordl_ret)
     }
     pub fn SelectMethod(
@@ -178,16 +185,6 @@ impl crate::System::DefaultBinder {
         );
         let __cordl_ret: *mut crate::System::Reflection::MethodBase = __cordl_object
             .invoke("SelectMethod", (bindingAttr, _cordl_match, types, modifiers))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn SelectProperty(
@@ -212,12 +209,15 @@ impl crate::System::DefaultBinder {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+DefaultBinder")]

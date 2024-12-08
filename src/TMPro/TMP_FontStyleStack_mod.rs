@@ -41,6 +41,16 @@ impl crate::TMPro::TMP_FontStyleStack {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Clear",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Remove(
         &mut self,
         style: crate::TMPro::FontStyles,
@@ -49,16 +59,6 @@ impl crate::TMPro::TMP_FontStyleStack {
             self,
             "Remove",
             (style),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Clear",
-            (),
         )?;
         Ok(__cordl_ret)
     }

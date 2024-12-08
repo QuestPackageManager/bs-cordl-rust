@@ -31,21 +31,22 @@ impl<
     pub type _Enumerate_d__10 = crate::UnityEngine::ProBuilder::Poly2Tri::FixedArray3_1__Enumerate_d__10<
         T,
     >;
-    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<T>
+    pub fn Clear_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Item",
-            (index),
+            "Clear",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_Item(
+    pub fn Clear_T1(
         &mut self,
-        index: i32,
         value: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -54,8 +55,20 @@ impl<
     {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_Item",
-            (index, value),
+            "Clear",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Contains(&mut self, value: T) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Contains",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -91,14 +104,14 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Contains(&mut self, value: T) -> quest_hook::libil2cpp::Result<bool>
+    pub fn IndexOf(&mut self, value: T) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Contains",
+            "IndexOf",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -117,22 +130,21 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Clear_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Clear",
-            (),
+            "get_Item",
+            (index),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Clear_T1(
+    pub fn set_Item(
         &mut self,
+        index: i32,
         value: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -141,20 +153,8 @@ impl<
     {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Clear",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IndexOf(&mut self, value: T) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IndexOf",
-            (value),
+            "set_Item",
+            (index, value),
         )?;
         Ok(__cordl_ret)
     }

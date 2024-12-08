@@ -34,25 +34,6 @@ for crate::Newtonsoft::Json::Utilities::DateTimeParser {
 #[cfg(feature = "Newtonsoft+Json+Utilities+DateTimeParser")]
 impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
     pub const MaxFractionDigits: i16 = 7i16;
-    pub fn ParseZone(&mut self, start: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ParseZone",
-            (start),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseTimeAndZoneAndWhitespace(
-        &mut self,
-        start: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ParseTimeAndZoneAndWhitespace",
-            (start),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Parse(
         &mut self,
         text: *mut quest_hook::libil2cpp::Il2CppArray<char>,
@@ -63,6 +44,30 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
             self,
             "Parse",
             (text, startIndex, length),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Parse2Digit(
+        &mut self,
+        start: i32,
+        num: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Parse2Digit",
+            (start, num),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Parse4Digit(
+        &mut self,
+        start: i32,
+        num: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Parse4Digit",
+            (start, num),
         )?;
         Ok(__cordl_ret)
     }
@@ -86,30 +91,6 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Parse4Digit(
-        &mut self,
-        start: i32,
-        num: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Parse4Digit",
-            (start, num),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Parse2Digit(
-        &mut self,
-        start: i32,
-        num: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Parse2Digit",
-            (start, num),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn ParseTime(
         &mut self,
         start: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -117,6 +98,25 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ParseTime",
+            (start),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ParseTimeAndZoneAndWhitespace(
+        &mut self,
+        start: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ParseTimeAndZoneAndWhitespace",
+            (start),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ParseZone(&mut self, start: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ParseZone",
             (start),
         )?;
         Ok(__cordl_ret)

@@ -24,19 +24,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IWrapper {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IWrapper")]
 impl crate::Org::BouncyCastle::Crypto::IWrapper {
-    pub fn Unwrap(
-        &mut self,
-        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        inOff: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("Unwrap", (input, inOff, length))?;
-        Ok(__cordl_ret)
-    }
     pub fn Init(
         &mut self,
         forWrapping: bool,
@@ -49,14 +36,17 @@ impl crate::Org::BouncyCastle::Crypto::IWrapper {
             .invoke("Init", (forWrapping, parameters))?;
         Ok(__cordl_ret)
     }
-    pub fn get_AlgorithmName(
+    pub fn Unwrap(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inOff: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_AlgorithmName", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("Unwrap", (input, inOff, length))?;
         Ok(__cordl_ret)
     }
     pub fn Wrap(
@@ -76,6 +66,16 @@ impl crate::Org::BouncyCastle::Crypto::IWrapper {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_AlgorithmName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_AlgorithmName", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IWrapper")]

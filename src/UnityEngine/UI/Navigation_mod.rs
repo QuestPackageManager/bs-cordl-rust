@@ -43,22 +43,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::UI::Navi
 impl crate::UnityEngine::UI::Navigation {
     #[cfg(feature = "UnityEngine+UI+Navigation+Mode")]
     pub type Mode = crate::UnityEngine::UI::Navigation_Mode;
-    pub fn set_selectOnLeft(
+    pub fn Equals(
         &mut self,
-        value: *mut crate::UnityEngine::UI::Selectable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_selectOnLeft",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_wrapAround(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        other: crate::UnityEngine::UI::Navigation,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_wrapAround",
-            (),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -68,6 +60,54 @@ impl crate::UnityEngine::UI::Navigation {
         let __cordl_ret: crate::UnityEngine::UI::Navigation_Mode = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_mode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_selectOnDown(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Selectable> {
+        let __cordl_ret: *mut crate::UnityEngine::UI::Selectable = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_selectOnDown",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_selectOnLeft(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Selectable> {
+        let __cordl_ret: *mut crate::UnityEngine::UI::Selectable = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_selectOnLeft",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_selectOnRight(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Selectable> {
+        let __cordl_ret: *mut crate::UnityEngine::UI::Selectable = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_selectOnRight",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_selectOnUp(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Selectable> {
+        let __cordl_ret: *mut crate::UnityEngine::UI::Selectable = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_selectOnUp",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_wrapAround(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_wrapAround",
             (),
         )?;
         Ok(__cordl_ret)
@@ -83,14 +123,25 @@ impl crate::UnityEngine::UI::Navigation {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals(
+    pub fn set_selectOnDown(
         &mut self,
-        other: crate::UnityEngine::UI::Navigation,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: *mut crate::UnityEngine::UI::Selectable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "set_selectOnDown",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_selectOnLeft(
+        &mut self,
+        value: *mut crate::UnityEngine::UI::Selectable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_selectOnLeft",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -116,26 +167,6 @@ impl crate::UnityEngine::UI::Navigation {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_selectOnDown(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Selectable> {
-        let __cordl_ret: *mut crate::UnityEngine::UI::Selectable = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_selectOnDown",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_selectOnUp(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Selectable> {
-        let __cordl_ret: *mut crate::UnityEngine::UI::Selectable = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_selectOnUp",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_wrapAround(
         &mut self,
         value: bool,
@@ -144,37 +175,6 @@ impl crate::UnityEngine::UI::Navigation {
             self,
             "set_wrapAround",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_selectOnRight(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Selectable> {
-        let __cordl_ret: *mut crate::UnityEngine::UI::Selectable = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_selectOnRight",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_selectOnDown(
-        &mut self,
-        value: *mut crate::UnityEngine::UI::Selectable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_selectOnDown",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_selectOnLeft(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Selectable> {
-        let __cordl_ret: *mut crate::UnityEngine::UI::Selectable = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_selectOnLeft",
-            (),
         )?;
         Ok(__cordl_ret)
     }

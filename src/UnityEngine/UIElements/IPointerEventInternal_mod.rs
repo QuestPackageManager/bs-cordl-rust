@@ -24,6 +24,28 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IPointerEventInterna
 }
 #[cfg(feature = "UnityEngine+UIElements+IPointerEventInternal")]
 impl crate::UnityEngine::UIElements::IPointerEventInternal {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_recomputeTopElementUnderPointer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_recomputeTopElementUnderPointer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_triggeredByOS(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_triggeredByOS", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_recomputeTopElementUnderPointer(
         &mut self,
         value: bool,
@@ -33,13 +55,6 @@ impl crate::UnityEngine::UIElements::IPointerEventInternal {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_recomputeTopElementUnderPointer", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_triggeredByOS(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_triggeredByOS", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_triggeredByOS(
@@ -52,21 +67,6 @@ impl crate::UnityEngine::UIElements::IPointerEventInternal {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_triggeredByOS", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_recomputeTopElementUnderPointer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_recomputeTopElementUnderPointer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IPointerEventInternal")]

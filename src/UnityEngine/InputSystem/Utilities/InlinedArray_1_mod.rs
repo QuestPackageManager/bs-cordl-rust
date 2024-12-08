@@ -27,18 +27,6 @@ for crate::UnityEngine::InputSystem::Utilities::InlinedArray_1_Enumerator<TValue
 impl<
     TValue: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::InputSystem::Utilities::InlinedArray_1_Enumerator<TValue> {
-    pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<TValue>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: TValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Current",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -91,6 +79,18 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<TValue>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Current",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+InlinedArray_1")]
 #[repr(C)]
@@ -126,9 +126,25 @@ impl<
     pub type Enumerator = crate::UnityEngine::InputSystem::Utilities::InlinedArray_1_Enumerator<
         TValue,
     >;
-    pub fn RemoveAtByMovingTailWithCapacity(
+    pub fn AppendWithCapacity(
         &mut self,
-        index: i32,
+        value: TValue,
+        capacityIncrement: i32,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AppendWithCapacity",
+            (value, capacityIncrement),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Append_IEnumerable_1_1(
+        &mut self,
+        values: *mut crate::System::Collections::Generic::IEnumerable_1<TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -136,8 +152,20 @@ impl<
     {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "RemoveAtByMovingTailWithCapacity",
-            (index),
+            "Append",
+            (values),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Append_TValue0(&mut self, value: TValue) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Append",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -156,6 +184,163 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
+    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Clear",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearWithCapacity(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ClearWithCapacity",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Clone(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue>,
+    >
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
+            TValue,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "Clone", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Contains(
+        &mut self,
+        value: TValue,
+        comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TValue>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Contains",
+            (value, comparer),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerator_1<TValue>,
+    >
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
+            TValue,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IndexOf(&mut self, value: TValue) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IndexOf",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Merge(
+        &mut self,
+        other: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Merge",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Remove(
+        &mut self,
+        value: TValue,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Remove",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveAt(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "RemoveAt",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveAtByMovingTailWithCapacity(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "RemoveAtByMovingTailWithCapacity",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveAtWithCapacity(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "RemoveAtWithCapacity",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn RemoveByMovingTailWithCapacity(
         &mut self,
         value: TValue,
@@ -168,6 +353,21 @@ impl<
             self,
             "RemoveByMovingTailWithCapacity",
             (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetLength(
+        &mut self,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetLength",
+            (_cordl_size),
         )?;
         Ok(__cordl_ret)
     }
@@ -216,43 +416,7 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Clear",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IndexOf(&mut self, value: TValue) -> quest_hook::libil2cpp::Result<i32>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IndexOf",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Append_TValue0(&mut self, value: TValue) -> quest_hook::libil2cpp::Result<i32>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Append",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Append_IEnumerable_1_1(
+    pub fn _ctor_IEnumerable_1_2(
         &mut self,
         values: *mut crate::System::Collections::Generic::IEnumerable_1<TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -262,115 +426,8 @@ impl<
     {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Append",
+            ".ctor",
             (values),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveAtWithCapacity(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "RemoveAtWithCapacity",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<TValue>,
-    >
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            TValue,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Merge(
-        &mut self,
-        other: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Merge",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetLength(
-        &mut self,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetLength",
-            (_cordl_size),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Contains(
-        &mut self,
-        value: TValue,
-        comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TValue>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Contains",
-            (value, comparer),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AppendWithCapacity(
-        &mut self,
-        value: TValue,
-        capacityIncrement: i32,
-    ) -> quest_hook::libil2cpp::Result<i32>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AppendWithCapacity",
-            (value, capacityIncrement),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Item(
-        &mut self,
-        index: i32,
-        value: TValue,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Item",
-            (index, value),
         )?;
         Ok(__cordl_ret)
     }
@@ -405,21 +462,6 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_IEnumerable_1_2(
-        &mut self,
-        values: *mut crate::System::Collections::Generic::IEnumerable_1<TValue>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (values),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Capacity(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -444,22 +486,9 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Clone(
+    pub fn set_Item(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue>,
-    >
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
-            TValue,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "Clone", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Remove(
-        &mut self,
+        index: i32,
         value: TValue,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -468,37 +497,8 @@ impl<
     {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Remove",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearWithCapacity(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ClearWithCapacity",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveAt(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "RemoveAt",
-            (index),
+            "set_Item",
+            (index, value),
         )?;
         Ok(__cordl_ret)
     }

@@ -25,14 +25,23 @@ for crate::System::Threading::CancellationTokenRegistration {
 }
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
 impl crate::System::Threading::CancellationTokenRegistration {
-    pub fn Equals_Object0(
+    pub fn Dispose(
         &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (obj),
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn DisposeAsync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
+        let __cordl_ret: crate::System::Threading::Tasks::ValueTask = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "DisposeAsync",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -47,12 +56,21 @@ impl crate::System::Threading::CancellationTokenRegistration {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn DisposeAsync(
+    pub fn Equals_Object0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
-        let __cordl_ret: crate::System::Threading::Tasks::ValueTask = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "DisposeAsync",
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)
@@ -76,24 +94,6 @@ impl crate::System::Threading::CancellationTokenRegistration {
             self,
             ".ctor",
             (callbackInfo, registrationInfo),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
         )?;
         Ok(__cordl_ret)
     }

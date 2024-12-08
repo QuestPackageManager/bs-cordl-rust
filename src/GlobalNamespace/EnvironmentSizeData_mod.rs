@@ -38,12 +38,19 @@ impl std::ops::DerefMut for EnvironmentSizeData {
 }
 #[cfg(feature = "EnvironmentSizeData")]
 impl EnvironmentSizeData {
-    #[cfg(feature = "EnvironmentSizeData+TrackLaneType")]
-    pub type TrackLaneType = crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType;
-    #[cfg(feature = "EnvironmentSizeData+CeilingType")]
-    pub type CeilingType = crate::GlobalNamespace::EnvironmentSizeData_CeilingType;
     #[cfg(feature = "EnvironmentSizeData+FloorType")]
     pub type FloorType = crate::GlobalNamespace::EnvironmentSizeData_FloorType;
+    #[cfg(feature = "EnvironmentSizeData+CeilingType")]
+    pub type CeilingType = crate::GlobalNamespace::EnvironmentSizeData_CeilingType;
+    #[cfg(feature = "EnvironmentSizeData+TrackLaneType")]
+    pub type TrackLaneType = crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -52,30 +59,6 @@ impl EnvironmentSizeData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_trackLaneType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType = __cordl_object
-            .invoke("get_trackLaneType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_floorType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::EnvironmentSizeData_FloorType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::EnvironmentSizeData_FloorType = __cordl_object
-            .invoke("get_floorType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ceilingType(
@@ -90,12 +73,29 @@ impl EnvironmentSizeData {
             .invoke("get_ceilingType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_floorType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::EnvironmentSizeData_FloorType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentSizeData_FloorType = __cordl_object
+            .invoke("get_floorType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_trackLaneType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType = __cordl_object
+            .invoke("get_trackLaneType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "EnvironmentSizeData")]

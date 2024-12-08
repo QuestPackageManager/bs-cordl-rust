@@ -30,25 +30,12 @@ impl std::ops::DerefMut for GameplayModifierToggle {
 }
 #[cfg(feature = "GameplayModifierToggle")]
 impl GameplayModifierToggle {
-    pub fn get_toggle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Toggle> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UI::Toggle = __cordl_object
-            .invoke("get_toggle", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_gameplayModifier(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifierParamsSO> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut GameplayModifierParamsSO = __cordl_object
-            .invoke("get_gameplayModifier", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Start(
         &mut self,
@@ -70,12 +57,25 @@ impl GameplayModifierToggle {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_gameplayModifier(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifierParamsSO> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut GameplayModifierParamsSO = __cordl_object
+            .invoke("get_gameplayModifier", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_toggle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Toggle> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UI::Toggle = __cordl_object
+            .invoke("get_toggle", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "GameplayModifierToggle")]

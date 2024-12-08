@@ -32,16 +32,14 @@ for crate::System::Security::Cryptography::X509Certificates::X509Store {
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Store")]
 impl crate::System::Security::Cryptography::X509Certificates::X509Store {
-    pub fn get_Certificates(
+    pub fn Close(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection = __cordl_object
-            .invoke("get_Certificates", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Close", ())?;
         Ok(__cordl_ret)
     }
     pub fn Dispose(
@@ -52,6 +50,51 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Store {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        storeName: crate::System::Security::Cryptography::X509Certificates::StoreName,
+        storeLocation: crate::System::Security::Cryptography::X509Certificates::StoreLocation,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (storeName, storeLocation))?;
+        Ok(__cordl_object)
+    }
+    pub fn Open(
+        &mut self,
+        flags: crate::System::Security::Cryptography::X509Certificates::OpenFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Open", (flags))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        storeName: crate::System::Security::Cryptography::X509Certificates::StoreName,
+        storeLocation: crate::System::Security::Cryptography::X509Certificates::StoreLocation,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (storeName, storeLocation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Certificates(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection = __cordl_object
+            .invoke("get_Certificates", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Factory(
@@ -73,49 +116,6 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Store {
         let __cordl_ret: *mut crate::Mono::Security::X509::X509Store = __cordl_object
             .invoke("get_Store", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        storeName: crate::System::Security::Cryptography::X509Certificates::StoreName,
-        storeLocation: crate::System::Security::Cryptography::X509Certificates::StoreLocation,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (storeName, storeLocation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Close(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Open(
-        &mut self,
-        flags: crate::System::Security::Cryptography::X509Certificates::OpenFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Open", (flags))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        storeName: crate::System::Security::Cryptography::X509Certificates::StoreName,
-        storeLocation: crate::System::Security::Cryptography::X509Certificates::StoreLocation,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (storeName, storeLocation))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Store")]

@@ -30,6 +30,32 @@ impl std::ops::DerefMut for BeatmapLevelPack {
 }
 #[cfg(feature = "BeatmapLevelPack")]
 impl BeatmapLevelPack {
+    pub fn New(
+        packID: *mut crate::System::String,
+        packName: *mut crate::System::String,
+        shortPackName: *mut crate::System::String,
+        coverImage: *mut crate::UnityEngine::Sprite,
+        smallCoverImage: *mut crate::UnityEngine::Sprite,
+        beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapLevel>,
+        contentRating: PlayerSensitivityFlag,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    packID,
+                    packName,
+                    shortPackName,
+                    coverImage,
+                    smallCoverImage,
+                    beatmapLevels,
+                    contentRating,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         packID: *mut crate::System::String,
@@ -57,32 +83,6 @@ impl BeatmapLevelPack {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        packID: *mut crate::System::String,
-        packName: *mut crate::System::String,
-        shortPackName: *mut crate::System::String,
-        coverImage: *mut crate::UnityEngine::Sprite,
-        smallCoverImage: *mut crate::UnityEngine::Sprite,
-        beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapLevel>,
-        contentRating: PlayerSensitivityFlag,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    packID,
-                    packName,
-                    shortPackName,
-                    coverImage,
-                    smallCoverImage,
-                    beatmapLevels,
-                    contentRating,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapLevelPack")]

@@ -36,28 +36,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
 impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
     #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaBuilder+__c__DisplayClass23_0")]
     pub type __c__DisplayClass23_0 = crate::Newtonsoft::Json::Schema::JsonSchemaBuilder___c__DisplayClass23_0;
-    pub fn ProcessSchemaProperties(
-        &mut self,
-        schemaObject: *mut crate::Newtonsoft::Json::Linq::JObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessSchemaProperties", (schemaObject))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessItems(
-        &mut self,
-        token: *mut crate::Newtonsoft::Json::Linq::JToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessItems", (token))?;
-        Ok(__cordl_ret)
-    }
     pub fn BuildSchema(
         &mut self,
         token: *mut crate::Newtonsoft::Json::Linq::JToken,
@@ -71,9 +49,17 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
             .invoke("BuildSchema", (token))?;
         Ok(__cordl_ret)
     }
-    pub fn ResolveReferences(
+    pub fn New(
+        resolver: *mut crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (resolver))?;
+        Ok(__cordl_object)
+    }
+    pub fn Pop(
         &mut self,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Schema::JsonSchema,
     > {
@@ -81,18 +67,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
             self,
         );
         let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchema = __cordl_object
-            .invoke("ResolveReferences", (schema))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessExtends(
-        &mut self,
-        token: *mut crate::Newtonsoft::Json::Linq::JToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessExtends", (token))?;
+            .invoke("Pop", ())?;
         Ok(__cordl_ret)
     }
     pub fn ProcessAdditionalItems(
@@ -117,16 +92,37 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
             .invoke("ProcessAdditionalProperties", (token))?;
         Ok(__cordl_ret)
     }
-    pub fn Pop(
+    pub fn ProcessEnum(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
-    > {
+        token: *mut crate::Newtonsoft::Json::Linq::JToken,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchema = __cordl_object
-            .invoke("Pop", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessEnum", (token))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessExtends(
+        &mut self,
+        token: *mut crate::Newtonsoft::Json::Linq::JToken,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessExtends", (token))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessItems(
+        &mut self,
+        token: *mut crate::Newtonsoft::Json::Linq::JToken,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessItems", (token))?;
         Ok(__cordl_ret)
     }
     pub fn ProcessProperties(
@@ -147,26 +143,15 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         > = __cordl_object.invoke("ProcessProperties", (token))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn ProcessSchemaProperties(
         &mut self,
-        resolver: *mut crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
+        schemaObject: *mut crate::Newtonsoft::Json::Linq::JObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (resolver))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Push(
-        &mut self,
-        value: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Push", (value))?;
+            .invoke("ProcessSchemaProperties", (schemaObject))?;
         Ok(__cordl_ret)
     }
     pub fn ProcessType(
@@ -183,38 +168,15 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         > = __cordl_object.invoke("ProcessType", (token))?;
         Ok(__cordl_ret)
     }
-    pub fn UnescapeReference(
+    pub fn Push(
         &mut self,
-        reference: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("UnescapeReference", (reference))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CurrentSchema(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchema = __cordl_object
-            .invoke("get_CurrentSchema", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessEnum(
-        &mut self,
-        token: *mut crate::Newtonsoft::Json::Linq::JToken,
+        value: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessEnum", (token))?;
+            .invoke("Push", (value))?;
         Ok(__cordl_ret)
     }
     pub fn Read(
@@ -230,14 +192,52 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
             .invoke("Read", (reader))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn ResolveReferences(
+        &mut self,
+        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchema = __cordl_object
+            .invoke("ResolveReferences", (schema))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnescapeReference(
+        &mut self,
+        reference: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("UnescapeReference", (reference))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
         resolver: *mut crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (resolver))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (resolver))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CurrentSchema(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchema = __cordl_object
+            .invoke("get_CurrentSchema", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaBuilder")]

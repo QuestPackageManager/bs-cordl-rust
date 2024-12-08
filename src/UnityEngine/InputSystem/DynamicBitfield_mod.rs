@@ -23,21 +23,13 @@ for crate::UnityEngine::InputSystem::DynamicBitfield {
 }
 #[cfg(feature = "UnityEngine+InputSystem+DynamicBitfield")]
 impl crate::UnityEngine::InputSystem::DynamicBitfield {
-    pub fn SetLength(
+    pub fn ClearBit(
         &mut self,
-        newLength: i32,
+        bitIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetLength",
-            (newLength),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TestBit(&mut self, bitIndex: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "TestBit",
+            "ClearBit",
             (bitIndex),
         )?;
         Ok(__cordl_ret)
@@ -53,13 +45,21 @@ impl crate::UnityEngine::InputSystem::DynamicBitfield {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ClearBit(
+    pub fn SetLength(
         &mut self,
-        bitIndex: i32,
+        newLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ClearBit",
+            "SetLength",
+            (newLength),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn TestBit(&mut self, bitIndex: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "TestBit",
             (bitIndex),
         )?;
         Ok(__cordl_ret)

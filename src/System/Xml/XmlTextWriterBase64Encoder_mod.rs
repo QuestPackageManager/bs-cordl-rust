@@ -25,16 +25,14 @@ impl std::ops::DerefMut for crate::System::Xml::XmlTextWriterBase64Encoder {
 }
 #[cfg(feature = "System+Xml+XmlTextWriterBase64Encoder")]
 impl crate::System::Xml::XmlTextWriterBase64Encoder {
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         xmlTextEncoder: *mut crate::System::Xml::XmlTextEncoder,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (xmlTextEncoder))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (xmlTextEncoder))?;
+        Ok(__cordl_object)
     }
     pub fn WriteChars(
         &mut self,
@@ -49,14 +47,16 @@ impl crate::System::Xml::XmlTextWriterBase64Encoder {
             .invoke("WriteChars", (chars, index, count))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         xmlTextEncoder: *mut crate::System::Xml::XmlTextEncoder,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (xmlTextEncoder))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (xmlTextEncoder))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+XmlTextWriterBase64Encoder")]

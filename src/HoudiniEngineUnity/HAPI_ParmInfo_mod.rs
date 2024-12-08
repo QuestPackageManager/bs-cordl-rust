@@ -63,22 +63,6 @@ for crate::HoudiniEngineUnity::HAPI_ParmInfo {
 }
 #[cfg(feature = "HoudiniEngineUnity+HAPI_ParmInfo")]
 impl crate::HoudiniEngineUnity::HAPI_ParmInfo {
-    pub fn isString(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "isString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn isInt(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "isInt",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn isFloat(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -87,10 +71,10 @@ impl crate::HoudiniEngineUnity::HAPI_ParmInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn isPath(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn isInt(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "isPath",
+            "isInt",
             (),
         )?;
         Ok(__cordl_ret)
@@ -107,6 +91,22 @@ impl crate::HoudiniEngineUnity::HAPI_ParmInfo {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "isNonValue",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn isPath(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "isPath",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn isString(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "isString",
             (),
         )?;
         Ok(__cordl_ret)

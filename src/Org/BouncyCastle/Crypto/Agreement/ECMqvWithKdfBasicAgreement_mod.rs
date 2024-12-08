@@ -29,16 +29,15 @@ for crate::Org::BouncyCastle::Crypto::Agreement::ECMqvWithKdfBasicAgreement {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+ECMqvWithKdfBasicAgreement")]
 impl crate::Org::BouncyCastle::Crypto::Agreement::ECMqvWithKdfBasicAgreement {
-    pub fn _ctor(
+    pub fn BigIntToBytes(
         &mut self,
-        algorithm: *mut crate::System::String,
-        kdf: *mut crate::Org::BouncyCastle::Crypto::IDerivationFunction,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        r: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (algorithm, kdf))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("BigIntToBytes", (r))?;
         Ok(__cordl_ret)
     }
     pub fn CalculateAgreement(
@@ -52,26 +51,27 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::ECMqvWithKdfBasicAgreement {
             .invoke("CalculateAgreement", (pubKey))?;
         Ok(__cordl_ret)
     }
-    pub fn BigIntToBytes(
-        &mut self,
-        r: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("BigIntToBytes", (r))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         algorithm: *mut crate::System::String,
         kdf: *mut crate::Org::BouncyCastle::Crypto::IDerivationFunction,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (algorithm, kdf))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        algorithm: *mut crate::System::String,
+        kdf: *mut crate::Org::BouncyCastle::Crypto::IDerivationFunction,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (algorithm, kdf))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+ECMqvWithKdfBasicAgreement")]

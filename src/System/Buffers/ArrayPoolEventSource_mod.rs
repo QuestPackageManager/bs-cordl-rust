@@ -26,16 +26,22 @@ impl std::ops::DerefMut for crate::System::Buffers::ArrayPoolEventSource {
 impl crate::System::Buffers::ArrayPoolEventSource {
     #[cfg(feature = "System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
     pub type BufferAllocatedReason = crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason;
-    pub fn BufferTrimPoll(
+    pub fn BufferAllocated(
         &mut self,
-        milliseconds: i32,
-        pressure: i32,
+        bufferId: i32,
+        bufferSize: i32,
+        poolId: i32,
+        bucketId: i32,
+        reason: crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BufferTrimPoll", (milliseconds, pressure))?;
+            .invoke(
+                "BufferAllocated",
+                (bufferId, bufferSize, poolId, bucketId, reason),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn BufferRented(
@@ -65,14 +71,16 @@ impl crate::System::Buffers::ArrayPoolEventSource {
             .invoke("BufferReturned", (bufferId, bufferSize, poolId))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn BufferTrimPoll(
         &mut self,
+        milliseconds: i32,
+        pressure: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("BufferTrimPoll", (milliseconds, pressure))?;
         Ok(__cordl_ret)
     }
     pub fn BufferTrimmed(
@@ -88,30 +96,22 @@ impl crate::System::Buffers::ArrayPoolEventSource {
             .invoke("BufferTrimmed", (bufferId, bufferSize, poolId))?;
         Ok(__cordl_ret)
     }
-    pub fn BufferAllocated(
-        &mut self,
-        bufferId: i32,
-        bufferSize: i32,
-        poolId: i32,
-        bucketId: i32,
-        reason: crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "BufferAllocated",
-                (bufferId, bufferSize, poolId, bucketId, reason),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Buffers+ArrayPoolEventSource")]

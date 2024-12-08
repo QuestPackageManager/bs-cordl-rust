@@ -24,16 +24,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::ISignatureFactory 
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+ISignatureFactory")]
 impl crate::Org::BouncyCastle::Crypto::ISignatureFactory {
-    pub fn get_AlgorithmDetails(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_AlgorithmDetails", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateCalculator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -50,6 +40,16 @@ impl crate::Org::BouncyCastle::Crypto::ISignatureFactory {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_AlgorithmDetails(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_AlgorithmDetails", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+ISignatureFactory")]

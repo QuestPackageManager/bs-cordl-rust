@@ -27,16 +27,33 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback")]
 impl crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback {
-    pub fn _ctor(
+    pub fn BeginInvoke(
         &mut self,
+        r: crate::UnityEngine::Ray,
+        f: f32,
+        i: i32,
+        callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (r, f, i, callback, object))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::RaycastHit2D,
+        > = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -55,44 +72,27 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallbac
         > = __cordl_object.invoke("Invoke", (r, f, i))?;
         Ok(__cordl_ret)
     }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::RaycastHit2D,
-        > = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn BeginInvoke(
-        &mut self,
-        r: crate::UnityEngine::Ray,
-        f: f32,
-        i: i32,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (r, f, i, callback, object))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback")]
@@ -144,33 +144,6 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAlloc
     feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
 )]
 impl crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback {
-    pub fn Invoke(
-        &mut self,
-        r: crate::UnityEngine::Ray,
-        results: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::RaycastHit2D,
-        >,
-        f: f32,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Invoke", (r, results, f, i))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         r: crate::UnityEngine::Ray,
@@ -199,15 +172,42 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAllo
         let __cordl_ret: i32 = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        r: crate::UnityEngine::Ray,
+        results: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::RaycastHit2D,
+        >,
+        f: f32,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Invoke", (r, results, f, i))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -251,31 +251,6 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback {
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback")]
 impl crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback {
-    pub fn Invoke(
-        &mut self,
-        r: crate::UnityEngine::Ray,
-        results: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
-        f: f32,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Invoke", (r, results, f, i))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         r: crate::UnityEngine::Ray,
@@ -302,15 +277,40 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback {
         let __cordl_ret: i32 = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        r: crate::UnityEngine::Ray,
+        results: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+        f: f32,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Invoke", (r, results, f, i))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback")]
@@ -352,32 +352,6 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback {
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
 impl crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        p1: crate::UnityEngine::Vector2,
-        p2: crate::UnityEngine::Vector2,
-        f: f32,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RaycastHit2D> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::RaycastHit2D = __cordl_object
-            .invoke("Invoke", (p1, p2, f, i))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         p1: crate::UnityEngine::Vector2,
@@ -405,15 +379,41 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        p1: crate::UnityEngine::Vector2,
+        p2: crate::UnityEngine::Vector2,
+        f: f32,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RaycastHit2D> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::RaycastHit2D = __cordl_object
+            .invoke("Invoke", (p1, p2, f, i))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
@@ -455,29 +455,6 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
 impl crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        hit: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (hit, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         r: crate::UnityEngine::Ray,
@@ -492,6 +469,17 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
         );
         let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
             .invoke("BeginInvoke", (r, hit, f, i, callback, object))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndInvoke(
+        &mut self,
+        hit: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (hit, result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -510,12 +498,24 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
@@ -586,18 +586,6 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback {
         > = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         r: crate::UnityEngine::Ray,
@@ -617,12 +605,24 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
@@ -669,20 +669,27 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::ReflectionMethodsCache {
 impl crate::UnityEngine::UI::ReflectionMethodsCache {
     #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
     pub type RaycastAllCallback = crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback;
-    #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
-    pub type Raycast3DCallback = crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback;
-    #[cfg(
-        feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback"
-    )]
-    pub type GetRayIntersectionAllCallback = crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback;
     #[cfg(
         feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
     )]
     pub type GetRayIntersectionAllNonAllocCallback = crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback;
     #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback")]
     pub type GetRaycastNonAllocCallback = crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback;
+    #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
+    pub type Raycast3DCallback = crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback;
     #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
     pub type Raycast2DCallback = crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback;
+    #[cfg(
+        feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback"
+    )]
+    pub type GetRayIntersectionAllCallback = crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -692,13 +699,6 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache")]

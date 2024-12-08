@@ -48,21 +48,10 @@ impl std::ops::DerefMut for LevelCompletionResults {
 }
 #[cfg(feature = "LevelCompletionResults")]
 impl LevelCompletionResults {
-    #[cfg(feature = "LevelCompletionResults+LevelEndStateType")]
-    pub type LevelEndStateType = crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType;
     #[cfg(feature = "LevelCompletionResults+LevelEndAction")]
     pub type LevelEndAction = crate::GlobalNamespace::LevelCompletionResults_LevelEndAction;
-    pub fn Serialize(
-        &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Serialize", (writer))?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "LevelCompletionResults+LevelEndStateType")]
+    pub type LevelEndStateType = crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType;
     pub fn CompareTo(
         &mut self,
         obj: *mut crate::System::Object,
@@ -85,6 +74,86 @@ impl LevelCompletionResults {
                 "LiteNetLib.Utils.INetImmutableSerializable<LevelCompletionResults>.CreateFromSerializedData",
                 (reader),
             )?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_GameplayModifiers_i32_i32_RankModel_Rank__cordl_bool_f32_f32_f32_f32_LevelCompletionResults_LevelEndStateType_LevelCompletionResults_LevelEndAction_f32_i32_i32_i32_i32_i32_i32_i32_i32_f32_f32_i32_f32__cordl_bool1(
+        gameplayModifiers: *mut GameplayModifiers,
+        modifiedScore: i32,
+        multipliedScore: i32,
+        rank: crate::GlobalNamespace::RankModel_Rank,
+        fullCombo: bool,
+        leftSaberMovementDistance: f32,
+        rightSaberMovementDistance: f32,
+        leftHandMovementDistance: f32,
+        rightHandMovementDistance: f32,
+        levelEndStateType: crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,
+        levelEndAction: crate::GlobalNamespace::LevelCompletionResults_LevelEndAction,
+        energy: f32,
+        goodCutsCount: i32,
+        badCutsCount: i32,
+        missedCount: i32,
+        notGoodCount: i32,
+        okCount: i32,
+        maxCutScore: i32,
+        totalCutScore: i32,
+        goodCutsCountForNotesWithFullScoreScoringType: i32,
+        averageCenterDistanceCutScoreForNotesWithFullScoreScoringType: f32,
+        averageCutScoreForNotesWithFullScoreScoringType: f32,
+        maxCombo: i32,
+        endSongTime: f32,
+        invalidated: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    gameplayModifiers,
+                    modifiedScore,
+                    multipliedScore,
+                    rank,
+                    fullCombo,
+                    leftSaberMovementDistance,
+                    rightSaberMovementDistance,
+                    leftHandMovementDistance,
+                    rightHandMovementDistance,
+                    levelEndStateType,
+                    levelEndAction,
+                    energy,
+                    goodCutsCount,
+                    badCutsCount,
+                    missedCount,
+                    notGoodCount,
+                    okCount,
+                    maxCutScore,
+                    totalCutScore,
+                    goodCutsCountForNotesWithFullScoreScoringType,
+                    averageCenterDistanceCutScoreForNotesWithFullScoreScoringType,
+                    averageCutScoreForNotesWithFullScoreScoringType,
+                    maxCombo,
+                    endSongTime,
+                    invalidated,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn Serialize(
+        &mut self,
+        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Serialize", (writer))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -160,75 +229,6 @@ impl LevelCompletionResults {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_GameplayModifiers_i32_i32_RankModel_Rank__cordl_bool_f32_f32_f32_f32_LevelCompletionResults_LevelEndStateType_LevelCompletionResults_LevelEndAction_f32_i32_i32_i32_i32_i32_i32_i32_i32_f32_f32_i32_f32__cordl_bool1(
-        gameplayModifiers: *mut GameplayModifiers,
-        modifiedScore: i32,
-        multipliedScore: i32,
-        rank: crate::GlobalNamespace::RankModel_Rank,
-        fullCombo: bool,
-        leftSaberMovementDistance: f32,
-        rightSaberMovementDistance: f32,
-        leftHandMovementDistance: f32,
-        rightHandMovementDistance: f32,
-        levelEndStateType: crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,
-        levelEndAction: crate::GlobalNamespace::LevelCompletionResults_LevelEndAction,
-        energy: f32,
-        goodCutsCount: i32,
-        badCutsCount: i32,
-        missedCount: i32,
-        notGoodCount: i32,
-        okCount: i32,
-        maxCutScore: i32,
-        totalCutScore: i32,
-        goodCutsCountForNotesWithFullScoreScoringType: i32,
-        averageCenterDistanceCutScoreForNotesWithFullScoreScoringType: f32,
-        averageCutScoreForNotesWithFullScoreScoringType: f32,
-        maxCombo: i32,
-        endSongTime: f32,
-        invalidated: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    gameplayModifiers,
-                    modifiedScore,
-                    multipliedScore,
-                    rank,
-                    fullCombo,
-                    leftSaberMovementDistance,
-                    rightSaberMovementDistance,
-                    leftHandMovementDistance,
-                    rightHandMovementDistance,
-                    levelEndStateType,
-                    levelEndAction,
-                    energy,
-                    goodCutsCount,
-                    badCutsCount,
-                    missedCount,
-                    notGoodCount,
-                    okCount,
-                    maxCutScore,
-                    totalCutScore,
-                    goodCutsCountForNotesWithFullScoreScoringType,
-                    averageCenterDistanceCutScoreForNotesWithFullScoreScoringType,
-                    averageCutScoreForNotesWithFullScoreScoringType,
-                    maxCombo,
-                    endSongTime,
-                    invalidated,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LevelCompletionResults")]

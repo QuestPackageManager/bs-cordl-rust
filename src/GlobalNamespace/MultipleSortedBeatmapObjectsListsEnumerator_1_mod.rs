@@ -42,6 +42,43 @@ impl<
 > crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1_BeatmapObjectListNode<
     T,
 > {
+    pub fn MoveToNextItem(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("MoveToNextItem", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        dataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<T>,
+        typeId: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dataList, typeId))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        dataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<T>,
+        typeId: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (dataList, typeId))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_typeId(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -63,43 +100,6 @@ impl<
         );
         let __cordl_ret: T = __cordl_object.invoke("get_value", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        dataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        typeId: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dataList, typeId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveToNextItem(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveToNextItem", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        dataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        typeId: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dataList, typeId))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MultipleSortedBeatmapObjectsListsEnumerator_1+BeatmapObjectListNode")]
@@ -150,50 +150,16 @@ for MultipleSortedBeatmapObjectsListsEnumerator_1<T> {
 }
 #[cfg(feature = "MultipleSortedBeatmapObjectsListsEnumerator_1")]
 impl<T: quest_hook::libil2cpp::Type> MultipleSortedBeatmapObjectsListsEnumerator_1<T> {
-    #[cfg(feature = "MultipleSortedBeatmapObjectsListsEnumerator_1+_GetEnumerator_d__4")]
-    pub type _GetEnumerator_d__4 = crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1__GetEnumerator_d__4<
-        T,
-    >;
     #[cfg(
         feature = "MultipleSortedBeatmapObjectsListsEnumerator_1+BeatmapObjectListNode"
     )]
     pub type BeatmapObjectListNode = crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1_BeatmapObjectListNode<
         T,
     >;
-    pub fn _ctor(
-        &mut self,
-        dataList: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::ValueTuple_2<
-                *mut crate::System::Collections::Generic::IReadOnlyList_1<T>,
-                i32,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dataList))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerable_GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "MultipleSortedBeatmapObjectsListsEnumerator_1+_GetEnumerator_d__4")]
+    pub type _GetEnumerator_d__4 = crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1__GetEnumerator_d__4<
+        T,
+    >;
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -220,12 +186,46 @@ impl<T: quest_hook::libil2cpp::Type> MultipleSortedBeatmapObjectsListsEnumerator
                 i32,
             >,
         >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (dataList))?;
         Ok(__cordl_object)
+    }
+    pub fn System_Collections_IEnumerable_GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        dataList: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::System::ValueTuple_2<
+                *mut crate::System::Collections::Generic::IReadOnlyList_1<T>,
+                i32,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (dataList))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MultipleSortedBeatmapObjectsListsEnumerator_1")]

@@ -29,18 +29,6 @@ for crate::System::Runtime::Remoting::Messaging::ClientContextReplySink {
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+ClientContextReplySink")]
 impl crate::System::Runtime::Remoting::Messaging::ClientContextReplySink {
-    pub fn _ctor(
-        &mut self,
-        ctx: *mut crate::System::Runtime::Remoting::Contexts::Context,
-        replySink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (ctx, replySink))?;
-        Ok(__cordl_ret)
-    }
     pub fn AsyncProcessMessage(
         &mut self,
         msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
@@ -55,6 +43,16 @@ impl crate::System::Runtime::Remoting::Messaging::ClientContextReplySink {
             .invoke("AsyncProcessMessage", (msg, replySink))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        ctx: *mut crate::System::Runtime::Remoting::Contexts::Context,
+        replySink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ctx, replySink))?;
+        Ok(__cordl_object)
+    }
     pub fn SyncProcessMessage(
         &mut self,
         msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
@@ -68,15 +66,17 @@ impl crate::System::Runtime::Remoting::Messaging::ClientContextReplySink {
             .invoke("SyncProcessMessage", (msg))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         ctx: *mut crate::System::Runtime::Remoting::Contexts::Context,
         replySink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ctx, replySink))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (ctx, replySink))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+ClientContextReplySink")]

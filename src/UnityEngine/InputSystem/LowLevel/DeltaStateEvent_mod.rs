@@ -61,6 +61,18 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent {
         feature = "UnityEngine+InputSystem+LowLevel+DeltaStateEvent+_stateData_e__FixedBuffer"
     )]
     pub type _stateData_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent__stateData_e__FixedBuffer;
+    pub fn ToEventPtr(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToEventPtr",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_deltaState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
@@ -87,18 +99,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_typeStatic",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToEventPtr(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToEventPtr",
             (),
         )?;
         Ok(__cordl_ret)

@@ -89,115 +89,59 @@ impl std::ops::DerefMut for crate::UnityEngine::EventSystems::PointerEventData {
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerEventData")]
 impl crate::UnityEngine::EventSystems::PointerEventData {
-    #[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
-    pub type InputButton = crate::UnityEngine::EventSystems::PointerEventData_InputButton;
     #[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
     pub type FramePressState = crate::UnityEngine::EventSystems::PointerEventData_FramePressState;
-    pub fn get_displayIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    #[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
+    pub type InputButton = crate::UnityEngine::EventSystems::PointerEventData_InputButton;
+    pub fn IsPointerMoving(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_displayIndex", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("IsPointerMoving", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_delta(
+    pub fn IsScrolling(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsScrolling", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        eventSystem: *mut crate::UnityEngine::EventSystems::EventSystem,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (eventSystem))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToString(
         &mut self,
-        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        eventSystem: *mut crate::UnityEngine::EventSystems::EventSystem,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_delta", (value))?;
+            .invoke(".ctor", (eventSystem))?;
         Ok(__cordl_ret)
     }
-    pub fn set_scrollDelta(
-        &mut self,
-        value: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_altitudeAngle(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_scrollDelta", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_clickCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_clickCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_altitudeAngle(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_altitudeAngle", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_radius(
-        &mut self,
-        value: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_radius", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_eligibleForClick(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_eligibleForClick", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_radiusVariance(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_radiusVariance", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_rawPointerPress(
-        &mut self,
-        value: *mut crate::UnityEngine::GameObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_rawPointerPress", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_position(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_position", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_pointerDrag(
-        &mut self,
-        value: *mut crate::UnityEngine::GameObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_pointerDrag", (value))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_altitudeAngle", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_azimuthAngle(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -207,25 +151,47 @@ impl crate::UnityEngine::EventSystems::PointerEventData {
         let __cordl_ret: f32 = __cordl_object.invoke("get_azimuthAngle", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_fullyExited(
+    pub fn get_button(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::EventSystems::PointerEventData_InputButton,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_fullyExited", (value))?;
+        let __cordl_ret: crate::UnityEngine::EventSystems::PointerEventData_InputButton = __cordl_object
+            .invoke("get_button", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_pointerClick(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+    pub fn get_clickCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("get_pointerClick", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_clickCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_clickTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_clickTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_delta(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_delta", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_displayIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_displayIndex", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_dragging(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -235,64 +201,21 @@ impl crate::UnityEngine::EventSystems::PointerEventData {
         let __cordl_ret: bool = __cordl_object.invoke("get_dragging", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_pressure(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_eligibleForClick(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_pressure", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_eligibleForClick", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_tilt(
+    pub fn get_enterEventCamera(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Camera> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_tilt", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_pointerId(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_pointerId", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_pointerPressRaycast(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EventSystems::RaycastResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::EventSystems::RaycastResult = __cordl_object
-            .invoke("get_pointerPressRaycast", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_useDragThreshold(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_useDragThreshold", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_tilt(
-        &mut self,
-        value: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_tilt", (value))?;
+        let __cordl_ret: *mut crate::UnityEngine::Camera = __cordl_object
+            .invoke("get_enterEventCamera", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_fullyExited(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -300,6 +223,16 @@ impl crate::UnityEngine::EventSystems::PointerEventData {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_fullyExited", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_lastPress(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("get_lastPress", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_penStatus(
@@ -312,6 +245,26 @@ impl crate::UnityEngine::EventSystems::PointerEventData {
             .invoke("get_penStatus", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_pointerClick(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("get_pointerClick", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_pointerCurrentRaycast(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EventSystems::RaycastResult> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::EventSystems::RaycastResult = __cordl_object
+            .invoke("get_pointerCurrentRaycast", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_pointerDrag(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
@@ -320,27 +273,6 @@ impl crate::UnityEngine::EventSystems::PointerEventData {
         );
         let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
             .invoke("get_pointerDrag", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_displayIndex(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_displayIndex", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_enterEventCamera(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Camera> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Camera = __cordl_object
-            .invoke("get_enterEventCamera", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_pointerEnter(
@@ -360,112 +292,34 @@ impl crate::UnityEngine::EventSystems::PointerEventData {
         let __cordl_ret: i32 = __cordl_object.invoke("get_pointerId", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_penStatus(
+    pub fn get_pointerPress(
         &mut self,
-        value: crate::UnityEngine::PenStatus,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_penStatus", (value))?;
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("get_pointerPress", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_pointerEnter(
+    pub fn get_pointerPressRaycast(
         &mut self,
-        value: *mut crate::UnityEngine::GameObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EventSystems::RaycastResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_pointerEnter", (value))?;
+        let __cordl_ret: crate::UnityEngine::EventSystems::RaycastResult = __cordl_object
+            .invoke("get_pointerPressRaycast", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_worldNormal(
+    pub fn get_position(
         &mut self,
-        value: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_worldNormal", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_clickTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_clickTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_dragging(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_dragging", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_position(
-        &mut self,
-        value: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_position", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_tangentialPressure(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_tangentialPressure", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_reentered(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_reentered", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_useDragThreshold(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_useDragThreshold", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_clickTime(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_clickTime", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_position", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_pressEventCamera(
@@ -478,15 +332,14 @@ impl crate::UnityEngine::EventSystems::PointerEventData {
             .invoke("get_pressEventCamera", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_pointerPressRaycast(
+    pub fn get_pressPosition(
         &mut self,
-        value: crate::UnityEngine::EventSystems::RaycastResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_pointerPressRaycast", (value))?;
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_pressPosition", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_pressure(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -496,35 +349,24 @@ impl crate::UnityEngine::EventSystems::PointerEventData {
         let __cordl_ret: f32 = __cordl_object.invoke("get_pressure", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_twist(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_twist", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_lastPress(
+    pub fn get_radius(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("get_lastPress", ())?;
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_radius", ())?;
         Ok(__cordl_ret)
     }
-    pub fn IsPointerMoving(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_radiusVariance(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("IsPointerMoving", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsScrolling(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsScrolling", ())?;
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_radiusVariance", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_rawPointerPress(
@@ -537,26 +379,52 @@ impl crate::UnityEngine::EventSystems::PointerEventData {
             .invoke("get_rawPointerPress", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_pointerClick(
-        &mut self,
-        value: *mut crate::UnityEngine::GameObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_reentered(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_pointerClick", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_reentered", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_button(
+    pub fn get_scrollDelta(
         &mut self,
-        value: crate::UnityEngine::EventSystems::PointerEventData_InputButton,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_button", (value))?;
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_scrollDelta", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_tangentialPressure(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_tangentialPressure", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_tilt(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_tilt", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_twist(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_twist", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_useDragThreshold(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_useDragThreshold", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_worldNormal(
@@ -569,116 +437,17 @@ impl crate::UnityEngine::EventSystems::PointerEventData {
             .invoke("get_worldNormal", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_pointerPress(
+    pub fn get_worldPosition(
         &mut self,
-        value: *mut crate::UnityEngine::GameObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_pointerPress", (value))?;
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_worldPosition", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_clickCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_clickCount", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_reentered(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_reentered", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_lastPress(
-        &mut self,
-        value: *mut crate::UnityEngine::GameObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_lastPress", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_worldPosition(
-        &mut self,
-        value: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_worldPosition", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        eventSystem: *mut crate::UnityEngine::EventSystems::EventSystem,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (eventSystem))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_pointerPress(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("get_pointerPress", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_pressPosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_pressPosition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_button(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::EventSystems::PointerEventData_InputButton,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::EventSystems::PointerEventData_InputButton = __cordl_object
-            .invoke("get_button", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_pointerCurrentRaycast(
-        &mut self,
-        value: crate::UnityEngine::EventSystems::RaycastResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_pointerCurrentRaycast", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_twist(
+    pub fn set_altitudeAngle(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -686,46 +455,7 @@ impl crate::UnityEngine::EventSystems::PointerEventData {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_twist", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_radiusVariance(
-        &mut self,
-        value: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_radiusVariance", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_altitudeAngle(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_altitudeAngle", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_pointerCurrentRaycast(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EventSystems::RaycastResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::EventSystems::RaycastResult = __cordl_object
-            .invoke("get_pointerCurrentRaycast", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_tangentialPressure(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_tangentialPressure", (value))?;
+            .invoke("set_altitudeAngle", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_azimuthAngle(
@@ -739,14 +469,70 @@ impl crate::UnityEngine::EventSystems::PointerEventData {
             .invoke("set_azimuthAngle", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_worldPosition(
+    pub fn set_button(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        value: crate::UnityEngine::EventSystems::PointerEventData_InputButton,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_worldPosition", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_button", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_clickCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_clickCount", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_clickTime(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_clickTime", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_delta(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_delta", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_displayIndex(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_displayIndex", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_dragging(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_dragging", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_eligibleForClick(
@@ -760,14 +546,125 @@ impl crate::UnityEngine::EventSystems::PointerEventData {
             .invoke("set_eligibleForClick", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_scrollDelta(
+    pub fn set_fullyExited(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_scrollDelta", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_fullyExited", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_lastPress(
+        &mut self,
+        value: *mut crate::UnityEngine::GameObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_lastPress", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_penStatus(
+        &mut self,
+        value: crate::UnityEngine::PenStatus,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_penStatus", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_pointerClick(
+        &mut self,
+        value: *mut crate::UnityEngine::GameObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_pointerClick", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_pointerCurrentRaycast(
+        &mut self,
+        value: crate::UnityEngine::EventSystems::RaycastResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_pointerCurrentRaycast", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_pointerDrag(
+        &mut self,
+        value: *mut crate::UnityEngine::GameObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_pointerDrag", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_pointerEnter(
+        &mut self,
+        value: *mut crate::UnityEngine::GameObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_pointerEnter", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_pointerId(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_pointerId", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_pointerPress(
+        &mut self,
+        value: *mut crate::UnityEngine::GameObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_pointerPress", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_pointerPressRaycast(
+        &mut self,
+        value: crate::UnityEngine::EventSystems::RaycastResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_pointerPressRaycast", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_position(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_position", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_pressPosition(
@@ -781,34 +678,137 @@ impl crate::UnityEngine::EventSystems::PointerEventData {
             .invoke("set_pressPosition", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_delta(
+    pub fn set_pressure(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_delta", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_pressure", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_radius(
+    pub fn set_radius(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_radius", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_radius", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        eventSystem: *mut crate::UnityEngine::EventSystems::EventSystem,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (eventSystem))?;
-        Ok(__cordl_object)
+    pub fn set_radiusVariance(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_radiusVariance", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_rawPointerPress(
+        &mut self,
+        value: *mut crate::UnityEngine::GameObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_rawPointerPress", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_reentered(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_reentered", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_scrollDelta(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_scrollDelta", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_tangentialPressure(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_tangentialPressure", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_tilt(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_tilt", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_twist(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_twist", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_useDragThreshold(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_useDragThreshold", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_worldNormal(
+        &mut self,
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_worldNormal", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_worldPosition(
+        &mut self,
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_worldPosition", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerEventData")]

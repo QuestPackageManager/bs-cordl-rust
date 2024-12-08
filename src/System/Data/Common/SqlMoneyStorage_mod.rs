@@ -27,49 +27,16 @@ impl std::ops::DerefMut for crate::System::Data::Common::SqlMoneyStorage {
 }
 #[cfg(feature = "System+Data+Common+SqlMoneyStorage")]
 impl crate::System::Data::Common::SqlMoneyStorage {
-    pub fn ConvertValue(
+    pub fn Aggregate(
         &mut self,
-        value: *mut crate::System::Object,
+        records: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        kind: crate::System::Data::AggregateType,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("ConvertValue", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Set(
-        &mut self,
-        record: i32,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Set", (record, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetCapacity(
-        &mut self,
-        capacity: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCapacity", (capacity))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEmptyStorage(
-        &mut self,
-        recordCount: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetEmptyStorage", (recordCount))?;
+            .invoke("Aggregate", (records, kind))?;
         Ok(__cordl_ret)
     }
     pub fn Compare(
@@ -106,18 +73,26 @@ impl crate::System::Data::Common::SqlMoneyStorage {
             .invoke("ConvertObjectToXml", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn CopyValue(
+    pub fn ConvertValue(
         &mut self,
-        record: i32,
-        store: *mut crate::System::Object,
-        nullbits: *mut crate::System::Collections::BitArray,
-        storeIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CopyValue", (record, store, nullbits, storeIndex))?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("ConvertValue", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ConvertXmlToObject(
+        &mut self,
+        s: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("ConvertXmlToObject", (s))?;
         Ok(__cordl_ret)
     }
     pub fn Copy(
@@ -132,16 +107,79 @@ impl crate::System::Data::Common::SqlMoneyStorage {
             .invoke("Copy", (recordNo1, recordNo2))?;
         Ok(__cordl_ret)
     }
-    pub fn Aggregate(
+    pub fn CopyValue(
         &mut self,
-        records: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        kind: crate::System::Data::AggregateType,
+        record: i32,
+        store: *mut crate::System::Object,
+        nullbits: *mut crate::System::Collections::BitArray,
+        storeIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CopyValue", (record, store, nullbits, storeIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Get(
+        &mut self,
+        record: i32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("Aggregate", (records, kind))?;
+            .invoke("Get", (record))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEmptyStorage(
+        &mut self,
+        recordCount: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("GetEmptyStorage", (recordCount))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsNull(&mut self, record: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsNull", (record))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        column: *mut crate::System::Data::DataColumn,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (column))?;
+        Ok(__cordl_object)
+    }
+    pub fn Set(
+        &mut self,
+        record: i32,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Set", (record, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetCapacity(
+        &mut self,
+        capacity: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetCapacity", (capacity))?;
         Ok(__cordl_ret)
     }
     pub fn SetStorage(
@@ -166,44 +204,6 @@ impl crate::System::Data::Common::SqlMoneyStorage {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (column))?;
         Ok(__cordl_ret)
-    }
-    pub fn Get(
-        &mut self,
-        record: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("Get", (record))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConvertXmlToObject(
-        &mut self,
-        s: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("ConvertXmlToObject", (s))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsNull(&mut self, record: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsNull", (record))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        column: *mut crate::System::Data::DataColumn,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (column))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Data+Common+SqlMoneyStorage")]

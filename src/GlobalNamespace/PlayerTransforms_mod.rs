@@ -39,6 +39,26 @@ impl std::ops::DerefMut for PlayerTransforms {
 }
 #[cfg(feature = "PlayerTransforms")]
 impl PlayerTransforms {
+    pub fn Awake(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Awake", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearHeadPositionOverride(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearHeadPositionOverride", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetZPos(
         &mut self,
         start: f32,
@@ -66,6 +86,17 @@ impl PlayerTransforms {
             .invoke("GetZPosOffsetByHeadPosAtTime", (start, end, t))?;
         Ok(__cordl_ret)
     }
+    pub fn HeadOffsetZ(
+        &mut self,
+        noteInverseWorldRotation: crate::UnityEngine::Quaternion,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("HeadOffsetZ", (noteInverseWorldRotation))?;
+        Ok(__cordl_ret)
+    }
     pub fn MoveTowardsHead(
         &mut self,
         start: f32,
@@ -80,16 +111,12 @@ impl PlayerTransforms {
             .invoke("MoveTowardsHead", (start, end, noteInverseWorldRotation, t))?;
         Ok(__cordl_ret)
     }
-    pub fn HeadOffsetZ(
-        &mut self,
-        noteInverseWorldRotation: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("HeadOffsetZ", (noteInverseWorldRotation))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OverrideHeadPos(
         &mut self,
@@ -102,24 +129,14 @@ impl PlayerTransforms {
             .invoke("OverrideHeadPos", (pos))?;
         Ok(__cordl_ret)
     }
-    pub fn ClearHeadPositionOverride(
+    pub fn Update(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearHeadPositionOverride", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_leftHandPseudoLocalPos(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_leftHandPseudoLocalPos", ())?;
+            .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -132,14 +149,14 @@ impl PlayerTransforms {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_leftHandPseudoLocalRot(
+    pub fn get_headPseudoLocalPos(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("get_leftHandPseudoLocalRot", ())?;
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_headPseudoLocalPos", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_headPseudoLocalRot(
@@ -152,14 +169,14 @@ impl PlayerTransforms {
             .invoke("get_headPseudoLocalRot", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Awake(
+    pub fn get_headWorldPos(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_headWorldPos", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_headWorldRot(
@@ -172,14 +189,24 @@ impl PlayerTransforms {
             .invoke("get_headWorldRot", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_rightHandPseudoLocalRot(
+    pub fn get_leftHandPseudoLocalPos(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_leftHandPseudoLocalPos", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_leftHandPseudoLocalRot(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("get_rightHandPseudoLocalRot", ())?;
+            .invoke("get_leftHandPseudoLocalRot", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_rightHandPseudoLocalPos(
@@ -192,42 +219,15 @@ impl PlayerTransforms {
             .invoke("get_rightHandPseudoLocalPos", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Update(
+    pub fn get_rightHandPseudoLocalRot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
+        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
+            .invoke("get_rightHandPseudoLocalRot", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_headPseudoLocalPos(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_headPseudoLocalPos", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_headWorldPos(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_headWorldPos", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PlayerTransforms")]

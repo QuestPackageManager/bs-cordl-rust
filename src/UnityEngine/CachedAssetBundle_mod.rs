@@ -23,13 +23,15 @@ for crate::UnityEngine::CachedAssetBundle {
 }
 #[cfg(feature = "UnityEngine+CachedAssetBundle")]
 impl crate::UnityEngine::CachedAssetBundle {
-    pub fn get_name(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        name: *mut crate::System::String,
+        hash: crate::UnityEngine::Hash128,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_name",
-            (),
+            ".ctor",
+            (name, hash),
         )?;
         Ok(__cordl_ret)
     }
@@ -43,15 +45,13 @@ impl crate::UnityEngine::CachedAssetBundle {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn get_name(
         &mut self,
-        name: *mut crate::System::String,
-        hash: crate::UnityEngine::Hash128,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (name, hash),
+            "get_name",
+            (),
         )?;
         Ok(__cordl_ret)
     }

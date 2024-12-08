@@ -31,6 +31,13 @@ for crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration {
 }
 #[cfg(feature = "System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
 impl crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -40,13 +47,6 @@ impl crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
@@ -87,15 +87,15 @@ for crate::System::Xml::Linq::NamespaceResolver {
 impl crate::System::Xml::Linq::NamespaceResolver {
     #[cfg(feature = "System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
     pub type NamespaceDeclaration = crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration;
-    pub fn GetPrefixOfNamespace(
+    pub fn Add(
         &mut self,
+        prefix: *mut crate::System::String,
         ns: *mut crate::System::Xml::Linq::XNamespace,
-        allowDefaultNamespace: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetPrefixOfNamespace",
-            (ns, allowDefaultNamespace),
+            "Add",
+            (prefix, ns),
         )?;
         Ok(__cordl_ret)
     }
@@ -111,6 +111,18 @@ impl crate::System::Xml::Linq::NamespaceResolver {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn GetPrefixOfNamespace(
+        &mut self,
+        ns: *mut crate::System::Xml::Linq::XNamespace,
+        allowDefaultNamespace: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetPrefixOfNamespace",
+            (ns, allowDefaultNamespace),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn PopScope(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -118,18 +130,6 @@ impl crate::System::Xml::Linq::NamespaceResolver {
             self,
             "PopScope",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Add(
-        &mut self,
-        prefix: *mut crate::System::String,
-        ns: *mut crate::System::Xml::Linq::XNamespace,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Add",
-            (prefix, ns),
         )?;
         Ok(__cordl_ret)
     }

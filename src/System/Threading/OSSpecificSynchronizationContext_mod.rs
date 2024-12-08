@@ -39,6 +39,16 @@ impl crate::System::Threading::OSSpecificSynchronizationContext_InvocationContex
             .invoke("Invoke", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        d: *mut crate::System::Threading::SendOrPostCallback,
+        state: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (d, state))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         d: *mut crate::System::Threading::SendOrPostCallback,
@@ -50,16 +60,6 @@ impl crate::System::Threading::OSSpecificSynchronizationContext_InvocationContex
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (d, state))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        d: *mut crate::System::Threading::SendOrPostCallback,
-        state: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (d, state))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext+InvocationContext")]
@@ -111,18 +111,6 @@ for crate::System::Threading::OSSpecificSynchronizationContext_InvocationEntryDe
     feature = "System+Threading+OSSpecificSynchronizationContext+InvocationEntryDelegate"
 )]
 impl crate::System::Threading::OSSpecificSynchronizationContext_InvocationEntryDelegate {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         arg: crate::System::IntPtr,
@@ -137,12 +125,24 @@ impl crate::System::Threading::OSSpecificSynchronizationContext_InvocationEntryD
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -185,6 +185,8 @@ impl std::ops::DerefMut for crate::System::Threading::OSSpecificSynchronizationC
 }
 #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext")]
 impl crate::System::Threading::OSSpecificSynchronizationContext {
+    #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext+__c")]
+    pub type __c = crate::System::Threading::OSSpecificSynchronizationContext___c;
     #[cfg(
         feature = "System+Threading+OSSpecificSynchronizationContext+InvocationEntryDelegate"
     )]
@@ -193,8 +195,6 @@ impl crate::System::Threading::OSSpecificSynchronizationContext {
         feature = "System+Threading+OSSpecificSynchronizationContext+InvocationContext"
     )]
     pub type InvocationContext = crate::System::Threading::OSSpecificSynchronizationContext_InvocationContext;
-    #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext+__c")]
-    pub type __c = crate::System::Threading::OSSpecificSynchronizationContext___c;
     pub fn CreateCopy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -206,6 +206,15 @@ impl crate::System::Threading::OSSpecificSynchronizationContext {
         let __cordl_ret: *mut crate::System::Threading::SynchronizationContext = __cordl_object
             .invoke("CreateCopy", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        osContext: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (osContext))?;
+        Ok(__cordl_object)
     }
     pub fn Post(
         &mut self,
@@ -241,15 +250,6 @@ impl crate::System::Threading::OSSpecificSynchronizationContext {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (osContext))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        osContext: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (osContext))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext")]

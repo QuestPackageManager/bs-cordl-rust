@@ -28,19 +28,27 @@ impl std::ops::DerefMut for crate::System::Net::FtpMethodInfo {
 }
 #[cfg(feature = "System+Net+FtpMethodInfo")]
 impl crate::System::Net::FtpMethodInfo {
-    pub fn get_IsCommandOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn HasFlag(
+        &mut self,
+        flags: crate::System::Net::FtpMethodFlags,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsCommandOnly", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("HasFlag", (flags))?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsDownload(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsDownload", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        method: *mut crate::System::String,
+        operation: crate::System::Net::FtpOperation,
+        flags: crate::System::Net::FtpMethodFlags,
+        httpCommand: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (method, operation, flags, httpCommand))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -56,14 +64,18 @@ impl crate::System::Net::FtpMethodInfo {
             .invoke(".ctor", (method, operation, flags, httpCommand))?;
         Ok(__cordl_ret)
     }
-    pub fn HasFlag(
-        &mut self,
-        flags: crate::System::Net::FtpMethodFlags,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_IsCommandOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("HasFlag", (flags))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsCommandOnly", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsDownload(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsDownload", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_IsUpload(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -82,18 +94,6 @@ impl crate::System::Net::FtpMethodInfo {
         let __cordl_ret: bool = __cordl_object
             .invoke("get_ShouldParseForResponseUri", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        method: *mut crate::System::String,
-        operation: crate::System::Net::FtpOperation,
-        flags: crate::System::Net::FtpMethodFlags,
-        httpCommand: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (method, operation, flags, httpCommand))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+FtpMethodInfo")]

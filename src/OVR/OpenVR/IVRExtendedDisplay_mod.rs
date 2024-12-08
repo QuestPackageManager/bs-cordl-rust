@@ -24,12 +24,12 @@ for crate::OVR::OpenVR::IVRExtendedDisplay {
 }
 #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay")]
 impl crate::OVR::OpenVR::IVRExtendedDisplay {
-    #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
-    pub type _GetEyeOutputViewport = crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport;
     #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
     pub type _GetDXGIOutputInfo = crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo;
     #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
     pub type _GetWindowBounds = crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds;
+    #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
+    pub type _GetEyeOutputViewport = crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport;
 }
 #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
 #[repr(C)]
@@ -58,43 +58,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutpu
 }
 #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
 impl crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo {
-    pub fn EndInvoke(
-        &mut self,
-        pnAdapterIndex: quest_hook::libil2cpp::ByRefMut<i32>,
-        pnAdapterOutputIndex: quest_hook::libil2cpp::ByRefMut<i32>,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (pnAdapterIndex, pnAdapterOutputIndex, result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        pnAdapterIndex: quest_hook::libil2cpp::ByRefMut<i32>,
-        pnAdapterOutputIndex: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (pnAdapterIndex, pnAdapterOutputIndex))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pnAdapterIndex: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -112,15 +75,52 @@ impl crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        pnAdapterIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        pnAdapterOutputIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndInvoke", (pnAdapterIndex, pnAdapterOutputIndex, result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        pnAdapterIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        pnAdapterOutputIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (pnAdapterIndex, pnAdapterOutputIndex))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
@@ -161,48 +161,6 @@ for crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport {
 }
 #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
 impl crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport {
-    pub fn Invoke(
-        &mut self,
-        eEye: crate::OVR::OpenVR::EVREye,
-        pnX: quest_hook::libil2cpp::ByRefMut<u32>,
-        pnY: quest_hook::libil2cpp::ByRefMut<u32>,
-        pnWidth: quest_hook::libil2cpp::ByRefMut<u32>,
-        pnHeight: quest_hook::libil2cpp::ByRefMut<u32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (eEye, pnX, pnY, pnWidth, pnHeight))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        pnX: quest_hook::libil2cpp::ByRefMut<u32>,
-        pnY: quest_hook::libil2cpp::ByRefMut<u32>,
-        pnWidth: quest_hook::libil2cpp::ByRefMut<u32>,
-        pnHeight: quest_hook::libil2cpp::ByRefMut<u32>,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (pnX, pnY, pnWidth, pnHeight, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         eEye: crate::OVR::OpenVR::EVREye,
@@ -223,15 +181,57 @@ impl crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        pnX: quest_hook::libil2cpp::ByRefMut<u32>,
+        pnY: quest_hook::libil2cpp::ByRefMut<u32>,
+        pnWidth: quest_hook::libil2cpp::ByRefMut<u32>,
+        pnHeight: quest_hook::libil2cpp::ByRefMut<u32>,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndInvoke", (pnX, pnY, pnWidth, pnHeight, result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        eEye: crate::OVR::OpenVR::EVREye,
+        pnX: quest_hook::libil2cpp::ByRefMut<u32>,
+        pnY: quest_hook::libil2cpp::ByRefMut<u32>,
+        pnWidth: quest_hook::libil2cpp::ByRefMut<u32>,
+        pnHeight: quest_hook::libil2cpp::ByRefMut<u32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (eEye, pnX, pnY, pnWidth, pnHeight))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
@@ -270,32 +270,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBou
 }
 #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
 impl crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds {
-    pub fn Invoke(
-        &mut self,
-        pnX: quest_hook::libil2cpp::ByRefMut<i32>,
-        pnY: quest_hook::libil2cpp::ByRefMut<i32>,
-        pnWidth: quest_hook::libil2cpp::ByRefMut<u32>,
-        pnHeight: quest_hook::libil2cpp::ByRefMut<u32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (pnX, pnY, pnWidth, pnHeight))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pnX: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -327,15 +301,41 @@ impl crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds {
             .invoke("EndInvoke", (pnX, pnY, pnWidth, pnHeight, result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        pnX: quest_hook::libil2cpp::ByRefMut<i32>,
+        pnY: quest_hook::libil2cpp::ByRefMut<i32>,
+        pnWidth: quest_hook::libil2cpp::ByRefMut<u32>,
+        pnHeight: quest_hook::libil2cpp::ByRefMut<u32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (pnX, pnY, pnWidth, pnHeight))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]

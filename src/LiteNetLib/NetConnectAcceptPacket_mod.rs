@@ -28,6 +28,17 @@ impl std::ops::DerefMut for crate::LiteNetLib::NetConnectAcceptPacket {
 #[cfg(feature = "LiteNetLib+NetConnectAcceptPacket")]
 impl crate::LiteNetLib::NetConnectAcceptPacket {
     pub const Size: i32 = 11i32;
+    pub fn New(
+        connectionId: i64,
+        connectionNumber: u8,
+        isReusedPeer: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (connectionId, connectionNumber, isReusedPeer))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         connectionId: i64,
@@ -40,17 +51,6 @@ impl crate::LiteNetLib::NetConnectAcceptPacket {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (connectionId, connectionNumber, isReusedPeer))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        connectionId: i64,
-        connectionNumber: u8,
-        isReusedPeer: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (connectionId, connectionNumber, isReusedPeer))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LiteNetLib+NetConnectAcceptPacket")]

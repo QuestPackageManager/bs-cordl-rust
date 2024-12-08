@@ -28,6 +28,30 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+Config")]
 impl crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
+    pub fn Create(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECCurve = __cordl_object
+            .invoke("Create", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        outer: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
+        coord: i32,
+        endomorphism: *mut crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
+        multiplier: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (outer, coord, endomorphism, multiplier))?;
+        Ok(__cordl_object)
+    }
     pub fn SetCoordinateSystem(
         &mut self,
         coord: i32,
@@ -54,20 +78,6 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
             .invoke("SetEndomorphism", (endomorphism))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        outer: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-        coord: i32,
-        endomorphism: *mut crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
-        multiplier: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (outer, coord, endomorphism, multiplier))?;
-        Ok(__cordl_ret)
-    }
     pub fn SetMultiplier(
         &mut self,
         multiplier: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
@@ -81,29 +91,19 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
             .invoke("SetMultiplier", (multiplier))?;
         Ok(__cordl_ret)
     }
-    pub fn Create(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECCurve = __cordl_object
-            .invoke("Create", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
         outer: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
         coord: i32,
         endomorphism: *mut crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
         multiplier: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (outer, coord, endomorphism, multiplier))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (outer, coord, endomorphism, multiplier))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+Config")]
@@ -161,19 +161,6 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable {
             .invoke("CreatePoint", (x, y))?;
         Ok(__cordl_ret)
     }
-    pub fn LookupVar(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("LookupVar", (index))?;
-        Ok(__cordl_ret)
-    }
     pub fn Lookup(
         &mut self,
         index: i32,
@@ -187,12 +174,29 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable {
             .invoke("Lookup", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Size(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn LookupVar(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Size", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("LookupVar", (index))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        outer: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
+        table: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (outer, table, _cordl_size))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -207,16 +211,12 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable {
             .invoke(".ctor", (outer, table, _cordl_size))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        outer: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-        table: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (outer, table, _cordl_size))?;
-        Ok(__cordl_object)
+    pub fn get_Size(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Size", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
@@ -271,61 +271,19 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
     pub const COORD_LAMBDA_AFFINE: i32 = 5i32;
     pub const COORD_LAMBDA_PROJECTIVE: i32 = 6i32;
     pub const COORD_SKEWED: i32 = 7i32;
-    #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+Config")]
-    pub type Config = crate::Org::BouncyCastle::Math::EC::ECCurve_Config;
     #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
     pub type DefaultLookupTable = crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable;
-    pub fn get_B(
+    #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+Config")]
+    pub type Config = crate::Org::BouncyCastle::Math::EC::ECCurve_Config;
+    pub fn CheckPoint(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    > {
+        point: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("get_B", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreatePoint_BigInteger_BigInteger0(
-        &mut self,
-        x: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        y: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("CreatePoint", (x, y))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreatePoint__cordl_bool1(
-        &mut self,
-        x: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        y: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        withCompression: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("CreatePoint", (x, y, withCompression))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_A(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("get_A", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckPoint", (point))?;
         Ok(__cordl_ret)
     }
     pub fn CheckPoints_Il2CppArray0(
@@ -367,6 +325,246 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECCurve = __cordl_object
             .invoke("CloneCurve", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn Configure(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECCurve_Config,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECCurve_Config = __cordl_object
+            .invoke("Configure", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateCacheSafeLookupTable(
+        &mut self,
+        points: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        >,
+        off: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECLookupTable,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECLookupTable = __cordl_object
+            .invoke("CreateCacheSafeLookupTable", (points, off, len))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateDefaultMultiplier(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier = __cordl_object
+            .invoke("CreateDefaultMultiplier", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreatePoint_BigInteger_BigInteger0(
+        &mut self,
+        x: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        y: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("CreatePoint", (x, y))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreatePoint__cordl_bool1(
+        &mut self,
+        x: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        y: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        withCompression: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("CreatePoint", (x, y, withCompression))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateRawPoint_Il2CppArray__cordl_bool1(
+        &mut self,
+        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        zs: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        >,
+        withCompression: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("CreateRawPoint", (x, y, zs, withCompression))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateRawPoint__cordl_bool0(
+        &mut self,
+        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        withCompression: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("CreateRawPoint", (x, y, withCompression))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DecodePoint(
+        &mut self,
+        encoded: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("DecodePoint", (encoded))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DecompressPoint(
+        &mut self,
+        yTilde: i32,
+        X1: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("DecompressPoint", (yTilde, X1))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_ECCurve0(
+        &mut self,
+        other: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object1(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn FromBigInteger(
+        &mut self,
+        x: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
+            .invoke("FromBigInteger", (x))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEndomorphism(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism = __cordl_object
+            .invoke("GetEndomorphism", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetMultiplier(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier = __cordl_object
+            .invoke("GetMultiplier", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPreCompInfo(
+        &mut self,
+        point: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo = __cordl_object
+            .invoke("GetPreCompInfo", (point, name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ImportPoint(
+        &mut self,
+        p: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("ImportPoint", (p))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsValidFieldElement(
+        &mut self,
+        x: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsValidFieldElement", (x))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        field: *mut crate::Org::BouncyCastle::Math::Field::IFiniteField,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (field))?;
+        Ok(__cordl_object)
     }
     pub fn NormalizeAll_Il2CppArray0(
         &mut self,
@@ -412,78 +610,17 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
             .invoke("Precompute", (point, name, callback))?;
         Ok(__cordl_ret)
     }
-    pub fn GetMultiplier(
+    pub fn RandomFieldElement(
         &mut self,
+        r: *mut crate::Org::BouncyCastle::Security::SecureRandom,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
+        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier = __cordl_object
-            .invoke("GetMultiplier", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CoordinateSystem(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_CoordinateSystem", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ImportPoint(
-        &mut self,
-        p: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("ImportPoint", (p))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Infinity(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("get_Infinity", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_ECCurve0(
-        &mut self,
-        other: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Cofactor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("get_Cofactor", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
+            .invoke("RandomFieldElement", (r))?;
         Ok(__cordl_ret)
     }
     pub fn RandomFieldElementMult(
@@ -497,6 +634,17 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
             .invoke("RandomFieldElementMult", (r))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SupportsCoordinateSystem(
+        &mut self,
+        coord: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("SupportsCoordinateSystem", (coord))?;
         Ok(__cordl_ret)
     }
     pub fn ValidatePoint_BigInteger_BigInteger0(
@@ -528,186 +676,6 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
             .invoke("ValidatePoint", (x, y, withCompression))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateCacheSafeLookupTable(
-        &mut self,
-        points: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-        >,
-        off: i32,
-        len: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECLookupTable,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECLookupTable = __cordl_object
-            .invoke("CreateCacheSafeLookupTable", (points, off, len))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RandomFieldElement(
-        &mut self,
-        r: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("RandomFieldElement", (r))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsValidFieldElement(
-        &mut self,
-        x: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsValidFieldElement", (x))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DecompressPoint(
-        &mut self,
-        yTilde: i32,
-        X1: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("DecompressPoint", (yTilde, X1))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEndomorphism(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism = __cordl_object
-            .invoke("GetEndomorphism", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckPoint(
-        &mut self,
-        point: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckPoint", (point))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Configure(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECCurve_Config,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECCurve_Config = __cordl_object
-            .invoke("Configure", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPreCompInfo(
-        &mut self,
-        point: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo = __cordl_object
-            .invoke("GetPreCompInfo", (point, name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DecodePoint(
-        &mut self,
-        encoded: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("DecodePoint", (encoded))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FromBigInteger(
-        &mut self,
-        x: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("FromBigInteger", (x))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateRawPoint__cordl_bool0(
-        &mut self,
-        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        withCompression: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("CreateRawPoint", (x, y, withCompression))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateRawPoint_Il2CppArray__cordl_bool1(
-        &mut self,
-        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        zs: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        >,
-        withCompression: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("CreateRawPoint", (x, y, zs, withCompression))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SupportsCoordinateSystem(
-        &mut self,
-        coord: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("SupportsCoordinateSystem", (coord))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         field: *mut crate::Org::BouncyCastle::Math::Field::IFiniteField,
@@ -717,6 +685,47 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (field))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_A(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
+            .invoke("get_A", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_B(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
+            .invoke("get_B", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Cofactor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_Cofactor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CoordinateSystem(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_CoordinateSystem", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Field(
@@ -738,16 +747,16 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
         let __cordl_ret: i32 = __cordl_object.invoke("get_FieldSize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CreateDefaultMultiplier(
+    pub fn get_Infinity(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier = __cordl_object
-            .invoke("CreateDefaultMultiplier", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("get_Infinity", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Order(
@@ -759,15 +768,6 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
             .invoke("get_Order", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        field: *mut crate::Org::BouncyCastle::Math::Field::IFiniteField,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (field))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve")]

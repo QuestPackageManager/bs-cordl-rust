@@ -26,6 +26,11 @@ for crate::System::Runtime::Remoting::Contexts::IDynamicProperty {
 }
 #[cfg(feature = "System+Runtime+Remoting+Contexts+IDynamicProperty")]
 impl crate::System::Runtime::Remoting::Contexts::IDynamicProperty {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_Name(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -35,11 +40,6 @@ impl crate::System::Runtime::Remoting::Contexts::IDynamicProperty {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Contexts+IDynamicProperty")]

@@ -38,6 +38,27 @@ impl crate::System::Runtime::Remoting::SingletonIdentity {
             .invoke("AsyncObjectProcessMessage", (msg, replySink))?;
         Ok(__cordl_ret)
     }
+    pub fn GetServerObject(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::MarshalByRefObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::MarshalByRefObject = __cordl_object
+            .invoke("GetServerObject", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        objectUri: *mut crate::System::String,
+        context: *mut crate::System::Runtime::Remoting::Contexts::Context,
+        objectType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (objectUri, context, objectType))?;
+        Ok(__cordl_object)
+    }
     pub fn SyncObjectProcessMessage(
         &mut self,
         msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
@@ -63,27 +84,6 @@ impl crate::System::Runtime::Remoting::SingletonIdentity {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (objectUri, context, objectType))?;
         Ok(__cordl_ret)
-    }
-    pub fn GetServerObject(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::MarshalByRefObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::MarshalByRefObject = __cordl_object
-            .invoke("GetServerObject", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        objectUri: *mut crate::System::String,
-        context: *mut crate::System::Runtime::Remoting::Contexts::Context,
-        objectType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (objectUri, context, objectType))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+SingletonIdentity")]

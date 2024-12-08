@@ -30,10 +30,10 @@ for crate::UnityEngine::UIElements::IDragAndDropController_1<TArgs> {
 impl<
     TArgs: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::IDragAndDropController_1<TArgs> {
-    pub fn HandleDragAndDrop(
+    pub fn CanStartDrag(
         &mut self,
-        args: TArgs,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::DragVisualMode>
+        itemIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool>
     where
         TArgs: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -41,8 +41,21 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::UIElements::DragVisualMode = __cordl_object
-            .invoke("HandleDragAndDrop", (args))?;
+        let __cordl_ret: bool = __cordl_object.invoke("CanStartDrag", (itemIds))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DragCleanup(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TArgs: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DragCleanup", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetSortedSelectedIds(
@@ -61,11 +74,11 @@ impl<
             .invoke("GetSortedSelectedIds", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetupDragAndDrop(
+    pub fn HandleAutoExpand(
         &mut self,
-        itemIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
-        skipText: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StartDragArgs>
+        item: *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+        pointerPosition: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TArgs: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -73,8 +86,23 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::UIElements::StartDragArgs = __cordl_object
-            .invoke("SetupDragAndDrop", (itemIds, skipText))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleAutoExpand", (item, pointerPosition))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleDragAndDrop(
+        &mut self,
+        args: TArgs,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::DragVisualMode>
+    where
+        TArgs: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::DragVisualMode = __cordl_object
+            .invoke("HandleDragAndDrop", (args))?;
         Ok(__cordl_ret)
     }
     pub fn OnDrop(
@@ -92,24 +120,11 @@ impl<
             .invoke("OnDrop", (args))?;
         Ok(__cordl_ret)
     }
-    pub fn DragCleanup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TArgs: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DragCleanup", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CanStartDrag(
+    pub fn SetupDragAndDrop(
         &mut self,
         itemIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool>
+        skipText: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StartDragArgs>
     where
         TArgs: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -117,23 +132,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("CanStartDrag", (itemIds))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleAutoExpand(
-        &mut self,
-        item: *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
-        pointerPosition: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TArgs: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleAutoExpand", (item, pointerPosition))?;
+        let __cordl_ret: crate::UnityEngine::UIElements::StartDragArgs = __cordl_object
+            .invoke("SetupDragAndDrop", (itemIds, skipText))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

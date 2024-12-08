@@ -24,129 +24,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::FpPoint {
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+FpPoint")]
 impl crate::Org::BouncyCastle::Math::EC::FpPoint {
-    pub fn _ctor_ECCurve_ECFieldElement_ECFieldElement0(
-        &mut self,
-        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (curve, x, y))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor__cordl_bool1(
-        &mut self,
-        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        withCompression: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (curve, x, y, withCompression))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Il2CppArray__cordl_bool2(
-        &mut self,
-        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        zs: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        >,
-        withCompression: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (curve, x, y, zs, withCompression))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetJacobianModifiedW(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("GetJacobianModifiedW", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DoubleProductFromSquares(
-        &mut self,
-        a: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        b: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        aSquared: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        bSquared: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("DoubleProductFromSquares", (a, b, aSquared, bSquared))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TimesPow2(
-        &mut self,
-        e: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("TimesPow2", (e))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Detach(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("Detach", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Two(
-        &mut self,
-        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("Two", (x))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TwicePlus(
-        &mut self,
-        b: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("TwicePlus", (b))?;
-        Ok(__cordl_ret)
-    }
     pub fn Add(
         &mut self,
         b: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
@@ -174,20 +51,7 @@ impl crate::Org::BouncyCastle::Math::EC::FpPoint {
             .invoke("CalculateJacobianModifiedW", (Z, ZSquared))?;
         Ok(__cordl_ret)
     }
-    pub fn Three(
-        &mut self,
-        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("Three", (x))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Negate(
+    pub fn Detach(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
@@ -196,25 +60,15 @@ impl crate::Org::BouncyCastle::Math::EC::FpPoint {
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("Negate", ())?;
+            .invoke("Detach", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TwiceJacobianModified(
+    pub fn DoubleProductFromSquares(
         &mut self,
-        calculateW: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::FpPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::FpPoint = __cordl_object
-            .invoke("TwiceJacobianModified", (calculateW))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Four(
-        &mut self,
-        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        a: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        b: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        aSquared: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        bSquared: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
     > {
@@ -222,19 +76,7 @@ impl crate::Org::BouncyCastle::Math::EC::FpPoint {
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("Four", (x))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ThreeTimes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("ThreeTimes", ())?;
+            .invoke("DoubleProductFromSquares", (a, b, aSquared, bSquared))?;
         Ok(__cordl_ret)
     }
     pub fn Eight(
@@ -250,16 +92,29 @@ impl crate::Org::BouncyCastle::Math::EC::FpPoint {
             .invoke("Eight", (x))?;
         Ok(__cordl_ret)
     }
-    pub fn Twice(
+    pub fn Four(
         &mut self,
+        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("Twice", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
+            .invoke("Four", (x))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetJacobianModifiedW(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
+            .invoke("GetJacobianModifiedW", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetZCoord(
@@ -275,27 +130,27 @@ impl crate::Org::BouncyCastle::Math::EC::FpPoint {
             .invoke("GetZCoord", (index))?;
         Ok(__cordl_ret)
     }
+    pub fn Negate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("Negate", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn New_ECCurve_ECFieldElement_ECFieldElement0(
         curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
         x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
         y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (curve, x, y))?;
-        Ok(__cordl_object)
-    }
-    pub fn New__cordl_bool1(
-        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        withCompression: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (curve, x, y, withCompression))?;
         Ok(__cordl_object)
     }
     pub fn New_Il2CppArray__cordl_bool2(
@@ -306,12 +161,157 @@ impl crate::Org::BouncyCastle::Math::EC::FpPoint {
             *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
         >,
         withCompression: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (curve, x, y, zs, withCompression))?;
         Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool1(
+        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
+        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        withCompression: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (curve, x, y, withCompression))?;
+        Ok(__cordl_object)
+    }
+    pub fn Three(
+        &mut self,
+        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
+            .invoke("Three", (x))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ThreeTimes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("ThreeTimes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TimesPow2(
+        &mut self,
+        e: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("TimesPow2", (e))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Twice(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("Twice", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TwiceJacobianModified(
+        &mut self,
+        calculateW: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::FpPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::FpPoint = __cordl_object
+            .invoke("TwiceJacobianModified", (calculateW))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TwicePlus(
+        &mut self,
+        b: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("TwicePlus", (b))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Two(
+        &mut self,
+        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
+            .invoke("Two", (x))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_ECCurve_ECFieldElement_ECFieldElement0(
+        &mut self,
+        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
+        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (curve, x, y))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppArray__cordl_bool2(
+        &mut self,
+        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
+        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        zs: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        >,
+        withCompression: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (curve, x, y, zs, withCompression))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor__cordl_bool1(
+        &mut self,
+        curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
+        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        withCompression: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (curve, x, y, withCompression))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+FpPoint")]

@@ -23,6 +23,11 @@ impl std::ops::DerefMut for IEnvironmentInfo {
 }
 #[cfg(feature = "IEnvironmentInfo")]
 impl IEnvironmentInfo {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_defaultLightshowAsset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::TextAsset> {
@@ -57,11 +62,6 @@ impl IEnvironmentInfo {
         let __cordl_ret: *mut IEnvironmentLightGroups = __cordl_object
             .invoke("get_environmentLightGroups", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IEnvironmentInfo")]

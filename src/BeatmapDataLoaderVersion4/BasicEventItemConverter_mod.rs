@@ -29,21 +29,6 @@ impl std::ops::DerefMut for crate::BeatmapDataLoaderVersion4::BasicEventItemConv
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+BasicEventItemConverter")]
 impl crate::BeatmapDataLoaderVersion4::BasicEventItemConverter {
-    pub fn _ctor(
-        &mut self,
-        basicEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::BeatmapSaveDataVersion4::BasicEvent,
-        >,
-        specialEventsFilter: *mut crate::BeatmapDataLoaderVersion4::SpecialEventsFilter,
-        bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (basicEvents, specialEventsFilter, bpmTimeProcessor))?;
-        Ok(__cordl_ret)
-    }
     pub fn Convert(
         &mut self,
         index: *mut crate::BeatmapSaveDataVersion4::BeatIndex,
@@ -61,12 +46,27 @@ impl crate::BeatmapDataLoaderVersion4::BasicEventItemConverter {
         >,
         specialEventsFilter: *mut crate::BeatmapDataLoaderVersion4::SpecialEventsFilter,
         bpmTimeProcessor: *mut BpmTimeProcessor,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (basicEvents, specialEventsFilter, bpmTimeProcessor))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        basicEvents: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::BeatmapSaveDataVersion4::BasicEvent,
+        >,
+        specialEventsFilter: *mut crate::BeatmapDataLoaderVersion4::SpecialEventsFilter,
+        bpmTimeProcessor: *mut BpmTimeProcessor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (basicEvents, specialEventsFilter, bpmTimeProcessor))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+BasicEventItemConverter")]

@@ -46,37 +46,38 @@ impl BeatmapCharacteristicsViewController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn add_didSelectBeatmapCharacteristicEvent(
+    pub fn DidDeactivate(
         &mut self,
-        value: *mut crate::System::Action_1<*mut BeatmapCharacteristicSO>,
+        removedFromHierarchy: bool,
+        screenSystemDisabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didSelectBeatmapCharacteristicEvent", (value))?;
+            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
         Ok(__cordl_ret)
     }
-    pub fn get_selectedBeatmapCharacteristic(
+    pub fn HandleBeatmapCharacteristicsTableViewDidSelecteCharacteristic(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapCharacteristicSO> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut BeatmapCharacteristicSO = __cordl_object
-            .invoke("get_selectedBeatmapCharacteristic", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didSelectBeatmapCharacteristicEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut BeatmapCharacteristicSO>,
+        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didSelectBeatmapCharacteristicEvent", (value))?;
+            .invoke(
+                "HandleBeatmapCharacteristicsTableViewDidSelecteCharacteristic",
+                (beatmapCharacteristic),
+            )?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn SetData(
         &mut self,
@@ -103,16 +104,15 @@ impl BeatmapCharacteristicsViewController {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn DidDeactivate(
+    pub fn add_didSelectBeatmapCharacteristicEvent(
         &mut self,
-        removedFromHierarchy: bool,
-        screenSystemDisabling: bool,
+        value: *mut crate::System::Action_1<*mut BeatmapCharacteristicSO>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
+            .invoke("add_didSelectBeatmapCharacteristicEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_beatmapCharacteristicCollection(
@@ -125,26 +125,26 @@ impl BeatmapCharacteristicsViewController {
             .invoke("get_beatmapCharacteristicCollection", ())?;
         Ok(__cordl_ret)
     }
-    pub fn HandleBeatmapCharacteristicsTableViewDidSelecteCharacteristic(
+    pub fn get_selectedBeatmapCharacteristic(
         &mut self,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+    ) -> quest_hook::libil2cpp::Result<*mut BeatmapCharacteristicSO> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut BeatmapCharacteristicSO = __cordl_object
+            .invoke("get_selectedBeatmapCharacteristic", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didSelectBeatmapCharacteristicEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut BeatmapCharacteristicSO>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleBeatmapCharacteristicsTableViewDidSelecteCharacteristic",
-                (beatmapCharacteristic),
-            )?;
+            .invoke("remove_didSelectBeatmapCharacteristicEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapCharacteristicsViewController")]

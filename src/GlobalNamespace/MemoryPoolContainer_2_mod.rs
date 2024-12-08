@@ -53,23 +53,14 @@ impl<
             .invoke("Despawn", (item))?;
         Ok(__cordl_ret)
     }
-    pub fn get_activeItems(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<T1>,
-    >
-    where
-        T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<T1> = __cordl_object
-            .invoke("get_activeItems", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        memoryPool: *mut crate::Zenject::IMemoryPool_1<T0>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (memoryPool))?;
+        Ok(__cordl_object)
     }
     pub fn Spawn(&mut self) -> quest_hook::libil2cpp::Result<T0>
     where
@@ -101,14 +92,23 @@ impl<
             .invoke(".ctor", (memoryPool))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        memoryPool: *mut crate::Zenject::IMemoryPool_1<T0>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (memoryPool))?;
-        Ok(__cordl_object)
+    pub fn get_activeItems(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<T1>,
+    >
+    where
+        T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<T1> = __cordl_object
+            .invoke("get_activeItems", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MemoryPoolContainer_2")]

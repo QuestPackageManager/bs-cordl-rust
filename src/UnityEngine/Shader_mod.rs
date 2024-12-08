@@ -23,19 +23,6 @@ impl std::ops::DerefMut for crate::UnityEngine::Shader {
 }
 #[cfg(feature = "UnityEngine+Shader")]
 impl crate::UnityEngine::Shader {
-    pub fn GetPropertyType(
-        &mut self,
-        propertyIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Rendering::ShaderPropertyType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Rendering::ShaderPropertyType = __cordl_object
-            .invoke("GetPropertyType", (propertyIndex))?;
-        Ok(__cordl_ret)
-    }
     pub fn FindPassTagValue_ShaderTagId0(
         &mut self,
         passIndex: i32,
@@ -61,209 +48,6 @@ impl crate::UnityEngine::Shader {
             .invoke("FindPassTagValue", (subshaderIndex, passIndex, tagName))?;
         Ok(__cordl_ret)
     }
-    pub fn get_keywordSpace_Injected(
-        &mut self,
-        ret: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Rendering::LocalKeywordSpace,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("get_keywordSpace_Injected", (ret))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPropertyTextureDefaultName(
-        &mut self,
-        propertyIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetPropertyTextureDefaultName", (propertyIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPropertyTextureDimension(
-        &mut self,
-        propertyIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::TextureDimension> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Rendering::TextureDimension = __cordl_object
-            .invoke("GetPropertyTextureDimension", (propertyIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_maximumLOD(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_maximumLOD", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_renderQueue(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_renderQueue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPropertyRangeLimits(
-        &mut self,
-        propertyIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("GetPropertyRangeLimits", (propertyIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_keywordSpace(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Rendering::LocalKeywordSpace,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Rendering::LocalKeywordSpace = __cordl_object
-            .invoke("get_keywordSpace", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPassCountInSubshader(
-        &mut self,
-        subshaderIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetPassCountInSubshader", (subshaderIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_subshaderCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_subshaderCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPropertyDefaultVectorValue(
-        &mut self,
-        propertyIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector4 = __cordl_object
-            .invoke("GetPropertyDefaultVectorValue", (propertyIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_passCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_passCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FindTextureStack(
-        &mut self,
-        propertyIndex: i32,
-        stackName: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-        layerIndex: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("FindTextureStack", (propertyIndex, stackName, layerIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPropertyCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetPropertyCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Internal_FindPassTagValue(
-        &mut self,
-        passIndex: i32,
-        tagName: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("Internal_FindPassTagValue", (passIndex, tagName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPropertyNameId(
-        &mut self,
-        propertyIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetPropertyNameId", (propertyIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Internal_FindPassTagValueInSubShader(
-        &mut self,
-        subShaderIndex: i32,
-        passIndex: i32,
-        tagName: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke(
-                "Internal_FindPassTagValueInSubShader",
-                (subShaderIndex, passIndex, tagName),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDependency(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Shader> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Shader = __cordl_object
-            .invoke("GetDependency", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPropertyName(
-        &mut self,
-        propertyIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetPropertyName", (propertyIndex))?;
-        Ok(__cordl_ret)
-    }
     pub fn FindPropertyIndex(
         &mut self,
         propertyName: *mut crate::System::String,
@@ -287,6 +71,41 @@ impl crate::UnityEngine::Shader {
             .invoke("FindSubshaderTagValue", (subshaderIndex, tagName))?;
         Ok(__cordl_ret)
     }
+    pub fn FindTextureStack(
+        &mut self,
+        propertyIndex: i32,
+        stackName: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        layerIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("FindTextureStack", (propertyIndex, stackName, layerIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDependency(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Shader> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Shader = __cordl_object
+            .invoke("GetDependency", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPassCountInSubshader(
+        &mut self,
+        subshaderIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetPassCountInSubshader", (subshaderIndex))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetPropertyAttributes(
         &mut self,
         propertyIndex: i32,
@@ -301,6 +120,24 @@ impl crate::UnityEngine::Shader {
         > = __cordl_object.invoke("GetPropertyAttributes", (propertyIndex))?;
         Ok(__cordl_ret)
     }
+    pub fn GetPropertyCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetPropertyCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPropertyDefaultFloatValue(
+        &mut self,
+        propertyIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("GetPropertyDefaultFloatValue", (propertyIndex))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetPropertyDefaultIntValue(
         &mut self,
         propertyIndex: i32,
@@ -312,21 +149,15 @@ impl crate::UnityEngine::Shader {
             .invoke("GetPropertyDefaultIntValue", (propertyIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn get_disableBatching(
+    pub fn GetPropertyDefaultVectorValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::DisableBatchingType> {
+        propertyIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::DisableBatchingType = __cordl_object
-            .invoke("get_disableBatching", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_maximumLOD(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_maximumLOD", ())?;
+        let __cordl_ret: crate::UnityEngine::Vector4 = __cordl_object
+            .invoke("GetPropertyDefaultVectorValue", (propertyIndex))?;
         Ok(__cordl_ret)
     }
     pub fn GetPropertyDescription(
@@ -353,22 +184,100 @@ impl crate::UnityEngine::Shader {
             .invoke("GetPropertyFlags", (propertyIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn get_isSupported(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isSupported", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPropertyDefaultFloatValue(
+    pub fn GetPropertyName(
         &mut self,
         propertyIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("GetPropertyDefaultFloatValue", (propertyIndex))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetPropertyName", (propertyIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPropertyNameId(
+        &mut self,
+        propertyIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetPropertyNameId", (propertyIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPropertyRangeLimits(
+        &mut self,
+        propertyIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("GetPropertyRangeLimits", (propertyIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPropertyTextureDefaultName(
+        &mut self,
+        propertyIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetPropertyTextureDefaultName", (propertyIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPropertyTextureDimension(
+        &mut self,
+        propertyIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::TextureDimension> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Rendering::TextureDimension = __cordl_object
+            .invoke("GetPropertyTextureDimension", (propertyIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPropertyType(
+        &mut self,
+        propertyIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Rendering::ShaderPropertyType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Rendering::ShaderPropertyType = __cordl_object
+            .invoke("GetPropertyType", (propertyIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Internal_FindPassTagValue(
+        &mut self,
+        passIndex: i32,
+        tagName: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("Internal_FindPassTagValue", (passIndex, tagName))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Internal_FindPassTagValueInSubShader(
+        &mut self,
+        subShaderIndex: i32,
+        passIndex: i32,
+        tagName: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke(
+                "Internal_FindPassTagValueInSubShader",
+                (subShaderIndex, passIndex, tagName),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn Internal_FindSubshaderTagValue(
@@ -383,12 +292,103 @@ impl crate::UnityEngine::Shader {
             .invoke("Internal_FindSubshaderTagValue", (subShaderIndex, tagName))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_disableBatching(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::DisableBatchingType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::DisableBatchingType = __cordl_object
+            .invoke("get_disableBatching", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isSupported(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isSupported", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_keywordSpace(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Rendering::LocalKeywordSpace,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Rendering::LocalKeywordSpace = __cordl_object
+            .invoke("get_keywordSpace", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_keywordSpace_Injected(
+        &mut self,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Rendering::LocalKeywordSpace,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("get_keywordSpace_Injected", (ret))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maximumLOD(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_maximumLOD", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_passCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_passCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_renderQueue(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_renderQueue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_subshaderCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_subshaderCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_maximumLOD(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_maximumLOD", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Shader")]

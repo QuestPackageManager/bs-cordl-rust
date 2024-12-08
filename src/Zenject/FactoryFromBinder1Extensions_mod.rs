@@ -24,11 +24,6 @@ impl std::ops::DerefMut for crate::Zenject::FactoryFromBinder1Extensions {
 }
 #[cfg(feature = "Zenject+FactoryFromBinder1Extensions")]
 impl crate::Zenject::FactoryFromBinder1Extensions {
-    #[cfg(feature = "Zenject+FactoryFromBinder1Extensions+__c__1_2")]
-    pub type __c__1_2<
-        TParam1: quest_hook::libil2cpp::Type,
-        TContract: quest_hook::libil2cpp::Type,
-    > = crate::Zenject::FactoryFromBinder1Extensions___c__1_2<TParam1, TContract>;
     #[cfg(feature = "Zenject+FactoryFromBinder1Extensions+__c__5_3")]
     pub type __c__5_3<
         TParam1: quest_hook::libil2cpp::Type,
@@ -39,14 +34,11 @@ impl crate::Zenject::FactoryFromBinder1Extensions {
         TContract,
         TMemoryPool,
     >;
-    #[cfg(feature = "Zenject+FactoryFromBinder1Extensions+__c__DisplayClass0_0_2")]
-    pub type __c__DisplayClass0_0_2<
+    #[cfg(feature = "Zenject+FactoryFromBinder1Extensions+__c__1_2")]
+    pub type __c__1_2<
         TParam1: quest_hook::libil2cpp::Type,
         TContract: quest_hook::libil2cpp::Type,
-    > = crate::Zenject::FactoryFromBinder1Extensions___c__DisplayClass0_0_2<
-        TParam1,
-        TContract,
-    >;
+    > = crate::Zenject::FactoryFromBinder1Extensions___c__1_2<TParam1, TContract>;
     #[cfg(feature = "Zenject+FactoryFromBinder1Extensions+__c__3_2")]
     pub type __c__3_2<
         TParam1: quest_hook::libil2cpp::Type,
@@ -61,6 +53,14 @@ impl crate::Zenject::FactoryFromBinder1Extensions {
         TParam1,
         TContract,
         TMemoryPool,
+    >;
+    #[cfg(feature = "Zenject+FactoryFromBinder1Extensions+__c__DisplayClass0_0_2")]
+    pub type __c__DisplayClass0_0_2<
+        TParam1: quest_hook::libil2cpp::Type,
+        TContract: quest_hook::libil2cpp::Type,
+    > = crate::Zenject::FactoryFromBinder1Extensions___c__DisplayClass0_0_2<
+        TParam1,
+        TContract,
     >;
 }
 #[cfg(feature = "Zenject+FactoryFromBinder1Extensions")]

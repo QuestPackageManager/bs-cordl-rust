@@ -32,16 +32,6 @@ impl std::ops::DerefMut for StandaloneGraphicSettingsViewController {
 }
 #[cfg(feature = "StandaloneGraphicSettingsViewController")]
 impl StandaloneGraphicSettingsViewController {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -58,26 +48,27 @@ impl StandaloneGraphicSettingsViewController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HandleSmokeToggled(
+    pub fn DidDeactivate(
         &mut self,
-        newValue: bool,
+        removedFromHierarchy: bool,
+        screenSystemDisabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSmokeToggled", (newValue))?;
+            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleScreenDisplacementToggled(
+    pub fn HandleAntiAliasingLevelChanged(
         &mut self,
-        newValue: bool,
+        newValue: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleScreenDisplacementToggled", (newValue))?;
+            .invoke("HandleAntiAliasingLevelChanged", (newValue))?;
         Ok(__cordl_ret)
     }
     pub fn HandleFullscreenToggled(
@@ -102,7 +93,7 @@ impl StandaloneGraphicSettingsViewController {
             .invoke("HandleMainEffectChanged", (newValue))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleAntiAliasingLevelChanged(
+    pub fn HandleMirrorChanged(
         &mut self,
         newValue: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -110,7 +101,18 @@ impl StandaloneGraphicSettingsViewController {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleAntiAliasingLevelChanged", (newValue))?;
+            .invoke("HandleMirrorChanged", (newValue))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleScreenDisplacementToggled(
+        &mut self,
+        newValue: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleScreenDisplacementToggled", (newValue))?;
         Ok(__cordl_ret)
     }
     pub fn HandleShockwaveMaxParticlesChanged(
@@ -122,6 +124,17 @@ impl StandaloneGraphicSettingsViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleShockwaveMaxParticlesChanged", (newValue))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleSmokeToggled(
+        &mut self,
+        newValue: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleSmokeToggled", (newValue))?;
         Ok(__cordl_ret)
     }
     pub fn HandleVrRenderingScaleChanged(
@@ -136,29 +149,6 @@ impl StandaloneGraphicSettingsViewController {
             .invoke("HandleVrRenderingScaleChanged", (_, newValue))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleMirrorChanged(
-        &mut self,
-        newValue: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleMirrorChanged", (newValue))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DidDeactivate(
-        &mut self,
-        removedFromHierarchy: bool,
-        screenSystemDisabling: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
-        Ok(__cordl_ret)
-    }
     pub fn LoadPerformancePresetSettings(
         &mut self,
         preset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
@@ -170,12 +160,22 @@ impl StandaloneGraphicSettingsViewController {
             .invoke("LoadPerformancePresetSettings", (preset))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "StandaloneGraphicSettingsViewController")]

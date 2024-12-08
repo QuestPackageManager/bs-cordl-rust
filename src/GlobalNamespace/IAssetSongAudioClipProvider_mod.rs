@@ -24,6 +24,11 @@ impl std::ops::DerefMut for IAssetSongAudioClipProvider {
 }
 #[cfg(feature = "IAssetSongAudioClipProvider")]
 impl IAssetSongAudioClipProvider {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_songAudioClip(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AudioClip> {
@@ -33,11 +38,6 @@ impl IAssetSongAudioClipProvider {
         let __cordl_ret: *mut crate::UnityEngine::AudioClip = __cordl_object
             .invoke("get_songAudioClip", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IAssetSongAudioClipProvider")]

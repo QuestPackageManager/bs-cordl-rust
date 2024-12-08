@@ -24,19 +24,18 @@ impl std::ops::DerefMut for crate::System::Dynamic::SetIndexBinder {
 }
 #[cfg(feature = "System+Dynamic+SetIndexBinder")]
 impl crate::System::Dynamic::SetIndexBinder {
-    pub fn FallbackSetIndex_DynamicMetaObject_Il2CppArray_DynamicMetaObject0(
+    pub fn Bind(
         &mut self,
         target: *mut crate::System::Dynamic::DynamicMetaObject,
-        indexes: *mut quest_hook::libil2cpp::Il2CppArray<
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Dynamic::DynamicMetaObject,
         >,
-        value: *mut crate::System::Dynamic::DynamicMetaObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("FallbackSetIndex", (target, indexes, value))?;
+            .invoke("Bind", (target, args))?;
         Ok(__cordl_ret)
     }
     pub fn FallbackSetIndex_DynamicMetaObject1(
@@ -55,18 +54,19 @@ impl crate::System::Dynamic::SetIndexBinder {
             .invoke("FallbackSetIndex", (target, indexes, value, errorSuggestion))?;
         Ok(__cordl_ret)
     }
-    pub fn Bind(
+    pub fn FallbackSetIndex_DynamicMetaObject_Il2CppArray_DynamicMetaObject0(
         &mut self,
         target: *mut crate::System::Dynamic::DynamicMetaObject,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<
+        indexes: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Dynamic::DynamicMetaObject,
         >,
+        value: *mut crate::System::Dynamic::DynamicMetaObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("Bind", (target, args))?;
+            .invoke("FallbackSetIndex", (target, indexes, value))?;
         Ok(__cordl_ret)
     }
 }

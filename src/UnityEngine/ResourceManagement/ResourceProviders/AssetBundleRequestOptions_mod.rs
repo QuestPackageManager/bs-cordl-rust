@@ -49,52 +49,6 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReques
     feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
 )]
 impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleRequestOptions {
-    pub fn set_Hash(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Hash", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Crc(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("get_Crc", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ClearOtherCachedVersionsWhenLoaded(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_ClearOtherCachedVersionsWhenLoaded", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_RedirectLimit(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_RedirectLimit", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ClearOtherCachedVersionsWhenLoaded(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ClearOtherCachedVersionsWhenLoaded", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn ComputeSize(
         &mut self,
         location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
@@ -107,16 +61,12 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReque
             .invoke("ComputeSize", (location, resourceManager))?;
         Ok(__cordl_ret)
     }
-    pub fn set_RetryCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_RetryCount", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -128,18 +78,16 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReque
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_RetryCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_AssetLoadMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::AssetLoadMode,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_RetryCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_BundleSize(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_BundleSize", ())?;
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::ResourceProviders::AssetLoadMode = __cordl_object
+            .invoke("get_AssetLoadMode", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_BundleName(
@@ -152,37 +100,35 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReque
             .invoke("get_BundleName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_UseCrcForCachedBundle(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_BundleSize(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_UseCrcForCachedBundle", (value))?;
+        let __cordl_ret: i64 = __cordl_object.invoke("get_BundleSize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_BundleName(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_ChunkedTransfer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_BundleName", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_ChunkedTransfer", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_ChunkedTransfer(
+    pub fn get_ClearOtherCachedVersionsWhenLoaded(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ChunkedTransfer", (value))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_ClearOtherCachedVersionsWhenLoaded", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Crc(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("get_Crc", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Hash(
@@ -193,6 +139,27 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReque
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_Hash", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RedirectLimit(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_RedirectLimit", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RetryCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_RetryCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Timeout(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Timeout", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_UseCrcForCachedBundle(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -212,47 +179,6 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReque
             .invoke("get_UseUnityWebRequestForLocalBundles", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_AssetLoadMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ResourceManagement::ResourceProviders::AssetLoadMode,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ResourceManagement::ResourceProviders::AssetLoadMode = __cordl_object
-            .invoke("get_AssetLoadMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Timeout(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Timeout", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ChunkedTransfer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_ChunkedTransfer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Crc(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Crc", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn set_AssetLoadMode(
         &mut self,
         value: crate::UnityEngine::ResourceManagement::ResourceProviders::AssetLoadMode,
@@ -262,6 +188,17 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReque
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_AssetLoadMode", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_BundleName(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_BundleName", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_BundleSize(
@@ -275,11 +212,48 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReque
             .invoke("set_BundleSize", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Timeout(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn set_ChunkedTransfer(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Timeout", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ChunkedTransfer", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ClearOtherCachedVersionsWhenLoaded(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ClearOtherCachedVersionsWhenLoaded", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Crc(
+        &mut self,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Crc", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Hash(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Hash", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_RedirectLimit(
@@ -293,6 +267,39 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReque
             .invoke("set_RedirectLimit", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn set_RetryCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_RetryCount", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Timeout(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Timeout", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_UseCrcForCachedBundle(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_UseCrcForCachedBundle", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_UseUnityWebRequestForLocalBundles(
         &mut self,
         value: bool,
@@ -303,13 +310,6 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReque
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_UseUnityWebRequestForLocalBundles", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

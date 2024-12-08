@@ -35,6 +35,11 @@ impl crate::System::Threading::Tasks::ITaskCompletionAction {
             .invoke("Invoke", (completingTask))?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_InvokeMayRunArbitraryCode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -44,11 +49,6 @@ impl crate::System::Threading::Tasks::ITaskCompletionAction {
         let __cordl_ret: bool = __cordl_object
             .invoke("get_InvokeMayRunArbitraryCode", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "System+Threading+Tasks+ITaskCompletionAction")]

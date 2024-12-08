@@ -24,6 +24,26 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::BerSetGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerSetGenerator")]
 impl crate::Org::BouncyCastle::Asn1::BerSetGenerator {
+    pub fn New_Stream0(
+        outStream: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (outStream))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32__cordl_bool1(
+        outStream: *mut crate::System::IO::Stream,
+        tagNo: i32,
+        isExplicit: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (outStream, tagNo, isExplicit))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_Stream0(
         &mut self,
         outStream: *mut crate::System::IO::Stream,
@@ -47,26 +67,6 @@ impl crate::Org::BouncyCastle::Asn1::BerSetGenerator {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (outStream, tagNo, isExplicit))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_Stream0(
-        outStream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (outStream))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32__cordl_bool1(
-        outStream: *mut crate::System::IO::Stream,
-        tagNo: i32,
-        isExplicit: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (outStream, tagNo, isExplicit))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerSetGenerator")]

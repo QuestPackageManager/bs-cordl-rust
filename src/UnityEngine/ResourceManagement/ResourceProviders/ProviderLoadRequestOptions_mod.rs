@@ -39,23 +39,24 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadReque
     feature = "UnityEngine+ResourceManagement+ResourceProviders+ProviderLoadRequestOptions"
 )]
 impl crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadRequestOptions {
-    pub fn get_WebRequestTimeout(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn Copy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadRequestOptions,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_WebRequestTimeout", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadRequestOptions = __cordl_object
+            .invoke("Copy", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_WebRequestTimeout(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_WebRequestTimeout", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -74,6 +75,13 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadRequ
         let __cordl_ret: bool = __cordl_object.invoke("get_IgnoreFailures", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_WebRequestTimeout(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_WebRequestTimeout", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_IgnoreFailures(
         &mut self,
         value: bool,
@@ -85,24 +93,16 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadRequ
             .invoke("set_IgnoreFailures", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Copy(
+    pub fn set_WebRequestTimeout(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadRequestOptions,
-    > {
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadRequestOptions = __cordl_object
-            .invoke("Copy", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_WebRequestTimeout", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

@@ -30,12 +30,17 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::ErrorContext
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+ErrorContext")]
 impl crate::Newtonsoft::Json::Serialization::ErrorContext {
-    pub fn get_Traced(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Traced", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        originalObject: *mut crate::System::Object,
+        member: *mut crate::System::Object,
+        path: *mut crate::System::String,
+        error: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (originalObject, member, path, error))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -51,27 +56,6 @@ impl crate::Newtonsoft::Json::Serialization::ErrorContext {
             .invoke(".ctor", (originalObject, member, path, error))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Handled(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Handled", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_OriginalObject(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_OriginalObject", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Error(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
@@ -82,32 +66,11 @@ impl crate::Newtonsoft::Json::Serialization::ErrorContext {
             .invoke("get_Error", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_Traced(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Traced", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Handled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_Handled", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Path(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Path", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Member(
@@ -120,17 +83,54 @@ impl crate::Newtonsoft::Json::Serialization::ErrorContext {
             .invoke("get_Member", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        originalObject: *mut crate::System::Object,
-        member: *mut crate::System::Object,
-        path: *mut crate::System::String,
-        error: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (originalObject, member, path, error))?;
-        Ok(__cordl_object)
+    pub fn get_OriginalObject(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_OriginalObject", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Path(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Path", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Traced(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_Traced", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Handled(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Handled", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Traced(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Traced", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+ErrorContext")]

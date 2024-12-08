@@ -25,6 +25,15 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Bson::BsonEmpty {
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonEmpty")]
 impl crate::Newtonsoft::Json::Bson::BsonEmpty {
+    pub fn New(
+        _cordl_type: crate::Newtonsoft::Json::Bson::BsonType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         _cordl_type: crate::Newtonsoft::Json::Bson::BsonType,
@@ -45,15 +54,6 @@ impl crate::Newtonsoft::Json::Bson::BsonEmpty {
         let __cordl_ret: crate::Newtonsoft::Json::Bson::BsonType = __cordl_object
             .invoke("get_Type", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        _cordl_type: crate::Newtonsoft::Json::Bson::BsonType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonEmpty")]

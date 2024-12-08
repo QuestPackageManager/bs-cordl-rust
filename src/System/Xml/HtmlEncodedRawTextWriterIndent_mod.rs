@@ -28,79 +28,6 @@ impl std::ops::DerefMut for crate::System::Xml::HtmlEncodedRawTextWriterIndent {
 }
 #[cfg(feature = "System+Xml+HtmlEncodedRawTextWriterIndent")]
 impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
-    pub fn WriteIndent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteIndent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_TextWriter0(
-        &mut self,
-        writer: *mut crate::System::IO::TextWriter,
-        settings: *mut crate::System::Xml::XmlWriterSettings,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (writer, settings))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Stream1(
-        &mut self,
-        stream: *mut crate::System::IO::Stream,
-        settings: *mut crate::System::Xml::XmlWriterSettings,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stream, settings))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteStartElement(
-        &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteStartElement", (prefix, localName, ns))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteEndElement(
-        &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteEndElement", (prefix, localName, ns))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteStartAttribute(
-        &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteStartAttribute", (prefix, localName, ns))?;
-        Ok(__cordl_ret)
-    }
     pub fn FlushBuffer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -121,6 +48,26 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (settings))?;
         Ok(__cordl_ret)
+    }
+    pub fn New_Stream1(
+        stream: *mut crate::System::IO::Stream,
+        settings: *mut crate::System::Xml::XmlWriterSettings,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream, settings))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_TextWriter0(
+        writer: *mut crate::System::IO::TextWriter,
+        settings: *mut crate::System::Xml::XmlWriterSettings,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (writer, settings))?;
+        Ok(__cordl_object)
     }
     pub fn StartElementContent(
         &mut self,
@@ -146,25 +93,78 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
             .invoke("WriteDocType", (name, pubid, sysid, subset))?;
         Ok(__cordl_ret)
     }
-    pub fn New_TextWriter0(
-        writer: *mut crate::System::IO::TextWriter,
-        settings: *mut crate::System::Xml::XmlWriterSettings,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (writer, settings))?;
-        Ok(__cordl_object)
+    pub fn WriteEndElement(
+        &mut self,
+        prefix: *mut crate::System::String,
+        localName: *mut crate::System::String,
+        ns: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteEndElement", (prefix, localName, ns))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_Stream1(
+    pub fn WriteIndent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteIndent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteStartAttribute(
+        &mut self,
+        prefix: *mut crate::System::String,
+        localName: *mut crate::System::String,
+        ns: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteStartAttribute", (prefix, localName, ns))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteStartElement(
+        &mut self,
+        prefix: *mut crate::System::String,
+        localName: *mut crate::System::String,
+        ns: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteStartElement", (prefix, localName, ns))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Stream1(
+        &mut self,
         stream: *mut crate::System::IO::Stream,
         settings: *mut crate::System::Xml::XmlWriterSettings,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream, settings))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stream, settings))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_TextWriter0(
+        &mut self,
+        writer: *mut crate::System::IO::TextWriter,
+        settings: *mut crate::System::Xml::XmlWriterSettings,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (writer, settings))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+HtmlEncodedRawTextWriterIndent")]

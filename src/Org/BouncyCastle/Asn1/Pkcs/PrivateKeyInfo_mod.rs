@@ -29,15 +29,50 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+PrivateKeyInfo")]
 impl crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo {
-    pub fn ToAsn1Object(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
+    pub fn New_AlgorithmIdentifier_Asn1Encodable0(
+        privateKeyAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        privateKey: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (privateKeyAlgorithm, privateKey))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_AlgorithmIdentifier_Asn1Encodable_Asn1Set1(
+        privateKeyAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        privateKey: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        attributes: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (privateKeyAlgorithm, privateKey, attributes))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_AlgorithmIdentifier_Asn1Encodable_Asn1Set_Il2CppArray2(
+        privateKeyAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        privateKey: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        attributes: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
+        publicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (privateKeyAlgorithm, privateKey, attributes, publicKey),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Asn1Sequence3(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
     }
     pub fn ParsePrivateKey(
         &mut self,
@@ -49,23 +84,24 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo {
             .invoke("ParsePrivateKey", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_HasPublicKey(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn ParsePublicKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasPublicKey", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("ParsePublicKey", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_PrivateKeyAlgorithm(
+    pub fn ToAsn1Object(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier = __cordl_object
-            .invoke("get_PrivateKeyAlgorithm", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_AlgorithmIdentifier_Asn1Encodable0(
@@ -118,26 +154,6 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret)
     }
-    pub fn ParsePublicKey(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ParsePublicKey", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Version(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::DerInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
-            .invoke("get_Version", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Attributes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Set> {
@@ -146,6 +162,25 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Set = __cordl_object
             .invoke("get_Attributes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HasPublicKey(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasPublicKey", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_PrivateKeyAlgorithm(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier = __cordl_object
+            .invoke("get_PrivateKeyAlgorithm", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_PrivateKeyData(
@@ -172,50 +207,15 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo {
             .invoke("get_PublicKeyData", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_AlgorithmIdentifier_Asn1Encodable0(
-        privateKeyAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        privateKey: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (privateKeyAlgorithm, privateKey))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_AlgorithmIdentifier_Asn1Encodable_Asn1Set1(
-        privateKeyAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        privateKey: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-        attributes: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (privateKeyAlgorithm, privateKey, attributes))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_AlgorithmIdentifier_Asn1Encodable_Asn1Set_Il2CppArray2(
-        privateKeyAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        privateKey: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-        attributes: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-        publicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (privateKeyAlgorithm, privateKey, attributes, publicKey),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Asn1Sequence3(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
+    pub fn get_Version(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::DerInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
+            .invoke("get_Version", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+PrivateKeyInfo")]

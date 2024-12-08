@@ -27,12 +27,33 @@ impl std::ops::DerefMut for crate::System::Net::ServicePointManager_SPKey {
 }
 #[cfg(feature = "System+Net+ServicePointManager+SPKey")]
 impl crate::System::Net::ServicePointManager_SPKey {
+    pub fn Equals(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        uri: *mut crate::System::Uri,
+        proxy: *mut crate::System::Uri,
+        use_connect: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (uri, proxy, use_connect))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -47,33 +68,12 @@ impl crate::System::Net::ServicePointManager_SPKey {
             .invoke(".ctor", (uri, proxy, use_connect))?;
         Ok(__cordl_ret)
     }
-    pub fn Equals(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_UsesProxy(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_UsesProxy", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        uri: *mut crate::System::Uri,
-        proxy: *mut crate::System::Uri,
-        use_connect: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (uri, proxy, use_connect))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+ServicePointManager+SPKey")]

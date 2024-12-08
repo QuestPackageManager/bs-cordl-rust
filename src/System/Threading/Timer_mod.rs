@@ -30,28 +30,6 @@ impl std::ops::DerefMut for crate::System::Threading::Timer_Scheduler {
 }
 #[cfg(feature = "System+Threading+Timer+Scheduler")]
 impl crate::System::Threading::Timer_Scheduler {
-    pub fn Remove(
-        &mut self,
-        timer: *mut crate::System::Threading::Timer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Remove", (timer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FireTimer(
-        &mut self,
-        timer: *mut crate::System::Threading::Timer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FireTimer", (timer))?;
-        Ok(__cordl_ret)
-    }
     pub fn Add(
         &mut self,
         timer: *mut crate::System::Threading::Timer,
@@ -61,17 +39,6 @@ impl crate::System::Threading::Timer_Scheduler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Add", (timer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalRemove(
-        &mut self,
-        timer: *mut crate::System::Threading::Timer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalRemove", (timer))?;
         Ok(__cordl_ret)
     }
     pub fn Change(
@@ -86,14 +53,15 @@ impl crate::System::Threading::Timer_Scheduler {
             .invoke("Change", (timer, new_next_run))?;
         Ok(__cordl_ret)
     }
-    pub fn WakeupScheduler(
+    pub fn FireTimer(
         &mut self,
+        timer: *mut crate::System::Threading::Timer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WakeupScheduler", ())?;
+            .invoke("FireTimer", (timer))?;
         Ok(__cordl_ret)
     }
     pub fn InitScheduler(
@@ -106,14 +74,40 @@ impl crate::System::Threading::Timer_Scheduler {
             .invoke("InitScheduler", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn InternalRemove(
         &mut self,
+        timer: *mut crate::System::Threading::Timer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("InternalRemove", (timer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Remove(
+        &mut self,
+        timer: *mut crate::System::Threading::Timer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Remove", (timer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RunSchedulerLoop(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("RunSchedulerLoop", ())?;
         Ok(__cordl_ret)
     }
     pub fn SchedulerThread(
@@ -126,19 +120,25 @@ impl crate::System::Threading::Timer_Scheduler {
             .invoke("SchedulerThread", ())?;
         Ok(__cordl_ret)
     }
-    pub fn RunSchedulerLoop(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn WakeupScheduler(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("RunSchedulerLoop", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WakeupScheduler", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Threading+Timer+Scheduler")]
@@ -185,24 +185,14 @@ impl std::ops::DerefMut for crate::System::Threading::Timer {
 #[cfg(feature = "System+Threading+Timer")]
 impl crate::System::Threading::Timer {
     pub const MaxValue: i64 = 4294967294i64;
-    #[cfg(feature = "System+Threading+Timer+TimerComparer")]
-    pub type TimerComparer = crate::System::Threading::Timer_TimerComparer;
     #[cfg(feature = "System+Threading+Timer+Scheduler")]
     pub type Scheduler = crate::System::Threading::Timer_Scheduler;
-    pub fn DisposeAsync(
+    #[cfg(feature = "System+Threading+Timer+TimerComparer")]
+    pub type TimerComparer = crate::System::Threading::Timer_TimerComparer;
+    pub fn Change_TimeSpan_TimeSpan1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Threading::Tasks::ValueTask = __cordl_object
-            .invoke("DisposeAsync", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Change_i32_i32_0(
-        &mut self,
-        dueTime: i32,
-        period: i32,
+        dueTime: crate::System::TimeSpan,
+        period: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -210,10 +200,10 @@ impl crate::System::Threading::Timer {
         let __cordl_ret: bool = __cordl_object.invoke("Change", (dueTime, period))?;
         Ok(__cordl_ret)
     }
-    pub fn Change_TimeSpan_TimeSpan1(
+    pub fn Change_i32_i32_0(
         &mut self,
-        dueTime: crate::System::TimeSpan,
-        period: crate::System::TimeSpan,
+        dueTime: i32,
+        period: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -234,44 +224,6 @@ impl crate::System::Threading::Timer {
             .invoke("Change", (dueTime, period, first))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_i32_0(
-        &mut self,
-        callback: *mut crate::System::Threading::TimerCallback,
-        state: *mut crate::System::Object,
-        dueTime: i32,
-        period: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (callback, state, dueTime, period))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_TimeSpan_TimeSpan1(
-        &mut self,
-        callback: *mut crate::System::Threading::TimerCallback,
-        state: *mut crate::System::Object,
-        dueTime: crate::System::TimeSpan,
-        period: crate::System::TimeSpan,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (callback, state, dueTime, period))?;
-        Ok(__cordl_ret)
-    }
-    pub fn KeepRootedWhileScheduled(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("KeepRootedWhileScheduled", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -280,6 +232,16 @@ impl crate::System::Threading::Timer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DisposeAsync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Threading::Tasks::ValueTask = __cordl_object
+            .invoke("DisposeAsync", ())?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -296,29 +258,67 @@ impl crate::System::Threading::Timer {
             .invoke("Init", (callback, state, dueTime, period))?;
         Ok(__cordl_ret)
     }
-    pub fn New_i32_i32_0(
-        callback: *mut crate::System::Threading::TimerCallback,
-        state: *mut crate::System::Object,
-        dueTime: i32,
-        period: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (callback, state, dueTime, period))?;
-        Ok(__cordl_object)
+    pub fn KeepRootedWhileScheduled(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("KeepRootedWhileScheduled", ())?;
+        Ok(__cordl_ret)
     }
     pub fn New_TimeSpan_TimeSpan1(
         callback: *mut crate::System::Threading::TimerCallback,
         state: *mut crate::System::Object,
         dueTime: crate::System::TimeSpan,
         period: crate::System::TimeSpan,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (callback, state, dueTime, period))?;
         Ok(__cordl_object)
+    }
+    pub fn New_i32_i32_0(
+        callback: *mut crate::System::Threading::TimerCallback,
+        state: *mut crate::System::Object,
+        dueTime: i32,
+        period: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (callback, state, dueTime, period))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_TimeSpan_TimeSpan1(
+        &mut self,
+        callback: *mut crate::System::Threading::TimerCallback,
+        state: *mut crate::System::Object,
+        dueTime: crate::System::TimeSpan,
+        period: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (callback, state, dueTime, period))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_i32_0(
+        &mut self,
+        callback: *mut crate::System::Threading::TimerCallback,
+        state: *mut crate::System::Object,
+        dueTime: i32,
+        period: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (callback, state, dueTime, period))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Threading+Timer")]
@@ -352,18 +352,6 @@ for crate::System::Threading::Timer_TimerComparer {
 }
 #[cfg(feature = "System+Threading+Timer+TimerComparer")]
 impl crate::System::Threading::Timer_TimerComparer {
-    pub fn System_Collections_IComparer_Compare(
-        &mut self,
-        x: *mut crate::System::Object,
-        y: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.IComparer.Compare",
-            (x, y),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Compare(
         &mut self,
         tx: *mut crate::System::Threading::Timer,
@@ -373,6 +361,18 @@ impl crate::System::Threading::Timer_TimerComparer {
             self,
             "Compare",
             (tx, ty),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IComparer_Compare(
+        &mut self,
+        x: *mut crate::System::Object,
+        y: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.IComparer.Compare",
+            (x, y),
         )?;
         Ok(__cordl_ret)
     }

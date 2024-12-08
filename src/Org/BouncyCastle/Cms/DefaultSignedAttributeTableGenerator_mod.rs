@@ -28,6 +28,47 @@ for crate::Org::BouncyCastle::Cms::DefaultSignedAttributeTableGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignedAttributeTableGenerator")]
 impl crate::Org::BouncyCastle::Cms::DefaultSignedAttributeTableGenerator {
+    pub fn DoCreateStandardAttributeTable(
+        &mut self,
+        parameters: *mut crate::System::Collections::IDictionary,
+        std: *mut crate::System::Collections::IDictionary,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DoCreateStandardAttributeTable", (parameters, std))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetAttributes(
+        &mut self,
+        parameters: *mut crate::System::Collections::IDictionary,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable = __cordl_object
+            .invoke("GetAttributes", (parameters))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_AttributeTable1(
+        attributeTable: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (attributeTable))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -59,47 +100,6 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignedAttributeTableGenerator {
         let __cordl_ret: *mut crate::System::Collections::Hashtable = __cordl_object
             .invoke("createStandardAttributeTable", (parameters))?;
         Ok(__cordl_ret)
-    }
-    pub fn GetAttributes(
-        &mut self,
-        parameters: *mut crate::System::Collections::IDictionary,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable = __cordl_object
-            .invoke("GetAttributes", (parameters))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DoCreateStandardAttributeTable(
-        &mut self,
-        parameters: *mut crate::System::Collections::IDictionary,
-        std: *mut crate::System::Collections::IDictionary,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DoCreateStandardAttributeTable", (parameters, std))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_AttributeTable1(
-        attributeTable: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (attributeTable))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignedAttributeTableGenerator")]

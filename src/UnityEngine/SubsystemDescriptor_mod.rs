@@ -25,16 +25,6 @@ impl std::ops::DerefMut for crate::UnityEngine::SubsystemDescriptor {
 }
 #[cfg(feature = "UnityEngine+SubsystemDescriptor")]
 impl crate::UnityEngine::SubsystemDescriptor {
-    pub fn get_id(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_id", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateImpl(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ISubsystem> {
@@ -43,6 +33,23 @@ impl crate::UnityEngine::SubsystemDescriptor {
         );
         let __cordl_ret: *mut crate::UnityEngine::ISubsystem = __cordl_object
             .invoke("CreateImpl", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn UnityEngine_ISubsystemDescriptor_Create(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ISubsystem> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::ISubsystem = __cordl_object
+            .invoke("UnityEngine.ISubsystemDescriptor.Create", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -55,22 +62,15 @@ impl crate::UnityEngine::SubsystemDescriptor {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn UnityEngine_ISubsystemDescriptor_Create(
+    pub fn get_id(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ISubsystem> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ISubsystem = __cordl_object
-            .invoke("UnityEngine.ISubsystemDescriptor.Create", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_id", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+SubsystemDescriptor")]

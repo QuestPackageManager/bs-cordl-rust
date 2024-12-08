@@ -43,27 +43,14 @@ impl std::ops::DerefMut for OVRSceneRoom {
 }
 #[cfg(feature = "OVRSceneRoom")]
 impl OVRSceneRoom {
-    pub fn UpdateRoomInformation(
+    pub fn Awake(
         &mut self,
-        plane: *mut OVRScenePlane,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateRoomInformation", (plane))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Walls(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut OVRScenePlane>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<*mut OVRScenePlane> = __cordl_object
-            .invoke("get_Walls", ())?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetUuidsToQuery(
@@ -76,6 +63,33 @@ impl OVRSceneRoom {
             .invoke("GetUuidsToQuery", ())?;
         Ok(__cordl_ret)
     }
+    pub fn IOVRSceneComponent_Initialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("IOVRSceneComponent.Initialize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadRoom(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LoadRoom", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -84,6 +98,17 @@ impl OVRSceneRoom {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnFetchAnchorsCompleted(
+        &mut self,
+        success: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnFetchAnchorsCompleted", (success))?;
         Ok(__cordl_ret)
     }
     pub fn OnLocalizationCompleted(
@@ -98,46 +123,15 @@ impl OVRSceneRoom {
             .invoke("OnLocalizationCompleted", (success, anchor))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn UpdateRoomInformation(
         &mut self,
+        plane: *mut OVRScenePlane,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadRoom(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LoadRoom", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnFetchAnchorsCompleted(
-        &mut self,
-        success: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnFetchAnchorsCompleted", (success))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Ceiling(
-        &mut self,
-        value: *mut OVRScenePlane,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Ceiling", (value))?;
+            .invoke("UpdateRoomInformation", (plane))?;
         Ok(__cordl_ret)
     }
     pub fn _Awake_b__24_0(
@@ -152,11 +146,63 @@ impl OVRSceneRoom {
             .invoke("<Awake>b__24_0", (planeA, planeB))?;
         Ok(__cordl_ret)
     }
+    pub fn _Awake_g__TryGetUuid_24_1(
+        &mut self,
+        plane: *mut OVRScenePlane,
+        index: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("<Awake>g__TryGetUuid|24_1", (plane, index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Ceiling(&mut self) -> quest_hook::libil2cpp::Result<*mut OVRScenePlane> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut OVRScenePlane = __cordl_object.invoke("get_Ceiling", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Floor(&mut self) -> quest_hook::libil2cpp::Result<*mut OVRScenePlane> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut OVRScenePlane = __cordl_object.invoke("get_Floor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Walls(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut OVRScenePlane>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<*mut OVRScenePlane> = __cordl_object
+            .invoke("get_Walls", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Ceiling(
+        &mut self,
+        value: *mut OVRScenePlane,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Ceiling", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_Floor(
@@ -180,52 +226,6 @@ impl OVRSceneRoom {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Walls", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_Floor(&mut self) -> quest_hook::libil2cpp::Result<*mut OVRScenePlane> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut OVRScenePlane = __cordl_object.invoke("get_Floor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _Awake_g__TryGetUuid_24_1(
-        &mut self,
-        plane: *mut OVRScenePlane,
-        index: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("<Awake>g__TryGetUuid|24_1", (plane, index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IOVRSceneComponent_Initialize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("IOVRSceneComponent.Initialize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRSceneRoom")]

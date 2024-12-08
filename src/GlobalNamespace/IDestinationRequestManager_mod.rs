@@ -24,28 +24,6 @@ impl std::ops::DerefMut for IDestinationRequestManager {
 }
 #[cfg(feature = "IDestinationRequestManager")]
 impl IDestinationRequestManager {
-    pub fn set_currentMenuDestinationRequest(
-        &mut self,
-        value: *mut MenuDestination,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_currentMenuDestinationRequest", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didSendMenuDestinationRequestEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut MenuDestination>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didSendMenuDestinationRequestEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -67,6 +45,11 @@ impl IDestinationRequestManager {
             .invoke("add_didSendMenuDestinationRequestEvent", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_currentMenuDestinationRequest(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut MenuDestination> {
@@ -77,10 +60,27 @@ impl IDestinationRequestManager {
             .invoke("get_currentMenuDestinationRequest", ())?;
         Ok(__cordl_ret)
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
+    pub fn remove_didSendMenuDestinationRequestEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut MenuDestination>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didSendMenuDestinationRequestEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_currentMenuDestinationRequest(
+        &mut self,
+        value: *mut MenuDestination,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_currentMenuDestinationRequest", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "IDestinationRequestManager")]

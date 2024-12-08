@@ -22,21 +22,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::RefreshR
 }
 #[cfg(feature = "UnityEngine+RefreshRate")]
 impl crate::UnityEngine::RefreshRate {
-    pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_value",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
+    pub fn CompareTo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::RefreshRate,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
-            (),
+            "CompareTo",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -51,14 +44,21 @@ impl crate::UnityEngine::RefreshRate {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CompareTo(
+    pub fn ToString(
         &mut self,
-        other: crate::UnityEngine::RefreshRate,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CompareTo",
-            (other),
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_value",
+            (),
         )?;
         Ok(__cordl_ret)
     }

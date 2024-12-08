@@ -26,14 +26,6 @@ for crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord {
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkToBaseAdjustmentRecord")]
 impl crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord {
-    pub fn get_baseGlyphID(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_baseGlyphID",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_baseGlyphAnchorPoint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -46,14 +38,10 @@ impl crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_markPositionAdjustment(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment,
-    > {
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_baseGlyphID(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_markPositionAdjustment",
+            "get_baseGlyphID",
             (),
         )?;
         Ok(__cordl_ret)
@@ -62,6 +50,18 @@ impl crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_markGlyphID",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_markPositionAdjustment(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment,
+    > {
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_markPositionAdjustment",
             (),
         )?;
         Ok(__cordl_ret)

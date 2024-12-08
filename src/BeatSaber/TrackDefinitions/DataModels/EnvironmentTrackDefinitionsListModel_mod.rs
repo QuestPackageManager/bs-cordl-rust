@@ -45,6 +45,17 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitions
         feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionsListModel+__c"
     )]
     pub type __c = crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsListModel___c;
+    pub fn New(
+        environmentTrackDefinitions: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (environmentTrackDefinitions))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         environmentTrackDefinitions: *mut crate::System::Collections::Generic::IEnumerable_1<
@@ -70,17 +81,6 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitions
         let __cordl_ret: *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel = __cordl_object
             .invoke("get_Item", (_cordl_type))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        environmentTrackDefinitions: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (environmentTrackDefinitions))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(

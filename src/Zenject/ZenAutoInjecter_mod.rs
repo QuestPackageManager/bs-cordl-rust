@@ -41,17 +41,6 @@ impl std::ops::DerefMut for crate::Zenject::ZenAutoInjecter {
 impl crate::Zenject::ZenAutoInjecter {
     #[cfg(feature = "Zenject+ZenAutoInjecter+ContainerSources")]
     pub type ContainerSources = crate::Zenject::ZenAutoInjecter_ContainerSources;
-    pub fn set_ContainerSource(
-        &mut self,
-        value: crate::Zenject::ZenAutoInjecter_ContainerSources,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ContainerSource", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -60,6 +49,53 @@ impl crate::Zenject::ZenAutoInjecter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Construct(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Construct", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetContainerForCurrentScene(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
+            .invoke("GetContainerForCurrentScene", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn LookupContainer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
+            .invoke("LookupContainer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ContainerSource(
@@ -74,52 +110,16 @@ impl crate::Zenject::ZenAutoInjecter {
             .invoke("get_ContainerSource", ())?;
         Ok(__cordl_ret)
     }
-    pub fn LookupContainer(
+    pub fn set_ContainerSource(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
-            .invoke("LookupContainer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
+        value: crate::Zenject::ZenAutoInjecter_ContainerSources,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("set_ContainerSource", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn GetContainerForCurrentScene(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
-            .invoke("GetContainerForCurrentScene", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Construct(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Construct", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+ZenAutoInjecter")]

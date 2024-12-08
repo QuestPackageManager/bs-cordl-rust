@@ -27,11 +27,12 @@ for crate::Oculus::Platform::Message_1_Callback<T> {
 }
 #[cfg(feature = "Oculus+Platform+Message_1+Callback")]
 impl<T: quest_hook::libil2cpp::Type> crate::Oculus::Platform::Message_1_Callback<T> {
-    pub fn _ctor(
+    pub fn BeginInvoke(
         &mut self,
+        message: *mut crate::Oculus::Platform::Message_1<T>,
+        callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -39,8 +40,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::Oculus::Platform::Message_1_Callback
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (message, callback, object))?;
         Ok(__cordl_ret)
     }
     pub fn EndInvoke(
@@ -73,12 +74,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::Oculus::Platform::Message_1_Callback
             .invoke("Invoke", (message))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInvoke(
-        &mut self,
-        message: *mut crate::Oculus::Platform::Message_1<T>,
-        callback: *mut crate::System::AsyncCallback,
+    pub fn New(
         object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult>
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -86,19 +96,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::Oculus::Platform::Message_1_Callback
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (message, callback, object))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Oculus+Platform+Message_1+Callback")]
@@ -143,6 +143,29 @@ for crate::Oculus::Platform::Message_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::Oculus::Platform::Message_1<T> {
     #[cfg(feature = "Oculus+Platform+Message_1+Callback")]
     pub type Callback = crate::Oculus::Platform::Message_1_Callback<T>;
+    pub fn GetDataFromMessage(
+        &mut self,
+        c_message: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("GetDataFromMessage", (c_message))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        c_message: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (c_message))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         c_message: crate::System::IntPtr,
@@ -168,29 +191,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::Oculus::Platform::Message_1<T> {
         );
         let __cordl_ret: T = __cordl_object.invoke("get_Data", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetDataFromMessage(
-        &mut self,
-        c_message: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("GetDataFromMessage", (c_message))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        c_message: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (c_message))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Oculus+Platform+Message_1")]

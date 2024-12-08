@@ -30,6 +30,13 @@ impl std::ops::DerefMut for crate::HMUI::EventSystemListener {
 }
 #[cfg(feature = "HMUI+EventSystemListener")]
 impl crate::HMUI::EventSystemListener {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn OnPointerEnter(
         &mut self,
         eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
@@ -39,58 +46,6 @@ impl crate::HMUI::EventSystemListener {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPointerEnter", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_pointerDidExitEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::EventSystems::PointerEventData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_pointerDidExitEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_pointerDidEnterEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::EventSystems::PointerEventData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_pointerDidEnterEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_pointerDidEnterEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::EventSystems::PointerEventData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_pointerDidEnterEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_pointerDidExitEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::EventSystems::PointerEventData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_pointerDidExitEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn OnPointerExit(
@@ -114,12 +69,57 @@ impl crate::HMUI::EventSystemListener {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn add_pointerDidEnterEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::EventSystems::PointerEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_pointerDidEnterEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_pointerDidExitEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::EventSystems::PointerEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_pointerDidExitEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_pointerDidEnterEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::EventSystems::PointerEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_pointerDidEnterEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_pointerDidExitEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            *mut crate::UnityEngine::EventSystems::PointerEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_pointerDidExitEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "HMUI+EventSystemListener")]

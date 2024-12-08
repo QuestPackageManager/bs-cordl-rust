@@ -24,6 +24,11 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::Messaging::IMessag
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+IMessage")]
 impl crate::System::Runtime::Remoting::Messaging::IMessage {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_Properties(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IDictionary> {
@@ -33,11 +38,6 @@ impl crate::System::Runtime::Remoting::Messaging::IMessage {
         let __cordl_ret: *mut crate::System::Collections::IDictionary = __cordl_object
             .invoke("get_Properties", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+IMessage")]

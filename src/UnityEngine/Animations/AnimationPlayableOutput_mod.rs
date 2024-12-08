@@ -34,6 +34,16 @@ impl crate::UnityEngine::Animations::AnimationPlayableOutput {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn GetTarget(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Animator> {
+        let __cordl_ret: *mut crate::UnityEngine::Animator = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetTarget",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn SetTarget(
         &mut self,
         value: *mut crate::UnityEngine::Animator,
@@ -42,16 +52,6 @@ impl crate::UnityEngine::Animations::AnimationPlayableOutput {
             self,
             "SetTarget",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTarget(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Animator> {
-        let __cordl_ret: *mut crate::UnityEngine::Animator = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetTarget",
-            (),
         )?;
         Ok(__cordl_ret)
     }

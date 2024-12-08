@@ -33,20 +33,10 @@ impl std::ops::DerefMut for crate::Mono::Net::Security::AsyncProtocolRequest {
 impl crate::Mono::Net::Security::AsyncProtocolRequest {
     #[cfg(feature = "Mono+Net+Security+AsyncProtocolRequest+_StartOperation_d__23")]
     pub type _StartOperation_d__23 = crate::Mono::Net::Security::AsyncProtocolRequest__StartOperation_d__23;
-    #[cfg(feature = "Mono+Net+Security+AsyncProtocolRequest+_ProcessOperation_d__24")]
-    pub type _ProcessOperation_d__24 = crate::Mono::Net::Security::AsyncProtocolRequest__ProcessOperation_d__24;
     #[cfg(feature = "Mono+Net+Security+AsyncProtocolRequest+_InnerRead_d__25")]
     pub type _InnerRead_d__25 = crate::Mono::Net::Security::AsyncProtocolRequest__InnerRead_d__25;
-    pub fn RequestWrite(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RequestWrite", ())?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "Mono+Net+Security+AsyncProtocolRequest+_ProcessOperation_d__24")]
+    pub type _ProcessOperation_d__24 = crate::Mono::Net::Security::AsyncProtocolRequest__ProcessOperation_d__24;
     pub fn InnerRead(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -61,14 +51,59 @@ impl crate::Mono::Net::Security::AsyncProtocolRequest {
         > = __cordl_object.invoke("InnerRead", (cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
+    pub fn New(
+        parent: *mut crate::Mono::Net::Security::MobileAuthenticatedStream,
+        sync: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (parent, sync))?;
+        Ok(__cordl_object)
+    }
+    pub fn ProcessOperation(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("ProcessOperation", (cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RequestRead(
+        &mut self,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RequestRead", (_cordl_size))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RequestWrite(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RequestWrite", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Run(
+        &mut self,
+        status: crate::Mono::Net::Security::AsyncOperationStatus,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Mono::Net::Security::AsyncOperationStatus,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Mono::Net::Security::AsyncOperationStatus = __cordl_object
+            .invoke("Run", (status))?;
         Ok(__cordl_ret)
     }
     pub fn StartOperation(
@@ -87,22 +122,14 @@ impl crate::Mono::Net::Security::AsyncProtocolRequest {
         > = __cordl_object.invoke("StartOperation", (cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn get_RunSynchronously(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_RunSynchronously", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RequestRead(
+    pub fn ToString(
         &mut self,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RequestRead", (_cordl_size))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -117,46 +144,14 @@ impl crate::Mono::Net::Security::AsyncProtocolRequest {
             .invoke(".ctor", (parent, sync))?;
         Ok(__cordl_ret)
     }
-    pub fn get_UserResult(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_UserResult", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessOperation(
+    pub fn get_Name(
         &mut self,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("ProcessOperation", (cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Run(
-        &mut self,
-        status: crate::Mono::Net::Security::AsyncOperationStatus,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Mono::Net::Security::AsyncOperationStatus,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Mono::Net::Security::AsyncOperationStatus = __cordl_object
-            .invoke("Run", (status))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_UserResult(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_UserResult", (value))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Parent(
@@ -171,25 +166,30 @@ impl crate::Mono::Net::Security::AsyncProtocolRequest {
             .invoke("get_Parent", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    pub fn get_RunSynchronously(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Name", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_RunSynchronously", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        parent: *mut crate::Mono::Net::Security::MobileAuthenticatedStream,
-        sync: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (parent, sync))?;
-        Ok(__cordl_object)
+    pub fn get_UserResult(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_UserResult", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_UserResult(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_UserResult", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Mono+Net+Security+AsyncProtocolRequest")]

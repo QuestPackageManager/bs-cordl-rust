@@ -24,6 +24,18 @@ impl std::ops::DerefMut for crate::System::Xml::IDtdParserAdapterV1 {
 }
 #[cfg(feature = "System+Xml+IDtdParserAdapterV1")]
 impl crate::System::Xml::IDtdParserAdapterV1 {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_Namespaces(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_Namespaces", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Normalization(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -37,18 +49,6 @@ impl crate::System::Xml::IDtdParserAdapterV1 {
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_V1CompatibilityMode", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_Namespaces(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Namespaces", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "System+Xml+IDtdParserAdapterV1")]

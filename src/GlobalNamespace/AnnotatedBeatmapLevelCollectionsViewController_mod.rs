@@ -36,17 +36,6 @@ impl std::ops::DerefMut for AnnotatedBeatmapLevelCollectionsViewController {
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsViewController")]
 impl AnnotatedBeatmapLevelCollectionsViewController {
-    pub fn add_didOpenBeatmapLevelCollectionsEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didOpenBeatmapLevelCollectionsEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -63,25 +52,46 @@ impl AnnotatedBeatmapLevelCollectionsViewController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn ShowLoading(
+    pub fn DidDeactivate(
         &mut self,
+        removedFromHierarchy: bool,
+        screenSystemDisabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ShowLoading", ())?;
+            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didSelectAnnotatedBeatmapLevelCollectionEvent(
+    pub fn HandleAdditionalContentModelDidInvalidateData(
         &mut self,
-        value: *mut crate::System::Action_1<*mut BeatmapLevelPack>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didSelectAnnotatedBeatmapLevelCollectionEvent", (value))?;
+            .invoke("HandleAdditionalContentModelDidInvalidateData", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleAnnotatedBeatmapLevelCollectionsGridViewClose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleAnnotatedBeatmapLevelCollectionsGridViewClose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleAnnotatedBeatmapLevelCollectionsGridViewOpen(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleAnnotatedBeatmapLevelCollectionsGridViewOpen", ())?;
         Ok(__cordl_ret)
     }
     pub fn HandleDidSelectAnnotatedBeatmapLevelCollection(
@@ -98,65 +108,21 @@ impl AnnotatedBeatmapLevelCollectionsViewController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didCloseBeatmapLevelCollectionsEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didCloseBeatmapLevelCollectionsEvent", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn HandleAdditionalContentModelDidInvalidateData(
+    pub fn RefreshAvailability(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleAdditionalContentModelDidInvalidateData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_selectedItemIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_selectedItemIndex", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didCloseBeatmapLevelCollectionsEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didCloseBeatmapLevelCollectionsEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DidDeactivate(
-        &mut self,
-        removedFromHierarchy: bool,
-        screenSystemDisabling: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleAnnotatedBeatmapLevelCollectionsGridViewClose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleAnnotatedBeatmapLevelCollectionsGridViewClose", ())?;
+            .invoke("RefreshAvailability", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetData(
@@ -177,7 +143,27 @@ impl AnnotatedBeatmapLevelCollectionsViewController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didOpenBeatmapLevelCollectionsEvent(
+    pub fn ShowLoading(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ShowLoading", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didCloseBeatmapLevelCollectionsEvent(
         &mut self,
         value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -185,7 +171,18 @@ impl AnnotatedBeatmapLevelCollectionsViewController {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didOpenBeatmapLevelCollectionsEvent", (value))?;
+            .invoke("add_didCloseBeatmapLevelCollectionsEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didOpenBeatmapLevelCollectionsEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didOpenBeatmapLevelCollectionsEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_didSelectAnnotatedBeatmapLevelCollectionEvent(
@@ -199,36 +196,6 @@ impl AnnotatedBeatmapLevelCollectionsViewController {
             .invoke("add_didSelectAnnotatedBeatmapLevelCollectionEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn RefreshAvailability(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshAvailability", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleAnnotatedBeatmapLevelCollectionsGridViewOpen(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleAnnotatedBeatmapLevelCollectionsGridViewOpen", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_selectedAnnotatedBeatmapLevelPack(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelPack> {
@@ -239,12 +206,45 @@ impl AnnotatedBeatmapLevelCollectionsViewController {
             .invoke("get_selectedAnnotatedBeatmapLevelPack", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_selectedItemIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_selectedItemIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didCloseBeatmapLevelCollectionsEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didCloseBeatmapLevelCollectionsEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didOpenBeatmapLevelCollectionsEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didOpenBeatmapLevelCollectionsEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didSelectAnnotatedBeatmapLevelCollectionEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut BeatmapLevelPack>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didSelectAnnotatedBeatmapLevelCollectionEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsViewController")]

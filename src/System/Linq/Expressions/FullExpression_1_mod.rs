@@ -31,6 +31,40 @@ for crate::System::Linq::Expressions::FullExpression_1<TDelegate> {
 impl<
     TDelegate: quest_hook::libil2cpp::Type,
 > crate::System::Linq::Expressions::FullExpression_1<TDelegate> {
+    pub fn New(
+        body: *mut crate::System::Linq::Expressions::Expression,
+        name: *mut crate::System::String,
+        tailCall: bool,
+        parameters: *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::System::Linq::Expressions::ParameterExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (body, name, tailCall, parameters))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        body: *mut crate::System::Linq::Expressions::Expression,
+        name: *mut crate::System::String,
+        tailCall: bool,
+        parameters: *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::System::Linq::Expressions::ParameterExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (body, name, tailCall, parameters))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_NameCore(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
@@ -55,40 +89,6 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_TailCallCore", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        body: *mut crate::System::Linq::Expressions::Expression,
-        name: *mut crate::System::String,
-        tailCall: bool,
-        parameters: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Linq::Expressions::ParameterExpression,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (body, name, tailCall, parameters))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        body: *mut crate::System::Linq::Expressions::Expression,
-        name: *mut crate::System::String,
-        tailCall: bool,
-        parameters: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Linq::Expressions::ParameterExpression,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (body, name, tailCall, parameters))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+FullExpression_1")]

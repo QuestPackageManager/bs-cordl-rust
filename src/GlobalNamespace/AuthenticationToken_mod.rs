@@ -25,17 +25,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for AuthenticationToken {
 impl AuthenticationToken {
     #[cfg(feature = "AuthenticationToken+Platform")]
     pub type Platform = crate::GlobalNamespace::AuthenticationToken_Platform;
-    pub fn _ctor(
+    pub fn CreateFromSerializedData(
         &mut self,
-        platform: crate::GlobalNamespace::AuthenticationToken_Platform,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
-        sessionToken: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+    ) -> quest_hook::libil2cpp::Result<AuthenticationToken> {
+        let __cordl_ret: AuthenticationToken = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (platform, userId, userName, sessionToken),
+            "CreateFromSerializedData",
+            (reader),
         )?;
         Ok(__cordl_ret)
     }
@@ -50,14 +47,17 @@ impl AuthenticationToken {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CreateFromSerializedData(
+    pub fn _ctor(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<AuthenticationToken> {
-        let __cordl_ret: AuthenticationToken = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        platform: crate::GlobalNamespace::AuthenticationToken_Platform,
+        userId: *mut crate::System::String,
+        userName: *mut crate::System::String,
+        sessionToken: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CreateFromSerializedData",
-            (reader),
+            ".ctor",
+            (platform, userId, userName, sessionToken),
         )?;
         Ok(__cordl_ret)
     }

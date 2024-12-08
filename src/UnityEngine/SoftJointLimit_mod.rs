@@ -23,74 +23,11 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::SoftJoin
 }
 #[cfg(feature = "UnityEngine+SoftJointLimit")]
 impl crate::UnityEngine::SoftJointLimit {
-    pub fn get_limit(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_bounciness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_limit",
+            "get_bounciness",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_limit(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_limit",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_bounciness(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_bounciness",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_contactDistance(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_contactDistance",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_spring(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_spring",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_spring(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_spring",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_damper(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_damper",
-            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -110,19 +47,38 @@ impl crate::UnityEngine::SoftJointLimit {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_bounciness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_bounciness",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_damper(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_damper",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_limit(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_limit",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_spring(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_spring",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_bounciness(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_bounciness",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -133,6 +89,50 @@ impl crate::UnityEngine::SoftJointLimit {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_bouncyness",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_contactDistance(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_contactDistance",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_damper(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_damper",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_limit(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_limit",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_spring(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_spring",
             (value),
         )?;
         Ok(__cordl_ret)

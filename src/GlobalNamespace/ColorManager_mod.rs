@@ -24,47 +24,15 @@ impl std::ops::DerefMut for ColorManager {
 }
 #[cfg(feature = "ColorManager")]
 impl ColorManager {
-    pub fn _ctor(
+    pub fn ColorForSaberType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_obstaclesColor(
-        &mut self,
+        _cordl_type: SaberType,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_obstaclesColor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetColorScheme(
-        &mut self,
-        colorScheme: *mut ColorScheme,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColorScheme", (colorScheme))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ColorForType_EnvironmentColorType__cordl_bool0(
-        &mut self,
-        _cordl_type: EnvironmentColorType,
-        boost: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("ColorForType", (_cordl_type, boost))?;
+            .invoke("ColorForSaberType", (_cordl_type))?;
         Ok(__cordl_ret)
     }
     pub fn ColorForType_ColorType1(
@@ -78,15 +46,16 @@ impl ColorManager {
             .invoke("ColorForType", (_cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn ColorForSaberType(
+    pub fn ColorForType_EnvironmentColorType__cordl_bool0(
         &mut self,
-        _cordl_type: SaberType,
+        _cordl_type: EnvironmentColorType,
+        boost: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("ColorForSaberType", (_cordl_type))?;
+            .invoke("ColorForType", (_cordl_type, boost))?;
         Ok(__cordl_ret)
     }
     pub fn EffectsColorForSaberType(
@@ -110,12 +79,43 @@ impl ColorManager {
             .invoke("GetObstacleEffectColor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn SetColorScheme(
+        &mut self,
+        colorScheme: *mut ColorScheme,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetColorScheme", (colorScheme))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_obstaclesColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_obstaclesColor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "ColorManager")]

@@ -25,6 +25,43 @@ impl std::ops::DerefMut for crate::System::Data::ColumnTypeConverter {
 }
 #[cfg(feature = "System+Data+ColumnTypeConverter")]
 impl crate::System::Data::ColumnTypeConverter {
+    pub fn CanConvertFrom(
+        &mut self,
+        context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
+        sourceType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("CanConvertFrom", (context, sourceType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CanConvertTo(
+        &mut self,
+        context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
+        destinationType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("CanConvertTo", (context, destinationType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ConvertFrom(
+        &mut self,
+        context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
+        culture: *mut crate::System::Globalization::CultureInfo,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("ConvertFrom", (context, culture, value))?;
+        Ok(__cordl_ret)
+    }
     pub fn ConvertTo(
         &mut self,
         context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
@@ -52,16 +89,15 @@ impl crate::System::Data::ColumnTypeConverter {
             .invoke("GetStandardValues", (context))?;
         Ok(__cordl_ret)
     }
-    pub fn CanConvertFrom(
+    pub fn GetStandardValuesExclusive(
         &mut self,
         context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
-        sourceType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
-            .invoke("CanConvertFrom", (context, sourceType))?;
+            .invoke("GetStandardValuesExclusive", (context))?;
         Ok(__cordl_ret)
     }
     pub fn GetStandardValuesSupported(
@@ -75,28 +111,12 @@ impl crate::System::Data::ColumnTypeConverter {
             .invoke("GetStandardValuesSupported", (context))?;
         Ok(__cordl_ret)
     }
-    pub fn CanConvertTo(
-        &mut self,
-        context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
-        destinationType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CanConvertTo", (context, destinationType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetStandardValuesExclusive(
-        &mut self,
-        context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("GetStandardValuesExclusive", (context))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -107,26 +127,6 @@ impl crate::System::Data::ColumnTypeConverter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn ConvertFrom(
-        &mut self,
-        context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
-        culture: *mut crate::System::Globalization::CultureInfo,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("ConvertFrom", (context, culture, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Data+ColumnTypeConverter")]

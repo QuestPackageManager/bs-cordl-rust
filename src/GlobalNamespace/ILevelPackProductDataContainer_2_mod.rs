@@ -43,22 +43,6 @@ impl<
     TLevelPackProductData: quest_hook::libil2cpp::Type,
     TLevelProductData: quest_hook::libil2cpp::Type,
 > ILevelPackProductDataContainer_2<TLevelPackProductData, TLevelProductData> {
-    pub fn get_levelPackProductData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<TLevelPackProductData>
-    where
-        TLevelPackProductData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TLevelProductData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TLevelPackProductData = __cordl_object
-            .invoke("get_levelPackProductData", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn SetLevelPackProductData(
         &mut self,
         newProductPack: TLevelPackProductData,
@@ -80,6 +64,22 @@ impl<
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_levelPackProductData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<TLevelPackProductData>
+    where
+        TLevelPackProductData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TLevelProductData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: TLevelPackProductData = __cordl_object
+            .invoke("get_levelPackProductData", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "ILevelPackProductDataContainer_2")]

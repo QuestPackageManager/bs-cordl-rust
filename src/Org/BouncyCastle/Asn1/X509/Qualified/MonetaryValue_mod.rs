@@ -29,27 +29,25 @@ for crate::Org::BouncyCastle::Asn1::X509::Qualified::MonetaryValue {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+Qualified+MonetaryValue")]
 impl crate::Org::BouncyCastle::Asn1::X509::Qualified::MonetaryValue {
-    pub fn get_Currency(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::Qualified::Iso4217CurrencyCode,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::Qualified::Iso4217CurrencyCode = __cordl_object
-            .invoke("get_Currency", ())?;
-        Ok(__cordl_ret)
+    pub fn New_Asn1Sequence0(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
     }
-    pub fn get_Amount(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("get_Amount", ())?;
-        Ok(__cordl_ret)
+    pub fn New_Iso4217CurrencyCode_i32_i32_1(
+        currency: *mut crate::Org::BouncyCastle::Asn1::X509::Qualified::Iso4217CurrencyCode,
+        amount: i32,
+        exponent: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (currency, amount, exponent))?;
+        Ok(__cordl_object)
     }
     pub fn ToAsn1Object(
         &mut self,
@@ -59,16 +57,6 @@ impl crate::Org::BouncyCastle::Asn1::X509::Qualified::MonetaryValue {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
             .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Exponent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("get_Exponent", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_Asn1Sequence0(
@@ -95,25 +83,37 @@ impl crate::Org::BouncyCastle::Asn1::X509::Qualified::MonetaryValue {
             .invoke(".ctor", (currency, amount, exponent))?;
         Ok(__cordl_ret)
     }
-    pub fn New_Asn1Sequence0(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
+    pub fn get_Amount(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_Amount", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_Iso4217CurrencyCode_i32_i32_1(
-        currency: *mut crate::Org::BouncyCastle::Asn1::X509::Qualified::Iso4217CurrencyCode,
-        amount: i32,
-        exponent: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (currency, amount, exponent))?;
-        Ok(__cordl_object)
+    pub fn get_Currency(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::X509::Qualified::Iso4217CurrencyCode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::Qualified::Iso4217CurrencyCode = __cordl_object
+            .invoke("get_Currency", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Exponent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_Exponent", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+Qualified+MonetaryValue")]

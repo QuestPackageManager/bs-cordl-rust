@@ -25,6 +25,15 @@ impl std::ops::DerefMut for crate::System::Data::DataTableNewRowEventArgs {
 }
 #[cfg(feature = "System+Data+DataTableNewRowEventArgs")]
 impl crate::System::Data::DataTableNewRowEventArgs {
+    pub fn New(
+        dataRow: *mut crate::System::Data::DataRow,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dataRow))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         dataRow: *mut crate::System::Data::DataRow,
@@ -35,15 +44,6 @@ impl crate::System::Data::DataTableNewRowEventArgs {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (dataRow))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        dataRow: *mut crate::System::Data::DataRow,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dataRow))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Data+DataTableNewRowEventArgs")]

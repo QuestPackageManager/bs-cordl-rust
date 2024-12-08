@@ -22,60 +22,6 @@ for crate::System::Data::SqlTypes::SqlBoolean {
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlBoolean")]
 impl crate::System::Data::SqlTypes::SqlBoolean {
-    pub fn System_Xml_Serialization_IXmlSerializable_ReadXml(
-        &mut self,
-        reader: *mut crate::System::Xml::XmlReader,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Xml.Serialization.IXmlSerializable.ReadXml",
-            (reader),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsFalse(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsFalse",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsTrue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsTrue",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ByteValue(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_ret: u8 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_ByteValue",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsNull",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn CompareTo_Object0(
         &mut self,
         value: *mut crate::System::Object,
@@ -98,13 +44,14 @@ impl crate::System::Data::SqlTypes::SqlBoolean {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
+    pub fn Equals(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
-            (),
+            "Equals",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -126,11 +73,14 @@ impl crate::System::Data::SqlTypes::SqlBoolean {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn System_Xml_Serialization_IXmlSerializable_ReadXml(
+        &mut self,
+        reader: *mut crate::System::Xml::XmlReader,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Value",
-            (),
+            "System.Xml.Serialization.IXmlSerializable.ReadXml",
+            (reader),
         )?;
         Ok(__cordl_ret)
     }
@@ -142,6 +92,16 @@ impl crate::System::Data::SqlTypes::SqlBoolean {
             self,
             "System.Xml.Serialization.IXmlSerializable.WriteXml",
             (writer),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -176,6 +136,46 @@ impl crate::System::Data::SqlTypes::SqlBoolean {
             self,
             ".ctor",
             (value, fNull),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ByteValue(&mut self) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_ByteValue",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsFalse(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsFalse",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsNull",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsTrue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsTrue",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Value",
+            (),
         )?;
         Ok(__cordl_ret)
     }

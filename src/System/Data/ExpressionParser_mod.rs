@@ -47,26 +47,15 @@ impl std::ops::DerefMut for crate::System::Data::ExpressionParser {
 impl crate::System::Data::ExpressionParser {
     #[cfg(feature = "System+Data+ExpressionParser+ReservedWords")]
     pub type ReservedWords = crate::System::Data::ExpressionParser_ReservedWords;
-    pub fn ScanString(
+    pub fn BuildExpression(
         &mut self,
-        escape: char,
+        pri: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ScanString", (escape))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseAggregateArgument(
-        &mut self,
-        aggregate: crate::System::Data::FunctionId,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::ExpressionNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::ExpressionNode = __cordl_object
-            .invoke("ParseAggregateArgument", (aggregate))?;
+            .invoke("BuildExpression", (pri))?;
         Ok(__cordl_ret)
     }
     pub fn CheckToken(
@@ -80,11 +69,114 @@ impl crate::System::Data::ExpressionParser {
             .invoke("CheckToken", (token))?;
         Ok(__cordl_ret)
     }
+    pub fn IsAlpha(&mut self, ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsAlpha", (ch))?;
+        Ok(__cordl_ret)
+    }
     pub fn IsAlphaNumeric(&mut self, ch: char) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsAlphaNumeric", (ch))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsDigit(&mut self, ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsDigit", (ch))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsWhiteSpace(&mut self, ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsWhiteSpace", (ch))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadExpression(
+        &mut self,
+        data: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LoadExpression", (data))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        table: *mut crate::System::Data::DataTable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (table))?;
+        Ok(__cordl_object)
+    }
+    pub fn NodePeek(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::ExpressionNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Data::ExpressionNode = __cordl_object
+            .invoke("NodePeek", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn NodePop(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::ExpressionNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Data::ExpressionNode = __cordl_object
+            .invoke("NodePop", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn NodePush(
+        &mut self,
+        node: *mut crate::System::Data::ExpressionNode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("NodePush", (node))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Parse(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::ExpressionNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Data::ExpressionNode = __cordl_object
+            .invoke("Parse", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ParseAggregateArgument(
+        &mut self,
+        aggregate: crate::System::Data::FunctionId,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::ExpressionNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Data::ExpressionNode = __cordl_object
+            .invoke("ParseAggregateArgument", (aggregate))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Scan(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::Tokens> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Data::Tokens = __cordl_object
+            .invoke("Scan", ())?;
         Ok(__cordl_ret)
     }
     pub fn ScanBinaryConstant(
@@ -97,29 +189,14 @@ impl crate::System::Data::ExpressionParser {
             .invoke("ScanBinaryConstant", ())?;
         Ok(__cordl_ret)
     }
-    pub fn IsAlpha(&mut self, ch: char) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsAlpha", (ch))?;
-        Ok(__cordl_ret)
-    }
-    pub fn BuildExpression(
+    pub fn ScanDate(
         &mut self,
-        pri: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BuildExpression", (pri))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsWhiteSpace(&mut self, ch: char) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsWhiteSpace", (ch))?;
+            .invoke("ScanDate", ())?;
         Ok(__cordl_ret)
     }
     pub fn ScanName_0(
@@ -145,35 +222,14 @@ impl crate::System::Data::ExpressionParser {
             .invoke("ScanName", (chEnd, esc, charsToEscape))?;
         Ok(__cordl_ret)
     }
-    pub fn Parse(
+    pub fn ScanNumeric(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::ExpressionNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::ExpressionNode = __cordl_object
-            .invoke("Parse", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        table: *mut crate::System::Data::DataTable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (table))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NodePeek(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::ExpressionNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::ExpressionNode = __cordl_object
-            .invoke("NodePeek", ())?;
+            .invoke("ScanNumeric", ())?;
         Ok(__cordl_ret)
     }
     pub fn ScanReserved(
@@ -186,31 +242,15 @@ impl crate::System::Data::ExpressionParser {
             .invoke("ScanReserved", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ScanWhite(
+    pub fn ScanString(
         &mut self,
+        escape: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ScanWhite", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsDigit(&mut self, ch: char) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsDigit", (ch))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ScanNumeric(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ScanNumeric", ())?;
+            .invoke("ScanString", (escape))?;
         Ok(__cordl_ret)
     }
     pub fn ScanToken(
@@ -224,6 +264,16 @@ impl crate::System::Data::ExpressionParser {
             .invoke("ScanToken", (token))?;
         Ok(__cordl_ret)
     }
+    pub fn ScanWhite(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ScanWhite", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn StartScan(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -234,66 +284,16 @@ impl crate::System::Data::ExpressionParser {
             .invoke("StartScan", ())?;
         Ok(__cordl_ret)
     }
-    pub fn NodePush(
+    pub fn _ctor(
         &mut self,
-        node: *mut crate::System::Data::ExpressionNode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NodePush", (node))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Scan(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Data::Tokens> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Data::Tokens = __cordl_object
-            .invoke("Scan", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ScanDate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ScanDate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadExpression(
-        &mut self,
-        data: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LoadExpression", (data))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NodePop(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::ExpressionNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::ExpressionNode = __cordl_object
-            .invoke("NodePop", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
         table: *mut crate::System::Data::DataTable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (table))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (table))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Data+ExpressionParser")]

@@ -36,71 +36,21 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy {
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainPolicy")]
 impl crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy {
-    pub fn get_ExtraStore(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection = __cordl_object
-            .invoke("get_ExtraStore", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn set_VerificationFlags(
+    pub fn Reset(
         &mut self,
-        value: crate::System::Security::Cryptography::X509Certificates::X509VerificationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_VerificationFlags", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_VerificationTime(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::DateTime = __cordl_object
-            .invoke("get_VerificationTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_UrlRetrievalTimeout(
-        &mut self,
-        value: crate::System::TimeSpan,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_UrlRetrievalTimeout", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_RevocationMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Security::Cryptography::X509Certificates::X509RevocationMode,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Security::Cryptography::X509Certificates::X509RevocationMode = __cordl_object
-            .invoke("get_RevocationMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_RevocationMode(
-        &mut self,
-        value: crate::System::Security::Cryptography::X509Certificates::X509RevocationMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_RevocationMode", (value))?;
+            .invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -111,6 +61,18 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ExtraStore(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection = __cordl_object
+            .invoke("get_ExtraStore", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_RevocationFlag(
@@ -125,25 +87,16 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy {
             .invoke("get_RevocationFlag", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_VerificationTime(
+    pub fn get_RevocationMode(
         &mut self,
-        value: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Security::Cryptography::X509Certificates::X509RevocationMode,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_VerificationTime", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
+        let __cordl_ret: crate::System::Security::Cryptography::X509Certificates::X509RevocationMode = __cordl_object
+            .invoke("get_RevocationMode", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_VerificationFlags(
@@ -158,6 +111,16 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy {
             .invoke("get_VerificationFlags", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_VerificationTime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::DateTime = __cordl_object
+            .invoke("get_VerificationTime", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_RevocationFlag(
         &mut self,
         value: crate::System::Security::Cryptography::X509Certificates::X509RevocationFlag,
@@ -169,12 +132,49 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy {
             .invoke("set_RevocationFlag", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_RevocationMode(
+        &mut self,
+        value: crate::System::Security::Cryptography::X509Certificates::X509RevocationMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_RevocationMode", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_UrlRetrievalTimeout(
+        &mut self,
+        value: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_UrlRetrievalTimeout", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_VerificationFlags(
+        &mut self,
+        value: crate::System::Security::Cryptography::X509Certificates::X509VerificationFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_VerificationFlags", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_VerificationTime(
+        &mut self,
+        value: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_VerificationTime", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainPolicy")]

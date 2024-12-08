@@ -217,14 +217,6 @@ for crate::UnityEngine::ParticleSystem_EmissionModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+EmissionModule")]
 impl crate::UnityEngine::ParticleSystem_EmissionModule {
-    pub fn get_rateOverTimeMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_rateOverTimeMultiplier",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         particleSystem: *mut crate::UnityEngine::ParticleSystem,
@@ -240,6 +232,14 @@ impl crate::UnityEngine::ParticleSystem_EmissionModule {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_enabled",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rateOverTimeMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_rateOverTimeMultiplier",
             (),
         )?;
         Ok(__cordl_ret)
@@ -302,17 +302,6 @@ for crate::UnityEngine::ParticleSystem_EmitParams {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+EmitParams")]
 impl crate::UnityEngine::ParticleSystem_EmitParams {
-    pub fn set_position(
-        &mut self,
-        value: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_position",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_applyShapeToPosition(
         &mut self,
         value: bool,
@@ -320,6 +309,17 @@ impl crate::UnityEngine::ParticleSystem_EmitParams {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_applyShapeToPosition",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_position(
+        &mut self,
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_position",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -664,25 +664,32 @@ for crate::UnityEngine::ParticleSystem_MainModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+MainModule")]
 impl crate::UnityEngine::ParticleSystem_MainModule {
-    pub fn set_loop(
+    pub fn _ctor(
         &mut self,
-        value: bool,
+        particleSystem: *mut crate::UnityEngine::ParticleSystem,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_loop",
-            (value),
+            ".ctor",
+            (particleSystem),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_simulationSpace(
-        &mut self,
-        value: crate::UnityEngine::ParticleSystemSimulationSpace,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_simulationSpace",
-            (value),
+            "get_duration",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_gravityModifierMultiplier(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_gravityModifierMultiplier",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -690,6 +697,64 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_loop",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxParticles(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_maxParticles",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_playOnAwake(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_playOnAwake",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_scalingMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ParticleSystemScalingMode> {
+        let __cordl_ret: crate::UnityEngine::ParticleSystemScalingMode = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_scalingMode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_simulationSpace(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystemSimulationSpace,
+    > {
+        let __cordl_ret: crate::UnityEngine::ParticleSystemSimulationSpace = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_simulationSpace",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_simulationSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_simulationSpeed",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_startColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_MinMaxGradient,
+    > {
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_MinMaxGradient = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_startColor",
             (),
         )?;
         Ok(__cordl_ret)
@@ -702,47 +767,19 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_simulationSpeed(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_startLifetimeMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_simulationSpeed",
-            (value),
+            "get_startLifetimeMultiplier",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_scalingMode(
-        &mut self,
-        value: crate::UnityEngine::ParticleSystemScalingMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_startRotationMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_scalingMode",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        particleSystem: *mut crate::UnityEngine::ParticleSystem,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (particleSystem),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_gravityModifierMultiplier(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_gravityModifierMultiplier",
-            (value),
+            "get_startRotationMultiplier",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -752,63 +789,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_startRotationXMultiplier",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_startDelayMultiplier(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_startDelayMultiplier",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_playOnAwake(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_playOnAwake",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_playOnAwake(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_playOnAwake",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_maxParticles(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_maxParticles",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_startSizeMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_startSizeMultiplier",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_startRotationMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_startRotationMultiplier",
             (),
         )?;
         Ok(__cordl_ret)
@@ -833,51 +813,10 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_simulationSpace(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystemSimulationSpace,
-    > {
-        let __cordl_ret: crate::UnityEngine::ParticleSystemSimulationSpace = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_simulationSpace",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_gravityModifierMultiplier(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_startSizeMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_gravityModifierMultiplier",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_maxParticles(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_maxParticles",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_startSpeedMultiplier(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_startSpeedMultiplier",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_duration",
+            "get_startSizeMultiplier",
             (),
         )?;
         Ok(__cordl_ret)
@@ -890,34 +829,102 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_startRotationZMultiplier(
+    pub fn set_gravityModifierMultiplier(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_startRotationZMultiplier",
+            "set_gravityModifierMultiplier",
             (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_startLifetimeMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn set_loop(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_startLifetimeMultiplier",
-            (),
+            "set_loop",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_startColor(
+    pub fn set_maxParticles(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_MinMaxGradient,
-    > {
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_MinMaxGradient = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_startColor",
-            (),
+            "set_maxParticles",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_playOnAwake(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_playOnAwake",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_scalingMode(
+        &mut self,
+        value: crate::UnityEngine::ParticleSystemScalingMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_scalingMode",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_simulationSpace(
+        &mut self,
+        value: crate::UnityEngine::ParticleSystemSimulationSpace,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_simulationSpace",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_simulationSpeed(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_simulationSpeed",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startColor(
+        &mut self,
+        value: crate::UnityEngine::ParticleSystem_MinMaxGradient,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_startColor",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startDelayMultiplier(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_startDelayMultiplier",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -932,36 +939,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_startSizeMultiplier(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_startSizeMultiplier",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_startRotationXMultiplier(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_startRotationXMultiplier",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_simulationSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_simulationSpeed",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_startLifetimeMultiplier(
         &mut self,
         value: f32,
@@ -969,38 +946,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_startLifetimeMultiplier",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_scalingMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ParticleSystemScalingMode> {
-        let __cordl_ret: crate::UnityEngine::ParticleSystemScalingMode = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_scalingMode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_startRotationYMultiplier(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_startRotationYMultiplier",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_startSpeed(
-        &mut self,
-        value: crate::UnityEngine::ParticleSystem_MinMaxCurve,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_startSpeed",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -1016,13 +961,68 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_startColor(
+    pub fn set_startRotationXMultiplier(
         &mut self,
-        value: crate::UnityEngine::ParticleSystem_MinMaxGradient,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_startColor",
+            "set_startRotationXMultiplier",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startRotationYMultiplier(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_startRotationYMultiplier",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startRotationZMultiplier(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_startRotationZMultiplier",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startSizeMultiplier(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_startSizeMultiplier",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startSpeed(
+        &mut self,
+        value: crate::UnityEngine::ParticleSystem_MinMaxCurve,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_startSpeed",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startSpeedMultiplier(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_startSpeedMultiplier",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -1057,28 +1057,6 @@ for crate::UnityEngine::ParticleSystem_MinMaxCurve {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+MinMaxCurve")]
 impl crate::UnityEngine::ParticleSystem_MinMaxCurve {
-    pub fn set_constantMax(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_constantMax",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_constantMin(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_constantMin",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_f32_0(
         &mut self,
         constant: f32,
@@ -1099,6 +1077,28 @@ impl crate::UnityEngine::ParticleSystem_MinMaxCurve {
             self,
             ".ctor",
             (min, max),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_constantMax(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_constantMax",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_constantMin(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_constantMin",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -1253,17 +1253,6 @@ for crate::UnityEngine::ParticleSystem_Particle {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+Particle")]
 impl crate::UnityEngine::ParticleSystem_Particle {
-    pub fn set_randomSeed(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_randomSeed",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_angularVelocity3D(
         &mut self,
         value: crate::UnityEngine::Vector3,
@@ -1297,6 +1286,17 @@ impl crate::UnityEngine::ParticleSystem_Particle {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn set_randomSeed(
+        &mut self,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_randomSeed",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_remainingLifetime(
         &mut self,
         value: f32,
@@ -1304,6 +1304,17 @@ impl crate::UnityEngine::ParticleSystem_Particle {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_remainingLifetime",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_rotation3D(
+        &mut self,
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_rotation3D",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -1319,13 +1330,13 @@ impl crate::UnityEngine::ParticleSystem_Particle {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_velocity(
+    pub fn set_startLifetime(
         &mut self,
-        value: crate::UnityEngine::Vector3,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_velocity",
+            "set_startLifetime",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -1341,24 +1352,13 @@ impl crate::UnityEngine::ParticleSystem_Particle {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_startLifetime(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_startLifetime",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_rotation3D(
+    pub fn set_velocity(
         &mut self,
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_rotation3D",
+            "set_velocity",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -1390,205 +1390,273 @@ impl std::ops::DerefMut for crate::UnityEngine::ParticleSystem {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem")]
 impl crate::UnityEngine::ParticleSystem {
-    #[cfg(feature = "UnityEngine+ParticleSystem+Particle")]
-    pub type Particle = crate::UnityEngine::ParticleSystem_Particle;
-    #[cfg(feature = "UnityEngine+ParticleSystem+LightsModule")]
-    pub type LightsModule = crate::UnityEngine::ParticleSystem_LightsModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+MainModule")]
-    pub type MainModule = crate::UnityEngine::ParticleSystem_MainModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState")]
-    pub type PlaybackState = crate::UnityEngine::ParticleSystem_PlaybackState;
-    #[cfg(feature = "UnityEngine+ParticleSystem+RotationBySpeedModule")]
-    pub type RotationBySpeedModule = crate::UnityEngine::ParticleSystem_RotationBySpeedModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
-    pub type TextureSheetAnimationModule = crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
-    pub type LifetimeByEmitterSpeedModule = crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+TriggerModule")]
-    pub type TriggerModule = crate::UnityEngine::ParticleSystem_TriggerModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
-    pub type RotationOverLifetimeModule = crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+MinMaxCurve")]
-    pub type MinMaxCurve = crate::UnityEngine::ParticleSystem_MinMaxCurve;
-    #[cfg(feature = "UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
-    pub type SizeOverLifetimeModule = crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+TrailModule")]
-    pub type TrailModule = crate::UnityEngine::ParticleSystem_TrailModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule")]
-    pub type LimitVelocityOverLifetimeModule = crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+Trails")]
-    pub type Trails = crate::UnityEngine::ParticleSystem_Trails;
-    #[cfg(feature = "UnityEngine+ParticleSystem+CollisionModule")]
-    pub type CollisionModule = crate::UnityEngine::ParticleSystem_CollisionModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+ShapeModule")]
-    pub type ShapeModule = crate::UnityEngine::ParticleSystem_ShapeModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+SubEmittersModule")]
-    pub type SubEmittersModule = crate::UnityEngine::ParticleSystem_SubEmittersModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+ColorBySpeedModule")]
-    pub type ColorBySpeedModule = crate::UnityEngine::ParticleSystem_ColorBySpeedModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+SizeBySpeedModule")]
-    pub type SizeBySpeedModule = crate::UnityEngine::ParticleSystem_SizeBySpeedModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+MinMaxGradient")]
-    pub type MinMaxGradient = crate::UnityEngine::ParticleSystem_MinMaxGradient;
-    #[cfg(feature = "UnityEngine+ParticleSystem+NoiseModule")]
-    pub type NoiseModule = crate::UnityEngine::ParticleSystem_NoiseModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
-    pub type ColorOverLifetimeModule = crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+ExternalForcesModule")]
-    pub type ExternalForcesModule = crate::UnityEngine::ParticleSystem_ExternalForcesModule;
     #[cfg(feature = "UnityEngine+ParticleSystem+InheritVelocityModule")]
     pub type InheritVelocityModule = crate::UnityEngine::ParticleSystem_InheritVelocityModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
-    pub type VelocityOverLifetimeModule = crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+ExternalForcesModule")]
+    pub type ExternalForcesModule = crate::UnityEngine::ParticleSystem_ExternalForcesModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+TrailModule")]
+    pub type TrailModule = crate::UnityEngine::ParticleSystem_TrailModule;
     #[cfg(feature = "UnityEngine+ParticleSystem+EmissionModule")]
     pub type EmissionModule = crate::UnityEngine::ParticleSystem_EmissionModule;
-    #[cfg(feature = "UnityEngine+ParticleSystem+EmitParams")]
-    pub type EmitParams = crate::UnityEngine::ParticleSystem_EmitParams;
+    #[cfg(feature = "UnityEngine+ParticleSystem+ColorBySpeedModule")]
+    pub type ColorBySpeedModule = crate::UnityEngine::ParticleSystem_ColorBySpeedModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+SubEmittersModule")]
+    pub type SubEmittersModule = crate::UnityEngine::ParticleSystem_SubEmittersModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
+    pub type ColorOverLifetimeModule = crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+NoiseModule")]
+    pub type NoiseModule = crate::UnityEngine::ParticleSystem_NoiseModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+SizeBySpeedModule")]
+    pub type SizeBySpeedModule = crate::UnityEngine::ParticleSystem_SizeBySpeedModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+CollisionModule")]
+    pub type CollisionModule = crate::UnityEngine::ParticleSystem_CollisionModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+RotationBySpeedModule")]
+    pub type RotationBySpeedModule = crate::UnityEngine::ParticleSystem_RotationBySpeedModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+Trails")]
+    pub type Trails = crate::UnityEngine::ParticleSystem_Trails;
     #[cfg(feature = "UnityEngine+ParticleSystem+CustomDataModule")]
     pub type CustomDataModule = crate::UnityEngine::ParticleSystem_CustomDataModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState")]
+    pub type PlaybackState = crate::UnityEngine::ParticleSystem_PlaybackState;
+    #[cfg(feature = "UnityEngine+ParticleSystem+MinMaxCurve")]
+    pub type MinMaxCurve = crate::UnityEngine::ParticleSystem_MinMaxCurve;
     #[cfg(feature = "UnityEngine+ParticleSystem+ForceOverLifetimeModule")]
     pub type ForceOverLifetimeModule = crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule;
-    pub fn get_useAutoRandomSeed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_useAutoRandomSeed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetParticles_i32_i32_0(
+    #[cfg(feature = "UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
+    pub type SizeOverLifetimeModule = crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
+    pub type VelocityOverLifetimeModule = crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+TriggerModule")]
+    pub type TriggerModule = crate::UnityEngine::ParticleSystem_TriggerModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule")]
+    pub type LimitVelocityOverLifetimeModule = crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+MainModule")]
+    pub type MainModule = crate::UnityEngine::ParticleSystem_MainModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
+    pub type TextureSheetAnimationModule = crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+EmitParams")]
+    pub type EmitParams = crate::UnityEngine::ParticleSystem_EmitParams;
+    #[cfg(feature = "UnityEngine+ParticleSystem+ShapeModule")]
+    pub type ShapeModule = crate::UnityEngine::ParticleSystem_ShapeModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
+    pub type LifetimeByEmitterSpeedModule = crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
+    pub type RotationOverLifetimeModule = crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+LightsModule")]
+    pub type LightsModule = crate::UnityEngine::ParticleSystem_LightsModule;
+    #[cfg(feature = "UnityEngine+ParticleSystem+MinMaxGradient")]
+    pub type MinMaxGradient = crate::UnityEngine::ParticleSystem_MinMaxGradient;
+    #[cfg(feature = "UnityEngine+ParticleSystem+Particle")]
+    pub type Particle = crate::UnityEngine::ParticleSystem_Particle;
+    pub fn AllocateAxisOfRotationAttribute(
         &mut self,
-        particles: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::ParticleSystem_Particle,
-            >,
-        >,
-        _cordl_size: i32,
-        offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetParticles", (particles, _cordl_size, offset))?;
+            .invoke("AllocateAxisOfRotationAttribute", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetParticles_i32_1(
+    pub fn AllocateCustomDataAttribute(
         &mut self,
-        particles: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::ParticleSystem_Particle,
-            >,
-        >,
-        _cordl_size: i32,
+        stream: crate::UnityEngine::ParticleSystemCustomData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetParticles", (particles, _cordl_size))?;
+            .invoke("AllocateCustomDataAttribute", (stream))?;
         Ok(__cordl_ret)
     }
-    pub fn SetParticles_ByRefMut2(
+    pub fn AllocateMeshIndexAttribute(
         &mut self,
-        particles: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::ParticleSystem_Particle,
-            >,
-        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetParticles", (particles))?;
+            .invoke("AllocateMeshIndexAttribute", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetParticles_i32_i32_3(
+    pub fn Clear_1(
         &mut self,
-        particles: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeArray_1<
-                crate::UnityEngine::ParticleSystem_Particle,
-            >,
-        >,
-        _cordl_size: i32,
-        offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetParticles", (particles, _cordl_size, offset))?;
+            .invoke("Clear", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetParticles_i32_4(
+    pub fn Clear__cordl_bool0(
         &mut self,
-        particles: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeArray_1<
-                crate::UnityEngine::ParticleSystem_Particle,
-            >,
-        >,
-        _cordl_size: i32,
+        withChildren: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetParticles", (particles, _cordl_size))?;
+            .invoke("Clear", (withChildren))?;
         Ok(__cordl_ret)
     }
-    pub fn SetParticles_ByRefMut5(
+    pub fn EmitOld_Internal(
         &mut self,
-        particles: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeArray_1<
-                crate::UnityEngine::ParticleSystem_Particle,
-            >,
+        particle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_Particle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetParticles", (particles))?;
+            .invoke("EmitOld_Internal", (particle))?;
         Ok(__cordl_ret)
     }
-    pub fn get_playOnAwake(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_playOnAwake", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_startSpeed(
+    pub fn Emit_Injected(
         &mut self,
-        value: f32,
+        emitParams: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_EmitParams,
+        >,
+        count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_startSpeed", (value))?;
+            .invoke("Emit_Injected", (emitParams, count))?;
         Ok(__cordl_ret)
     }
-    pub fn set_emissionRate(
+    pub fn Emit_Internal(
         &mut self,
-        value: f32,
+        count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_emissionRate", (value))?;
+            .invoke("Emit_Internal", (count))?;
         Ok(__cordl_ret)
     }
-    pub fn set_time(
+    pub fn Emit_ParticleSystem_EmitParams_i32_3(
         &mut self,
-        value: f32,
+        emitParams: crate::UnityEngine::ParticleSystem_EmitParams,
+        count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_time", (value))?;
+            .invoke("Emit", (emitParams, count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Emit_ParticleSystem_Particle1(
+        &mut self,
+        particle: crate::UnityEngine::ParticleSystem_Particle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Emit", (particle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Emit_Vector3_Vector3_f32_f32_Color32_0(
+        &mut self,
+        position: crate::UnityEngine::Vector3,
+        velocity: crate::UnityEngine::Vector3,
+        _cordl_size: f32,
+        lifetime: f32,
+        color: crate::UnityEngine::Color32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Emit", (position, velocity, _cordl_size, lifetime, color))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Emit_i32_2(
+        &mut self,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Emit", (count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetCustomParticleData(
+        &mut self,
+        customData: *mut crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::Vector4,
+        >,
+        streamIndex: crate::UnityEngine::ParticleSystemCustomData,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetCustomParticleData", (customData, streamIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetManagedJobData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+            .invoke("GetManagedJobData", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetManagedJobHandle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = __cordl_object
+            .invoke("GetManagedJobHandle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetManagedJobHandle_Injected(
+        &mut self,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetManagedJobHandle_Injected", (ret))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetParticleCurrentColor(
+        &mut self,
+        particle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_Particle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color32 = __cordl_object
+            .invoke("GetParticleCurrentColor", (particle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetParticleCurrentColor_Injected(
+        &mut self,
+        particle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_Particle,
+        >,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetParticleCurrentColor_Injected", (particle, ret))?;
         Ok(__cordl_ret)
     }
     pub fn GetParticleCurrentSize(
@@ -1602,6 +1670,195 @@ impl crate::UnityEngine::ParticleSystem {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("GetParticleCurrentSize", (particle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetParticleCurrentSize3D(
+        &mut self,
+        particle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_Particle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("GetParticleCurrentSize3D", (particle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetParticleCurrentSize3D_Injected(
+        &mut self,
+        particle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_Particle,
+        >,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetParticleCurrentSize3D_Injected", (particle, ret))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetParticleMeshIndex(
+        &mut self,
+        particle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_Particle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetParticleMeshIndex", (particle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetParticlesWithNativeArray(
+        &mut self,
+        particles: crate::System::IntPtr,
+        particlesLength: i32,
+        _cordl_size: i32,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke(
+                "GetParticlesWithNativeArray",
+                (particles, particlesLength, _cordl_size, offset),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetParticles_ByRefMut2(
+        &mut self,
+        particles: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::ParticleSystem_Particle,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetParticles", (particles))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetParticles_ByRefMut5(
+        &mut self,
+        particles: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Collections::NativeArray_1<
+                crate::UnityEngine::ParticleSystem_Particle,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetParticles", (particles))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetParticles_i32_1(
+        &mut self,
+        particles: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::ParticleSystem_Particle,
+            >,
+        >,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetParticles", (particles, _cordl_size))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetParticles_i32_4(
+        &mut self,
+        particles: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Collections::NativeArray_1<
+                crate::UnityEngine::ParticleSystem_Particle,
+            >,
+        >,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetParticles", (particles, _cordl_size))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetParticles_i32_i32_0(
+        &mut self,
+        particles: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::ParticleSystem_Particle,
+            >,
+        >,
+        _cordl_size: i32,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetParticles", (particles, _cordl_size, offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetParticles_i32_i32_3(
+        &mut self,
+        particles: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Collections::NativeArray_1<
+                crate::UnityEngine::ParticleSystem_Particle,
+            >,
+        >,
+        _cordl_size: i32,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetParticles", (particles, _cordl_size, offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPlaybackState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_PlaybackState,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_PlaybackState = __cordl_object
+            .invoke("GetPlaybackState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPlaybackState_Injected(
+        &mut self,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_PlaybackState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetPlaybackState_Injected", (ret))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetTrailDataInternal(
+        &mut self,
+        trailData: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_Trails,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetTrailDataInternal", (trailData))?;
         Ok(__cordl_ret)
     }
     pub fn GetTrails_0(
@@ -1626,75 +1883,38 @@ impl crate::UnityEngine::ParticleSystem {
         let __cordl_ret: i32 = __cordl_object.invoke("GetTrails", (trailData))?;
         Ok(__cordl_ret)
     }
-    pub fn get_forceOverLifetime(
+    pub fn IsAlive_1(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsAlive", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsAlive__cordl_bool0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule,
-    > {
+        withChildren: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule = __cordl_object
-            .invoke("get_forceOverLifetime", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("IsAlive", (withChildren))?;
         Ok(__cordl_ret)
     }
-    pub fn get_noise(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ParticleSystem_NoiseModule> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_NoiseModule = __cordl_object
-            .invoke("get_noise", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn get_loop(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_loop", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_startColor(
-        &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_startColor", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isPaused(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isPaused", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn Pause_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetParticleCurrentSize3D_Injected(
-        &mut self,
-        particle: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_Particle,
-        >,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetParticleCurrentSize3D_Injected", (particle, ret))?;
+            .invoke("Pause", ())?;
         Ok(__cordl_ret)
     }
     pub fn Pause__cordl_bool0(
@@ -1708,455 +1928,17 @@ impl crate::UnityEngine::ParticleSystem {
             .invoke("Pause", (withChildren))?;
         Ok(__cordl_ret)
     }
-    pub fn Pause_1(
+    pub fn Play_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Pause", ())?;
+            .invoke("Play", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Emit_Injected(
-        &mut self,
-        emitParams: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_EmitParams,
-        >,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Emit_Injected", (emitParams, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Simulate__cordl_bool__cordl_bool__cordl_bool0(
-        &mut self,
-        t: f32,
-        withChildren: bool,
-        restart: bool,
-        fixedTimeStep: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Simulate", (t, withChildren, restart, fixedTimeStep))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Simulate__cordl_bool__cordl_bool1(
-        &mut self,
-        t: f32,
-        withChildren: bool,
-        restart: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Simulate", (t, withChildren, restart))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Simulate__cordl_bool2(
-        &mut self,
-        t: f32,
-        withChildren: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Simulate", (t, withChildren))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Simulate_f32_3(
-        &mut self,
-        t: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Simulate", (t))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_maxParticles(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_maxParticles", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetParticleCurrentColor_Injected(
-        &mut self,
-        particle: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_Particle,
-        >,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetParticleCurrentColor_Injected", (particle, ret))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sizeBySpeed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_SizeBySpeedModule,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_SizeBySpeedModule = __cordl_object
-            .invoke("get_sizeBySpeed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_startLifetime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_startLifetime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_automaticCullingEnabled(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_automaticCullingEnabled", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_playbackSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_playbackSpeed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_startRotation3D(
-        &mut self,
-        value: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_startRotation3D", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_enableEmission(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_enableEmission", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetParticleMeshIndex(
-        &mut self,
-        particle: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_Particle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetParticleMeshIndex", (particle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_simulationSpace(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystemSimulationSpace,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystemSimulationSpace = __cordl_object
-            .invoke("get_simulationSpace", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetParticles_i32_i32_0(
-        &mut self,
-        particles: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::ParticleSystem_Particle,
-            >,
-        >,
-        _cordl_size: i32,
-        offset: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetParticles", (particles, _cordl_size, offset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetParticles_i32_1(
-        &mut self,
-        particles: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::ParticleSystem_Particle,
-            >,
-        >,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetParticles", (particles, _cordl_size))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetParticles_ByRefMut2(
-        &mut self,
-        particles: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::ParticleSystem_Particle,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetParticles", (particles))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetParticles_i32_i32_3(
-        &mut self,
-        particles: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeArray_1<
-                crate::UnityEngine::ParticleSystem_Particle,
-            >,
-        >,
-        _cordl_size: i32,
-        offset: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetParticles", (particles, _cordl_size, offset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetParticles_i32_4(
-        &mut self,
-        particles: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeArray_1<
-                crate::UnityEngine::ParticleSystem_Particle,
-            >,
-        >,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetParticles", (particles, _cordl_size))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetParticles_ByRefMut5(
-        &mut self,
-        particles: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeArray_1<
-                crate::UnityEngine::ParticleSystem_Particle,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetParticles", (particles))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetManagedJobHandle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Unity::Jobs::JobHandle = __cordl_object
-            .invoke("GetManagedJobHandle", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_subEmitters(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_SubEmittersModule,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_SubEmittersModule = __cordl_object
-            .invoke("get_subEmitters", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TriggerSubEmitterForParticle(
-        &mut self,
-        subEmitterIndex: i32,
-        particle: crate::UnityEngine::ParticleSystem_Particle,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TriggerSubEmitterForParticle", (subEmitterIndex, particle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_loop(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_loop", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_startSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_startSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_inheritVelocity(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_InheritVelocityModule,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_InheritVelocityModule = __cordl_object
-            .invoke("get_inheritVelocity", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetTrails_Injected(
-        &mut self,
-        trailData: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_Trails,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTrails_Injected", (trailData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_randomSeed(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_randomSeed", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_gravityModifier(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_gravityModifier", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_colorOverLifetime(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule = __cordl_object
-            .invoke("get_colorOverLifetime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_startDelay(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_startDelay", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_textureSheetAnimation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule = __cordl_object
-            .invoke("get_textureSheetAnimation", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_startRotation3D(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_startRotation3D", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Emit_Internal(
-        &mut self,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Emit_Internal", (count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetParticlesWithNativeArray(
-        &mut self,
-        particles: crate::System::IntPtr,
-        particlesLength: i32,
-        _cordl_size: i32,
-        offset: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke(
-                "GetParticlesWithNativeArray",
-                (particles, particlesLength, _cordl_size, offset),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Stop__cordl_bool_ParticleSystemStopBehavior0(
-        &mut self,
-        withChildren: bool,
-        stopBehavior: crate::UnityEngine::ParticleSystemStopBehavior,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Stop", (withChildren, stopBehavior))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Stop__cordl_bool1(
+    pub fn Play__cordl_bool0(
         &mut self,
         withChildren: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2164,17 +1946,21 @@ impl crate::UnityEngine::ParticleSystem {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Stop", (withChildren))?;
+            .invoke("Play", (withChildren))?;
         Ok(__cordl_ret)
     }
-    pub fn Stop_2(
+    pub fn SetCustomParticleData(
         &mut self,
+        customData: *mut crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::Vector4,
+        >,
+        streamIndex: crate::UnityEngine::ParticleSystemCustomData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Stop", ())?;
+            .invoke("SetCustomParticleData", (customData, streamIndex))?;
         Ok(__cordl_ret)
     }
     pub fn SetManagedJobHandle(
@@ -2188,132 +1974,15 @@ impl crate::UnityEngine::ParticleSystem {
             .invoke("SetManagedJobHandle", (handle))?;
         Ok(__cordl_ret)
     }
-    pub fn get_randomSeed(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("get_randomSeed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_startDelay(
+    pub fn SetManagedJobHandle_Injected(
         &mut self,
-        value: f32,
+        handle: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_startDelay", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTrailDataInternal(
-        &mut self,
-        trailData: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_Trails,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetTrailDataInternal", (trailData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_playbackSpeed(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_playbackSpeed", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_velocityOverLifetime(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule = __cordl_object
-            .invoke("get_velocityOverLifetime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isPlaying(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isPlaying", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_particleCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_particleCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Emit_Vector3_Vector3_f32_f32_Color32_0(
-        &mut self,
-        position: crate::UnityEngine::Vector3,
-        velocity: crate::UnityEngine::Vector3,
-        _cordl_size: f32,
-        lifetime: f32,
-        color: crate::UnityEngine::Color32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Emit", (position, velocity, _cordl_size, lifetime, color))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Emit_ParticleSystem_Particle1(
-        &mut self,
-        particle: crate::UnityEngine::ParticleSystem_Particle,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Emit", (particle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Emit_i32_2(
-        &mut self,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Emit", (count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Emit_ParticleSystem_EmitParams_i32_3(
-        &mut self,
-        emitParams: crate::UnityEngine::ParticleSystem_EmitParams,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Emit", (emitParams, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_scalingMode(
-        &mut self,
-        value: crate::UnityEngine::ParticleSystemScalingMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_scalingMode", (value))?;
+            .invoke("SetManagedJobHandle_Injected", (handle))?;
         Ok(__cordl_ret)
     }
     pub fn SetParticlesWithNativeArray(
@@ -2333,7 +2002,211 @@ impl crate::UnityEngine::ParticleSystem {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn Clear__cordl_bool0(
+    pub fn SetParticles_ByRefMut2(
+        &mut self,
+        particles: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::ParticleSystem_Particle,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetParticles", (particles))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetParticles_ByRefMut5(
+        &mut self,
+        particles: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Collections::NativeArray_1<
+                crate::UnityEngine::ParticleSystem_Particle,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetParticles", (particles))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetParticles_i32_1(
+        &mut self,
+        particles: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::ParticleSystem_Particle,
+            >,
+        >,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetParticles", (particles, _cordl_size))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetParticles_i32_4(
+        &mut self,
+        particles: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Collections::NativeArray_1<
+                crate::UnityEngine::ParticleSystem_Particle,
+            >,
+        >,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetParticles", (particles, _cordl_size))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetParticles_i32_i32_0(
+        &mut self,
+        particles: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::ParticleSystem_Particle,
+            >,
+        >,
+        _cordl_size: i32,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetParticles", (particles, _cordl_size, offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetParticles_i32_i32_3(
+        &mut self,
+        particles: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Collections::NativeArray_1<
+                crate::UnityEngine::ParticleSystem_Particle,
+            >,
+        >,
+        _cordl_size: i32,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetParticles", (particles, _cordl_size, offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetPlaybackState(
+        &mut self,
+        playbackState: crate::UnityEngine::ParticleSystem_PlaybackState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetPlaybackState", (playbackState))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetPlaybackState_Injected(
+        &mut self,
+        playbackState: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_PlaybackState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetPlaybackState_Injected", (playbackState))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetTrails(
+        &mut self,
+        trailData: crate::UnityEngine::ParticleSystem_Trails,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetTrails", (trailData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetTrails_Injected(
+        &mut self,
+        trailData: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_Trails,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetTrails_Injected", (trailData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Simulate__cordl_bool2(
+        &mut self,
+        t: f32,
+        withChildren: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Simulate", (t, withChildren))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Simulate__cordl_bool__cordl_bool1(
+        &mut self,
+        t: f32,
+        withChildren: bool,
+        restart: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Simulate", (t, withChildren, restart))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Simulate__cordl_bool__cordl_bool__cordl_bool0(
+        &mut self,
+        t: f32,
+        withChildren: bool,
+        restart: bool,
+        fixedTimeStep: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Simulate", (t, withChildren, restart, fixedTimeStep))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Simulate_f32_3(
+        &mut self,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Simulate", (t))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Stop_2(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Stop", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Stop__cordl_bool1(
         &mut self,
         withChildren: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2341,107 +2214,48 @@ impl crate::UnityEngine::ParticleSystem {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", (withChildren))?;
+            .invoke("Stop", (withChildren))?;
         Ok(__cordl_ret)
     }
-    pub fn Clear_1(
+    pub fn Stop__cordl_bool_ParticleSystemStopBehavior0(
         &mut self,
+        withChildren: bool,
+        stopBehavior: crate::UnityEngine::ParticleSystemStopBehavior,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
+            .invoke("Stop", (withChildren, stopBehavior))?;
         Ok(__cordl_ret)
     }
-    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_duration", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_playOnAwake(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_playOnAwake", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_rotationOverLifetime(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule = __cordl_object
-            .invoke("get_rotationOverLifetime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_startSize(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_startSize", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_shape(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ParticleSystem_ShapeModule> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_ShapeModule = __cordl_object
-            .invoke("get_shape", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetManagedJobData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("GetManagedJobData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_simulationSpace(
-        &mut self,
-        value: crate::UnityEngine::ParticleSystemSimulationSpace,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_simulationSpace", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isEmitting(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isEmitting", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TriggerSubEmitter_i32_0(
+    pub fn TriggerSubEmitterForParticle(
         &mut self,
         subEmitterIndex: i32,
+        particle: crate::UnityEngine::ParticleSystem_Particle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TriggerSubEmitter", (subEmitterIndex))?;
+            .invoke("TriggerSubEmitterForParticle", (subEmitterIndex, particle))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TriggerSubEmitterForParticle_Injected(
+        &mut self,
+        subEmitterIndex: i32,
+        particle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_Particle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "TriggerSubEmitterForParticle_Injected",
+                (subEmitterIndex, particle),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn TriggerSubEmitter_ByRefMut1(
@@ -2472,328 +2286,35 @@ impl crate::UnityEngine::ParticleSystem {
             .invoke("TriggerSubEmitter", (subEmitterIndex, particles))?;
         Ok(__cordl_ret)
     }
-    pub fn get_proceduralSimulationSupported(
+    pub fn TriggerSubEmitter_i32_0(
+        &mut self,
+        subEmitterIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("TriggerSubEmitter", (subEmitterIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_automaticCullingEnabled(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
-            .invoke("get_proceduralSimulationSupported", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_totalTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_totalTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_customData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_CustomDataModule,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_CustomDataModule = __cordl_object
-            .invoke("get_customData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EmitOld_Internal(
-        &mut self,
-        particle: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_Particle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EmitOld_Internal", (particle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetPlaybackState_Injected(
-        &mut self,
-        playbackState: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_PlaybackState,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetPlaybackState_Injected", (playbackState))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_time", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AllocateCustomDataAttribute(
-        &mut self,
-        stream: crate::UnityEngine::ParticleSystemCustomData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AllocateCustomDataAttribute", (stream))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isStopped(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isStopped", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_limitVelocityOverLifetime(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule = __cordl_object
-            .invoke("get_limitVelocityOverLifetime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_main(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ParticleSystem_MainModule> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_MainModule = __cordl_object
-            .invoke("get_main", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_lights(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ParticleSystem_LightsModule> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_LightsModule = __cordl_object
-            .invoke("get_lights", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_lifetimeByEmitterSpeed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule = __cordl_object
-            .invoke("get_lifetimeByEmitterSpeed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_gravityModifier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_gravityModifier", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetManagedJobHandle_Injected(
-        &mut self,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetManagedJobHandle_Injected", (ret))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetManagedJobHandle_Injected(
-        &mut self,
-        handle: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetManagedJobHandle_Injected", (handle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_externalForces(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_ExternalForcesModule,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_ExternalForcesModule = __cordl_object
-            .invoke("get_externalForces", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsAlive__cordl_bool0(
-        &mut self,
-        withChildren: bool,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsAlive", (withChildren))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsAlive_1(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsAlive", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_emissionRate(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_emissionRate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_startLifetime(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_startLifetime", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetCustomParticleData(
-        &mut self,
-        customData: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::Vector4,
-        >,
-        streamIndex: crate::UnityEngine::ParticleSystemCustomData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCustomParticleData", (customData, streamIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TriggerSubEmitterForParticle_Injected(
-        &mut self,
-        subEmitterIndex: i32,
-        particle: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_Particle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "TriggerSubEmitterForParticle_Injected",
-                (subEmitterIndex, particle),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sizeOverLifetime(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule = __cordl_object
-            .invoke("get_sizeOverLifetime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AllocateAxisOfRotationAttribute(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AllocateAxisOfRotationAttribute", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_has3DParticleRotations(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_has3DParticleRotations", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_startRotation(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_startRotation", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_startRotation(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_startRotation", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetTrails(
-        &mut self,
-        trailData: crate::UnityEngine::ParticleSystem_Trails,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTrails", (trailData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetPlaybackState(
-        &mut self,
-        playbackState: crate::UnityEngine::ParticleSystem_PlaybackState,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetPlaybackState", (playbackState))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_colorBySpeed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_ColorBySpeedModule,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_ColorBySpeedModule = __cordl_object
-            .invoke("get_colorBySpeed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPlaybackState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_PlaybackState,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_PlaybackState = __cordl_object
-            .invoke("GetPlaybackState", ())?;
+            .invoke("get_automaticCullingEnabled", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_collision(
@@ -2808,178 +2329,47 @@ impl crate::UnityEngine::ParticleSystem {
             .invoke("get_collision", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_rotationBySpeed(
+    pub fn get_colorBySpeed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_RotationBySpeedModule,
+        crate::UnityEngine::ParticleSystem_ColorBySpeedModule,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_RotationBySpeedModule = __cordl_object
-            .invoke("get_rotationBySpeed", ())?;
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_ColorBySpeedModule = __cordl_object
+            .invoke("get_colorBySpeed", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AllocateMeshIndexAttribute(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AllocateMeshIndexAttribute", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_scalingMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ParticleSystemScalingMode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ParticleSystemScalingMode = __cordl_object
-            .invoke("get_scalingMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_trigger(
+    pub fn get_colorOverLifetime(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystem_TriggerModule,
+        crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_TriggerModule = __cordl_object
-            .invoke("get_trigger", ())?;
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule = __cordl_object
+            .invoke("get_colorOverLifetime", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_hasNonUniformParticleSizes(
+    pub fn get_customData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_CustomDataModule,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_hasNonUniformParticleSizes", ())?;
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_CustomDataModule = __cordl_object
+            .invoke("get_customData", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_trails(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ParticleSystem_TrailModule> {
+    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::ParticleSystem_TrailModule = __cordl_object
-            .invoke("get_trails", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_startColor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_startColor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetParticleCurrentColor(
-        &mut self,
-        particle: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_Particle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color32 = __cordl_object
-            .invoke("GetParticleCurrentColor", (particle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_maxParticles(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_maxParticles", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_enableEmission(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_enableEmission", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Play__cordl_bool0(
-        &mut self,
-        withChildren: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Play", (withChildren))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Play_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Play", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPlaybackState_Injected(
-        &mut self,
-        ret: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_PlaybackState,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetPlaybackState_Injected", (ret))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_startSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_startSpeed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetParticleCurrentSize3D(
-        &mut self,
-        particle: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_Particle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("GetParticleCurrentSize3D", (particle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_useAutoRandomSeed(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_useAutoRandomSeed", (value))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_duration", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_emission(
@@ -2994,26 +2384,636 @@ impl crate::UnityEngine::ParticleSystem {
             .invoke("get_emission", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetCustomParticleData(
-        &mut self,
-        customData: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::Vector4,
-        >,
-        streamIndex: crate::UnityEngine::ParticleSystemCustomData,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_emissionRate(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetCustomParticleData", (customData, streamIndex))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_emissionRate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_enableEmission(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_enableEmission", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_externalForces(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_ExternalForcesModule,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_ExternalForcesModule = __cordl_object
+            .invoke("get_externalForces", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_forceOverLifetime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule = __cordl_object
+            .invoke("get_forceOverLifetime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_gravityModifier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_gravityModifier", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_has3DParticleRotations(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_has3DParticleRotations", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hasNonUniformParticleSizes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_hasNonUniformParticleSizes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_inheritVelocity(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_InheritVelocityModule,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_InheritVelocityModule = __cordl_object
+            .invoke("get_inheritVelocity", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isEmitting(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isEmitting", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isPaused(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isPaused", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isPlaying(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isPlaying", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isStopped(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isStopped", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_lifetimeByEmitterSpeed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule = __cordl_object
+            .invoke("get_lifetimeByEmitterSpeed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_lights(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ParticleSystem_LightsModule> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_LightsModule = __cordl_object
+            .invoke("get_lights", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_limitVelocityOverLifetime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule = __cordl_object
+            .invoke("get_limitVelocityOverLifetime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_loop(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_loop", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_main(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ParticleSystem_MainModule> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_MainModule = __cordl_object
+            .invoke("get_main", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxParticles(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_maxParticles", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noise(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ParticleSystem_NoiseModule> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_NoiseModule = __cordl_object
+            .invoke("get_noise", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_particleCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_particleCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_playOnAwake(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_playOnAwake", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_playbackSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_playbackSpeed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_proceduralSimulationSupported(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_proceduralSimulationSupported", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_randomSeed(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("get_randomSeed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rotationBySpeed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_RotationBySpeedModule,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_RotationBySpeedModule = __cordl_object
+            .invoke("get_rotationBySpeed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rotationOverLifetime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule = __cordl_object
+            .invoke("get_rotationOverLifetime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_scalingMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ParticleSystemScalingMode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystemScalingMode = __cordl_object
+            .invoke("get_scalingMode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_shape(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ParticleSystem_ShapeModule> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_ShapeModule = __cordl_object
+            .invoke("get_shape", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_simulationSpace(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystemSimulationSpace,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystemSimulationSpace = __cordl_object
+            .invoke("get_simulationSpace", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sizeBySpeed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_SizeBySpeedModule,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_SizeBySpeedModule = __cordl_object
+            .invoke("get_sizeBySpeed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sizeOverLifetime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule = __cordl_object
+            .invoke("get_sizeOverLifetime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_startColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_startColor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_startDelay(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_startDelay", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_startLifetime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_startLifetime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_startRotation(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_startRotation", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_startRotation3D(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_startRotation3D", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_startSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_startSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_startSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_startSpeed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_subEmitters(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_SubEmittersModule,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_SubEmittersModule = __cordl_object
+            .invoke("get_subEmitters", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_textureSheetAnimation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule = __cordl_object
+            .invoke("get_textureSheetAnimation", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_time", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_totalTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_totalTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_trails(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ParticleSystem_TrailModule> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_TrailModule = __cordl_object
+            .invoke("get_trails", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_trigger(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_TriggerModule,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_TriggerModule = __cordl_object
+            .invoke("get_trigger", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_useAutoRandomSeed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_useAutoRandomSeed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_velocityOverLifetime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule = __cordl_object
+            .invoke("get_velocityOverLifetime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_emissionRate(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_emissionRate", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_enableEmission(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_enableEmission", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_gravityModifier(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_gravityModifier", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_loop(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_loop", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_maxParticles(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_maxParticles", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_playOnAwake(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_playOnAwake", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_playbackSpeed(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_playbackSpeed", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_randomSeed(
+        &mut self,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_randomSeed", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_scalingMode(
+        &mut self,
+        value: crate::UnityEngine::ParticleSystemScalingMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_scalingMode", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_simulationSpace(
+        &mut self,
+        value: crate::UnityEngine::ParticleSystemSimulationSpace,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_simulationSpace", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startColor(
+        &mut self,
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_startColor", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startDelay(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_startDelay", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startLifetime(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_startLifetime", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startRotation(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_startRotation", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startRotation3D(
+        &mut self,
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_startRotation3D", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startSize(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_startSize", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startSpeed(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_startSpeed", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_time(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_time", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_useAutoRandomSeed(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_useAutoRandomSeed", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+ParticleSystem")]
@@ -3060,26 +3060,26 @@ for crate::UnityEngine::ParticleSystem_PlaybackState {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState")]
 impl crate::UnityEngine::ParticleSystem_PlaybackState {
-    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Collision")]
-    pub type Collision = crate::UnityEngine::PlaybackState_Collision;
-    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Emission")]
-    pub type Emission = crate::UnityEngine::PlaybackState_Emission;
-    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Force")]
-    pub type Force = crate::UnityEngine::PlaybackState_Force;
-    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Initial")]
-    pub type Initial = crate::UnityEngine::PlaybackState_Initial;
-    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Lights")]
-    pub type Lights = crate::UnityEngine::PlaybackState_Lights;
-    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Noise")]
-    pub type Noise = crate::UnityEngine::PlaybackState_Noise;
     #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed4")]
     pub type Seed4 = crate::UnityEngine::PlaybackState_Seed4;
-    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed")]
-    pub type Seed = crate::UnityEngine::PlaybackState_Seed;
-    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Trail")]
-    pub type Trail = crate::UnityEngine::PlaybackState_Trail;
+    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Initial")]
+    pub type Initial = crate::UnityEngine::PlaybackState_Initial;
+    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Force")]
+    pub type Force = crate::UnityEngine::PlaybackState_Force;
     #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Shape")]
     pub type Shape = crate::UnityEngine::PlaybackState_Shape;
+    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed")]
+    pub type Seed = crate::UnityEngine::PlaybackState_Seed;
+    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Emission")]
+    pub type Emission = crate::UnityEngine::PlaybackState_Emission;
+    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Collision")]
+    pub type Collision = crate::UnityEngine::PlaybackState_Collision;
+    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Noise")]
+    pub type Noise = crate::UnityEngine::PlaybackState_Noise;
+    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Trail")]
+    pub type Trail = crate::UnityEngine::PlaybackState_Trail;
+    #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Lights")]
+    pub type Lights = crate::UnityEngine::PlaybackState_Lights;
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+RotationBySpeedModule")]
 #[repr(C)]
@@ -3264,6 +3264,17 @@ for crate::UnityEngine::ParticleSystem_ShapeModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+ShapeModule")]
 impl crate::UnityEngine::ParticleSystem_ShapeModule {
+    pub fn _ctor(
+        &mut self,
+        particleSystem: *mut crate::UnityEngine::ParticleSystem,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (particleSystem),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_meshRenderer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::MeshRenderer> {
@@ -3293,17 +3304,6 @@ impl crate::UnityEngine::ParticleSystem_ShapeModule {
             self,
             "set_rotation",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        particleSystem: *mut crate::UnityEngine::ParticleSystem,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (particleSystem),
         )?;
         Ok(__cordl_ret)
     }
@@ -3405,6 +3405,17 @@ for crate::UnityEngine::ParticleSystem_SubEmittersModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+SubEmittersModule")]
 impl crate::UnityEngine::ParticleSystem_SubEmittersModule {
+    pub fn GetSubEmitterSystem(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ParticleSystem> {
+        let __cordl_ret: *mut crate::UnityEngine::ParticleSystem = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetSubEmitterSystem",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         particleSystem: *mut crate::UnityEngine::ParticleSystem,
@@ -3421,17 +3432,6 @@ impl crate::UnityEngine::ParticleSystem_SubEmittersModule {
             self,
             "get_subEmittersCount",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSubEmitterSystem(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ParticleSystem> {
-        let __cordl_ret: *mut crate::UnityEngine::ParticleSystem = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetSubEmitterSystem",
-            (index),
         )?;
         Ok(__cordl_ret)
     }

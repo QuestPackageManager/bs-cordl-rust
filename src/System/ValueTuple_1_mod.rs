@@ -38,21 +38,6 @@ impl<T1: quest_hook::libil2cpp::Type> crate::System::ValueTuple_1<T1> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        item1: T1,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (item1),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_Object0(
         &mut self,
         obj: *mut crate::System::Object,
@@ -83,19 +68,15 @@ impl<T1: quest_hook::libil2cpp::Type> crate::System::ValueTuple_1<T1> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_IStructuralEquatable_Equals(
-        &mut self,
-        other: *mut crate::System::Object,
-        comparer: *mut crate::System::Collections::IEqualityComparer,
-    ) -> quest_hook::libil2cpp::Result<bool>
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.Collections.IStructuralEquatable.Equals",
-            (other, comparer),
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -115,15 +96,49 @@ impl<T1: quest_hook::libil2cpp::Type> crate::System::ValueTuple_1<T1> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    pub fn System_Collections_IStructuralEquatable_Equals(
+        &mut self,
+        other: *mut crate::System::Object,
+        comparer: *mut crate::System::Collections::IEqualityComparer,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.IStructuralEquatable.Equals",
+            (other, comparer),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IStructuralEquatable_GetHashCode(
+        &mut self,
+        comparer: *mut crate::System::Collections::IEqualityComparer,
+    ) -> quest_hook::libil2cpp::Result<i32>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
-            (),
+            "System.Collections.IStructuralEquatable.GetHashCode",
+            (comparer),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IComparable_CompareTo(
+        &mut self,
+        other: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IComparable.CompareTo",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -156,6 +171,20 @@ impl<T1: quest_hook::libil2cpp::Type> crate::System::ValueTuple_1<T1> {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn System_Runtime_CompilerServices_ITuple_get_Length(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Runtime.CompilerServices.ITuple.get_Length",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
@@ -170,47 +199,18 @@ impl<T1: quest_hook::libil2cpp::Type> crate::System::ValueTuple_1<T1> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_IComparable_CompareTo(
+    pub fn _ctor(
         &mut self,
-        other: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32>
+        item1: T1,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.IComparable.CompareTo",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IStructuralEquatable_GetHashCode(
-        &mut self,
-        comparer: *mut crate::System::Collections::IEqualityComparer,
-    ) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.IStructuralEquatable.GetHashCode",
-            (comparer),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Runtime_CompilerServices_ITuple_get_Length(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Runtime.CompilerServices.ITuple.get_Length",
-            (),
+            ".ctor",
+            (item1),
         )?;
         Ok(__cordl_ret)
     }

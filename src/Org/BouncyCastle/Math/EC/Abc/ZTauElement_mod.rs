@@ -26,6 +26,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+ZTauElement")]
 impl crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement {
+    pub fn New(
+        u: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        v: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (u, v))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         u: *mut crate::Org::BouncyCastle::Math::BigInteger,
@@ -37,16 +47,6 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (u, v))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        u: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        v: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (u, v))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+ZTauElement")]

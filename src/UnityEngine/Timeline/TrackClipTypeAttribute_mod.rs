@@ -26,6 +26,25 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::TrackClipTypeAttribute
 }
 #[cfg(feature = "UnityEngine+Timeline+TrackClipTypeAttribute")]
 impl crate::UnityEngine::Timeline::TrackClipTypeAttribute {
+    pub fn New_Type0(
+        clipClass: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (clipClass))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool1(
+        clipClass: *mut crate::System::Type,
+        allowAutoCreate: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (clipClass, allowAutoCreate))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_Type0(
         &mut self,
         clipClass: *mut crate::System::Type,
@@ -48,25 +67,6 @@ impl crate::UnityEngine::Timeline::TrackClipTypeAttribute {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (clipClass, allowAutoCreate))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_Type0(
-        clipClass: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (clipClass))?;
-        Ok(__cordl_object)
-    }
-    pub fn New__cordl_bool1(
-        clipClass: *mut crate::System::Type,
-        allowAutoCreate: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (clipClass, allowAutoCreate))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TrackClipTypeAttribute")]

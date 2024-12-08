@@ -23,6 +23,20 @@ impl std::ops::DerefMut for IPreviewMediaData {
 }
 #[cfg(feature = "IPreviewMediaData")]
 impl IPreviewMediaData {
+    pub fn GetCoverSpriteAsync(
+        &mut self,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::UnityEngine::Sprite,
+        > = __cordl_object.invoke("GetCoverSpriteAsync", (cancellationToken))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetPreviewAudioClip(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -45,20 +59,6 @@ impl IPreviewMediaData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnloadPreviewAudioClip", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetCoverSpriteAsync(
-        &mut self,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::UnityEngine::Sprite,
-        > = __cordl_object.invoke("GetCoverSpriteAsync", (cancellationToken))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

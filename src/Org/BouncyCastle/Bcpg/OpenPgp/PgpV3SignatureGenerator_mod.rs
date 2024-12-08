@@ -34,39 +34,65 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpV3SignatureGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpV3SignatureGenerator")]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpV3SignatureGenerator {
-    pub fn _ctor(
+    pub fn Generate(
         &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature = __cordl_object
+            .invoke("Generate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GenerateOnePassVersion(
+        &mut self,
+        isNested: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpOnePassSignature,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpOnePassSignature = __cordl_object
+            .invoke("GenerateOnePassVersion", (isNested))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitSign_SecureRandom1(
+        &mut self,
+        sigType: i32,
+        key: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
+        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitSign", (sigType, key, random))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitSign_i32_PgpPrivateKey0(
+        &mut self,
+        sigType: i32,
+        key: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitSign", (sigType, key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
         keyAlgorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (keyAlgorithm, hashAlgorithm))?;
-        Ok(__cordl_ret)
-    }
-    pub fn doUpdateByte(
-        &mut self,
-        b: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("doUpdateByte", (b))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Update_u8_0(
-        &mut self,
-        b: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", (b))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (keyAlgorithm, hashAlgorithm))?;
+        Ok(__cordl_object)
     }
     pub fn Update_Il2CppArray1(
         &mut self,
@@ -92,17 +118,27 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpV3SignatureGenerator {
             .invoke("Update", (b, off, len))?;
         Ok(__cordl_ret)
     }
-    pub fn GenerateOnePassVersion(
+    pub fn Update_u8_0(
         &mut self,
-        isNested: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpOnePassSignature,
-    > {
+        b: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpOnePassSignature = __cordl_object
-            .invoke("GenerateOnePassVersion", (isNested))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", (b))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        keyAlgorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
+        hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (keyAlgorithm, hashAlgorithm))?;
         Ok(__cordl_ret)
     }
     pub fn doCanonicalUpdateByte(
@@ -116,29 +152,15 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpV3SignatureGenerator {
             .invoke("doCanonicalUpdateByte", (b))?;
         Ok(__cordl_ret)
     }
-    pub fn InitSign_i32_PgpPrivateKey0(
+    pub fn doUpdateByte(
         &mut self,
-        sigType: i32,
-        key: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
+        b: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitSign", (sigType, key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitSign_SecureRandom1(
-        &mut self,
-        sigType: i32,
-        key: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitSign", (sigType, key, random))?;
+            .invoke("doUpdateByte", (b))?;
         Ok(__cordl_ret)
     }
     pub fn doUpdateCRLF(
@@ -150,28 +172,6 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpV3SignatureGenerator {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("doUpdateCRLF", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Generate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature = __cordl_object
-            .invoke("Generate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        keyAlgorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
-        hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (keyAlgorithm, hashAlgorithm))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpV3SignatureGenerator")]

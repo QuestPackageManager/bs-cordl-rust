@@ -30,19 +30,27 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::Messaging::CADMess
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+CADMessageBase")]
 impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
-    pub fn UnmarshalArguments(
+    pub fn GetLogicalCallContext(
         &mut self,
-        arguments: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
         args: *mut crate::System::Collections::ArrayList,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
-        > = __cordl_object.invoke("UnmarshalArguments", (arguments, args))?;
+        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext = __cordl_object
+            .invoke("GetLogicalCallContext", (args))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetMethod(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodBase> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Reflection::MethodBase = __cordl_object
+            .invoke("GetMethod", ())?;
         Ok(__cordl_ret)
     }
     pub fn MarshalArgument(
@@ -72,18 +80,14 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         > = __cordl_object.invoke("MarshalArguments", (arguments, args))?;
         Ok(__cordl_ret)
     }
-    pub fn GetLogicalCallContext(
-        &mut self,
-        args: *mut crate::System::Collections::ArrayList,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext = __cordl_object
-            .invoke("GetLogicalCallContext", (args))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        msg: *mut crate::System::Runtime::Remoting::Messaging::IMethodMessage,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (msg))?;
+        Ok(__cordl_object)
     }
     pub fn SaveLogicalCallContext(
         &mut self,
@@ -111,6 +115,21 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             .invoke("UnmarshalArgument", (arg, args))?;
         Ok(__cordl_ret)
     }
+    pub fn UnmarshalArguments(
+        &mut self,
+        arguments: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        args: *mut crate::System::Collections::ArrayList,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Object,
+        > = __cordl_object.invoke("UnmarshalArguments", (arguments, args))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         msg: *mut crate::System::Runtime::Remoting::Messaging::IMethodMessage,
@@ -121,25 +140,6 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (msg))?;
         Ok(__cordl_ret)
-    }
-    pub fn GetMethod(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodBase> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Reflection::MethodBase = __cordl_object
-            .invoke("GetMethod", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        msg: *mut crate::System::Runtime::Remoting::Messaging::IMethodMessage,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (msg))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+CADMessageBase")]

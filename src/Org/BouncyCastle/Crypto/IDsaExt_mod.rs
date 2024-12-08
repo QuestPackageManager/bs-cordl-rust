@@ -24,6 +24,11 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IDsaExt {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IDsaExt")]
 impl crate::Org::BouncyCastle::Crypto::IDsaExt {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_Order(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
@@ -33,11 +38,6 @@ impl crate::Org::BouncyCastle::Crypto::IDsaExt {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
             .invoke("get_Order", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IDsaExt")]

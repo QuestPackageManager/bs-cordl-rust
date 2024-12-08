@@ -24,6 +24,23 @@ impl std::ops::DerefMut for crate::Microsoft::Win32::SafeHandles::SafeWaitHandle
 }
 #[cfg(feature = "Microsoft+Win32+SafeHandles+SafeWaitHandle")]
 impl crate::Microsoft::Win32::SafeHandles::SafeWaitHandle {
+    pub fn New(
+        existingHandle: crate::System::IntPtr,
+        ownsHandle: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (existingHandle, ownsHandle))?;
+        Ok(__cordl_object)
+    }
+    pub fn ReleaseHandle(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ReleaseHandle", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         existingHandle: crate::System::IntPtr,
@@ -35,23 +52,6 @@ impl crate::Microsoft::Win32::SafeHandles::SafeWaitHandle {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (existingHandle, ownsHandle))?;
         Ok(__cordl_ret)
-    }
-    pub fn ReleaseHandle(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ReleaseHandle", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        existingHandle: crate::System::IntPtr,
-        ownsHandle: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (existingHandle, ownsHandle))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Microsoft+Win32+SafeHandles+SafeWaitHandle")]

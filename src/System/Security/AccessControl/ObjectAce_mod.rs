@@ -27,14 +27,81 @@ impl std::ops::DerefMut for crate::System::Security::AccessControl::ObjectAce {
 }
 #[cfg(feature = "System+Security+AccessControl+ObjectAce")]
 impl crate::System::Security::AccessControl::ObjectAce {
-    pub fn get_InheritedObjectAceTypePresent(
+    pub fn GetBinaryForm(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        binaryForm: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_InheritedObjectAceTypePresent", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetBinaryForm", (binaryForm, offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_AceFlags_AceQualifier_i32_SecurityIdentifier_ObjectAceFlags_Guid_Guid__cordl_bool_Il2CppArray0(
+        aceFlags: crate::System::Security::AccessControl::AceFlags,
+        qualifier: crate::System::Security::AccessControl::AceQualifier,
+        accessMask: i32,
+        sid: *mut crate::System::Security::Principal::SecurityIdentifier,
+        flags: crate::System::Security::AccessControl::ObjectAceFlags,
+        _cordl_type: crate::System::Guid,
+        inheritedType: crate::System::Guid,
+        isCallback: bool,
+        opaque: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    aceFlags,
+                    qualifier,
+                    accessMask,
+                    sid,
+                    flags,
+                    _cordl_type,
+                    inheritedType,
+                    isCallback,
+                    opaque,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray_i32_1(
+        binaryForm: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (binaryForm, offset))?;
+        Ok(__cordl_object)
+    }
+    pub fn ReadGuid(
+        &mut self,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Guid = __cordl_object
+            .invoke("ReadGuid", (buffer, offset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteGuid(
+        &mut self,
+        val: crate::System::Guid,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteGuid", (val, buffer, offset))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_AceFlags_AceQualifier_i32_SecurityIdentifier_ObjectAceFlags_Guid_Guid__cordl_bool_Il2CppArray0(
@@ -81,6 +148,45 @@ impl crate::System::Security::AccessControl::ObjectAce {
             .invoke(".ctor", (binaryForm, offset))?;
         Ok(__cordl_ret)
     }
+    pub fn get_BinaryLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_BinaryLength", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_InheritedObjectAceType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Guid = __cordl_object
+            .invoke("get_InheritedObjectAceType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_InheritedObjectAceTypePresent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_InheritedObjectAceTypePresent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ObjectAceFlags(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Security::AccessControl::ObjectAceFlags,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Security::AccessControl::ObjectAceFlags = __cordl_object
+            .invoke("get_ObjectAceFlags", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_ObjectAceType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
@@ -89,6 +195,24 @@ impl crate::System::Security::AccessControl::ObjectAce {
         );
         let __cordl_ret: crate::System::Guid = __cordl_object
             .invoke("get_ObjectAceType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ObjectAceTypePresent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_ObjectAceTypePresent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_InheritedObjectAceType(
+        &mut self,
+        value: crate::System::Guid,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_InheritedObjectAceType", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_ObjectAceFlags(
@@ -112,130 +236,6 @@ impl crate::System::Security::AccessControl::ObjectAce {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ObjectAceType", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_ObjectAceTypePresent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_ObjectAceTypePresent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteGuid(
-        &mut self,
-        val: crate::System::Guid,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteGuid", (val, buffer, offset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_InheritedObjectAceType(
-        &mut self,
-        value: crate::System::Guid,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_InheritedObjectAceType", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_InheritedObjectAceType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Guid = __cordl_object
-            .invoke("get_InheritedObjectAceType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadGuid(
-        &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Guid = __cordl_object
-            .invoke("ReadGuid", (buffer, offset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetBinaryForm(
-        &mut self,
-        binaryForm: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetBinaryForm", (binaryForm, offset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ObjectAceFlags(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Security::AccessControl::ObjectAceFlags,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Security::AccessControl::ObjectAceFlags = __cordl_object
-            .invoke("get_ObjectAceFlags", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_BinaryLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_BinaryLength", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_AceFlags_AceQualifier_i32_SecurityIdentifier_ObjectAceFlags_Guid_Guid__cordl_bool_Il2CppArray0(
-        aceFlags: crate::System::Security::AccessControl::AceFlags,
-        qualifier: crate::System::Security::AccessControl::AceQualifier,
-        accessMask: i32,
-        sid: *mut crate::System::Security::Principal::SecurityIdentifier,
-        flags: crate::System::Security::AccessControl::ObjectAceFlags,
-        _cordl_type: crate::System::Guid,
-        inheritedType: crate::System::Guid,
-        isCallback: bool,
-        opaque: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    aceFlags,
-                    qualifier,
-                    accessMask,
-                    sid,
-                    flags,
-                    _cordl_type,
-                    inheritedType,
-                    isCallback,
-                    opaque,
-                ),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray_i32_1(
-        binaryForm: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (binaryForm, offset))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Security+AccessControl+ObjectAce")]

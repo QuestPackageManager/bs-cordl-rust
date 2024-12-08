@@ -59,65 +59,15 @@ impl std::ops::DerefMut for ScoreController {
 }
 #[cfg(feature = "ScoreController")]
 impl ScoreController {
-    pub fn remove_scoringForNoteStartedEvent(
+    pub fn DespawnScoringElement(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ScoringElement>,
+        scoringElement: *mut ScoringElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_scoringForNoteStartedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_multipliedScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_multipliedScore", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleNoteWasMissed(
-        &mut self,
-        noteController: *mut NoteController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNoteWasMissed", (noteController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_immediateMaxPossibleModifiedScore(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("get_immediateMaxPossibleModifiedScore", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetEnabled(
-        &mut self,
-        enabled: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetEnabled", (enabled))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_multiplierDidChangeEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<i32, f32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_multiplierDidChangeEvent", (value))?;
+            .invoke("DespawnScoringElement", (scoringElement))?;
         Ok(__cordl_ret)
     }
     pub fn HandleNoteWasCut(
@@ -132,42 +82,15 @@ impl ScoreController {
             .invoke("HandleNoteWasCut", (noteController, noteCutInfo))?;
         Ok(__cordl_ret)
     }
-    pub fn DespawnScoringElement(
+    pub fn HandleNoteWasMissed(
         &mut self,
-        scoringElement: *mut ScoringElement,
+        noteController: *mut NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DespawnScoringElement", (scoringElement))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_invalidated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_invalidated", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LateUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LateUpdate", ())?;
+            .invoke("HandleNoteWasMissed", (noteController))?;
         Ok(__cordl_ret)
     }
     pub fn HandleNoteWasSpawned(
@@ -191,6 +114,64 @@ impl ScoreController {
             .invoke("HandlePlayerHeadDidEnterObstacles", ())?;
         Ok(__cordl_ret)
     }
+    pub fn LateUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LateUpdate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetEnabled(
+        &mut self,
+        enabled: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetEnabled", (enabled))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn add_multiplierDidChangeEvent(
         &mut self,
         value: *mut crate::System::Action_2<i32, f32>,
@@ -202,14 +183,15 @@ impl ScoreController {
             .invoke("add_multiplierDidChangeEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Start(
+    pub fn add_scoreDidChangeEvent(
         &mut self,
+        value: *mut crate::System::Action_2<i32, i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
+            .invoke("add_scoreDidChangeEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_scoringForNoteFinishedEvent(
@@ -223,15 +205,67 @@ impl ScoreController {
             .invoke("add_scoringForNoteFinishedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn add_scoreDidChangeEvent(
+    pub fn add_scoringForNoteStartedEvent(
         &mut self,
-        value: *mut crate::System::Action_2<i32, i32>,
+        value: *mut crate::System::Action_1<*mut ScoringElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_scoreDidChangeEvent", (value))?;
+            .invoke("add_scoringForNoteStartedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_immediateMaxPossibleModifiedScore(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("get_immediateMaxPossibleModifiedScore", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_immediateMaxPossibleMultipliedScore(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("get_immediateMaxPossibleMultipliedScore", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_invalidated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_invalidated", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_modifiedScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_modifiedScore", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_multipliedScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_multipliedScore", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_multiplierDidChangeEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<i32, f32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_multiplierDidChangeEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn remove_scoreDidChangeEvent(
@@ -256,34 +290,7 @@ impl ScoreController {
             .invoke("remove_scoringForNoteFinishedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_modifiedScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_modifiedScore", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_immediateMaxPossibleMultipliedScore(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("get_immediateMaxPossibleMultipliedScore", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_scoringForNoteStartedEvent(
+    pub fn remove_scoringForNoteStartedEvent(
         &mut self,
         value: *mut crate::System::Action_1<*mut ScoringElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -291,15 +298,8 @@ impl ScoreController {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_scoringForNoteStartedEvent", (value))?;
+            .invoke("remove_scoringForNoteStartedEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ScoreController")]

@@ -35,41 +35,24 @@ impl PlayerAgreements {
     pub const kCurrentPrivacyPolicyVersion: i32 = 5i32;
     pub const kFirstEulaVersion: i32 = 1i32;
     pub const kFirstPrivacyPolicyVersion: i32 = 1i32;
-    pub fn AgreedToHealthAndSafety(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn AgreeToEndOfLifeNotice(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("AgreedToHealthAndSafety", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AgreeToEndOfLifeNotice", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AgreedToAnyPreviousHealthAndSafety(
+    pub fn AgreeToEula(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("AgreedToAnyPreviousHealthAndSafety", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AgreedToPlayerSenstivityFlag(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("AgreedToPlayerSenstivityFlag", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AgreedToAnyPreviousPrivacyPolicy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("AgreedToAnyPreviousPrivacyPolicy", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AgreeToEula", ())?;
         Ok(__cordl_ret)
     }
     pub fn AgreeToHealthAndSafety(
@@ -82,11 +65,61 @@ impl PlayerAgreements {
             .invoke("AgreeToHealthAndSafety", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AgreedToPrivacyPolicy(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn AgreeToPlayerSensitivityFlag(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("AgreedToPrivacyPolicy", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AgreeToPlayerSensitivityFlag", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn AgreeToPrivacyPolicy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AgreeToPrivacyPolicy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn AgreedToAnyPreviousEula(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("AgreedToAnyPreviousEula", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn AgreedToAnyPreviousHealthAndSafety(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("AgreedToAnyPreviousHealthAndSafety", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn AgreedToAnyPreviousPlayerSensitivityFlag(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("AgreedToAnyPreviousPlayerSensitivityFlag", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn AgreedToAnyPreviousPrivacyPolicy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("AgreedToAnyPreviousPrivacyPolicy", ())?;
         Ok(__cordl_ret)
     }
     pub fn AgreedToEndOfLifeNotice(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -96,14 +129,28 @@ impl PlayerAgreements {
         let __cordl_ret: bool = __cordl_object.invoke("AgreedToEndOfLifeNotice", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AgreeToPlayerSensitivityFlag(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn AgreedToEula(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AgreeToPlayerSensitivityFlag", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("AgreedToEula", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn AgreedToHealthAndSafety(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("AgreedToHealthAndSafety", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn AgreedToPlayerSenstivityFlag(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("AgreedToPlayerSenstivityFlag", ())?;
         Ok(__cordl_ret)
     }
     pub fn AgreedToPreviousPrivacyPolicy(
@@ -116,15 +163,41 @@ impl PlayerAgreements {
             .invoke("AgreedToPreviousPrivacyPolicy", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AgreeToEula(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn AgreedToPrivacyPolicy(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AgreeToEula", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("AgreedToPrivacyPolicy", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_i32_i32_i32_i32_1(
+        eulaVersion: i32,
+        privacyPolicyVersion: i32,
+        healthAndSafetyVersion: i32,
+        playerSensitivityFlagVersion: i32,
+        endOfLifeNoticeVersion: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    eulaVersion,
+                    privacyPolicyVersion,
+                    healthAndSafetyVersion,
+                    playerSensitivityFlagVersion,
+                    endOfLifeNoticeVersion,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_0(
         &mut self,
@@ -159,79 +232,6 @@ impl PlayerAgreements {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn AgreedToAnyPreviousEula(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("AgreedToAnyPreviousEula", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AgreeToPrivacyPolicy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AgreeToPrivacyPolicy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AgreeToEndOfLifeNotice(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AgreeToEndOfLifeNotice", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AgreedToAnyPreviousPlayerSensitivityFlag(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("AgreedToAnyPreviousPlayerSensitivityFlag", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AgreedToEula(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("AgreedToEula", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_i32_i32_i32_i32_1(
-        eulaVersion: i32,
-        privacyPolicyVersion: i32,
-        healthAndSafetyVersion: i32,
-        playerSensitivityFlagVersion: i32,
-        endOfLifeNoticeVersion: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    eulaVersion,
-                    privacyPolicyVersion,
-                    healthAndSafetyVersion,
-                    playerSensitivityFlagVersion,
-                    endOfLifeNoticeVersion,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PlayerAgreements")]

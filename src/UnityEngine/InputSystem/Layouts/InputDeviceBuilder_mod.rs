@@ -33,51 +33,53 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
     pub const kSizeForControlUsingStateFromOtherControl: u32 = 16843263u32;
     #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder+RefInstance")]
     pub type RefInstance = crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance;
-    pub fn Setup(
+    pub fn AddChildControl(
         &mut self,
-        layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        layout: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
         variants: crate::UnityEngine::InputSystem::Utilities::InternedString,
-        deviceDescription: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        parent: *mut crate::UnityEngine::InputSystem::InputControl,
+        haveChildrenUsingStateFromOtherControls: quest_hook::libil2cpp::ByRefMut<bool>,
+        controlItem: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+        childIndex: i32,
+        nameOverride: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputControl,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Setup",
-            (layout, variants, deviceDescription),
+            "AddChildControl",
+            (
+                layout,
+                variants,
+                parent,
+                haveChildrenUsingStateFromOtherControls,
+                controlItem,
+                childIndex,
+                nameOverride,
+            ),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Reset(
+    pub fn AddChildControlIfMissing(
         &mut self,
+        layout: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+        variants: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        parent: *mut crate::UnityEngine::InputSystem::InputControl,
+        haveChildrenUsingStateFromOtherControls: quest_hook::libil2cpp::ByRefMut<bool>,
+        controlItem: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Reset",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddControlToNode(
-        &mut self,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
-        controlIndiciesNextFreeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
-        nodeIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AddControlToNode",
-            (control, controlIndiciesNextFreeIndex, nodeIndex),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetBestMidPoint(
-        &mut self,
-        parent: crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode,
-        startOffset: u16,
-    ) -> quest_hook::libil2cpp::Result<u16> {
-        let __cordl_ret: u16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetBestMidPoint",
-            (parent, startOffset),
+            "AddChildControlIfMissing",
+            (
+                layout,
+                variants,
+                parent,
+                haveChildrenUsingStateFromOtherControls,
+                controlItem,
+            ),
         )?;
         Ok(__cordl_ret)
     }
@@ -92,20 +94,6 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             self,
             "AddChildControls",
             (layout, variants, parent, haveChildrenUsingStateFromOtherControls),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn InsertChildControlOverride(
-        &mut self,
-        parent: *mut crate::UnityEngine::InputSystem::InputControl,
-        controlItem: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "InsertChildControlOverride",
-            (parent, controlItem),
         )?;
         Ok(__cordl_ret)
     }
@@ -124,17 +112,28 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetDisplayName(
+    pub fn AddControlToNode(
         &mut self,
         control: *mut crate::UnityEngine::InputSystem::InputControl,
-        longDisplayNameFromLayout: *mut crate::System::String,
-        shortDisplayNameFromLayout: *mut crate::System::String,
-        shortName: bool,
+        controlIndiciesNextFreeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        nodeIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetDisplayName",
-            (control, longDisplayNameFromLayout, shortDisplayNameFromLayout, shortName),
+            "AddControlToNode",
+            (control, controlIndiciesNextFreeIndex, nodeIndex),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ChildControlOverridePath(
+        &mut self,
+        parent: *mut crate::UnityEngine::InputSystem::InputControl,
+        controlName: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ChildControlOverridePath",
+            (parent, controlName),
         )?;
         Ok(__cordl_ret)
     }
@@ -144,6 +143,16 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn FinalizeControlHierarchy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "FinalizeControlHierarchy",
             (),
         )?;
         Ok(__cordl_ret)
@@ -173,77 +182,6 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn AddChildControl(
-        &mut self,
-        layout: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
-        variants: crate::UnityEngine::InputSystem::Utilities::InternedString,
-        parent: *mut crate::UnityEngine::InputSystem::InputControl,
-        haveChildrenUsingStateFromOtherControls: quest_hook::libil2cpp::ByRefMut<bool>,
-        controlItem: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
-        childIndex: i32,
-        nameOverride: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputControl,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AddChildControl",
-            (
-                layout,
-                variants,
-                parent,
-                haveChildrenUsingStateFromOtherControls,
-                controlItem,
-                childIndex,
-                nameOverride,
-            ),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstantiateLayout_InternedString0(
-        &mut self,
-        layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
-        variants: crate::UnityEngine::InputSystem::Utilities::InternedString,
-        name: crate::UnityEngine::InputSystem::Utilities::InternedString,
-        parent: *mut crate::UnityEngine::InputSystem::InputControl,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputControl,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "InstantiateLayout",
-            (layout, variants, name, parent),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstantiateLayout_InputControlLayout1(
-        &mut self,
-        layout: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
-        variants: crate::UnityEngine::InputSystem::Utilities::InternedString,
-        name: crate::UnityEngine::InputSystem::Utilities::InternedString,
-        parent: *mut crate::UnityEngine::InputSystem::InputControl,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputControl,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "InstantiateLayout",
-            (layout, variants, name, parent),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ChildControlOverridePath(
-        &mut self,
-        parent: *mut crate::UnityEngine::InputSystem::InputControl,
-        controlName: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ChildControlOverridePath",
-            (parent, controlName),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Finish(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -253,6 +191,29 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             self,
             "Finish",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetBestMidPoint(
+        &mut self,
+        parent: crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode,
+        startOffset: u16,
+    ) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_ret: u16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetBestMidPoint",
+            (parent, startOffset),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetControlIndex(
+        &mut self,
+        control: *mut crate::UnityEngine::InputSystem::InputControl,
+    ) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_ret: u16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetControlIndex",
+            (control),
         )?;
         Ok(__cordl_ret)
     }
@@ -281,14 +242,17 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetControlIndex(
+    pub fn InsertChildControlOverride(
         &mut self,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
-    ) -> quest_hook::libil2cpp::Result<u16> {
-        let __cordl_ret: u16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        parent: *mut crate::UnityEngine::InputSystem::InputControl,
+        controlItem: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetControlIndex",
-            (control),
+            "InsertChildControlOverride",
+            (parent, controlItem),
         )?;
         Ok(__cordl_ret)
     }
@@ -308,36 +272,72 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn AddChildControlIfMissing(
+    pub fn InstantiateLayout_InputControlLayout1(
         &mut self,
         layout: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
         variants: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        name: crate::UnityEngine::InputSystem::Utilities::InternedString,
         parent: *mut crate::UnityEngine::InputSystem::InputControl,
-        haveChildrenUsingStateFromOtherControls: quest_hook::libil2cpp::ByRefMut<bool>,
-        controlItem: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputControl,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "AddChildControlIfMissing",
-            (
-                layout,
-                variants,
-                parent,
-                haveChildrenUsingStateFromOtherControls,
-                controlItem,
-            ),
+            "InstantiateLayout",
+            (layout, variants, name, parent),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn FinalizeControlHierarchy(
+    pub fn InstantiateLayout_InternedString0(
+        &mut self,
+        layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        variants: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        name: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        parent: *mut crate::UnityEngine::InputSystem::InputControl,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputControl,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "InstantiateLayout",
+            (layout, variants, name, parent),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "FinalizeControlHierarchy",
+            "Reset",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetDisplayName(
+        &mut self,
+        control: *mut crate::UnityEngine::InputSystem::InputControl,
+        longDisplayNameFromLayout: *mut crate::System::String,
+        shortDisplayNameFromLayout: *mut crate::System::String,
+        shortName: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetDisplayName",
+            (control, longDisplayNameFromLayout, shortDisplayNameFromLayout, shortName),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Setup(
+        &mut self,
+        layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        variants: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        deviceDescription: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Setup",
+            (layout, variants, deviceDescription),
         )?;
         Ok(__cordl_ret)
     }

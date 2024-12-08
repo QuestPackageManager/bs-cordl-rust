@@ -28,16 +28,6 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::NewExpression {
 }
 #[cfg(feature = "System+Linq+Expressions+NewExpression")]
 impl crate::System::Linq::Expressions::NewExpression {
-    pub fn get_Constructor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::ConstructorInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Reflection::ConstructorInfo = __cordl_object
-            .invoke("get_Constructor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetArgument(
         &mut self,
         index: i32,
@@ -49,6 +39,16 @@ impl crate::System::Linq::Expressions::NewExpression {
         );
         let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
             .invoke("GetArgument", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Constructor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::ConstructorInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Reflection::ConstructorInfo = __cordl_object
+            .invoke("get_Constructor", ())?;
         Ok(__cordl_ret)
     }
 }

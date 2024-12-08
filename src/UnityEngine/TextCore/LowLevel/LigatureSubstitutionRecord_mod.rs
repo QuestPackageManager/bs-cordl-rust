@@ -24,20 +24,20 @@ for crate::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord {
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+LigatureSubstitutionRecord")]
 impl crate::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord {
-    pub fn get_ligatureGlyphID(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_ligatureGlyphID",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_componentGlyphIDs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u32>> {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u32> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_componentGlyphIDs",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ligatureGlyphID(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_ligatureGlyphID",
             (),
         )?;
         Ok(__cordl_ret)

@@ -26,16 +26,96 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Lexer {
 }
 #[cfg(feature = "System+Net+Http+Headers+Lexer")]
 impl crate::System::Net::Http::Headers::Lexer {
-    pub fn TryGetDateValue(
+    pub fn EatChar(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EatChar", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetQuotedStringValue(
+        &mut self,
+        start: crate::System::Net::Http::Headers::Token,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetQuotedStringValue", (start))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetRemainingStringValue(
+        &mut self,
+        position: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetRemainingStringValue", (position))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetStringValue_Token0(
         &mut self,
         token: crate::System::Net::Http::Headers::Token,
-        value: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetStringValue", (token))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetStringValue_Token1(
+        &mut self,
+        start: crate::System::Net::Http::Headers::Token,
+        end: crate::System::Net::Http::Headers::Token,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetStringValue", (start, end))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsStarStringValue(
+        &mut self,
+        token: crate::System::Net::Http::Headers::Token,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetDateValue", (token, value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("IsStarStringValue", (token))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        stream: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream))?;
+        Ok(__cordl_object)
+    }
+    pub fn PeekChar(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("PeekChar", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Scan(
+        &mut self,
+        recognizeDash: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Net::Http::Headers::Token> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Net::Http::Headers::Token = __cordl_object
+            .invoke("Scan", (recognizeDash))?;
         Ok(__cordl_ret)
     }
     pub fn ScanCommentOptional(
@@ -52,26 +132,28 @@ impl crate::System::Net::Http::Headers::Lexer {
             .invoke("ScanCommentOptional", (value, readToken))?;
         Ok(__cordl_ret)
     }
-    pub fn Scan(
+    pub fn TryGetDateValue(
         &mut self,
-        recognizeDash: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Net::Http::Headers::Token> {
+        token: crate::System::Net::Http::Headers::Token,
+        value: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Net::Http::Headers::Token = __cordl_object
-            .invoke("Scan", (recognizeDash))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetDateValue", (token, value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn TryGetDoubleValue(
         &mut self,
-        stream: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        token: crate::System::Net::Http::Headers::Token,
+        value: quest_hook::libil2cpp::ByRefMut<f64>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stream))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetDoubleValue", (token, value))?;
         Ok(__cordl_ret)
     }
     pub fn TryGetNumericValue_Token_ByRefMut0(
@@ -98,77 +180,6 @@ impl crate::System::Net::Http::Headers::Lexer {
             .invoke("TryGetNumericValue", (token, value))?;
         Ok(__cordl_ret)
     }
-    pub fn PeekChar(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("PeekChar", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetDoubleValue(
-        &mut self,
-        token: crate::System::Net::Http::Headers::Token,
-        value: quest_hook::libil2cpp::ByRefMut<f64>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetDoubleValue", (token, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Position", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetStringValue_Token0(
-        &mut self,
-        token: crate::System::Net::Http::Headers::Token,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetStringValue", (token))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetStringValue_Token1(
-        &mut self,
-        start: crate::System::Net::Http::Headers::Token,
-        end: crate::System::Net::Http::Headers::Token,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetStringValue", (start, end))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRemainingStringValue(
-        &mut self,
-        position: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetRemainingStringValue", (position))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetQuotedStringValue(
-        &mut self,
-        start: crate::System::Net::Http::Headers::Token,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetQuotedStringValue", (start))?;
-        Ok(__cordl_ret)
-    }
     pub fn TryGetTimeSpanValue(
         &mut self,
         token: crate::System::Net::Http::Headers::Token,
@@ -182,14 +193,22 @@ impl crate::System::Net::Http::Headers::Lexer {
             .invoke("TryGetTimeSpanValue", (token))?;
         Ok(__cordl_ret)
     }
-    pub fn IsStarStringValue(
+    pub fn _ctor(
         &mut self,
-        token: crate::System::Net::Http::Headers::Token,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        stream: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("IsStarStringValue", (token))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stream))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Position", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Position(
@@ -202,25 +221,6 @@ impl crate::System::Net::Http::Headers::Lexer {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Position", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn EatChar(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EatChar", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        stream: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+Lexer")]

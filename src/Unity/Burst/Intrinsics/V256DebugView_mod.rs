@@ -25,45 +25,14 @@ impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::V256DebugView {
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+V256DebugView")]
 impl crate::Unity::Burst::Intrinsics::V256DebugView {
-    pub fn get_SLong(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i64>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i64> = __cordl_object
-            .invoke("get_SLong", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Byte(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("get_Byte", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_UInt(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u32>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u32> = __cordl_object
-            .invoke("get_UInt", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Float(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<f32>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<f32> = __cordl_object
-            .invoke("get_Float", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        value: crate::Unity::Burst::Intrinsics::v256,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (value))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -76,14 +45,34 @@ impl crate::Unity::Burst::Intrinsics::V256DebugView {
             .invoke(".ctor", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_SShort(
+    pub fn get_Byte(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i16>> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i16> = __cordl_object
-            .invoke("get_SShort", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("get_Byte", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Double(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<f64>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<f64> = __cordl_object
+            .invoke("get_Double", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Float(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<f32>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<f32> = __cordl_object
+            .invoke("get_Float", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SByte(
@@ -94,6 +83,46 @@ impl crate::Unity::Burst::Intrinsics::V256DebugView {
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i8> = __cordl_object
             .invoke("get_SByte", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SInt(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
+            .invoke("get_SInt", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SLong(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i64>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i64> = __cordl_object
+            .invoke("get_SLong", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SShort(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i16>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i16> = __cordl_object
+            .invoke("get_SShort", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_UInt(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u32>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u32> = __cordl_object
+            .invoke("get_UInt", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ULong(
@@ -115,35 +144,6 @@ impl crate::Unity::Burst::Intrinsics::V256DebugView {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u16> = __cordl_object
             .invoke("get_UShort", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_Double(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<f64>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<f64> = __cordl_object
-            .invoke("get_Double", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SInt(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
-            .invoke("get_SInt", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        value: crate::Unity::Burst::Intrinsics::v256,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (value))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+V256DebugView")]

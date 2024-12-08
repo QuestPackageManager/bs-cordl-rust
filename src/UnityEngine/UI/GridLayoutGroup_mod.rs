@@ -75,36 +75,32 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
     pub type Corner = crate::UnityEngine::UI::GridLayoutGroup_Corner;
     #[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Axis")]
     pub type Axis = crate::UnityEngine::UI::GridLayoutGroup_Axis;
-    pub fn get_cellSize(
+    pub fn CalculateLayoutInputHorizontal(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_cellSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_spacing(
-        &mut self,
-        value: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_spacing", (value))?;
+            .invoke("CalculateLayoutInputHorizontal", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_startCorner(
+    pub fn CalculateLayoutInputVertical(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UI::GridLayoutGroup_Corner> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::UI::GridLayoutGroup_Corner = __cordl_object
-            .invoke("get_startCorner", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CalculateLayoutInputVertical", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn SetCellsAlongAxis(
         &mut self,
@@ -117,24 +113,6 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
             .invoke("SetCellsAlongAxis", (axis))?;
         Ok(__cordl_ret)
     }
-    pub fn set_startCorner(
-        &mut self,
-        value: crate::UnityEngine::UI::GridLayoutGroup_Corner,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_startCorner", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_constraintCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_constraintCount", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn SetLayoutHorizontal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -145,14 +123,34 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
             .invoke("SetLayoutHorizontal", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_spacing(
+    pub fn SetLayoutVertical(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetLayoutVertical", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_cellSize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_spacing", ())?;
+            .invoke("get_cellSize", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_constraint(
@@ -167,77 +165,21 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
             .invoke("get_constraint", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_constraint(
-        &mut self,
-        value: crate::UnityEngine::UI::GridLayoutGroup_Constraint,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_constraintCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_constraint", (value))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_constraintCount", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_startAxis(
+    pub fn get_spacing(
         &mut self,
-        value: crate::UnityEngine::UI::GridLayoutGroup_Axis,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_startAxis", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CalculateLayoutInputVertical(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CalculateLayoutInputVertical", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CalculateLayoutInputHorizontal(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CalculateLayoutInputHorizontal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_constraintCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_constraintCount", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetLayoutVertical(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLayoutVertical", ())?;
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_spacing", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_startAxis(
@@ -248,6 +190,16 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: crate::UnityEngine::UI::GridLayoutGroup_Axis = __cordl_object
             .invoke("get_startAxis", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_startCorner(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UI::GridLayoutGroup_Corner> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UI::GridLayoutGroup_Corner = __cordl_object
+            .invoke("get_startCorner", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_cellSize(
@@ -261,12 +213,60 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
             .invoke("set_cellSize", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_constraint(
+        &mut self,
+        value: crate::UnityEngine::UI::GridLayoutGroup_Constraint,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_constraint", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_constraintCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_constraintCount", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_spacing(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_spacing", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startAxis(
+        &mut self,
+        value: crate::UnityEngine::UI::GridLayoutGroup_Axis,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_startAxis", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startCorner(
+        &mut self,
+        value: crate::UnityEngine::UI::GridLayoutGroup_Corner,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_startCorner", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UI+GridLayoutGroup")]

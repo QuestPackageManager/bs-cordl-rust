@@ -67,6 +67,125 @@ impl crate::HoudiniEngineUnity::HEU_PDGSession {
             .invoke("AddAsset", (asset))?;
         Ok(__cordl_ret)
     }
+    pub fn AddEventMessage(
+        &mut self,
+        msg: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddEventMessage", (msg))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CancelCook(
+        &mut self,
+        topNetwork: *mut crate::HoudiniEngineUnity::HEU_TOPNetworkData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CancelCook", (topNetwork))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CleanUp(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CleanUp", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearErrorState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearErrorState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearEventMessages(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearEventMessages", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearWorkItemResult(
+        &mut self,
+        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+        contextID: i32,
+        eventInfo: crate::HoudiniEngineUnity::HAPI_PDG_EventInfo,
+        topNode: *mut crate::HoudiniEngineUnity::HEU_TOPNodeData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearWorkItemResult", (session, contextID, eventInfo, topNode))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CookTOPNetworkOutputNode(
+        &mut self,
+        topNetwork: *mut crate::HoudiniEngineUnity::HEU_TOPNetworkData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CookTOPNetworkOutputNode", (topNetwork))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CookTOPNode(&mut self, nodeID: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("CookTOPNode", (nodeID))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DirtyAll(&mut self, nodeID: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("DirtyAll", (nodeID))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DirtyTOPNode(&mut self, nodeID: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("DirtyTOPNode", (nodeID))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEventMessages(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetEventMessages", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHAPIPDGSession(
+        &mut self,
+        bCreate: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::HEU_SessionBase> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HoudiniEngineUnity::HEU_SessionBase = __cordl_object
+            .invoke("GetHAPIPDGSession", (bCreate))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetTOPAssetLinkAndNode(
         &mut self,
         nodeID: i32,
@@ -84,77 +203,12 @@ impl crate::HoudiniEngineUnity::HEU_PDGSession {
             .invoke("GetTOPAssetLinkAndNode", (nodeID, assetLink, topNode))?;
         Ok(__cordl_ret)
     }
-    pub fn SetErrorState(
-        &mut self,
-        msg: *mut crate::System::String,
-        bLogIt: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetErrorState", (msg, bLogIt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PauseCook(
-        &mut self,
-        topNetwork: *mut crate::HoudiniEngineUnity::HEU_TOPNetworkData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PauseCook", (topNetwork))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NotifyTOPNodePDGStateClear(
-        &mut self,
-        assetLink: *mut crate::HoudiniEngineUnity::HEU_PDGAssetLink,
-        topNode: *mut crate::HoudiniEngineUnity::HEU_TOPNodeData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NotifyTOPNodePDGStateClear", (assetLink, topNode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetTOPNodePDGState(
-        &mut self,
-        assetLink: *mut crate::HoudiniEngineUnity::HEU_PDGAssetLink,
-        topNode: *mut crate::HoudiniEngineUnity::HEU_TOPNodeData,
-        pdgState: crate::HoudiniEngineUnity::HEU_TOPNodeData_PDGState,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTOPNodePDGState", (assetLink, topNode, pdgState))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearWorkItemResult(
-        &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
-        contextID: i32,
-        eventInfo: crate::HoudiniEngineUnity::HAPI_PDG_EventInfo,
-        topNode: *mut crate::HoudiniEngineUnity::HEU_TOPNodeData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearWorkItemResult", (session, contextID, eventInfo, topNode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEventMessages(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetEventMessages", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn NotifyTOPNodeCookedWorkItem(
         &mut self,
@@ -166,73 +220,6 @@ impl crate::HoudiniEngineUnity::HEU_PDGSession {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("NotifyTOPNodeCookedWorkItem", (assetLink, topNode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CancelCook(
-        &mut self,
-        topNetwork: *mut crate::HoudiniEngineUnity::HEU_TOPNetworkData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CancelCook", (topNetwork))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DirtyTOPNode(&mut self, nodeID: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("DirtyTOPNode", (nodeID))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CookTOPNode(&mut self, nodeID: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CookTOPNode", (nodeID))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CookTOPNetworkOutputNode(
-        &mut self,
-        topNetwork: *mut crate::HoudiniEngineUnity::HEU_TOPNetworkData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CookTOPNetworkOutputNode", (topNetwork))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddEventMessage(
-        &mut self,
-        msg: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddEventMessage", (msg))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReinitializePDGContext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReinitializePDGContext", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CleanUp(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CleanUp", ())?;
         Ok(__cordl_ret)
     }
     pub fn NotifyTOPNodeCookingWorkItem(
@@ -248,19 +235,6 @@ impl crate::HoudiniEngineUnity::HEU_PDGSession {
             .invoke("NotifyTOPNodeCookingWorkItem", (assetLink, topNode, inc))?;
         Ok(__cordl_ret)
     }
-    pub fn NotifyTOPNodeWaitingWorkItem(
-        &mut self,
-        assetLink: *mut crate::HoudiniEngineUnity::HEU_PDGAssetLink,
-        topNode: *mut crate::HoudiniEngineUnity::HEU_TOPNodeData,
-        inc: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NotifyTOPNodeWaitingWorkItem", (assetLink, topNode, inc))?;
-        Ok(__cordl_ret)
-    }
     pub fn NotifyTOPNodeErrorWorkItem(
         &mut self,
         assetLink: *mut crate::HoudiniEngineUnity::HEU_PDGAssetLink,
@@ -273,24 +247,16 @@ impl crate::HoudiniEngineUnity::HEU_PDGSession {
             .invoke("NotifyTOPNodeErrorWorkItem", (assetLink, topNode))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn NotifyTOPNodePDGStateClear(
         &mut self,
+        assetLink: *mut crate::HoudiniEngineUnity::HEU_PDGAssetLink,
+        topNode: *mut crate::HoudiniEngineUnity::HEU_TOPNodeData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearErrorState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearErrorState", ())?;
+            .invoke("NotifyTOPNodePDGStateClear", (assetLink, topNode))?;
         Ok(__cordl_ret)
     }
     pub fn NotifyTOPNodeScheduledWorkItem(
@@ -306,53 +272,41 @@ impl crate::HoudiniEngineUnity::HEU_PDGSession {
             .invoke("NotifyTOPNodeScheduledWorkItem", (assetLink, topNode, inc))?;
         Ok(__cordl_ret)
     }
-    pub fn ClearEventMessages(
+    pub fn NotifyTOPNodeTotalWorkItem(
         &mut self,
+        assetLink: *mut crate::HoudiniEngineUnity::HEU_PDGAssetLink,
+        topNode: *mut crate::HoudiniEngineUnity::HEU_TOPNodeData,
+        inc: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearEventMessages", ())?;
+            .invoke("NotifyTOPNodeTotalWorkItem", (assetLink, topNode, inc))?;
         Ok(__cordl_ret)
     }
-    pub fn UpdatePDGContext(
+    pub fn NotifyTOPNodeWaitingWorkItem(
         &mut self,
+        assetLink: *mut crate::HoudiniEngineUnity::HEU_PDGAssetLink,
+        topNode: *mut crate::HoudiniEngineUnity::HEU_TOPNodeData,
+        inc: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdatePDGContext", ())?;
+            .invoke("NotifyTOPNodeWaitingWorkItem", (assetLink, topNode, inc))?;
         Ok(__cordl_ret)
     }
-    pub fn GetHAPIPDGSession(
+    pub fn PauseCook(
         &mut self,
-        bCreate: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::HEU_SessionBase> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HoudiniEngineUnity::HEU_SessionBase = __cordl_object
-            .invoke("GetHAPIPDGSession", (bCreate))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveAsset(
-        &mut self,
-        asset: *mut crate::HoudiniEngineUnity::HEU_PDGAssetLink,
+        topNetwork: *mut crate::HoudiniEngineUnity::HEU_TOPNetworkData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveAsset", (asset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DirtyAll(&mut self, nodeID: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("DirtyAll", (nodeID))?;
+            .invoke("PauseCook", (topNetwork))?;
         Ok(__cordl_ret)
     }
     pub fn ProcessPDGEvent(
@@ -370,17 +324,50 @@ impl crate::HoudiniEngineUnity::HEU_PDGSession {
             .invoke("ProcessPDGEvent", (session, contextID, eventInfo))?;
         Ok(__cordl_ret)
     }
-    pub fn NotifyTOPNodeTotalWorkItem(
+    pub fn ReinitializePDGContext(
         &mut self,
-        assetLink: *mut crate::HoudiniEngineUnity::HEU_PDGAssetLink,
-        topNode: *mut crate::HoudiniEngineUnity::HEU_TOPNodeData,
-        inc: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NotifyTOPNodeTotalWorkItem", (assetLink, topNode, inc))?;
+            .invoke("ReinitializePDGContext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveAsset(
+        &mut self,
+        asset: *mut crate::HoudiniEngineUnity::HEU_PDGAssetLink,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveAsset", (asset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetErrorState(
+        &mut self,
+        msg: *mut crate::System::String,
+        bLogIt: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetErrorState", (msg, bLogIt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetTOPNodePDGState(
+        &mut self,
+        assetLink: *mut crate::HoudiniEngineUnity::HEU_PDGAssetLink,
+        topNode: *mut crate::HoudiniEngineUnity::HEU_TOPNodeData,
+        pdgState: crate::HoudiniEngineUnity::HEU_TOPNodeData_PDGState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetTOPNodePDGState", (assetLink, topNode, pdgState))?;
         Ok(__cordl_ret)
     }
     pub fn Update(
@@ -393,12 +380,25 @@ impl crate::HoudiniEngineUnity::HEU_PDGSession {
             .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn UpdatePDGContext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdatePDGContext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession")]

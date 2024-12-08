@@ -24,22 +24,23 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UnsignedLongField {
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField")]
 impl crate::UnityEngine::UIElements::UnsignedLongField {
-    #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UxmlFactory")]
-    pub type UxmlFactory = crate::UnityEngine::UIElements::UnsignedLongField_UxmlFactory;
-    #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UnsignedLongInput")]
-    pub type UnsignedLongInput = crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput;
     #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::UnsignedLongField_UxmlTraits;
-    pub fn get_unsignedLongInput(
+    #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UnsignedLongInput")]
+    pub type UnsignedLongInput = crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput;
+    #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UxmlFactory")]
+    pub type UxmlFactory = crate::UnityEngine::UIElements::UnsignedLongField_UxmlFactory;
+    pub fn ApplyInputDeviceDelta(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput,
-    > {
+        delta: crate::UnityEngine::Vector3,
+        speed: crate::UnityEngine::UIElements::DeltaSpeed,
+        startValue: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput = __cordl_object
-            .invoke("get_unsignedLongInput", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ApplyInputDeviceDelta", (delta, speed, startValue))?;
         Ok(__cordl_ret)
     }
     pub fn CanTryParse(
@@ -52,6 +53,23 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
         let __cordl_ret: bool = __cordl_object.invoke("CanTryParse", (textString))?;
         Ok(__cordl_ret)
     }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_i32_1(
+        label: *mut crate::System::String,
+        maxLength: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (label, maxLength))?;
+        Ok(__cordl_object)
+    }
     pub fn StringToValue(
         &mut self,
         str: *mut crate::System::String,
@@ -60,6 +78,17 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
             self,
         );
         let __cordl_ret: u64 = __cordl_object.invoke("StringToValue", (str))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValueToString(
+        &mut self,
+        v: u64,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ValueToString", (v))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -84,46 +113,17 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
             .invoke(".ctor", (label, maxLength))?;
         Ok(__cordl_ret)
     }
-    pub fn ApplyInputDeviceDelta(
+    pub fn get_unsignedLongInput(
         &mut self,
-        delta: crate::UnityEngine::Vector3,
-        speed: crate::UnityEngine::UIElements::DeltaSpeed,
-        startValue: u64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ApplyInputDeviceDelta", (delta, speed, startValue))?;
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput = __cordl_object
+            .invoke("get_unsignedLongInput", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn ValueToString(
-        &mut self,
-        v: u64,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ValueToString", (v))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_i32_1(
-        label: *mut crate::System::String,
-        maxLength: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (label, maxLength))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField")]
@@ -165,16 +165,6 @@ for crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UnsignedLongInput")]
 impl crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ApplyInputDeviceDelta(
         &mut self,
         delta: crate::UnityEngine::Vector3,
@@ -200,14 +190,21 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
             .invoke("ClampToMinMaxULongValue", (niceDelta, value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_allowedCharacters(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn StringToValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        str: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_allowedCharacters", ())?;
+        let __cordl_ret: u64 = __cordl_object.invoke("StringToValue", (str))?;
         Ok(__cordl_ret)
     }
     pub fn ValueToString(
@@ -221,14 +218,24 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
             .invoke("ValueToString", (v))?;
         Ok(__cordl_ret)
     }
-    pub fn StringToValue(
+    pub fn _ctor(
         &mut self,
-        str: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<u64> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: u64 = __cordl_object.invoke("StringToValue", (str))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_allowedCharacters(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_allowedCharacters", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_parentUnsignedLongField(
@@ -242,13 +249,6 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
         let __cordl_ret: *mut crate::UnityEngine::UIElements::UnsignedLongField = __cordl_object
             .invoke("get_parentUnsignedLongField", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UnsignedLongInput")]
@@ -295,6 +295,13 @@ for crate::UnityEngine::UIElements::UnsignedLongField_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UxmlFactory")]
 impl crate::UnityEngine::UIElements::UnsignedLongField_UxmlFactory {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -304,13 +311,6 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UxmlFactory {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UxmlFactory")]
@@ -357,6 +357,13 @@ for crate::UnityEngine::UIElements::UnsignedLongField_UxmlTraits {
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UxmlTraits")]
 impl crate::UnityEngine::UIElements::UnsignedLongField_UxmlTraits {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -366,13 +373,6 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UxmlTraits {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UxmlTraits")]

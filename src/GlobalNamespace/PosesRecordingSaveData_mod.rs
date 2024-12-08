@@ -32,6 +32,22 @@ for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSave
 }
 #[cfg(feature = "PosesRecordingSaveData+ExternalCameraCalibrationSaveData")]
 impl crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData {
+    pub fn New(
+        fieldOfVision: f32,
+        nearClip: f32,
+        farClip: f32,
+        hmdOffset: f32,
+        nearOffset: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (fieldOfVision, nearClip, farClip, hmdOffset, nearOffset),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         fieldOfVision: f32,
@@ -46,22 +62,6 @@ impl crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSav
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (fieldOfVision, nearClip, farClip, hmdOffset, nearOffset))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        fieldOfVision: f32,
-        nearClip: f32,
-        farClip: f32,
-        hmdOffset: f32,
-        nearOffset: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (fieldOfVision, nearClip, farClip, hmdOffset, nearOffset),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PosesRecordingSaveData+ExternalCameraCalibrationSaveData")]
@@ -108,6 +108,21 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PosesRecordingSaveData_PoseS
 }
 #[cfg(feature = "PosesRecordingSaveData+PoseSaveData")]
 impl crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData {
+    pub fn New(
+        posX: f32,
+        posY: f32,
+        posZ: f32,
+        rotX: f32,
+        rotY: f32,
+        rotZ: f32,
+        rotW: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (posX, posY, posZ, rotX, rotY, rotZ, rotW))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         posX: f32,
@@ -124,21 +139,6 @@ impl crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (posX, posY, posZ, rotX, rotY, rotZ, rotW))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        posX: f32,
-        posY: f32,
-        posZ: f32,
-        rotX: f32,
-        rotY: f32,
-        rotZ: f32,
-        rotW: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (posX, posY, posZ, rotX, rotY, rotZ, rotW))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PosesRecordingSaveData+PoseSaveData")]
@@ -181,12 +181,25 @@ impl std::ops::DerefMut for PosesRecordingSaveData {
 }
 #[cfg(feature = "PosesRecordingSaveData")]
 impl PosesRecordingSaveData {
-    #[cfg(feature = "PosesRecordingSaveData+ExternalCameraCalibrationSaveData")]
-    pub type ExternalCameraCalibrationSaveData = crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData;
     #[cfg(feature = "PosesRecordingSaveData+PoseSaveData")]
     pub type PoseSaveData = crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData;
     #[cfg(feature = "PosesRecordingSaveData+TransformsSaveKeyframe")]
     pub type TransformsSaveKeyframe = crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe;
+    #[cfg(feature = "PosesRecordingSaveData+ExternalCameraCalibrationSaveData")]
+    pub type ExternalCameraCalibrationSaveData = crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData;
+    pub fn New(
+        objectIds: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        keyframes: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe,
+        >,
+        externalCameraCalibration: *mut crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (objectIds, keyframes, externalCameraCalibration))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         objectIds: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
@@ -201,19 +214,6 @@ impl PosesRecordingSaveData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (objectIds, keyframes, externalCameraCalibration))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        objectIds: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        keyframes: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe,
-        >,
-        externalCameraCalibration: *mut crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (objectIds, keyframes, externalCameraCalibration))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PosesRecordingSaveData")]
@@ -258,6 +258,18 @@ for crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
 }
 #[cfg(feature = "PosesRecordingSaveData+TransformsSaveKeyframe")]
 impl crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
+    pub fn New(
+        poses: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData,
+        >,
+        _cordl_time: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (poses, _cordl_time))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         poses: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -271,18 +283,6 @@ impl crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (poses, _cordl_time))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        poses: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData,
-        >,
-        _cordl_time: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (poses, _cordl_time))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PosesRecordingSaveData+TransformsSaveKeyframe")]

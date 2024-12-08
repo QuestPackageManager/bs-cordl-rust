@@ -30,14 +30,21 @@ impl std::ops::DerefMut for crate::HMUI::VerticalScrollIndicator {
 }
 #[cfg(feature = "HMUI+VerticalScrollIndicator")]
 impl crate::HMUI::VerticalScrollIndicator {
-    pub fn _ctor(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnEnable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("OnEnable", ())?;
         Ok(__cordl_ret)
     }
     pub fn RefreshHandle(
@@ -50,11 +57,14 @@ impl crate::HMUI::VerticalScrollIndicator {
             .invoke("RefreshHandle", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_progress(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_progress", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_normalizedPageHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -64,25 +74,11 @@ impl crate::HMUI::VerticalScrollIndicator {
         let __cordl_ret: f32 = __cordl_object.invoke("get_normalizedPageHeight", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_normalizedPageHeight(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_progress(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_normalizedPageHeight", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnEnable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_progress", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_disabled(
@@ -96,6 +92,17 @@ impl crate::HMUI::VerticalScrollIndicator {
             .invoke("set_disabled", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn set_normalizedPageHeight(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_normalizedPageHeight", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_progress(
         &mut self,
         value: f32,
@@ -106,13 +113,6 @@ impl crate::HMUI::VerticalScrollIndicator {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_progress", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HMUI+VerticalScrollIndicator")]

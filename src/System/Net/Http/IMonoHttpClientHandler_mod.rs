@@ -41,17 +41,6 @@ impl crate::System::Net::Http::IMonoHttpClientHandler {
         > = __cordl_object.invoke("SendAsync", (request, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn set_SslOptions(
-        &mut self,
-        value: *mut crate::System::Net::Security::SslClientAuthenticationOptions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_SslOptions", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn SetWebRequestTimeout(
         &mut self,
         timeout: crate::System::TimeSpan,
@@ -62,6 +51,11 @@ impl crate::System::Net::Http::IMonoHttpClientHandler {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetWebRequestTimeout", (timeout))?;
         Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
     }
     pub fn get_SslOptions(
         &mut self,
@@ -75,10 +69,16 @@ impl crate::System::Net::Http::IMonoHttpClientHandler {
             .invoke("get_SslOptions", ())?;
         Ok(__cordl_ret)
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
+    pub fn set_SslOptions(
+        &mut self,
+        value: *mut crate::System::Net::Security::SslClientAuthenticationOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_SslOptions", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+Http+IMonoHttpClientHandler")]

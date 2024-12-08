@@ -39,44 +39,14 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
         feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
     )]
     pub type ReferenceEqualsEqualityComparer = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_ReferenceEqualsEqualityComparer;
-    pub fn get_DefaultReferenceMappings(
+    pub fn ClearErrorContext(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::Object,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::Object,
-        > = __cordl_object.invoke("get_DefaultReferenceMappings", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (serializer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ResolvedNullValueHandling(
-        &mut self,
-        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonObjectContract,
-        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::NullValueHandling> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Newtonsoft::Json::NullValueHandling = __cordl_object
-            .invoke("ResolvedNullValueHandling", (containerContract, property))?;
+            .invoke("ClearErrorContext", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetErrorContext(
@@ -93,16 +63,6 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
         );
         let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::ErrorContext = __cordl_object
             .invoke("GetErrorContext", (currentObject, member, path, error))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearErrorContext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearErrorContext", ())?;
         Ok(__cordl_ret)
     }
     pub fn IsErrorHandled(
@@ -126,12 +86,52 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
     }
     pub fn New(
         serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (serializer))?;
         Ok(__cordl_object)
+    }
+    pub fn ResolvedNullValueHandling(
+        &mut self,
+        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::NullValueHandling> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Newtonsoft::Json::NullValueHandling = __cordl_object
+            .invoke("ResolvedNullValueHandling", (containerContract, property))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (serializer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_DefaultReferenceMappings(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<
+            *mut crate::System::String,
+            *mut crate::System::Object,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<
+            *mut crate::System::String,
+            *mut crate::System::Object,
+        > = __cordl_object.invoke("get_DefaultReferenceMappings", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
@@ -184,15 +184,12 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Reference
     feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
 )]
 impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_ReferenceEqualsEqualityComparer {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn System_Collections_Generic_IEqualityComparer_System_Object__Equals(
         &mut self,
@@ -223,12 +220,15 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Referenc
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(

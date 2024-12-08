@@ -31,50 +31,33 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::BaseSliderData {
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+BaseSliderData")]
 impl crate::BeatmapSaveDataVersion3::BaseSliderData {
-    pub fn get_tailLine(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_tailLine", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_tailBeat(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_tailBeat", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_tailLayer(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_tailLayer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_headLayer(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_headLayer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_headLine(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_headLine", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_headCutDirection(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::NoteCutDirection> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::BeatmapSaveDataCommon::NoteCutDirection = __cordl_object
-            .invoke("get_headCutDirection", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        colorType: crate::BeatmapSaveDataCommon::NoteColorType,
+        headBeat: f32,
+        headLine: i32,
+        headLayer: i32,
+        headCutDirection: crate::BeatmapSaveDataCommon::NoteCutDirection,
+        tailBeat: f32,
+        tailLine: i32,
+        tailLayer: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    colorType,
+                    headBeat,
+                    headLine,
+                    headLayer,
+                    headCutDirection,
+                    tailBeat,
+                    tailLine,
+                    tailLayer,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -116,33 +99,50 @@ impl crate::BeatmapSaveDataVersion3::BaseSliderData {
             .invoke("get_colorType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        colorType: crate::BeatmapSaveDataCommon::NoteColorType,
-        headBeat: f32,
-        headLine: i32,
-        headLayer: i32,
-        headCutDirection: crate::BeatmapSaveDataCommon::NoteCutDirection,
-        tailBeat: f32,
-        tailLine: i32,
-        tailLayer: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    colorType,
-                    headBeat,
-                    headLine,
-                    headLayer,
-                    headCutDirection,
-                    tailBeat,
-                    tailLine,
-                    tailLayer,
-                ),
-            )?;
-        Ok(__cordl_object)
+    pub fn get_headCutDirection(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::NoteCutDirection> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::BeatmapSaveDataCommon::NoteCutDirection = __cordl_object
+            .invoke("get_headCutDirection", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_headLayer(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_headLayer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_headLine(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_headLine", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_tailBeat(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_tailBeat", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_tailLayer(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_tailLayer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_tailLine(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_tailLine", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+BaseSliderData")]

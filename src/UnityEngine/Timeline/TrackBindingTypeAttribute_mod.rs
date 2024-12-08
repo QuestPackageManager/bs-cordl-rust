@@ -26,16 +26,24 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::TrackBindingTypeAttrib
 }
 #[cfg(feature = "UnityEngine+Timeline+TrackBindingTypeAttribute")]
 impl crate::UnityEngine::Timeline::TrackBindingTypeAttribute {
-    pub fn _ctor_Type0(
-        &mut self,
+    pub fn New_TrackBindingFlags1(
         _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_type))?;
-        Ok(__cordl_ret)
+        flags: crate::UnityEngine::Timeline::TrackBindingFlags,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, flags))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Type0(
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_TrackBindingFlags1(
         &mut self,
@@ -49,24 +57,16 @@ impl crate::UnityEngine::Timeline::TrackBindingTypeAttribute {
             .invoke(".ctor", (_cordl_type, flags))?;
         Ok(__cordl_ret)
     }
-    pub fn New_Type0(
+    pub fn _ctor_Type0(
+        &mut self,
         _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_TrackBindingFlags1(
-        _cordl_type: *mut crate::System::Type,
-        flags: crate::UnityEngine::Timeline::TrackBindingFlags,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, flags))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_type))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TrackBindingTypeAttribute")]

@@ -23,14 +23,6 @@ for crate::System::Net::Sockets::IPPacketInformation {
 }
 #[cfg(feature = "System+Net+Sockets+IPPacketInformation")]
 impl crate::System::Net::Sockets::IPPacketInformation {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals(
         &mut self,
         comparand: *mut crate::System::Object,
@@ -39,6 +31,14 @@ impl crate::System::Net::Sockets::IPPacketInformation {
             self,
             "Equals",
             (comparand),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -24,19 +24,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCrlUtilities")]
 impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
-    pub fn FindCrls_PkixParameters_DateTime0(
+    pub fn FindCrls_IList2(
         &mut self,
-        crlselect: *mut crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector,
-        paramsPkix: *mut crate::Org::BouncyCastle::Pkix::PkixParameters,
-        currentDate: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    > {
+        crlSelect: *mut crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector,
+        crlStores: *mut crate::System::Collections::IList,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("FindCrls", (crlselect, paramsPkix, currentDate))?;
+        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
+            .invoke("FindCrls", (crlSelect, crlStores))?;
         Ok(__cordl_ret)
     }
     pub fn FindCrls_PkixParameters1(
@@ -53,17 +50,27 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
             .invoke("FindCrls", (crlselect, paramsPkix))?;
         Ok(__cordl_ret)
     }
-    pub fn FindCrls_IList2(
+    pub fn FindCrls_PkixParameters_DateTime0(
         &mut self,
-        crlSelect: *mut crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector,
-        crlStores: *mut crate::System::Collections::IList,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
+        crlselect: *mut crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector,
+        paramsPkix: *mut crate::Org::BouncyCastle::Pkix::PkixParameters,
+        currentDate: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
-            .invoke("FindCrls", (crlSelect, crlStores))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
+            .invoke("FindCrls", (crlselect, paramsPkix, currentDate))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -74,13 +81,6 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCrlUtilities")]

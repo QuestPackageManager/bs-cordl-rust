@@ -27,6 +27,23 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::IndefiniteLengthInpu
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IndefiniteLengthInputStream")]
 impl crate::Org::BouncyCastle::Asn1::IndefiniteLengthInputStream {
+    pub fn CheckForEof(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("CheckForEof", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        inStream: *mut crate::System::IO::Stream,
+        limit: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (inStream, limit))?;
+        Ok(__cordl_object)
+    }
     pub fn Read(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -39,23 +56,18 @@ impl crate::Org::BouncyCastle::Asn1::IndefiniteLengthInputStream {
         let __cordl_ret: i32 = __cordl_object.invoke("Read", (buffer, offset, count))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        inStream: *mut crate::System::IO::Stream,
-        limit: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (inStream, limit))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CheckForEof(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn RequireByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("CheckForEof", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("RequireByte", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetEofOn00(
@@ -69,29 +81,17 @@ impl crate::Org::BouncyCastle::Asn1::IndefiniteLengthInputStream {
             .invoke("SetEofOn00", (eofOn00))?;
         Ok(__cordl_ret)
     }
-    pub fn RequireByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("RequireByte", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         inStream: *mut crate::System::IO::Stream,
         limit: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (inStream, limit))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (inStream, limit))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IndefiniteLengthInputStream")]

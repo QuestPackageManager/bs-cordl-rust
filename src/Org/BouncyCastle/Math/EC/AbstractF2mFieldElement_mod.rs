@@ -25,12 +25,24 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::AbstractF2mField
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractF2mFieldElement")]
 impl crate::Org::BouncyCastle::Math::EC::AbstractF2mFieldElement {
-    pub fn get_HasFastTrace(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn HalfTrace(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasFastTrace", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
+            .invoke("HalfTrace", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Trace(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -49,24 +61,12 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractF2mFieldElement {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn HalfTrace(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    > {
+    pub fn get_HasFastTrace(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
-            .invoke("HalfTrace", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasFastTrace", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractF2mFieldElement")]

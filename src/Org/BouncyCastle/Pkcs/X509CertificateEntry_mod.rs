@@ -25,13 +25,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkcs::X509CertificateEntry
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+X509CertificateEntry")]
 impl crate::Org::BouncyCastle::Pkcs::X509CertificateEntry {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals(
         &mut self,
         obj: *mut crate::System::Object,
@@ -42,16 +35,41 @@ impl crate::Org::BouncyCastle::Pkcs::X509CertificateEntry {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_X509Certificate0(
-        &mut self,
-        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (cert))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New_Hashtable1(
+        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+        attributes: *mut crate::System::Collections::Hashtable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (cert, attributes))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IDictionary2(
+        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+        attributes: *mut crate::System::Collections::IDictionary,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (cert, attributes))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_X509Certificate0(
+        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (cert))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_Hashtable1(
         &mut self,
@@ -77,6 +95,17 @@ impl crate::Org::BouncyCastle::Pkcs::X509CertificateEntry {
             .invoke(".ctor", (cert, attributes))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_X509Certificate0(
+        &mut self,
+        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (cert))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Certificate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -88,35 +117,6 @@ impl crate::Org::BouncyCastle::Pkcs::X509CertificateEntry {
         let __cordl_ret: *mut crate::Org::BouncyCastle::X509::X509Certificate = __cordl_object
             .invoke("get_Certificate", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_X509Certificate0(
-        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (cert))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Hashtable1(
-        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-        attributes: *mut crate::System::Collections::Hashtable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (cert, attributes))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IDictionary2(
-        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-        attributes: *mut crate::System::Collections::IDictionary,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (cert, attributes))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+X509CertificateEntry")]

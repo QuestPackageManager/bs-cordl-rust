@@ -27,15 +27,16 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::DirectorControlPlayabl
 }
 #[cfg(feature = "UnityEngine+Timeline+DirectorControlPlayable")]
 impl crate::UnityEngine::Timeline::DirectorControlPlayable {
-    pub fn UpdateTime(
+    pub fn DetectDiscontinuity(
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        info: crate::UnityEngine::Playables::FrameData,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateTime", (playable))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("DetectDiscontinuity", (playable, info))?;
         Ok(__cordl_ret)
     }
     pub fn DetectOutOfSync(
@@ -48,17 +49,14 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         let __cordl_ret: bool = __cordl_object.invoke("DetectOutOfSync", (playable))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn PrepareFrame(
+    pub fn OnBehaviourPause(
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
@@ -67,7 +65,7 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PrepareFrame", (playable, info))?;
+            .invoke("OnBehaviourPause", (playable, info))?;
         Ok(__cordl_ret)
     }
     pub fn OnBehaviourPlay(
@@ -93,19 +91,7 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
             .invoke("OnPlayableDestroy", (playable))?;
         Ok(__cordl_ret)
     }
-    pub fn SyncStop(
-        &mut self,
-        graph: crate::UnityEngine::Playables::PlayableGraph,
-        _cordl_time: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SyncStop", (graph, _cordl_time))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnBehaviourPause(
+    pub fn PrepareFrame(
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
@@ -114,18 +100,7 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnBehaviourPause", (playable, info))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SyncSpeed(
-        &mut self,
-        speed: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SyncSpeed", (speed))?;
+            .invoke("PrepareFrame", (playable, info))?;
         Ok(__cordl_ret)
     }
     pub fn ProcessFrame(
@@ -141,6 +116,17 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
             .invoke("ProcessFrame", (playable, info, playerData))?;
         Ok(__cordl_ret)
     }
+    pub fn SyncSpeed(
+        &mut self,
+        speed: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SyncSpeed", (speed))?;
+        Ok(__cordl_ret)
+    }
     pub fn SyncStart(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
@@ -153,24 +139,38 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
             .invoke("SyncStart", (graph, _cordl_time))?;
         Ok(__cordl_ret)
     }
-    pub fn DetectDiscontinuity(
+    pub fn SyncStop(
         &mut self,
-        playable: crate::UnityEngine::Playables::Playable,
-        info: crate::UnityEngine::Playables::FrameData,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        _cordl_time: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("DetectDiscontinuity", (playable, info))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SyncStop", (graph, _cordl_time))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn UpdateTime(
+        &mut self,
+        playable: crate::UnityEngine::Playables::Playable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateTime", (playable))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+DirectorControlPlayable")]

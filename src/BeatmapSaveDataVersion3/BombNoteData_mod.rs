@@ -26,12 +26,16 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::BombNoteData {
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+BombNoteData")]
 impl crate::BeatmapSaveDataVersion3::BombNoteData {
-    pub fn get_layer(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_layer", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        beat: f32,
+        line: i32,
+        layer: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (beat, line, layer))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -46,23 +50,19 @@ impl crate::BeatmapSaveDataVersion3::BombNoteData {
             .invoke(".ctor", (beat, line, layer))?;
         Ok(__cordl_ret)
     }
+    pub fn get_layer(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_layer", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_line(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_line", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        beat: f32,
-        line: i32,
-        layer: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (beat, line, layer))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+BombNoteData")]

@@ -111,6 +111,18 @@ impl<
 > crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<
     TResult,
 > {
+    pub fn GetResult(&mut self) -> quest_hook::libil2cpp::Result<TResult>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TResult = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetResult",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn OnCompleted(
         &mut self,
         continuation: *mut crate::System::Action,
@@ -141,18 +153,6 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsCompleted",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         task: *mut crate::System::Threading::Tasks::Task_1<TResult>,
@@ -169,14 +169,14 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetResult(&mut self) -> quest_hook::libil2cpp::Result<TResult>
+    pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: TResult = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetResult",
+            "get_IsCompleted",
             (),
         )?;
         Ok(__cordl_ret)

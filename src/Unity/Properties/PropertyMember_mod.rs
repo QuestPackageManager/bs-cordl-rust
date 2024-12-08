@@ -23,27 +23,6 @@ for crate::Unity::Properties::PropertyMember {
 }
 #[cfg(feature = "Unity+Properties+PropertyMember")]
 impl crate::Unity::Properties::PropertyMember {
-    pub fn _ctor(
-        &mut self,
-        propertyInfo: *mut crate::System::Reflection::PropertyInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (propertyInfo),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Name",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetCustomAttributes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -60,13 +39,14 @@ impl crate::Unity::Properties::PropertyMember {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_ValueType(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        propertyInfo: *mut crate::System::Reflection::PropertyInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_ValueType",
-            (),
+            ".ctor",
+            (propertyInfo),
         )?;
         Ok(__cordl_ret)
     }
@@ -74,6 +54,26 @@ impl crate::Unity::Properties::PropertyMember {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_IsReadOnly",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Name",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ValueType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_ValueType",
             (),
         )?;
         Ok(__cordl_ret)

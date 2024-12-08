@@ -38,6 +38,36 @@ impl<
     T: quest_hook::libil2cpp::Type,
     U: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::HeaderInfo_CollectionHeaderTypeInfo_2<T, U> {
+    pub fn New(
+        name: *mut crate::System::String,
+        parser: *mut crate::System::Net::Http::Headers::TryParseListDelegate_1<T>,
+        headerKind: crate::System::Net::Http::Headers::HttpHeaderKind,
+        minimalCount: i32,
+        separator: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, parser, headerKind, minimalCount, separator))?;
+        Ok(__cordl_object)
+    }
+    pub fn TryParse(
+        &mut self,
+        value: *mut crate::System::String,
+        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryParse", (value, result))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         name: *mut crate::System::String,
@@ -59,23 +89,6 @@ impl<
             .invoke(".ctor", (name, parser, headerKind, minimalCount, separator))?;
         Ok(__cordl_ret)
     }
-    pub fn TryParse(
-        &mut self,
-        value: *mut crate::System::String,
-        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryParse", (value, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Separator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
@@ -91,19 +104,6 @@ impl<
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_Separator", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        name: *mut crate::System::String,
-        parser: *mut crate::System::Net::Http::Headers::TryParseListDelegate_1<T>,
-        headerKind: crate::System::Net::Http::Headers::HttpHeaderKind,
-        minimalCount: i32,
-        separator: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, parser, headerKind, minimalCount, separator))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+HeaderInfo+CollectionHeaderTypeInfo_2")]

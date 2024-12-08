@@ -22,6 +22,17 @@ for crate::UnityEngine::Playables::PlayableOutput {
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableOutput")]
 impl crate::UnityEngine::Playables::PlayableOutput {
+    pub fn Equals(
+        &mut self,
+        other: crate::UnityEngine::Playables::PlayableOutput,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn GetHandle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -31,17 +42,6 @@ impl crate::UnityEngine::Playables::PlayableOutput {
             self,
             "GetHandle",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        other: crate::UnityEngine::Playables::PlayableOutput,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
         )?;
         Ok(__cordl_ret)
     }

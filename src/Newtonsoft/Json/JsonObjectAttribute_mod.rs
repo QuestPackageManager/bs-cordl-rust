@@ -32,37 +32,30 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonObjectAttribute {
 }
 #[cfg(feature = "Newtonsoft+Json+JsonObjectAttribute")]
 impl crate::Newtonsoft::Json::JsonObjectAttribute {
-    pub fn set_MissingMemberHandling(
-        &mut self,
-        value: crate::Newtonsoft::Json::MissingMemberHandling,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_MissingMemberHandling", (value))?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn set_ItemNullValueHandling(
-        &mut self,
-        value: crate::Newtonsoft::Json::NullValueHandling,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ItemNullValueHandling", (value))?;
-        Ok(__cordl_ret)
+    pub fn New_MemberSerialization1(
+        memberSerialization: crate::Newtonsoft::Json::MemberSerialization,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (memberSerialization))?;
+        Ok(__cordl_object)
     }
-    pub fn get_MemberSerialization(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::MemberSerialization> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Newtonsoft::Json::MemberSerialization = __cordl_object
-            .invoke("get_MemberSerialization", ())?;
-        Ok(__cordl_ret)
+    pub fn New_String2(
+        id: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (id))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_0(
         &mut self,
@@ -96,16 +89,6 @@ impl crate::Newtonsoft::Json::JsonObjectAttribute {
             .invoke(".ctor", (id))?;
         Ok(__cordl_ret)
     }
-    pub fn get_MissingMemberHandling(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::MissingMemberHandling> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Newtonsoft::Json::MissingMemberHandling = __cordl_object
-            .invoke("get_MissingMemberHandling", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_ItemNullValueHandling(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::NullValueHandling> {
@@ -126,15 +109,35 @@ impl crate::Newtonsoft::Json::JsonObjectAttribute {
             .invoke("get_ItemRequired", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_MemberSerialization(
+    pub fn get_MemberSerialization(
         &mut self,
-        value: crate::Newtonsoft::Json::MemberSerialization,
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::MemberSerialization> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Newtonsoft::Json::MemberSerialization = __cordl_object
+            .invoke("get_MemberSerialization", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MissingMemberHandling(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::MissingMemberHandling> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Newtonsoft::Json::MissingMemberHandling = __cordl_object
+            .invoke("get_MissingMemberHandling", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ItemNullValueHandling(
+        &mut self,
+        value: crate::Newtonsoft::Json::NullValueHandling,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_MemberSerialization", (value))?;
+            .invoke("set_ItemNullValueHandling", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_ItemRequired(
@@ -148,30 +151,27 @@ impl crate::Newtonsoft::Json::JsonObjectAttribute {
             .invoke("set_ItemRequired", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_MemberSerialization(
+        &mut self,
+        value: crate::Newtonsoft::Json::MemberSerialization,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_MemberSerialization", (value))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_MemberSerialization1(
-        memberSerialization: crate::Newtonsoft::Json::MemberSerialization,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (memberSerialization))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String2(
-        id: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (id))?;
-        Ok(__cordl_object)
+    pub fn set_MissingMemberHandling(
+        &mut self,
+        value: crate::Newtonsoft::Json::MissingMemberHandling,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_MissingMemberHandling", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+JsonObjectAttribute")]

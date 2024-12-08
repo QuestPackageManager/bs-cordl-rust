@@ -29,29 +29,6 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlTypeMapMemberE
 }
 #[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberElement")]
 impl crate::System::Xml::Serialization::XmlTypeMapMemberElement {
-    pub fn set_ElementInfo(
-        &mut self,
-        value: *mut crate::System::Xml::Serialization::XmlTypeMapElementInfoList,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ElementInfo", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ChoiceTypeData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Serialization::TypeData,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Serialization::TypeData = __cordl_object
-            .invoke("get_ChoiceTypeData", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn FindElement(
         &mut self,
         ob: *mut crate::System::Object,
@@ -66,26 +43,33 @@ impl crate::System::Xml::Serialization::XmlTypeMapMemberElement {
             .invoke("FindElement", (ob, memberValue))?;
         Ok(__cordl_ret)
     }
-    pub fn set_ChoiceTypeData(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetChoice(
         &mut self,
-        value: *mut crate::System::Xml::Serialization::TypeData,
+        ob: *mut crate::System::Object,
+        choice: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ChoiceTypeData", (value))?;
+            .invoke("SetChoice", (ob, choice))?;
         Ok(__cordl_ret)
     }
-    pub fn set_IsXmlTextCollector(
+    pub fn _ctor(
         &mut self,
-        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsXmlTextCollector", (value))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ChoiceMember(
@@ -98,11 +82,16 @@ impl crate::System::Xml::Serialization::XmlTypeMapMemberElement {
             .invoke("get_ChoiceMember", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsXmlTextCollector(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_ChoiceTypeData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Xml::Serialization::TypeData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsXmlTextCollector", ())?;
+        let __cordl_ret: *mut crate::System::Xml::Serialization::TypeData = __cordl_object
+            .invoke("get_ChoiceTypeData", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ElementInfo(
@@ -117,14 +106,11 @@ impl crate::System::Xml::Serialization::XmlTypeMapMemberElement {
             .invoke("get_ElementInfo", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_IsXmlTextCollector(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsXmlTextCollector", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_ChoiceMember(
@@ -138,24 +124,38 @@ impl crate::System::Xml::Serialization::XmlTypeMapMemberElement {
             .invoke("set_ChoiceMember", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn SetChoice(
+    pub fn set_ChoiceTypeData(
         &mut self,
-        ob: *mut crate::System::Object,
-        choice: *mut crate::System::Object,
+        value: *mut crate::System::Xml::Serialization::TypeData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetChoice", (ob, choice))?;
+            .invoke("set_ChoiceTypeData", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_ElementInfo(
+        &mut self,
+        value: *mut crate::System::Xml::Serialization::XmlTypeMapElementInfoList,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ElementInfo", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IsXmlTextCollector(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsXmlTextCollector", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberElement")]

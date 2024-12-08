@@ -29,6 +29,16 @@ for crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBe
 }
 #[cfg(feature = "VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior")]
 impl crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn HandleBeatmapEvent(
         &mut self,
         data: *mut BasicBeatmapEventData,
@@ -39,6 +49,30 @@ impl crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionB
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleBeatmapEvent", (data))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        beatmapData: *mut IReadonlyBeatmapData,
+        dataModel: *mut VideoProjectionDataModelSO,
+        videoPlayer: *mut SongTimeSyncedVideoPlayer,
+        videoEventType: BasicBeatmapEventType,
+        beatmapCallbacksController: *mut BeatmapCallbacksController,
+        beatmapLevel: *mut BeatmapLevel,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    beatmapData,
+                    dataModel,
+                    videoPlayer,
+                    videoEventType,
+                    beatmapCallbacksController,
+                    beatmapLevel,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -65,40 +99,6 @@ impl crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionB
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        beatmapData: *mut IReadonlyBeatmapData,
-        dataModel: *mut VideoProjectionDataModelSO,
-        videoPlayer: *mut SongTimeSyncedVideoPlayer,
-        videoEventType: BasicBeatmapEventType,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
-        beatmapLevel: *mut BeatmapLevel,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    beatmapData,
-                    dataModel,
-                    videoPlayer,
-                    videoEventType,
-                    beatmapCallbacksController,
-                    beatmapLevel,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior")]
@@ -140,6 +140,22 @@ for crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavio
 }
 #[cfg(feature = "VideoProjectionEffect+GameplayVideoProjectionBehavior")]
 impl crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavior {
+    pub fn New(
+        beatmapData: *mut IReadonlyBeatmapData,
+        dataModel: *mut VideoProjectionDataModelSO,
+        videoPlayer: *mut SongTimeSyncedVideoPlayer,
+        videoEventType: BasicBeatmapEventType,
+        beatmapLevel: *mut BeatmapLevel,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (beatmapData, dataModel, videoPlayer, videoEventType, beatmapLevel),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         beatmapData: *mut IReadonlyBeatmapData,
@@ -157,22 +173,6 @@ impl crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavi
                 (beatmapData, dataModel, videoPlayer, videoEventType, beatmapLevel),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        beatmapData: *mut IReadonlyBeatmapData,
-        dataModel: *mut VideoProjectionDataModelSO,
-        videoPlayer: *mut SongTimeSyncedVideoPlayer,
-        videoEventType: BasicBeatmapEventType,
-        beatmapLevel: *mut BeatmapLevel,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (beatmapData, dataModel, videoPlayer, videoEventType, beatmapLevel),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "VideoProjectionEffect+GameplayVideoProjectionBehavior")]
@@ -212,6 +212,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::VideoProjectionEffect_InitDa
 }
 #[cfg(feature = "VideoProjectionEffect+InitData")]
 impl crate::GlobalNamespace::VideoProjectionEffect_InitData {
+    pub fn New(
+        beatmapLevel: *mut BeatmapLevel,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (beatmapLevel))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         beatmapLevel: *mut BeatmapLevel,
@@ -222,15 +231,6 @@ impl crate::GlobalNamespace::VideoProjectionEffect_InitData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (beatmapLevel))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        beatmapLevel: *mut BeatmapLevel,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (beatmapLevel))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "VideoProjectionEffect+InitData")]
@@ -280,13 +280,13 @@ for crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
 #[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
 impl crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
     #[cfg(
-        feature = "VideoProjectionEffect+VideoProjectionBehavior+_LoadPreviewCoverAsset_d__8"
-    )]
-    pub type _LoadPreviewCoverAsset_d__8 = crate::GlobalNamespace::VideoProjectionBehavior__LoadPreviewCoverAsset_d__8;
-    #[cfg(
         feature = "VideoProjectionEffect+VideoProjectionBehavior+__c__DisplayClass7_0"
     )]
     pub type __c__DisplayClass7_0 = crate::GlobalNamespace::VideoProjectionBehavior___c__DisplayClass7_0;
+    #[cfg(
+        feature = "VideoProjectionEffect+VideoProjectionBehavior+_LoadPreviewCoverAsset_d__8"
+    )]
+    pub type _LoadPreviewCoverAsset_d__8 = crate::GlobalNamespace::VideoProjectionBehavior__LoadPreviewCoverAsset_d__8;
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -307,19 +307,6 @@ impl crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
             .invoke("LoadPreviewCoverAsset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        dataModel: *mut VideoProjectionDataModelSO,
-        videoPlayer: *mut SongTimeSyncedVideoPlayer,
-        beatmapLevel: *mut BeatmapLevel,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dataModel, videoPlayer, beatmapLevel))?;
-        Ok(__cordl_ret)
-    }
     pub fn LoadVideoFromModel(
         &mut self,
         eventValue: i32,
@@ -335,12 +322,25 @@ impl crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
         dataModel: *mut VideoProjectionDataModelSO,
         videoPlayer: *mut SongTimeSyncedVideoPlayer,
         beatmapLevel: *mut BeatmapLevel,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (dataModel, videoPlayer, beatmapLevel))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        dataModel: *mut VideoProjectionDataModelSO,
+        videoPlayer: *mut SongTimeSyncedVideoPlayer,
+        beatmapLevel: *mut BeatmapLevel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (dataModel, videoPlayer, beatmapLevel))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
@@ -386,23 +386,20 @@ impl std::ops::DerefMut for VideoProjectionEffect {
 }
 #[cfg(feature = "VideoProjectionEffect")]
 impl VideoProjectionEffect {
-    #[cfg(feature = "VideoProjectionEffect+InitData")]
-    pub type InitData = crate::GlobalNamespace::VideoProjectionEffect_InitData;
-    #[cfg(feature = "VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior")]
-    pub type BeatmapEditorVideoProjectionBehavior = crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior;
-    #[cfg(feature = "VideoProjectionEffect+GameplayVideoProjectionBehavior")]
-    pub type GameplayVideoProjectionBehavior = crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavior;
     #[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
     pub type VideoProjectionBehavior = crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior;
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
+    #[cfg(feature = "VideoProjectionEffect+GameplayVideoProjectionBehavior")]
+    pub type GameplayVideoProjectionBehavior = crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavior;
+    #[cfg(feature = "VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior")]
+    pub type BeatmapEditorVideoProjectionBehavior = crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior;
+    #[cfg(feature = "VideoProjectionEffect+InitData")]
+    pub type InitData = crate::GlobalNamespace::VideoProjectionEffect_InitData;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnDestroy(
         &mut self,
@@ -414,6 +411,16 @@ impl VideoProjectionEffect {
             .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -423,13 +430,6 @@ impl VideoProjectionEffect {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "VideoProjectionEffect")]

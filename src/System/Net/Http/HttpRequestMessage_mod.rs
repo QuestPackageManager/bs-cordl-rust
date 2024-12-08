@@ -31,78 +31,6 @@ impl std::ops::DerefMut for crate::System::Net::Http::HttpRequestMessage {
 }
 #[cfg(feature = "System+Net+Http+HttpRequestMessage")]
 impl crate::System::Net::Http::HttpRequestMessage {
-    pub fn set_Method(
-        &mut self,
-        value: *mut crate::System::Net::Http::HttpMethod,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Method", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_RequestUri(
-        &mut self,
-        value: *mut crate::System::Uri,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_RequestUri", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Headers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Net::Http::Headers::HttpRequestHeaders,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::Http::Headers::HttpRequestHeaders = __cordl_object
-            .invoke("get_Headers", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetIsUsed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("SetIsUsed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_RequestUri(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Uri = __cordl_object
-            .invoke("get_RequestUri", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Content(
-        &mut self,
-        value: *mut crate::System::Net::Http::HttpContent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Content", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -122,6 +50,40 @@ impl crate::System::Net::Http::HttpRequestMessage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_HttpMethod_Uri1(
+        method: *mut crate::System::Net::Http::HttpMethod,
+        requestUri: *mut crate::System::Uri,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (method, requestUri))?;
+        Ok(__cordl_object)
+    }
+    pub fn SetIsUsed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("SetIsUsed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -146,6 +108,28 @@ impl crate::System::Net::Http::HttpRequestMessage {
             .invoke(".ctor", (method, requestUri))?;
         Ok(__cordl_ret)
     }
+    pub fn get_Content(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::Http::HttpContent> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::Http::HttpContent = __cordl_object
+            .invoke("get_Content", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Headers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Net::Http::Headers::HttpRequestHeaders,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::Http::Headers::HttpRequestHeaders = __cordl_object
+            .invoke("get_Headers", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Method(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::Http::HttpMethod> {
@@ -154,6 +138,16 @@ impl crate::System::Net::Http::HttpRequestMessage {
         );
         let __cordl_ret: *mut crate::System::Net::Http::HttpMethod = __cordl_object
             .invoke("get_Method", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RequestUri(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Uri = __cordl_object
+            .invoke("get_RequestUri", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Version(
@@ -166,32 +160,38 @@ impl crate::System::Net::Http::HttpRequestMessage {
             .invoke("get_Version", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Content(
+    pub fn set_Content(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::Http::HttpContent> {
+        value: *mut crate::System::Net::Http::HttpContent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::Http::HttpContent = __cordl_object
-            .invoke("get_Content", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Content", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_Method(
+        &mut self,
+        value: *mut crate::System::Net::Http::HttpMethod,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Method", (value))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_HttpMethod_Uri1(
-        method: *mut crate::System::Net::Http::HttpMethod,
-        requestUri: *mut crate::System::Uri,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (method, requestUri))?;
-        Ok(__cordl_object)
+    pub fn set_RequestUri(
+        &mut self,
+        value: *mut crate::System::Uri,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_RequestUri", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+Http+HttpRequestMessage")]

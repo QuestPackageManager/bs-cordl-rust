@@ -27,6 +27,20 @@ impl std::ops::DerefMut for crate::Assets::OVR::Scripts::RangedRecord {
 }
 #[cfg(feature = "Assets+OVR+Scripts+RangedRecord")]
 impl crate::Assets::OVR::Scripts::RangedRecord {
+    pub fn New(
+        order: i32,
+        cat: *mut crate::System::String,
+        msg: *mut crate::System::String,
+        val: f32,
+        minVal: f32,
+        maxVal: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (order, cat, msg, val, minVal, maxVal))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         order: i32,
@@ -42,20 +56,6 @@ impl crate::Assets::OVR::Scripts::RangedRecord {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (order, cat, msg, val, minVal, maxVal))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        order: i32,
-        cat: *mut crate::System::String,
-        msg: *mut crate::System::String,
-        val: f32,
-        minVal: f32,
-        maxVal: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (order, cat, msg, val, minVal, maxVal))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Assets+OVR+Scripts+RangedRecord")]

@@ -30,19 +30,25 @@ impl std::ops::DerefMut for crate::Unity::XR::Oculus::OculusRestarter {
 }
 #[cfg(feature = "Unity+XR+Oculus+OculusRestarter")]
 impl crate::Unity::XR::Oculus::OculusRestarter {
-    #[cfg(feature = "Unity+XR+Oculus+OculusRestarter+_RestartCoroutine_d__23")]
-    pub type _RestartCoroutine_d__23 = crate::Unity::XR::Oculus::OculusRestarter__RestartCoroutine_d__23;
     #[cfg(feature = "Unity+XR+Oculus+OculusRestarter+_PauseAndRestartCoroutine_d__22")]
     pub type _PauseAndRestartCoroutine_d__22 = crate::Unity::XR::Oculus::OculusRestarter__PauseAndRestartCoroutine_d__22;
-    pub fn RestartCoroutine(
+    #[cfg(feature = "Unity+XR+Oculus+OculusRestarter+_RestartCoroutine_d__23")]
+    pub type _RestartCoroutine_d__23 = crate::Unity::XR::Oculus::OculusRestarter__RestartCoroutine_d__23;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn PauseAndRestart(
         &mut self,
-        shouldRestart: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("RestartCoroutine", (shouldRestart))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PauseAndRestart", ())?;
         Ok(__cordl_ret)
     }
     pub fn PauseAndRestartCoroutine(
@@ -56,13 +62,6 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
             .invoke("PauseAndRestartCoroutine", (pauseTimeInSeconds))?;
         Ok(__cordl_ret)
     }
-    pub fn get_isRunning(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isRunning", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ResetCallbacks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -73,14 +72,15 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
             .invoke("ResetCallbacks", ())?;
         Ok(__cordl_ret)
     }
-    pub fn PauseAndRestart(
+    pub fn RestartCoroutine(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        shouldRestart: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PauseAndRestart", ())?;
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("RestartCoroutine", (shouldRestart))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -93,12 +93,12 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_isRunning(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isRunning", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Unity+XR+Oculus+OculusRestarter")]

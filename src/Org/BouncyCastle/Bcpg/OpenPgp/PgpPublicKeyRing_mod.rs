@@ -26,37 +26,25 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKe
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRing")]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRing {
-    pub fn _ctor_Il2CppArray0(
+    pub fn Encode(
         &mut self,
-        encoding: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        outStr: *mut crate::System::IO::Stream,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (encoding))?;
+            .invoke("Encode", (outStr))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_IList1(
+    pub fn GetEncoded(
         &mut self,
-        pubKeys: *mut crate::System::Collections::IList,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pubKeys))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Stream2(
-        &mut self,
-        inputStream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (inputStream))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetEncoded", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetPublicKey_0(
@@ -84,16 +72,6 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRing {
             .invoke("GetPublicKey", (keyId))?;
         Ok(__cordl_ret)
     }
-    pub fn GetEncoded(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetEncoded", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetPublicKeys(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerable> {
@@ -104,43 +82,65 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRing {
             .invoke("GetPublicKeys", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Encode(
-        &mut self,
-        outStr: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Encode", (outStr))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_Il2CppArray0(
-        encoding: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encoding))?;
-        Ok(__cordl_object)
-    }
     pub fn New_IList1(
         pubKeys: *mut crate::System::Collections::IList,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pubKeys))?;
         Ok(__cordl_object)
     }
+    pub fn New_Il2CppArray0(
+        encoding: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encoding))?;
+        Ok(__cordl_object)
+    }
     pub fn New_Stream2(
         inputStream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (inputStream))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor_IList1(
+        &mut self,
+        pubKeys: *mut crate::System::Collections::IList,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (pubKeys))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppArray0(
+        &mut self,
+        encoding: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (encoding))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Stream2(
+        &mut self,
+        inputStream: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (inputStream))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRing")]

@@ -31,16 +31,6 @@ for crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1SignatureFactory")]
 impl crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
-    pub fn get_AlgorithmDetails(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_AlgorithmDetails", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateCalculator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -53,17 +43,26 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
             .invoke("CreateCalculator", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_AsymmetricKeyParameter0(
-        &mut self,
+    pub fn New_SecureRandom1(
         algorithm: *mut crate::System::String,
         privateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (algorithm, privateKey))?;
-        Ok(__cordl_ret)
+        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, privateKey, random))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_AsymmetricKeyParameter0(
+        algorithm: *mut crate::System::String,
+        privateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, privateKey))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_SecureRandom1(
         &mut self,
@@ -78,26 +77,27 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
             .invoke(".ctor", (algorithm, privateKey, random))?;
         Ok(__cordl_ret)
     }
-    pub fn New_String_AsymmetricKeyParameter0(
+    pub fn _ctor_String_AsymmetricKeyParameter0(
+        &mut self,
         algorithm: *mut crate::System::String,
         privateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, privateKey))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (algorithm, privateKey))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_SecureRandom1(
-        algorithm: *mut crate::System::String,
-        privateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, privateKey, random))?;
-        Ok(__cordl_object)
+    pub fn get_AlgorithmDetails(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_AlgorithmDetails", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1SignatureFactory")]

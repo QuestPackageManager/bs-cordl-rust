@@ -104,12 +104,10 @@ impl NoteCutInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_failReason(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutInfo_FailReason> {
-        let __cordl_ret: crate::GlobalNamespace::NoteCutInfo_FailReason = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_allExceptSaberTypeIsOK(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_failReason",
+            "get_allExceptSaberTypeIsOK",
             (),
         )?;
         Ok(__cordl_ret)
@@ -122,10 +120,12 @@ impl NoteCutInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_allExceptSaberTypeIsOK(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_failReason(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutInfo_FailReason> {
+        let __cordl_ret: crate::GlobalNamespace::NoteCutInfo_FailReason = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_allExceptSaberTypeIsOK",
+            "get_failReason",
             (),
         )?;
         Ok(__cordl_ret)

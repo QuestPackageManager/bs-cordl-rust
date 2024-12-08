@@ -27,6 +27,11 @@ for crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Field+IPolynomialExtensionField")]
 impl crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_MinimalPolynomial(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -38,11 +43,6 @@ impl crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::Field::IPolynomial = __cordl_object
             .invoke("get_MinimalPolynomial", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Field+IPolynomialExtensionField")]

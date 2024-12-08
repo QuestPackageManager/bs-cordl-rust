@@ -27,6 +27,36 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X509::DistributionPo
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+DistributionPoint")]
 impl crate::Org::BouncyCastle::Asn1::X509::DistributionPoint {
+    pub fn New_Asn1Sequence0(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_DistributionPointName_ReasonFlags_GeneralNames1(
+        distributionPointName: *mut crate::Org::BouncyCastle::Asn1::X509::DistributionPointName,
+        reasons: *mut crate::Org::BouncyCastle::Asn1::X509::ReasonFlags,
+        crlIssuer: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (distributionPointName, reasons, crlIssuer))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToAsn1Object(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("ToAsn1Object", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -61,6 +91,32 @@ impl crate::Org::BouncyCastle::Asn1::X509::DistributionPoint {
             .invoke(".ctor", (distributionPointName, reasons, crlIssuer))?;
         Ok(__cordl_ret)
     }
+    pub fn appendObject(
+        &mut self,
+        buf: *mut crate::System::Text::StringBuilder,
+        sep: *mut crate::System::String,
+        name: *mut crate::System::String,
+        val: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("appendObject", (buf, sep, name, val))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CrlIssuer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralNames = __cordl_object
+            .invoke("get_CrlIssuer", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_DistributionPointName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -84,62 +140,6 @@ impl crate::Org::BouncyCastle::Asn1::X509::DistributionPoint {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::ReasonFlags = __cordl_object
             .invoke("get_Reasons", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn ToAsn1Object(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CrlIssuer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralNames = __cordl_object
-            .invoke("get_CrlIssuer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn appendObject(
-        &mut self,
-        buf: *mut crate::System::Text::StringBuilder,
-        sep: *mut crate::System::String,
-        name: *mut crate::System::String,
-        val: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("appendObject", (buf, sep, name, val))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_Asn1Sequence0(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_DistributionPointName_ReasonFlags_GeneralNames1(
-        distributionPointName: *mut crate::Org::BouncyCastle::Asn1::X509::DistributionPointName,
-        reasons: *mut crate::Org::BouncyCastle::Asn1::X509::ReasonFlags,
-        crlIssuer: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (distributionPointName, reasons, crlIssuer))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+DistributionPoint")]

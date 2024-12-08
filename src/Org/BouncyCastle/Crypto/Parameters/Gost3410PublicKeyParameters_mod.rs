@@ -28,17 +28,25 @@ for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410PublicKeyParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Gost3410PublicKeyParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::Gost3410PublicKeyParameters {
-    pub fn _ctor_Gost3410Parameters0(
-        &mut self,
+    pub fn New_DerObjectIdentifier1(
+        y: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        publicKeyParamSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (y, publicKeyParamSet))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Gost3410Parameters0(
         y: *mut crate::Org::BouncyCastle::Math::BigInteger,
         parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::Gost3410Parameters,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (y, parameters))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (y, parameters))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_DerObjectIdentifier1(
         &mut self,
@@ -52,6 +60,18 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::Gost3410PublicKeyParameters {
             .invoke(".ctor", (y, publicKeyParamSet))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_Gost3410Parameters0(
+        &mut self,
+        y: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::Gost3410Parameters,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (y, parameters))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Y(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
@@ -61,26 +81,6 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::Gost3410PublicKeyParameters {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
             .invoke("get_Y", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_Gost3410Parameters0(
-        y: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::Gost3410Parameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (y, parameters))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_DerObjectIdentifier1(
-        y: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        publicKeyParamSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (y, publicKeyParamSet))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Gost3410PublicKeyParameters")]

@@ -41,19 +41,6 @@ impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
 > crate::Priority_Queue::IFixedSizePriorityQueue_2<TItem, TPriority> {
-    pub fn get_MaxSize(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TPriority: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_MaxSize", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ResetNode(
         &mut self,
         node: TItem,
@@ -92,6 +79,19 @@ impl<
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_MaxSize(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TPriority: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_MaxSize", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Priority_Queue+IFixedSizePriorityQueue_2")]

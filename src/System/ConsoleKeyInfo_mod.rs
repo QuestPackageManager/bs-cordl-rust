@@ -23,20 +23,32 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::ConsoleKeyInf
 }
 #[cfg(feature = "System+ConsoleKeyInfo")]
 impl crate::System::ConsoleKeyInfo {
-    pub fn get_Key(
+    pub fn Equals_ConsoleKeyInfo1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::ConsoleKey> {
-        let __cordl_ret: crate::System::ConsoleKey = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        obj: crate::System::ConsoleKeyInfo,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Key",
-            (),
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_KeyChar(&mut self) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Equals_Object0(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_KeyChar",
+            "Equals",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)
@@ -56,33 +68,21 @@ impl crate::System::ConsoleKeyInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_Key(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ConsoleKey> {
+        let __cordl_ret: crate::System::ConsoleKey = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
+            "get_Key",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_KeyChar(&mut self) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_ConsoleKeyInfo1(
-        &mut self,
-        obj: crate::System::ConsoleKeyInfo,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
+            "get_KeyChar",
+            (),
         )?;
         Ok(__cordl_ret)
     }

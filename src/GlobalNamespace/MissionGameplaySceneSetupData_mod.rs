@@ -32,6 +32,32 @@ impl std::ops::DerefMut for MissionGameplaySceneSetupData {
 }
 #[cfg(feature = "MissionGameplaySceneSetupData")]
 impl MissionGameplaySceneSetupData {
+    pub fn New(
+        missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut MissionObjective,
+        >,
+        autoRestart: bool,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapLevel: *mut BeatmapLevel,
+        gameplayModifiers: *mut GameplayModifiers,
+        backButtonText: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    missionObjectives,
+                    autoRestart,
+                    beatmapKey,
+                    beatmapLevel,
+                    gameplayModifiers,
+                    backButtonText,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -59,32 +85,6 @@ impl MissionGameplaySceneSetupData {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut MissionObjective,
-        >,
-        autoRestart: bool,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        beatmapLevel: *mut BeatmapLevel,
-        gameplayModifiers: *mut GameplayModifiers,
-        backButtonText: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    missionObjectives,
-                    autoRestart,
-                    beatmapKey,
-                    beatmapLevel,
-                    gameplayModifiers,
-                    backButtonText,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MissionGameplaySceneSetupData")]

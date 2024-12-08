@@ -35,16 +35,6 @@ for crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters+Builder")]
 impl crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Build(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -57,17 +47,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
             .invoke("Build", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Validate(
-        &mut self,
-        condition: bool,
-        parameter: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Validate", (condition, parameter))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn SetCipherSuite(
         &mut self,
@@ -82,9 +67,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
             .invoke("SetCipherSuite", (cipherSuite))?;
         Ok(__cordl_ret)
     }
-    pub fn SetServerExtensions(
+    pub fn SetCompressionAlgorithm(
         &mut self,
-        serverExtensions: *mut crate::System::Collections::IDictionary,
+        compressionAlgorithm: u8,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder,
     > {
@@ -92,7 +77,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder = __cordl_object
-            .invoke("SetServerExtensions", (serverExtensions))?;
+            .invoke("SetCompressionAlgorithm", (compressionAlgorithm))?;
         Ok(__cordl_ret)
     }
     pub fn SetExtendedMasterSecret(
@@ -106,19 +91,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder = __cordl_object
             .invoke("SetExtendedMasterSecret", (extendedMasterSecret))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetCompressionAlgorithm(
-        &mut self,
-        compressionAlgorithm: u8,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder = __cordl_object
-            .invoke("SetCompressionAlgorithm", (compressionAlgorithm))?;
         Ok(__cordl_ret)
     }
     pub fn SetMasterSecret(
@@ -160,6 +132,19 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
             .invoke("SetPskIdentity", (pskIdentity))?;
         Ok(__cordl_ret)
     }
+    pub fn SetServerExtensions(
+        &mut self,
+        serverExtensions: *mut crate::System::Collections::IDictionary,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder = __cordl_object
+            .invoke("SetServerExtensions", (serverExtensions))?;
+        Ok(__cordl_ret)
+    }
     pub fn SetSrpIdentity(
         &mut self,
         srpIdentity: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -173,12 +158,27 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
             .invoke("SetSrpIdentity", (srpIdentity))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn Validate(
+        &mut self,
+        condition: bool,
+        parameter: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Validate", (condition, parameter))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters+Builder")]
@@ -228,43 +228,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::SessionParame
 impl crate::Org::BouncyCastle::Crypto::Tls::SessionParameters {
     #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters+Builder")]
     pub type Builder = crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder;
-    pub fn get_PskIdentity(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("get_PskIdentity", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadServerExtensions(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IDictionary> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IDictionary = __cordl_object
-            .invoke("ReadServerExtensions", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsExtendedMasterSecret(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsExtendedMasterSecret", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SrpIdentity(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("get_SrpIdentity", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -275,14 +238,54 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SessionParameters {
             .invoke("Clear", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_MasterSecret(
+    pub fn Copy(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("get_MasterSecret", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters = __cordl_object
+            .invoke("Copy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        cipherSuite: i32,
+        compressionAlgorithm: u8,
+        masterSecret: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        peerCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+        pskIdentity: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        srpIdentity: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        encodedServerExtensions: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        extendedMasterSecret: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    cipherSuite,
+                    compressionAlgorithm,
+                    masterSecret,
+                    peerCertificate,
+                    pskIdentity,
+                    srpIdentity,
+                    encodedServerExtensions,
+                    extendedMasterSecret,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn ReadServerExtensions(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IDictionary> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IDictionary = __cordl_object
+            .invoke("ReadServerExtensions", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -322,6 +325,30 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SessionParameters {
         let __cordl_ret: i32 = __cordl_object.invoke("get_CipherSuite", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_CompressionAlgorithm(&mut self) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u8 = __cordl_object.invoke("get_CompressionAlgorithm", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsExtendedMasterSecret(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsExtendedMasterSecret", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MasterSecret(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("get_MasterSecret", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_PeerCertificate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -334,52 +361,25 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SessionParameters {
             .invoke("get_PeerCertificate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Copy(
+    pub fn get_PskIdentity(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters = __cordl_object
-            .invoke("Copy", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("get_PskIdentity", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_CompressionAlgorithm(&mut self) -> quest_hook::libil2cpp::Result<u8> {
+    pub fn get_SrpIdentity(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: u8 = __cordl_object.invoke("get_CompressionAlgorithm", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("get_SrpIdentity", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        cipherSuite: i32,
-        compressionAlgorithm: u8,
-        masterSecret: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        peerCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
-        pskIdentity: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        srpIdentity: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        encodedServerExtensions: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        extendedMasterSecret: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    cipherSuite,
-                    compressionAlgorithm,
-                    masterSecret,
-                    peerCertificate,
-                    pskIdentity,
-                    srpIdentity,
-                    encodedServerExtensions,
-                    extendedMasterSecret,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters")]

@@ -55,21 +55,35 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::ZStream {
     pub const Z_STREAM_ERROR: i32 = -2i32;
     pub const Z_SYNC_FLUSH: i32 = 2i32;
     pub const Z_VERSION_ERROR: i32 = -6i32;
-    pub fn inflateSync(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("inflateSync", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn deflateInit_i32_0(
-        &mut self,
-        level: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn deflate(&mut self, flush: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("deflateInit", (level))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("deflate", (flush))?;
+        Ok(__cordl_ret)
+    }
+    pub fn deflateEnd(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("deflateEnd", ())?;
         Ok(__cordl_ret)
     }
     pub fn deflateInit__cordl_bool1(
@@ -81,6 +95,16 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::ZStream {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("deflateInit", (level, nowrap))?;
+        Ok(__cordl_ret)
+    }
+    pub fn deflateInit_i32_0(
+        &mut self,
+        level: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("deflateInit", (level))?;
         Ok(__cordl_ret)
     }
     pub fn deflateInit_i32_2(
@@ -107,20 +131,6 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::ZStream {
             .invoke("deflateInit", (level, bits, nowrap))?;
         Ok(__cordl_ret)
     }
-    pub fn deflate(&mut self, flush: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("deflate", (flush))?;
-        Ok(__cordl_ret)
-    }
-    pub fn deflateEnd(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("deflateEnd", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn deflateParams(
         &mut self,
         level: i32,
@@ -145,29 +155,31 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::ZStream {
             .invoke("deflateSetDictionary", (dictionary, dictLength))?;
         Ok(__cordl_ret)
     }
-    pub fn inflateSetDictionary(
+    pub fn flush_pending(
         &mut self,
-        dictionary: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        dictLength: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("inflateSetDictionary", (dictionary, dictLength))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("flush_pending", ())?;
         Ok(__cordl_ret)
     }
-    pub fn read_buf(
+    pub fn free(
         &mut self,
-        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        start: i32,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("read_buf", (buf, start, _cordl_size))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("free", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn inflate(&mut self, f: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("inflate", (f))?;
         Ok(__cordl_ret)
     }
     pub fn inflateEnd(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -212,49 +224,37 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::ZStream {
         let __cordl_ret: i32 = __cordl_object.invoke("inflateInit", (w, nowrap))?;
         Ok(__cordl_ret)
     }
-    pub fn flush_pending(
+    pub fn inflateSetDictionary(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        dictionary: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        dictLength: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("flush_pending", ())?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("inflateSetDictionary", (dictionary, dictLength))?;
         Ok(__cordl_ret)
     }
-    pub fn free(
+    pub fn inflateSync(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("inflateSync", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn read_buf(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        start: i32,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("free", ())?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("read_buf", (buf, start, _cordl_size))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn inflate(&mut self, f: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("inflate", (f))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+ZStream")]

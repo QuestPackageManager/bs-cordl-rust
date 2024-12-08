@@ -25,6 +25,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Entry")]
 impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
+    pub fn GetBagAttributeKeys(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("GetBagAttributeKeys", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetBagAttribute_DerObjectIdentifier0(
         &mut self,
         oid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -51,25 +61,14 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
             .invoke("GetBagAttribute", (oid))?;
         Ok(__cordl_ret)
     }
-    pub fn GetBagAttributeKeys(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("GetBagAttributeKeys", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_BagAttributeKeys(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerable = __cordl_object
-            .invoke("get_BagAttributeKeys", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        attributes: *mut crate::System::Collections::IDictionary,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (attributes))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -80,6 +79,16 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (attributes))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_BagAttributeKeys(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerable = __cordl_object
+            .invoke("get_BagAttributeKeys", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Item_DerObjectIdentifier0(
@@ -107,15 +116,6 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable = __cordl_object
             .invoke("get_Item", (oid))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        attributes: *mut crate::System::Collections::IDictionary,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (attributes))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Entry")]

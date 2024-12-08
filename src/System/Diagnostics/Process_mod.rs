@@ -89,44 +89,64 @@ impl std::ops::DerefMut for crate::System::Diagnostics::Process {
 }
 #[cfg(feature = "System+Diagnostics+Process")]
 impl crate::System::Diagnostics::Process {
+    #[cfg(feature = "System+Diagnostics+Process+StreamReadMode")]
+    pub type StreamReadMode = crate::System::Diagnostics::Process_StreamReadMode;
     #[cfg(feature = "System+Diagnostics+Process+State")]
     pub type State = crate::System::Diagnostics::Process_State;
     #[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
     pub type ProcInfo = crate::System::Diagnostics::Process_ProcInfo;
-    #[cfg(feature = "System+Diagnostics+Process+StreamReadMode")]
-    pub type StreamReadMode = crate::System::Diagnostics::Process_StreamReadMode;
-    pub fn GetProcessTimes(
+    pub fn Close(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Diagnostics::ProcessThreadTimes,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Diagnostics::ProcessThreadTimes = __cordl_object
-            .invoke("GetProcessTimes", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Close", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_StartInfo(
+    pub fn CompletionCallback(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Diagnostics::ProcessStartInfo,
-    > {
+        context: *mut crate::System::Object,
+        wasSignaled: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Diagnostics::ProcessStartInfo = __cordl_object
-            .invoke("get_StartInfo", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CompletionCallback", (context, wasSignaled))?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
+    pub fn Dispose(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        disposing: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", (disposing))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EnsureState(
+        &mut self,
+        state: crate::System::Diagnostics::Process_State,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EnsureState", (state))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EnsureWatchingForExit(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EnsureWatchingForExit", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetProcessHandle__cordl_bool0(
@@ -156,61 +176,58 @@ impl crate::System::Diagnostics::Process {
             .invoke("GetProcessHandle", (access))?;
         Ok(__cordl_ret)
     }
-    pub fn get_SynchronizingObject(
+    pub fn GetProcessTimes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::ComponentModel::ISynchronizeInvoke,
+        *mut crate::System::Diagnostics::ProcessThreadTimes,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::ComponentModel::ISynchronizeInvoke = __cordl_object
-            .invoke("get_SynchronizingObject", ())?;
+        let __cordl_ret: *mut crate::System::Diagnostics::ProcessThreadTimes = __cordl_object
+            .invoke("GetProcessTimes", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetProcessHandle(
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_SafeProcessHandle_i32_2(
+        handle: *mut crate::Microsoft::Win32::SafeHandles::SafeProcessHandle,
+        id: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (handle, id))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String__cordl_bool_i32_ProcessInfo1(
+        machineName: *mut crate::System::String,
+        isRemoteMachine: bool,
+        processId: i32,
+        processInfo: *mut crate::System::Diagnostics::ProcessInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (machineName, isRemoteMachine, processId, processInfo),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn OnExited(
         &mut self,
-        processHandle: *mut crate::Microsoft::Win32::SafeHandles::SafeProcessHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetProcessHandle", (processHandle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn StopWatchingForExit(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StopWatchingForExit", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Handle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::IntPtr = __cordl_object
-            .invoke("get_Handle", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Associated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Associated", ())?;
+            .invoke("OnExited", ())?;
         Ok(__cordl_ret)
     }
     pub fn OpenProcessHandle(
@@ -226,27 +243,6 @@ impl crate::System::Diagnostics::Process {
             .invoke("OpenProcessHandle", (access))?;
         Ok(__cordl_ret)
     }
-    pub fn Refresh(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Refresh", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_StartInfo(
-        &mut self,
-        value: *mut crate::System::Diagnostics::ProcessStartInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_StartInfo", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn RaiseOnExited(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -257,38 +253,14 @@ impl crate::System::Diagnostics::Process {
             .invoke("RaiseOnExited", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Id(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Id", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_StandardError(
+    pub fn Refresh(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::StreamReader> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IO::StreamReader = __cordl_object
-            .invoke("get_StandardError", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TotalProcessorTime(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::TimeSpan = __cordl_object
-            .invoke("get_TotalProcessorTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ExitCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ExitCode", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Refresh", ())?;
         Ok(__cordl_ret)
     }
     pub fn ReleaseProcessHandle(
@@ -302,46 +274,75 @@ impl crate::System::Diagnostics::Process {
             .invoke("ReleaseProcessHandle", (handle))?;
         Ok(__cordl_ret)
     }
-    pub fn EnsureWatchingForExit(
+    pub fn SetProcessHandle(
         &mut self,
+        processHandle: *mut crate::Microsoft::Win32::SafeHandles::SafeProcessHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EnsureWatchingForExit", ())?;
+            .invoke("SetProcessHandle", (processHandle))?;
         Ok(__cordl_ret)
     }
-    pub fn CompletionCallback(
+    pub fn SetProcessId(
         &mut self,
-        context: *mut crate::System::Object,
-        wasSignaled: bool,
+        processId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CompletionCallback", (context, wasSignaled))?;
+            .invoke("SetProcessId", (processId))?;
         Ok(__cordl_ret)
     }
-    pub fn OnExited(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnExited", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Close(
+    pub fn StartWithCreateProcess(
+        &mut self,
+        startInfo: *mut crate::System::Diagnostics::ProcessStartInfo,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("StartWithCreateProcess", (startInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartWithShellExecuteEx(
+        &mut self,
+        startInfo: *mut crate::System::Diagnostics::ProcessStartInfo,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("StartWithShellExecuteEx", (startInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn StopWatchingForExit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
+            .invoke("StopWatchingForExit", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -352,6 +353,18 @@ impl crate::System::Diagnostics::Process {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_SafeProcessHandle_i32_2(
+        &mut self,
+        handle: *mut crate::Microsoft::Win32::SafeHandles::SafeProcessHandle,
+        id: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (handle, id))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_String__cordl_bool_i32_ProcessInfo1(
@@ -368,38 +381,42 @@ impl crate::System::Diagnostics::Process {
             .invoke(".ctor", (machineName, isRemoteMachine, processId, processInfo))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_SafeProcessHandle_i32_2(
-        &mut self,
-        handle: *mut crate::Microsoft::Win32::SafeHandles::SafeProcessHandle,
-        id: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_Associated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (handle, id))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_Associated", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetProcessId(
-        &mut self,
-        processId: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_ExitCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetProcessId", (processId))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ExitCode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn StartWithCreateProcess(
+    pub fn get_Handle(
         &mut self,
-        startInfo: *mut crate::System::Diagnostics::ProcessStartInfo,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("StartWithCreateProcess", (startInfo))?;
+        let __cordl_ret: crate::System::IntPtr = __cordl_object
+            .invoke("get_Handle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HasExited(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasExited", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Id(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Id", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ProcessName(
@@ -412,15 +429,14 @@ impl crate::System::Diagnostics::Process {
             .invoke("get_ProcessName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
+    pub fn get_StandardError(
         &mut self,
-        disposing: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::StreamReader> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", (disposing))?;
+        let __cordl_ret: *mut crate::System::IO::StreamReader = __cordl_object
+            .invoke("get_StandardError", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_StandardOutput(
@@ -433,66 +449,50 @@ impl crate::System::Diagnostics::Process {
             .invoke("get_StandardOutput", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_HasExited(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_StartInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Diagnostics::ProcessStartInfo,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasExited", ())?;
+        let __cordl_ret: *mut crate::System::Diagnostics::ProcessStartInfo = __cordl_object
+            .invoke("get_StartInfo", ())?;
         Ok(__cordl_ret)
     }
-    pub fn EnsureState(
+    pub fn get_SynchronizingObject(
         &mut self,
-        state: crate::System::Diagnostics::Process_State,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::ComponentModel::ISynchronizeInvoke,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::ComponentModel::ISynchronizeInvoke = __cordl_object
+            .invoke("get_SynchronizingObject", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TotalProcessorTime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::TimeSpan = __cordl_object
+            .invoke("get_TotalProcessorTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_StartInfo(
+        &mut self,
+        value: *mut crate::System::Diagnostics::ProcessStartInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EnsureState", (state))?;
+            .invoke("set_StartInfo", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn StartWithShellExecuteEx(
-        &mut self,
-        startInfo: *mut crate::System::Diagnostics::ProcessStartInfo,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("StartWithShellExecuteEx", (startInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String__cordl_bool_i32_ProcessInfo1(
-        machineName: *mut crate::System::String,
-        isRemoteMachine: bool,
-        processId: i32,
-        processInfo: *mut crate::System::Diagnostics::ProcessInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (machineName, isRemoteMachine, processId, processInfo),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_SafeProcessHandle_i32_2(
-        handle: *mut crate::Microsoft::Win32::SafeHandles::SafeProcessHandle,
-        id: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (handle, id))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Diagnostics+Process")]

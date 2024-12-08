@@ -29,42 +29,21 @@ impl std::ops::DerefMut for SpawnRotationBeatmapEventData {
 impl SpawnRotationBeatmapEventData {
     #[cfg(feature = "SpawnRotationBeatmapEventData+SpawnRotationEventType")]
     pub type SpawnRotationEventType = crate::GlobalNamespace::SpawnRotationBeatmapEventData_SpawnRotationEventType;
-    pub fn get_subtypeGroupIdentifier(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn GetCopy(&mut self) -> quest_hook::libil2cpp::Result<*mut BeatmapDataItem> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_subtypeGroupIdentifier", ())?;
+        let __cordl_ret: *mut BeatmapDataItem = __cordl_object.invoke("GetCopy", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_rotation(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_rotation", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_rotation(
+    pub fn GetDefault(
         &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut BeatmapEventData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_rotation", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        _cordl_time: f32,
-        spawnRotationEventType: crate::GlobalNamespace::SpawnRotationBeatmapEventData_SpawnRotationEventType,
-        deltaRotation: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_time, spawnRotationEventType, deltaRotation))?;
+        let __cordl_ret: *mut BeatmapEventData = __cordl_object
+            .invoke("GetDefault", ())?;
         Ok(__cordl_ret)
     }
     pub fn Mirror(
@@ -77,12 +56,16 @@ impl SpawnRotationBeatmapEventData {
             .invoke("Mirror", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetCopy(&mut self) -> quest_hook::libil2cpp::Result<*mut BeatmapDataItem> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut BeatmapDataItem = __cordl_object.invoke("GetCopy", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        _cordl_time: f32,
+        spawnRotationEventType: crate::GlobalNamespace::SpawnRotationBeatmapEventData_SpawnRotationEventType,
+        deltaRotation: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_time, spawnRotationEventType, deltaRotation))?;
+        Ok(__cordl_object)
     }
     pub fn RecalculateRotationFromPreviousEvent(
         &mut self,
@@ -98,16 +81,6 @@ impl SpawnRotationBeatmapEventData {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetDefault(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapEventData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut BeatmapEventData = __cordl_object
-            .invoke("GetDefault", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn SetFirstRotationEventRotation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -118,16 +91,43 @@ impl SpawnRotationBeatmapEventData {
             .invoke("SetFirstRotationEventRotation", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         _cordl_time: f32,
         spawnRotationEventType: crate::GlobalNamespace::SpawnRotationBeatmapEventData_SpawnRotationEventType,
         deltaRotation: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_time, spawnRotationEventType, deltaRotation))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_time, spawnRotationEventType, deltaRotation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rotation(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_rotation", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_subtypeGroupIdentifier(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_subtypeGroupIdentifier", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_rotation(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_rotation", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "SpawnRotationBeatmapEventData")]

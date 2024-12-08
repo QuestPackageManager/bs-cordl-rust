@@ -30,14 +30,68 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerPrefabBindingFinalizer {
 }
 #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer")]
 impl crate::Zenject::SubContainerPrefabBindingFinalizer {
-    #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer+__c__DisplayClass5_0")]
-    pub type __c__DisplayClass5_0 = crate::Zenject::SubContainerPrefabBindingFinalizer___c__DisplayClass5_0;
-    #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer+__c__DisplayClass5_1")]
-    pub type __c__DisplayClass5_1 = crate::Zenject::SubContainerPrefabBindingFinalizer___c__DisplayClass5_1;
-    #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer+__c__DisplayClass6_1")]
-    pub type __c__DisplayClass6_1 = crate::Zenject::SubContainerPrefabBindingFinalizer___c__DisplayClass6_1;
     #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer+__c__DisplayClass6_0")]
     pub type __c__DisplayClass6_0 = crate::Zenject::SubContainerPrefabBindingFinalizer___c__DisplayClass6_0;
+    #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer+__c__DisplayClass6_1")]
+    pub type __c__DisplayClass6_1 = crate::Zenject::SubContainerPrefabBindingFinalizer___c__DisplayClass6_1;
+    #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer+__c__DisplayClass5_1")]
+    pub type __c__DisplayClass5_1 = crate::Zenject::SubContainerPrefabBindingFinalizer___c__DisplayClass5_1;
+    #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer+__c__DisplayClass5_0")]
+    pub type __c__DisplayClass5_0 = crate::Zenject::SubContainerPrefabBindingFinalizer___c__DisplayClass5_0;
+    pub fn FinalizeBindingConcrete(
+        &mut self,
+        container: *mut crate::Zenject::DiContainer,
+        concreteTypes: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::System::Type,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FinalizeBindingConcrete", (container, concreteTypes))?;
+        Ok(__cordl_ret)
+    }
+    pub fn FinalizeBindingSelf(
+        &mut self,
+        container: *mut crate::Zenject::DiContainer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FinalizeBindingSelf", (container))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        bindInfo: *mut crate::Zenject::BindInfo,
+        subIdentifier: *mut crate::System::Object,
+        resolveAll: bool,
+        subContainerCreatorFactory: *mut crate::System::Func_2<
+            *mut crate::Zenject::DiContainer,
+            *mut crate::Zenject::ISubContainerCreator,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (bindInfo, subIdentifier, resolveAll, subContainerCreatorFactory),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn OnFinalizeBinding(
+        &mut self,
+        container: *mut crate::Zenject::DiContainer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnFinalizeBinding", (container))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         bindInfo: *mut crate::Zenject::BindInfo,
@@ -57,60 +111,6 @@ impl crate::Zenject::SubContainerPrefabBindingFinalizer {
                 (bindInfo, subIdentifier, resolveAll, subContainerCreatorFactory),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn OnFinalizeBinding(
-        &mut self,
-        container: *mut crate::Zenject::DiContainer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnFinalizeBinding", (container))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FinalizeBindingSelf(
-        &mut self,
-        container: *mut crate::Zenject::DiContainer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FinalizeBindingSelf", (container))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FinalizeBindingConcrete(
-        &mut self,
-        container: *mut crate::Zenject::DiContainer,
-        concreteTypes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Type,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FinalizeBindingConcrete", (container, concreteTypes))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        bindInfo: *mut crate::Zenject::BindInfo,
-        subIdentifier: *mut crate::System::Object,
-        resolveAll: bool,
-        subContainerCreatorFactory: *mut crate::System::Func_2<
-            *mut crate::Zenject::DiContainer,
-            *mut crate::Zenject::ISubContainerCreator,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (bindInfo, subIdentifier, resolveAll, subContainerCreatorFactory),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer")]

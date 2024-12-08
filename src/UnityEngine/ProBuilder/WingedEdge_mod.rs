@@ -33,14 +33,11 @@ impl crate::UnityEngine::ProBuilder::WingedEdge {
     pub type __c__DisplayClass32_0 = crate::UnityEngine::ProBuilder::WingedEdge___c__DisplayClass32_0;
     #[cfg(feature = "UnityEngine+ProBuilder+WingedEdge+__c")]
     pub type __c = crate::UnityEngine::ProBuilder::WingedEdge___c;
-    pub fn Equals_WingedEdge0(
-        &mut self,
-        other: *mut crate::UnityEngine::ProBuilder::WingedEdge,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("Count", ())?;
         Ok(__cordl_ret)
     }
     pub fn Equals_Object1(
@@ -53,143 +50,14 @@ impl crate::UnityEngine::ProBuilder::WingedEdge {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn Equals_WingedEdge0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        other: *mut crate::UnityEngine::ProBuilder::WingedEdge,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_face(
-        &mut self,
-        value: *mut crate::UnityEngine::ProBuilder::Face,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_face", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_face(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ProBuilder::Face> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Face = __cordl_object
-            .invoke("get_face", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_edge(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::EdgeLookup> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ProBuilder::EdgeLookup = __cordl_object
-            .invoke("get_edge", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_next(
-        &mut self,
-        value: *mut crate::UnityEngine::ProBuilder::WingedEdge,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_next", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_previous(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ProBuilder::WingedEdge> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::WingedEdge = __cordl_object
-            .invoke("get_previous", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_next(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ProBuilder::WingedEdge> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::WingedEdge = __cordl_object
-            .invoke("get_next", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_edge(
-        &mut self,
-        value: crate::UnityEngine::ProBuilder::EdgeLookup,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_edge", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_previous(
-        &mut self,
-        value: *mut crate::UnityEngine::ProBuilder::WingedEdge,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_previous", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_opposite(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ProBuilder::WingedEdge> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::WingedEdge = __cordl_object
-            .invoke("get_opposite", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Count", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_opposite(
-        &mut self,
-        value: *mut crate::UnityEngine::ProBuilder::WingedEdge,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_opposite", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret)
     }
     pub fn GetAdjacentEdgeWithCommonIndex(
@@ -203,12 +71,144 @@ impl crate::UnityEngine::ProBuilder::WingedEdge {
             .invoke("GetAdjacentEdgeWithCommonIndex", (common))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_edge(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::EdgeLookup> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ProBuilder::EdgeLookup = __cordl_object
+            .invoke("get_edge", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_face(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ProBuilder::Face> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Face = __cordl_object
+            .invoke("get_face", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_next(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ProBuilder::WingedEdge> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::WingedEdge = __cordl_object
+            .invoke("get_next", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_opposite(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ProBuilder::WingedEdge> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::WingedEdge = __cordl_object
+            .invoke("get_opposite", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_previous(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ProBuilder::WingedEdge> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::WingedEdge = __cordl_object
+            .invoke("get_previous", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_edge(
+        &mut self,
+        value: crate::UnityEngine::ProBuilder::EdgeLookup,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_edge", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_face(
+        &mut self,
+        value: *mut crate::UnityEngine::ProBuilder::Face,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_face", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_next(
+        &mut self,
+        value: *mut crate::UnityEngine::ProBuilder::WingedEdge,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_next", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_opposite(
+        &mut self,
+        value: *mut crate::UnityEngine::ProBuilder::WingedEdge,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_opposite", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_previous(
+        &mut self,
+        value: *mut crate::UnityEngine::ProBuilder::WingedEdge,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_previous", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+WingedEdge")]

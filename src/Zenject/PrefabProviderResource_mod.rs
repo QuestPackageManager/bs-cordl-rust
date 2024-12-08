@@ -35,6 +35,15 @@ impl crate::Zenject::PrefabProviderResource {
             .invoke("GetPrefab", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        resourcePath: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (resourcePath))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         resourcePath: *mut crate::System::String,
@@ -45,15 +54,6 @@ impl crate::Zenject::PrefabProviderResource {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (resourcePath))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        resourcePath: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (resourcePath))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+PrefabProviderResource")]

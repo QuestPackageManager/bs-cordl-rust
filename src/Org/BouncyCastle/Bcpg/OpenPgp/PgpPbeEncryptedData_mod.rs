@@ -27,27 +27,17 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPbeEncryptedData {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPbeEncryptedData")]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPbeEncryptedData {
-    pub fn _ctor(
+    pub fn CreateStreamCipher(
         &mut self,
-        keyData: *mut crate::Org::BouncyCastle::Bcpg::SymmetricKeyEncSessionPacket,
-        encData: *mut crate::Org::BouncyCastle::Bcpg::InputStreamPacket,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        keyAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::IBufferedCipher,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (keyData, encData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDataStream(
-        &mut self,
-        passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("GetDataStream", (passPhrase))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IBufferedCipher = __cordl_object
+            .invoke("CreateStreamCipher", (keyAlgorithm))?;
         Ok(__cordl_ret)
     }
     pub fn DoGetDataStream(
@@ -62,17 +52,26 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPbeEncryptedData {
             .invoke("DoGetDataStream", (rawPassPhrase, clearPassPhrase))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateStreamCipher(
+    pub fn GetDataStream(
         &mut self,
-        keyAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::IBufferedCipher,
-    > {
+        passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IBufferedCipher = __cordl_object
-            .invoke("CreateStreamCipher", (keyAlgorithm))?;
+        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+            .invoke("GetDataStream", (passPhrase))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDataStreamRaw(
+        &mut self,
+        rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+            .invoke("GetDataStreamRaw", (rawPassPhrase))?;
         Ok(__cordl_ret)
     }
     pub fn GetDataStreamUtf8(
@@ -96,26 +95,27 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPbeEncryptedData {
             .invoke("GetInputStream", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetDataStreamRaw(
-        &mut self,
-        rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("GetDataStreamRaw", (rawPassPhrase))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         keyData: *mut crate::Org::BouncyCastle::Bcpg::SymmetricKeyEncSessionPacket,
         encData: *mut crate::Org::BouncyCastle::Bcpg::InputStreamPacket,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (keyData, encData))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        keyData: *mut crate::Org::BouncyCastle::Bcpg::SymmetricKeyEncSessionPacket,
+        encData: *mut crate::Org::BouncyCastle::Bcpg::InputStreamPacket,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (keyData, encData))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPbeEncryptedData")]

@@ -26,29 +26,33 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Esf::CrlValidatedID 
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+CrlValidatedID")]
 impl crate::Org::BouncyCastle::Asn1::Esf::CrlValidatedID {
-    pub fn get_CrlIdentifier(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Esf::CrlIdentifier,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Esf::CrlIdentifier = __cordl_object
-            .invoke("get_CrlIdentifier", ())?;
-        Ok(__cordl_ret)
+    pub fn New_Asn1Sequence0(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
     }
-    pub fn get_CrlHash(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Esf::OtherHash,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherHash = __cordl_object
-            .invoke("get_CrlHash", ())?;
-        Ok(__cordl_ret)
+    pub fn New_OtherHash1(
+        crlHash: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherHash,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (crlHash))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_OtherHash_CrlIdentifier2(
+        crlHash: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherHash,
+        crlIdentifier: *mut crate::Org::BouncyCastle::Asn1::Esf::CrlIdentifier,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (crlHash, crlIdentifier))?;
+        Ok(__cordl_object)
     }
     pub fn ToAsn1Object(
         &mut self,
@@ -94,33 +98,29 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CrlValidatedID {
             .invoke(".ctor", (crlHash, crlIdentifier))?;
         Ok(__cordl_ret)
     }
-    pub fn New_Asn1Sequence0(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
+    pub fn get_CrlHash(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Esf::OtherHash,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherHash = __cordl_object
+            .invoke("get_CrlHash", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_OtherHash1(
-        crlHash: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherHash,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (crlHash))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_OtherHash_CrlIdentifier2(
-        crlHash: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherHash,
-        crlIdentifier: *mut crate::Org::BouncyCastle::Asn1::Esf::CrlIdentifier,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (crlHash, crlIdentifier))?;
-        Ok(__cordl_object)
+    pub fn get_CrlIdentifier(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::Esf::CrlIdentifier,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Esf::CrlIdentifier = __cordl_object
+            .invoke("get_CrlIdentifier", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+CrlValidatedID")]

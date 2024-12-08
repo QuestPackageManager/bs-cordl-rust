@@ -40,11 +40,21 @@ impl std::ops::DerefMut for crate::Unity::XR::Oculus::OculusLoader {
 impl crate::Unity::XR::Oculus::OculusLoader {
     #[cfg(feature = "Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
     pub type DeviceSupportedResult = crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult;
-    pub fn Stop(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn CheckUnityVersionCompatibility(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Stop", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("CheckUnityVersionCompatibility", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Deinitialize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Deinitialize", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetSettings(
@@ -57,6 +67,34 @@ impl crate::Unity::XR::Oculus::OculusLoader {
             .invoke("GetSettings", ())?;
         Ok(__cordl_ret)
     }
+    pub fn Initialize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Initialize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Stop(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Stop", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -65,13 +103,6 @@ impl crate::Unity::XR::Oculus::OculusLoader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Initialize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Initialize", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_displaySubsystem(
@@ -93,37 +124,6 @@ impl crate::Unity::XR::Oculus::OculusLoader {
         let __cordl_ret: *mut crate::UnityEngine::XR::XRInputSubsystem = __cordl_object
             .invoke("get_inputSubsystem", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn CheckUnityVersionCompatibility(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CheckUnityVersionCompatibility", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Deinitialize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Deinitialize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+XR+Oculus+OculusLoader")]

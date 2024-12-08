@@ -26,12 +26,12 @@ for crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+AppendElements")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+AppendElements+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::AppendElements___c;
     #[cfg(
         feature = "UnityEngine+ProBuilder+MeshOperations+AppendElements+__c__DisplayClass17_0"
     )]
     pub type __c__DisplayClass17_0 = crate::UnityEngine::ProBuilder::MeshOperations::AppendElements___c__DisplayClass17_0;
+    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+AppendElements+__c")]
+    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::AppendElements___c;
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+AppendElements")]
 impl quest_hook::libil2cpp::ObjectType

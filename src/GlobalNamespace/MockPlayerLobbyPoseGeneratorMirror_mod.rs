@@ -26,18 +26,6 @@ impl std::ops::DerefMut for MockPlayerLobbyPoseGeneratorMirror {
 }
 #[cfg(feature = "MockPlayerLobbyPoseGeneratorMirror")]
 impl MockPlayerLobbyPoseGeneratorMirror {
-    pub fn _ctor(
-        &mut self,
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
-        nodePoseSyncStateManager: *mut NodePoseSyncStateManager,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (multiplayerSessionManager, nodePoseSyncStateManager))?;
-        Ok(__cordl_ret)
-    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -46,16 +34,6 @@ impl MockPlayerLobbyPoseGeneratorMirror {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Tick(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Tick", ())?;
         Ok(__cordl_ret)
     }
     pub fn FindPlayerToMirror(
@@ -96,7 +74,7 @@ impl MockPlayerLobbyPoseGeneratorMirror {
     pub fn New(
         multiplayerSessionManager: *mut IMultiplayerSessionManager,
         nodePoseSyncStateManager: *mut NodePoseSyncStateManager,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -105,6 +83,28 @@ impl MockPlayerLobbyPoseGeneratorMirror {
                 (multiplayerSessionManager, nodePoseSyncStateManager),
             )?;
         Ok(__cordl_object)
+    }
+    pub fn Tick(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Tick", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        multiplayerSessionManager: *mut IMultiplayerSessionManager,
+        nodePoseSyncStateManager: *mut NodePoseSyncStateManager,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (multiplayerSessionManager, nodePoseSyncStateManager))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MockPlayerLobbyPoseGeneratorMirror")]

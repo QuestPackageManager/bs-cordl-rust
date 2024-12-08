@@ -28,22 +28,15 @@ for crate::Org::BouncyCastle::Crypto::Tls::SupplementalDataEntry {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SupplementalDataEntry")]
 impl crate::Org::BouncyCastle::Crypto::Tls::SupplementalDataEntry {
-    pub fn get_DataType(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_DataType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Data(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("get_Data", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        dataType: i32,
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dataType, data))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -57,15 +50,22 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SupplementalDataEntry {
             .invoke(".ctor", (dataType, data))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        dataType: i32,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dataType, data))?;
-        Ok(__cordl_object)
+    pub fn get_Data(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("get_Data", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_DataType(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_DataType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SupplementalDataEntry")]

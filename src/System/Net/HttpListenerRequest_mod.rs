@@ -45,24 +45,33 @@ impl std::ops::DerefMut for crate::System::Net::HttpListenerRequest {
 }
 #[cfg(feature = "System+Net+HttpListenerRequest")]
 impl crate::System::Net::HttpListenerRequest {
-    pub fn get_LocalEndPoint(
+    pub fn AddHeader(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::IPEndPoint> {
+        header: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::IPEndPoint = __cordl_object
-            .invoke("get_LocalEndPoint", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddHeader", (header))?;
         Ok(__cordl_ret)
     }
-    pub fn get_InputStream(
+    pub fn CreateQueryString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
+        query: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("get_InputStream", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CreateQueryString", (query))?;
+        Ok(__cordl_ret)
+    }
+    pub fn FinishInitialization(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("FinishInitialization", ())?;
         Ok(__cordl_ret)
     }
     pub fn FlushInput(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -72,38 +81,42 @@ impl crate::System::Net::HttpListenerRequest {
         let __cordl_ret: bool = __cordl_object.invoke("FlushInput", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_KeepAlive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_KeepAlive", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        context: *mut crate::System::Net::HttpListenerContext,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (context))?;
+        Ok(__cordl_object)
     }
-    pub fn get_Url(&mut self) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Uri = __cordl_object.invoke("get_Url", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_UserHostName(
+    pub fn SetRequestLine(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        req: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_UserHostName", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetRequestLine", (req))?;
         Ok(__cordl_ret)
     }
-    pub fn get_ProtocolVersion(
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Version> {
+        context: *mut crate::System::Net::HttpListenerContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Version = __cordl_object
-            .invoke("get_ProtocolVersion", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HasEntityBody(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasEntityBody", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Headers(
@@ -118,6 +131,16 @@ impl crate::System::Net::HttpListenerRequest {
             .invoke("get_Headers", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_InputStream(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+            .invoke("get_InputStream", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_IsSecureConnection(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -125,22 +148,38 @@ impl crate::System::Net::HttpListenerRequest {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsSecureConnection", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_HasEntityBody(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_KeepAlive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasEntityBody", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_KeepAlive", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CreateQueryString(
+    pub fn get_LocalEndPoint(
         &mut self,
-        query: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::IPEndPoint> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CreateQueryString", (query))?;
+        let __cordl_ret: *mut crate::System::Net::IPEndPoint = __cordl_object
+            .invoke("get_LocalEndPoint", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ProtocolVersion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Version> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Version = __cordl_object
+            .invoke("get_ProtocolVersion", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Url(&mut self) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Uri = __cordl_object.invoke("get_Url", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_UserHostAddress(
@@ -153,54 +192,15 @@ impl crate::System::Net::HttpListenerRequest {
             .invoke("get_UserHostAddress", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetRequestLine(
+    pub fn get_UserHostName(
         &mut self,
-        req: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetRequestLine", (req))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_UserHostName", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn AddHeader(
-        &mut self,
-        header: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddHeader", (header))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        context: *mut crate::System::Net::HttpListenerContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FinishInitialization(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("FinishInitialization", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        context: *mut crate::System::Net::HttpListenerContext,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (context))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+HttpListenerRequest")]

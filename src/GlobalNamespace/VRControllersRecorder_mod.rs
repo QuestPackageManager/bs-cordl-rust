@@ -31,24 +31,80 @@ impl std::ops::DerefMut for crate::GlobalNamespace::VRControllersRecorder_Keyfra
 }
 #[cfg(feature = "VRControllersRecorder+Keyframe")]
 impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
-    pub fn get_rightControllerPose(
+    pub fn Equals_Object1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Pose = __cordl_object
-            .invoke("get_rightControllerPose", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret)
     }
-    pub fn get_leftControllerPose(
+    pub fn Equals_VRControllersRecorder_Keyframe0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        other: *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Pose = __cordl_object
-            .invoke("get_leftControllerPose", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_Pose_Pose_Pose_f32_0(
+        leftController: crate::UnityEngine::Pose,
+        rightController: crate::UnityEngine::Pose,
+        head: crate::UnityEngine::Pose,
+        _cordl_time: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (leftController, rightController, head, _cordl_time))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Vector3_Vector3_Vector3_Quaternion_Quaternion_Quaternion_f32_1(
+        pos1: crate::UnityEngine::Vector3,
+        pos2: crate::UnityEngine::Vector3,
+        pos3: crate::UnityEngine::Vector3,
+        rot1: crate::UnityEngine::Quaternion,
+        rot2: crate::UnityEngine::Quaternion,
+        rot3: crate::UnityEngine::Quaternion,
+        _cordl_time: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (pos1, pos2, pos3, rot1, rot2, rot3, _cordl_time))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToConstructorString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToConstructorString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToSerializable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::SavedData_KeyframeSerializable,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::GlobalNamespace::SavedData_KeyframeSerializable = __cordl_object
+            .invoke("ToSerializable", ())?;
         Ok(__cordl_ret)
     }
     pub fn WriteTo(
@@ -93,38 +149,6 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
             .invoke(".ctor", (pos1, pos2, pos3, rot1, rot2, rot3, _cordl_time))?;
         Ok(__cordl_ret)
     }
-    pub fn ToSerializable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::SavedData_KeyframeSerializable,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::GlobalNamespace::SavedData_KeyframeSerializable = __cordl_object
-            .invoke("ToSerializable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_VRControllersRecorder_Keyframe0(
-        &mut self,
-        other: *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_headPose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
@@ -135,49 +159,25 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
             .invoke("get_headPose", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ToConstructorString(
+    pub fn get_leftControllerPose(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToConstructorString", ())?;
+        let __cordl_ret: crate::UnityEngine::Pose = __cordl_object
+            .invoke("get_leftControllerPose", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_rightControllerPose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        let __cordl_ret: crate::UnityEngine::Pose = __cordl_object
+            .invoke("get_rightControllerPose", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_Pose_Pose_Pose_f32_0(
-        leftController: crate::UnityEngine::Pose,
-        rightController: crate::UnityEngine::Pose,
-        head: crate::UnityEngine::Pose,
-        _cordl_time: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (leftController, rightController, head, _cordl_time))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Vector3_Vector3_Vector3_Quaternion_Quaternion_Quaternion_f32_1(
-        pos1: crate::UnityEngine::Vector3,
-        pos2: crate::UnityEngine::Vector3,
-        pos3: crate::UnityEngine::Vector3,
-        rot1: crate::UnityEngine::Quaternion,
-        rot2: crate::UnityEngine::Quaternion,
-        rot3: crate::UnityEngine::Quaternion,
-        _cordl_time: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (pos1, pos2, pos3, rot1, rot2, rot3, _cordl_time))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "VRControllersRecorder+Keyframe")]
@@ -238,6 +238,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SavedData_KeyframeSerializab
 }
 #[cfg(feature = "VRControllersRecorder+SavedData+KeyframeSerializable")]
 impl crate::GlobalNamespace::SavedData_KeyframeSerializable {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -247,13 +254,6 @@ impl crate::GlobalNamespace::SavedData_KeyframeSerializable {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "VRControllersRecorder+SavedData+KeyframeSerializable")]
@@ -310,6 +310,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::VRControllersRecorder_SavedD
 impl crate::GlobalNamespace::VRControllersRecorder_SavedData {
     #[cfg(feature = "VRControllersRecorder+SavedData+KeyframeSerializable")]
     pub type KeyframeSerializable = crate::GlobalNamespace::SavedData_KeyframeSerializable;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -319,13 +326,6 @@ impl crate::GlobalNamespace::VRControllersRecorder_SavedData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "VRControllersRecorder+SavedData")]
@@ -372,16 +372,72 @@ impl std::ops::DerefMut for crate::GlobalNamespace::VRControllersRecorder_State 
 impl crate::GlobalNamespace::VRControllersRecorder_State {
     #[cfg(feature = "VRControllersRecorder+State+__c")]
     pub type __c = crate::GlobalNamespace::State___c;
-    pub fn WriteTo(
+    pub fn AddKeyframe(
         &mut self,
-        writer: *mut crate::System::IO::BinaryWriter,
+        keyframe: *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteTo", (writer))?;
+            .invoke("AddKeyframe", (keyframe))?;
         Ok(__cordl_ret)
+    }
+    pub fn New_3() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IEnumerable_1_Pose_Pose0(
+        keyframes: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+        >,
+        leftControllerOffset: crate::UnityEngine::Pose,
+        rightControllerOffset: crate::UnityEngine::Pose,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (keyframes, leftControllerOffset, rightControllerOffset),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_List_1_Pose_Pose1(
+        keyframes: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+        >,
+        leftControllerOffset: crate::UnityEngine::Pose,
+        rightControllerOffset: crate::UnityEngine::Pose,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (keyframes, leftControllerOffset, rightControllerOffset),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_List_1_Pose_Pose_u32_2(
+        keyframes: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+        >,
+        leftControllerOffset: crate::UnityEngine::Pose,
+        rightControllerOffset: crate::UnityEngine::Pose,
+        version: u32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (keyframes, leftControllerOffset, rightControllerOffset, version),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn Upgrade(
         &mut self,
@@ -395,6 +451,27 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
         );
         let __cordl_ret: *mut crate::GlobalNamespace::VRControllersRecorder_State = __cordl_object
             .invoke("Upgrade", (newLeftControllerOffset, newRightControllerOffset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteTo(
+        &mut self,
+        writer: *mut crate::System::IO::BinaryWriter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteTo", (writer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_3(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_IEnumerable_1_Pose_Pose0(
@@ -446,34 +523,6 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_3(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddKeyframe(
-        &mut self,
-        keyframe: *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddKeyframe", (keyframe))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_version(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("get_version", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_keyframes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -489,61 +538,12 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
         > = __cordl_object.invoke("get_keyframes", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_IEnumerable_1_Pose_Pose0(
-        keyframes: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
-        >,
-        leftControllerOffset: crate::UnityEngine::Pose,
-        rightControllerOffset: crate::UnityEngine::Pose,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (keyframes, leftControllerOffset, rightControllerOffset),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_List_1_Pose_Pose1(
-        keyframes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
-        >,
-        leftControllerOffset: crate::UnityEngine::Pose,
-        rightControllerOffset: crate::UnityEngine::Pose,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (keyframes, leftControllerOffset, rightControllerOffset),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_List_1_Pose_Pose_u32_2(
-        keyframes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
-        >,
-        leftControllerOffset: crate::UnityEngine::Pose,
-        rightControllerOffset: crate::UnityEngine::Pose,
-        version: u32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (keyframes, leftControllerOffset, rightControllerOffset, version),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_3() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_version(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("get_version", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "VRControllersRecorder+State")]
@@ -585,16 +585,6 @@ for crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder {
 }
 #[cfg(feature = "VRControllersRecorder+TypeSerializationBinder")]
 impl crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn BindToType(
         &mut self,
         assemblyName: *mut crate::System::String,
@@ -607,12 +597,22 @@ impl crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder {
             .invoke("BindToType", (assemblyName, typeName))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "VRControllersRecorder+TypeSerializationBinder")]
@@ -677,28 +677,57 @@ impl std::ops::DerefMut for VRControllersRecorder {
 }
 #[cfg(feature = "VRControllersRecorder")]
 impl VRControllersRecorder {
-    pub const kHeaderChar: char = "v";
+    pub const kHeaderChar: char = 'v';
     pub const kRecorderVersion: u32 = 30209u32;
     pub const kSavedDataRecorderVersion: u32 = 1979777280u32;
     pub const kSavedDataWithOffsetRecorderVersion: u32 = 7733505u32;
-    #[cfg(feature = "VRControllersRecorder+State")]
-    pub type State = crate::GlobalNamespace::VRControllersRecorder_State;
-    #[cfg(feature = "VRControllersRecorder+SavedData")]
-    pub type SavedData = crate::GlobalNamespace::VRControllersRecorder_SavedData;
-    #[cfg(feature = "VRControllersRecorder+Keyframe")]
-    pub type Keyframe = crate::GlobalNamespace::VRControllersRecorder_Keyframe;
-    #[cfg(feature = "VRControllersRecorder+Mode")]
-    pub type Mode = crate::GlobalNamespace::VRControllersRecorder_Mode;
     #[cfg(feature = "VRControllersRecorder+TypeSerializationBinder")]
     pub type TypeSerializationBinder = crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder;
-    pub fn get_recordingTextAsset(
+    #[cfg(feature = "VRControllersRecorder+Keyframe")]
+    pub type Keyframe = crate::GlobalNamespace::VRControllersRecorder_Keyframe;
+    #[cfg(feature = "VRControllersRecorder+SavedData")]
+    pub type SavedData = crate::GlobalNamespace::VRControllersRecorder_SavedData;
+    #[cfg(feature = "VRControllersRecorder+State")]
+    pub type State = crate::GlobalNamespace::VRControllersRecorder_State;
+    #[cfg(feature = "VRControllersRecorder+Mode")]
+    pub type Mode = crate::GlobalNamespace::VRControllersRecorder_Mode;
+    pub fn CheckNodes(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::TextAsset> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::TextAsset = __cordl_object
-            .invoke("get_recordingTextAsset", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckNodes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleControllerAnchorUpdate(
+        &mut self,
+        controller: *mut VRController,
+        poseOffset: crate::UnityEngine::Pose,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleControllerAnchorUpdate", (controller, poseOffset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LateUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LateUpdate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Load(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Load", ())?;
         Ok(__cordl_ret)
     }
     pub fn LoadState(
@@ -712,6 +741,124 @@ impl VRControllersRecorder {
         );
         let __cordl_ret: *mut crate::GlobalNamespace::VRControllersRecorder_State = __cordl_object
             .invoke("LoadState", (stream))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn PlaybackTick(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PlaybackTick", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RecordTick(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RecordTick", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Save(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Save", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetDefaultSettings(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetDefaultSettings", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetInGamePlaybackDefaultSettings(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetInGamePlaybackDefaultSettings", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetPositionAndRotation(
+        &mut self,
+        transf: *mut crate::UnityEngine::Transform,
+        targetPos: crate::UnityEngine::Vector3,
+        targetRot: crate::UnityEngine::Quaternion,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetPositionAndRotation", (transf, targetPos, targetRot, t))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_changeToNonVRCamera(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_changeToNonVRCamera", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_currentPoses(
@@ -733,87 +880,16 @@ impl VRControllersRecorder {
         > = __cordl_object.invoke("get_currentPoses", ())?;
         Ok(__cordl_ret)
     }
-    pub fn HandleControllerAnchorUpdate(
+    pub fn get_mode(
         &mut self,
-        controller: *mut VRController,
-        poseOffset: crate::UnityEngine::Pose,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::VRControllersRecorder_Mode,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleControllerAnchorUpdate", (controller, poseOffset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetPositionAndRotation(
-        &mut self,
-        transf: *mut crate::UnityEngine::Transform,
-        targetPos: crate::UnityEngine::Vector3,
-        targetRot: crate::UnityEngine::Quaternion,
-        t: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetPositionAndRotation", (transf, targetPos, targetRot, t))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Load(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Load", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Save(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Save", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_recordingFileName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_recordingFileName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetDefaultSettings(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetDefaultSettings", ())?;
+        let __cordl_ret: crate::GlobalNamespace::VRControllersRecorder_Mode = __cordl_object
+            .invoke("get_mode", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_path(
@@ -826,36 +902,24 @@ impl VRControllersRecorder {
             .invoke("get_path", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn get_recordingFileName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_recordingFileName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_recordingFileName(
+    pub fn get_recordingTextAsset(
         &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::TextAsset> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_recordingFileName", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_mode(
-        &mut self,
-        value: crate::GlobalNamespace::VRControllersRecorder_Mode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_mode", (value))?;
+        let __cordl_ret: *mut crate::UnityEngine::TextAsset = __cordl_object
+            .invoke("get_recordingTextAsset", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_changeToNonVRCamera(
@@ -869,44 +933,26 @@ impl VRControllersRecorder {
             .invoke("set_changeToNonVRCamera", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn SetInGamePlaybackDefaultSettings(
+    pub fn set_mode(
         &mut self,
+        value: crate::GlobalNamespace::VRControllersRecorder_Mode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetInGamePlaybackDefaultSettings", ())?;
+            .invoke("set_mode", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn CheckNodes(
+    pub fn set_recordingFileName(
         &mut self,
+        value: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckNodes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RecordTick(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecordTick", ())?;
+            .invoke("set_recordingFileName", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_recordingTextAsset(
@@ -919,52 +965,6 @@ impl VRControllersRecorder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_recordingTextAsset", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_mode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::VRControllersRecorder_Mode,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::VRControllersRecorder_Mode = __cordl_object
-            .invoke("get_mode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn PlaybackTick(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PlaybackTick", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_changeToNonVRCamera(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_changeToNonVRCamera", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LateUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LateUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "VRControllersRecorder")]

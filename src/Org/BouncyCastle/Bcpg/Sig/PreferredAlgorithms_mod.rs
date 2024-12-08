@@ -35,19 +35,28 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::PreferredAlgorithms {
             .invoke("GetPreferences", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor__cordl_bool_Il2CppArray0(
-        &mut self,
+    pub fn New_Il2CppArray1(
+        _cordl_type: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
+        critical: bool,
+        preferences: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, critical, preferences))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool_Il2CppArray0(
         _cordl_type: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
         critical: bool,
         isLongLength: bool,
         data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_type, critical, isLongLength, data))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, critical, isLongLength, data))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_Il2CppArray1(
         &mut self,
@@ -62,28 +71,19 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::PreferredAlgorithms {
             .invoke(".ctor", (_cordl_type, critical, preferences))?;
         Ok(__cordl_ret)
     }
-    pub fn New__cordl_bool_Il2CppArray0(
+    pub fn _ctor__cordl_bool_Il2CppArray0(
+        &mut self,
         _cordl_type: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
         critical: bool,
         isLongLength: bool,
         data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, critical, isLongLength, data))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray1(
-        _cordl_type: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
-        critical: bool,
-        preferences: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, critical, preferences))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_type, critical, isLongLength, data))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+PreferredAlgorithms")]

@@ -43,26 +43,6 @@ for crate::System::Security::Cryptography::X509Certificates::X509BasicConstraint
 impl crate::System::Security::Cryptography::X509Certificates::X509BasicConstraintsExtension {
     pub const friendlyName: &'static str = "Basic Constraints";
     pub const oid: &'static str = "2.5.29.19";
-    pub fn Encode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("Encode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_HasPathLengthConstraint(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_HasPathLengthConstraint", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CopyFrom(
         &mut self,
         asnEncodedData: *mut crate::System::Security::Cryptography::AsnEncodedData,
@@ -72,31 +52,6 @@ impl crate::System::Security::Cryptography::X509Certificates::X509BasicConstrain
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CopyFrom", (asnEncodedData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CertificateAuthority(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CertificateAuthority", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_PathLengthConstraint(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_PathLengthConstraint", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-        multiLine: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", (multiLine))?;
         Ok(__cordl_ret)
     }
     pub fn Decode(
@@ -110,6 +65,64 @@ impl crate::System::Security::Cryptography::X509Certificates::X509BasicConstrain
         );
         let __cordl_ret: crate::System::Security::Cryptography::AsnDecodeStatus = __cordl_object
             .invoke("Decode", (extension))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Encode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("Encode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_AsnEncodedData__cordl_bool1(
+        encodedBasicConstraints: *mut crate::System::Security::Cryptography::AsnEncodedData,
+        critical: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encodedBasicConstraints, critical))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool__cordl_bool_i32__cordl_bool2(
+        certificateAuthority: bool,
+        hasPathLengthConstraint: bool,
+        pathLengthConstraint: i32,
+        critical: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    certificateAuthority,
+                    hasPathLengthConstraint,
+                    pathLengthConstraint,
+                    critical,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn ToString(
+        &mut self,
+        multiLine: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", (multiLine))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -156,42 +169,29 @@ impl crate::System::Security::Cryptography::X509Certificates::X509BasicConstrain
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_CertificateAuthority(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CertificateAuthority", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_AsnEncodedData__cordl_bool1(
-        encodedBasicConstraints: *mut crate::System::Security::Cryptography::AsnEncodedData,
-        critical: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encodedBasicConstraints, critical))?;
-        Ok(__cordl_object)
+    pub fn get_HasPathLengthConstraint(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_HasPathLengthConstraint", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New__cordl_bool__cordl_bool_i32__cordl_bool2(
-        certificateAuthority: bool,
-        hasPathLengthConstraint: bool,
-        pathLengthConstraint: i32,
-        critical: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    certificateAuthority,
-                    hasPathLengthConstraint,
-                    pathLengthConstraint,
-                    critical,
-                ),
-            )?;
-        Ok(__cordl_object)
+    pub fn get_PathLengthConstraint(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_PathLengthConstraint", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(

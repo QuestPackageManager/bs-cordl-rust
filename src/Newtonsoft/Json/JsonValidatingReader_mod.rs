@@ -32,63 +32,18 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonValidatingReader {
 }
 #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader")]
 impl crate::Newtonsoft::Json::JsonValidatingReader {
-    #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+__c")]
-    pub type __c = crate::Newtonsoft::Json::JsonValidatingReader___c;
     #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
     pub type SchemaScope = crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope;
-    pub fn ReadAsBytes(
+    #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+__c")]
+    pub type __c = crate::Newtonsoft::Json::JsonValidatingReader___c;
+    pub fn Close(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("ReadAsBytes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValidateNull(
-        &mut self,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateNull", (schema))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValidateString(
-        &mut self,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateString", (schema))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Schema(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchema = __cordl_object
-            .invoke("get_Schema", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Schema(
-        &mut self,
-        value: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Schema", (value))?;
+            .invoke("Close", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetCurrentNodeSchemaType(
@@ -104,84 +59,35 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
         > = __cordl_object.invoke("GetCurrentNodeSchemaType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_CurrentSchemas(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-        > = __cordl_object.invoke("get_CurrentSchemas", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Reader(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Newtonsoft::Json::JsonReader> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::JsonReader = __cordl_object
-            .invoke("get_Reader", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadAsDecimal(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<crate::System::Decimal>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Nullable_1<crate::System::Decimal> = __cordl_object
-            .invoke("ReadAsDecimal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadAsDouble(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<f64>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Nullable_1<f64> = __cordl_object
-            .invoke("ReadAsDouble", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ValueType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_ValueType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadAsDateTimeOffset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<crate::System::DateTimeOffset>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Nullable_1<crate::System::DateTimeOffset> = __cordl_object
-            .invoke("ReadAsDateTimeOffset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValidateFloat(
+    pub fn IsPropertyDefinied(
         &mut self,
         schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        propertyName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateFloat", (schema))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsPropertyDefinied", (schema, propertyName))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        reader: *mut crate::Newtonsoft::Json::JsonReader,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (reader))?;
+        Ok(__cordl_object)
+    }
+    pub fn Newtonsoft_Json_IJsonLineInfo_HasLineInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("Newtonsoft.Json.IJsonLineInfo.HasLineInfo", ())?;
         Ok(__cordl_ret)
     }
     pub fn Newtonsoft_Json_IJsonLineInfo_get_LineNumber(
@@ -194,16 +100,6 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
             .invoke("Newtonsoft.Json.IJsonLineInfo.get_LineNumber", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Close(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Newtonsoft_Json_IJsonLineInfo_get_LinePosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -214,106 +110,37 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
             .invoke("Newtonsoft.Json.IJsonLineInfo.get_LinePosition", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn OnValidationEvent(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
+        exception: *mut crate::Newtonsoft::Json::Schema::JsonSchemaException,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (reader))?;
+            .invoke("OnValidationEvent", (exception))?;
         Ok(__cordl_ret)
     }
-    pub fn ValidateNotDisallowed(
-        &mut self,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateNotDisallowed", (schema))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadAsDateTime(
+    pub fn Pop(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<crate::System::DateTime>,
+        *mut crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Nullable_1<crate::System::DateTime> = __cordl_object
-            .invoke("ReadAsDateTime", ())?;
+        let __cordl_ret: *mut crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope = __cordl_object
+            .invoke("Pop", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Read(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Read", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_QuoteChar(&mut self) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: char = __cordl_object.invoke("get_QuoteChar", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_ValidationEventHandler(
+    pub fn ProcessValue(
         &mut self,
-        value: *mut crate::Newtonsoft::Json::Schema::ValidationEventHandler,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_ValidationEventHandler", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValidateEndObject(
-        &mut self,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateEndObject", (schema))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValidateEndArray(
-        &mut self,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateEndArray", (schema))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Newtonsoft_Json_IJsonLineInfo_HasLineInfo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("Newtonsoft.Json.IJsonLineInfo.HasLineInfo", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_QuoteChar(
-        &mut self,
-        value: char,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_QuoteChar", (value))?;
+            .invoke("ProcessValue", ())?;
         Ok(__cordl_ret)
     }
     pub fn Push(
@@ -339,25 +166,130 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
             .invoke("RaiseError", (message, schema))?;
         Ok(__cordl_ret)
     }
-    pub fn OnValidationEvent(
-        &mut self,
-        exception: *mut crate::Newtonsoft::Json::Schema::JsonSchemaException,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn Read(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnValidationEvent", (exception))?;
+        let __cordl_ret: bool = __cordl_object.invoke("Read", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ValidateObject(
+    pub fn ReadAsBoolean(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<bool>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Nullable_1<bool> = __cordl_object
+            .invoke("ReadAsBoolean", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadAsBytes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("ReadAsBytes", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadAsDateTime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<crate::System::DateTime>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Nullable_1<crate::System::DateTime> = __cordl_object
+            .invoke("ReadAsDateTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadAsDateTimeOffset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<crate::System::DateTimeOffset>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Nullable_1<crate::System::DateTimeOffset> = __cordl_object
+            .invoke("ReadAsDateTimeOffset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadAsDecimal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<crate::System::Decimal>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Nullable_1<crate::System::Decimal> = __cordl_object
+            .invoke("ReadAsDecimal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadAsDouble(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<f64>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Nullable_1<f64> = __cordl_object
+            .invoke("ReadAsDouble", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadAsInt32(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i32>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Nullable_1<i32> = __cordl_object
+            .invoke("ReadAsInt32", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadAsString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ReadAsString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TestType(
+        &mut self,
+        currentSchema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        currentType: crate::Newtonsoft::Json::Schema::JsonSchemaType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TestType", (currentSchema, currentType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateArray(
         &mut self,
         schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("ValidateObject", (schema))?;
+        let __cordl_ret: bool = __cordl_object.invoke("ValidateArray", (schema))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateBoolean(
+        &mut self,
+        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidateBoolean", (schema))?;
         Ok(__cordl_ret)
     }
     pub fn ValidateCurrentToken(
@@ -370,63 +302,102 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
             .invoke("ValidateCurrentToken", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessValue(
+    pub fn ValidateEndArray(
         &mut self,
+        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessValue", ())?;
+            .invoke("ValidateEndArray", (schema))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Value(
+    pub fn ValidateEndObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_Value", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidateEndObject", (schema))?;
         Ok(__cordl_ret)
     }
-    pub fn IsPropertyDefinied(
+    pub fn ValidateFloat(
         &mut self,
         schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-        propertyName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidateFloat", (schema))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateInteger(
+        &mut self,
+        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidateInteger", (schema))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateNotDisallowed(
+        &mut self,
+        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidateNotDisallowed", (schema))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateNull(
+        &mut self,
+        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidateNull", (schema))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateObject(
+        &mut self,
+        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsPropertyDefinied", (schema, propertyName))?;
+        let __cordl_ret: bool = __cordl_object.invoke("ValidateObject", (schema))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Depth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Depth", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TokenType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::JsonToken> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Newtonsoft::Json::JsonToken = __cordl_object
-            .invoke("get_TokenType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValidateArray(
+    pub fn ValidatePropertyName(
         &mut self,
         schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("ValidateArray", (schema))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidatePropertyName", (schema))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateString(
+        &mut self,
+        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ValidateString", (schema))?;
         Ok(__cordl_ret)
     }
     pub fn WriteToken(
@@ -442,57 +413,26 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
             .invoke("WriteToken", (schemas))?;
         Ok(__cordl_ret)
     }
-    pub fn ValidatePropertyName(
+    pub fn _ctor(
         &mut self,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        reader: *mut crate::Newtonsoft::Json::JsonReader,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidatePropertyName", (schema))?;
+            .invoke(".ctor", (reader))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Path(
+    pub fn add_ValidationEventHandler(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: *mut crate::Newtonsoft::Json::Schema::ValidationEventHandler,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Path", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadAsString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ReadAsString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadAsBoolean(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<bool>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Nullable_1<bool> = __cordl_object
-            .invoke("ReadAsBoolean", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TestType(
-        &mut self,
-        currentSchema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-        currentType: crate::Newtonsoft::Json::Schema::JsonSchemaType,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TestType", (currentSchema, currentType))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_ValidationEventHandler", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_CurrentMemberSchemas(
@@ -510,48 +450,95 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
         > = __cordl_object.invoke("get_CurrentMemberSchemas", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Pop(
+    pub fn get_CurrentSchemas(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope,
+        *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope = __cordl_object
-            .invoke("Pop", ())?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        > = __cordl_object.invoke("get_CurrentSchemas", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ValidateBoolean(
-        &mut self,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_Depth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateBoolean", (schema))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Depth", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ValidateInteger(
+    pub fn get_Path(
         &mut self,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateInteger", (schema))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Path", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ReadAsInt32(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i32>> {
+    pub fn get_QuoteChar(&mut self) -> quest_hook::libil2cpp::Result<char> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Nullable_1<i32> = __cordl_object
-            .invoke("ReadAsInt32", ())?;
+        let __cordl_ret: char = __cordl_object.invoke("get_QuoteChar", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Reader(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Newtonsoft::Json::JsonReader> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Newtonsoft::Json::JsonReader = __cordl_object
+            .invoke("get_Reader", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Schema(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchema = __cordl_object
+            .invoke("get_Schema", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TokenType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::JsonToken> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Newtonsoft::Json::JsonToken = __cordl_object
+            .invoke("get_TokenType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_Value", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ValueType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_ValueType", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_ValidationEventHandler(
@@ -565,14 +552,27 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
             .invoke("remove_ValidationEventHandler", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (reader))?;
-        Ok(__cordl_object)
+    pub fn set_QuoteChar(
+        &mut self,
+        value: char,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_QuoteChar", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Schema(
+        &mut self,
+        value: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Schema", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader")]
@@ -629,30 +629,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonValidatingReader_Schema
 impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
     #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope+__c")]
     pub type __c = crate::Newtonsoft::Json::SchemaScope___c;
-    pub fn get_TokenType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Linq::JTokenType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Newtonsoft::Json::Linq::JTokenType = __cordl_object
-            .invoke("get_TokenType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        tokenType: crate::Newtonsoft::Json::Linq::JTokenType,
-        schemas: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (tokenType, schemas))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetRequiredProperties(
         &mut self,
         schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
@@ -669,19 +645,37 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
         > = __cordl_object.invoke("GetRequiredProperties", (schema))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Schemas(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IList_1<
+    pub fn New(
+        tokenType: crate::Newtonsoft::Json::Linq::JTokenType,
+        schemas: *mut crate::System::Collections::Generic::IList_1<
             *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
         >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (tokenType, schemas))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        tokenType: crate::Newtonsoft::Json::Linq::JTokenType,
+        schemas: *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-        > = __cordl_object.invoke("get_Schemas", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (tokenType, schemas))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ArrayItemCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ArrayItemCount", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_CurrentItemWriter(
@@ -696,13 +690,6 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
             .invoke("get_CurrentItemWriter", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsUniqueArray(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsUniqueArray", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_CurrentPropertyName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -713,59 +700,11 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
             .invoke("get_CurrentPropertyName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_UniqueArrayItems(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::Newtonsoft::Json::Linq::JToken,
-        >,
-    > {
+    pub fn get_IsUniqueArray(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::Newtonsoft::Json::Linq::JToken,
-        > = __cordl_object.invoke("get_UniqueArrayItems", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_CurrentItemWriter(
-        &mut self,
-        value: *mut crate::Newtonsoft::Json::Linq::JTokenWriter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_CurrentItemWriter", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ArrayItemCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ArrayItemCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_CurrentPropertyName(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_CurrentPropertyName", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ArrayItemCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ArrayItemCount", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsUniqueArray", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_RequiredProperties(
@@ -785,17 +724,78 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
         > = __cordl_object.invoke("get_RequiredProperties", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        tokenType: crate::Newtonsoft::Json::Linq::JTokenType,
-        schemas: *mut crate::System::Collections::Generic::IList_1<
+    pub fn get_Schemas(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IList_1<
             *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
         >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (tokenType, schemas))?;
-        Ok(__cordl_object)
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        > = __cordl_object.invoke("get_Schemas", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TokenType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Linq::JTokenType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Newtonsoft::Json::Linq::JTokenType = __cordl_object
+            .invoke("get_TokenType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_UniqueArrayItems(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Linq::JToken,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Linq::JToken,
+        > = __cordl_object.invoke("get_UniqueArrayItems", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ArrayItemCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ArrayItemCount", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_CurrentItemWriter(
+        &mut self,
+        value: *mut crate::Newtonsoft::Json::Linq::JTokenWriter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_CurrentItemWriter", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_CurrentPropertyName(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_CurrentPropertyName", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope")]

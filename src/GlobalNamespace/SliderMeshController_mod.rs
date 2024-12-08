@@ -41,33 +41,6 @@ impl std::ops::DerefMut for SliderMeshController {
 #[cfg(feature = "SliderMeshController")]
 impl SliderMeshController {
     pub const kDefaultGameNoteSize: f32 = 0.45f32;
-    pub fn get_pathLength(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_pathLength", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_mesh(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Mesh> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Mesh = __cordl_object
-            .invoke("get_mesh", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_pathsHolder(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PathsHolder> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut PathsHolder = __cordl_object
-            .invoke("get_pathsHolder", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateBezierPathAndMesh(
         &mut self,
         sliderData: *mut SliderData,
@@ -86,6 +59,13 @@ impl SliderMeshController {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -96,12 +76,32 @@ impl SliderMeshController {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_mesh(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Mesh> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Mesh = __cordl_object
+            .invoke("get_mesh", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_pathLength(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_pathLength", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_pathsHolder(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut PathsHolder> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut PathsHolder = __cordl_object
+            .invoke("get_pathsHolder", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "SliderMeshController")]

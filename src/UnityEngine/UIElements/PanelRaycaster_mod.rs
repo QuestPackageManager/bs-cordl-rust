@@ -25,6 +25,23 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::PanelRaycaster {
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelRaycaster")]
 impl crate::UnityEngine::UIElements::PanelRaycaster {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnPanelDestroyed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPanelDestroyed", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Raycast(
         &mut self,
         eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
@@ -37,26 +54,6 @@ impl crate::UnityEngine::UIElements::PanelRaycaster {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Raycast", (eventData, resultAppendList))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_panel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::IPanel> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::IPanel = __cordl_object
-            .invoke("get_panel", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPanelDestroyed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPanelDestroyed", ())?;
         Ok(__cordl_ret)
     }
     pub fn RegisterCallbacks(
@@ -79,13 +76,6 @@ impl crate::UnityEngine::UIElements::PanelRaycaster {
             .invoke("UnregisterCallbacks", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_renderOrderPriority(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_renderOrderPriority", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -104,6 +94,23 @@ impl crate::UnityEngine::UIElements::PanelRaycaster {
         );
         let __cordl_ret: *mut crate::UnityEngine::Camera = __cordl_object
             .invoke("get_eventCamera", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_panel(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::IPanel> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::IPanel = __cordl_object
+            .invoke("get_panel", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_renderOrderPriority(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_renderOrderPriority", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_selectableGameObject(
@@ -133,13 +140,6 @@ impl crate::UnityEngine::UIElements::PanelRaycaster {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_panel", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelRaycaster")]

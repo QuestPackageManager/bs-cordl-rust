@@ -51,6 +51,64 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::JsonDynamicC
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonDynamicContract")]
 impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
+    pub fn New(
+        underlyingType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (underlyingType))?;
+        Ok(__cordl_object)
+    }
+    pub fn TryGetMember(
+        &mut self,
+        dynamicProvider: *mut crate::System::Dynamic::IDynamicMetaObjectProvider,
+        name: *mut crate::System::String,
+        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetMember", (dynamicProvider, name, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TrySetMember(
+        &mut self,
+        dynamicProvider: *mut crate::System::Dynamic::IDynamicMetaObjectProvider,
+        name: *mut crate::System::String,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TrySetMember", (dynamicProvider, name, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        underlyingType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (underlyingType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Properties(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Newtonsoft::Json::Serialization::JsonPropertyCollection,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::JsonPropertyCollection = __cordl_object
+            .invoke("get_Properties", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_PropertyNameResolver(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -68,17 +126,6 @@ impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
         > = __cordl_object.invoke("get_PropertyNameResolver", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        underlyingType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (underlyingType))?;
-        Ok(__cordl_ret)
-    }
     pub fn set_PropertyNameResolver(
         &mut self,
         value: *mut crate::System::Func_2<
@@ -92,53 +139,6 @@ impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_PropertyNameResolver", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn TrySetMember(
-        &mut self,
-        dynamicProvider: *mut crate::System::Dynamic::IDynamicMetaObjectProvider,
-        name: *mut crate::System::String,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TrySetMember", (dynamicProvider, name, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Properties(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::JsonPropertyCollection,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::JsonPropertyCollection = __cordl_object
-            .invoke("get_Properties", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetMember(
-        &mut self,
-        dynamicProvider: *mut crate::System::Dynamic::IDynamicMetaObjectProvider,
-        name: *mut crate::System::String,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetMember", (dynamicProvider, name, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        underlyingType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (underlyingType))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonDynamicContract")]

@@ -30,12 +30,40 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession {
     pub const TYPE_KEY_ENCIPHERMENT: i32 = 2i32;
     pub const TYPE_RA_VERIFIED: i32 = 0i32;
     pub const TYPE_SIGNING_KEY: i32 = 1i32;
-    pub fn get_Type(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Type", ())?;
-        Ok(__cordl_ret)
+    pub fn New_1() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Asn1TaggedObject0(
+        tagged: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (tagged))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_PopoSigningKey2(
+        Poposk: *mut crate::Org::BouncyCastle::Asn1::Crmf::PopoSigningKey,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (Poposk))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_PopoPrivKey3(
+        _cordl_type: i32,
+        privkey: *mut crate::Org::BouncyCastle::Asn1::Crmf::PopoPrivKey,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, privkey))?;
+        Ok(__cordl_object)
     }
     pub fn ToAsn1Object(
         &mut self,
@@ -47,6 +75,16 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession {
             .invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_Asn1TaggedObject0(
         &mut self,
         tagged: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
@@ -56,16 +94,6 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (tagged))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_PopoSigningKey2(
@@ -103,40 +131,12 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession {
             .invoke("get_Object", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_Asn1TaggedObject0(
-        tagged: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (tagged))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_1() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_PopoSigningKey2(
-        Poposk: *mut crate::Org::BouncyCastle::Asn1::Crmf::PopoSigningKey,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (Poposk))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_PopoPrivKey3(
-        _cordl_type: i32,
-        privkey: *mut crate::Org::BouncyCastle::Asn1::Crmf::PopoPrivKey,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, privkey))?;
-        Ok(__cordl_object)
+    pub fn get_Type(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Type", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+ProofOfPossession")]

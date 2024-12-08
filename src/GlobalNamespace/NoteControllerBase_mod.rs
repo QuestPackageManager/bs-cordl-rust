@@ -23,6 +23,23 @@ impl std::ops::DerefMut for NoteControllerBase {
 }
 #[cfg(feature = "NoteControllerBase")]
 impl NoteControllerBase {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_didInitEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -35,27 +52,11 @@ impl NoteControllerBase {
             .invoke("get_didInitEvent", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_noteDidStartDissolvingEvent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut ILazyCopyHashSet_1<*mut INoteControllerNoteDidStartDissolvingEvent>,
-    > {
+    pub fn get_noteData(&mut self) -> quest_hook::libil2cpp::Result<*mut NoteData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ILazyCopyHashSet_1<
-            *mut INoteControllerNoteDidStartDissolvingEvent,
-        > = __cordl_object.invoke("get_noteDidStartDissolvingEvent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut NoteData = __cordl_object.invoke("get_noteData", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_noteDidPassJumpThreeQuartersEvent(
@@ -71,19 +72,18 @@ impl NoteControllerBase {
         > = __cordl_object.invoke("get_noteDidPassJumpThreeQuartersEvent", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_noteData(&mut self) -> quest_hook::libil2cpp::Result<*mut NoteData> {
+    pub fn get_noteDidStartDissolvingEvent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut ILazyCopyHashSet_1<*mut INoteControllerNoteDidStartDissolvingEvent>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut NoteData = __cordl_object.invoke("get_noteData", ())?;
+        let __cordl_ret: *mut ILazyCopyHashSet_1<
+            *mut INoteControllerNoteDidStartDissolvingEvent,
+        > = __cordl_object.invoke("get_noteDidStartDissolvingEvent", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "NoteControllerBase")]

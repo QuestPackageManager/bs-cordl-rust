@@ -48,6 +48,66 @@ impl std::ops::DerefMut for RecordingSettings {
 }
 #[cfg(feature = "RecordingSettings")]
 impl RecordingSettings {
+    pub fn New(
+        gameMode: *mut crate::System::String,
+        pack: *mut BeatmapLevelPack,
+        level: *mut BeatmapLevel,
+        difficulty: BeatmapDifficulty,
+        characteristic: *mut BeatmapCharacteristicSO,
+        runLevel: bool,
+        recordPerformance: bool,
+        recordingMode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
+        recordingPath: *mut crate::System::String,
+        cameraView: crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
+        addDateTimeSuffixToRecordingName: bool,
+        screenshotRecording: bool,
+        screenshotWidth: i32,
+        screenshotHeight: i32,
+        framerate: i32,
+        playbackScreenshots: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+        >,
+        practice: bool,
+        startSongTime: f32,
+        songSpeedMultiplier: f32,
+        overrideEnvironments: bool,
+        environmentType: crate::System::Nullable_1<EnvironmentType>,
+        environmentInfo: *mut EnvironmentInfoSO,
+        saveToOldFormat: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    gameMode,
+                    pack,
+                    level,
+                    difficulty,
+                    characteristic,
+                    runLevel,
+                    recordPerformance,
+                    recordingMode,
+                    recordingPath,
+                    cameraView,
+                    addDateTimeSuffixToRecordingName,
+                    screenshotRecording,
+                    screenshotWidth,
+                    screenshotHeight,
+                    framerate,
+                    playbackScreenshots,
+                    practice,
+                    startSongTime,
+                    songSpeedMultiplier,
+                    overrideEnvironments,
+                    environmentType,
+                    environmentInfo,
+                    saveToOldFormat,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -119,66 +179,6 @@ impl RecordingSettings {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        gameMode: *mut crate::System::String,
-        pack: *mut BeatmapLevelPack,
-        level: *mut BeatmapLevel,
-        difficulty: BeatmapDifficulty,
-        characteristic: *mut BeatmapCharacteristicSO,
-        runLevel: bool,
-        recordPerformance: bool,
-        recordingMode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
-        recordingPath: *mut crate::System::String,
-        cameraView: crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
-        addDateTimeSuffixToRecordingName: bool,
-        screenshotRecording: bool,
-        screenshotWidth: i32,
-        screenshotHeight: i32,
-        framerate: i32,
-        playbackScreenshots: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
-        >,
-        practice: bool,
-        startSongTime: f32,
-        songSpeedMultiplier: f32,
-        overrideEnvironments: bool,
-        environmentType: crate::System::Nullable_1<EnvironmentType>,
-        environmentInfo: *mut EnvironmentInfoSO,
-        saveToOldFormat: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    gameMode,
-                    pack,
-                    level,
-                    difficulty,
-                    characteristic,
-                    runLevel,
-                    recordPerformance,
-                    recordingMode,
-                    recordingPath,
-                    cameraView,
-                    addDateTimeSuffixToRecordingName,
-                    screenshotRecording,
-                    screenshotWidth,
-                    screenshotHeight,
-                    framerate,
-                    playbackScreenshots,
-                    practice,
-                    startSongTime,
-                    songSpeedMultiplier,
-                    overrideEnvironments,
-                    environmentType,
-                    environmentInfo,
-                    saveToOldFormat,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "RecordingSettings")]

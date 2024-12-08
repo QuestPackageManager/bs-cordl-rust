@@ -88,32 +88,12 @@ impl std::ops::DerefMut for SelectRegionViewController {
 }
 #[cfg(feature = "SelectRegionViewController")]
 impl SelectRegionViewController {
+    #[cfg(feature = "SelectRegionViewController+Region")]
+    pub type Region = crate::GlobalNamespace::SelectRegionViewController_Region;
     #[cfg(feature = "SelectRegionViewController+RegionToLocalizationKeyPair")]
     pub type RegionToLocalizationKeyPair = crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPair;
     #[cfg(feature = "SelectRegionViewController+__c")]
     pub type __c = crate::GlobalNamespace::SelectRegionViewController___c;
-    #[cfg(feature = "SelectRegionViewController+Region")]
-    pub type Region = crate::GlobalNamespace::SelectRegionViewController_Region;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _DidActivate_b__8_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<DidActivate>b__8_0", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -130,17 +110,53 @@ impl SelectRegionViewController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didPressContinueButtonEvent(
+    pub fn HandleRegionSelectionDropdownDidSelectCell(
         &mut self,
-        value: *mut crate::System::Action_1<
-            crate::GlobalNamespace::SelectRegionViewController_Region,
-        >,
+        dropdown: *mut crate::HMUI::DropdownWithTableView,
+        idx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didPressContinueButtonEvent", (value))?;
+            .invoke("HandleRegionSelectionDropdownDidSelectCell", (dropdown, idx))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _DidActivate_b__8_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<DidActivate>b__8_0", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_didPressContinueButtonEvent(
@@ -156,34 +172,18 @@ impl SelectRegionViewController {
             .invoke("add_didPressContinueButtonEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn OnDestroy(
+    pub fn remove_didPressContinueButtonEvent(
         &mut self,
+        value: *mut crate::System::Action_1<
+            crate::GlobalNamespace::SelectRegionViewController_Region,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
+            .invoke("remove_didPressContinueButtonEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn HandleRegionSelectionDropdownDidSelectCell(
-        &mut self,
-        dropdown: *mut crate::HMUI::DropdownWithTableView,
-        idx: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleRegionSelectionDropdownDidSelectCell", (dropdown, idx))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "SelectRegionViewController")]

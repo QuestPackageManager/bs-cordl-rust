@@ -20,6 +20,82 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::IntPtr {
 }
 #[cfg(feature = "System+IntPtr")]
 impl crate::System::IntPtr {
+    pub fn Equals(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsNull",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IEquatable_System_IntPtr__Equals(
+        &mut self,
+        other: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IEquatable<System.IntPtr>.Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Runtime_Serialization_ISerializable_GetObjectData(
+        &mut self,
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Runtime.Serialization.ISerializable.GetObjectData",
+            (info, context),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToInt32(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToInt32",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToInt64(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToInt64",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToPointer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToPointer",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn ToString_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -38,85 +114,6 @@ impl crate::System::IntPtr {
             self,
             "ToString",
             (format),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsNull",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToPointer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToPointer",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IEquatable_System_IntPtr__Equals(
-        &mut self,
-        other: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IEquatable<System.IntPtr>.Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToInt64(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToInt64",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToInt32(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToInt32",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Runtime_Serialization_ISerializable_GetObjectData(
-        &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Runtime.Serialization.ISerializable.GetObjectData",
-            (info, context),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_0(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i64_1(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -143,22 +140,25 @@ impl crate::System::IntPtr {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals(
+    pub fn _ctor_i32_0(
         &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (obj),
+            ".ctor",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn _ctor_i64_1(
+        &mut self,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
-            (),
+            ".ctor",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

@@ -26,6 +26,15 @@ for crate::System::Configuration::ConfigurationCollectionAttribute {
 }
 #[cfg(feature = "System+Configuration+ConfigurationCollectionAttribute")]
 impl crate::System::Configuration::ConfigurationCollectionAttribute {
+    pub fn New(
+        itemType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (itemType))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         itemType: *mut crate::System::Type,
@@ -36,15 +45,6 @@ impl crate::System::Configuration::ConfigurationCollectionAttribute {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (itemType))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        itemType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (itemType))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Configuration+ConfigurationCollectionAttribute")]

@@ -23,7 +23,7 @@ impl std::ops::DerefMut for StringBuilderExtension {
 }
 #[cfg(feature = "StringBuilderExtension")]
 impl StringBuilderExtension {
-    pub const kCharZero: char = "0";
+    pub const kCharZero: char = '0';
 }
 #[cfg(feature = "StringBuilderExtension")]
 impl quest_hook::libil2cpp::ObjectType for StringBuilderExtension {

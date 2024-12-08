@@ -27,16 +27,16 @@ for crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfInt32")]
+    pub type SubOvfInt32 = crate::GlobalNamespace::SubOvfInstruction_SubOvfInt32;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfInt16")]
+    pub type SubOvfInt16 = crate::GlobalNamespace::SubOvfInstruction_SubOvfInt16;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfInt64")]
     pub type SubOvfInt64 = crate::GlobalNamespace::SubOvfInstruction_SubOvfInt64;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt32"
     )]
     pub type SubOvfUInt32 = crate::GlobalNamespace::SubOvfInstruction_SubOvfUInt32;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfInt32")]
-    pub type SubOvfInt32 = crate::GlobalNamespace::SubOvfInstruction_SubOvfInt32;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfInt16")]
-    pub type SubOvfInt16 = crate::GlobalNamespace::SubOvfInstruction_SubOvfInt16;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt64"
     )]
@@ -45,6 +45,30 @@ impl crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
         feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt16"
     )]
     pub type SubOvfUInt16 = crate::GlobalNamespace::SubOvfInstruction_SubOvfUInt16;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ConsumedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_InstructionName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -61,30 +85,6 @@ impl crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_ConsumedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction")]

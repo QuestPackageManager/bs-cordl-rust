@@ -43,6 +43,13 @@ for crate::GlobalNamespace::MissionLevelGameplayManager_InitData {
 }
 #[cfg(feature = "MissionLevelGameplayManager+InitData")]
 impl crate::GlobalNamespace::MissionLevelGameplayManager_InitData {
+    pub fn New(failOn0Energy: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (failOn0Energy))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         failOn0Energy: bool,
@@ -53,13 +60,6 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager_InitData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (failOn0Energy))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(failOn0Energy: bool) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (failOn0Energy))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MissionLevelGameplayManager+InitData")]
@@ -110,12 +110,12 @@ impl std::ops::DerefMut for MissionLevelGameplayManager {
 }
 #[cfg(feature = "MissionLevelGameplayManager")]
 impl MissionLevelGameplayManager {
-    #[cfg(feature = "MissionLevelGameplayManager+GameState")]
-    pub type GameState = crate::GlobalNamespace::MissionLevelGameplayManager_GameState;
-    #[cfg(feature = "MissionLevelGameplayManager+InitData")]
-    pub type InitData = crate::GlobalNamespace::MissionLevelGameplayManager_InitData;
     #[cfg(feature = "MissionLevelGameplayManager+_Start_d__23")]
     pub type _Start_d__23 = crate::GlobalNamespace::MissionLevelGameplayManager__Start_d__23;
+    #[cfg(feature = "MissionLevelGameplayManager+InitData")]
+    pub type InitData = crate::GlobalNamespace::MissionLevelGameplayManager_InitData;
+    #[cfg(feature = "MissionLevelGameplayManager+GameState")]
+    pub type GameState = crate::GlobalNamespace::MissionLevelGameplayManager_GameState;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -124,38 +124,6 @@ impl MissionLevelGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_levelFinishedEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_levelFinishedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_levelFinishedEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_levelFinishedEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn HandleGameEnergyDidReach0(
@@ -168,25 +136,14 @@ impl MissionLevelGameplayManager {
             .invoke("HandleGameEnergyDidReach0", ())?;
         Ok(__cordl_ret)
     }
-    pub fn add_levelDidStartEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_levelDidStartEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandlePauseControllerDidResume(
+    pub fn HandleMissionObjectiveCheckersManagerObjectiveDidFail(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandlePauseControllerDidResume", ())?;
+            .invoke("HandleMissionObjectiveCheckersManagerObjectiveDidFail", ())?;
         Ok(__cordl_ret)
     }
     pub fn HandlePauseControllerCanPause(
@@ -200,36 +157,51 @@ impl MissionLevelGameplayManager {
             .invoke("HandlePauseControllerCanPause", (canPause))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleMissionObjectiveCheckersManagerObjectiveDidFail(
+    pub fn HandlePauseControllerDidPause(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleMissionObjectiveCheckersManagerObjectiveDidFail", ())?;
+            .invoke("HandlePauseControllerDidPause", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_levelDidStartEvent(
+    pub fn HandlePauseControllerDidResume(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_levelDidStartEvent", (value))?;
+            .invoke("HandlePauseControllerDidResume", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_levelWillStartIntroEvent(
+    pub fn HandleSongDidFinish(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_levelWillStartIntroEvent", (value))?;
+            .invoke("HandleSongDidFinish", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn Start(
@@ -242,7 +214,17 @@ impl MissionLevelGameplayManager {
             .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_levelFailedEvent(
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_levelDidStartEvent(
         &mut self,
         value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -250,7 +232,7 @@ impl MissionLevelGameplayManager {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_levelFailedEvent", (value))?;
+            .invoke("add_levelDidStartEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_levelFailedEvent(
@@ -264,14 +246,15 @@ impl MissionLevelGameplayManager {
             .invoke("add_levelFailedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn add_levelFinishedEvent(
         &mut self,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("add_levelFinishedEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_levelWillStartIntroEvent(
@@ -285,32 +268,49 @@ impl MissionLevelGameplayManager {
             .invoke("add_levelWillStartIntroEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn HandlePauseControllerDidPause(
+    pub fn remove_levelDidStartEvent(
         &mut self,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandlePauseControllerDidPause", ())?;
+            .invoke("remove_levelDidStartEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleSongDidFinish(
+    pub fn remove_levelFailedEvent(
         &mut self,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSongDidFinish", ())?;
+            .invoke("remove_levelFailedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn remove_levelFinishedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_levelFinishedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_levelWillStartIntroEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_levelWillStartIntroEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MissionLevelGameplayManager")]

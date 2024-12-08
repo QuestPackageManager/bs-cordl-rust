@@ -25,16 +25,6 @@ impl std::ops::DerefMut for crate::System::Security::AccessControl::Discretionar
 }
 #[cfg(feature = "System+Security+AccessControl+DiscretionaryAcl")]
 impl crate::System::Security::AccessControl::DiscretionaryAcl {
-    pub fn ApplyCanonicalSortToExplicitAces(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ApplyCanonicalSortToExplicitAces", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AddAccess(
         &mut self,
         accessType: crate::System::Security::AccessControl::AccessControlType,
@@ -53,6 +43,16 @@ impl crate::System::Security::AccessControl::DiscretionaryAcl {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn ApplyCanonicalSortToExplicitAces(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ApplyCanonicalSortToExplicitAces", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetAceInsertPosition(
         &mut self,
         aceQualifier: crate::System::Security::AccessControl::AceQualifier,
@@ -62,19 +62,6 @@ impl crate::System::Security::AccessControl::DiscretionaryAcl {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetAceInsertPosition", (aceQualifier))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        isContainer: bool,
-        isDS: bool,
-        capacity: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (isContainer, isDS, capacity))?;
         Ok(__cordl_ret)
     }
     pub fn IsAceMeaningless(
@@ -91,12 +78,25 @@ impl crate::System::Security::AccessControl::DiscretionaryAcl {
         isContainer: bool,
         isDS: bool,
         capacity: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (isContainer, isDS, capacity))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        isContainer: bool,
+        isDS: bool,
+        capacity: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (isContainer, isDS, capacity))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Security+AccessControl+DiscretionaryAcl")]

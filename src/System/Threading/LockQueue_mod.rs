@@ -26,23 +26,14 @@ impl std::ops::DerefMut for crate::System::Threading::LockQueue {
 }
 #[cfg(feature = "System+Threading+LockQueue")]
 impl crate::System::Threading::LockQueue {
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         rwlock: *mut crate::System::Threading::ReaderWriterLock,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (rwlock))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Wait(&mut self, timeout: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Wait", (timeout))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (rwlock))?;
+        Ok(__cordl_object)
     }
     pub fn Pulse(
         &mut self,
@@ -54,21 +45,30 @@ impl crate::System::Threading::LockQueue {
             .invoke("Pulse", ())?;
         Ok(__cordl_ret)
     }
+    pub fn Wait(&mut self, timeout: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Wait", (timeout))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        rwlock: *mut crate::System::Threading::ReaderWriterLock,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (rwlock))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsEmpty", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        rwlock: *mut crate::System::Threading::ReaderWriterLock,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (rwlock))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Threading+LockQueue")]

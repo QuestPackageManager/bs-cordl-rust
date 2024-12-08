@@ -88,13 +88,37 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::SupportedRenderingFea
 #[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures")]
 impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
     #[cfg(
-        feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes"
-    )]
-    pub type ReflectionProbeModes = crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeModes;
-    #[cfg(
         feature = "UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
     )]
     pub type LightmapMixedBakeModes = crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes;
+    #[cfg(
+        feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes"
+    )]
+    pub type ReflectionProbeModes = crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeModes;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_autoAmbientProbeBaking(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_autoAmbientProbeBaking", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_autoDefaultReflectionProbeBaking(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -103,33 +127,6 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_autoDefaultReflectionProbeBaking", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_lightmapsModes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LightmapsMode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::LightmapsMode = __cordl_object
-            .invoke("get_lightmapsModes", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_enlighten(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_enlighten", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_overridesLightProbeSystem(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_overridesLightProbeSystem", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_defaultMixedLightingModes(
@@ -144,14 +141,18 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             .invoke("get_defaultMixedLightingModes", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_enlighten(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_enlighten", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_enlightenLightmapper(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_enlightenLightmapper", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_lightmapBakeTypes(
@@ -164,18 +165,14 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             .invoke("get_lightmapBakeTypes", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_enlightenLightmapper(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_lightmapsModes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LightmapsMode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_enlightenLightmapper", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_autoAmbientProbeBaking(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_autoAmbientProbeBaking", ())?;
+        let __cordl_ret: crate::UnityEngine::LightmapsMode = __cordl_object
+            .invoke("get_lightmapsModes", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_mixedLightingModes(
@@ -190,19 +187,22 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             .invoke("get_mixedLightingModes", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_overridesLightProbeSystem(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_overridesLightProbeSystem", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_rendersUIOverlay(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_rendersUIOverlay", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures")]

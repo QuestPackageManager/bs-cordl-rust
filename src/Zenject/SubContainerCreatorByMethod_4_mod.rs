@@ -82,6 +82,23 @@ impl<
             .invoke("CreateSubContainer", (args, context))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        container: *mut crate::Zenject::DiContainer,
+        containerBindInfo: *mut crate::Zenject::SubContainerCreatorBindInfo,
+        installMethod: *mut crate::System::Action_5<
+            *mut crate::Zenject::DiContainer,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (container, containerBindInfo, installMethod))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         container: *mut crate::Zenject::DiContainer,
@@ -110,23 +127,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (container, containerBindInfo, installMethod))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        container: *mut crate::Zenject::DiContainer,
-        containerBindInfo: *mut crate::Zenject::SubContainerCreatorBindInfo,
-        installMethod: *mut crate::System::Action_5<
-            *mut crate::Zenject::DiContainer,
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (container, containerBindInfo, installMethod))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByMethod_4")]

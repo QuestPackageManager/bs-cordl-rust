@@ -49,36 +49,14 @@ impl PlatformLeaderboardViewController {
     pub type _Refresh_d__31 = crate::GlobalNamespace::PlatformLeaderboardViewController__Refresh_d__31;
     #[cfg(feature = "PlatformLeaderboardViewController+_RefreshDelayed_d__33")]
     pub type _RefreshDelayed_d__33 = crate::GlobalNamespace::PlatformLeaderboardViewController__RefreshDelayed_d__33;
-    pub fn SetData(
+    pub fn ClearContent(
         &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetData", (beatmapKey))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ScoreScopeToScoreScopeIndex(
-        &mut self,
-        scoresScope: crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("ScoreScopeToScoreScopeIndex", (scoresScope))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_leaderboardsModel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PlatformLeaderboardsModel> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut PlatformLeaderboardsModel = __cordl_object
-            .invoke("get_leaderboardsModel", ())?;
+            .invoke("ClearContent", ())?;
         Ok(__cordl_ret)
     }
     pub fn DidActivate(
@@ -97,17 +75,16 @@ impl PlatformLeaderboardViewController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn ScopeScopeIndexToScoreScope(
+    pub fn DidDeactivate(
         &mut self,
-        scoreScopeIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope,
-    > {
+        removedFromHierarchy: bool,
+        screenSystemDisabling: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope = __cordl_object
-            .invoke("ScopeScopeIndexToScoreScope", (scoreScopeIndex))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
         Ok(__cordl_ret)
     }
     pub fn HandleDidPressRefreshButton(
@@ -138,6 +115,16 @@ impl PlatformLeaderboardViewController {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn HandlePlatformLeaderboardsModelAllScoresDidUpload(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandlePlatformLeaderboardsModelAllScoresDidUpload", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn HandleScopeSegmentedControlDidSelectCell(
         &mut self,
         segmentedControl: *mut crate::HMUI::SegmentedControl,
@@ -153,56 +140,21 @@ impl PlatformLeaderboardViewController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HandlePlatformLeaderboardsModelAllScoresDidUpload(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandlePlatformLeaderboardsModelAllScoresDidUpload", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearContent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearContent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RefreshDelayed(
-        &mut self,
-        showLoadingIndicator: bool,
-        clear: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("RefreshDelayed", (showLoadingIndicator, clear))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RefreshLevelStats(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshLevelStats", ())?;
+            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn Refresh(
@@ -217,28 +169,6 @@ impl PlatformLeaderboardViewController {
             .invoke("Refresh", (showLoadingIndicator, clear))?;
         Ok(__cordl_ret)
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DidDeactivate(
-        &mut self,
-        removedFromHierarchy: bool,
-        screenSystemDisabling: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
-        Ok(__cordl_ret)
-    }
     pub fn RefreshAsync(
         &mut self,
         showLoadingIndicator: bool,
@@ -251,12 +181,82 @@ impl PlatformLeaderboardViewController {
             .invoke("RefreshAsync", (showLoadingIndicator, clear))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn RefreshDelayed(
+        &mut self,
+        showLoadingIndicator: bool,
+        clear: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("RefreshDelayed", (showLoadingIndicator, clear))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RefreshLevelStats(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RefreshLevelStats", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ScopeScopeIndexToScoreScope(
+        &mut self,
+        scoreScopeIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope = __cordl_object
+            .invoke("ScopeScopeIndexToScoreScope", (scoreScopeIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ScoreScopeToScoreScopeIndex(
+        &mut self,
+        scoresScope: crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("ScoreScopeToScoreScopeIndex", (scoresScope))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetData(
+        &mut self,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetData", (beatmapKey))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_leaderboardsModel(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut PlatformLeaderboardsModel> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut PlatformLeaderboardsModel = __cordl_object
+            .invoke("get_leaderboardsModel", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PlatformLeaderboardViewController")]

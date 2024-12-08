@@ -33,14 +33,14 @@ impl std::ops::DerefMut for crate::System::ComponentModel::AttributeCollection {
 impl crate::System::ComponentModel::AttributeCollection {
     #[cfg(feature = "System+ComponentModel+AttributeCollection+AttributeEntry")]
     pub type AttributeEntry = crate::System::ComponentModel::AttributeCollection_AttributeEntry;
-    pub fn System_Collections_IEnumerable_GetEnumerator(
+    pub fn Contains(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        attribute: *mut crate::System::Attribute,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("Contains", (attribute))?;
         Ok(__cordl_ret)
     }
     pub fn CopyTo(
@@ -55,14 +55,15 @@ impl crate::System::ComponentModel::AttributeCollection {
             .invoke("CopyTo", (array, index))?;
         Ok(__cordl_ret)
     }
-    pub fn Contains(
+    pub fn GetDefaultAttribute(
         &mut self,
-        attribute: *mut crate::System::Attribute,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        attributeType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Attribute> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Contains", (attribute))?;
+        let __cordl_ret: *mut crate::System::Attribute = __cordl_object
+            .invoke("GetDefaultAttribute", (attributeType))?;
         Ok(__cordl_ret)
     }
     pub fn GetEnumerator(
@@ -75,15 +76,55 @@ impl crate::System::ComponentModel::AttributeCollection {
             .invoke("GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetDefaultAttribute(
+    pub fn New(
+        attributes: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Attribute,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (attributes))?;
+        Ok(__cordl_object)
+    }
+    pub fn System_Collections_ICollection_get_Count(
         &mut self,
-        attributeType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Attribute> {
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Attribute = __cordl_object
-            .invoke("GetDefaultAttribute", (attributeType))?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("System.Collections.ICollection.get_Count", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_ICollection_get_IsSynchronized(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Collections.ICollection.get_IsSynchronized", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_ICollection_get_SyncRoot(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("System.Collections.ICollection.get_SyncRoot", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerable_GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -97,26 +138,6 @@ impl crate::System::ComponentModel::AttributeCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (attributes))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_ICollection_get_SyncRoot(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("System.Collections.ICollection.get_SyncRoot", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_ICollection_get_Count(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("System.Collections.ICollection.get_Count", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Attributes(
@@ -149,27 +170,6 @@ impl crate::System::ComponentModel::AttributeCollection {
         let __cordl_ret: *mut crate::System::Attribute = __cordl_object
             .invoke("get_Item", (attributeType))?;
         Ok(__cordl_ret)
-    }
-    pub fn System_Collections_ICollection_get_IsSynchronized(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Collections.ICollection.get_IsSynchronized", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        attributes: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Attribute,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (attributes))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+ComponentModel+AttributeCollection")]

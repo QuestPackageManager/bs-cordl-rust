@@ -28,6 +28,16 @@ for crate::System::Security::Cryptography::RSAPKCS1SignatureDescription {
 }
 #[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureDescription")]
 impl crate::System::Security::Cryptography::RSAPKCS1SignatureDescription {
+    pub fn New(
+        hashAlgorithm: *mut crate::System::String,
+        digestAlgorithm: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (hashAlgorithm, digestAlgorithm))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         hashAlgorithm: *mut crate::System::String,
@@ -39,16 +49,6 @@ impl crate::System::Security::Cryptography::RSAPKCS1SignatureDescription {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (hashAlgorithm, digestAlgorithm))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        hashAlgorithm: *mut crate::System::String,
-        digestAlgorithm: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (hashAlgorithm, digestAlgorithm))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureDescription")]

@@ -25,30 +25,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::CVRIOBuffer {
 }
 #[cfg(feature = "OVR+OpenVR+CVRIOBuffer")]
 impl crate::OVR::OpenVR::CVRIOBuffer {
-    pub fn _ctor(
-        &mut self,
-        pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pInterface))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Write(
-        &mut self,
-        ulBuffer: u64,
-        pSrc: crate::System::IntPtr,
-        unBytes: u32,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EIOBufferError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EIOBufferError = __cordl_object
-            .invoke("Write", (ulBuffer, pSrc, unBytes))?;
-        Ok(__cordl_ret)
-    }
     pub fn Close(
         &mut self,
         ulBuffer: u64,
@@ -59,6 +35,15 @@ impl crate::OVR::OpenVR::CVRIOBuffer {
         let __cordl_ret: crate::OVR::OpenVR::EIOBufferError = __cordl_object
             .invoke("Close", (ulBuffer))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        pInterface: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (pInterface))?;
+        Ok(__cordl_object)
     }
     pub fn Open(
         &mut self,
@@ -75,6 +60,16 @@ impl crate::OVR::OpenVR::CVRIOBuffer {
             .invoke("Open", (pchPath, mode, unElementSize, unElements, pulBuffer))?;
         Ok(__cordl_ret)
     }
+    pub fn PropertyContainer(
+        &mut self,
+        ulBuffer: u64,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u64 = __cordl_object.invoke("PropertyContainer", (ulBuffer))?;
+        Ok(__cordl_ret)
+    }
     pub fn Read(
         &mut self,
         ulBuffer: u64,
@@ -89,24 +84,29 @@ impl crate::OVR::OpenVR::CVRIOBuffer {
             .invoke("Read", (ulBuffer, pDst, unBytes, punRead))?;
         Ok(__cordl_ret)
     }
-    pub fn PropertyContainer(
+    pub fn Write(
         &mut self,
         ulBuffer: u64,
-    ) -> quest_hook::libil2cpp::Result<u64> {
+        pSrc: crate::System::IntPtr,
+        unBytes: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EIOBufferError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: u64 = __cordl_object.invoke("PropertyContainer", (ulBuffer))?;
+        let __cordl_ret: crate::OVR::OpenVR::EIOBufferError = __cordl_object
+            .invoke("Write", (ulBuffer, pSrc, unBytes))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (pInterface))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (pInterface))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRIOBuffer")]

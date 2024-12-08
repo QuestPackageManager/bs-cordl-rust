@@ -34,14 +34,14 @@ impl crate::OVRSimpleJSON::JSONNull {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Tag(
+    pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::OVRSimpleJSON::JSONNodeType> {
+    ) -> quest_hook::libil2cpp::Result<crate::OVRSimpleJSON::JSONNode_Enumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::OVRSimpleJSON::JSONNodeType = __cordl_object
-            .invoke("get_Tag", ())?;
+        let __cordl_ret: crate::OVRSimpleJSON::JSONNode_Enumerator = __cordl_object
+            .invoke("GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -50,6 +50,13 @@ impl crate::OVRSimpleJSON::JSONNull {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn WriteToStringBuilder(
         &mut self,
@@ -63,13 +70,6 @@ impl crate::OVRSimpleJSON::JSONNull {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteToStringBuilder", (aSB, aIndent, aIndentInc, aMode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsNull", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -89,14 +89,21 @@ impl crate::OVRSimpleJSON::JSONNull {
         let __cordl_ret: bool = __cordl_object.invoke("get_AsBool", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::OVRSimpleJSON::JSONNode_Enumerator> {
+    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::OVRSimpleJSON::JSONNode_Enumerator = __cordl_object
-            .invoke("GetEnumerator", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsNull", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Tag(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::OVRSimpleJSON::JSONNodeType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVRSimpleJSON::JSONNodeType = __cordl_object
+            .invoke("get_Tag", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Value(
@@ -107,17 +114,6 @@ impl crate::OVRSimpleJSON::JSONNull {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_Value", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Value(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Value", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_AsBool(
@@ -131,12 +127,16 @@ impl crate::OVRSimpleJSON::JSONNull {
             .invoke("set_AsBool", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_Value(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Value", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRSimpleJSON+JSONNull")]

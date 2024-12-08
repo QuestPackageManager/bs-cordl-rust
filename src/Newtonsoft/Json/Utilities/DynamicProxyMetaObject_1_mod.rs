@@ -32,39 +32,9 @@ impl<
     T: quest_hook::libil2cpp::Type,
 > crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1<T> {
     #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass3_0"
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass10_0"
     )]
-    pub type __c__DisplayClass3_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass3_0<
-        T,
-    >;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass12_0"
-    )]
-    pub type __c__DisplayClass12_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass12_0<
-        T,
-    >;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass8_0"
-    )]
-    pub type __c__DisplayClass8_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass8_0<
-        T,
-    >;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass14_0"
-    )]
-    pub type __c__DisplayClass14_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass14_0<
-        T,
-    >;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass13_0"
-    )]
-    pub type __c__DisplayClass13_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass13_0<
-        T,
-    >;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass9_0"
-    )]
-    pub type __c__DisplayClass9_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass9_0<
+    pub type __c__DisplayClass10_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass10_0<
         T,
     >;
     #[cfg(
@@ -74,11 +44,23 @@ impl<
         T,
     >;
     #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass10_0"
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass12_0"
     )]
-    pub type __c__DisplayClass10_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass10_0<
+    pub type __c__DisplayClass12_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass12_0<
         T,
     >;
+    #[cfg(
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass4_0"
+    )]
+    pub type __c__DisplayClass4_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass4_0<
+        T,
+    >;
+    #[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+Fallback")]
+    pub type Fallback = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
+        T,
+    >;
+    #[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c")]
+    pub type __c = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c<T>;
     #[cfg(
         feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass6_0"
     )]
@@ -86,9 +68,33 @@ impl<
         T,
     >;
     #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass4_0"
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass9_0"
     )]
-    pub type __c__DisplayClass4_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass4_0<
+    pub type __c__DisplayClass9_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass9_0<
+        T,
+    >;
+    #[cfg(
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass3_0"
+    )]
+    pub type __c__DisplayClass3_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass3_0<
+        T,
+    >;
+    #[cfg(
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass8_0"
+    )]
+    pub type __c__DisplayClass8_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass8_0<
+        T,
+    >;
+    #[cfg(
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass5_0"
+    )]
+    pub type __c__DisplayClass5_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass5_0<
+        T,
+    >;
+    #[cfg(
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass14_0"
+    )]
+    pub type __c__DisplayClass14_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass14_0<
         T,
     >;
     #[cfg(
@@ -103,21 +109,16 @@ impl<
     pub type __c__DisplayClass11_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass11_0<
         T,
     >;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c")]
-    pub type __c = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c<T>;
     #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass5_0"
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass13_0"
     )]
-    pub type __c__DisplayClass5_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass5_0<
+    pub type __c__DisplayClass13_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass13_0<
         T,
     >;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+Fallback")]
-    pub type Fallback = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
-        T,
-    >;
-    pub fn BindGetMember(
+    pub fn BindBinaryOperation(
         &mut self,
-        binder: *mut crate::System::Dynamic::GetMemberBinder,
+        binder: *mut crate::System::Dynamic::BinaryOperationBinder,
+        arg: *mut crate::System::Dynamic::DynamicMetaObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -127,7 +128,22 @@ impl<
             self,
         );
         let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("BindGetMember", (binder))?;
+            .invoke("BindBinaryOperation", (binder, arg))?;
+        Ok(__cordl_ret)
+    }
+    pub fn BindConvert(
+        &mut self,
+        binder: *mut crate::System::Dynamic::ConvertBinder,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
+            .invoke("BindConvert", (binder))?;
         Ok(__cordl_ret)
     }
     pub fn BindCreateInstance(
@@ -148,145 +164,12 @@ impl<
             .invoke("BindCreateInstance", (binder, args))?;
         Ok(__cordl_ret)
     }
-    pub fn BindUnaryOperation(
+    pub fn BindDeleteIndex(
         &mut self,
-        binder: *mut crate::System::Dynamic::UnaryOperationBinder,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("BindUnaryOperation", (binder))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        expression: *mut crate::System::Linq::Expressions::Expression,
-        value: T,
-        proxy: *mut crate::Newtonsoft::Json::Utilities::DynamicProxy_1<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (expression, value, proxy))?;
-        Ok(__cordl_ret)
-    }
-    pub fn BindBinaryOperation(
-        &mut self,
-        binder: *mut crate::System::Dynamic::BinaryOperationBinder,
-        arg: *mut crate::System::Dynamic::DynamicMetaObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("BindBinaryOperation", (binder, arg))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDynamicMemberNames(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
-        >,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
-        > = __cordl_object.invoke("GetDynamicMemberNames", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsOverridden(
-        &mut self,
-        method: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsOverridden", (method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRestrictions(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::BindingRestrictions>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Dynamic::BindingRestrictions = __cordl_object
-            .invoke("GetRestrictions", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn BindConvert(
-        &mut self,
-        binder: *mut crate::System::Dynamic::ConvertBinder,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("BindConvert", (binder))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CallMethodNoResult(
-        &mut self,
-        methodName: *mut crate::System::String,
-        binder: *mut crate::System::Dynamic::DynamicMetaObjectBinder,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Linq::Expressions::Expression,
-        >,
-        fallback: *mut crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
-            T,
-        >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("CallMethodNoResult", (methodName, binder, args, fallback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn BindSetIndex(
-        &mut self,
-        binder: *mut crate::System::Dynamic::SetIndexBinder,
+        binder: *mut crate::System::Dynamic::DeleteIndexBinder,
         indexes: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Dynamic::DynamicMetaObject,
         >,
-        value: *mut crate::System::Dynamic::DynamicMetaObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -296,25 +179,7 @@ impl<
             self,
         );
         let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("BindSetIndex", (binder, indexes, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn BindInvokeMember(
-        &mut self,
-        binder: *mut crate::System::Dynamic::InvokeMemberBinder,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Dynamic::DynamicMetaObject,
-        >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("BindInvokeMember", (binder, args))?;
+            .invoke("BindDeleteIndex", (binder, indexes))?;
         Ok(__cordl_ret)
     }
     pub fn BindDeleteMember(
@@ -350,19 +215,9 @@ impl<
             .invoke("BindGetIndex", (binder, indexes))?;
         Ok(__cordl_ret)
     }
-    pub fn CallMethodWithResult(
+    pub fn BindGetMember(
         &mut self,
-        methodName: *mut crate::System::String,
-        binder: *mut crate::System::Dynamic::DynamicMetaObjectBinder,
-        args: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Linq::Expressions::Expression,
-        >,
-        fallback: *mut crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
-            T,
-        >,
-        fallbackInvoke: *mut crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
-            T,
-        >,
+        binder: *mut crate::System::Dynamic::GetMemberBinder,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -372,10 +227,7 @@ impl<
             self,
         );
         let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke(
-                "CallMethodWithResult",
-                (methodName, binder, args, fallback, fallbackInvoke),
-            )?;
+            .invoke("BindGetMember", (binder))?;
         Ok(__cordl_ret)
     }
     pub fn BindInvoke(
@@ -396,10 +248,10 @@ impl<
             .invoke("BindInvoke", (binder, args))?;
         Ok(__cordl_ret)
     }
-    pub fn BindDeleteIndex(
+    pub fn BindInvokeMember(
         &mut self,
-        binder: *mut crate::System::Dynamic::DeleteIndexBinder,
-        indexes: *mut quest_hook::libil2cpp::Il2CppArray<
+        binder: *mut crate::System::Dynamic::InvokeMemberBinder,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Dynamic::DynamicMetaObject,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
@@ -411,19 +263,16 @@ impl<
             self,
         );
         let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("BindDeleteIndex", (binder, indexes))?;
+            .invoke("BindInvokeMember", (binder, args))?;
         Ok(__cordl_ret)
     }
-    pub fn CallMethodReturnLast(
+    pub fn BindSetIndex(
         &mut self,
-        methodName: *mut crate::System::String,
-        binder: *mut crate::System::Dynamic::DynamicMetaObjectBinder,
-        args: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Linq::Expressions::Expression,
+        binder: *mut crate::System::Dynamic::SetIndexBinder,
+        indexes: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Dynamic::DynamicMetaObject,
         >,
-        fallback: *mut crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
-            T,
-        >,
+        value: *mut crate::System::Dynamic::DynamicMetaObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -433,7 +282,38 @@ impl<
             self,
         );
         let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("CallMethodReturnLast", (methodName, binder, args, fallback))?;
+            .invoke("BindSetIndex", (binder, indexes, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn BindSetMember(
+        &mut self,
+        binder: *mut crate::System::Dynamic::SetMemberBinder,
+        value: *mut crate::System::Dynamic::DynamicMetaObject,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
+            .invoke("BindSetMember", (binder, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn BindUnaryOperation(
+        &mut self,
+        binder: *mut crate::System::Dynamic::UnaryOperationBinder,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
+            .invoke("BindUnaryOperation", (binder))?;
         Ok(__cordl_ret)
     }
     pub fn BuildCallMethodWithResult(
@@ -462,10 +342,16 @@ impl<
             )?;
         Ok(__cordl_ret)
     }
-    pub fn BindSetMember(
+    pub fn CallMethodNoResult(
         &mut self,
-        binder: *mut crate::System::Dynamic::SetMemberBinder,
-        value: *mut crate::System::Dynamic::DynamicMetaObject,
+        methodName: *mut crate::System::String,
+        binder: *mut crate::System::Dynamic::DynamicMetaObjectBinder,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Linq::Expressions::Expression,
+        >,
+        fallback: *mut crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
+            T,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -475,19 +361,133 @@ impl<
             self,
         );
         let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("BindSetMember", (binder, value))?;
+            .invoke("CallMethodNoResult", (methodName, binder, args, fallback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CallMethodReturnLast(
+        &mut self,
+        methodName: *mut crate::System::String,
+        binder: *mut crate::System::Dynamic::DynamicMetaObjectBinder,
+        args: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::Linq::Expressions::Expression,
+        >,
+        fallback: *mut crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
+            T,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
+            .invoke("CallMethodReturnLast", (methodName, binder, args, fallback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CallMethodWithResult(
+        &mut self,
+        methodName: *mut crate::System::String,
+        binder: *mut crate::System::Dynamic::DynamicMetaObjectBinder,
+        args: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::Linq::Expressions::Expression,
+        >,
+        fallback: *mut crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
+            T,
+        >,
+        fallbackInvoke: *mut crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
+            T,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
+            .invoke(
+                "CallMethodWithResult",
+                (methodName, binder, args, fallback, fallbackInvoke),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDynamicMemberNames(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::String,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::System::String,
+        > = __cordl_object.invoke("GetDynamicMemberNames", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetRestrictions(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::BindingRestrictions>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Dynamic::BindingRestrictions = __cordl_object
+            .invoke("GetRestrictions", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsOverridden(
+        &mut self,
+        method: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsOverridden", (method))?;
         Ok(__cordl_ret)
     }
     pub fn New(
         expression: *mut crate::System::Linq::Expressions::Expression,
         value: T,
         proxy: *mut crate::Newtonsoft::Json::Utilities::DynamicProxy_1<T>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (expression, value, proxy))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        expression: *mut crate::System::Linq::Expressions::Expression,
+        value: T,
+        proxy: *mut crate::Newtonsoft::Json::Utilities::DynamicProxy_1<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (expression, value, proxy))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1")]
@@ -532,52 +532,6 @@ for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<T> {
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        errorSuggestion: *mut crate::System::Dynamic::DynamicMetaObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("Invoke", (errorSuggestion))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         errorSuggestion: *mut crate::System::Dynamic::DynamicMetaObject,
@@ -595,15 +549,61 @@ impl<
             .invoke("BeginInvoke", (errorSuggestion, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        errorSuggestion: *mut crate::System::Dynamic::DynamicMetaObject,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
+            .invoke("Invoke", (errorSuggestion))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+Fallback")]
@@ -648,21 +648,6 @@ for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_GetBinderAdapte
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_GetBinderAdapter<T> {
-    pub fn _ctor(
-        &mut self,
-        binder: *mut crate::System::Dynamic::InvokeMemberBinder,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (binder))?;
-        Ok(__cordl_ret)
-    }
     pub fn FallbackGetMember(
         &mut self,
         target: *mut crate::System::Dynamic::DynamicMetaObject,
@@ -681,12 +666,27 @@ impl<
     }
     pub fn New(
         binder: *mut crate::System::Dynamic::InvokeMemberBinder,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (binder))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        binder: *mut crate::System::Dynamic::InvokeMemberBinder,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (binder))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+GetBinderAdapter")]

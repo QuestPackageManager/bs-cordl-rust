@@ -26,13 +26,6 @@ impl std::ops::DerefMut for crate::System::Dynamic::DeleteMemberBinder {
 }
 #[cfg(feature = "System+Dynamic+DeleteMemberBinder")]
 impl crate::System::Dynamic::DeleteMemberBinder {
-    pub fn get_IgnoreCase(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IgnoreCase", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Bind(
         &mut self,
         target: *mut crate::System::Dynamic::DynamicMetaObject,
@@ -68,6 +61,13 @@ impl crate::System::Dynamic::DeleteMemberBinder {
         );
         let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
             .invoke("FallbackDeleteMember", (target, errorSuggestion))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IgnoreCase(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IgnoreCase", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Name(

@@ -52,24 +52,19 @@ impl std::ops::DerefMut for AchievementsEvaluationHandler {
 }
 #[cfg(feature = "AchievementsEvaluationHandler")]
 impl AchievementsEvaluationHandler {
-    pub fn _ctor(
+    pub fn HandleCampaignOverallStatsDataDidUpdate(
         &mut self,
+        missionCompletionResults: *mut MissionCompletionResults,
+        missionNode: *mut IMissionNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
+            .invoke(
+                "HandleCampaignOverallStatsDataDidUpdate",
+                (missionCompletionResults, missionNode),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn HandlePartyFreePlayOverallStatsDataDidUpdate(
@@ -87,6 +82,38 @@ impl AchievementsEvaluationHandler {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn HandleSoloFreePlayOverallStatsDataDidUpdate(
+        &mut self,
+        levelCompletionResults: *mut LevelCompletionResults,
+        beatmapDifficulty: BeatmapDifficulty,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleSoloFreePlayOverallStatsDataDidUpdate",
+                (levelCompletionResults, beatmapDifficulty),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn ProcessLevelFinishData(
         &mut self,
         beatmapDifficulty: BeatmapDifficulty,
@@ -98,31 +125,6 @@ impl AchievementsEvaluationHandler {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 "ProcessLevelFinishData",
-                (beatmapDifficulty, levelCompletionResults),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessSoloFreePlayLevelFinishData(
-        &mut self,
-        beatmapDifficulty: BeatmapDifficulty,
-        levelCompletionResults: *mut LevelCompletionResults,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "ProcessSoloFreePlayLevelFinishData",
                 (beatmapDifficulty, levelCompletionResults),
             )?;
         Ok(__cordl_ret)
@@ -142,42 +144,40 @@ impl AchievementsEvaluationHandler {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HandleSoloFreePlayOverallStatsDataDidUpdate(
+    pub fn ProcessSoloFreePlayLevelFinishData(
         &mut self,
-        levelCompletionResults: *mut LevelCompletionResults,
         beatmapDifficulty: BeatmapDifficulty,
+        levelCompletionResults: *mut LevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "HandleSoloFreePlayOverallStatsDataDidUpdate",
-                (levelCompletionResults, beatmapDifficulty),
+                "ProcessSoloFreePlayLevelFinishData",
+                (beatmapDifficulty, levelCompletionResults),
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HandleCampaignOverallStatsDataDidUpdate(
+    pub fn Start(
         &mut self,
-        missionCompletionResults: *mut MissionCompletionResults,
-        missionNode: *mut IMissionNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleCampaignOverallStatsDataDidUpdate",
-                (missionCompletionResults, missionNode),
-            )?;
+            .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "AchievementsEvaluationHandler")]

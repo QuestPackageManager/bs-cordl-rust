@@ -26,6 +26,16 @@ for crate::System::Runtime::CompilerServices::IAsyncStateMachine {
 }
 #[cfg(feature = "System+Runtime+CompilerServices+IAsyncStateMachine")]
 impl crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+    pub fn MoveNext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MoveNext", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn SetStateMachine(
         &mut self,
         stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
@@ -35,16 +45,6 @@ impl crate::System::Runtime::CompilerServices::IAsyncStateMachine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetStateMachine", (stateMachine))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveNext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveNext", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

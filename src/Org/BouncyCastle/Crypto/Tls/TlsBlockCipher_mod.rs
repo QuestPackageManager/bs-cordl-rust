@@ -32,19 +32,30 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsBlockCiphe
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsBlockCipher")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsBlockCipher {
-    pub fn EncodePlaintext(
+    pub fn CheckPaddingConstantTime(
         &mut self,
-        seqNo: i64,
-        _cordl_type: u8,
-        plaintext: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
+        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        off: i32,
         len: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        blockSize: i32,
+        macSize: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("EncodePlaintext", (seqNo, _cordl_type, plaintext, offset, len))?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("CheckPaddingConstantTime", (buf, off, len, blockSize, macSize))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ChooseExtraPadBlocks(
+        &mut self,
+        r: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        max: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("ChooseExtraPadBlocks", (r, max))?;
         Ok(__cordl_ret)
     }
     pub fn DecodeCiphertext(
@@ -62,11 +73,19 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsBlockCipher {
             .invoke("DecodeCiphertext", (seqNo, _cordl_type, ciphertext, offset, len))?;
         Ok(__cordl_ret)
     }
-    pub fn LowestBitSet(&mut self, x: i32) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn EncodePlaintext(
+        &mut self,
+        seqNo: i64,
+        _cordl_type: u8,
+        plaintext: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("LowestBitSet", (x))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("EncodePlaintext", (seqNo, _cordl_type, plaintext, offset, len))?;
         Ok(__cordl_ret)
     }
     pub fn GetPlaintextLimit(
@@ -80,29 +99,36 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsBlockCipher {
             .invoke("GetPlaintextLimit", (ciphertextLimit))?;
         Ok(__cordl_ret)
     }
-    pub fn get_WriteMac(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::TlsMac,
-    > {
+    pub fn LowestBitSet(&mut self, x: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsMac = __cordl_object
-            .invoke("get_WriteMac", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("LowestBitSet", (x))?;
         Ok(__cordl_ret)
     }
-    pub fn get_ReadMac(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::TlsMac,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsMac = __cordl_object
-            .invoke("get_ReadMac", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+        clientWriteCipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
+        serverWriteCipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
+        clientWriteDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+        serverWriteDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+        cipherKeySize: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    context,
+                    clientWriteCipher,
+                    serverWriteCipher,
+                    clientWriteDigest,
+                    serverWriteDigest,
+                    cipherKeySize,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -130,55 +156,29 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsBlockCipher {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn ChooseExtraPadBlocks(
+    pub fn get_ReadMac(
         &mut self,
-        r: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-        max: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Tls::TlsMac,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("ChooseExtraPadBlocks", (r, max))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsMac = __cordl_object
+            .invoke("get_ReadMac", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CheckPaddingConstantTime(
+    pub fn get_WriteMac(
         &mut self,
-        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        off: i32,
-        len: i32,
-        blockSize: i32,
-        macSize: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Tls::TlsMac,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("CheckPaddingConstantTime", (buf, off, len, blockSize, macSize))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsMac = __cordl_object
+            .invoke("get_WriteMac", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-        clientWriteCipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-        serverWriteCipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-        clientWriteDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        serverWriteDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        cipherKeySize: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    context,
-                    clientWriteCipher,
-                    serverWriteCipher,
-                    clientWriteDigest,
-                    serverWriteDigest,
-                    cipherKeySize,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsBlockCipher")]

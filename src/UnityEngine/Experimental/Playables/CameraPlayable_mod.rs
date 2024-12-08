@@ -23,16 +23,6 @@ for crate::UnityEngine::Experimental::Playables::CameraPlayable {
 }
 #[cfg(feature = "UnityEngine+Experimental+Playables+CameraPlayable")]
 impl crate::UnityEngine::Experimental::Playables::CameraPlayable {
-    pub fn GetHandle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHandle",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals(
         &mut self,
         other: crate::UnityEngine::Experimental::Playables::CameraPlayable,
@@ -41,6 +31,16 @@ impl crate::UnityEngine::Experimental::Playables::CameraPlayable {
             self,
             "Equals",
             (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHandle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHandle",
+            (),
         )?;
         Ok(__cordl_ret)
     }

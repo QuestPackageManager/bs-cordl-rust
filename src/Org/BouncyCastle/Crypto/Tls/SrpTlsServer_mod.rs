@@ -27,60 +27,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::SrpTlsServer 
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SrpTlsServer")]
 impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsServer {
-    pub fn GetCredentials(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials = __cordl_object
-            .invoke("GetCredentials", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSelectedCipherSuite(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetSelectedCipherSuite", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRsaSignerCredentials(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials = __cordl_object
-            .invoke("GetRsaSignerCredentials", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessClientExtensions(
-        &mut self,
-        clientExtensions: *mut crate::System::Collections::IDictionary,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessClientExtensions", (clientExtensions))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetKeyExchange(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::TlsKeyExchange,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsKeyExchange = __cordl_object
-            .invoke("GetKeyExchange", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateSrpKeyExchange(
         &mut self,
         keyExchange: i32,
@@ -92,6 +38,28 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsServer {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsKeyExchange = __cordl_object
             .invoke("CreateSrpKeyExchange", (keyExchange))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetCipherSuites(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
+            .invoke("GetCipherSuites", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetCredentials(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials = __cordl_object
+            .invoke("GetCredentials", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetDsaSignerCredentials(
@@ -106,25 +74,65 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsServer {
             .invoke("GetDsaSignerCredentials", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetCipherSuites(
+    pub fn GetKeyExchange(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Tls::TlsKeyExchange,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
-            .invoke("GetCipherSuites", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsKeyExchange = __cordl_object
+            .invoke("GetKeyExchange", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_TlsSrpIdentityManager0(
+    pub fn GetRsaSignerCredentials(
         &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials = __cordl_object
+            .invoke("GetRsaSignerCredentials", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSelectedCipherSuite(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetSelectedCipherSuite", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_TlsCipherFactory_TlsSrpIdentityManager1(
+        cipherFactory: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
         srpIdentityManager: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (cipherFactory, srpIdentityManager))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_TlsSrpIdentityManager0(
+        srpIdentityManager: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (srpIdentityManager))?;
+        Ok(__cordl_object)
+    }
+    pub fn ProcessClientExtensions(
+        &mut self,
+        clientExtensions: *mut crate::System::Collections::IDictionary,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (srpIdentityManager))?;
+            .invoke("ProcessClientExtensions", (clientExtensions))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_TlsCipherFactory_TlsSrpIdentityManager1(
@@ -139,24 +147,16 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsServer {
             .invoke(".ctor", (cipherFactory, srpIdentityManager))?;
         Ok(__cordl_ret)
     }
-    pub fn New_TlsSrpIdentityManager0(
+    pub fn _ctor_TlsSrpIdentityManager0(
+        &mut self,
         srpIdentityManager: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (srpIdentityManager))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_TlsCipherFactory_TlsSrpIdentityManager1(
-        cipherFactory: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
-        srpIdentityManager: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (cipherFactory, srpIdentityManager))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (srpIdentityManager))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SrpTlsServer")]

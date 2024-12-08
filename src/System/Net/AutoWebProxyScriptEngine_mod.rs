@@ -24,20 +24,6 @@ impl std::ops::DerefMut for crate::System::Net::AutoWebProxyScriptEngine {
 }
 #[cfg(feature = "System+Net+AutoWebProxyScriptEngine")]
 impl crate::System::Net::AutoWebProxyScriptEngine {
-    pub fn GetProxies_Uri_ByRefMut0(
-        &mut self,
-        destination: *mut crate::System::Uri,
-        proxyList: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Collections::Generic::IList_1<*mut crate::System::String>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("GetProxies", (destination, proxyList))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetProxies_ByRefMut1(
         &mut self,
         destination: *mut crate::System::Uri,
@@ -51,6 +37,20 @@ impl crate::System::Net::AutoWebProxyScriptEngine {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("GetProxies", (destination, proxyList, syncStatus))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetProxies_Uri_ByRefMut0(
+        &mut self,
+        destination: *mut crate::System::Uri,
+        proxyList: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::IList_1<*mut crate::System::String>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("GetProxies", (destination, proxyList))?;
         Ok(__cordl_ret)
     }
 }

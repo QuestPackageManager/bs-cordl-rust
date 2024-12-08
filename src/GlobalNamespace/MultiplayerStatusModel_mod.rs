@@ -28,6 +28,13 @@ for crate::GlobalNamespace::MultiplayerStatusModel_MultiplayerStatusDataFB {
 }
 #[cfg(feature = "MultiplayerStatusModel+MultiplayerStatusDataFB")]
 impl crate::GlobalNamespace::MultiplayerStatusModel_MultiplayerStatusDataFB {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -37,13 +44,6 @@ impl crate::GlobalNamespace::MultiplayerStatusModel_MultiplayerStatusDataFB {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MultiplayerStatusModel+MultiplayerStatusDataFB")]
@@ -91,21 +91,18 @@ impl MultiplayerStatusModel {
     pub type MultiplayerStatusDataFB = crate::GlobalNamespace::MultiplayerStatusModel_MultiplayerStatusDataFB;
     #[cfg(feature = "MultiplayerStatusModel+_GetMultiplayerStatusAsyncInternal_d__9")]
     pub type _GetMultiplayerStatusAsyncInternal_d__9 = crate::GlobalNamespace::MultiplayerStatusModel__GetMultiplayerStatusAsyncInternal_d__9;
-    pub fn StartRequest(
+    pub fn GetMultiplayerStatusAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<*mut MultiplayerStatusData>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartRequest", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsAvailabilityTaskValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsAvailabilityTaskValid", ())?;
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut MultiplayerStatusData,
+        > = __cordl_object.invoke("GetMultiplayerStatusAsync", (cancellationToken))?;
         Ok(__cordl_ret)
     }
     pub fn GetMultiplayerStatusAsyncInternal(
@@ -131,18 +128,28 @@ impl MultiplayerStatusModel {
             .invoke("Init", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetMultiplayerStatusAsync(
-        &mut self,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut MultiplayerStatusData>,
-    > {
+    pub fn IsAvailabilityTaskValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut MultiplayerStatusData,
-        > = __cordl_object.invoke("GetMultiplayerStatusAsync", (cancellationToken))?;
+        let __cordl_ret: bool = __cordl_object.invoke("IsAvailabilityTaskValid", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn StartRequest(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartRequest", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -154,13 +161,6 @@ impl MultiplayerStatusModel {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MultiplayerStatusModel")]

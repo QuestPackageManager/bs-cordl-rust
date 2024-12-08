@@ -27,25 +27,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::UI::Colo
 }
 #[cfg(feature = "UnityEngine+UI+ColorBlock")]
 impl crate::UnityEngine::UI::ColorBlock {
-    pub fn set_colorMultiplier(
+    pub fn Equals_ColorBlock1(
         &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::UI::ColorBlock,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_colorMultiplier",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_normalColor(
-        &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_normalColor",
-            (value),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -60,17 +49,6 @@ impl crate::UnityEngine::UI::ColorBlock {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_ColorBlock1(
-        &mut self,
-        other: crate::UnityEngine::UI::ColorBlock,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -79,23 +57,20 @@ impl crate::UnityEngine::UI::ColorBlock {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_fadeDuration(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_colorMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_fadeDuration",
-            (value),
+            "get_colorMultiplier",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_normalColor(
+    pub fn get_disabledColor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
         let __cordl_ret: crate::UnityEngine::Color = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_normalColor",
+            "get_disabledColor",
             (),
         )?;
         Ok(__cordl_ret)
@@ -118,13 +93,43 @@ impl crate::UnityEngine::UI::ColorBlock {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_pressedColor(
+    pub fn get_normalColor(
         &mut self,
-        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_normalColor",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_pressedColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_pressedColor",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_selectedColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_selectedColor",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_colorMultiplier(
+        &mut self,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_pressedColor",
+            "set_colorMultiplier",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -140,6 +145,17 @@ impl crate::UnityEngine::UI::ColorBlock {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn set_fadeDuration(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_fadeDuration",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_highlightedColor(
         &mut self,
         value: crate::UnityEngine::Color,
@@ -151,41 +167,25 @@ impl crate::UnityEngine::UI::ColorBlock {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_selectedColor(
+    pub fn set_normalColor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_ret: crate::UnityEngine::Color = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_selectedColor",
-            (),
+            "set_normalColor",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_pressedColor(
+    pub fn set_pressedColor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_ret: crate::UnityEngine::Color = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_pressedColor",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_disabledColor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_ret: crate::UnityEngine::Color = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_disabledColor",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_colorMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_colorMultiplier",
-            (),
+            "set_pressedColor",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

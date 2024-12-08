@@ -28,6 +28,13 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Models::LinkedAccountList {
 }
 #[cfg(feature = "Oculus+Platform+Models+LinkedAccountList")]
 impl crate::Oculus::Platform::Models::LinkedAccountList {
+    pub fn New(a: crate::System::IntPtr) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (a))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         a: crate::System::IntPtr,
@@ -38,15 +45,6 @@ impl crate::Oculus::Platform::Models::LinkedAccountList {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (a))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        a: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (a))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Oculus+Platform+Models+LinkedAccountList")]

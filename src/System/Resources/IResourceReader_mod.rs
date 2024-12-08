@@ -24,6 +24,16 @@ impl std::ops::DerefMut for crate::System::Resources::IResourceReader {
 }
 #[cfg(feature = "System+Resources+IResourceReader")]
 impl crate::System::Resources::IResourceReader {
+    pub fn Close(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Close", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -34,16 +44,6 @@ impl crate::System::Resources::IResourceReader {
         );
         let __cordl_ret: *mut crate::System::Collections::IDictionaryEnumerator = __cordl_object
             .invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Close(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

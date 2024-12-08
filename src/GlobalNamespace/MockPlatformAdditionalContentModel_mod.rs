@@ -35,14 +35,6 @@ impl std::ops::DerefMut for MockPlatformAdditionalContentModel {
 #[cfg(feature = "MockPlatformAdditionalContentModel")]
 impl MockPlatformAdditionalContentModel {
     #[cfg(
-        feature = "MockPlatformAdditionalContentModel+_GetPackEntitlementStatusInternalAsync_d__7"
-    )]
-    pub type _GetPackEntitlementStatusInternalAsync_d__7 = crate::GlobalNamespace::MockPlatformAdditionalContentModel__GetPackEntitlementStatusInternalAsync_d__7;
-    #[cfg(
-        feature = "MockPlatformAdditionalContentModel+_GetLevelEntitlementStatusInternalAsync_d__6"
-    )]
-    pub type _GetLevelEntitlementStatusInternalAsync_d__6 = crate::GlobalNamespace::MockPlatformAdditionalContentModel__GetLevelEntitlementStatusInternalAsync_d__6;
-    #[cfg(
         feature = "MockPlatformAdditionalContentModel+_IsPackBetterBuyThanLevelAsync_d__9"
     )]
     pub type _IsPackBetterBuyThanLevelAsync_d__9 = crate::GlobalNamespace::MockPlatformAdditionalContentModel__IsPackBetterBuyThanLevelAsync_d__9;
@@ -54,6 +46,25 @@ impl MockPlatformAdditionalContentModel {
         feature = "MockPlatformAdditionalContentModel+_OpenLevelProductStoreAsync_d__10"
     )]
     pub type _OpenLevelProductStoreAsync_d__10 = crate::GlobalNamespace::MockPlatformAdditionalContentModel__OpenLevelProductStoreAsync_d__10;
+    #[cfg(
+        feature = "MockPlatformAdditionalContentModel+_GetLevelEntitlementStatusInternalAsync_d__6"
+    )]
+    pub type _GetLevelEntitlementStatusInternalAsync_d__6 = crate::GlobalNamespace::MockPlatformAdditionalContentModel__GetLevelEntitlementStatusInternalAsync_d__6;
+    #[cfg(
+        feature = "MockPlatformAdditionalContentModel+_GetPackEntitlementStatusInternalAsync_d__7"
+    )]
+    pub type _GetPackEntitlementStatusInternalAsync_d__7 = crate::GlobalNamespace::MockPlatformAdditionalContentModel__GetPackEntitlementStatusInternalAsync_d__7;
+    pub fn BuyLevel(
+        &mut self,
+        levelId: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BuyLevel", (levelId))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetLevelDataVersionInternalAsync(
         &mut self,
         levelId: *mut crate::System::String,
@@ -67,85 +78,6 @@ impl MockPlatformAdditionalContentModel {
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
             BeatmapLevelDataVersion,
         > = __cordl_object.invoke("GetLevelDataVersionInternalAsync", (levelId, token))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Wait(
-        &mut self,
-        token: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("Wait", (token))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPackEntitlementStatusInternalAsync(
-        &mut self,
-        levelPackId: *mut crate::System::String,
-        token: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<EntitlementStatus>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            EntitlementStatus,
-        > = __cordl_object
-            .invoke("GetPackEntitlementStatusInternalAsync", (levelPackId, token))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsPackBetterBuyThanLevelAsync(
-        &mut self,
-        levelPackId: *mut crate::System::String,
-        token: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<IsPackBetterBuyThanLevelResult>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            IsPackBetterBuyThanLevelResult,
-        > = __cordl_object
-            .invoke("IsPackBetterBuyThanLevelAsync", (levelPackId, token))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InvalidateDataInternal(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InvalidateDataInternal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn BuyLevel(
-        &mut self,
-        levelId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BuyLevel", (levelId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OpenLevelProductStoreAsync(
-        &mut self,
-        levelId: *mut crate::System::String,
-        token: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<OpenProductStoreResult>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            OpenProductStoreResult,
-        > = __cordl_object.invoke("OpenLevelProductStoreAsync", (levelId, token))?;
         Ok(__cordl_ret)
     }
     pub fn GetLevelEntitlementStatusInternalAsync(
@@ -164,16 +96,56 @@ impl MockPlatformAdditionalContentModel {
             .invoke("GetLevelEntitlementStatusInternalAsync", (levelId, token))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn GetPackEntitlementStatusInternalAsync(
         &mut self,
-        initialData: *mut MockPlatformAdditionalContentModelInitialDataSO,
+        levelPackId: *mut crate::System::String,
+        token: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<EntitlementStatus>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            EntitlementStatus,
+        > = __cordl_object
+            .invoke("GetPackEntitlementStatusInternalAsync", (levelPackId, token))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InvalidateDataInternal(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (initialData))?;
+            .invoke("InvalidateDataInternal", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn IsPackBetterBuyThanLevelAsync(
+        &mut self,
+        levelPackId: *mut crate::System::String,
+        token: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<IsPackBetterBuyThanLevelResult>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            IsPackBetterBuyThanLevelResult,
+        > = __cordl_object
+            .invoke("IsPackBetterBuyThanLevelAsync", (levelPackId, token))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        initialData: *mut MockPlatformAdditionalContentModelInitialDataSO,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (initialData))?;
+        Ok(__cordl_object)
     }
     pub fn OpenLevelPackProductStoreAsync(
         &mut self,
@@ -191,14 +163,42 @@ impl MockPlatformAdditionalContentModel {
             .invoke("OpenLevelPackProductStoreAsync", (levelPackId, token))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn OpenLevelProductStoreAsync(
+        &mut self,
+        levelId: *mut crate::System::String,
+        token: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<OpenProductStoreResult>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            OpenProductStoreResult,
+        > = __cordl_object.invoke("OpenLevelProductStoreAsync", (levelId, token))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Wait(
+        &mut self,
+        token: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("Wait", (token))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
         initialData: *mut MockPlatformAdditionalContentModelInitialDataSO,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (initialData))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (initialData))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MockPlatformAdditionalContentModel")]

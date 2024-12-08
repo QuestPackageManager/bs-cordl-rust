@@ -30,12 +30,19 @@ impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::XPathParser_ParamIn
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
 impl crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
-    pub fn get_Minargs(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Minargs", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        ftype: crate::MS::Internal::Xml::XPath::Function_FunctionType,
+        minargs: i32,
+        maxargs: i32,
+        argTypes: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Xml::XPath::XPathResultType,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ftype, minargs, maxargs, argTypes))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -53,18 +60,6 @@ impl crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
             .invoke(".ctor", (ftype, minargs, maxargs, argTypes))?;
         Ok(__cordl_ret)
     }
-    pub fn get_FType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::MS::Internal::Xml::XPath::Function_FunctionType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::MS::Internal::Xml::XPath::Function_FunctionType = __cordl_object
-            .invoke("get_FType", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_ArgTypes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -80,6 +75,18 @@ impl crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
         > = __cordl_object.invoke("get_ArgTypes", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_FType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::MS::Internal::Xml::XPath::Function_FunctionType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::MS::Internal::Xml::XPath::Function_FunctionType = __cordl_object
+            .invoke("get_FType", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Maxargs(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -87,19 +94,12 @@ impl crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
         let __cordl_ret: i32 = __cordl_object.invoke("get_Maxargs", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        ftype: crate::MS::Internal::Xml::XPath::Function_FunctionType,
-        minargs: i32,
-        maxargs: i32,
-        argTypes: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Xml::XPath::XPathResultType,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ftype, minargs, maxargs, argTypes))?;
-        Ok(__cordl_object)
+    pub fn get_Minargs(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Minargs", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
@@ -142,170 +142,15 @@ impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::XPathParser {
 impl crate::MS::Internal::Xml::XPath::XPathParser {
     #[cfg(feature = "MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
     pub type ParamInfo = crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo;
-    pub fn ParseUnaryExpr(
+    pub fn CheckNodeSet(
         &mut self,
-        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
-            .invoke("ParseUnaryExpr", (qyInput))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParsePrimaryExpr(
-        &mut self,
-        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
-            .invoke("ParsePrimaryExpr", (qyInput))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseRelationalExpr(
-        &mut self,
-        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
-            .invoke("ParseRelationalExpr", (qyInput))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseOrExpr(
-        &mut self,
-        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
-            .invoke("ParseOrExpr", (qyInput))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        scanner: *mut crate::MS::Internal::Xml::XPath::XPathScanner,
+        t: crate::System::Xml::XPath::XPathResultType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (scanner))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseRelativeLocationPath(
-        &mut self,
-        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
-            .invoke("ParseRelativeLocationPath", (qyInput))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseFilterExpr(
-        &mut self,
-        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
-            .invoke("ParseFilterExpr", (qyInput))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseLocationPath(
-        &mut self,
-        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
-            .invoke("ParseLocationPath", (qyInput))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseStep(
-        &mut self,
-        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
-            .invoke("ParseStep", (qyInput))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseNodeTest(
-        &mut self,
-        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
-        axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
-        nodeType: crate::System::Xml::XPath::XPathNodeType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
-            .invoke("ParseNodeTest", (qyInput, axisType, nodeType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseMethod(
-        &mut self,
-        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
-            .invoke("ParseMethod", (qyInput))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAxis(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::MS::Internal::Xml::XPath::Axis_AxisType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::MS::Internal::Xml::XPath::Axis_AxisType = __cordl_object
-            .invoke("GetAxis", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseAndExpr(
-        &mut self,
-        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
-            .invoke("ParseAndExpr", (qyInput))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParseAdditiveExpr(
-        &mut self,
-        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
-            .invoke("ParseAdditiveExpr", (qyInput))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ParsePathExpr(
-        &mut self,
-        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
-            .invoke("ParsePathExpr", (qyInput))?;
+            .invoke("CheckNodeSet", (t))?;
         Ok(__cordl_ret)
     }
     pub fn CheckToken(
@@ -319,14 +164,55 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
             .invoke("CheckToken", (t))?;
         Ok(__cordl_ret)
     }
-    pub fn TestOp(
+    pub fn GetAxis(
         &mut self,
-        op: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<crate::MS::Internal::Xml::XPath::Axis_AxisType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("TestOp", (op))?;
+        let __cordl_ret: crate::MS::Internal::Xml::XPath::Axis_AxisType = __cordl_object
+            .invoke("GetAxis", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        scanner: *mut crate::MS::Internal::Xml::XPath::XPathScanner,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (scanner))?;
+        Ok(__cordl_object)
+    }
+    pub fn NextLex(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("NextLex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ParseAdditiveExpr(
+        &mut self,
+        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
+            .invoke("ParseAdditiveExpr", (qyInput))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ParseAndExpr(
+        &mut self,
+        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
+            .invoke("ParseAndExpr", (qyInput))?;
         Ok(__cordl_ret)
     }
     pub fn ParseEqualityExpr(
@@ -351,6 +237,39 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
             .invoke("ParseExpression", (qyInput))?;
         Ok(__cordl_ret)
     }
+    pub fn ParseFilterExpr(
+        &mut self,
+        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
+            .invoke("ParseFilterExpr", (qyInput))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ParseLocationPath(
+        &mut self,
+        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
+            .invoke("ParseLocationPath", (qyInput))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ParseMethod(
+        &mut self,
+        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
+            .invoke("ParseMethod", (qyInput))?;
+        Ok(__cordl_ret)
+    }
     pub fn ParseMultiplicativeExpr(
         &mut self,
         qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
@@ -360,6 +279,41 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
         );
         let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
             .invoke("ParseMultiplicativeExpr", (qyInput))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ParseNodeTest(
+        &mut self,
+        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
+        axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
+        nodeType: crate::System::Xml::XPath::XPathNodeType,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
+            .invoke("ParseNodeTest", (qyInput, axisType, nodeType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ParseOrExpr(
+        &mut self,
+        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
+            .invoke("ParseOrExpr", (qyInput))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ParsePathExpr(
+        &mut self,
+        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
+            .invoke("ParsePathExpr", (qyInput))?;
         Ok(__cordl_ret)
     }
     pub fn ParsePredicate(
@@ -373,36 +327,59 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
             .invoke("ParsePredicate", (qyInput))?;
         Ok(__cordl_ret)
     }
-    pub fn NextLex(
+    pub fn ParsePrimaryExpr(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NextLex", ())?;
+        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
+            .invoke("ParsePrimaryExpr", (qyInput))?;
         Ok(__cordl_ret)
     }
-    pub fn PassToken(
+    pub fn ParseRelationalExpr(
         &mut self,
-        t: crate::MS::Internal::Xml::XPath::XPathScanner_LexKind,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PassToken", (t))?;
+        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
+            .invoke("ParseRelationalExpr", (qyInput))?;
         Ok(__cordl_ret)
     }
-    pub fn CheckNodeSet(
+    pub fn ParseRelativeLocationPath(
         &mut self,
-        t: crate::System::Xml::XPath::XPathResultType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckNodeSet", (t))?;
+        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
+            .invoke("ParseRelativeLocationPath", (qyInput))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ParseStep(
+        &mut self,
+        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
+            .invoke("ParseStep", (qyInput))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ParseUnaryExpr(
+        &mut self,
+        qyInput: *mut crate::MS::Internal::Xml::XPath::AstNode,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::MS::Internal::Xml::XPath::AstNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::MS::Internal::Xml::XPath::AstNode = __cordl_object
+            .invoke("ParseUnaryExpr", (qyInput))?;
         Ok(__cordl_ret)
     }
     pub fn ParseUnionExpr(
@@ -416,14 +393,37 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
             .invoke("ParseUnionExpr", (qyInput))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn PassToken(
+        &mut self,
+        t: crate::MS::Internal::Xml::XPath::XPathScanner_LexKind,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PassToken", (t))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TestOp(
+        &mut self,
+        op: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TestOp", (op))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
         scanner: *mut crate::MS::Internal::Xml::XPath::XPathScanner,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (scanner))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (scanner))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathParser")]

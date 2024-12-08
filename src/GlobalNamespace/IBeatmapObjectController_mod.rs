@@ -24,17 +24,6 @@ impl std::ops::DerefMut for IBeatmapObjectController {
 }
 #[cfg(feature = "IBeatmapObjectController")]
 impl IBeatmapObjectController {
-    pub fn Pause(
-        &mut self,
-        pause: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Pause", (pause))?;
-        Ok(__cordl_ret)
-    }
     pub fn Dissolve(
         &mut self,
         duration: f32,
@@ -55,6 +44,17 @@ impl IBeatmapObjectController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Hide", (hide))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Pause(
+        &mut self,
+        pause: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Pause", (pause))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

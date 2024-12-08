@@ -24,34 +24,14 @@ for crate::UnityEngine::InputSystem::Utilities::NamedValue {
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+NamedValue")]
 impl crate::UnityEngine::InputSystem::Utilities::NamedValue {
     pub const Separator: &'static str = ",";
-    pub fn get_value(
+    pub fn ApplyToObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_value",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_name(
-        &mut self,
-        value: *mut crate::System::String,
+        instance: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_name",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
+            "ApplyToObject",
+            (instance),
         )?;
         Ok(__cordl_ret)
     }
@@ -65,47 +45,6 @@ impl crate::UnityEngine::InputSystem::Utilities::NamedValue {
             self,
             "ConvertTo",
             (_cordl_type),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::TypeCode> {
-        let __cordl_ret: crate::System::TypeCode = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_type",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ApplyToObject(
-        &mut self,
-        instance: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ApplyToObject",
-            (instance),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_name",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -128,6 +67,67 @@ impl crate::UnityEngine::InputSystem::Utilities::NamedValue {
             self,
             "Equals",
             (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_name",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TypeCode> {
+        let __cordl_ret: crate::System::TypeCode = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_type",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_value(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_value",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_name(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_name",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

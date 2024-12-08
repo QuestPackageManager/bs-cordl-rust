@@ -24,46 +24,15 @@ for crate::UnityEngine::ArticulationJacobian {
 }
 #[cfg(feature = "UnityEngine+ArticulationJacobian")]
 impl crate::UnityEngine::ArticulationJacobian {
-    pub fn set_Item(
+    pub fn _ctor(
         &mut self,
-        row: i32,
-        col: i32,
-        value: f32,
+        rows: i32,
+        cols: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_Item",
-            (row, col, value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_columns(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_columns",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_columns(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_columns",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_rows(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_rows",
-            (value),
+            ".ctor",
+            (rows, cols),
         )?;
         Ok(__cordl_ret)
     }
@@ -79,22 +48,11 @@ impl crate::UnityEngine::ArticulationJacobian {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_rows(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_columns(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_rows",
+            "get_columns",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_elements(
-        &mut self,
-        value: *mut crate::System::Collections::Generic::List_1<f32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_elements",
-            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -110,15 +68,57 @@ impl crate::UnityEngine::ArticulationJacobian {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn get_rows(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_rows",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Item(
         &mut self,
-        rows: i32,
-        cols: i32,
+        row: i32,
+        col: i32,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (rows, cols),
+            "set_Item",
+            (row, col, value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_columns(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_columns",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_elements(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::List_1<f32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_elements",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_rows(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_rows",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

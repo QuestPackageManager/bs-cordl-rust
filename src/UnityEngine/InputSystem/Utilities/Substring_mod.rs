@@ -24,11 +24,25 @@ for crate::UnityEngine::InputSystem::Utilities::Substring {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
 impl crate::UnityEngine::InputSystem::Utilities::Substring {
-    pub fn get_isEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn CompareTo(
+        &mut self,
+        other: crate::UnityEngine::InputSystem::Utilities::Substring,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CompareTo",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_InternedString3(
+        &mut self,
+        other: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_isEmpty",
-            (),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -65,25 +79,34 @@ impl crate::UnityEngine::InputSystem::Utilities::Substring {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_InternedString3(
-        &mut self,
-        other: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CompareTo(
+    pub fn StartsWith(
         &mut self,
-        other: crate::UnityEngine::InputSystem::Utilities::Substring,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        str: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CompareTo",
-            (other),
+            "StartsWith",
+            (str),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Substr(
+        &mut self,
+        index: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Substr",
+            (index, length),
         )?;
         Ok(__cordl_ret)
     }
@@ -108,6 +131,18 @@ impl crate::UnityEngine::InputSystem::Utilities::Substring {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_i32_2(
+        &mut self,
+        str: *mut crate::System::String,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (str, index),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_i32_i32_1(
         &mut self,
         str: *mut crate::System::String,
@@ -121,31 +156,11 @@ impl crate::UnityEngine::InputSystem::Utilities::Substring {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_2(
-        &mut self,
-        str: *mut crate::System::String,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (str, index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_length",
-            (),
+            "get_Item",
+            (index),
         )?;
         Ok(__cordl_ret)
     }
@@ -157,34 +172,19 @@ impl crate::UnityEngine::InputSystem::Utilities::Substring {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Substr(
-        &mut self,
-        index: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Substr",
-            (index, length),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartsWith(
-        &mut self,
-        str: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_isEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "StartsWith",
-            (str),
+            "get_isEmpty",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Item",
-            (index),
+            "get_length",
+            (),
         )?;
         Ok(__cordl_ret)
     }

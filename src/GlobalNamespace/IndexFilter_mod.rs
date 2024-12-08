@@ -32,19 +32,27 @@ impl std::ops::DerefMut for IndexFilter {
 }
 #[cfg(feature = "IndexFilter")]
 impl IndexFilter {
-    #[cfg(feature = "IndexFilter+_GetEnumerator_d__23")]
-    pub type _GetEnumerator_d__23 = crate::GlobalNamespace::IndexFilter__GetEnumerator_d__23;
     #[cfg(feature = "IndexFilter+IndexFilterRandomType")]
     pub type IndexFilterRandomType = crate::GlobalNamespace::IndexFilter_IndexFilterRandomType;
+    #[cfg(feature = "IndexFilter+_GetEnumerator_d__23")]
+    pub type _GetEnumerator_d__23 = crate::GlobalNamespace::IndexFilter__GetEnumerator_d__23;
     #[cfg(feature = "IndexFilter+_GetValues_d__24")]
     pub type _GetValues_d__24 = crate::GlobalNamespace::IndexFilter__GetValues_d__24;
     #[cfg(feature = "IndexFilter+IndexFilterLimitAlsoAffectType")]
     pub type IndexFilterLimitAlsoAffectType = crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType;
-    pub fn get_limitsDuration(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerator_1<
+            crate::System::ValueTuple_3<i32, i32, i32>,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_limitsDuration", ())?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
+            crate::System::ValueTuple_3<i32, i32, i32>,
+        > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetValues(
@@ -59,19 +67,63 @@ impl IndexFilter {
             .invoke("GetValues", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_VisibleCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_VisibleCount", ())?;
-        Ok(__cordl_ret)
+    pub fn New_IndexFilter_IndexFilterRandomType_i32_f32_IndexFilter_IndexFilterLimitAlsoAffectType1(
+        start: i32,
+        end: i32,
+        groupSize: i32,
+        random: crate::GlobalNamespace::IndexFilter_IndexFilterRandomType,
+        seed: i32,
+        chunkSize: i32,
+        limit: f32,
+        limitAlsoAffectType: crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    start,
+                    end,
+                    groupSize,
+                    random,
+                    seed,
+                    chunkSize,
+                    limit,
+                    limitAlsoAffectType,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
-    pub fn get_limitsDistribution(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_limitsDistribution", ())?;
-        Ok(__cordl_ret)
+    pub fn New_i32_IndexFilter_IndexFilterRandomType_i32_f32_IndexFilter_IndexFilterLimitAlsoAffectType0(
+        start: i32,
+        step: i32,
+        count: i32,
+        groupSize: i32,
+        random: crate::GlobalNamespace::IndexFilter_IndexFilterRandomType,
+        seed: i32,
+        chunkSize: i32,
+        limit: f32,
+        limitAlsoAffectType: crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    start,
+                    step,
+                    count,
+                    groupSize,
+                    random,
+                    seed,
+                    chunkSize,
+                    limit,
+                    limitAlsoAffectType,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
@@ -83,11 +135,34 @@ impl IndexFilter {
             .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn _ctor_IndexFilter_IndexFilterRandomType_i32_f32_IndexFilter_IndexFilterLimitAlsoAffectType1(
+        &mut self,
+        start: i32,
+        end: i32,
+        groupSize: i32,
+        random: crate::GlobalNamespace::IndexFilter_IndexFilterRandomType,
+        seed: i32,
+        chunkSize: i32,
+        limit: f32,
+        limitAlsoAffectType: crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (
+                    start,
+                    end,
+                    groupSize,
+                    random,
+                    seed,
+                    chunkSize,
+                    limit,
+                    limitAlsoAffectType,
+                ),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_i32_IndexFilter_IndexFilterRandomType_i32_f32_IndexFilter_IndexFilterLimitAlsoAffectType0(
@@ -122,49 +197,18 @@ impl IndexFilter {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_IndexFilter_IndexFilterRandomType_i32_f32_IndexFilter_IndexFilterLimitAlsoAffectType1(
-        &mut self,
-        start: i32,
-        end: i32,
-        groupSize: i32,
-        random: crate::GlobalNamespace::IndexFilter_IndexFilterRandomType,
-        seed: i32,
-        chunkSize: i32,
-        limit: f32,
-        limitAlsoAffectType: crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (
-                    start,
-                    end,
-                    groupSize,
-                    random,
-                    seed,
-                    chunkSize,
-                    limit,
-                    limitAlsoAffectType,
-                ),
-            )?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::System::ValueTuple_3<i32, i32, i32>,
-        >,
-    > {
+    pub fn get_VisibleCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::System::ValueTuple_3<i32, i32, i32>,
-        > = __cordl_object.invoke("GetEnumerator", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_VisibleCount", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_limitAlsoAffectType(
@@ -179,63 +223,19 @@ impl IndexFilter {
             .invoke("get_limitAlsoAffectType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_i32_IndexFilter_IndexFilterRandomType_i32_f32_IndexFilter_IndexFilterLimitAlsoAffectType0(
-        start: i32,
-        step: i32,
-        count: i32,
-        groupSize: i32,
-        random: crate::GlobalNamespace::IndexFilter_IndexFilterRandomType,
-        seed: i32,
-        chunkSize: i32,
-        limit: f32,
-        limitAlsoAffectType: crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    start,
-                    step,
-                    count,
-                    groupSize,
-                    random,
-                    seed,
-                    chunkSize,
-                    limit,
-                    limitAlsoAffectType,
-                ),
-            )?;
-        Ok(__cordl_object)
+    pub fn get_limitsDistribution(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_limitsDistribution", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_IndexFilter_IndexFilterRandomType_i32_f32_IndexFilter_IndexFilterLimitAlsoAffectType1(
-        start: i32,
-        end: i32,
-        groupSize: i32,
-        random: crate::GlobalNamespace::IndexFilter_IndexFilterRandomType,
-        seed: i32,
-        chunkSize: i32,
-        limit: f32,
-        limitAlsoAffectType: crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    start,
-                    end,
-                    groupSize,
-                    random,
-                    seed,
-                    chunkSize,
-                    limit,
-                    limitAlsoAffectType,
-                ),
-            )?;
-        Ok(__cordl_object)
+    pub fn get_limitsDuration(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_limitsDuration", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "IndexFilter")]

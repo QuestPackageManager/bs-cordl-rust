@@ -33,16 +33,25 @@ for crate::System::Net::NetworkInformation::UnixNetworkInterface {
 }
 #[cfg(feature = "System+Net+NetworkInformation+UnixNetworkInterface")]
 impl crate::System::Net::NetworkInformation::UnixNetworkInterface {
-    pub fn _ctor(
+    pub fn AddAddress(
         &mut self,
-        name: *mut crate::System::String,
+        address: *mut crate::System::Net::IPAddress,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name))?;
+            .invoke("AddAddress", (address))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name))?;
+        Ok(__cordl_object)
     }
     pub fn SetLinkLayerInfo(
         &mut self,
@@ -57,15 +66,15 @@ impl crate::System::Net::NetworkInformation::UnixNetworkInterface {
             .invoke("SetLinkLayerInfo", (index, macAddress, _cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn AddAddress(
+    pub fn _ctor(
         &mut self,
-        address: *mut crate::System::Net::IPAddress,
+        name: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddAddress", (address))?;
+            .invoke(".ctor", (name))?;
         Ok(__cordl_ret)
     }
     pub fn get_Name(
@@ -89,15 +98,6 @@ impl crate::System::Net::NetworkInformation::UnixNetworkInterface {
         let __cordl_ret: crate::System::Net::NetworkInformation::NetworkInterfaceType = __cordl_object
             .invoke("get_NetworkInterfaceType", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+NetworkInformation+UnixNetworkInterface")]

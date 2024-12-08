@@ -29,25 +29,31 @@ for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternPrivateKeyParamet
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternPrivateKeyParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternPrivateKeyParameters {
-    pub fn get_PhiN(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("get_PhiN", ())?;
-        Ok(__cordl_ret)
+    pub fn New_ArrayList0(
+        g: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        n: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        lowerSigmaBound: i32,
+        smallPrimes: *mut crate::System::Collections::ArrayList,
+        phiN: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (g, n, lowerSigmaBound, smallPrimes, phiN))?;
+        Ok(__cordl_object)
     }
-    pub fn get_SmallPrimes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
-            .invoke("get_SmallPrimes", ())?;
-        Ok(__cordl_ret)
+    pub fn New_IList1(
+        g: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        n: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        lowerSigmaBound: i32,
+        smallPrimes: *mut crate::System::Collections::IList,
+        phiN: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (g, n, lowerSigmaBound, smallPrimes, phiN))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_ArrayList0(
         &mut self,
@@ -79,6 +85,26 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternPrivateKeyParame
             .invoke(".ctor", (g, n, lowerSigmaBound, smallPrimes, phiN))?;
         Ok(__cordl_ret)
     }
+    pub fn get_PhiN(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_PhiN", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SmallPrimes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
+            .invoke("get_SmallPrimes", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_SmallPrimesList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IList> {
@@ -88,32 +114,6 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternPrivateKeyParame
         let __cordl_ret: *mut crate::System::Collections::IList = __cordl_object
             .invoke("get_SmallPrimesList", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_ArrayList0(
-        g: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        n: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        lowerSigmaBound: i32,
-        smallPrimes: *mut crate::System::Collections::ArrayList,
-        phiN: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (g, n, lowerSigmaBound, smallPrimes, phiN))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IList1(
-        g: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        n: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        lowerSigmaBound: i32,
-        smallPrimes: *mut crate::System::Collections::IList,
-        phiN: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (g, n, lowerSigmaBound, smallPrimes, phiN))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternPrivateKeyParameters")]

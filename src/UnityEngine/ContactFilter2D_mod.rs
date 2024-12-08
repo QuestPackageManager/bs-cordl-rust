@@ -31,14 +31,13 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::ContactF
 }
 #[cfg(feature = "UnityEngine+ContactFilter2D")]
 impl crate::UnityEngine::ContactFilter2D {
-    pub fn SetLayerMask(
+    pub fn CheckConsistency(
         &mut self,
-        layerMask: crate::UnityEngine::LayerMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "SetLayerMask",
-            (layerMask),
+            "CheckConsistency",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -54,13 +53,14 @@ impl crate::UnityEngine::ContactFilter2D {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CheckConsistency(
+    pub fn SetLayerMask(
         &mut self,
+        layerMask: crate::UnityEngine::LayerMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CheckConsistency",
-            (),
+            "SetLayerMask",
+            (layerMask),
         )?;
         Ok(__cordl_ret)
     }

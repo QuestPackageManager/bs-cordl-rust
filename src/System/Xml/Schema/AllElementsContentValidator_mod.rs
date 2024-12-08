@@ -28,18 +28,6 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::AllElementsContentValida
 }
 #[cfg(feature = "System+Xml+Schema+AllElementsContentValidator")]
 impl crate::System::Xml::Schema::AllElementsContentValidator {
-    pub fn ExpectedElements(
-        &mut self,
-        context: *mut crate::System::Xml::Schema::ValidationState,
-        isRequiredOnly: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
-            .invoke("ExpectedElements", (context, isRequiredOnly))?;
-        Ok(__cordl_ret)
-    }
     pub fn AddElement(
         &mut self,
         name: *mut crate::System::Xml::XmlQualifiedName,
@@ -53,35 +41,26 @@ impl crate::System::Xml::Schema::AllElementsContentValidator {
             .invoke("AddElement", (name, particle, isEmptiable))?;
         Ok(__cordl_ret)
     }
-    pub fn InitValidation(
+    pub fn CompleteValidation(
         &mut self,
         context: *mut crate::System::Xml::Schema::ValidationState,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitValidation", (context))?;
+        let __cordl_ret: bool = __cordl_object.invoke("CompleteValidation", (context))?;
         Ok(__cordl_ret)
     }
-    pub fn ValidateElement(
+    pub fn ExpectedElements(
         &mut self,
-        name: *mut crate::System::Xml::XmlQualifiedName,
         context: *mut crate::System::Xml::Schema::ValidationState,
-        errorCode: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        isRequiredOnly: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("ValidateElement", (name, context, errorCode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsEmptiable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsEmptiable", ())?;
+        let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
+            .invoke("ExpectedElements", (context, isRequiredOnly))?;
         Ok(__cordl_ret)
     }
     pub fn ExpectedParticles(
@@ -97,6 +76,41 @@ impl crate::System::Xml::Schema::AllElementsContentValidator {
             .invoke("ExpectedParticles", (context, isRequiredOnly, schemaSet))?;
         Ok(__cordl_ret)
     }
+    pub fn InitValidation(
+        &mut self,
+        context: *mut crate::System::Xml::Schema::ValidationState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitValidation", (context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        contentType: crate::System::Xml::Schema::XmlSchemaContentType,
+        _cordl_size: i32,
+        isEmptiable: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (contentType, _cordl_size, isEmptiable))?;
+        Ok(__cordl_object)
+    }
+    pub fn ValidateElement(
+        &mut self,
+        name: *mut crate::System::Xml::XmlQualifiedName,
+        context: *mut crate::System::Xml::Schema::ValidationState,
+        errorCode: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("ValidateElement", (name, context, errorCode))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         contentType: crate::System::Xml::Schema::XmlSchemaContentType,
@@ -110,26 +124,12 @@ impl crate::System::Xml::Schema::AllElementsContentValidator {
             .invoke(".ctor", (contentType, _cordl_size, isEmptiable))?;
         Ok(__cordl_ret)
     }
-    pub fn CompleteValidation(
-        &mut self,
-        context: *mut crate::System::Xml::Schema::ValidationState,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_IsEmptiable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("CompleteValidation", (context))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsEmptiable", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        contentType: crate::System::Xml::Schema::XmlSchemaContentType,
-        _cordl_size: i32,
-        isEmptiable: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (contentType, _cordl_size, isEmptiable))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+AllElementsContentValidator")]

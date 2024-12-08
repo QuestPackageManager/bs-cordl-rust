@@ -26,32 +26,36 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlSerializerName
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializerNamespaces")]
 impl crate::System::Xml::Serialization::XmlSerializerNamespaces {
-    pub fn get_NamespaceList(
+    pub fn Add(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
+        prefix: *mut crate::System::String,
+        ns: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
-            .invoke("get_NamespaceList", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Add", (prefix, ns))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn AddInternal(
+        &mut self,
+        prefix: *mut crate::System::String,
+        ns: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddInternal", (prefix, ns))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Namespaces(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::Hashtable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Hashtable = __cordl_object
-            .invoke("get_Namespaces", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ToArray(
         &mut self,
@@ -68,29 +72,6 @@ impl crate::System::Xml::Serialization::XmlSerializerNamespaces {
         > = __cordl_object.invoke("ToArray", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_Namespaces(
-        &mut self,
-        value: *mut crate::System::Collections::Hashtable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Namespaces", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddInternal(
-        &mut self,
-        prefix: *mut crate::System::String,
-        ns: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddInternal", (prefix, ns))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -101,24 +82,43 @@ impl crate::System::Xml::Serialization::XmlSerializerNamespaces {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Add(
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NamespaceList(
         &mut self,
-        prefix: *mut crate::System::String,
-        ns: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
+            .invoke("get_NamespaceList", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Namespaces(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::Hashtable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Hashtable = __cordl_object
+            .invoke("get_Namespaces", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Namespaces(
+        &mut self,
+        value: *mut crate::System::Collections::Hashtable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (prefix, ns))?;
+            .invoke("set_Namespaces", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializerNamespaces")]

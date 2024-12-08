@@ -76,11 +76,20 @@ impl std::ops::DerefMut for crate::System::Security::Util::Tokenizer_StreamToken
 }
 #[cfg(feature = "System+Security+Util+Tokenizer+StreamTokenReader")]
 impl crate::System::Security::Util::Tokenizer_StreamTokenReader {
-    pub fn get_NumCharEncountered(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn New(
+        input: *mut crate::System::IO::StreamReader,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (input))?;
+        Ok(__cordl_object)
+    }
+    pub fn Read(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_NumCharEncountered", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("Read", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -94,21 +103,12 @@ impl crate::System::Security::Util::Tokenizer_StreamTokenReader {
             .invoke(".ctor", (input))?;
         Ok(__cordl_ret)
     }
-    pub fn Read(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_NumCharEncountered(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("Read", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_NumCharEncountered", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        input: *mut crate::System::IO::StreamReader,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (input))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Security+Util+Tokenizer+StreamTokenReader")]
@@ -153,26 +153,6 @@ impl std::ops::DerefMut for crate::System::Security::Util::Tokenizer_StringMaker
 }
 #[cfg(feature = "System+Security+Util+Tokenizer+StringMaker")]
 impl crate::System::Security::Util::Tokenizer_StringMaker {
-    pub fn MakeString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("MakeString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CompareStringAndChars(
         &mut self,
         str: *mut crate::System::String,
@@ -186,12 +166,32 @@ impl crate::System::Security::Util::Tokenizer_StringMaker {
             .invoke("CompareStringAndChars", (str, a, l))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn MakeString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("MakeString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Security+Util+Tokenizer+StringMaker")]
@@ -267,23 +267,22 @@ impl std::ops::DerefMut for crate::System::Security::Util::Tokenizer {
 }
 #[cfg(feature = "System+Security+Util+Tokenizer")]
 impl crate::System::Security::Util::Tokenizer {
-    #[cfg(feature = "System+Security+Util+Tokenizer+ITokenReader")]
-    type ITokenReader = crate::System::Security::Util::Tokenizer_ITokenReader;
-    #[cfg(feature = "System+Security+Util+Tokenizer+StreamTokenReader")]
-    pub type StreamTokenReader = crate::System::Security::Util::Tokenizer_StreamTokenReader;
     #[cfg(feature = "System+Security+Util+Tokenizer+TokenSource")]
     pub type TokenSource = crate::System::Security::Util::Tokenizer_TokenSource;
+    #[cfg(feature = "System+Security+Util+Tokenizer+ITokenReader")]
+    type ITokenReader = crate::System::Security::Util::Tokenizer_ITokenReader;
     #[cfg(feature = "System+Security+Util+Tokenizer+StringMaker")]
     pub type StringMaker = crate::System::Security::Util::Tokenizer_StringMaker;
-    pub fn _ctor(
+    #[cfg(feature = "System+Security+Util+Tokenizer+StreamTokenReader")]
+    pub type StreamTokenReader = crate::System::Security::Util::Tokenizer_StreamTokenReader;
+    pub fn BasicInitialization(
         &mut self,
-        input: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (input))?;
+            .invoke("BasicInitialization", ())?;
         Ok(__cordl_ret)
     }
     pub fn ChangeFormat(
@@ -297,16 +296,6 @@ impl crate::System::Security::Util::Tokenizer {
             .invoke("ChangeFormat", (encoding))?;
         Ok(__cordl_ret)
     }
-    pub fn Recycle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Recycle", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetStringToken(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -315,16 +304,6 @@ impl crate::System::Security::Util::Tokenizer {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("GetStringToken", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn BasicInitialization(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BasicInitialization", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetTokens(
@@ -342,12 +321,33 @@ impl crate::System::Security::Util::Tokenizer {
     }
     pub fn New(
         input: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (input))?;
         Ok(__cordl_object)
+    }
+    pub fn Recycle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Recycle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        input: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (input))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Security+Util+Tokenizer")]

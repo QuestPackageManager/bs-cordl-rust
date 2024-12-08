@@ -25,24 +25,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP800
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+Drbg+ISP80090Drbg")]
 impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg {
-    pub fn Reseed(
-        &mut self,
-        additionalInput: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reseed", (additionalInput))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_BlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_BlockSize", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Generate(
         &mut self,
         output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -56,10 +38,28 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg {
             .invoke("Generate", (output, additionalInput, predictionResistant))?;
         Ok(__cordl_ret)
     }
+    pub fn Reseed(
+        &mut self,
+        additionalInput: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reseed", (additionalInput))?;
+        Ok(__cordl_ret)
+    }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_BlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_BlockSize", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+Drbg+ISP80090Drbg")]

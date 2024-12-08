@@ -30,6 +30,23 @@ impl std::ops::DerefMut for crate::System::Xml::XmlNodeChangedEventArgs {
 }
 #[cfg(feature = "System+Xml+XmlNodeChangedEventArgs")]
 impl crate::System::Xml::XmlNodeChangedEventArgs {
+    pub fn New(
+        node: *mut crate::System::Xml::XmlNode,
+        oldParent: *mut crate::System::Xml::XmlNode,
+        newParent: *mut crate::System::Xml::XmlNode,
+        oldValue: *mut crate::System::String,
+        newValue: *mut crate::System::String,
+        action: crate::System::Xml::XmlNodeChangedAction,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (node, oldParent, newParent, oldValue, newValue, action),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         node: *mut crate::System::Xml::XmlNode,
@@ -55,23 +72,6 @@ impl crate::System::Xml::XmlNodeChangedEventArgs {
         let __cordl_ret: crate::System::Xml::XmlNodeChangedAction = __cordl_object
             .invoke("get_Action", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        node: *mut crate::System::Xml::XmlNode,
-        oldParent: *mut crate::System::Xml::XmlNode,
-        newParent: *mut crate::System::Xml::XmlNode,
-        oldValue: *mut crate::System::String,
-        newValue: *mut crate::System::String,
-        action: crate::System::Xml::XmlNodeChangedAction,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (node, oldParent, newParent, oldValue, newValue, action),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+XmlNodeChangedEventArgs")]

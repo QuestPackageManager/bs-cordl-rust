@@ -26,44 +26,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::ContactP
 }
 #[cfg(feature = "UnityEngine+ContactPoint")]
 impl crate::UnityEngine::ContactPoint {
-    pub fn get_otherCollider(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Collider> {
-        let __cordl_ret: *mut crate::UnityEngine::Collider = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_otherCollider",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_thisCollider(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Collider> {
-        let __cordl_ret: *mut crate::UnityEngine::Collider = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_thisCollider",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_normal(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_normal",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_separation(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_separation",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         point: crate::UnityEngine::Vector3,
@@ -80,6 +42,36 @@ impl crate::UnityEngine::ContactPoint {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_impulse(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_impulse",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_normal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_normal",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_otherCollider(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Collider> {
+        let __cordl_ret: *mut crate::UnityEngine::Collider = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_otherCollider",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_point(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
@@ -90,12 +82,20 @@ impl crate::UnityEngine::ContactPoint {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_impulse(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_separation(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_impulse",
+            "get_separation",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_thisCollider(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Collider> {
+        let __cordl_ret: *mut crate::UnityEngine::Collider = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_thisCollider",
             (),
         )?;
         Ok(__cordl_ret)

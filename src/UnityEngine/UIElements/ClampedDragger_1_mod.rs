@@ -38,23 +38,22 @@ impl<
 > crate::UnityEngine::UIElements::ClampedDragger_1<T> {
     #[cfg(feature = "UnityEngine+UIElements+ClampedDragger_1+DragDirection")]
     pub type DragDirection = crate::UnityEngine::UIElements::ClampedDragger_1_DragDirection;
-    pub fn get_startMousePosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_startMousePosition", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        slider: *mut crate::UnityEngine::UIElements::BaseSlider_1<T>,
+        clickHandler: *mut crate::System::Action,
+        dragHandler: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (slider, clickHandler, dragHandler))?;
+        Ok(__cordl_object)
     }
-    pub fn set_slider(
+    pub fn ProcessDownEvent(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::BaseSlider_1<T>,
+        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        localPosition: crate::UnityEngine::Vector2,
+        pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -64,7 +63,72 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_slider", (value))?;
+            .invoke("ProcessDownEvent", (evt, localPosition, pointerId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessMoveEvent(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        localPosition: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessMoveEvent", (evt, localPosition))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessUpEvent(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        localPosition: crate::UnityEngine::Vector2,
+        pointerId: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessUpEvent", (evt, localPosition, pointerId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        slider: *mut crate::UnityEngine::UIElements::BaseSlider_1<T>,
+        clickHandler: *mut crate::System::Action,
+        dragHandler: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (slider, clickHandler, dragHandler))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_dragging(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_dragging", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_draggingEnded(
@@ -113,10 +177,9 @@ impl<
         > = __cordl_object.invoke("get_dragDirection", ())?;
         Ok(__cordl_ret)
     }
-    pub fn add_dragging(
+    pub fn get_startMousePosition(
         &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -124,72 +187,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_dragging", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_dragDirection(
-        &mut self,
-        value: crate::UnityEngine::UIElements::ClampedDragger_1_DragDirection<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_dragDirection", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        slider: *mut crate::UnityEngine::UIElements::BaseSlider_1<T>,
-        clickHandler: *mut crate::System::Action,
-        dragHandler: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (slider, clickHandler, dragHandler))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessDownEvent(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
-        localPosition: crate::UnityEngine::Vector2,
-        pointerId: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessDownEvent", (evt, localPosition, pointerId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_draggingEnded(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_draggingEnded", (value))?;
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_startMousePosition", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_dragging(
@@ -207,6 +206,51 @@ impl<
             .invoke("remove_dragging", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn remove_draggingEnded(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_draggingEnded", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_dragDirection(
+        &mut self,
+        value: crate::UnityEngine::UIElements::ClampedDragger_1_DragDirection<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_dragDirection", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_slider(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::BaseSlider_1<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_slider", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_startMousePosition(
         &mut self,
         value: crate::UnityEngine::Vector2,
@@ -221,50 +265,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_startMousePosition", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn ProcessUpEvent(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
-        localPosition: crate::UnityEngine::Vector2,
-        pointerId: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessUpEvent", (evt, localPosition, pointerId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessMoveEvent(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
-        localPosition: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessMoveEvent", (evt, localPosition))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        slider: *mut crate::UnityEngine::UIElements::BaseSlider_1<T>,
-        clickHandler: *mut crate::System::Action,
-        dragHandler: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (slider, clickHandler, dragHandler))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ClampedDragger_1")]

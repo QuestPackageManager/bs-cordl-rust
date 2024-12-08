@@ -28,6 +28,26 @@ for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData_AuthEnvelopedSecureReada
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedData+AuthEnvelopedSecureReadable")]
 impl crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData_AuthEnvelopedSecureReadable {
+    pub fn GetReadable(
+        &mut self,
+        key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Cms::CmsReadable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Cms::CmsReadable = __cordl_object
+            .invoke("GetReadable", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        parent: *mut crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (parent))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         parent: *mut crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData,
@@ -60,26 +80,6 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData_AuthEnvelopedSecureRead
         let __cordl_ret: *mut crate::System::Object = __cordl_object
             .invoke("get_CryptoObject", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetReadable(
-        &mut self,
-        key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Cms::CmsReadable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cms::CmsReadable = __cordl_object
-            .invoke("GetReadable", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        parent: *mut crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (parent))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedData+AuthEnvelopedSecureReadable")]
@@ -129,6 +129,44 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData {
         feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedData+AuthEnvelopedSecureReadable"
     )]
     pub type AuthEnvelopedSecureReadable = crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData_AuthEnvelopedSecureReadable;
+    pub fn New_ContentInfo2(
+        contentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (contentInfo))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray0(
+        authEnvData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (authEnvData))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Stream1(
+        authEnvData: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (authEnvData))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_ContentInfo2(
+        &mut self,
+        contentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (contentInfo))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_Il2CppArray0(
         &mut self,
         authEnvData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -150,44 +188,6 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (authEnvData))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor_ContentInfo2(
-        &mut self,
-        contentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (contentInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_Il2CppArray0(
-        authEnvData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (authEnvData))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Stream1(
-        authEnvData: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (authEnvData))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_ContentInfo2(
-        contentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (contentInfo))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedData")]

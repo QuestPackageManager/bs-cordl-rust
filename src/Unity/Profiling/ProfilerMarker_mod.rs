@@ -22,6 +22,16 @@ for crate::Unity::Profiling::ProfilerMarker_AutoScope {
 }
 #[cfg(feature = "Unity+Profiling+ProfilerMarker+AutoScope")]
 impl crate::Unity::Profiling::ProfilerMarker_AutoScope {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         markerPtr: crate::System::IntPtr,
@@ -30,16 +40,6 @@ impl crate::Unity::Profiling::ProfilerMarker_AutoScope {
             self,
             ".ctor",
             (markerPtr),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -70,14 +70,15 @@ for crate::Unity::Profiling::ProfilerMarker {
 impl crate::Unity::Profiling::ProfilerMarker {
     #[cfg(feature = "Unity+Profiling+ProfilerMarker+AutoScope")]
     pub type AutoScope = crate::Unity::Profiling::ProfilerMarker_AutoScope;
-    pub fn _ctor_String0(
+    pub fn Auto(
         &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Unity::Profiling::ProfilerMarker_AutoScope,
+    > {
+        let __cordl_ret: crate::Unity::Profiling::ProfilerMarker_AutoScope = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (name),
+            "Auto",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -93,15 +94,14 @@ impl crate::Unity::Profiling::ProfilerMarker {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Auto(
+    pub fn _ctor_String0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Unity::Profiling::ProfilerMarker_AutoScope,
-    > {
-        let __cordl_ret: crate::Unity::Profiling::ProfilerMarker_AutoScope = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Auto",
-            (),
+            ".ctor",
+            (name),
         )?;
         Ok(__cordl_ret)
     }

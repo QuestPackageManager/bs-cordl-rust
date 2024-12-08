@@ -74,42 +74,21 @@ impl std::ops::DerefMut for crate::System::Text::RegularExpressions::RegexCharCl
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass")]
 impl crate::System::Text::RegularExpressions::RegexCharClass {
-    #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRange")]
-    pub type SingleRange = crate::System::Text::RegularExpressions::RegexCharClass_SingleRange;
     #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
     pub type SingleRangeComparer = crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer;
     #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping")]
     pub type LowerCaseMapping = crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping;
-    pub fn AddCharClass(
+    #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRange")]
+    pub type SingleRange = crate::System::Text::RegularExpressions::RegexCharClass_SingleRange;
+    pub fn AddCategory(
         &mut self,
-        cc: *mut crate::System::Text::RegularExpressions::RegexCharClass,
+        category: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddCharClass", (cc))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddSet(
-        &mut self,
-        set: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddSet", (set))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Canonicalize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Canonicalize", ())?;
+            .invoke("AddCategory", (category))?;
         Ok(__cordl_ret)
     }
     pub fn AddCategoryFromName(
@@ -129,6 +108,52 @@ impl crate::System::Text::RegularExpressions::RegexCharClass {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn AddChar(
+        &mut self,
+        c: char,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddChar", (c))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddCharClass(
+        &mut self,
+        cc: *mut crate::System::Text::RegularExpressions::RegexCharClass,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddCharClass", (cc))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddDigit(
+        &mut self,
+        ecma: bool,
+        negate: bool,
+        pattern: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddDigit", (ecma, negate, pattern))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddLowercase(
+        &mut self,
+        culture: *mut crate::System::Globalization::CultureInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddLowercase", (culture))?;
+        Ok(__cordl_ret)
+    }
     pub fn AddLowercaseRange(
         &mut self,
         chMin: char,
@@ -142,6 +167,41 @@ impl crate::System::Text::RegularExpressions::RegexCharClass {
             .invoke("AddLowercaseRange", (chMin, chMax, culture))?;
         Ok(__cordl_ret)
     }
+    pub fn AddRange(
+        &mut self,
+        first: char,
+        last: char,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddRange", (first, last))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddSet(
+        &mut self,
+        set: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddSet", (set))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddSpace(
+        &mut self,
+        ecma: bool,
+        negate: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddSpace", (ecma, negate))?;
+        Ok(__cordl_ret)
+    }
     pub fn AddSubtraction(
         &mut self,
         sub: *mut crate::System::Text::RegularExpressions::RegexCharClass,
@@ -151,6 +211,28 @@ impl crate::System::Text::RegularExpressions::RegexCharClass {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddSubtraction", (sub))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddWord(
+        &mut self,
+        ecma: bool,
+        negate: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddWord", (ecma, negate))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Canonicalize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Canonicalize", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetRangeAt(
@@ -166,45 +248,32 @@ impl crate::System::Text::RegularExpressions::RegexCharClass {
             .invoke("GetRangeAt", (i))?;
         Ok(__cordl_ret)
     }
-    pub fn get_CanMerge(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanMerge", ())?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn AddChar(
-        &mut self,
-        c: char,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddChar", (c))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddLowercase(
-        &mut self,
-        culture: *mut crate::System::Globalization::CultureInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddLowercase", (culture))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddSpace(
-        &mut self,
-        ecma: bool,
+    pub fn New__cordl_bool_List_1_StringBuilder_RegexCharClass1(
         negate: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        ranges: *mut crate::System::Collections::Generic::List_1<
+            crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
+        >,
+        categories: *mut crate::System::Text::StringBuilder,
+        subtraction: *mut crate::System::Text::RegularExpressions::RegexCharClass,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (negate, ranges, categories, subtraction))?;
+        Ok(__cordl_object)
+    }
+    pub fn RangeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddSpace", (ecma, negate))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("RangeCount", ())?;
         Ok(__cordl_ret)
     }
     pub fn ToStringClass(
@@ -215,19 +284,6 @@ impl crate::System::Text::RegularExpressions::RegexCharClass {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("ToStringClass", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddDigit(
-        &mut self,
-        ecma: bool,
-        negate: bool,
-        pattern: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddDigit", (ecma, negate, pattern))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -256,6 +312,13 @@ impl crate::System::Text::RegularExpressions::RegexCharClass {
             .invoke(".ctor", (negate, ranges, categories, subtraction))?;
         Ok(__cordl_ret)
     }
+    pub fn get_CanMerge(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanMerge", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_Negate(
         &mut self,
         value: bool,
@@ -266,69 +329,6 @@ impl crate::System::Text::RegularExpressions::RegexCharClass {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Negate", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn AddCategory(
-        &mut self,
-        category: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddCategory", (category))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RangeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("RangeCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddWord(
-        &mut self,
-        ecma: bool,
-        negate: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddWord", (ecma, negate))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddRange(
-        &mut self,
-        first: char,
-        last: char,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddRange", (first, last))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New__cordl_bool_List_1_StringBuilder_RegexCharClass1(
-        negate: bool,
-        ranges: *mut crate::System::Collections::Generic::List_1<
-            crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
-        >,
-        categories: *mut crate::System::Text::StringBuilder,
-        subtraction: *mut crate::System::Text::RegularExpressions::RegexCharClass,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (negate, ranges, categories, subtraction))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass")]
@@ -409,16 +409,6 @@ for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer 
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
 impl crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Compare(
         &mut self,
         x: crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
@@ -430,12 +420,22 @@ impl crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer
         let __cordl_ret: i32 = __cordl_object.invoke("Compare", (x, y))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]

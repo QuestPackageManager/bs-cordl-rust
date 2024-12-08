@@ -25,37 +25,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::IO::FileStatu
 }
 #[cfg(feature = "System+IO+FileStatus")]
 impl crate::System::IO::FileStatus {
-    pub fn GetLastWriteTime(
+    pub fn EnsureStatInitialized(
         &mut self,
         path: crate::System::ReadOnlySpan_1<char>,
         continueOnError: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
-        let __cordl_ret: crate::System::DateTimeOffset = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetLastWriteTime",
-            (path, continueOnError),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetExists(
-        &mut self,
-        path: crate::System::ReadOnlySpan_1<char>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetExists",
-            (path),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsReadOnly(
-        &mut self,
-        path: crate::System::ReadOnlySpan_1<char>,
-        continueOnError: bool,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsReadOnly",
+            "EnsureStatInitialized",
             (path, continueOnError),
         )?;
         Ok(__cordl_ret)
@@ -72,33 +49,26 @@ impl crate::System::IO::FileStatus {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_InitiallyDirectory(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_InitiallyDirectory",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Refresh(
+    pub fn GetExists(
         &mut self,
         path: crate::System::ReadOnlySpan_1<char>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Refresh",
+            "GetExists",
             (path),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_InitiallyDirectory(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetLastWriteTime(
+        &mut self,
+        path: crate::System::ReadOnlySpan_1<char>,
+        continueOnError: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_InitiallyDirectory",
-            (),
+            "GetLastWriteTime",
+            (path, continueOnError),
         )?;
         Ok(__cordl_ret)
     }
@@ -114,15 +84,26 @@ impl crate::System::IO::FileStatus {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn EnsureStatInitialized(
+    pub fn IsReadOnly(
         &mut self,
         path: crate::System::ReadOnlySpan_1<char>,
         continueOnError: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsReadOnly",
+            (path, continueOnError),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Refresh(
+        &mut self,
+        path: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "EnsureStatInitialized",
-            (path, continueOnError),
+            "Refresh",
+            (path),
         )?;
         Ok(__cordl_ret)
     }
@@ -135,6 +116,25 @@ impl crate::System::IO::FileStatus {
             self,
             "UnixTimeToDateTimeOffset",
             (seconds, nanoseconds),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_InitiallyDirectory(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_InitiallyDirectory",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_InitiallyDirectory(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_InitiallyDirectory",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

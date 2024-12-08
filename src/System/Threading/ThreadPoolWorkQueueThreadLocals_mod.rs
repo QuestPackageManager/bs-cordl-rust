@@ -28,6 +28,16 @@ impl std::ops::DerefMut for crate::System::Threading::ThreadPoolWorkQueueThreadL
 }
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueueThreadLocals")]
 impl crate::System::Threading::ThreadPoolWorkQueueThreadLocals {
+    pub fn CleanUp(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CleanUp", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -38,15 +48,14 @@ impl crate::System::Threading::ThreadPoolWorkQueueThreadLocals {
             .invoke("Finalize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CleanUp(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CleanUp", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        tpq: *mut crate::System::Threading::ThreadPoolWorkQueue,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (tpq))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -58,15 +67,6 @@ impl crate::System::Threading::ThreadPoolWorkQueueThreadLocals {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (tpq))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        tpq: *mut crate::System::Threading::ThreadPoolWorkQueue,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (tpq))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueueThreadLocals")]

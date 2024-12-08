@@ -26,6 +26,21 @@ impl std::ops::DerefMut for MainThreadDispatcher {
 }
 #[cfg(feature = "MainThreadDispatcher")]
 impl MainThreadDispatcher {
+    #[cfg(feature = "MainThreadDispatcher+__c__DisplayClass2_0_1")]
+    pub type __c__DisplayClass2_0_1<A: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::MainThreadDispatcher___c__DisplayClass2_0_1<
+        A,
+    >;
+    #[cfg(feature = "MainThreadDispatcher+__c__DisplayClass3_0_2")]
+    pub type __c__DisplayClass3_0_2<
+        A: quest_hook::libil2cpp::Type,
+        B: quest_hook::libil2cpp::Type,
+    > = crate::GlobalNamespace::MainThreadDispatcher___c__DisplayClass3_0_2<A, B>;
+    #[cfg(feature = "MainThreadDispatcher+__c__DisplayClass4_0_3")]
+    pub type __c__DisplayClass4_0_3<
+        A: quest_hook::libil2cpp::Type,
+        B: quest_hook::libil2cpp::Type,
+        C: quest_hook::libil2cpp::Type,
+    > = crate::GlobalNamespace::MainThreadDispatcher___c__DisplayClass4_0_3<A, B, C>;
     #[cfg(feature = "MainThreadDispatcher+__c__DisplayClass5_0_4")]
     pub type __c__DisplayClass5_0_4<
         A: quest_hook::libil2cpp::Type,
@@ -33,21 +48,6 @@ impl MainThreadDispatcher {
         C: quest_hook::libil2cpp::Type,
         D: quest_hook::libil2cpp::Type,
     > = crate::GlobalNamespace::MainThreadDispatcher___c__DisplayClass5_0_4<A, B, C, D>;
-    #[cfg(feature = "MainThreadDispatcher+__c__DisplayClass4_0_3")]
-    pub type __c__DisplayClass4_0_3<
-        A: quest_hook::libil2cpp::Type,
-        B: quest_hook::libil2cpp::Type,
-        C: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::MainThreadDispatcher___c__DisplayClass4_0_3<A, B, C>;
-    #[cfg(feature = "MainThreadDispatcher+__c__DisplayClass3_0_2")]
-    pub type __c__DisplayClass3_0_2<
-        A: quest_hook::libil2cpp::Type,
-        B: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::MainThreadDispatcher___c__DisplayClass3_0_2<A, B>;
-    #[cfg(feature = "MainThreadDispatcher+__c__DisplayClass2_0_1")]
-    pub type __c__DisplayClass2_0_1<A: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::MainThreadDispatcher___c__DisplayClass2_0_1<
-        A,
-    >;
     pub fn DispatchOnMainThread_Action0(
         &mut self,
         action: *mut crate::System::Action,
@@ -153,15 +153,12 @@ impl MainThreadDispatcher {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Tick(
         &mut self,
@@ -173,12 +170,15 @@ impl MainThreadDispatcher {
             .invoke("Tick", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MainThreadDispatcher")]

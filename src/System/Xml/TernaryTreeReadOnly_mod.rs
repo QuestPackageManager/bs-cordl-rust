@@ -25,17 +25,6 @@ impl std::ops::DerefMut for crate::System::Xml::TernaryTreeReadOnly {
 }
 #[cfg(feature = "System+Xml+TernaryTreeReadOnly")]
 impl crate::System::Xml::TernaryTreeReadOnly {
-    pub fn _ctor(
-        &mut self,
-        nodeBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (nodeBuffer))?;
-        Ok(__cordl_ret)
-    }
     pub fn FindCaseInsensitiveString(
         &mut self,
         stringToFind: *mut crate::System::String,
@@ -49,12 +38,23 @@ impl crate::System::Xml::TernaryTreeReadOnly {
     }
     pub fn New(
         nodeBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (nodeBuffer))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        nodeBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (nodeBuffer))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+TernaryTreeReadOnly")]

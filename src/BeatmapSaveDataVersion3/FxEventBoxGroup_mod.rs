@@ -29,15 +29,19 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+FxEventBoxGroup")]
 impl crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
-    pub fn get_type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataVersion3::FxEventType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::BeatmapSaveDataVersion3::FxEventType = __cordl_object
-            .invoke("get_type", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        beat: f32,
+        groupId: i32,
+        _cordl_type: crate::BeatmapSaveDataVersion3::FxEventType,
+        eventBoxes: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::BeatmapSaveDataVersion3::FxEventBox,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (beat, groupId, _cordl_type, eventBoxes))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -55,19 +59,15 @@ impl crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
             .invoke(".ctor", (beat, groupId, _cordl_type, eventBoxes))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        beat: f32,
-        groupId: i32,
-        _cordl_type: crate::BeatmapSaveDataVersion3::FxEventType,
-        eventBoxes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::FxEventBox,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (beat, groupId, _cordl_type, eventBoxes))?;
-        Ok(__cordl_object)
+    pub fn get_type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataVersion3::FxEventType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::BeatmapSaveDataVersion3::FxEventType = __cordl_object
+            .invoke("get_type", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+FxEventBoxGroup")]

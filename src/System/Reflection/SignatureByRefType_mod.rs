@@ -24,6 +24,20 @@ impl std::ops::DerefMut for crate::System::Reflection::SignatureByRefType {
 }
 #[cfg(feature = "System+Reflection+SignatureByRefType")]
 impl crate::System::Reflection::SignatureByRefType {
+    pub fn GetArrayRank(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetArrayRank", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsArrayImpl(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsArrayImpl", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn IsByRefImpl(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -38,6 +52,15 @@ impl crate::System::Reflection::SignatureByRefType {
         let __cordl_ret: bool = __cordl_object.invoke("IsPointerImpl", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        elementType: *mut crate::System::Reflection::SignatureType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (elementType))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         elementType: *mut crate::System::Reflection::SignatureType,
@@ -49,21 +72,11 @@ impl crate::System::Reflection::SignatureByRefType {
             .invoke(".ctor", (elementType))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Suffix(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    pub fn get_IsSZArray(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Suffix", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetArrayRank(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetArrayRank", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsSZArray", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_IsVariableBoundArray(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -73,28 +86,15 @@ impl crate::System::Reflection::SignatureByRefType {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsVariableBoundArray", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsSZArray(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_Suffix(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsSZArray", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Suffix", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn IsArrayImpl(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsArrayImpl", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        elementType: *mut crate::System::Reflection::SignatureType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (elementType))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Reflection+SignatureByRefType")]

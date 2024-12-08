@@ -24,6 +24,24 @@ impl std::ops::DerefMut for crate::System::Xml::IXmlNamespaceResolver {
 }
 #[cfg(feature = "System+Xml+IXmlNamespaceResolver")]
 impl crate::System::Xml::IXmlNamespaceResolver {
+    pub fn GetNamespacesInScope(
+        &mut self,
+        scope: crate::System::Xml::XmlNamespaceScope,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IDictionary_2<
+            *mut crate::System::String,
+            *mut crate::System::String,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IDictionary_2<
+            *mut crate::System::String,
+            *mut crate::System::String,
+        > = __cordl_object.invoke("GetNamespacesInScope", (scope))?;
+        Ok(__cordl_ret)
+    }
     pub fn LookupNamespace(
         &mut self,
         prefix: *mut crate::System::String,
@@ -44,24 +62,6 @@ impl crate::System::Xml::IXmlNamespaceResolver {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("LookupPrefix", (namespaceName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNamespacesInScope(
-        &mut self,
-        scope: crate::System::Xml::XmlNamespaceScope,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
-        > = __cordl_object.invoke("GetNamespacesInScope", (scope))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

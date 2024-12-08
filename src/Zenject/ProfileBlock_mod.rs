@@ -24,17 +24,34 @@ impl std::ops::DerefMut for crate::Zenject::ProfileBlock {
 }
 #[cfg(feature = "Zenject+ProfileBlock")]
 impl crate::Zenject::ProfileBlock {
-    pub fn _ctor__cordl_bool0(
+    pub fn Dispose(
         &mut self,
-        sampleName: *mut crate::System::String,
-        rootBlock: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (sampleName, rootBlock))?;
+            .invoke("Dispose", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New_String1(
+        sampleName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (sampleName))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool0(
+        sampleName: *mut crate::System::String,
+        rootBlock: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (sampleName, rootBlock))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_String1(
         &mut self,
@@ -47,34 +64,17 @@ impl crate::Zenject::ProfileBlock {
             .invoke(".ctor", (sampleName))?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose(
+    pub fn _ctor__cordl_bool0(
         &mut self,
+        sampleName: *mut crate::System::String,
+        rootBlock: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+            .invoke(".ctor", (sampleName, rootBlock))?;
         Ok(__cordl_ret)
-    }
-    pub fn New__cordl_bool0(
-        sampleName: *mut crate::System::String,
-        rootBlock: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (sampleName, rootBlock))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        sampleName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (sampleName))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+ProfileBlock")]

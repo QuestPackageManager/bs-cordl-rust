@@ -44,25 +44,16 @@ impl crate::UnityEngine::UIElements::PointerDispatchState {
             .invoke("ActivateCompatibilityMouseEvents", (pointerId))?;
         Ok(__cordl_ret)
     }
-    pub fn Reset(
+    pub fn CapturePointer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessPointerCapture(
-        &mut self,
+        handler: *mut crate::UnityEngine::UIElements::IEventHandler,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessPointerCapture", (pointerId))?;
+            .invoke("CapturePointer", (handler, pointerId))?;
         Ok(__cordl_ret)
     }
     pub fn GetCapturingElement(
@@ -78,39 +69,6 @@ impl crate::UnityEngine::UIElements::PointerDispatchState {
             .invoke("GetCapturingElement", (pointerId))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CapturePointer(
-        &mut self,
-        handler: *mut crate::UnityEngine::UIElements::IEventHandler,
-        pointerId: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CapturePointer", (handler, pointerId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ShouldSendCompatibilityMouseEvents(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::IPointerEvent,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("ShouldSendCompatibilityMouseEvents", (evt))?;
-        Ok(__cordl_ret)
-    }
     pub fn HasPointerCapture(
         &mut self,
         handler: *mut crate::UnityEngine::UIElements::IEventHandler,
@@ -123,7 +81,14 @@ impl crate::UnityEngine::UIElements::PointerDispatchState {
             .invoke("HasPointerCapture", (handler, pointerId))?;
         Ok(__cordl_ret)
     }
-    pub fn ReleasePointer_i32_0(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn PreventCompatibilityMouseEvents(
         &mut self,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -131,7 +96,18 @@ impl crate::UnityEngine::UIElements::PointerDispatchState {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReleasePointer", (pointerId))?;
+            .invoke("PreventCompatibilityMouseEvents", (pointerId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessPointerCapture(
+        &mut self,
+        pointerId: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessPointerCapture", (pointerId))?;
         Ok(__cordl_ret)
     }
     pub fn ReleasePointer_IEventHandler_i32_1(
@@ -146,7 +122,7 @@ impl crate::UnityEngine::UIElements::PointerDispatchState {
             .invoke("ReleasePointer", (handler, pointerId))?;
         Ok(__cordl_ret)
     }
-    pub fn PreventCompatibilityMouseEvents(
+    pub fn ReleasePointer_i32_0(
         &mut self,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -154,15 +130,39 @@ impl crate::UnityEngine::UIElements::PointerDispatchState {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreventCompatibilityMouseEvents", (pointerId))?;
+            .invoke("ReleasePointer", (pointerId))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ShouldSendCompatibilityMouseEvents(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::IPointerEvent,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("ShouldSendCompatibilityMouseEvents", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerDispatchState")]

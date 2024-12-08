@@ -34,24 +34,6 @@ for crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
-    pub fn _ctor(
-        &mut self,
-        slotArray: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T>,
-        >,
-        trackAllValues: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (slotArray, trackAllValues))?;
-        Ok(__cordl_ret)
-    }
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -71,12 +53,30 @@ impl<
             crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T>,
         >,
         trackAllValues: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (slotArray, trackAllValues))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        slotArray: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T>,
+        >,
+        trackAllValues: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (slotArray, trackAllValues))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Threading+ThreadLocal_1+FinalizationHelper")]
@@ -122,18 +122,6 @@ for crate::System::Threading::ThreadLocal_1_IdManager<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Threading::ThreadLocal_1_IdManager<T> {
-    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetId(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -144,6 +132,13 @@ impl<
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetId", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ReturnId(
         &mut self,
@@ -160,12 +155,17 @@ impl<
             .invoke("ReturnId", (id))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Threading+ThreadLocal_1+IdManager")]
@@ -215,6 +215,17 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
+    pub fn New(
+        slotArray: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (slotArray))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         slotArray: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -231,17 +242,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (slotArray))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        slotArray: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (slotArray))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlot")]
@@ -316,26 +316,25 @@ for crate::System::Threading::ThreadLocal_1<T> {
 }
 #[cfg(feature = "System+Threading+ThreadLocal_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::ThreadLocal_1<T> {
+    #[cfg(feature = "System+Threading+ThreadLocal_1+IdManager")]
+    pub type IdManager = crate::System::Threading::ThreadLocal_1_IdManager<T>;
     #[cfg(feature = "System+Threading+ThreadLocal_1+FinalizationHelper")]
     pub type FinalizationHelper = crate::System::Threading::ThreadLocal_1_FinalizationHelper<
         T,
     >;
-    #[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlot")]
-    pub type LinkedSlot = crate::System::Threading::ThreadLocal_1_LinkedSlot<T>;
     #[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
     pub type LinkedSlotVolatile = crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<
         T,
     >;
-    #[cfg(feature = "System+Threading+ThreadLocal_1+IdManager")]
-    pub type IdManager = crate::System::Threading::ThreadLocal_1_IdManager<T>;
-    pub fn GrowTable(
+    #[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlot")]
+    pub type LinkedSlot = crate::System::Threading::ThreadLocal_1_LinkedSlot<T>;
+    pub fn CreateLinkedSlot(
         &mut self,
-        table: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T>,
-            >,
+        slotArray: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T>,
         >,
-        minLength: i32,
+        id: i32,
+        value: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -345,7 +344,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::ThreadLocal_1<T> 
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GrowTable", (table, minLength))?;
+            .invoke("CreateLinkedSlot", (slotArray, id, value))?;
         Ok(__cordl_ret)
     }
     pub fn Dispose_0(
@@ -377,24 +376,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::ThreadLocal_1<T> 
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("get_Value", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateLinkedSlot(
+    pub fn Finalize(
         &mut self,
-        slotArray: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T>,
-        >,
-        id: i32,
-        value: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -404,10 +387,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::ThreadLocal_1<T> 
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CreateLinkedSlot", (slotArray, id, value))?;
+            .invoke("Finalize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsValueCreated(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    pub fn GetValueSlow(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -415,8 +398,51 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::ThreadLocal_1<T> 
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsValueCreated", ())?;
+        let __cordl_ret: T = __cordl_object.invoke("GetValueSlow", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn GrowTable(
+        &mut self,
+        table: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T>,
+            >,
+        >,
+        minLength: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GrowTable", (table, minLength))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Initialize(
+        &mut self,
+        valueFactory: *mut crate::System::Func_1<T>,
+        trackAllValues: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Initialize", (valueFactory, trackAllValues))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn SetValueSlow(
         &mut self,
@@ -436,36 +462,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::ThreadLocal_1<T> 
             .invoke("SetValueSlow", (value, slotArray))?;
         Ok(__cordl_ret)
     }
-    pub fn Initialize(
-        &mut self,
-        valueFactory: *mut crate::System::Func_1<T>,
-        trackAllValues: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Initialize", (valueFactory, trackAllValues))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Finalize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
@@ -480,17 +476,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::ThreadLocal_1<T> 
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetValueSlow(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("GetValueSlow", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -501,6 +486,28 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::ThreadLocal_1<T> 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsValueCreated(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsValueCreated", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("get_Value", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Value(
@@ -517,13 +524,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::ThreadLocal_1<T> 
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Value", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Threading+ThreadLocal_1")]

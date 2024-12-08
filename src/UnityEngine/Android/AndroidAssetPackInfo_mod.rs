@@ -30,6 +30,23 @@ impl std::ops::DerefMut for crate::UnityEngine::Android::AndroidAssetPackInfo {
 }
 #[cfg(feature = "UnityEngine+Android+AndroidAssetPackInfo")]
 impl crate::UnityEngine::Android::AndroidAssetPackInfo {
+    pub fn New(
+        name: *mut crate::System::String,
+        status: crate::UnityEngine::Android::AndroidAssetPackStatus,
+        _cordl_size: u64,
+        bytesDownloaded: u64,
+        transferProgress: f32,
+        error: crate::UnityEngine::Android::AndroidAssetPackError,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (name, status, _cordl_size, bytesDownloaded, transferProgress, error),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         name: *mut crate::System::String,
@@ -48,23 +65,6 @@ impl crate::UnityEngine::Android::AndroidAssetPackInfo {
                 (name, status, _cordl_size, bytesDownloaded, transferProgress, error),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        name: *mut crate::System::String,
-        status: crate::UnityEngine::Android::AndroidAssetPackStatus,
-        _cordl_size: u64,
-        bytesDownloaded: u64,
-        transferProgress: f32,
-        error: crate::UnityEngine::Android::AndroidAssetPackError,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (name, status, _cordl_size, bytesDownloaded, transferProgress, error),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+Android+AndroidAssetPackInfo")]

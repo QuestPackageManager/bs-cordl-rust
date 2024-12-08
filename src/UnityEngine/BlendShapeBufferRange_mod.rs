@@ -23,17 +23,6 @@ for crate::UnityEngine::BlendShapeBufferRange {
 }
 #[cfg(feature = "UnityEngine+BlendShapeBufferRange")]
 impl crate::UnityEngine::BlendShapeBufferRange {
-    pub fn set_startIndex(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_startIndex",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn set_endIndex(
         &mut self,
         value: u32,
@@ -41,6 +30,17 @@ impl crate::UnityEngine::BlendShapeBufferRange {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_endIndex",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_startIndex(
+        &mut self,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_startIndex",
             (value),
         )?;
         Ok(__cordl_ret)

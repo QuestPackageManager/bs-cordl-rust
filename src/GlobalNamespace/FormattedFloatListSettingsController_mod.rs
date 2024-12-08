@@ -37,51 +37,15 @@ impl std::ops::DerefMut for FormattedFloatListSettingsController {
 impl FormattedFloatListSettingsController {
     #[cfg(feature = "FormattedFloatListSettingsController+ValueType")]
     pub type ValueType = crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType;
-    pub fn SetValue(
+    pub fn ApplyValue(
         &mut self,
-        value: f32,
-        callCallback: bool,
+        idx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetValue", (value, callCallback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_valueDidChangeEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<
-            *mut FormattedFloatListSettingsController,
-            f32,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_valueDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_value", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_valueDidChangeEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<
-            *mut FormattedFloatListSettingsController,
-            f32,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_valueDidChangeEvent", (value))?;
+            .invoke("ApplyValue", (idx))?;
         Ok(__cordl_ret)
     }
     pub fn GetInitValues(
@@ -96,36 +60,23 @@ impl FormattedFloatListSettingsController {
             .invoke("GetInitValues", (idx, numberOfElements))?;
         Ok(__cordl_ret)
     }
-    pub fn set_values(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetValue(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        value: f32,
+        callCallback: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_values", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_values(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<f32>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<f32> = __cordl_object
-            .invoke("get_values", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ApplyValue(
-        &mut self,
-        idx: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ApplyValue", (idx))?;
+            .invoke("SetValue", (value, callCallback))?;
         Ok(__cordl_ret)
     }
     pub fn TextForValue(
@@ -149,12 +100,61 @@ impl FormattedFloatListSettingsController {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn add_valueDidChangeEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut FormattedFloatListSettingsController,
+            f32,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_valueDidChangeEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_value", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_values(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<f32>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<f32> = __cordl_object
+            .invoke("get_values", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_valueDidChangeEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut FormattedFloatListSettingsController,
+            f32,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_valueDidChangeEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_values(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_values", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "FormattedFloatListSettingsController")]

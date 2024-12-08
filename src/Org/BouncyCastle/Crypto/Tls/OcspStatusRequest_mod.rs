@@ -38,6 +38,28 @@ impl crate::Org::BouncyCastle::Crypto::Tls::OcspStatusRequest {
             .invoke("Encode", (output))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        responderIDList: *mut crate::System::Collections::IList,
+        requestExtensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (responderIDList, requestExtensions))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        responderIDList: *mut crate::System::Collections::IList,
+        requestExtensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (responderIDList, requestExtensions))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_RequestExtensions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -59,28 +81,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::OcspStatusRequest {
         let __cordl_ret: *mut crate::System::Collections::IList = __cordl_object
             .invoke("get_ResponderIDList", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        responderIDList: *mut crate::System::Collections::IList,
-        requestExtensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (responderIDList, requestExtensions))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        responderIDList: *mut crate::System::Collections::IList,
-        requestExtensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (responderIDList, requestExtensions))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+OcspStatusRequest")]

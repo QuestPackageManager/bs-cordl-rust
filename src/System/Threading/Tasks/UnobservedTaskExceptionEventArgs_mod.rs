@@ -29,6 +29,15 @@ for crate::System::Threading::Tasks::UnobservedTaskExceptionEventArgs {
 }
 #[cfg(feature = "System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]
 impl crate::System::Threading::Tasks::UnobservedTaskExceptionEventArgs {
+    pub fn New(
+        exception: *mut crate::System::AggregateException,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (exception))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         exception: *mut crate::System::AggregateException,
@@ -39,15 +48,6 @@ impl crate::System::Threading::Tasks::UnobservedTaskExceptionEventArgs {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (exception))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        exception: *mut crate::System::AggregateException,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (exception))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]

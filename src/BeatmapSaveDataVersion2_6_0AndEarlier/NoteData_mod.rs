@@ -29,51 +29,21 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteDa
 }
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+NoteData")]
 impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData {
-    pub fn get_lineIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_lineIndex", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_cutDirection(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::NoteCutDirection> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::BeatmapSaveDataCommon::NoteCutDirection = __cordl_object
-            .invoke("get_cutDirection", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteType = __cordl_object
-            .invoke("get_type", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_lineLayer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::NoteLineLayer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::BeatmapSaveDataCommon::NoteLineLayer = __cordl_object
-            .invoke("get_lineLayer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_time", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        _cordl_time: f32,
+        lineIndex: i32,
+        lineLayer: crate::BeatmapSaveDataCommon::NoteLineLayer,
+        _cordl_type: crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteType,
+        cutDirection: crate::BeatmapSaveDataCommon::NoteCutDirection,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (_cordl_time, lineIndex, lineLayer, _cordl_type, cutDirection),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -93,21 +63,51 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        _cordl_time: f32,
-        lineIndex: i32,
-        lineLayer: crate::BeatmapSaveDataCommon::NoteLineLayer,
-        _cordl_type: crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteType,
-        cutDirection: crate::BeatmapSaveDataCommon::NoteCutDirection,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (_cordl_time, lineIndex, lineLayer, _cordl_type, cutDirection),
-            )?;
-        Ok(__cordl_object)
+    pub fn get_cutDirection(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::NoteCutDirection> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::BeatmapSaveDataCommon::NoteCutDirection = __cordl_object
+            .invoke("get_cutDirection", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_lineIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_lineIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_lineLayer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::NoteLineLayer> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::BeatmapSaveDataCommon::NoteLineLayer = __cordl_object
+            .invoke("get_lineLayer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_time", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteType = __cordl_object
+            .invoke("get_type", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+NoteData")]

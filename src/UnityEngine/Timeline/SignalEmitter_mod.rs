@@ -27,6 +27,13 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::SignalEmitter {
 }
 #[cfg(feature = "UnityEngine+Timeline+SignalEmitter")]
 impl crate::UnityEngine::Timeline::SignalEmitter {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn UnityEngine_Playables_INotification_get_id(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::PropertyName> {
@@ -37,24 +44,6 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
             .invoke("UnityEngine.Playables.INotification.get_id", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_retroactive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_retroactive", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_asset(
-        &mut self,
-        value: *mut crate::UnityEngine::Timeline::SignalAsset,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_asset", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn UnityEngine_Timeline_INotificationOptionProvider_get_flags(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::NotificationFlags> {
@@ -63,35 +52,6 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
         );
         let __cordl_ret: crate::UnityEngine::Timeline::NotificationFlags = __cordl_object
             .invoke("UnityEngine.Timeline.INotificationOptionProvider.get_flags", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_retroactive(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_retroactive", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_emitOnce(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_emitOnce", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_emitOnce(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_emitOnce", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -114,12 +74,52 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
             .invoke("get_asset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_emitOnce(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_emitOnce", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_retroactive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_retroactive", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_asset(
+        &mut self,
+        value: *mut crate::UnityEngine::Timeline::SignalAsset,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_asset", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_emitOnce(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_emitOnce", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_retroactive(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_retroactive", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+SignalEmitter")]

@@ -32,6 +32,17 @@ for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
 impl<
     TContract: quest_hook::libil2cpp::Type,
 > crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
+    pub fn New(
+        bindContainer: *mut crate::Zenject::DiContainer,
+        bindInfo: *mut crate::Zenject::BindInfo,
+        factoryBindInfo: *mut crate::Zenject::FactoryBindInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bindContainer, bindInfo, factoryBindInfo))?;
+        Ok(__cordl_object)
+    }
     pub fn With<TConcrete>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -68,17 +79,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bindContainer, bindInfo, factoryBindInfo))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        bindContainer: *mut crate::Zenject::DiContainer,
-        bindInfo: *mut crate::Zenject::BindInfo,
-        factoryBindInfo: *mut crate::Zenject::FactoryBindInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bindContainer, bindInfo, factoryBindInfo))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+DecoratorToChoiceFromBinder_1")]

@@ -24,14 +24,16 @@ impl std::ops::DerefMut for crate::HMUI::ITableCellOwner {
 }
 #[cfg(feature = "HMUI+ITableCellOwner")]
 impl crate::HMUI::ITableCellOwner {
-    pub fn get_selectionType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::HMUI::TableViewSelectionType> {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_canSelectSelectedCell(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::HMUI::TableViewSelectionType = __cordl_object
-            .invoke("get_selectionType", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_canSelectSelectedCell", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_numberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -41,17 +43,15 @@ impl crate::HMUI::ITableCellOwner {
         let __cordl_ret: i32 = __cordl_object.invoke("get_numberOfCells", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_canSelectSelectedCell(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_selectionType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::HMUI::TableViewSelectionType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_canSelectSelectedCell", ())?;
+        let __cordl_ret: crate::HMUI::TableViewSelectionType = __cordl_object
+            .invoke("get_selectionType", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "HMUI+ITableCellOwner")]

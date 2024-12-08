@@ -26,18 +26,21 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Converters::UnixDateTimeCon
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+UnixDateTimeConverter")]
 impl crate::Newtonsoft::Json::Converters::UnixDateTimeConverter {
-    pub fn WriteJson(
-        &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteJson", (writer, value, serializer))?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool1(
+        allowPreEpoch: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (allowPreEpoch))?;
+        Ok(__cordl_object)
     }
     pub fn ReadJson(
         &mut self,
@@ -53,22 +56,17 @@ impl crate::Newtonsoft::Json::Converters::UnixDateTimeConverter {
             .invoke("ReadJson", (reader, objectType, existingValue, serializer))?;
         Ok(__cordl_ret)
     }
-    pub fn get_AllowPreEpoch(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_AllowPreEpoch", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_AllowPreEpoch(
+    pub fn WriteJson(
         &mut self,
-        value: bool,
+        writer: *mut crate::Newtonsoft::Json::JsonWriter,
+        value: *mut crate::System::Object,
+        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_AllowPreEpoch", (value))?;
+            .invoke("WriteJson", (writer, value, serializer))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -92,21 +90,23 @@ impl crate::Newtonsoft::Json::Converters::UnixDateTimeConverter {
             .invoke(".ctor", (allowPreEpoch))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_AllowPreEpoch(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_AllowPreEpoch", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New__cordl_bool1(
-        allowPreEpoch: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (allowPreEpoch))?;
-        Ok(__cordl_object)
+    pub fn set_AllowPreEpoch(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_AllowPreEpoch", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+UnixDateTimeConverter")]

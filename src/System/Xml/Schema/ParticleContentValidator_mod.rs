@@ -31,27 +31,25 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::ParticleContentValidator
 }
 #[cfg(feature = "System+Xml+Schema+ParticleContentValidator")]
 impl crate::System::Xml::Schema::ParticleContentValidator {
-    pub fn _ctor_XmlSchemaContentType0(
+    pub fn AddChoice(
         &mut self,
-        contentType: crate::System::Xml::Schema::XmlSchemaContentType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (contentType))?;
+            .invoke("AddChoice", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor__cordl_bool1(
+    pub fn AddLeafNode(
         &mut self,
-        contentType: crate::System::Xml::Schema::XmlSchemaContentType,
-        enableUpaCheck: bool,
+        node: *mut crate::System::Xml::Schema::SyntaxTreeNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (contentType, enableUpaCheck))?;
+            .invoke("AddLeafNode", (node))?;
         Ok(__cordl_ret)
     }
     pub fn AddLeafRange(
@@ -66,49 +64,16 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             .invoke("AddLeafRange", (min, max))?;
         Ok(__cordl_ret)
     }
-    pub fn AddChoice(
+    pub fn AddName(
         &mut self,
+        name: *mut crate::System::Xml::XmlQualifiedName,
+        particle: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddChoice", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Finish(
-        &mut self,
-        useDFA: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::ContentValidator,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::ContentValidator = __cordl_object
-            .invoke("Finish", (useDFA))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckCMUPAWithLeafRangeNodes(
-        &mut self,
-        curpos: *mut crate::System::Xml::Schema::BitSet,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckCMUPAWithLeafRangeNodes", (curpos))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitValidation(
-        &mut self,
-        context: *mut crate::System::Xml::Schema::ValidationState,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitValidation", (context))?;
+            .invoke("AddName", (name, particle))?;
         Ok(__cordl_ret)
     }
     pub fn AddNamespaceList(
@@ -123,55 +88,6 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             .invoke("AddNamespaceList", (namespaceList, particle))?;
         Ok(__cordl_ret)
     }
-    pub fn OpenGroup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OpenGroup", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetApplicableMinMaxFollowPos(
-        &mut self,
-        curpos: *mut crate::System::Xml::Schema::BitSet,
-        posWithRangeTerminals: *mut crate::System::Xml::Schema::BitSet,
-        minmaxFollowPos: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Schema::BitSet,
-        >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::BitSet> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::BitSet = __cordl_object
-            .invoke(
-                "GetApplicableMinMaxFollowPos",
-                (curpos, posWithRangeTerminals, minmaxFollowPos),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddStar(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddStar", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Closure(
-        &mut self,
-        node: *mut crate::System::Xml::Schema::InteriorNode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Closure", (node))?;
-        Ok(__cordl_ret)
-    }
     pub fn AddPlus(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -180,40 +96,6 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddPlus", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValidateElement(
-        &mut self,
-        name: *mut crate::System::Xml::XmlQualifiedName,
-        context: *mut crate::System::Xml::Schema::ValidationState,
-        errorCode: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("ValidateElement", (name, context, errorCode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Exists(
-        &mut self,
-        name: *mut crate::System::Xml::XmlQualifiedName,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Exists", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddLeafNode(
-        &mut self,
-        node: *mut crate::System::Xml::Schema::SyntaxTreeNode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddLeafNode", (node))?;
         Ok(__cordl_ret)
     }
     pub fn AddQMark(
@@ -226,29 +108,45 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             .invoke("AddQMark", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CheckUniqueParticleAttribution_Il2CppArray0(
+    pub fn AddSequence(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddSequence", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddStar(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddStar", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn BuildTransitionTable(
         &mut self,
         firstpos: *mut crate::System::Xml::Schema::BitSet,
         followpos: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Xml::Schema::BitSet,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        endMarkerPos: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckUniqueParticleAttribution", (firstpos, followpos))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckUniqueParticleAttribution_BitSet1(
-        &mut self,
-        curpos: *mut crate::System::Xml::Schema::BitSet,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckUniqueParticleAttribution", (curpos))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        > = __cordl_object
+            .invoke("BuildTransitionTable", (firstpos, followpos, endMarkerPos))?;
         Ok(__cordl_ret)
     }
     pub fn CalculateTotalFollowposForRangeNodes(
@@ -275,26 +173,40 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn AddName(
+    pub fn CheckCMUPAWithLeafRangeNodes(
         &mut self,
-        name: *mut crate::System::Xml::XmlQualifiedName,
-        particle: *mut crate::System::Object,
+        curpos: *mut crate::System::Xml::Schema::BitSet,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddName", (name, particle))?;
+            .invoke("CheckCMUPAWithLeafRangeNodes", (curpos))?;
         Ok(__cordl_ret)
     }
-    pub fn AddSequence(
+    pub fn CheckUniqueParticleAttribution_BitSet1(
         &mut self,
+        curpos: *mut crate::System::Xml::Schema::BitSet,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddSequence", ())?;
+            .invoke("CheckUniqueParticleAttribution", (curpos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckUniqueParticleAttribution_Il2CppArray0(
+        &mut self,
+        firstpos: *mut crate::System::Xml::Schema::BitSet,
+        followpos: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Schema::BitSet,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckUniqueParticleAttribution", (firstpos, followpos))?;
         Ok(__cordl_ret)
     }
     pub fn CloseGroup(
@@ -307,25 +219,15 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             .invoke("CloseGroup", ())?;
         Ok(__cordl_ret)
     }
-    pub fn BuildTransitionTable(
+    pub fn Closure(
         &mut self,
-        firstpos: *mut crate::System::Xml::Schema::BitSet,
-        followpos: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Schema::BitSet,
-        >,
-        endMarkerPos: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        >,
-    > {
+        node: *mut crate::System::Xml::Schema::InteriorNode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = __cordl_object
-            .invoke("BuildTransitionTable", (firstpos, followpos, endMarkerPos))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Closure", (node))?;
         Ok(__cordl_ret)
     }
     pub fn CompleteValidation(
@@ -338,6 +240,87 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         let __cordl_ret: bool = __cordl_object.invoke("CompleteValidation", (context))?;
         Ok(__cordl_ret)
     }
+    pub fn Exists(
+        &mut self,
+        name: *mut crate::System::Xml::XmlQualifiedName,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Exists", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Finish(
+        &mut self,
+        useDFA: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Xml::Schema::ContentValidator,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::ContentValidator = __cordl_object
+            .invoke("Finish", (useDFA))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetApplicableMinMaxFollowPos(
+        &mut self,
+        curpos: *mut crate::System::Xml::Schema::BitSet,
+        posWithRangeTerminals: *mut crate::System::Xml::Schema::BitSet,
+        minmaxFollowPos: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Schema::BitSet,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::BitSet> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::BitSet = __cordl_object
+            .invoke(
+                "GetApplicableMinMaxFollowPos",
+                (curpos, posWithRangeTerminals, minmaxFollowPos),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitValidation(
+        &mut self,
+        context: *mut crate::System::Xml::Schema::ValidationState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitValidation", (context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_XmlSchemaContentType0(
+        contentType: crate::System::Xml::Schema::XmlSchemaContentType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (contentType))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool1(
+        contentType: crate::System::Xml::Schema::XmlSchemaContentType,
+        enableUpaCheck: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (contentType, enableUpaCheck))?;
+        Ok(__cordl_object)
+    }
+    pub fn OpenGroup(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OpenGroup", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -348,24 +331,41 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_XmlSchemaContentType0(
-        contentType: crate::System::Xml::Schema::XmlSchemaContentType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (contentType))?;
-        Ok(__cordl_object)
+    pub fn ValidateElement(
+        &mut self,
+        name: *mut crate::System::Xml::XmlQualifiedName,
+        context: *mut crate::System::Xml::Schema::ValidationState,
+        errorCode: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("ValidateElement", (name, context, errorCode))?;
+        Ok(__cordl_ret)
     }
-    pub fn New__cordl_bool1(
+    pub fn _ctor_XmlSchemaContentType0(
+        &mut self,
+        contentType: crate::System::Xml::Schema::XmlSchemaContentType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (contentType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor__cordl_bool1(
+        &mut self,
         contentType: crate::System::Xml::Schema::XmlSchemaContentType,
         enableUpaCheck: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (contentType, enableUpaCheck))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (contentType, enableUpaCheck))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+ParticleContentValidator")]

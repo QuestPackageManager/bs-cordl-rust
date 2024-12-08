@@ -42,17 +42,6 @@ impl crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList_RevokedCertificate
         feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration+RevokedCertificatesEnumerator"
     )]
     pub type RevokedCertificatesEnumerator = crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_RevokedCertificatesEnumerator;
-    pub fn _ctor(
-        &mut self,
-        en: *mut crate::System::Collections::IEnumerable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (en))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
@@ -65,12 +54,23 @@ impl crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList_RevokedCertificate
     }
     pub fn New(
         en: *mut crate::System::Collections::IEnumerable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (en))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        en: *mut crate::System::Collections::IEnumerable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (en))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(
@@ -126,6 +126,32 @@ for crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_Revoked
     feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration+RevokedCertificatesEnumerator"
 )]
 impl crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_RevokedCertificatesEnumerator {
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        e: *mut crate::System::Collections::IEnumerator,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (e))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         e: *mut crate::System::Collections::IEnumerator,
@@ -146,32 +172,6 @@ impl crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_Revoke
         let __cordl_ret: *mut crate::System::Object = __cordl_object
             .invoke("get_Current", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        e: *mut crate::System::Collections::IEnumerator,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (e))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -225,45 +225,14 @@ impl crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList {
         feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration"
     )]
     pub type RevokedCertificatesEnumeration = crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList_RevokedCertificatesEnumeration;
-    pub fn get_VersionNumber(
+    pub fn GetRevokedCertificateEnumeration(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::DerInteger> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerable> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
-            .invoke("get_VersionNumber", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Signature(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier = __cordl_object
-            .invoke("get_Signature", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Version(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Version", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Issuer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name = __cordl_object
-            .invoke("get_Issuer", ())?;
+        let __cordl_ret: *mut crate::System::Collections::IEnumerable = __cordl_object
+            .invoke("GetRevokedCertificateEnumeration", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetRevokedCertificates(
@@ -281,37 +250,14 @@ impl crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList {
         > = __cordl_object.invoke("GetRevokedCertificates", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_NextUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::X509::Time> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::Time = __cordl_object
-            .invoke("get_NextUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRevokedCertificateEnumeration(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerable = __cordl_object
-            .invoke("GetRevokedCertificateEnumeration", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Extensions(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions = __cordl_object
-            .invoke("get_Extensions", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
     }
     pub fn ToAsn1Object(
         &mut self,
@@ -334,6 +280,52 @@ impl crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret)
     }
+    pub fn get_Extensions(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions = __cordl_object
+            .invoke("get_Extensions", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Issuer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name = __cordl_object
+            .invoke("get_Issuer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NextUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::X509::Time> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::Time = __cordl_object
+            .invoke("get_NextUpdate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Signature(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier = __cordl_object
+            .invoke("get_Signature", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_ThisUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::X509::Time> {
@@ -344,14 +336,22 @@ impl crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList {
             .invoke("get_ThisUpdate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
+    pub fn get_Version(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Version", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_VersionNumber(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::DerInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
+            .invoke("get_VersionNumber", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList")]

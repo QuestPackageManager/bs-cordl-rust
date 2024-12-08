@@ -22,17 +22,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Yoga::Yo
 }
 #[cfg(feature = "UnityEngine+Yoga+YogaValue")]
 impl crate::UnityEngine::Yoga::YogaValue {
-    pub fn Equals_YogaValue0(
-        &mut self,
-        other: crate::UnityEngine::Yoga::YogaValue,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_Object1(
         &mut self,
         obj: *mut crate::System::Object,
@@ -44,13 +33,14 @@ impl crate::UnityEngine::Yoga::YogaValue {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Unit(
+    pub fn Equals_YogaValue0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Yoga::YogaUnit> {
-        let __cordl_ret: crate::UnityEngine::Yoga::YogaUnit = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::Yoga::YogaValue,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Unit",
-            (),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -58,6 +48,16 @@ impl crate::UnityEngine::Yoga::YogaValue {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Unit(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Yoga::YogaUnit> {
+        let __cordl_ret: crate::UnityEngine::Yoga::YogaUnit = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Unit",
             (),
         )?;
         Ok(__cordl_ret)

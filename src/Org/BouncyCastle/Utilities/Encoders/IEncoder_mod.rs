@@ -38,6 +38,17 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::IEncoder {
             .invoke("Decode", (data, off, length, outStream))?;
         Ok(__cordl_ret)
     }
+    pub fn DecodeString(
+        &mut self,
+        data: *mut crate::System::String,
+        outStream: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("DecodeString", (data, outStream))?;
+        Ok(__cordl_ret)
+    }
     pub fn Encode(
         &mut self,
         data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -50,17 +61,6 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::IEncoder {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("Encode", (data, off, length, outStream))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DecodeString(
-        &mut self,
-        data: *mut crate::System::String,
-        outStream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("DecodeString", (data, outStream))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

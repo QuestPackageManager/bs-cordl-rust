@@ -30,6 +30,16 @@ for crate::System::Xml::Xsl::Runtime::StringConcat {
 }
 #[cfg(feature = "System+Xml+Xsl+Runtime+StringConcat")]
 impl crate::System::Xml::Xsl::Runtime::StringConcat {
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Clear",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn ConcatNoDelimiter(
         &mut self,
         s: *mut crate::System::String,
@@ -47,16 +57,6 @@ impl crate::System::Xml::Xsl::Runtime::StringConcat {
         let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetResult",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Clear",
             (),
         )?;
         Ok(__cordl_ret)

@@ -26,6 +26,24 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::Marker {
 }
 #[cfg(feature = "UnityEngine+Timeline+Marker")]
 impl crate::UnityEngine::Timeline::Marker {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnInitialize(
+        &mut self,
+        aPent: *mut crate::UnityEngine::Timeline::TrackAsset,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnInitialize", (aPent))?;
+        Ok(__cordl_ret)
+    }
     pub fn UnityEngine_Timeline_IMarker_Initialize(
         &mut self,
         parentTrack: *mut crate::UnityEngine::Timeline::TrackAsset,
@@ -47,35 +65,6 @@ impl crate::UnityEngine::Timeline::Marker {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnInitialize(
-        &mut self,
-        aPent: *mut crate::UnityEngine::Timeline::TrackAsset,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnInitialize", (aPent))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("get_time", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_time(
-        &mut self,
-        value: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_time", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_parent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Timeline::TrackAsset> {
@@ -84,6 +73,13 @@ impl crate::UnityEngine::Timeline::Marker {
         );
         let __cordl_ret: *mut crate::UnityEngine::Timeline::TrackAsset = __cordl_object
             .invoke("get_parent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object.invoke("get_time", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_parent(
@@ -97,12 +93,16 @@ impl crate::UnityEngine::Timeline::Marker {
             .invoke("set_parent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_time(
+        &mut self,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_time", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+Marker")]

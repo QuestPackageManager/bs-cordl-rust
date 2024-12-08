@@ -26,6 +26,30 @@ for crate::System::Security::AccessControl::FileSystemAccessRule {
 }
 #[cfg(feature = "System+Security+AccessControl+FileSystemAccessRule")]
 impl crate::System::Security::AccessControl::FileSystemAccessRule {
+    pub fn New(
+        identity: *mut crate::System::Security::Principal::IdentityReference,
+        fileSystemRights: crate::System::Security::AccessControl::FileSystemRights,
+        isInherited: bool,
+        inheritanceFlags: crate::System::Security::AccessControl::InheritanceFlags,
+        propagationFlags: crate::System::Security::AccessControl::PropagationFlags,
+        _cordl_type: crate::System::Security::AccessControl::AccessControlType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    identity,
+                    fileSystemRights,
+                    isInherited,
+                    inheritanceFlags,
+                    propagationFlags,
+                    _cordl_type,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         identity: *mut crate::System::Security::Principal::IdentityReference,
@@ -63,30 +87,6 @@ impl crate::System::Security::AccessControl::FileSystemAccessRule {
         let __cordl_ret: crate::System::Security::AccessControl::FileSystemRights = __cordl_object
             .invoke("get_FileSystemRights", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        identity: *mut crate::System::Security::Principal::IdentityReference,
-        fileSystemRights: crate::System::Security::AccessControl::FileSystemRights,
-        isInherited: bool,
-        inheritanceFlags: crate::System::Security::AccessControl::InheritanceFlags,
-        propagationFlags: crate::System::Security::AccessControl::PropagationFlags,
-        _cordl_type: crate::System::Security::AccessControl::AccessControlType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    identity,
-                    fileSystemRights,
-                    isInherited,
-                    inheritanceFlags,
-                    propagationFlags,
-                    _cordl_type,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Security+AccessControl+FileSystemAccessRule")]

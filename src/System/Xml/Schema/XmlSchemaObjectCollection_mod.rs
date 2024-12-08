@@ -25,31 +25,6 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaObjectCollectio
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectCollection")]
 impl crate::System::Xml::Schema::XmlSchemaObjectCollection {
-    pub fn get_Item(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaObject,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaObject = __cordl_object
-            .invoke("get_Item", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Item(
-        &mut self,
-        index: i32,
-        value: *mut crate::System::Xml::Schema::XmlSchemaObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Item", (index, value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Add_XmlSchemaObject0(
         &mut self,
         item: *mut crate::System::Xml::Schema::XmlSchemaObject,
@@ -83,6 +58,18 @@ impl crate::System::Xml::Schema::XmlSchemaObjectCollection {
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
+    pub fn GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Xml::Schema::XmlSchemaObjectEnumerator,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaObjectEnumerator = __cordl_object
+            .invoke("GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Insert(
         &mut self,
         index: i32,
@@ -93,6 +80,60 @@ impl crate::System::Xml::Schema::XmlSchemaObjectCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Insert", (index, item))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnClear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnClear", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnInsert(
+        &mut self,
+        index: i32,
+        item: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnInsert", (index, item))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnRemove(
+        &mut self,
+        index: i32,
+        item: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnRemove", (index, item))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnSet(
+        &mut self,
+        index: i32,
+        oldValue: *mut crate::System::Object,
+        newValue: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnSet", (index, oldValue, newValue))?;
         Ok(__cordl_ret)
     }
     pub fn Remove(
@@ -116,71 +157,30 @@ impl crate::System::Xml::Schema::XmlSchemaObjectCollection {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnInsert(
+    pub fn get_Item(
         &mut self,
         index: i32,
-        item: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnInsert", (index, item))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnSet(
-        &mut self,
-        index: i32,
-        oldValue: *mut crate::System::Object,
-        newValue: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnSet", (index, oldValue, newValue))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEnumerator(
-        &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaObjectEnumerator,
+        *mut crate::System::Xml::Schema::XmlSchemaObject,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaObjectEnumerator = __cordl_object
-            .invoke("GetEnumerator", ())?;
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaObject = __cordl_object
+            .invoke("get_Item", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn OnRemove(
+    pub fn set_Item(
         &mut self,
         index: i32,
-        item: *mut crate::System::Object,
+        value: *mut crate::System::Xml::Schema::XmlSchemaObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnRemove", (index, item))?;
+            .invoke("set_Item", (index, value))?;
         Ok(__cordl_ret)
-    }
-    pub fn OnClear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnClear", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectCollection")]

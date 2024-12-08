@@ -102,170 +102,170 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::OVR::OpenVR::IVROverl
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay")]
 impl crate::OVR::OpenVR::IVROverlay {
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayIntersectionMask")]
-    pub type _SetOverlayIntersectionMask = crate::OVR::OpenVR::IVROverlay__SetOverlayIntersectionMask;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayName")]
-    pub type _SetOverlayName = crate::OVR::OpenVR::IVROverlay__SetOverlayName;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformAbsolute")]
-    pub type _SetOverlayTransformAbsolute = crate::OVR::OpenVR::IVROverlay__SetOverlayTransformAbsolute;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_ReleaseNativeOverlayHandle")]
-    pub type _ReleaseNativeOverlayHandle = crate::OVR::OpenVR::IVROverlay__ReleaseNativeOverlayHandle;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformTrackedDeviceComponent")]
-    pub type _GetOverlayTransformTrackedDeviceComponent = crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceComponent;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowOverlay")]
-    pub type _ShowOverlay = crate::OVR::OpenVR::IVROverlay__ShowOverlay;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTexture")]
-    pub type _SetOverlayTexture = crate::OVR::OpenVR::IVROverlay__SetOverlayTexture;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayNeighbor")]
-    pub type _SetOverlayNeighbor = crate::OVR::OpenVR::IVROverlay__SetOverlayNeighbor;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetKeyboardPositionForOverlay")]
-    pub type _SetKeyboardPositionForOverlay = crate::OVR::OpenVR::IVROverlay__SetKeyboardPositionForOverlay;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTextureBounds")]
-    pub type _SetOverlayTextureBounds = crate::OVR::OpenVR::IVROverlay__SetOverlayTextureBounds;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformOverlayRelative")]
-    pub type _SetOverlayTransformOverlayRelative = crate::OVR::OpenVR::IVROverlay__SetOverlayTransformOverlayRelative;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowKeyboard")]
-    pub type _ShowKeyboard = crate::OVR::OpenVR::IVROverlay__ShowKeyboard;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayRenderingPid")]
-    pub type _SetOverlayRenderingPid = crate::OVR::OpenVR::IVROverlay__SetOverlayRenderingPid;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayRenderingPid")]
-    pub type _GetOverlayRenderingPid = crate::OVR::OpenVR::IVROverlay__GetOverlayRenderingPid;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayFlag")]
-    pub type _SetOverlayFlag = crate::OVR::OpenVR::IVROverlay__SetOverlayFlag;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTexelAspect")]
-    pub type _SetOverlayTexelAspect = crate::OVR::OpenVR::IVROverlay__SetOverlayTexelAspect;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_ComputeOverlayIntersection")]
-    pub type _ComputeOverlayIntersection = crate::OVR::OpenVR::IVROverlay__ComputeOverlayIntersection;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayName")]
-    pub type _GetOverlayName = crate::OVR::OpenVR::IVROverlay__GetOverlayName;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureBounds")]
-    pub type _GetOverlayTextureBounds = crate::OVR::OpenVR::IVROverlay__GetOverlayTextureBounds;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayRenderModel")]
-    pub type _SetOverlayRenderModel = crate::OVR::OpenVR::IVROverlay__SetOverlayRenderModel;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayFlag")]
-    pub type _GetOverlayFlag = crate::OVR::OpenVR::IVROverlay__GetOverlayFlag;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayErrorNameFromEnum")]
-    pub type _GetOverlayErrorNameFromEnum = crate::OVR::OpenVR::IVROverlay__GetOverlayErrorNameFromEnum;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_CreateOverlay")]
-    pub type _CreateOverlay = crate::OVR::OpenVR::IVROverlay__CreateOverlay;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayKey")]
-    pub type _GetOverlayKey = crate::OVR::OpenVR::IVROverlay__GetOverlayKey;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayFlags")]
-    pub type _GetOverlayFlags = crate::OVR::OpenVR::IVROverlay__GetOverlayFlags;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_HideOverlay")]
-    pub type _HideOverlay = crate::OVR::OpenVR::IVROverlay__HideOverlay;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayAlpha")]
-    pub type _SetOverlayAlpha = crate::OVR::OpenVR::IVROverlay__SetOverlayAlpha;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayAutoCurveDistanceRangeInMeters")]
-    pub type _SetOverlayAutoCurveDistanceRangeInMeters = crate::OVR::OpenVR::IVROverlay__SetOverlayAutoCurveDistanceRangeInMeters;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayWidthInMeters")]
-    pub type _SetOverlayWidthInMeters = crate::OVR::OpenVR::IVROverlay__SetOverlayWidthInMeters;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformTrackedDeviceRelative")]
-    pub type _SetOverlayTransformTrackedDeviceRelative = crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceRelative;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetDashboardOverlaySceneProcess")]
-    pub type _SetDashboardOverlaySceneProcess = crate::OVR::OpenVR::IVROverlay__SetDashboardOverlaySceneProcess;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_FindOverlay")]
-    pub type _FindOverlay = crate::OVR::OpenVR::IVROverlay__FindOverlay;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsOverlayVisible")]
-    pub type _IsOverlayVisible = crate::OVR::OpenVR::IVROverlay__IsOverlayVisible;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayColor")]
-    pub type _GetOverlayColor = crate::OVR::OpenVR::IVROverlay__GetOverlayColor;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_MoveGamepadFocusToNeighbor")]
-    pub type _MoveGamepadFocusToNeighbor = crate::OVR::OpenVR::IVROverlay__MoveGamepadFocusToNeighbor;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_CloseMessageOverlay")]
-    pub type _CloseMessageOverlay = crate::OVR::OpenVR::IVROverlay__CloseMessageOverlay;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayAlpha")]
-    pub type _GetOverlayAlpha = crate::OVR::OpenVR::IVROverlay__GetOverlayAlpha;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformTrackedDeviceComponent")]
-    pub type _SetOverlayTransformTrackedDeviceComponent = crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceComponent;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayMouseScale")]
-    pub type _SetOverlayMouseScale = crate::OVR::OpenVR::IVROverlay__SetOverlayMouseScale;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_ClearOverlayTexture")]
-    pub type _ClearOverlayTexture = crate::OVR::OpenVR::IVROverlay__ClearOverlayTexture;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_DestroyOverlay")]
-    pub type _DestroyOverlay = crate::OVR::OpenVR::IVROverlay__DestroyOverlay;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetKeyboardText")]
-    pub type _GetKeyboardText = crate::OVR::OpenVR::IVROverlay__GetKeyboardText;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTexelAspect")]
-    pub type _GetOverlayTexelAspect = crate::OVR::OpenVR::IVROverlay__GetOverlayTexelAspect;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayDualAnalogTransform")]
-    pub type _GetOverlayDualAnalogTransform = crate::OVR::OpenVR::IVROverlay__GetOverlayDualAnalogTransform;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayInputMethod")]
-    pub type _SetOverlayInputMethod = crate::OVR::OpenVR::IVROverlay__SetOverlayInputMethod;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayAutoCurveDistanceRangeInMeters")]
-    pub type _GetOverlayAutoCurveDistanceRangeInMeters = crate::OVR::OpenVR::IVROverlay__GetOverlayAutoCurveDistanceRangeInMeters;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayFromFile")]
-    pub type _SetOverlayFromFile = crate::OVR::OpenVR::IVROverlay__SetOverlayFromFile;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowMessageOverlay")]
-    pub type _ShowMessageOverlay = crate::OVR::OpenVR::IVROverlay__ShowMessageOverlay;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsDashboardVisible")]
-    pub type _IsDashboardVisible = crate::OVR::OpenVR::IVROverlay__IsDashboardVisible;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetKeyboardTransformAbsolute")]
-    pub type _SetKeyboardTransformAbsolute = crate::OVR::OpenVR::IVROverlay__SetKeyboardTransformAbsolute;
     #[cfg(feature = "OVR+OpenVR+IVROverlay+_CreateDashboardOverlay")]
     pub type _CreateDashboardOverlay = crate::OVR::OpenVR::IVROverlay__CreateDashboardOverlay;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayDualAnalogTransform")]
-    pub type _SetOverlayDualAnalogTransform = crate::OVR::OpenVR::IVROverlay__SetOverlayDualAnalogTransform;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformType")]
-    pub type _GetOverlayTransformType = crate::OVR::OpenVR::IVROverlay__GetOverlayTransformType;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetTransformForOverlayCoordinates")]
-    pub type _GetTransformForOverlayCoordinates = crate::OVR::OpenVR::IVROverlay__GetTransformForOverlayCoordinates;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayColor")]
-    pub type _SetOverlayColor = crate::OVR::OpenVR::IVROverlay__SetOverlayColor;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetDashboardOverlaySceneProcess")]
-    pub type _GetDashboardOverlaySceneProcess = crate::OVR::OpenVR::IVROverlay__GetDashboardOverlaySceneProcess;
     #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayMouseScale")]
     pub type _GetOverlayMouseScale = crate::OVR::OpenVR::IVROverlay__GetOverlayMouseScale;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayImageData")]
-    pub type _GetOverlayImageData = crate::OVR::OpenVR::IVROverlay__GetOverlayImageData;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowDashboard")]
-    pub type _ShowDashboard = crate::OVR::OpenVR::IVROverlay__ShowDashboard;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_CloseMessageOverlay")]
+    pub type _CloseMessageOverlay = crate::OVR::OpenVR::IVROverlay__CloseMessageOverlay;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_MoveGamepadFocusToNeighbor")]
+    pub type _MoveGamepadFocusToNeighbor = crate::OVR::OpenVR::IVROverlay__MoveGamepadFocusToNeighbor;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayDualAnalogTransform")]
+    pub type _GetOverlayDualAnalogTransform = crate::OVR::OpenVR::IVROverlay__GetOverlayDualAnalogTransform;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetHighQualityOverlay")]
+    pub type _SetHighQualityOverlay = crate::OVR::OpenVR::IVROverlay__SetHighQualityOverlay;
     #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformAbsolute")]
     pub type _GetOverlayTransformAbsolute = crate::OVR::OpenVR::IVROverlay__GetOverlayTransformAbsolute;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTextureBounds")]
+    pub type _SetOverlayTextureBounds = crate::OVR::OpenVR::IVROverlay__SetOverlayTextureBounds;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetDashboardOverlaySceneProcess")]
+    pub type _GetDashboardOverlaySceneProcess = crate::OVR::OpenVR::IVROverlay__GetDashboardOverlaySceneProcess;
     #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformTrackedDeviceRelative")]
     pub type _GetOverlayTransformTrackedDeviceRelative = crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceRelative;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetHighQualityOverlay")]
-    pub type _GetHighQualityOverlay = crate::OVR::OpenVR::IVROverlay__GetHighQualityOverlay;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_PollNextOverlayEvent")]
+    pub type _PollNextOverlayEvent = crate::OVR::OpenVR::IVROverlay__PollNextOverlayEvent;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayKey")]
+    pub type _GetOverlayKey = crate::OVR::OpenVR::IVROverlay__GetOverlayKey;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformOverlayRelative")]
+    pub type _SetOverlayTransformOverlayRelative = crate::OVR::OpenVR::IVROverlay__SetOverlayTransformOverlayRelative;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsOverlayVisible")]
+    pub type _IsOverlayVisible = crate::OVR::OpenVR::IVROverlay__IsOverlayVisible;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayFlag")]
+    pub type _GetOverlayFlag = crate::OVR::OpenVR::IVROverlay__GetOverlayFlag;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformType")]
+    pub type _GetOverlayTransformType = crate::OVR::OpenVR::IVROverlay__GetOverlayTransformType;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowOverlay")]
+    pub type _ShowOverlay = crate::OVR::OpenVR::IVROverlay__ShowOverlay;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsDashboardVisible")]
+    pub type _IsDashboardVisible = crate::OVR::OpenVR::IVROverlay__IsDashboardVisible;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformTrackedDeviceComponent")]
+    pub type _SetOverlayTransformTrackedDeviceComponent = crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceComponent;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_CreateOverlay")]
+    pub type _CreateOverlay = crate::OVR::OpenVR::IVROverlay__CreateOverlay;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayMouseScale")]
+    pub type _SetOverlayMouseScale = crate::OVR::OpenVR::IVROverlay__SetOverlayMouseScale;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetKeyboardPositionForOverlay")]
+    pub type _SetKeyboardPositionForOverlay = crate::OVR::OpenVR::IVROverlay__SetKeyboardPositionForOverlay;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayColor")]
+    pub type _SetOverlayColor = crate::OVR::OpenVR::IVROverlay__SetOverlayColor;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_ComputeOverlayIntersection")]
+    pub type _ComputeOverlayIntersection = crate::OVR::OpenVR::IVROverlay__ComputeOverlayIntersection;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTexelAspect")]
+    pub type _GetOverlayTexelAspect = crate::OVR::OpenVR::IVROverlay__GetOverlayTexelAspect;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayAlpha")]
+    pub type _GetOverlayAlpha = crate::OVR::OpenVR::IVROverlay__GetOverlayAlpha;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureBounds")]
+    pub type _GetOverlayTextureBounds = crate::OVR::OpenVR::IVROverlay__GetOverlayTextureBounds;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayInputMethod")]
+    pub type _GetOverlayInputMethod = crate::OVR::OpenVR::IVROverlay__GetOverlayInputMethod;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetGamepadFocusOverlay")]
+    pub type _SetGamepadFocusOverlay = crate::OVR::OpenVR::IVROverlay__SetGamepadFocusOverlay;
     #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlaySortOrder")]
     pub type _SetOverlaySortOrder = crate::OVR::OpenVR::IVROverlay__SetOverlaySortOrder;
     #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlaySortOrder")]
     pub type _GetOverlaySortOrder = crate::OVR::OpenVR::IVROverlay__GetOverlaySortOrder;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformOverlayRelative")]
-    pub type _GetOverlayTransformOverlayRelative = crate::OVR::OpenVR::IVROverlay__GetOverlayTransformOverlayRelative;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsHoverTargetOverlay")]
-    pub type _IsHoverTargetOverlay = crate::OVR::OpenVR::IVROverlay__IsHoverTargetOverlay;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTexture")]
-    pub type _GetOverlayTexture = crate::OVR::OpenVR::IVROverlay__GetOverlayTexture;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_HideKeyboard")]
-    pub type _HideKeyboard = crate::OVR::OpenVR::IVROverlay__HideKeyboard;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayInputMethod")]
-    pub type _GetOverlayInputMethod = crate::OVR::OpenVR::IVROverlay__GetOverlayInputMethod;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetKeyboardText")]
+    pub type _GetKeyboardText = crate::OVR::OpenVR::IVROverlay__GetKeyboardText;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTexture")]
+    pub type _SetOverlayTexture = crate::OVR::OpenVR::IVROverlay__SetOverlayTexture;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayAlpha")]
+    pub type _SetOverlayAlpha = crate::OVR::OpenVR::IVROverlay__SetOverlayAlpha;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformAbsolute")]
+    pub type _SetOverlayTransformAbsolute = crate::OVR::OpenVR::IVROverlay__SetOverlayTransformAbsolute;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetTransformForOverlayCoordinates")]
+    pub type _GetTransformForOverlayCoordinates = crate::OVR::OpenVR::IVROverlay__GetTransformForOverlayCoordinates;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_HideOverlay")]
+    pub type _HideOverlay = crate::OVR::OpenVR::IVROverlay__HideOverlay;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_ClearOverlayTexture")]
+    pub type _ClearOverlayTexture = crate::OVR::OpenVR::IVROverlay__ClearOverlayTexture;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayName")]
+    pub type _SetOverlayName = crate::OVR::OpenVR::IVROverlay__SetOverlayName;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayImageData")]
+    pub type _GetOverlayImageData = crate::OVR::OpenVR::IVROverlay__GetOverlayImageData;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_FindOverlay")]
+    pub type _FindOverlay = crate::OVR::OpenVR::IVROverlay__FindOverlay;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayErrorNameFromEnum")]
+    pub type _GetOverlayErrorNameFromEnum = crate::OVR::OpenVR::IVROverlay__GetOverlayErrorNameFromEnum;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetDashboardOverlaySceneProcess")]
+    pub type _SetDashboardOverlaySceneProcess = crate::OVR::OpenVR::IVROverlay__SetDashboardOverlaySceneProcess;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetKeyboardTransformAbsolute")]
+    pub type _SetKeyboardTransformAbsolute = crate::OVR::OpenVR::IVROverlay__SetKeyboardTransformAbsolute;
     #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsActiveDashboardOverlay")]
     pub type _IsActiveDashboardOverlay = crate::OVR::OpenVR::IVROverlay__IsActiveDashboardOverlay;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayRaw")]
-    pub type _SetOverlayRaw = crate::OVR::OpenVR::IVROverlay__SetOverlayRaw;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTextureColorSpace")]
-    pub type _SetOverlayTextureColorSpace = crate::OVR::OpenVR::IVROverlay__SetOverlayTextureColorSpace;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowKeyboardForOverlay")]
-    pub type _ShowKeyboardForOverlay = crate::OVR::OpenVR::IVROverlay__ShowKeyboardForOverlay;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayWidthInMeters")]
-    pub type _GetOverlayWidthInMeters = crate::OVR::OpenVR::IVROverlay__GetOverlayWidthInMeters;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetGamepadFocusOverlay")]
-    pub type _GetGamepadFocusOverlay = crate::OVR::OpenVR::IVROverlay__GetGamepadFocusOverlay;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetHighQualityOverlay")]
-    pub type _SetHighQualityOverlay = crate::OVR::OpenVR::IVROverlay__SetHighQualityOverlay;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureSize")]
-    pub type _GetOverlayTextureSize = crate::OVR::OpenVR::IVROverlay__GetOverlayTextureSize;
     #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetPrimaryDashboardDevice")]
     pub type _GetPrimaryDashboardDevice = crate::OVR::OpenVR::IVROverlay__GetPrimaryDashboardDevice;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureColorSpace")]
-    pub type _GetOverlayTextureColorSpace = crate::OVR::OpenVR::IVROverlay__GetOverlayTextureColorSpace;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_PollNextOverlayEvent")]
-    pub type _PollNextOverlayEvent = crate::OVR::OpenVR::IVROverlay__PollNextOverlayEvent;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayAutoCurveDistanceRangeInMeters")]
+    pub type _GetOverlayAutoCurveDistanceRangeInMeters = crate::OVR::OpenVR::IVROverlay__GetOverlayAutoCurveDistanceRangeInMeters;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformTrackedDeviceRelative")]
+    pub type _SetOverlayTransformTrackedDeviceRelative = crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceRelative;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformOverlayRelative")]
+    pub type _GetOverlayTransformOverlayRelative = crate::OVR::OpenVR::IVROverlay__GetOverlayTransformOverlayRelative;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayRenderingPid")]
+    pub type _GetOverlayRenderingPid = crate::OVR::OpenVR::IVROverlay__GetOverlayRenderingPid;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayDualAnalogTransform")]
+    pub type _SetOverlayDualAnalogTransform = crate::OVR::OpenVR::IVROverlay__SetOverlayDualAnalogTransform;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayFlag")]
+    pub type _SetOverlayFlag = crate::OVR::OpenVR::IVROverlay__SetOverlayFlag;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_HideKeyboard")]
+    pub type _HideKeyboard = crate::OVR::OpenVR::IVROverlay__HideKeyboard;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformTrackedDeviceComponent")]
+    pub type _GetOverlayTransformTrackedDeviceComponent = crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceComponent;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayNeighbor")]
+    pub type _SetOverlayNeighbor = crate::OVR::OpenVR::IVROverlay__SetOverlayNeighbor;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayRenderingPid")]
+    pub type _SetOverlayRenderingPid = crate::OVR::OpenVR::IVROverlay__SetOverlayRenderingPid;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayColor")]
+    pub type _GetOverlayColor = crate::OVR::OpenVR::IVROverlay__GetOverlayColor;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetGamepadFocusOverlay")]
+    pub type _GetGamepadFocusOverlay = crate::OVR::OpenVR::IVROverlay__GetGamepadFocusOverlay;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetHighQualityOverlay")]
+    pub type _GetHighQualityOverlay = crate::OVR::OpenVR::IVROverlay__GetHighQualityOverlay;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayWidthInMeters")]
+    pub type _GetOverlayWidthInMeters = crate::OVR::OpenVR::IVROverlay__GetOverlayWidthInMeters;
     #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayRenderModel")]
     pub type _GetOverlayRenderModel = crate::OVR::OpenVR::IVROverlay__GetOverlayRenderModel;
-    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetGamepadFocusOverlay")]
-    pub type _SetGamepadFocusOverlay = crate::OVR::OpenVR::IVROverlay__SetGamepadFocusOverlay;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayRenderModel")]
+    pub type _SetOverlayRenderModel = crate::OVR::OpenVR::IVROverlay__SetOverlayRenderModel;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureSize")]
+    pub type _GetOverlayTextureSize = crate::OVR::OpenVR::IVROverlay__GetOverlayTextureSize;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowDashboard")]
+    pub type _ShowDashboard = crate::OVR::OpenVR::IVROverlay__ShowDashboard;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTextureColorSpace")]
+    pub type _SetOverlayTextureColorSpace = crate::OVR::OpenVR::IVROverlay__SetOverlayTextureColorSpace;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayName")]
+    pub type _GetOverlayName = crate::OVR::OpenVR::IVROverlay__GetOverlayName;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsHoverTargetOverlay")]
+    pub type _IsHoverTargetOverlay = crate::OVR::OpenVR::IVROverlay__IsHoverTargetOverlay;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTexelAspect")]
+    pub type _SetOverlayTexelAspect = crate::OVR::OpenVR::IVROverlay__SetOverlayTexelAspect;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTexture")]
+    pub type _GetOverlayTexture = crate::OVR::OpenVR::IVROverlay__GetOverlayTexture;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayFromFile")]
+    pub type _SetOverlayFromFile = crate::OVR::OpenVR::IVROverlay__SetOverlayFromFile;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayIntersectionMask")]
+    pub type _SetOverlayIntersectionMask = crate::OVR::OpenVR::IVROverlay__SetOverlayIntersectionMask;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayFlags")]
+    pub type _GetOverlayFlags = crate::OVR::OpenVR::IVROverlay__GetOverlayFlags;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowKeyboardForOverlay")]
+    pub type _ShowKeyboardForOverlay = crate::OVR::OpenVR::IVROverlay__ShowKeyboardForOverlay;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_ReleaseNativeOverlayHandle")]
+    pub type _ReleaseNativeOverlayHandle = crate::OVR::OpenVR::IVROverlay__ReleaseNativeOverlayHandle;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowKeyboard")]
+    pub type _ShowKeyboard = crate::OVR::OpenVR::IVROverlay__ShowKeyboard;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureColorSpace")]
+    pub type _GetOverlayTextureColorSpace = crate::OVR::OpenVR::IVROverlay__GetOverlayTextureColorSpace;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayWidthInMeters")]
+    pub type _SetOverlayWidthInMeters = crate::OVR::OpenVR::IVROverlay__SetOverlayWidthInMeters;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayAutoCurveDistanceRangeInMeters")]
+    pub type _SetOverlayAutoCurveDistanceRangeInMeters = crate::OVR::OpenVR::IVROverlay__SetOverlayAutoCurveDistanceRangeInMeters;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayInputMethod")]
+    pub type _SetOverlayInputMethod = crate::OVR::OpenVR::IVROverlay__SetOverlayInputMethod;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayRaw")]
+    pub type _SetOverlayRaw = crate::OVR::OpenVR::IVROverlay__SetOverlayRaw;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_DestroyOverlay")]
+    pub type _DestroyOverlay = crate::OVR::OpenVR::IVROverlay__DestroyOverlay;
+    #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowMessageOverlay")]
+    pub type _ShowMessageOverlay = crate::OVR::OpenVR::IVROverlay__ShowMessageOverlay;
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ClearOverlayTexture")]
 #[repr(C)]
@@ -293,29 +293,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__ClearOverlayTexture 
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ClearOverlayTexture")]
 impl crate::OVR::OpenVR::IVROverlay__ClearOverlayTexture {
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -327,6 +304,17 @@ impl crate::OVR::OpenVR::IVROverlay__ClearOverlayTexture {
         );
         let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
             .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -343,12 +331,24 @@ impl crate::OVR::OpenVR::IVROverlay__ClearOverlayTexture {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ClearOverlayTexture")]
@@ -387,26 +387,16 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__CloseMessageOverlay 
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_CloseMessageOverlay")]
 impl crate::OVR::OpenVR::IVROverlay__CloseMessageOverlay {
-    pub fn _ctor(
+    pub fn BeginInvoke(
         &mut self,
+        callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", ())?;
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (callback, object))?;
         Ok(__cordl_ret)
     }
     pub fn EndInvoke(
@@ -420,27 +410,37 @@ impl crate::OVR::OpenVR::IVROverlay__CloseMessageOverlay {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInvoke(
+    pub fn Invoke(
         &mut self,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (callback, object))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", ())?;
         Ok(__cordl_ret)
     }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_CloseMessageOverlay")]
@@ -480,52 +480,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__ComputeOverlayInters
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ComputeOverlayIntersection")]
 impl crate::OVR::OpenVR::IVROverlay__ComputeOverlayIntersection {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        pParams: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::VROverlayIntersectionParams_t,
-        >,
-        pResults: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::VROverlayIntersectionResults_t,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pParams, pResults))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        pParams: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::VROverlayIntersectionParams_t,
-        >,
-        pResults: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::VROverlayIntersectionResults_t,
-        >,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("EndInvoke", (pParams, pResults, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -548,15 +502,61 @@ impl crate::OVR::OpenVR::IVROverlay__ComputeOverlayIntersection {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        pParams: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::VROverlayIntersectionParams_t,
+        >,
+        pResults: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::VROverlayIntersectionResults_t,
+        >,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("EndInvoke", (pParams, pResults, result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        pParams: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::VROverlayIntersectionParams_t,
+        >,
+        pResults: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::VROverlayIntersectionResults_t,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle, pParams, pResults))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ComputeOverlayIntersection")]
@@ -595,35 +595,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__CreateDashboardOverl
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_CreateDashboardOverlay")]
 impl crate::OVR::OpenVR::IVROverlay__CreateDashboardOverlay {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        pchOverlayKey: *mut crate::System::String,
-        pchOverlayFriendlyName: *mut crate::System::String,
-        pMainHandle: quest_hook::libil2cpp::ByRefMut<u64>,
-        pThumbnailHandle: quest_hook::libil2cpp::ByRefMut<u64>,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (pchOverlayKey, pchOverlayFriendlyName, pMainHandle, pThumbnailHandle),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchOverlayKey: *mut crate::System::String,
@@ -663,15 +634,44 @@ impl crate::OVR::OpenVR::IVROverlay__CreateDashboardOverlay {
             .invoke("EndInvoke", (pMainHandle, pThumbnailHandle, result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        pchOverlayKey: *mut crate::System::String,
+        pchOverlayFriendlyName: *mut crate::System::String,
+        pMainHandle: quest_hook::libil2cpp::ByRefMut<u64>,
+        pThumbnailHandle: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke(
+                "Invoke",
+                (pchOverlayKey, pchOverlayFriendlyName, pMainHandle, pThumbnailHandle),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_CreateDashboardOverlay")]
@@ -728,18 +728,6 @@ impl crate::OVR::OpenVR::IVROverlay__CreateOverlay {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         pOverlayHandle: quest_hook::libil2cpp::ByRefMut<u64>,
@@ -768,12 +756,24 @@ impl crate::OVR::OpenVR::IVROverlay__CreateOverlay {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_CreateOverlay")]
@@ -825,18 +825,6 @@ impl crate::OVR::OpenVR::IVROverlay__DestroyOverlay {
             .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -862,12 +850,24 @@ impl crate::OVR::OpenVR::IVROverlay__DestroyOverlay {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_DestroyOverlay")]
@@ -906,42 +906,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__FindOverlay {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_FindOverlay")]
 impl crate::OVR::OpenVR::IVROverlay__FindOverlay {
-    pub fn EndInvoke(
-        &mut self,
-        pOverlayHandle: quest_hook::libil2cpp::ByRefMut<u64>,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pOverlayHandle, result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        pchOverlayKey: *mut crate::System::String,
-        pOverlayHandle: quest_hook::libil2cpp::ByRefMut<u64>,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (pchOverlayKey, pOverlayHandle))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchOverlayKey: *mut crate::System::String,
@@ -956,15 +920,51 @@ impl crate::OVR::OpenVR::IVROverlay__FindOverlay {
             .invoke("BeginInvoke", (pchOverlayKey, pOverlayHandle, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        pOverlayHandle: quest_hook::libil2cpp::ByRefMut<u64>,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (pOverlayHandle, result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        pchOverlayKey: *mut crate::System::String,
+        pOverlayHandle: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (pchOverlayKey, pOverlayHandle))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_FindOverlay")]
@@ -1005,30 +1005,6 @@ for crate::OVR::OpenVR::IVROverlay__GetDashboardOverlaySceneProcess {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetDashboardOverlaySceneProcess")]
 impl crate::OVR::OpenVR::IVROverlay__GetDashboardOverlaySceneProcess {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        punProcessId: quest_hook::libil2cpp::ByRefMut<u32>,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, punProcessId))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -1055,15 +1031,39 @@ impl crate::OVR::OpenVR::IVROverlay__GetDashboardOverlaySceneProcess {
             .invoke("EndInvoke", (punProcessId, result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        punProcessId: quest_hook::libil2cpp::ByRefMut<u32>,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle, punProcessId))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetDashboardOverlaySceneProcess")]
@@ -1102,18 +1102,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetGamepadFocusOverl
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetGamepadFocusOverlay")]
 impl crate::OVR::OpenVR::IVROverlay__GetGamepadFocusOverlay {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         callback: *mut crate::System::AsyncCallback,
@@ -1146,12 +1134,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetGamepadFocusOverlay {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetGamepadFocusOverlay")]
@@ -1190,35 +1190,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetHighQualityOverla
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetHighQualityOverlay")]
 impl crate::OVR::OpenVR::IVROverlay__GetHighQualityOverlay {
-    pub fn Invoke(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u64 = __cordl_object.invoke("Invoke", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u64 = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         callback: *mut crate::System::AsyncCallback,
@@ -1231,15 +1202,44 @@ impl crate::OVR::OpenVR::IVROverlay__GetHighQualityOverlay {
             .invoke("BeginInvoke", (callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u64 = __cordl_object.invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u64 = __cordl_object.invoke("Invoke", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetHighQualityOverlay")]
@@ -1278,39 +1278,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetKeyboardText {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetKeyboardText")]
 impl crate::OVR::OpenVR::IVROverlay__GetKeyboardText {
-    pub fn Invoke(
-        &mut self,
-        pchText: *mut crate::System::Text::StringBuilder,
-        cchText: u32,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("Invoke", (pchText, cchText))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchText: *mut crate::System::Text::StringBuilder,
@@ -1325,15 +1292,48 @@ impl crate::OVR::OpenVR::IVROverlay__GetKeyboardText {
             .invoke("BeginInvoke", (pchText, cchText, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        pchText: *mut crate::System::Text::StringBuilder,
+        cchText: u32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("Invoke", (pchText, cchText))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetKeyboardText")]
@@ -1372,6 +1372,20 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayAlpha {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayAlpha")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayAlpha {
+    pub fn BeginInvoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        pfAlpha: quest_hook::libil2cpp::ByRefMut<f32>,
+        callback: *mut crate::System::AsyncCallback,
+        object: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (ulOverlayHandle, pfAlpha, callback, object))?;
+        Ok(__cordl_ret)
+    }
     pub fn EndInvoke(
         &mut self,
         pfAlpha: quest_hook::libil2cpp::ByRefMut<f32>,
@@ -1396,19 +1410,15 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayAlpha {
             .invoke("Invoke", (ulOverlayHandle, pfAlpha))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInvoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        pfAlpha: quest_hook::libil2cpp::ByRefMut<f32>,
-        callback: *mut crate::System::AsyncCallback,
+    pub fn New(
         object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, pfAlpha, callback, object))?;
-        Ok(__cordl_ret)
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -1421,16 +1431,6 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayAlpha {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayAlpha")]
@@ -1496,16 +1496,20 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayAutoCurveDistanceRangeInMeters {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn EndInvoke(
         &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        pfMinDistanceInMeters: quest_hook::libil2cpp::ByRefMut<f32>,
+        pfMaxDistanceInMeters: quest_hook::libil2cpp::ByRefMut<f32>,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke(
+                "EndInvoke",
+                (pfMinDistanceInMeters, pfMaxDistanceInMeters, result),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -1524,31 +1528,27 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayAutoCurveDistanceRangeInMeters {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn EndInvoke(
-        &mut self,
-        pfMinDistanceInMeters: quest_hook::libil2cpp::ByRefMut<f32>,
-        pfMaxDistanceInMeters: quest_hook::libil2cpp::ByRefMut<f32>,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "EndInvoke",
-                (pfMinDistanceInMeters, pfMaxDistanceInMeters, result),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayAutoCurveDistanceRangeInMeters")]
@@ -1587,20 +1587,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayColor {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayColor")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayColor {
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        pfRed: quest_hook::libil2cpp::ByRefMut<f32>,
-        pfGreen: quest_hook::libil2cpp::ByRefMut<f32>,
-        pfBlue: quest_hook::libil2cpp::ByRefMut<f32>,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pfRed, pfGreen, pfBlue))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -1620,18 +1606,6 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayColor {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         pfRed: quest_hook::libil2cpp::ByRefMut<f32>,
@@ -1646,15 +1620,41 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayColor {
             .invoke("EndInvoke", (pfRed, pfGreen, pfBlue, result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        pfRed: quest_hook::libil2cpp::ByRefMut<f32>,
+        pfGreen: quest_hook::libil2cpp::ByRefMut<f32>,
+        pfBlue: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle, pfRed, pfGreen, pfBlue))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayColor")]
@@ -1695,45 +1695,6 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayDualAnalogTransform {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayDualAnalogTransform")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayDualAnalogTransform {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        ulOverlay: u64,
-        eWhich: crate::OVR::OpenVR::EDualAnalogWhich,
-        pvCenter: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
-        pfRadius: quest_hook::libil2cpp::ByRefMut<f32>,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlay, eWhich, pvCenter, pfRadius))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        pvCenter: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
-        pfRadius: quest_hook::libil2cpp::ByRefMut<f32>,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pvCenter, pfRadius, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlay: u64,
@@ -1753,15 +1714,54 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayDualAnalogTransform {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        pvCenter: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
+        pfRadius: quest_hook::libil2cpp::ByRefMut<f32>,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (pvCenter, pfRadius, result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        ulOverlay: u64,
+        eWhich: crate::OVR::OpenVR::EDualAnalogWhich,
+        pvCenter: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
+        pfRadius: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlay, eWhich, pvCenter, pfRadius))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayDualAnalogTransform")]
@@ -1801,16 +1801,17 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayErrorNameF
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayErrorNameFromEnum")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayErrorNameFromEnum {
-    pub fn _ctor(
+    pub fn BeginInvoke(
         &mut self,
+        error: crate::OVR::OpenVR::EVROverlayError,
+        callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (error, callback, object))?;
         Ok(__cordl_ret)
     }
     pub fn EndInvoke(
@@ -1835,28 +1836,27 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayErrorNameFromEnum {
             .invoke("Invoke", (error))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInvoke(
-        &mut self,
-        error: crate::OVR::OpenVR::EVROverlayError,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (error, callback, object))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayErrorNameFromEnum")]
@@ -1895,31 +1895,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayFlag {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayFlag")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayFlag {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        eOverlayFlag: crate::OVR::OpenVR::VROverlayFlags,
-        pbEnabled: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, eOverlayFlag, pbEnabled))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -1950,15 +1925,40 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayFlag {
             .invoke("EndInvoke", (pbEnabled, result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        eOverlayFlag: crate::OVR::OpenVR::VROverlayFlags,
+        pbEnabled: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle, eOverlayFlag, pbEnabled))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayFlag")]
@@ -1997,42 +1997,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayFlags {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayFlags")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayFlags {
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        pFlags: quest_hook::libil2cpp::ByRefMut<u32>,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pFlags))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        pFlags: quest_hook::libil2cpp::ByRefMut<u32>,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pFlags, result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -2047,15 +2011,51 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayFlags {
             .invoke("BeginInvoke", (ulOverlayHandle, pFlags, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        pFlags: quest_hook::libil2cpp::ByRefMut<u32>,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (pFlags, result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        pFlags: quest_hook::libil2cpp::ByRefMut<u32>,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle, pFlags))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayFlags")]
@@ -2094,31 +2094,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayImageData 
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayImageData")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayImageData {
-    pub fn EndInvoke(
-        &mut self,
-        punWidth: quest_hook::libil2cpp::ByRefMut<u32>,
-        punHeight: quest_hook::libil2cpp::ByRefMut<u32>,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (punWidth, punHeight, result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -2147,6 +2122,19 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayImageData {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        punWidth: quest_hook::libil2cpp::ByRefMut<u32>,
+        punHeight: quest_hook::libil2cpp::ByRefMut<u32>,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (punWidth, punHeight, result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -2168,12 +2156,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayImageData {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayImageData")]
@@ -2228,32 +2228,6 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayInputMethod {
             .invoke("BeginInvoke", (ulOverlayHandle, peInputMethod, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        peInputMethod: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::VROverlayInputMethod,
-        >,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, peInputMethod))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         peInputMethod: quest_hook::libil2cpp::ByRefMut<
@@ -2268,15 +2242,41 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayInputMethod {
             .invoke("EndInvoke", (peInputMethod, result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        peInputMethod: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::VROverlayInputMethod,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle, peInputMethod))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayInputMethod")]
@@ -2315,16 +2315,23 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayKey {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayKey")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayKey {
-    pub fn _ctor(
+    pub fn BeginInvoke(
         &mut self,
+        ulOverlayHandle: u64,
+        pchValue: *mut crate::System::Text::StringBuilder,
+        unBufferSize: u32,
+        pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
+        callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke(
+                "BeginInvoke",
+                (ulOverlayHandle, pchValue, unBufferSize, pError, callback, object),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn EndInvoke(
@@ -2352,34 +2359,27 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayKey {
             .invoke("Invoke", (ulOverlayHandle, pchValue, unBufferSize, pError))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInvoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        pchValue: *mut crate::System::Text::StringBuilder,
-        unBufferSize: u32,
-        pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, pchValue, unBufferSize, pError, callback, object),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayKey")]
@@ -2418,6 +2418,22 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayMouseScale
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayMouseScale")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayMouseScale {
+    pub fn BeginInvoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        pvecMouseScale: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::HmdVector2_t,
+        >,
+        callback: *mut crate::System::AsyncCallback,
+        object: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (ulOverlayHandle, pvecMouseScale, callback, object))?;
+        Ok(__cordl_ret)
+    }
     pub fn EndInvoke(
         &mut self,
         pvecMouseScale: quest_hook::libil2cpp::ByRefMut<
@@ -2444,21 +2460,15 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayMouseScale {
             .invoke("Invoke", (ulOverlayHandle, pvecMouseScale))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInvoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        pvecMouseScale: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::HmdVector2_t,
-        >,
-        callback: *mut crate::System::AsyncCallback,
+    pub fn New(
         object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, pvecMouseScale, callback, object))?;
-        Ok(__cordl_ret)
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -2471,16 +2481,6 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayMouseScale {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayMouseScale")]
@@ -2519,31 +2519,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayName {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayName")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayName {
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        pchValue: *mut crate::System::Text::StringBuilder,
-        unBufferSize: u32,
-        pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pchValue, unBufferSize, pError))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (pError, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -2563,6 +2538,41 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayName {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (pError, result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        pchValue: *mut crate::System::Text::StringBuilder,
+        unBufferSize: u32,
+        pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle, pchValue, unBufferSize, pError))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -2574,16 +2584,6 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayName {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayName")]
@@ -2663,18 +2663,6 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayRenderModel {
             .invoke("EndInvoke", (pColor, pError, result))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -2696,12 +2684,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayRenderModel {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayRenderModel")]
@@ -2740,28 +2740,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayRenderingP
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayRenderingPid")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayRenderingPid {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -2773,6 +2751,16 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayRenderingPid {
         );
         let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
             .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -2788,12 +2776,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayRenderingPid {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayRenderingPid")]
@@ -2832,42 +2832,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlaySortOrder 
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlaySortOrder")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlaySortOrder {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        punSortOrder: quest_hook::libil2cpp::ByRefMut<u32>,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, punSortOrder))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        punSortOrder: quest_hook::libil2cpp::ByRefMut<u32>,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (punSortOrder, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -2882,15 +2846,51 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlaySortOrder {
             .invoke("BeginInvoke", (ulOverlayHandle, punSortOrder, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        punSortOrder: quest_hook::libil2cpp::ByRefMut<u32>,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (punSortOrder, result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        punSortOrder: quest_hook::libil2cpp::ByRefMut<u32>,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle, punSortOrder))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlaySortOrder")]
@@ -2929,18 +2929,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayTexelAspec
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTexelAspect")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayTexelAspect {
-    pub fn EndInvoke(
-        &mut self,
-        pfTexelAspect: quest_hook::libil2cpp::ByRefMut<f32>,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pfTexelAspect, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -2955,16 +2943,16 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTexelAspect {
             .invoke("BeginInvoke", (ulOverlayHandle, pfTexelAspect, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn EndInvoke(
         &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        pfTexelAspect: quest_hook::libil2cpp::ByRefMut<f32>,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (pfTexelAspect, result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -2982,12 +2970,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTexelAspect {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTexelAspect")]
@@ -3026,18 +3026,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayTexture {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTexture")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayTexture {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -3145,12 +3133,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTexture {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTexture")]
@@ -3189,16 +3189,23 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayTextureBou
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureBounds")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureBounds {
-    pub fn _ctor(
+    pub fn BeginInvoke(
         &mut self,
+        ulOverlayHandle: u64,
+        pOverlayTextureBounds: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::VRTextureBounds_t,
+        >,
+        callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke(
+                "BeginInvoke",
+                (ulOverlayHandle, pOverlayTextureBounds, callback, object),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn EndInvoke(
@@ -3229,34 +3236,27 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureBounds {
             .invoke("Invoke", (ulOverlayHandle, pOverlayTextureBounds))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInvoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        pOverlayTextureBounds: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::VRTextureBounds_t,
-        >,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, pOverlayTextureBounds, callback, object),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureBounds")]
@@ -3296,20 +3296,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayTextureCol
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureColorSpace")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureColorSpace {
-    pub fn EndInvoke(
-        &mut self,
-        peTextureColorSpace: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::EColorSpace,
-        >,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (peTextureColorSpace, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -3329,16 +3315,18 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureColorSpace {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn EndInvoke(
         &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        peTextureColorSpace: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::EColorSpace,
+        >,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (peTextureColorSpace, result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -3358,12 +3346,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureColorSpace {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureColorSpace")]
@@ -3402,32 +3402,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayTextureSiz
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureSize")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureSize {
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        pWidth: quest_hook::libil2cpp::ByRefMut<u32>,
-        pHeight: quest_hook::libil2cpp::ByRefMut<u32>,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pWidth, pHeight))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        pWidth: quest_hook::libil2cpp::ByRefMut<u32>,
-        pHeight: quest_hook::libil2cpp::ByRefMut<u32>,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pWidth, pHeight, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -3446,6 +3420,42 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureSize {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        pWidth: quest_hook::libil2cpp::ByRefMut<u32>,
+        pHeight: quest_hook::libil2cpp::ByRefMut<u32>,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (pWidth, pHeight, result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        pWidth: quest_hook::libil2cpp::ByRefMut<u32>,
+        pHeight: quest_hook::libil2cpp::ByRefMut<u32>,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle, pWidth, pHeight))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -3457,16 +3467,6 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureSize {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureSize")]
@@ -3506,26 +3506,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformA
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformAbsolute")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformAbsolute {
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        peTrackingOrigin: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::ETrackingUniverseOrigin,
-        >,
-        pmatTrackingOriginToOverlayTransform: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::HmdMatrix34_t,
-        >,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (ulOverlayHandle, peTrackingOrigin, pmatTrackingOriginToOverlayTransform),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -3554,18 +3534,6 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformAbsolute {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         peTrackingOrigin: quest_hook::libil2cpp::ByRefMut<
@@ -3586,15 +3554,47 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformAbsolute {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        peTrackingOrigin: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::ETrackingUniverseOrigin,
+        >,
+        pmatTrackingOriginToOverlayTransform: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::HmdMatrix34_t,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke(
+                "Invoke",
+                (ulOverlayHandle, peTrackingOrigin, pmatTrackingOriginToOverlayTransform),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformAbsolute")]
@@ -3636,40 +3636,6 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformOverlayRelative {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformOverlayRelative")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformOverlayRelative {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        ulOverlayHandleParent: quest_hook::libil2cpp::ByRefMut<u64>,
-        pmatParentOverlayToOverlayTransform: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::HmdMatrix34_t,
-        >,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (
-                    ulOverlayHandle,
-                    ulOverlayHandleParent,
-                    pmatParentOverlayToOverlayTransform,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -3714,15 +3680,49 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformOverlayRelative {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        ulOverlayHandleParent: quest_hook::libil2cpp::ByRefMut<u64>,
+        pmatParentOverlayToOverlayTransform: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::HmdMatrix34_t,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke(
+                "Invoke",
+                (
+                    ulOverlayHandle,
+                    ulOverlayHandleParent,
+                    pmatParentOverlayToOverlayTransform,
+                ),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformOverlayRelative")]
@@ -3764,47 +3764,6 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceComponent {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformTrackedDeviceComponent")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceComponent {
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        punDeviceIndex: quest_hook::libil2cpp::ByRefMut<u32>,
-        pchComponentName: *mut crate::System::Text::StringBuilder,
-        unComponentNameSize: u32,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (ulOverlayHandle, punDeviceIndex, pchComponentName, unComponentNameSize),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        punDeviceIndex: quest_hook::libil2cpp::ByRefMut<u32>,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (punDeviceIndex, result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -3831,15 +3790,56 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceComponent {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        punDeviceIndex: quest_hook::libil2cpp::ByRefMut<u32>,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (punDeviceIndex, result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        punDeviceIndex: quest_hook::libil2cpp::ByRefMut<u32>,
+        pchComponentName: *mut crate::System::Text::StringBuilder,
+        unComponentNameSize: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke(
+                "Invoke",
+                (ulOverlayHandle, punDeviceIndex, pchComponentName, unComponentNameSize),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformTrackedDeviceComponent")]
@@ -3907,16 +3907,22 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceRelative {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn EndInvoke(
         &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        punTrackedDevice: quest_hook::libil2cpp::ByRefMut<u32>,
+        pmatTrackedDeviceToOverlayTransform: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::HmdMatrix34_t,
+        >,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke(
+                "EndInvoke",
+                (punTrackedDevice, pmatTrackedDeviceToOverlayTransform, result),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -3937,33 +3943,27 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceRelative {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn EndInvoke(
-        &mut self,
-        punTrackedDevice: quest_hook::libil2cpp::ByRefMut<u32>,
-        pmatTrackedDeviceToOverlayTransform: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::HmdMatrix34_t,
-        >,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "EndInvoke",
-                (punTrackedDevice, pmatTrackedDeviceToOverlayTransform, result),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformTrackedDeviceRelative")]
@@ -4002,46 +4002,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformT
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformType")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformType {
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        peTransformType: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::VROverlayTransformType,
-        >,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, peTransformType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        peTransformType: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::VROverlayTransformType,
-        >,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (peTransformType, result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -4061,15 +4021,55 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformType {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        peTransformType: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::VROverlayTransformType,
+        >,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (peTransformType, result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        peTransformType: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::VROverlayTransformType,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle, peTransformType))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformType")]
@@ -4108,18 +4108,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__GetOverlayWidthInMet
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayWidthInMeters")]
 impl crate::OVR::OpenVR::IVROverlay__GetOverlayWidthInMeters {
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        pfWidthInMeters: quest_hook::libil2cpp::ByRefMut<f32>,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pfWidthInMeters))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -4149,6 +4137,28 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayWidthInMeters {
             .invoke("EndInvoke", (pfWidthInMeters, result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        pfWidthInMeters: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle, pfWidthInMeters))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -4160,16 +4170,6 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayWidthInMeters {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayWidthInMeters")]
@@ -4231,6 +4231,23 @@ impl crate::OVR::OpenVR::IVROverlay__GetPrimaryDashboardDevice {
         let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u32 = __cordl_object.invoke("Invoke", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -4242,23 +4259,6 @@ impl crate::OVR::OpenVR::IVROverlay__GetPrimaryDashboardDevice {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn Invoke(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("Invoke", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetPrimaryDashboardDevice")]
@@ -4300,32 +4300,6 @@ for crate::OVR::OpenVR::IVROverlay__GetTransformForOverlayCoordinates {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetTransformForOverlayCoordinates")]
 impl crate::OVR::OpenVR::IVROverlay__GetTransformForOverlayCoordinates {
-    pub fn EndInvoke(
-        &mut self,
-        pmatTransform: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::HmdMatrix34_t,
-        >,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pmatTransform, result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -4354,6 +4328,20 @@ impl crate::OVR::OpenVR::IVROverlay__GetTransformForOverlayCoordinates {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        pmatTransform: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::HmdMatrix34_t,
+        >,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (pmatTransform, result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -4374,12 +4362,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetTransformForOverlayCoordinates {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetTransformForOverlayCoordinates")]
@@ -4418,16 +4418,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__HideKeyboard {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_HideKeyboard")]
 impl crate::OVR::OpenVR::IVROverlay__HideKeyboard {
-    pub fn Invoke(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         callback: *mut crate::System::AsyncCallback,
@@ -4438,18 +4428,6 @@ impl crate::OVR::OpenVR::IVROverlay__HideKeyboard {
         );
         let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
             .invoke("BeginInvoke", (callback, object))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
     }
     pub fn EndInvoke(
@@ -4463,15 +4441,37 @@ impl crate::OVR::OpenVR::IVROverlay__HideKeyboard {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_HideKeyboard")]
@@ -4509,17 +4509,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__HideOverlay {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_HideOverlay")]
 impl crate::OVR::OpenVR::IVROverlay__HideOverlay {
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -4533,18 +4522,6 @@ impl crate::OVR::OpenVR::IVROverlay__HideOverlay {
             .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -4556,15 +4533,38 @@ impl crate::OVR::OpenVR::IVROverlay__HideOverlay {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_HideOverlay")]
@@ -4603,28 +4603,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__IsActiveDashboardOve
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsActiveDashboardOverlay")]
 impl crate::OVR::OpenVR::IVROverlay__IsActiveDashboardOverlay {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Invoke", (ulOverlayHandle))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -4648,15 +4626,37 @@ impl crate::OVR::OpenVR::IVROverlay__IsActiveDashboardOverlay {
         let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Invoke", (ulOverlayHandle))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsActiveDashboardOverlay")]
@@ -4695,16 +4695,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__IsDashboardVisible {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsDashboardVisible")]
 impl crate::OVR::OpenVR::IVROverlay__IsDashboardVisible {
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         callback: *mut crate::System::AsyncCallback,
@@ -4717,16 +4707,14 @@ impl crate::OVR::OpenVR::IVROverlay__IsDashboardVisible {
             .invoke("BeginInvoke", (callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn EndInvoke(
         &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -4739,12 +4727,24 @@ impl crate::OVR::OpenVR::IVROverlay__IsDashboardVisible {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsDashboardVisible")]
@@ -4783,38 +4783,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__IsHoverTargetOverlay
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsHoverTargetOverlay")]
 impl crate::OVR::OpenVR::IVROverlay__IsHoverTargetOverlay {
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Invoke", (ulOverlayHandle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -4828,15 +4796,47 @@ impl crate::OVR::OpenVR::IVROverlay__IsHoverTargetOverlay {
             .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Invoke", (ulOverlayHandle))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsHoverTargetOverlay")]
@@ -4875,16 +4875,17 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__IsOverlayVisible {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsOverlayVisible")]
 impl crate::OVR::OpenVR::IVROverlay__IsOverlayVisible {
-    pub fn _ctor(
+    pub fn BeginInvoke(
         &mut self,
+        ulOverlayHandle: u64,
+        callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
         Ok(__cordl_ret)
     }
     pub fn EndInvoke(
@@ -4907,28 +4908,27 @@ impl crate::OVR::OpenVR::IVROverlay__IsOverlayVisible {
         let __cordl_ret: bool = __cordl_object.invoke("Invoke", (ulOverlayHandle))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInvoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsOverlayVisible")]
@@ -4968,41 +4968,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__MoveGamepadFocusToNe
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_MoveGamepadFocusToNeighbor")]
 impl crate::OVR::OpenVR::IVROverlay__MoveGamepadFocusToNeighbor {
-    pub fn Invoke(
-        &mut self,
-        eDirection: crate::OVR::OpenVR::EOverlayDirection,
-        ulFrom: u64,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (eDirection, ulFrom))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         eDirection: crate::OVR::OpenVR::EOverlayDirection,
@@ -5017,15 +4982,50 @@ impl crate::OVR::OpenVR::IVROverlay__MoveGamepadFocusToNeighbor {
             .invoke("BeginInvoke", (eDirection, ulFrom, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        eDirection: crate::OVR::OpenVR::EOverlayDirection,
+        ulFrom: u64,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (eDirection, ulFrom))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_MoveGamepadFocusToNeighbor")]
@@ -5064,29 +5064,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__PollNextOverlayEvent
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_PollNextOverlayEvent")]
 impl crate::OVR::OpenVR::IVROverlay__PollNextOverlayEvent {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        pEvent: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VREvent_t>,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (pEvent, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -5105,6 +5082,17 @@ impl crate::OVR::OpenVR::IVROverlay__PollNextOverlayEvent {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        pEvent: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VREvent_t>,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (pEvent, result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -5121,12 +5109,24 @@ impl crate::OVR::OpenVR::IVROverlay__PollNextOverlayEvent {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_PollNextOverlayEvent")]
@@ -5166,6 +5166,23 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__ReleaseNativeOverlay
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ReleaseNativeOverlayHandle")]
 impl crate::OVR::OpenVR::IVROverlay__ReleaseNativeOverlayHandle {
+    pub fn BeginInvoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        pNativeTextureHandle: crate::System::IntPtr,
+        callback: *mut crate::System::AsyncCallback,
+        object: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke(
+                "BeginInvoke",
+                (ulOverlayHandle, pNativeTextureHandle, callback, object),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -5189,22 +5206,15 @@ impl crate::OVR::OpenVR::IVROverlay__ReleaseNativeOverlayHandle {
             .invoke("Invoke", (ulOverlayHandle, pNativeTextureHandle))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInvoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        pNativeTextureHandle: crate::System::IntPtr,
-        callback: *mut crate::System::AsyncCallback,
+    pub fn New(
         object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, pNativeTextureHandle, callback, object),
-            )?;
-        Ok(__cordl_ret)
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -5217,16 +5227,6 @@ impl crate::OVR::OpenVR::IVROverlay__ReleaseNativeOverlayHandle {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ReleaseNativeOverlayHandle")]
@@ -5268,30 +5268,6 @@ for crate::OVR::OpenVR::IVROverlay__SetDashboardOverlaySceneProcess {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetDashboardOverlaySceneProcess")]
 impl crate::OVR::OpenVR::IVROverlay__SetDashboardOverlaySceneProcess {
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        unProcessId: u32,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, unProcessId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -5317,15 +5293,39 @@ impl crate::OVR::OpenVR::IVROverlay__SetDashboardOverlaySceneProcess {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        unProcessId: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle, unProcessId))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetDashboardOverlaySceneProcess")]
@@ -5377,16 +5377,15 @@ impl crate::OVR::OpenVR::IVROverlay__SetGamepadFocusOverlay {
             .invoke("BeginInvoke", (ulNewFocusOverlay, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn EndInvoke(
         &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -5400,26 +5399,27 @@ impl crate::OVR::OpenVR::IVROverlay__SetGamepadFocusOverlay {
             .invoke("Invoke", (ulNewFocusOverlay))?;
         Ok(__cordl_ret)
     }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetGamepadFocusOverlay")]
@@ -5458,29 +5458,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__SetHighQualityOverla
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetHighQualityOverlay")]
 impl crate::OVR::OpenVR::IVROverlay__SetHighQualityOverlay {
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -5505,15 +5482,38 @@ impl crate::OVR::OpenVR::IVROverlay__SetHighQualityOverlay {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetHighQualityOverlay")]
@@ -5554,18 +5554,6 @@ for crate::OVR::OpenVR::IVROverlay__SetKeyboardPositionForOverlay {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetKeyboardPositionForOverlay")]
 impl crate::OVR::OpenVR::IVROverlay__SetKeyboardPositionForOverlay {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -5580,6 +5568,17 @@ impl crate::OVR::OpenVR::IVROverlay__SetKeyboardPositionForOverlay {
             .invoke("BeginInvoke", (ulOverlayHandle, avoidRect, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -5592,26 +5591,27 @@ impl crate::OVR::OpenVR::IVROverlay__SetKeyboardPositionForOverlay {
             .invoke("Invoke", (ulOverlayHandle, avoidRect))?;
         Ok(__cordl_ret)
     }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetKeyboardPositionForOverlay")]
@@ -5652,18 +5652,6 @@ for crate::OVR::OpenVR::IVROverlay__SetKeyboardTransformAbsolute {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetKeyboardTransformAbsolute")]
 impl crate::OVR::OpenVR::IVROverlay__SetKeyboardTransformAbsolute {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         eTrackingOrigin: crate::OVR::OpenVR::ETrackingUniverseOrigin,
@@ -5688,20 +5676,6 @@ impl crate::OVR::OpenVR::IVROverlay__SetKeyboardTransformAbsolute {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn Invoke(
-        &mut self,
-        eTrackingOrigin: crate::OVR::OpenVR::ETrackingUniverseOrigin,
-        pmatTrackingOriginToKeyboardTransform: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::HmdMatrix34_t,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (eTrackingOrigin, pmatTrackingOriginToKeyboardTransform))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         pmatTrackingOriginToKeyboardTransform: quest_hook::libil2cpp::ByRefMut<
@@ -5716,15 +5690,41 @@ impl crate::OVR::OpenVR::IVROverlay__SetKeyboardTransformAbsolute {
             .invoke("EndInvoke", (pmatTrackingOriginToKeyboardTransform, result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        eTrackingOrigin: crate::OVR::OpenVR::ETrackingUniverseOrigin,
+        pmatTrackingOriginToKeyboardTransform: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::HmdMatrix34_t,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (eTrackingOrigin, pmatTrackingOriginToKeyboardTransform))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetKeyboardTransformAbsolute")]
@@ -5763,29 +5763,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__SetOverlayAlpha {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayAlpha")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlayAlpha {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -5798,6 +5775,17 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayAlpha {
         );
         let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
             .invoke("BeginInvoke", (ulOverlayHandle, fAlpha, callback, object))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -5815,12 +5803,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayAlpha {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayAlpha")]
@@ -5862,29 +5862,6 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayAutoCurveDistanceRangeInMeters {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayAutoCurveDistanceRangeInMeters")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlayAutoCurveDistanceRangeInMeters {
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -5909,6 +5886,17 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayAutoCurveDistanceRangeInMeters {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -5928,12 +5916,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayAutoCurveDistanceRangeInMeters {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayAutoCurveDistanceRangeInMeters")]
@@ -5991,6 +5991,17 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayColor {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -6005,16 +6016,15 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayColor {
             .invoke("Invoke", (ulOverlayHandle, fRed, fGreen, fBlue))?;
         Ok(__cordl_ret)
     }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -6027,16 +6037,6 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayColor {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayColor")]
@@ -6077,20 +6077,6 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayDualAnalogTransform {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayDualAnalogTransform")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlayDualAnalogTransform {
-    pub fn Invoke(
-        &mut self,
-        ulOverlay: u64,
-        eWhich: crate::OVR::OpenVR::EDualAnalogWhich,
-        vCenter: crate::System::IntPtr,
-        fRadius: f32,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlay, eWhich, vCenter, fRadius))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlay: u64,
@@ -6121,6 +6107,30 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayDualAnalogTransform {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        ulOverlay: u64,
+        eWhich: crate::OVR::OpenVR::EDualAnalogWhich,
+        vCenter: crate::System::IntPtr,
+        fRadius: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlay, eWhich, vCenter, fRadius))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -6132,16 +6142,6 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayDualAnalogTransform {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayDualAnalogTransform")]
@@ -6209,18 +6209,6 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayFlag {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -6237,12 +6225,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayFlag {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayFlag")]
@@ -6306,18 +6306,6 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayFromFile {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -6333,12 +6321,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayFromFile {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayFromFile")]
@@ -6377,18 +6377,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__SetOverlayInputMetho
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayInputMethod")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlayInputMethod {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -6429,12 +6417,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayInputMethod {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayInputMethod")]
@@ -6474,20 +6474,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__SetOverlayIntersecti
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayIntersectionMask")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlayIntersectionMask {
-    pub fn EndInvoke(
-        &mut self,
-        pMaskPrimitives: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::VROverlayIntersectionMaskPrimitive_t,
-        >,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pMaskPrimitives, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -6516,16 +6502,18 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayIntersectionMask {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn EndInvoke(
         &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        pMaskPrimitives: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::VROverlayIntersectionMaskPrimitive_t,
+        >,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (pMaskPrimitives, result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -6550,12 +6538,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayIntersectionMask {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayIntersectionMask")]
@@ -6636,6 +6636,16 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayMouseScale {
             .invoke("Invoke", (ulOverlayHandle, pvecMouseScale))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -6647,16 +6657,6 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayMouseScale {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayMouseScale")]
@@ -6695,41 +6695,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__SetOverlayName {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayName")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlayName {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        pchName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pchName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -6744,15 +6709,50 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayName {
             .invoke("BeginInvoke", (ulOverlayHandle, pchName, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        pchName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle, pchName))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayName")]
@@ -6791,6 +6791,21 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__SetOverlayNeighbor {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayNeighbor")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlayNeighbor {
+    pub fn BeginInvoke(
+        &mut self,
+        eDirection: crate::OVR::OpenVR::EOverlayDirection,
+        ulFrom: u64,
+        ulTo: u64,
+        callback: *mut crate::System::AsyncCallback,
+        object: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (eDirection, ulFrom, ulTo, callback, object))?;
+        Ok(__cordl_ret)
+    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -6815,6 +6830,16 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayNeighbor {
             .invoke("Invoke", (eDirection, ulFrom, ulTo))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -6826,31 +6851,6 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayNeighbor {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn BeginInvoke(
-        &mut self,
-        eDirection: crate::OVR::OpenVR::EOverlayDirection,
-        ulFrom: u64,
-        ulTo: u64,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (eDirection, ulFrom, ulTo, callback, object))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayNeighbor")]
@@ -6920,18 +6920,6 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayRaw {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -6950,12 +6938,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayRaw {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayRaw")]
@@ -7012,6 +7012,18 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayRenderModel {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        pColor: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdColor_t>,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (pColor, result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -7025,17 +7037,15 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayRenderModel {
             .invoke("Invoke", (ulOverlayHandle, pchRenderModel, pColor))?;
         Ok(__cordl_ret)
     }
-    pub fn EndInvoke(
-        &mut self,
-        pColor: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdColor_t>,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pColor, result))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -7048,16 +7058,6 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayRenderModel {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayRenderModel")]
@@ -7096,16 +7096,18 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__SetOverlayRenderingP
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayRenderingPid")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlayRenderingPid {
-    pub fn _ctor(
+    pub fn BeginInvoke(
         &mut self,
+        ulOverlayHandle: u64,
+        unPID: u32,
+        callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (ulOverlayHandle, unPID, callback, object))?;
         Ok(__cordl_ret)
     }
     pub fn EndInvoke(
@@ -7131,29 +7133,27 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayRenderingPid {
             .invoke("Invoke", (ulOverlayHandle, unPID))?;
         Ok(__cordl_ret)
     }
-    pub fn BeginInvoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        unPID: u32,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, unPID, callback, object))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayRenderingPid")]
@@ -7192,29 +7192,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__SetOverlaySortOrder 
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlaySortOrder")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlaySortOrder {
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -7227,6 +7204,17 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlaySortOrder {
         );
         let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
             .invoke("BeginInvoke", (ulOverlayHandle, unSortOrder, callback, object))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -7244,12 +7232,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlaySortOrder {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlaySortOrder")]
@@ -7302,16 +7302,15 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTexelAspect {
             .invoke("BeginInvoke", (ulOverlayHandle, fTexelAspect, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn EndInvoke(
         &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -7326,26 +7325,27 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTexelAspect {
             .invoke("Invoke", (ulOverlayHandle, fTexelAspect))?;
         Ok(__cordl_ret)
     }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTexelAspect")]
@@ -7384,18 +7384,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__SetOverlayTexture {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTexture")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlayTexture {
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        pTexture: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::Texture_t>,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pTexture))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -7410,18 +7398,6 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTexture {
             .invoke("BeginInvoke", (ulOverlayHandle, pTexture, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         pTexture: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::Texture_t>,
@@ -7434,15 +7410,39 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTexture {
             .invoke("EndInvoke", (pTexture, result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        pTexture: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::Texture_t>,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle, pTexture))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTexture")]
@@ -7481,20 +7481,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__SetOverlayTextureBou
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTextureBounds")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlayTextureBounds {
-    pub fn EndInvoke(
-        &mut self,
-        pOverlayTextureBounds: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::VRTextureBounds_t,
-        >,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pOverlayTextureBounds, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -7514,16 +7500,18 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTextureBounds {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn EndInvoke(
         &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        pOverlayTextureBounds: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::VRTextureBounds_t,
+        >,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (pOverlayTextureBounds, result))?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
@@ -7543,12 +7531,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTextureBounds {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTextureBounds")]
@@ -7588,29 +7588,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__SetOverlayTextureCol
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTextureColorSpace")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlayTextureColorSpace {
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        eTextureColorSpace: crate::OVR::OpenVR::EColorSpace,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, eTextureColorSpace))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -7628,6 +7605,39 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTextureColorSpace {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        eTextureColorSpace: crate::OVR::OpenVR::EColorSpace,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle, eTextureColorSpace))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -7639,16 +7649,6 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTextureColorSpace {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTextureColorSpace")]
@@ -7688,18 +7688,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__SetOverlayTransformA
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformAbsolute")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformAbsolute {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -7726,6 +7714,20 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformAbsolute {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        pmatTrackingOriginToOverlayTransform: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::HmdMatrix34_t,
+        >,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (pmatTrackingOriginToOverlayTransform, result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -7744,29 +7746,27 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformAbsolute {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn EndInvoke(
-        &mut self,
-        pmatTrackingOriginToOverlayTransform: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::HmdMatrix34_t,
-        >,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pmatTrackingOriginToOverlayTransform, result))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformAbsolute")]
@@ -7808,28 +7808,6 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTransformOverlayRelative {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformOverlayRelative")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformOverlayRelative {
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        ulOverlayHandleParent: u64,
-        pmatParentOverlayToOverlayTransform: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::HmdMatrix34_t,
-        >,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (
-                    ulOverlayHandle,
-                    ulOverlayHandleParent,
-                    pmatParentOverlayToOverlayTransform,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -7870,6 +7848,38 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformOverlayRelative {
             .invoke("EndInvoke", (pmatParentOverlayToOverlayTransform, result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        ulOverlayHandleParent: u64,
+        pmatParentOverlayToOverlayTransform: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::HmdMatrix34_t,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke(
+                "Invoke",
+                (
+                    ulOverlayHandle,
+                    ulOverlayHandleParent,
+                    pmatParentOverlayToOverlayTransform,
+                ),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -7881,16 +7891,6 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformOverlayRelative {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformOverlayRelative")]
@@ -7932,31 +7932,6 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceComponent {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformTrackedDeviceComponent")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceComponent {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        unDeviceIndex: u32,
-        pchComponentName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, unDeviceIndex, pchComponentName))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -7986,15 +7961,40 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceComponent {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        unDeviceIndex: u32,
+        pchComponentName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("Invoke", (ulOverlayHandle, unDeviceIndex, pchComponentName))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformTrackedDeviceComponent")]
@@ -8036,50 +8036,6 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceRelative {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformTrackedDeviceRelative")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceRelative {
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        unTrackedDevice: u32,
-        pmatTrackedDeviceToOverlayTransform: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::HmdMatrix34_t,
-        >,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (ulOverlayHandle, unTrackedDevice, pmatTrackedDeviceToOverlayTransform),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        pmatTrackedDeviceToOverlayTransform: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::HmdMatrix34_t,
-        >,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pmatTrackedDeviceToOverlayTransform, result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -8106,15 +8062,59 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceRelative {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        pmatTrackedDeviceToOverlayTransform: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::HmdMatrix34_t,
+        >,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (pmatTrackedDeviceToOverlayTransform, result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        unTrackedDevice: u32,
+        pmatTrackedDeviceToOverlayTransform: quest_hook::libil2cpp::ByRefMut<
+            crate::OVR::OpenVR::HmdMatrix34_t,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke(
+                "Invoke",
+                (ulOverlayHandle, unTrackedDevice, pmatTrackedDeviceToOverlayTransform),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformTrackedDeviceRelative")]
@@ -8153,17 +8153,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__SetOverlayWidthInMet
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayWidthInMeters")]
 impl crate::OVR::OpenVR::IVROverlay__SetOverlayWidthInMeters {
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -8178,6 +8167,17 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayWidthInMeters {
             .invoke("BeginInvoke", (ulOverlayHandle, fWidthInMeters, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -8190,6 +8190,16 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayWidthInMeters {
             .invoke("Invoke", (ulOverlayHandle, fWidthInMeters))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -8201,16 +8211,6 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayWidthInMeters {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayWidthInMeters")]
@@ -8249,18 +8249,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__ShowDashboard {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowDashboard")]
 impl crate::OVR::OpenVR::IVROverlay__ShowDashboard {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         pchOverlayToShow: *mut crate::System::String,
@@ -8274,17 +8262,6 @@ impl crate::OVR::OpenVR::IVROverlay__ShowDashboard {
             .invoke("BeginInvoke", (pchOverlayToShow, callback, object))?;
         Ok(__cordl_ret)
     }
-    pub fn Invoke(
-        &mut self,
-        pchOverlayToShow: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (pchOverlayToShow))?;
-        Ok(__cordl_ret)
-    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -8296,15 +8273,38 @@ impl crate::OVR::OpenVR::IVROverlay__ShowDashboard {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        pchOverlayToShow: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (pchOverlayToShow))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowDashboard")]
@@ -8343,6 +8343,38 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__ShowKeyboard {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowKeyboard")]
 impl crate::OVR::OpenVR::IVROverlay__ShowKeyboard {
+    pub fn BeginInvoke(
+        &mut self,
+        eInputMode: i32,
+        eLineInputMode: i32,
+        pchDescription: *mut crate::System::String,
+        unCharMax: u32,
+        pchExistingText: *mut crate::System::String,
+        bUseMinimalMode: bool,
+        uUserValue: u64,
+        callback: *mut crate::System::AsyncCallback,
+        object: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke(
+                "BeginInvoke",
+                (
+                    eInputMode,
+                    eLineInputMode,
+                    pchDescription,
+                    unCharMax,
+                    pchExistingText,
+                    bUseMinimalMode,
+                    uUserValue,
+                    callback,
+                    object,
+                ),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -8382,6 +8414,16 @@ impl crate::OVR::OpenVR::IVROverlay__ShowKeyboard {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -8393,48 +8435,6 @@ impl crate::OVR::OpenVR::IVROverlay__ShowKeyboard {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn BeginInvoke(
-        &mut self,
-        eInputMode: i32,
-        eLineInputMode: i32,
-        pchDescription: *mut crate::System::String,
-        unCharMax: u32,
-        pchExistingText: *mut crate::System::String,
-        bUseMinimalMode: bool,
-        uUserValue: u64,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (
-                    eInputMode,
-                    eLineInputMode,
-                    pchDescription,
-                    unCharMax,
-                    pchExistingText,
-                    bUseMinimalMode,
-                    uUserValue,
-                    callback,
-                    object,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowKeyboard")]
@@ -8472,48 +8472,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__ShowKeyboardForOverl
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowKeyboardForOverlay")]
 impl crate::OVR::OpenVR::IVROverlay__ShowKeyboardForOverlay {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        ulOverlayHandle: u64,
-        eInputMode: i32,
-        eLineInputMode: i32,
-        pchDescription: *mut crate::System::String,
-        unCharMax: u32,
-        pchExistingText: *mut crate::System::String,
-        bUseMinimalMode: bool,
-        uUserValue: u64,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (
-                    ulOverlayHandle,
-                    eInputMode,
-                    eLineInputMode,
-                    pchDescription,
-                    unCharMax,
-                    pchExistingText,
-                    bUseMinimalMode,
-                    uUserValue,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -8559,15 +8517,57 @@ impl crate::OVR::OpenVR::IVROverlay__ShowKeyboardForOverlay {
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
+    pub fn Invoke(
+        &mut self,
+        ulOverlayHandle: u64,
+        eInputMode: i32,
+        eLineInputMode: i32,
+        pchDescription: *mut crate::System::String,
+        unCharMax: u32,
+        pchExistingText: *mut crate::System::String,
+        bUseMinimalMode: bool,
+        uUserValue: u64,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke(
+                "Invoke",
+                (
+                    ulOverlayHandle,
+                    eInputMode,
+                    eLineInputMode,
+                    pchDescription,
+                    unCharMax,
+                    pchExistingText,
+                    bUseMinimalMode,
+                    uUserValue,
+                ),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowKeyboardForOverlay")]
@@ -8606,6 +8606,36 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__ShowMessageOverlay {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowMessageOverlay")]
 impl crate::OVR::OpenVR::IVROverlay__ShowMessageOverlay {
+    pub fn BeginInvoke(
+        &mut self,
+        pchText: *mut crate::System::String,
+        pchCaption: *mut crate::System::String,
+        pchButton0Text: *mut crate::System::String,
+        pchButton1Text: *mut crate::System::String,
+        pchButton2Text: *mut crate::System::String,
+        pchButton3Text: *mut crate::System::String,
+        callback: *mut crate::System::AsyncCallback,
+        object: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke(
+                "BeginInvoke",
+                (
+                    pchText,
+                    pchCaption,
+                    pchButton0Text,
+                    pchButton1Text,
+                    pchButton2Text,
+                    pchButton3Text,
+                    callback,
+                    object,
+                ),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
@@ -8643,6 +8673,16 @@ impl crate::OVR::OpenVR::IVROverlay__ShowMessageOverlay {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -8654,46 +8694,6 @@ impl crate::OVR::OpenVR::IVROverlay__ShowMessageOverlay {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn BeginInvoke(
-        &mut self,
-        pchText: *mut crate::System::String,
-        pchCaption: *mut crate::System::String,
-        pchButton0Text: *mut crate::System::String,
-        pchButton1Text: *mut crate::System::String,
-        pchButton2Text: *mut crate::System::String,
-        pchButton3Text: *mut crate::System::String,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (
-                    pchText,
-                    pchCaption,
-                    pchButton0Text,
-                    pchButton1Text,
-                    pchButton2Text,
-                    pchButton3Text,
-                    callback,
-                    object,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowMessageOverlay")]
@@ -8732,17 +8732,6 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVROverlay__ShowOverlay {
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowOverlay")]
 impl crate::OVR::OpenVR::IVROverlay__ShowOverlay {
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
     pub fn BeginInvoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -8756,6 +8745,17 @@ impl crate::OVR::OpenVR::IVROverlay__ShowOverlay {
             .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
@@ -8766,6 +8766,16 @@ impl crate::OVR::OpenVR::IVROverlay__ShowOverlay {
         let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
             .invoke("Invoke", (ulOverlayHandle))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -8778,16 +8788,6 @@ impl crate::OVR::OpenVR::IVROverlay__ShowOverlay {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowOverlay")]

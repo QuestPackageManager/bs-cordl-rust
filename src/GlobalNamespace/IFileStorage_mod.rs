@@ -23,17 +23,30 @@ impl std::ops::DerefMut for IFileStorage {
 }
 #[cfg(feature = "IFileStorage")]
 impl IFileStorage {
-    pub fn SaveFileAsync(
+    pub fn DeleteFileAsync(
         &mut self,
         fileName: *mut crate::System::String,
-        value: *mut crate::System::String,
         storageLocation: StoragePreference,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("SaveFileAsync", (fileName, value, storageLocation))?;
+            .invoke("DeleteFileAsync", (fileName, storageLocation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn FileExistsAsync(
+        &mut self,
+        fileName: *mut crate::System::String,
+        storageLocation: StoragePreference,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<bool>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<bool> = __cordl_object
+            .invoke("FileExistsAsync", (fileName, storageLocation))?;
         Ok(__cordl_ret)
     }
     pub fn LoadFileAsync(
@@ -51,30 +64,17 @@ impl IFileStorage {
         > = __cordl_object.invoke("LoadFileAsync", (fileName, storageLocation))?;
         Ok(__cordl_ret)
     }
-    pub fn FileExistsAsync(
+    pub fn SaveFileAsync(
         &mut self,
         fileName: *mut crate::System::String,
-        storageLocation: StoragePreference,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<bool>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<bool> = __cordl_object
-            .invoke("FileExistsAsync", (fileName, storageLocation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DeleteFileAsync(
-        &mut self,
-        fileName: *mut crate::System::String,
+        value: *mut crate::System::String,
         storageLocation: StoragePreference,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("DeleteFileAsync", (fileName, storageLocation))?;
+            .invoke("SaveFileAsync", (fileName, value, storageLocation))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

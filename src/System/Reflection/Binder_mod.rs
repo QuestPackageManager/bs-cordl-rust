@@ -40,6 +40,32 @@ impl crate::System::Reflection::Binder {
             .invoke("BindToField", (bindingAttr, _cordl_match, value, culture))?;
         Ok(__cordl_ret)
     }
+    pub fn BindToMethod(
+        &mut self,
+        bindingAttr: crate::System::Reflection::BindingFlags,
+        _cordl_match: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Reflection::MethodBase,
+        >,
+        args: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        >,
+        modifiers: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Reflection::ParameterModifier,
+        >,
+        culture: *mut crate::System::Globalization::CultureInfo,
+        names: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        state: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodBase> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Reflection::MethodBase = __cordl_object
+            .invoke(
+                "BindToMethod",
+                (bindingAttr, _cordl_match, args, modifiers, culture, names, state),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn ChangeType(
         &mut self,
         value: *mut crate::System::Object,
@@ -53,6 +79,13 @@ impl crate::System::Reflection::Binder {
             .invoke("ChangeType", (value, _cordl_type, culture))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn ReorderArgumentArray(
         &mut self,
         args: quest_hook::libil2cpp::ByRefMut<
@@ -65,6 +98,24 @@ impl crate::System::Reflection::Binder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReorderArgumentArray", (args, state))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectMethod(
+        &mut self,
+        bindingAttr: crate::System::Reflection::BindingFlags,
+        _cordl_match: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Reflection::MethodBase,
+        >,
+        types: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        modifiers: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Reflection::ParameterModifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodBase> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Reflection::MethodBase = __cordl_object
+            .invoke("SelectMethod", (bindingAttr, _cordl_match, types, modifiers))?;
         Ok(__cordl_ret)
     }
     pub fn SelectProperty(
@@ -98,57 +149,6 @@ impl crate::System::Reflection::Binder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn SelectMethod(
-        &mut self,
-        bindingAttr: crate::System::Reflection::BindingFlags,
-        _cordl_match: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Reflection::MethodBase,
-        >,
-        types: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
-        modifiers: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Reflection::ParameterModifier,
-        >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodBase> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Reflection::MethodBase = __cordl_object
-            .invoke("SelectMethod", (bindingAttr, _cordl_match, types, modifiers))?;
-        Ok(__cordl_ret)
-    }
-    pub fn BindToMethod(
-        &mut self,
-        bindingAttr: crate::System::Reflection::BindingFlags,
-        _cordl_match: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Reflection::MethodBase,
-        >,
-        args: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-        >,
-        modifiers: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Reflection::ParameterModifier,
-        >,
-        culture: *mut crate::System::Globalization::CultureInfo,
-        names: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        state: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodBase> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Reflection::MethodBase = __cordl_object
-            .invoke(
-                "BindToMethod",
-                (bindingAttr, _cordl_match, args, modifiers, culture, names, state),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Reflection+Binder")]

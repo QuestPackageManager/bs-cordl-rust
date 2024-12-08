@@ -26,9 +26,9 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Utilities::ArrayHel
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ArrayHelpers")]
 impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
     #[cfg(
-        feature = "UnityEngine+InputSystem+Utilities+ArrayHelpers+__c__DisplayClass34_0_1"
+        feature = "UnityEngine+InputSystem+Utilities+ArrayHelpers+__c__DisplayClass33_0_1"
     )]
-    pub type __c__DisplayClass34_0_1<TValue: quest_hook::libil2cpp::Type> = crate::UnityEngine::InputSystem::Utilities::ArrayHelpers___c__DisplayClass34_0_1<
+    pub type __c__DisplayClass33_0_1<TValue: quest_hook::libil2cpp::Type> = crate::UnityEngine::InputSystem::Utilities::ArrayHelpers___c__DisplayClass33_0_1<
         TValue,
     >;
     #[cfg(
@@ -38,9 +38,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue,
     >;
     #[cfg(
-        feature = "UnityEngine+InputSystem+Utilities+ArrayHelpers+__c__DisplayClass33_0_1"
+        feature = "UnityEngine+InputSystem+Utilities+ArrayHelpers+__c__DisplayClass34_0_1"
     )]
-    pub type __c__DisplayClass33_0_1<TValue: quest_hook::libil2cpp::Type> = crate::UnityEngine::InputSystem::Utilities::ArrayHelpers___c__DisplayClass33_0_1<
+    pub type __c__DisplayClass34_0_1<TValue: quest_hook::libil2cpp::Type> = crate::UnityEngine::InputSystem::Utilities::ArrayHelpers___c__DisplayClass34_0_1<
         TValue,
     >;
 }

@@ -28,6 +28,15 @@ for crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer_DigStream {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DigestInputBuffer+DigStream")]
 impl crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer_DigStream {
+    pub fn New(
+        d: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (d))?;
+        Ok(__cordl_object)
+    }
     pub fn Write(
         &mut self,
         buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -62,15 +71,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer_DigStream {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (d))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        d: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (d))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DigestInputBuffer+DigStream")]
@@ -112,15 +112,12 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::DigestInputBu
 impl crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer {
     #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DigestInputBuffer+DigStream")]
     pub type DigStream = crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer_DigStream;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn UpdateDigest(
         &mut self,
@@ -133,12 +130,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer {
             .invoke("UpdateDigest", (d))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DigestInputBuffer")]

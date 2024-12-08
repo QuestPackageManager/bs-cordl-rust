@@ -26,15 +26,28 @@ impl std::ops::DerefMut for MissionObjectiveResult {
 }
 #[cfg(feature = "MissionObjectiveResult")]
 impl MissionObjectiveResult {
-    pub fn set_cleared(
+    pub fn New(
+        missionObjective: *mut MissionObjective,
+        cleared: bool,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (missionObjective, cleared, value))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
         &mut self,
-        value: bool,
+        missionObjective: *mut MissionObjective,
+        cleared: bool,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_cleared", (value))?;
+            .invoke(".ctor", (missionObjective, cleared, value))?;
         Ok(__cordl_ret)
     }
     pub fn get_cleared(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -42,13 +55,6 @@ impl MissionObjectiveResult {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_cleared", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_value", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_missionObjective(
@@ -59,6 +65,24 @@ impl MissionObjectiveResult {
         );
         let __cordl_ret: *mut MissionObjective = __cordl_object
             .invoke("get_missionObjective", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_value", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_cleared(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_cleared", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_missionObjective(
@@ -82,30 +106,6 @@ impl MissionObjectiveResult {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_value", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        missionObjective: *mut MissionObjective,
-        cleared: bool,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (missionObjective, cleared, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        missionObjective: *mut MissionObjective,
-        cleared: bool,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (missionObjective, cleared, value))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MissionObjectiveResult")]

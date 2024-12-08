@@ -34,157 +34,31 @@ impl std::ops::DerefMut for crate::Unity::Burst::BurstCompileAttribute {
 }
 #[cfg(feature = "Unity+Burst+BurstCompileAttribute")]
 impl crate::Unity::Burst::BurstCompileAttribute {
-    pub fn set_FloatMode(
-        &mut self,
-        value: crate::Unity::Burst::FloatMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_FloatMode", (value))?;
-        Ok(__cordl_ret)
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn set_FloatPrecision(
-        &mut self,
-        value: crate::Unity::Burst::FloatPrecision,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_FloatPrecision", (value))?;
-        Ok(__cordl_ret)
+    pub fn New_FloatPrecision_FloatMode1(
+        floatPrecision: crate::Unity::Burst::FloatPrecision,
+        floatMode: crate::Unity::Burst::FloatMode,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (floatPrecision, floatMode))?;
+        Ok(__cordl_object)
     }
-    pub fn get_DisableDirectCall(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_DisableDirectCall", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_OptimizeFor(
-        &mut self,
-        value: crate::Unity::Burst::OptimizeFor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_OptimizeFor", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_FloatMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::FloatMode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Unity::Burst::FloatMode = __cordl_object
-            .invoke("get_FloatMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_FloatPrecision(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::FloatPrecision> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Unity::Burst::FloatPrecision = __cordl_object
-            .invoke("get_FloatPrecision", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Debug(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Debug", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_DisableDirectCall(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_DisableDirectCall", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_DisableSafetyChecks(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_DisableSafetyChecks", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_CompileSynchronously(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_CompileSynchronously", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Debug(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Debug", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_DisableSafetyChecks(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_DisableSafetyChecks", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Options(
-        &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Options", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_OptimizeFor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::OptimizeFor> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Unity::Burst::OptimizeFor = __cordl_object
-            .invoke("get_OptimizeFor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Options(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
-        > = __cordl_object.invoke("get_Options", ())?;
-        Ok(__cordl_ret)
+    pub fn New_Il2CppArray2(
+        options: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (options))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_0(
         &mut self,
@@ -226,31 +100,157 @@ impl crate::Unity::Burst::BurstCompileAttribute {
         let __cordl_ret: bool = __cordl_object.invoke("get_CompileSynchronously", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_Debug(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_Debug", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_FloatPrecision_FloatMode1(
-        floatPrecision: crate::Unity::Burst::FloatPrecision,
-        floatMode: crate::Unity::Burst::FloatMode,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (floatPrecision, floatMode))?;
-        Ok(__cordl_object)
+    pub fn get_DisableDirectCall(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_DisableDirectCall", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_Il2CppArray2(
-        options: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (options))?;
-        Ok(__cordl_object)
+    pub fn get_DisableSafetyChecks(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_DisableSafetyChecks", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_FloatMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::FloatMode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Unity::Burst::FloatMode = __cordl_object
+            .invoke("get_FloatMode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_FloatPrecision(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::FloatPrecision> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Unity::Burst::FloatPrecision = __cordl_object
+            .invoke("get_FloatPrecision", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_OptimizeFor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::OptimizeFor> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Unity::Burst::OptimizeFor = __cordl_object
+            .invoke("get_OptimizeFor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Options(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::String,
+        > = __cordl_object.invoke("get_Options", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_CompileSynchronously(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_CompileSynchronously", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Debug(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Debug", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_DisableDirectCall(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_DisableDirectCall", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_DisableSafetyChecks(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_DisableSafetyChecks", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_FloatMode(
+        &mut self,
+        value: crate::Unity::Burst::FloatMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_FloatMode", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_FloatPrecision(
+        &mut self,
+        value: crate::Unity::Burst::FloatPrecision,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_FloatPrecision", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_OptimizeFor(
+        &mut self,
+        value: crate::Unity::Burst::OptimizeFor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_OptimizeFor", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Options(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Options", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Unity+Burst+BurstCompileAttribute")]

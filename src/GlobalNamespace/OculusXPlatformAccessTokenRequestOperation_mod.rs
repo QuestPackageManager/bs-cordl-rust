@@ -48,21 +48,39 @@ impl OculusXPlatformAccessTokenRequestOperation {
     pub const kMaxTokenRetry: i32 = 3i32;
     pub const kMillisecondsDelayToCheckCallbackResponse: i32 = 500i32;
     #[cfg(
-        feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
-    )]
-    pub type OculusTokenRequestOperationState = crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState;
-    #[cfg(
         feature = "OculusXPlatformAccessTokenRequestOperation+_RequestXPlatformAccessToken_d__7"
     )]
     pub type _RequestXPlatformAccessToken_d__7 = crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation__RequestXPlatformAccessToken_d__7;
-    pub fn _ctor(
+    #[cfg(
+        feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
+    )]
+    pub type OculusTokenRequestOperationState = crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnCompleteLoadingOculusAccessToken(
+        &mut self,
+        message: *mut crate::Oculus::Platform::Message_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnCompleteLoadingOculusAccessToken", (message))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RequestAccessToken(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("RequestAccessToken", ())?;
         Ok(__cordl_ret)
     }
     pub fn RequestXPlatformAccessToken(
@@ -79,33 +97,15 @@ impl OculusXPlatformAccessTokenRequestOperation {
         > = __cordl_object.invoke("RequestXPlatformAccessToken", (cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn RequestAccessToken(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RequestAccessToken", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn OnCompleteLoadingOculusAccessToken(
-        &mut self,
-        message: *mut crate::Oculus::Platform::Message_1<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCompleteLoadingOculusAccessToken", (message))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OculusXPlatformAccessTokenRequestOperation")]

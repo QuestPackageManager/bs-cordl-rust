@@ -30,34 +30,6 @@ for crate::Unity::Properties::PropertyBag_1<TContainer> {
 impl<
     TContainer: quest_hook::libil2cpp::Type,
 > crate::Unity::Properties::PropertyBag_1<TContainer> {
-    pub fn get_InstantiationKind(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Unity::Properties::InstantiationKind>
-    where
-        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Unity::Properties::InstantiationKind = __cordl_object
-            .invoke("get_InstantiationKind", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Unity_Properties_IConstructor_TContainer__Instantiate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<TContainer>
-    where
-        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TContainer = __cordl_object
-            .invoke("Unity.Properties.IConstructor<TContainer>.Instantiate", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Accept(
         &mut self,
         visitor: *mut crate::Unity::Properties::ITypeVisitor,
@@ -73,20 +45,6 @@ impl<
             .invoke("Accept", (visitor))?;
         Ok(__cordl_ret)
     }
-    pub fn Unity_Properties_Internal_IPropertyBagRegister_Register(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Unity.Properties.Internal.IPropertyBagRegister.Register", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Instantiate(&mut self) -> quest_hook::libil2cpp::Result<TContainer>
     where
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -96,6 +54,27 @@ impl<
             self,
         );
         let __cordl_ret: TContainer = __cordl_object.invoke("Instantiate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Unity_Properties_IConstructor_TContainer__Instantiate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<TContainer>
+    where
+        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: TContainer = __cordl_object
+            .invoke("Unity.Properties.IConstructor<TContainer>.Instantiate", ())?;
         Ok(__cordl_ret)
     }
     pub fn Unity_Properties_IConstructor_get_InstantiationKind(
@@ -112,6 +91,20 @@ impl<
             .invoke("Unity.Properties.IConstructor.get_InstantiationKind", ())?;
         Ok(__cordl_ret)
     }
+    pub fn Unity_Properties_Internal_IPropertyBagRegister_Register(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Unity.Properties.Internal.IPropertyBagRegister.Register", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -124,12 +117,19 @@ impl<
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_InstantiationKind(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Properties::InstantiationKind>
+    where
+        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Unity::Properties::InstantiationKind = __cordl_object
+            .invoke("get_InstantiationKind", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Unity+Properties+PropertyBag_1")]

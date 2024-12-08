@@ -26,6 +26,15 @@ impl std::ops::DerefMut for crate::UnityEngine::RuntimeInitializeOnLoadMethodAtt
 }
 #[cfg(feature = "UnityEngine+RuntimeInitializeOnLoadMethodAttribute")]
 impl crate::UnityEngine::RuntimeInitializeOnLoadMethodAttribute {
+    pub fn New(
+        loadType: crate::UnityEngine::RuntimeInitializeLoadType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (loadType))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         loadType: crate::UnityEngine::RuntimeInitializeLoadType,
@@ -47,15 +56,6 @@ impl crate::UnityEngine::RuntimeInitializeOnLoadMethodAttribute {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_loadType", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        loadType: crate::UnityEngine::RuntimeInitializeLoadType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (loadType))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+RuntimeInitializeOnLoadMethodAttribute")]

@@ -23,13 +23,6 @@ impl std::ops::DerefMut for IInvitePlatformHandler {
 }
 #[cfg(feature = "IInvitePlatformHandler")]
 impl IInvitePlatformHandler {
-    pub fn get_isSupported(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isSupported", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn OpenInvitePanel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -44,6 +37,13 @@ impl IInvitePlatformHandler {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_isSupported(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isSupported", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "IInvitePlatformHandler")]

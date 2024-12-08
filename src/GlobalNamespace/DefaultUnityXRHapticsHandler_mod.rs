@@ -25,14 +25,14 @@ impl std::ops::DerefMut for DefaultUnityXRHapticsHandler {
 }
 #[cfg(feature = "DefaultUnityXRHapticsHandler")]
 impl DefaultUnityXRHapticsHandler {
-    pub fn StopHaptics(
+    pub fn Destroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StopHaptics", ())?;
+            .invoke("Destroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn Dispose(
@@ -45,25 +45,23 @@ impl DefaultUnityXRHapticsHandler {
             .invoke("Dispose", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Destroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Destroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         node: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (node))?;
+        Ok(__cordl_object)
+    }
+    pub fn StopHaptics(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (node))?;
+            .invoke("StopHaptics", ())?;
         Ok(__cordl_ret)
     }
     pub fn TriggerHapticPulse(
@@ -78,14 +76,16 @@ impl DefaultUnityXRHapticsHandler {
             .invoke("TriggerHapticPulse", (strength, duration))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         node: crate::UnityEngine::XR::XRNode,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (node))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (node))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "DefaultUnityXRHapticsHandler")]

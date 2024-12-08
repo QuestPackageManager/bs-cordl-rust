@@ -34,18 +34,47 @@ impl std::ops::DerefMut for crate::System::Data::DataExpression {
 }
 #[cfg(feature = "System+Data+DataExpression")]
 impl crate::System::Data::DataExpression {
-    pub fn HasLocalAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn Bind(
+        &mut self,
+        table: *mut crate::System::Data::DataTable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("HasLocalAggregate", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Bind", (table))?;
         Ok(__cordl_ret)
     }
-    pub fn IsTableAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn DependsOn(
+        &mut self,
+        column: *mut crate::System::Data::DataColumn,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("IsTableAggregate", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("DependsOn", (column))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Evaluate_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("Evaluate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Evaluate_DataRow_DataRowVersion1(
+        &mut self,
+        row: *mut crate::System::Data::DataRow,
+        version: crate::System::Data::DataRowVersion,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("Evaluate", (row, version))?;
         Ok(__cordl_ret)
     }
     pub fn GetDependency(
@@ -61,6 +90,20 @@ impl crate::System::Data::DataExpression {
         > = __cordl_object.invoke("GetDependency", ())?;
         Ok(__cordl_ret)
     }
+    pub fn HasLocalAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("HasLocalAggregate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HasRemoteAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("HasRemoteAggregate", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         row: *mut crate::System::Data::DataRow,
@@ -71,6 +114,34 @@ impl crate::System::Data::DataExpression {
         );
         let __cordl_ret: bool = __cordl_object.invoke("Invoke", (row, version))?;
         Ok(__cordl_ret)
+    }
+    pub fn IsTableAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsTableAggregate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_DataTable_String0(
+        table: *mut crate::System::Data::DataTable,
+        expression: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (table, expression))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Type1(
+        table: *mut crate::System::Data::DataTable,
+        expression: *mut crate::System::String,
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (table, expression, _cordl_type))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_DataTable_String0(
         &mut self,
@@ -97,63 +168,6 @@ impl crate::System::Data::DataExpression {
             .invoke(".ctor", (table, expression, _cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn Bind(
-        &mut self,
-        table: *mut crate::System::Data::DataTable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Bind", (table))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_HasValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasValue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HasRemoteAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasRemoteAggregate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Evaluate_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("Evaluate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Evaluate_DataRow_DataRowVersion1(
-        &mut self,
-        row: *mut crate::System::Data::DataRow,
-        version: crate::System::Data::DataRowVersion,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("Evaluate", (row, version))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DependsOn(
-        &mut self,
-        column: *mut crate::System::Data::DataColumn,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("DependsOn", (column))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Expression(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -164,26 +178,12 @@ impl crate::System::Data::DataExpression {
             .invoke("get_Expression", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_DataTable_String0(
-        table: *mut crate::System::Data::DataTable,
-        expression: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (table, expression))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Type1(
-        table: *mut crate::System::Data::DataTable,
-        expression: *mut crate::System::String,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (table, expression, _cordl_type))?;
-        Ok(__cordl_object)
+    pub fn get_HasValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasValue", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Data+DataExpression")]

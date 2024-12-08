@@ -34,6 +34,16 @@ for crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__
 }
 #[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
 impl crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
+    pub fn MoveNext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn SetStateMachine(
         &mut self,
         stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
@@ -42,16 +52,6 @@ impl crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g_
             self,
             "SetStateMachine",
             (stateMachine),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveNext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -89,42 +89,53 @@ impl std::ops::DerefMut for OculusPlatformUserModel {
 }
 #[cfg(feature = "OculusPlatformUserModel")]
 impl OculusPlatformUserModel {
+    #[cfg(feature = "OculusPlatformUserModel+_GetUserNamesForUserIds_d__16")]
+    pub type _GetUserNamesForUserIds_d__16 = crate::GlobalNamespace::OculusPlatformUserModel__GetUserNamesForUserIds_d__16;
     #[cfg(feature = "OculusPlatformUserModel+__c")]
     pub type __c = crate::GlobalNamespace::OculusPlatformUserModel___c;
     #[cfg(feature = "OculusPlatformUserModel+_GetUserInfo_d__12")]
     pub type _GetUserInfo_d__12 = crate::GlobalNamespace::OculusPlatformUserModel__GetUserInfo_d__12;
-    #[cfg(feature = "OculusPlatformUserModel+_RequestXPlatformAccessToken_d__17")]
-    pub type _RequestXPlatformAccessToken_d__17 = crate::GlobalNamespace::OculusPlatformUserModel__RequestXPlatformAccessToken_d__17;
     #[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
     pub type __GetUserNamesForUserIds_g__Fetch_16_0_d = crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d;
-    #[cfg(feature = "OculusPlatformUserModel+_GetUserFriendsUserIds_d__14")]
-    pub type _GetUserFriendsUserIds_d__14 = crate::GlobalNamespace::OculusPlatformUserModel__GetUserFriendsUserIds_d__14;
     #[cfg(feature = "OculusPlatformUserModel+_GetUserInfoInternalAsync_d__13")]
     pub type _GetUserInfoInternalAsync_d__13 = crate::GlobalNamespace::OculusPlatformUserModel__GetUserInfoInternalAsync_d__13;
+    #[cfg(feature = "OculusPlatformUserModel+_RequestXPlatformAccessToken_d__17")]
+    pub type _RequestXPlatformAccessToken_d__17 = crate::GlobalNamespace::OculusPlatformUserModel__RequestXPlatformAccessToken_d__17;
     #[cfg(feature = "OculusPlatformUserModel+_GetUserAuthToken_d__15")]
     pub type _GetUserAuthToken_d__15 = crate::GlobalNamespace::OculusPlatformUserModel__GetUserAuthToken_d__15;
-    #[cfg(feature = "OculusPlatformUserModel+_GetUserNamesForUserIds_d__16")]
-    pub type _GetUserNamesForUserIds_d__16 = crate::GlobalNamespace::OculusPlatformUserModel__GetUserNamesForUserIds_d__16;
-    pub fn add_platformUserInfoDidChangeEvent(
+    #[cfg(feature = "OculusPlatformUserModel+_GetUserFriendsUserIds_d__14")]
+    pub type _GetUserFriendsUserIds_d__14 = crate::GlobalNamespace::OculusPlatformUserModel__GetUserFriendsUserIds_d__14;
+    pub fn GetUserAuthToken(
         &mut self,
-        value: *mut crate::System::Action_1<*mut UserInfo>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<*mut PlatformUserAuthTokenData>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_platformUserInfoDidChangeEvent", (value))?;
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut PlatformUserAuthTokenData,
+        > = __cordl_object.invoke("GetUserAuthToken", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn GetUserFriendsUserIds(
         &mut self,
-        platformInit: *mut IPlatformInit,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        cached: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::System::String,
+            >,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (platformInit))?;
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::System::String,
+            >,
+        > = __cordl_object.invoke("GetUserFriendsUserIds", (cached))?;
         Ok(__cordl_ret)
     }
     pub fn GetUserInfo(
@@ -153,39 +164,6 @@ impl OculusPlatformUserModel {
             .invoke("GetUserInfoInternalAsync", (ctx))?;
         Ok(__cordl_ret)
     }
-    pub fn GetUserFriendsUserIds(
-        &mut self,
-        cached: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::String,
-            >,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::String,
-            >,
-        > = __cordl_object.invoke("GetUserFriendsUserIds", (cached))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetUserAuthToken(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut PlatformUserAuthTokenData>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut PlatformUserAuthTokenData,
-        > = __cordl_object.invoke("GetUserAuthToken", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetUserNamesForUserIds(
         &mut self,
         userIds: *mut crate::System::Collections::Generic::IReadOnlyList_1<
@@ -208,6 +186,15 @@ impl OculusPlatformUserModel {
         > = __cordl_object.invoke("GetUserNamesForUserIds", (userIds))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        platformInit: *mut IPlatformInit,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (platformInit))?;
+        Ok(__cordl_object)
+    }
     pub fn RequestXPlatformAccessToken(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -222,7 +209,18 @@ impl OculusPlatformUserModel {
         > = __cordl_object.invoke("RequestXPlatformAccessToken", (cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_platformUserInfoDidChangeEvent(
+    pub fn _ctor(
+        &mut self,
+        platformInit: *mut IPlatformInit,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (platformInit))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_platformUserInfoDidChangeEvent(
         &mut self,
         value: *mut crate::System::Action_1<*mut UserInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -230,7 +228,7 @@ impl OculusPlatformUserModel {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_platformUserInfoDidChangeEvent", (value))?;
+            .invoke("add_platformUserInfoDidChangeEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_CanXPlatformAccessTokenBeCached(
@@ -243,14 +241,16 @@ impl OculusPlatformUserModel {
             .invoke("get_CanXPlatformAccessTokenBeCached", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        platformInit: *mut IPlatformInit,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (platformInit))?;
-        Ok(__cordl_object)
+    pub fn remove_platformUserInfoDidChangeEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut UserInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_platformUserInfoDidChangeEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OculusPlatformUserModel")]

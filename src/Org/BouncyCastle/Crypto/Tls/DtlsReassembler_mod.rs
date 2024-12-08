@@ -29,35 +29,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembl
 impl crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler {
     #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler+Range")]
     pub type Range = crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler_Range;
-    pub fn GetBodyIfComplete(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetBodyIfComplete", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MsgType(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u8 = __cordl_object.invoke("get_MsgType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        msg_type: u8,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (msg_type, length))?;
-        Ok(__cordl_ret)
-    }
     pub fn ContributeFragment(
         &mut self,
         msg_type: u8,
@@ -77,6 +48,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn GetBodyIfComplete(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetBodyIfComplete", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(msg_type: u8, length: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (msg_type, length))?;
+        Ok(__cordl_object)
+    }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -87,15 +75,24 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler {
             .invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         msg_type: u8,
         length: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (msg_type, length))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (msg_type, length))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MsgType(&mut self) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u8 = __cordl_object.invoke("get_MsgType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler")]
@@ -138,6 +135,13 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler_Range {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler+Range")]
 impl crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler_Range {
+    pub fn New(start: i32, end: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (start, end))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         start: i32,
@@ -150,15 +154,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler_Range {
             .invoke(".ctor", (start, end))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Start(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_End(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Start", (value))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_End", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Start(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Start", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_End(
@@ -172,29 +179,16 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler_Range {
             .invoke("set_End", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Start(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn set_Start(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Start", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Start", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_End(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_End", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        start: i32,
-        end: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (start, end))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler+Range")]

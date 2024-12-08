@@ -26,6 +26,16 @@ impl std::ops::DerefMut for crate::System::Data::ConstraintTable {
 }
 #[cfg(feature = "System+Data+ConstraintTable")]
 impl crate::System::Data::ConstraintTable {
+    pub fn New(
+        t: *mut crate::System::Data::DataTable,
+        c: *mut crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (t, c))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         t: *mut crate::System::Data::DataTable,
@@ -37,16 +47,6 @@ impl crate::System::Data::ConstraintTable {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (t, c))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        t: *mut crate::System::Data::DataTable,
-        c: *mut crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (t, c))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Data+ConstraintTable")]

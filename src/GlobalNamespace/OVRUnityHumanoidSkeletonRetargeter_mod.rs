@@ -148,6 +148,22 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRSkeletonMetadata_BoneData
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRSkeletonMetadata+BoneData")]
 impl crate::GlobalNamespace::OVRSkeletonMetadata_BoneData {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_OVRSkeletonMetadata_BoneData1(
+        otherBoneData: *mut crate::GlobalNamespace::OVRSkeletonMetadata_BoneData,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (otherBoneData))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -168,22 +184,6 @@ impl crate::GlobalNamespace::OVRSkeletonMetadata_BoneData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (otherBoneData))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_OVRSkeletonMetadata_BoneData1(
-        otherBoneData: *mut crate::GlobalNamespace::OVRSkeletonMetadata_BoneData,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (otherBoneData))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRSkeletonMetadata+BoneData")]
@@ -230,6 +230,13 @@ for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment {
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+JointAdjustment")]
 impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -239,13 +246,6 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment 
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+JointAdjustment")]
@@ -344,42 +344,6 @@ for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetada
 impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata {
     #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRSkeletonMetadata+BoneData")]
     pub type BoneData = crate::GlobalNamespace::OVRSkeletonMetadata_BoneData;
-    pub fn BuildBoneDataSkeleton(
-        &mut self,
-        skeleton: *mut OVRSkeleton,
-        useBindPose: bool,
-        customBoneIdToHumanBodyBone: *mut crate::System::Collections::Generic::Dictionary_2<
-            crate::GlobalNamespace::OVRSkeleton_BoneId,
-            crate::UnityEngine::HumanBodyBones,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "BuildBoneDataSkeleton",
-                (skeleton, useBindPose, customBoneIdToHumanBodyBone),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_BodyToBoneData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::HumanBodyBones,
-            *mut crate::GlobalNamespace::OVRSkeletonMetadata_BoneData,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::HumanBodyBones,
-            *mut crate::GlobalNamespace::OVRSkeletonMetadata_BoneData,
-        > = __cordl_object.invoke("get_BodyToBoneData", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AssembleSkeleton(
         &mut self,
         skeleton: *mut OVRSkeleton,
@@ -399,6 +363,36 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
             )?;
         Ok(__cordl_ret)
     }
+    pub fn BuildBoneData(
+        &mut self,
+        animator: *mut crate::UnityEngine::Animator,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BuildBoneData", (animator))?;
+        Ok(__cordl_ret)
+    }
+    pub fn BuildBoneDataSkeleton(
+        &mut self,
+        skeleton: *mut OVRSkeleton,
+        useBindPose: bool,
+        customBoneIdToHumanBodyBone: *mut crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::OVRSkeleton_BoneId,
+            crate::UnityEngine::HumanBodyBones,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "BuildBoneDataSkeleton",
+                (skeleton, useBindPose, customBoneIdToHumanBodyBone),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn BuildCoordinateAxesForAllBones(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -409,16 +403,37 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
             .invoke("BuildCoordinateAxesForAllBones", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata0(
-        &mut self,
+    pub fn New_Animator1(
+        animator: *mut crate::UnityEngine::Animator,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (animator))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_OVRSkeleton__cordl_bool_Dictionary_2_2(
+        skeleton: *mut OVRSkeleton,
+        useBindPose: bool,
+        customBoneIdToHumanBodyBone: *mut crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::OVRSkeleton_BoneId,
+            crate::UnityEngine::HumanBodyBones,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (skeleton, useBindPose, customBoneIdToHumanBodyBone))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata0(
         otherSkeletonMetaData: *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (otherSkeletonMetaData))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (otherSkeletonMetaData))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_Animator1(
         &mut self,
@@ -447,48 +462,33 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
             .invoke(".ctor", (skeleton, useBindPose, customBoneIdToHumanBodyBone))?;
         Ok(__cordl_ret)
     }
-    pub fn BuildBoneData(
+    pub fn _ctor_OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata0(
         &mut self,
-        animator: *mut crate::UnityEngine::Animator,
+        otherSkeletonMetaData: *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BuildBoneData", (animator))?;
+            .invoke(".ctor", (otherSkeletonMetaData))?;
         Ok(__cordl_ret)
     }
-    pub fn New_OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata0(
-        otherSkeletonMetaData: *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (otherSkeletonMetaData))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Animator1(
-        animator: *mut crate::UnityEngine::Animator,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (animator))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_OVRSkeleton__cordl_bool_Dictionary_2_2(
-        skeleton: *mut OVRSkeleton,
-        useBindPose: bool,
-        customBoneIdToHumanBodyBone: *mut crate::System::Collections::Generic::Dictionary_2<
-            crate::GlobalNamespace::OVRSkeleton_BoneId,
+    pub fn get_BodyToBoneData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::Dictionary_2<
             crate::UnityEngine::HumanBodyBones,
+            *mut crate::GlobalNamespace::OVRSkeletonMetadata_BoneData,
         >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (skeleton, useBindPose, customBoneIdToHumanBodyBone))?;
-        Ok(__cordl_object)
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::HumanBodyBones,
+            *mut crate::GlobalNamespace::OVRSkeletonMetadata_BoneData,
+        > = __cordl_object.invoke("get_BodyToBoneData", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRSkeletonMetadata")]
@@ -549,27 +549,20 @@ impl std::ops::DerefMut for OVRUnityHumanoidSkeletonRetargeter {
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter")]
 impl OVRUnityHumanoidSkeletonRetargeter {
-    #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+JointAdjustment")]
-    pub type JointAdjustment = crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment;
     #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRSkeletonMetadata")]
     pub type OVRSkeletonMetadata = crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata;
     #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings")]
     pub type OVRHumanBodyBonesMappings = crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings;
-    pub fn get_CustomBoneIdToHumanBodyBone(
+    #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+JointAdjustment")]
+    pub type JointAdjustment = crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment;
+    pub fn AdjustCustomBoneIdToHumanBodyBoneMapping(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::Dictionary_2<
-            crate::GlobalNamespace::OVRSkeleton_BoneId,
-            crate::UnityEngine::HumanBodyBones,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            crate::GlobalNamespace::OVRSkeleton_BoneId,
-            crate::UnityEngine::HumanBodyBones,
-        > = __cordl_object.invoke("get_CustomBoneIdToHumanBodyBone", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AdjustCustomBoneIdToHumanBodyBoneMapping", ())?;
         Ok(__cordl_ret)
     }
     pub fn AlignTargetWithSource(
@@ -582,58 +575,64 @@ impl OVRUnityHumanoidSkeletonRetargeter {
             .invoke("AlignTargetWithSource", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_SourceSkeletonData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata = __cordl_object
-            .invoke("get_SourceSkeletonData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_BodySectionsToAlign(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::GlobalNamespace::OVRHumanBodyBonesMappings_BodySection,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::GlobalNamespace::OVRHumanBodyBonesMappings_BodySection,
-        > = __cordl_object.invoke("get_BodySectionsToAlign", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TargetTPoseRotations(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::HumanBodyBones,
-            crate::UnityEngine::Quaternion,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::HumanBodyBones,
-            crate::UnityEngine::Quaternion,
-        > = __cordl_object.invoke("get_TargetTPoseRotations", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn ComputeOffsetsUsingSkeletonComponent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("ComputeOffsetsUsingSkeletonComponent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CopyBoneIdToHumanBodyBoneMapping(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CopyBoneIdToHumanBodyBoneMapping", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateCustomBoneIdToHumanBodyBoneMapping(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CreateCustomBoneIdToHumanBodyBoneMapping", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn FindAdjustment(
+        &mut self,
+        boneId: crate::UnityEngine::HumanBodyBones,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment = __cordl_object
+            .invoke("FindAdjustment", (boneId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn RecomputeSkeletalOffsetsIfNecessary(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RecomputeSkeletalOffsetsIfNecessary", ())?;
         Ok(__cordl_ret)
     }
     pub fn RemoveMappingCorrespondingToHumanBodyBone(
@@ -657,6 +656,36 @@ impl OVRUnityHumanoidSkeletonRetargeter {
             .invoke("Start", ())?;
         Ok(__cordl_ret)
     }
+    pub fn StoreTTargetPoseRotations(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StoreTTargetPoseRotations", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Adjustments(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -672,64 +701,14 @@ impl OVRUnityHumanoidSkeletonRetargeter {
         > = __cordl_object.invoke("get_Adjustments", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AdjustCustomBoneIdToHumanBodyBoneMapping(
+    pub fn get_AnimatorTargetSkeleton(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Animator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AdjustCustomBoneIdToHumanBodyBoneMapping", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateCustomBoneIdToHumanBodyBoneMapping(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CreateCustomBoneIdToHumanBodyBoneMapping", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn StoreTTargetPoseRotations(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StoreTTargetPoseRotations", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CopyBoneIdToHumanBodyBoneMapping(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CopyBoneIdToHumanBodyBoneMapping", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ComputeOffsetsUsingSkeletonComponent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ComputeOffsetsUsingSkeletonComponent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::Animator = __cordl_object
+            .invoke("get_AnimatorTargetSkeleton", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_BodySectionToPosition(
@@ -747,14 +726,48 @@ impl OVRUnityHumanoidSkeletonRetargeter {
         > = __cordl_object.invoke("get_BodySectionToPosition", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_AnimatorTargetSkeleton(
+    pub fn get_BodySectionsToAlign(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Animator> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::OVRHumanBodyBonesMappings_BodySection,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Animator = __cordl_object
-            .invoke("get_AnimatorTargetSkeleton", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::OVRHumanBodyBonesMappings_BodySection,
+        > = __cordl_object.invoke("get_BodySectionsToAlign", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CustomBoneIdToHumanBodyBone(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::OVRSkeleton_BoneId,
+            crate::UnityEngine::HumanBodyBones,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::OVRSkeleton_BoneId,
+            crate::UnityEngine::HumanBodyBones,
+        > = __cordl_object.invoke("get_CustomBoneIdToHumanBodyBone", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SourceSkeletonData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata = __cordl_object
+            .invoke("get_SourceSkeletonData", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SourceSkeletonTPoseData(
@@ -781,35 +794,22 @@ impl OVRUnityHumanoidSkeletonRetargeter {
             .invoke("get_TargetSkeletonData", ())?;
         Ok(__cordl_ret)
     }
-    pub fn RecomputeSkeletalOffsetsIfNecessary(
+    pub fn get_TargetTPoseRotations(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecomputeSkeletalOffsetsIfNecessary", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FindAdjustment(
-        &mut self,
-        boneId: crate::UnityEngine::HumanBodyBones,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment,
+        *mut crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::HumanBodyBones,
+            crate::UnityEngine::Quaternion,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment = __cordl_object
-            .invoke("FindAdjustment", (boneId))?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::HumanBodyBones,
+            crate::UnityEngine::Quaternion,
+        > = __cordl_object.invoke("get_TargetTPoseRotations", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter")]

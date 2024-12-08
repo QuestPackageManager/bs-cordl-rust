@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::BackgroundSize {
 }
 #[cfg(feature = "UnityEngine+UIElements+BackgroundSize")]
 impl crate::UnityEngine::UIElements::BackgroundSize {
-    pub fn set_sizeType(
+    pub fn Equals_BackgroundSize1(
         &mut self,
-        value: crate::UnityEngine::UIElements::BackgroundSizeType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::UIElements::BackgroundSize,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_sizeType",
-            (value),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -46,25 +46,32 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_BackgroundSize1(
-        &mut self,
-        other: crate::UnityEngine::UIElements::BackgroundSize,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_y(
+    pub fn ToString(
         &mut self,
-        value: crate::UnityEngine::UIElements::Length,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_BackgroundSizeType1(
+        &mut self,
+        sizeType: crate::UnityEngine::UIElements::BackgroundSizeType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_y",
-            (value),
+            ".ctor",
+            (sizeType),
         )?;
         Ok(__cordl_ret)
     }
@@ -80,21 +87,14 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_BackgroundSizeType1(
+    pub fn get_sizeType(
         &mut self,
-        sizeType: crate::UnityEngine::UIElements::BackgroundSizeType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::BackgroundSizeType,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundSizeType = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (sizeType),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
+            "get_sizeType",
             (),
         )?;
         Ok(__cordl_ret)
@@ -109,6 +109,27 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_y(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Length = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_y",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_sizeType(
+        &mut self,
+        value: crate::UnityEngine::UIElements::BackgroundSizeType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_sizeType",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_x(
         &mut self,
         value: crate::UnityEngine::UIElements::Length,
@@ -120,35 +141,14 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_y(
+    pub fn set_y(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
-        let __cordl_ret: crate::UnityEngine::UIElements::Length = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: crate::UnityEngine::UIElements::Length,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_y",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_sizeType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::BackgroundSizeType,
-    > {
-        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundSizeType = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_sizeType",
-            (),
+            "set_y",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

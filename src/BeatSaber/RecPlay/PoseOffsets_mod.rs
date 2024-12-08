@@ -35,17 +35,6 @@ impl crate::BeatSaber::RecPlay::PoseOffsets {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn AdjustRightHand(
-        &mut self,
-        pose: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AdjustRightHand",
-            (pose),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn AdjustLeftHand(
         &mut self,
         pose: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
@@ -53,6 +42,17 @@ impl crate::BeatSaber::RecPlay::PoseOffsets {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "AdjustLeftHand",
+            (pose),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn AdjustRightHand(
+        &mut self,
+        pose: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AdjustRightHand",
             (pose),
         )?;
         Ok(__cordl_ret)

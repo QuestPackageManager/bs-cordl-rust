@@ -27,6 +27,18 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
     pub const GenericFailure: i64 = -1i64;
     pub const GenericSuccess: i64 = 1i64;
     pub const kBaseCommandSize: i32 = 8i32;
+    pub fn _ctor(
+        &mut self,
+        _cordl_type: crate::UnityEngine::InputSystem::Utilities::FourCC,
+        sizeInBytes: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (_cordl_type, sizeInBytes),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_payloadPtr(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
@@ -42,18 +54,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
             self,
             "get_payloadSizeInBytes",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        _cordl_type: crate::UnityEngine::InputSystem::Utilities::FourCC,
-        sizeInBytes: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (_cordl_type, sizeInBytes),
         )?;
         Ok(__cordl_ret)
     }

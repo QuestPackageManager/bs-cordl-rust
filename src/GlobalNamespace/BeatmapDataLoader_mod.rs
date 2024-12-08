@@ -24,56 +24,10 @@ impl std::ops::DerefMut for BeatmapDataLoader {
 }
 #[cfg(feature = "BeatmapDataLoader")]
 impl BeatmapDataLoader {
-    #[cfg(feature = "BeatmapDataLoader+_LoadBasicBeatmapDataAsync_d__1")]
-    pub type _LoadBasicBeatmapDataAsync_d__1 = crate::GlobalNamespace::BeatmapDataLoader__LoadBasicBeatmapDataAsync_d__1;
     #[cfg(feature = "BeatmapDataLoader+_LoadBeatmapDataAsync_d__4")]
     pub type _LoadBeatmapDataAsync_d__4 = crate::GlobalNamespace::BeatmapDataLoader__LoadBeatmapDataAsync_d__4;
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadBeatmapDataAsync(
-        &mut self,
-        beatmapLevelData: *mut IBeatmapLevelData,
-        beatmapKey: BeatmapKey,
-        startBpm: f32,
-        loadingForDesignatedEnvironment: bool,
-        environmentInfo: *mut IEnvironmentInfo,
-        beatmapLevelDataVersion: BeatmapLevelDataVersion,
-        gameplayModifiers: *mut GameplayModifiers,
-        playerSpecificSettings: *mut PlayerSpecificSettings,
-        enableBeatmapDataCaching: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut IReadonlyBeatmapData>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut IReadonlyBeatmapData,
-        > = __cordl_object
-            .invoke(
-                "LoadBeatmapDataAsync",
-                (
-                    beatmapLevelData,
-                    beatmapKey,
-                    startBpm,
-                    loadingForDesignatedEnvironment,
-                    environmentInfo,
-                    beatmapLevelDataVersion,
-                    gameplayModifiers,
-                    playerSpecificSettings,
-                    enableBeatmapDataCaching,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "BeatmapDataLoader+_LoadBasicBeatmapDataAsync_d__1")]
+    pub type _LoadBasicBeatmapDataAsync_d__1 = crate::GlobalNamespace::BeatmapDataLoader__LoadBasicBeatmapDataAsync_d__1;
     pub fn LoadBasicBeatmapDataAsync(
         &mut self,
         beatmapLevelData: *mut IBeatmapLevelData,
@@ -143,12 +97,58 @@ impl BeatmapDataLoader {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn LoadBeatmapDataAsync(
+        &mut self,
+        beatmapLevelData: *mut IBeatmapLevelData,
+        beatmapKey: BeatmapKey,
+        startBpm: f32,
+        loadingForDesignatedEnvironment: bool,
+        environmentInfo: *mut IEnvironmentInfo,
+        beatmapLevelDataVersion: BeatmapLevelDataVersion,
+        gameplayModifiers: *mut GameplayModifiers,
+        playerSpecificSettings: *mut PlayerSpecificSettings,
+        enableBeatmapDataCaching: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<*mut IReadonlyBeatmapData>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut IReadonlyBeatmapData,
+        > = __cordl_object
+            .invoke(
+                "LoadBeatmapDataAsync",
+                (
+                    beatmapLevelData,
+                    beatmapKey,
+                    startBpm,
+                    loadingForDesignatedEnvironment,
+                    environmentInfo,
+                    beatmapLevelDataVersion,
+                    gameplayModifiers,
+                    playerSpecificSettings,
+                    enableBeatmapDataCaching,
+                ),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapDataLoader")]

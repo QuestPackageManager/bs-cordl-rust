@@ -26,6 +26,16 @@ impl std::ops::DerefMut for crate::UnityEngine::GlobalJavaObjectRef {
 }
 #[cfg(feature = "UnityEngine+GlobalJavaObjectRef")]
 impl crate::UnityEngine::GlobalJavaObjectRef {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -35,6 +45,15 @@ impl crate::UnityEngine::GlobalJavaObjectRef {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        jobject: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (jobject))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -46,25 +65,6 @@ impl crate::UnityEngine::GlobalJavaObjectRef {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (jobject))?;
         Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        jobject: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (jobject))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+GlobalJavaObjectRef")]

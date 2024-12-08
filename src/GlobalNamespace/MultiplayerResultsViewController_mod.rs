@@ -37,6 +37,42 @@ impl std::ops::DerefMut for MultiplayerResultsViewController {
 }
 #[cfg(feature = "MultiplayerResultsViewController")]
 impl MultiplayerResultsViewController {
+    pub fn BackToLobbyPressed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BackToLobbyPressed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn BackToMenuPressed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BackToMenuPressed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DidActivate(
+        &mut self,
+        firstActivation: bool,
+        addedToHierarchy: bool,
+        screenSystemEnabling: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "DidActivate",
+                (firstActivation, addedToHierarchy, screenSystemEnabling),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn Init(
         &mut self,
         multiplayerResultsData: *mut MultiplayerResultsData,
@@ -59,6 +95,13 @@ impl MultiplayerResultsViewController {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -67,33 +110,6 @@ impl MultiplayerResultsViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_backToMenuPressedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut MultiplayerResultsViewController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_backToMenuPressedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DidActivate(
-        &mut self,
-        firstActivation: bool,
-        addedToHierarchy: bool,
-        screenSystemEnabling: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "DidActivate",
-                (firstActivation, addedToHierarchy, screenSystemEnabling),
-            )?;
         Ok(__cordl_ret)
     }
     pub fn add_backToLobbyPressedEvent(
@@ -107,17 +123,6 @@ impl MultiplayerResultsViewController {
             .invoke("add_backToLobbyPressedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_backToLobbyPressedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut MultiplayerResultsViewController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_backToLobbyPressedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn add_backToMenuPressedEvent(
         &mut self,
         value: *mut crate::System::Action_1<*mut MultiplayerResultsViewController>,
@@ -129,32 +134,27 @@ impl MultiplayerResultsViewController {
             .invoke("add_backToMenuPressedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn BackToLobbyPressed(
+    pub fn remove_backToLobbyPressedEvent(
         &mut self,
+        value: *mut crate::System::Action_1<*mut MultiplayerResultsViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BackToLobbyPressed", ())?;
+            .invoke("remove_backToLobbyPressedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn BackToMenuPressed(
+    pub fn remove_backToMenuPressedEvent(
         &mut self,
+        value: *mut crate::System::Action_1<*mut MultiplayerResultsViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BackToMenuPressed", ())?;
+            .invoke("remove_backToMenuPressedEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MultiplayerResultsViewController")]

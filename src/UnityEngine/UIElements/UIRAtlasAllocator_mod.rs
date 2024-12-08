@@ -30,16 +30,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIRAtlasAllocator_Ar
 impl crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
     #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+AreaNode+__c")]
     pub type __c = crate::UnityEngine::UIElements::AreaNode___c;
-    pub fn RemoveFromChain(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveFromChain", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AddAfter(
         &mut self,
         previous: *mut crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode,
@@ -51,6 +41,13 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
             .invoke("AddAfter", (previous))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -59,6 +56,16 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Release", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveFromChain(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveFromChain", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -70,13 +77,6 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
@@ -122,30 +122,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIRAtlasAllocator_Ro
 impl crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
     #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+Row+__c")]
     pub type __c = crate::UnityEngine::UIElements::Row___c;
-    pub fn get_offsetX(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_offsetX", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_width", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_offsetX(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_offsetX", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Release(
         &mut self,
@@ -167,6 +149,27 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_offsetX(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_offsetX", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_offsetY(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_offsetY", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_width", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_height(
         &mut self,
         value: i32,
@@ -178,7 +181,7 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
             .invoke("set_height", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_width(
+    pub fn set_offsetX(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -186,14 +189,7 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_width", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_offsetY(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_offsetY", ())?;
+            .invoke("set_offsetX", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_offsetY(
@@ -207,12 +203,16 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
             .invoke("set_offsetY", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_width(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_width", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+Row")]
@@ -269,6 +269,16 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator {
     pub type AreaNode = crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode;
     #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+Row")]
     pub type Row = crate::UnityEngine::UIElements::UIRAtlasAllocator_Row;
+    pub fn BuildAreas(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BuildAreas", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -290,51 +300,16 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn BuildAreas(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BuildAreas", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_virtualHeight(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_virtualHeight", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_maxImageWidth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_maxImageWidth", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_virtualWidth(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_virtualWidth", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_virtualHeight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_virtualHeight", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        initialAtlasSize: i32,
+        maxAtlasSize: i32,
+        sidePadding: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (initialAtlasSize, maxAtlasSize, sidePadding))?;
+        Ok(__cordl_object)
     }
     pub fn TryAllocate(
         &mut self,
@@ -347,48 +322,6 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryAllocate", (width, height, location))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_physicalHeight(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_physicalHeight", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_physicalWidth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_physicalWidth", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_physicalWidth(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_physicalWidth", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        initialAtlasSize: i32,
-        maxAtlasSize: i32,
-        sidePadding: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (initialAtlasSize, maxAtlasSize, sidePadding))?;
         Ok(__cordl_ret)
     }
     pub fn TryPartitionArea(
@@ -405,11 +338,17 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator {
             .invoke("TryPartitionArea", (areaNode, rowIndex, rowHeight, minWidth))?;
         Ok(__cordl_ret)
     }
-    pub fn get_virtualWidth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn _ctor(
+        &mut self,
+        initialAtlasSize: i32,
+        maxAtlasSize: i32,
+        sidePadding: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_virtualWidth", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (initialAtlasSize, maxAtlasSize, sidePadding))?;
         Ok(__cordl_ret)
     }
     pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -426,6 +365,20 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator {
         let __cordl_ret: i32 = __cordl_object.invoke("get_maxAtlasSize", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_maxImageHeight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_maxImageHeight", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxImageWidth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_maxImageWidth", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_physicalHeight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -433,11 +386,25 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator {
         let __cordl_ret: i32 = __cordl_object.invoke("get_physicalHeight", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_maxImageHeight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_physicalWidth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_maxImageHeight", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_physicalWidth", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_virtualHeight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_virtualHeight", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_virtualWidth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_virtualWidth", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_disposed(
@@ -451,16 +418,49 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator {
             .invoke("set_disposed", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        initialAtlasSize: i32,
-        maxAtlasSize: i32,
-        sidePadding: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (initialAtlasSize, maxAtlasSize, sidePadding))?;
-        Ok(__cordl_object)
+    pub fn set_physicalHeight(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_physicalHeight", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_physicalWidth(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_physicalWidth", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_virtualHeight(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_virtualHeight", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_virtualWidth(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_virtualWidth", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator")]

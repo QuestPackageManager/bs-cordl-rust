@@ -25,34 +25,31 @@ impl std::ops::DerefMut for SpriteSwapGraphicViewStateTransition {
 }
 #[cfg(feature = "SpriteSwapGraphicViewStateTransition")]
 impl SpriteSwapGraphicViewStateTransition {
-    pub fn get_transition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BaseTransitionSO> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut BaseTransitionSO = __cordl_object
-            .invoke("get_transition", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn TransitionToHighlightedState(
+    pub fn SetDisabledState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionToHighlightedState", ())?;
+            .invoke("SetDisabledState", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TransitionToDisabledState(
+    pub fn SetHighlightedState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionToDisabledState", ())?;
+            .invoke("SetHighlightedState", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetNormalState(
@@ -75,16 +72,6 @@ impl SpriteSwapGraphicViewStateTransition {
             .invoke("SetPressedState", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetSelectedState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSelectedState", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn SetSelectedAndHighlightedState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -95,24 +82,34 @@ impl SpriteSwapGraphicViewStateTransition {
             .invoke("SetSelectedAndHighlightedState", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TransitionToPressedState(
+    pub fn SetSelectedState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionToPressedState", ())?;
+            .invoke("SetSelectedState", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TransitionToSelectedState(
+    pub fn TransitionToDisabledState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionToSelectedState", ())?;
+            .invoke("TransitionToDisabledState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TransitionToHighlightedState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("TransitionToHighlightedState", ())?;
         Ok(__cordl_ret)
     }
     pub fn TransitionToNormalState(
@@ -125,34 +122,14 @@ impl SpriteSwapGraphicViewStateTransition {
             .invoke("TransitionToNormalState", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetHighlightedState(
+    pub fn TransitionToPressedState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetHighlightedState", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetDisabledState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetDisabledState", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("TransitionToPressedState", ())?;
         Ok(__cordl_ret)
     }
     pub fn TransitionToSelectedAndHighlightedState(
@@ -165,12 +142,35 @@ impl SpriteSwapGraphicViewStateTransition {
             .invoke("TransitionToSelectedAndHighlightedState", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn TransitionToSelectedState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("TransitionToSelectedState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_transition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut BaseTransitionSO> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut BaseTransitionSO = __cordl_object
+            .invoke("get_transition", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "SpriteSwapGraphicViewStateTransition")]

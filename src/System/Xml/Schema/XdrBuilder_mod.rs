@@ -36,6 +36,13 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_AttributeCont
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+AttributeContent")]
 impl crate::System::Xml::Schema::XdrBuilder_AttributeContent {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -45,13 +52,6 @@ impl crate::System::Xml::Schema::XdrBuilder_AttributeContent {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+AttributeContent")]
@@ -102,15 +102,12 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_DeclBaseInfo 
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+DeclBaseInfo")]
 impl crate::System::Xml::Schema::XdrBuilder_DeclBaseInfo {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn Reset(
         &mut self,
@@ -122,12 +119,15 @@ impl crate::System::Xml::Schema::XdrBuilder_DeclBaseInfo {
             .invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+DeclBaseInfo")]
@@ -180,6 +180,13 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_ElementConten
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+ElementContent")]
 impl crate::System::Xml::Schema::XdrBuilder_ElementContent {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -189,13 +196,6 @@ impl crate::System::Xml::Schema::XdrBuilder_ElementContent {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+ElementContent")]
@@ -239,6 +239,13 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_GroupContent 
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+GroupContent")]
 impl crate::System::Xml::Schema::XdrBuilder_GroupContent {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -248,13 +255,6 @@ impl crate::System::Xml::Schema::XdrBuilder_GroupContent {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+GroupContent")]
@@ -298,6 +298,29 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_XdrAttributeE
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrAttributeEntry")]
 impl crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry {
+    pub fn New_XdrBuilder_XdrBuildFunction0(
+        a: crate::System::Xml::Schema::SchemaNames_Token,
+        ttype: crate::System::Xml::XmlTokenizedType,
+        build: *mut crate::System::Xml::Schema::XdrBuilder_XdrBuildFunction,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (a, ttype, build))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_XdrBuilder_XdrBuildFunction1(
+        a: crate::System::Xml::Schema::SchemaNames_Token,
+        ttype: crate::System::Xml::XmlTokenizedType,
+        schemaFlags: i32,
+        build: *mut crate::System::Xml::Schema::XdrBuilder_XdrBuildFunction,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (a, ttype, schemaFlags, build))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_XdrBuilder_XdrBuildFunction0(
         &mut self,
         a: crate::System::Xml::Schema::SchemaNames_Token,
@@ -324,29 +347,6 @@ impl crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (a, ttype, schemaFlags, build))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_XdrBuilder_XdrBuildFunction0(
-        a: crate::System::Xml::Schema::SchemaNames_Token,
-        ttype: crate::System::Xml::XmlTokenizedType,
-        build: *mut crate::System::Xml::Schema::XdrBuilder_XdrBuildFunction,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (a, ttype, build))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_XdrBuilder_XdrBuildFunction1(
-        a: crate::System::Xml::Schema::SchemaNames_Token,
-        ttype: crate::System::Xml::XmlTokenizedType,
-        schemaFlags: i32,
-        build: *mut crate::System::Xml::Schema::XdrBuilder_XdrBuildFunction,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (a, ttype, schemaFlags, build))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrAttributeEntry")]
@@ -387,18 +387,6 @@ for crate::System::Xml::Schema::XdrBuilder_XdrBeginChildFunction {
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBeginChildFunction")]
 impl crate::System::Xml::Schema::XdrBuilder_XdrBeginChildFunction {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         builder: *mut crate::System::Xml::Schema::XdrBuilder,
@@ -413,12 +401,24 @@ impl crate::System::Xml::Schema::XdrBuilder_XdrBeginChildFunction {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBeginChildFunction")]
@@ -457,18 +457,6 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_XdrBuildFunct
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBuildFunction")]
 impl crate::System::Xml::Schema::XdrBuilder_XdrBuildFunction {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         builder: *mut crate::System::Xml::Schema::XdrBuilder,
@@ -485,12 +473,24 @@ impl crate::System::Xml::Schema::XdrBuilder_XdrBuildFunction {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBuildFunction")]
@@ -552,78 +552,34 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder {
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder")]
 impl crate::System::Xml::Schema::XdrBuilder {
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrAttributeEntry")]
-    pub type XdrAttributeEntry = crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry;
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBuildFunction")]
-    pub type XdrBuildFunction = crate::System::Xml::Schema::XdrBuilder_XdrBuildFunction;
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEntry")]
-    pub type XdrEntry = crate::System::Xml::Schema::XdrBuilder_XdrEntry;
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+ElementContent")]
-    pub type ElementContent = crate::System::Xml::Schema::XdrBuilder_ElementContent;
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+DeclBaseInfo")]
-    pub type DeclBaseInfo = crate::System::Xml::Schema::XdrBuilder_DeclBaseInfo;
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEndChildFunction")]
-    pub type XdrEndChildFunction = crate::System::Xml::Schema::XdrBuilder_XdrEndChildFunction;
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+AttributeContent")]
-    pub type AttributeContent = crate::System::Xml::Schema::XdrBuilder_AttributeContent;
     #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrInitFunction")]
     pub type XdrInitFunction = crate::System::Xml::Schema::XdrBuilder_XdrInitFunction;
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+GroupContent")]
-    pub type GroupContent = crate::System::Xml::Schema::XdrBuilder_GroupContent;
     #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBeginChildFunction")]
     pub type XdrBeginChildFunction = crate::System::Xml::Schema::XdrBuilder_XdrBeginChildFunction;
-    pub fn IsSkipableAttribute(
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEndChildFunction")]
+    pub type XdrEndChildFunction = crate::System::Xml::Schema::XdrBuilder_XdrEndChildFunction;
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBuildFunction")]
+    pub type XdrBuildFunction = crate::System::Xml::Schema::XdrBuilder_XdrBuildFunction;
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrAttributeEntry")]
+    pub type XdrAttributeEntry = crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry;
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEntry")]
+    pub type XdrEntry = crate::System::Xml::Schema::XdrBuilder_XdrEntry;
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+DeclBaseInfo")]
+    pub type DeclBaseInfo = crate::System::Xml::Schema::XdrBuilder_DeclBaseInfo;
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+GroupContent")]
+    pub type GroupContent = crate::System::Xml::Schema::XdrBuilder_GroupContent;
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+ElementContent")]
+    pub type ElementContent = crate::System::Xml::Schema::XdrBuilder_ElementContent;
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+AttributeContent")]
+    pub type AttributeContent = crate::System::Xml::Schema::XdrBuilder_AttributeContent;
+    pub fn AddOrder(
         &mut self,
-        qname: *mut crate::System::Xml::XmlQualifiedName,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsSkipableAttribute", (qname))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessCData(
-        &mut self,
-        value: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessCData", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadSchema(
-        &mut self,
-        uri: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("LoadSchema", (uri))?;
-        Ok(__cordl_ret)
-    }
-    pub fn XDR_CheckAttributeDefault(
-        &mut self,
-        decl: *mut crate::System::Xml::Schema::XdrBuilder_DeclBaseInfo,
-        pAttdef: *mut crate::System::Xml::Schema::SchemaAttDef,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("XDR_CheckAttributeDefault", (decl, pAttdef))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_XmlResolver(
-        &mut self,
-        value: *mut crate::System::Xml::XmlResolver,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_XmlResolver", (value))?;
+            .invoke("AddOrder", ())?;
         Ok(__cordl_ret)
     }
     pub fn CheckDatatype(
@@ -639,17 +595,221 @@ impl crate::System::Xml::Schema::XdrBuilder {
             .invoke("CheckDatatype", (str))?;
         Ok(__cordl_ret)
     }
-    pub fn SendValidationEvent_String_Il2CppArray_XmlSeverityType0(
+    pub fn CheckDefaultAttValue(
         &mut self,
-        code: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        severity: crate::System::Xml::Schema::XmlSeverityType,
+        attDef: *mut crate::System::Xml::Schema::SchemaAttDef,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendValidationEvent", (code, args, severity))?;
+            .invoke("CheckDefaultAttValue", (attDef))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndChildren(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndChildren", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetContent(
+        &mut self,
+        qname: *mut crate::System::Xml::XmlQualifiedName,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetContent", (qname))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetModel(
+        &mut self,
+        qname: *mut crate::System::Xml::XmlQualifiedName,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("GetModel", (qname))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNextState(
+        &mut self,
+        qname: *mut crate::System::Xml::XmlQualifiedName,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("GetNextState", (qname))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetOrder(
+        &mut self,
+        qname: *mut crate::System::Xml::XmlQualifiedName,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetOrder", (qname))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsContentParsed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsContentParsed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsGlobal(&mut self, flags: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsGlobal", (flags))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsSkipableAttribute(
+        &mut self,
+        qname: *mut crate::System::Xml::XmlQualifiedName,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsSkipableAttribute", (qname))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsSkipableElement(
+        &mut self,
+        qname: *mut crate::System::Xml::XmlQualifiedName,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsSkipableElement", (qname))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadSchema(
+        &mut self,
+        uri: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("LoadSchema", (uri))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        reader: *mut crate::System::Xml::XmlReader,
+        curmgr: *mut crate::System::Xml::XmlNamespaceManager,
+        sinfo: *mut crate::System::Xml::Schema::SchemaInfo,
+        targetNamspace: *mut crate::System::String,
+        nameTable: *mut crate::System::Xml::XmlNameTable,
+        schemaNames: *mut crate::System::Xml::Schema::SchemaNames,
+        eventhandler: *mut crate::System::Xml::Schema::ValidationEventHandler,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    reader,
+                    curmgr,
+                    sinfo,
+                    targetNamspace,
+                    nameTable,
+                    schemaNames,
+                    eventhandler,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object.invoke("Pop", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn PopGroupInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PopGroupInfo", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessAttribute(
+        &mut self,
+        prefix: *mut crate::System::String,
+        name: *mut crate::System::String,
+        ns: *mut crate::System::String,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessAttribute", (prefix, name, ns, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessCData(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessCData", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessElement(
+        &mut self,
+        prefix: *mut crate::System::String,
+        name: *mut crate::System::String,
+        ns: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("ProcessElement", (prefix, name, ns))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessMarkup(
+        &mut self,
+        markup: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlNode>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessMarkup", (markup))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Push(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Push", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn PushGroupInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PushGroupInfo", ())?;
         Ok(__cordl_ret)
     }
     pub fn SendValidationEvent_String1(
@@ -661,6 +821,19 @@ impl crate::System::Xml::Schema::XdrBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendValidationEvent", (code))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendValidationEvent_String_Il2CppArray_XmlSeverityType0(
+        &mut self,
+        code: *mut crate::System::String,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        severity: crate::System::Xml::Schema::XmlSeverityType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendValidationEvent", (code, args, severity))?;
         Ok(__cordl_ret)
     }
     pub fn SendValidationEvent_String_String2(
@@ -687,59 +860,16 @@ impl crate::System::Xml::Schema::XdrBuilder {
             .invoke("SendValidationEvent", (e, severity))?;
         Ok(__cordl_ret)
     }
-    pub fn AddOrder(
+    pub fn SetAttributePresence(
         &mut self,
+        pAttdef: *mut crate::System::Xml::Schema::SchemaAttDef,
+        fRequired: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddOrder", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetContent(
-        &mut self,
-        qname: *mut crate::System::Xml::XmlQualifiedName,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetContent", (qname))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckDefaultAttValue(
-        &mut self,
-        attDef: *mut crate::System::Xml::Schema::SchemaAttDef,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckDefaultAttValue", (attDef))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsGlobal(&mut self, flags: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsGlobal", (flags))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PushGroupInfo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PushGroupInfo", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsContentParsed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsContentParsed", ())?;
+            .invoke("SetAttributePresence", (pAttdef, fRequired))?;
         Ok(__cordl_ret)
     }
     pub fn StartChildren(
@@ -752,17 +882,16 @@ impl crate::System::Xml::Schema::XdrBuilder {
             .invoke("StartChildren", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessElement(
+    pub fn XDR_CheckAttributeDefault(
         &mut self,
-        prefix: *mut crate::System::String,
-        name: *mut crate::System::String,
-        ns: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        decl: *mut crate::System::Xml::Schema::XdrBuilder_DeclBaseInfo,
+        pAttdef: *mut crate::System::Xml::Schema::SchemaAttDef,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("ProcessElement", (prefix, name, ns))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("XDR_CheckAttributeDefault", (decl, pAttdef))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -793,145 +922,16 @@ impl crate::System::Xml::Schema::XdrBuilder {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn EndChildren(
+    pub fn set_XmlResolver(
         &mut self,
+        value: *mut crate::System::Xml::XmlResolver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndChildren", ())?;
+            .invoke("set_XmlResolver", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn IsSkipableElement(
-        &mut self,
-        qname: *mut crate::System::Xml::XmlQualifiedName,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsSkipableElement", (qname))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessMarkup(
-        &mut self,
-        markup: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlNode>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessMarkup", (markup))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetOrder(
-        &mut self,
-        qname: *mut crate::System::Xml::XmlQualifiedName,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetOrder", (qname))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetAttributePresence(
-        &mut self,
-        pAttdef: *mut crate::System::Xml::Schema::SchemaAttDef,
-        fRequired: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetAttributePresence", (pAttdef, fRequired))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNextState(
-        &mut self,
-        qname: *mut crate::System::Xml::XmlQualifiedName,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("GetNextState", (qname))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetModel(
-        &mut self,
-        qname: *mut crate::System::Xml::XmlQualifiedName,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("GetModel", (qname))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PopGroupInfo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PopGroupInfo", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessAttribute(
-        &mut self,
-        prefix: *mut crate::System::String,
-        name: *mut crate::System::String,
-        ns: *mut crate::System::String,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessAttribute", (prefix, name, ns, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object.invoke("Pop", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Push(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Push", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        reader: *mut crate::System::Xml::XmlReader,
-        curmgr: *mut crate::System::Xml::XmlNamespaceManager,
-        sinfo: *mut crate::System::Xml::Schema::SchemaInfo,
-        targetNamspace: *mut crate::System::String,
-        nameTable: *mut crate::System::Xml::XmlNameTable,
-        schemaNames: *mut crate::System::Xml::Schema::SchemaNames,
-        eventhandler: *mut crate::System::Xml::Schema::ValidationEventHandler,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    reader,
-                    curmgr,
-                    sinfo,
-                    targetNamspace,
-                    nameTable,
-                    schemaNames,
-                    eventhandler,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder")]
@@ -981,6 +981,16 @@ impl crate::System::Xml::Schema::XdrBuilder_XdrEndChildFunction {
             .invoke("Invoke", (builder))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -992,16 +1002,6 @@ impl crate::System::Xml::Schema::XdrBuilder_XdrEndChildFunction {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEndChildFunction")]
@@ -1049,6 +1049,23 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_XdrEntry {
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEntry")]
 impl crate::System::Xml::Schema::XdrBuilder_XdrEntry {
+    pub fn New(
+        n: crate::System::Xml::Schema::SchemaNames_Token,
+        states: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        attributes: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry,
+        >,
+        init: *mut crate::System::Xml::Schema::XdrBuilder_XdrInitFunction,
+        begin: *mut crate::System::Xml::Schema::XdrBuilder_XdrBeginChildFunction,
+        end: *mut crate::System::Xml::Schema::XdrBuilder_XdrEndChildFunction,
+        fText: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (n, states, attributes, init, begin, end, fText))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         n: crate::System::Xml::Schema::SchemaNames_Token,
@@ -1067,23 +1084,6 @@ impl crate::System::Xml::Schema::XdrBuilder_XdrEntry {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (n, states, attributes, init, begin, end, fText))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        n: crate::System::Xml::Schema::SchemaNames_Token,
-        states: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        attributes: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry,
-        >,
-        init: *mut crate::System::Xml::Schema::XdrBuilder_XdrInitFunction,
-        begin: *mut crate::System::Xml::Schema::XdrBuilder_XdrBeginChildFunction,
-        end: *mut crate::System::Xml::Schema::XdrBuilder_XdrEndChildFunction,
-        fText: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (n, states, attributes, init, begin, end, fText))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEntry")]
@@ -1122,18 +1122,6 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_XdrInitFuncti
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrInitFunction")]
 impl crate::System::Xml::Schema::XdrBuilder_XdrInitFunction {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         builder: *mut crate::System::Xml::Schema::XdrBuilder,
@@ -1149,12 +1137,24 @@ impl crate::System::Xml::Schema::XdrBuilder_XdrInitFunction {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrInitFunction")]

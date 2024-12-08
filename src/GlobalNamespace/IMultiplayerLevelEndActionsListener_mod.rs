@@ -24,17 +24,6 @@ impl std::ops::DerefMut for IMultiplayerLevelEndActionsListener {
 }
 #[cfg(feature = "IMultiplayerLevelEndActionsListener")]
 impl IMultiplayerLevelEndActionsListener {
-    pub fn ReportPlayerNetworkDidFailed(
-        &mut self,
-        results: *mut MultiplayerLevelCompletionResults,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReportPlayerNetworkDidFailed", (results))?;
-        Ok(__cordl_ret)
-    }
     pub fn ReportPlayerDidFinish(
         &mut self,
         results: *mut MultiplayerLevelCompletionResults,
@@ -44,6 +33,17 @@ impl IMultiplayerLevelEndActionsListener {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReportPlayerDidFinish", (results))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReportPlayerNetworkDidFailed(
+        &mut self,
+        results: *mut MultiplayerLevelCompletionResults,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReportPlayerNetworkDidFailed", (results))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

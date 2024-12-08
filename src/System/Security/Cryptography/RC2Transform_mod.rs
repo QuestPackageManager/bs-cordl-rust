@@ -42,6 +42,18 @@ impl crate::System::Security::Cryptography::RC2Transform {
             .invoke("ECB", (input, output))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        rc2Algo: *mut crate::System::Security::Cryptography::RC2,
+        encryption: bool,
+        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (rc2Algo, encryption, key, iv))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         rc2Algo: *mut crate::System::Security::Cryptography::RC2,
@@ -55,18 +67,6 @@ impl crate::System::Security::Cryptography::RC2Transform {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (rc2Algo, encryption, key, iv))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        rc2Algo: *mut crate::System::Security::Cryptography::RC2,
-        encryption: bool,
-        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (rc2Algo, encryption, key, iv))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Security+Cryptography+RC2Transform")]

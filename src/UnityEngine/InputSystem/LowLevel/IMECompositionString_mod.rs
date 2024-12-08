@@ -58,14 +58,6 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
-    pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Current",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -84,22 +76,22 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator 
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_Collections_IEnumerator_get_Current(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.IEnumerator.get_Current",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Reset",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerator_get_Current(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.IEnumerator.get_Current",
             (),
         )?;
         Ok(__cordl_ret)
@@ -112,6 +104,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator 
             self,
             ".ctor",
             (compositionString),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Current",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -141,12 +141,24 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
+    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
+    pub type Enumerator = crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator;
     #[cfg(
         feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
     )]
     pub type _buffer_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer;
-    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
-    pub type Enumerator = crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator;
+    pub fn GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerator_1<char>,
+    > {
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetEnumerator",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
@@ -154,6 +166,27 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
             self,
             "System.Collections.IEnumerable.GetEnumerator",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        characters: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (characters),
         )?;
         Ok(__cordl_ret)
     }
@@ -170,39 +203,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
             self,
             "get_Item",
             (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        characters: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (characters),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<char>,
-    > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetEnumerator",
-            (),
         )?;
         Ok(__cordl_ret)
     }

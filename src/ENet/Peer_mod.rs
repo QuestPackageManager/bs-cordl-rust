@@ -21,14 +21,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::ENet::Peer {
 }
 #[cfg(feature = "ENet+Peer")]
 impl crate::ENet::Peer {
-    pub fn get_LastReceiveTime(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_LastReceiveTime",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn ConfigureThrottle(
         &mut self,
         interval: u32,
@@ -43,21 +35,78 @@ impl crate::ENet::Peer {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn Disconnect(
         &mut self,
-        peer: crate::System::IntPtr,
+        data: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (peer),
+            "Disconnect",
+            (data),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_MTU(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn DisconnectLater(
+        &mut self,
+        data: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_MTU",
+            "DisconnectLater",
+            (data),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn DisconnectNow(
+        &mut self,
+        data: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "DisconnectNow",
+            (data),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Ping(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Ping",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn PingInterval(
+        &mut self,
+        interval: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "PingInterval",
+            (interval),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Receive(
+        &mut self,
+        channelID: quest_hook::libil2cpp::ByRefMut<u8>,
+        packet: quest_hook::libil2cpp::ByRefMut<crate::ENet::Packet>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Receive",
+            (channelID, packet),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Reset",
             (),
         )?;
         Ok(__cordl_ret)
@@ -74,10 +123,12 @@ impl crate::ENet::Peer {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_RoundTripTime(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn ThrowIfNotCreated(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_RoundTripTime",
+            "ThrowIfNotCreated",
             (),
         )?;
         Ok(__cordl_ret)
@@ -95,11 +146,14 @@ impl crate::ENet::Peer {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_LastSendTime(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn _ctor(
+        &mut self,
+        peer: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_LastSendTime",
-            (),
+            ".ctor",
+            (peer),
         )?;
         Ok(__cordl_ret)
     }
@@ -111,65 +165,26 @@ impl crate::ENet::Peer {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn PingInterval(
-        &mut self,
-        interval: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_BytesSent(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "PingInterval",
-            (interval),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ThrowIfNotCreated(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ThrowIfNotCreated",
+            "get_BytesSent",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn DisconnectNow(
-        &mut self,
-        data: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_Data(&mut self) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "DisconnectNow",
-            (data),
+            "get_Data",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn DisconnectLater(
-        &mut self,
-        data: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "DisconnectLater",
-            (data),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Receive(
-        &mut self,
-        channelID: quest_hook::libil2cpp::ByRefMut<u8>,
-        packet: quest_hook::libil2cpp::ByRefMut<crate::ENet::Packet>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Receive",
-            (channelID, packet),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LastRoundTripTime(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+    pub fn get_ID(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_LastRoundTripTime",
+            "get_ID",
             (),
         )?;
         Ok(__cordl_ret)
@@ -184,28 +199,52 @@ impl crate::ENet::Peer {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_ID(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+    pub fn get_IsSet(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsSet",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LastReceiveTime(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_ID",
+            "get_LastReceiveTime",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Ping(
+    pub fn get_LastRoundTripTime(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_LastRoundTripTime",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LastSendTime(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_LastSendTime",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MTU(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_MTU",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NativeData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Ping",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_BytesSent(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_BytesSent",
+            "get_NativeData",
             (),
         )?;
         Ok(__cordl_ret)
@@ -218,25 +257,11 @@ impl crate::ENet::Peer {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_NativeData(
-        &mut self,
-        value: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_PacketsSent(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_NativeData",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Disconnect(
-        &mut self,
-        data: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Disconnect",
-            (data),
+            "get_PacketsSent",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -248,20 +273,28 @@ impl crate::ENet::Peer {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_Port(&mut self) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_ret: u16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Port",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RoundTripTime(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_RoundTripTime",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_State(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::ENet::PeerState> {
         let __cordl_ret: crate::ENet::PeerState = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_State",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsSet(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsSet",
             (),
         )?;
         Ok(__cordl_ret)
@@ -277,47 +310,14 @@ impl crate::ENet::Peer {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Data(&mut self) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Data",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
+    pub fn set_NativeData(
         &mut self,
+        value: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Reset",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Port(&mut self) -> quest_hook::libil2cpp::Result<u16> {
-        let __cordl_ret: u16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Port",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_PacketsSent(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_PacketsSent",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_NativeData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_NativeData",
-            (),
+            "set_NativeData",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

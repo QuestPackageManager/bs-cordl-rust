@@ -35,17 +35,6 @@ impl std::ops::DerefMut for BeatmapLevelsPromoModel {
 }
 #[cfg(feature = "BeatmapLevelsPromoModel")]
 impl BeatmapLevelsPromoModel {
-    pub fn IsBeatmapLevelPromoted(
-        &mut self,
-        beatmapLevel: *mut BeatmapLevel,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsBeatmapLevelPromoted", (beatmapLevel))?;
-        Ok(__cordl_ret)
-    }
     pub fn IsBeatmapLevelPackPromoted(
         &mut self,
         beatmapLevelPack: *mut BeatmapLevelPack,
@@ -68,6 +57,17 @@ impl BeatmapLevelsPromoModel {
             .invoke("IsBeatmapLevelPackUpdated", (beatmapLevelPack))?;
         Ok(__cordl_ret)
     }
+    pub fn IsBeatmapLevelPromoted(
+        &mut self,
+        beatmapLevel: *mut BeatmapLevel,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsBeatmapLevelPromoted", (beatmapLevel))?;
+        Ok(__cordl_ret)
+    }
     pub fn IsBeatmapLevelUpdated(
         &mut self,
         beatmapLevel: *mut BeatmapLevel,
@@ -79,6 +79,15 @@ impl BeatmapLevelsPromoModel {
             .invoke("IsBeatmapLevelUpdated", (beatmapLevel))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        promoDataSO: *mut BeatmapLevelsPromoDataSO,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (promoDataSO))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         promoDataSO: *mut BeatmapLevelsPromoDataSO,
@@ -89,15 +98,6 @@ impl BeatmapLevelsPromoModel {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (promoDataSO))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        promoDataSO: *mut BeatmapLevelsPromoDataSO,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (promoDataSO))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapLevelsPromoModel")]

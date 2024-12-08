@@ -27,11 +27,26 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::LocatedActiveAxis {
 }
 #[cfg(feature = "System+Xml+Schema+LocatedActiveAxis")]
 impl crate::System::Xml::Schema::LocatedActiveAxis {
-    pub fn get_Column(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn New(
+        astfield: *mut crate::System::Xml::Schema::Asttree,
+        ks: *mut crate::System::Xml::Schema::KeySequence,
+        column: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (astfield, ks, column))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reactivate(
+        &mut self,
+        ks: *mut crate::System::Xml::Schema::KeySequence,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Column", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reactivate", (ks))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -47,27 +62,12 @@ impl crate::System::Xml::Schema::LocatedActiveAxis {
             .invoke(".ctor", (astfield, ks, column))?;
         Ok(__cordl_ret)
     }
-    pub fn Reactivate(
-        &mut self,
-        ks: *mut crate::System::Xml::Schema::KeySequence,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_Column(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reactivate", (ks))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Column", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        astfield: *mut crate::System::Xml::Schema::Asttree,
-        ks: *mut crate::System::Xml::Schema::KeySequence,
-        column: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (astfield, ks, column))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+LocatedActiveAxis")]

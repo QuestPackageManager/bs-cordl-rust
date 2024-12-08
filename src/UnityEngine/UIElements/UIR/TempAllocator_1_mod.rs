@@ -68,6 +68,21 @@ impl<
 > crate::UnityEngine::UIElements::UIR::TempAllocator_1<T> {
     #[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1+Page")]
     pub type Page = crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T>;
+    pub fn Alloc(
+        &mut self,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeSlice_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<T> = __cordl_object
+            .invoke("Alloc", (count))?;
+        Ok(__cordl_ret)
+    }
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -97,24 +112,19 @@ impl<
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn Alloc(
-        &mut self,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeSlice_1<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<T> = __cordl_object
-            .invoke("Alloc", (count))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        poolCapacity: i32,
+        excessMinCapacity: i32,
+        excessMaxCapacity: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (poolCapacity, excessMinCapacity, excessMaxCapacity))?;
+        Ok(__cordl_object)
     }
-    pub fn set_disposed(
+    pub fn ReleaseExcess(
         &mut self,
-        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -124,7 +134,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_disposed", (value))?;
+            .invoke("ReleaseExcess", ())?;
         Ok(__cordl_ret)
     }
     pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -137,17 +147,6 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_disposed", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -167,8 +166,20 @@ impl<
             .invoke(".ctor", (poolCapacity, excessMinCapacity, excessMaxCapacity))?;
         Ok(__cordl_ret)
     }
-    pub fn ReleaseExcess(
+    pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_disposed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_disposed(
         &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -178,19 +189,8 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReleaseExcess", ())?;
+            .invoke("set_disposed", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        poolCapacity: i32,
-        excessMinCapacity: i32,
-        excessMaxCapacity: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (poolCapacity, excessMinCapacity, excessMaxCapacity))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1")]

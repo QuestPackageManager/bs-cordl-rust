@@ -24,6 +24,17 @@ impl std::ops::DerefMut for crate::GlobalNamespace::UriParser_BuiltInUriParser {
 }
 #[cfg(feature = "System+UriParser+BuiltInUriParser")]
 impl crate::GlobalNamespace::UriParser_BuiltInUriParser {
+    pub fn New(
+        lwrCaseScheme: *mut crate::System::String,
+        defaultPort: i32,
+        syntaxFlags: crate::System::UriSyntaxFlags,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (lwrCaseScheme, defaultPort, syntaxFlags))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         lwrCaseScheme: *mut crate::System::String,
@@ -36,17 +47,6 @@ impl crate::GlobalNamespace::UriParser_BuiltInUriParser {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (lwrCaseScheme, defaultPort, syntaxFlags))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        lwrCaseScheme: *mut crate::System::String,
-        defaultPort: i32,
-        syntaxFlags: crate::System::UriSyntaxFlags,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (lwrCaseScheme, defaultPort, syntaxFlags))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+UriParser+BuiltInUriParser")]

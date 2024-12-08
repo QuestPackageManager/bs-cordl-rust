@@ -34,57 +34,35 @@ impl std::ops::DerefMut for crate::HMUI::UIKeyboard {
 impl crate::HMUI::UIKeyboard {
     #[cfg(feature = "HMUI+UIKeyboard+__c__DisplayClass13_0")]
     pub type __c__DisplayClass13_0 = crate::HMUI::UIKeyboard___c__DisplayClass13_0;
-    pub fn _Awake_b__13_1(
+    pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__13_1", ())?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_deleteButtonWasPressedEvent(
+    pub fn HandleCapsLockPressed(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_deleteButtonWasPressedEvent", (value))?;
+            .invoke("HandleCapsLockPressed", ())?;
         Ok(__cordl_ret)
     }
-    pub fn OnEnable(
+    pub fn HandleKeyPress(
         &mut self,
+        keyCode: crate::UnityEngine::KeyCode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_okButtonWasPressedEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_okButtonWasPressedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetKeyboardCapitalization(
-        &mut self,
-        capitalize: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetKeyboardCapitalization", (capitalize))?;
+            .invoke("HandleKeyPress", (keyCode))?;
         Ok(__cordl_ret)
     }
     pub fn HasFontStyle(
@@ -98,25 +76,52 @@ impl crate::HMUI::UIKeyboard {
         let __cordl_ret: bool = __cordl_object.invoke("HasFontStyle", (text, style))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleCapsLockPressed(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnEnable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleCapsLockPressed", ())?;
+            .invoke("OnEnable", ())?;
         Ok(__cordl_ret)
     }
-    pub fn add_okButtonWasPressedEvent(
+    pub fn SetKeyboardCapitalization(
         &mut self,
-        value: *mut crate::System::Action,
+        capitalize: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_okButtonWasPressedEvent", (value))?;
+            .invoke("SetKeyboardCapitalization", (capitalize))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _Awake_b__13_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<Awake>b__13_0", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _Awake_b__13_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<Awake>b__13_1", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -151,15 +156,26 @@ impl crate::HMUI::UIKeyboard {
             .invoke("add_keyWasPressedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleKeyPress(
+    pub fn add_okButtonWasPressedEvent(
         &mut self,
-        keyCode: crate::UnityEngine::KeyCode,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleKeyPress", (keyCode))?;
+            .invoke("add_okButtonWasPressedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_deleteButtonWasPressedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_deleteButtonWasPressedEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn remove_keyWasPressedEvent(
@@ -173,32 +189,16 @@ impl crate::HMUI::UIKeyboard {
             .invoke("remove_keyWasPressedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Awake(
+    pub fn remove_okButtonWasPressedEvent(
         &mut self,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
+            .invoke("remove_okButtonWasPressedEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn _Awake_b__13_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__13_0", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HMUI+UIKeyboard")]

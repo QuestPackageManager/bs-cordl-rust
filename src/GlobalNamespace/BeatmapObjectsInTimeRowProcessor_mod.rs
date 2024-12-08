@@ -45,16 +45,49 @@ impl std::ops::DerefMut for BeatmapObjectsInTimeRowProcessor {
 impl BeatmapObjectsInTimeRowProcessor {
     pub const kMaxNotesAlignmentAngle: f32 = 40f32;
     pub const kTimeRowEpsilon: f32 = 0.001f32;
-    #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+SliderTailData")]
-    pub type SliderTailData = crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_SliderTailData;
-    #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+__c")]
-    pub type __c = crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor___c;
-    #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+__c__DisplayClass17_0")]
-    pub type __c__DisplayClass17_0 = crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor___c__DisplayClass17_0;
     #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]
     pub type TimeSliceContainer_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
         T,
     >;
+    #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+__c")]
+    pub type __c = crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor___c;
+    #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+SliderTailData")]
+    pub type SliderTailData = crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_SliderTailData;
+    #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+__c__DisplayClass17_0")]
+    pub type __c__DisplayClass17_0 = crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor___c__DisplayClass17_0;
+    pub fn HandleCurrentNewTimeSliceAllNotesAndSlidersDidStartNewTimeSlice(
+        &mut self,
+        allObjectsTimeSlice: *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
+            *mut BeatmapDataItem,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleCurrentNewTimeSliceAllNotesAndSlidersDidStartNewTimeSlice",
+                (allObjectsTimeSlice),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleCurrentTimeSliceAllNotesAndSlidersDidFinishTimeSlice(
+        &mut self,
+        allObjectsTimeSlice: *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
+            *mut BeatmapDataItem,
+        >,
+        nextTimeSliceTime: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleCurrentTimeSliceAllNotesAndSlidersDidFinishTimeSlice",
+                (allObjectsTimeSlice, nextTimeSliceTime),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn HandleCurrentTimeSliceColorNotesDidAddItem(
         &mut self,
         timeSliceContainer: *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
@@ -89,61 +122,6 @@ impl BeatmapObjectsInTimeRowProcessor {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HandleCurrentNewTimeSliceAllNotesAndSlidersDidStartNewTimeSlice(
-        &mut self,
-        allObjectsTimeSlice: *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-            *mut BeatmapDataItem,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleCurrentNewTimeSliceAllNotesAndSlidersDidStartNewTimeSlice",
-                (allObjectsTimeSlice),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessSlider(
-        &mut self,
-        sliderData: *mut SliderData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessSlider", (sliderData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleCurrentTimeSliceAllNotesAndSlidersDidFinishTimeSlice(
-        &mut self,
-        allObjectsTimeSlice: *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-            *mut BeatmapDataItem,
-        >,
-        nextTimeSliceTime: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleCurrentTimeSliceAllNotesAndSlidersDidFinishTimeSlice",
-                (allObjectsTimeSlice, nextTimeSliceTime),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessNote(
-        &mut self,
-        noteData: *mut NoteData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessNote", (noteData))?;
-        Ok(__cordl_ret)
-    }
     pub fn HandlePerColorTypeTimeSliceContainerDidFinishTimeSlice(
         &mut self,
         timeSliceContainer: *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
@@ -161,16 +139,12 @@ impl BeatmapObjectsInTimeRowProcessor {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        numberOfLines: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (numberOfLines))?;
-        Ok(__cordl_ret)
+    pub fn New(numberOfLines: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (numberOfLines))?;
+        Ok(__cordl_object)
     }
     pub fn ProcessAllRemainingData(
         &mut self,
@@ -182,12 +156,38 @@ impl BeatmapObjectsInTimeRowProcessor {
             .invoke("ProcessAllRemainingData", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(numberOfLines: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (numberOfLines))?;
-        Ok(__cordl_object)
+    pub fn ProcessNote(
+        &mut self,
+        noteData: *mut NoteData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessNote", (noteData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessSlider(
+        &mut self,
+        sliderData: *mut SliderData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessSlider", (sliderData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        numberOfLines: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (numberOfLines))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapObjectsInTimeRowProcessor")]
@@ -236,6 +236,13 @@ impl crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_SliderTailData {
         let __cordl_ret: *mut BeatmapDataItem = __cordl_object.invoke("GetCopy", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(slider: *mut SliderData) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (slider))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         slider: *mut SliderData,
@@ -246,15 +253,6 @@ impl crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_SliderTailData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (slider))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        slider: *mut SliderData,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (slider))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+SliderTailData")]
@@ -321,9 +319,9 @@ for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<T> {
-    pub fn set_time(
+    pub fn Add(
         &mut self,
-        value: f32,
+        item: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -333,7 +331,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_time", (value))?;
+            .invoke("Add", (item))?;
         Ok(__cordl_ret)
     }
     pub fn AddWithoutNotifications(
@@ -351,6 +349,43 @@ impl<
             .invoke("AddWithoutNotifications", (item))?;
         Ok(__cordl_ret)
     }
+    pub fn FinishTimeSlice(
+        &mut self,
+        nextTimeSliceTime: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FinishTimeSlice", (nextTimeSliceTime))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(capacity: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (capacity))?;
+        Ok(__cordl_object)
+    }
+    pub fn StartNewTimeSlice(
+        &mut self,
+        newSliceTime: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartNewTimeSlice", (newSliceTime))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         capacity: i32,
@@ -364,52 +399,6 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (capacity))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didFinishTimeSliceEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                T,
-            >,
-            f32,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didFinishTimeSliceEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_time", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Add(
-        &mut self,
-        item: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (item))?;
         Ok(__cordl_ret)
     }
     pub fn add_didAddItemEvent(
@@ -432,18 +421,7 @@ impl<
             .invoke("add_didAddItemEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_previousTimeSliceTime(&mut self) -> quest_hook::libil2cpp::Result<f32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_previousTimeSliceTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didFinishTimeSliceEvent(
+    pub fn add_didFinishTimeSliceEvent(
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
@@ -460,7 +438,64 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didFinishTimeSliceEvent", (value))?;
+            .invoke("add_didFinishTimeSliceEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didStartNewTimeSliceEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
+                T,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didStartNewTimeSliceEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_items(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IReadOnlyList_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<T> = __cordl_object
+            .invoke("get_items", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_previousTimeSliceTime(&mut self) -> quest_hook::libil2cpp::Result<f32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_previousTimeSliceTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_time", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_didAddItemEvent(
@@ -483,25 +518,14 @@ impl<
             .invoke("remove_didAddItemEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_items(
+    pub fn remove_didFinishTimeSliceEvent(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<T>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<T> = __cordl_object
-            .invoke("get_items", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_previousTimeSliceTime(
-        &mut self,
-        value: f32,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
+                T,
+            >,
+            f32,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -511,22 +535,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_previousTimeSliceTime", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartNewTimeSlice(
-        &mut self,
-        newSliceTime: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartNewTimeSlice", (newSliceTime))?;
+            .invoke("remove_didFinishTimeSliceEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn remove_didStartNewTimeSliceEvent(
@@ -548,9 +557,9 @@ impl<
             .invoke("remove_didStartNewTimeSliceEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn FinishTimeSlice(
+    pub fn set_previousTimeSliceTime(
         &mut self,
-        nextTimeSliceTime: f32,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -560,16 +569,12 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FinishTimeSlice", (nextTimeSliceTime))?;
+            .invoke("set_previousTimeSliceTime", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn add_didStartNewTimeSliceEvent(
+    pub fn set_time(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                T,
-            >,
-        >,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -579,15 +584,8 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didStartNewTimeSliceEvent", (value))?;
+            .invoke("set_time", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(capacity: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (capacity))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]

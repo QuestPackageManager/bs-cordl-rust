@@ -30,22 +30,19 @@ for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
 }
 #[cfg(feature = "LightmapLightWithIdsGroupEntry+GroupLightData")]
 impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
-    pub fn get_groupProbeHighlightsIntensityMultiplier(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("get_groupProbeHighlightsIntensityMultiplier", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_groupIntensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_groupIntensity", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        lightGroup: *mut LightGroupSO,
+        groupIntensity: f32,
+        groupProbeHighlightsIntensityMultiplier: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (lightGroup, groupIntensity, groupProbeHighlightsIntensityMultiplier),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -63,6 +60,23 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn get_groupIntensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_groupIntensity", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_groupProbeHighlightsIntensityMultiplier(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("get_groupProbeHighlightsIntensityMultiplier", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_lightGroup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut LightGroupSO> {
@@ -72,20 +86,6 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
         let __cordl_ret: *mut LightGroupSO = __cordl_object
             .invoke("get_lightGroup", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        lightGroup: *mut LightGroupSO,
-        groupIntensity: f32,
-        groupProbeHighlightsIntensityMultiplier: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (lightGroup, groupIntensity, groupProbeHighlightsIntensityMultiplier),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LightmapLightWithIdsGroupEntry+GroupLightData")]
@@ -130,6 +130,40 @@ for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithI
 }
 #[cfg(feature = "LightmapLightWithIdsGroupEntry+LightIntensitiesWithId")]
 impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId {
+    pub fn New(
+        lightId: i32,
+        intensity: f32,
+        probeHighlightsIntensityMultiplier: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (lightId, intensity, probeHighlightsIntensityMultiplier),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        lightId: i32,
+        intensity: f32,
+        probeHighlightsIntensityMultiplier: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (lightId, intensity, probeHighlightsIntensityMultiplier))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_intensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_intensity", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_lightId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -146,40 +180,6 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWith
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_probeHighlightsIntensityMultiplier", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_intensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_intensity", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        lightId: i32,
-        intensity: f32,
-        probeHighlightsIntensityMultiplier: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (lightId, intensity, probeHighlightsIntensityMultiplier))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        lightId: i32,
-        intensity: f32,
-        probeHighlightsIntensityMultiplier: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (lightId, intensity, probeHighlightsIntensityMultiplier),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LightmapLightWithIdsGroupEntry+LightIntensitiesWithId")]
@@ -231,25 +231,12 @@ impl LightmapLightWithIdsGroupEntry {
     pub type LightIntensitiesWithId = crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId;
     #[cfg(feature = "LightmapLightWithIdsGroupEntry+GroupLightData")]
     pub type GroupLightData = crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData;
-    pub fn get_lightmapLightWithIds(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut LightmapLightWithIds> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut LightmapLightWithIds = __cordl_object
-            .invoke("get_lightmapLightWithIds", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_groupLightsWeighting(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<ColorMixAndWeightingApproach> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: ColorMixAndWeightingApproach = __cordl_object
-            .invoke("get_groupLightsWeighting", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -276,6 +263,16 @@ impl LightmapLightWithIdsGroupEntry {
         > = __cordl_object.invoke("get_groupLightData", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_groupLightsWeighting(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<ColorMixAndWeightingApproach> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: ColorMixAndWeightingApproach = __cordl_object
+            .invoke("get_groupLightsWeighting", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_individualLightData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -291,12 +288,15 @@ impl LightmapLightWithIdsGroupEntry {
         > = __cordl_object.invoke("get_individualLightData", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_lightmapLightWithIds(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut LightmapLightWithIds> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut LightmapLightWithIds = __cordl_object
+            .invoke("get_lightmapLightWithIds", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LightmapLightWithIdsGroupEntry")]

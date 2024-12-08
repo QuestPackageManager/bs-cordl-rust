@@ -32,6 +32,18 @@ for crate::System::Linq::Expressions::Interpreter::LabelScopeInfo {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LabelScopeInfo")]
 impl crate::System::Linq::Expressions::Interpreter::LabelScopeInfo {
+    pub fn AddLabelInfo(
+        &mut self,
+        target: *mut crate::System::Linq::Expressions::LabelTarget,
+        info: *mut crate::System::Linq::Expressions::Interpreter::LabelInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddLabelInfo", (target, info))?;
+        Ok(__cordl_ret)
+    }
     pub fn ContainsTarget(
         &mut self,
         target: *mut crate::System::Linq::Expressions::LabelTarget,
@@ -41,6 +53,16 @@ impl crate::System::Linq::Expressions::Interpreter::LabelScopeInfo {
         );
         let __cordl_ret: bool = __cordl_object.invoke("ContainsTarget", (target))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        parent: *mut crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+        kind: crate::System::Linq::Expressions::Interpreter::LabelScopeKind,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (parent, kind))?;
+        Ok(__cordl_object)
     }
     pub fn TryGetLabelInfo(
         &mut self,
@@ -56,25 +78,6 @@ impl crate::System::Linq::Expressions::Interpreter::LabelScopeInfo {
             .invoke("TryGetLabelInfo", (target, info))?;
         Ok(__cordl_ret)
     }
-    pub fn get_CanJumpInto(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanJumpInto", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddLabelInfo(
-        &mut self,
-        target: *mut crate::System::Linq::Expressions::LabelTarget,
-        info: *mut crate::System::Linq::Expressions::Interpreter::LabelInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddLabelInfo", (target, info))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         parent: *mut crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
@@ -87,15 +90,12 @@ impl crate::System::Linq::Expressions::Interpreter::LabelScopeInfo {
             .invoke(".ctor", (parent, kind))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        parent: *mut crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
-        kind: crate::System::Linq::Expressions::Interpreter::LabelScopeKind,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (parent, kind))?;
-        Ok(__cordl_object)
+    pub fn get_CanJumpInto(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanJumpInto", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LabelScopeInfo")]

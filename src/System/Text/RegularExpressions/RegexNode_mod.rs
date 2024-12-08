@@ -34,193 +34,6 @@ impl std::ops::DerefMut for crate::System::Text::RegularExpressions::RegexNode {
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexNode")]
 impl crate::System::Text::RegularExpressions::RegexNode {
-    pub fn Reduce(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::RegexNode,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexNode = __cordl_object
-            .invoke("Reduce", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_RegexOptions0(
-        &mut self,
-        _cordl_type: i32,
-        options: crate::System::Text::RegularExpressions::RegexOptions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_type, options))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor__cordl_char1(
-        &mut self,
-        _cordl_type: i32,
-        options: crate::System::Text::RegularExpressions::RegexOptions,
-        ch: char,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_type, options, ch))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String2(
-        &mut self,
-        _cordl_type: i32,
-        options: crate::System::Text::RegularExpressions::RegexOptions,
-        str: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_type, options, str))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_3(
-        &mut self,
-        _cordl_type: i32,
-        options: crate::System::Text::RegularExpressions::RegexOptions,
-        m: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_type, options, m))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_i32_4(
-        &mut self,
-        _cordl_type: i32,
-        options: crate::System::Text::RegularExpressions::RegexOptions,
-        m: i32,
-        n: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_type, options, m, n))?;
-        Ok(__cordl_ret)
-    }
-    pub fn StripEnation(
-        &mut self,
-        emptyType: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::RegexNode,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexNode = __cordl_object
-            .invoke("StripEnation", (emptyType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReduceRep(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::RegexNode,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexNode = __cordl_object
-            .invoke("ReduceRep", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UseOptionR(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("UseOptionR", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReduceAlternation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::RegexNode,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexNode = __cordl_object
-            .invoke("ReduceAlternation", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MakeQuantifier(
-        &mut self,
-        lazy: bool,
-        min: i32,
-        max: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::RegexNode,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexNode = __cordl_object
-            .invoke("MakeQuantifier", (lazy, min, max))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReduceGroup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::RegexNode,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexNode = __cordl_object
-            .invoke("ReduceGroup", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReduceSet(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::RegexNode,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexNode = __cordl_object
-            .invoke("ReduceSet", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MakeRep(
-        &mut self,
-        _cordl_type: i32,
-        min: i32,
-        max: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MakeRep", (_cordl_type, min, max))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Type(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Type", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ChildCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ChildCount", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AddChild(
         &mut self,
         newChild: *mut crate::System::Text::RegularExpressions::RegexNode,
@@ -245,6 +58,120 @@ impl crate::System::Text::RegularExpressions::RegexNode {
             .invoke("Child", (i))?;
         Ok(__cordl_ret)
     }
+    pub fn ChildCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("ChildCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn MakeQuantifier(
+        &mut self,
+        lazy: bool,
+        min: i32,
+        max: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Text::RegularExpressions::RegexNode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexNode = __cordl_object
+            .invoke("MakeQuantifier", (lazy, min, max))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MakeRep(
+        &mut self,
+        _cordl_type: i32,
+        min: i32,
+        max: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MakeRep", (_cordl_type, min, max))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_String2(
+        _cordl_type: i32,
+        options: crate::System::Text::RegularExpressions::RegexOptions,
+        str: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, options, str))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_char1(
+        _cordl_type: i32,
+        options: crate::System::Text::RegularExpressions::RegexOptions,
+        ch: char,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, options, ch))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_3(
+        _cordl_type: i32,
+        options: crate::System::Text::RegularExpressions::RegexOptions,
+        m: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, options, m))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_RegexOptions0(
+        _cordl_type: i32,
+        options: crate::System::Text::RegularExpressions::RegexOptions,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, options))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_i32_4(
+        _cordl_type: i32,
+        options: crate::System::Text::RegularExpressions::RegexOptions,
+        m: i32,
+        n: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, options, m, n))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reduce(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Text::RegularExpressions::RegexNode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexNode = __cordl_object
+            .invoke("Reduce", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReduceAlternation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Text::RegularExpressions::RegexNode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexNode = __cordl_object
+            .invoke("ReduceAlternation", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn ReduceConcatenation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -255,6 +182,42 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         );
         let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexNode = __cordl_object
             .invoke("ReduceConcatenation", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReduceGroup(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Text::RegularExpressions::RegexNode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexNode = __cordl_object
+            .invoke("ReduceGroup", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReduceRep(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Text::RegularExpressions::RegexNode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexNode = __cordl_object
+            .invoke("ReduceRep", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReduceSet(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Text::RegularExpressions::RegexNode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexNode = __cordl_object
+            .invoke("ReduceSet", ())?;
         Ok(__cordl_ret)
     }
     pub fn ReverseLeft(
@@ -269,60 +232,97 @@ impl crate::System::Text::RegularExpressions::RegexNode {
             .invoke("ReverseLeft", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_i32_RegexOptions0(
-        _cordl_type: i32,
-        options: crate::System::Text::RegularExpressions::RegexOptions,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, options))?;
-        Ok(__cordl_object)
+    pub fn StripEnation(
+        &mut self,
+        emptyType: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Text::RegularExpressions::RegexNode,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexNode = __cordl_object
+            .invoke("StripEnation", (emptyType))?;
+        Ok(__cordl_ret)
     }
-    pub fn New__cordl_char1(
-        _cordl_type: i32,
-        options: crate::System::Text::RegularExpressions::RegexOptions,
-        ch: char,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, options, ch))?;
-        Ok(__cordl_object)
+    pub fn Type(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Type", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_String2(
+    pub fn UseOptionR(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("UseOptionR", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_String2(
+        &mut self,
         _cordl_type: i32,
         options: crate::System::Text::RegularExpressions::RegexOptions,
         str: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, options, str))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_type, options, str))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_i32_3(
+    pub fn _ctor__cordl_char1(
+        &mut self,
+        _cordl_type: i32,
+        options: crate::System::Text::RegularExpressions::RegexOptions,
+        ch: char,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_type, options, ch))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_3(
+        &mut self,
         _cordl_type: i32,
         options: crate::System::Text::RegularExpressions::RegexOptions,
         m: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, options, m))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_type, options, m))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_i32_i32_4(
+    pub fn _ctor_i32_RegexOptions0(
+        &mut self,
+        _cordl_type: i32,
+        options: crate::System::Text::RegularExpressions::RegexOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_type, options))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_i32_4(
+        &mut self,
         _cordl_type: i32,
         options: crate::System::Text::RegularExpressions::RegexOptions,
         m: i32,
         n: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, options, m, n))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_type, options, m, n))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexNode")]

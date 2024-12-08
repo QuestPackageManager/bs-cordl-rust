@@ -25,25 +25,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TableViewWithDetailCell_IDat
 }
 #[cfg(feature = "TableViewWithDetailCell+IDataSource")]
 impl crate::GlobalNamespace::TableViewWithDetailCell_IDataSource {
-    pub fn CellForDetail(
-        &mut self,
-        tableView: *mut TableViewWithDetailCell,
-        contentIdx: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
-            .invoke("CellForDetail", (tableView, contentIdx))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CellForContent(
         &mut self,
         tableView: *mut TableViewWithDetailCell,
@@ -57,11 +38,30 @@ impl crate::GlobalNamespace::TableViewWithDetailCell_IDataSource {
             .invoke("CellForContent", (tableView, idx, detailOpened))?;
         Ok(__cordl_ret)
     }
+    pub fn CellForDetail(
+        &mut self,
+        tableView: *mut TableViewWithDetailCell,
+        contentIdx: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
+            .invoke("CellForDetail", (tableView, contentIdx))?;
+        Ok(__cordl_ret)
+    }
     pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(
@@ -117,17 +117,6 @@ impl std::ops::DerefMut for TableViewWithDetailCell {
 impl TableViewWithDetailCell {
     #[cfg(feature = "TableViewWithDetailCell+IDataSource")]
     type IDataSource = crate::GlobalNamespace::TableViewWithDetailCell_IDataSource;
-    pub fn remove_didSelectContentCellEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<*mut TableViewWithDetailCell, i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didSelectContentCellEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn CellForIdx(
         &mut self,
         tableView: *mut crate::HMUI::TableView,
@@ -138,6 +127,38 @@ impl TableViewWithDetailCell {
         );
         let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
             .invoke("CellForIdx", (tableView, idx))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DidSelectCellWithIdx(
+        &mut self,
+        idx: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DidSelectCellWithIdx", (idx))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
         Ok(__cordl_ret)
     }
     pub fn ReloadData_0(
@@ -161,17 +182,6 @@ impl TableViewWithDetailCell {
             .invoke("ReloadData", (currentNewIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn DidSelectCellWithIdx(
-        &mut self,
-        idx: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DidSelectCellWithIdx", (idx))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -180,53 +190,6 @@ impl TableViewWithDetailCell {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_dataSource(
-        &mut self,
-        value: *mut crate::GlobalNamespace::TableViewWithDetailCell_IDataSource,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_dataSource", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didDeselectContentCellEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<*mut TableViewWithDetailCell, i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didDeselectContentCellEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_didSelectContentCellEvent(
-        &mut self,
-        value: *mut crate::System::Action_2<*mut TableViewWithDetailCell, i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didSelectContentCellEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_didDeselectContentCellEvent(
@@ -238,6 +201,17 @@ impl TableViewWithDetailCell {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didDeselectContentCellEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didSelectContentCellEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut TableViewWithDetailCell, i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didSelectContentCellEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn get_dataSource(
@@ -252,12 +226,38 @@ impl TableViewWithDetailCell {
             .invoke("get_dataSource", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn remove_didDeselectContentCellEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut TableViewWithDetailCell, i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didDeselectContentCellEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didSelectContentCellEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut TableViewWithDetailCell, i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didSelectContentCellEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_dataSource(
+        &mut self,
+        value: *mut crate::GlobalNamespace::TableViewWithDetailCell_IDataSource,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_dataSource", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "TableViewWithDetailCell")]

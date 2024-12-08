@@ -35,20 +35,61 @@ for crate::UnityEngine::UIElements::UQueryBuilder_1<T> {
 }
 #[cfg(feature = "UnityEngine+UIElements+UQueryBuilder_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryBuilder_1<T> {
-    pub fn Name(
+    pub fn AddClass(
         &mut self,
-        id: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::UQueryBuilder_1<T>,
-    >
+        c: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::UnityEngine::UIElements::UQueryBuilder_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Name",
+            "AddClass",
+            (c),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddName(
+        &mut self,
+        id: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AddName",
             (id),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddPseudoStatesRuleIfNecessasy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AddPseudoStatesRuleIfNecessasy",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Build(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UQueryState_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::UIElements::UQueryState_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Build",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -69,21 +110,50 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryBuild
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    pub fn CurrentSelectorEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
+            "CurrentSelectorEmpty",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn AddName(
+    pub fn Equals_Object1(
         &mut self,
-        id: *mut crate::System::String,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_UQueryBuilder_1_0(
+        &mut self,
+        other: crate::UnityEngine::UIElements::UQueryBuilder_1<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn FinishCurrentSelector(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -91,55 +161,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryBuild
     {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "AddName",
-            (id),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_styleSelectors(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::StyleSelector,
-        >,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::StyleSelector,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_styleSelectors", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SingleBaseType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::UQueryBuilder_1<T>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: crate::UnityEngine::UIElements::UQueryBuilder_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SingleBaseType",
+            "FinishCurrentSelector",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddClass(
-        &mut self,
-        c: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AddClass",
-            (c),
         )?;
         Ok(__cordl_ret)
     }
@@ -157,28 +180,47 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryBuild
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CurrentSelectorEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CurrentSelectorEmpty",
+            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn FinishCurrentSelector(
+    pub fn Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+        id: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::UQueryBuilder_1<T>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: crate::UnityEngine::UIElements::UQueryBuilder_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "FinishCurrentSelector",
+            "Name",
+            (id),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SingleBaseType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::UQueryBuilder_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::UIElements::UQueryBuilder_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SingleBaseType",
             (),
         )?;
         Ok(__cordl_ret)
@@ -198,20 +240,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryBuild
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Build(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UQueryState_1<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: crate::UnityEngine::UIElements::UQueryState_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Build",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_parts(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -228,48 +256,20 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryBuild
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_parts", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_UQueryBuilder_1_0(
+    pub fn get_styleSelectors(
         &mut self,
-        other: crate::UnityEngine::UIElements::UQueryBuilder_1<T>,
-    ) -> quest_hook::libil2cpp::Result<bool>
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::StyleSelector,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddPseudoStatesRuleIfNecessasy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AddPseudoStatesRuleIfNecessasy",
-            (),
-        )?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::StyleSelector,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_styleSelectors", ())?;
         Ok(__cordl_ret)
     }
 }

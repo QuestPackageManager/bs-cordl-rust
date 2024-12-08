@@ -32,26 +32,15 @@ impl std::ops::DerefMut for crate::System::Dynamic::ExpandoClass {
 }
 #[cfg(feature = "System+Dynamic+ExpandoClass")]
 impl crate::System::Dynamic::ExpandoClass {
-    pub fn _ctor_0(
+    pub fn FindNewClass(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        newKey: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::ExpandoClass> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Il2CppArray_i32_1(
-        &mut self,
-        keys: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        hashCode: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (keys, hashCode))?;
+        let __cordl_ret: *mut crate::System::Dynamic::ExpandoClass = __cordl_object
+            .invoke("FindNewClass", (newKey))?;
         Ok(__cordl_ret)
     }
     pub fn GetTransitionList(
@@ -68,6 +57,19 @@ impl crate::System::Dynamic::ExpandoClass {
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
             *mut crate::System::WeakReference,
         > = __cordl_object.invoke("GetTransitionList", (hashCode))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetValueIndex(
+        &mut self,
+        name: *mut crate::System::String,
+        caseInsensitive: bool,
+        obj: *mut crate::System::Dynamic::ExpandoObject,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetValueIndex", (name, caseInsensitive, obj))?;
         Ok(__cordl_ret)
     }
     pub fn GetValueIndexCaseInsensitive(
@@ -93,6 +95,45 @@ impl crate::System::Dynamic::ExpandoClass {
             .invoke("GetValueIndexCaseSensitive", (name))?;
         Ok(__cordl_ret)
     }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray_i32_1(
+        keys: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        hashCode: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (keys, hashCode))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppArray_i32_1(
+        &mut self,
+        keys: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        hashCode: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (keys, hashCode))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Keys(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -105,47 +146,6 @@ impl crate::System::Dynamic::ExpandoClass {
             *mut crate::System::String,
         > = __cordl_object.invoke("get_Keys", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn FindNewClass(
-        &mut self,
-        newKey: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::ExpandoClass> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Dynamic::ExpandoClass = __cordl_object
-            .invoke("FindNewClass", (newKey))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetValueIndex(
-        &mut self,
-        name: *mut crate::System::String,
-        caseInsensitive: bool,
-        obj: *mut crate::System::Dynamic::ExpandoObject,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetValueIndex", (name, caseInsensitive, obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray_i32_1(
-        keys: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        hashCode: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (keys, hashCode))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Dynamic+ExpandoClass")]

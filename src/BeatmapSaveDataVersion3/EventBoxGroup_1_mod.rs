@@ -28,21 +28,16 @@ for crate::BeatmapSaveDataVersion3::EventBoxGroup_1<T> {
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+EventBoxGroup_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::BeatmapSaveDataVersion3::EventBoxGroup_1<T> {
-    pub fn get_eventBoxes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<T>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<T> = __cordl_object
-            .invoke("get_eventBoxes", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        beat: f32,
+        groupId: i32,
+        eventBoxes: *mut crate::System::Collections::Generic::List_1<T>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (beat, groupId, eventBoxes))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -80,16 +75,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatmapSaveDataVersion3::EventBoxGro
         > = __cordl_object.invoke("get_baseEventBoxes", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        beat: f32,
-        groupId: i32,
-        eventBoxes: *mut crate::System::Collections::Generic::List_1<T>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (beat, groupId, eventBoxes))?;
-        Ok(__cordl_object)
+    pub fn get_eventBoxes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IReadOnlyList_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<T> = __cordl_object
+            .invoke("get_eventBoxes", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+EventBoxGroup_1")]

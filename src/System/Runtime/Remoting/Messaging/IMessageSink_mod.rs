@@ -25,19 +25,6 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::Messaging::IMessag
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+IMessageSink")]
 impl crate::System::Runtime::Remoting::Messaging::IMessageSink {
-    pub fn SyncProcessMessage(
-        &mut self,
-        msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Messaging::IMessage,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::IMessage = __cordl_object
-            .invoke("SyncProcessMessage", (msg))?;
-        Ok(__cordl_ret)
-    }
     pub fn AsyncProcessMessage(
         &mut self,
         msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
@@ -50,6 +37,19 @@ impl crate::System::Runtime::Remoting::Messaging::IMessageSink {
         );
         let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::IMessageCtrl = __cordl_object
             .invoke("AsyncProcessMessage", (msg, replySink))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SyncProcessMessage(
+        &mut self,
+        msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Runtime::Remoting::Messaging::IMessage,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::IMessage = __cordl_object
+            .invoke("SyncProcessMessage", (msg))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

@@ -26,25 +26,15 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::UpaException {
 }
 #[cfg(feature = "System+Xml+Schema+UpaException")]
 impl crate::System::Xml::Schema::UpaException {
-    pub fn get_Particle2(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_Particle2", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Particle1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_Particle1", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        particle1: *mut crate::System::Object,
+        particle2: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (particle1, particle2))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -58,15 +48,25 @@ impl crate::System::Xml::Schema::UpaException {
             .invoke(".ctor", (particle1, particle2))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        particle1: *mut crate::System::Object,
-        particle2: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (particle1, particle2))?;
-        Ok(__cordl_object)
+    pub fn get_Particle1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_Particle1", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Particle2(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_Particle2", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+Schema+UpaException")]

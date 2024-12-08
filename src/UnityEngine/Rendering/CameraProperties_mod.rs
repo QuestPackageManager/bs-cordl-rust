@@ -153,36 +153,17 @@ for crate::UnityEngine::Rendering::CameraProperties {
 #[cfg(feature = "UnityEngine+Rendering+CameraProperties")]
 impl crate::UnityEngine::Rendering::CameraProperties {
     #[cfg(
-        feature = "UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
+        feature = "UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
     )]
-    pub type _m_ShadowCullPlanes_e__FixedBuffer = crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer;
+    pub type _m_CameraCullPlanes_e__FixedBuffer = crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer;
     #[cfg(
         feature = "UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
     )]
     pub type _layerCullDistances_e__FixedBuffer = crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer;
     #[cfg(
-        feature = "UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
+        feature = "UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
     )]
-    pub type _m_CameraCullPlanes_e__FixedBuffer = crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer;
-    pub fn GetCameraCullingPlane(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Plane> {
-        let __cordl_ret: crate::UnityEngine::Plane = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetCameraCullingPlane",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
+    pub type _m_ShadowCullPlanes_e__FixedBuffer = crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer;
     pub fn Equals_CameraProperties0(
         &mut self,
         other: crate::UnityEngine::Rendering::CameraProperties,
@@ -202,6 +183,25 @@ impl crate::UnityEngine::Rendering::CameraProperties {
             self,
             "Equals",
             (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetCameraCullingPlane(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Plane> {
+        let __cordl_ret: crate::UnityEngine::Plane = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetCameraCullingPlane",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }

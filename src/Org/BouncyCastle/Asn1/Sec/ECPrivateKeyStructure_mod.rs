@@ -36,6 +36,17 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
             .invoke("GetKey", ())?;
         Ok(__cordl_ret)
     }
+    pub fn GetObjectInTag(
+        &mut self,
+        tagNo: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("GetObjectInTag", (tagNo))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
@@ -57,6 +68,78 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerBitString = __cordl_object
             .invoke("GetPublicKey", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New_Asn1Sequence0(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_BigInteger1(
+        key: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (key))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_BigInteger_Asn1Encodable3(
+        key: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        parameters: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (key, parameters))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_BigInteger_DerBitString_Asn1Encodable4(
+        key: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        publicKey: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
+        parameters: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (key, publicKey, parameters))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_BigInteger2(
+        orderBitLength: i32,
+        key: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (orderBitLength, key))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_BigInteger_Asn1Encodable5(
+        orderBitLength: i32,
+        key: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        parameters: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (orderBitLength, key, parameters))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_BigInteger_DerBitString_Asn1Encodable6(
+        orderBitLength: i32,
+        key: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        publicKey: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
+        parameters: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (orderBitLength, key, publicKey, parameters))?;
+        Ok(__cordl_object)
     }
     pub fn ToAsn1Object(
         &mut self,
@@ -90,18 +173,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
             .invoke(".ctor", (key))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_BigInteger2(
-        &mut self,
-        orderBitLength: i32,
-        key: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (orderBitLength, key))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor_BigInteger_Asn1Encodable3(
         &mut self,
         key: *mut crate::Org::BouncyCastle::Math::BigInteger,
@@ -125,6 +196,18 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (key, publicKey, parameters))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_BigInteger2(
+        &mut self,
+        orderBitLength: i32,
+        key: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (orderBitLength, key))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_i32_BigInteger_Asn1Encodable5(
@@ -153,89 +236,6 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (orderBitLength, key, publicKey, parameters))?;
         Ok(__cordl_ret)
-    }
-    pub fn GetObjectInTag(
-        &mut self,
-        tagNo: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("GetObjectInTag", (tagNo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_Asn1Sequence0(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_BigInteger1(
-        key: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (key))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_BigInteger2(
-        orderBitLength: i32,
-        key: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (orderBitLength, key))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_BigInteger_Asn1Encodable3(
-        key: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        parameters: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (key, parameters))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_BigInteger_DerBitString_Asn1Encodable4(
-        key: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        publicKey: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
-        parameters: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (key, publicKey, parameters))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_BigInteger_Asn1Encodable5(
-        orderBitLength: i32,
-        key: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        parameters: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (orderBitLength, key, parameters))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_BigInteger_DerBitString_Asn1Encodable6(
-        orderBitLength: i32,
-        key: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        publicKey: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
-        parameters: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (orderBitLength, key, publicKey, parameters))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+ECPrivateKeyStructure")]

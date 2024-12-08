@@ -24,18 +24,6 @@ impl std::ops::DerefMut for crate::System::Net::TimerThread_Callback {
 }
 #[cfg(feature = "System+Net+TimerThread+Callback")]
 impl crate::System::Net::TimerThread_Callback {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         timer: *mut crate::System::Net::TimerThread_Timer,
@@ -52,12 +40,24 @@ impl crate::System::Net::TimerThread_Callback {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+TimerThread+Callback")]
@@ -103,6 +103,13 @@ impl crate::System::Net::TimerThread_InfiniteTimer {
         let __cordl_ret: bool = __cordl_object.invoke("Cancel", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -119,13 +126,6 @@ impl crate::System::Net::TimerThread_InfiniteTimer {
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasExpired", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+TimerThread+InfiniteTimer")]
@@ -176,6 +176,13 @@ impl crate::System::Net::TimerThread_InfiniteTimerQueue {
             .invoke("CreateTimer", (callback, context))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -185,13 +192,6 @@ impl crate::System::Net::TimerThread_InfiniteTimerQueue {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+TimerThread+InfiniteTimerQueue")]
@@ -231,17 +231,6 @@ impl std::ops::DerefMut for crate::System::Net::TimerThread_Queue {
 }
 #[cfg(feature = "System+Net+TimerThread+Queue")]
 impl crate::System::Net::TimerThread_Queue {
-    pub fn _ctor(
-        &mut self,
-        durationMilliseconds: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (durationMilliseconds))?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateTimer(
         &mut self,
         callback: *mut crate::System::Net::TimerThread_Callback,
@@ -254,21 +243,30 @@ impl crate::System::Net::TimerThread_Queue {
             .invoke("CreateTimer", (callback, context))?;
         Ok(__cordl_ret)
     }
+    pub fn New(durationMilliseconds: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (durationMilliseconds))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        durationMilliseconds: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (durationMilliseconds))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Duration(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Duration", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        durationMilliseconds: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (durationMilliseconds))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+TimerThread+Queue")]
@@ -315,19 +313,22 @@ impl crate::System::Net::TimerThread_Timer {
         let __cordl_ret: bool = __cordl_object.invoke("Cancel", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_HasExpired(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasExpired", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Expiration(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Expiration", ())?;
-        Ok(__cordl_ret)
+    pub fn New(durationMilliseconds: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (durationMilliseconds))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -340,31 +341,26 @@ impl crate::System::Net::TimerThread_Timer {
             .invoke(".ctor", (durationMilliseconds))?;
         Ok(__cordl_ret)
     }
+    pub fn get_Expiration(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Expiration", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HasExpired(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasExpired", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_StartTime(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_StartTime", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        durationMilliseconds: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (durationMilliseconds))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+TimerThread+Timer")]
@@ -410,25 +406,11 @@ impl std::ops::DerefMut for crate::System::Net::TimerThread_TimerNode {
 impl crate::System::Net::TimerThread_TimerNode {
     #[cfg(feature = "System+Net+TimerThread+TimerNode+TimerState")]
     pub type TimerState = crate::System::Net::TimerNode_TimerState;
-    pub fn get_Next(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::TimerThread_TimerNode> {
+    pub fn Cancel(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::TimerThread_TimerNode = __cordl_object
-            .invoke("get_Next", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Prev(
-        &mut self,
-        value: *mut crate::System::Net::TimerThread_TimerNode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Prev", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("Cancel", ())?;
         Ok(__cordl_ret)
     }
     pub fn Fire(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -436,6 +418,35 @@ impl crate::System::Net::TimerThread_TimerNode {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Fire", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_1() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_TimerThread_Callback_Object_i32_Object0(
+        callback: *mut crate::System::Net::TimerThread_Callback,
+        context: *mut crate::System::Object,
+        durationMilliseconds: i32,
+        queueLock: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (callback, context, durationMilliseconds, queueLock))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_TimerThread_Callback_Object_i32_Object0(
@@ -452,14 +463,21 @@ impl crate::System::Net::TimerThread_TimerNode {
             .invoke(".ctor", (callback, context, durationMilliseconds, queueLock))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_HasExpired(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasExpired", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Next(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::TimerThread_TimerNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::TimerThread_TimerNode = __cordl_object
+            .invoke("get_Next", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Prev(
@@ -470,13 +488,6 @@ impl crate::System::Net::TimerThread_TimerNode {
         );
         let __cordl_ret: *mut crate::System::Net::TimerThread_TimerNode = __cordl_object
             .invoke("get_Prev", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_HasExpired(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasExpired", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Next(
@@ -490,31 +501,16 @@ impl crate::System::Net::TimerThread_TimerNode {
             .invoke("set_Next", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Cancel(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn set_Prev(
+        &mut self,
+        value: *mut crate::System::Net::TimerThread_TimerNode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Cancel", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Prev", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_TimerThread_Callback_Object_i32_Object0(
-        callback: *mut crate::System::Net::TimerThread_Callback,
-        context: *mut crate::System::Object,
-        durationMilliseconds: i32,
-        queueLock: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (callback, context, durationMilliseconds, queueLock))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_1() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+TimerThread+TimerNode")]
@@ -576,6 +572,13 @@ impl crate::System::Net::TimerThread_TimerQueue {
         let __cordl_ret: bool = __cordl_object.invoke("Fire", (nextExpiration))?;
         Ok(__cordl_ret)
     }
+    pub fn New(durationMilliseconds: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (durationMilliseconds))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         durationMilliseconds: i32,
@@ -586,15 +589,6 @@ impl crate::System::Net::TimerThread_TimerQueue {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (durationMilliseconds))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        durationMilliseconds: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (durationMilliseconds))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+TimerThread+TimerQueue")]
@@ -646,16 +640,16 @@ impl std::ops::DerefMut for crate::System::Net::TimerThread {
 }
 #[cfg(feature = "System+Net+TimerThread")]
 impl crate::System::Net::TimerThread {
-    #[cfg(feature = "System+Net+TimerThread+Timer")]
-    pub type Timer = crate::System::Net::TimerThread_Timer;
+    #[cfg(feature = "System+Net+TimerThread+TimerNode")]
+    pub type TimerNode = crate::System::Net::TimerThread_TimerNode;
     #[cfg(feature = "System+Net+TimerThread+InfiniteTimer")]
     pub type InfiniteTimer = crate::System::Net::TimerThread_InfiniteTimer;
+    #[cfg(feature = "System+Net+TimerThread+Timer")]
+    pub type Timer = crate::System::Net::TimerThread_Timer;
     #[cfg(feature = "System+Net+TimerThread+Callback")]
     pub type Callback = crate::System::Net::TimerThread_Callback;
     #[cfg(feature = "System+Net+TimerThread+TimerQueue")]
     pub type TimerQueue = crate::System::Net::TimerThread_TimerQueue;
-    #[cfg(feature = "System+Net+TimerThread+TimerNode")]
-    pub type TimerNode = crate::System::Net::TimerThread_TimerNode;
     #[cfg(feature = "System+Net+TimerThread+InfiniteTimerQueue")]
     pub type InfiniteTimerQueue = crate::System::Net::TimerThread_InfiniteTimerQueue;
     #[cfg(feature = "System+Net+TimerThread+Queue")]

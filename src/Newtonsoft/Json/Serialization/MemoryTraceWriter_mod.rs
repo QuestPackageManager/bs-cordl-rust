@@ -30,30 +30,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::MemoryTraceW
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+MemoryTraceWriter")]
 impl crate::Newtonsoft::Json::Serialization::MemoryTraceWriter {
-    pub fn set_LevelFilter(
-        &mut self,
-        value: crate::System::Diagnostics::TraceLevel,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_LevelFilter", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Trace(
-        &mut self,
-        level: crate::System::Diagnostics::TraceLevel,
-        message: *mut crate::System::String,
-        ex: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Trace", (level, message, ex))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetTraceMessages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -69,14 +45,34 @@ impl crate::Newtonsoft::Json::Serialization::MemoryTraceWriter {
         > = __cordl_object.invoke("GetTraceMessages", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_LevelFilter(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Diagnostics::TraceLevel> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Diagnostics::TraceLevel = __cordl_object
-            .invoke("get_LevelFilter", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Trace(
+        &mut self,
+        level: crate::System::Diagnostics::TraceLevel,
+        message: *mut crate::System::String,
+        ex: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Trace", (level, message, ex))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -89,22 +85,26 @@ impl crate::Newtonsoft::Json::Serialization::MemoryTraceWriter {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
+    pub fn get_LevelFilter(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Diagnostics::TraceLevel> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
+        let __cordl_ret: crate::System::Diagnostics::TraceLevel = __cordl_object
+            .invoke("get_LevelFilter", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_LevelFilter(
+        &mut self,
+        value: crate::System::Diagnostics::TraceLevel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_LevelFilter", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+MemoryTraceWriter")]

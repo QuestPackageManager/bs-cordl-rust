@@ -24,6 +24,28 @@ for crate::UnityEngine::TextCore::Text::TextBackingContainer {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextBackingContainer")]
 impl crate::UnityEngine::TextCore::Text::TextBackingContainer {
+    pub fn Resize(
+        &mut self,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Resize",
+            (_cordl_size),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (_cordl_size),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Capacity(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -40,6 +62,14 @@ impl crate::UnityEngine::TextCore::Text::TextBackingContainer {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_Count(
         &mut self,
         value: i32,
@@ -48,17 +78,6 @@ impl crate::UnityEngine::TextCore::Text::TextBackingContainer {
             self,
             "set_Count",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (_cordl_size),
         )?;
         Ok(__cordl_ret)
     }
@@ -71,25 +90,6 @@ impl crate::UnityEngine::TextCore::Text::TextBackingContainer {
             self,
             "set_Item",
             (index, value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Resize(
-        &mut self,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Resize",
-            (_cordl_size),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (index),
         )?;
         Ok(__cordl_ret)
     }

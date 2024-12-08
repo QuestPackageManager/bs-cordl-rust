@@ -61,6 +61,13 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
         feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType"
     )]
     pub type ColliderType = crate::HoudiniEngineUnity::HEU_ColliderInfo_ColliderType;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -70,13 +77,6 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
@@ -197,6 +197,13 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
     pub type HEU_ColliderInfo = crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo;
     #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+__c")]
     pub type __c = crate::HoudiniEngineUnity::HEU_GenerateGeoCache___c;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn PopulateGeometryData(
         &mut self,
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
@@ -209,6 +216,17 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             .invoke("PopulateGeometryData", (session, bUseLODGroups))?;
         Ok(__cordl_ret)
     }
+    pub fn PopulateUnityMaterialData(
+        &mut self,
+        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PopulateUnityMaterialData", (session))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -219,15 +237,11 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_AssetID(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_AssetID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_AssetID", (value))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_AssetID", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_GeoID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -244,30 +258,16 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         let __cordl_ret: i32 = __cordl_object.invoke("get_PartID", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_AssetID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_AssetID", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn PopulateUnityMaterialData(
+    pub fn set_AssetID(
         &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PopulateUnityMaterialData", (session))?;
+            .invoke("set_AssetID", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache")]

@@ -35,32 +35,66 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::AnimationPlayableAsset
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
 impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
+    #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
+    pub type LoopMode = crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode;
+    #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+_get_outputs_d__45")]
+    pub type _get_outputs_d__45 = crate::UnityEngine::Timeline::AnimationPlayableAsset__get_outputs_d__45;
     #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
     pub type Versions = crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions;
     #[cfg(
         feature = "UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
     )]
     pub type AnimationPlayableAssetUpgrade = crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetUpgrade;
-    #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+_get_outputs_d__45")]
-    pub type _get_outputs_d__45 = crate::UnityEngine::Timeline::AnimationPlayableAsset__get_outputs_d__45;
-    #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
-    pub type LoopMode = crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode;
-    pub fn set_applyFootIK(
+    pub fn CreatePlayable(
         &mut self,
-        value: bool,
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        go: *mut crate::UnityEngine::GameObject,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Playables::Playable = __cordl_object
+            .invoke("CreatePlayable", (graph, go))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GatherProperties(
+        &mut self,
+        director: *mut crate::UnityEngine::Playables::PlayableDirector,
+        driver: *mut crate::UnityEngine::Timeline::IPropertyCollector,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_applyFootIK", (value))?;
+            .invoke("GatherProperties", (director, driver))?;
         Ok(__cordl_ret)
     }
-    pub fn get_hasRootTransforms(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnUpgradeFromVersion(
+        &mut self,
+        oldVersion: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hasRootTransforms", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnUpgradeFromVersion", (oldVersion))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ResetOffsets(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ResetOffsets", ())?;
         Ok(__cordl_ret)
     }
     pub fn UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize(
@@ -76,36 +110,14 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn ResetOffsets(
+    pub fn UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetOffsets", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_removeStartOffset(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_removeStartOffset", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_clip(
-        &mut self,
-        value: *mut crate::UnityEngine::AnimationClip,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_clip", (value))?;
+            .invoke("UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -118,15 +130,48 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_matchTargetFields(
+    pub fn get_appliedOffsetMode(
         &mut self,
-        value: crate::UnityEngine::Timeline::MatchTargetFields,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::AppliedOffsetMode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_matchTargetFields", (value))?;
+        let __cordl_ret: crate::UnityEngine::Timeline::AppliedOffsetMode = __cordl_object
+            .invoke("get_appliedOffsetMode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_applyFootIK(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_applyFootIK", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_clip(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AnimationClip> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::AnimationClip = __cordl_object
+            .invoke("get_clip", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_clipCaps(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::ClipCaps> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Timeline::ClipCaps = __cordl_object
+            .invoke("get_clipCaps", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object.invoke("get_duration", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_eulerAngles(
@@ -139,26 +184,11 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
             .invoke("get_eulerAngles", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_appliedOffsetMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::AppliedOffsetMode> {
+    pub fn get_hasRootTransforms(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Timeline::AppliedOffsetMode = __cordl_object
-            .invoke("get_appliedOffsetMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreatePlayable(
-        &mut self,
-        graph: crate::UnityEngine::Playables::PlayableGraph,
-        go: *mut crate::UnityEngine::GameObject,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Playables::Playable = __cordl_object
-            .invoke("CreatePlayable", (graph, go))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_hasRootTransforms", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_loop(
@@ -171,6 +201,16 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
         );
         let __cordl_ret: crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode = __cordl_object
             .invoke("get_loop", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_matchTargetFields(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::MatchTargetFields> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Timeline::MatchTargetFields = __cordl_object
+            .invoke("get_matchTargetFields", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_outputs(
@@ -188,11 +228,14 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
         > = __cordl_object.invoke("get_outputs", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_useTrackMatchFields(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn get_position(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_useTrackMatchFields", ())?;
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_position", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_removeStartOffset(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -202,25 +245,21 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
         let __cordl_ret: bool = __cordl_object.invoke("get_removeStartOffset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_useTrackMatchFields(
+    pub fn get_rotation(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_useTrackMatchFields", (value))?;
+        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
+            .invoke("get_rotation", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_clipCaps(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::ClipCaps> {
+    pub fn get_useTrackMatchFields(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Timeline::ClipCaps = __cordl_object
-            .invoke("get_clipCaps", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_useTrackMatchFields", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_appliedOffsetMode(
@@ -234,80 +273,26 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
             .invoke("set_appliedOffsetMode", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize(
+    pub fn set_applyFootIK(
         &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize", ())?;
+            .invoke("set_applyFootIK", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_applyFootIK(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_applyFootIK", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_rotation(
+    pub fn set_clip(
         &mut self,
-        value: crate::UnityEngine::Quaternion,
+        value: *mut crate::UnityEngine::AnimationClip,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_rotation", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_rotation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("get_rotation", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("get_duration", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnUpgradeFromVersion(
-        &mut self,
-        oldVersion: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnUpgradeFromVersion", (oldVersion))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_matchTargetFields(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::MatchTargetFields> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Timeline::MatchTargetFields = __cordl_object
-            .invoke("get_matchTargetFields", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_position(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_position", ())?;
+            .invoke("set_clip", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_eulerAngles(
@@ -332,26 +317,15 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
             .invoke("set_loop", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_clip(
+    pub fn set_matchTargetFields(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AnimationClip> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::AnimationClip = __cordl_object
-            .invoke("get_clip", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GatherProperties(
-        &mut self,
-        director: *mut crate::UnityEngine::Playables::PlayableDirector,
-        driver: *mut crate::UnityEngine::Timeline::IPropertyCollector,
+        value: crate::UnityEngine::Timeline::MatchTargetFields,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GatherProperties", (director, driver))?;
+            .invoke("set_matchTargetFields", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_position(
@@ -365,12 +339,38 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
             .invoke("set_position", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_removeStartOffset(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_removeStartOffset", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_rotation(
+        &mut self,
+        value: crate::UnityEngine::Quaternion,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_rotation", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_useTrackMatchFields(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_useTrackMatchFields", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]

@@ -27,6 +27,13 @@ for crate::System::Linq::Expressions::Interpreter::ValueTypeCopyInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ValueTypeCopyInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::ValueTypeCopyInstruction {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn Run(
         &mut self,
         frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
@@ -70,13 +77,6 @@ impl crate::System::Linq::Expressions::Interpreter::ValueTypeCopyInstruction {
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ProducedStack", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ValueTypeCopyInstruction")]

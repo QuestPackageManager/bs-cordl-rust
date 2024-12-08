@@ -34,22 +34,49 @@ impl std::ops::DerefMut for GameServersListTableView {
 impl GameServersListTableView {
     pub const kCellReuseIdentifier: &'static str = "Cell";
     pub const kDetailCellReuseIdentifier: &'static str = "DetailCell";
-    pub fn add_joinButtonPressedEvent(
+    pub fn CellForContent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut INetworkPlayer>,
+        tableView: *mut TableViewWithDetailCell,
+        idx: i32,
+        detailOpened: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
+            .invoke("CellForContent", (tableView, idx, detailOpened))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CellForDetail(
+        &mut self,
+        tableView: *mut TableViewWithDetailCell,
+        contentIdx: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
+            .invoke("CellForDetail", (tableView, contentIdx))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleGameServerListDetailTableCellJoinServerButtonWasPressed(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_joinButtonPressedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
+            .invoke(
+                "HandleGameServerListDetailTableCellJoinServerButtonWasPressed",
+                (),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn HandleTableViewDidDeselectCellWithIdx(
@@ -62,6 +89,52 @@ impl GameServersListTableView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleTableViewDidDeselectCellWithIdx", (arg1, arg2))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleTableViewDidSelectCellWithIdx(
+        &mut self,
+        tableView: *mut crate::HMUI::TableView,
+        id: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleTableViewDidSelectCellWithIdx", (tableView, id))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetData(
@@ -78,74 +151,6 @@ impl GameServersListTableView {
             .invoke("SetData", (servers, clearSelection))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_joinButtonPressedEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut INetworkPlayer>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_joinButtonPressedEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CellForDetail(
-        &mut self,
-        tableView: *mut TableViewWithDetailCell,
-        contentIdx: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
-            .invoke("CellForDetail", (tableView, contentIdx))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleGameServerListDetailTableCellJoinServerButtonWasPressed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleGameServerListDetailTableCellJoinServerButtonWasPressed",
-                (),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleTableViewDidSelectCellWithIdx(
-        &mut self,
-        tableView: *mut crate::HMUI::TableView,
-        id: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleTableViewDidSelectCellWithIdx", (tableView, id))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -156,32 +161,27 @@ impl GameServersListTableView {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CellForContent(
+    pub fn add_joinButtonPressedEvent(
         &mut self,
-        tableView: *mut TableViewWithDetailCell,
-        idx: i32,
-        detailOpened: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
+        value: *mut crate::System::Action_1<*mut INetworkPlayer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
-            .invoke("CellForContent", (tableView, idx, detailOpened))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_joinButtonPressedEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn remove_joinButtonPressedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut INetworkPlayer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_joinButtonPressedEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "GameServersListTableView")]

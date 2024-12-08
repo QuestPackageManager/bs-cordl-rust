@@ -34,24 +34,16 @@ impl std::ops::DerefMut for BeatmapCharacteristicsTableView {
 }
 #[cfg(feature = "BeatmapCharacteristicsTableView")]
 impl BeatmapCharacteristicsTableView {
-    pub fn HandleAdditionalContentModelDidInvalidateData(
+    pub fn CellForIdx(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        tableView: *mut crate::HMUI::TableView,
+        idx: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleAdditionalContentModelDidInvalidateData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
+        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
+            .invoke("CellForIdx", (tableView, idx))?;
         Ok(__cordl_ret)
     }
     pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -61,22 +53,14 @@ impl BeatmapCharacteristicsTableView {
         let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didSelectCharacteristic(
+    pub fn HandleAdditionalContentModelDidInvalidateData(
         &mut self,
-        value: *mut crate::System::Action_1<*mut BeatmapCharacteristicSO>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didSelectCharacteristic", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
+            .invoke("HandleAdditionalContentModelDidInvalidateData", ())?;
         Ok(__cordl_ret)
     }
     pub fn HandleDidSelectColumnEvent(
@@ -101,27 +85,28 @@ impl BeatmapCharacteristicsTableView {
             .invoke("Init", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CellForIdx(
-        &mut self,
-        tableView: *mut crate::HMUI::TableView,
-        idx: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
-            .invoke("CellForIdx", (tableView, idx))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
         Ok(__cordl_ret)
     }
-    pub fn add_didSelectCharacteristic(
+    pub fn OnDestroy(
         &mut self,
-        value: *mut crate::System::Action_1<*mut BeatmapCharacteristicSO>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didSelectCharacteristic", (value))?;
+            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn SelectCellWithIdx(
@@ -135,16 +120,6 @@ impl BeatmapCharacteristicsTableView {
             .invoke("SelectCellWithIdx", (idx))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn SetData(
         &mut self,
         beatmapCharacteristicCollection: *mut BeatmapCharacteristicCollection,
@@ -156,12 +131,37 @@ impl BeatmapCharacteristicsTableView {
             .invoke("SetData", (beatmapCharacteristicCollection))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_didSelectCharacteristic(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut BeatmapCharacteristicSO>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didSelectCharacteristic", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didSelectCharacteristic(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut BeatmapCharacteristicSO>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didSelectCharacteristic", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapCharacteristicsTableView")]

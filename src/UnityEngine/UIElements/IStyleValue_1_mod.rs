@@ -27,6 +27,11 @@ for crate::UnityEngine::UIElements::IStyleValue_1<T> {
 }
 #[cfg(feature = "UnityEngine+UIElements+IStyleValue_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::IStyleValue_1<T> {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_keyword(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleKeyword>
@@ -51,11 +56,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::IStyleValue
         );
         let __cordl_ret: T = __cordl_object.invoke("get_value", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IStyleValue_1")]

@@ -30,12 +30,12 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for LevelFilter {
 }
 #[cfg(feature = "LevelFilter")]
 impl LevelFilter {
+    #[cfg(feature = "LevelFilter+__c")]
+    pub type __c = crate::GlobalNamespace::LevelFilter___c;
     #[cfg(feature = "LevelFilter+__c__DisplayClass13_1")]
     pub type __c__DisplayClass13_1 = crate::GlobalNamespace::LevelFilter___c__DisplayClass13_1;
     #[cfg(feature = "LevelFilter+__c__DisplayClass13_0")]
     pub type __c__DisplayClass13_0 = crate::GlobalNamespace::LevelFilter___c__DisplayClass13_0;
     #[cfg(feature = "LevelFilter+_FilterLevelsAsync_d__13")]
     pub type _FilterLevelsAsync_d__13 = crate::GlobalNamespace::LevelFilter__FilterLevelsAsync_d__13;
-    #[cfg(feature = "LevelFilter+__c")]
-    pub type __c = crate::GlobalNamespace::LevelFilter___c;
 }

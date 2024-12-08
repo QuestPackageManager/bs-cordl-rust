@@ -24,8 +24,8 @@ impl std::ops::DerefMut for crate::Zenject::FactoryFromBinder6Extensions {
 }
 #[cfg(feature = "Zenject+FactoryFromBinder6Extensions")]
 impl crate::Zenject::FactoryFromBinder6Extensions {
-    #[cfg(feature = "Zenject+FactoryFromBinder6Extensions+__c__3_7")]
-    pub type __c__3_7<
+    #[cfg(feature = "Zenject+FactoryFromBinder6Extensions+__c__DisplayClass6_0_8")]
+    pub type __c__DisplayClass6_0_8<
         TParam1: quest_hook::libil2cpp::Type,
         TParam2: quest_hook::libil2cpp::Type,
         TParam3: quest_hook::libil2cpp::Type,
@@ -33,7 +33,8 @@ impl crate::Zenject::FactoryFromBinder6Extensions {
         TParam5: quest_hook::libil2cpp::Type,
         TParam6: quest_hook::libil2cpp::Type,
         TContract: quest_hook::libil2cpp::Type,
-    > = crate::Zenject::FactoryFromBinder6Extensions___c__3_7<
+        TMemoryPool: quest_hook::libil2cpp::Type,
+    > = crate::Zenject::FactoryFromBinder6Extensions___c__DisplayClass6_0_8<
         TParam1,
         TParam2,
         TParam3,
@@ -41,6 +42,7 @@ impl crate::Zenject::FactoryFromBinder6Extensions {
         TParam5,
         TParam6,
         TContract,
+        TMemoryPool,
     >;
     #[cfg(feature = "Zenject+FactoryFromBinder6Extensions+__c__5_8")]
     pub type __c__5_8<
@@ -62,8 +64,8 @@ impl crate::Zenject::FactoryFromBinder6Extensions {
         TContract,
         TMemoryPool,
     >;
-    #[cfg(feature = "Zenject+FactoryFromBinder6Extensions+__c__DisplayClass6_0_8")]
-    pub type __c__DisplayClass6_0_8<
+    #[cfg(feature = "Zenject+FactoryFromBinder6Extensions+__c__3_7")]
+    pub type __c__3_7<
         TParam1: quest_hook::libil2cpp::Type,
         TParam2: quest_hook::libil2cpp::Type,
         TParam3: quest_hook::libil2cpp::Type,
@@ -71,8 +73,7 @@ impl crate::Zenject::FactoryFromBinder6Extensions {
         TParam5: quest_hook::libil2cpp::Type,
         TParam6: quest_hook::libil2cpp::Type,
         TContract: quest_hook::libil2cpp::Type,
-        TMemoryPool: quest_hook::libil2cpp::Type,
-    > = crate::Zenject::FactoryFromBinder6Extensions___c__DisplayClass6_0_8<
+    > = crate::Zenject::FactoryFromBinder6Extensions___c__3_7<
         TParam1,
         TParam2,
         TParam3,
@@ -80,7 +81,6 @@ impl crate::Zenject::FactoryFromBinder6Extensions {
         TParam5,
         TParam6,
         TContract,
-        TMemoryPool,
     >;
     #[cfg(feature = "Zenject+FactoryFromBinder6Extensions+__c__DisplayClass0_0_7")]
     pub type __c__DisplayClass0_0_7<

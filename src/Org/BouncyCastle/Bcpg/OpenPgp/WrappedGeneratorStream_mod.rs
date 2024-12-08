@@ -28,18 +28,6 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::WrappedGeneratorStream {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+WrappedGeneratorStream")]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::WrappedGeneratorStream {
-    pub fn _ctor(
-        &mut self,
-        _cordl_gen: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator,
-        str: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_gen, str))?;
-        Ok(__cordl_ret)
-    }
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,12 +41,24 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::WrappedGeneratorStream {
     pub fn New(
         _cordl_gen: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator,
         str: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_gen, str))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        _cordl_gen: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator,
+        str: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_gen, str))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+WrappedGeneratorStream")]

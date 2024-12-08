@@ -27,6 +27,24 @@ for crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter {
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+DiagnosticsTraceWriter")]
 impl crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter {
+    pub fn GetTraceEventType(
+        &mut self,
+        level: crate::System::Diagnostics::TraceLevel,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Diagnostics::TraceEventType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Diagnostics::TraceEventType = __cordl_object
+            .invoke("GetTraceEventType", (level))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn Trace(
         &mut self,
         level: crate::System::Diagnostics::TraceLevel,
@@ -40,15 +58,14 @@ impl crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter {
             .invoke("Trace", (level, message, ex))?;
         Ok(__cordl_ret)
     }
-    pub fn set_LevelFilter(
+    pub fn _ctor(
         &mut self,
-        value: crate::System::Diagnostics::TraceLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_LevelFilter", (value))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_LevelFilter(
@@ -61,33 +78,16 @@ impl crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter {
             .invoke("get_LevelFilter", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetTraceEventType(
+    pub fn set_LevelFilter(
         &mut self,
-        level: crate::System::Diagnostics::TraceLevel,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Diagnostics::TraceEventType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Diagnostics::TraceEventType = __cordl_object
-            .invoke("GetTraceEventType", (level))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
+        value: crate::System::Diagnostics::TraceLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("set_LevelFilter", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+DiagnosticsTraceWriter")]

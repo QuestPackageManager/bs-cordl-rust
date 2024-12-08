@@ -25,36 +25,6 @@ for crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+ObjectInitializationData")]
 impl crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData {
-    pub fn get_Id(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Id",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Data(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Data",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn CreateInstance<TObject>(
         &mut self,
         idOverride: *mut crate::System::String,
@@ -81,6 +51,36 @@ impl crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData {
             self,
             "GetAsyncInitHandle",
             (rm, idOverride),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Data(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Data",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Id(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Id",
+            (),
         )?;
         Ok(__cordl_ret)
     }

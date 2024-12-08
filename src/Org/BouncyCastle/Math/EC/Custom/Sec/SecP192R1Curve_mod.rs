@@ -34,36 +34,33 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve {
         feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecP192R1Curve+SecP192R1LookupTable"
     )]
     pub type SecP192R1LookupTable = crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve_SecP192R1LookupTable;
-    pub fn get_Q(
+    pub fn CloneCurve(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("get_Q", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_FieldSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_FieldSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateRawPoint__cordl_bool0(
-        &mut self,
-        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        withCompression: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("CreateRawPoint", (x, y, withCompression))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECCurve = __cordl_object
+            .invoke("CloneCurve", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateCacheSafeLookupTable(
+        &mut self,
+        points: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        >,
+        off: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECLookupTable,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECLookupTable = __cordl_object
+            .invoke("CreateCacheSafeLookupTable", (points, off, len))?;
         Ok(__cordl_ret)
     }
     pub fn CreateRawPoint_Il2CppArray__cordl_bool1(
@@ -84,31 +81,19 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve {
             .invoke("CreateRawPoint", (x, y, zs, withCompression))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateCacheSafeLookupTable(
+    pub fn CreateRawPoint__cordl_bool0(
         &mut self,
-        points: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-        >,
-        off: i32,
-        len: i32,
+        x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        withCompression: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECLookupTable,
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECLookupTable = __cordl_object
-            .invoke("CreateCacheSafeLookupTable", (points, off, len))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("CreateRawPoint", (x, y, withCompression))?;
         Ok(__cordl_ret)
     }
     pub fn FromBigInteger(
@@ -124,6 +109,13 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve {
             .invoke("FromBigInteger", (x))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn RandomFieldElement(
         &mut self,
         r: *mut crate::Org::BouncyCastle::Security::SecureRandom,
@@ -135,17 +127,6 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement = __cordl_object
             .invoke("RandomFieldElement", (r))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SupportsCoordinateSystem(
-        &mut self,
-        coord: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("SupportsCoordinateSystem", (coord))?;
         Ok(__cordl_ret)
     }
     pub fn RandomFieldElementMult(
@@ -161,16 +142,32 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve {
             .invoke("RandomFieldElementMult", (r))?;
         Ok(__cordl_ret)
     }
-    pub fn CloneCurve(
+    pub fn SupportsCoordinateSystem(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-    > {
+        coord: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECCurve = __cordl_object
-            .invoke("CloneCurve", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("SupportsCoordinateSystem", (coord))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_FieldSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_FieldSize", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Infinity(
@@ -185,12 +182,15 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve {
             .invoke("get_Infinity", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_Q(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_Q", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecP192R1Curve")]
@@ -245,32 +245,6 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve_SecP192R1Loo
     feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecP192R1Curve+SecP192R1LookupTable"
 )]
 impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve_SecP192R1LookupTable {
-    pub fn LookupVar(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("LookupVar", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        outer: *mut crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve,
-        table: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (outer, table, _cordl_size))?;
-        Ok(__cordl_ret)
-    }
     pub fn CreatePoint(
         &mut self,
         x: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
@@ -298,23 +272,49 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve_SecP192R1Lo
             .invoke("Lookup", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Size(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn LookupVar(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Size", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("LookupVar", (index))?;
         Ok(__cordl_ret)
     }
     pub fn New(
         outer: *mut crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve,
         table: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
         _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (outer, table, _cordl_size))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        outer: *mut crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve,
+        table: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (outer, table, _cordl_size))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Size(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Size", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(

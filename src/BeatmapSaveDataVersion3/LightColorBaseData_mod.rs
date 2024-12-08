@@ -31,6 +31,32 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::LightColorBaseData {
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+LightColorBaseData")]
 impl crate::BeatmapSaveDataVersion3::LightColorBaseData {
+    pub fn New(
+        beat: f32,
+        transitionType: crate::BeatmapSaveDataVersion3::TransitionType,
+        colorType: crate::BeatmapSaveDataCommon::EnvironmentColorType,
+        brightness: f32,
+        strobeFrequency: i32,
+        strobeBrightness: f32,
+        strobeFade: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    beat,
+                    transitionType,
+                    colorType,
+                    brightness,
+                    strobeFrequency,
+                    strobeBrightness,
+                    strobeFade,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         beat: f32,
@@ -66,6 +92,39 @@ impl crate::BeatmapSaveDataVersion3::LightColorBaseData {
         let __cordl_ret: f32 = __cordl_object.invoke("get_beat", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_brightness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_brightness", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_colorType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::BeatmapSaveDataCommon::EnvironmentColorType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::BeatmapSaveDataCommon::EnvironmentColorType = __cordl_object
+            .invoke("get_colorType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_strobeBeatFrequency(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_strobeBeatFrequency", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_strobeBrightness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_strobeBrightness", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_strobeFade(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -82,65 +141,6 @@ impl crate::BeatmapSaveDataVersion3::LightColorBaseData {
         let __cordl_ret: crate::BeatmapSaveDataVersion3::TransitionType = __cordl_object
             .invoke("get_transitionType", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_strobeBrightness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_strobeBrightness", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_brightness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_brightness", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_strobeBeatFrequency(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_strobeBeatFrequency", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_colorType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::BeatmapSaveDataCommon::EnvironmentColorType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::BeatmapSaveDataCommon::EnvironmentColorType = __cordl_object
-            .invoke("get_colorType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        beat: f32,
-        transitionType: crate::BeatmapSaveDataVersion3::TransitionType,
-        colorType: crate::BeatmapSaveDataCommon::EnvironmentColorType,
-        brightness: f32,
-        strobeFrequency: i32,
-        strobeBrightness: f32,
-        strobeFade: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    beat,
-                    transitionType,
-                    colorType,
-                    brightness,
-                    strobeFrequency,
-                    strobeBrightness,
-                    strobeFade,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+LightColorBaseData")]

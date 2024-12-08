@@ -24,6 +24,20 @@ for crate::UnityEngine::Pool::PooledObject_1<T> {
 }
 #[cfg(feature = "UnityEngine+Pool+PooledObject_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Pool::PooledObject_1<T> {
+    pub fn System_IDisposable_Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IDisposable.Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         value: T,
@@ -37,20 +51,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Pool::PooledObject_1<T>
             self,
             ".ctor",
             (value, pool),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IDisposable_Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IDisposable.Dispose",
-            (),
         )?;
         Ok(__cordl_ret)
     }

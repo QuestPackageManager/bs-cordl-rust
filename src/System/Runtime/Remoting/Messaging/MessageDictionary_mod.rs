@@ -40,6 +40,63 @@ for crate::System::Runtime::Remoting::Messaging::MessageDictionary_DictionaryEnu
     feature = "System+Runtime+Remoting+Messaging+MessageDictionary+DictionaryEnumerator"
 )]
 impl crate::System::Runtime::Remoting::Messaging::MessageDictionary_DictionaryEnumerator {
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        methodDictionary: *mut crate::System::Runtime::Remoting::Messaging::MessageDictionary,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (methodDictionary))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        methodDictionary: *mut crate::System::Runtime::Remoting::Messaging::MessageDictionary,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (methodDictionary))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Current(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_Current", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Entry(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Collections::DictionaryEntry> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Collections::DictionaryEntry = __cordl_object
+            .invoke("get_Entry", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Key(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
@@ -59,63 +116,6 @@ impl crate::System::Runtime::Remoting::Messaging::MessageDictionary_DictionaryEn
         let __cordl_ret: *mut crate::System::Object = __cordl_object
             .invoke("get_Value", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn get_Current(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_Current", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        methodDictionary: *mut crate::System::Runtime::Remoting::Messaging::MessageDictionary,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (methodDictionary))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Entry(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Collections::DictionaryEntry> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Collections::DictionaryEntry = __cordl_object
-            .invoke("get_Entry", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        methodDictionary: *mut crate::System::Runtime::Remoting::Messaging::MessageDictionary,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (methodDictionary))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -166,61 +166,26 @@ impl crate::System::Runtime::Remoting::Messaging::MessageDictionary {
         feature = "System+Runtime+Remoting+Messaging+MessageDictionary+DictionaryEnumerator"
     )]
     pub type DictionaryEnumerator = crate::System::Runtime::Remoting::Messaging::MessageDictionary_DictionaryEnumerator;
-    pub fn SetMethodProperty(
+    pub fn Add(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut crate::System::Object,
         value: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetMethodProperty", (key, value))?;
+            .invoke("Add", (key, value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Values(
+    pub fn AllocInternalProperties(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IDictionary> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
-            .invoke("get_Values", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Remove(
-        &mut self,
-        key: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Remove", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Contains(
-        &mut self,
-        key: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Contains", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsSynchronized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsSynchronized", ())?;
+        let __cordl_ret: *mut crate::System::Collections::IDictionary = __cordl_object
+            .invoke("AllocInternalProperties", ())?;
         Ok(__cordl_ret)
     }
     pub fn Clear(
@@ -233,55 +198,14 @@ impl crate::System::Runtime::Remoting::Messaging::MessageDictionary {
             .invoke("Clear", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetMethodProperty(
-        &mut self,
-        key: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetMethodProperty", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item(
+    pub fn Contains(
         &mut self,
         key: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("get_Item", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Keys(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
-            .invoke("get_Keys", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HasUserData(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasUserData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Item(
-        &mut self,
-        key: *mut crate::System::Object,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Item", (key, value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("Contains", (key))?;
         Ok(__cordl_ret)
     }
     pub fn CopyTo(
@@ -308,24 +232,32 @@ impl crate::System::Runtime::Remoting::Messaging::MessageDictionary {
             .invoke("GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
-    pub fn AllocInternalProperties(
+    pub fn GetInternalProperties(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IDictionary> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::IDictionary = __cordl_object
-            .invoke("AllocInternalProperties", ())?;
+            .invoke("GetInternalProperties", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_InternalDictionary(
+    pub fn GetMethodProperty(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IDictionary> {
+        key: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IDictionary = __cordl_object
-            .invoke("get_InternalDictionary", ())?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("GetMethodProperty", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HasUserData(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("HasUserData", ())?;
         Ok(__cordl_ret)
     }
     pub fn IsOverridenKey(
@@ -338,6 +270,38 @@ impl crate::System::Runtime::Remoting::Messaging::MessageDictionary {
         let __cordl_ret: bool = __cordl_object.invoke("IsOverridenKey", (key))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        message: *mut crate::System::Runtime::Remoting::Messaging::IMethodMessage,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (message))?;
+        Ok(__cordl_object)
+    }
+    pub fn Remove(
+        &mut self,
+        key: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Remove", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetMethodProperty(
+        &mut self,
+        key: *mut crate::System::String,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetMethodProperty", (key, value))?;
+        Ok(__cordl_ret)
+    }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
@@ -346,16 +310,6 @@ impl crate::System::Runtime::Remoting::Messaging::MessageDictionary {
         );
         let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
             .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetInternalProperties(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IDictionary> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IDictionary = __cordl_object
-            .invoke("GetInternalProperties", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -369,6 +323,23 @@ impl crate::System::Runtime::Remoting::Messaging::MessageDictionary {
             .invoke(".ctor", (message))?;
         Ok(__cordl_ret)
     }
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_InternalDictionary(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IDictionary> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IDictionary = __cordl_object
+            .invoke("get_InternalDictionary", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_IsFixedSize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -376,16 +347,39 @@ impl crate::System::Runtime::Remoting::Messaging::MessageDictionary {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsFixedSize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Add(
-        &mut self,
-        key: *mut crate::System::Object,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (key, value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsReadOnly", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsSynchronized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsSynchronized", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(
+        &mut self,
+        key: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("get_Item", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Keys(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
+            .invoke("get_Keys", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SyncRoot(
@@ -398,6 +392,28 @@ impl crate::System::Runtime::Remoting::Messaging::MessageDictionary {
             .invoke("get_SyncRoot", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_Values(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
+            .invoke("get_Values", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Item(
+        &mut self,
+        key: *mut crate::System::Object,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Item", (key, value))?;
+        Ok(__cordl_ret)
+    }
     pub fn set_MethodKeys(
         &mut self,
         value: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
@@ -408,22 +424,6 @@ impl crate::System::Runtime::Remoting::Messaging::MessageDictionary {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_MethodKeys", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsReadOnly", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        message: *mut crate::System::Runtime::Remoting::Messaging::IMethodMessage,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (message))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+MessageDictionary")]

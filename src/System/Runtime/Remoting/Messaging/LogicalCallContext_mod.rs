@@ -41,6 +41,67 @@ impl crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
     pub const s_CorrelationMgrSlotName: &'static str = "System.Diagnostics.Trace.CorrelationManagerSlot";
     #[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
     pub type Reader = crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader;
+    pub fn Clone(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("Clone", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetData(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("GetData", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetObjectData(
+        &mut self,
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetObjectData", (info, context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Merge(
+        &mut self,
+        lc: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Merge", (lc))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_SerializationInfo_StreamingContext1(
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (info, context))?;
+        Ok(__cordl_object)
+    }
     pub fn SetData(
         &mut self,
         name: *mut crate::System::String,
@@ -75,53 +136,6 @@ impl crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
             .invoke(".ctor", (info, context))?;
         Ok(__cordl_ret)
     }
-    pub fn Clone(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("Clone", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_HasInfo(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasInfo", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Merge(
-        &mut self,
-        lc: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Merge", (lc))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_HasUserData(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasUserData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetObjectData(
-        &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetObjectData", (info, context))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Datastore(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::Hashtable> {
@@ -132,33 +146,19 @@ impl crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
             .invoke("get_Datastore", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetData(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    pub fn get_HasInfo(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetData", (name))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasInfo", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_SerializationInfo_StreamingContext1(
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object)
+    pub fn get_HasUserData(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasUserData", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext")]
@@ -196,14 +196,15 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
 impl crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
-    pub fn _ctor(
+    pub fn Clone(
         &mut self,
-        ctx: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
+    > {
+        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (ctx),
+            "Clone",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -218,11 +219,14 @@ impl crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn _ctor(
+        &mut self,
+        ctx: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_IsNull",
-            (),
+            ".ctor",
+            (ctx),
         )?;
         Ok(__cordl_ret)
     }
@@ -234,14 +238,10 @@ impl crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Clone(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
-    > {
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Clone",
+            "get_IsNull",
             (),
         )?;
         Ok(__cordl_ret)

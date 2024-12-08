@@ -29,17 +29,14 @@ for crate::Org::BouncyCastle::Asn1::Mozilla::PublicKeyAndChallenge {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Mozilla+PublicKeyAndChallenge")]
 impl crate::Org::BouncyCastle::Asn1::Mozilla::PublicKeyAndChallenge {
-    pub fn get_SubjectPublicKeyInfo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo = __cordl_object
-            .invoke("get_SubjectPublicKeyInfo", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object)
     }
     pub fn ToAsn1Object(
         &mut self,
@@ -49,6 +46,17 @@ impl crate::Org::BouncyCastle::Asn1::Mozilla::PublicKeyAndChallenge {
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
             .invoke("ToAsn1Object", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (seq))?;
         Ok(__cordl_ret)
     }
     pub fn get_Challenge(
@@ -63,25 +71,17 @@ impl crate::Org::BouncyCastle::Asn1::Mozilla::PublicKeyAndChallenge {
             .invoke("get_Challenge", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn get_SubjectPublicKeyInfo(
         &mut self,
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seq))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo = __cordl_object
+            .invoke("get_SubjectPublicKeyInfo", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Mozilla+PublicKeyAndChallenge")]

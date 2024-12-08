@@ -39,36 +39,49 @@ impl std::ops::DerefMut for GameNoteController {
 impl GameNoteController {
     #[cfg(feature = "GameNoteController+Pool")]
     pub type Pool = crate::GlobalNamespace::GameNoteController_Pool;
-    pub fn add_cubeNoteControllerDidInitEvent(
+    pub fn Awake(
         &mut self,
-        value: *mut crate::System::Action_1<*mut GameNoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_cubeNoteControllerDidInitEvent", (value))?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Pause(
+    pub fn HandleBigWasCutBySaber(
         &mut self,
-        pause: bool,
+        saber: *mut Saber,
+        cutPoint: crate::UnityEngine::Vector3,
+        orientation: crate::UnityEngine::Quaternion,
+        cutDirVec: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Pause", (pause))?;
+            .invoke(
+                "HandleBigWasCutBySaber",
+                (saber, cutPoint, orientation, cutDirVec),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn HandleCut(
         &mut self,
+        saber: *mut Saber,
+        cutPoint: crate::UnityEngine::Vector3,
+        orientation: crate::UnityEngine::Quaternion,
+        cutDirVec: crate::UnityEngine::Vector3,
+        allowBadCut: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke(
+                "HandleCut",
+                (saber, cutPoint, orientation, cutDirVec, allowBadCut),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn HandleSmallWasCutBySaber(
@@ -86,37 +99,6 @@ impl GameNoteController {
                 "HandleSmallWasCutBySaber",
                 (saber, cutPoint, orientation, cutDirVec),
             )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_cubeNoteControllerDidInitEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut GameNoteController>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_cubeNoteControllerDidInitEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn HiddenStateDidChange(
@@ -166,42 +148,21 @@ impl GameNoteController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HandleCut(
-        &mut self,
-        saber: *mut Saber,
-        cutPoint: crate::UnityEngine::Vector3,
-        orientation: crate::UnityEngine::Quaternion,
-        cutDirVec: crate::UnityEngine::Vector3,
-        allowBadCut: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleCut",
-                (saber, cutPoint, orientation, cutDirVec, allowBadCut),
-            )?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn NoteDidStartJump(
+    pub fn NoteDidPassMissedMarker(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NoteDidStartJump", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_gameplayType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteData_GameplayType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::NoteData_GameplayType = __cordl_object
-            .invoke("get_gameplayType", ())?;
+            .invoke("NoteDidPassMissedMarker", ())?;
         Ok(__cordl_ret)
     }
     pub fn NoteDidStartDissolving(
@@ -214,21 +175,66 @@ impl GameNoteController {
             .invoke("NoteDidStartDissolving", ())?;
         Ok(__cordl_ret)
     }
-    pub fn HandleBigWasCutBySaber(
+    pub fn NoteDidStartJump(
         &mut self,
-        saber: *mut Saber,
-        cutPoint: crate::UnityEngine::Vector3,
-        orientation: crate::UnityEngine::Quaternion,
-        cutDirVec: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleBigWasCutBySaber",
-                (saber, cutPoint, orientation, cutDirVec),
-            )?;
+            .invoke("NoteDidStartJump", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Pause(
+        &mut self,
+        pause: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Pause", (pause))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_cubeNoteControllerDidInitEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut GameNoteController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_cubeNoteControllerDidInitEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_gameplayType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteData_GameplayType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::NoteData_GameplayType = __cordl_object
+            .invoke("get_gameplayType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_noteMovement(
@@ -241,16 +247,6 @@ impl GameNoteController {
             .invoke("get_noteMovement", ())?;
         Ok(__cordl_ret)
     }
-    pub fn NoteDidPassMissedMarker(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NoteDidPassMissedMarker", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_noteVisualModifierType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<NoteVisualModifierType> {
@@ -261,12 +257,16 @@ impl GameNoteController {
             .invoke("get_noteVisualModifierType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn remove_cubeNoteControllerDidInitEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut GameNoteController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_cubeNoteControllerDidInitEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "GameNoteController")]
@@ -304,6 +304,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameNoteController_Pool {
 }
 #[cfg(feature = "GameNoteController+Pool")]
 impl crate::GlobalNamespace::GameNoteController_Pool {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -313,13 +320,6 @@ impl crate::GlobalNamespace::GameNoteController_Pool {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "GameNoteController+Pool")]

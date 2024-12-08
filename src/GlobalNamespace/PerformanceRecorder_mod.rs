@@ -33,15 +33,14 @@ impl std::ops::DerefMut for PerformanceRecorder {
 }
 #[cfg(feature = "PerformanceRecorder")]
 impl PerformanceRecorder {
-    pub fn set_sceneSetupData(
+    pub fn Awake(
         &mut self,
-        value: *mut GameplayCoreSceneSetupData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_sceneSetupData", (value))?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
     pub fn GenerateReports(
@@ -54,25 +53,21 @@ impl PerformanceRecorder {
             .invoke("GenerateReports", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn set_graphicSettingsHandler(
+    pub fn OnDisable(
         &mut self,
-        value: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_graphicSettingsHandler", (value))?;
+            .invoke("OnDisable", ())?;
         Ok(__cordl_ret)
     }
     pub fn OnEnable(
@@ -95,25 +90,14 @@ impl PerformanceRecorder {
             .invoke("Update", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_gamePause(
+    pub fn _ctor(
         &mut self,
-        value: *mut IGamePause,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_gamePause", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_playerSpecificSettings(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerSpecificSettings> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut PlayerSpecificSettings = __cordl_object
-            .invoke("get_playerSpecificSettings", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_gamePause(&mut self) -> quest_hook::libil2cpp::Result<*mut IGamePause> {
@@ -123,15 +107,14 @@ impl PerformanceRecorder {
         let __cordl_ret: *mut IGamePause = __cordl_object.invoke("get_gamePause", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_mainSettingsHandler(
+    pub fn get_gameplayModifiers(
         &mut self,
-        value: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<GameplayModifierMask> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_mainSettingsHandler", (value))?;
+        let __cordl_ret: GameplayModifierMask = __cordl_object
+            .invoke("get_gameplayModifiers", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_graphicSettingsHandler(
@@ -146,15 +129,47 @@ impl PerformanceRecorder {
             .invoke("get_graphicSettingsHandler", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_playerSpecificSettings(
+    pub fn get_mainSettingsHandler(
         &mut self,
-        value: *mut PlayerSpecificSettings,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::BeatSaber::GameSettings::MainSettingsHandler = __cordl_object
+            .invoke("get_mainSettingsHandler", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_playerSpecificSettings(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut PlayerSpecificSettings> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut PlayerSpecificSettings = __cordl_object
+            .invoke("get_playerSpecificSettings", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_sceneSetupData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut GameplayCoreSceneSetupData> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut GameplayCoreSceneSetupData = __cordl_object
+            .invoke("get_sceneSetupData", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_gamePause(
+        &mut self,
+        value: *mut IGamePause,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_playerSpecificSettings", (value))?;
+            .invoke("set_gamePause", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_gameplayModifiers(
@@ -168,64 +183,49 @@ impl PerformanceRecorder {
             .invoke("set_gameplayModifiers", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_mainSettingsHandler(
+    pub fn set_graphicSettingsHandler(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::BeatSaber::GameSettings::MainSettingsHandler = __cordl_object
-            .invoke("get_mainSettingsHandler", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Awake(
-        &mut self,
+        value: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
+            .invoke("set_graphicSettingsHandler", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_sceneSetupData(
+    pub fn set_mainSettingsHandler(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayCoreSceneSetupData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut GameplayCoreSceneSetupData = __cordl_object
-            .invoke("get_sceneSetupData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_gameplayModifiers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<GameplayModifierMask> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: GameplayModifierMask = __cordl_object
-            .invoke("get_gameplayModifiers", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDisable(
-        &mut self,
+        value: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDisable", ())?;
+            .invoke("set_mainSettingsHandler", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_playerSpecificSettings(
+        &mut self,
+        value: *mut PlayerSpecificSettings,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_playerSpecificSettings", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_sceneSetupData(
+        &mut self,
+        value: *mut GameplayCoreSceneSetupData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_sceneSetupData", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PerformanceRecorder")]

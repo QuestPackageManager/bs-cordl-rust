@@ -31,6 +31,24 @@ impl std::ops::DerefMut for crate::System::Text::RegularExpressions::RegexTree {
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexTree")]
 impl crate::System::Text::RegularExpressions::RegexTree {
+    pub fn New(
+        root: *mut crate::System::Text::RegularExpressions::RegexNode,
+        caps: *mut crate::System::Collections::Hashtable,
+        capNumList: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        capTop: i32,
+        capNames: *mut crate::System::Collections::Hashtable,
+        capsList: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        options: crate::System::Text::RegularExpressions::RegexOptions,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (root, caps, capNumList, capTop, capNames, capsList, options),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         root: *mut crate::System::Text::RegularExpressions::RegexNode,
@@ -50,24 +68,6 @@ impl crate::System::Text::RegularExpressions::RegexTree {
                 (root, caps, capNumList, capTop, capNames, capsList, options),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        root: *mut crate::System::Text::RegularExpressions::RegexNode,
-        caps: *mut crate::System::Collections::Hashtable,
-        capNumList: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        capTop: i32,
-        capNames: *mut crate::System::Collections::Hashtable,
-        capsList: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        options: crate::System::Text::RegularExpressions::RegexOptions,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (root, caps, capNumList, capTop, capNames, capsList, options),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexTree")]

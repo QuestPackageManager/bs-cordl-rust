@@ -24,6 +24,11 @@ impl std::ops::DerefMut for crate::Mono::ISystemDependencyProvider {
 }
 #[cfg(feature = "Mono+ISystemDependencyProvider")]
 impl crate::Mono::ISystemDependencyProvider {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_CertificateProvider(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::ISystemCertificateProvider> {
@@ -33,11 +38,6 @@ impl crate::Mono::ISystemDependencyProvider {
         let __cordl_ret: *mut crate::Mono::ISystemCertificateProvider = __cordl_object
             .invoke("get_CertificateProvider", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "Mono+ISystemDependencyProvider")]

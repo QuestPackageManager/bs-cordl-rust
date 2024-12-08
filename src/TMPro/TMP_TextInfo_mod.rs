@@ -43,46 +43,24 @@ impl std::ops::DerefMut for crate::TMPro::TMP_TextInfo {
 }
 #[cfg(feature = "TMPro+TMP_TextInfo")]
 impl crate::TMPro::TMP_TextInfo {
-    pub fn _ctor_0(
+    pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("Clear", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_1(
-        &mut self,
-        characterCount: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (characterCount))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_TMP_Text2(
-        &mut self,
-        textComponent: *mut crate::TMPro::TMP_Text,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (textComponent))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearLineInfo(
+    pub fn ClearAllData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearLineInfo", ())?;
+            .invoke("ClearAllData", ())?;
         Ok(__cordl_ret)
     }
     pub fn ClearAllMeshInfo(
@@ -95,25 +73,35 @@ impl crate::TMPro::TMP_TextInfo {
             .invoke("ClearAllMeshInfo", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ResetVertexLayout(
+    pub fn ClearLineInfo(
         &mut self,
-        isVolumetric: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetVertexLayout", (isVolumetric))?;
+            .invoke("ClearLineInfo", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Clear(
+    pub fn ClearMeshInfo(
+        &mut self,
+        updateMesh: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearMeshInfo", (updateMesh))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearPageInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
+            .invoke("ClearPageInfo", ())?;
         Ok(__cordl_ret)
     }
     pub fn ClearUnusedVertices(
@@ -129,26 +117,6 @@ impl crate::TMPro::TMP_TextInfo {
             .invoke("ClearUnusedVertices", (materials))?;
         Ok(__cordl_ret)
     }
-    pub fn ClearAllData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearAllData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearPageInfo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearPageInfo", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CopyMeshInfoVertexData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -162,41 +130,71 @@ impl crate::TMPro::TMP_TextInfo {
         > = __cordl_object.invoke("CopyMeshInfoVertexData", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ClearMeshInfo(
-        &mut self,
-        updateMesh: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearMeshInfo", (updateMesh))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_1(
-        characterCount: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New_TMP_Text2(
+        textComponent: *mut crate::TMPro::TMP_Text,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (textComponent))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_1(characterCount: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (characterCount))?;
         Ok(__cordl_object)
     }
-    pub fn New_TMP_Text2(
+    pub fn ResetVertexLayout(
+        &mut self,
+        isVolumetric: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ResetVertexLayout", (isVolumetric))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_TMP_Text2(
+        &mut self,
         textComponent: *mut crate::TMPro::TMP_Text,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (textComponent))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (textComponent))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_1(
+        &mut self,
+        characterCount: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (characterCount))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "TMPro+TMP_TextInfo")]

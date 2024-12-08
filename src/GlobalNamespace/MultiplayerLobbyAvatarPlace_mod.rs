@@ -26,6 +26,13 @@ impl std::ops::DerefMut for MultiplayerLobbyAvatarPlace {
 impl MultiplayerLobbyAvatarPlace {
     #[cfg(feature = "MultiplayerLobbyAvatarPlace+Pool")]
     pub type Pool = crate::GlobalNamespace::MultiplayerLobbyAvatarPlace_Pool;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn SetPositionAndRotation(
         &mut self,
         worldPos: crate::UnityEngine::Vector3,
@@ -47,13 +54,6 @@ impl MultiplayerLobbyAvatarPlace {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MultiplayerLobbyAvatarPlace")]
@@ -92,6 +92,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLobbyAvatarPlace_
 }
 #[cfg(feature = "MultiplayerLobbyAvatarPlace+Pool")]
 impl crate::GlobalNamespace::MultiplayerLobbyAvatarPlace_Pool {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -101,13 +108,6 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarPlace_Pool {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MultiplayerLobbyAvatarPlace+Pool")]

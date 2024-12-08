@@ -27,6 +27,26 @@ for crate::Org::BouncyCastle::Crypto::Parameters::DesEdeParameters {
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DesEdeParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::DesEdeParameters {
     pub const DesEdeKeyLength: i32 = 24i32;
+    pub fn New_Il2CppArray0(
+        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (key))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_i32_1(
+        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        keyOff: i32,
+        keyLen: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (key, keyOff, keyLen))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_Il2CppArray0(
         &mut self,
         key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -50,26 +70,6 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DesEdeParameters {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (key, keyOff, keyLen))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_Il2CppArray0(
-        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (key))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_i32_1(
-        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        keyOff: i32,
-        keyLen: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (key, keyOff, keyLen))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DesEdeParameters")]

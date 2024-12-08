@@ -25,34 +25,39 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::LambdaExpression {
 }
 #[cfg(feature = "System+Linq+Expressions+LambdaExpression")]
 impl crate::System::Linq::Expressions::LambdaExpression {
-    pub fn get_NameCore(
+    pub fn GetParameter(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::ParameterExpression,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_NameCore", ())?;
+        let __cordl_ret: *mut crate::System::Linq::Expressions::ParameterExpression = __cordl_object
+            .invoke("GetParameter", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn get_PublicType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_PublicType", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        body: *mut crate::System::Linq::Expressions::Expression,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (body))?;
+        Ok(__cordl_object)
     }
-    pub fn get_TypeCore(
+    pub fn System_Linq_Expressions_IParameterProvider_GetParameter(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::ParameterExpression,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_TypeCore", ())?;
+        let __cordl_ret: *mut crate::System::Linq::Expressions::ParameterExpression = __cordl_object
+            .invoke("System.Linq.Expressions.IParameterProvider.GetParameter", (index))?;
         Ok(__cordl_ret)
     }
     pub fn System_Linq_Expressions_IParameterProvider_get_ParameterCount(
@@ -68,30 +73,6 @@ impl crate::System::Linq::Expressions::LambdaExpression {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_Type", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TailCall(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_TailCall", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TailCallCore(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_TailCallCore", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         body: *mut crate::System::Linq::Expressions::Expression,
@@ -101,6 +82,38 @@ impl crate::System::Linq::Expressions::LambdaExpression {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (body))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Body(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::Expression,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
+            .invoke("get_Body", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Name", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NameCore(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_NameCore", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_NodeType(
@@ -122,16 +135,14 @@ impl crate::System::Linq::Expressions::LambdaExpression {
         let __cordl_ret: i32 = __cordl_object.invoke("get_ParameterCount", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Body(
+    pub fn get_PublicType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("get_Body", ())?;
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_PublicType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ReturnType(
@@ -144,50 +155,39 @@ impl crate::System::Linq::Expressions::LambdaExpression {
             .invoke("get_ReturnType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetParameter(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
-    > {
+    pub fn get_TailCall(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::ParameterExpression = __cordl_object
-            .invoke("GetParameter", (index))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_TailCall", ())?;
         Ok(__cordl_ret)
     }
-    pub fn System_Linq_Expressions_IParameterProvider_GetParameter(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
-    > {
+    pub fn get_TailCallCore(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::ParameterExpression = __cordl_object
-            .invoke("System.Linq.Expressions.IParameterProvider.GetParameter", (index))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_TailCallCore", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Name(
+    pub fn get_Type(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Name", ())?;
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_Type", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        body: *mut crate::System::Linq::Expressions::Expression,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (body))?;
-        Ok(__cordl_object)
+    pub fn get_TypeCore(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_TypeCore", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+LambdaExpression")]

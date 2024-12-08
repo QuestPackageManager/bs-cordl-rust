@@ -31,15 +31,18 @@ impl std::ops::DerefMut for crate::System::Xml::DomNameTable {
 }
 #[cfg(feature = "System+Xml+DomNameTable")]
 impl crate::System::Xml::DomNameTable {
-    pub fn _ctor(
+    pub fn AddName(
         &mut self,
-        document: *mut crate::System::Xml::XmlDocument,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        prefix: *mut crate::System::String,
+        localName: *mut crate::System::String,
+        ns: *mut crate::System::String,
+        schemaInfo: *mut crate::System::Xml::Schema::IXmlSchemaInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlName> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (document))?;
+        let __cordl_ret: *mut crate::System::Xml::XmlName = __cordl_object
+            .invoke("AddName", (prefix, localName, ns, schemaInfo))?;
         Ok(__cordl_ret)
     }
     pub fn GetName(
@@ -56,20 +59,6 @@ impl crate::System::Xml::DomNameTable {
             .invoke("GetName", (prefix, localName, ns, schemaInfo))?;
         Ok(__cordl_ret)
     }
-    pub fn AddName(
-        &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
-        schemaInfo: *mut crate::System::Xml::Schema::IXmlSchemaInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlName> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::XmlName = __cordl_object
-            .invoke("AddName", (prefix, localName, ns, schemaInfo))?;
-        Ok(__cordl_ret)
-    }
     pub fn Grow(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -82,12 +71,23 @@ impl crate::System::Xml::DomNameTable {
     }
     pub fn New(
         document: *mut crate::System::Xml::XmlDocument,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (document))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        document: *mut crate::System::Xml::XmlDocument,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (document))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+DomNameTable")]

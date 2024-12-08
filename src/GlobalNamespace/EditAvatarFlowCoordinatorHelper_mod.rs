@@ -34,24 +34,26 @@ impl std::ops::DerefMut for EditAvatarFlowCoordinatorHelper {
 }
 #[cfg(feature = "EditAvatarFlowCoordinatorHelper")]
 impl EditAvatarFlowCoordinatorHelper {
+    #[cfg(feature = "EditAvatarFlowCoordinatorHelper+FinishAction")]
+    pub type FinishAction = crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction;
     #[cfg(feature = "EditAvatarFlowCoordinatorHelper+_Initialize_d__13")]
     pub type _Initialize_d__13 = crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper__Initialize_d__13;
     #[cfg(feature = "EditAvatarFlowCoordinatorHelper+_Show_d__12")]
     pub type _Show_d__12 = crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper__Show_d__12;
-    #[cfg(feature = "EditAvatarFlowCoordinatorHelper+FinishAction")]
-    pub type FinishAction = crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction;
-    pub fn add_didFinishEvent(
+    pub fn HandleAvatarEditorFlowCoordinatorDidFinish(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::HMUI::FlowCoordinator,
-            crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
-        >,
+        flowCoordinator: *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+        avatarSystem: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        finishAction: crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didFinishEvent", (value))?;
+            .invoke(
+                "HandleAvatarEditorFlowCoordinatorDidFinish",
+                (flowCoordinator, avatarSystem, finishAction),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn HandleAvatarSystemSelectionFlowCoordinatorDidFinish(
@@ -69,18 +71,45 @@ impl EditAvatarFlowCoordinatorHelper {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didFinishEvent(
+    pub fn Initialize(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::HMUI::FlowCoordinator,
-            crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
-        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didFinishEvent", (value))?;
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn PresentAvatarEditorFlowCoordinator(
+        &mut self,
+        flowCoordinator: *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+        editMode: crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
+        parentFlowCoordinator: *mut crate::HMUI::FlowCoordinator,
+        immediately: bool,
+        replaceTopViewController: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "PresentAvatarEditorFlowCoordinator",
+                (
+                    flowCoordinator,
+                    editMode,
+                    parentFlowCoordinator,
+                    immediately,
+                    replaceTopViewController,
+                ),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn Show(
@@ -115,6 +144,20 @@ impl EditAvatarFlowCoordinatorHelper {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn add_didFinishEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::HMUI::FlowCoordinator,
+            crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didFinishEvent", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn get__hasOnlyOneAvatarSystem(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -125,62 +168,19 @@ impl EditAvatarFlowCoordinatorHelper {
             .invoke("get__hasOnlyOneAvatarSystem", ())?;
         Ok(__cordl_ret)
     }
-    pub fn PresentAvatarEditorFlowCoordinator(
+    pub fn remove_didFinishEvent(
         &mut self,
-        flowCoordinator: *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-        editMode: crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
-        parentFlowCoordinator: *mut crate::HMUI::FlowCoordinator,
-        immediately: bool,
-        replaceTopViewController: bool,
+        value: *mut crate::System::Action_2<
+            *mut crate::HMUI::FlowCoordinator,
+            crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "PresentAvatarEditorFlowCoordinator",
-                (
-                    flowCoordinator,
-                    editMode,
-                    parentFlowCoordinator,
-                    immediately,
-                    replaceTopViewController,
-                ),
-            )?;
+            .invoke("remove_didFinishEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn HandleAvatarEditorFlowCoordinatorDidFinish(
-        &mut self,
-        flowCoordinator: *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-        avatarSystem: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-        finishAction: crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleAvatarEditorFlowCoordinatorDidFinish",
-                (flowCoordinator, avatarSystem, finishAction),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Initialize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Initialize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "EditAvatarFlowCoordinatorHelper")]

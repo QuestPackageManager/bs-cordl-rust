@@ -35,6 +35,45 @@ impl crate::Org::BouncyCastle::Bcpg::SecretSubkeyPacket {
             .invoke("Encode", (bcpgOut))?;
         Ok(__cordl_ret)
     }
+    pub fn New_BcpgInputStream0(
+        bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bcpgIn))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_PublicKeyPacket_SymmetricKeyAlgorithmTag_S2k_Il2CppArray_Il2CppArray1(
+        pubKeyPacket: *mut crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
+        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        s2k: *mut crate::Org::BouncyCastle::Bcpg::S2k,
+        iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        secKeyData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (pubKeyPacket, encAlgorithm, s2k, iv, secKeyData))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_PublicKeyPacket_SymmetricKeyAlgorithmTag_i32_S2k_Il2CppArray_Il2CppArray2(
+        pubKeyPacket: *mut crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
+        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        s2kUsage: i32,
+        s2k: *mut crate::Org::BouncyCastle::Bcpg::S2k,
+        iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        secKeyData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (pubKeyPacket, encAlgorithm, s2kUsage, s2k, iv, secKeyData),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_BcpgInputStream0(
         &mut self,
         bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
@@ -79,45 +118,6 @@ impl crate::Org::BouncyCastle::Bcpg::SecretSubkeyPacket {
                 (pubKeyPacket, encAlgorithm, s2kUsage, s2k, iv, secKeyData),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New_BcpgInputStream0(
-        bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bcpgIn))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_PublicKeyPacket_SymmetricKeyAlgorithmTag_S2k_Il2CppArray_Il2CppArray1(
-        pubKeyPacket: *mut crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
-        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        s2k: *mut crate::Org::BouncyCastle::Bcpg::S2k,
-        iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        secKeyData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (pubKeyPacket, encAlgorithm, s2k, iv, secKeyData))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_PublicKeyPacket_SymmetricKeyAlgorithmTag_i32_S2k_Il2CppArray_Il2CppArray2(
-        pubKeyPacket: *mut crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
-        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        s2kUsage: i32,
-        s2k: *mut crate::Org::BouncyCastle::Bcpg::S2k,
-        iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        secKeyData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (pubKeyPacket, encAlgorithm, s2kUsage, s2k, iv, secKeyData),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+SecretSubkeyPacket")]

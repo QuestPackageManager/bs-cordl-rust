@@ -24,15 +24,40 @@ impl std::ops::DerefMut for IMultiplayerRichPresenceData {
 }
 #[cfg(feature = "IMultiplayerRichPresenceData")]
 impl IMultiplayerRichPresenceData {
-    pub fn set_multiplayerSecret(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_atMaxPartySize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_multiplayerSecret", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_atMaxPartySize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_canInvite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_canInvite", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isJoinable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isJoinable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_multiplayerSecret(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_multiplayerSecret", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_atMaxPartySize(
@@ -46,13 +71,6 @@ impl IMultiplayerRichPresenceData {
             .invoke("set_atMaxPartySize", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_canInvite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_canInvite", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn set_canInvite(
         &mut self,
         value: bool,
@@ -64,34 +82,16 @@ impl IMultiplayerRichPresenceData {
             .invoke("set_canInvite", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_multiplayerSecret(
+    pub fn set_multiplayerSecret(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_multiplayerSecret", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_multiplayerSecret", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_isJoinable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isJoinable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_atMaxPartySize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_atMaxPartySize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IMultiplayerRichPresenceData")]

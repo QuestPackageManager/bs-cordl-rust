@@ -83,298 +83,45 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ScrollView {
 }
 #[cfg(feature = "UnityEngine+UIElements+ScrollView")]
 impl crate::UnityEngine::UIElements::ScrollView {
-    #[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
-    pub type TouchScrollBehavior = crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior;
-    #[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlFactory")]
-    pub type UxmlFactory = crate::UnityEngine::UIElements::ScrollView_UxmlFactory;
-    #[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::ScrollView_UxmlTraits;
-    #[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
-    pub type TouchScrollingResult = crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult;
     #[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
     pub type NestedInteractionKind = crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind;
-    pub fn get_mouseWheelScrollSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_mouseWheelScrollSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerCancel(
+    #[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
+    pub type TouchScrollingResult = crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult;
+    #[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::ScrollView_UxmlTraits;
+    #[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlFactory")]
+    pub type UxmlFactory = crate::UnityEngine::UIElements::ScrollView_UxmlFactory;
+    #[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
+    pub type TouchScrollBehavior = crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior;
+    pub fn AdjustScrollers(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerCancelEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerCancel", (evt))?;
+            .invoke("AdjustScrollers", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_needsVertical(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_needsVertical", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ScrollTo(
+    pub fn ApplyScrollInertia(
         &mut self,
-        child: *mut crate::UnityEngine::UIElements::VisualElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ScrollTo", (child))?;
+            .invoke("ApplyScrollInertia", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_contentViewport(
+    pub fn ApplyTouchScrolling(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
-            .invoke("get_contentViewport", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_verticalPageSize(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_verticalPageSize", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReleaseScrolling(
-        &mut self,
-        pointerId: i32,
-        target: *mut crate::UnityEngine::UIElements::IEventHandler,
+        newScrollOffset: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
-            .invoke("ReleaseScrolling", (pointerId, target))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_horizontalScrollerVisibility(
-        &mut self,
-        value: crate::UnityEngine::UIElements::ScrollerVisibility,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_horizontalScrollerVisibility", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_hasInertia(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hasInertia", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_scrollDecelerationRate(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_scrollDecelerationRate", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateVerticalSliderPageSize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateVerticalSliderPageSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_contentContainer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
-            .invoke("get_contentContainer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SpringBack(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SpringBack", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnRootPointerUp(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerUpEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnRootPointerUp", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_verticalScrollerVisibility(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::ScrollerVisibility,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::ScrollerVisibility = __cordl_object
-            .invoke("get_verticalScrollerVisibility", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ResetLayoutPass(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetLayoutPass", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerCapture(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerCaptureEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerCapture", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_scrollDecelerationRate(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_scrollDecelerationRate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_needsHorizontal(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_needsHorizontal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnScrollersGeometryChanged(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnScrollersGeometryChanged", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnScrollWheel(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::WheelEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnScrollWheel", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetScrollViewMode(
-        &mut self,
-        mode: crate::UnityEngine::UIElements::ScrollViewMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetScrollViewMode", (mode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnAttachToPanel(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::AttachToPanelEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnAttachToPanel", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateScrollers(
-        &mut self,
-        displayHorizontal: bool,
-        displayVertical: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateScrollers", (displayHorizontal, displayVertical))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_elasticity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_elasticity", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_mode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::ScrollViewMode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::ScrollViewMode = __cordl_object
-            .invoke("get_mode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerDown(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerDownEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerDown", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isVerticalScrollDisplayed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_isVerticalScrollDisplayed", ())?;
+            .invoke("ApplyTouchScrolling", (newScrollOffset))?;
         Ok(__cordl_ret)
     }
     pub fn ComputeInitialSpringBackVelocity(
@@ -387,123 +134,27 @@ impl crate::UnityEngine::UIElements::ScrollView {
             .invoke("ComputeInitialSpringBackVelocity", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_verticalScrollerVisibility(
+    pub fn ComputeTouchScrolling(
         &mut self,
-        value: crate::UnityEngine::UIElements::ScrollerVisibility,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        position: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_verticalScrollerVisibility", (value))?;
+        let __cordl_ret: crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult = __cordl_object
+            .invoke("ComputeTouchScrolling", (position))?;
         Ok(__cordl_ret)
     }
-    pub fn set_horizontalPageSize(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_horizontalPageSize", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_nestedInteractionKind(
-        &mut self,
-        value: crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_nestedInteractionKind", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnHorizontalScrollDragElementChanged(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnHorizontalScrollDragElementChanged", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_touchScrollBehavior(
-        &mut self,
-        value: crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_touchScrollBehavior", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerMove(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerMoveEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerMove", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AdjustScrollers(
+    pub fn ExecuteElasticSpringAnimation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AdjustScrollers", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerUp(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerUpEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerUp", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnVerticalScrollDragElementChanged(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnVerticalScrollDragElementChanged", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_scrollOffset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("get_scrollOffset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerCaptureOut(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerCaptureOutEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerCaptureOut", (evt))?;
+            .invoke("ExecuteElasticSpringAnimation", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetDeltaDistance(
@@ -523,26 +174,24 @@ impl crate::UnityEngine::UIElements::ScrollView {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn set_showHorizontal(
+    pub fn GetXDeltaOffset(
         &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        child: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_showHorizontal", (value))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("GetXDeltaOffset", (child))?;
         Ok(__cordl_ret)
     }
-    pub fn set_scrollOffset(
+    pub fn GetYDeltaOffset(
         &mut self,
-        value: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        child: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_scrollOffset", (value))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("GetYDeltaOffset", (child))?;
         Ok(__cordl_ret)
     }
     pub fn InitTouchScrolling(
@@ -556,136 +205,31 @@ impl crate::UnityEngine::UIElements::ScrollView {
             .invoke("InitTouchScrolling", (position))?;
         Ok(__cordl_ret)
     }
-    pub fn OnRootCustomStyleResolved(
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_ScrollViewMode1(
+        scrollViewMode: crate::UnityEngine::UIElements::ScrollViewMode,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (scrollViewMode))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnAttachToPanel(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::CustomStyleResolvedEvent,
+        evt: *mut crate::UnityEngine::UIElements::AttachToPanelEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnRootCustomStyleResolved", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateContentViewTransform(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateContentViewTransform", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExecuteElasticSpringAnimation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExecuteElasticSpringAnimation", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetYDeltaOffset(
-        &mut self,
-        child: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetYDeltaOffset", (child))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetXDeltaOffset(
-        &mut self,
-        child: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetXDeltaOffset", (child))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_scrollableWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_scrollableWidth", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateHorizontalSliderPageSize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateHorizontalSliderPageSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ScheduleResetLayoutPass(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ScheduleResetLayoutPass", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isHorizontalScrollDisplayed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_isHorizontalScrollDisplayed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_nestedInteractionKind(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind = __cordl_object
-            .invoke("get_nestedInteractionKind", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnGeometryChanged(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnGeometryChanged", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_horizontalScroller(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Scroller> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Scroller = __cordl_object
-            .invoke("get_horizontalScroller", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ApplyTouchScrolling(
-        &mut self,
-        newScrollOffset: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("ApplyTouchScrolling", (newScrollOffset))?;
+            .invoke("OnAttachToPanel", (evt))?;
         Ok(__cordl_ret)
     }
     pub fn OnDetachFromPanel(
@@ -699,42 +243,157 @@ impl crate::UnityEngine::UIElements::ScrollView {
             .invoke("OnDetachFromPanel", (evt))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_0(
+    pub fn OnGeometryChanged(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnGeometryChanged", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnHorizontalScrollDragElementChanged(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnHorizontalScrollDragElementChanged", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerCancel(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::PointerCancelEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerCancel", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerCapture(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::PointerCaptureEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerCapture", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerCaptureOut(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::PointerCaptureOutEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerCaptureOut", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerDown(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::PointerDownEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerDown", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerMove(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::PointerMoveEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerMove", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerUp(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::PointerUpEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerUp", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnRootCustomStyleResolved(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::CustomStyleResolvedEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnRootCustomStyleResolved", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnRootPointerUp(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::PointerUpEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnRootPointerUp", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnScrollWheel(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::WheelEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnScrollWheel", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnScrollersGeometryChanged(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnScrollersGeometryChanged", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnVerticalScrollDragElementChanged(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnVerticalScrollDragElementChanged", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PostPointerUpAnimation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_ScrollViewMode1(
-        &mut self,
-        scrollViewMode: crate::UnityEngine::UIElements::ScrollViewMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (scrollViewMode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_scrollableHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_scrollableHeight", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateElasticBehaviour(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateElasticBehaviour", ())?;
+            .invoke("PostPointerUpAnimation", ())?;
         Ok(__cordl_ret)
     }
     pub fn ReadSingleLineHeight(
@@ -747,51 +406,120 @@ impl crate::UnityEngine::UIElements::ScrollView {
             .invoke("ReadSingleLineHeight", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_elasticity(
+    pub fn ReleaseScrolling(
         &mut self,
-        value: f32,
+        pointerId: i32,
+        target: *mut crate::UnityEngine::UIElements::IEventHandler,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("ReleaseScrolling", (pointerId, target))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ResetLayoutPass(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_elasticity", (value))?;
+            .invoke("ResetLayoutPass", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ComputeTouchScrolling(
+    pub fn ScheduleResetLayoutPass(
         &mut self,
-        position: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult = __cordl_object
-            .invoke("ComputeTouchScrolling", (position))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_mouseWheelScrollSize(
-        &mut self,
-        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_mouseWheelScrollSize", (value))?;
+            .invoke("ScheduleResetLayoutPass", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_touchScrollBehavior(
+    pub fn ScrollTo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior,
-    > {
+        child: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior = __cordl_object
-            .invoke("get_touchScrollBehavior", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ScrollTo", (child))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetScrollViewMode(
+        &mut self,
+        mode: crate::UnityEngine::UIElements::ScrollViewMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetScrollViewMode", (mode))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SpringBack(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SpringBack", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateContentViewTransform(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateContentViewTransform", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateElasticBehaviour(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateElasticBehaviour", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateHorizontalSliderPageSize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateHorizontalSliderPageSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateScrollers(
+        &mut self,
+        displayHorizontal: bool,
+        displayVertical: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateScrollers", (displayHorizontal, displayVertical))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateVerticalSliderPageSize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateVerticalSliderPageSize", ())?;
         Ok(__cordl_ret)
     }
     pub fn __ctor_b__126_0(
@@ -816,25 +544,73 @@ impl crate::UnityEngine::UIElements::ScrollView {
             .invoke("<.ctor>b__126_1", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ApplyScrollInertia(
+    pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ApplyScrollInertia", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_elasticAnimationIntervalMs(
+    pub fn _ctor_ScrollViewMode1(
         &mut self,
-        value: i64,
+        scrollViewMode: crate::UnityEngine::UIElements::ScrollViewMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_elasticAnimationIntervalMs", (value))?;
+            .invoke(".ctor", (scrollViewMode))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_contentContainer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
+            .invoke("get_contentContainer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_contentViewport(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
+            .invoke("get_contentViewport", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_elasticity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_elasticity", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hasInertia(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_hasInertia", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_horizontalScroller(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Scroller> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::Scroller = __cordl_object
+            .invoke("get_horizontalScroller", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_horizontalScrollerVisibility(
@@ -849,6 +625,112 @@ impl crate::UnityEngine::UIElements::ScrollView {
             .invoke("get_horizontalScrollerVisibility", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_isHorizontalScrollDisplayed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_isHorizontalScrollDisplayed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isVerticalScrollDisplayed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_isVerticalScrollDisplayed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_mode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::ScrollViewMode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::ScrollViewMode = __cordl_object
+            .invoke("get_mode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_mouseWheelScrollSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_mouseWheelScrollSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_needsHorizontal(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_needsHorizontal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_needsVertical(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_needsVertical", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_nestedInteractionKind(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind = __cordl_object
+            .invoke("get_nestedInteractionKind", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_scrollDecelerationRate(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_scrollDecelerationRate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_scrollOffset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("get_scrollOffset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_scrollableHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_scrollableHeight", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_scrollableWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_scrollableWidth", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_touchScrollBehavior(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior = __cordl_object
+            .invoke("get_touchScrollBehavior", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_verticalScroller(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Scroller> {
@@ -859,25 +741,60 @@ impl crate::UnityEngine::UIElements::ScrollView {
             .invoke("get_verticalScroller", ())?;
         Ok(__cordl_ret)
     }
-    pub fn PostPointerUpAnimation(
+    pub fn get_verticalScrollerVisibility(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::ScrollerVisibility,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PostPointerUpAnimation", ())?;
+        let __cordl_ret: crate::UnityEngine::UIElements::ScrollerVisibility = __cordl_object
+            .invoke("get_verticalScrollerVisibility", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_showVertical(
+    pub fn set_elasticAnimationIntervalMs(
         &mut self,
-        value: bool,
+        value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_showVertical", (value))?;
+            .invoke("set_elasticAnimationIntervalMs", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_elasticity(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_elasticity", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_horizontalPageSize(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_horizontalPageSize", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_horizontalScrollerVisibility(
+        &mut self,
+        value: crate::UnityEngine::UIElements::ScrollerVisibility,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_horizontalScrollerVisibility", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_mode(
@@ -891,21 +808,104 @@ impl crate::UnityEngine::UIElements::ScrollView {
             .invoke("set_mode", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_mouseWheelScrollSize(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_mouseWheelScrollSize", (value))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_ScrollViewMode1(
-        scrollViewMode: crate::UnityEngine::UIElements::ScrollViewMode,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (scrollViewMode))?;
-        Ok(__cordl_object)
+    pub fn set_nestedInteractionKind(
+        &mut self,
+        value: crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_nestedInteractionKind", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_scrollDecelerationRate(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_scrollDecelerationRate", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_scrollOffset(
+        &mut self,
+        value: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_scrollOffset", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_showHorizontal(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_showHorizontal", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_showVertical(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_showVertical", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_touchScrollBehavior(
+        &mut self,
+        value: crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_touchScrollBehavior", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_verticalPageSize(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_verticalPageSize", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_verticalScrollerVisibility(
+        &mut self,
+        value: crate::UnityEngine::UIElements::ScrollerVisibility,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_verticalScrollerVisibility", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ScrollView")]
@@ -977,6 +977,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ScrollView_UxmlFacto
 }
 #[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlFactory")]
 impl crate::UnityEngine::UIElements::ScrollView_UxmlFactory {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -986,13 +993,6 @@ impl crate::UnityEngine::UIElements::ScrollView_UxmlFactory {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlFactory")]
@@ -1067,6 +1067,13 @@ impl crate::UnityEngine::UIElements::ScrollView_UxmlTraits {
             .invoke("Init", (ve, bag, cc))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1076,13 +1083,6 @@ impl crate::UnityEngine::UIElements::ScrollView_UxmlTraits {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlTraits")]

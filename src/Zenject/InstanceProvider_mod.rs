@@ -27,6 +27,27 @@ impl std::ops::DerefMut for crate::Zenject::InstanceProvider {
 }
 #[cfg(feature = "Zenject+InstanceProvider")]
 impl crate::Zenject::InstanceProvider {
+    pub fn GetAllInstancesWithInjectSplit(
+        &mut self,
+        context: *mut crate::Zenject::InjectContext,
+        args: *mut crate::System::Collections::Generic::List_1<
+            crate::Zenject::TypeValuePair,
+        >,
+        injectAction: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Action>,
+        buffer: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::System::Object,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "GetAllInstancesWithInjectSplit",
+                (context, args, injectAction, buffer),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn GetInstanceType(
         &mut self,
         context: *mut crate::Zenject::InjectContext,
@@ -36,6 +57,27 @@ impl crate::Zenject::InstanceProvider {
         );
         let __cordl_ret: *mut crate::System::Type = __cordl_object
             .invoke("GetInstanceType", (context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        instanceType: *mut crate::System::Type,
+        instance: *mut crate::System::Object,
+        container: *mut crate::Zenject::DiContainer,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (instanceType, instance, container))?;
+        Ok(__cordl_object)
+    }
+    pub fn _GetAllInstancesWithInjectSplit_b__9_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<GetAllInstancesWithInjectSplit>b__9_0", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -58,37 +100,6 @@ impl crate::Zenject::InstanceProvider {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsCached", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetAllInstancesWithInjectSplit(
-        &mut self,
-        context: *mut crate::Zenject::InjectContext,
-        args: *mut crate::System::Collections::Generic::List_1<
-            crate::Zenject::TypeValuePair,
-        >,
-        injectAction: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Action>,
-        buffer: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Object,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "GetAllInstancesWithInjectSplit",
-                (context, args, injectAction, buffer),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _GetAllInstancesWithInjectSplit_b__9_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<GetAllInstancesWithInjectSplit>b__9_0", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_TypeVariesBasedOnMemberType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -98,17 +109,6 @@ impl crate::Zenject::InstanceProvider {
         let __cordl_ret: bool = __cordl_object
             .invoke("get_TypeVariesBasedOnMemberType", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        instanceType: *mut crate::System::Type,
-        instance: *mut crate::System::Object,
-        container: *mut crate::Zenject::DiContainer,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (instanceType, instance, container))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+InstanceProvider")]

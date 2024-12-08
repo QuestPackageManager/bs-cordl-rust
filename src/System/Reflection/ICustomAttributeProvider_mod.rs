@@ -24,20 +24,6 @@ impl std::ops::DerefMut for crate::System::Reflection::ICustomAttributeProvider 
 }
 #[cfg(feature = "System+Reflection+ICustomAttributeProvider")]
 impl crate::System::Reflection::ICustomAttributeProvider {
-    pub fn GetCustomAttributes__cordl_bool0(
-        &mut self,
-        inherit: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
-        > = __cordl_object.invoke("GetCustomAttributes", (inherit))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetCustomAttributes_Type__cordl_bool1(
         &mut self,
         attributeType: *mut crate::System::Type,
@@ -51,6 +37,20 @@ impl crate::System::Reflection::ICustomAttributeProvider {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Object,
         > = __cordl_object.invoke("GetCustomAttributes", (attributeType, inherit))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetCustomAttributes__cordl_bool0(
+        &mut self,
+        inherit: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Object,
+        > = __cordl_object.invoke("GetCustomAttributes", (inherit))?;
         Ok(__cordl_ret)
     }
     pub fn IsDefined(

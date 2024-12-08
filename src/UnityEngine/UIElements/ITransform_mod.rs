@@ -24,6 +24,11 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ITransform {
 }
 #[cfg(feature = "UnityEngine+UIElements+ITransform")]
 impl crate::UnityEngine::UIElements::ITransform {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_position(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
@@ -54,11 +59,6 @@ impl crate::UnityEngine::UIElements::ITransform {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_position", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ITransform")]

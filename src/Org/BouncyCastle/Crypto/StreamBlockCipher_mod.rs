@@ -26,23 +26,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::StreamBlockCipher 
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+StreamBlockCipher")]
 impl crate::Org::BouncyCastle::Crypto::StreamBlockCipher {
-    pub fn get_AlgorithmName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_AlgorithmName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReturnByte(&mut self, input: u8) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u8 = __cordl_object.invoke("ReturnByte", (input))?;
-        Ok(__cordl_ret)
-    }
     pub fn Init(
         &mut self,
         forEncryption: bool,
@@ -54,6 +37,15 @@ impl crate::Org::BouncyCastle::Crypto::StreamBlockCipher {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (forEncryption, parameters))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (cipher))?;
+        Ok(__cordl_object)
     }
     pub fn ProcessBytes(
         &mut self,
@@ -70,6 +62,23 @@ impl crate::Org::BouncyCastle::Crypto::StreamBlockCipher {
             .invoke("ProcessBytes", (input, inOff, length, output, outOff))?;
         Ok(__cordl_ret)
     }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReturnByte(&mut self, input: u8) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u8 = __cordl_object.invoke("ReturnByte", (input))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
@@ -81,24 +90,15 @@ impl crate::Org::BouncyCastle::Crypto::StreamBlockCipher {
             .invoke(".ctor", (cipher))?;
         Ok(__cordl_ret)
     }
-    pub fn Reset(
+    pub fn get_AlgorithmName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_AlgorithmName", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (cipher))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+StreamBlockCipher")]

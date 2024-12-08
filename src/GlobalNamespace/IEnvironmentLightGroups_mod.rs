@@ -23,19 +23,6 @@ impl std::ops::DerefMut for IEnvironmentLightGroups {
 }
 #[cfg(feature = "IEnvironmentLightGroups")]
 impl IEnvironmentLightGroups {
-    pub fn get_lightGroups(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<*mut ILightGroup>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut ILightGroup,
-        > = __cordl_object.invoke("get_lightGroups", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetDataForGroup(
         &mut self,
         groupId: i32,
@@ -51,6 +38,19 @@ impl IEnvironmentLightGroups {
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_lightGroups(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<*mut ILightGroup>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut ILightGroup,
+        > = __cordl_object.invoke("get_lightGroups", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "IEnvironmentLightGroups")]

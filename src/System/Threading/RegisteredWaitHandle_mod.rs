@@ -33,6 +33,33 @@ impl std::ops::DerefMut for crate::System::Threading::RegisteredWaitHandle {
 }
 #[cfg(feature = "System+Threading+RegisteredWaitHandle")]
 impl crate::System::Threading::RegisteredWaitHandle {
+    pub fn DoCallBack(
+        &mut self,
+        timedOut: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DoCallBack", (timedOut))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        waitObject: *mut crate::System::Threading::WaitHandle,
+        callback: *mut crate::System::Threading::WaitOrTimerCallback,
+        state: *mut crate::System::Object,
+        timeout: crate::System::TimeSpan,
+        executeOnlyOnce: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (waitObject, callback, state, timeout, executeOnlyOnce),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn Unregister(
         &mut self,
         waitObject: *mut crate::System::Threading::WaitHandle,
@@ -43,15 +70,15 @@ impl crate::System::Threading::RegisteredWaitHandle {
         let __cordl_ret: bool = __cordl_object.invoke("Unregister", (waitObject))?;
         Ok(__cordl_ret)
     }
-    pub fn DoCallBack(
+    pub fn Wait(
         &mut self,
-        timedOut: *mut crate::System::Object,
+        state: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DoCallBack", (timedOut))?;
+            .invoke("Wait", (state))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -68,33 +95,6 @@ impl crate::System::Threading::RegisteredWaitHandle {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (waitObject, callback, state, timeout, executeOnlyOnce))?;
         Ok(__cordl_ret)
-    }
-    pub fn Wait(
-        &mut self,
-        state: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Wait", (state))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        waitObject: *mut crate::System::Threading::WaitHandle,
-        callback: *mut crate::System::Threading::WaitOrTimerCallback,
-        state: *mut crate::System::Object,
-        timeout: crate::System::TimeSpan,
-        executeOnlyOnce: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (waitObject, callback, state, timeout, executeOnlyOnce),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Threading+RegisteredWaitHandle")]

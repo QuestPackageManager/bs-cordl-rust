@@ -23,100 +23,6 @@ for crate::UnityEngine::Playables::PlayableGraph {
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableGraph")]
 impl crate::UnityEngine::Playables::PlayableGraph {
-    pub fn GetResolver(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::IExposedPropertyTable> {
-        let __cordl_ret: *mut crate::UnityEngine::IExposedPropertyTable = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetResolver",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SynchronizeEvaluation(
-        &mut self,
-        playable: crate::UnityEngine::Playables::PlayableGraph,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SynchronizeEvaluation",
-            (playable),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreatePlayableHandle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CreatePlayableHandle",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsValid",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRootPlayableInternal(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetRootPlayableInternal",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConnectInternal(
-        &mut self,
-        source: crate::UnityEngine::Playables::PlayableHandle,
-        sourceOutputPort: i32,
-        destination: crate::UnityEngine::Playables::PlayableHandle,
-        destinationInputPort: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ConnectInternal",
-            (source, sourceOutputPort, destination, destinationInputPort),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateScriptOutputInternal(
-        &mut self,
-        name: *mut crate::System::String,
-        handle: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Playables::PlayableOutputHandle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CreateScriptOutputInternal",
-            (name, handle),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRootPlayableCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetRootPlayableCount",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsPlaying(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsPlaying",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Connect<U, V>(
         &mut self,
         source: U,
@@ -137,40 +43,41 @@ impl crate::UnityEngine::Playables::PlayableGraph {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetFrameRate(
+    pub fn ConnectInternal(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::FrameRate> {
-        let __cordl_ret: crate::UnityEngine::Playables::FrameRate = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetFrameRate",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetRootPlayable(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
-        let __cordl_ret: crate::UnityEngine::Playables::Playable = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetRootPlayable",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsMatchFrameRateEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        source: crate::UnityEngine::Playables::PlayableHandle,
+        sourceOutputPort: i32,
+        destination: crate::UnityEngine::Playables::PlayableHandle,
+        destinationInputPort: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "IsMatchFrameRateEnabled",
+            "ConnectInternal",
+            (source, sourceOutputPort, destination, destinationInputPort),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreatePlayableHandle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CreatePlayableHandle",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetPlayableCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn CreateScriptOutputInternal(
+        &mut self,
+        name: *mut crate::System::String,
+        handle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableOutputHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetPlayableCount",
-            (),
+            "CreateScriptOutputInternal",
+            (name, handle),
         )?;
         Ok(__cordl_ret)
     }
@@ -192,6 +99,99 @@ impl crate::UnityEngine::Playables::PlayableGraph {
             self,
             "Evaluate",
             (deltaTime),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetFrameRate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::FrameRate> {
+        let __cordl_ret: crate::UnityEngine::Playables::FrameRate = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetFrameRate",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPlayableCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetPlayableCount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetResolver(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::IExposedPropertyTable> {
+        let __cordl_ret: *mut crate::UnityEngine::IExposedPropertyTable = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetResolver",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetRootPlayable(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
+        let __cordl_ret: crate::UnityEngine::Playables::Playable = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetRootPlayable",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetRootPlayableCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetRootPlayableCount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetRootPlayableInternal(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetRootPlayableInternal",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsMatchFrameRateEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsMatchFrameRateEnabled",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsPlaying(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsPlaying",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsValid",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SynchronizeEvaluation(
+        &mut self,
+        playable: crate::UnityEngine::Playables::PlayableGraph,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SynchronizeEvaluation",
+            (playable),
         )?;
         Ok(__cordl_ret)
     }

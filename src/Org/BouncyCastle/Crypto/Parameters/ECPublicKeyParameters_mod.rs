@@ -28,11 +28,14 @@ for crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ECPublicKeyParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters {
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn Equals_ECPublicKeyParameters1(
+        &mut self,
+        other: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret)
     }
     pub fn Equals_Object0(
@@ -45,27 +48,54 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_ECPublicKeyParameters1(
-        &mut self,
-        other: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_ECPoint_ECDomainParameters0(
-        &mut self,
+    pub fn New_ECPoint_DerObjectIdentifier1(
+        q: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        publicKeyParamSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (q, publicKeyParamSet))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_ECPoint_ECDomainParameters0(
         q: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
         parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (q, parameters))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (q, parameters))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_ECPoint_DerObjectIdentifier3(
+        algorithm: *mut crate::System::String,
+        q: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        publicKeyParamSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, q, publicKeyParamSet))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_ECPoint_ECDomainParameters2(
+        algorithm: *mut crate::System::String,
+        q: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, q, parameters))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_ECPoint_DerObjectIdentifier1(
         &mut self,
@@ -79,9 +109,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters {
             .invoke(".ctor", (q, publicKeyParamSet))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_ECPoint_ECDomainParameters2(
+    pub fn _ctor_ECPoint_ECDomainParameters0(
         &mut self,
-        algorithm: *mut crate::System::String,
         q: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
         parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -89,7 +118,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (algorithm, q, parameters))?;
+            .invoke(".ctor", (q, parameters))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_String_ECPoint_DerObjectIdentifier3(
@@ -105,6 +134,19 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters {
             .invoke(".ctor", (algorithm, q, publicKeyParamSet))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_String_ECPoint_ECDomainParameters2(
+        &mut self,
+        algorithm: *mut crate::System::String,
+        q: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (algorithm, q, parameters))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Q(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -116,48 +158,6 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
             .invoke("get_Q", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_ECPoint_ECDomainParameters0(
-        q: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-        parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (q, parameters))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_ECPoint_DerObjectIdentifier1(
-        q: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-        publicKeyParamSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (q, publicKeyParamSet))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_ECPoint_ECDomainParameters2(
-        algorithm: *mut crate::System::String,
-        q: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-        parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, q, parameters))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_ECPoint_DerObjectIdentifier3(
-        algorithm: *mut crate::System::String,
-        q: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-        publicKeyParamSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, q, publicKeyParamSet))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ECPublicKeyParameters")]

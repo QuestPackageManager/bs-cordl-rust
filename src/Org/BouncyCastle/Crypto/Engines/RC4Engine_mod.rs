@@ -28,12 +28,24 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Engines::RC4Engine
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+RC4Engine")]
 impl crate::Org::BouncyCastle::Crypto::Engines::RC4Engine {
-    pub fn ReturnByte(&mut self, input: u8) -> quest_hook::libil2cpp::Result<u8> {
+    pub fn Init(
+        &mut self,
+        forEncryption: bool,
+        parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: u8 = __cordl_object.invoke("ReturnByte", (input))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (forEncryption, parameters))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn ProcessBytes(
         &mut self,
@@ -50,26 +62,21 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RC4Engine {
             .invoke("ProcessBytes", (input, inOff, length, output, outOff))?;
         Ok(__cordl_ret)
     }
-    pub fn Init(
+    pub fn Reset(
         &mut self,
-        forEncryption: bool,
-        parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (forEncryption, parameters))?;
+            .invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn ReturnByte(&mut self, input: u8) -> quest_hook::libil2cpp::Result<u8> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: u8 = __cordl_object.invoke("ReturnByte", (input))?;
         Ok(__cordl_ret)
     }
     pub fn SetKey(
@@ -83,14 +90,14 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RC4Engine {
             .invoke("SetKey", (keyBytes))?;
         Ok(__cordl_ret)
     }
-    pub fn Reset(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_AlgorithmName(
@@ -102,13 +109,6 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RC4Engine {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_AlgorithmName", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+RC4Engine")]

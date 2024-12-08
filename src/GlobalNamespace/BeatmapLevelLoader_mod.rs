@@ -33,22 +33,40 @@ impl std::ops::DerefMut for BeatmapLevelLoader {
 }
 #[cfg(feature = "BeatmapLevelLoader")]
 impl BeatmapLevelLoader {
-    #[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate")]
-    pub type LevelDownloadingUpdate = crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate;
-    #[cfg(feature = "BeatmapLevelLoader+_CheckBeatmapLevelDataExistsAsync_d__14")]
-    pub type _CheckBeatmapLevelDataExistsAsync_d__14 = crate::GlobalNamespace::BeatmapLevelLoader__CheckBeatmapLevelDataExistsAsync_d__14;
-    #[cfg(feature = "BeatmapLevelLoader+_LoadBeatmapLevelDataAsync_d__13")]
-    pub type _LoadBeatmapLevelDataAsync_d__13 = crate::GlobalNamespace::BeatmapLevelLoader__LoadBeatmapLevelDataAsync_d__13;
-    #[cfg(feature = "BeatmapLevelLoader+InitData")]
-    pub type InitData = crate::GlobalNamespace::BeatmapLevelLoader_InitData;
     #[cfg(feature = "BeatmapLevelLoader+_DownloadAssetBundleAndGetPath_d__19")]
     pub type _DownloadAssetBundleAndGetPath_d__19 = crate::GlobalNamespace::BeatmapLevelLoader__DownloadAssetBundleAndGetPath_d__19;
+    #[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate")]
+    pub type LevelDownloadingUpdate = crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate;
+    #[cfg(feature = "BeatmapLevelLoader+_LoadBeatmapLevelDataAsync_d__13")]
+    pub type _LoadBeatmapLevelDataAsync_d__13 = crate::GlobalNamespace::BeatmapLevelLoader__LoadBeatmapLevelDataAsync_d__13;
+    #[cfg(feature = "BeatmapLevelLoader+_CheckBeatmapLevelDataExistsAsync_d__14")]
+    pub type _CheckBeatmapLevelDataExistsAsync_d__14 = crate::GlobalNamespace::BeatmapLevelLoader__CheckBeatmapLevelDataExistsAsync_d__14;
+    #[cfg(feature = "BeatmapLevelLoader+_LoadBeatmapLevelDataFromAssetBundle_d__18")]
+    pub type _LoadBeatmapLevelDataFromAssetBundle_d__18 = crate::GlobalNamespace::BeatmapLevelLoader__LoadBeatmapLevelDataFromAssetBundle_d__18;
     #[cfg(
         feature = "BeatmapLevelLoader+_CheckBeatmapLevelDataFromAssetBundleExistsAsync_d__16"
     )]
     pub type _CheckBeatmapLevelDataFromAssetBundleExistsAsync_d__16 = crate::GlobalNamespace::BeatmapLevelLoader__CheckBeatmapLevelDataFromAssetBundleExistsAsync_d__16;
-    #[cfg(feature = "BeatmapLevelLoader+_LoadBeatmapLevelDataFromAssetBundle_d__18")]
-    pub type _LoadBeatmapLevelDataFromAssetBundle_d__18 = crate::GlobalNamespace::BeatmapLevelLoader__LoadBeatmapLevelDataFromAssetBundle_d__18;
+    #[cfg(feature = "BeatmapLevelLoader+InitData")]
+    pub type InitData = crate::GlobalNamespace::BeatmapLevelLoader_InitData;
+    pub fn CheckBeatmapLevelDataExistsAsync(
+        &mut self,
+        beatmapLevel: *mut BeatmapLevel,
+        beatmapLevelDataVersion: BeatmapLevelDataVersion,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<bool>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<bool> = __cordl_object
+            .invoke(
+                "CheckBeatmapLevelDataExistsAsync",
+                (beatmapLevel, beatmapLevelDataVersion, cancellationToken),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn CheckBeatmapLevelDataFromAssetBundleExistsAsync(
         &mut self,
         beatmapLevel: *mut BeatmapLevel,
@@ -65,6 +83,80 @@ impl BeatmapLevelLoader {
                 "CheckBeatmapLevelDataFromAssetBundleExistsAsync",
                 (beatmapLevel, beatmapLevelDataVersion, token),
             )?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckBeatmapLevelDataFromCustomLevels(
+        &mut self,
+        beatmapLevel: *mut BeatmapLevel,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("CheckBeatmapLevelDataFromCustomLevels", (beatmapLevel))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearCache(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearCache", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DownloadAssetBundleAndGetPath(
+        &mut self,
+        beatmapLevel: *mut BeatmapLevel,
+        beatmapLevelDataVersion: BeatmapLevelDataVersion,
+        token: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<GetAssetBundleFileResult>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            GetAssetBundleFileResult,
+        > = __cordl_object
+            .invoke(
+                "DownloadAssetBundleAndGetPath",
+                (beatmapLevel, beatmapLevelDataVersion, token),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleItemWillBeRemovedFromCache(
+        &mut self,
+        beatmapLevelId: *mut crate::System::String,
+        beatmapLevel: *mut IBeatmapLevelData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleItemWillBeRemovedFromCache", (beatmapLevelId, beatmapLevel))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleLevelDataAssetDownloadUpdate(
+        &mut self,
+        update: LevelDataAssetDownloadUpdate,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleLevelDataAssetDownloadUpdate", (update))?;
         Ok(__cordl_ret)
     }
     pub fn LoadBeatmapLevelDataAsync(
@@ -107,25 +199,36 @@ impl BeatmapLevelLoader {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn DownloadAssetBundleAndGetPath(
+    pub fn LoadBeatmapLevelDataFromCustomLevels(
         &mut self,
         beatmapLevel: *mut BeatmapLevel,
-        beatmapLevelDataVersion: BeatmapLevelDataVersion,
-        token: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<GetAssetBundleFileResult>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut IBeatmapLevelData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            GetAssetBundleFileResult,
-        > = __cordl_object
-            .invoke(
-                "DownloadAssetBundleAndGetPath",
-                (beatmapLevel, beatmapLevelDataVersion, token),
-            )?;
+        let __cordl_ret: *mut IBeatmapLevelData = __cordl_object
+            .invoke("LoadBeatmapLevelDataFromCustomLevels", (beatmapLevel))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        beatmapLevelDataLoader: *mut BeatmapLevelDataLoader,
+        beatmapDataAssetFileModel: *mut IBeatmapDataAssetFileModel,
+        audioClipAsyncLoader: *mut AudioClipAsyncLoader,
+        initData: *mut crate::GlobalNamespace::BeatmapLevelLoader_InitData,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    beatmapLevelDataLoader,
+                    beatmapDataAssetFileModel,
+                    audioClipAsyncLoader,
+                    initData,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -149,35 +252,6 @@ impl BeatmapLevelLoader {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn CheckBeatmapLevelDataFromCustomLevels(
-        &mut self,
-        beatmapLevel: *mut BeatmapLevel,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CheckBeatmapLevelDataFromCustomLevels", (beatmapLevel))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLevelDataAssetDownloadUpdate(
-        &mut self,
-        update: LevelDataAssetDownloadUpdate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleLevelDataAssetDownloadUpdate", (update))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_cachedLoadRequestCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_cachedLoadRequestCount", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn add_levelDownloadingUpdateEvent(
         &mut self,
         value: *mut crate::System::Action_1<
@@ -191,34 +265,11 @@ impl BeatmapLevelLoader {
             .invoke("add_levelDownloadingUpdateEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn CheckBeatmapLevelDataExistsAsync(
-        &mut self,
-        beatmapLevel: *mut BeatmapLevel,
-        beatmapLevelDataVersion: BeatmapLevelDataVersion,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<bool>,
-    > {
+    pub fn get_cachedLoadRequestCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<bool> = __cordl_object
-            .invoke(
-                "CheckBeatmapLevelDataExistsAsync",
-                (beatmapLevel, beatmapLevelDataVersion, cancellationToken),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleItemWillBeRemovedFromCache(
-        &mut self,
-        beatmapLevelId: *mut crate::System::String,
-        beatmapLevel: *mut IBeatmapLevelData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleItemWillBeRemovedFromCache", (beatmapLevelId, beatmapLevel))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_cachedLoadRequestCount", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_levelDownloadingUpdateEvent(
@@ -233,57 +284,6 @@ impl BeatmapLevelLoader {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_levelDownloadingUpdateEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadBeatmapLevelDataFromCustomLevels(
-        &mut self,
-        beatmapLevel: *mut BeatmapLevel,
-    ) -> quest_hook::libil2cpp::Result<*mut IBeatmapLevelData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut IBeatmapLevelData = __cordl_object
-            .invoke("LoadBeatmapLevelDataFromCustomLevels", (beatmapLevel))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearCache(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearCache", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        beatmapLevelDataLoader: *mut BeatmapLevelDataLoader,
-        beatmapDataAssetFileModel: *mut IBeatmapDataAssetFileModel,
-        audioClipAsyncLoader: *mut AudioClipAsyncLoader,
-        initData: *mut crate::GlobalNamespace::BeatmapLevelLoader_InitData,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    beatmapLevelDataLoader,
-                    beatmapDataAssetFileModel,
-                    audioClipAsyncLoader,
-                    initData,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapLevelLoader")]
@@ -336,6 +336,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelLoader_InitData 
 }
 #[cfg(feature = "BeatmapLevelLoader+InitData")]
 impl crate::GlobalNamespace::BeatmapLevelLoader_InitData {
+    pub fn New(maxCachedBeatmapLevels: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (maxCachedBeatmapLevels))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         maxCachedBeatmapLevels: i32,
@@ -346,15 +353,6 @@ impl crate::GlobalNamespace::BeatmapLevelLoader_InitData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (maxCachedBeatmapLevels))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        maxCachedBeatmapLevels: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (maxCachedBeatmapLevels))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapLevelLoader+InitData")]

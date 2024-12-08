@@ -57,6 +57,32 @@ impl crate::System::Xml::Serialization::EnumMap {
             .invoke("GetXmlName", (typeName, enumValue))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        members: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Serialization::EnumMap_EnumMapMember,
+        >,
+        isFlags: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (members, isFlags))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        members: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Serialization::EnumMap_EnumMapMember,
+        >,
+        isFlags: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (members, isFlags))?;
+        Ok(__cordl_ret)
+    }
     pub fn get_EnumNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -87,20 +113,6 @@ impl crate::System::Xml::Serialization::EnumMap {
             .invoke("get_Values", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
-        &mut self,
-        members: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Serialization::EnumMap_EnumMapMember,
-        >,
-        isFlags: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (members, isFlags))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_XmlNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -113,18 +125,6 @@ impl crate::System::Xml::Serialization::EnumMap {
             *mut crate::System::String,
         > = __cordl_object.invoke("get_XmlNames", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        members: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Serialization::EnumMap_EnumMapMember,
-        >,
-        isFlags: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (members, isFlags))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Serialization+EnumMap")]
@@ -166,6 +166,17 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::EnumMap_EnumMapMe
 }
 #[cfg(feature = "System+Xml+Serialization+EnumMap+EnumMapMember")]
 impl crate::System::Xml::Serialization::EnumMap_EnumMapMember {
+    pub fn New(
+        xmlName: *mut crate::System::String,
+        enumName: *mut crate::System::String,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (xmlName, enumName, value))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         xmlName: *mut crate::System::String,
@@ -205,17 +216,6 @@ impl crate::System::Xml::Serialization::EnumMap_EnumMapMember {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_XmlName", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        xmlName: *mut crate::System::String,
-        enumName: *mut crate::System::String,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (xmlName, enumName, value))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Serialization+EnumMap+EnumMapMember")]

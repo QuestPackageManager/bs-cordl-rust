@@ -74,31 +74,6 @@ impl<
     TSerializable,
     TDeltaSerializable,
 > {
-    pub fn GetSyncStateForPlayer(
-        &mut self,
-        player: *mut IConnectedPlayer,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut MultiplayerSyncState_3<TStateTable, TType, TState>,
-    >
-    where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut MultiplayerSyncState_3<TStateTable, TType, TState> = __cordl_object
-            .invoke("GetSyncStateForPlayer", (player))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetSyncState(
         &mut self,
         i: i32,
@@ -124,7 +99,12 @@ impl<
             .invoke("GetSyncState", (i))?;
         Ok(__cordl_ret)
     }
-    pub fn get_syncTime(&mut self) -> quest_hook::libil2cpp::Result<i64>
+    pub fn GetSyncStateForPlayer(
+        &mut self,
+        player: *mut IConnectedPlayer,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut MultiplayerSyncState_3<TStateTable, TType, TState>,
+    >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -140,8 +120,14 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_syncTime", ())?;
+        let __cordl_ret: *mut MultiplayerSyncState_3<TStateTable, TType, TState> = __cordl_object
+            .invoke("GetSyncStateForPlayer", (player))?;
         Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
     }
     pub fn get_connectedPlayerCount(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -186,10 +172,24 @@ impl<
             .invoke("get_localState", ())?;
         Ok(__cordl_ret)
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
+    pub fn get_syncTime(&mut self) -> quest_hook::libil2cpp::Result<i64>
+    where
+        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_syncTime", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "IScoreSyncStateManager_5")]

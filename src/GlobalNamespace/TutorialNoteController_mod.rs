@@ -24,6 +24,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TutorialNoteController_Pool 
 }
 #[cfg(feature = "TutorialNoteController+Pool")]
 impl crate::GlobalNamespace::TutorialNoteController_Pool {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -33,13 +40,6 @@ impl crate::GlobalNamespace::TutorialNoteController_Pool {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "TutorialNoteController+Pool")]
@@ -84,44 +84,59 @@ impl std::ops::DerefMut for TutorialNoteController {
 impl TutorialNoteController {
     #[cfg(feature = "TutorialNoteController+Pool")]
     pub type Pool = crate::GlobalNamespace::TutorialNoteController_Pool;
-    pub fn NoteDidPassMissedMarker(
+    pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NoteDidPassMissedMarker", ())?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_noteMovement(
+    pub fn HandleBeforeNoteWasCutBySaber(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut NoteMovement> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut NoteMovement = __cordl_object
-            .invoke("get_noteMovement", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnDestroy(
-        &mut self,
+        saber: *mut Saber,
+        cutPoint: crate::UnityEngine::Vector3,
+        orientation: crate::UnityEngine::Quaternion,
+        cutDirVec: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
+            .invoke(
+                "HandleBeforeNoteWasCutBySaber",
+                (saber, cutPoint, orientation, cutDirVec),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn HandleCoreWasCutBySaber(
         &mut self,
+        saber: *mut Saber,
+        cutPoint: crate::UnityEngine::Vector3,
+        orientation: crate::UnityEngine::Quaternion,
+        cutDirVec: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke(
+                "HandleCoreWasCutBySaber",
+                (saber, cutPoint, orientation, cutDirVec),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn HiddenStateDidChange(
+        &mut self,
+        hide: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HiddenStateDidChange", (hide))?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -158,79 +173,31 @@ impl TutorialNoteController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_noteVisualModifierType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<NoteVisualModifierType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: NoteVisualModifierType = __cordl_object
-            .invoke("get_noteVisualModifierType", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn HandleCoreWasCutBySaber(
-        &mut self,
-        saber: *mut Saber,
-        cutPoint: crate::UnityEngine::Vector3,
-        orientation: crate::UnityEngine::Quaternion,
-        cutDirVec: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleCoreWasCutBySaber",
-                (saber, cutPoint, orientation, cutDirVec),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn HiddenStateDidChange(
-        &mut self,
-        hide: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HiddenStateDidChange", (hide))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleBeforeNoteWasCutBySaber(
-        &mut self,
-        saber: *mut Saber,
-        cutPoint: crate::UnityEngine::Vector3,
-        orientation: crate::UnityEngine::Quaternion,
-        cutDirVec: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleBeforeNoteWasCutBySaber",
-                (saber, cutPoint, orientation, cutDirVec),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_gameplayType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteData_GameplayType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::NoteData_GameplayType = __cordl_object
-            .invoke("get_gameplayType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Awake(
+    pub fn NoteDidPassMissedMarker(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
+            .invoke("NoteDidPassMissedMarker", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
         Ok(__cordl_ret)
     }
     pub fn Pause(
@@ -244,12 +211,45 @@ impl TutorialNoteController {
             .invoke("Pause", (pause))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_gameplayType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteData_GameplayType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::NoteData_GameplayType = __cordl_object
+            .invoke("get_gameplayType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noteMovement(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut NoteMovement> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut NoteMovement = __cordl_object
+            .invoke("get_noteMovement", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noteVisualModifierType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<NoteVisualModifierType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: NoteVisualModifierType = __cordl_object
+            .invoke("get_noteVisualModifierType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "TutorialNoteController")]

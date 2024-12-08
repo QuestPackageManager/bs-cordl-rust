@@ -26,35 +26,17 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::InteriorNode {
 }
 #[cfg(feature = "System+Xml+Schema+InteriorNode")]
 impl crate::System::Xml::Schema::InteriorNode {
-    pub fn get_LeftChild(
+    pub fn ExpandTree(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::SyntaxTreeNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::SyntaxTreeNode = __cordl_object
-            .invoke("get_LeftChild", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_LeftChild(
-        &mut self,
-        value: *mut crate::System::Xml::Schema::SyntaxTreeNode,
+        parent: *mut crate::System::Xml::Schema::InteriorNode,
+        symbols: *mut crate::System::Xml::Schema::SymbolsDictionary,
+        positions: *mut crate::System::Xml::Schema::Positions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_LeftChild", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_RightChild(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::SyntaxTreeNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::SyntaxTreeNode = __cordl_object
-            .invoke("get_RightChild", ())?;
+            .invoke("ExpandTree", (parent, symbols, positions))?;
         Ok(__cordl_ret)
     }
     pub fn ExpandTreeNoRecursive(
@@ -70,17 +52,52 @@ impl crate::System::Xml::Schema::InteriorNode {
             .invoke("ExpandTreeNoRecursive", (parent, symbols, positions))?;
         Ok(__cordl_ret)
     }
-    pub fn ExpandTree(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
         &mut self,
-        parent: *mut crate::System::Xml::Schema::InteriorNode,
-        symbols: *mut crate::System::Xml::Schema::SymbolsDictionary,
-        positions: *mut crate::System::Xml::Schema::Positions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExpandTree", (parent, symbols, positions))?;
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LeftChild(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::SyntaxTreeNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::SyntaxTreeNode = __cordl_object
+            .invoke("get_LeftChild", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_RightChild(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::SyntaxTreeNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::SyntaxTreeNode = __cordl_object
+            .invoke("get_RightChild", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_LeftChild(
+        &mut self,
+        value: *mut crate::System::Xml::Schema::SyntaxTreeNode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_LeftChild", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_RightChild(
@@ -93,23 +110,6 @@ impl crate::System::Xml::Schema::InteriorNode {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_RightChild", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+InteriorNode")]

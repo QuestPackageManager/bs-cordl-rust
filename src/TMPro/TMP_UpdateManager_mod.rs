@@ -40,17 +40,6 @@ impl std::ops::DerefMut for crate::TMPro::TMP_UpdateManager {
 }
 #[cfg(feature = "TMPro+TMP_UpdateManager")]
 impl crate::TMPro::TMP_UpdateManager {
-    pub fn InternalRegisterTextElementForLayoutRebuild(
-        &mut self,
-        element: *mut crate::TMPro::TMP_Text,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalRegisterTextElementForLayoutRebuild", (element))?;
-        Ok(__cordl_ret)
-    }
     pub fn DoRebuilds(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -72,6 +61,79 @@ impl crate::TMPro::TMP_UpdateManager {
             .invoke("InternalRegisterTextElementForCullingUpdate", (element))?;
         Ok(__cordl_ret)
     }
+    pub fn InternalRegisterTextElementForGraphicRebuild(
+        &mut self,
+        element: *mut crate::TMPro::TMP_Text,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalRegisterTextElementForGraphicRebuild", (element))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InternalRegisterTextElementForLayoutRebuild(
+        &mut self,
+        element: *mut crate::TMPro::TMP_Text,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalRegisterTextElementForLayoutRebuild", (element))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InternalRegisterTextObjectForUpdate(
+        &mut self,
+        textObject: *mut crate::TMPro::TMP_Text,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalRegisterTextObjectForUpdate", (textObject))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InternalUnRegisterTextElementForGraphicRebuild(
+        &mut self,
+        element: *mut crate::TMPro::TMP_Text,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalUnRegisterTextElementForGraphicRebuild", (element))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InternalUnRegisterTextElementForLayoutRebuild(
+        &mut self,
+        element: *mut crate::TMPro::TMP_Text,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalUnRegisterTextElementForLayoutRebuild", (element))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InternalUnRegisterTextObjectForUpdate(
+        &mut self,
+        textObject: *mut crate::TMPro::TMP_Text,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalUnRegisterTextObjectForUpdate", (textObject))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn OnCameraPreCull(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -91,68 +153,6 @@ impl crate::TMPro::TMP_UpdateManager {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn InternalRegisterTextObjectForUpdate(
-        &mut self,
-        textObject: *mut crate::TMPro::TMP_Text,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalRegisterTextObjectForUpdate", (textObject))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalRegisterTextElementForGraphicRebuild(
-        &mut self,
-        element: *mut crate::TMPro::TMP_Text,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalRegisterTextElementForGraphicRebuild", (element))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalUnRegisterTextElementForLayoutRebuild(
-        &mut self,
-        element: *mut crate::TMPro::TMP_Text,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalUnRegisterTextElementForLayoutRebuild", (element))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalUnRegisterTextElementForGraphicRebuild(
-        &mut self,
-        element: *mut crate::TMPro::TMP_Text,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalUnRegisterTextElementForGraphicRebuild", (element))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalUnRegisterTextObjectForUpdate(
-        &mut self,
-        textObject: *mut crate::TMPro::TMP_Text,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalUnRegisterTextObjectForUpdate", (textObject))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "TMPro+TMP_UpdateManager")]

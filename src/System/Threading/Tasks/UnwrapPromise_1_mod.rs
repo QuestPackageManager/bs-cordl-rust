@@ -33,11 +33,10 @@ impl<
 > crate::System::Threading::Tasks::UnwrapPromise_1<TResult> {
     #[cfg(feature = "System+Threading+Tasks+UnwrapPromise_1+__c")]
     pub type __c = crate::System::Threading::Tasks::UnwrapPromise_1___c<TResult>;
-    pub fn TrySetFromTask(
+    pub fn Invoke(
         &mut self,
-        task: *mut crate::System::Threading::Tasks::Task,
-        lookForOce: bool,
-    ) -> quest_hook::libil2cpp::Result<bool>
+        completingTask: *mut crate::System::Threading::Tasks::Task,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -45,22 +44,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TrySetFromTask", (task, lookForOce))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_InvokeMayRunArbitraryCode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_InvokeMayRunArbitraryCode", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (completingTask))?;
         Ok(__cordl_ret)
     }
     pub fn InvokeCore(
@@ -93,6 +78,16 @@ impl<
             .invoke("InvokeCoreAsync", (completingTask))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        outerTask: *mut crate::System::Threading::Tasks::Task,
+        lookForOce: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (outerTask, lookForOce))?;
+        Ok(__cordl_object)
+    }
     pub fn ProcessCompletedOuterTask(
         &mut self,
         task: *mut crate::System::Threading::Tasks::Task,
@@ -106,6 +101,37 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessCompletedOuterTask", (task))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessInnerTask(
+        &mut self,
+        task: *mut crate::System::Threading::Tasks::Task,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessInnerTask", (task))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TrySetFromTask(
+        &mut self,
+        task: *mut crate::System::Threading::Tasks::Task,
+        lookForOce: bool,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TrySetFromTask", (task, lookForOce))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -124,10 +150,9 @@ impl<
             .invoke(".ctor", (outerTask, lookForOce))?;
         Ok(__cordl_ret)
     }
-    pub fn Invoke(
+    pub fn get_InvokeMayRunArbitraryCode(
         &mut self,
-        completingTask: *mut crate::System::Threading::Tasks::Task,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    ) -> quest_hook::libil2cpp::Result<bool>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -135,34 +160,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (completingTask))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_InvokeMayRunArbitraryCode", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn ProcessInnerTask(
-        &mut self,
-        task: *mut crate::System::Threading::Tasks::Task,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessInnerTask", (task))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        outerTask: *mut crate::System::Threading::Tasks::Task,
-        lookForOce: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (outerTask, lookForOce))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Threading+Tasks+UnwrapPromise_1")]

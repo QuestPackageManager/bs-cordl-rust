@@ -31,20 +31,20 @@ impl std::ops::DerefMut for HelpMenuViewController {
 }
 #[cfg(feature = "HelpMenuViewController")]
 impl HelpMenuViewController {
-    pub fn Init(
+    pub fn DidActivate(
         &mut self,
-        viewControllers: *mut crate::System::Collections::Generic::List_1<
-            crate::System::ValueTuple_2<
-                *mut crate::HMUI::ViewController,
-                *mut crate::System::String,
-            >,
-        >,
+        firstActivation: bool,
+        addedToHierarchy: bool,
+        screenSystemEnabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (viewControllers))?;
+            .invoke(
+                "DidActivate",
+                (firstActivation, addedToHierarchy, screenSystemEnabling),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn HandleHelpMenuSegmentedControlDidSelectCell(
@@ -62,16 +62,28 @@ impl HelpMenuViewController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didSelectHelpSubMenuEvent(
+    pub fn Init(
         &mut self,
-        value: *mut crate::System::Action_1<i32>,
+        viewControllers: *mut crate::System::Collections::Generic::List_1<
+            crate::System::ValueTuple_2<
+                *mut crate::HMUI::ViewController,
+                *mut crate::System::String,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didSelectHelpSubMenuEvent", (value))?;
+            .invoke("Init", (viewControllers))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -94,28 +106,16 @@ impl HelpMenuViewController {
             .invoke("add_didSelectHelpSubMenuEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn DidActivate(
+    pub fn remove_didSelectHelpSubMenuEvent(
         &mut self,
-        firstActivation: bool,
-        addedToHierarchy: bool,
-        screenSystemEnabling: bool,
+        value: *mut crate::System::Action_1<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "DidActivate",
-                (firstActivation, addedToHierarchy, screenSystemEnabling),
-            )?;
+            .invoke("remove_didSelectHelpSubMenuEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "HelpMenuViewController")]

@@ -26,14 +26,15 @@ impl std::ops::DerefMut for crate::System::Xml::XmlEntityReference {
 }
 #[cfg(feature = "System+Xml+XmlEntityReference")]
 impl crate::System::Xml::XmlEntityReference {
-    pub fn get_NodeType(
+    pub fn CloneNode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
+        deep: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
-            .invoke("get_NodeType", ())?;
+        let __cordl_ret: *mut crate::System::Xml::XmlNode = __cordl_object
+            .invoke("CloneNode", (deep))?;
         Ok(__cordl_ret)
     }
     pub fn ConstructBaseURI(
@@ -46,6 +47,38 @@ impl crate::System::Xml::XmlEntityReference {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("ConstructBaseURI", (baseURI, systemId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsValidChildType(
+        &mut self,
+        _cordl_type: crate::System::Xml::XmlNodeType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsValidChildType", (_cordl_type))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        name: *mut crate::System::String,
+        doc: *mut crate::System::Xml::XmlDocument,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, doc))?;
+        Ok(__cordl_object)
+    }
+    pub fn SetParent(
+        &mut self,
+        node: *mut crate::System::Xml::XmlNode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetParent", (node))?;
         Ok(__cordl_ret)
     }
     pub fn SetParentForLoad(
@@ -70,76 +103,6 @@ impl crate::System::Xml::XmlEntityReference {
             .invoke("WriteContentTo", (w))?;
         Ok(__cordl_ret)
     }
-    pub fn get_LocalName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_LocalName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Value(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Value", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetParent(
-        &mut self,
-        node: *mut crate::System::Xml::XmlNode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetParent", (node))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_BaseURI(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_BaseURI", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LastNode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlLinkedNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::XmlLinkedNode = __cordl_object
-            .invoke("get_LastNode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsValidChildType(
-        &mut self,
-        _cordl_type: crate::System::Xml::XmlNodeType,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsValidChildType", (_cordl_type))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsContainer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsContainer", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn WriteTo(
         &mut self,
         w: *mut crate::System::Xml::XmlWriter,
@@ -149,27 +112,6 @@ impl crate::System::Xml::XmlEntityReference {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteTo", (w))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_LastNode(
-        &mut self,
-        value: *mut crate::System::Xml::XmlLinkedNode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_LastNode", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ChildBaseURI(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_ChildBaseURI", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -184,11 +126,58 @@ impl crate::System::Xml::XmlEntityReference {
             .invoke(".ctor", (name, doc))?;
         Ok(__cordl_ret)
     }
+    pub fn get_BaseURI(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_BaseURI", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ChildBaseURI(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_ChildBaseURI", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsContainer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsContainer", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsReadOnly", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LastNode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlLinkedNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::XmlLinkedNode = __cordl_object
+            .invoke("get_LastNode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LocalName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_LocalName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Name(
@@ -201,6 +190,16 @@ impl crate::System::Xml::XmlEntityReference {
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_NodeType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::XmlNodeType = __cordl_object
+            .invoke("get_NodeType", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Value(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -211,26 +210,27 @@ impl crate::System::Xml::XmlEntityReference {
             .invoke("get_Value", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CloneNode(
+    pub fn set_LastNode(
         &mut self,
-        deep: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNode> {
+        value: *mut crate::System::Xml::XmlLinkedNode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::XmlNode = __cordl_object
-            .invoke("CloneNode", (deep))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_LastNode", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        name: *mut crate::System::String,
-        doc: *mut crate::System::Xml::XmlDocument,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, doc))?;
-        Ok(__cordl_object)
+    pub fn set_Value(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Value", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+XmlEntityReference")]

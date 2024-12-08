@@ -37,14 +37,14 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::OpenVR_COpenVRContext {
 }
 #[cfg(feature = "OVR+OpenVR+OpenVR+COpenVRContext")]
 impl crate::OVR::OpenVR::OpenVR_COpenVRContext {
-    pub fn VRChaperone(
+    pub fn CheckClear(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRChaperone> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::OVR::OpenVR::CVRChaperone = __cordl_object
-            .invoke("VRChaperone", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckClear", ())?;
         Ok(__cordl_ret)
     }
     pub fn Clear(
@@ -57,6 +57,13 @@ impl crate::OVR::OpenVR::OpenVR_COpenVRContext {
             .invoke("Clear", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn VRApplications(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRApplications> {
@@ -67,54 +74,14 @@ impl crate::OVR::OpenVR::OpenVR_COpenVRContext {
             .invoke("VRApplications", ())?;
         Ok(__cordl_ret)
     }
-    pub fn VRCompositor(
+    pub fn VRChaperone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRCompositor> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRChaperone> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::OVR::OpenVR::CVRCompositor = __cordl_object
-            .invoke("VRCompositor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn VRScreenshots(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRScreenshots> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::OVR::OpenVR::CVRScreenshots = __cordl_object
-            .invoke("VRScreenshots", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn VRSettings(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRSettings> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::OVR::OpenVR::CVRSettings = __cordl_object
-            .invoke("VRSettings", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn VRSystem(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRSystem> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::OVR::OpenVR::CVRSystem = __cordl_object
-            .invoke("VRSystem", ())?;
+        let __cordl_ret: *mut crate::OVR::OpenVR::CVRChaperone = __cordl_object
+            .invoke("VRChaperone", ())?;
         Ok(__cordl_ret)
     }
     pub fn VRChaperoneSetup(
@@ -127,54 +94,14 @@ impl crate::OVR::OpenVR::OpenVR_COpenVRContext {
             .invoke("VRChaperoneSetup", ())?;
         Ok(__cordl_ret)
     }
-    pub fn VROverlay(
+    pub fn VRCompositor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVROverlay> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRCompositor> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::OVR::OpenVR::CVROverlay = __cordl_object
-            .invoke("VROverlay", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn VRTrackedCamera(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRTrackedCamera> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::OVR::OpenVR::CVRTrackedCamera = __cordl_object
-            .invoke("VRTrackedCamera", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckClear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckClear", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn VRSpatialAnchors(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRSpatialAnchors> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::OVR::OpenVR::CVRSpatialAnchors = __cordl_object
-            .invoke("VRSpatialAnchors", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn VRRenderModels(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRRenderModels> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::OVR::OpenVR::CVRRenderModels = __cordl_object
-            .invoke("VRRenderModels", ())?;
+        let __cordl_ret: *mut crate::OVR::OpenVR::CVRCompositor = __cordl_object
+            .invoke("VRCompositor", ())?;
         Ok(__cordl_ret)
     }
     pub fn VRExtendedDisplay(
@@ -197,12 +124,85 @@ impl crate::OVR::OpenVR::OpenVR_COpenVRContext {
             .invoke("VRInput", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn VROverlay(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVROverlay> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::OVR::OpenVR::CVROverlay = __cordl_object
+            .invoke("VROverlay", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn VRRenderModels(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRRenderModels> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::OVR::OpenVR::CVRRenderModels = __cordl_object
+            .invoke("VRRenderModels", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn VRScreenshots(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRScreenshots> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::OVR::OpenVR::CVRScreenshots = __cordl_object
+            .invoke("VRScreenshots", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn VRSettings(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRSettings> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::OVR::OpenVR::CVRSettings = __cordl_object
+            .invoke("VRSettings", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn VRSpatialAnchors(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRSpatialAnchors> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::OVR::OpenVR::CVRSpatialAnchors = __cordl_object
+            .invoke("VRSpatialAnchors", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn VRSystem(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRSystem> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::OVR::OpenVR::CVRSystem = __cordl_object
+            .invoke("VRSystem", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn VRTrackedCamera(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::OVR::OpenVR::CVRTrackedCamera> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::OVR::OpenVR::CVRTrackedCamera = __cordl_object
+            .invoke("VRTrackedCamera", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "OVR+OpenVR+OpenVR+COpenVRContext")]
@@ -461,6 +461,13 @@ impl crate::OVR::OpenVR::OpenVR {
     pub const k_unWildcardPropertyTag: u32 = 673456930u32;
     #[cfg(feature = "OVR+OpenVR+OpenVR+COpenVRContext")]
     pub type COpenVRContext = crate::OVR::OpenVR::OpenVR_COpenVRContext;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -470,13 +477,6 @@ impl crate::OVR::OpenVR::OpenVR {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVR+OpenVR+OpenVR")]

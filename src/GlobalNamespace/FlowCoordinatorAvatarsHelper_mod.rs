@@ -30,6 +30,13 @@ impl FlowCoordinatorAvatarsHelper {
     pub type _HasUserSelectedAvatarSystemWithCreatedAvatar_d__0 = crate::GlobalNamespace::FlowCoordinatorAvatarsHelper__HasUserSelectedAvatarSystemWithCreatedAvatar_d__0;
     #[cfg(feature = "FlowCoordinatorAvatarsHelper+__c__DisplayClass0_0")]
     pub type __c__DisplayClass0_0 = crate::GlobalNamespace::FlowCoordinatorAvatarsHelper___c__DisplayClass0_0;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -39,13 +46,6 @@ impl FlowCoordinatorAvatarsHelper {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "FlowCoordinatorAvatarsHelper")]

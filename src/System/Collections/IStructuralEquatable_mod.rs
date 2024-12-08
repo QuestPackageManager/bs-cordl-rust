@@ -24,16 +24,6 @@ impl std::ops::DerefMut for crate::System::Collections::IStructuralEquatable {
 }
 #[cfg(feature = "System+Collections+IStructuralEquatable")]
 impl crate::System::Collections::IStructuralEquatable {
-    pub fn GetHashCode(
-        &mut self,
-        comparer: *mut crate::System::Collections::IEqualityComparer,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", (comparer))?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals(
         &mut self,
         other: *mut crate::System::Object,
@@ -43,6 +33,16 @@ impl crate::System::Collections::IStructuralEquatable {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other, comparer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(
+        &mut self,
+        comparer: *mut crate::System::Collections::IEqualityComparer,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", (comparer))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

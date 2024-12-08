@@ -35,14 +35,14 @@ impl crate::UnityEngine::AvatarMask {
             .invoke("GetHumanoidBodyPartActive", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn GetTransformWeight(
+    pub fn GetTransformActive(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetTransformWeight", (index))?;
+        let __cordl_ret: bool = __cordl_object.invoke("GetTransformActive", (index))?;
         Ok(__cordl_ret)
     }
     pub fn GetTransformPath(
@@ -56,14 +56,14 @@ impl crate::UnityEngine::AvatarMask {
             .invoke("GetTransformPath", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn GetTransformActive(
+    pub fn GetTransformWeight(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("GetTransformActive", (index))?;
+        let __cordl_ret: f32 = __cordl_object.invoke("GetTransformWeight", (index))?;
         Ok(__cordl_ret)
     }
     pub fn get_transformCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {

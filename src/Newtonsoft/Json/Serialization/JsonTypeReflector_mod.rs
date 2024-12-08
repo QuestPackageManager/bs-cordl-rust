@@ -33,12 +33,12 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
     pub const SpecifiedPostfix: &'static str = "Specified";
     pub const TypePropertyName: &'static str = "$type";
     pub const ValuePropertyName: &'static str = "$value";
-    #[cfg(feature = "Newtonsoft+Json+Serialization+JsonTypeReflector+__c")]
-    pub type __c = crate::Newtonsoft::Json::Serialization::JsonTypeReflector___c;
     #[cfg(
         feature = "Newtonsoft+Json+Serialization+JsonTypeReflector+__c__DisplayClass22_0"
     )]
     pub type __c__DisplayClass22_0 = crate::Newtonsoft::Json::Serialization::JsonTypeReflector___c__DisplayClass22_0;
+    #[cfg(feature = "Newtonsoft+Json+Serialization+JsonTypeReflector+__c")]
+    pub type __c = crate::Newtonsoft::Json::Serialization::JsonTypeReflector___c;
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonTypeReflector")]
 impl quest_hook::libil2cpp::ObjectType

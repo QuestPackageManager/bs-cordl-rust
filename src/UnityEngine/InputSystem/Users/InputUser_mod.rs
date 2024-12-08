@@ -179,27 +179,68 @@ for crate::UnityEngine::InputSystem::Users::InputUser {
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser")]
 impl crate::UnityEngine::InputSystem::Users::InputUser {
     pub const InvalidId: u32 = 262656u32;
-    #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+OngoingAccountSelection")]
-    pub type OngoingAccountSelection = crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection;
-    #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserFlags")]
-    pub type UserFlags = crate::UnityEngine::InputSystem::Users::InputUser_UserFlags;
-    #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
-    pub type ControlSchemeChangeSyntax = crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax;
-    #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserData")]
-    pub type UserData = crate::UnityEngine::InputSystem::Users::InputUser_UserData;
-    #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
-    pub type GlobalState = crate::UnityEngine::InputSystem::Users::InputUser_GlobalState;
     #[cfg(
         feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount"
     )]
     pub type CompareDevicesByUserAccount = crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccount;
+    #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserData")]
+    pub type UserData = crate::UnityEngine::InputSystem::Users::InputUser_UserData;
+    #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
+    pub type ControlSchemeChangeSyntax = crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax;
+    #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserFlags")]
+    pub type UserFlags = crate::UnityEngine::InputSystem::Users::InputUser_UserFlags;
+    #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
+    pub type GlobalState = crate::UnityEngine::InputSystem::Users::InputUser_GlobalState;
+    #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+OngoingAccountSelection")]
+    pub type OngoingAccountSelection = crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection;
     #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+__c")]
     pub type __c = crate::UnityEngine::InputSystem::Users::InputUser___c;
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn ActivateControlSchemeInternal(
+        &mut self,
+        userIndex: i32,
+        scheme: crate::UnityEngine::InputSystem::InputControlScheme,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
-            (),
+            "ActivateControlSchemeInternal",
+            (userIndex, scheme),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ActivateControlScheme_InputControlScheme1(
+        &mut self,
+        scheme: crate::UnityEngine::InputSystem::InputControlScheme,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ActivateControlScheme",
+            (scheme),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ActivateControlScheme_String0(
+        &mut self,
+        schemeName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ActivateControlScheme",
+            (schemeName),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn AssociateActionsWithUser(
+        &mut self,
+        actions: *mut crate::UnityEngine::InputSystem::IInputActionCollection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AssociateActionsWithUser",
+            (actions),
         )?;
         Ok(__cordl_ret)
     }
@@ -225,6 +266,28 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn FindControlScheme(
+        &mut self,
+        schemeName: *mut crate::System::String,
+        scheme: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputControlScheme,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "FindControlScheme",
+            (schemeName, scheme),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -235,12 +298,133 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn TryFindControlScheme(
+        &mut self,
+        schemeName: *mut crate::System::String,
+        scheme: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputControlScheme,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "TryFindControlScheme",
+            (schemeName, scheme),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnpairDevice(
+        &mut self,
+        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "UnpairDevice",
+            (device),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnpairDevices(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "UnpairDevices",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnpairDevicesAndRemoveUser(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "UnpairDevicesAndRemoveUser",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_actions(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::IInputActionCollection,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::IInputActionCollection = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_actions",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_controlScheme(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputControlScheme>,
+    > {
+        let __cordl_ret: crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::InputControlScheme,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_controlScheme", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_controlSchemeMatch(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlScheme_MatchResult,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme_MatchResult = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_controlSchemeMatch",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hasMissingRequiredDevices(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_hasMissingRequiredDevices",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_id",
             (),
         )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_index(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_index",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_lostDevices(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_lostDevices", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_pairedDevices(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_pairedDevices", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_platformUserAccountHandle(
@@ -259,96 +443,12 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ActivateControlScheme_String0(
+    pub fn get_platformUserAccountId(
         &mut self,
-        schemeName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ActivateControlScheme",
-            (schemeName),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ActivateControlScheme_InputControlScheme1(
-        &mut self,
-        scheme: crate::UnityEngine::InputSystem::InputControlScheme,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ActivateControlScheme",
-            (scheme),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ActivateControlSchemeInternal(
-        &mut self,
-        userIndex: i32,
-        scheme: crate::UnityEngine::InputSystem::InputControlScheme,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ActivateControlSchemeInternal",
-            (userIndex, scheme),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryFindControlScheme(
-        &mut self,
-        schemeName: *mut crate::System::String,
-        scheme: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::InputSystem::InputControlScheme,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "TryFindControlScheme",
-            (schemeName, scheme),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnpairDevicesAndRemoveUser(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "UnpairDevicesAndRemoveUser",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_pairedDevices(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
-        >,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_pairedDevices", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_controlScheme(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputControlScheme>,
-    > {
-        let __cordl_ret: crate::System::Nullable_1<
-            crate::UnityEngine::InputSystem::InputControlScheme,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_controlScheme", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_hasMissingRequiredDevices(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_hasMissingRequiredDevices",
+            "get_platformUserAccountId",
             (),
         )?;
         Ok(__cordl_ret)
@@ -363,111 +463,11 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn AssociateActionsWithUser(
-        &mut self,
-        actions: *mut crate::UnityEngine::InputSystem::IInputActionCollection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AssociateActionsWithUser",
-            (actions),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_lostDevices(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
-        >,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_lostDevices", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_platformUserAccountId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_platformUserAccountId",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_controlSchemeMatch(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputControlScheme_MatchResult,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme_MatchResult = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_controlSchemeMatch",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnpairDevices(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "UnpairDevices",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_index(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_index",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnpairDevice(
-        &mut self,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "UnpairDevice",
-            (device),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_actions(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::IInputActionCollection,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::IInputActionCollection = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_actions",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_valid",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn FindControlScheme(
-        &mut self,
-        schemeName: *mut crate::System::String,
-        scheme: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::InputSystem::InputControlScheme,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "FindControlScheme",
-            (schemeName, scheme),
         )?;
         Ok(__cordl_ret)
     }

@@ -24,6 +24,11 @@ impl std::ops::DerefMut for crate::UnityEngine::Playables::INotification {
 }
 #[cfg(feature = "UnityEngine+Playables+INotification")]
 impl crate::UnityEngine::Playables::INotification {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_id(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::PropertyName> {
@@ -33,11 +38,6 @@ impl crate::UnityEngine::Playables::INotification {
         let __cordl_ret: crate::UnityEngine::PropertyName = __cordl_object
             .invoke("get_id", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "UnityEngine+Playables+INotification")]

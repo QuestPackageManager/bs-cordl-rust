@@ -26,16 +26,16 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::JavaScriptUtils 
 impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
     pub const EscapedUnicodeText: &'static str = "!";
     pub const UnicodeTextLength: i32 = 6i32;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+JavaScriptUtils+_WriteDefinitelyEscapedJavaScriptStringWithoutDelimitersAsync_d__16"
-    )]
-    pub type _WriteDefinitelyEscapedJavaScriptStringWithoutDelimitersAsync_d__16 = crate::Newtonsoft::Json::Utilities::JavaScriptUtils__WriteDefinitelyEscapedJavaScriptStringWithoutDelimitersAsync_d__16;
     #[cfg(feature = "Newtonsoft+Json+Utilities+JavaScriptUtils+_WriteCharAsync_d__14")]
     pub type _WriteCharAsync_d__14 = crate::Newtonsoft::Json::Utilities::JavaScriptUtils__WriteCharAsync_d__14;
     #[cfg(
         feature = "Newtonsoft+Json+Utilities+JavaScriptUtils+_WriteEscapedJavaScriptStringWithDelimitersAsync_d__13"
     )]
     pub type _WriteEscapedJavaScriptStringWithDelimitersAsync_d__13 = crate::Newtonsoft::Json::Utilities::JavaScriptUtils__WriteEscapedJavaScriptStringWithDelimitersAsync_d__13;
+    #[cfg(
+        feature = "Newtonsoft+Json+Utilities+JavaScriptUtils+_WriteDefinitelyEscapedJavaScriptStringWithoutDelimitersAsync_d__16"
+    )]
+    pub type _WriteDefinitelyEscapedJavaScriptStringWithoutDelimitersAsync_d__16 = crate::Newtonsoft::Json::Utilities::JavaScriptUtils__WriteDefinitelyEscapedJavaScriptStringWithoutDelimitersAsync_d__16;
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+JavaScriptUtils")]
 impl quest_hook::libil2cpp::ObjectType

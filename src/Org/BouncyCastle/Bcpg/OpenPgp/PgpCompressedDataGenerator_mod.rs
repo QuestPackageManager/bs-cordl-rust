@@ -39,16 +39,34 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
         feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpCompressedDataGenerator+SafeZOutputStream"
     )]
     pub type SafeZOutputStream = crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeZOutputStream;
-    pub fn Open_Stream0(
+    pub fn Close(
         &mut self,
-        outStr: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("Open", (outStr))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Close", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New_CompressionAlgorithmTag0(
+        algorithm: crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_1(
+        algorithm: crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag,
+        compression: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, compression))?;
+        Ok(__cordl_object)
     }
     pub fn Open_Il2CppArray1(
         &mut self,
@@ -62,14 +80,15 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
             .invoke("Open", (outStr, buffer))?;
         Ok(__cordl_ret)
     }
-    pub fn doOpen(
+    pub fn Open_Stream0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        outStr: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("doOpen", ())?;
+        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+            .invoke("Open", (outStr))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_CompressionAlgorithmTag0(
@@ -95,34 +114,15 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
             .invoke(".ctor", (algorithm, compression))?;
         Ok(__cordl_ret)
     }
-    pub fn Close(
+    pub fn doOpen(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
+            .invoke("doOpen", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_CompressionAlgorithmTag0(
-        algorithm: crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_1(
-        algorithm: crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag,
-        compression: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, compression))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpCompressedDataGenerator")]
@@ -185,6 +185,15 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeCBZ
             .invoke("Close", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        output: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (output))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         output: *mut crate::System::IO::Stream,
@@ -195,15 +204,6 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeCBZ
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (output))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        output: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (output))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -257,19 +257,6 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeZOut
     feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpCompressedDataGenerator+SafeZOutputStream"
 )]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeZOutputStream {
-    pub fn _ctor(
-        &mut self,
-        output: *mut crate::System::IO::Stream,
-        level: i32,
-        nowrap: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (output, level, nowrap))?;
-        Ok(__cordl_ret)
-    }
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -284,12 +271,25 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeZOu
         output: *mut crate::System::IO::Stream,
         level: i32,
         nowrap: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (output, level, nowrap))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        output: *mut crate::System::IO::Stream,
+        level: i32,
+        nowrap: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (output, level, nowrap))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(

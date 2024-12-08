@@ -42,19 +42,6 @@ impl BufferedLightColorGroupEffect {
     pub const kBufferSize: i32 = 24i32;
     #[cfg(feature = "BufferedLightColorGroupEffect+InitData")]
     pub type InitData = crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData;
-    pub fn _ctor(
-        &mut self,
-        initData: *mut crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData,
-        colorManager: *mut ColorManager,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (initData, colorManager, beatmapCallbacksController))?;
-        Ok(__cordl_ret)
-    }
     pub fn Cleanup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -63,17 +50,6 @@ impl BufferedLightColorGroupEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Cleanup", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleColorChangeBeatmapEvent(
-        &mut self,
-        currentEvent: *mut LightColorBeatmapEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleColorChangeBeatmapEvent", (currentEvent))?;
         Ok(__cordl_ret)
     }
     pub fn GetColor(
@@ -113,16 +89,40 @@ impl BufferedLightColorGroupEffect {
             .invoke("HandleColorBoostBeatmapEvent", (colorBoost))?;
         Ok(__cordl_ret)
     }
+    pub fn HandleColorChangeBeatmapEvent(
+        &mut self,
+        currentEvent: *mut LightColorBeatmapEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleColorChangeBeatmapEvent", (currentEvent))?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         initData: *mut crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData,
         colorManager: *mut ColorManager,
         beatmapCallbacksController: *mut BeatmapCallbacksController,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (initData, colorManager, beatmapCallbacksController))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        initData: *mut crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData,
+        colorManager: *mut ColorManager,
+        beatmapCallbacksController: *mut BeatmapCallbacksController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (initData, colorManager, beatmapCallbacksController))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BufferedLightColorGroupEffect")]
@@ -164,6 +164,16 @@ for crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData {
 }
 #[cfg(feature = "BufferedLightColorGroupEffect+InitData")]
 impl crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData {
+    pub fn New(
+        lightGroup: *mut LightGroup,
+        materialPropertyBlockController: *mut MaterialPropertyBlockController,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (lightGroup, materialPropertyBlockController))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         lightGroup: *mut LightGroup,
@@ -175,16 +185,6 @@ impl crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (lightGroup, materialPropertyBlockController))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        lightGroup: *mut LightGroup,
-        materialPropertyBlockController: *mut MaterialPropertyBlockController,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (lightGroup, materialPropertyBlockController))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BufferedLightColorGroupEffect+InitData")]

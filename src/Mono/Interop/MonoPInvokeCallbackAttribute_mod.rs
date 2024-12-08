@@ -24,6 +24,13 @@ impl std::ops::DerefMut for crate::Mono::Interop::MonoPInvokeCallbackAttribute {
 }
 #[cfg(feature = "Mono+Interop+MonoPInvokeCallbackAttribute")]
 impl crate::Mono::Interop::MonoPInvokeCallbackAttribute {
+    pub fn New(t: *mut crate::System::Type) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (t))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         t: *mut crate::System::Type,
@@ -34,15 +41,6 @@ impl crate::Mono::Interop::MonoPInvokeCallbackAttribute {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (t))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        t: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (t))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Interop+MonoPInvokeCallbackAttribute")]

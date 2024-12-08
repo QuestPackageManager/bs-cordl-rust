@@ -21,6 +21,16 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Xml::BinXmlSq
 }
 #[cfg(feature = "System+Xml+BinXmlSqlMoney")]
 impl crate::System::Xml::BinXmlSqlMoney {
+    pub fn ToDecimal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToDecimal",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -50,16 +60,6 @@ impl crate::System::Xml::BinXmlSqlMoney {
             self,
             ".ctor",
             (v),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToDecimal(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
-        let __cordl_ret: crate::System::Decimal = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToDecimal",
-            (),
         )?;
         Ok(__cordl_ret)
     }

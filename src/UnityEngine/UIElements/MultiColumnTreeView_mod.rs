@@ -35,65 +35,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MultiColumnTreeView 
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeView")]
 impl crate::UnityEngine::UIElements::MultiColumnTreeView {
-    #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeView+UxmlFactory")]
-    pub type UxmlFactory = crate::UnityEngine::UIElements::MultiColumnTreeView_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeView+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::MultiColumnTreeView_UxmlTraits;
-    pub fn get_viewController(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::MultiColumnTreeViewController,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::MultiColumnTreeViewController = __cordl_object
-            .invoke("get_viewController", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetViewController(
-        &mut self,
-        controller: *mut crate::UnityEngine::UIElements::CollectionViewController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetViewController", (controller))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_columns(
-        &mut self,
-        value: *mut crate::UnityEngine::UIElements::Columns,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_columns", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Columns1(
-        &mut self,
-        columns: *mut crate::UnityEngine::UIElements::Columns,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (columns))?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeView+UxmlFactory")]
+    pub type UxmlFactory = crate::UnityEngine::UIElements::MultiColumnTreeView_UxmlFactory;
     pub fn CreateViewController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -116,6 +61,32 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeView {
             .invoke("CreateVirtualizationController", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Columns1(
+        columns: *mut crate::UnityEngine::UIElements::Columns,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (columns))?;
+        Ok(__cordl_object)
+    }
+    pub fn RaiseColumnSortingChanged(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RaiseColumnSortingChanged", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn RaiseHeaderContextMenuPopulate(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
@@ -128,36 +99,36 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeView {
             .invoke("RaiseHeaderContextMenuPopulate", (evt, column))?;
         Ok(__cordl_ret)
     }
-    pub fn set_sortColumnDescriptions(
+    pub fn SetViewController(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::SortColumnDescriptions,
+        controller: *mut crate::UnityEngine::UIElements::CollectionViewController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_sortColumnDescriptions", (value))?;
+            .invoke("SetViewController", (controller))?;
         Ok(__cordl_ret)
     }
-    pub fn set_sortingEnabled(
+    pub fn _ctor_0(
         &mut self,
-        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_sortingEnabled", (value))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn RaiseColumnSortingChanged(
+    pub fn _ctor_Columns1(
         &mut self,
+        columns: *mut crate::UnityEngine::UIElements::Columns,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RaiseColumnSortingChanged", ())?;
+            .invoke(".ctor", (columns))?;
         Ok(__cordl_ret)
     }
     pub fn get_columns(
@@ -182,21 +153,50 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeView {
             .invoke("get_sortColumnDescriptions", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_viewController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::MultiColumnTreeViewController,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::MultiColumnTreeViewController = __cordl_object
+            .invoke("get_viewController", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_Columns1(
-        columns: *mut crate::UnityEngine::UIElements::Columns,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (columns))?;
-        Ok(__cordl_object)
+    pub fn set_columns(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::Columns,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_columns", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_sortColumnDescriptions(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::SortColumnDescriptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_sortColumnDescriptions", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_sortingEnabled(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_sortingEnabled", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeView")]
@@ -244,6 +244,13 @@ for crate::UnityEngine::UIElements::MultiColumnTreeView_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeView+UxmlFactory")]
 impl crate::UnityEngine::UIElements::MultiColumnTreeView_UxmlFactory {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -253,13 +260,6 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeView_UxmlFactory {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeView+UxmlFactory")]
@@ -320,6 +320,13 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeView_UxmlTraits {
             .invoke("Init", (ve, bag, cc))?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -329,13 +336,6 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeView_UxmlTraits {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeView+UxmlTraits")]

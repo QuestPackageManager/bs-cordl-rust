@@ -36,28 +36,7 @@ impl std::ops::DerefMut for crate::System::Net::EndPointListener {
 }
 #[cfg(feature = "System+Net+EndPointListener")]
 impl crate::System::Net::EndPointListener {
-    pub fn get_Listener(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::HttpListener> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::HttpListener = __cordl_object
-            .invoke("get_Listener", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnbindContext(
-        &mut self,
-        context: *mut crate::System::Net::HttpListenerContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnbindContext", (context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemovePrefix(
+    pub fn AddPrefix(
         &mut self,
         prefix: *mut crate::System::Net::ListenerPrefix,
         listener: *mut crate::System::Net::HttpListener,
@@ -66,7 +45,7 @@ impl crate::System::Net::EndPointListener {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemovePrefix", (prefix, listener))?;
+            .invoke("AddPrefix", (prefix, listener))?;
         Ok(__cordl_ret)
     }
     pub fn AddSpecial(
@@ -81,6 +60,26 @@ impl crate::System::Net::EndPointListener {
             .invoke("AddSpecial", (coll, prefix))?;
         Ok(__cordl_ret)
     }
+    pub fn BindContext(
+        &mut self,
+        context: *mut crate::System::Net::HttpListenerContext,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("BindContext", (context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckIfRemove(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckIfRemove", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -89,55 +88,6 @@ impl crate::System::Net::EndPointListener {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Close", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddPrefix(
-        &mut self,
-        prefix: *mut crate::System::Net::ListenerPrefix,
-        listener: *mut crate::System::Net::HttpListener,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddPrefix", (prefix, listener))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        listener: *mut crate::System::Net::HttpListener,
-        addr: *mut crate::System::Net::IPAddress,
-        port: i32,
-        secure: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (listener, addr, port, secure))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SearchListener(
-        &mut self,
-        uri: *mut crate::System::Uri,
-        prefix: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Net::ListenerPrefix>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::HttpListener> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::HttpListener = __cordl_object
-            .invoke("SearchListener", (uri, prefix))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveConnection(
-        &mut self,
-        conn: *mut crate::System::Net::HttpConnection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveConnection", (conn))?;
         Ok(__cordl_ret)
     }
     pub fn MatchFromList(
@@ -154,14 +104,39 @@ impl crate::System::Net::EndPointListener {
             .invoke("MatchFromList", (host, path, list, prefix))?;
         Ok(__cordl_ret)
     }
-    pub fn BindContext(
+    pub fn New(
+        listener: *mut crate::System::Net::HttpListener,
+        addr: *mut crate::System::Net::IPAddress,
+        port: i32,
+        secure: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (listener, addr, port, secure))?;
+        Ok(__cordl_object)
+    }
+    pub fn RemoveConnection(
         &mut self,
-        context: *mut crate::System::Net::HttpListenerContext,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        conn: *mut crate::System::Net::HttpConnection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("BindContext", (context))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveConnection", (conn))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemovePrefix(
+        &mut self,
+        prefix: *mut crate::System::Net::ListenerPrefix,
+        listener: *mut crate::System::Net::HttpListener,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemovePrefix", (prefix, listener))?;
         Ok(__cordl_ret)
     }
     pub fn RemoveSpecial(
@@ -175,27 +150,52 @@ impl crate::System::Net::EndPointListener {
         let __cordl_ret: bool = __cordl_object.invoke("RemoveSpecial", (coll, prefix))?;
         Ok(__cordl_ret)
     }
-    pub fn CheckIfRemove(
+    pub fn SearchListener(
         &mut self,
+        uri: *mut crate::System::Uri,
+        prefix: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Net::ListenerPrefix>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::HttpListener> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::HttpListener = __cordl_object
+            .invoke("SearchListener", (uri, prefix))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnbindContext(
+        &mut self,
+        context: *mut crate::System::Net::HttpListenerContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckIfRemove", ())?;
+            .invoke("UnbindContext", (context))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         listener: *mut crate::System::Net::HttpListener,
         addr: *mut crate::System::Net::IPAddress,
         port: i32,
         secure: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (listener, addr, port, secure))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (listener, addr, port, secure))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Listener(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::HttpListener> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::HttpListener = __cordl_object
+            .invoke("get_Listener", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+EndPointListener")]

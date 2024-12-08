@@ -24,16 +24,16 @@ impl std::ops::DerefMut for crate::Unity::Burst::BurstCompiler {
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler")]
 impl crate::Unity::Burst::BurstCompiler {
-    #[cfg(feature = "Unity+Burst+BurstCompiler+FakeDelegate")]
-    pub type FakeDelegate = crate::Unity::Burst::BurstCompiler_FakeDelegate;
-    #[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper")]
-    pub type BurstCompilerHelper = crate::Unity::Burst::BurstCompiler_BurstCompilerHelper;
     #[cfg(feature = "Unity+Burst+BurstCompiler+__c")]
     pub type __c = crate::Unity::Burst::BurstCompiler___c;
+    #[cfg(feature = "Unity+Burst+BurstCompiler+FakeDelegate")]
+    pub type FakeDelegate = crate::Unity::Burst::BurstCompiler_FakeDelegate;
     #[cfg(feature = "Unity+Burst+BurstCompiler+CommandBuilder")]
     pub type CommandBuilder = crate::Unity::Burst::BurstCompiler_CommandBuilder;
     #[cfg(feature = "Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
     pub type StaticTypeReinitAttribute = crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute;
+    #[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper")]
+    pub type BurstCompilerHelper = crate::Unity::Burst::BurstCompiler_BurstCompilerHelper;
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstCompiler {
@@ -113,32 +113,6 @@ impl std::ops::DerefMut for crate::Unity::Burst::BurstCompiler_CommandBuilder {
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler+CommandBuilder")]
 impl crate::Unity::Burst::BurstCompiler_CommandBuilder {
-    pub fn With_String0(
-        &mut self,
-        arg: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Unity::Burst::BurstCompiler_CommandBuilder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Unity::Burst::BurstCompiler_CommandBuilder = __cordl_object
-            .invoke("With", (arg))?;
-        Ok(__cordl_ret)
-    }
-    pub fn With_IntPtr1(
-        &mut self,
-        arg: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Unity::Burst::BurstCompiler_CommandBuilder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Unity::Burst::BurstCompiler_CommandBuilder = __cordl_object
-            .invoke("With", (arg))?;
-        Ok(__cordl_ret)
-    }
     pub fn And(
         &mut self,
         sep: char,
@@ -150,26 +124,6 @@ impl crate::Unity::Burst::BurstCompiler_CommandBuilder {
         );
         let __cordl_ret: *mut crate::Unity::Burst::BurstCompiler_CommandBuilder = __cordl_object
             .invoke("And", (sep))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SendToCompiler(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("SendToCompiler", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn Begin(
@@ -185,12 +139,58 @@ impl crate::Unity::Burst::BurstCompiler_CommandBuilder {
             .invoke("Begin", (cmd))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn SendToCompiler(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("SendToCompiler", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn With_IntPtr1(
+        &mut self,
+        arg: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Unity::Burst::BurstCompiler_CommandBuilder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Unity::Burst::BurstCompiler_CommandBuilder = __cordl_object
+            .invoke("With", (arg))?;
+        Ok(__cordl_ret)
+    }
+    pub fn With_String0(
+        &mut self,
+        arg: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Unity::Burst::BurstCompiler_CommandBuilder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Unity::Burst::BurstCompiler_CommandBuilder = __cordl_object
+            .invoke("With", (arg))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler+CommandBuilder")]
@@ -230,6 +230,15 @@ impl std::ops::DerefMut for crate::Unity::Burst::BurstCompiler_FakeDelegate {
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler+FakeDelegate")]
 impl crate::Unity::Burst::BurstCompiler_FakeDelegate {
+    pub fn New(
+        method: *mut crate::System::Reflection::MethodInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         method: *mut crate::System::Reflection::MethodInfo,
@@ -250,15 +259,6 @@ impl crate::Unity::Burst::BurstCompiler_FakeDelegate {
         let __cordl_ret: *mut crate::System::Reflection::MethodInfo = __cordl_object
             .invoke("get_Method", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        method: *mut crate::System::Reflection::MethodInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler+FakeDelegate")]
@@ -312,6 +312,33 @@ impl crate::Unity::Burst::BurstCompilerHelper_IsBurstEnabledDelegate {
             .invoke("BeginInvoke", (callback, object))?;
         Ok(__cordl_ret)
     }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Invoke", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         object: *mut crate::System::Object,
@@ -323,33 +350,6 @@ impl crate::Unity::Burst::BurstCompilerHelper_IsBurstEnabledDelegate {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
         Ok(__cordl_ret)
-    }
-    pub fn Invoke(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Invoke", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper+IsBurstEnabledDelegate")]
@@ -391,6 +391,15 @@ for crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute {
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
 impl crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute {
+    pub fn New(
+        toReinit: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (toReinit))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         toReinit: *mut crate::System::Type,
@@ -401,15 +410,6 @@ impl crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (toReinit))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        toReinit: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (toReinit))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]

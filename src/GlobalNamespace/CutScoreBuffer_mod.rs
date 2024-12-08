@@ -33,18 +33,19 @@ impl std::ops::DerefMut for CutScoreBuffer {
 }
 #[cfg(feature = "CutScoreBuffer")]
 impl CutScoreBuffer {
-    pub fn get_maxPossibleCutScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn HandleSaberSwingRatingCounterDidChange(
+        &mut self,
+        swingRatingCounter: *mut ISaberSwingRatingCounter,
+        rating: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_maxPossibleCutScore", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_centerDistanceCutScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_centerDistanceCutScore", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleSaberSwingRatingCounterDidChange",
+                (swingRatingCounter, rating),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn HandleSaberSwingRatingCounterDidFinish(
@@ -58,6 +59,23 @@ impl CutScoreBuffer {
             .invoke("HandleSaberSwingRatingCounterDidFinish", (swingRatingCounter))?;
         Ok(__cordl_ret)
     }
+    pub fn Init(
+        &mut self,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Init", (noteCutInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn RefreshScores(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -66,16 +84,6 @@ impl CutScoreBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshScores", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn RegisterDidChangeReceiver(
@@ -100,69 +108,15 @@ impl CutScoreBuffer {
             .invoke("RegisterDidFinishReceiver", (receiver))?;
         Ok(__cordl_ret)
     }
-    pub fn Init(
+    pub fn UnregisterDidChangeReceiver(
         &mut self,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Init", (noteCutInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_executionOrder(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_executionOrder", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_cutScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_cutScore", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleSaberSwingRatingCounterDidChange(
-        &mut self,
-        swingRatingCounter: *mut ISaberSwingRatingCounter,
-        rating: f32,
+        receiver: *mut ICutScoreBufferDidChangeReceiver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleSaberSwingRatingCounterDidChange",
-                (swingRatingCounter, rating),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isFinished(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isFinished", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_noteScoreDefinition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::ScoreModel_NoteScoreDefinition,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::GlobalNamespace::ScoreModel_NoteScoreDefinition = __cordl_object
-            .invoke("get_noteScoreDefinition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_afterCutScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_afterCutScore", ())?;
+            .invoke("UnregisterDidChangeReceiver", (receiver))?;
         Ok(__cordl_ret)
     }
     pub fn UnregisterDidFinishReceiver(
@@ -176,36 +130,21 @@ impl CutScoreBuffer {
             .invoke("UnregisterDidFinishReceiver", (receiver))?;
         Ok(__cordl_ret)
     }
-    pub fn get_beforeCutScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_beforeCutScore", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_noteCutInfo(&mut self) -> quest_hook::libil2cpp::Result<NoteCutInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: NoteCutInfo = __cordl_object.invoke("get_noteCutInfo", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnregisterDidChangeReceiver(
+    pub fn _ctor(
         &mut self,
-        receiver: *mut ICutScoreBufferDidChangeReceiver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterDidChangeReceiver", (receiver))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_beforeCutSwingRating(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_afterCutScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_beforeCutSwingRating", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_afterCutScore", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_afterCutSwingRating(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -215,12 +154,73 @@ impl CutScoreBuffer {
         let __cordl_ret: f32 = __cordl_object.invoke("get_afterCutSwingRating", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_beforeCutScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_beforeCutScore", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_beforeCutSwingRating(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_beforeCutSwingRating", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_centerDistanceCutScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_centerDistanceCutScore", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_cutScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_cutScore", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_executionOrder(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_executionOrder", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isFinished(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isFinished", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxPossibleCutScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_maxPossibleCutScore", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noteCutInfo(&mut self) -> quest_hook::libil2cpp::Result<NoteCutInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: NoteCutInfo = __cordl_object.invoke("get_noteCutInfo", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noteScoreDefinition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::ScoreModel_NoteScoreDefinition,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::GlobalNamespace::ScoreModel_NoteScoreDefinition = __cordl_object
+            .invoke("get_noteScoreDefinition", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "CutScoreBuffer")]

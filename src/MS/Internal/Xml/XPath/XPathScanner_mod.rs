@@ -77,6 +77,98 @@ impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::XPathScanner {
 impl crate::MS::Internal::Xml::XPath::XPathScanner {
     #[cfg(feature = "MS+Internal+Xml+XPath+XPathScanner+LexKind")]
     pub type LexKind = crate::MS::Internal::Xml::XPath::XPathScanner_LexKind;
+    pub fn New(
+        xpathExpr: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (xpathExpr))?;
+        Ok(__cordl_object)
+    }
+    pub fn NextChar(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("NextChar", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn NextLex(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("NextLex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ScanFraction(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object.invoke("ScanFraction", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ScanName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ScanName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ScanNumber(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object.invoke("ScanNumber", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ScanString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ScanString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SkipSpace(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SkipSpace", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        xpathExpr: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (xpathExpr))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CanBeFunction(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanBeFunction", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CurrentChar(&mut self) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: char = __cordl_object.invoke("get_CurrentChar", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Kind(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -99,55 +191,11 @@ impl crate::MS::Internal::Xml::XPath::XPathScanner {
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SkipSpace(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SkipSpace", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CurrentChar(&mut self) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: char = __cordl_object.invoke("get_CurrentChar", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_NumberValue(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f64 = __cordl_object.invoke("get_NumberValue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CanBeFunction(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanBeFunction", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ScanString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ScanString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_SourceText(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_SourceText", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Prefix(
@@ -160,21 +208,14 @@ impl crate::MS::Internal::Xml::XPath::XPathScanner {
             .invoke("get_Prefix", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ScanFraction(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("ScanFraction", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ScanName(
+    pub fn get_SourceText(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ScanName", ())?;
+            .invoke("get_SourceText", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_StringValue(
@@ -186,47 +227,6 @@ impl crate::MS::Internal::Xml::XPath::XPathScanner {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_StringValue", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn ScanNumber(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("ScanNumber", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn NextLex(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("NextLex", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        xpathExpr: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (xpathExpr))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NextChar(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("NextChar", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        xpathExpr: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (xpathExpr))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathScanner")]

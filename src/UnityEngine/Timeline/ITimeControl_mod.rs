@@ -34,6 +34,16 @@ impl crate::UnityEngine::Timeline::ITimeControl {
             .invoke("OnControlTimeStart", ())?;
         Ok(__cordl_ret)
     }
+    pub fn OnControlTimeStop(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnControlTimeStop", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn SetTime(
         &mut self,
         _cordl_time: f64,
@@ -43,16 +53,6 @@ impl crate::UnityEngine::Timeline::ITimeControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTime", (_cordl_time))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnControlTimeStop(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnControlTimeStop", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

@@ -32,18 +32,10 @@ impl crate::System::RuntimeMethodHandle {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn IsNullHandle(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "IsNullHandle",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Value",
+            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)
@@ -57,6 +49,14 @@ impl crate::System::RuntimeMethodHandle {
             self,
             "GetObjectData",
             (info, context),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsNullHandle(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsNullHandle",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -83,10 +83,10 @@ impl crate::System::RuntimeMethodHandle {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
+            "get_Value",
             (),
         )?;
         Ok(__cordl_ret)

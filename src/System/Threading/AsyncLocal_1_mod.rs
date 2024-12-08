@@ -30,6 +30,17 @@ for crate::System::Threading::AsyncLocal_1<T> {
 }
 #[cfg(feature = "System+Threading+AsyncLocal_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::AsyncLocal_1<T> {
+    pub fn New(
+        valueChangedHandler: *mut crate::System::Action_1<
+            crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (valueChangedHandler))?;
+        Ok(__cordl_object)
+    }
     pub fn System_Threading_IAsyncLocal_OnValueChanged(
         &mut self,
         previousValueObj: *mut crate::System::Object,
@@ -81,17 +92,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::AsyncLocal_1<T> {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Value", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        valueChangedHandler: *mut crate::System::Action_1<
-            crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (valueChangedHandler))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Threading+AsyncLocal_1")]

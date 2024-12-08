@@ -62,28 +62,6 @@ impl std::ops::DerefMut for MirroredBeatmapObjectManager {
 }
 #[cfg(feature = "MirroredBeatmapObjectManager")]
 impl MirroredBeatmapObjectManager {
-    pub fn HandleNoteWasSpawned(
-        &mut self,
-        noteController: *mut NoteController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNoteWasSpawned", (noteController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleNoteWasDespawned(
-        &mut self,
-        noteController: *mut NoteController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNoteWasDespawned", (noteController))?;
-        Ok(__cordl_ret)
-    }
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -92,39 +70,6 @@ impl MirroredBeatmapObjectManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleObstacleWasDespawned(
-        &mut self,
-        obstacleController: *mut ObstacleController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleObstacleWasDespawned", (obstacleController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleSliderWasSpawned(
-        &mut self,
-        sliderController: *mut SliderController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSliderWasSpawned", (sliderController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleSliderWasDespawned(
-        &mut self,
-        sliderController: *mut SliderController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSliderWasDespawned", (sliderController))?;
         Ok(__cordl_ret)
     }
     pub fn HandleDidHideAllBeatmapObjects(
@@ -138,6 +83,39 @@ impl MirroredBeatmapObjectManager {
             .invoke("HandleDidHideAllBeatmapObjects", (hide))?;
         Ok(__cordl_ret)
     }
+    pub fn HandleNoteWasDespawned(
+        &mut self,
+        noteController: *mut NoteController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleNoteWasDespawned", (noteController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleNoteWasSpawned(
+        &mut self,
+        noteController: *mut NoteController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleNoteWasSpawned", (noteController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleObstacleWasDespawned(
+        &mut self,
+        obstacleController: *mut ObstacleController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleObstacleWasDespawned", (obstacleController))?;
+        Ok(__cordl_ret)
+    }
     pub fn HandleObstacleWasSpawned(
         &mut self,
         obstacleController: *mut ObstacleController,
@@ -149,14 +127,26 @@ impl MirroredBeatmapObjectManager {
             .invoke("HandleObstacleWasSpawned", (obstacleController))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn HandleSliderWasDespawned(
         &mut self,
+        sliderController: *mut SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("HandleSliderWasDespawned", (sliderController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleSliderWasSpawned(
+        &mut self,
+        sliderController: *mut SliderController,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleSliderWasSpawned", (sliderController))?;
         Ok(__cordl_ret)
     }
     pub fn Init(
@@ -187,12 +177,22 @@ impl MirroredBeatmapObjectManager {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MirroredBeatmapObjectManager")]

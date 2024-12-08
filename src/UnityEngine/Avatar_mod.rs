@@ -23,26 +23,44 @@ impl std::ops::DerefMut for crate::UnityEngine::Avatar {
 }
 #[cfg(feature = "UnityEngine+Avatar")]
 impl crate::UnityEngine::Avatar {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn GetAxisLength(&mut self, humanId: i32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("GetAxisLength", (humanId))?;
         Ok(__cordl_ret)
     }
-    pub fn Internal_GetPostRotation_Injected(
+    pub fn GetLimitSign(
         &mut self,
         humanId: i32,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Internal_GetPostRotation_Injected", (humanId, ret))?;
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("GetLimitSign", (humanId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPostRotation(
+        &mut self,
+        humanId: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
+            .invoke("GetPostRotation", (humanId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPreRotation(
+        &mut self,
+        humanId: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
+            .invoke("GetPreRotation", (humanId))?;
         Ok(__cordl_ret)
     }
     pub fn GetZYPostQ(
@@ -58,14 +76,53 @@ impl crate::UnityEngine::Avatar {
             .invoke("GetZYPostQ", (humanId, parentQ, q))?;
         Ok(__cordl_ret)
     }
-    pub fn GetAxisLength(&mut self, humanId: i32) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn GetZYRoll(
+        &mut self,
+        humanId: i32,
+        uvw: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetAxisLength", (humanId))?;
+        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
+            .invoke("GetZYRoll", (humanId, uvw))?;
         Ok(__cordl_ret)
     }
-    pub fn GetPreRotation(
+    pub fn Internal_GetAxisLength(
+        &mut self,
+        humanId: i32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("Internal_GetAxisLength", (humanId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Internal_GetLimitSign(
+        &mut self,
+        humanId: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("Internal_GetLimitSign", (humanId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Internal_GetLimitSign_Injected(
+        &mut self,
+        humanId: i32,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Internal_GetLimitSign_Injected", (humanId, ret))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Internal_GetPostRotation(
         &mut self,
         humanId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
@@ -73,20 +130,19 @@ impl crate::UnityEngine::Avatar {
             self,
         );
         let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("GetPreRotation", (humanId))?;
+            .invoke("Internal_GetPostRotation", (humanId))?;
         Ok(__cordl_ret)
     }
-    pub fn SetMuscleMinMax(
+    pub fn Internal_GetPostRotation_Injected(
         &mut self,
-        muscleId: i32,
-        min: f32,
-        max: f32,
+        humanId: i32,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetMuscleMinMax", (muscleId, min, max))?;
+            .invoke("Internal_GetPostRotation_Injected", (humanId, ret))?;
         Ok(__cordl_ret)
     }
     pub fn Internal_GetPreRotation(
@@ -100,6 +156,18 @@ impl crate::UnityEngine::Avatar {
             .invoke("Internal_GetPreRotation", (humanId))?;
         Ok(__cordl_ret)
     }
+    pub fn Internal_GetPreRotation_Injected(
+        &mut self,
+        humanId: i32,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Internal_GetPreRotation_Injected", (humanId, ret))?;
+        Ok(__cordl_ret)
+    }
     pub fn Internal_GetZYPostQ(
         &mut self,
         humanId: i32,
@@ -111,17 +179,6 @@ impl crate::UnityEngine::Avatar {
         );
         let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
             .invoke("Internal_GetZYPostQ", (humanId, parentQ, q))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_humanDescription_Injected(
-        &mut self,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::HumanDescription>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("get_humanDescription_Injected", (ret))?;
         Ok(__cordl_ret)
     }
     pub fn Internal_GetZYPostQ_Injected(
@@ -138,32 +195,7 @@ impl crate::UnityEngine::Avatar {
             .invoke("Internal_GetZYPostQ_Injected", (humanId, parentQ, q, ret))?;
         Ok(__cordl_ret)
     }
-    pub fn get_isValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isValid", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isHuman(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isHuman", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Internal_GetAxisLength(
-        &mut self,
-        humanId: i32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("Internal_GetAxisLength", (humanId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetZYRoll(
+    pub fn Internal_GetZYRoll(
         &mut self,
         humanId: i32,
         uvw: crate::UnityEngine::Vector3,
@@ -172,42 +204,7 @@ impl crate::UnityEngine::Avatar {
             self,
         );
         let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("GetZYRoll", (humanId, uvw))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Internal_GetPreRotation_Injected(
-        &mut self,
-        humanId: i32,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Internal_GetPreRotation_Injected", (humanId, ret))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Internal_GetLimitSign(
-        &mut self,
-        humanId: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("Internal_GetLimitSign", (humanId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetParameter(
-        &mut self,
-        parameterId: i32,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetParameter", (parameterId, value))?;
+            .invoke("Internal_GetZYRoll", (humanId, uvw))?;
         Ok(__cordl_ret)
     }
     pub fn Internal_GetZYRoll_Injected(
@@ -223,16 +220,46 @@ impl crate::UnityEngine::Avatar {
             .invoke("Internal_GetZYRoll_Injected", (humanId, uvw, ret))?;
         Ok(__cordl_ret)
     }
-    pub fn Internal_GetLimitSign_Injected(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetMuscleMinMax(
         &mut self,
-        humanId: i32,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        muscleId: i32,
+        min: f32,
+        max: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Internal_GetLimitSign_Injected", (humanId, ret))?;
+            .invoke("SetMuscleMinMax", (muscleId, min, max))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetParameter(
+        &mut self,
+        parameterId: i32,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetParameter", (parameterId, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_humanDescription(
@@ -245,57 +272,30 @@ impl crate::UnityEngine::Avatar {
             .invoke("get_humanDescription", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Internal_GetPostRotation(
+    pub fn get_humanDescription_Injected(
         &mut self,
-        humanId: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::HumanDescription>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("Internal_GetPostRotation", (humanId))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("get_humanDescription_Injected", (ret))?;
         Ok(__cordl_ret)
     }
-    pub fn Internal_GetZYRoll(
-        &mut self,
-        humanId: i32,
-        uvw: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+    pub fn get_isHuman(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("Internal_GetZYRoll", (humanId, uvw))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isHuman", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetPostRotation(
-        &mut self,
-        humanId: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+    pub fn get_isValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("GetPostRotation", (humanId))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isValid", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetLimitSign(
-        &mut self,
-        humanId: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("GetLimitSign", (humanId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+Avatar")]

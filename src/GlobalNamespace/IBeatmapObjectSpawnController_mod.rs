@@ -24,45 +24,6 @@ impl std::ops::DerefMut for IBeatmapObjectSpawnController {
 }
 #[cfg(feature = "IBeatmapObjectSpawnController")]
 impl IBeatmapObjectSpawnController {
-    pub fn get_verticalLayerDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_verticalLayerDistance", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_noteJumpMovementSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_noteJumpMovementSpeed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_jumpDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_jumpDuration", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_moveDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_moveDuration", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_didInitEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didInitEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Get2DNoteOffset(
         &mut self,
         noteLineIndex: i32,
@@ -75,26 +36,36 @@ impl IBeatmapObjectSpawnController {
             .invoke("Get2DNoteOffset", (noteLineIndex, noteLineLayer))?;
         Ok(__cordl_ret)
     }
-    pub fn get_noteLinesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn JumpPosYForLineLayerAtDistanceFromPlayerWithoutJumpOffset(
+        &mut self,
+        lineLayer: NoteLineLayer,
+        distanceFromPlayer: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_noteLinesCount", ())?;
+        let __cordl_ret: f32 = __cordl_object
+            .invoke(
+                "JumpPosYForLineLayerAtDistanceFromPlayerWithoutJumpOffset",
+                (lineLayer, distanceFromPlayer),
+            )?;
         Ok(__cordl_ret)
     }
-    pub fn get_jumpOffsetY(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn add_didInitEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_jumpOffsetY", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didInitEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_noteLinesDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_noteLinesDistance", ())?;
-        Ok(__cordl_ret)
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
     }
     pub fn get_beatmapObjectSpawnMovementData(
         &mut self,
@@ -120,7 +91,56 @@ impl IBeatmapObjectSpawnController {
         let __cordl_ret: f32 = __cordl_object.invoke("get_jumpDistance", ())?;
         Ok(__cordl_ret)
     }
-    pub fn add_didInitEvent(
+    pub fn get_jumpDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_jumpDuration", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_jumpOffsetY(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_jumpOffsetY", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_moveDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_moveDuration", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noteJumpMovementSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_noteJumpMovementSpeed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noteLinesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_noteLinesCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noteLinesDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_noteLinesDistance", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_verticalLayerDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_verticalLayerDistance", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_didInitEvent(
         &mut self,
         value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -128,28 +148,8 @@ impl IBeatmapObjectSpawnController {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didInitEvent", (value))?;
+            .invoke("remove_didInitEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn JumpPosYForLineLayerAtDistanceFromPlayerWithoutJumpOffset(
-        &mut self,
-        lineLayer: NoteLineLayer,
-        distanceFromPlayer: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke(
-                "JumpPosYForLineLayerAtDistanceFromPlayerWithoutJumpOffset",
-                (lineLayer, distanceFromPlayer),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IBeatmapObjectSpawnController")]

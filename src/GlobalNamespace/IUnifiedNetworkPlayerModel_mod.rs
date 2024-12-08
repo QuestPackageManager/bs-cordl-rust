@@ -24,14 +24,14 @@ impl std::ops::DerefMut for IUnifiedNetworkPlayerModel {
 }
 #[cfg(feature = "IUnifiedNetworkPlayerModel")]
 impl IUnifiedNetworkPlayerModel {
-    pub fn get_code(
+    pub fn ResetMasterServerReachability(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_code", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ResetMasterServerReachability", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetActiveNetworkPlayerModelType(
@@ -43,19 +43,6 @@ impl IUnifiedNetworkPlayerModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetActiveNetworkPlayerModelType", (activeNetworkPlayerModelType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_publicServers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<*mut INetworkPlayer>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut INetworkPlayer,
-        > = __cordl_object.invoke("get_publicServers", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetServerFilter(
@@ -81,25 +68,32 @@ impl IUnifiedNetworkPlayerModel {
             .invoke("add_partyRefreshingEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ResetMasterServerReachability(
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_code(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetMasterServerReachability", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_code", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_partyRefreshingEvent(
+    pub fn get_publicServers(
         &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<*mut INetworkPlayer>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_partyRefreshingEvent", (value))?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut INetworkPlayer,
+        > = __cordl_object.invoke("get_publicServers", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_secret(
@@ -112,10 +106,16 @@ impl IUnifiedNetworkPlayerModel {
             .invoke("get_secret", ())?;
         Ok(__cordl_ret)
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
+    pub fn remove_partyRefreshingEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_partyRefreshingEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "IUnifiedNetworkPlayerModel")]

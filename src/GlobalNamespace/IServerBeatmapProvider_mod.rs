@@ -23,21 +23,6 @@ impl std::ops::DerefMut for IServerBeatmapProvider {
 }
 #[cfg(feature = "IServerBeatmapProvider")]
 impl IServerBeatmapProvider {
-    pub fn VerifyBeatmapForSelectionMask(
-        &mut self,
-        beatmapKeySerializable: *mut BeatmapKeyNetSerializable,
-        selectionMask: BeatmapLevelSelectionMask,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "VerifyBeatmapForSelectionMask",
-                (beatmapKeySerializable, selectionMask),
-            )?;
-        Ok(__cordl_ret)
-    }
     pub fn SelectBeatmapFromSuggestionsWithSelectionMaskAndOwnedSongPacks(
         &mut self,
         playerCount: i32,
@@ -63,6 +48,21 @@ impl IServerBeatmapProvider {
                     selectionMask,
                     playerOwnedSongPacks,
                 ),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn VerifyBeatmapForSelectionMask(
+        &mut self,
+        beatmapKeySerializable: *mut BeatmapKeyNetSerializable,
+        selectionMask: BeatmapLevelSelectionMask,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "VerifyBeatmapForSelectionMask",
+                (beatmapKeySerializable, selectionMask),
             )?;
         Ok(__cordl_ret)
     }

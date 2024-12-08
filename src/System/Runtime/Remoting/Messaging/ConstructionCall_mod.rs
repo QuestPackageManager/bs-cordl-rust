@@ -35,15 +35,68 @@ for crate::System::Runtime::Remoting::Messaging::ConstructionCall {
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+ConstructionCall")]
 impl crate::System::Runtime::Remoting::Messaging::ConstructionCall {
-    pub fn _ctor_Type0(
+    pub fn GetObjectData(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_type))?;
+            .invoke("GetObjectData", (info, context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitDictionary(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitDictionary", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitMethodProperty(
+        &mut self,
+        key: *mut crate::System::String,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitMethodProperty", (key, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_SerializationInfo_StreamingContext1(
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (info, context))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Type0(
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type))?;
+        Ok(__cordl_object)
+    }
+    pub fn SetActivationAttributes(
+        &mut self,
+        attributes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetActivationAttributes", (attributes))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_SerializationInfo_StreamingContext1(
@@ -58,36 +111,47 @@ impl crate::System::Runtime::Remoting::Messaging::ConstructionCall {
             .invoke(".ctor", (info, context))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Properties(
+    pub fn _ctor_Type0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IDictionary> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IDictionary = __cordl_object
-            .invoke("get_Properties", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_SourceProxy(
-        &mut self,
-        value: *mut crate::System::Runtime::Remoting::Proxies::RemotingProxy,
+        _cordl_type: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_SourceProxy", (value))?;
+            .invoke(".ctor", (_cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Activator(
+    pub fn get_ActivationType(
         &mut self,
-        value: *mut crate::System::Runtime::Remoting::Activation::IActivator,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Activator", (value))?;
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_ActivationType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ActivationTypeName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_ActivationTypeName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Activator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Runtime::Remoting::Activation::IActivator,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Runtime::Remoting::Activation::IActivator = __cordl_object
+            .invoke("get_Activator", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_CallSiteActivationAttributes(
@@ -120,80 +184,14 @@ impl crate::System::Runtime::Remoting::Messaging::ConstructionCall {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsContextOk", ())?;
         Ok(__cordl_ret)
     }
-    pub fn InitDictionary(
+    pub fn get_Properties(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IDictionary> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitDictionary", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Activator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Activation::IActivator,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Activation::IActivator = __cordl_object
-            .invoke("get_Activator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ActivationTypeName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_ActivationTypeName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetActivationAttributes(
-        &mut self,
-        attributes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetActivationAttributes", (attributes))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetObjectData(
-        &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetObjectData", (info, context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ActivationType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_ActivationType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsContextOk(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsContextOk", (value))?;
+        let __cordl_ret: *mut crate::System::Collections::IDictionary = __cordl_object
+            .invoke("get_Properties", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SourceProxy(
@@ -208,36 +206,38 @@ impl crate::System::Runtime::Remoting::Messaging::ConstructionCall {
             .invoke("get_SourceProxy", ())?;
         Ok(__cordl_ret)
     }
-    pub fn InitMethodProperty(
+    pub fn set_Activator(
         &mut self,
-        key: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        value: *mut crate::System::Runtime::Remoting::Activation::IActivator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitMethodProperty", (key, value))?;
+            .invoke("set_Activator", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New_Type0(
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type))?;
-        Ok(__cordl_object)
+    pub fn set_IsContextOk(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsContextOk", (value))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_SerializationInfo_StreamingContext1(
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object)
+    pub fn set_SourceProxy(
+        &mut self,
+        value: *mut crate::System::Runtime::Remoting::Proxies::RemotingProxy,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_SourceProxy", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+ConstructionCall")]

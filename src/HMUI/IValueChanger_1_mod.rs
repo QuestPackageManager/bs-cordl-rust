@@ -42,6 +42,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::IValueChanger_1<T> {
             .invoke("add_valueChangedEvent", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn remove_valueChangedEvent(
         &mut self,
         value: *mut crate::System::Action_1<T>,
@@ -56,11 +61,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::IValueChanger_1<T> {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_valueChangedEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "HMUI+IValueChanger_1")]

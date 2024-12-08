@@ -27,6 +27,41 @@ for crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<TResult> 
 impl<
     TResult: quest_hook::libil2cpp::Type,
 > crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<TResult> {
+    pub fn AwaitUnsafeOnCompleted<TAwaiter, TStateMachine>(
+        &mut self,
+        awaiter: quest_hook::libil2cpp::ByRefMut<TAwaiter>,
+        stateMachine: quest_hook::libil2cpp::ByRefMut<TStateMachine>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TAwaiter: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TStateMachine: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AwaitUnsafeOnCompleted",
+            (awaiter, stateMachine),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetException(
+        &mut self,
+        exception: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetException",
+            (exception),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn SetResult_TResult0(
         &mut self,
         result: TResult,
@@ -54,41 +89,6 @@ impl<
             self,
             "SetResult",
             (completedTask),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetException(
-        &mut self,
-        exception: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetException",
-            (exception),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn AwaitUnsafeOnCompleted<TAwaiter, TStateMachine>(
-        &mut self,
-        awaiter: quest_hook::libil2cpp::ByRefMut<TAwaiter>,
-        stateMachine: quest_hook::libil2cpp::ByRefMut<TStateMachine>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TAwaiter: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TStateMachine: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AwaitUnsafeOnCompleted",
-            (awaiter, stateMachine),
         )?;
         Ok(__cordl_ret)
     }

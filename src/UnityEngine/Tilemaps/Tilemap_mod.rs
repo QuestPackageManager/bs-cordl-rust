@@ -78,19 +78,46 @@ impl std::ops::DerefMut for crate::UnityEngine::Tilemaps::Tilemap {
 }
 #[cfg(feature = "UnityEngine+Tilemaps+Tilemap")]
 impl crate::UnityEngine::Tilemaps::Tilemap {
-    #[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
-    pub type SyncTileCallbackSettings = crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings;
     #[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
     pub type SyncTile = crate::UnityEngine::Tilemaps::Tilemap_SyncTile;
-    pub fn GetTileAsset(
+    #[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
+    pub type SyncTileCallbackSettings = crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings;
+    pub fn DoPositionsChangedCallback(
         &mut self,
-        position: crate::UnityEngine::Vector3Int,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
+        count: i32,
+        positionsIntPtr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Object = __cordl_object
-            .invoke("GetTileAsset", (position))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DoPositionsChangedCallback", (count, positionsIntPtr))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DoSyncTileCallback(
+        &mut self,
+        syncTiles: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::Tilemaps::Tilemap_SyncTile,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DoSyncTileCallback", (syncTiles))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSyncTileCallbackSettings(
+        &mut self,
+        settings: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetSyncTileCallbackSettings", (settings))?;
         Ok(__cordl_ret)
     }
     pub fn GetTile<T>(
@@ -107,100 +134,15 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         let __cordl_ret: T = __cordl_object.invoke("GetTile", (position))?;
         Ok(__cordl_ret)
     }
-    pub fn get_bufferSyncTile(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_bufferSyncTile", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HasTile(
+    pub fn GetTileAsset(
         &mut self,
         position: crate::UnityEngine::Vector3Int,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("HasTile", (position))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RefreshTile(
-        &mut self,
-        position: crate::UnityEngine::Vector3Int,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshTile", (position))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_origin_Injected(
-        &mut self,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3Int>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("get_origin_Injected", (ret))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_tileAnchor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_tileAnchor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_origin(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3Int = __cordl_object
-            .invoke("get_origin", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTilesBlock(
-        &mut self,
-        bounds: crate::UnityEngine::BoundsInt,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Tilemaps::TileBase,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Tilemaps::TileBase,
-        > = __cordl_object.invoke("GetTilesBlock", (bounds))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_size_Injected(
-        &mut self,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3Int>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("get_size_Injected", (ret))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_layoutGrid(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Grid> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Grid = __cordl_object
-            .invoke("get_layoutGrid", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::Object = __cordl_object
+            .invoke("GetTileAsset", (position))?;
         Ok(__cordl_ret)
     }
     pub fn GetTileAsset_Injected(
@@ -214,28 +156,19 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
             .invoke("GetTileAsset_Injected", (position))?;
         Ok(__cordl_ret)
     }
-    pub fn get_orientationMatrix_Injected(
+    pub fn GetTileAssetsBlock(
         &mut self,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        position: crate::UnityEngine::Vector3Int,
+        blockDimensions: crate::UnityEngine::Vector3Int,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("get_orientationMatrix_Injected", (ret))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SendTilemapTileChangedCallback(
-        &mut self,
-        syncTiles: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Tilemaps::Tilemap_SyncTile,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendTilemapTileChangedCallback", (syncTiles))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::Object,
+        > = __cordl_object.invoke("GetTileAssetsBlock", (position, blockDimensions))?;
         Ok(__cordl_ret)
     }
     pub fn GetTileAssetsBlock_Injected(
@@ -254,96 +187,20 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
             .invoke("GetTileAssetsBlock_Injected", (position, blockDimensions))?;
         Ok(__cordl_ret)
     }
-    pub fn get_tileAnchor_Injected(
+    pub fn GetTilesBlock(
         &mut self,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("get_tileAnchor_Injected", (ret))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DoPositionsChangedCallback(
-        &mut self,
-        count: i32,
-        positionsIntPtr: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DoPositionsChangedCallback", (count, positionsIntPtr))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_cellBounds(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::BoundsInt> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::BoundsInt = __cordl_object
-            .invoke("get_cellBounds", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandlePositionsChangedCallback(
-        &mut self,
-        count: i32,
-        positionsIntPtr: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandlePositionsChangedCallback", (count, positionsIntPtr))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_size(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3Int = __cordl_object
-            .invoke("get_size", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleSyncTileCallback(
-        &mut self,
-        syncTiles: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Tilemaps::Tilemap_SyncTile,
+        bounds: crate::UnityEngine::BoundsInt,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::Tilemaps::TileBase,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSyncTileCallback", (syncTiles))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RefreshTile_Injected(
-        &mut self,
-        position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3Int>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshTile_Injected", (position))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SendTilemapPositionsChangedCallback(
-        &mut self,
-        positions: crate::Unity::Collections::NativeArray_1<
-            crate::UnityEngine::Vector3Int,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendTilemapPositionsChangedCallback", (positions))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::Tilemaps::TileBase,
+        > = __cordl_object.invoke("GetTilesBlock", (bounds))?;
         Ok(__cordl_ret)
     }
     pub fn GetUsedTilesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -351,56 +208,6 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetUsedTilesCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DoSyncTileCallback(
-        &mut self,
-        syncTiles: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Tilemaps::Tilemap_SyncTile,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DoSyncTileCallback", (syncTiles))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RefreshTilesNative(
-        &mut self,
-        positions: *mut quest_hook::libil2cpp::Il2CppObject,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshTilesNative", (positions, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_orientationMatrix(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Matrix4x4 = __cordl_object
-            .invoke("get_orientationMatrix", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTileAssetsBlock(
-        &mut self,
-        position: crate::UnityEngine::Vector3Int,
-        blockDimensions: crate::UnityEngine::Vector3Int,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Object,
-        > = __cordl_object.invoke("GetTileAssetsBlock", (position, blockDimensions))?;
         Ok(__cordl_ret)
     }
     pub fn GetUsedTilesNonAlloc(
@@ -416,17 +223,39 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
             .invoke("GetUsedTilesNonAlloc", (usedTiles))?;
         Ok(__cordl_ret)
     }
-    pub fn GetSyncTileCallbackSettings(
+    pub fn HandlePositionsChangedCallback(
         &mut self,
-        settings: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings,
+        count: i32,
+        positionsIntPtr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandlePositionsChangedCallback", (count, positionsIntPtr))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleSyncTileCallback(
+        &mut self,
+        syncTiles: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::Tilemaps::Tilemap_SyncTile,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetSyncTileCallbackSettings", (settings))?;
+            .invoke("HandleSyncTileCallback", (syncTiles))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HasTile(
+        &mut self,
+        position: crate::UnityEngine::Vector3Int,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("HasTile", (position))?;
         Ok(__cordl_ret)
     }
     pub fn Internal_GetUsedTilesNonAlloc(
@@ -440,6 +269,177 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("Internal_GetUsedTilesNonAlloc", (usedTiles))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RefreshTile(
+        &mut self,
+        position: crate::UnityEngine::Vector3Int,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RefreshTile", (position))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RefreshTile_Injected(
+        &mut self,
+        position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3Int>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RefreshTile_Injected", (position))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RefreshTilesNative(
+        &mut self,
+        positions: *mut quest_hook::libil2cpp::Il2CppObject,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RefreshTilesNative", (positions, count))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendTilemapPositionsChangedCallback(
+        &mut self,
+        positions: crate::Unity::Collections::NativeArray_1<
+            crate::UnityEngine::Vector3Int,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendTilemapPositionsChangedCallback", (positions))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendTilemapTileChangedCallback(
+        &mut self,
+        syncTiles: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::Tilemaps::Tilemap_SyncTile,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendTilemapTileChangedCallback", (syncTiles))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_bufferSyncTile(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_bufferSyncTile", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_cellBounds(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::BoundsInt> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::BoundsInt = __cordl_object
+            .invoke("get_cellBounds", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_layoutGrid(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Grid> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Grid = __cordl_object
+            .invoke("get_layoutGrid", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_orientationMatrix(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 = __cordl_object
+            .invoke("get_orientationMatrix", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_orientationMatrix_Injected(
+        &mut self,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("get_orientationMatrix_Injected", (ret))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_origin(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3Int = __cordl_object
+            .invoke("get_origin", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_origin_Injected(
+        &mut self,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3Int>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("get_origin_Injected", (ret))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_size(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3Int = __cordl_object
+            .invoke("get_size", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_size_Injected(
+        &mut self,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3Int>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("get_size_Injected", (ret))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_tileAnchor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_tileAnchor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_tileAnchor_Injected(
+        &mut self,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("get_tileAnchor_Injected", (ret))?;
         Ok(__cordl_ret)
     }
 }

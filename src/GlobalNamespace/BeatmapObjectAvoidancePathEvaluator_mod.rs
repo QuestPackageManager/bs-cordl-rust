@@ -33,6 +33,46 @@ impl std::ops::DerefMut for BeatmapObjectAvoidancePathEvaluator {
 }
 #[cfg(feature = "BeatmapObjectAvoidancePathEvaluator")]
 impl BeatmapObjectAvoidancePathEvaluator {
+    pub fn GetCurrentPathPosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("GetCurrentPathPosition", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        audioTimeSource: *mut IAudioTimeSource,
+        playerTransforms: *mut PlayerTransforms,
+        pathBezierCurveEvaluator: *mut BezierSplineEvaluator,
+        jumpStartZ: f32,
+        jumpEndZ: f32,
+        yOffset: f32,
+        zOffset: f32,
+        noteJumpSeed: f32,
+        moveToPlayerHeadTParam: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    audioTimeSource,
+                    playerTransforms,
+                    pathBezierCurveEvaluator,
+                    jumpStartZ,
+                    jumpEndZ,
+                    yOffset,
+                    zOffset,
+                    noteJumpSeed,
+                    moveToPlayerHeadTParam,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         audioTimeSource: *mut IAudioTimeSource,
@@ -64,46 +104,6 @@ impl BeatmapObjectAvoidancePathEvaluator {
                 ),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn GetCurrentPathPosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("GetCurrentPathPosition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        audioTimeSource: *mut IAudioTimeSource,
-        playerTransforms: *mut PlayerTransforms,
-        pathBezierCurveEvaluator: *mut BezierSplineEvaluator,
-        jumpStartZ: f32,
-        jumpEndZ: f32,
-        yOffset: f32,
-        zOffset: f32,
-        noteJumpSeed: f32,
-        moveToPlayerHeadTParam: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    audioTimeSource,
-                    playerTransforms,
-                    pathBezierCurveEvaluator,
-                    jumpStartZ,
-                    jumpEndZ,
-                    yOffset,
-                    zOffset,
-                    noteJumpSeed,
-                    moveToPlayerHeadTParam,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatmapObjectAvoidancePathEvaluator")]

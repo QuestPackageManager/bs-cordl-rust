@@ -23,6 +23,17 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for MultiplayerAvatarsData {
 }
 #[cfg(feature = "MultiplayerAvatarsData")]
 impl MultiplayerAvatarsData {
+    pub fn CreateFromSerializedData(
+        &mut self,
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+    ) -> quest_hook::libil2cpp::Result<MultiplayerAvatarsData> {
+        let __cordl_ret: MultiplayerAvatarsData = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CreateFromSerializedData",
+            (reader),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_MultiplayerAvatarsData0(
         &mut self,
         other: MultiplayerAvatarsData,
@@ -53,17 +64,6 @@ impl MultiplayerAvatarsData {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SupportsOptionalAvatarDataType(
-        &mut self,
-        typeHash: u32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SupportsOptionalAvatarDataType",
-            (typeHash),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Serialize(
         &mut self,
         writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
@@ -86,19 +86,14 @@ impl MultiplayerAvatarsData {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_IEnumerable_1_0(
+    pub fn SupportsOptionalAvatarDataType(
         &mut self,
-        multiplayerAvatarsData: *mut crate::System::Collections::Generic::List_1<
-            MultiplayerAvatarData,
-        >,
-        supportedAvatarTypeIdHashes: *mut crate::System::Collections::Generic::IEnumerable_1<
-            u32,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        typeHash: u32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (multiplayerAvatarsData, supportedAvatarTypeIdHashes),
+            "SupportsOptionalAvatarDataType",
+            (typeHash),
         )?;
         Ok(__cordl_ret)
     }
@@ -116,14 +111,19 @@ impl MultiplayerAvatarsData {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CreateFromSerializedData(
+    pub fn _ctor_IEnumerable_1_0(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<MultiplayerAvatarsData> {
-        let __cordl_ret: MultiplayerAvatarsData = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        multiplayerAvatarsData: *mut crate::System::Collections::Generic::List_1<
+            MultiplayerAvatarData,
+        >,
+        supportedAvatarTypeIdHashes: *mut crate::System::Collections::Generic::IEnumerable_1<
+            u32,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CreateFromSerializedData",
-            (reader),
+            ".ctor",
+            (multiplayerAvatarsData, supportedAvatarTypeIdHashes),
         )?;
         Ok(__cordl_ret)
     }

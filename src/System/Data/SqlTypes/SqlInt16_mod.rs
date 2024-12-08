@@ -23,31 +23,25 @@ for crate::System::Data::SqlTypes::SqlInt16 {
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlInt16")]
 impl crate::System::Data::SqlTypes::SqlInt16 {
-    pub fn ToString(
+    pub fn CompareTo_Object0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
-            (),
+            "CompareTo",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToSqlDouble(
+    pub fn CompareTo_SqlInt16_1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDouble> {
-        let __cordl_ret: crate::System::Data::SqlTypes::SqlDouble = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: crate::System::Data::SqlTypes::SqlInt16,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToSqlDouble",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<i16> {
-        let __cordl_ret: i16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Value",
-            (),
+            "CompareTo",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -62,20 +56,10 @@ impl crate::System::Data::SqlTypes::SqlInt16 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_IsNull",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToSqlInt64(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt64> {
-        let __cordl_ret: crate::System::Data::SqlTypes::SqlInt64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToSqlInt64",
+            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)
@@ -90,17 +74,6 @@ impl crate::System::Data::SqlTypes::SqlInt16 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_Xml_Serialization_IXmlSerializable_WriteXml(
-        &mut self,
-        writer: *mut crate::System::Xml::XmlWriter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Xml.Serialization.IXmlSerializable.WriteXml",
-            (writer),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn System_Xml_Serialization_IXmlSerializable_ReadXml(
         &mut self,
         reader: *mut crate::System::Xml::XmlReader,
@@ -112,10 +85,43 @@ impl crate::System::Data::SqlTypes::SqlInt16 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn System_Xml_Serialization_IXmlSerializable_WriteXml(
+        &mut self,
+        writer: *mut crate::System::Xml::XmlWriter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
+            "System.Xml.Serialization.IXmlSerializable.WriteXml",
+            (writer),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToSqlDouble(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDouble> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDouble = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToSqlDouble",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToSqlInt64(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt64> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlInt64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToSqlInt64",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
             (),
         )?;
         Ok(__cordl_ret)
@@ -142,25 +148,19 @@ impl crate::System::Data::SqlTypes::SqlInt16 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CompareTo_Object0(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CompareTo",
-            (value),
+            "get_IsNull",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CompareTo_SqlInt16_1(
-        &mut self,
-        value: crate::System::Data::SqlTypes::SqlInt16,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<i16> {
+        let __cordl_ret: i16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "CompareTo",
-            (value),
+            "get_Value",
+            (),
         )?;
         Ok(__cordl_ret)
     }

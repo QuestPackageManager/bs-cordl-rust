@@ -58,27 +58,6 @@ impl std::ops::DerefMut for NoteJump {
 #[cfg(feature = "NoteJump")]
 impl NoteJump {
     pub const kMissedTimeOffset: f32 = 0.15f32;
-    pub fn get_localPosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_localPosition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_noteJumpDidPassMissedMarkerEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_noteJumpDidPassMissedMarkerEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Init(
         &mut self,
         beatTime: f32,
@@ -113,27 +92,6 @@ impl NoteJump {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn remove_noteJumpDidPassHalfEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_noteJumpDidPassHalfEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_beatPos(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_beatPos", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn ManualUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
@@ -144,52 +102,12 @@ impl NoteJump {
             .invoke("ManualUpdate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_jumpDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_jumpDuration", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_noteJumpDidPassMissedMarkerEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_noteJumpDidPassMissedMarkerEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_noteJumpDidUpdateProgressEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<f32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_noteJumpDidUpdateProgressEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_distanceToPlayer(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_distanceToPlayer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_noteJumpDidFinishEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_noteJumpDidFinishEvent", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -199,17 +117,6 @@ impl NoteJump {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_noteJumpDidPassHalfEvent(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_noteJumpDidPassHalfEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_noteJumpDidFinishEvent(
@@ -223,36 +130,26 @@ impl NoteJump {
             .invoke("add_noteJumpDidFinishEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_noteJumpDidPassThreeQuartersEvent(
+    pub fn add_noteJumpDidPassHalfEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteJump>,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_noteJumpDidPassThreeQuartersEvent", (value))?;
+            .invoke("add_noteJumpDidPassHalfEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_moveVec(
+    pub fn add_noteJumpDidPassMissedMarkerEvent(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_moveVec", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_noteJumpDidUpdateProgressEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<f32>,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_noteJumpDidUpdateProgressEvent", (value))?;
+            .invoke("add_noteJumpDidPassMissedMarkerEvent", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_noteJumpDidPassThreeQuartersEvent(
@@ -266,12 +163,115 @@ impl NoteJump {
             .invoke("add_noteJumpDidPassThreeQuartersEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn add_noteJumpDidUpdateProgressEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<f32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_noteJumpDidUpdateProgressEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_beatPos(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_beatPos", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_distanceToPlayer(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_distanceToPlayer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_jumpDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_jumpDuration", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_localPosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_localPosition", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_moveVec(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_moveVec", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_noteJumpDidFinishEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_noteJumpDidFinishEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_noteJumpDidPassHalfEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_noteJumpDidPassHalfEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_noteJumpDidPassMissedMarkerEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_noteJumpDidPassMissedMarkerEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_noteJumpDidPassThreeQuartersEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut NoteJump>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_noteJumpDidPassThreeQuartersEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_noteJumpDidUpdateProgressEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<f32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_noteJumpDidUpdateProgressEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "NoteJump")]

@@ -43,17 +43,14 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetup
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitSceneSetupData")]
 impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData {
-    pub fn get_appInitOverrideStartType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType = __cordl_object
-            .invoke("get_appInitOverrideStartType", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        appInitOverrideStartType: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (appInitOverrideStartType))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -66,6 +63,18 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetu
             .invoke(".ctor", (appInitOverrideStartType))?;
         Ok(__cordl_ret)
     }
+    pub fn get_appInitOverrideStartType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType = __cordl_object
+            .invoke("get_appInitOverrideStartType", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_appInitOverrideStartType(
         &mut self,
         value: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
@@ -76,15 +85,6 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetu
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_appInitOverrideStartType", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        appInitOverrideStartType: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (appInitOverrideStartType))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitSceneSetupData")]
@@ -123,20 +123,10 @@ impl std::ops::DerefMut for AppInitScenesTransitionSetupDataSO {
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO")]
 impl AppInitScenesTransitionSetupDataSO {
-    #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType")]
-    pub type AppInitOverrideStartType = crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType;
     #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitSceneSetupData")]
     pub type AppInitSceneSetupData = crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData;
-    pub fn InitAsAppStart(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitAsAppStart", ())?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType")]
+    pub type AppInitOverrideStartType = crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType;
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -147,15 +137,22 @@ impl AppInitScenesTransitionSetupDataSO {
             .invoke("Init", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn InitAsAppStart(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("InitAsAppStart", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn __Init(
         &mut self,
@@ -168,12 +165,15 @@ impl AppInitScenesTransitionSetupDataSO {
             .invoke("__Init", (appInitOverrideStartType))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO")]

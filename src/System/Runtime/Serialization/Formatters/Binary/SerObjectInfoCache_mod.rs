@@ -35,6 +35,26 @@ for crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCach
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+SerObjectInfoCache")]
 impl crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCache {
+    pub fn New_String_String__cordl_bool0(
+        typeName: *mut crate::System::String,
+        assemblyName: *mut crate::System::String,
+        hasTypeForwardedFrom: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (typeName, assemblyName, hasTypeForwardedFrom))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Type1(
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_String_String__cordl_bool0(
         &mut self,
         typeName: *mut crate::System::String,
@@ -58,26 +78,6 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCac
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_type))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_String_String__cordl_bool0(
-        typeName: *mut crate::System::String,
-        assemblyName: *mut crate::System::String,
-        hasTypeForwardedFrom: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (typeName, assemblyName, hasTypeForwardedFrom))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Type1(
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+SerObjectInfoCache")]

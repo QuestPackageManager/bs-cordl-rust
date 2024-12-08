@@ -28,18 +28,6 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::ListInitExpression
 }
 #[cfg(feature = "System+Linq+Expressions+ListInitExpression")]
 impl crate::System::Linq::Expressions::ListInitExpression {
-    pub fn get_NewExpression(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::NewExpression,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::NewExpression = __cordl_object
-            .invoke("get_NewExpression", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Initializers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -53,6 +41,18 @@ impl crate::System::Linq::Expressions::ListInitExpression {
         let __cordl_ret: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
             *mut crate::System::Linq::Expressions::ElementInit,
         > = __cordl_object.invoke("get_Initializers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NewExpression(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::NewExpression,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Linq::Expressions::NewExpression = __cordl_object
+            .invoke("get_NewExpression", ())?;
         Ok(__cordl_ret)
     }
 }

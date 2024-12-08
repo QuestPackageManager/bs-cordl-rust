@@ -52,6 +52,28 @@ impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPartsModel")]
 impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
+    pub fn GetColorIndexById(
+        &mut self,
+        id: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetColorIndexById", (id))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetRandomColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO = __cordl_object
+            .invoke("GetRandomColor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetSkinColorById(
         &mut self,
         id: *mut crate::System::String,
@@ -65,7 +87,29 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
             .invoke("GetSkinColorById", (id))?;
         Ok(__cordl_ret)
     }
-    pub fn get_headTopCollection(
+    pub fn New(
+        avatarPartData: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO,
+        skinColorSet: *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSetSO,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (avatarPartData, skinColorSet))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        avatarPartData: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO,
+        skinColorSet: *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSetSO,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (avatarPartData, skinColorSet))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_clothesCollection(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
@@ -77,7 +121,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         );
         let __cordl_ret: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
             *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-        > = __cordl_object.invoke("get_headTopCollection", ())?;
+        > = __cordl_object.invoke("get_clothesCollection", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_eyesCollection(
@@ -93,21 +137,6 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         let __cordl_ret: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
             *mut crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
         > = __cordl_object.invoke("get_eyesCollection", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_handsCollection(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-        > = __cordl_object.invoke("get_handsCollection", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_facialHairCollection(
@@ -140,34 +169,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         > = __cordl_object.invoke("get_glassesCollection", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_skinColors(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
-        > = __cordl_object.invoke("get_skinColors", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        avatarPartData: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO,
-        skinColorSet: *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSetSO,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (avatarPartData, skinColorSet))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_clothesCollection(
+    pub fn get_handsCollection(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
@@ -179,17 +181,22 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         );
         let __cordl_ret: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
             *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-        > = __cordl_object.invoke("get_clothesCollection", ())?;
+        > = __cordl_object.invoke("get_handsCollection", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetColorIndexById(
+    pub fn get_headTopCollection(
         &mut self,
-        id: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetColorIndexById", (id))?;
+        let __cordl_ret: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+        > = __cordl_object.invoke("get_headTopCollection", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_mouthCollection(
@@ -207,27 +214,20 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         > = __cordl_object.invoke("get_mouthCollection", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetRandomColor(
+    pub fn get_skinColors(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO = __cordl_object
-            .invoke("GetRandomColor", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
+        > = __cordl_object.invoke("get_skinColors", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        avatarPartData: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO,
-        skinColorSet: *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSetSO,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (avatarPartData, skinColorSet))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPartsModel")]

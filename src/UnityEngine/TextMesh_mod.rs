@@ -24,6 +24,16 @@ impl std::ops::DerefMut for crate::UnityEngine::TextMesh {
 }
 #[cfg(feature = "UnityEngine+TextMesh")]
 impl crate::UnityEngine::TextMesh {
+    pub fn get_alignment(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TextAlignment> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::TextAlignment = __cordl_object
+            .invoke("get_alignment", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_alignment(
         &mut self,
         value: crate::UnityEngine::TextAlignment,
@@ -33,16 +43,6 @@ impl crate::UnityEngine::TextMesh {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_alignment", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_alignment(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TextAlignment> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::TextAlignment = __cordl_object
-            .invoke("get_alignment", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_text(

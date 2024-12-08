@@ -24,10 +24,10 @@ impl std::ops::DerefMut for crate::Zenject::Internal::ZenUtilInternal {
 }
 #[cfg(feature = "Zenject+Internal+ZenUtilInternal")]
 impl crate::Zenject::Internal::ZenUtilInternal {
-    #[cfg(feature = "Zenject+Internal+ZenUtilInternal+_GetAllSceneContexts_d__3")]
-    pub type _GetAllSceneContexts_d__3 = crate::Zenject::Internal::ZenUtilInternal__GetAllSceneContexts_d__3;
     #[cfg(feature = "Zenject+Internal+ZenUtilInternal+__c__DisplayClass10_0")]
     pub type __c__DisplayClass10_0 = crate::Zenject::Internal::ZenUtilInternal___c__DisplayClass10_0;
+    #[cfg(feature = "Zenject+Internal+ZenUtilInternal+_GetAllSceneContexts_d__3")]
+    pub type _GetAllSceneContexts_d__3 = crate::Zenject::Internal::ZenUtilInternal__GetAllSceneContexts_d__3;
     #[cfg(feature = "Zenject+Internal+ZenUtilInternal+__c")]
     pub type __c = crate::Zenject::Internal::ZenUtilInternal___c;
 }

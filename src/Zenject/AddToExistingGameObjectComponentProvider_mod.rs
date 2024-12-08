@@ -26,13 +26,6 @@ impl std::ops::DerefMut for crate::Zenject::AddToExistingGameObjectComponentProv
 }
 #[cfg(feature = "Zenject+AddToExistingGameObjectComponentProvider")]
 impl crate::Zenject::AddToExistingGameObjectComponentProvider {
-    pub fn get_ShouldToggleActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_ShouldToggleActive", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetGameObject(
         &mut self,
         context: *mut crate::Zenject::InjectContext,
@@ -43,6 +36,35 @@ impl crate::Zenject::AddToExistingGameObjectComponentProvider {
         let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
             .invoke("GetGameObject", (context))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        gameObject: *mut crate::UnityEngine::GameObject,
+        container: *mut crate::Zenject::DiContainer,
+        componentType: *mut crate::System::Type,
+        extraArguments: *mut crate::System::Collections::Generic::IEnumerable_1<
+            crate::Zenject::TypeValuePair,
+        >,
+        concreteIdentifier: *mut crate::System::Object,
+        instantiateCallback: *mut crate::System::Action_2<
+            *mut crate::Zenject::InjectContext,
+            *mut crate::System::Object,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    gameObject,
+                    container,
+                    componentType,
+                    extraArguments,
+                    concreteIdentifier,
+                    instantiateCallback,
+                ),
+            )?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -75,34 +97,12 @@ impl crate::Zenject::AddToExistingGameObjectComponentProvider {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        gameObject: *mut crate::UnityEngine::GameObject,
-        container: *mut crate::Zenject::DiContainer,
-        componentType: *mut crate::System::Type,
-        extraArguments: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::Zenject::TypeValuePair,
-        >,
-        concreteIdentifier: *mut crate::System::Object,
-        instantiateCallback: *mut crate::System::Action_2<
-            *mut crate::Zenject::InjectContext,
-            *mut crate::System::Object,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    gameObject,
-                    container,
-                    componentType,
-                    extraArguments,
-                    concreteIdentifier,
-                    instantiateCallback,
-                ),
-            )?;
-        Ok(__cordl_object)
+    pub fn get_ShouldToggleActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_ShouldToggleActive", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+AddToExistingGameObjectComponentProvider")]

@@ -38,16 +38,33 @@ impl crate::Org::BouncyCastle::Cms::OriginatorInfoGenerator {
             .invoke("Generate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_X509Certificate0(
-        &mut self,
+    pub fn New_IX509Store1(
+        origCerts: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (origCerts))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IX509Store_IX509Store2(
+        origCerts: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
+        origCrls: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (origCerts, origCrls))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_X509Certificate0(
         origCert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (origCert))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (origCert))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_IX509Store1(
         &mut self,
@@ -72,33 +89,16 @@ impl crate::Org::BouncyCastle::Cms::OriginatorInfoGenerator {
             .invoke(".ctor", (origCerts, origCrls))?;
         Ok(__cordl_ret)
     }
-    pub fn New_X509Certificate0(
+    pub fn _ctor_X509Certificate0(
+        &mut self,
         origCert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (origCert))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IX509Store1(
-        origCerts: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (origCerts))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IX509Store_IX509Store2(
-        origCerts: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
-        origCrls: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (origCerts, origCrls))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (origCert))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+OriginatorInfoGenerator")]

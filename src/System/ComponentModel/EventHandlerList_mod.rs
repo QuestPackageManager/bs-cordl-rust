@@ -28,17 +28,6 @@ impl std::ops::DerefMut for crate::System::ComponentModel::EventHandlerList {
 impl crate::System::ComponentModel::EventHandlerList {
     #[cfg(feature = "System+ComponentModel+EventHandlerList+ListEntry")]
     pub type ListEntry = crate::System::ComponentModel::EventHandlerList_ListEntry;
-    pub fn get_Item(
-        &mut self,
-        key: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Delegate> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Delegate = __cordl_object
-            .invoke("get_Item", (key))?;
-        Ok(__cordl_ret)
-    }
     pub fn Find(
         &mut self,
         key: *mut crate::System::Object,
@@ -50,6 +39,17 @@ impl crate::System::ComponentModel::EventHandlerList {
         );
         let __cordl_ret: *mut crate::System::ComponentModel::EventHandlerList_ListEntry = __cordl_object
             .invoke("Find", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(
+        &mut self,
+        key: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Delegate> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Delegate = __cordl_object
+            .invoke("get_Item", (key))?;
         Ok(__cordl_ret)
     }
 }

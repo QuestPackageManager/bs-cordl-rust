@@ -36,6 +36,29 @@ impl crate::System::ComponentModel::RefreshPropertiesAttribute {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsDefaultAttribute(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsDefaultAttribute", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        refresh: crate::System::ComponentModel::RefreshProperties,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (refresh))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         refresh: crate::System::ComponentModel::RefreshProperties,
@@ -58,29 +81,6 @@ impl crate::System::ComponentModel::RefreshPropertiesAttribute {
         let __cordl_ret: crate::System::ComponentModel::RefreshProperties = __cordl_object
             .invoke("get_RefreshProperties", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsDefaultAttribute(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsDefaultAttribute", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        refresh: crate::System::ComponentModel::RefreshProperties,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (refresh))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+ComponentModel+RefreshPropertiesAttribute")]

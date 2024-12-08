@@ -27,6 +27,15 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobProducerTypeAttribute {
 }
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobProducerTypeAttribute")]
 impl crate::Unity::Jobs::LowLevel::Unsafe::JobProducerTypeAttribute {
+    pub fn New(
+        producerType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (producerType))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         producerType: *mut crate::System::Type,
@@ -37,15 +46,6 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobProducerTypeAttribute {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (producerType))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        producerType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (producerType))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobProducerTypeAttribute")]

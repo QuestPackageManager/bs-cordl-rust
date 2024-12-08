@@ -24,12 +24,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MeshBuilderNative {
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative")]
 impl crate::UnityEngine::UIElements::MeshBuilderNative {
-    #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
-    pub type NativeBorderParams = crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams;
-    #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
-    pub type NativeRectParams = crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams;
     #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
     pub type NativeColorPage = crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage;
+    #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
+    pub type NativeRectParams = crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams;
+    #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
+    pub type NativeBorderParams = crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams;
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative")]
 impl quest_hook::libil2cpp::ObjectType

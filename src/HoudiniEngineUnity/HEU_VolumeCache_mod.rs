@@ -39,6 +39,153 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_VolumeCache {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_VolumeCache")]
 impl crate::HoudiniEngineUnity::HEU_VolumeCache {
+    pub fn ApplyPreset(
+        &mut self,
+        volumeCachePreset: *mut crate::HoudiniEngineUnity::HEU_VolumeCachePreset,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("ApplyPreset", (volumeCachePreset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CopyValuesTo(
+        &mut self,
+        destCache: *mut crate::HoudiniEngineUnity::HEU_VolumeCache,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CopyValuesTo", (destCache))?;
+        Ok(__cordl_ret)
+    }
+    pub fn FinishUpdateLayers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("FinishUpdateLayers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GenerateTerrainWithAlphamaps(
+        &mut self,
+        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+        houdiniAsset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+        bRebuild: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GenerateTerrainWithAlphamaps", (session, houdiniAsset, bRebuild))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetLayer(
+        &mut self,
+        layerName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::HEU_VolumeLayer> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HoudiniEngineUnity::HEU_VolumeLayer = __cordl_object
+            .invoke("GetLayer", (layerName))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPartLayerAttributes(
+        &mut self,
+        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+        geoID: i32,
+        partID: i32,
+        layer: *mut crate::HoudiniEngineUnity::HEU_VolumeLayer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetPartLayerAttributes", (session, geoID, partID, layer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Initialize(
+        &mut self,
+        ownerNode: *mut crate::HoudiniEngineUnity::HEU_GeoNode,
+        tileIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Initialize", (ownerNode, tileIndex))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsEquivalentTo(
+        &mut self,
+        other: *mut crate::HoudiniEngineUnity::HEU_VolumeCache,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsEquivalentTo", (other))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadLayerColorFromAttribute(
+        &mut self,
+        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+        geoID: i32,
+        partID: i32,
+        attrName: *mut crate::System::String,
+        colorValue: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "LoadLayerColorFromAttribute",
+                (session, geoID, partID, attrName, colorValue),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadLayerFloatFromAttribute(
+        &mut self,
+        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+        geoID: i32,
+        partID: i32,
+        attrName: *mut crate::System::String,
+        floatValue: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "LoadLayerFloatFromAttribute",
+                (session, geoID, partID, attrName, floatValue),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn LoadLayerPropertiesFromAttributes(
+        &mut self,
+        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+        geoID: i32,
+        partID: i32,
+        terrainLayer: *mut crate::UnityEngine::TerrainLayer,
+        bNewTerrainLayer: bool,
+        defaultTexture: *mut crate::UnityEngine::Texture2D,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "LoadLayerPropertiesFromAttributes",
+                (session, geoID, partID, terrainLayer, bNewTerrainLayer, defaultTexture),
+            )?;
+        Ok(__cordl_ret)
+    }
     pub fn LoadLayerTextureFromAttribute(
         &mut self,
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
@@ -75,6 +222,13 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn PopulateDetailPrototype(
         &mut self,
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
@@ -89,74 +243,15 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
             .invoke("PopulateDetailPrototype", (session, geoID, partID, layer))?;
         Ok(__cordl_ret)
     }
-    pub fn CopyValuesTo(
+    pub fn PopulatePreset(
         &mut self,
-        destCache: *mut crate::HoudiniEngineUnity::HEU_VolumeCache,
+        cachePreset: *mut crate::HoudiniEngineUnity::HEU_VolumeCachePreset,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CopyValuesTo", (destCache))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsEquivalentTo(
-        &mut self,
-        other: *mut crate::HoudiniEngineUnity::HEU_VolumeCache,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsEquivalentTo", (other))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsDirty(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsDirty", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadLayerFloatFromAttribute(
-        &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
-        geoID: i32,
-        partID: i32,
-        attrName: *mut crate::System::String,
-        floatValue: quest_hook::libil2cpp::ByRefMut<f32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "LoadLayerFloatFromAttribute",
-                (session, geoID, partID, attrName, floatValue),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FinishUpdateLayers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FinishUpdateLayers", ())?;
+            .invoke("PopulatePreset", (cachePreset))?;
         Ok(__cordl_ret)
     }
     pub fn PopulateScatterTrees(
@@ -177,54 +272,14 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn LoadLayerPropertiesFromAttributes(
+    pub fn ResetParameters(
         &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
-        geoID: i32,
-        partID: i32,
-        terrainLayer: *mut crate::UnityEngine::TerrainLayer,
-        bNewTerrainLayer: bool,
-        defaultTexture: *mut crate::UnityEngine::Texture2D,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "LoadLayerPropertiesFromAttributes",
-                (session, geoID, partID, terrainLayer, bNewTerrainLayer, defaultTexture),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TileIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_TileIndex", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GenerateTerrainWithAlphamaps(
-        &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
-        houdiniAsset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
-        bRebuild: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateTerrainWithAlphamaps", (session, houdiniAsset, bRebuild))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ApplyPreset(
-        &mut self,
-        volumeCachePreset: *mut crate::HoudiniEngineUnity::HEU_VolumeCachePreset,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("ApplyPreset", (volumeCachePreset))?;
+            .invoke("ResetParameters", ())?;
         Ok(__cordl_ret)
     }
     pub fn StartUpdateLayers(
@@ -235,17 +290,6 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StartUpdateLayers", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_UIExpanded(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_UIExpanded", (value))?;
         Ok(__cordl_ret)
     }
     pub fn UpdateLayerFromPart(
@@ -260,76 +304,14 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
             .invoke("UpdateLayerFromPart", (session, part))?;
         Ok(__cordl_ret)
     }
-    pub fn ResetParameters(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetParameters", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_UIExpanded(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_UIExpanded", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn PopulatePreset(
-        &mut self,
-        cachePreset: *mut crate::HoudiniEngineUnity::HEU_VolumeCachePreset,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PopulatePreset", (cachePreset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Initialize(
-        &mut self,
-        ownerNode: *mut crate::HoudiniEngineUnity::HEU_GeoNode,
-        tileIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Initialize", (ownerNode, tileIndex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadLayerColorFromAttribute(
-        &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
-        geoID: i32,
-        partID: i32,
-        attrName: *mut crate::System::String,
-        colorValue: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "LoadLayerColorFromAttribute",
-                (session, geoID, partID, attrName, colorValue),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetPartLayerAttributes(
-        &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
-        geoID: i32,
-        partID: i32,
-        layer: *mut crate::HoudiniEngineUnity::HEU_VolumeLayer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetPartLayerAttributes", (session, geoID, partID, layer))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_GeoName(
@@ -349,17 +331,6 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsDirty", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetLayer(
-        &mut self,
-        layerName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::HEU_VolumeLayer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HoudiniEngineUnity::HEU_VolumeLayer = __cordl_object
-            .invoke("GetLayer", (layerName))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_ObjectName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -370,12 +341,41 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
             .invoke("get_ObjectName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_TileIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_TileIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_UIExpanded(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_UIExpanded", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IsDirty(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsDirty", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_UIExpanded(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_UIExpanded", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_VolumeCache")]

@@ -30,6 +30,13 @@ for crate::System::Net::ServicePointScheduler_AsyncManualResetEvent {
 impl crate::System::Net::ServicePointScheduler_AsyncManualResetEvent {
     #[cfg(feature = "System+Net+ServicePointScheduler+AsyncManualResetEvent+__c")]
     pub type __c = crate::System::Net::AsyncManualResetEvent___c;
+    pub fn New(state: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (state))?;
+        Ok(__cordl_object)
+    }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -70,13 +77,6 @@ impl crate::System::Net::ServicePointScheduler_AsyncManualResetEvent {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (state))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(state: bool) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (state))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+ServicePointScheduler+AsyncManualResetEvent")]
@@ -125,56 +125,6 @@ impl std::ops::DerefMut for crate::System::Net::ServicePointScheduler_Connection
 }
 #[cfg(feature = "System+Net+ServicePointScheduler+ConnectionGroup")]
 impl crate::System::Net::ServicePointScheduler_ConnectionGroup {
-    pub fn FindIdleConnection(
-        &mut self,
-        operation: *mut crate::System::Net::WebOperation,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::WebConnection> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::WebConnection = __cordl_object
-            .invoke("FindIdleConnection", (operation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveConnection(
-        &mut self,
-        connection: *mut crate::System::Net::WebConnection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveConnection", (connection))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Scheduler(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::ServicePointScheduler> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::ServicePointScheduler = __cordl_object
-            .invoke("get_Scheduler", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EnqueueOperation(
-        &mut self,
-        operation: *mut crate::System::Net::WebOperation,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EnqueueOperation", (operation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsEmpty", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Cleanup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -183,6 +133,16 @@ impl crate::System::Net::ServicePointScheduler_ConnectionGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Cleanup", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Close(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Close", ())?;
         Ok(__cordl_ret)
     }
     pub fn CreateOrReuseConnection(
@@ -201,26 +161,26 @@ impl crate::System::Net::ServicePointScheduler_ConnectionGroup {
         > = __cordl_object.invoke("CreateOrReuseConnection", (operation, force))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn EnqueueOperation(
         &mut self,
-        scheduler: *mut crate::System::Net::ServicePointScheduler,
-        name: *mut crate::System::String,
+        operation: *mut crate::System::Net::WebOperation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (scheduler, name))?;
+            .invoke("EnqueueOperation", (operation))?;
         Ok(__cordl_ret)
     }
-    pub fn Close(
+    pub fn FindIdleConnection(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        operation: *mut crate::System::Net::WebOperation,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::WebConnection> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
+        let __cordl_ret: *mut crate::System::Net::WebConnection = __cordl_object
+            .invoke("FindIdleConnection", (operation))?;
         Ok(__cordl_ret)
     }
     pub fn GetNextOperation(
@@ -233,15 +193,55 @@ impl crate::System::Net::ServicePointScheduler_ConnectionGroup {
             .invoke("GetNextOperation", ())?;
         Ok(__cordl_ret)
     }
+    pub fn IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsEmpty", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn New(
         scheduler: *mut crate::System::Net::ServicePointScheduler,
         name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (scheduler, name))?;
         Ok(__cordl_object)
+    }
+    pub fn RemoveConnection(
+        &mut self,
+        connection: *mut crate::System::Net::WebConnection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveConnection", (connection))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        scheduler: *mut crate::System::Net::ServicePointScheduler,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (scheduler, name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Scheduler(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::ServicePointScheduler> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::ServicePointScheduler = __cordl_object
+            .invoke("get_Scheduler", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+ServicePointScheduler+ConnectionGroup")]
@@ -306,14 +306,47 @@ impl std::ops::DerefMut for crate::System::Net::ServicePointScheduler {
 }
 #[cfg(feature = "System+Net+ServicePointScheduler")]
 impl crate::System::Net::ServicePointScheduler {
+    #[cfg(feature = "System+Net+ServicePointScheduler+AsyncManualResetEvent")]
+    pub type AsyncManualResetEvent = crate::System::Net::ServicePointScheduler_AsyncManualResetEvent;
     #[cfg(feature = "System+Net+ServicePointScheduler+ConnectionGroup")]
     pub type ConnectionGroup = crate::System::Net::ServicePointScheduler_ConnectionGroup;
     #[cfg(feature = "System+Net+ServicePointScheduler+_WaitAsync_d__46")]
     pub type _WaitAsync_d__46 = crate::System::Net::ServicePointScheduler__WaitAsync_d__46;
     #[cfg(feature = "System+Net+ServicePointScheduler+_RunScheduler_d__32")]
     pub type _RunScheduler_d__32 = crate::System::Net::ServicePointScheduler__RunScheduler_d__32;
-    #[cfg(feature = "System+Net+ServicePointScheduler+AsyncManualResetEvent")]
-    pub type AsyncManualResetEvent = crate::System::Net::ServicePointScheduler_AsyncManualResetEvent;
+    pub fn Cleanup(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Cleanup", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CloseConnectionGroup(
+        &mut self,
+        groupName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("CloseConnectionGroup", (groupName))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CloseIdleConnection(
+        &mut self,
+        group: *mut crate::System::Net::ServicePointScheduler_ConnectionGroup,
+        connection: *mut crate::System::Net::WebConnection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CloseIdleConnection", (group, connection))?;
+        Ok(__cordl_ret)
+    }
     pub fn FinalCleanup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -323,6 +356,30 @@ impl crate::System::Net::ServicePointScheduler {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FinalCleanup", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn GetConnectionGroup(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Net::ServicePointScheduler_ConnectionGroup,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::ServicePointScheduler_ConnectionGroup = __cordl_object
+            .invoke("GetConnectionGroup", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        servicePoint: *mut crate::System::Net::ServicePoint,
+        connectionLimit: i32,
+        maxIdleTime: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (servicePoint, connectionLimit, maxIdleTime))?;
+        Ok(__cordl_object)
     }
     pub fn OnConnectionClosed(
         &mut self,
@@ -335,11 +392,15 @@ impl crate::System::Net::ServicePointScheduler {
             .invoke("OnConnectionClosed", (connection))?;
         Ok(__cordl_ret)
     }
-    pub fn Run(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn OnConnectionCreated(
+        &mut self,
+        connection: *mut crate::System::Net::WebConnection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object.invoke("Run", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnConnectionCreated", (connection))?;
         Ok(__cordl_ret)
     }
     pub fn OperationCompleted(
@@ -354,7 +415,7 @@ impl crate::System::Net::ServicePointScheduler {
             .invoke("OperationCompleted", (group, operation))?;
         Ok(__cordl_ret)
     }
-    pub fn OnConnectionCreated(
+    pub fn RemoveIdleConnection(
         &mut self,
         connection: *mut crate::System::Net::WebConnection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -362,7 +423,25 @@ impl crate::System::Net::ServicePointScheduler {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnConnectionCreated", (connection))?;
+            .invoke("RemoveIdleConnection", (connection))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveOperation(
+        &mut self,
+        operation: *mut crate::System::Net::WebOperation,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveOperation", (operation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Run(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object.invoke("Run", ())?;
         Ok(__cordl_ret)
     }
     pub fn RunScheduler(
@@ -375,17 +454,14 @@ impl crate::System::Net::ServicePointScheduler {
             .invoke("RunScheduler", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetConnectionGroup(
+    pub fn RunSchedulerIteration(
         &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Net::ServicePointScheduler_ConnectionGroup,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::ServicePointScheduler_ConnectionGroup = __cordl_object
-            .invoke("GetConnectionGroup", (name))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RunSchedulerIteration", ())?;
         Ok(__cordl_ret)
     }
     pub fn SchedulerIteration(
@@ -410,15 +486,34 @@ impl crate::System::Net::ServicePointScheduler {
             .invoke("SendRequest", (operation, groupName))?;
         Ok(__cordl_ret)
     }
-    pub fn CloseConnectionGroup(
+    pub fn _Run_b__31_0(
         &mut self,
-        groupName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CloseConnectionGroup", (groupName))?;
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("<Run>b__31_0", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        servicePoint: *mut crate::System::Net::ServicePoint,
+        connectionLimit: i32,
+        maxIdleTime: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (servicePoint, connectionLimit, maxIdleTime))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MaxIdleTime(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_MaxIdleTime", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ServicePoint(
@@ -441,101 +536,6 @@ impl crate::System::Net::ServicePointScheduler {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ServicePoint", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn CloseIdleConnection(
-        &mut self,
-        group: *mut crate::System::Net::ServicePointScheduler_ConnectionGroup,
-        connection: *mut crate::System::Net::WebConnection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CloseIdleConnection", (group, connection))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveIdleConnection(
-        &mut self,
-        connection: *mut crate::System::Net::WebConnection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveIdleConnection", (connection))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RunSchedulerIteration(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RunSchedulerIteration", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MaxIdleTime(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_MaxIdleTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveOperation(
-        &mut self,
-        operation: *mut crate::System::Net::WebOperation,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveOperation", (operation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _Run_b__31_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("<Run>b__31_0", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Cleanup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Cleanup", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        servicePoint: *mut crate::System::Net::ServicePoint,
-        connectionLimit: i32,
-        maxIdleTime: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (servicePoint, connectionLimit, maxIdleTime))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        servicePoint: *mut crate::System::Net::ServicePoint,
-        connectionLimit: i32,
-        maxIdleTime: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (servicePoint, connectionLimit, maxIdleTime))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+ServicePointScheduler")]

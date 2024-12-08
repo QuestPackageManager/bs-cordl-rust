@@ -23,12 +23,12 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Resoluti
 }
 #[cfg(feature = "UnityEngine+Resolution")]
 impl crate::UnityEngine::Resolution {
-    pub fn get_refreshRateRatio(
+    pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RefreshRate> {
-        let __cordl_ret: crate::UnityEngine::RefreshRate = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_refreshRateRatio",
+            "ToString",
             (),
         )?;
         Ok(__cordl_ret)
@@ -41,20 +41,20 @@ impl crate::UnityEngine::Resolution {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_refreshRateRatio(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RefreshRate> {
+        let __cordl_ret: crate::UnityEngine::RefreshRate = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_width",
+            "get_refreshRateRatio",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
+            "get_width",
             (),
         )?;
         Ok(__cordl_ret)

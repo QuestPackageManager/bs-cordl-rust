@@ -23,6 +23,21 @@ impl std::ops::DerefMut for IAnalyticsModel {
 }
 #[cfg(feature = "IAnalyticsModel")]
 impl IAnalyticsModel {
+    pub fn LogClick(
+        &mut self,
+        clickType: *mut crate::System::String,
+        clickData: *mut crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::String,
+            *mut crate::System::String,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LogClick", (clickType, clickData))?;
+        Ok(__cordl_ret)
+    }
     pub fn LogEditAvatarEvent(
         &mut self,
         eventType: *mut crate::System::String,
@@ -38,14 +53,19 @@ impl IAnalyticsModel {
             .invoke("LogEditAvatarEvent", (eventType, eventData))?;
         Ok(__cordl_ret)
     }
-    pub fn OpenDataPrivacyPage(
+    pub fn LogEvent(
         &mut self,
+        eventType: *mut crate::System::String,
+        eventData: *mut crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::String,
+            *mut crate::System::String,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OpenDataPrivacyPage", ())?;
+            .invoke("LogEvent", (eventType, eventData))?;
         Ok(__cordl_ret)
     }
     pub fn LogExposure(
@@ -78,20 +98,20 @@ impl IAnalyticsModel {
             .invoke("LogImpression", (impressionType, impressionData))?;
         Ok(__cordl_ret)
     }
-    pub fn LogClick(
+    pub fn OpenDataPrivacyPage(
         &mut self,
-        clickType: *mut crate::System::String,
-        clickData: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
-        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LogClick", (clickType, clickData))?;
+            .invoke("OpenDataPrivacyPage", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
     }
     pub fn get_supportsOpenDataPrivacyPage(
         &mut self,
@@ -102,26 +122,6 @@ impl IAnalyticsModel {
         let __cordl_ret: bool = __cordl_object
             .invoke("get_supportsOpenDataPrivacyPage", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn LogEvent(
-        &mut self,
-        eventType: *mut crate::System::String,
-        eventData: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LogEvent", (eventType, eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "IAnalyticsModel")]

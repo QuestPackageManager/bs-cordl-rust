@@ -24,6 +24,16 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::IXmlSerializable 
 }
 #[cfg(feature = "System+Xml+Serialization+IXmlSerializable")]
 impl crate::System::Xml::Serialization::IXmlSerializable {
+    pub fn GetSchema(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchema = __cordl_object
+            .invoke("GetSchema", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn ReadXml(
         &mut self,
         reader: *mut crate::System::Xml::XmlReader,
@@ -44,16 +54,6 @@ impl crate::System::Xml::Serialization::IXmlSerializable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteXml", (writer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSchema(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchema = __cordl_object
-            .invoke("GetSchema", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

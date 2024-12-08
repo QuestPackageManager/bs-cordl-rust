@@ -25,17 +25,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::DerOctetStringParser
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerOctetStringParser")]
 impl crate::Org::BouncyCastle::Asn1::DerOctetStringParser {
-    pub fn _ctor(
-        &mut self,
-        stream: *mut crate::Org::BouncyCastle::Asn1::DefiniteLengthInputStream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stream))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetOctetStream(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
@@ -45,6 +34,15 @@ impl crate::Org::BouncyCastle::Asn1::DerOctetStringParser {
         let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
             .invoke("GetOctetStream", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        stream: *mut crate::Org::BouncyCastle::Asn1::DefiniteLengthInputStream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream))?;
+        Ok(__cordl_object)
     }
     pub fn ToAsn1Object(
         &mut self,
@@ -56,14 +54,16 @@ impl crate::Org::BouncyCastle::Asn1::DerOctetStringParser {
             .invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         stream: *mut crate::Org::BouncyCastle::Asn1::DefiniteLengthInputStream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stream))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerOctetStringParser")]

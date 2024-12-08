@@ -22,22 +22,6 @@ for crate::UnityEngine::Playables::FrameRate {
 }
 #[cfg(feature = "UnityEngine+Playables+FrameRate")]
 impl crate::UnityEngine::Playables::FrameRate {
-    pub fn get_rate(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_rate",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsValid",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_FrameRate0(
         &mut self,
         other: crate::UnityEngine::Playables::FrameRate,
@@ -57,6 +41,22 @@ impl crate::UnityEngine::Playables::FrameRate {
             self,
             "Equals",
             (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IsValid",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -82,22 +82,6 @@ impl crate::UnityEngine::Playables::FrameRate {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_dropFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_dropFrame",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         frameRate: u32,
@@ -107,6 +91,22 @@ impl crate::UnityEngine::Playables::FrameRate {
             self,
             ".ctor",
             (frameRate, drop),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_dropFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_dropFrame",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rate(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_rate",
+            (),
         )?;
         Ok(__cordl_ret)
     }

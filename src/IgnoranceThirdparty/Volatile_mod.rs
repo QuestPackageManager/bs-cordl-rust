@@ -22,25 +22,6 @@ for crate::IgnoranceThirdparty::Volatile_PaddedLong {
 }
 #[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
 impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
-    pub fn _ctor(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadFullFence(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReadFullFence",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn AtomicAddAndGet(&mut self, delta: i64) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -61,21 +42,10 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WriteUnfenced(
-        &mut self,
-        newValue: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WriteUnfenced",
-            (newValue),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadCompilerOnlyFence(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+    pub fn AtomicDecrementAndGet(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ReadCompilerOnlyFence",
+            "AtomicDecrementAndGet",
             (),
         )?;
         Ok(__cordl_ret)
@@ -91,14 +61,6 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ReadUnfenced(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReadUnfenced",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn AtomicIncrementAndGet(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -107,22 +69,35 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn AtomicDecrementAndGet(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+    pub fn ReadAcquireFence(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "AtomicDecrementAndGet",
+            "ReadAcquireFence",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WriteReleaseFence(
-        &mut self,
-        newValue: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn ReadCompilerOnlyFence(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "WriteReleaseFence",
-            (newValue),
+            "ReadCompilerOnlyFence",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadFullFence(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ReadFullFence",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadUnfenced(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ReadUnfenced",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -136,11 +111,14 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ReadAcquireFence(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn WriteCompilerOnlyFence(
+        &mut self,
+        newValue: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ReadAcquireFence",
-            (),
+            "WriteCompilerOnlyFence",
+            (newValue),
         )?;
         Ok(__cordl_ret)
     }
@@ -155,14 +133,36 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WriteCompilerOnlyFence(
+    pub fn WriteReleaseFence(
         &mut self,
         newValue: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "WriteCompilerOnlyFence",
+            "WriteReleaseFence",
             (newValue),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteUnfenced(
+        &mut self,
+        newValue: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "WriteUnfenced",
+            (newValue),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

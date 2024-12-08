@@ -31,40 +31,12 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::ReflectionObject
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionObject")]
 impl crate::Newtonsoft::Json::Utilities::ReflectionObject {
-    #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionObject+__c__DisplayClass11_0")]
-    pub type __c__DisplayClass11_0 = crate::Newtonsoft::Json::Utilities::ReflectionObject___c__DisplayClass11_0;
     #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionObject+__c__DisplayClass11_1")]
     pub type __c__DisplayClass11_1 = crate::Newtonsoft::Json::Utilities::ReflectionObject___c__DisplayClass11_1;
     #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionObject+__c__DisplayClass11_2")]
     pub type __c__DisplayClass11_2 = crate::Newtonsoft::Json::Utilities::ReflectionObject___c__DisplayClass11_2;
-    pub fn SetValue(
-        &mut self,
-        target: *mut crate::System::Object,
-        member: *mut crate::System::String,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetValue", (target, member, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Creator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
-        > = __cordl_object.invoke("get_Creator", ())?;
-        Ok(__cordl_ret)
-    }
+    #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionObject+__c__DisplayClass11_0")]
+    pub type __c__DisplayClass11_0 = crate::Newtonsoft::Json::Utilities::ReflectionObject___c__DisplayClass11_0;
     pub fn GetType(
         &mut self,
         member: *mut crate::System::String,
@@ -88,6 +60,58 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionObject {
             .invoke("GetValue", (target, member))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        creator: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+            *mut crate::System::Object,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (creator))?;
+        Ok(__cordl_object)
+    }
+    pub fn SetValue(
+        &mut self,
+        target: *mut crate::System::Object,
+        member: *mut crate::System::String,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetValue", (target, member, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        creator: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+            *mut crate::System::Object,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (creator))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Creator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+            *mut crate::System::Object,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+            *mut crate::System::Object,
+        > = __cordl_object.invoke("get_Creator", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Members(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -104,30 +128,6 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionObject {
             *mut crate::Newtonsoft::Json::Utilities::ReflectionMember,
         > = __cordl_object.invoke("get_Members", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        creator: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (creator))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        creator: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (creator))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionObject")]

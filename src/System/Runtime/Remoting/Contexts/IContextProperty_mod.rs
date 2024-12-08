@@ -26,26 +26,6 @@ for crate::System::Runtime::Remoting::Contexts::IContextProperty {
 }
 #[cfg(feature = "System+Runtime+Remoting+Contexts+IContextProperty")]
 impl crate::System::Runtime::Remoting::Contexts::IContextProperty {
-    pub fn IsNewContextOK(
-        &mut self,
-        newCtx: *mut crate::System::Runtime::Remoting::Contexts::Context,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsNewContextOK", (newCtx))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Name", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Freeze(
         &mut self,
         newContext: *mut crate::System::Runtime::Remoting::Contexts::Context,
@@ -57,10 +37,30 @@ impl crate::System::Runtime::Remoting::Contexts::IContextProperty {
             .invoke("Freeze", (newContext))?;
         Ok(__cordl_ret)
     }
+    pub fn IsNewContextOK(
+        &mut self,
+        newCtx: *mut crate::System::Runtime::Remoting::Contexts::Context,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsNewContextOK", (newCtx))?;
+        Ok(__cordl_ret)
+    }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_Name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Name", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Contexts+IContextProperty")]

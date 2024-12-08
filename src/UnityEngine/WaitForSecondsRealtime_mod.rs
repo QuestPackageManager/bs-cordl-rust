@@ -26,6 +26,23 @@ impl std::ops::DerefMut for crate::UnityEngine::WaitForSecondsRealtime {
 }
 #[cfg(feature = "UnityEngine+WaitForSecondsRealtime")]
 impl crate::UnityEngine::WaitForSecondsRealtime {
+    pub fn New(_cordl_time: f32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_time))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         _cordl_time: f32,
@@ -37,14 +54,11 @@ impl crate::UnityEngine::WaitForSecondsRealtime {
             .invoke(".ctor", (_cordl_time))?;
         Ok(__cordl_ret)
     }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_keepWaiting(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_keepWaiting", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_waitTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -64,20 +78,6 @@ impl crate::UnityEngine::WaitForSecondsRealtime {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_waitTime", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_keepWaiting(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_keepWaiting", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(_cordl_time: f32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_time))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+WaitForSecondsRealtime")]

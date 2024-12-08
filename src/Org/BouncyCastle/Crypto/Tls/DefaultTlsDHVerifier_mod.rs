@@ -37,13 +37,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsDHVerifier {
         let __cordl_ret: bool = __cordl_object.invoke("Accept", (dhParameters))?;
         Ok(__cordl_ret)
     }
-    pub fn get_MinimumPrimeBits(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_MinimumPrimeBits", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn AreGroupsEqual(
         &mut self,
         a: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
@@ -53,16 +46,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsDHVerifier {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("AreGroupsEqual", (a, b))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckGroup(
-        &mut self,
-        dhParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CheckGroup", (dhParameters))?;
         Ok(__cordl_ret)
     }
     pub fn AreParametersEqual(
@@ -76,6 +59,51 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsDHVerifier {
         let __cordl_ret: bool = __cordl_object.invoke("AreParametersEqual", (a, b))?;
         Ok(__cordl_ret)
     }
+    pub fn CheckGroup(
+        &mut self,
+        dhParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("CheckGroup", (dhParameters))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckMinimumPrimeBits(
+        &mut self,
+        dhParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("CheckMinimumPrimeBits", (dhParameters))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IList_i32_2(
+        groups: *mut crate::System::Collections::IList,
+        minimumPrimeBits: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (groups, minimumPrimeBits))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_1(minimumPrimeBits: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (minimumPrimeBits))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -84,17 +112,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsDHVerifier {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_1(
-        &mut self,
-        minimumPrimeBits: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (minimumPrimeBits))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_IList_i32_2(
@@ -109,42 +126,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsDHVerifier {
             .invoke(".ctor", (groups, minimumPrimeBits))?;
         Ok(__cordl_ret)
     }
-    pub fn CheckMinimumPrimeBits(
+    pub fn _ctor_i32_1(
         &mut self,
-        dhParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        minimumPrimeBits: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CheckMinimumPrimeBits", (dhParameters))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (minimumPrimeBits))?;
         Ok(__cordl_ret)
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_1(
-        minimumPrimeBits: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (minimumPrimeBits))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IList_i32_2(
-        groups: *mut crate::System::Collections::IList,
-        minimumPrimeBits: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (groups, minimumPrimeBits))?;
-        Ok(__cordl_object)
+    pub fn get_MinimumPrimeBits(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_MinimumPrimeBits", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsDHVerifier")]

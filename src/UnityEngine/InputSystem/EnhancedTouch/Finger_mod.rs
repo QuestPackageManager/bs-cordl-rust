@@ -29,20 +29,9 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::EnhancedTouch::Fing
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Finger")]
 impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
-    pub fn get_touchHistory(
+    pub fn FindTouch(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory = __cordl_object
-            .invoke("get_touchHistory", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_lastTouch(
-        &mut self,
+        uniqueId: u32,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
     > {
@@ -50,7 +39,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
             self,
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::Touch = __cordl_object
-            .invoke("get_lastTouch", ())?;
+            .invoke("FindTouch", (uniqueId))?;
         Ok(__cordl_ret)
     }
     pub fn GetTouchHistory(
@@ -66,6 +55,28 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
             .invoke("GetTouchHistory", (touch))?;
         Ok(__cordl_ret)
     }
+    pub fn New(
+        screen: *mut crate::UnityEngine::InputSystem::Touchscreen,
+        index: i32,
+        updateMask: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (screen, index, updateMask))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnTouchRecorded(
+        &mut self,
+        record: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnTouchRecorded", (record))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         screen: *mut crate::UnityEngine::InputSystem::Touchscreen,
@@ -79,11 +90,42 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
             .invoke(".ctor", (screen, index, updateMask))?;
         Ok(__cordl_ret)
     }
+    pub fn get_currentTouch(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::Touch = __cordl_object
+            .invoke("get_currentTouch", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_index(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_index", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_isActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isActive", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_lastTouch(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::Touch = __cordl_object
+            .invoke("get_lastTouch", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_screen(
@@ -108,59 +150,17 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
             .invoke("get_screenPosition", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_currentTouch(
+    pub fn get_touchHistory(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+        crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::Touch = __cordl_object
-            .invoke("get_currentTouch", ())?;
+        let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory = __cordl_object
+            .invoke("get_touchHistory", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn FindTouch(
-        &mut self,
-        uniqueId: u32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::Touch = __cordl_object
-            .invoke("FindTouch", (uniqueId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnTouchRecorded(
-        &mut self,
-        record: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnTouchRecorded", (record))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_index(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_index", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        screen: *mut crate::UnityEngine::InputSystem::Touchscreen,
-        index: i32,
-        updateMask: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (screen, index, updateMask))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Finger")]

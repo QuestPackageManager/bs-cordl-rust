@@ -25,6 +25,15 @@ impl std::ops::DerefMut for crate::System::Net::Cache::RequestCachePolicy {
 }
 #[cfg(feature = "System+Net+Cache+RequestCachePolicy")]
 impl crate::System::Net::Cache::RequestCachePolicy {
+    pub fn New(
+        level: crate::System::Net::Cache::RequestCacheLevel,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (level))?;
+        Ok(__cordl_object)
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -55,15 +64,6 @@ impl crate::System::Net::Cache::RequestCachePolicy {
         let __cordl_ret: crate::System::Net::Cache::RequestCacheLevel = __cordl_object
             .invoke("get_Level", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        level: crate::System::Net::Cache::RequestCacheLevel,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (level))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+Cache+RequestCachePolicy")]

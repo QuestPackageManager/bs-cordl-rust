@@ -27,6 +27,24 @@ for crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Extension+SubjectKeyIdentifierStructure")]
 impl crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
+    pub fn New_Asn1OctetString0(
+        encodedValue: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encodedValue))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_AsymmetricKeyParameter1(
+        pubKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (pubKey))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_Asn1OctetString0(
         &mut self,
         encodedValue: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
@@ -48,24 +66,6 @@ impl crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (pubKey))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_Asn1OctetString0(
-        encodedValue: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encodedValue))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_AsymmetricKeyParameter1(
-        pubKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (pubKey))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Extension+SubjectKeyIdentifierStructure")]

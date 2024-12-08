@@ -27,12 +27,37 @@ impl std::ops::DerefMut for crate::VRUIControls::MouseState {
 }
 #[cfg(feature = "VRUIControls+MouseState")]
 impl crate::VRUIControls::MouseState {
+    pub fn AnyPressesThisFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("AnyPressesThisFrame", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn AnyReleasesThisFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("AnyReleasesThisFrame", ())?;
         Ok(__cordl_ret)
+    }
+    pub fn GetButtonState(
+        &mut self,
+        button: crate::UnityEngine::EventSystems::PointerEventData_InputButton,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::VRUIControls::ButtonState> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::VRUIControls::ButtonState = __cordl_object
+            .invoke("GetButtonState", (button))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn SetButtonState(
         &mut self,
@@ -47,13 +72,6 @@ impl crate::VRUIControls::MouseState {
             .invoke("SetButtonState", (button, stateForMouseButton, data))?;
         Ok(__cordl_ret)
     }
-    pub fn AnyPressesThisFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("AnyPressesThisFrame", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -63,24 +81,6 @@ impl crate::VRUIControls::MouseState {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetButtonState(
-        &mut self,
-        button: crate::UnityEngine::EventSystems::PointerEventData_InputButton,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::VRUIControls::ButtonState> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::VRUIControls::ButtonState = __cordl_object
-            .invoke("GetButtonState", (button))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "VRUIControls+MouseState")]

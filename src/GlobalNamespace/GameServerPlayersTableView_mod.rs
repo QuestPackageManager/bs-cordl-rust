@@ -50,15 +50,23 @@ impl GameServerPlayersTableView {
     pub const kCellId: &'static str = "Cell";
     pub const kNoModifiersCellId: &'static str = "NoModifierCell";
     pub const kNoSongsCellId: &'static str = "NoSongCell";
-    pub fn remove_selectSuggestedGameplayModifiersEvent(
+    pub fn CellForIdx(
         &mut self,
-        value: *mut crate::System::Action_1<*mut GameplayModifiers>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        tableView: *mut crate::HMUI::TableView,
+        idx: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_selectSuggestedGameplayModifiersEvent", (value))?;
+        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
+            .invoke("CellForIdx", (tableView, idx))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetCurrentPrefab(
@@ -80,6 +88,52 @@ impl GameServerPlayersTableView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleCellKickPlayer", (idx))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleCellUseBeatmap(
+        &mut self,
+        idx: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleCellUseBeatmap", (idx))?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleCellUseModifiers(
+        &mut self,
+        idx: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleCellUseModifiers", (idx))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetData(
@@ -112,50 +166,6 @@ impl GameServerPlayersTableView {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_currentCellId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_currentCellId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CellForIdx(
-        &mut self,
-        tableView: *mut crate::HMUI::TableView,
-        idx: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
-            .invoke("CellForIdx", (tableView, idx))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleCellUseModifiers(
-        &mut self,
-        idx: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleCellUseModifiers", (idx))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_selectSuggestedGameplayModifiersEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut GameplayModifiers>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_selectSuggestedGameplayModifiersEvent", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn TryGetLobbyPlayerData(
         &mut self,
         idx: i32,
@@ -169,26 +179,14 @@ impl GameServerPlayersTableView {
             .invoke("TryGetLobbyPlayerData", (idx, player, playerData))?;
         Ok(__cordl_ret)
     }
-    pub fn add_selectSuggestedLevelEvent(
+    pub fn _ctor(
         &mut self,
-        value: *mut crate::System::Action_1<BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_selectSuggestedLevelEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_selectSuggestedLevelEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<BeatmapKey>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_selectSuggestedLevelEvent", (value))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_kickPlayerEvent(
@@ -202,21 +200,36 @@ impl GameServerPlayersTableView {
             .invoke("add_kickPlayerEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn add_selectSuggestedGameplayModifiersEvent(
         &mut self,
+        value: *mut crate::System::Action_1<*mut GameplayModifiers>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("add_selectSuggestedGameplayModifiersEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_selectSuggestedLevelEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<BeatmapKey>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_selectSuggestedLevelEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_currentCellId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_currentCellId", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_kickPlayerEvent(
@@ -230,40 +243,27 @@ impl GameServerPlayersTableView {
             .invoke("remove_kickPlayerEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn HandleCellUseBeatmap(
+    pub fn remove_selectSuggestedGameplayModifiersEvent(
         &mut self,
-        idx: i32,
+        value: *mut crate::System::Action_1<*mut GameplayModifiers>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleCellUseBeatmap", (idx))?;
+            .invoke("remove_selectSuggestedGameplayModifiersEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init(
+    pub fn remove_selectSuggestedLevelEvent(
         &mut self,
+        value: *mut crate::System::Action_1<BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", ())?;
+            .invoke("remove_selectSuggestedLevelEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "GameServerPlayersTableView")]

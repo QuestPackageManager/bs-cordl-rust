@@ -150,14 +150,23 @@ for crate::GlobalNamespace::Interop_ErrorInfo {
 }
 #[cfg(feature = "Interop+ErrorInfo")]
 impl crate::GlobalNamespace::Interop_ErrorInfo {
-    pub fn _ctor_i32_0(
+    pub fn GetErrorMessage(
         &mut self,
-        _cordl_errno: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (_cordl_errno),
+            "GetErrorMessage",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -172,23 +181,14 @@ impl crate::GlobalNamespace::Interop_ErrorInfo {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
+    pub fn _ctor_i32_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        _cordl_errno: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetErrorMessage(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetErrorMessage",
-            (),
+            ".ctor",
+            (_cordl_errno),
         )?;
         Ok(__cordl_ret)
     }
@@ -287,12 +287,12 @@ impl std::ops::DerefMut for Interop {
 }
 #[cfg(feature = "Interop")]
 impl Interop {
-    #[cfg(feature = "Interop+Error")]
-    pub type Error = crate::GlobalNamespace::Interop_Error;
     #[cfg(feature = "Interop+Sys")]
     pub type Sys = crate::GlobalNamespace::Interop_Sys;
     #[cfg(feature = "Interop+ErrorInfo")]
     pub type ErrorInfo = crate::GlobalNamespace::Interop_ErrorInfo;
+    #[cfg(feature = "Interop+Error")]
+    pub type Error = crate::GlobalNamespace::Interop_Error;
 }
 #[cfg(feature = "Interop")]
 impl quest_hook::libil2cpp::ObjectType for Interop {
@@ -370,16 +370,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::Interop_Sys {
 }
 #[cfg(feature = "Interop+Sys")]
 impl crate::GlobalNamespace::Interop_Sys {
-    #[cfg(feature = "Interop+Sys+Permissions")]
-    pub type Permissions = crate::GlobalNamespace::Sys_Permissions;
     #[cfg(feature = "Interop+Sys+DirectoryEntry")]
     pub type DirectoryEntry = crate::GlobalNamespace::Sys_DirectoryEntry;
-    #[cfg(feature = "Interop+Sys+NodeType")]
-    pub type NodeType = crate::GlobalNamespace::Sys_NodeType;
-    #[cfg(feature = "Interop+Sys+FileStatusFlags")]
-    pub type FileStatusFlags = crate::GlobalNamespace::Sys_FileStatusFlags;
     #[cfg(feature = "Interop+Sys+FileStatus")]
     pub type FileStatus = crate::GlobalNamespace::Sys_FileStatus;
+    #[cfg(feature = "Interop+Sys+FileStatusFlags")]
+    pub type FileStatusFlags = crate::GlobalNamespace::Sys_FileStatusFlags;
+    #[cfg(feature = "Interop+Sys+NodeType")]
+    pub type NodeType = crate::GlobalNamespace::Sys_NodeType;
+    #[cfg(feature = "Interop+Sys+Permissions")]
+    pub type Permissions = crate::GlobalNamespace::Sys_Permissions;
 }
 #[cfg(feature = "Interop+Sys")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop_Sys {

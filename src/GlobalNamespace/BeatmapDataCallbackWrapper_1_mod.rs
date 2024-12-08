@@ -28,23 +28,6 @@ for BeatmapDataCallbackWrapper_1<T> {
 }
 #[cfg(feature = "BeatmapDataCallbackWrapper_1")]
 impl<T: quest_hook::libil2cpp::Type> BeatmapDataCallbackWrapper_1<T> {
-    pub fn _ctor(
-        &mut self,
-        callback: *mut BeatmapDataCallback_1<T>,
-        aheadTime: f32,
-        beatmapEventSubtypeIdentifiers: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (callback, aheadTime, beatmapEventSubtypeIdentifiers))?;
-        Ok(__cordl_ret)
-    }
     pub fn CallCallback(
         &mut self,
         beatmapData: *mut BeatmapDataItem,
@@ -64,7 +47,7 @@ impl<T: quest_hook::libil2cpp::Type> BeatmapDataCallbackWrapper_1<T> {
         callback: *mut BeatmapDataCallback_1<T>,
         aheadTime: f32,
         beatmapEventSubtypeIdentifiers: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -73,6 +56,23 @@ impl<T: quest_hook::libil2cpp::Type> BeatmapDataCallbackWrapper_1<T> {
                 (callback, aheadTime, beatmapEventSubtypeIdentifiers),
             )?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        callback: *mut BeatmapDataCallback_1<T>,
+        aheadTime: f32,
+        beatmapEventSubtypeIdentifiers: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (callback, aheadTime, beatmapEventSubtypeIdentifiers))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapDataCallbackWrapper_1")]

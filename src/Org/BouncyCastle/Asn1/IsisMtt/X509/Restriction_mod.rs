@@ -26,6 +26,34 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Restr
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+Restriction")]
 impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Restriction {
+    pub fn New_DirectoryString0(
+        restriction: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (restriction))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String1(
+        restriction: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (restriction))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToAsn1Object(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("ToAsn1Object", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_DirectoryString0(
         &mut self,
         restriction: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
@@ -48,16 +76,6 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Restriction {
             .invoke(".ctor", (restriction))?;
         Ok(__cordl_ret)
     }
-    pub fn ToAsn1Object(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_RestrictionString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -69,24 +87,6 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Restriction {
         let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString = __cordl_object
             .invoke("get_RestrictionString", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_DirectoryString0(
-        restriction: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (restriction))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        restriction: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (restriction))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+Restriction")]

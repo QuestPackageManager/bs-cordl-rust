@@ -239,14 +239,21 @@ impl std::ops::DerefMut for PerformanceConfigurationStats {
 impl PerformanceConfigurationStats {
     #[cfg(feature = "PerformanceConfigurationStats+FloatStats")]
     pub type FloatStats = crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats;
+    #[cfg(feature = "PerformanceConfigurationStats+BoolStats")]
+    pub type BoolStats = crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats;
     #[cfg(feature = "PerformanceConfigurationStats+EnumStats_1")]
     pub type EnumStats_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<
         T,
     >;
     #[cfg(feature = "PerformanceConfigurationStats+IntStats")]
     pub type IntStats = crate::GlobalNamespace::PerformanceConfigurationStats_IntStats;
-    #[cfg(feature = "PerformanceConfigurationStats+BoolStats")]
-    pub type BoolStats = crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn Update(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -266,13 +273,6 @@ impl PerformanceConfigurationStats {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PerformanceConfigurationStats")]

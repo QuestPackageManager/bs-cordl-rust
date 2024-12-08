@@ -29,30 +29,16 @@ impl std::ops::DerefMut for RandomizedPitch {
 }
 #[cfg(feature = "RandomizedPitch")]
 impl RandomizedPitch {
-    #[cfg(feature = "RandomizedPitch+_RestorePitchWithDelay_d__10")]
-    pub type _RestorePitchWithDelay_d__10 = crate::GlobalNamespace::RandomizedPitch__RestorePitchWithDelay_d__10;
     #[cfg(feature = "RandomizedPitch+_PlayDelayedCoroutine_d__9")]
     pub type _PlayDelayedCoroutine_d__9 = crate::GlobalNamespace::RandomizedPitch__PlayDelayedCoroutine_d__9;
-    pub fn PlayDelayedCoroutine(
-        &mut self,
-        delay: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("PlayDelayedCoroutine", (delay))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    #[cfg(feature = "RandomizedPitch+_RestorePitchWithDelay_d__10")]
+    pub type _RestorePitchWithDelay_d__10 = crate::GlobalNamespace::RandomizedPitch__RestorePitchWithDelay_d__10;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnEnable(
         &mut self,
@@ -62,6 +48,16 @@ impl RandomizedPitch {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Play(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Play", ())?;
         Ok(__cordl_ret)
     }
     pub fn PlayDelayed(
@@ -75,14 +71,15 @@ impl RandomizedPitch {
             .invoke("PlayDelayed", (delay))?;
         Ok(__cordl_ret)
     }
-    pub fn Play(
+    pub fn PlayDelayedCoroutine(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        delay: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Play", ())?;
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("PlayDelayedCoroutine", (delay))?;
         Ok(__cordl_ret)
     }
     pub fn RestorePitchWithDelay(
@@ -96,12 +93,15 @@ impl RandomizedPitch {
             .invoke("RestorePitchWithDelay", (delay))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "RandomizedPitch")]

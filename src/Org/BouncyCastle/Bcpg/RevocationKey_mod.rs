@@ -24,18 +24,6 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::RevocationKey {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationKey")]
 impl crate::Org::BouncyCastle::Bcpg::RevocationKey {
-    pub fn get_SignatureClass(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Org::BouncyCastle::Bcpg::RevocationKeyTag,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::RevocationKeyTag = __cordl_object
-            .invoke("get_SignatureClass", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn GetFingerprint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
@@ -46,30 +34,31 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationKey {
             .invoke("GetFingerprint", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Algorithm(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag = __cordl_object
-            .invoke("get_Algorithm", ())?;
-        Ok(__cordl_ret)
+    pub fn New_RevocationKeyTag_PublicKeyAlgorithmTag_Il2CppArray1(
+        isCritical: bool,
+        signatureClass: crate::Org::BouncyCastle::Bcpg::RevocationKeyTag,
+        keyAlgorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
+        fingerprint: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (isCritical, signatureClass, keyAlgorithm, fingerprint),
+            )?;
+        Ok(__cordl_object)
     }
-    pub fn _ctor__cordl_bool_Il2CppArray0(
-        &mut self,
+    pub fn New__cordl_bool_Il2CppArray0(
         isCritical: bool,
         isLongLength: bool,
         data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (isCritical, isLongLength, data))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (isCritical, isLongLength, data))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor_RevocationKeyTag_PublicKeyAlgorithmTag_Il2CppArray1(
         &mut self,
@@ -85,31 +74,42 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationKey {
             .invoke(".ctor", (isCritical, signatureClass, keyAlgorithm, fingerprint))?;
         Ok(__cordl_ret)
     }
-    pub fn New__cordl_bool_Il2CppArray0(
+    pub fn _ctor__cordl_bool_Il2CppArray0(
+        &mut self,
         isCritical: bool,
         isLongLength: bool,
         data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (isCritical, isLongLength, data))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (isCritical, isLongLength, data))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_RevocationKeyTag_PublicKeyAlgorithmTag_Il2CppArray1(
-        isCritical: bool,
-        signatureClass: crate::Org::BouncyCastle::Bcpg::RevocationKeyTag,
-        keyAlgorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
-        fingerprint: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (isCritical, signatureClass, keyAlgorithm, fingerprint),
-            )?;
-        Ok(__cordl_object)
+    pub fn get_Algorithm(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag = __cordl_object
+            .invoke("get_Algorithm", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SignatureClass(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Org::BouncyCastle::Bcpg::RevocationKeyTag,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::RevocationKeyTag = __cordl_object
+            .invoke("get_SignatureClass", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationKey")]

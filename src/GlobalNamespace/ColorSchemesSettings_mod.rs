@@ -34,15 +34,26 @@ impl std::ops::DerefMut for ColorSchemesSettings {
 impl ColorSchemesSettings {
     #[cfg(feature = "ColorSchemesSettings+__c")]
     pub type __c = crate::GlobalNamespace::ColorSchemesSettings___c;
-    pub fn SetColorSchemeForId(
+    pub fn GetColorSchemeForId(
         &mut self,
-        colorScheme: *mut ColorScheme,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        id: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut ColorScheme> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColorSchemeForId", (colorScheme))?;
+        let __cordl_ret: *mut ColorScheme = __cordl_object
+            .invoke("GetColorSchemeForId", (id))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetColorSchemeForIdx(
+        &mut self,
+        idx: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut ColorScheme> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut ColorScheme = __cordl_object
+            .invoke("GetColorSchemeForIdx", (idx))?;
         Ok(__cordl_ret)
     }
     pub fn GetNumberOfColorSchemes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -62,17 +73,6 @@ impl ColorSchemesSettings {
             .invoke("GetOverrideColorScheme", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetColorSchemeForIdx(
-        &mut self,
-        idx: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut ColorScheme> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut ColorScheme = __cordl_object
-            .invoke("GetColorSchemeForIdx", (idx))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetSelectedColorScheme(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut ColorScheme> {
@@ -90,25 +90,37 @@ impl ColorSchemesSettings {
         let __cordl_ret: i32 = __cordl_object.invoke("GetSelectedColorSchemeIdx", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_selectedColorSchemeId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_selectedColorSchemeId", ())?;
-        Ok(__cordl_ret)
+    pub fn New_IEnumerable_1_0(
+        colorSchemes: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut ColorScheme,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (colorSchemes))?;
+        Ok(__cordl_object)
     }
-    pub fn GetColorSchemeForId(
+    pub fn New_IEnumerable_1_1(
+        colorSchemeSOs: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut ColorSchemeSO,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (colorSchemeSOs))?;
+        Ok(__cordl_object)
+    }
+    pub fn SetColorSchemeForId(
         &mut self,
-        id: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut ColorScheme> {
+        colorScheme: *mut ColorScheme,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ColorScheme = __cordl_object
-            .invoke("GetColorSchemeForId", (id))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetColorSchemeForId", (colorScheme))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_IEnumerable_1_0(
@@ -137,6 +149,16 @@ impl ColorSchemesSettings {
             .invoke(".ctor", (colorSchemeSOs))?;
         Ok(__cordl_ret)
     }
+    pub fn get_selectedColorSchemeId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_selectedColorSchemeId", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn set_selectedColorSchemeId(
         &mut self,
         value: *mut crate::System::String,
@@ -147,28 +169,6 @@ impl ColorSchemesSettings {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_selectedColorSchemeId", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_IEnumerable_1_0(
-        colorSchemes: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut ColorScheme,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (colorSchemes))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IEnumerable_1_1(
-        colorSchemeSOs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut ColorSchemeSO,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (colorSchemeSOs))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ColorSchemesSettings")]

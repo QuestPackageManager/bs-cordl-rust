@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::FloatTween {
 impl crate::TMPro::FloatTween {
     #[cfg(feature = "TMPro+FloatTween+FloatTweenCallback")]
     pub type FloatTweenCallback = crate::TMPro::FloatTween_FloatTweenCallback;
-    pub fn set_startValue(
+    pub fn AddOnChangedCallback(
         &mut self,
-        value: f32,
+        callback: *mut crate::UnityEngine::Events::UnityAction_1<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_startValue",
-            (value),
+            "AddOnChangedCallback",
+            (callback),
         )?;
         Ok(__cordl_ret)
     }
@@ -45,29 +45,10 @@ impl crate::TMPro::FloatTween {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_startValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetIgnoreTimescale(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_startValue",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ignoreTimeScale(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_ignoreTimeScale",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_targetValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_targetValue",
+            "GetIgnoreTimescale",
             (),
         )?;
         Ok(__cordl_ret)
@@ -83,14 +64,43 @@ impl crate::TMPro::FloatTween {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn AddOnChangedCallback(
-        &mut self,
-        callback: *mut crate::UnityEngine::Events::UnityAction_1<f32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn ValidTarget(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "AddOnChangedCallback",
-            (callback),
+            "ValidTarget",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_duration",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ignoreTimeScale(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_ignoreTimeScale",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_startValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_startValue",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_targetValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_targetValue",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -105,19 +115,25 @@ impl crate::TMPro::FloatTween {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_ignoreTimeScale(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn set_ignoreTimeScale(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_ignoreTimeScale",
-            (),
+            "set_ignoreTimeScale",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ValidTarget(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn set_startValue(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ValidTarget",
-            (),
+            "set_startValue",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -129,22 +145,6 @@ impl crate::TMPro::FloatTween {
             self,
             "set_targetValue",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_duration",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetIgnoreTimescale(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetIgnoreTimescale",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -175,6 +175,13 @@ impl std::ops::DerefMut for crate::TMPro::FloatTween_FloatTweenCallback {
 }
 #[cfg(feature = "TMPro+FloatTween+FloatTweenCallback")]
 impl crate::TMPro::FloatTween_FloatTweenCallback {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -184,13 +191,6 @@ impl crate::TMPro::FloatTween_FloatTweenCallback {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "TMPro+FloatTween+FloatTweenCallback")]

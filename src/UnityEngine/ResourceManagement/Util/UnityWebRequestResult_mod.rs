@@ -32,6 +32,15 @@ for crate::UnityEngine::ResourceManagement::Util::UnityWebRequestResult {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+UnityWebRequestResult")]
 impl crate::UnityEngine::ResourceManagement::Util::UnityWebRequestResult {
+    pub fn New(
+        request: *mut crate::UnityEngine::Networking::UnityWebRequest,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (request))?;
+        Ok(__cordl_object)
+    }
     pub fn ShouldRetryDownloadError(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -39,14 +48,35 @@ impl crate::UnityEngine::ResourceManagement::Util::UnityWebRequestResult {
         let __cordl_ret: bool = __cordl_object.invoke("ShouldRetryDownloadError", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Url(
+    pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Url", ())?;
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        request: *mut crate::UnityEngine::Networking::UnityWebRequest,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (request))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Error(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Error", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Method(
@@ -57,6 +87,13 @@ impl crate::UnityEngine::ResourceManagement::Util::UnityWebRequestResult {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_Method", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ResponseCode(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_ResponseCode", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Result(
@@ -71,35 +108,14 @@ impl crate::UnityEngine::ResourceManagement::Util::UnityWebRequestResult {
             .invoke("get_Result", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Error(
+    pub fn get_Url(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Error", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        request: *mut crate::UnityEngine::Networking::UnityWebRequest,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (request))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
+            .invoke("get_Url", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Error(
@@ -112,22 +128,6 @@ impl crate::UnityEngine::ResourceManagement::Util::UnityWebRequestResult {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Error", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_ResponseCode(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_ResponseCode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        request: *mut crate::UnityEngine::Networking::UnityWebRequest,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (request))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+UnityWebRequestResult")]

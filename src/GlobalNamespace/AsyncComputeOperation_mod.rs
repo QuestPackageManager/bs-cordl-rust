@@ -25,12 +25,23 @@ impl std::ops::DerefMut for AsyncComputeOperation {
 }
 #[cfg(feature = "AsyncComputeOperation")]
 impl AsyncComputeOperation {
-    pub fn get_elapsedTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+    pub fn Execute(
+        &mut self,
+        disposed: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f64 = __cordl_object.invoke("get_elapsedTime", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Execute", (disposed))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(timeoutMs: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (timeoutMs))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -43,15 +54,11 @@ impl AsyncComputeOperation {
             .invoke(".ctor", (timeoutMs))?;
         Ok(__cordl_ret)
     }
-    pub fn Execute(
-        &mut self,
-        disposed: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_elapsedTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Execute", (disposed))?;
+        let __cordl_ret: f64 = __cordl_object.invoke("get_elapsedTime", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_hasTimedOut(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -60,13 +67,6 @@ impl AsyncComputeOperation {
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_hasTimedOut", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(timeoutMs: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (timeoutMs))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "AsyncComputeOperation")]

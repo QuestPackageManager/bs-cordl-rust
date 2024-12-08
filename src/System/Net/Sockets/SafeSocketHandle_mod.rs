@@ -34,17 +34,15 @@ impl std::ops::DerefMut for crate::System::Net::Sockets::SafeSocketHandle {
 impl crate::System::Net::Sockets::SafeSocketHandle {
     pub const ABORT_RETRIES: i32 = 10i32;
     pub const SOCKET_CLOSED: i32 = 10004i32;
-    pub fn _ctor(
-        &mut self,
+    pub fn New(
         preexistingHandle: crate::System::IntPtr,
         ownsHandle: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (preexistingHandle, ownsHandle))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (preexistingHandle, ownsHandle))?;
+        Ok(__cordl_object)
     }
     pub fn RegisterForBlockingSyscall(
         &mut self,
@@ -73,15 +71,17 @@ impl crate::System::Net::Sockets::SafeSocketHandle {
             .invoke("UnRegisterForBlockingSyscall", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         preexistingHandle: crate::System::IntPtr,
         ownsHandle: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (preexistingHandle, ownsHandle))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (preexistingHandle, ownsHandle))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Net+Sockets+SafeSocketHandle")]

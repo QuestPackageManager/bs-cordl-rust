@@ -28,14 +28,15 @@ impl std::ops::DerefMut for ObstacleControllerBase {
 }
 #[cfg(feature = "ObstacleControllerBase")]
 impl ObstacleControllerBase {
-    pub fn _ctor(
+    pub fn InvokeDidInitEvent(
         &mut self,
+        obstacleController: *mut ObstacleControllerBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("InvokeDidInitEvent", (obstacleController))?;
         Ok(__cordl_ret)
     }
     pub fn InvokeDidStartDissolvingEvent(
@@ -50,26 +51,21 @@ impl ObstacleControllerBase {
             .invoke("InvokeDidStartDissolvingEvent", (obstacleController, duration))?;
         Ok(__cordl_ret)
     }
-    pub fn InvokeDidInitEvent(
-        &mut self,
-        obstacleController: *mut ObstacleControllerBase,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InvokeDidInitEvent", (obstacleController))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
-    pub fn remove_didInitEvent(
+    pub fn _ctor(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleControllerBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didInitEvent", (value))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn add_didInitEvent(
@@ -94,6 +90,17 @@ impl ObstacleControllerBase {
             .invoke("add_didStartDissolvingEvent", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn remove_didInitEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut ObstacleControllerBase>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didInitEvent", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn remove_didStartDissolvingEvent(
         &mut self,
         value: *mut crate::System::Action_2<*mut ObstacleControllerBase, f32>,
@@ -104,13 +111,6 @@ impl ObstacleControllerBase {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didStartDissolvingEvent", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "ObstacleControllerBase")]

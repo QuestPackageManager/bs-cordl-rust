@@ -34,6 +34,18 @@ impl crate::UnityEngine::UIElements::StyleSelectorPart {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn get_type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StyleSelectorType,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleSelectorType = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_type",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_value(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -52,18 +64,6 @@ impl crate::UnityEngine::UIElements::StyleSelectorPart {
             self,
             "set_type",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::StyleSelectorType,
-    > {
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleSelectorType = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_type",
-            (),
         )?;
         Ok(__cordl_ret)
     }

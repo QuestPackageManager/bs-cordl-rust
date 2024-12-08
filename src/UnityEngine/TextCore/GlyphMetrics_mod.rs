@@ -26,17 +26,6 @@ for crate::UnityEngine::TextCore::GlyphMetrics {
 }
 #[cfg(feature = "UnityEngine+TextCore+GlyphMetrics")]
 impl crate::UnityEngine::TextCore::GlyphMetrics {
-    pub fn Equals_Object0(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_GlyphMetrics1(
         &mut self,
         other: crate::UnityEngine::TextCore::GlyphMetrics,
@@ -48,18 +37,21 @@ impl crate::UnityEngine::TextCore::GlyphMetrics {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Equals_Object0(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_height",
-            (),
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_horizontalBearingX(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_horizontalBearingX",
+            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)
@@ -79,18 +71,26 @@ impl crate::UnityEngine::TextCore::GlyphMetrics {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_width",
+            "get_height",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_horizontalAdvance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
+            "get_horizontalAdvance",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_horizontalBearingX(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_horizontalBearingX",
             (),
         )?;
         Ok(__cordl_ret)
@@ -103,10 +103,10 @@ impl crate::UnityEngine::TextCore::GlyphMetrics {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_horizontalAdvance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_horizontalAdvance",
+            "get_width",
             (),
         )?;
         Ok(__cordl_ret)

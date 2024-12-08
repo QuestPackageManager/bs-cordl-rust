@@ -26,16 +26,15 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::ServerName {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ServerName")]
 impl crate::Org::BouncyCastle::Crypto::Tls::ServerName {
-    pub fn _ctor(
+    pub fn Encode(
         &mut self,
-        nameType: u8,
-        name: *mut crate::System::Object,
+        output: *mut crate::System::IO::Stream,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (nameType, name))?;
+            .invoke("Encode", (output))?;
         Ok(__cordl_ret)
     }
     pub fn GetHostName(
@@ -48,11 +47,26 @@ impl crate::Org::BouncyCastle::Crypto::Tls::ServerName {
             .invoke("GetHostName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_NameType(&mut self) -> quest_hook::libil2cpp::Result<u8> {
+    pub fn New(
+        nameType: u8,
+        name: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (nameType, name))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        nameType: u8,
+        name: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: u8 = __cordl_object.invoke("get_NameType", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (nameType, name))?;
         Ok(__cordl_ret)
     }
     pub fn get_Name(
@@ -65,26 +79,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::ServerName {
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Encode(
-        &mut self,
-        output: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_NameType(&mut self) -> quest_hook::libil2cpp::Result<u8> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Encode", (output))?;
+        let __cordl_ret: u8 = __cordl_object.invoke("get_NameType", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        nameType: u8,
-        name: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (nameType, name))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ServerName")]

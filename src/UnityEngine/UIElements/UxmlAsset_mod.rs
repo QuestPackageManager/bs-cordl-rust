@@ -31,49 +31,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UxmlAsset {
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlAsset")]
 impl crate::UnityEngine::UIElements::UxmlAsset {
-    pub fn get_fullTypeName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_fullTypeName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_id", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_parentId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_parentId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_orderInDocument(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_orderInDocument", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetAttributeValue(
-        &mut self,
-        propertyName: *mut crate::System::String,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetAttributeValue", (propertyName, value))?;
-        Ok(__cordl_ret)
-    }
     pub fn SetAttribute(
         &mut self,
         name: *mut crate::System::String,
@@ -96,6 +53,49 @@ impl crate::UnityEngine::UIElements::UxmlAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetOrAddProperty", (propertyName, propertyValue))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetAttributeValue(
+        &mut self,
+        propertyName: *mut crate::System::String,
+        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetAttributeValue", (propertyName, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_fullTypeName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_fullTypeName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_id", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_orderInDocument(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_orderInDocument", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_parentId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_parentId", ())?;
         Ok(__cordl_ret)
     }
 }

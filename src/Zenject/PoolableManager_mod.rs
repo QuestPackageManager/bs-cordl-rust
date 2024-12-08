@@ -66,14 +66,42 @@ impl std::ops::DerefMut for crate::Zenject::PoolableManager {
 }
 #[cfg(feature = "Zenject+PoolableManager")]
 impl crate::Zenject::PoolableManager {
-    #[cfg(feature = "Zenject+PoolableManager+__c")]
-    pub type __c = crate::Zenject::PoolableManager___c;
-    #[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]
-    pub type PoolableInfo = crate::Zenject::PoolableManager_PoolableInfo;
     #[cfg(feature = "Zenject+PoolableManager+__c__DisplayClass2_0")]
     pub type __c__DisplayClass2_0 = crate::Zenject::PoolableManager___c__DisplayClass2_0;
     #[cfg(feature = "Zenject+PoolableManager+__c__DisplayClass3_0")]
     pub type __c__DisplayClass3_0 = crate::Zenject::PoolableManager___c__DisplayClass3_0;
+    #[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]
+    pub type PoolableInfo = crate::Zenject::PoolableManager_PoolableInfo;
+    #[cfg(feature = "Zenject+PoolableManager+__c")]
+    pub type __c = crate::Zenject::PoolableManager___c;
+    pub fn CreatePoolableInfo(
+        &mut self,
+        poolable: *mut crate::Zenject::IPoolable,
+        priorities: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::Zenject::PoolableManager_PoolableInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Zenject::PoolableManager_PoolableInfo = __cordl_object
+            .invoke("CreatePoolableInfo", (poolable, priorities))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        poolables: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::IPoolable,
+        >,
+        priorities: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (poolables, priorities))?;
+        Ok(__cordl_object)
+    }
     pub fn TriggerOnDespawned(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -109,34 +137,6 @@ impl crate::Zenject::PoolableManager {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (poolables, priorities))?;
         Ok(__cordl_ret)
-    }
-    pub fn CreatePoolableInfo(
-        &mut self,
-        poolable: *mut crate::Zenject::IPoolable,
-        priorities: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<crate::Zenject::PoolableManager_PoolableInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Zenject::PoolableManager_PoolableInfo = __cordl_object
-            .invoke("CreatePoolableInfo", (poolable, priorities))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        poolables: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::IPoolable,
-        >,
-        priorities: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (poolables, priorities))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+PoolableManager")]

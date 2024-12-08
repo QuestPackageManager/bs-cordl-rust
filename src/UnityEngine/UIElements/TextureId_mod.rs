@@ -22,18 +22,10 @@ for crate::UnityEngine::UIElements::TextureId {
 }
 #[cfg(feature = "UnityEngine+UIElements+TextureId")]
 impl crate::UnityEngine::UIElements::TextureId {
-    pub fn get_index(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn ConvertToGpu(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_index",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
+            "ConvertToGpu",
             (),
         )?;
         Ok(__cordl_ret)
@@ -49,6 +41,14 @@ impl crate::UnityEngine::UIElements::TextureId {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         index: i32,
@@ -60,10 +60,10 @@ impl crate::UnityEngine::UIElements::TextureId {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ConvertToGpu(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_index(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ConvertToGpu",
+            "get_index",
             (),
         )?;
         Ok(__cordl_ret)

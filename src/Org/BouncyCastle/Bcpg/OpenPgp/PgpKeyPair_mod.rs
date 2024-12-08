@@ -26,35 +26,49 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair 
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpKeyPair")]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair {
-    pub fn get_PublicKey(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey = __cordl_object
-            .invoke("get_PublicKey", ())?;
-        Ok(__cordl_ret)
+    pub fn New_PgpPublicKey_PgpPrivateKey2(
+        _cordl_pub: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        _cordl_priv: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_pub, _cordl_priv))?;
+        Ok(__cordl_object)
     }
-    pub fn get_KeyId(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_KeyId", ())?;
-        Ok(__cordl_ret)
+    pub fn New_PublicKeyAlgorithmTag_AsymmetricCipherKeyPair_DateTime0(
+        algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
+        keyPair: *mut crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
+        _cordl_time: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, keyPair, _cordl_time))?;
+        Ok(__cordl_object)
     }
-    pub fn get_PrivateKey(
+    pub fn New_PublicKeyAlgorithmTag_AsymmetricKeyParameter_AsymmetricKeyParameter_DateTime1(
+        algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
+        pubKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        privKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        _cordl_time: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, pubKey, privKey, _cordl_time))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_PgpPublicKey_PgpPrivateKey2(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
-    > {
+        _cordl_pub: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        _cordl_priv: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey = __cordl_object
-            .invoke("get_PrivateKey", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_pub, _cordl_priv))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_PublicKeyAlgorithmTag_AsymmetricCipherKeyPair_DateTime0(
@@ -84,50 +98,36 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair {
             .invoke(".ctor", (algorithm, pubKey, privKey, _cordl_time))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_PgpPublicKey_PgpPrivateKey2(
-        &mut self,
-        _cordl_pub: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        _cordl_priv: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_KeyId(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_pub, _cordl_priv))?;
+        let __cordl_ret: i64 = __cordl_object.invoke("get_KeyId", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_PublicKeyAlgorithmTag_AsymmetricCipherKeyPair_DateTime0(
-        algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
-        keyPair: *mut crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
-        _cordl_time: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, keyPair, _cordl_time))?;
-        Ok(__cordl_object)
+    pub fn get_PrivateKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey = __cordl_object
+            .invoke("get_PrivateKey", ())?;
+        Ok(__cordl_ret)
     }
-    pub fn New_PublicKeyAlgorithmTag_AsymmetricKeyParameter_AsymmetricKeyParameter_DateTime1(
-        algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
-        pubKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        privKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        _cordl_time: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, pubKey, privKey, _cordl_time))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_PgpPublicKey_PgpPrivateKey2(
-        _cordl_pub: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        _cordl_priv: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_pub, _cordl_priv))?;
-        Ok(__cordl_object)
+    pub fn get_PublicKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey = __cordl_object
+            .invoke("get_PublicKey", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpKeyPair")]

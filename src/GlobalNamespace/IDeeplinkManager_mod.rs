@@ -34,16 +34,10 @@ impl IDeeplinkManager {
             .invoke("add_didReceiveDeeplinkEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn remove_didReceiveDeeplinkEvent(
-        &mut self,
-        value: *mut crate::System::Action_1<*mut Deeplink>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didReceiveDeeplinkEvent", (value))?;
-        Ok(__cordl_ret)
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
     }
     pub fn get_currentDeeplink(
         &mut self,
@@ -55,10 +49,16 @@ impl IDeeplinkManager {
             .invoke("get_currentDeeplink", ())?;
         Ok(__cordl_ret)
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
+    pub fn remove_didReceiveDeeplinkEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut Deeplink>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didReceiveDeeplinkEvent", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "IDeeplinkManager")]

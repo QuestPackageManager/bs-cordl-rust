@@ -34,6 +34,144 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyE
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+SM2KeyExchange")]
 impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
+    pub fn AddFieldElement(
+        &mut self,
+        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+        v: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddFieldElement", (digest, v))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddUserID(
+        &mut self,
+        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+        userID: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddUserID", (digest, userID))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CalculateInnerHash(
+        &mut self,
+        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+        u: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        za: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        zb: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        p1: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        p2: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("CalculateInnerHash", (digest, u, za, zb, p1, p2))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CalculateKey(
+        &mut self,
+        kLen: i32,
+        pubParam: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("CalculateKey", (kLen, pubParam))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CalculateKeyWithConfirmation(
+        &mut self,
+        kLen: i32,
+        confirmationTag: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        pubParam: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object
+            .invoke("CalculateKeyWithConfirmation", (kLen, confirmationTag, pubParam))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CalculateU(
+        &mut self,
+        otherPub: *mut crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePublicParameters,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("CalculateU", (otherPub))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetZ(
+        &mut self,
+        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+        userID: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        pubPoint: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetZ", (digest, userID, pubPoint))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        privParam: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (privParam))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Kdf(
+        &mut self,
+        u: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        za: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        zb: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        klen: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("Kdf", (u, za, zb, klen))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IDigest1(
+        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (digest))?;
+        Ok(__cordl_object)
+    }
     pub fn Reduce(
         &mut self,
         x: *mut crate::Org::BouncyCastle::Math::BigInteger,
@@ -56,58 +194,6 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
             .invoke("S1", (digest, u, inner))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init(
-        &mut self,
-        privParam: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (privParam))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CalculateKey(
-        &mut self,
-        kLen: i32,
-        pubParam: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("CalculateKey", (kLen, pubParam))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CalculateInnerHash(
-        &mut self,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        u: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-        za: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        zb: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        p1: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-        p2: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("CalculateInnerHash", (digest, u, za, zb, p1, p2))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetZ(
-        &mut self,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        userID: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        pubPoint: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetZ", (digest, userID, pubPoint))?;
         Ok(__cordl_ret)
     }
     pub fn S2(
@@ -143,92 +229,6 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (digest))?;
         Ok(__cordl_ret)
-    }
-    pub fn CalculateU(
-        &mut self,
-        otherPub: *mut crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePublicParameters,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("CalculateU", (otherPub))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddUserID(
-        &mut self,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        userID: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddUserID", (digest, userID))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CalculateKeyWithConfirmation(
-        &mut self,
-        kLen: i32,
-        confirmationTag: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        pubParam: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = __cordl_object
-            .invoke("CalculateKeyWithConfirmation", (kLen, confirmationTag, pubParam))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddFieldElement(
-        &mut self,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        v: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddFieldElement", (digest, v))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Kdf(
-        &mut self,
-        u: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-        za: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        zb: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        klen: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("Kdf", (u, za, zb, klen))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IDigest1(
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (digest))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+SM2KeyExchange")]

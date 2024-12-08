@@ -31,7 +31,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystem {
         feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarSystem+_CreateDefaultAvatarIfUserCreatedAvatarDoesNotExist_d__12"
     )]
     pub type _CreateDefaultAvatarIfUserCreatedAvatarDoesNotExist_d__12 = crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystem__CreateDefaultAvatarIfUserCreatedAvatarDoesNotExist_d__12;
-    pub fn get_avatarCreated(
+    pub fn CreateDefaultAvatarIfUserCreatedAvatarDoesNotExist(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<bool>,
@@ -40,7 +40,29 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystem {
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<bool> = __cordl_object
-            .invoke("get_avatarCreated", ())?;
+            .invoke("CreateDefaultAvatarIfUserCreatedAvatarDoesNotExist", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DeleteUserCreatedAvatar(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DeleteUserCreatedAvatar", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetMultiplayerAvatarOptionalDataProvider(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider = __cordl_object
+            .invoke("GetMultiplayerAvatarOptionalDataProvider", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetMultiplayerAvatarsData(
@@ -54,22 +76,6 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystem {
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
             MultiplayerAvatarData,
         > = __cordl_object.invoke("GetMultiplayerAvatarsData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstantiateAvatarSelectionView(
-        &mut self,
-        container: *mut crate::Zenject::DiContainer,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::BeatSaber::AvatarCore::AvatarSelectionView,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::BeatSaber::AvatarCore::AvatarSelectionView,
-        > = __cordl_object.invoke("InstantiateAvatarSelectionView", (container))?;
         Ok(__cordl_ret)
     }
     pub fn InstantiateAvatar(
@@ -93,6 +99,49 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystem {
                 (avatarDisplayContext, levelOfDetail, container),
             )?;
         Ok(__cordl_ret)
+    }
+    pub fn InstantiateAvatarEditorUI(
+        &mut self,
+        container: *mut crate::Zenject::DiContainer,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+        > = __cordl_object.invoke("InstantiateAvatarEditorUI", (container))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InstantiateAvatarSelectionView(
+        &mut self,
+        container: *mut crate::Zenject::DiContainer,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::BeatSaber::AvatarCore::AvatarSelectionView,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::BeatSaber::AvatarCore::AvatarSelectionView,
+        > = __cordl_object.invoke("InstantiateAvatarSelectionView", (container))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        container: *mut crate::Zenject::DiContainer,
+        model: *mut crate::BeatSaber::BeatAvatarSDK::AvatarDataModel,
+        settings: *mut crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (container, model, settings))?;
+        Ok(__cordl_object)
     }
     pub fn __GetRandomizedMultiplayerAvatarsData(
         &mut self,
@@ -120,7 +169,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystem {
             .invoke(".ctor", (container, model, settings))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateDefaultAvatarIfUserCreatedAvatarDoesNotExist(
+    pub fn get_avatarCreated(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<bool>,
@@ -129,57 +178,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystem {
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<bool> = __cordl_object
-            .invoke("CreateDefaultAvatarIfUserCreatedAvatarDoesNotExist", ())?;
+            .invoke("get_avatarCreated", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn InstantiateAvatarEditorUI(
-        &mut self,
-        container: *mut crate::Zenject::DiContainer,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-        > = __cordl_object.invoke("InstantiateAvatarEditorUI", (container))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetMultiplayerAvatarOptionalDataProvider(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider = __cordl_object
-            .invoke("GetMultiplayerAvatarOptionalDataProvider", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DeleteUserCreatedAvatar(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DeleteUserCreatedAvatar", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        container: *mut crate::Zenject::DiContainer,
-        model: *mut crate::BeatSaber::BeatAvatarSDK::AvatarDataModel,
-        settings: *mut crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (container, model, settings))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarSystem")]

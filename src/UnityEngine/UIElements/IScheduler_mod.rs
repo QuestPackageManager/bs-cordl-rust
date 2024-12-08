@@ -35,16 +35,6 @@ impl crate::UnityEngine::UIElements::IScheduler {
             .invoke("Schedule", (item))?;
         Ok(__cordl_ret)
     }
-    pub fn UpdateScheduledEvents(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateScheduledEvents", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Unschedule(
         &mut self,
         item: *mut crate::UnityEngine::UIElements::ScheduledItem,
@@ -54,6 +44,16 @@ impl crate::UnityEngine::UIElements::IScheduler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Unschedule", (item))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateScheduledEvents(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateScheduledEvents", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

@@ -36,16 +36,17 @@ impl crate::Org::BouncyCastle::X509::IX509Extension {
             .invoke("GetCriticalExtensionOids", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetNonCriticalExtensionOids(
+    pub fn GetExtensionValue_DerObjectIdentifier1(
         &mut self,
+        oid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("GetNonCriticalExtensionOids", ())?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString = __cordl_object
+            .invoke("GetExtensionValue", (oid))?;
         Ok(__cordl_ret)
     }
     pub fn GetExtensionValue_String0(
@@ -61,17 +62,16 @@ impl crate::Org::BouncyCastle::X509::IX509Extension {
             .invoke("GetExtensionValue", (oid))?;
         Ok(__cordl_ret)
     }
-    pub fn GetExtensionValue_DerObjectIdentifier1(
+    pub fn GetNonCriticalExtensionOids(
         &mut self,
-        oid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString = __cordl_object
-            .invoke("GetExtensionValue", (oid))?;
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
+            .invoke("GetNonCriticalExtensionOids", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

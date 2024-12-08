@@ -32,36 +32,12 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaExternal {
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaExternal")]
 impl crate::System::Xml::Schema::XmlSchemaExternal {
-    pub fn get_SchemaLocation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_SchemaLocation", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_BaseUri(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Uri = __cordl_object
-            .invoke("get_BaseUri", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_BaseUri(
-        &mut self,
-        value: *mut crate::System::Uri,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_BaseUri", (value))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn SetUnhandledAttributes(
         &mut self,
@@ -76,16 +52,6 @@ impl crate::System::Xml::Schema::XmlSchemaExternal {
             .invoke("SetUnhandledAttributes", (moreAttributes))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Compositor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::Compositor> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::Schema::Compositor = __cordl_object
-            .invoke("get_Compositor", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -96,6 +62,26 @@ impl crate::System::Xml::Schema::XmlSchemaExternal {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_BaseUri(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Uri = __cordl_object
+            .invoke("get_BaseUri", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Compositor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::Compositor> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::Schema::Compositor = __cordl_object
+            .invoke("get_Compositor", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Id(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -104,6 +90,80 @@ impl crate::System::Xml::Schema::XmlSchemaExternal {
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_Id", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IdAttribute(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_IdAttribute", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Schema(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchema = __cordl_object
+            .invoke("get_Schema", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SchemaLocation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_SchemaLocation", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_BaseUri(
+        &mut self,
+        value: *mut crate::System::Uri,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_BaseUri", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Compositor(
+        &mut self,
+        value: crate::System::Xml::Schema::Compositor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Compositor", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Id(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Id", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IdAttribute(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IdAttribute", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_Schema(
@@ -127,66 +187,6 @@ impl crate::System::Xml::Schema::XmlSchemaExternal {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_SchemaLocation", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn set_IdAttribute(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IdAttribute", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Id(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Id", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Schema(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchema = __cordl_object
-            .invoke("get_Schema", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Compositor(
-        &mut self,
-        value: crate::System::Xml::Schema::Compositor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Compositor", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IdAttribute(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_IdAttribute", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaExternal")]

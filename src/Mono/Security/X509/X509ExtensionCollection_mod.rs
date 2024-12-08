@@ -25,6 +25,32 @@ impl std::ops::DerefMut for crate::Mono::Security::X509::X509ExtensionCollection
 }
 #[cfg(feature = "Mono+Security+X509+X509ExtensionCollection")]
 impl crate::Mono::Security::X509::X509ExtensionCollection {
+    pub fn IndexOf(
+        &mut self,
+        oid: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("IndexOf", (oid))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_ASN1_1(
+        asn1: *mut crate::Mono::Security::ASN1,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (asn1))?;
+        Ok(__cordl_object)
+    }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
@@ -33,17 +59,6 @@ impl crate::Mono::Security::X509::X509ExtensionCollection {
         );
         let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
             .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item(
-        &mut self,
-        oid: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::X509::X509Extension> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Mono::Security::X509::X509Extension = __cordl_object
-            .invoke("get_Item", (oid))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -67,31 +82,16 @@ impl crate::Mono::Security::X509::X509ExtensionCollection {
             .invoke(".ctor", (asn1))?;
         Ok(__cordl_ret)
     }
-    pub fn IndexOf(
+    pub fn get_Item(
         &mut self,
         oid: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::X509::X509Extension> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("IndexOf", (oid))?;
+        let __cordl_ret: *mut crate::Mono::Security::X509::X509Extension = __cordl_object
+            .invoke("get_Item", (oid))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_ASN1_1(
-        asn1: *mut crate::Mono::Security::ASN1,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (asn1))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Mono+Security+X509+X509ExtensionCollection")]

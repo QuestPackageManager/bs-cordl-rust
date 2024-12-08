@@ -43,73 +43,6 @@ impl crate::System::Runtime::Serialization::SerializationInfo {
     pub const defaultSize: i32 = 4i32;
     pub const s_mscorlibAssemblySimpleName: &'static str = "mscorlib";
     pub const s_mscorlibFileName: &'static str = "mscorlib.dll";
-    pub fn _ctor_Type_IFormatterConverter0(
-        &mut self,
-        _cordl_type: *mut crate::System::Type,
-        converter: *mut crate::System::Runtime::Serialization::IFormatterConverter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_type, converter))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor__cordl_bool1(
-        &mut self,
-        _cordl_type: *mut crate::System::Type,
-        converter: *mut crate::System::Runtime::Serialization::IFormatterConverter,
-        requireSameTokenInPartialTrust: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_type, converter, requireSameTokenInPartialTrust))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsFullTypeNameSetExplicit(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_IsFullTypeNameSetExplicit", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MemberCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_MemberCount", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Serialization::SerializationInfoEnumerator,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Runtime::Serialization::SerializationInfoEnumerator = __cordl_object
-            .invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateValue(
-        &mut self,
-        name: *mut crate::System::String,
-        value: *mut crate::System::Object,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateValue", (name, value, _cordl_type))?;
-        Ok(__cordl_ret)
-    }
     pub fn AddValueInternal(
         &mut self,
         name: *mut crate::System::String,
@@ -123,57 +56,28 @@ impl crate::System::Runtime::Serialization::SerializationInfo {
             .invoke("AddValueInternal", (name, value, _cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn GetValueNoThrow(
+    pub fn AddValue_DateTime9(
         &mut self,
         name: *mut crate::System::String,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetValueNoThrow", (name, _cordl_type))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetInt64(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("GetInt64", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ObjectType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_ObjectType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetType(
-        &mut self,
-        _cordl_type: *mut crate::System::Type,
+        value: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetType", (_cordl_type))?;
+            .invoke("AddValue", (name, value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsAssemblyNameSetExplicit(
+    pub fn AddValue_Object1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        name: *mut crate::System::String,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_IsAssemblyNameSetExplicit", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddValue", (name, value))?;
         Ok(__cordl_ret)
     }
     pub fn AddValue_Object_Type0(
@@ -189,18 +93,6 @@ impl crate::System::Runtime::Serialization::SerializationInfo {
             .invoke("AddValue", (name, value, _cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn AddValue_Object1(
-        &mut self,
-        name: *mut crate::System::String,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddValue", (name, value))?;
-        Ok(__cordl_ret)
-    }
     pub fn AddValue__cordl_bool2(
         &mut self,
         name: *mut crate::System::String,
@@ -213,10 +105,10 @@ impl crate::System::Runtime::Serialization::SerializationInfo {
             .invoke("AddValue", (name, value))?;
         Ok(__cordl_ret)
     }
-    pub fn AddValue_u8_3(
+    pub fn AddValue_f32_8(
         &mut self,
         name: *mut crate::System::String,
-        value: u8,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -273,38 +165,16 @@ impl crate::System::Runtime::Serialization::SerializationInfo {
             .invoke("AddValue", (name, value))?;
         Ok(__cordl_ret)
     }
-    pub fn AddValue_f32_8(
+    pub fn AddValue_u8_3(
         &mut self,
         name: *mut crate::System::String,
-        value: f32,
+        value: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddValue", (name, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddValue_DateTime9(
-        &mut self,
-        name: *mut crate::System::String,
-        value: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddValue", (name, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AssemblyName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_AssemblyName", ())?;
         Ok(__cordl_ret)
     }
     pub fn ExpandArrays(
@@ -315,6 +185,38 @@ impl crate::System::Runtime::Serialization::SerializationInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ExpandArrays", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn FindElement(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("FindElement", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetBoolean(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("GetBoolean", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetElement(
+        &mut self,
+        name: *mut crate::System::String,
+        foundType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("GetElement", (name, foundType))?;
         Ok(__cordl_ret)
     }
     pub fn GetElementNoThrow(
@@ -329,26 +231,36 @@ impl crate::System::Runtime::Serialization::SerializationInfo {
             .invoke("GetElementNoThrow", (name, foundType))?;
         Ok(__cordl_ret)
     }
-    pub fn GetBoolean(
+    pub fn GetEnumerator(
         &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Runtime::Serialization::SerializationInfoEnumerator,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("GetBoolean", (name))?;
+        let __cordl_ret: *mut crate::System::Runtime::Serialization::SerializationInfoEnumerator = __cordl_object
+            .invoke("GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetValue(
+    pub fn GetInt32(
         &mut self,
         name: *mut crate::System::String,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetValue", (name, _cordl_type))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetInt32", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetInt64(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("GetInt64", (name))?;
         Ok(__cordl_ret)
     }
     pub fn GetSingle(
@@ -372,52 +284,34 @@ impl crate::System::Runtime::Serialization::SerializationInfo {
             .invoke("GetString", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn get_FullTypeName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_FullTypeName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FindElement(
+    pub fn GetValue(
         &mut self,
         name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("FindElement", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetInt32(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetInt32", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetElement(
-        &mut self,
-        name: *mut crate::System::String,
-        foundType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+        _cordl_type: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetElement", (name, foundType))?;
+            .invoke("GetValue", (name, _cordl_type))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetValueNoThrow(
+        &mut self,
+        name: *mut crate::System::String,
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("GetValueNoThrow", (name, _cordl_type))?;
         Ok(__cordl_ret)
     }
     pub fn New_Type_IFormatterConverter0(
         _cordl_type: *mut crate::System::Type,
         converter: *mut crate::System::Runtime::Serialization::IFormatterConverter,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -428,7 +322,7 @@ impl crate::System::Runtime::Serialization::SerializationInfo {
         _cordl_type: *mut crate::System::Type,
         converter: *mut crate::System::Runtime::Serialization::IFormatterConverter,
         requireSameTokenInPartialTrust: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -437,6 +331,112 @@ impl crate::System::Runtime::Serialization::SerializationInfo {
                 (_cordl_type, converter, requireSameTokenInPartialTrust),
             )?;
         Ok(__cordl_object)
+    }
+    pub fn SetType(
+        &mut self,
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetType", (_cordl_type))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateValue(
+        &mut self,
+        name: *mut crate::System::String,
+        value: *mut crate::System::Object,
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateValue", (name, value, _cordl_type))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Type_IFormatterConverter0(
+        &mut self,
+        _cordl_type: *mut crate::System::Type,
+        converter: *mut crate::System::Runtime::Serialization::IFormatterConverter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_type, converter))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor__cordl_bool1(
+        &mut self,
+        _cordl_type: *mut crate::System::Type,
+        converter: *mut crate::System::Runtime::Serialization::IFormatterConverter,
+        requireSameTokenInPartialTrust: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_type, converter, requireSameTokenInPartialTrust))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AssemblyName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_AssemblyName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_FullTypeName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_FullTypeName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsAssemblyNameSetExplicit(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_IsAssemblyNameSetExplicit", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsFullTypeNameSetExplicit(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_IsFullTypeNameSetExplicit", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MemberCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_MemberCount", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ObjectType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_ObjectType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+SerializationInfo")]

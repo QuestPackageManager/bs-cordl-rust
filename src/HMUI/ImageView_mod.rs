@@ -48,35 +48,42 @@ impl std::ops::DerefMut for crate::HMUI::ImageView {
 impl crate::HMUI::ImageView {
     #[cfg(feature = "HMUI+ImageView+GradientDirection")]
     pub type GradientDirection = crate::HMUI::ImageView_GradientDirection;
-    pub fn get_color0(
+    pub fn GenerateFilledSprite(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_color0", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_color0(
-        &mut self,
-        value: crate::UnityEngine::Color,
+        toFill: *mut crate::UnityEngine::UI::VertexHelper,
+        preserveAspect: bool,
+        curvedUIRadius: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_color0", (value))?;
+            .invoke("GenerateFilledSprite", (toFill, preserveAspect, curvedUIRadius))?;
         Ok(__cordl_ret)
     }
-    pub fn __Refresh(
+    pub fn GenerateSimpleSprite(
         &mut self,
+        vh: *mut crate::UnityEngine::UI::VertexHelper,
+        lPreserveAspect: bool,
+        curvedUIRadius: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("__Refresh", ())?;
+            .invoke("GenerateSimpleSprite", (vh, lPreserveAspect, curvedUIRadius))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GenerateSlicedSprite(
+        &mut self,
+        toFill: *mut crate::UnityEngine::UI::VertexHelper,
+        curvedUIRadius: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GenerateSlicedSprite", (toFill, curvedUIRadius))?;
         Ok(__cordl_ret)
     }
     pub fn GenerateTiledSprite(
@@ -91,17 +98,6 @@ impl crate::HMUI::ImageView {
             .invoke("GenerateTiledSprite", (toFill, curvedUIRadius))?;
         Ok(__cordl_ret)
     }
-    pub fn set_color1(
-        &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_color1", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetDrawingDimensions(
         &mut self,
         shouldPreserveAspect: bool,
@@ -112,6 +108,13 @@ impl crate::HMUI::ImageView {
         let __cordl_ret: crate::UnityEngine::Vector4 = __cordl_object
             .invoke("GetDrawingDimensions", (shouldPreserveAspect))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnEnable(
         &mut self,
@@ -134,109 +137,14 @@ impl crate::HMUI::ImageView {
             .invoke("OnPopulateMesh", (toFill))?;
         Ok(__cordl_ret)
     }
-    pub fn GenerateSimpleSprite(
+    pub fn __Refresh(
         &mut self,
-        vh: *mut crate::UnityEngine::UI::VertexHelper,
-        lPreserveAspect: bool,
-        curvedUIRadius: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateSimpleSprite", (vh, lPreserveAspect, curvedUIRadius))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_gradient(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_gradient", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_color1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_color1", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GenerateSlicedSprite(
-        &mut self,
-        toFill: *mut crate::UnityEngine::UI::VertexHelper,
-        curvedUIRadius: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateSlicedSprite", (toFill, curvedUIRadius))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_skew(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_skew", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_gradient(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_gradient", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_color(
-        &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_color", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_useScriptableObjectColors(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_useScriptableObjectColors", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_useScriptableObjectColors(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_useScriptableObjectColors", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GenerateFilledSprite(
-        &mut self,
-        toFill: *mut crate::UnityEngine::UI::VertexHelper,
-        preserveAspect: bool,
-        curvedUIRadius: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateFilledSprite", (toFill, preserveAspect, curvedUIRadius))?;
+            .invoke("__Refresh", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -259,12 +167,104 @@ impl crate::HMUI::ImageView {
             .invoke("get_color", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_color0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_color0", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_color1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_color1", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_gradient(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_gradient", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_skew(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_skew", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_useScriptableObjectColors(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_useScriptableObjectColors", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_color(
+        &mut self,
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_color", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_color0(
+        &mut self,
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_color0", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_color1(
+        &mut self,
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_color1", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_gradient(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_gradient", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_useScriptableObjectColors(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_useScriptableObjectColors", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "HMUI+ImageView")]

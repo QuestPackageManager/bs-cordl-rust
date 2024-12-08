@@ -42,56 +42,6 @@ impl std::ops::DerefMut for crate::System::Net::HttpListenerResponse {
 }
 #[cfg(feature = "System+Net+HttpListenerResponse")]
 impl crate::System::Net::HttpListenerResponse {
-    pub fn get_ForceCloseChunked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_ForceCloseChunked", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_OutputStream(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("get_OutputStream", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_SendChunked(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_SendChunked", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_StatusCode(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_StatusCode", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Close__cordl_bool0(
-        &mut self,
-        force: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", (force))?;
-        Ok(__cordl_ret)
-    }
     pub fn Close_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -112,6 +62,48 @@ impl crate::System::Net::HttpListenerResponse {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Close", (responseEntity, willBlock))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Close__cordl_bool0(
+        &mut self,
+        force: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Close", (force))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        context: *mut crate::System::Net::HttpListenerContext,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (context))?;
+        Ok(__cordl_object)
+    }
+    pub fn SendHeaders(
+        &mut self,
+        closing: bool,
+        ms: *mut crate::System::IO::MemoryStream,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendHeaders", (closing, ms))?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IDisposable_Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("System.IDisposable.Dispose", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -135,15 +127,31 @@ impl crate::System::Net::HttpListenerResponse {
             .invoke("get_ContentEncoding", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_ContentLength64(
-        &mut self,
-        value: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_ForceCloseChunked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ContentLength64", (value))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_ForceCloseChunked", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Headers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::WebHeaderCollection> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Net::WebHeaderCollection = __cordl_object
+            .invoke("get_Headers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_OutputStream(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+            .invoke("get_OutputStream", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SendChunked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -153,14 +161,15 @@ impl crate::System::Net::HttpListenerResponse {
         let __cordl_ret: bool = __cordl_object.invoke("get_SendChunked", ())?;
         Ok(__cordl_ret)
     }
-    pub fn System_IDisposable_Dispose(
+    pub fn set_ContentLength64(
         &mut self,
+        value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("System.IDisposable.Dispose", ())?;
+            .invoke("set_ContentLength64", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_ContentType(
@@ -174,36 +183,27 @@ impl crate::System::Net::HttpListenerResponse {
             .invoke("set_ContentType", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn SendHeaders(
+    pub fn set_SendChunked(
         &mut self,
-        closing: bool,
-        ms: *mut crate::System::IO::MemoryStream,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendHeaders", (closing, ms))?;
+            .invoke("set_SendChunked", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Headers(
+    pub fn set_StatusCode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::WebHeaderCollection> {
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::WebHeaderCollection = __cordl_object
-            .invoke("get_Headers", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_StatusCode", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        context: *mut crate::System::Net::HttpListenerContext,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (context))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Net+HttpListenerResponse")]

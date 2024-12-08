@@ -24,6 +24,17 @@ impl std::ops::DerefMut for IntFxBaseData {
 }
 #[cfg(feature = "IntFxBaseData")]
 impl IntFxBaseData {
+    pub fn New(
+        beat: f32,
+        usePreviousEventValue: bool,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (beat, usePreviousEventValue, value))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         beat: f32,
@@ -36,17 +47,6 @@ impl IntFxBaseData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (beat, usePreviousEventValue, value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        beat: f32,
-        usePreviousEventValue: bool,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (beat, usePreviousEventValue, value))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "IntFxBaseData")]

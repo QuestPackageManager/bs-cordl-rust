@@ -24,39 +24,24 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::BasicPlayableBehaviour
 }
 #[cfg(feature = "UnityEngine+Timeline+BasicPlayableBehaviour")]
 impl crate::UnityEngine::Timeline::BasicPlayableBehaviour {
-    pub fn OnBehaviourPlay(
+    pub fn CreatePlayable(
         &mut self,
-        playable: crate::UnityEngine::Playables::Playable,
-        info: crate::UnityEngine::Playables::FrameData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        owner: *mut crate::UnityEngine::GameObject,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnBehaviourPlay", (playable, info))?;
+        let __cordl_ret: crate::UnityEngine::Playables::Playable = __cordl_object
+            .invoke("CreatePlayable", (graph, owner))?;
         Ok(__cordl_ret)
     }
-    pub fn OnPlayableCreate(
-        &mut self,
-        playable: crate::UnityEngine::Playables::Playable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPlayableCreate", (playable))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnGraphStart(
-        &mut self,
-        playable: crate::UnityEngine::Playables::Playable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnGraphStart", (playable))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnBehaviourPause(
         &mut self,
@@ -70,7 +55,7 @@ impl crate::UnityEngine::Timeline::BasicPlayableBehaviour {
             .invoke("OnBehaviourPause", (playable, info))?;
         Ok(__cordl_ret)
     }
-    pub fn PrepareFrame(
+    pub fn OnBehaviourPlay(
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
@@ -79,14 +64,40 @@ impl crate::UnityEngine::Timeline::BasicPlayableBehaviour {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PrepareFrame", (playable, info))?;
+            .invoke("OnBehaviourPlay", (playable, info))?;
         Ok(__cordl_ret)
     }
-    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+    pub fn OnGraphStart(
+        &mut self,
+        playable: crate::UnityEngine::Playables::Playable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f64 = __cordl_object.invoke("get_duration", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnGraphStart", (playable))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnGraphStop(
+        &mut self,
+        playable: crate::UnityEngine::Playables::Playable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnGraphStop", (playable))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPlayableCreate(
+        &mut self,
+        playable: crate::UnityEngine::Playables::Playable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPlayableCreate", (playable))?;
         Ok(__cordl_ret)
     }
     pub fn OnPlayableDestroy(
@@ -100,16 +111,16 @@ impl crate::UnityEngine::Timeline::BasicPlayableBehaviour {
             .invoke("OnPlayableDestroy", (playable))?;
         Ok(__cordl_ret)
     }
-    pub fn CreatePlayable(
+    pub fn PrepareFrame(
         &mut self,
-        graph: crate::UnityEngine::Playables::PlayableGraph,
-        owner: *mut crate::UnityEngine::GameObject,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
+        playable: crate::UnityEngine::Playables::Playable,
+        info: crate::UnityEngine::Playables::FrameData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Playables::Playable = __cordl_object
-            .invoke("CreatePlayable", (graph, owner))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PrepareFrame", (playable, info))?;
         Ok(__cordl_ret)
     }
     pub fn ProcessFrame(
@@ -135,6 +146,13 @@ impl crate::UnityEngine::Timeline::BasicPlayableBehaviour {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object.invoke("get_duration", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_outputs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -149,24 +167,6 @@ impl crate::UnityEngine::Timeline::BasicPlayableBehaviour {
             crate::UnityEngine::Playables::PlayableBinding,
         > = __cordl_object.invoke("get_outputs", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn OnGraphStop(
-        &mut self,
-        playable: crate::UnityEngine::Playables::Playable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnGraphStop", (playable))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+BasicPlayableBehaviour")]

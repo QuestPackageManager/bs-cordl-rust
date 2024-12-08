@@ -29,6 +29,35 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
 impl crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
     #[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]
     pub type PartialInputStream = crate::Org::BouncyCastle::Bcpg::BcpgInputStream_PartialInputStream;
+    pub fn Close(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Close", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        inputStream: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (inputStream))?;
+        Ok(__cordl_object)
+    }
+    pub fn NextPacketTag(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Org::BouncyCastle::Bcpg::PacketTag> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::PacketTag = __cordl_object
+            .invoke("NextPacketTag", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Read(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -51,17 +80,11 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
             .invoke("ReadAll", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ReadFully_i32_i32_0(
-        &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        off: i32,
-        len: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadFully", (buffer, off, len))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
         Ok(__cordl_ret)
     }
     pub fn ReadFully_Il2CppArray1(
@@ -75,14 +98,17 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
             .invoke("ReadFully", (buffer))?;
         Ok(__cordl_ret)
     }
-    pub fn NextPacketTag(
+    pub fn ReadFully_i32_i32_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Org::BouncyCastle::Bcpg::PacketTag> {
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        off: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::PacketTag = __cordl_object
-            .invoke("NextPacketTag", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReadFully", (buffer, off, len))?;
         Ok(__cordl_ret)
     }
     pub fn ReadPacket(
@@ -95,16 +121,6 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
             .invoke("ReadPacket", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Close(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         inputStream: *mut crate::System::IO::Stream,
@@ -115,22 +131,6 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (inputStream))?;
         Ok(__cordl_ret)
-    }
-    pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        inputStream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (inputStream))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream")]
@@ -175,6 +175,29 @@ for crate::Org::BouncyCastle::Bcpg::BcpgInputStream_PartialInputStream {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]
 impl crate::Org::BouncyCastle::Bcpg::BcpgInputStream_PartialInputStream {
+    pub fn New(
+        bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+        partial: bool,
+        dataLength: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bcpgIn, partial, dataLength))?;
+        Ok(__cordl_object)
+    }
+    pub fn Read(
+        &mut self,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Read", (buffer, offset, count))?;
+        Ok(__cordl_ret)
+    }
     pub fn ReadByte(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -201,29 +224,6 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgInputStream_PartialInputStream {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bcpgIn, partial, dataLength))?;
         Ok(__cordl_ret)
-    }
-    pub fn Read(
-        &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Read", (buffer, offset, count))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
-        partial: bool,
-        dataLength: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bcpgIn, partial, dataLength))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]

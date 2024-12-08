@@ -26,6 +26,20 @@ for crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<T> {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         ovrArray: *mut quest_hook::libil2cpp::Il2CppArray<T>,
@@ -39,20 +53,6 @@ impl<
             self,
             ".ctor",
             (ovrArray, length),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -82,14 +82,21 @@ impl std::ops::DerefMut for OVRMeshJobs {
 }
 #[cfg(feature = "OVRMeshJobs")]
 impl OVRMeshJobs {
-    #[cfg(feature = "OVRMeshJobs+TransformTrianglesJob")]
-    pub type TransformTrianglesJob = crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob;
     #[cfg(feature = "OVRMeshJobs+NativeArrayHelper_1")]
     pub type NativeArrayHelper_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<
         T,
     >;
     #[cfg(feature = "OVRMeshJobs+TransformToUnitySpaceJob")]
     pub type TransformToUnitySpaceJob = crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob;
+    #[cfg(feature = "OVRMeshJobs+TransformTrianglesJob")]
+    pub type TransformTrianglesJob = crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -99,13 +106,6 @@ impl OVRMeshJobs {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OVRMeshJobs")]

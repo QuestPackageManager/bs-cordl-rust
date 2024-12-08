@@ -30,18 +30,6 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::SwitchExpression {
 }
 #[cfg(feature = "System+Linq+Expressions+SwitchExpression")]
 impl crate::System::Linq::Expressions::SwitchExpression {
-    pub fn get_SwitchValue(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("get_SwitchValue", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Cases(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -77,6 +65,18 @@ impl crate::System::Linq::Expressions::SwitchExpression {
         );
         let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
             .invoke("get_DefaultBody", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SwitchValue(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::Expression,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
+            .invoke("get_SwitchValue", ())?;
         Ok(__cordl_ret)
     }
 }

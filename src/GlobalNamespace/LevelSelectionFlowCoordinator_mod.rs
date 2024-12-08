@@ -41,74 +41,32 @@ impl LevelSelectionFlowCoordinator {
             .invoke("ActionButtonWasPressed", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_selectedLevelCategory(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory = __cordl_object
-            .invoke("get_selectedLevelCategory", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_selectedBeatmapLevel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevel> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut BeatmapLevel = __cordl_object
-            .invoke("get_selectedBeatmapLevel", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LevelSelectionFlowCoordinatorDidActivate(
+    pub fn DidActivate(
         &mut self,
         firstActivation: bool,
         addedToHierarchy: bool,
+        screenSystemEnabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "LevelSelectionFlowCoordinatorDidActivate",
-                (firstActivation, addedToHierarchy),
+                "DidActivate",
+                (firstActivation, addedToHierarchy, screenSystemEnabling),
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_enableCustomLevels(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_enableCustomLevels", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LevelSelectionFlowCoordinatorTopViewControllerWillChange(
+    pub fn DidDeactivate(
         &mut self,
-        oldViewController: *mut crate::HMUI::ViewController,
-        newViewController: *mut crate::HMUI::ViewController,
-        animationType: crate::HMUI::ViewController_AnimationType,
+        removedFromHierarchy: bool,
+        screenSystemDisabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "LevelSelectionFlowCoordinatorTopViewControllerWillChange",
-                (oldViewController, newViewController, animationType),
-            )?;
+            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
         Ok(__cordl_ret)
     }
     pub fn HandleLevelSearchViewControllerDidPressSearchButton(
@@ -126,178 +84,6 @@ impl LevelSelectionFlowCoordinator {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn PracticeButtonWasPressed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PracticeButtonWasPressed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_mainTitle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_mainTitle", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn DidDeactivate(
-        &mut self,
-        removedFromHierarchy: bool,
-        screenSystemDisabling: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TopViewControllerWillChange(
-        &mut self,
-        oldViewController: *mut crate::HMUI::ViewController,
-        newViewController: *mut crate::HMUI::ViewController,
-        animationType: crate::HMUI::ViewController_AnimationType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "TopViewControllerWillChange",
-                (oldViewController, newViewController, animationType),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_selectedBeatmapLevelPack(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelPack> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut BeatmapLevelPack = __cordl_object
-            .invoke("get_selectedBeatmapLevelPack", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleSearchFilterParamsViewControllerDidFinish(
-        &mut self,
-        viewController: *mut SearchFilterParamsViewController,
-        filter: LevelFilter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleSearchFilterParamsViewControllerDidFinish",
-                (viewController, filter),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn PresentMainViewController(
-        &mut self,
-        finishedCallback: *mut crate::System::Action,
-        animationType: crate::HMUI::ViewController_AnimationType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PresentMainViewController", (finishedCallback, animationType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleLevelSelectionNavigationControllerDidPressActionButton(
-        &mut self,
-        viewController: *mut LevelSelectionNavigationController,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleLevelSelectionNavigationControllerDidPressActionButton",
-                (viewController),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_allowedBeatmapDifficultyMask(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapDifficultyMask> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: BeatmapDifficultyMask = __cordl_object
-            .invoke("get_allowedBeatmapDifficultyMask", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_initialRightScreenViewController(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::ViewController> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::ViewController = __cordl_object
-            .invoke("get_initialRightScreenViewController", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_hidePacksIfOneOrNone(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hidePacksIfOneOrNone", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_hidePracticeButton(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hidePracticeButton", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SelectionDidChange(
-        &mut self,
-        pack: *mut BeatmapLevelPack,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SelectionDidChange", (pack, beatmapKey))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_songPackMask(&mut self) -> quest_hook::libil2cpp::Result<SongPackMask> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: SongPackMask = __cordl_object.invoke("get_songPackMask", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Refresh(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Refresh", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_actionButtonText(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_actionButtonText", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn HandleLevelSelectionNavigationControllerDidChangeDifficultyBeatmap(
         &mut self,
         viewController: *mut LevelSelectionNavigationController,
@@ -310,38 +96,6 @@ impl LevelSelectionFlowCoordinator {
                 "HandleLevelSelectionNavigationControllerDidChangeDifficultyBeatmap",
                 (viewController),
             )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsMainViewController(
-        &mut self,
-        viewController: *mut crate::HMUI::ViewController,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsMainViewController", (viewController))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_showBackButtonForMainViewController(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_showBackButtonForMainViewController", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Setup(
-        &mut self,
-        state: *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Setup", (state))?;
         Ok(__cordl_ret)
     }
     pub fn HandleLevelSelectionNavigationControllerDidChangeLevelDetailContent(
@@ -359,50 +113,17 @@ impl LevelSelectionFlowCoordinator {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_notAllowedCharacteristics(
+    pub fn HandleLevelSelectionNavigationControllerDidPressActionButton(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapCharacteristicSO>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut BeatmapCharacteristicSO,
-        > = __cordl_object.invoke("get_notAllowedCharacteristics", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_initialTopScreenViewController(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::ViewController> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::ViewController = __cordl_object
-            .invoke("get_initialTopScreenViewController", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_initialLeftScreenViewController(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::ViewController> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::ViewController = __cordl_object
-            .invoke("get_initialLeftScreenViewController", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn LevelSelectionFlowCoordinatorDidDeactivate(
-        &mut self,
-        removedFromHierarchy: bool,
+        viewController: *mut LevelSelectionNavigationController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "LevelSelectionFlowCoordinatorDidDeactivate",
-                (removedFromHierarchy),
+                "HandleLevelSelectionNavigationControllerDidPressActionButton",
+                (viewController),
             )?;
         Ok(__cordl_ret)
     }
@@ -436,6 +157,236 @@ impl LevelSelectionFlowCoordinator {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn HandleSearchFilterParamsViewControllerDidFinish(
+        &mut self,
+        viewController: *mut SearchFilterParamsViewController,
+        filter: LevelFilter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleSearchFilterParamsViewControllerDidFinish",
+                (viewController, filter),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsMainViewController(
+        &mut self,
+        viewController: *mut crate::HMUI::ViewController,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsMainViewController", (viewController))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LevelSelectionFlowCoordinatorDidActivate(
+        &mut self,
+        firstActivation: bool,
+        addedToHierarchy: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "LevelSelectionFlowCoordinatorDidActivate",
+                (firstActivation, addedToHierarchy),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn LevelSelectionFlowCoordinatorDidDeactivate(
+        &mut self,
+        removedFromHierarchy: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "LevelSelectionFlowCoordinatorDidDeactivate",
+                (removedFromHierarchy),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn LevelSelectionFlowCoordinatorTopViewControllerWillChange(
+        &mut self,
+        oldViewController: *mut crate::HMUI::ViewController,
+        newViewController: *mut crate::HMUI::ViewController,
+        animationType: crate::HMUI::ViewController_AnimationType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "LevelSelectionFlowCoordinatorTopViewControllerWillChange",
+                (oldViewController, newViewController, animationType),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn PracticeButtonWasPressed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PracticeButtonWasPressed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn PresentMainViewController(
+        &mut self,
+        finishedCallback: *mut crate::System::Action,
+        animationType: crate::HMUI::ViewController_AnimationType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PresentMainViewController", (finishedCallback, animationType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Refresh(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Refresh", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SelectionDidChange(
+        &mut self,
+        pack: *mut BeatmapLevelPack,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SelectionDidChange", (pack, beatmapKey))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Setup(
+        &mut self,
+        state: *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Setup", (state))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TopViewControllerWillChange(
+        &mut self,
+        oldViewController: *mut crate::HMUI::ViewController,
+        newViewController: *mut crate::HMUI::ViewController,
+        animationType: crate::HMUI::ViewController_AnimationType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "TopViewControllerWillChange",
+                (oldViewController, newViewController, animationType),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_actionButtonText(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_actionButtonText", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_allowedBeatmapDifficultyMask(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<BeatmapDifficultyMask> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: BeatmapDifficultyMask = __cordl_object
+            .invoke("get_allowedBeatmapDifficultyMask", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_enableCustomLevels(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_enableCustomLevels", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hidePacksIfOneOrNone(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_hidePacksIfOneOrNone", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hidePracticeButton(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_hidePracticeButton", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_initialLeftScreenViewController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::ViewController> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::ViewController = __cordl_object
+            .invoke("get_initialLeftScreenViewController", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_initialRightScreenViewController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::ViewController> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::ViewController = __cordl_object
+            .invoke("get_initialRightScreenViewController", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_initialTopScreenViewController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::ViewController> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::ViewController = __cordl_object
+            .invoke("get_initialTopScreenViewController", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_isInRootViewController(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -443,20 +394,27 @@ impl LevelSelectionFlowCoordinator {
         let __cordl_ret: bool = __cordl_object.invoke("get_isInRootViewController", ())?;
         Ok(__cordl_ret)
     }
-    pub fn DidActivate(
+    pub fn get_mainTitle(
         &mut self,
-        firstActivation: bool,
-        addedToHierarchy: bool,
-        screenSystemEnabling: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "DidActivate",
-                (firstActivation, addedToHierarchy, screenSystemEnabling),
-            )?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_mainTitle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_notAllowedCharacteristics(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapCharacteristicSO>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut BeatmapCharacteristicSO,
+        > = __cordl_object.invoke("get_notAllowedCharacteristics", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_selectedBeatmapKey(
@@ -469,12 +427,54 @@ impl LevelSelectionFlowCoordinator {
             .invoke("get_selectedBeatmapKey", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_selectedBeatmapLevel(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevel> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut BeatmapLevel = __cordl_object
+            .invoke("get_selectedBeatmapLevel", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_selectedBeatmapLevelPack(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelPack> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut BeatmapLevelPack = __cordl_object
+            .invoke("get_selectedBeatmapLevelPack", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_selectedLevelCategory(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory = __cordl_object
+            .invoke("get_selectedLevelCategory", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_showBackButtonForMainViewController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_showBackButtonForMainViewController", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_songPackMask(&mut self) -> quest_hook::libil2cpp::Result<SongPackMask> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: SongPackMask = __cordl_object.invoke("get_songPackMask", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LevelSelectionFlowCoordinator")]
@@ -519,24 +519,41 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LevelSelectionFlowCoordinato
 }
 #[cfg(feature = "LevelSelectionFlowCoordinator+State")]
 impl crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
-    pub fn _ctor_Nullable_1_BeatmapLevelPack_ByRefMut_BeatmapLevel0(
-        &mut self,
+    pub fn New_BeatmapLevelPack1(
+        beatmapLevelPack: *mut BeatmapLevelPack,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (beatmapLevelPack))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_BeatmapLevelPack_BeatmapLevel2(
+        beatmapLevelPack: *mut BeatmapLevelPack,
+        beatmapLevel: *mut BeatmapLevel,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (beatmapLevelPack, beatmapLevel))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Nullable_1_BeatmapLevelPack_ByRefMut_BeatmapLevel0(
         levelCategory: crate::System::Nullable_1<
             crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
         >,
         beatmapLevelPack: *mut BeatmapLevelPack,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
         beatmapLevel: *mut BeatmapLevel,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
                 ".ctor",
                 (levelCategory, beatmapLevelPack, beatmapKey, beatmapLevel),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_object)
     }
     pub fn _ctor_BeatmapLevelPack1(
         &mut self,
@@ -561,41 +578,24 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
             .invoke(".ctor", (beatmapLevelPack, beatmapLevel))?;
         Ok(__cordl_ret)
     }
-    pub fn New_Nullable_1_BeatmapLevelPack_ByRefMut_BeatmapLevel0(
+    pub fn _ctor_Nullable_1_BeatmapLevelPack_ByRefMut_BeatmapLevel0(
+        &mut self,
         levelCategory: crate::System::Nullable_1<
             crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
         >,
         beatmapLevelPack: *mut BeatmapLevelPack,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
         beatmapLevel: *mut BeatmapLevel,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
                 ".ctor",
                 (levelCategory, beatmapLevelPack, beatmapKey, beatmapLevel),
             )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_BeatmapLevelPack1(
-        beatmapLevelPack: *mut BeatmapLevelPack,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (beatmapLevelPack))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_BeatmapLevelPack_BeatmapLevel2(
-        beatmapLevelPack: *mut BeatmapLevelPack,
-        beatmapLevel: *mut BeatmapLevel,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (beatmapLevelPack, beatmapLevel))?;
-        Ok(__cordl_object)
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LevelSelectionFlowCoordinator+State")]

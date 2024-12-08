@@ -25,67 +25,6 @@ impl std::ops::DerefMut for crate::UnityEngine::MonoBehaviour {
 }
 #[cfg(feature = "UnityEngine+MonoBehaviour")]
 impl crate::UnityEngine::MonoBehaviour {
-    pub fn StopCoroutineFromEnumeratorManaged(
-        &mut self,
-        routine: *mut crate::System::Collections::IEnumerator,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StopCoroutineFromEnumeratorManaged", (routine))?;
-        Ok(__cordl_ret)
-    }
-    pub fn StopAllCoroutines(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StopAllCoroutines", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsInvoking_0(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsInvoking", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IsInvoking_String1(
-        &mut self,
-        methodName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsInvoking", (methodName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InvokeRepeating(
-        &mut self,
-        methodName: *mut crate::System::String,
-        _cordl_time: f32,
-        repeatRate: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InvokeRepeating", (methodName, _cordl_time, repeatRate))?;
-        Ok(__cordl_ret)
-    }
     pub fn CancelInvoke_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -107,6 +46,16 @@ impl crate::UnityEngine::MonoBehaviour {
             .invoke("CancelInvoke", (methodName))?;
         Ok(__cordl_ret)
     }
+    pub fn GetScriptClassName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetScriptClassName", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn Invoke(
         &mut self,
         methodName: *mut crate::System::String,
@@ -117,6 +66,75 @@ impl crate::UnityEngine::MonoBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Invoke", (methodName, _cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InvokeRepeating(
+        &mut self,
+        methodName: *mut crate::System::String,
+        _cordl_time: f32,
+        repeatRate: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InvokeRepeating", (methodName, _cordl_time, repeatRate))?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsInvoking_0(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsInvoking", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IsInvoking_String1(
+        &mut self,
+        methodName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsInvoking", (methodName))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnCancellationTokenCreated(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnCancellationTokenCreated", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RaiseCancellation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RaiseCancellation", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartCoroutineManaged(
+        &mut self,
+        methodName: *mut crate::System::String,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Coroutine> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Coroutine = __cordl_object
+            .invoke("StartCoroutineManaged", (methodName, value))?;
         Ok(__cordl_ret)
     }
     pub fn StartCoroutineManaged2(
@@ -130,25 +148,26 @@ impl crate::UnityEngine::MonoBehaviour {
             .invoke("StartCoroutineManaged2", (enumerator))?;
         Ok(__cordl_ret)
     }
-    pub fn StopCoroutineManaged(
+    pub fn StartCoroutine_Auto(
         &mut self,
-        routine: *mut crate::UnityEngine::Coroutine,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        routine: *mut crate::System::Collections::IEnumerator,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Coroutine> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StopCoroutineManaged", (routine))?;
+        let __cordl_ret: *mut crate::UnityEngine::Coroutine = __cordl_object
+            .invoke("StartCoroutine_Auto", (routine))?;
         Ok(__cordl_ret)
     }
-    pub fn get_destroyCancellationToken(
+    pub fn StartCoroutine_IEnumerator2(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::CancellationToken> {
+        routine: *mut crate::System::Collections::IEnumerator,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Coroutine> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Threading::CancellationToken = __cordl_object
-            .invoke("get_destroyCancellationToken", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::Coroutine = __cordl_object
+            .invoke("StartCoroutine", (routine))?;
         Ok(__cordl_ret)
     }
     pub fn StartCoroutine_String0(
@@ -174,43 +193,41 @@ impl crate::UnityEngine::MonoBehaviour {
             .invoke("StartCoroutine", (methodName, value))?;
         Ok(__cordl_ret)
     }
-    pub fn StartCoroutine_IEnumerator2(
+    pub fn StopAllCoroutines(
         &mut self,
-        routine: *mut crate::System::Collections::IEnumerator,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Coroutine> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Coroutine = __cordl_object
-            .invoke("StartCoroutine", (routine))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StopAllCoroutines", ())?;
         Ok(__cordl_ret)
     }
-    pub fn StartCoroutineManaged(
+    pub fn StopCoroutineFromEnumeratorManaged(
         &mut self,
-        methodName: *mut crate::System::String,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Coroutine> {
+        routine: *mut crate::System::Collections::IEnumerator,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Coroutine = __cordl_object
-            .invoke("StartCoroutineManaged", (methodName, value))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StopCoroutineFromEnumeratorManaged", (routine))?;
         Ok(__cordl_ret)
     }
-    pub fn StartCoroutine_Auto(
+    pub fn StopCoroutineManaged(
         &mut self,
-        routine: *mut crate::System::Collections::IEnumerator,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Coroutine> {
+        routine: *mut crate::UnityEngine::Coroutine,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Coroutine = __cordl_object
-            .invoke("StartCoroutine_Auto", (routine))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StopCoroutineManaged", (routine))?;
         Ok(__cordl_ret)
     }
-    pub fn StopCoroutine_IEnumerator0(
+    pub fn StopCoroutine_Coroutine1(
         &mut self,
-        routine: *mut crate::System::Collections::IEnumerator,
+        routine: *mut crate::UnityEngine::Coroutine,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -219,9 +236,9 @@ impl crate::UnityEngine::MonoBehaviour {
             .invoke("StopCoroutine", (routine))?;
         Ok(__cordl_ret)
     }
-    pub fn StopCoroutine_Coroutine1(
+    pub fn StopCoroutine_IEnumerator0(
         &mut self,
-        routine: *mut crate::UnityEngine::Coroutine,
+        routine: *mut crate::System::Collections::IEnumerator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -241,14 +258,31 @@ impl crate::UnityEngine::MonoBehaviour {
             .invoke("StopCoroutine", (methodName))?;
         Ok(__cordl_ret)
     }
-    pub fn RaiseCancellation(
+    pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RaiseCancellation", ())?;
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_destroyCancellationToken(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::CancellationToken> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Threading::CancellationToken = __cordl_object
+            .invoke("get_destroyCancellationToken", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_useGUILayout(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_useGUILayout", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_useGUILayout(
@@ -261,40 +295,6 @@ impl crate::UnityEngine::MonoBehaviour {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_useGUILayout", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_useGUILayout(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_useGUILayout", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetScriptClassName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetScriptClassName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnCancellationTokenCreated(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCancellationTokenCreated", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+MonoBehaviour")]

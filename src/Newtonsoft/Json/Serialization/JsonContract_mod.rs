@@ -61,48 +61,75 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
     pub type __c__DisplayClass58_0 = crate::Newtonsoft::Json::Serialization::JsonContract___c__DisplayClass58_0;
     #[cfg(feature = "Newtonsoft+Json+Serialization+JsonContract+__c__DisplayClass57_0")]
     pub type __c__DisplayClass57_0 = crate::Newtonsoft::Json::Serialization::JsonContract___c__DisplayClass57_0;
-    pub fn set_DefaultCreatorNonPublic(
+    pub fn InvokeOnDeserialized(
         &mut self,
-        value: bool,
+        o: *mut crate::System::Object,
+        context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_DefaultCreatorNonPublic", (value))?;
+            .invoke("InvokeOnDeserialized", (o, context))?;
         Ok(__cordl_ret)
     }
-    pub fn set_CreatedType(
+    pub fn InvokeOnDeserializing(
         &mut self,
-        value: *mut crate::System::Type,
+        o: *mut crate::System::Object,
+        context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_CreatedType", (value))?;
+            .invoke("InvokeOnDeserializing", (o, context))?;
         Ok(__cordl_ret)
     }
-    pub fn get_InternalConverter(
+    pub fn InvokeOnError(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Newtonsoft::Json::JsonConverter> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::JsonConverter = __cordl_object
-            .invoke("get_InternalConverter", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_DefaultCreator(
-        &mut self,
-        value: *mut crate::System::Func_1<*mut crate::System::Object>,
+        o: *mut crate::System::Object,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+        errorContext: *mut crate::Newtonsoft::Json::Serialization::ErrorContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_DefaultCreator", (value))?;
+            .invoke("InvokeOnError", (o, context, errorContext))?;
         Ok(__cordl_ret)
+    }
+    pub fn InvokeOnSerialized(
+        &mut self,
+        o: *mut crate::System::Object,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InvokeOnSerialized", (o, context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InvokeOnSerializing(
+        &mut self,
+        o: *mut crate::System::Object,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InvokeOnSerializing", (o, context))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        underlyingType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (underlyingType))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -115,50 +142,14 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
             .invoke(".ctor", (underlyingType))?;
         Ok(__cordl_ret)
     }
-    pub fn get_UnderlyingType(
+    pub fn get_Converter(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Newtonsoft::Json::JsonConverter> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_UnderlyingType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsReference(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<bool>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Nullable_1<bool> = __cordl_object
-            .invoke("get_IsReference", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_InternalConverter(
-        &mut self,
-        value: *mut crate::Newtonsoft::Json::JsonConverter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_InternalConverter", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_OnDeserializedCallbacks(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::Newtonsoft::Json::Serialization::SerializationCallback,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::Newtonsoft::Json::Serialization::SerializationCallback,
-        > = __cordl_object.invoke("get_OnDeserializedCallbacks", ())?;
+        let __cordl_ret: *mut crate::Newtonsoft::Json::JsonConverter = __cordl_object
+            .invoke("get_Converter", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_CreatedType(
@@ -183,17 +174,6 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
             .invoke("get_DefaultCreator", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_IsReference(
-        &mut self,
-        value: crate::System::Nullable_1<bool>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsReference", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_DefaultCreatorNonPublic(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -202,6 +182,71 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_DefaultCreatorNonPublic", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_InternalConverter(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Newtonsoft::Json::JsonConverter> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Newtonsoft::Json::JsonConverter = __cordl_object
+            .invoke("get_InternalConverter", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsReference(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<bool>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Nullable_1<bool> = __cordl_object
+            .invoke("get_IsReference", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_OnDeserializedCallbacks(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Serialization::SerializationCallback,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Serialization::SerializationCallback,
+        > = __cordl_object.invoke("get_OnDeserializedCallbacks", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_OnDeserializingCallbacks(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Serialization::SerializationCallback,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Serialization::SerializationCallback,
+        > = __cordl_object.invoke("get_OnDeserializingCallbacks", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_OnErrorCallbacks(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
+        > = __cordl_object.invoke("get_OnErrorCallbacks", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_OnSerializedCallbacks(
@@ -234,105 +279,14 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
         > = __cordl_object.invoke("get_OnSerializingCallbacks", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_OnErrorCallbacks(
+    pub fn get_UnderlyingType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
-        > = __cordl_object.invoke("get_OnErrorCallbacks", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InvokeOnSerializing(
-        &mut self,
-        o: *mut crate::System::Object,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InvokeOnSerializing", (o, context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InvokeOnSerialized(
-        &mut self,
-        o: *mut crate::System::Object,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InvokeOnSerialized", (o, context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InvokeOnDeserialized(
-        &mut self,
-        o: *mut crate::System::Object,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InvokeOnDeserialized", (o, context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InvokeOnError(
-        &mut self,
-        o: *mut crate::System::Object,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-        errorContext: *mut crate::Newtonsoft::Json::Serialization::ErrorContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InvokeOnError", (o, context, errorContext))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_OnDeserializingCallbacks(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::Newtonsoft::Json::Serialization::SerializationCallback,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::Newtonsoft::Json::Serialization::SerializationCallback,
-        > = __cordl_object.invoke("get_OnDeserializingCallbacks", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InvokeOnDeserializing(
-        &mut self,
-        o: *mut crate::System::Object,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InvokeOnDeserializing", (o, context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Converter(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Newtonsoft::Json::JsonConverter> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::JsonConverter = __cordl_object
-            .invoke("get_Converter", ())?;
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_UnderlyingType", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Converter(
@@ -346,14 +300,60 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
             .invoke("set_Converter", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        underlyingType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (underlyingType))?;
-        Ok(__cordl_object)
+    pub fn set_CreatedType(
+        &mut self,
+        value: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_CreatedType", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_DefaultCreator(
+        &mut self,
+        value: *mut crate::System::Func_1<*mut crate::System::Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_DefaultCreator", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_DefaultCreatorNonPublic(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_DefaultCreatorNonPublic", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_InternalConverter(
+        &mut self,
+        value: *mut crate::Newtonsoft::Json::JsonConverter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_InternalConverter", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IsReference(
+        &mut self,
+        value: crate::System::Nullable_1<bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsReference", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonContract")]

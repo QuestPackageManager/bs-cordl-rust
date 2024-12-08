@@ -24,88 +24,14 @@ impl std::ops::DerefMut for crate::UnityEngine::Audio::AudioMixer {
 }
 #[cfg(feature = "UnityEngine+Audio+AudioMixer")]
 impl crate::UnityEngine::Audio::AudioMixer {
-    pub fn TransitionToSnapshotInternal(
-        &mut self,
-        snapshot: *mut crate::UnityEngine::Audio::AudioMixerSnapshot,
-        timeToReach: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionToSnapshotInternal", (snapshot, timeToReach))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_outputAudioMixerGroup(
-        &mut self,
-        value: *mut crate::UnityEngine::Audio::AudioMixerGroup,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_outputAudioMixerGroup", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TransitionToSnapshot(
-        &mut self,
-        snapshot: *mut crate::UnityEngine::Audio::AudioMixerSnapshot,
-        timeToReach: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionToSnapshot", (snapshot, timeToReach))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_updateMode(
-        &mut self,
-        value: crate::UnityEngine::Audio::AudioMixerUpdateMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_updateMode", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_outputAudioMixerGroup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Audio::AudioMixerGroup> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Audio::AudioMixerGroup = __cordl_object
-            .invoke("get_outputAudioMixerGroup", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn FindSnapshot(
+    pub fn ClearFloat(
         &mut self,
         name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::Audio::AudioMixerSnapshot,
-    > {
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Audio::AudioMixerSnapshot = __cordl_object
-            .invoke("FindSnapshot", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TransitionToSnapshots(
-        &mut self,
-        snapshots: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Audio::AudioMixerSnapshot,
-        >,
-        weights: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-        timeToReach: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionToSnapshots", (snapshots, weights, timeToReach))?;
+        let __cordl_ret: bool = __cordl_object.invoke("ClearFloat", (name))?;
         Ok(__cordl_ret)
     }
     pub fn FindMatchingGroups(
@@ -124,25 +50,17 @@ impl crate::UnityEngine::Audio::AudioMixer {
         > = __cordl_object.invoke("FindMatchingGroups", (subPath))?;
         Ok(__cordl_ret)
     }
-    pub fn GetFloat(
+    pub fn FindSnapshot(
         &mut self,
         name: *mut crate::System::String,
-        value: quest_hook::libil2cpp::ByRefMut<f32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::Audio::AudioMixerSnapshot,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("GetFloat", (name, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::Audio::AudioMixerSnapshot = __cordl_object
+            .invoke("FindSnapshot", (name))?;
         Ok(__cordl_ret)
     }
     pub fn GetAbsoluteAudibilityFromGroup(
@@ -156,15 +74,23 @@ impl crate::UnityEngine::Audio::AudioMixer {
             .invoke("GetAbsoluteAudibilityFromGroup", (group))?;
         Ok(__cordl_ret)
     }
-    pub fn get_updateMode(
+    pub fn GetFloat(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Audio::AudioMixerUpdateMode> {
+        name: *mut crate::System::String,
+        value: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::UnityEngine::Audio::AudioMixerUpdateMode = __cordl_object
-            .invoke("get_updateMode", ())?;
+        let __cordl_ret: bool = __cordl_object.invoke("GetFloat", (name, value))?;
         Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn SetFloat(
         &mut self,
@@ -177,22 +103,96 @@ impl crate::UnityEngine::Audio::AudioMixer {
         let __cordl_ret: bool = __cordl_object.invoke("SetFloat", (name, value))?;
         Ok(__cordl_ret)
     }
-    pub fn ClearFloat(
+    pub fn TransitionToSnapshot(
         &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        snapshot: *mut crate::UnityEngine::Audio::AudioMixerSnapshot,
+        timeToReach: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("ClearFloat", (name))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("TransitionToSnapshot", (snapshot, timeToReach))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn TransitionToSnapshotInternal(
+        &mut self,
+        snapshot: *mut crate::UnityEngine::Audio::AudioMixerSnapshot,
+        timeToReach: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("TransitionToSnapshotInternal", (snapshot, timeToReach))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TransitionToSnapshots(
+        &mut self,
+        snapshots: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::Audio::AudioMixerSnapshot,
+        >,
+        weights: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        timeToReach: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("TransitionToSnapshots", (snapshots, weights, timeToReach))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_outputAudioMixerGroup(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Audio::AudioMixerGroup> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Audio::AudioMixerGroup = __cordl_object
+            .invoke("get_outputAudioMixerGroup", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_updateMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Audio::AudioMixerUpdateMode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Audio::AudioMixerUpdateMode = __cordl_object
+            .invoke("get_updateMode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_outputAudioMixerGroup(
+        &mut self,
+        value: *mut crate::UnityEngine::Audio::AudioMixerGroup,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_outputAudioMixerGroup", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_updateMode(
+        &mut self,
+        value: crate::UnityEngine::Audio::AudioMixerUpdateMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_updateMode", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+Audio+AudioMixer")]

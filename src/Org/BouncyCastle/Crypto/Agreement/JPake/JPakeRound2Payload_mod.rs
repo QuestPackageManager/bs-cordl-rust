@@ -32,15 +32,18 @@ for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound2Payload {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeRound2Payload")]
 impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound2Payload {
-    pub fn get_ParticipantId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_ParticipantId", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        participantId: *mut crate::System::String,
+        a: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        knowledgeProofForX2s: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::BigInteger,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (participantId, a, knowledgeProofForX2s))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -82,18 +85,15 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound2Payload {
         > = __cordl_object.invoke("get_KnowledgeProofForX2s", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        participantId: *mut crate::System::String,
-        a: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        knowledgeProofForX2s: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::BigInteger,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (participantId, a, knowledgeProofForX2s))?;
-        Ok(__cordl_object)
+    pub fn get_ParticipantId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_ParticipantId", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeRound2Payload")]

@@ -34,6 +34,56 @@ impl std::ops::DerefMut for crate::System::Runtime::InteropServices::DllImportAt
 }
 #[cfg(feature = "System+Runtime+InteropServices+DllImportAttribute")]
 impl crate::System::Runtime::InteropServices::DllImportAttribute {
+    pub fn New_String1(
+        dllName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dllName))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_CharSet__cordl_bool__cordl_bool__cordl_bool_CallingConvention__cordl_bool__cordl_bool0(
+        dllName: *mut crate::System::String,
+        entryPoint: *mut crate::System::String,
+        charSet: crate::System::Runtime::InteropServices::CharSet,
+        exactSpelling: bool,
+        setLastError: bool,
+        preserveSig: bool,
+        callingConvention: crate::System::Runtime::InteropServices::CallingConvention,
+        bestFitMapping: bool,
+        throwOnUnmappableChar: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    dllName,
+                    entryPoint,
+                    charSet,
+                    exactSpelling,
+                    setLastError,
+                    preserveSig,
+                    callingConvention,
+                    bestFitMapping,
+                    throwOnUnmappableChar,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_String1(
+        &mut self,
+        dllName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (dllName))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_String_CharSet__cordl_bool__cordl_bool__cordl_bool_CallingConvention__cordl_bool__cordl_bool0(
         &mut self,
         dllName: *mut crate::System::String,
@@ -66,17 +116,6 @@ impl crate::System::Runtime::InteropServices::DllImportAttribute {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
-        &mut self,
-        dllName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dllName))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Value(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -86,45 +125,6 @@ impl crate::System::Runtime::InteropServices::DllImportAttribute {
         let __cordl_ret: *mut crate::System::String = __cordl_object
             .invoke("get_Value", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New_String_CharSet__cordl_bool__cordl_bool__cordl_bool_CallingConvention__cordl_bool__cordl_bool0(
-        dllName: *mut crate::System::String,
-        entryPoint: *mut crate::System::String,
-        charSet: crate::System::Runtime::InteropServices::CharSet,
-        exactSpelling: bool,
-        setLastError: bool,
-        preserveSig: bool,
-        callingConvention: crate::System::Runtime::InteropServices::CallingConvention,
-        bestFitMapping: bool,
-        throwOnUnmappableChar: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    dllName,
-                    entryPoint,
-                    charSet,
-                    exactSpelling,
-                    setLastError,
-                    preserveSig,
-                    callingConvention,
-                    bestFitMapping,
-                    throwOnUnmappableChar,
-                ),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        dllName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dllName))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Runtime+InteropServices+DllImportAttribute")]

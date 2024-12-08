@@ -25,6 +25,26 @@ impl std::ops::DerefMut for crate::Unity::Burst::CompilerServices::AssumeRangeAt
 }
 #[cfg(feature = "Unity+Burst+CompilerServices+AssumeRangeAttribute")]
 impl crate::Unity::Burst::CompilerServices::AssumeRangeAttribute {
+    pub fn New_i64_i64_0(
+        min: i64,
+        max: i64,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (min, max))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_u64_u64_1(
+        min: u64,
+        max: u64,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (min, max))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_i64_i64_0(
         &mut self,
         min: i64,
@@ -48,26 +68,6 @@ impl crate::Unity::Burst::CompilerServices::AssumeRangeAttribute {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (min, max))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_i64_i64_0(
-        min: i64,
-        max: i64,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (min, max))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_u64_u64_1(
-        min: u64,
-        max: u64,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (min, max))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Unity+Burst+CompilerServices+AssumeRangeAttribute")]

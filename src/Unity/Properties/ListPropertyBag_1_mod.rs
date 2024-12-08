@@ -35,9 +35,11 @@ for crate::Unity::Properties::ListPropertyBag_1<TElement> {
 impl<
     TElement: quest_hook::libil2cpp::Type,
 > crate::Unity::Properties::ListPropertyBag_1<TElement> {
-    pub fn get_InstantiationKind(
+    pub fn Instantiate(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Unity::Properties::InstantiationKind>
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<TElement>,
+    >
     where
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -45,8 +47,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::Unity::Properties::InstantiationKind = __cordl_object
-            .invoke("get_InstantiationKind", ())?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<TElement> = __cordl_object
+            .invoke("Instantiate", ())?;
         Ok(__cordl_ret)
     }
     pub fn InstantiateWithCount(
@@ -66,21 +68,12 @@ impl<
             .invoke("InstantiateWithCount", (count))?;
         Ok(__cordl_ret)
     }
-    pub fn Instantiate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<TElement>,
-    >
-    where
-        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<TElement> = __cordl_object
-            .invoke("Instantiate", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -94,12 +87,19 @@ impl<
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_InstantiationKind(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Properties::InstantiationKind>
+    where
+        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::Unity::Properties::InstantiationKind = __cordl_object
+            .invoke("get_InstantiationKind", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Unity+Properties+ListPropertyBag_1")]

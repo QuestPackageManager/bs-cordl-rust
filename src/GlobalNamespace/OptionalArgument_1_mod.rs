@@ -27,7 +27,10 @@ impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for OptionalArgument_1<T
 }
 #[cfg(feature = "OptionalArgument_1")]
 impl<T: quest_hook::libil2cpp::Type> OptionalArgument_1<T> {
-    pub fn get_isOptional(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    pub fn GetValueOrDefault(
+        &mut self,
+        defaultValue: T,
+    ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -35,19 +38,18 @@ impl<T: quest_hook::libil2cpp::Type> OptionalArgument_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isOptional", ())?;
+        let __cordl_ret: T = __cordl_object.invoke("GetValueOrDefault", (defaultValue))?;
         Ok(__cordl_ret)
     }
-    pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("get_value", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        name: *mut crate::System::String,
+        description: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, description))?;
+        Ok(__cordl_object)
     }
     pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -61,10 +63,9 @@ impl<T: quest_hook::libil2cpp::Type> OptionalArgument_1<T> {
             .invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetValueOrDefault(
+    pub fn ToString(
         &mut self,
-        defaultValue: T,
-    ) -> quest_hook::libil2cpp::Result<T>
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -72,7 +73,24 @@ impl<T: quest_hook::libil2cpp::Type> OptionalArgument_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: T = __cordl_object.invoke("GetValueOrDefault", (defaultValue))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryParseWithValue(
+        &mut self,
+        inValue: *mut crate::System::String,
+        outError: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryParseWithValue", (inValue, outError))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -102,11 +120,7 @@ impl<T: quest_hook::libil2cpp::Type> OptionalArgument_1<T> {
         let __cordl_ret: bool = __cordl_object.invoke("get_hasValue", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TryParseWithValue(
-        &mut self,
-        inValue: *mut crate::System::String,
-        outError: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<bool>
+    pub fn get_isOptional(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -114,13 +128,10 @@ impl<T: quest_hook::libil2cpp::Type> OptionalArgument_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryParseWithValue", (inValue, outError))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_isOptional", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -128,19 +139,8 @@ impl<T: quest_hook::libil2cpp::Type> OptionalArgument_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
+        let __cordl_ret: T = __cordl_object.invoke("get_value", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        name: *mut crate::System::String,
-        description: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, description))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "OptionalArgument_1")]

@@ -24,16 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::ISerializationCallbackReceiver {
 }
 #[cfg(feature = "UnityEngine+ISerializationCallbackReceiver")]
 impl crate::UnityEngine::ISerializationCallbackReceiver {
-    pub fn OnBeforeSerialize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnBeforeSerialize", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn OnAfterDeserialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -42,6 +32,16 @@ impl crate::UnityEngine::ISerializationCallbackReceiver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnAfterDeserialize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnBeforeSerialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnBeforeSerialize", ())?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

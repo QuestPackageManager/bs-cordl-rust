@@ -30,25 +30,28 @@ impl std::ops::DerefMut for MultiplayerBadgeAwardData {
 }
 #[cfg(feature = "MultiplayerBadgeAwardData")]
 impl MultiplayerBadgeAwardData {
-    pub fn get_icon(
+    pub fn CompareTo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
-            .invoke("get_icon", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (obj))?;
         Ok(__cordl_ret)
     }
-    pub fn get_awardedPlayer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
-            .invoke("get_awardedPlayer", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        awardedPlayer: *mut IConnectedPlayer,
+        weight: f32,
+        title: *mut crate::System::String,
+        subtitle: *mut crate::System::String,
+        badgeData: *mut MultiplayerBadgeDataSO,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (awardedPlayer, weight, title, subtitle, badgeData))?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -65,24 +68,24 @@ impl MultiplayerBadgeAwardData {
             .invoke(".ctor", (awardedPlayer, weight, title, subtitle, badgeData))?;
         Ok(__cordl_ret)
     }
-    pub fn CompareTo(
+    pub fn get_awardedPlayer(
         &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (obj))?;
+        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
+            .invoke("get_awardedPlayer", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_titleLocalizationKey(
+    pub fn get_icon(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_titleLocalizationKey", ())?;
+        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
+            .invoke("get_icon", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_subtitle(
@@ -105,18 +108,15 @@ impl MultiplayerBadgeAwardData {
             .invoke("get_title", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        awardedPlayer: *mut IConnectedPlayer,
-        weight: f32,
-        title: *mut crate::System::String,
-        subtitle: *mut crate::System::String,
-        badgeData: *mut MultiplayerBadgeDataSO,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (awardedPlayer, weight, title, subtitle, badgeData))?;
-        Ok(__cordl_object)
+    pub fn get_titleLocalizationKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_titleLocalizationKey", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MultiplayerBadgeAwardData")]

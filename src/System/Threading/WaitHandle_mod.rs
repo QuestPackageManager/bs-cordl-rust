@@ -35,38 +35,6 @@ impl crate::System::Threading::WaitHandle {
     pub const WAIT_FAILED: i32 = 2147483647i32;
     pub const WAIT_OBJECT_0: i32 = 0i32;
     pub const WaitTimeout: i32 = 258i32;
-    pub fn SetHandleInternal(
-        &mut self,
-        handle: *mut crate::Microsoft::Win32::SafeHandles::SafeWaitHandle,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetHandleInternal", (handle))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Handle(
-        &mut self,
-        value: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Handle", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -77,16 +45,14 @@ impl crate::System::Threading::WaitHandle {
             .invoke("Close", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_SafeWaitHandle(
+    pub fn Dispose_1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Microsoft::Win32::SafeHandles::SafeWaitHandle,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Microsoft::Win32::SafeHandles::SafeWaitHandle = __cordl_object
-            .invoke("get_SafeWaitHandle", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
         Ok(__cordl_ret)
     }
     pub fn Dispose__cordl_bool0(
@@ -100,36 +66,49 @@ impl crate::System::Threading::WaitHandle {
             .invoke("Dispose", (explicitDisposing))?;
         Ok(__cordl_ret)
     }
-    pub fn Dispose_1(
+    pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+            .invoke("Init", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetHandleInternal(
         &mut self,
+        handle: *mut crate::Microsoft::Win32::SafeHandles::SafeWaitHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("SetHandleInternal", (handle))?;
         Ok(__cordl_ret)
     }
-    pub fn WaitOne_i32__cordl_bool0(
+    pub fn WaitOne_2(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("WaitOne", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn WaitOne_TimeSpan4(
         &mut self,
-        millisecondsTimeout: i32,
-        exitContext: bool,
+        timeout: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("WaitOne", (millisecondsTimeout, exitContext))?;
+        let __cordl_ret: bool = __cordl_object.invoke("WaitOne", (timeout))?;
         Ok(__cordl_ret)
     }
     pub fn WaitOne_TimeSpan__cordl_bool1(
@@ -144,13 +123,6 @@ impl crate::System::Threading::WaitHandle {
             .invoke("WaitOne", (timeout, exitContext))?;
         Ok(__cordl_ret)
     }
-    pub fn WaitOne_2(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("WaitOne", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn WaitOne_i32_3(
         &mut self,
         millisecondsTimeout: i32,
@@ -161,14 +133,16 @@ impl crate::System::Threading::WaitHandle {
         let __cordl_ret: bool = __cordl_object.invoke("WaitOne", (millisecondsTimeout))?;
         Ok(__cordl_ret)
     }
-    pub fn WaitOne_TimeSpan4(
+    pub fn WaitOne_i32__cordl_bool0(
         &mut self,
-        timeout: crate::System::TimeSpan,
+        millisecondsTimeout: i32,
+        exitContext: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("WaitOne", (timeout))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("WaitOne", (millisecondsTimeout, exitContext))?;
         Ok(__cordl_ret)
     }
     pub fn WaitOne_i64__cordl_bool5(
@@ -183,12 +157,38 @@ impl crate::System::Threading::WaitHandle {
             .invoke("WaitOne", (timeout, exitContext))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SafeWaitHandle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Microsoft::Win32::SafeHandles::SafeWaitHandle,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Microsoft::Win32::SafeHandles::SafeWaitHandle = __cordl_object
+            .invoke("get_SafeWaitHandle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Handle(
+        &mut self,
+        value: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Handle", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Threading+WaitHandle")]

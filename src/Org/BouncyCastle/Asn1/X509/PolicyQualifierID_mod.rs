@@ -25,6 +25,15 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X509::PolicyQualifie
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+PolicyQualifierID")]
 impl crate::Org::BouncyCastle::Asn1::X509::PolicyQualifierID {
     pub const IdQt: &'static str = "1.3.6.1.5.5.7.2";
+    pub fn New(
+        id: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (id))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         id: *mut crate::System::String,
@@ -35,15 +44,6 @@ impl crate::Org::BouncyCastle::Asn1::X509::PolicyQualifierID {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (id))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        id: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (id))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+PolicyQualifierID")]

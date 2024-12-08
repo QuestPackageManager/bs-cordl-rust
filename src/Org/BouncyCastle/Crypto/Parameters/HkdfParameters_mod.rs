@@ -30,6 +30,16 @@ for crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+HkdfParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
+    pub fn GetIkm(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetIkm", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
@@ -40,11 +50,50 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
             .invoke("GetInfo", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_SkipExtract(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn GetSalt(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_SkipExtract", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetSalt", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_Il2CppArray1(
+        ikm: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        info: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ikm, salt, info))?;
+        Ok(__cordl_object)
+    }
+    pub fn New__cordl_bool_Il2CppArray0(
+        ikm: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        skip: bool,
+        salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        info: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ikm, skip, salt, info))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_Il2CppArray1(
+        &mut self,
+        ikm: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        info: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (ikm, salt, info))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor__cordl_bool_Il2CppArray0(
@@ -61,61 +110,12 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
             .invoke(".ctor", (ikm, skip, salt, info))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Il2CppArray1(
-        &mut self,
-        ikm: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        info: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_SkipExtract(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (ikm, salt, info))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_SkipExtract", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn GetIkm(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetIkm", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSalt(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetSalt", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New__cordl_bool_Il2CppArray0(
-        ikm: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        skip: bool,
-        salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        info: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ikm, skip, salt, info))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Il2CppArray1(
-        ikm: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        info: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ikm, salt, info))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+HkdfParameters")]

@@ -47,16 +47,6 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::SchemaAttDef {
 impl crate::System::Xml::Schema::SchemaAttDef {
     #[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
     pub type Reserve = crate::System::Xml::Schema::SchemaAttDef_Reserve;
-    pub fn System_Xml_IDtdDefaultAttributeInfo_get_ValueLineNumber(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("System.Xml.IDtdDefaultAttributeInfo.get_ValueLineNumber", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CheckXmlSpace(
         &mut self,
         validationEventHandling: *mut crate::System::Xml::IValidationEventHandling,
@@ -66,80 +56,6 @@ impl crate::System::Xml::Schema::SchemaAttDef {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckXmlSpace", (validationEventHandling))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Reserved(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Xml::Schema::SchemaAttDef_Reserve,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::Schema::SchemaAttDef_Reserve = __cordl_object
-            .invoke("get_Reserved", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdDefaultAttributeInfo_get_DefaultValueExpanded(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("System.Xml.IDtdDefaultAttributeInfo.get_DefaultValueExpanded", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LineNumber(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_LineNumber", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ValueLinePosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ValueLinePosition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LinePosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_LinePosition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdAttributeInfo_get_IsNonCDataType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Xml.IDtdAttributeInfo.get_IsNonCDataType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_LinePosition(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_LinePosition", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdAttributeInfo_get_LocalName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("System.Xml.IDtdAttributeInfo.get_LocalName", ())?;
         Ok(__cordl_ret)
     }
     pub fn Clone(
@@ -152,6 +68,62 @@ impl crate::System::Xml::Schema::SchemaAttDef {
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New_2() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_XmlQualifiedName1(
+        name: *mut crate::System::Xml::XmlQualifiedName,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_XmlQualifiedName_String0(
+        name: *mut crate::System::Xml::XmlQualifiedName,
+        prefix: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, prefix))?;
+        Ok(__cordl_object)
+    }
+    pub fn System_Xml_IDtdAttributeInfo_get_IsDeclaredInExternal(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Xml.IDtdAttributeInfo.get_IsDeclaredInExternal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdAttributeInfo_get_IsNonCDataType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Xml.IDtdAttributeInfo.get_IsNonCDataType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdAttributeInfo_get_IsXmlAttribute(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Xml.IDtdAttributeInfo.get_IsXmlAttribute", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn System_Xml_IDtdAttributeInfo_get_LineNumber(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -162,26 +134,64 @@ impl crate::System::Xml::Schema::SchemaAttDef {
             .invoke("System.Xml.IDtdAttributeInfo.get_LineNumber", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_TokenizedType(
+    pub fn System_Xml_IDtdAttributeInfo_get_LinePosition(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlTokenizedType> {
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Xml::XmlTokenizedType = __cordl_object
-            .invoke("get_TokenizedType", ())?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("System.Xml.IDtdAttributeInfo.get_LinePosition", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_SchemaAttribute(
+    pub fn System_Xml_IDtdAttributeInfo_get_LocalName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaAttribute,
-    > {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaAttribute = __cordl_object
-            .invoke("get_SchemaAttribute", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("System.Xml.IDtdAttributeInfo.get_LocalName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdAttributeInfo_get_Prefix(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("System.Xml.IDtdAttributeInfo.get_Prefix", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdDefaultAttributeInfo_get_DefaultValueExpanded(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("System.Xml.IDtdDefaultAttributeInfo.get_DefaultValueExpanded", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdDefaultAttributeInfo_get_DefaultValueTyped(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("System.Xml.IDtdDefaultAttributeInfo.get_DefaultValueTyped", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdDefaultAttributeInfo_get_ValueLineNumber(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("System.Xml.IDtdDefaultAttributeInfo.get_ValueLineNumber", ())?;
         Ok(__cordl_ret)
     }
     pub fn System_Xml_IDtdDefaultAttributeInfo_get_ValueLinePosition(
@@ -194,46 +204,25 @@ impl crate::System::Xml::Schema::SchemaAttDef {
             .invoke("System.Xml.IDtdDefaultAttributeInfo.get_ValueLinePosition", ())?;
         Ok(__cordl_ret)
     }
-    pub fn System_Xml_IDtdAttributeInfo_get_IsDeclaredInExternal(
+    pub fn _ctor_2(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Xml.IDtdAttributeInfo.get_IsDeclaredInExternal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ValueLinePosition(
-        &mut self,
-        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ValueLinePosition", (value))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_Reserved(
+    pub fn _ctor_XmlQualifiedName1(
         &mut self,
-        value: crate::System::Xml::Schema::SchemaAttDef_Reserve,
+        name: *mut crate::System::Xml::XmlQualifiedName,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Reserved", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdAttributeInfo_get_LinePosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("System.Xml.IDtdAttributeInfo.get_LinePosition", ())?;
+            .invoke(".ctor", (name))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_XmlQualifiedName_String0(
@@ -248,36 +237,83 @@ impl crate::System::Xml::Schema::SchemaAttDef {
             .invoke(".ctor", (name, prefix))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_XmlQualifiedName1(
-        &mut self,
-        name: *mut crate::System::Xml::XmlQualifiedName,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_DefaultValueChecked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_DefaultValueChecked", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_2(
+    pub fn get_DefaultValueExpanded(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_DefaultValueExpanded", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_SchemaAttribute(
-        &mut self,
-        value: *mut crate::System::Xml::Schema::XmlSchemaAttribute,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_LineNumber(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_SchemaAttribute", (value))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_LineNumber", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LinePosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_LinePosition", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Reserved(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Xml::Schema::SchemaAttDef_Reserve,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::Schema::SchemaAttDef_Reserve = __cordl_object
+            .invoke("get_Reserved", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_SchemaAttribute(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Xml::Schema::XmlSchemaAttribute,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaAttribute = __cordl_object
+            .invoke("get_SchemaAttribute", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TokenizedType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlTokenizedType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Xml::XmlTokenizedType = __cordl_object
+            .invoke("get_TokenizedType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ValueLineNumber(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ValueLineNumber", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ValueLinePosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ValueLinePosition", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_DefaultValueExpanded(
@@ -291,24 +327,48 @@ impl crate::System::Xml::Schema::SchemaAttDef {
             .invoke("set_DefaultValueExpanded", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_DefaultValueExpanded(
+    pub fn set_LineNumber(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_DefaultValueExpanded", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_LineNumber", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn System_Xml_IDtdAttributeInfo_get_IsXmlAttribute(
+    pub fn set_LinePosition(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Xml.IDtdAttributeInfo.get_IsXmlAttribute", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_LinePosition", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Reserved(
+        &mut self,
+        value: crate::System::Xml::Schema::SchemaAttDef_Reserve,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Reserved", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_SchemaAttribute(
+        &mut self,
+        value: *mut crate::System::Xml::Schema::XmlSchemaAttribute,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_SchemaAttribute", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_TokenizedType(
@@ -333,17 +393,7 @@ impl crate::System::Xml::Schema::SchemaAttDef {
             .invoke("set_ValueLineNumber", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn System_Xml_IDtdAttributeInfo_get_Prefix(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("System.Xml.IDtdAttributeInfo.get_Prefix", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_LineNumber(
+    pub fn set_ValueLinePosition(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -351,58 +401,8 @@ impl crate::System::Xml::Schema::SchemaAttDef {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_LineNumber", (value))?;
+            .invoke("set_ValueLinePosition", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_ValueLineNumber(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ValueLineNumber", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_DefaultValueChecked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_DefaultValueChecked", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdDefaultAttributeInfo_get_DefaultValueTyped(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("System.Xml.IDtdDefaultAttributeInfo.get_DefaultValueTyped", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_XmlQualifiedName_String0(
-        name: *mut crate::System::Xml::XmlQualifiedName,
-        prefix: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, prefix))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_XmlQualifiedName1(
-        name: *mut crate::System::Xml::XmlQualifiedName,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_2() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+SchemaAttDef")]

@@ -63,10 +63,29 @@ impl<
     TParam4: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::Zenject::StaticMemoryPool_5<TParam1, TParam2, TParam3, TParam4, TValue> {
-    pub fn set_OnSpawnMethod(
+    pub fn New(
+        onSpawnMethod: *mut crate::System::Action_5<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TValue,
+        >,
+        onDespawnedMethod: *mut crate::System::Action_1<TValue>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (onSpawnMethod, onDespawnedMethod))?;
+        Ok(__cordl_object)
+    }
+    pub fn Spawn(
         &mut self,
-        value: *mut crate::System::Action_5<TParam1, TParam2, TParam3, TParam4, TValue>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+        p1: TParam1,
+        p2: TParam2,
+        p3: TParam3,
+        p4: TParam4,
+    ) -> quest_hook::libil2cpp::Result<TValue>
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -82,8 +101,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_OnSpawnMethod", (value))?;
+        let __cordl_ret: TValue = __cordl_object.invoke("Spawn", (p1, p2, p3, p4))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -116,13 +134,10 @@ impl<
             .invoke(".ctor", (onSpawnMethod, onDespawnedMethod))?;
         Ok(__cordl_ret)
     }
-    pub fn Spawn(
+    pub fn set_OnSpawnMethod(
         &mut self,
-        p1: TParam1,
-        p2: TParam2,
-        p3: TParam3,
-        p4: TParam4,
-    ) -> quest_hook::libil2cpp::Result<TValue>
+        value: *mut crate::System::Action_5<TParam1, TParam2, TParam3, TParam4, TValue>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -138,24 +153,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: TValue = __cordl_object.invoke("Spawn", (p1, p2, p3, p4))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_OnSpawnMethod", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        onSpawnMethod: *mut crate::System::Action_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TValue,
-        >,
-        onDespawnedMethod: *mut crate::System::Action_1<TValue>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (onSpawnMethod, onDespawnedMethod))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+StaticMemoryPool_5")]

@@ -41,6 +41,30 @@ impl std::ops::DerefMut for PlatformException {
 impl PlatformException {
     #[cfg(feature = "PlatformException+ErrorType")]
     pub type ErrorType = crate::GlobalNamespace::PlatformException_ErrorType;
+    pub fn New_String_Exception0(
+        error: crate::GlobalNamespace::PlatformException_ErrorType,
+        message: *mut crate::System::String,
+        innerException: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (error, message, innerException))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_i32_String_Exception1(
+        error: crate::GlobalNamespace::PlatformException_ErrorType,
+        code: i32,
+        httpCode: i32,
+        message: *mut crate::System::String,
+        innerException: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (error, code, httpCode, message, innerException))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor_String_Exception0(
         &mut self,
         error: crate::GlobalNamespace::PlatformException_ErrorType,
@@ -68,30 +92,6 @@ impl PlatformException {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (error, code, httpCode, message, innerException))?;
         Ok(__cordl_ret)
-    }
-    pub fn New_String_Exception0(
-        error: crate::GlobalNamespace::PlatformException_ErrorType,
-        message: *mut crate::System::String,
-        innerException: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (error, message, innerException))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_i32_String_Exception1(
-        error: crate::GlobalNamespace::PlatformException_ErrorType,
-        code: i32,
-        httpCode: i32,
-        message: *mut crate::System::String,
-        innerException: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (error, code, httpCode, message, innerException))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PlatformException")]

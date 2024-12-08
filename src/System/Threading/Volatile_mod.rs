@@ -26,10 +26,10 @@ impl std::ops::DerefMut for crate::System::Threading::Volatile {
 impl crate::System::Threading::Volatile {
     #[cfg(feature = "System+Threading+Volatile+VolatileBoolean")]
     pub type VolatileBoolean = crate::System::Threading::Volatile_VolatileBoolean;
-    #[cfg(feature = "System+Threading+Volatile+VolatileInt32")]
-    pub type VolatileInt32 = crate::System::Threading::Volatile_VolatileInt32;
     #[cfg(feature = "System+Threading+Volatile+VolatileObject")]
     pub type VolatileObject = crate::System::Threading::Volatile_VolatileObject;
+    #[cfg(feature = "System+Threading+Volatile+VolatileInt32")]
+    pub type VolatileInt32 = crate::System::Threading::Volatile_VolatileInt32;
 }
 #[cfg(feature = "System+Threading+Volatile")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Volatile {

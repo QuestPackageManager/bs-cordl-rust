@@ -30,6 +30,21 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsMac {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsMac")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsMac {
+    pub fn CalculateMac(
+        &mut self,
+        seqNo: i64,
+        _cordl_type: u8,
+        message: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("CalculateMac", (seqNo, _cordl_type, message, offset, length))?;
+        Ok(__cordl_ret)
+    }
     pub fn CalculateMacConstantTime(
         &mut self,
         seqNo: i64,
@@ -61,20 +76,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsMac {
             .invoke("GetDigestBlockCount", (inputLength))?;
         Ok(__cordl_ret)
     }
-    pub fn CalculateMac(
-        &mut self,
-        seqNo: i64,
-        _cordl_type: u8,
-        message: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("CalculateMac", (seqNo, _cordl_type, message, offset, length))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        keyOff: i32,
+        keyLen: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (context, digest, key, keyOff, keyLen))?;
+        Ok(__cordl_object)
     }
     pub fn Truncate(
         &mut self,
@@ -102,13 +115,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsMac {
             .invoke(".ctor", (context, digest, key, keyOff, keyLen))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Size(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Size", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn get_MacSecret(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
@@ -119,18 +125,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsMac {
             .invoke("get_MacSecret", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        keyOff: i32,
-        keyLen: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (context, digest, key, keyOff, keyLen))?;
-        Ok(__cordl_object)
+    pub fn get_Size(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Size", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsMac")]

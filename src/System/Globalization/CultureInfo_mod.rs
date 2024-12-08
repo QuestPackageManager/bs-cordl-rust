@@ -57,41 +57,18 @@ impl crate::System::Globalization::CultureInfo {
     pub const InvariantCultureId: i32 = 127i32;
     pub const LOCALE_INVARIANT: i32 = 127i32;
     pub const MSG_READONLY: &'static str = "This instance is read only";
-    #[cfg(feature = "System+Globalization+CultureInfo+Data")]
-    pub type Data = crate::System::Globalization::CultureInfo_Data;
     #[cfg(feature = "System+Globalization+CultureInfo+OnCultureInfoChangedDelegate")]
     pub type OnCultureInfoChangedDelegate = crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate;
-    pub fn get_DateTimeFormat(
+    #[cfg(feature = "System+Globalization+CultureInfo+Data")]
+    pub type Data = crate::System::Globalization::CultureInfo_Data;
+    pub fn CheckNeutral(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Globalization::DateTimeFormatInfo,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Globalization::DateTimeFormatInfo = __cordl_object
-            .invoke("get_DateTimeFormat", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn construct_internal_locale_from_lcid(
-        &mut self,
-        lcid: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("construct_internal_locale_from_lcid", (lcid))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get__name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get__name", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckNeutral", ())?;
         Ok(__cordl_ret)
     }
     pub fn Clone(
@@ -104,51 +81,14 @@ impl crate::System::Globalization::CultureInfo {
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Territory(
+    pub fn Construct(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Territory", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Name(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_Name", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Parent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::CultureInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Globalization::CultureInfo = __cordl_object
-            .invoke("get_Parent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CalendarType(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_CalendarType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_TextInfo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::TextInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Globalization::TextInfo = __cordl_object
-            .invoke("get_TextInfo", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Construct", ())?;
         Ok(__cordl_ret)
     }
     pub fn ConstructInvariant(
@@ -162,33 +102,15 @@ impl crate::System::Globalization::CultureInfo {
             .invoke("ConstructInvariant", (read_only))?;
         Ok(__cordl_ret)
     }
-    pub fn GetFormat(
+    pub fn ConstructLocaleFromName(
         &mut self,
-        formatType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetFormat", (formatType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_NumberFormat(
-        &mut self,
-        value: *mut crate::System::Globalization::NumberFormatInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_NumberFormat", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("ConstructLocaleFromName", (name))?;
         Ok(__cordl_ret)
     }
     pub fn CreateTextInfo(
@@ -212,89 +134,117 @@ impl crate::System::Globalization::CultureInfo {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Construct(
+    pub fn GetFormat(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        formatType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Construct", ())?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("GetFormat", (formatType))?;
         Ok(__cordl_ret)
     }
-    pub fn get__cultureData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::CultureData> {
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Globalization::CultureData = __cordl_object
-            .invoke("get__cultureData", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_DateTimeFormat(
+    pub fn GetTextInfoData(
         &mut self,
-        value: *mut crate::System::Globalization::DateTimeFormatInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::CultureInfo_Data> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_DateTimeFormat", (value))?;
+        let __cordl_ret: crate::System::Globalization::CultureInfo_Data = __cordl_object
+            .invoke("GetTextInfoData", ())?;
         Ok(__cordl_ret)
     }
-    pub fn construct_internal_locale_from_name(
-        &mut self,
+    pub fn New_6() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String3(
         name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("construct_internal_locale_from_name", (name))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name))?;
+        Ok(__cordl_object)
     }
-    pub fn get_IsNeutralCulture(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsNeutralCulture", ())?;
-        Ok(__cordl_ret)
+    pub fn New_String__cordl_bool4(
+        name: *mut crate::System::String,
+        useUserOverride: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, useUserOverride))?;
+        Ok(__cordl_object)
     }
-    pub fn _ctor_i32_0(
-        &mut self,
-        culture: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (culture))?;
-        Ok(__cordl_ret)
+    pub fn New_String__cordl_bool__cordl_bool5(
+        name: *mut crate::System::String,
+        useUserOverride: bool,
+        read_only: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, useUserOverride, read_only))?;
+        Ok(__cordl_object)
     }
-    pub fn _ctor_i32__cordl_bool1(
-        &mut self,
+    pub fn New_i32_0(culture: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (culture))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32__cordl_bool1(
         culture: i32,
         useUserOverride: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (culture, useUserOverride))?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (culture, useUserOverride))?;
+        Ok(__cordl_object)
     }
-    pub fn _ctor_i32__cordl_bool__cordl_bool2(
-        &mut self,
+    pub fn New_i32__cordl_bool__cordl_bool2(
         culture: i32,
         useUserOverride: bool,
         read_only: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (culture, useUserOverride, read_only))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_6(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (culture, useUserOverride, read_only))?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_String3(
@@ -333,14 +283,62 @@ impl crate::System::Globalization::CultureInfo {
             .invoke(".ctor", (name, useUserOverride, read_only))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_6(
+    pub fn _ctor_i32_0(
         &mut self,
+        culture: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke(".ctor", (culture))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32__cordl_bool1(
+        &mut self,
+        culture: i32,
+        useUserOverride: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (culture, useUserOverride))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32__cordl_bool__cordl_bool2(
+        &mut self,
+        culture: i32,
+        useUserOverride: bool,
+        read_only: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (culture, useUserOverride, read_only))?;
+        Ok(__cordl_ret)
+    }
+    pub fn construct_internal_locale_from_lcid(
+        &mut self,
+        lcid: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("construct_internal_locale_from_lcid", (lcid))?;
+        Ok(__cordl_ret)
+    }
+    pub fn construct_internal_locale_from_name(
+        &mut self,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("construct_internal_locale_from_name", (name))?;
         Ok(__cordl_ret)
     }
     pub fn get_Calendar(
@@ -353,6 +351,13 @@ impl crate::System::Globalization::CultureInfo {
             .invoke("get_Calendar", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_CalendarType(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_CalendarType", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_CompareInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::CompareInfo> {
@@ -363,14 +368,50 @@ impl crate::System::Globalization::CultureInfo {
             .invoke("get_CompareInfo", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetTextInfoData(
+    pub fn get_DateTimeFormat(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::CultureInfo_Data> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Globalization::DateTimeFormatInfo,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::System::Globalization::CultureInfo_Data = __cordl_object
-            .invoke("GetTextInfoData", ())?;
+        let __cordl_ret: *mut crate::System::Globalization::DateTimeFormatInfo = __cordl_object
+            .invoke("get_DateTimeFormat", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_EnglishName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_EnglishName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsNeutralCulture(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsNeutralCulture", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LCID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_LCID", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Name(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_NumberFormat(
@@ -385,6 +426,16 @@ impl crate::System::Globalization::CultureInfo {
             .invoke("get_NumberFormat", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_Parent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::CultureInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Globalization::CultureInfo = __cordl_object
+            .invoke("get_Parent", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_SortName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -395,14 +446,34 @@ impl crate::System::Globalization::CultureInfo {
             .invoke("get_SortName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_EnglishName(
+    pub fn get_Territory(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_EnglishName", ())?;
+            .invoke("get_Territory", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TextInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::TextInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Globalization::TextInfo = __cordl_object
+            .invoke("get_TextInfo", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get__cultureData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::CultureData> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Globalization::CultureData = __cordl_object
+            .invoke("get__cultureData", ())?;
         Ok(__cordl_ret)
     }
     pub fn get__isInherited(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -412,108 +483,37 @@ impl crate::System::Globalization::CultureInfo {
         let __cordl_ret: bool = __cordl_object.invoke("get__isInherited", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CheckNeutral(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckNeutral", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LCID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_LCID", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConstructLocaleFromName(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("ConstructLocaleFromName", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
+    pub fn get__name(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
+            .invoke("get__name", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_i32_0(culture: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (culture))?;
-        Ok(__cordl_object)
+    pub fn set_DateTimeFormat(
+        &mut self,
+        value: *mut crate::System::Globalization::DateTimeFormatInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_DateTimeFormat", (value))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_i32__cordl_bool1(
-        culture: i32,
-        useUserOverride: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (culture, useUserOverride))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32__cordl_bool__cordl_bool2(
-        culture: i32,
-        useUserOverride: bool,
-        read_only: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (culture, useUserOverride, read_only))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String3(
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String__cordl_bool4(
-        name: *mut crate::System::String,
-        useUserOverride: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, useUserOverride))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String__cordl_bool__cordl_bool5(
-        name: *mut crate::System::String,
-        useUserOverride: bool,
-        read_only: bool,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, useUserOverride, read_only))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_6() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_NumberFormat(
+        &mut self,
+        value: *mut crate::System::Globalization::NumberFormatInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_NumberFormat", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Globalization+CultureInfo")]
@@ -583,18 +583,6 @@ for crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate {
 }
 #[cfg(feature = "System+Globalization+CultureInfo+OnCultureInfoChangedDelegate")]
 impl crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate {
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
     pub fn Invoke(
         &mut self,
         language: *mut crate::System::String,
@@ -609,12 +597,24 @@ impl crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate {
     pub fn New(
         object: *mut crate::System::Object,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Globalization+CultureInfo+OnCultureInfoChangedDelegate")]

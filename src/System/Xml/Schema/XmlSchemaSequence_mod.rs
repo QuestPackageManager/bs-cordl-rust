@@ -25,12 +25,12 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaSequence {
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSequence")]
 impl crate::System::Xml::Schema::XmlSchemaSequence {
-    pub fn get_IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsEmpty", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn SetItems(
         &mut self,
@@ -53,6 +53,13 @@ impl crate::System::Xml::Schema::XmlSchemaSequence {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsEmpty", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_Items(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -64,13 +71,6 @@ impl crate::System::Xml::Schema::XmlSchemaSequence {
         let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection = __cordl_object
             .invoke("get_Items", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSequence")]

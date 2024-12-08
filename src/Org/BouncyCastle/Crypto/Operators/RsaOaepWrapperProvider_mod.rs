@@ -28,6 +28,15 @@ for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
 impl crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
+    pub fn New(
+        digestOid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (digestOid))?;
+        Ok(__cordl_object)
+    }
     pub fn Org_BouncyCastle_Crypto_Operators_WrapperProvider_CreateWrapper(
         &mut self,
         forWrapping: bool,
@@ -53,15 +62,6 @@ impl crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (digestOid))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        digestOid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (digestOid))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]

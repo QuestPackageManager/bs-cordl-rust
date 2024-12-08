@@ -26,11 +26,26 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Models::PingResult {
 }
 #[cfg(feature = "Oculus+Platform+Models+PingResult")]
 impl crate::Oculus::Platform::Models::PingResult {
-    pub fn get_IsTimeout(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn New(
+        id: u64,
+        pingTimeUsec: crate::System::Nullable_1<u64>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (id, pingTimeUsec))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        id: u64,
+        pingTimeUsec: crate::System::Nullable_1<u64>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsTimeout", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (id, pingTimeUsec))?;
         Ok(__cordl_ret)
     }
     pub fn get_ID(&mut self) -> quest_hook::libil2cpp::Result<u64> {
@@ -38,6 +53,13 @@ impl crate::Oculus::Platform::Models::PingResult {
             self,
         );
         let __cordl_ret: u64 = __cordl_object.invoke("get_ID", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsTimeout(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsTimeout", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_PingTimeUsec(&mut self) -> quest_hook::libil2cpp::Result<u64> {
@@ -57,28 +79,6 @@ impl crate::Oculus::Platform::Models::PingResult {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ID", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        id: u64,
-        pingTimeUsec: crate::System::Nullable_1<u64>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (id, pingTimeUsec))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        id: u64,
-        pingTimeUsec: crate::System::Nullable_1<u64>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (id, pingTimeUsec))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Oculus+Platform+Models+PingResult")]

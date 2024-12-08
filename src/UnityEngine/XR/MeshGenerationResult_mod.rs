@@ -30,23 +30,25 @@ for crate::UnityEngine::XR::MeshGenerationResult {
 }
 #[cfg(feature = "UnityEngine+XR+MeshGenerationResult")]
 impl crate::UnityEngine::XR::MeshGenerationResult {
-    pub fn get_MeshId(
+    pub fn Equals_MeshGenerationResult1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::XR::MeshId> {
-        let __cordl_ret: crate::UnityEngine::XR::MeshId = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::XR::MeshGenerationResult,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_MeshId",
-            (),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Position(
+    pub fn Equals_Object0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_Position",
-            (),
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -54,16 +56,6 @@ impl crate::UnityEngine::XR::MeshGenerationResult {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Status(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::XR::MeshGenerationStatus> {
-        let __cordl_ret: crate::UnityEngine::XR::MeshGenerationStatus = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Status",
             (),
         )?;
         Ok(__cordl_ret)
@@ -88,25 +80,33 @@ impl crate::UnityEngine::XR::MeshGenerationResult {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
+    pub fn get_MeshCollider(
         &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::MeshCollider> {
+        let __cordl_ret: *mut crate::UnityEngine::MeshCollider = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (obj),
+            "get_MeshCollider",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_MeshGenerationResult1(
+    pub fn get_MeshId(
         &mut self,
-        other: crate::UnityEngine::XR::MeshGenerationResult,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::XR::MeshId> {
+        let __cordl_ret: crate::UnityEngine::XR::MeshId = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
+            "get_MeshId",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Position(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Position",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -120,22 +120,22 @@ impl crate::UnityEngine::XR::MeshGenerationResult {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_MeshCollider(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::MeshCollider> {
-        let __cordl_ret: *mut crate::UnityEngine::MeshCollider = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_MeshCollider",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Scale(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Scale",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Status(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::XR::MeshGenerationStatus> {
+        let __cordl_ret: crate::UnityEngine::XR::MeshGenerationStatus = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Status",
             (),
         )?;
         Ok(__cordl_ret)

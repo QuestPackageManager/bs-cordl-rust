@@ -105,20 +105,20 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+ISelectionPickerRenderer"
     )]
     type ISelectionPickerRenderer = crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer;
+    #[cfg(feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+__c")]
+    pub type __c = crate::UnityEngine::ProBuilder::SelectionPickerRenderer___c;
     #[cfg(
-        feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
+        feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+__c__DisplayClass19_0"
     )]
-    pub type SelectionPickerRendererStandard = crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard;
+    pub type __c__DisplayClass19_0 = crate::UnityEngine::ProBuilder::SelectionPickerRenderer___c__DisplayClass19_0;
     #[cfg(
         feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
     )]
     pub type SelectionPickerRendererHDRP = crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererHDRP;
     #[cfg(
-        feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+__c__DisplayClass19_0"
+        feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
     )]
-    pub type __c__DisplayClass19_0 = crate::UnityEngine::ProBuilder::SelectionPickerRenderer___c__DisplayClass19_0;
-    #[cfg(feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::SelectionPickerRenderer___c;
+    pub type SelectionPickerRendererStandard = crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard;
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SelectionPickerRenderer")]
 impl quest_hook::libil2cpp::ObjectType
@@ -169,6 +169,13 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRende
     feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
 )]
 impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererHDRP {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn RenderLookupTexture(
         &mut self,
         camera: *mut crate::UnityEngine::Camera,
@@ -193,13 +200,6 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(
@@ -253,15 +253,12 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRende
     feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
 )]
 impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard {
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn RenderLookupTexture(
         &mut self,
@@ -278,12 +275,15 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
             .invoke("RenderLookupTexture", (camera, shader, tag, width, height))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(

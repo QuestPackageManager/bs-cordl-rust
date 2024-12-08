@@ -26,6 +26,20 @@ impl std::ops::DerefMut for crate::System::ComponentModel::ArrayConverter {
 impl crate::System::ComponentModel::ArrayConverter {
     #[cfg(feature = "System+ComponentModel+ArrayConverter+ArrayPropertyDescriptor")]
     pub type ArrayPropertyDescriptor = crate::System::ComponentModel::ArrayConverter_ArrayPropertyDescriptor;
+    pub fn ConvertTo(
+        &mut self,
+        context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
+        culture: *mut crate::System::Globalization::CultureInfo,
+        value: *mut crate::System::Object,
+        destinationType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("ConvertTo", (context, culture, value, destinationType))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetProperties(
         &mut self,
         context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
@@ -54,19 +68,12 @@ impl crate::System::ComponentModel::ArrayConverter {
             .invoke("GetPropertiesSupported", (context))?;
         Ok(__cordl_ret)
     }
-    pub fn ConvertTo(
-        &mut self,
-        context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
-        culture: *mut crate::System::Globalization::CultureInfo,
-        value: *mut crate::System::Object,
-        destinationType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("ConvertTo", (context, culture, value, destinationType))?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -77,13 +84,6 @@ impl crate::System::ComponentModel::ArrayConverter {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+ComponentModel+ArrayConverter")]
@@ -126,19 +126,6 @@ for crate::System::ComponentModel::ArrayConverter_ArrayPropertyDescriptor {
 }
 #[cfg(feature = "System+ComponentModel+ArrayConverter+ArrayPropertyDescriptor")]
 impl crate::System::ComponentModel::ArrayConverter_ArrayPropertyDescriptor {
-    pub fn _ctor(
-        &mut self,
-        arrayType: *mut crate::System::Type,
-        elementType: *mut crate::System::Type,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (arrayType, elementType, index))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetValue(
         &mut self,
         instance: *mut crate::System::Object,
@@ -149,6 +136,17 @@ impl crate::System::ComponentModel::ArrayConverter_ArrayPropertyDescriptor {
         let __cordl_ret: *mut crate::System::Object = __cordl_object
             .invoke("GetValue", (instance))?;
         Ok(__cordl_ret)
+    }
+    pub fn New(
+        arrayType: *mut crate::System::Type,
+        elementType: *mut crate::System::Type,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (arrayType, elementType, index))?;
+        Ok(__cordl_object)
     }
     pub fn SetValue(
         &mut self,
@@ -162,16 +160,18 @@ impl crate::System::ComponentModel::ArrayConverter_ArrayPropertyDescriptor {
             .invoke("SetValue", (instance, value))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
+    pub fn _ctor(
+        &mut self,
         arrayType: *mut crate::System::Type,
         elementType: *mut crate::System::Type,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (arrayType, elementType, index))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (arrayType, elementType, index))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+ComponentModel+ArrayConverter+ArrayPropertyDescriptor")]

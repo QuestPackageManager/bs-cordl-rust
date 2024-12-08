@@ -67,10 +67,74 @@ impl std::ops::DerefMut for BpmTimeProcessor {
 }
 #[cfg(feature = "BpmTimeProcessor")]
 impl BpmTimeProcessor {
-    #[cfg(feature = "BpmTimeProcessor+__c")]
-    pub type __c = crate::GlobalNamespace::BpmTimeProcessor___c;
     #[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
     pub type BpmChangeData = crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData;
+    #[cfg(feature = "BpmTimeProcessor+__c")]
+    pub type __c = crate::GlobalNamespace::BpmTimeProcessor___c;
+    pub fn ConvertBeatToTime(
+        &mut self,
+        beat: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("ConvertBeatToTime", (beat))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_AudioSaveData2(
+        audioSaveData: *mut crate::BeatmapLevelSaveDataVersion4::AudioSaveData,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (audioSaveData))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_f32_IReadOnlyList_1_0(
+        startBpm: f32,
+        events: *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (startBpm, events))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_f32_IReadOnlyList_1_1(
+        startBpm: f32,
+        bpmEventsSaveData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::BeatmapSaveDataVersion3::BpmChangeEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (startBpm, bpmEventsSaveData))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_AudioSaveData2(
+        &mut self,
+        audioSaveData: *mut crate::BeatmapLevelSaveDataVersion4::AudioSaveData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (audioSaveData))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_f32_IReadOnlyList_1_0(
         &mut self,
         startBpm: f32,
@@ -98,70 +162,6 @@ impl BpmTimeProcessor {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (startBpm, bpmEventsSaveData))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor_AudioSaveData2(
-        &mut self,
-        audioSaveData: *mut crate::BeatmapLevelSaveDataVersion4::AudioSaveData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (audioSaveData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConvertBeatToTime(
-        &mut self,
-        beat: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("ConvertBeatToTime", (beat))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_f32_IReadOnlyList_1_0(
-        startBpm: f32,
-        events: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (startBpm, events))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_f32_IReadOnlyList_1_1(
-        startBpm: f32,
-        bpmEventsSaveData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::BeatmapSaveDataVersion3::BpmChangeEventData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (startBpm, bpmEventsSaveData))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_AudioSaveData2(
-        audioSaveData: *mut crate::BeatmapLevelSaveDataVersion4::AudioSaveData,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (audioSaveData))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "BpmTimeProcessor")]

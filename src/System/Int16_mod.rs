@@ -22,24 +22,69 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Int16 {
 impl crate::System::Int16 {
     pub const MaxValue: i16 = 32767i16;
     pub const MinValue: i16 = -32768i16;
-    pub fn System_IConvertible_ToInt16(
+    pub fn CompareTo_Object0(
         &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<i16> {
-        let __cordl_ret: i16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.IConvertible.ToInt16",
-            (provider),
+            "CompareTo",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_IConvertible_ToSingle(
+    pub fn CompareTo_i16_1(&mut self, value: i16) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CompareTo",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object0(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_i16_1(&mut self, obj: i16) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetTypeCode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TypeCode> {
+        let __cordl_ret: crate::System::TypeCode = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetTypeCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToBoolean(
         &mut self,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.IConvertible.ToSingle",
+            "System.IConvertible.ToBoolean",
             (provider),
         )?;
         Ok(__cordl_ret)
@@ -55,6 +100,28 @@ impl crate::System::Int16 {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn System_IConvertible_ToChar(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToChar",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToDateTime(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToDateTime",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn System_IConvertible_ToDecimal(
         &mut self,
         provider: *mut crate::System::IFormatProvider,
@@ -66,13 +133,68 @@ impl crate::System::Int16 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_IConvertible_ToUInt32(
+    pub fn System_IConvertible_ToDouble(
         &mut self,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.IConvertible.ToUInt32",
+            "System.IConvertible.ToDouble",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToInt16(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<i16> {
+        let __cordl_ret: i16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToInt16",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToInt32(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToInt32",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToInt64(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToInt64",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToSByte(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<i8> {
+        let __cordl_ret: i8 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToSByte",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToSingle(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToSingle",
             (provider),
         )?;
         Ok(__cordl_ret)
@@ -89,13 +211,35 @@ impl crate::System::Int16 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_IConvertible_ToBoolean(
+    pub fn System_IConvertible_ToUInt16(
         &mut self,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_ret: u16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "System.IConvertible.ToBoolean",
+            "System.IConvertible.ToUInt16",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToUInt32(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToUInt32",
+            (provider),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IConvertible_ToUInt64(
+        &mut self,
+        provider: *mut crate::System::IFormatProvider,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.IConvertible.ToUInt64",
             (provider),
         )?;
         Ok(__cordl_ret)
@@ -133,68 +277,6 @@ impl crate::System::Int16 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn System_IConvertible_ToInt64(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToInt64",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToUInt16(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<u16> {
-        let __cordl_ret: u16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToUInt16",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTypeCode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::TypeCode> {
-        let __cordl_ret: crate::System::TypeCode = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetTypeCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToInt32(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToInt32",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToDateTime(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToDateTime",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn TryFormat(
         &mut self,
         destination: crate::System::Span_1<char>,
@@ -206,88 +288,6 @@ impl crate::System::Int16 {
             self,
             "TryFormat",
             (destination, charsWritten, format, provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToDouble(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToDouble",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CompareTo_Object0(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CompareTo",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CompareTo_i16_1(&mut self, value: i16) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CompareTo",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToUInt64(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToUInt64",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToSByte(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<i8> {
-        let __cordl_ret: i8 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToSByte",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IConvertible_ToChar(
-        &mut self,
-        provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.IConvertible.ToChar",
-            (provider),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object0(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_i16_1(&mut self, obj: i16) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }

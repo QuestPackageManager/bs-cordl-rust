@@ -24,6 +24,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::BerApplicationSpecif
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerApplicationSpecific")]
 impl crate::Org::BouncyCastle::Asn1::BerApplicationSpecific {
+    pub fn New(
+        tagNo: i32,
+        vec: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (tagNo, vec))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         tagNo: i32,
@@ -35,16 +45,6 @@ impl crate::Org::BouncyCastle::Asn1::BerApplicationSpecific {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (tagNo, vec))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        tagNo: i32,
-        vec: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (tagNo, vec))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerApplicationSpecific")]

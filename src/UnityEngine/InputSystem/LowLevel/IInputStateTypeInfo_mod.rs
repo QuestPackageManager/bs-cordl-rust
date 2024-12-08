@@ -26,6 +26,11 @@ for crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IInputStateTypeInfo")]
 impl crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
     pub fn get_format(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -37,11 +42,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = __cordl_object
             .invoke("get_format", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IInputStateTypeInfo")]

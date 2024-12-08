@@ -32,21 +32,27 @@ for crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+StringSwitchInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
-    pub fn get_InstructionName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_InstructionName", ())?;
-        Ok(__cordl_ret)
+    pub fn New(
+        cases: *mut crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::String,
+            i32,
+        >,
+        nullCase: *mut crate::System::Runtime::CompilerServices::StrongBox_1<i32>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (cases, nullCase))?;
+        Ok(__cordl_object)
     }
-    pub fn get_ConsumedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn Run(
+        &mut self,
+        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("Run", (frame))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -64,28 +70,22 @@ impl crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
             .invoke(".ctor", (cases, nullCase))?;
         Ok(__cordl_ret)
     }
-    pub fn Run(
-        &mut self,
-        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_ConsumedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("Run", (frame))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("get_ConsumedStack", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        cases: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            i32,
-        >,
-        nullCase: *mut crate::System::Runtime::CompilerServices::StrongBox_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (cases, nullCase))?;
-        Ok(__cordl_object)
+    pub fn get_InstructionName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_InstructionName", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+StringSwitchInstruction")]

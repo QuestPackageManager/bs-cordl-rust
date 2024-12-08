@@ -72,100 +72,6 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
         feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
     )]
     pub type DeviceDescriptionJson = crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescriptionJson;
-    pub fn set_serial(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_serial",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_product(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_product",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_interfaceName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_interfaceName",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_interfaceName(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_interfaceName",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_deviceClass(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_deviceClass",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_deviceClass(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_deviceClass",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_serial(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_serial",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToJson(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToJson",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_InputDeviceDescription0(
         &mut self,
         other: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
@@ -188,24 +94,51 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_manufacturer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_manufacturer",
+            "GetHashCode",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_version(
+    pub fn ToJson(
         &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_version",
-            (value),
+            "ToJson",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_capabilities(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_capabilities",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_deviceClass(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_deviceClass",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -217,10 +150,42 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_interfaceName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "GetHashCode",
+            "get_interfaceName",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_manufacturer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_manufacturer",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_product(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_product",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_serial(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_serial",
             (),
         )?;
         Ok(__cordl_ret)
@@ -246,6 +211,28 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn set_deviceClass(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_deviceClass",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_interfaceName(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_interfaceName",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn set_manufacturer(
         &mut self,
         value: *mut crate::System::String,
@@ -257,23 +244,36 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_product(
+    pub fn set_product(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_product",
-            (),
+            "set_product",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_capabilities(
+    pub fn set_serial(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_capabilities",
-            (),
+            "set_serial",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_version(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_version",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

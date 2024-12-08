@@ -32,149 +32,6 @@ for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputMetrics")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
-    pub fn get_totalEventProcessingTime(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_totalEventProcessingTime",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_currentNumDevices(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_currentNumDevices",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_currentNumDevices(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_currentNumDevices",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_currentStateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_currentStateSizeInBytes",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_averageLagTimePerEvent(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_averageLagTimePerEvent",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_currentControlCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_currentControlCount",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_maxStateSizeInBytes(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_maxStateSizeInBytes",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_currentLayoutCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_currentLayoutCount",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_totalUpdateCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_totalUpdateCount",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_totalEventCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_totalEventCount",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_totalEventBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_totalEventBytes",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_totalEventProcessingTime(
-        &mut self,
-        value: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_totalEventProcessingTime",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_currentStateSizeInBytes(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_currentStateSizeInBytes",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_totalEventBytes(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_totalEventBytes",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_maxNumDevices(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_maxNumDevices",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn get_averageEventBytesPerFrame(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -185,48 +42,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_currentLayoutCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_currentLayoutCount",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_totalUpdateCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_totalUpdateCount",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_totalEventLagTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+    pub fn get_averageLagTimePerEvent(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_totalEventLagTime",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_totalEventLagTime(
-        &mut self,
-        value: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_totalEventLagTime",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_maxStateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_maxStateSizeInBytes",
+            "get_averageLagTimePerEvent",
             (),
         )?;
         Ok(__cordl_ret)
@@ -249,13 +68,128 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn set_totalEventCount(
+    pub fn get_currentLayoutCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_currentLayoutCount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_currentNumDevices(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_currentNumDevices",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_currentStateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_currentStateSizeInBytes",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxNumDevices(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_maxNumDevices",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxStateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_maxStateSizeInBytes",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_totalEventBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_totalEventBytes",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_totalEventCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_totalEventCount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_totalEventLagTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_totalEventLagTime",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_totalEventProcessingTime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_totalEventProcessingTime",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_totalUpdateCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_totalUpdateCount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_currentControlCount(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_totalEventCount",
+            "set_currentControlCount",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_currentLayoutCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_currentLayoutCount",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_currentNumDevices(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_currentNumDevices",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_currentStateSizeInBytes(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_currentStateSizeInBytes",
             (value),
         )?;
         Ok(__cordl_ret)
@@ -267,6 +201,72 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_maxNumDevices",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_maxStateSizeInBytes(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_maxStateSizeInBytes",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_totalEventBytes(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_totalEventBytes",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_totalEventCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_totalEventCount",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_totalEventLagTime(
+        &mut self,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_totalEventLagTime",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_totalEventProcessingTime(
+        &mut self,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_totalEventProcessingTime",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_totalUpdateCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_totalUpdateCount",
             (value),
         )?;
         Ok(__cordl_ret)

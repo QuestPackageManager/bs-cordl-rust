@@ -29,11 +29,18 @@ for crate::UnityEngine::InputSystem::InputProcessor_1<TValue> {
 impl<
     TValue: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::InputSystem::InputProcessor_1<TValue> {
-    pub fn Process_TValue_InputControl0(
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ProcessAsObject(
         &mut self,
-        value: TValue,
+        value: *mut crate::System::Object,
         control: *mut crate::UnityEngine::InputSystem::InputControl,
-    ) -> quest_hook::libil2cpp::Result<TValue>
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -41,7 +48,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: TValue = __cordl_object.invoke("Process", (value, control))?;
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("ProcessAsObject", (value, control))?;
         Ok(__cordl_ret)
     }
     pub fn Process_Il2CppObject_i32_InputControl1(
@@ -61,11 +69,11 @@ impl<
             .invoke("Process", (buffer, bufferSize, control))?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessAsObject(
+    pub fn Process_TValue_InputControl0(
         &mut self,
-        value: *mut crate::System::Object,
+        value: TValue,
         control: *mut crate::UnityEngine::InputSystem::InputControl,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
+    ) -> quest_hook::libil2cpp::Result<TValue>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -73,8 +81,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("ProcessAsObject", (value, control))?;
+        let __cordl_ret: TValue = __cordl_object.invoke("Process", (value, control))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -88,13 +95,6 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputProcessor_1")]

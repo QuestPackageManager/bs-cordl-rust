@@ -27,17 +27,6 @@ impl crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
         feature = "System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable+ConfiguredValueTaskAwaiter"
     )]
     pub type ConfiguredValueTaskAwaiter = crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter;
-    pub fn _ctor(
-        &mut self,
-        value: crate::System::Threading::Tasks::ValueTask,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn GetAwaiter(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -47,6 +36,17 @@ impl crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
             self,
             "GetAwaiter",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        value: crate::System::Threading::Tasks::ValueTask,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
@@ -85,6 +85,16 @@ for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable_Confi
     feature = "System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable+ConfiguredValueTaskAwaiter"
 )]
 impl crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter {
+    pub fn GetResult(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetResult",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn OnCompleted(
         &mut self,
         continuation: *mut crate::System::Action,
@@ -93,24 +103,6 @@ impl crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable_Conf
             self,
             "OnCompleted",
             (continuation),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsCompleted",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetResult(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetResult",
-            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -133,6 +125,14 @@ impl crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable_Conf
             self,
             ".ctor",
             (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsCompleted",
+            (),
         )?;
         Ok(__cordl_ret)
     }

@@ -26,7 +26,7 @@ impl std::ops::DerefMut for AlphabetScrollbarInfoBeatmapLevelHelper {
 impl AlphabetScrollbarInfoBeatmapLevelHelper {
     pub const kFirstAlphabet: &'static str = "A";
     pub const kMaxCharactersCount: i32 = 28i32;
-    pub const kNonAlphabetChar: char = "#";
+    pub const kNonAlphabetChar: char = '#';
     #[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper+__c")]
     pub type __c = crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper___c;
 }

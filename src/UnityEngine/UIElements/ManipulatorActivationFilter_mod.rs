@@ -25,40 +25,14 @@ for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
 }
 #[cfg(feature = "UnityEngine+UIElements+ManipulatorActivationFilter")]
 impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
-    pub fn get_button(
+    pub fn Equals_ManipulatorActivationFilter1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::MouseButton> {
-        let __cordl_ret: crate::UnityEngine::UIElements::MouseButton = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        other: crate::UnityEngine::UIElements::ManipulatorActivationFilter,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "get_button",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_clickCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_clickCount",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_button(
-        &mut self,
-        value: crate::UnityEngine::UIElements::MouseButton,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_button",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
+            "Equals",
+            (other),
         )?;
         Ok(__cordl_ret)
     }
@@ -73,46 +47,11 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_ManipulatorActivationFilter1(
-        &mut self,
-        other: crate::UnityEngine::UIElements::ManipulatorActivationFilter,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_modifiers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EventModifiers> {
-        let __cordl_ret: crate::UnityEngine::EventModifiers = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_modifiers",
+            "GetHashCode",
             (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Matches_IMouseEvent0(
-        &mut self,
-        e: *mut crate::UnityEngine::UIElements::IMouseEvent,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Matches",
-            (e),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Matches_IPointerEvent1(
-        &mut self,
-        e: *mut crate::UnityEngine::UIElements::IPointerEvent,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Matches",
-            (e),
         )?;
         Ok(__cordl_ret)
     }
@@ -149,6 +88,67 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
             self,
             "MatchModifiers",
             (alt, ctrl, shift, command),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Matches_IMouseEvent0(
+        &mut self,
+        e: *mut crate::UnityEngine::UIElements::IMouseEvent,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Matches",
+            (e),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Matches_IPointerEvent1(
+        &mut self,
+        e: *mut crate::UnityEngine::UIElements::IPointerEvent,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Matches",
+            (e),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_button(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::MouseButton> {
+        let __cordl_ret: crate::UnityEngine::UIElements::MouseButton = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_button",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_clickCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_clickCount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_modifiers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EventModifiers> {
+        let __cordl_ret: crate::UnityEngine::EventModifiers = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_modifiers",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_button(
+        &mut self,
+        value: crate::UnityEngine::UIElements::MouseButton,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_button",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

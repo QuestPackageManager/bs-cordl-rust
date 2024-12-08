@@ -86,6 +86,16 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Number_Number
 impl crate::System::Number_NumberBuffer {
     #[cfg(feature = "System+Number+NumberBuffer+DigitsAndNullTerminator")]
     pub type DigitsAndNullTerminator = crate::System::NumberBuffer_DigitsAndNullTerminator;
+    pub fn get_digits(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_digits",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_sign(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -102,16 +112,6 @@ impl crate::System::Number_NumberBuffer {
             self,
             "set_sign",
             (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_digits(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_digits",
-            (),
         )?;
         Ok(__cordl_ret)
     }

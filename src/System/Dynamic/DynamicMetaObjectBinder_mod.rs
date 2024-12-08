@@ -24,37 +24,18 @@ impl std::ops::DerefMut for crate::System::Dynamic::DynamicMetaObjectBinder {
 }
 #[cfg(feature = "System+Dynamic+DynamicMetaObjectBinder")]
 impl crate::System::Dynamic::DynamicMetaObjectBinder {
-    pub fn _ctor(
+    pub fn Bind_DynamicMetaObject_Il2CppArray1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        target: *mut crate::System::Dynamic::DynamicMetaObject,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Dynamic::DynamicMetaObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ReturnType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_ReturnType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetUpdateExpression(
-        &mut self,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("GetUpdateExpression", (_cordl_type))?;
+        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
+            .invoke("Bind", (target, args))?;
         Ok(__cordl_ret)
     }
     pub fn Bind_Il2CppArray_ReadOnlyCollection_1_LabelTarget0(
@@ -74,18 +55,34 @@ impl crate::System::Dynamic::DynamicMetaObjectBinder {
             .invoke("Bind", (args, parameters, returnLabel))?;
         Ok(__cordl_ret)
     }
-    pub fn Bind_DynamicMetaObject_Il2CppArray1(
+    pub fn GetUpdateExpression(
         &mut self,
-        target: *mut crate::System::Dynamic::DynamicMetaObject,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Dynamic::DynamicMetaObject,
-        >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::Expression,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("Bind", (target, args))?;
+        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
+            .invoke("GetUpdateExpression", (_cordl_type))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_IsStandardBinder(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -95,12 +92,15 @@ impl crate::System::Dynamic::DynamicMetaObjectBinder {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsStandardBinder", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn get_ReturnType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_ReturnType", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Dynamic+DynamicMetaObjectBinder")]

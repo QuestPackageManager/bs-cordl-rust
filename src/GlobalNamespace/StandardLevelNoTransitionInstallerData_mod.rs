@@ -43,6 +43,43 @@ impl std::ops::DerefMut for StandardLevelNoTransitionInstallerData {
 }
 #[cfg(feature = "StandardLevelNoTransitionInstallerData")]
 impl StandardLevelNoTransitionInstallerData {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_backButtonText(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_backButtonText", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_beatmapCharacteristic(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut BeatmapCharacteristicSO> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut BeatmapCharacteristicSO = __cordl_object
+            .invoke("get_beatmapCharacteristic", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_beatmapDifficulty(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<BeatmapDifficulty> {
@@ -51,6 +88,16 @@ impl StandardLevelNoTransitionInstallerData {
         );
         let __cordl_ret: BeatmapDifficulty = __cordl_object
             .invoke("get_beatmapDifficulty", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_beatmapLevel(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelSO> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut BeatmapLevelSO = __cordl_object
+            .invoke("get_beatmapLevel", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_colorScheme(
@@ -63,6 +110,16 @@ impl StandardLevelNoTransitionInstallerData {
             .invoke("get_colorScheme", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_environmentInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut EnvironmentInfoSO> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut EnvironmentInfoSO = __cordl_object
+            .invoke("get_environmentInfo", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_gameplayModifiers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut GameplayModifiers> {
@@ -71,6 +128,16 @@ impl StandardLevelNoTransitionInstallerData {
         );
         let __cordl_ret: *mut GameplayModifiers = __cordl_object
             .invoke("get_gameplayModifiers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_playerSpecificSettings(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut PlayerSpecificSettings> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut PlayerSpecificSettings = __cordl_object
+            .invoke("get_playerSpecificSettings", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_practiceSettings(
@@ -93,17 +160,6 @@ impl StandardLevelNoTransitionInstallerData {
             .invoke("get_useTestNoteCutSoundEffects", ())?;
         Ok(__cordl_ret)
     }
-    pub fn set_playerSpecificSettings(
-        &mut self,
-        value: *mut PlayerSpecificSettings,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_playerSpecificSettings", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn set_backButtonText(
         &mut self,
         value: *mut crate::System::String,
@@ -113,37 +169,6 @@ impl StandardLevelNoTransitionInstallerData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_backButtonText", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_backButtonText(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_backButtonText", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_useTestNoteCutSoundEffects(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_useTestNoteCutSoundEffects", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_beatmapCharacteristic(
@@ -157,17 +182,6 @@ impl StandardLevelNoTransitionInstallerData {
             .invoke("set_beatmapCharacteristic", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_gameplayModifiers(
-        &mut self,
-        value: *mut GameplayModifiers,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_gameplayModifiers", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn set_beatmapDifficulty(
         &mut self,
         value: BeatmapDifficulty,
@@ -179,44 +193,26 @@ impl StandardLevelNoTransitionInstallerData {
             .invoke("set_beatmapDifficulty", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_playerSpecificSettings(
+    pub fn set_gameplayModifiers(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerSpecificSettings> {
+        value: *mut GameplayModifiers,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayerSpecificSettings = __cordl_object
-            .invoke("get_playerSpecificSettings", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_gameplayModifiers", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_environmentInfo(
+    pub fn set_playerSpecificSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut EnvironmentInfoSO> {
+        value: *mut PlayerSpecificSettings,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut EnvironmentInfoSO = __cordl_object
-            .invoke("get_environmentInfo", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_beatmapCharacteristic(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapCharacteristicSO> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut BeatmapCharacteristicSO = __cordl_object
-            .invoke("get_beatmapCharacteristic", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_beatmapLevel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelSO> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut BeatmapLevelSO = __cordl_object
-            .invoke("get_beatmapLevel", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_playerSpecificSettings", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_practiceSettings(
@@ -230,12 +226,16 @@ impl StandardLevelNoTransitionInstallerData {
             .invoke("set_practiceSettings", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_useTestNoteCutSoundEffects(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_useTestNoteCutSoundEffects", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "StandardLevelNoTransitionInstallerData")]

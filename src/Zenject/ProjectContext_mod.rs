@@ -35,58 +35,37 @@ impl std::ops::DerefMut for crate::Zenject::ProjectContext {
 impl crate::Zenject::ProjectContext {
     pub const ProjectContextResourcePath: &'static str = "ProjectContext";
     pub const ProjectContextResourcePathOld: &'static str = "ProjectCompositionRoot";
-    pub fn remove_PreResolve(
+    pub fn Awake(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_PreResolve", (value))?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret)
     }
-    pub fn add_PostInstall(
+    pub fn EnsureIsInitialized(
         &mut self,
-        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_PostInstall", (value))?;
+            .invoke("EnsureIsInitialized", ())?;
         Ok(__cordl_ret)
     }
-    pub fn remove_PostResolve(
+    pub fn GetInjectableMonoBehaviours(
         &mut self,
-        value: *mut crate::System::Action,
+        monoBehaviours: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::MonoBehaviour,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_PostResolve", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ParentNewObjectsUnderContext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_ParentNewObjectsUnderContext", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_PreResolve(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_PreResolve", (value))?;
+            .invoke("GetInjectableMonoBehaviours", (monoBehaviours))?;
         Ok(__cordl_ret)
     }
     pub fn GetRootGameObjects(
@@ -104,6 +83,16 @@ impl crate::Zenject::ProjectContext {
         > = __cordl_object.invoke("GetRootGameObjects", ())?;
         Ok(__cordl_ret)
     }
+    pub fn Initialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn InstallBindings(
         &mut self,
         injectableMonoBehaviours: *mut crate::System::Collections::Generic::List_1<
@@ -117,47 +106,12 @@ impl crate::Zenject::ProjectContext {
             .invoke("InstallBindings", (injectableMonoBehaviours))?;
         Ok(__cordl_ret)
     }
-    pub fn add_PreInstall(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_PreInstall", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_PostInstall(
-        &mut self,
-        value: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_PostInstall", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Container(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
-            .invoke("get_Container", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EnsureIsInitialized(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EnsureIsInitialized", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn _ctor(
         &mut self,
@@ -167,6 +121,17 @@ impl crate::Zenject::ProjectContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_PostInstall(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_PostInstall", (value))?;
         Ok(__cordl_ret)
     }
     pub fn add_PostResolve(
@@ -180,38 +145,68 @@ impl crate::Zenject::ProjectContext {
             .invoke("add_PostResolve", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Initialize(
+    pub fn add_PreInstall(
         &mut self,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Initialize", ())?;
+            .invoke("add_PreInstall", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn GetInjectableMonoBehaviours(
+    pub fn add_PreResolve(
         &mut self,
-        monoBehaviours: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::MonoBehaviour,
-        >,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetInjectableMonoBehaviours", (monoBehaviours))?;
+            .invoke("add_PreResolve", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_ParentNewObjectsUnderContext(
+    pub fn get_Container(
         &mut self,
-        value: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
+            .invoke("get_Container", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ParentNewObjectsUnderContext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_ParentNewObjectsUnderContext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_PostInstall(
+        &mut self,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ParentNewObjectsUnderContext", (value))?;
+            .invoke("remove_PostInstall", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_PostResolve(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_PostResolve", (value))?;
         Ok(__cordl_ret)
     }
     pub fn remove_PreInstall(
@@ -225,22 +220,27 @@ impl crate::Zenject::ProjectContext {
             .invoke("remove_PreInstall", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Awake(
+    pub fn remove_PreResolve(
         &mut self,
+        value: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
+            .invoke("remove_PreResolve", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+    pub fn set_ParentNewObjectsUnderContext(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ParentNewObjectsUnderContext", (value))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+ProjectContext")]

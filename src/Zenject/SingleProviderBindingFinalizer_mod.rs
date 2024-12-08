@@ -29,6 +29,31 @@ impl std::ops::DerefMut for crate::Zenject::SingleProviderBindingFinalizer {
 }
 #[cfg(feature = "Zenject+SingleProviderBindingFinalizer")]
 impl crate::Zenject::SingleProviderBindingFinalizer {
+    pub fn New(
+        bindInfo: *mut crate::Zenject::BindInfo,
+        providerFactory: *mut crate::System::Func_3<
+            *mut crate::Zenject::DiContainer,
+            *mut crate::System::Type,
+            *mut crate::Zenject::IProvider,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bindInfo, providerFactory))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnFinalizeBinding(
+        &mut self,
+        container: *mut crate::Zenject::DiContainer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnFinalizeBinding", (container))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor(
         &mut self,
         bindInfo: *mut crate::Zenject::BindInfo,
@@ -44,31 +69,6 @@ impl crate::Zenject::SingleProviderBindingFinalizer {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bindInfo, providerFactory))?;
         Ok(__cordl_ret)
-    }
-    pub fn OnFinalizeBinding(
-        &mut self,
-        container: *mut crate::Zenject::DiContainer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnFinalizeBinding", (container))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        bindInfo: *mut crate::Zenject::BindInfo,
-        providerFactory: *mut crate::System::Func_3<
-            *mut crate::Zenject::DiContainer,
-            *mut crate::System::Type,
-            *mut crate::Zenject::IProvider,
-        >,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bindInfo, providerFactory))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Zenject+SingleProviderBindingFinalizer")]

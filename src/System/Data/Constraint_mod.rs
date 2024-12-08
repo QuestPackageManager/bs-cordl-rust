@@ -29,16 +29,6 @@ impl std::ops::DerefMut for crate::System::Data::Constraint {
 }
 #[cfg(feature = "System+Data+Constraint")]
 impl crate::System::Data::Constraint {
-    pub fn get_Table(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataTable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::DataTable = __cordl_object
-            .invoke("get_Table", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn CanBeRemovedFromCollection(
         &mut self,
         constraint: *mut crate::System::Data::ConstraintCollection,
@@ -56,6 +46,59 @@ impl crate::System::Data::Constraint {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("CanEnableConstraint", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckCanAddToCollection(
+        &mut self,
+        constraint: *mut crate::System::Data::ConstraintCollection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckCanAddToCollection", (constraint))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckConstraint_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckConstraint", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckConstraint_DataRow_DataRowAction1(
+        &mut self,
+        row: *mut crate::System::Data::DataRow,
+        action: crate::System::Data::DataRowAction,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckConstraint", (row, action))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckStateForProperty(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckStateForProperty", ())?;
         Ok(__cordl_ret)
     }
     pub fn Clone_DataSet0(
@@ -81,50 +124,6 @@ impl crate::System::Data::Constraint {
             .invoke("Clone", (destination, ignoreNSforTableLookup))?;
         Ok(__cordl_ret)
     }
-    pub fn CheckCanAddToCollection(
-        &mut self,
-        constraint: *mut crate::System::Data::ConstraintCollection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckCanAddToCollection", (constraint))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_InCollection(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_InCollection", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckConstraint_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckConstraint", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckConstraint_DataRow_DataRowAction1(
-        &mut self,
-        row: *mut crate::System::Data::DataRow,
-        action: crate::System::Data::DataRowAction,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckConstraint", (row, action))?;
-        Ok(__cordl_ret)
-    }
     pub fn ContainsColumn(
         &mut self,
         column: *mut crate::System::Data::DataColumn,
@@ -135,25 +134,38 @@ impl crate::System::Data::Constraint {
         let __cordl_ret: bool = __cordl_object.invoke("ContainsColumn", (column))?;
         Ok(__cordl_ret)
     }
-    pub fn set_SchemaName(
+    pub fn IsConstraintViolated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsConstraintViolated", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ToString(
         &mut self,
-        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_SchemaName", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ExtendedProperties(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::PropertyCollection> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::PropertyCollection = __cordl_object
-            .invoke("get_ExtendedProperties", ())?;
+            .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ConstraintName(
@@ -166,6 +178,23 @@ impl crate::System::Data::Constraint {
             .invoke("get_ConstraintName", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_ExtendedProperties(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::PropertyCollection> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Data::PropertyCollection = __cordl_object
+            .invoke("get_ExtendedProperties", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_InCollection(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_InCollection", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_SchemaName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -176,14 +205,14 @@ impl crate::System::Data::Constraint {
             .invoke("get_SchemaName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CheckStateForProperty(
+    pub fn get_Table(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataTable> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckStateForProperty", ())?;
+        let __cordl_ret: *mut crate::System::Data::DataTable = __cordl_object
+            .invoke("get_Table", ())?;
         Ok(__cordl_ret)
     }
     pub fn get__DataSet(
@@ -194,16 +223,6 @@ impl crate::System::Data::Constraint {
         );
         let __cordl_ret: *mut crate::System::Data::DataSet = __cordl_object
             .invoke("get__DataSet", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_ConstraintName(
@@ -217,46 +236,27 @@ impl crate::System::Data::Constraint {
             .invoke("set_ConstraintName", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn IsConstraintViolated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsConstraintViolated", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
+    pub fn set_InCollection(
         &mut self,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("set_InCollection", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_InCollection(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_InCollection", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckState(
+    pub fn set_SchemaName(
         &mut self,
+        value: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckState", ())?;
+            .invoke("set_SchemaName", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Data+Constraint")]

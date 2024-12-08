@@ -40,6 +40,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::UserMessage_LocalizedMessage
 }
 #[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
 impl crate::GlobalNamespace::UserMessage_LocalizedMessage {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -49,13 +56,6 @@ impl crate::GlobalNamespace::UserMessage_LocalizedMessage {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
@@ -100,19 +100,63 @@ impl std::ops::DerefMut for MultiplayerStatusData {
 }
 #[cfg(feature = "MultiplayerStatusData")]
 impl MultiplayerStatusData {
-    #[cfg(feature = "MultiplayerStatusData+UserMessage")]
-    pub type UserMessage = crate::GlobalNamespace::MultiplayerStatusData_UserMessage;
     #[cfg(feature = "MultiplayerStatusData+AvailabilityStatus")]
     pub type AvailabilityStatus = crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus;
-    pub fn set_minimumAppVersion(
+    #[cfg(feature = "MultiplayerStatusData+UserMessage")]
+    pub type UserMessage = crate::GlobalNamespace::MultiplayerStatusData_UserMessage;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
         &mut self,
-        value: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_minimumAppVersion", (value))?;
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maintenanceEndTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_maintenanceEndTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maintenanceStartTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_maintenanceStartTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_minimumAppVersion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_minimumAppVersion", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_useGamelift(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_useGamelift", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_useXPlatformAuth(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_useXPlatformAuth", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_userMessage(
@@ -127,14 +171,15 @@ impl MultiplayerStatusData {
             .invoke("get_userMessage", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_minimumAppVersion(
+    pub fn set_maintenanceEndTime(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_minimumAppVersion", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_maintenanceEndTime", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_maintenanceStartTime(
@@ -148,29 +193,15 @@ impl MultiplayerStatusData {
             .invoke("set_maintenanceStartTime", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_useXPlatformAuth(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_useXPlatformAuth", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_useXPlatformAuth(
+    pub fn set_minimumAppVersion(
         &mut self,
-        value: bool,
+        value: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_useXPlatformAuth", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_maintenanceEndTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_maintenanceEndTime", ())?;
+            .invoke("set_minimumAppVersion", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_useGamelift(
@@ -184,22 +215,15 @@ impl MultiplayerStatusData {
             .invoke("set_useGamelift", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_maintenanceStartTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_maintenanceStartTime", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_maintenanceEndTime(
+    pub fn set_useXPlatformAuth(
         &mut self,
-        value: i64,
+        value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_maintenanceEndTime", (value))?;
+            .invoke("set_useXPlatformAuth", (value))?;
         Ok(__cordl_ret)
     }
     pub fn set_userMessage(
@@ -212,30 +236,6 @@ impl MultiplayerStatusData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_userMessage", (value))?;
         Ok(__cordl_ret)
-    }
-    pub fn get_useGamelift(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_useGamelift", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MultiplayerStatusData")]
@@ -279,6 +279,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerStatusData_UserMe
 impl crate::GlobalNamespace::MultiplayerStatusData_UserMessage {
     #[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
     pub type LocalizedMessage = crate::GlobalNamespace::UserMessage_LocalizedMessage;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -288,13 +295,6 @@ impl crate::GlobalNamespace::MultiplayerStatusData_UserMessage {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "MultiplayerStatusData+UserMessage")]

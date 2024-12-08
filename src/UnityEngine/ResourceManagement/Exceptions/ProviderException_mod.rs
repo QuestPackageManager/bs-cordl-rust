@@ -28,6 +28,17 @@ for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ProviderException")]
 impl crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
+    pub fn New(
+        message: *mut crate::System::String,
+        location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        innerException: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (message, location, innerException))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         message: *mut crate::System::String,
@@ -52,17 +63,6 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
         let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation = __cordl_object
             .invoke("get_Location", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        message: *mut crate::System::String,
-        location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-        innerException: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (message, location, innerException))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ProviderException")]

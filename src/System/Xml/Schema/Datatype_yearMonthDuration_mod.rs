@@ -24,6 +24,13 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_yearMonthDurati
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_yearMonthDuration")]
 impl crate::System::Xml::Schema::Datatype_yearMonthDuration {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
     pub fn TryParseValue(
         &mut self,
         s: *mut crate::System::String,
@@ -57,13 +64,6 @@ impl crate::System::Xml::Schema::Datatype_yearMonthDuration {
         let __cordl_ret: crate::System::Xml::Schema::XmlTypeCode = __cordl_object
             .invoke("get_TypeCode", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_yearMonthDuration")]

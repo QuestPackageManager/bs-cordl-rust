@@ -32,9 +32,107 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crmf::PKMacBuilder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+PKMacBuilder")]
 impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
-    pub fn SetSaltLength(
+    pub fn Build(
         &mut self,
-        saltLength: i32,
+        password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::IMacFactory,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IMacFactory = __cordl_object
+            .invoke("Build", (password))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CheckIterationCountCeiling(
+        &mut self,
+        iterationCount: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckIterationCountCeiling", (iterationCount))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GenCalculator(
+        &mut self,
+        parameters: *mut crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter,
+        password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::IMacFactory,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IMacFactory = __cordl_object
+            .invoke("GenCalculator", (parameters, password))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_AlgorithmIdentifier_i32_AlgorithmIdentifier_IPKMacPrimitivesProvider4(
+        digestAlgorithmIdentifier: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        iterationCount: i32,
+        macAlgorithmIdentifier: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        provider: *mut crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    digestAlgorithmIdentifier,
+                    iterationCount,
+                    macAlgorithmIdentifier,
+                    provider,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IPKMacPrimitivesProvider1(
+        provider: *mut crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (provider))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IPKMacPrimitivesProvider_AlgorithmIdentifier_AlgorithmIdentifier2(
+        provider: *mut crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
+        digestAlgorithmIdentifier: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        macAlgorithmIdentifier: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (provider, digestAlgorithmIdentifier, macAlgorithmIdentifier),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn New_IPKMacPrimitivesProvider_i32_3(
+        provider: *mut crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
+        maxIterations: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (provider, maxIterations))?;
+        Ok(__cordl_object)
+    }
+    pub fn SetIterationCount(
+        &mut self,
+        iterationCount: i32,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Crmf::PKMacBuilder,
     > {
@@ -42,7 +140,7 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::PKMacBuilder = __cordl_object
-            .invoke("SetSaltLength", (saltLength))?;
+            .invoke("SetIterationCount", (iterationCount))?;
         Ok(__cordl_ret)
     }
     pub fn SetParameters(
@@ -58,9 +156,9 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
             .invoke("SetParameters", (parameters))?;
         Ok(__cordl_ret)
     }
-    pub fn SetIterationCount(
+    pub fn SetSaltLength(
         &mut self,
-        iterationCount: i32,
+        saltLength: i32,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Crmf::PKMacBuilder,
     > {
@@ -68,7 +166,20 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
             self,
         );
         let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::PKMacBuilder = __cordl_object
-            .invoke("SetIterationCount", (iterationCount))?;
+            .invoke("SetSaltLength", (saltLength))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetSecureRandom(
+        &mut self,
+        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crmf::PKMacBuilder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::PKMacBuilder = __cordl_object
+            .invoke("SetSecureRandom", (random))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -79,6 +190,28 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_AlgorithmIdentifier_i32_AlgorithmIdentifier_IPKMacPrimitivesProvider4(
+        &mut self,
+        digestAlgorithmIdentifier: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        iterationCount: i32,
+        macAlgorithmIdentifier: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        provider: *mut crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (
+                    digestAlgorithmIdentifier,
+                    iterationCount,
+                    macAlgorithmIdentifier,
+                    provider,
+                ),
+            )?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_IPKMacPrimitivesProvider1(
@@ -119,139 +252,6 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (provider, maxIterations))?;
         Ok(__cordl_ret)
-    }
-    pub fn _ctor_AlgorithmIdentifier_i32_AlgorithmIdentifier_IPKMacPrimitivesProvider4(
-        &mut self,
-        digestAlgorithmIdentifier: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        iterationCount: i32,
-        macAlgorithmIdentifier: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        provider: *mut crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (
-                    digestAlgorithmIdentifier,
-                    iterationCount,
-                    macAlgorithmIdentifier,
-                    provider,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetSecureRandom(
-        &mut self,
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::PKMacBuilder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::PKMacBuilder = __cordl_object
-            .invoke("SetSecureRandom", (random))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GenCalculator(
-        &mut self,
-        parameters: *mut crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter,
-        password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::IMacFactory,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IMacFactory = __cordl_object
-            .invoke("GenCalculator", (parameters, password))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CheckIterationCountCeiling(
-        &mut self,
-        iterationCount: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckIterationCountCeiling", (iterationCount))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Build(
-        &mut self,
-        password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::IMacFactory,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IMacFactory = __cordl_object
-            .invoke("Build", (password))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IPKMacPrimitivesProvider1(
-        provider: *mut crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (provider))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IPKMacPrimitivesProvider_AlgorithmIdentifier_AlgorithmIdentifier2(
-        provider: *mut crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
-        digestAlgorithmIdentifier: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        macAlgorithmIdentifier: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (provider, digestAlgorithmIdentifier, macAlgorithmIdentifier),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn New_IPKMacPrimitivesProvider_i32_3(
-        provider: *mut crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
-        maxIterations: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (provider, maxIterations))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_AlgorithmIdentifier_i32_AlgorithmIdentifier_IPKMacPrimitivesProvider4(
-        digestAlgorithmIdentifier: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        iterationCount: i32,
-        macAlgorithmIdentifier: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        provider: *mut crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    digestAlgorithmIdentifier,
-                    iterationCount,
-                    macAlgorithmIdentifier,
-                    provider,
-                ),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+PKMacBuilder")]

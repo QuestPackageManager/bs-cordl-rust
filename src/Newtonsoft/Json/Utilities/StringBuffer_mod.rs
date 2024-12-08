@@ -23,53 +23,40 @@ for crate::Newtonsoft::Json::Utilities::StringBuffer {
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+StringBuffer")]
 impl crate::Newtonsoft::Json::Utilities::StringBuffer {
-    pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Position",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Position(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Position",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsEmpty",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_IArrayPool_1_i32_0(
+    pub fn Append_Il2CppArray_i32_i32_1(
         &mut self,
         bufferPool: *mut crate::Newtonsoft::Json::IArrayPool_1<char>,
-        initalSize: i32,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        startIndex: i32,
+        count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (bufferPool, initalSize),
+            "Append",
+            (bufferPool, buffer, startIndex, count),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Il2CppArray1(
+    pub fn Append__cordl_char0(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        bufferPool: *mut crate::Newtonsoft::Json::IArrayPool_1<char>,
+        value: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (buffer),
+            "Append",
+            (bufferPool, value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Clear(
+        &mut self,
+        bufferPool: *mut crate::Newtonsoft::Json::IArrayPool_1<char>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Clear",
+            (bufferPool),
         )?;
         Ok(__cordl_ret)
     }
@@ -107,6 +94,29 @@ impl crate::Newtonsoft::Json::Utilities::StringBuffer {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_IArrayPool_1_i32_0(
+        &mut self,
+        bufferPool: *mut crate::Newtonsoft::Json::IArrayPool_1<char>,
+        initalSize: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (bufferPool, initalSize),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppArray1(
+        &mut self,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (buffer),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn get_InternalBuffer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<char>> {
@@ -117,40 +127,30 @@ impl crate::Newtonsoft::Json::Utilities::StringBuffer {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Append__cordl_char0(
-        &mut self,
-        bufferPool: *mut crate::Newtonsoft::Json::IArrayPool_1<char>,
-        value: char,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Append",
-            (bufferPool, value),
+            "get_IsEmpty",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Append_Il2CppArray_i32_i32_1(
-        &mut self,
-        bufferPool: *mut crate::Newtonsoft::Json::IArrayPool_1<char>,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        startIndex: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Append",
-            (bufferPool, buffer, startIndex, count),
+            "get_Position",
+            (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Clear(
+    pub fn set_Position(
         &mut self,
-        bufferPool: *mut crate::Newtonsoft::Json::IArrayPool_1<char>,
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "Clear",
-            (bufferPool),
+            "set_Position",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

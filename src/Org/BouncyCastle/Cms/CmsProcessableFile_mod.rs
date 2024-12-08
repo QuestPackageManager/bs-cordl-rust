@@ -27,6 +27,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsProcessableFile {
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableFile")]
 impl crate::Org::BouncyCastle::Cms::CmsProcessableFile {
     pub const DefaultBufSize: i32 = 32768i32;
+    pub fn GetContent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("GetContent", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn GetInputStream(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
@@ -37,14 +47,34 @@ impl crate::Org::BouncyCastle::Cms::CmsProcessableFile {
             .invoke("GetInputStream", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetContent(
+    pub fn New_FileInfo0(
+        file: *mut crate::System::IO::FileInfo,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (file))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_1(
+        file: *mut crate::System::IO::FileInfo,
+        bufSize: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (file, bufSize))?;
+        Ok(__cordl_object)
+    }
+    pub fn Write(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        zOut: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("GetContent", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Write", (zOut))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_FileInfo0(
@@ -69,36 +99,6 @@ impl crate::Org::BouncyCastle::Cms::CmsProcessableFile {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (file, bufSize))?;
         Ok(__cordl_ret)
-    }
-    pub fn Write(
-        &mut self,
-        zOut: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (zOut))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_FileInfo0(
-        file: *mut crate::System::IO::FileInfo,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (file))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_1(
-        file: *mut crate::System::IO::FileInfo,
-        bufSize: i32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (file, bufSize))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableFile")]

@@ -28,6 +28,21 @@ impl std::ops::DerefMut for LightTranslationBaseData {
 }
 #[cfg(feature = "LightTranslationBaseData")]
 impl LightTranslationBaseData {
+    pub fn New(
+        beat: f32,
+        usePreviousEventTranslationValue: bool,
+        easeType: EaseType,
+        translation: f32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (beat, usePreviousEventTranslationValue, easeType, translation),
+            )?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         beat: f32,
@@ -44,21 +59,6 @@ impl LightTranslationBaseData {
                 (beat, usePreviousEventTranslationValue, easeType, translation),
             )?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        beat: f32,
-        usePreviousEventTranslationValue: bool,
-        easeType: EaseType,
-        translation: f32,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (beat, usePreviousEventTranslationValue, easeType, translation),
-            )?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "LightTranslationBaseData")]

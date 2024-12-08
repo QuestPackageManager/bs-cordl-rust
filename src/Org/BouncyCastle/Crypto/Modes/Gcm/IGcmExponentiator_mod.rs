@@ -27,17 +27,6 @@ for crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+IGcmExponentiator")]
 impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator {
-    pub fn Init(
-        &mut self,
-        x: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (x))?;
-        Ok(__cordl_ret)
-    }
     pub fn ExponentiateX(
         &mut self,
         pow: i64,
@@ -48,6 +37,17 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ExponentiateX", (pow, output))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        x: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (x))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(

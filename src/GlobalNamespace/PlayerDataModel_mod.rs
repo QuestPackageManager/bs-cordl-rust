@@ -28,16 +28,6 @@ impl PlayerDataModel {
     pub const kPlayerDataSaveInjectID: &'static str = "SavedPlayerData";
     #[cfg(feature = "PlayerDataModel+_UndoUnsavedChangesAsync_d__11")]
     pub type _UndoUnsavedChangesAsync_d__11 = crate::GlobalNamespace::PlayerDataModel__UndoUnsavedChangesAsync_d__11;
-    pub fn ResetData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetData", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn Inject(
         &mut self,
         playerDataJsonString: *mut crate::System::String,
@@ -50,32 +40,12 @@ impl PlayerDataModel {
             .invoke("Inject", (playerDataJsonString, playerDataFileModel))?;
         Ok(__cordl_ret)
     }
-    pub fn UndoUnsavedChangesAsync(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("UndoUnsavedChangesAsync", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Save(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Save", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_playerData(&mut self) -> quest_hook::libil2cpp::Result<*mut PlayerData> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut PlayerData = __cordl_object.invoke("get_playerData", ())?;
-        Ok(__cordl_ret)
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
     }
     pub fn OnApplicationPause(
         &mut self,
@@ -98,6 +68,26 @@ impl PlayerDataModel {
             .invoke("OnDisable", ())?;
         Ok(__cordl_ret)
     }
+    pub fn ResetData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ResetData", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Save(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Save", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn SaveAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
@@ -106,6 +96,16 @@ impl PlayerDataModel {
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
             .invoke("SaveAsync", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UndoUnsavedChangesAsync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("UndoUnsavedChangesAsync", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
@@ -118,6 +118,13 @@ impl PlayerDataModel {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn get_playerData(&mut self) -> quest_hook::libil2cpp::Result<*mut PlayerData> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut PlayerData = __cordl_object.invoke("get_playerData", ())?;
+        Ok(__cordl_ret)
+    }
     pub fn get_playerDataFileModel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut PlayerDataFileModel> {
@@ -127,13 +134,6 @@ impl PlayerDataModel {
         let __cordl_ret: *mut PlayerDataFileModel = __cordl_object
             .invoke("get_playerDataFileModel", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "PlayerDataModel")]

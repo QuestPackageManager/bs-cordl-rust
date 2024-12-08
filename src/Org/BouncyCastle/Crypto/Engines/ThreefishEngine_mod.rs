@@ -91,18 +91,6 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish1024Cip
     pub const ROTATION_7_5: i32 = 31i32;
     pub const ROTATION_7_6: i32 = 37i32;
     pub const ROTATION_7_7: i32 = 20i32;
-    pub fn EncryptBlock(
-        &mut self,
-        block: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-        outWords: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EncryptBlock", (block, outWords))?;
-        Ok(__cordl_ret)
-    }
     pub fn DecryptBlock(
         &mut self,
         block: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
@@ -115,6 +103,28 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish1024Cip
             .invoke("DecryptBlock", (block, state))?;
         Ok(__cordl_ret)
     }
+    pub fn EncryptBlock(
+        &mut self,
+        block: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+        outWords: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EncryptBlock", (block, outWords))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        kw: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+        t: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (kw, t))?;
+        Ok(__cordl_object)
+    }
     pub fn _ctor(
         &mut self,
         kw: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
@@ -126,16 +136,6 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish1024Cip
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (kw, t))?;
         Ok(__cordl_ret)
-    }
-    pub fn New(
-        kw: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-        t: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (kw, t))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish1024Cipher")]
@@ -193,16 +193,16 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish256Ciph
     pub const ROTATION_6_1: i32 = 22i32;
     pub const ROTATION_7_0: i32 = 32i32;
     pub const ROTATION_7_1: i32 = 32i32;
-    pub fn _ctor(
+    pub fn DecryptBlock(
         &mut self,
-        kw: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-        t: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+        block: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+        state: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (kw, t))?;
+            .invoke("DecryptBlock", (block, state))?;
         Ok(__cordl_ret)
     }
     pub fn EncryptBlock(
@@ -217,27 +217,27 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish256Ciph
             .invoke("EncryptBlock", (block, outWords))?;
         Ok(__cordl_ret)
     }
-    pub fn DecryptBlock(
-        &mut self,
-        block: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-        state: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DecryptBlock", (block, state))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         kw: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
         t: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (kw, t))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        kw: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+        t: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (kw, t))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish256Cipher")]
@@ -311,16 +311,16 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish512Ciph
     pub const ROTATION_7_1: i32 = 35i32;
     pub const ROTATION_7_2: i32 = 56i32;
     pub const ROTATION_7_3: i32 = 22i32;
-    pub fn _ctor(
+    pub fn DecryptBlock(
         &mut self,
-        kw: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-        t: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+        block: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+        state: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (kw, t))?;
+            .invoke("DecryptBlock", (block, state))?;
         Ok(__cordl_ret)
     }
     pub fn EncryptBlock(
@@ -335,27 +335,27 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish512Ciph
             .invoke("EncryptBlock", (block, outWords))?;
         Ok(__cordl_ret)
     }
-    pub fn DecryptBlock(
-        &mut self,
-        block: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-        state: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DecryptBlock", (block, state))?;
-        Ok(__cordl_ret)
-    }
     pub fn New(
         kw: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
         t: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (kw, t))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        kw: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+        t: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (kw, t))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish512Cipher")]
@@ -399,18 +399,6 @@ for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+ThreefishCipher")]
 impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher {
-    pub fn _ctor(
-        &mut self,
-        kw: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-        t: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (kw, t))?;
-        Ok(__cordl_ret)
-    }
     pub fn DecryptBlock(
         &mut self,
         block: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
@@ -438,12 +426,24 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher 
     pub fn New(
         kw: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
         t: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (kw, t))?;
         Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        kw: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+        t: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (kw, t))?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+ThreefishCipher")]
@@ -500,39 +500,25 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
     pub const ROUNDS_512: i32 = 72i32;
     pub const TWEAK_SIZE_BYTES: i32 = 16i32;
     pub const TWEAK_SIZE_WORDS: i32 = 2i32;
-    #[cfg(
-        feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish512Cipher"
-    )]
-    pub type Threefish512Cipher = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish512Cipher;
+    #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+ThreefishCipher")]
+    pub type ThreefishCipher = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher;
     #[cfg(
         feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish256Cipher"
     )]
     pub type Threefish256Cipher = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish256Cipher;
-    #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+ThreefishCipher")]
-    pub type ThreefishCipher = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher;
     #[cfg(
         feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish1024Cipher"
     )]
     pub type Threefish1024Cipher = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish1024Cipher;
-    pub fn _ctor(
-        &mut self,
-        blocksizeBits: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    #[cfg(
+        feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish512Cipher"
+    )]
+    pub type Threefish512Cipher = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish512Cipher;
+    pub fn GetBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (blocksizeBits))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_AlgorithmName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_AlgorithmName", ())?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetBlockSize", ())?;
         Ok(__cordl_ret)
     }
     pub fn Init_ICipherParameters0(
@@ -560,11 +546,47 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
             .invoke("Init", (forEncryption, key, tweak))?;
         Ok(__cordl_ret)
     }
-    pub fn get_IsPartialBlockOkay(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn New(blocksizeBits: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (blocksizeBits))?;
+        Ok(__cordl_object)
+    }
+    pub fn ProcessBlock_Il2CppArray1(
+        &mut self,
+        inWords: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+        outWords: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsPartialBlockOkay", ())?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("ProcessBlock", (inWords, outWords))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessBlock_i32_Il2CppArray_i32_0(
+        &mut self,
+        inBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inOff: i32,
+        outBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        outOff: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("ProcessBlock", (inBytes, inOff, outBytes, outOff))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
         Ok(__cordl_ret)
     }
     pub fn SetKey(
@@ -589,55 +611,33 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
             .invoke("SetTweak", (tweak))?;
         Ok(__cordl_ret)
     }
-    pub fn GetBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetBlockSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
+    pub fn _ctor(
         &mut self,
+        blocksizeBits: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
+            .invoke(".ctor", (blocksizeBits))?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessBlock_i32_Il2CppArray_i32_0(
+    pub fn get_AlgorithmName(
         &mut self,
-        inBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        inOff: i32,
-        outBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        outOff: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("ProcessBlock", (inBytes, inOff, outBytes, outOff))?;
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_AlgorithmName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ProcessBlock_Il2CppArray1(
-        &mut self,
-        inWords: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-        outWords: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_IsPartialBlockOkay(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("ProcessBlock", (inWords, outWords))?;
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsPartialBlockOkay", ())?;
         Ok(__cordl_ret)
-    }
-    pub fn New(blocksizeBits: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (blocksizeBits))?;
-        Ok(__cordl_object)
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine")]

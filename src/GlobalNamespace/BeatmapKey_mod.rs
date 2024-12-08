@@ -22,16 +22,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for BeatmapKey {
 }
 #[cfg(feature = "BeatmapKey")]
 impl BeatmapKey {
-    pub fn GetIdentifier(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapKeyNetSerializable> {
-        let __cordl_ret: *mut BeatmapKeyNetSerializable = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetIdentifier",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn Equals_BeatmapKey0(
         &mut self,
         other: BeatmapKey,
@@ -62,16 +52,13 @@ impl BeatmapKey {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor(
+    pub fn GetIdentifier(
         &mut self,
-        levelId: *mut crate::System::String,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
-        difficulty: BeatmapDifficulty,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut BeatmapKeyNetSerializable> {
+        let __cordl_ret: *mut BeatmapKeyNetSerializable = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (levelId, beatmapCharacteristic, difficulty),
+            "GetIdentifier",
+            (),
         )?;
         Ok(__cordl_ret)
     }
@@ -90,6 +77,19 @@ impl BeatmapKey {
             self,
             "SerializedName",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        levelId: *mut crate::System::String,
+        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+        difficulty: BeatmapDifficulty,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (levelId, beatmapCharacteristic, difficulty),
         )?;
         Ok(__cordl_ret)
     }

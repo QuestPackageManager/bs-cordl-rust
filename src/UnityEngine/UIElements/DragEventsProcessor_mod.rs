@@ -41,45 +41,38 @@ impl crate::UnityEngine::UIElements::DragEventsProcessor {
             .invoke("CanStartDrag", (pointerPosition))?;
         Ok(__cordl_ret)
     }
-    pub fn UnregisterCallbacksFromTarget_DetachFromPanelEvent0(
+    pub fn ClearDragAndDropUI(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::DetachFromPanelEvent,
+        dragCancelled: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterCallbacksFromTarget", (evt))?;
+            .invoke("ClearDragAndDropUI", (dragCancelled))?;
         Ok(__cordl_ret)
     }
-    pub fn UnregisterCallbacksFromTarget__cordl_bool1(
+    pub fn GetDropTarget(
         &mut self,
-        unregisterPanelEvents: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        position: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::DragEventsProcessor,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterCallbacksFromTarget", (unregisterPanelEvents))?;
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::DragEventsProcessor = __cordl_object
+            .invoke("GetDropTarget", (position))?;
         Ok(__cordl_ret)
     }
-    pub fn get_supportsDragEvents(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_supportsDragEvents", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerLeaveEvent(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerLeaveEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerLeaveEvent", (evt))?;
-        Ok(__cordl_ret)
+    pub fn New(
+        target: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (target))?;
+        Ok(__cordl_object)
     }
     pub fn OnDrop(
         &mut self,
@@ -90,86 +83,6 @@ impl crate::UnityEngine::UIElements::DragEventsProcessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDrop", (pointerPosition))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterCallbacksFromTarget_AttachToPanelEvent0(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::AttachToPanelEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterCallbacksFromTarget", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterCallbacksFromTarget_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterCallbacksFromTarget", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerUpEvent(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerUpEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerUpEvent", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerDownEvent(
-        &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerDownEvent,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerDownEvent", (evt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isEditorContext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isEditorContext", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_useDragEvents(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_useDragEvents", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_dragAndDrop(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::IDragAndDrop,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::IDragAndDrop = __cordl_object
-            .invoke("get_dragAndDrop", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        target: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (target))?;
         Ok(__cordl_ret)
     }
     pub fn OnPointerCancelEvent(
@@ -194,6 +107,28 @@ impl crate::UnityEngine::UIElements::DragEventsProcessor {
             .invoke("OnPointerCapturedOut", (evt))?;
         Ok(__cordl_ret)
     }
+    pub fn OnPointerDownEvent(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::PointerDownEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerDownEvent", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerLeaveEvent(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::PointerLeaveEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerLeaveEvent", (evt))?;
+        Ok(__cordl_ret)
+    }
     pub fn OnPointerMoveEvent(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::PointerMoveEvent,
@@ -205,17 +140,36 @@ impl crate::UnityEngine::UIElements::DragEventsProcessor {
             .invoke("OnPointerMoveEvent", (evt))?;
         Ok(__cordl_ret)
     }
-    pub fn GetDropTarget(
+    pub fn OnPointerUpEvent(
         &mut self,
-        position: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::DragEventsProcessor,
-    > {
+        evt: *mut crate::UnityEngine::UIElements::PointerUpEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::DragEventsProcessor = __cordl_object
-            .invoke("GetDropTarget", (position))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerUpEvent", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterCallbacksFromTarget_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterCallbacksFromTarget", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterCallbacksFromTarget_AttachToPanelEvent0(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::AttachToPanelEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterCallbacksFromTarget", (evt))?;
         Ok(__cordl_ret)
     }
     pub fn StartDrag(
@@ -229,6 +183,28 @@ impl crate::UnityEngine::UIElements::DragEventsProcessor {
             .invoke("StartDrag", (pointerPosition))?;
         Ok(__cordl_ret)
     }
+    pub fn UnregisterCallbacksFromTarget_DetachFromPanelEvent0(
+        &mut self,
+        evt: *mut crate::UnityEngine::UIElements::DetachFromPanelEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnregisterCallbacksFromTarget", (evt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnregisterCallbacksFromTarget__cordl_bool1(
+        &mut self,
+        unregisterPanelEvents: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnregisterCallbacksFromTarget", (unregisterPanelEvents))?;
+        Ok(__cordl_ret)
+    }
     pub fn UpdateDrag(
         &mut self,
         pointerPosition: crate::UnityEngine::Vector3,
@@ -240,25 +216,49 @@ impl crate::UnityEngine::UIElements::DragEventsProcessor {
             .invoke("UpdateDrag", (pointerPosition))?;
         Ok(__cordl_ret)
     }
-    pub fn ClearDragAndDropUI(
+    pub fn _ctor(
         &mut self,
-        dragCancelled: bool,
+        target: *mut crate::UnityEngine::UIElements::VisualElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearDragAndDropUI", (dragCancelled))?;
+            .invoke(".ctor", (target))?;
         Ok(__cordl_ret)
     }
-    pub fn New(
-        target: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (target))?;
-        Ok(__cordl_object)
+    pub fn get_dragAndDrop(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::IDragAndDrop,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::IDragAndDrop = __cordl_object
+            .invoke("get_dragAndDrop", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isEditorContext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isEditorContext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_supportsDragEvents(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_supportsDragEvents", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_useDragEvents(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_useDragEvents", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DragEventsProcessor")]

@@ -32,27 +32,6 @@ impl std::ops::DerefMut for crate::TMPro::TMP_UpdateRegistry {
 }
 #[cfg(feature = "TMPro+TMP_UpdateRegistry")]
 impl crate::TMPro::TMP_UpdateRegistry {
-    pub fn InternalUnRegisterCanvasElementForLayoutRebuild(
-        &mut self,
-        element: *mut crate::UnityEngine::UI::ICanvasElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalUnRegisterCanvasElementForLayoutRebuild", (element))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PerformUpdateForCanvasRendererObjects(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PerformUpdateForCanvasRendererObjects", ())?;
-        Ok(__cordl_ret)
-    }
     pub fn InternalRegisterCanvasElementForGraphicRebuild(
         &mut self,
         element: *mut crate::UnityEngine::UI::ICanvasElement,
@@ -62,37 +41,6 @@ impl crate::TMPro::TMP_UpdateRegistry {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("InternalRegisterCanvasElementForGraphicRebuild", (element))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalUnRegisterCanvasElementForGraphicRebuild(
-        &mut self,
-        element: *mut crate::UnityEngine::UI::ICanvasElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalUnRegisterCanvasElementForGraphicRebuild", (element))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn PerformUpdateForMeshRendererObjects(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PerformUpdateForMeshRendererObjects", ())?;
         Ok(__cordl_ret)
     }
     pub fn InternalRegisterCanvasElementForLayoutRebuild(
@@ -106,12 +54,64 @@ impl crate::TMPro::TMP_UpdateRegistry {
             .invoke("InternalRegisterCanvasElementForLayoutRebuild", (element))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+    pub fn InternalUnRegisterCanvasElementForGraphicRebuild(
+        &mut self,
+        element: *mut crate::UnityEngine::UI::ICanvasElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalUnRegisterCanvasElementForGraphicRebuild", (element))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InternalUnRegisterCanvasElementForLayoutRebuild(
+        &mut self,
+        element: *mut crate::UnityEngine::UI::ICanvasElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalUnRegisterCanvasElementForLayoutRebuild", (element))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
+    }
+    pub fn PerformUpdateForCanvasRendererObjects(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PerformUpdateForCanvasRendererObjects", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn PerformUpdateForMeshRendererObjects(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PerformUpdateForMeshRendererObjects", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "TMPro+TMP_UpdateRegistry")]
